@@ -37,7 +37,7 @@ DESIGN native design · VENDOR vendor STEP
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `OD-H00` | OD-000 | ASM | **Hydraulic core** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
-| `OD-H01` | OD-H00 | OEM | Pump ULKA EP5/EX5 48 W 230 V 15 bar | 40 | AS00002825 | 1 | SCAN |  | AliExpress `ULKA EP5 48W 230V` / eBay / ulkapumps.com | 12–25 | #1 | ☐ |
+| `OD-H01` | OD-H00 | OEM | Pump ULKA EP5/EX5 48 W 230 V 15 bar | 40 | AS00002825 | 1 | SCAN |  | AliExpress `ULKA EP5 48W 230V` / eBay / ulkapumps.com | 12–25 | #1 | 📷 |
 | `OD-H02` | OD-H00 | OEM | Pump protector (rubber sleeve) | 41 | 5213211161 | 1 | SCAN | rubber | AliExpress / FixPart | 4 | #1 | ☐ |
 | `OD-H03` | OD-H00 | OEM | Pump suspension spring | 42 | 6113210761 | 1 | CALIPER | steel | FixPart / 4delonghi | 3 | #1 | ☐ |
 | `OD-H10` | OD-H00 | ASM | **Thermoblock sub-assembly** |  |  | 1 | DESIGN |  |  |  | #2 | ☐ |
