@@ -20,6 +20,8 @@ Commit `bom.csv`, `BOM.md` and `img/step_progress.svg` together. CI fails if the
 
 ## Work in progress
 
+![Real part → 3D scan → open STEP](img/scan_to_step_showcase.png)
+
 In the overlays, grey is the rebuilt STEP and red is the raw scan. Where both show, the CAD sits on the scan surface.
 
 | `OD-H01` ULKA EP5 pump: modeled | `OD-H11` Thermoblock: modeled | `OD-H24` Flowmeter: STEP rebuild in progress |
