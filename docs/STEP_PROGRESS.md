@@ -29,4 +29,10 @@ In the overlays, grey is the rebuilt STEP and red is the raw scan. Where both sh
 | ![OD-H01 pump STEP](img/progress/OD-H01_pump_cad.png) | ![OD-H11 thermoblock STEP vs scan](img/progress/OD-H11_thermoblock_overlay.png) | ![OD-H24 flowmeter STEP vs scan](img/progress/OD-H24_flowmeter_overlay.png) |
 | [report](../step/reports/OD-H01_ulka_ep5_pump/) | [report](../step/reports/OD-H11_thermoblock/) | [report](../step/reports/OD-H24_flowmeter/) |
 
+## Parts on the scanner
+
+Donor parts on the scan turntable, matched to BOM numbers. Items 2 and 4 are still to be confirmed against the part codes.
+
+![Donor parts matched to BOM numbers](img/donor_parts_bom.png)
+
 Next up: check-fixtures for `OD-H01`, `OD-H11` and `OD-H24` (stage 4). Every part still marked `open` in stage 1 needs someone with the part to scan it. See [CONTRIBUTING.md](../CONTRIBUTING.md).

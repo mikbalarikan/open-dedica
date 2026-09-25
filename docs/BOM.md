@@ -165,6 +165,7 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-S03` | OD-S00 | OEM | Steam knob | 13 | 7313285479 | 1 | CALIPER |  | FixPart | 6 |  | ⏸ |
 | `OD-S04` | OD-S00 | OEM | Nozzle | 77 | AS00002710 | 1 | CALIPER |  | FixPart | 5 |  | ⏸ |
 | `OD-S05` | OD-S00 | OEM | Dispenser cover | 11 | 5313237931 | 1 | CALIPER |  | FixPart | 4 |  | ⏸ |
+| `OD-S06` | OD-S00 | OEM | Steam valve bracket |  |  | 1 | SCAN |  | donor |  |  | ⏸ |
 
 ## R — OEM parts not used (reference only)
 

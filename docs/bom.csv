@@ -99,6 +99,7 @@ OD-S02,OD-S00,OEM,Steam hose assembly,10,AS00002705,1,ENVELOPE,,FixPart,12,,defe
 OD-S03,OD-S00,OEM,Steam knob,13,7313285479,1,CALIPER,,FixPart,6,,deferred
 OD-S04,OD-S00,OEM,Nozzle,77,AS00002710,1,CALIPER,,FixPart,5,,deferred
 OD-S05,OD-S00,OEM,Dispenser cover,11,5313237931,1,CALIPER,,FixPart,4,,deferred
+OD-S06,OD-S00,OEM,Steam valve bracket,,,1,SCAN,,donor,,,deferred
 OD-R01,,REF,Upper cover (OEM case — reference only),01,7313285179,0,—,,donor,—,,ref
 OD-R02,,REF,Left profile (OEM case — reference only),19,5313251321,0,—,,donor,—,,ref
 OD-R03,,REF,Right profile (OEM case — reference only),26,5313251311,0,—,,donor,—,,ref
