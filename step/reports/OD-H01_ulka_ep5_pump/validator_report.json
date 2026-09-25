@@ -1,0 +1,150 @@
+{
+  "schema": "oguz-validator-report-v0",
+  "input": "final\\OD-H01_ulka_ep5_pump.step",
+  "expected": "expected.json",
+  "closed_solid": true,
+  "solid_count": 1,
+  "checks": [
+    {
+      "name": "closed_solid",
+      "kind": "topology",
+      "expected": true,
+      "measured": true,
+      "tol": "exact",
+      "pass": true
+    },
+    {
+      "name": "solid_count",
+      "kind": "topology",
+      "expected": 1,
+      "measured": 1,
+      "tol": "exact",
+      "pass": true
+    },
+    {
+      "name": "bbox_x",
+      "kind": "bbox_x",
+      "expected": 54.05,
+      "measured": 54.05,
+      "tol": "\u00b10.3mm",
+      "pass": true
+    },
+    {
+      "name": "bbox_y",
+      "kind": "bbox_y",
+      "expected": 55.2,
+      "measured": 55.15,
+      "tol": "\u00b10.5mm",
+      "pass": true
+    },
+    {
+      "name": "bbox_z",
+      "kind": "bbox_z",
+      "expected": 121.95,
+      "measured": 121.95,
+      "tol": "\u00b10.5mm",
+      "pass": true
+    },
+    {
+      "name": "dim:coil_od_scan",
+      "kind": "cyl_diameter",
+      "expected": 47.3,
+      "measured": 47.3,
+      "tol": "\u00b10.3mm",
+      "pass": true
+    },
+    {
+      "name": "dim:body_od_scan",
+      "kind": "cyl_diameter",
+      "expected": 24.0,
+      "measured": 24.0,
+      "tol": "\u00b10.2mm",
+      "pass": true
+    },
+    {
+      "name": "dim:step_od_scan",
+      "kind": "cyl_diameter",
+      "expected": 20.5,
+      "measured": 20.5,
+      "tol": "\u00b10.2mm",
+      "pass": true
+    },
+    {
+      "name": "dim:nozzle_od_scan",
+      "kind": "cyl_diameter",
+      "expected": 14.0,
+      "measured": 14.0,
+      "tol": "\u00b10.15mm",
+      "pass": true
+    },
+    {
+      "name": "dim:nozzle_bore_scan",
+      "kind": "cyl_diameter",
+      "expected": 9.1,
+      "measured": 9.1,
+      "tol": "\u00b10.2mm",
+      "pass": true
+    },
+    {
+      "name": "dim:inlet_boss_od_scan",
+      "kind": "cyl_diameter",
+      "expected": 13.0,
+      "measured": 13.0,
+      "tol": "\u00b10.15mm",
+      "pass": true
+    },
+    {
+      "name": "dim:barb_od_scan",
+      "kind": "cyl_diameter",
+      "expected": 5.9,
+      "measured": 5.9,
+      "tol": "\u00b10.2mm",
+      "pass": true
+    },
+    {
+      "name": "dim:overall_length_scan",
+      "kind": "bbox_z",
+      "expected": 121.95,
+      "measured": 121.95,
+      "tol": "\u00b10.5mm",
+      "pass": true
+    }
+  ],
+  "measured": {
+    "volume_mm3": 114903.2691,
+    "mass_g": null,
+    "bbox_mm": [
+      54.05,
+      55.15,
+      121.95
+    ],
+    "cyl_diameters_mm": [
+      1.8,
+      2.4,
+      2.6,
+      2.8,
+      3.0,
+      4.2,
+      5.9,
+      7.7,
+      7.8,
+      9.0,
+      9.1,
+      10.2,
+      13.0,
+      13.14,
+      13.48,
+      13.56,
+      13.7,
+      13.84,
+      14.0,
+      15.7,
+      16.0,
+      20.5,
+      24.0,
+      24.1,
+      47.3
+    ]
+  },
+  "overall_pass": true
+}
