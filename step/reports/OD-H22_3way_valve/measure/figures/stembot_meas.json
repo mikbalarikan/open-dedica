@@ -1,0 +1,9 @@
+{
+ "stem_bottom_z": {
+  "p10": -19.666589355468748,
+  "p50": -19.587117513020836,
+  "p90": -19.498353958129883,
+  "n": 862,
+  "selection": "down-facing faces |y|<1, 1.3<|x|<3.8, z<-15 (flat underside of the stem cylinder, either side of the rib)"
+ }
+}

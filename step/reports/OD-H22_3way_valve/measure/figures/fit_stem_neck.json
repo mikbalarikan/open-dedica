@@ -1,0 +1,33 @@
+{
+ "schema": "stl-re/fit.json@1",
+ "tool": "fits.py",
+ "tool_version": "stl-re-measure-intent@1.0.0",
+ "inputs": {
+  "input/scan.stl": "4ebbb8c4369a8bbcddad7c7dbc57a37a725f605bc266af7697b08c1e63189f92",
+  "intake/alignment.json": "81c7bf4635456e8c66d025e9c3aeff849e9e9604ddbee48ba8a59335f860930a"
+ },
+ "seed": 0,
+ "created": "2026-09-25T11:10:43+00:00",
+ "name": "stem_neck",
+ "fit": "circle",
+ "projection": "xy",
+ "estimator": "mesh vertices; box z=-11.8,-8.3 r=3.7,4.5 theta=None",
+ "result": {
+  "method": "kasa",
+  "cx": 0.123989,
+  "cy": 0.076901,
+  "r": 4.074424,
+  "d": 8.148848,
+  "residual": {
+   "n": 4247,
+   "rms": 0.075138,
+   "p95": 0.1449,
+   "max": 0.242057
+  },
+  "check_percentile_r": {
+   "p50": 4.095959,
+   "p5": 3.931561,
+   "p95": 4.161823
+  }
+ }
+}

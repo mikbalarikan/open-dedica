@@ -1,0 +1,82 @@
+{
+ "schema": "stl-re/datum_audit@1",
+ "tool": "datum_audit.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "4ebbb8c4369a8bbcddad7c7dbc57a37a725f605bc266af7697b08c1e63189f92",
+  "intake/alignment.json": "81c7bf4635456e8c66d025e9c3aeff849e9e9604ddbee48ba8a59335f860930a",
+  "qa/datum_spec.json": "328de2577f3d484a9c1393350307d7de77b88a956a6fb2dee268cf73335cd813"
+ },
+ "seed": 0,
+ "created": "2026-09-25T11:33:02+00:00",
+ "independence": "builder matrix used only to select named regions; all fits are QA code on raw scan",
+ "primary": {
+  "type": "plane",
+  "method": "normal vote + height histogram",
+  "faces": 12096,
+  "fit_rms_mm": 0.0428936441677285,
+  "fit_max_mm": 0.41090558473640987
+ },
+ "position": {
+  "type": "circle",
+  "wall": "outer",
+  "single_wall": "outer",
+  "faces": 8401,
+  "R_mm": 8.059401190389817,
+  "fit_rms_mm": 0.06774432475311006,
+  "method": "IRLS Cauchy circle (q03:88-100)"
+ },
+ "clock": {
+  "type": "fourier",
+  "order": 2,
+  "phase_deg_local": -14.121918218287144,
+  "order_strength": 0.8935336905373014
+ },
+ "angle_deg": 0.21621291673709767,
+ "axis_angle_deg": 0.12312708893788828,
+ "clock_audited": true,
+ "origin_offset_mm": 0.04580577504372014,
+ "origin_offset_vec_mm": [
+  -0.03654832217442561,
+  -0.025861008711373756,
+  -0.009674575030487631
+ ],
+ "point_disagreement_mean_mm": 0.0624417002525775,
+ "point_disagreement_p95_mm": 0.10534317263828574,
+ "point_disagreement_max_mm": 0.11781888017304125,
+ "reference_band": "\u22640.3\u00b0 / \u22640.15 mm (RE_SPEC.md:241)",
+ "reference": {
+  "angle_deg": 0.3,
+  "origin_offset_mm": 0.15,
+  "source": "baseline/oomwoo-re-pipeline/RE_SPEC.md:241"
+ },
+ "within_reference": true,
+ "blocking": false,
+ "note": "REPORT-ONLY (QUESTIONS.md Q2). Golden precedent: both B02 and P03 exceeded this reference band and were still approved with it recorded (see analysis/golden/OOM-B02.md and OOM-P03.md for the actual figures).",
+ "T_qa": [
+  [
+   0.21979312525636716,
+   0.9741554783993975,
+   -0.05207769190814588,
+   35.58897657906161
+  ],
+  [
+   -0.873618529013055,
+   0.17279090536994984,
+   -0.45489995470048017,
+   -87.47580081431543
+  ],
+  [
+   -0.43414473146072474,
+   0.14547991932178786,
+   0.8890185291764291,
+   188.14299635398976
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ]
+}

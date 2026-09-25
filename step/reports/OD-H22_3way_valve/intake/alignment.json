@@ -1,0 +1,431 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-claude-agentic-STL-to-CAD/e9b63eb2-e22a-58ba-b94b-93d549e885a7/scratchpad/run/intake/work.stl": "0668e32d356c0d321ad2e63a9726aed5b4b008613fac1069423ab5125107ada7",
+  "/tmp/claude-0/-home-claude-agentic-STL-to-CAD/e9b63eb2-e22a-58ba-b94b-93d549e885a7/scratchpad/run/intake/datum_spec.json": "136414ce2346d93db201fb6373cc7542e30ab2bc7b93c968156dacd584a8f52b",
+  "/tmp/claude-0/-home-claude-agentic-STL-to-CAD/e9b63eb2-e22a-58ba-b94b-93d549e885a7/scratchpad/run/input/scan.stl": "4ebbb8c4369a8bbcddad7c7dbc57a37a725f605bc266af7697b08c1e63189f92",
+  "/tmp/claude-0/-home-claude-agentic-STL-to-CAD/e9b63eb2-e22a-58ba-b94b-93d549e885a7/scratchpad/run/intake/intake.json": "757dc12b784b0422e77079767efb77a0f207f501f0f051688a4b7372e4a0d753"
+ },
+ "seed": 0,
+ "created": "2026-09-25T11:03:25+00:00",
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [
+  "primary STOP check is self-referential (noise measured on the primary itself)"
+ ],
+ "matrix_4x4": [
+  [
+   0.2222230169263251,
+   0.973707994012426,
+   -0.05009663805545833,
+   35.9441700170955
+  ],
+  [
+   -0.8720400831294155,
+   0.17551374211935822,
+   -0.4568818444006083,
+   -87.77653676782305
+  ],
+  [
+   -0.4360768557993011,
+   0.1452159382559531,
+   0.8881155933281651,
+   187.93070126453617
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.035735190601014405,
+  "method": "rms of RANSAC+SVD plane on flange plate back face (stem side, flat, ~290 mm2) (8304 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "flange plate back face (stem side, flat, ~290 mm2)",
+  "why": "mounting flange seating face: the two screw ears clamp this flat against the machine; largest clean moulded flat, all other features stand off it",
+  "fit_rms_mm": 0.035735190601014405,
+  "fit_max_mm": 0.10857340822177644,
+  "fit_p95_mm": 0.07312140867459024,
+  "n_faces": 8304,
+  "area_mm2": 261.42469727569494,
+  "fit_untrimmed": {
+   "rms": 0.0507975949475254,
+   "p95": 0.11602838244557859,
+   "max": 0.20193996511758605,
+   "n_faces": 9156
+  },
+  "inlier_frac": 0.7429008300567933,
+  "normal_raw": [
+   0.43607685579930106,
+   -0.14521593825595314,
+   -0.8881155933281653
+  ],
+  "centroid_raw": [
+   -2.8223900053561355,
+   -46.97642758616882,
+   -205.31083519518504
+  ],
+  "material_side": "+z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.7429008300567933
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "boss collar OD around the drive tube (tray side) + crenellated drive tube OD, lower unslotted band + stem neck OD below the flange",
+  "why": "collar concentric with the valve rotor axis; clean moulded circle / valve rotor/drive axis / same valve axis; extends the tilt span to ~16 mm",
+  "fit_rms_mm": 0.06938551307893437,
+  "fit_max_mm": 0.2299823068318858,
+  "fit_metric": "median / worst circle residual over stations (kasa,kasa,kasa)",
+  "stations": 17,
+  "r_by_feature": {
+   "boss collar OD around the drive tube (tray side)": {
+    "n": 3,
+    "r_mean": 8.050338971904054,
+    "r_std": 0.07107485126079902
+   },
+   "crenellated drive tube OD, lower unslotted band": {
+    "n": 6,
+    "r_mean": 6.2133508733423755,
+    "r_std": 0.007771233282223996
+   },
+   "stem neck OD below the flange": {
+    "n": 8,
+    "r_mean": 4.07835955502758,
+    "r_std": 0.013773587993189142
+   }
+  },
+  "centre_std_mm": [
+   0.035327760327381386,
+   0.08066307893852488
+  ],
+  "station_detail": [
+   {
+    "z": 2.4,
+    "cx": -90.58027,
+    "cy": -28.16472,
+    "r": 8.14095,
+    "rms": 0.05808,
+    "max": 0.22998,
+    "n": 840,
+    "feature": "boss collar OD around the drive tube (tray side)"
+   },
+   {
+    "z": 4.15,
+    "cx": -90.5664,
+    "cy": -28.17301,
+    "r": 8.04271,
+    "rms": 0.06649,
+    "max": 0.17712,
+    "n": 672,
+    "feature": "boss collar OD around the drive tube (tray side)"
+   },
+   {
+    "z": 4.4,
+    "cx": -90.56982,
+    "cy": -28.14103,
+    "r": 7.96736,
+    "rms": 0.05377,
+    "max": 0.14279,
+    "n": 655,
+    "feature": "boss collar OD around the drive tube (tray side)"
+   },
+   {
+    "z": 5.2,
+    "cx": -90.57823,
+    "cy": -28.18738,
+    "r": 6.2263,
+    "rms": 0.06886,
+    "max": 0.14566,
+    "n": 490,
+    "feature": "crenellated drive tube OD, lower unslotted band"
+   },
+   {
+    "z": 5.44,
+    "cx": -90.57279,
+    "cy": -28.18204,
+    "r": 6.21989,
+    "rms": 0.06877,
+    "max": 0.14556,
+    "n": 470,
+    "feature": "crenellated drive tube OD, lower unslotted band"
+   },
+   {
+    "z": 5.68,
+    "cx": -90.57085,
+    "cy": -28.17879,
+    "r": 6.21329,
+    "rms": 0.06931,
+    "max": 0.15325,
+    "n": 443,
+    "feature": "crenellated drive tube OD, lower unslotted band"
+   },
+   {
+    "z": 5.92,
+    "cx": -90.56846,
+    "cy": -28.18714,
+    "r": 6.21102,
+    "rms": 0.06993,
+    "max": 0.14289,
+    "n": 423,
+    "feature": "crenellated drive tube OD, lower unslotted band"
+   },
+   {
+    "z": 6.16,
+    "cx": -90.57373,
+    "cy": -28.19055,
+    "r": 6.20496,
+    "rms": 0.07071,
+    "max": 0.15179,
+    "n": 425,
+    "feature": "crenellated drive tube OD, lower unslotted band"
+   },
+   {
+    "z": 6.4,
+    "cx": -90.56994,
+    "cy": -28.19495,
+    "r": 6.20463,
+    "rms": 0.07178,
+    "max": 0.1478,
+    "n": 402,
+    "feature": "crenellated drive tube OD, lower unslotted band"
+   },
+   {
+    "z": -11.8,
+    "cx": -90.65972,
+    "cy": -28.0334,
+    "r": 4.10989,
+    "rms": 0.05466,
+    "max": 0.22182,
+    "n": 316,
+    "feature": "stem neck OD below the flange"
+   },
+   {
+    "z": -11.34286,
+    "cx": -90.64805,
+    "cy": -28.01181,
+    "r": 4.08805,
+    "rms": 0.06438,
+    "max": 0.17549,
+    "n": 324,
+    "feature": "stem neck OD below the flange"
+   },
+   {
+    "z": -10.88571,
+    "cx": -90.64766,
+    "cy": -28.01118,
+    "r": 4.08061,
+    "rms": 0.06939,
+    "max": 0.17937,
+    "n": 328,
+    "feature": "stem neck OD below the flange"
+   },
+   {
+    "z": -10.42857,
+    "cx": -90.64683,
+    "cy": -28.00505,
+    "r": 4.07568,
+    "rms": 0.07388,
+    "max": 0.19019,
+    "n": 300,
+    "feature": "stem neck OD below the flange"
+   },
+   {
+    "z": -9.97143,
+    "cx": -90.63528,
+    "cy": -28.01515,
+    "r": 4.06843,
+    "rms": 0.07329,
+    "max": 0.15707,
+    "n": 309,
+    "feature": "stem neck OD below the flange"
+   },
+   {
+    "z": -9.51429,
+    "cx": -90.6317,
+    "cy": -28.0217,
+    "r": 4.06724,
+    "rms": 0.07476,
+    "max": 0.16474,
+    "n": 302,
+    "feature": "stem neck OD below the flange"
+   },
+   {
+    "z": -9.05714,
+    "cx": -90.63366,
+    "cy": -28.02461,
+    "r": 4.06874,
+    "rms": 0.08031,
+    "max": 0.15976,
+    "n": 276,
+    "feature": "stem neck OD below the flange"
+   },
+   {
+    "z": -8.6,
+    "cx": -90.62843,
+    "cy": -28.02245,
+    "r": 4.06824,
+    "rms": 0.0789,
+    "max": 0.15857,
+    "n": 298,
+    "feature": "stem neck OD below the flange"
+   }
+  ],
+  "noise_ref": {
+   "value": 0.07671067262791116,
+   "p95_mm": 0.13436107327882013,
+   "max_mm": 0.14345573534191658,
+   "method": "rms of IRLS circle on crenellated drive tube OD, upper unslotted band (z=7.2, not used by the origin fit) at z=7.2 (n=400)",
+   "circle": {
+    "cx": -0.055368573665879064,
+    "cy": -0.0074907293805219766,
+    "r": 6.202325872793219,
+    "rms": 0.07671067262791116,
+    "max": 0.14345573534191658,
+    "p95": 0.13436107327882013,
+    "n": 400,
+    "iterations": 16
+   }
+  }
+ },
+ "clock": {
+  "rule": "fourier_mass: flange ear axis (screw-hole ears) -> +X",
+  "angle_deg": -84.98979686257178,
+  "why": "the ears carry the mounting screws; ports then lie in the YZ plane",
+  "detail": {
+   "n": 2,
+   "candidates_deg": [
+    -95.01020313742822,
+    84.98979686257178
+   ],
+   "chosen_deg": 84.98979686257178,
+   "strength": 0.9055666561066964,
+   "n_vertices": 22386,
+   "label_rule": "2-fold Fourier phase of flange-ear vertex mass; the ear nearest +90 deg in the levelled pre-clock frame goes to +X (the part is near-mirror-symmetric about the plane through the axis normal to the ears, so which ear is +X is a convention)"
+  }
+ },
+ "tilt_deg": {
+  "value": 0.47026628775462476,
+  "stderr_deg": 0.013991785190590515,
+  "direction_deg": -0.9232331816703727,
+  "method": "common slope, per-feature intercept, 17 stations over 3 feature(s), z -11.800..6.400 vs frame Z; NOT RESOLVABLE (heuristic): 'crenellated drive tube OD, lower unslotted band' (0.56 deg @ -60.2 deg) vs 'stem neck OD below the flange' (0.52 deg @ -4.7 deg) differ by 0.51 deg > combined stderr 0.37 deg",
+  "z_span_mm": 18.200000000000003,
+  "per_feature": [
+   {
+    "feature": "boss collar OD around the drive tube (tray side)",
+    "n_stations": 3,
+    "value": 0.48475844198373425,
+    "stderr_deg": 0.57903665207586,
+    "direction_deg": 42.66827914242737,
+    "z_span_mm": 2.0000000000000004
+   },
+   {
+    "feature": "crenellated drive tube OD, lower unslotted band",
+    "n_stations": 6,
+    "value": 0.5636112917999304,
+    "stderr_deg": 0.23006315374434874,
+    "direction_deg": -60.24558812958211,
+    "z_span_mm": 1.2000000000000002
+   },
+   {
+    "feature": "stem neck OD below the flange",
+    "n_stations": 8,
+    "value": 0.5246451635969782,
+    "stderr_deg": 0.14200972789642197,
+    "direction_deg": -4.723666185719768,
+    "z_span_mm": 3.200000000000001
+   }
+  ],
+  "resolvable": false,
+  "disagreement": "'crenellated drive tube OD, lower unslotted band' (0.56 deg @ -60.2 deg) vs 'stem neck OD below the flange' (0.52 deg @ -4.7 deg) differ by 0.51 deg > combined stderr 0.37 deg"
+ },
+ "origin": {
+  "definition": "valve axis (median circle centre of boss collar, drive tube and stem neck ODs) \u2229 flange back face plane"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": 0.003746228679839684,
+   "tol": 0.035735190601014405,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "tray floor (plate thickness)",
+   "stat": "zmedian",
+   "expected": 2.25,
+   "tol": 0.15,
+   "observed": 2.244712504200095,
+   "ok": true,
+   "tol_source": "provisional levelling offset histogram (explore1.py, 0.1 mm bins) +/- noise"
+  },
+  {
+   "name": "crenellated tube tip (top of part)",
+   "stat": "zmax",
+   "expected": 14.0,
+   "tol": 0.5,
+   "observed": 13.978534830004719,
+   "ok": true,
+   "tol_source": "provisional levelling bounds; checks material side / sign"
+  },
+  {
+   "name": "port ends (bottom of part)",
+   "stat": "zmin",
+   "expected": -30.8,
+   "tol": 0.5,
+   "observed": -30.83496474978719,
+   "ok": true,
+   "tol_source": "provisional levelling bounds; checks material side / sign"
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -21.115872863704034,
+   -19.80081966513901,
+   -30.83496474978719
+  ],
+  [
+   21.44067499753828,
+   20.104067241056473,
+   13.978534830004719
+  ]
+ ],
+ "extents_aligned": [
+  42.556547861242315,
+  39.904886906195486,
+  44.81349957979191
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-claude-agentic-STL-to-CAD/e9b63eb2-e22a-58ba-b94b-93d549e885a7/scratchpad/run/intake/aligned_work.stl",
+  "sha256": "4c6daca2e19fb23588594c73a7c015e5d274592482e6ce47af1a02dd373cc16f"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "finding",
+   "note": "not resolvable: per-feature tilt vectors disagree beyond their combined stderr (heuristic, review M2); common slope, per-feature intercept, 17 stations over 3 feature(s), z -11.800..6.400 vs frame Z; NOT RESOLVABLE (heuristic): 'crenellated drive tube OD, lower unslotted band' (0.56 deg @ -60.2 deg) vs 'stem neck OD below the flange' (0.52 deg @ -4.7 deg) differ by 0.51 deg > combined stderr 0.37 deg; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": true,
+   "result": "finding",
+   "note": "FLAG: no calipers (scan-only run, DECISIONS.md MEASUREMENTS); 0 ENV dims < 3; units assumed mm, scale unverified, no scale applied"
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

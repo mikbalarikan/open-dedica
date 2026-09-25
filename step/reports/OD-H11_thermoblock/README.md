@@ -14,7 +14,7 @@
 | File | Content |
 |---|---|
 | [`step/OD-H11_thermoblock.step`](../../OD-H11_thermoblock.step) | **Use this for CAD.** Datum frame: base at Z = 0, body axis = +Z, top face Z = 47.64. |
-| [`step/OD-H11_thermoblock_scanframe.step`](../../OD-H11_thermoblock_scanframe.step) | Same solid in the original scan coordinates (sits exactly on the raw STL). |
+| *(scan-frame STEP not published)* | To overlay the CAD on the raw scan, apply the inverse of `src/T.npy` (scan → datum 4×4) to the STEP. |
 | `*.json`, `*.png` | Parameters, deviation report, section overlays, signed deviation map |
 | `src/` | `build_ft.py` (feature tree), `export_final.py`, `gate_ft.py`; `T.npy` = 4×4 scan → datum transform; `bore_prof.json` (bore lobe profiles), `ports.json` (pipe / terminal axes) |
 

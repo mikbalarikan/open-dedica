@@ -51,7 +51,7 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-H18` | OD-H10 | OEM | TCO 192 °C thermal cutoff — **mandatory** | 68 | 511876 | 1 (+1 spare) | CALIPER |  | FixPart | 5 | #2 | ☐ |
 | `OD-H19` | OD-H10 | OEM | TCO fixing bracket | 69 | 6013211951 | 1 | SCAN | steel | FixPart | 3 | #2 | ☐ |
 | `OD-H21` | OD-H00 | OEM | Anti-drip valve | 39 | 7313260161 | 1 | SCAN |  | FixPart / 4delonghi | 5 | #6 | ☐ |
-| `OD-H22` | OD-H00 | OEM | 3-way valve | 43 | AS00004266 | 1 | SCAN |  | 4delonghi `valve BARM30E` | 5 | #6 | ☐ |
+| `OD-H22` | OD-H00 | OEM | 3-way valve | 43 | AS00004266 | 1 | SCAN |  | 4delonghi `valve BARM30E` | 5 | #6 | 🧊 |
 | `OD-H23` | OD-H00 | OEM | 3-way valve connector | 75 | AS00005380 | 1 | CALIPER |  | 4delonghi | 3 | #6 | ☐ |
 | `OD-H24` | OD-H00 | OEM | Flowmeter | 45 | 5213225251 | 1 | SCAN |  | FixPart / 4delonghi | 10–15 | #7 | 🧊 |
 | `OD-H25` | OD-H00 | OEM | Flowmeter–pump tube | 37 | AS00005774 | 1 | ENVELOPE |  | FixPart | 4 |  | ☐ |

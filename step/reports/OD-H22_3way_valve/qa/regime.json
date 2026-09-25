@@ -1,0 +1,18 @@
+{
+ "schema": "stl-re/regime@1",
+ "tool": "intake.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {},
+ "seed": 0,
+ "created": "2026-09-25T11:04:06+00:00",
+ "name": "baseline-skill",
+ "source": "baseline/skills/stl2step-build123d/SKILL.md:87",
+ "bands": {
+  "p95_mm": 0.3,
+  "max_mm": 0.8,
+  "tier1_abs_mm": null,
+  "interface_max_mm": null
+ },
+ "material_class": "plastic",
+ "why": "Scan-only run (no calipers, DECISIONS.md MEASUREMENTS); moulded black plastic part; user wrote 'tolerans = p95'. Orchestrator default, confirmed by Ikbal via decision card 2026-09-25 10:54 ('Plastic 0.30'), declared before any gate numbers."
+}

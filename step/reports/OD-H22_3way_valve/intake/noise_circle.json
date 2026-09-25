@@ -1,0 +1,26 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "aligned_work.stl": "4c6daca2e19fb23588594c73a7c015e5d274592482e6ce47af1a02dd373cc16f"
+ },
+ "seed": 0,
+ "created": "2026-09-25T11:03:22+00:00",
+ "scan_noise_mm": {
+  "value": 0.07671067262791116,
+  "p95_mm": 0.13436107327882013,
+  "max_mm": 0.14345573534191658,
+  "method": "rms of IRLS circle on crenellated drive tube OD, upper unslotted band (z=7.2, not used by the origin fit) at z=7.2 (n=400)",
+  "circle": {
+   "cx": -0.055368573665879064,
+   "cy": -0.0074907293805219766,
+   "r": 6.202325872793219,
+   "rms": 0.07671067262791116,
+   "max": 0.14345573534191658,
+   "p95": 0.13436107327882013,
+   "n": 400,
+   "iterations": 16
+  }
+ }
+}

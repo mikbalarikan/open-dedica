@@ -1,0 +1,57 @@
+{
+  "census": {
+    "analytic_area_share": 1.0,
+    "analytic_set": [
+      "plane",
+      "cylinder",
+      "cone",
+      "sphere",
+      "torus",
+      "revolution"
+    ],
+    "by_type": {
+      "cone": {
+        "area_mm2": 126.935122,
+        "area_share": 0.023152,
+        "count": 1
+      },
+      "cylinder": {
+        "area_mm2": 3067.417651,
+        "area_share": 0.55948,
+        "count": 60
+      },
+      "plane": {
+        "area_mm2": 2058.596488,
+        "area_share": 0.375477,
+        "count": 93
+      },
+      "torus": {
+        "area_mm2": 229.67406,
+        "area_share": 0.041891,
+        "count": 8
+      }
+    },
+    "faces": 162,
+    "freeform_faces": 0,
+    "plane_face_count": 93,
+    "plane_face_median_area_mm2": 8.710117,
+    "ruled_like_faces": 0,
+    "total_area_mm2": 5482.623321
+  },
+  "check": "CHK-PATCHWORK",
+  "created": "2026-09-25T11:29:22+00:00",
+  "expected_faces": [
+    140,
+    260
+  ],
+  "faces_in_expected_range": true,
+  "gated": false,
+  "inputs": {
+    "OD-H22_3-way-valve_datum.step": "b756534164cd47492b877448c6c9a7f248f09ed662d901d9e32543fc16678276"
+  },
+  "notes": [],
+  "schema": "stl-re/face_stats@1",
+  "seed": 0,
+  "tool": "face_stats.py",
+  "tool_version": "stl-re-rebuild-build123d@1"
+}

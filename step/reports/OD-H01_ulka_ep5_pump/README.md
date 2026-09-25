@@ -14,7 +14,7 @@
 | File | Content |
 |---|---|
 | [`step/OD-H01_ulka_ep5_pump.step`](../../OD-H01_ulka_ep5_pump.step) | **Use this for CAD.** Datum frame: pump axis = +Z (outlet −Z, inlet fitting +Z), X = normal of the sheet-metal frame side plate, origin on the axis. |
-| [`step/OD-H01_ulka_ep5_pump_scanframe.step`](../../OD-H01_ulka_ep5_pump_scanframe.step) | Same solid in the original scan coordinates (sits exactly on the raw STL). |
+| *(scan-frame STEP not published)* | To overlay the CAD on the raw scan, apply the inverse of `src/T1.npy` (scan → datum 4×4) to the STEP. |
 | `*.json`, `*.png` | Parameters (104), gate / validator / export reports, overlays, deviation map |
 | `src/` | Rebuild + gate scripts; `T1.npy` / `alignment_T1.json` = 4×4 scan → datum transform |
 

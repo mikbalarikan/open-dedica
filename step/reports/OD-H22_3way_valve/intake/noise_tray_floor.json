@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "0668e32d356c0d321ad2e63a9726aed5b4b008613fac1069423ab5125107ada7"
+ },
+ "seed": 0,
+ "created": "2026-09-25T11:00:53+00:00",
+ "scan_noise_mm": {
+  "value": 0.03547059073065056,
+  "p95_mm": 0.07052736063649206,
+  "max_mm": 0.10484168980846824,
+  "method": "rms of RANSAC+SVD plane on tray floor (up-facing flat inside the flange rim, opposite side of the plate from the primary) (8295 faces)"
+ }
+}

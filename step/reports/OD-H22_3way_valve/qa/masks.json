@@ -1,0 +1,8 @@
+{"masks": [
+ {"name": "M1 damaged +X ear tip", "type": "region", "applies_to": "both", "select": {"x": [20.4, null]},
+  "why": "the +X ear tip of this specimen is damaged/torn (jagged outline); the CAD follows the undamaged -X ear by symmetry, so deviation here is specimen damage, not a surface deviation of the modelled design",
+  "evidence": "intake/INTAKE_CARD.md §2 Artefact zones (+X ear tip damaged/torn, x>20.4) and §8; pre-declared at intake before any gate"},
+ {"name": "M2 open boundary", "type": "open_boundary", "applies_to": "cad", "radius_mm": 0.8,
+  "why": "distance from a CAD point to a scan hole EDGE (unscanned bore interiors, 28 open loops) is not a surface deviation",
+  "evidence": "skill mask-policy.md example M3 / B02 q20_tier2.py:9-10; intake/INTAKE_CARD.md §2 (3,255 open edges / 28 loops)"}
+]}
