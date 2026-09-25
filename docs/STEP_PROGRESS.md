@@ -24,10 +24,10 @@ Commit `bom.csv`, `BOM.md` and `img/step_progress.svg` together. CI fails if the
 
 In the overlays, grey is the rebuilt STEP and red is the raw scan. Where both show, the CAD sits on the scan surface.
 
-| `OD-H01` ULKA EP5 pump: modeled | `OD-H11` Thermoblock: modeled | `OD-H24` Flowmeter: modeled |
-|---|---|---|
-| ![OD-H01 pump STEP](img/progress/OD-H01_pump_cad.png) | ![OD-H11 thermoblock STEP vs scan](img/progress/OD-H11_thermoblock_overlay.png) | ![OD-H24 flowmeter STEP vs scan](img/progress/OD-H24_flowmeter_overlay.png) |
-| [report](../step/reports/OD-H01_ulka_ep5_pump/) | [report](../step/reports/OD-H11_thermoblock/) | [report](../step/reports/OD-H24_flowmeter/) |
+| `OD-H01` ULKA EP5 pump: modeled | `OD-H11` Thermoblock: modeled | `OD-H24` Flowmeter: modeled | `OD-H22` 3-way valve: modeled |
+|---|---|---|---|
+| ![OD-H01 pump STEP](img/progress/OD-H01_pump_cad.png) | ![OD-H11 thermoblock STEP vs scan](img/progress/OD-H11_thermoblock_overlay.png) | ![OD-H24 flowmeter STEP vs scan](img/progress/OD-H24_flowmeter_overlay.png) | ![OD-H22 3-way valve STEP vs scan](img/progress/OD-H22_3way_valve_overlay.png) |
+| [report](../step/reports/OD-H01_ulka_ep5_pump/) | [report](../step/reports/OD-H11_thermoblock/) | [report](../step/reports/OD-H24_flowmeter/) | [report](../step/reports/OD-H22_3way_valve/) |
 
 ## Parts on the scanner
 
@@ -35,4 +35,4 @@ Donor parts on the scan turntable, matched to BOM numbers. Items 2 and 4 are sti
 
 ![Donor parts matched to BOM numbers](img/donor_parts_bom.png)
 
-Next up: check-fixtures for `OD-H01`, `OD-H11` and `OD-H24` (stage 4). Every part still marked `open` in stage 1 needs someone with the part to scan it. See [CONTRIBUTING.md](../CONTRIBUTING.md).
+Next up: check-fixtures for `OD-H01`, `OD-H11`, `OD-H24` and `OD-H22` (stage 4). Every part still marked `open` in stage 1 needs someone with the part to scan it. See [CONTRIBUTING.md](../CONTRIBUTING.md).

@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "work.stl": "0668e32d356c0d321ad2e63a9726aed5b4b008613fac1069423ab5125107ada7"
+ },
+ "seed": 0,
+ "created": "2026-09-25T11:02:09+00:00",
+ "scan_noise_mm": {
+  "value": 0.035735190601014405,
+  "p95_mm": 0.07312140867459024,
+  "max_mm": 0.10857340822177644,
+  "method": "rms of RANSAC+SVD plane on flange plate back face (stem side, flat, ~290 mm2) (8304 faces)"
+ }
+}

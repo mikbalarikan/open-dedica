@@ -1,0 +1,121 @@
+{
+ "schema": "stl-re/registration@1",
+ "tool": "tier2_icp.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "4ebbb8c4369a8bbcddad7c7dbc57a37a725f605bc266af7697b08c1e63189f92",
+  "intake/alignment.json": "81c7bf4635456e8c66d025e9c3aeff849e9e9604ddbee48ba8a59335f860930a",
+  "build/OD-H22_3-way-valve_datum.step": "b756534164cd47492b877448c6c9a7f248f09ed662d901d9e32543fc16678276",
+  "qa/icp_scan_masks.json": "2a37613c608090529a090c8f31037c065678d02da11ec0bfe238f7b55ff484dc"
+ },
+ "seed": 11,
+ "created": "2026-09-25T11:35:02+00:00",
+ "method": "point-to-point ICP, CAD samples -> scan samples, masked correspondences (B02 q20_tier2.py)",
+ "scan_kind": "decimated",
+ "iterations": 33,
+ "max_iterations": 60,
+ "converged": true,
+ "delta_deg": 0.3836557284760999,
+ "delta_mm": 0.01425836052584082,
+ "max_point_move_mm": 0.23073306037202926,
+ "final_kept_fraction": 0.8113766666666666,
+ "T_refine": [
+  [
+   0.9999821384717041,
+   -0.001521321461079774,
+   -0.005779992955557888,
+   0.007491512637392483
+  ],
+  [
+   0.0015387639794969819,
+   0.9999942725029024,
+   0.003014492792533214,
+   -0.007968371342912513
+  ],
+  [
+   0.005775373838085483,
+   -0.003023332994049204,
+   0.999978752031575,
+   -0.009147849005645812
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "T_refine_meaning": "maps datum-frame CAD onto the aligned scan; deviation_gate applies its inverse to the scan. QA-only: never written back to alignment.json (CHK-CIRCULAR).",
+ "trace_tail": [
+  {
+   "it": 27,
+   "step": 8.869074657619536e-06,
+   "rot_deg": 6.722620413208828e-06,
+   "trans_mm": 2.1464542444107082e-06,
+   "kept_fraction": 0.8113766666666666,
+   "mean_d_kept": 0.13875520267658964
+  },
+  {
+   "it": 28,
+   "step": 5.861757570526285e-06,
+   "rot_deg": 4.353408482428142e-06,
+   "trans_mm": 1.508349088098143e-06,
+   "kept_fraction": 0.8113766666666666,
+   "mean_d_kept": 0.13875533894267436
+  },
+  {
+   "it": 29,
+   "step": 8.081148904325308e-06,
+   "rot_deg": 6.830189170012755e-06,
+   "trans_mm": 1.2509597343125537e-06,
+   "kept_fraction": 0.8113766666666666,
+   "mean_d_kept": 0.13875541774672384
+  },
+  {
+   "it": 30,
+   "step": 4.836479810265864e-06,
+   "rot_deg": 3.818191820832846e-06,
+   "trans_mm": 1.0182879894330179e-06,
+   "kept_fraction": 0.8113766666666666,
+   "mean_d_kept": 0.13875549584296915
+  },
+  {
+   "it": 31,
+   "step": 2.4179797266226873e-06,
+   "rot_deg": 2.091309789151873e-06,
+   "trans_mm": 3.266699374708143e-07,
+   "kept_fraction": 0.8113766666666666,
+   "mean_d_kept": 0.1387555395342355
+  },
+  {
+   "it": 32,
+   "step": 7.561261702165292e-08,
+   "rot_deg": 0.0,
+   "trans_mm": 7.561261702165292e-08,
+   "kept_fraction": 0.8113766666666666,
+   "mean_d_kept": 0.13875553356924905
+  }
+ ],
+ "reference_masks_removed": [
+  {
+   "name": "M1 damaged +X ear tip",
+   "why": "the +X ear tip of this specimen is damaged/torn (jagged outline); the CAD models the undamaged -X ear by symmetry, so this scan region is not a surface of the modelled design",
+   "faces": 8549,
+   "fraction": 0.017240023312044623
+  }
+ ],
+ "params": {
+  "ns": 3000000,
+  "scan_seed": 11,
+  "nc": 300000,
+  "cad_seed": 13,
+  "normal_deg": 70.0,
+  "boundary_mm": 0.8,
+  "max_corr_mm": 3.0,
+  "max_iter": 60,
+  "tol": 1e-06
+ },
+ "notes": [
+  "welded: 249510 verts / 495881 faces"
+ ]
+}

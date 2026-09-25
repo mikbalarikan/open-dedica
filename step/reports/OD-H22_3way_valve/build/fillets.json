@@ -1,0 +1,101 @@
+{
+  "check": "CHK-FILLET",
+  "created": "2026-09-25T11:29:18+00:00",
+  "fillets": [
+    {
+      "feature": "F02 concave outline blends",
+      "n_edges": 4,
+      "op": "fillet",
+      "param": "outline_blend_R",
+      "status": "OK",
+      "target": 4.617,
+      "tried": [
+        {
+          "error": null,
+          "radius": 4.617
+        }
+      ],
+      "used": 4.617,
+      "why_fallback": ""
+    },
+    {
+      "feature": "F03 back-edge round",
+      "n_edges": 12,
+      "op": "fillet",
+      "param": "back_edge_R",
+      "status": "OK",
+      "target": 1.868,
+      "tried": [
+        {
+          "error": null,
+          "radius": 1.868
+        }
+      ],
+      "used": 1.868,
+      "why_fallback": ""
+    },
+    {
+      "feature": "F04 pocket-tool concave blends (outline_blend_R + rim_wall_t)",
+      "n_edges": 4,
+      "op": "fillet",
+      "param": "outline_blend_R",
+      "status": "OK",
+      "target": 6.064,
+      "tried": [
+        {
+          "error": null,
+          "radius": 6.064
+        }
+      ],
+      "used": 6.064,
+      "why_fallback": ""
+    },
+    {
+      "feature": "F08 port0 block axial corner rounds",
+      "n_edges": 4,
+      "op": "fillet",
+      "param": "port_block_corner_R",
+      "status": "OK",
+      "target": 0.5,
+      "tried": [
+        {
+          "error": null,
+          "radius": 0.5
+        }
+      ],
+      "used": 0.5,
+      "why_fallback": ""
+    },
+    {
+      "feature": "F08 port1 block axial corner rounds",
+      "n_edges": 4,
+      "op": "fillet",
+      "param": "port_block_corner_R",
+      "status": "OK",
+      "target": 0.5,
+      "tried": [
+        {
+          "error": null,
+          "radius": 0.5
+        }
+      ],
+      "used": 0.5,
+      "why_fallback": ""
+    }
+  ],
+  "inputs": {
+    "../measure/params.json": "2e8f4dafed0892b59b70ffa463751eb6bfe480df0ebec3b29801f6cd5c06eb82",
+    "/tmp/claude-0/-home-claude-agentic-STL-to-CAD/e9b63eb2-e22a-58ba-b94b-93d549e885a7/scratchpad/run/build/model.py": "a447b3e5f79c72039eb793e763b61ee8fd9fceffe9b057581dcf97a5a9d1a357"
+  },
+  "schema": "stl-re/fillets@1",
+  "seed": 0,
+  "summary": {
+    "FAILED": 0,
+    "NO_EDGES": 0,
+    "OK": 5,
+    "REDUCED": 0,
+    "SELECTOR_ERROR": 0
+  },
+  "tool": "fillet_log.py",
+  "tool_version": "stl-re-rebuild-build123d@1"
+}

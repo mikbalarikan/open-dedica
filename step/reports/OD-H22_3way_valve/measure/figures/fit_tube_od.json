@@ -1,0 +1,33 @@
+{
+ "schema": "stl-re/fit.json@1",
+ "tool": "fits.py",
+ "tool_version": "stl-re-measure-intent@1.0.0",
+ "inputs": {
+  "input/scan.stl": "4ebbb8c4369a8bbcddad7c7dbc57a37a725f605bc266af7697b08c1e63189f92",
+  "intake/alignment.json": "81c7bf4635456e8c66d025e9c3aeff849e9e9604ddbee48ba8a59335f860930a"
+ },
+ "seed": 0,
+ "created": "2026-09-25T11:10:37+00:00",
+ "name": "tube_od",
+ "fit": "circle",
+ "projection": "xy",
+ "estimator": "mesh vertices; box z=5.3,8.6 r=5.8,6.7 theta=None",
+ "result": {
+  "method": "kasa",
+  "cx": -0.054211,
+  "cy": -0.011335,
+  "r": 6.203448,
+  "d": 12.406895,
+  "residual": {
+   "n": 6321,
+   "rms": 0.073983,
+   "p95": 0.131646,
+   "max": 0.200664
+  },
+  "check_percentile_r": {
+   "p50": 6.218697,
+   "p5": 6.080956,
+   "p95": 6.321294
+  }
+ }
+}

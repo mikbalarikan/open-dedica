@@ -1,0 +1,21 @@
+build123d 0.13.0  params=../measure/params.json  (builder self-check, not QA)
+F01 flange prism: faces=10 vol=3532.5
+F02 concave corner points [(9.663, 6.597), (9.663, -6.597), (-9.678, 6.575), (-9.678, -6.575)]
+F02 concave outline blends fillet target R4.617 used R4.617 on 4 edges OK
+F03 back-edge round fillet target R1.868 used R1.868 on 12 edges OK
+F04 pocket-tool concave blends (outline_blend_R + rim_wall_t) fillet target R6.064 used R6.064 on 4 edges OK
+F04 tray pocket: floor z=2.26, wall=1.447
+F05 cone: top z=-4.234 r=6.547, bottom z=-7.172 r=4.074 (derived)
+F05 core revolve fused: solids=1
+F06 gussets: bottom z at axis -10.490; solids=1
+F08 port0 block axial corner rounds fillet target R0.5 used R0.5 on 4 edges OK
+F07/F08 port0: elev=34.059 z0=-14.301 t sleeve/block/end = 7.25/15.368..19.022/20.054; solids=1
+F08 port1 block axial corner rounds fillet target R0.5 used R0.5 on 4 edges OK
+F07/F08 port1: elev=35.03 z0=-14.42 t sleeve/block/end = 6.85/15.077..18.78/19.873; solids=1
+F09 rib: z -23.696..-18.587 (top buried 1.0 into the stem); solids=1
+F10 tube slot theta=-0.11 w=3.086 floor z=8.912
+F10 tube slot theta=90.2 w=2.722 floor z=8.704
+F10 tube slot theta=179.79 w=3.041 floor z=8.912
+F10 tube slot theta=269.38 w=2.572 floor z=8.704
+F10/F11 cut tools subtracted once: solids=1
+F12 clean: faces=162 volume=6395.59

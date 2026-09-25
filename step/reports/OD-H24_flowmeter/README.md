@@ -14,7 +14,7 @@
 | File | Content |
 |---|---|
 | [`step/OD-H24_flowmeter.step`](../../OD-H24_flowmeter.step) | **Use this for CAD.** Datum frame: Z = cup axis (LSQ from wall normals, checked on 10 sections, centre drift ≤ 0.05 mm), Z = 0 on the bottom rim face, inlet (lower) pipe runs −Y. |
-| [`step/OD-H24_flowmeter_scanframe.step`](../../OD-H24_flowmeter_scanframe.step) | Same solid in the original scan coordinates (sits exactly on the raw STL). |
+| *(scan-frame STEP not published)* | To overlay the CAD on the raw scan, apply the inverse of `src/T.npy` (scan → datum 4×4) to the STEP. |
 | `*.json`, `*.png` | Parameters, export / flat checks, deviation report, CAD and scan views, section overlays, signed deviation map |
 | `src/` | `build_fm.py` (feature tree), `export_final.py`, `export_flat.py`, `gate_fm.py`, `overlay.py`, `T.npy` (4×4 scan → datum), `tubes.json`, `measure/` (datum + measurement scripts) |
 

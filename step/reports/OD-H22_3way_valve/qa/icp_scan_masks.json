@@ -1,0 +1,5 @@
+{"masks": [
+ {"name": "M1 damaged +X ear tip", "select": {"x": [20.4, null]},
+  "why": "the +X ear tip of this specimen is damaged/torn (jagged outline); the CAD models the undamaged -X ear by symmetry, so this scan region is not a surface of the modelled design",
+  "evidence": "intake/INTAKE_CARD.md §2 'Artefact zones' (+X ear tip damaged/torn, x>20.4) and §8; declared at intake before any gate"}
+]}

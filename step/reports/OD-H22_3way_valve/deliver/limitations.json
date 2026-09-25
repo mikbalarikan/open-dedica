@@ -1,0 +1,78 @@
+{
+  "schema": "stl-re/limitations@1",
+  "part": {
+    "name": "OD-H22_3-way-valve",
+    "what_it_is": "A molded plastic 3-way valve body: a flange with an ear-hole pair, a crenellated drive tube and collar, a stem with gussets, and two Y-configured ports with clip blocks.",
+    "reference_photo": "input/photos/photo_1.png"
+  },
+  "method_summary": [
+    "Intake: aligned the raw scan to a datum frame (flange back face = z=0, valve axis = +Z, ear axis = +X) and declared mask M1 over the damaged +X ear tip.",
+    "Measure: derived params.json from the scan and photos, scan-only (no calipers supplied).",
+    "Build: build123d model.py built the part feature-by-feature (F01-F12) from params.json and exported datum-frame and scan-frame STEP.",
+    "Verify: an independent verifier re-registered scan to CAD by its own ICP, computed masked and unmasked scan->CAD and CAD->scan deviation, zones, and over-band clusters, and graded against the baseline-skill plastic band.",
+    "Deliver: packaged the verified, owner-accepted BAND_NOT_MET result with reproducibility re-run."
+  ],
+  "limitations": [
+    {
+      "id": "L1",
+      "text": "ABSENT: no Tier-1 (no calipers run); no calipers were supplied. Absolute scale is UNVERIFIED (not caliper-checked).",
+      "rerun_trigger": "any caliper reading (e.g. drive tube OD, ear hole pitch)",
+      "evidence": "DECISIONS.md MEASUREMENTS"
+    },
+    {
+      "id": "L2",
+      "text": "NOT MET: scan->CAD masked max {{gate:deviation.scan_to_cad.max}} exceeds the {{gate:regime.bands.max_mm}} mm band. The whole-part scan->CAD p95 {{gate:deviation.scan_to_cad.p95}} is within the {{gate:regime.bands.p95_mm}} mm band. The max miss is set by 130 scan points inside the +X ear screw hole back-face mouth, which photos show as an open through hole -- probable scanner bridging/fuzz over the small hole mouth, not a CAD omission. Owner accepted this miss (DECISIONS.md ACCEPT-BAND).",
+      "rerun_trigger": "specimen inspection of the +X ear hole for flash, or a declared artefact mask before a re-grade",
+      "evidence": "qa/VERDICT.md#Over-band scan->CAD points; decisions/accept_band.md"
+    },
+    {
+      "id": "L3",
+      "text": "ASSUMED: Unscanned interiors are assumed geometry -- the drive-tube bore floor/lower bore, port bores beyond t~13-16, clip-slot interiors, the stem/gusset root coverage hole, and the internal flow passages. NOT MET: observable CAD->scan p95 {{gate:deviation.cad_to_scan_observable.p95}} and max {{gate:deviation.cad_to_scan_observable.max}} exceed the {{gate:regime.bands.p95_mm}}/{{gate:regime.bands.max_mm}} mm band because the ray test counts these open-mouthed bores as observable (unobservable fraction only {{gate:deviation.unobservable_fraction}}%). A rebuild without new data cannot fix this. Owner accepted this miss (DECISIONS.md ACCEPT-BAND).",
+      "rerun_trigger": "rescan covering the bores, or a sectioned/caliper measurement of bore depths and the tube floor",
+      "evidence": "qa/gate.json#limitations[1]; decisions/accept_band.md"
+    },
+    {
+      "id": "L4",
+      "text": "PHOTO-INFERRED, unconfirmed: Mask M1 (+X ear tip, pre-declared at intake as damage) rests on an unconfirmed premise -- photo_4 shows a pip at an ear tip. Unmasked and masked scan->CAD max are identical, so M1 does not change any result.",
+      "rerun_trigger": "operator confirms whether the +X ear-tip lump is damage or a moulded feature",
+      "evidence": "qa/gate.json#limitations[2]; input/photos/photo_4.png"
+    },
+    {
+      "id": "L5",
+      "text": "ASSUMED params: tube_bore_bottom_z, port_block_corner_R, port_bore2_end_t and rib_half_len are assumed (not measured), because the corresponding regions were not scanned or calipered.",
+      "rerun_trigger": "a rescan or caliper reading covering any of these regions",
+      "evidence": "measure/params.json"
+    }
+  ],
+  "assumptions": [
+    {
+      "text": "The drive-tube bore floor, lower bore, port bores beyond t~13-16, clip-slot interiors, the stem/gusset root coverage hole and internal flow passages are assumed geometry, not measured.",
+      "source": "assumed",
+      "evidence": "qa/VERDICT.md#Misses, per region; measure/params.json"
+    },
+    {
+      "text": "tube_bore_bottom_z, port_block_corner_R, port_bore2_end_t and rib_half_len are assumed values.",
+      "source": "assumed",
+      "evidence": "measure/params.json"
+    },
+    {
+      "text": "The +X ear-tip lump seen in photo_4 is treated as specimen damage (mask M1), not a moulded feature; this is unconfirmed.",
+      "source": "photo-inferred",
+      "evidence": "qa/VERDICT.md#Masks; input/photos/photo_4.png"
+    }
+  ],
+  "claim_boundary": {
+    "not_fit_for": [
+      "Not fit for manufacture or tooling until the unscanned bores and the tube floor are measured (caliper or rescan) and the +X ear hole is inspected for flash.",
+      "Not fit for hose, clip or drive-spline fit decisions until bore and interior dimensions are caliper-verified.",
+      "Not fit for absolute-scale-critical use: no caliper reading has verified scale."
+    ],
+    "fit_for": [
+      "Envelope, packaging and clearance work, and visualization: the scan->CAD p95 {{gate:deviation.scan_to_cad.p95}} shows the outer skin the scanner saw matches the model within the {{gate:regime.bands.p95_mm}} mm band.",
+      "Design-intent reference for the flange, ears, drive tube, collar, stem, gussets, ports and clip blocks."
+    ]
+  },
+  "repro_commands": [
+    "python3 model.py --params ../measure/params.json --alignment ../intake/alignment.json --out . --part OD-H22_3-way-valve --scripts <stl-re-rebuild-build123d>/scripts"
+  ]
+}

@@ -1,0 +1,26 @@
+{"zones": [
+ {"name": "Z1 flange back face and ear holes", "kind": "functional_interface",
+  "select": {"any_of": [{"z": [-0.3, 0.3], "r": [7.0, null], "abs_nz": [0.9, null]},
+                        {"abs_x": [13.2, 17.6], "abs_y": [null, 2.2], "z": [-0.1, 2.4], "abs_nz": [null, 0.3]}]},
+  "note": "INTAKE_CARD §4 Z1 mounting seat + screw-ear hole walls; baseline-skill has no interface band -> reported"},
+ {"name": "Z2 drive tube and collar", "kind": "functional_interface",
+  "select": {"r": [null, 8.4], "z": [1.0, 14.2]},
+  "note": "INTAKE_CARD §4 Z2 knob/rotor drive interface: boss collar, tube OD, bore, 4 slots"},
+ {"name": "Z3 ports clip blocks and bores", "kind": "functional_interface",
+  "select": {"abs_y": [8.0, null], "z": [null, -8.0]},
+  "note": "INTAKE_CARD §4 Z3 hose ports: neck, sleeve, clip block+slots, lip, bore"},
+ {"name": "Z4 stem junction gussets tray rim", "kind": "region",
+  "select": {"not": {"any_of": [
+     {"z": [-0.3, 0.3], "r": [7.0, null], "abs_nz": [0.9, null]},
+     {"abs_x": [13.2, 17.6], "abs_y": [null, 2.2], "z": [-0.1, 2.4], "abs_nz": [null, 0.3]},
+     {"r": [null, 8.4], "z": [1.0, 14.2]},
+     {"abs_y": [8.0, null], "z": [null, -8.0]}]}},
+  "note": "INTAKE_CARD §4 Z4 structural/cosmetic (remainder of the part)"},
+ {"name": "I1 drive tube bore lower (occluded)", "kind": "interior",
+  "select": {"r": [null, 4.9], "z": [1.0, 7.0]},
+  "note": "INTAKE_CARD §3: bore wall open below z~1.5-1.9, floor/web not scanned; reported only"},
+ {"name": "B1 z above 5.7 (tube)", "kind": "region", "select": {"z": [5.7, null]}},
+ {"name": "B2 z 0..5.7 (plate, tray, collar)", "kind": "region", "select": {"z": [0.0, 5.7]}},
+ {"name": "B3 z -12..0 (stem, gussets)", "kind": "region", "select": {"z": [-12.0, 0.0]}},
+ {"name": "B4 z below -12 (junction, ports)", "kind": "region", "select": {"z": [null, -12.0]}}
+]}

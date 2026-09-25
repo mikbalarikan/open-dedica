@@ -1,0 +1,120 @@
+{
+ "mesh": "work.stl",
+ "raw_scan": "../input/scan.stl",
+ "intake_json": "intake.json",
+ "out_dir": ".",
+ "seed": 0,
+ "noise": {
+  "from": "noise_primary.json"
+ },
+ "chk_scale": {
+  "ran": true,
+  "result": "finding",
+  "note": "FLAG: no calipers (scan-only run, DECISIONS.md MEASUREMENTS); 0 ENV dims < 3; units assumed mm, scale unverified, no scale applied"
+ },
+ "primary": {
+  "type": "plane",
+  "approx_normal": [
+   0.4375,
+   -0.146,
+   -0.8873
+  ],
+  "material_side": "+z",
+  "desc": "flange plate back face (stem side, flat, ~290 mm2)",
+  "why": "mounting flange seating face: the two screw ears clamp this flat against the machine; largest clean moulded flat, all other features stand off it"
+ },
+ "origin": {
+  "xy": [
+   {
+    "method": "kasa",
+    "r_hint": 8.05,
+    "r_tol": 0.25,
+    "rms_max": 0.15,
+    "z_range": [
+     2.4,
+     4.4
+    ],
+    "stations": 9,
+    "desc": "boss collar OD around the drive tube (tray side)",
+    "why": "collar concentric with the valve rotor axis; clean moulded circle"
+   },
+   {
+    "method": "kasa",
+    "r_hint": 6.22,
+    "r_tol": 0.25,
+    "rms_max": 0.15,
+    "z_range": [
+     5.2,
+     6.4
+    ],
+    "stations": 6,
+    "desc": "crenellated drive tube OD, lower unslotted band",
+    "why": "valve rotor/drive axis"
+   },
+   {
+    "method": "kasa",
+    "r_hint": 4.08,
+    "r_tol": 0.2,
+    "rms_max": 0.15,
+    "z_range": [
+     -11.8,
+     -8.6
+    ],
+    "stations": 8,
+    "desc": "stem neck OD below the flange",
+    "why": "same valve axis; extends the tilt span to ~16 mm"
+   }
+  ],
+  "definition": "valve axis (median circle centre of boss collar, drive tube and stem neck ODs) \u2229 flange back face plane"
+ },
+ "clock": {
+  "rule": "fourier_mass",
+  "n": 2,
+  "r_range": [
+   12.5,
+   22.0
+  ],
+  "z_range": [
+   0.2,
+   5.8
+  ],
+  "pick_nearest_deg": 90.0,
+  "label_rule": "2-fold Fourier phase of flange-ear vertex mass; the ear nearest +90 deg in the levelled pre-clock frame goes to +X (the part is near-mirror-symmetric about the plane through the axis normal to the ears, so which ear is +X is a convention)",
+  "desc": "flange ear axis (screw-hole ears) -> +X",
+  "why": "the ears carry the mounting screws; ports then lie in the YZ plane"
+ },
+ "landmarks": [
+  {
+   "name": "tray floor (plate thickness)",
+   "stat": "zmedian",
+   "r_range": [
+    11.5,
+    13.5
+   ],
+   "z_range": [
+    1.9,
+    2.6
+   ],
+   "expected": 2.25,
+   "tol": 0.15,
+   "tol_source": "provisional levelling offset histogram (explore1.py, 0.1 mm bins) +/- noise"
+  },
+  {
+   "name": "crenellated tube tip (top of part)",
+   "stat": "zmax",
+   "expected": 14.0,
+   "tol": 0.5,
+   "tol_source": "provisional levelling bounds; checks material side / sign"
+  },
+  {
+   "name": "port ends (bottom of part)",
+   "stat": "zmin",
+   "expected": -30.8,
+   "tol": 0.5,
+   "tol_source": "provisional levelling bounds; checks material side / sign"
+  }
+ ],
+ "noise_secondary": {
+  "from": "noise_circle.json"
+ }
+}

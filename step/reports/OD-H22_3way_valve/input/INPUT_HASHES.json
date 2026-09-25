@@ -1,0 +1,58 @@
+{
+  "created": "2026-09-25T10:54:47+00:00",
+  "files": [
+    {
+      "bytes": 24794134,
+      "mode": "copy",
+      "path": "input/scan.stl",
+      "role": "scan",
+      "sha256": "4ebbb8c4369a8bbcddad7c7dbc57a37a725f605bc266af7697b08c1e63189f92",
+      "source": "/mnt/attach/project-files/OD-H22_3-way-valve/source/scan.stl"
+    },
+    {
+      "bytes": 104087,
+      "mode": "copy",
+      "path": "input/photos/photo_1.png",
+      "role": "photo",
+      "sha256": "0fa96c0c715619881618680e087a1561156bf68d4792f1cad141cd939144c517",
+      "source": "/mnt/attach/project-files/OD-H22_3-way-valve/source/photos/photo_1.png"
+    },
+    {
+      "bytes": 125907,
+      "mode": "copy",
+      "path": "input/photos/photo_2.png",
+      "role": "photo",
+      "sha256": "ee329ed6353ee31655b04a23aa9e514781841a55ee3f87e36899173892358b54",
+      "source": "/mnt/attach/project-files/OD-H22_3-way-valve/source/photos/photo_2.png"
+    },
+    {
+      "bytes": 142038,
+      "mode": "copy",
+      "path": "input/photos/photo_3.png",
+      "role": "photo",
+      "sha256": "10b98449ec390da3d1a1c966a58adddd8567670c60f0ad301e2c5d9a6be94741",
+      "source": "/mnt/attach/project-files/OD-H22_3-way-valve/source/photos/photo_3.png"
+    },
+    {
+      "bytes": 310551,
+      "mode": "copy",
+      "path": "input/photos/photo_4.png",
+      "role": "photo",
+      "sha256": "9de91f8c39a26ebf09b2ab30314dfa01f24f2fb669052b9013ac2404fbf65b70",
+      "source": "/mnt/attach/project-files/OD-H22_3-way-valve/source/photos/photo_4.png"
+    }
+  ],
+  "inputs": {
+    "input/photos/photo_1.png": "0fa96c0c715619881618680e087a1561156bf68d4792f1cad141cd939144c517",
+    "input/photos/photo_2.png": "ee329ed6353ee31655b04a23aa9e514781841a55ee3f87e36899173892358b54",
+    "input/photos/photo_3.png": "10b98449ec390da3d1a1c966a58adddd8567670c60f0ad301e2c5d9a6be94741",
+    "input/photos/photo_4.png": "9de91f8c39a26ebf09b2ab30314dfa01f24f2fb669052b9013ac2404fbf65b70",
+    "input/scan.stl": "4ebbb8c4369a8bbcddad7c7dbc57a37a725f605bc266af7697b08c1e63189f92"
+  },
+  "part": "OD-H22_3-way-valve",
+  "scan_resolution": "unknown",
+  "schema": "stl-re/INPUT_HASHES@1",
+  "seed": 0,
+  "tool": "init_run.py",
+  "tool_version": "stl-re-orchestrate@1"
+}

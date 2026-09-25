@@ -1,0 +1,8 @@
+{"source": "written by QA from intake/INTAKE_CARD.md §6 and intake/alignment.json primary/secondary/clock descriptions (not from builder code)",
+ "primary":  {"type": "plane", "method": "vote", "cone_deg": 3.0, "band_mm": 0.30,
+              "region": {"z": [-0.4, 0.4], "r": [7.5, null], "abs_nz": [0.9, null]},
+              "why": "flange plate back face (stem side), alignment.json#primary"},
+ "position": {"type": "circle", "region": {"r": [7.6, 8.6], "z": [2.9, 4.5]}, "single_wall": "outer", "wall": "outer",
+              "why": "boss collar OD (r~8.05, tray side), first coaxial feature of alignment.json#secondary; bore/tube excluded by radius, so region is deliberately a single outer wall"},
+ "clock":    {"type": "fourier", "order": 2, "region": {"r": [12.5, 22.0], "z": [0.2, 5.8]}, "offset_deg": 0.0,
+              "why": "alignment.json#clock: 2-fold Fourier phase of flange-ear vertex mass, ears on +/-X"}}

@@ -1,0 +1,831 @@
+{
+ "schema": "stl-re/params.json@1",
+ "tool": "make_params.py (builder, measure stage)",
+ "tool_version": "stl-re-measure-intent@1.0.0",
+ "inputs": {
+  "input/scan.stl": "4ebbb8c4369a8bbcddad7c7dbc57a37a725f605bc266af7697b08c1e63189f92",
+  "intake/alignment.json": "81c7bf4635456e8c66d025e9c3aeff849e9e9604ddbee48ba8a59335f860930a",
+  "input/photos/photo_1.png": "0fa96c0c715619881618680e087a1561156bf68d4792f1cad141cd939144c517",
+  "input/photos/photo_2.png": "ee329ed6353ee31655b04a23aa9e514781841a55ee3f87e36899173892358b54",
+  "input/photos/photo_3.png": "10b98449ec390da3d1a1c966a58adddd8567670c60f0ad301e2c5d9a6be94741",
+  "input/photos/photo_4.png": "9de91f8c39a26ebf09b2ab30314dfa01f24f2fb669052b9013ac2404fbf65b70"
+ },
+ "seed": 0,
+ "created": "2026-09-25T11:21:43+00:00",
+ "part": "OD-H22_3-way-valve",
+ "frame": "datum frame of intake/alignment.json (frozen): z=0 flange back face, +Z towards the drive tube, Z = valve axis (collar/tube/stem-neck circle centres), +X = flange ear axis (fourier_mass n=2), ports in the YZ plane; theta CCW about +Z from +X. Port-local: t along the port axis from its crossing of y=0, u=+X, v=e2=d x u.",
+ "scan_noise_mm": 0.035735190601014405,
+ "authority": "SCAN-ONLY: no caliper or operator values exist (DECISIONS.md MEASUREMENTS); every scan value is scan-authority, ungated by Tier-1. Photos used for intent only (feature identification, U-clip slots, symmetry).",
+ "params": {
+  "flange_floor_z": {
+   "value": 2.26,
+   "unit": "mm",
+   "measured": 2.262,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "p50 z of up-facing faces (n>0.95) on the tray floor, r 8.8-9.2 and ear floors; full-res scan, datum frame",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#floor_z",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)",
+   "note": "flange thickness (back face z=0 is the datum)"
+  },
+  "rim_top_z": {
+   "value": 5.63,
+   "unit": "mm",
+   "measured": 5.63,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "p50 z of up-facing faces r>10, |x|<6, z>4.5",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#rim_top_z",
+   "critical": false
+  },
+  "plate_R": {
+   "value": 11.7,
+   "unit": "mm",
+   "measured": 11.697,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "p50 radius of outward rim-wall faces |x|<5, z 2.6-5.0 (+Y and -Y halves both 11.697)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#plate_central_R",
+   "critical": false,
+   "note": "fits.py arc fit over theta 60-120 (fit_plate_R.json, r 11.19 with centre offset 0.52) is an ill-conditioned 60 deg arc and is not used"
+  },
+  "ear_hole_x": {
+   "value": [
+    15.447,
+    -15.338
+   ],
+   "unit": "mm",
+   "measured": [
+    15.447,
+    -15.338
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "robust circle fit (soft-L1) to ear-hole wall faces z 0.3-1.9, x of centre, [+X ear, -X ear]",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#ear_hole_px/nx",
+   "critical": true,
+   "frame": "datum X (ear axis)",
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)",
+   "note": "critical: held per hole (|x| 15.447 vs 15.338 differ by 0.109 > noise; not symmetrised, C9). Ear outlines are centred on their own hole."
+  },
+  "ear_hole_r": {
+   "value": 1.936,
+   "unit": "mm",
+   "measured": [
+    1.933,
+    1.939
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "same fit as ear_x, radius",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#ear_hole_px/nx",
+   "critical": true,
+   "scatter_mm": 0.006,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)"
+  },
+  "ear_side_angle_deg": {
+   "value": 10.07,
+   "unit": "deg",
+   "measured": 10.07,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit y=a+bx to outer-wall half-widths at x=11.5..16.5 (both sides pooled, z 2.6-5.0); taper angle = atan(-b)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#ear_halfwidth_*",
+   "critical": false,
+   "frame": "datum XY, ear axis = +X"
+  },
+  "ear_end_R": {
+   "value": 5.484,
+   "unit": "mm",
+   "measured": "5.254..5.568",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "distance from the mean |ear_hole_x| on the axis to the fitted side line (ear end = circle tangent to the sides, centred on the hole); cross-check tip x - ear_x = 5.254 (+X, damaged tip) / 5.568 (-X)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#ear_halfwidth_*, ear_tip_x_*",
+   "critical": false
+  },
+  "outline_blend_R": {
+   "value": 4.617,
+   "unit": "mm",
+   "measured": [
+    4.887,
+    4.346
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "robust circle fit to outer-wall faces in the concave disc/ear corners (z 2.6-5.0); 2 of 4 corners fitted (rms 0.023/0.073); the other two fits were rejected (rms 0.44/0.42, not a clean arc)",
+   "uncertainty_mm": 0.27,
+   "evidence": "measure/figures/misc_meas.json#outline_corner_*",
+   "critical": false,
+   "note": "spread 0.54 between the two good corners; mean used"
+  },
+  "rim_wall_t": {
+   "value": 1.447,
+   "unit": "mm",
+   "measured": [
+    1.42,
+    1.444,
+    1.446,
+    1.478
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "outer minus inner rim wall (p50 radii at |x|<5; half-widths at x=12.5/14.5/16.5 times cos(taper))",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#rim_inner_*",
+   "critical": false
+  },
+  "back_edge_R": {
+   "value": 1.868,
+   "unit": "mm",
+   "measured": 1.868,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "least-squares quarter-circle fit to the outline inset vs z (z 0.05..1.85, |x|<5) against plate_R; rms 0.040",
+   "uncertainty_mm": 0.04,
+   "evidence": "measure/figures/misc_meas.json#back_edge_round",
+   "critical": false
+  },
+  "collar_R": {
+   "value": 8.06,
+   "unit": "mm",
+   "measured": 8.057,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "fits.py circle (Kasa) on vertices z 2.7-4.1 r 7.6-8.5; percentile p50 8.074",
+   "uncertainty_mm": 0.072,
+   "evidence": "measure/figures/fit_collar.json",
+   "critical": false
+  },
+  "collar_top_z": {
+   "value": 4.73,
+   "unit": "mm",
+   "measured": 4.734,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "p50 z of up-facing faces r 6.5-7.8",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#collar_top_z",
+   "critical": false
+  },
+  "tube_R": {
+   "value": 6.203,
+   "unit": "mm",
+   "measured": 6.203,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fits.py circle on vertices z 5.3-8.6 r 5.8-6.7; percentile p50 6.219",
+   "uncertainty_mm": 0.074,
+   "evidence": "measure/figures/fit_tube_od.json",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)"
+  },
+  "tube_bore_r": {
+   "value": 4.561,
+   "unit": "mm",
+   "measured": 4.561,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fits.py circle on vertices z 5.3-8.4 r 4.2-5.0; percentile p50 4.542",
+   "uncertainty_mm": 0.101,
+   "evidence": "measure/figures/fit_tube_bore.json",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)"
+  },
+  "tube_top_z": {
+   "value": 13.68,
+   "unit": "mm",
+   "measured": 13.682,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "p50 z of up-facing faces r 4.6-6.1 z>12 (p10 13.61 / p90 13.92: finger tops uneven)",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/core_meas.json#tube_top_z",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)"
+  },
+  "tube_bore_bottom_z": {
+   "value": 1.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "bore wall is scanned down to z~1.5-1.9 (coverage loop r 4.19-4.69 z 1.9-6.9); the floor / internal web below is not in the scan",
+   "uncertainty_mm": null,
+   "evidence": "intake/coverage.json; intake/INTAKE_CARD.md E07",
+   "critical": false,
+   "note": "not observable: bore modelled as a blind cylinder ending at the lowest scanned wall level"
+  },
+  "slot_count": {
+   "value": 4,
+   "unit": "count",
+   "measured": 4,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "pattern_count.py radius signal, FFT-dominant rotational order 4 at z 10/11.5/13, residual local minimum at every station (CHK-COUNT pass); a mass-signal run gave order 8 (slot-edge harmonic), not used",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/count_tube_slots.json",
+   "critical": false
+  },
+  "slot_theta_deg": {
+   "value": [
+    -0.11,
+    90.2,
+    179.79,
+    269.38
+   ],
+   "unit": "deg",
+   "measured": [
+    -0.11,
+    90.2,
+    179.79,
+    269.38
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slot centre = mid-plane of its two side walls (tangential-normal faces z 10-13, r 4.8-6.1), converted to angle at r=5.4; order theta 0/90/180/270",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#slot_walls",
+   "critical": true,
+   "frame": "datum frame, theta CCW about +Z from +X (+X = ear axis)",
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)",
+   "note": "critical drive interface: held per slot, not snapped to 0/90/180/270 (largest offset 0.058 mm > noise)"
+  },
+  "slot_w": {
+   "value": [
+    3.086,
+    2.722,
+    3.041,
+    2.572
+   ],
+   "unit": "mm",
+   "measured": [
+    3.086,
+    2.722,
+    3.041,
+    2.572
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "wall-to-wall distance of each slot (median |d| of side-wall faces from the slot mid-plane); order as slot_theta_deg",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#slot_walls",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)",
+   "note": "two key sizes: ear-axis slots 3.09/3.04, cross slots 2.72/2.57 (keyed drive); held per slot (C9)"
+  },
+  "slot_bottom_z_x": {
+   "value": 8.912,
+   "unit": "mm",
+   "measured": [
+    8.907,
+    8.918
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "p50 z of up-facing faces at the slot bottom (theta 0/180 +/-8 deg)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#slot_bottom_z_*",
+   "critical": false,
+   "scatter_mm": 0.011
+  },
+  "slot_bottom_z_y": {
+   "value": 8.704,
+   "unit": "mm",
+   "measured": [
+    8.691,
+    8.717
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "p50 z of up-facing faces at the slot bottom (theta 90/270 +/-8 deg)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#slot_bottom_z_*",
+   "critical": false,
+   "scatter_mm": 0.025
+  },
+  "stem_R": {
+   "value": 6.547,
+   "unit": "mm",
+   "measured": [
+    6.538,
+    6.547,
+    6.55,
+    6.552
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "Kasa circles on z-sections z -3.5..-2.0 excluding the gusset plane (|sin theta|>0.35); fits.py arc fit fit_stem_top.json (theta 20-160 only, r 6.43) is ill-conditioned and not used",
+   "uncertainty_mm": 0.045,
+   "evidence": "measure/figures/stem_meas.json",
+   "critical": false
+  },
+  "stem_cone_half_angle_deg": {
+   "value": 40.09,
+   "unit": "deg",
+   "measured": 40.09,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r(z) of outward faces at z -6.5..-4.5 (cone flank), angle from the axis",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#stem_r_at_z*",
+   "critical": false,
+   "frame": "datum, from +Z axis"
+  },
+  "stem_cone_top_z": {
+   "value": -4.234,
+   "unit": "mm",
+   "measured": -4.234,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "intersection of the cone line with stem_R",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/core_meas.json#stem_r_at_z*",
+   "critical": false
+  },
+  "stem_neck_R": {
+   "value": 4.074,
+   "unit": "mm",
+   "measured": 4.074,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fits.py circle on vertices z -11.8..-8.3 r 3.7-4.5; percentile p50 4.096",
+   "uncertainty_mm": 0.075,
+   "evidence": "measure/figures/fit_stem_neck.json",
+   "critical": false,
+   "note": "cone bottom (cone line = stem_neck_R) derived in the model: z = -7.171"
+  },
+  "stem_neck_bottom_z": {
+   "value": -19.587,
+   "unit": "mm",
+   "measured": -19.587,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p50 z of the flat underside of the stem cylinder (down-facing faces |y|<1, 1.3<|x|<3.8); the stem cylinder runs straight down through the junction (y=0 section, x=+/-4.0..4.25 from z -12 to -19)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/stembot_meas.json",
+   "critical": false,
+   "note": "ports branch off the sides of this cylinder; the rib hangs below it"
+  },
+  "gusset_t": {
+   "value": 1.306,
+   "unit": "mm",
+   "measured": [
+    1.247,
+    1.365
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "-X gusset: distance between its +y/-y face medians; +X gusset: 2 x +y face median (its -y face has no clean faces)",
+   "uncertainty_mm": 0.06,
+   "evidence": "measure/figures/core_meas.json#gusset_y_*",
+   "critical": false
+  },
+  "gusset_angle_deg": {
+   "value": 43.42,
+   "unit": "deg",
+   "measured": [
+    43.924,
+    42.916
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "line fit z(x) of the down-facing gusset edge faces |y|<1.5; angle below horizontal",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/core_meas.json#gusset_edge_*",
+   "critical": false,
+   "frame": "datum XZ plane"
+  },
+  "gusset_x_at_z0": {
+   "value": 11.085,
+   "unit": "mm",
+   "measured": [
+    11.014,
+    11.155
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "x where the fitted gusset edge line meets z=0 (back face)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/core_meas.json#gusset_edge_*",
+   "critical": false
+  },
+  "port_elev_deg": {
+   "value": [
+    34.059,
+    35.03
+   ],
+   "unit": "deg",
+   "measured": [
+    34.059,
+    35.03
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "robust cylinder fit (soft-L1, 3 passes) to outward sleeve faces t 8.5-14; elevation below the XY plane of the fitted axis; order [+Y port, -Y port]",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/ports_meas.json#*.axis_dir",
+   "critical": true,
+   "frame": "datum; port axes in the YZ plane, angle below horizontal",
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)",
+   "note": "the two ports differ by 0.97 deg (> fit scatter): kept per port, not forced symmetric"
+  },
+  "port_axis_z0": {
+   "value": [
+    -14.301,
+    -14.42
+   ],
+   "unit": "mm",
+   "measured": [
+    -14.301,
+    -14.42
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "z where each fitted port axis crosses y=0 (x of that point 0.05/0.11: modelled at x=0, see simplifications)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/ports_meas.json#*.axis_point_at_y0",
+   "critical": false
+  },
+  "port_neck_R": {
+   "value": 4.173,
+   "unit": "mm",
+   "measured": [
+    4.178,
+    4.168
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "median radial distance of outward faces t 3.5-6.2, v<2.5 (away from the stem)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.neck_R_p50",
+   "critical": false,
+   "scatter_mm": 0.01
+  },
+  "port_sleeve_t": {
+   "value": [
+    7.25,
+    6.85
+   ],
+   "unit": "mm",
+   "measured": [
+    7.25,
+    6.85
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "t where the median outward radius (v<0) crosses (neck+sleeve)/2, 0.05 steps",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/ports_meas.json#*.t_sleeve_start",
+   "critical": false
+  },
+  "port_sleeve_R": {
+   "value": 5.585,
+   "unit": "mm",
+   "measured": [
+    5.578,
+    5.592
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "median radial distance of outward faces t 8.5-14.5 (cylinder fit R 5.575 / 5.599)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.sleeve_R_p50",
+   "critical": false,
+   "scatter_mm": 0.014
+  },
+  "port_block_t0": {
+   "value": [
+    15.368,
+    15.077
+   ],
+   "unit": "mm",
+   "measured": [
+    15.368,
+    15.077
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p50 t of block start faces (N.d<-0.9, r>6.3)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.t_block_start_p50",
+   "critical": false
+  },
+  "port_block_t1": {
+   "value": [
+    19.022,
+    18.78
+   ],
+   "unit": "mm",
+   "measured": [
+    19.022,
+    18.78
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p50 t of block end faces (N.d>0.9, r>6.5)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.t_block_end_p50",
+   "critical": false
+  },
+  "port_end_t": {
+   "value": [
+    20.054,
+    19.873
+   ],
+   "unit": "mm",
+   "measured": [
+    20.054,
+    19.873
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p50 t of the port mouth face (N.d>0.9, 4.4<r<6.0)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.t_end_p50",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)"
+  },
+  "port_block_half_u": {
+   "value": 5.891,
+   "unit": "mm",
+   "measured": [
+    5.902,
+    5.88
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "median |u| of block side faces normal to X, t 15.6-19.0",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.block_half_u_p50",
+   "critical": true,
+   "scatter_mm": 0.022,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)"
+  },
+  "port_block_half_v": {
+   "value": 5.913,
+   "unit": "mm",
+   "measured": [
+    5.915,
+    5.912
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "median |v| of block faces normal to e2, t 15.6-19.0",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.block_half_v_p50",
+   "critical": true,
+   "scatter_mm": 0.003,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)"
+  },
+  "port_lip_R": {
+   "value": 6.162,
+   "unit": "mm",
+   "measured": [
+    6.164,
+    6.159
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "median radius of outward faces between block end and mouth",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.lip_R_p50",
+   "critical": true,
+   "scatter_mm": 0.005,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)"
+  },
+  "port_bore_R": {
+   "value": 4.339,
+   "unit": "mm",
+   "measured": [
+    4.342,
+    4.337
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "median radius of inward bore faces t 17.8..mouth-0.3",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.bore_r_p50",
+   "critical": true,
+   "scatter_mm": 0.005,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)"
+  },
+  "port_block_corner_R": {
+   "value": 0.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "block edge rounding along the port axis: visible as rounded in port sections (portsec_p.png) but not fitted",
+   "uncertainty_mm": null,
+   "evidence": "measure/figures/portsec_p.png",
+   "critical": false,
+   "note": "assumed; cost <=0.2 mm at 4 block corners per port"
+  },
+  "port_bore_step_t": {
+   "value": 16.445,
+   "unit": "mm",
+   "measured": 16.445,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p50 t of mouth-facing faces 3.2<r<4.3 in the bore (+Y port only; -Y bore not scanned that deep)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/misc_meas.json#port_pY_bore_step_t",
+   "critical": false,
+   "note": "applied to both ports (-Y not observable)"
+  },
+  "port_bore2_R": {
+   "value": 3.557,
+   "unit": "mm",
+   "measured": "3.541..3.581",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median inward-face radius per 0.5 mm t station, t 13-14.5 (+Y port)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/misc_meas.json#port_pY_bore_profile",
+   "critical": false
+  },
+  "port_bore2_end_t": {
+   "value": 12.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "deepest scanned bore wall t~13 (+Y); the passage to the junction is not in the scan",
+   "uncertainty_mm": null,
+   "evidence": "measure/figures/misc_meas.json#port_pY_bore_profile",
+   "critical": false,
+   "note": "blind end assumed just below the last scanned station"
+  },
+  "port_slot_dt0": {
+   "value": 1.161,
+   "unit": "mm",
+   "measured": [
+    1.152,
+    1.17
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "slot near wall (p50 t of +d-facing slot wall faces, |u|>4.8, 1<|v|<5) minus block start",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.slot_wall_t_lo_p50",
+   "critical": false,
+   "scatter_mm": 0.019
+  },
+  "port_slot_w": {
+   "value": 1.353,
+   "unit": "mm",
+   "measured": [
+    1.354,
+    1.352
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "distance between the two slot wall faces along the port axis",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.slot_wall_t_*",
+   "critical": true,
+   "scatter_mm": 0.002,
+   "rerun_trigger": "one caliper reading on this feature triggers a re-run (scan-only run, MEASUREMENTS decision)"
+  },
+  "port_slot_v_in": {
+   "value": 0.932,
+   "unit": "mm",
+   "measured": [
+    0.957,
+    0.907
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "p50 |v| of slot end faces (normal ~e2) below |v|=2.5",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.slot_v_inner_p50",
+   "critical": false,
+   "scatter_mm": 0.05,
+   "scatter_note": "both ports take the same clip; residual +/-0.025 mm"
+  },
+  "port_slot_v_out": {
+   "value": 4.72,
+   "unit": "mm",
+   "measured": [
+    4.739,
+    4.701
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "p50 |v| of slot end faces between |v| 3 and 5",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/ports_meas.json#*.slot_v_outer_p50",
+   "critical": false,
+   "scatter_mm": 0.038,
+   "scatter_note": "both ports take the same clip; residual +/-0.019 mm"
+  },
+  "rib_t": {
+   "value": 1.624,
+   "unit": "mm",
+   "measured": 1.624,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "distance between median x of the rib +x and -x faces (z -23.4..-19.5, |y|<2.5); rib centre x=0.143",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/core_meas.json#rib_x",
+   "critical": false
+  },
+  "rib_bottom_z": {
+   "value": -23.696,
+   "unit": "mm",
+   "measured": -23.696,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p50 z of down-facing faces |x|<1.5 |y|<3 z<-20",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/core_meas.json#rib_bottom_z",
+   "critical": false
+  },
+  "rib_half_len": {
+   "value": 4.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "rib ends are buried in the port sleeves (flat bottom visible to |y|~3.8 at x=0, sec_x0_zoom.png)",
+   "uncertainty_mm": null,
+   "evidence": "measure/figures/sec_x0_zoom.png",
+   "critical": false,
+   "note": "any value 3.9..5.5 gives the same outer surface"
+  }
+ },
+ "struck": [],
+ "simplifications": [
+  {
+   "name": "coaxial lower body",
+   "modelled_as": "stem neck, ports and rib centred on x=0 and on the Z axis",
+   "deviation_cost": "measured lateral offsets 0.05-0.17 mm (stem neck centre (0.124,0.077); port axes x 0.05/0.11 at y=0; rib centre x 0.14); CHK-TILT ~0.5 deg"
+  },
+  {
+   "name": "port bore draft",
+   "modelled_as": "cylinder port_bore_R from the mouth to port_bore_step_t",
+   "deviation_cost": "bore profile 4.14 (t 16.5) .. 4.35 (t 19.5): up to 0.2 mm near the step (misc_meas.json#port_*_bore_profile)"
+  },
+  {
+   "name": "ejector-pin circles on port sleeves",
+   "modelled_as": "not modelled (plain cylinder)",
+   "deviation_cost": "shallow round flats ~0.3 mm deep over t 9-14 on the +/-X sides (port_tr.png, radius dips 5.58 -> ~5.3)"
+  },
+  {
+   "name": "+X ear tip damage",
+   "modelled_as": "undamaged ear by symmetry",
+   "deviation_cost": "tip x 20.70 vs 20.91 (-X): up to ~0.2-0.5 mm local at the torn tip"
+  },
+  {
+   "name": "small edge rounds not modelled",
+   "modelled_as": "sharp edges at rim top, collar and tube top, stem/plate, cone/neck, neck/sleeve steps",
+   "deviation_cost": "<=0.3 mm local (rim top z p10/p90 5.52/5.72; stem r 6.61 at z=0 vs 6.55; cone ends)"
+  },
+  {
+   "name": "drive-tube finger tops",
+   "modelled_as": "one plane at tube_top_z",
+   "deviation_cost": "finger top z p10 13.61 / p90 13.92 / max 13.98: up to 0.3 mm"
+  },
+  {
+   "name": "rim wall and tray pocket",
+   "modelled_as": "constant-thickness offset of the outline, vertical walls, flat floor",
+   "deviation_cost": "rim wall 1.42-1.48 measured; floor z 2.14-2.36 across the tray (ears 2.14/2.28): <=0.12 mm"
+  }
+ ],
+ "checks": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "pass",
+   "note": "drive-tube slots: order 4 FFT-dominant and residual local minimum at z 10/11.5/13 (radius signal)"
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": false,
+   "result": "pass",
+   "note": "not applicable: no caliper or photo readings exist (scan-only run)"
+  },
+  "CHK-CLUSTER": {
+   "ran": true,
+   "result": "pass",
+   "note": "on-axis material below the junction (r<2.2, z -24..-19) is ONE component, 39 mm2 = the planned bottom rib E14 (cluster_axis_bottom.json); nothing above the tube top (zmax 13.98 = finger tops)"
+  },
+  "CHK-FRAME": {
+   "ran": true,
+   "result": "pass",
+   "note": "all angles re-measured on the full-res scan in the frozen datum frame; no intake angle copied (the intake clock -84.99 deg is a frame definition, not a part angle)"
+  }
+ },
+ "open_questions": [
+  "Tilt ~0.5 deg between flange normal and the axis features: moulding warp or design? (modelled perpendicular)",
+  "Tube-bore floor, internal web and flow passages are not in the scan (assumed blind bores)",
+  "scan_resolution not stated by the user (recorded unknown; evidence suggests full-res)"
+ ]
+}

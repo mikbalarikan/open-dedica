@@ -1,0 +1,102 @@
+{
+ "verdict": "BAND_NOT_MET",
+ "independence": "fresh verifier agent (not the builder); stl-re-verify scripts only; own datum spec, zones, masks and ICP; build/model.py only grepped for loft/ruled (CHK-PATCHWORK); BUILDER_REPORT.md and builder self-check numbers were not read before this gate was written. Re-graded OFFICIAL (full-res) after the owner confirmed on 2026-09-25 11:41 that the scan is full resolution (DECISIONS.md OTHER); the earlier INSPECTION ONLY runs are kept as deviation_run1.json, deviation_run2.json and registration_run1_inspection.json (same numbers)",
+ "photos": [
+  "photo_1",
+  "photo_2",
+  "photo_3",
+  "photo_4"
+ ],
+ "checks": {
+  "CHK-CIRCULAR": {
+   "ran": true,
+   "result": "pass",
+   "note": "QA ICP registers the builder CAD onto the raw scan through intake/alignment.json. T_refine is QA-only and was not written back. No expected value was taken from builder params. The datum was not ICP'd to its own CAD. The builder's own self-check was not consulted for grading"
+  },
+  "CHK-LIKE4LIKE": {
+   "ran": true,
+   "result": "n/a",
+   "note": "iteration 1; no _itN_SUPERSEDED to compare"
+  },
+  "CHK-INDEP": {
+   "ran": true,
+   "result": "pass",
+   "note": "fresh agent context, separate from the builder"
+  },
+  "CHK-FILLET": {
+   "ran": true,
+   "result": "pass",
+   "note": "build/export_check.json fillets: 5/5 OK, target == used (4.617, 1.868, 6.064, 0.5, 0.5)"
+  },
+  "CHK-PATCHWORK": {
+   "ran": true,
+   "result": "pass",
+   "note": "census: 162 faces (plane 93, cylinder 60, torus 8, cone 1), 100% analytic area, no B-spline. MODELING_PLAN.md:57 and model.py have no loft/ruled/polyline stack"
+  },
+  "CHK-ENUM": {
+   "ran": true,
+   "result": "finding",
+   "note": "Intake features E01-E14 appear in both CAD and scan (overlays). Findings: (a) photo_4 shows a round pip/lump at the right ear tip. The scan also has a lump beyond the CAD at the +X ear tip (clusters 0,1). Intake declared this as damage and masked it (M1), but it may be a real feature. (b) photo_4 shows internal structure inside a port mouth. That area is unscanned, and the CAD models a plain bore (assumed)"
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": true,
+   "result": "n/a",
+   "note": "no Tier-1 (no calipers)"
+  },
+  "PHOTO-PLAUSIBILITY": {
+   "ran": true,
+   "result": "finding",
+   "note": "photos 1-4 checked: plate, ears and through holes, tray rim, crenellated drive tube (4 slots), stem, gussets, Y ports, clip blocks with 2 slots, and lips are all in the CAD. Nothing in the CAD is absent from both photos and scan. Open points: the ear-tip pip and the port-internal structure, as in CHK-ENUM"
+  }
+ },
+ "cluster_explanations": {
+  "0": "+X ear tip, scan beyond the CAD (x 20.8-21.5, y -3.4..-2.2, z 2.3-5.2; 278 pts, max 1.28). This is the region intake pre-declared as damaged (inside mask M1). photo_4 suggests it may be a real pip; see CHK-ENUM. It does not drive the max (the masked max is the same)",
+  "1": "+X ear tip, other side (x 20.5-20.9, y 3.2-3.7, z 2.9-5.4; 156 pts, max 1.05). Same cause as cluster 0 (inside M1)",
+  "2": "scan material inside the +X ear screw hole at the back face (x 15.9-16.5, y -0.8..0.6, z 0.05-0.56; 130 pts, max 1.43). Photos show both ear holes open through; the -X hole has no such material. Probably scanner bridging/fuzz over the small hole mouth (flash cannot be ruled out). Not pre-declared, so not masked. This cluster sets the whole-part scan->CAD max"
+ },
+ "limitations": [
+  {
+   "id": "L1",
+   "text": "No Tier-1: no calipers were supplied (DECISIONS.md MEASUREMENTS), so absolute scale is not caliper-verified.",
+   "rerun_trigger": "any caliper reading (e.g. drive tube OD, ear hole pitch)"
+  },
+  {
+   "id": "L3",
+   "text": "Unscanned interiors are assumed geometry: the drive-tube bore floor/lower bore, port bores beyond t~13-16, clip-slot interiors, the stem/gusset root coverage hole, and the internal flow passages. The ray test counts the open-mouthed bores as observable (unobservable only 0.44%), so these drive the CAD->scan observable miss.",
+   "rerun_trigger": "rescan covering the bores, or a sectioned/caliper measurement of bore depths and the tube floor"
+  },
+  {
+   "id": "L4",
+   "text": "Mask M1 (+X ear tip, pre-declared at intake as damage) rests on an unconfirmed premise: photo_4 shows a pip at an ear tip. Unmasked and masked scan->CAD max are identical (1.427), so M1 does not change any result.",
+   "rerun_trigger": "operator confirms whether the +X ear-tip lump is damage or a moulded feature"
+  }
+ ],
+ "miss_explanations": [
+  {
+   "region": "VERDICT BASIS (why BAND_NOT_MET): whole part",
+   "cause": "This is an OFFICIAL full-res grade: the owner confirmed on 2026-09-25 11:41 that the scan is full resolution. ICP converged and the solid is valid. Two gated bands miss: scan->CAD masked max, and observable CAD->scan p95 and max. Both misses come from one scan artefact and from interiors the scanner did not reach, not from geometry a rebuild could correct. REVISE would therefore spend a loop without new data, and nothing here needs a HALT.",
+   "options": "Deliver as-is: needs a DECISIONS.md ACCEPT-BAND entry from the owner that cites this gate.json by sha256 prefix or created time, names a missed band (scan_to_cad and/or cad_to_scan_observable), and points to an evidence file outside qa/ build/ measure/ intake/ deliver/ (e.g. decisions/accept_band.md). Or supply data (rescan of the bores, calipers, specimen inspection of the +X ear hole) and then run a measure-route loop 2."
+  },
+  {
+   "region": "+X ear screw hole, back-face mouth (scan->CAD cluster 2)",
+   "cause": "scan->CAD max 1.427 > 0.80: 130 scan points lie inside a through hole that photos show as open. Probable scan bridging artefact, not a CAD omission. The rest of scan->CAD is within the band (masked p95 0.235).",
+   "options": "(a) owner accepts it as an artefact via an ACCEPT-BAND entry citing this gate; (b) inspect the specimen for flash in the +X hole; (c) declare an artefact mask in DECISIONS before a re-grade. That would be a declared mask-dependent result, never silent"
+  },
+  {
+   "region": "drive-tube bore lower + floor (CAD->scan cluster 1, 6,564 pts, max 4.86)",
+   "cause": "the scan is open below z~1.5-1.9 inside the bore, so the CAD bore floor/web has no scan behind it (INTAKE_CARD \u00a73). Geometry cannot be checked there, and a rebuild cannot fix it without data.",
+   "options": "rescan the bore, caliper the tube depth, or accept it as a coverage limitation"
+  },
+  {
+   "region": "port bores and clip-slot interiors (CAD->scan clusters 0, 2, 4, 5; ~15,700 pts, max 5.17)",
+   "cause": "port bores beyond t~13-16 and slot interiors were not scanned (INTAKE_CARD \u00a73). CAD bore walls there are assumed, and photo_4 hints at internal structure.",
+   "options": "rescan or section a port; caliper the bore diameter/depth; or accept as unobservable"
+  },
+  {
+   "region": "stem/gusset root and tray rim -Y (CAD->scan clusters 3, 6, 7; ~800 pts, max 1.71)",
+   "cause": "small scan holes at the gusset roots (INTAKE_CARD \u00a73 'small holes at gusset root') and a local gap on the inner tray rim. The CAD surface has no scan behind it there.",
+   "options": "rescan these areas, or accept as a coverage limitation"
+  }
+ ],
+ "claim_boundary": "Official full-res grade. Scan->CAD p95 is within the band, so the outer skin the scanner saw matches. Bore interiors, the tube floor, the flow passages and absolute scale are unverified (no calipers). Not fit for tooling or for hose, clip or drive-spline fit decisions until the bores are measured."
+}

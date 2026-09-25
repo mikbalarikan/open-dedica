@@ -1,0 +1,349 @@
+{
+  "alignment_matrix_4x4": [
+    [
+      0.222223,
+      0.973708,
+      -0.050097,
+      35.94417
+    ],
+    [
+      -0.87204,
+      0.175514,
+      -0.456882,
+      -87.776537
+    ],
+    [
+      -0.436077,
+      0.145216,
+      0.888116,
+      187.930701
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "created": "2026-09-25T11:29:19+00:00",
+  "datum": {
+    "analytic_area_share": 1.0,
+    "area_mm2": 5482.623321,
+    "bbox": {
+      "max": [
+        20.931,
+        20.064968,
+        13.68
+      ],
+      "min": [
+        -20.822,
+        -19.810058,
+        -30.87297
+      ],
+      "size": [
+        41.753,
+        39.875027,
+        44.55297
+      ]
+    },
+    "closed": true,
+    "edges": 442,
+    "faces": 162,
+    "failures": [],
+    "fillets": [
+      {
+        "feature": "F02 concave outline blends",
+        "n_edges": 4,
+        "op": "fillet",
+        "param": "outline_blend_R",
+        "status": "OK",
+        "target": 4.617,
+        "tried": [
+          {
+            "error": null,
+            "radius": 4.617
+          }
+        ],
+        "used": 4.617,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F03 back-edge round",
+        "n_edges": 12,
+        "op": "fillet",
+        "param": "back_edge_R",
+        "status": "OK",
+        "target": 1.868,
+        "tried": [
+          {
+            "error": null,
+            "radius": 1.868
+          }
+        ],
+        "used": 1.868,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F04 pocket-tool concave blends (outline_blend_R + rim_wall_t)",
+        "n_edges": 4,
+        "op": "fillet",
+        "param": "outline_blend_R",
+        "status": "OK",
+        "target": 6.064,
+        "tried": [
+          {
+            "error": null,
+            "radius": 6.064
+          }
+        ],
+        "used": 6.064,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F08 port0 block axial corner rounds",
+        "n_edges": 4,
+        "op": "fillet",
+        "param": "port_block_corner_R",
+        "status": "OK",
+        "target": 0.5,
+        "tried": [
+          {
+            "error": null,
+            "radius": 0.5
+          }
+        ],
+        "used": 0.5,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F08 port1 block axial corner rounds",
+        "n_edges": 4,
+        "op": "fillet",
+        "param": "port_block_corner_R",
+        "status": "OK",
+        "target": 0.5,
+        "tried": [
+          {
+            "error": null,
+            "radius": 0.5
+          }
+        ],
+        "used": 0.5,
+        "why_fallback": ""
+      }
+    ],
+    "naked_edges": 0,
+    "nonmanifold_edges": 0,
+    "pass": true,
+    "ruled_like_faces": 0,
+    "sha256": "b756534164cd47492b877448c6c9a7f248f09ed662d901d9e32543fc16678276",
+    "shell_closed": [
+      true
+    ],
+    "shells": 1,
+    "solids": 1,
+    "step": "OD-H22_3-way-valve_datum.step",
+    "surface_types": {
+      "cone": {
+        "area_mm2": 126.935122,
+        "area_share": 0.023152,
+        "count": 1
+      },
+      "cylinder": {
+        "area_mm2": 3067.417651,
+        "area_share": 0.55948,
+        "count": 60
+      },
+      "plane": {
+        "area_mm2": 2058.596488,
+        "area_share": 0.375477,
+        "count": 93
+      },
+      "torus": {
+        "area_mm2": 229.67406,
+        "area_share": 0.041891,
+        "count": 8
+      }
+    },
+    "valid": true,
+    "vertices": 285,
+    "volume_mm3": 6395.593636
+  },
+  "failures": [],
+  "frames_agree": {
+    "faces_equal": true,
+    "note": "scan-frame STEP moved back to the datum frame with the SAME trsf inverted; numerical round-trip only. It cannot prove the direction of T was applied correctly - verify that by overlaying the scan, not this number.",
+    "numeric_roundtrip_bbox_mm": 4.489e-07,
+    "volume_rel_diff": 0.0
+  },
+  "inputs": {
+    "../intake/alignment.json": "81c7bf4635456e8c66d025e9c3aeff849e9e9604ddbee48ba8a59335f860930a",
+    "../measure/params.json": "2e8f4dafed0892b59b70ffa463751eb6bfe480df0ebec3b29801f6cd5c06eb82",
+    "/tmp/claude-0/-home-claude-agentic-STL-to-CAD/e9b63eb2-e22a-58ba-b94b-93d549e885a7/scratchpad/run/build/model.py": "a447b3e5f79c72039eb793e763b61ee8fd9fceffe9b057581dcf97a5a9d1a357",
+    "fillets.json": "638713330b678c29d83a8f6a81c57d95f178dbadcafcf1a21910e0269bcfb57e"
+  },
+  "inverse_rotation": {
+    "det": 1.0,
+    "orthonormalisation_max_abs": 2.22e-16,
+    "singular_values": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "part": "OD-H22_3-way-valve",
+  "pass": true,
+  "scan": {
+    "analytic_area_share": 1.0,
+    "area_mm2": 5482.623321,
+    "bbox": {
+      "max": [
+        24.503273,
+        -25.599368,
+        -190.223935
+      ],
+      "min": [
+        -15.564104,
+        -66.992811,
+        -238.446324
+      ],
+      "size": [
+        40.067377,
+        41.393443,
+        48.222389
+      ]
+    },
+    "closed": true,
+    "edges": 442,
+    "faces": 162,
+    "failures": [],
+    "fillets": [
+      {
+        "feature": "F02 concave outline blends",
+        "n_edges": 4,
+        "op": "fillet",
+        "param": "outline_blend_R",
+        "status": "OK",
+        "target": 4.617,
+        "tried": [
+          {
+            "error": null,
+            "radius": 4.617
+          }
+        ],
+        "used": 4.617,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F03 back-edge round",
+        "n_edges": 12,
+        "op": "fillet",
+        "param": "back_edge_R",
+        "status": "OK",
+        "target": 1.868,
+        "tried": [
+          {
+            "error": null,
+            "radius": 1.868
+          }
+        ],
+        "used": 1.868,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F04 pocket-tool concave blends (outline_blend_R + rim_wall_t)",
+        "n_edges": 4,
+        "op": "fillet",
+        "param": "outline_blend_R",
+        "status": "OK",
+        "target": 6.064,
+        "tried": [
+          {
+            "error": null,
+            "radius": 6.064
+          }
+        ],
+        "used": 6.064,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F08 port0 block axial corner rounds",
+        "n_edges": 4,
+        "op": "fillet",
+        "param": "port_block_corner_R",
+        "status": "OK",
+        "target": 0.5,
+        "tried": [
+          {
+            "error": null,
+            "radius": 0.5
+          }
+        ],
+        "used": 0.5,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F08 port1 block axial corner rounds",
+        "n_edges": 4,
+        "op": "fillet",
+        "param": "port_block_corner_R",
+        "status": "OK",
+        "target": 0.5,
+        "tried": [
+          {
+            "error": null,
+            "radius": 0.5
+          }
+        ],
+        "used": 0.5,
+        "why_fallback": ""
+      }
+    ],
+    "naked_edges": 0,
+    "nonmanifold_edges": 0,
+    "pass": true,
+    "ruled_like_faces": 0,
+    "sha256": "068f84ccb9b4ad21ee13ab24a19cd94c4eb7741687fecd20d5103dced5af7f12",
+    "shell_closed": [
+      true
+    ],
+    "shells": 1,
+    "solids": 1,
+    "step": "OD-H22_3-way-valve.step",
+    "surface_types": {
+      "cone": {
+        "area_mm2": 126.935122,
+        "area_share": 0.023152,
+        "count": 1
+      },
+      "cylinder": {
+        "area_mm2": 3067.417651,
+        "area_share": 0.55948,
+        "count": 60
+      },
+      "plane": {
+        "area_mm2": 2058.596488,
+        "area_share": 0.375477,
+        "count": 93
+      },
+      "torus": {
+        "area_mm2": 229.67406,
+        "area_share": 0.041891,
+        "count": 8
+      }
+    },
+    "valid": true,
+    "vertices": 285,
+    "volume_mm3": 6395.593636
+  },
+  "schema": "stl-re/export_check@1",
+  "seed": 0,
+  "stl": {
+    "angular_tolerance": 0.05,
+    "frame": "scan",
+    "path": "OD-H22_3-way-valve_cad.stl",
+    "tolerance": 0.003
+  },
+  "tool": "export_frames.py",
+  "tool_version": "stl-re-rebuild-build123d@1"
+}
