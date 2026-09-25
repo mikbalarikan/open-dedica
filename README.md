@@ -4,6 +4,8 @@ A community-built espresso machine: **genuine De'Longhi Dedica EC685 internals**
 
 The only part of a Dedica you cannot buy as a spare is the group-head housing, which is molded into the case. If that part must be printed anyway, the whole chassis can be an open design.
 
+![Real part → 3D scan → open STEP](docs/img/scan_to_step_showcase.png)
+
 > ⚠️ **Safety:** this machine runs on mains voltage (230 V / 120 V), heats water to ~125 °C and pressurizes it to 15 bar. Keep the wet side separated from the electric side, keep the 192 °C thermal cutoff (TCO) in circuit, test behind an RCD/GFCI, and never print load-bearing or heat-adjacent parts in PLA.
 
 ## How it works
