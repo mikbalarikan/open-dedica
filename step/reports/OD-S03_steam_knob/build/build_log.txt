@@ -1,0 +1,26 @@
+build123d 0.13.0  params=measure/params.json  (self-built model; any check here is a self-check, not QA)
+F01 cap cylinder R12.5298 z 0.0000..13.6892 at (0.0320,-0.0951)
+F02 lever: tip centre (22.6482,0.0508) tangent R4.4367 (derived from flank lines), tip x max 27.0849 at z0
+F03 cap+lever union: solids=1 faces=6
+F04 lever-cap blend +Y fillet target R6.10451 used R6.10451 on 1 edges OK
+F04 lever-cap blend -Y fillet target R7.01465 used R7.01465 on 1 edges OK
+F05 draft 3.0062 deg on 6 side faces; cap top-circle radius at the step face 13.2487 (expected R0+H tan = 13.2487); valid=True
+F06 crown round fillet target R2.45906 used R2.45906 on 6 edges OK
+F07 step-face edge round fillet target R0.534362 used R0.534362 on 6 edges OK
+F08 pocket tool: 6 side faces drafted 3.9860 deg about z=13.6892; floor z 8.5350; valid=True
+F08 pocket cut: solids=1 faces=27
+F09 collar revolve: groove 10.141->8.823 bottom 16.278; join r 7.804; valid=True
+F10 stem revolve at (-0.1840,0.1127) [line at z=22.900]; valid=True
+F11 rib theta -0.903: width 1.073, tip r 6.634@17.07 -> 6.277@28.309, foot z 15.490 (groove bottom - OV)
+F11 rib theta 90.733: width 0.916, tip r 6.376@17.07 -> 5.842@28.211, foot z 15.490 (groove bottom - OV)
+F11 rib theta 179.402: width 1.244, tip r 6.481@17.07 -> 6.480@28.243, foot z 15.490 (groove bottom - OV)
+F11 rib theta -90.389: width 1.022, tip r 6.526@17.07 -> 6.320@28.171, foot z 15.490 (groove bottom - OV)
+F12 spigot revolve at (-0.0577,0.0563) [line at z=33.408]: 4 crests [32.945, 34.176, 35.407, 36.638], bottom round R0.6381 (derived c1-zb), top round R0.5791 (derived zt-c_n), cusp r 5.7712; valid=True
+F13 bottom ramp cut: rise 1.0591 over 132.65->255.39 deg; tool valid=True; spigot solids=1 valid=True
+F14 top tail union: rise 0.9076 over 124.62->245.43 deg; tool valid=True; spigot solids=1 valid=True
+F15a +collar: solids=1
+F15b +stem: solids=1
+F15c +ribs: solids=1
+F15d +spigot: solids=1
+F15 union+clean: solids=1 faces=83 valid=True volume=11655.642
+all params used

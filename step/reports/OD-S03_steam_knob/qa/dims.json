@@ -1,0 +1,10 @@
+{
+ "schema": "stl-re/dims@1",
+ "tool": "QA (hand-written)",
+ "dims": [],
+ "total_requested": 0,
+ "absent": [
+  "all: no input/MEASUREMENTS.md; owner declined calipers (DECISIONS.md 2026-09-25 MEASUREMENTS, scan-only)"
+ ],
+ "note": "Tier-1 (sim_caliper.py) not run: nothing calipered and regime.bands.tier1_abs_mm is null. Declared limitation, not a pass."
+}

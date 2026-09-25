@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "1fc4e887e2910da10f773913bbeb2dc547d9785458c9726d0a5d1e81141c0f47"
+ },
+ "seed": 0,
+ "created": "2026-09-25T13:36:09+00:00",
+ "scan_noise_mm": {
+  "value": 0.01870648825491811,
+  "p95_mm": 0.03554140731855923,
+  "max_mm": 0.08923822200356411,
+  "method": "rms of RANSAC+SVD plane on lever -Y flank (flat chrome side face of the lever wing) (12006 faces)"
+ }
+}

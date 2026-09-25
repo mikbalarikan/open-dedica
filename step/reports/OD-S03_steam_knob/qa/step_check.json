@@ -1,0 +1,156 @@
+{
+ "schema": "stl-re/step_check@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-S03_steam-knob_datum.step": "67889051991478880adc82c1ca88afa292fc478f2e8dba7b7f3d6ff3bf72742c",
+  "build/OD-S03_steam-knob.step": "4b4a6390d838a5c9a211fe4805f7ae9b1e92e2af2d9df4f51a6a340cdbd54e3f"
+ },
+ "seed": null,
+ "created": "2026-09-25T14:57:56+00:00",
+ "steps": {
+  "build/OD-S03_steam-knob_datum.step": {
+   "validity": {
+    "counts": {
+     "solid": 1,
+     "shell": 1,
+     "face": 83,
+     "edge": 404,
+     "vertex": 808
+    },
+    "brepcheck_valid": true,
+    "shells_closed": [
+     true
+    ],
+    "naked_edges": 0,
+    "volume_mm3": 11655.642525224019,
+    "area_mm2": 3886.0069188836605,
+    "bbox": [
+     -13.187901995199,
+     -13.315001995199001,
+     -4.440892098501e-16,
+     27.775007239861,
+     13.124801995199,
+     38.10426591888
+    ],
+    "single_valid_closed_solid": true
+   },
+   "tessellation": {
+    "tolerance": 0.005,
+    "angular_tolerance": 0.05,
+    "tris": 523914,
+    "watertight": true,
+    "winding": true,
+    "euler": 2,
+    "components": 1,
+    "degenerate_faces": 0,
+    "volume_mm3": 11653.259683918557,
+    "volume_vs_brep_mm3": -2.382841305461625
+   },
+   "surface_census": {
+    "faces": 83,
+    "by_type": {
+     "cone": {
+      "count": 15,
+      "area_mm2": 1505.6892233238648
+     },
+     "torus": {
+      "count": 17,
+      "area_mm2": 844.9739777575376
+     },
+     "plane": {
+      "count": 30,
+      "area_mm2": 1062.774055284627
+     },
+     "cylinder": {
+      "count": 11,
+      "area_mm2": 379.6178251729615
+     },
+     "revolution": {
+      "count": 1,
+      "area_mm2": 42.42595710487145
+     },
+     "bspline": {
+      "count": 9,
+      "area_mm2": 50.5258802397988
+     }
+    },
+    "analytic_area_share": 0.9760803726588905,
+    "gated": false,
+    "note": "reported, not gated (QUESTIONS.md Q3)"
+   }
+  },
+  "build/OD-S03_steam-knob.step": {
+   "validity": {
+    "counts": {
+     "solid": 1,
+     "shell": 1,
+     "face": 83,
+     "edge": 404,
+     "vertex": 808
+    },
+    "brepcheck_valid": true,
+    "shells_closed": [
+     true
+    ],
+    "naked_edges": 0,
+    "volume_mm3": 11655.642525224026,
+    "area_mm2": 3886.0069188836605,
+    "bbox": [
+     -39.555687271099835,
+     -12.178451677734701,
+     -228.56751483492909,
+     -8.100517891915002,
+     27.140134394116277,
+     -191.29453080535941
+    ],
+    "single_valid_closed_solid": true
+   },
+   "tessellation": {
+    "tolerance": 0.005,
+    "angular_tolerance": 0.05,
+    "tris": 523274,
+    "watertight": true,
+    "winding": true,
+    "euler": 2,
+    "components": 1,
+    "degenerate_faces": 0,
+    "volume_mm3": 11653.262301541274,
+    "volume_vs_brep_mm3": -2.38022368275233
+   },
+   "surface_census": {
+    "faces": 83,
+    "by_type": {
+     "cone": {
+      "count": 15,
+      "area_mm2": 1505.6892233238648
+     },
+     "torus": {
+      "count": 17,
+      "area_mm2": 844.9739777575377
+     },
+     "plane": {
+      "count": 30,
+      "area_mm2": 1062.774055284627
+     },
+     "cylinder": {
+      "count": 11,
+      "area_mm2": 379.6178251729615
+     },
+     "revolution": {
+      "count": 1,
+      "area_mm2": 42.42595710487145
+     },
+     "bspline": {
+      "count": 9,
+      "area_mm2": 50.5258802397988
+     }
+    },
+    "analytic_area_share": 0.9760803726588905,
+    "gated": false,
+    "note": "reported, not gated (QUESTIONS.md Q3)"
+   }
+  }
+ },
+ "all_single_valid_closed_solid": true
+}

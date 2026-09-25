@@ -1,0 +1,6 @@
+{"source": "written by QA from intake/INTAKE_CARD.md §6 and alignment.json mesh_region_desc (not from builder code)",
+ "primary": {"type": "plane", "method": "region", "cone_deg": 3.0,
+             "region": {"z": [-0.3, 0.3], "nz": [-1.0, -0.99], "r": [null, 10.0]}},
+ "position": {"type": "circle", "single_wall": "outer", "wall": "outer",
+              "region": {"z": [33.4, 36.8], "r": [5.4, 6.4]}},
+ "clock": {"type": "fourier", "order": 1, "region": {"r": [16.0, 28.5]}}}

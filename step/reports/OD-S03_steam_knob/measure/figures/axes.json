@@ -1,0 +1,67 @@
+{
+ "cap_wall_cone": {
+  "desc": "cap wall z 2.8-12.9, lever sector -50..50 deg excluded",
+  "cx": 0.032,
+  "cy": -0.0951,
+  "R_at_z0": 12.5298,
+  "n_faces": 59927,
+  "rms": 0.0234,
+  "p95": 0.0416,
+  "k_dr_dz": 0.0525,
+  "draft_deg": 3.0038
+ },
+ "mouth_ring": {
+  "desc": "collar top (below ring face) z 14.2-14.45",
+  "cx": -0.1236,
+  "cy": -0.0414,
+  "R": 11.1523,
+  "n_faces": 656,
+  "rms": 0.0323,
+  "p95": 0.0603
+ },
+ "collar": {
+  "desc": "collar cylinder z 14.6-15.9",
+  "cx": -0.1166,
+  "cy": -0.0469,
+  "R": 11.1163,
+  "n_faces": 8715,
+  "rms": 0.0271,
+  "p95": 0.0469
+ },
+ "stem_core_45": {
+  "desc": "stem core z 19-27.5 (ribs excluded by r<5.6)",
+  "cx": -0.185,
+  "cy": 0.1093,
+  "R": 5.227,
+  "n_faces": 27213,
+  "rms": 0.0857,
+  "p95": 0.1652
+ },
+ "neck": {
+  "desc": "neck z 30.0-31.3",
+  "cx": -0.1229,
+  "cy": 0.0859,
+  "R": 4.7377,
+  "n_faces": 3820,
+  "rms": 0.0528,
+  "p95": 0.1122
+ },
+ "sleeve_crest": {
+  "desc": "sleeve ripple envelope z 33.4-36.8",
+  "cx": -0.0147,
+  "cy": 0.0281,
+  "R": 5.8928,
+  "n_faces": 7388,
+  "rms": 0.0849,
+  "p95": 0.1556
+ },
+ "bore": {
+  "desc": "sleeve bore z 36.0-37.0 (inward-facing)",
+  "cx": -0.0152,
+  "cy": 0.0759,
+  "R": 4.0866,
+  "n_faces": 1551,
+  "rms": 0.059,
+  "p95": 0.1185
+ }
+}

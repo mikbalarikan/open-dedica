@@ -1,0 +1,246 @@
+{
+  "schema": "stl-re/repro@1",
+  "tool": "repro_check.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "build/OD-S03_steam-knob.step": "4b4a6390d838a5c9a211fe4805f7ae9b1e92e2af2d9df4f51a6a340cdbd54e3f",
+    "build/OD-S03_steam-knob_datum.step": "67889051991478880adc82c1ca88afa292fc478f2e8dba7b7f3d6ff3bf72742c",
+    "build/model.py": "e5bbc4c347dcb4ff1a1e528cbae90d922a65a24e223000cf1616ffc09affad32",
+    "measure/params.json": "cb75654a2a1a0c50ae039a2bfc3b686defab8409125de5df50cc268ff2713560"
+  },
+  "seed": 0,
+  "created": "2026-09-25T19:58:13+00:00",
+  "method": "2 fresh subprocess rebuild(s) of build/model.py in a scratch copy; STEP re-imported; solids, faces, surface census, volume, bbox compared (raw hash reported, not required)",
+  "command": [
+    "python3",
+    "build/model.py",
+    "--params",
+    "measure/params.json",
+    "--alignment",
+    "intake/alignment.json",
+    "--out",
+    "build",
+    "--part",
+    "OD-S03_steam-knob"
+  ],
+  "cwd": "run",
+  "tolerance_mm": 0.0,
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "build123d": "0.13.0",
+    "OCP": "8.0.1.0",
+    "numpy": "2.4.6"
+  },
+  "reproducible": true,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout_tail": "1 edges OK\nF05 draft 3.0062 deg on 6 side faces; cap top-circle radius at the step face 13.2487 (expected R0+H tan = 13.2487); valid=True\nF06 crown round fillet target R2.45906 used R2.45906 on 6 edges OK\nF07 step-face edge round fillet target R0.534362 used R0.534362 on 6 edges OK\nF08 pocket tool: 6 side faces drafted 3.9860 deg about z=13.6892; floor z 8.5350; valid=True\nF08 pocket cut: solids=1 faces=27\nF09 collar revolve: groove 10.141->8.823 bottom 16.278; join r 7.804; valid=True\nF10 stem revolve at (-0.1840,0.1127) [line at z=22.900]; valid=True\nF11 rib theta -0.903: width 1.073, tip r 6.634@17.07 -> 6.277@28.309, foot z 15.490 (groove bottom - OV)\nF11 rib theta 90.733: width 0.916, tip r 6.376@17.07 -> 5.842@28.211, foot z 15.490 (groove bottom - OV)\nF11 rib theta 179.402: width 1.244, tip r 6.481@17.07 -> 6.480@28.243, foot z 15.490 (groove bottom - OV)\nF11 rib theta -90.389: width 1.022, tip r 6.526@17.07 -> 6.320@28.171, foot z 15.490 (groove bottom - OV)\nF12 spigot revolve at (-0.0577,0.0563) [line at z=33.408]: 4 crests [32.945, 34.176, 35.407, 36.638], bottom round R0.6381 (derived c1-zb), top round R0.5791 (derived zt-c_n), cusp r 5.7712; valid=True\nF13 bottom ramp cut: rise 1.0591 over 132.65->255.39 deg; tool valid=True; spigot solids=1 valid=True\nF14 top tail union: rise 0.9076 over 124.62->245.43 deg; tool valid=True; spigot solids=1 valid=True\nF15a +collar: solids=1\nF15b +stem: solids=1\nF15c +ribs: solids=1\nF15d +spigot: solids=1\nF15 union+clean: solids=1 faces=83 valid=True volume=11655.642\nall params used\n{\n  \"closed\": true,\n  \"faces\": 83,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 4,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"scan_bbox\": {\n    \"max\": [\n      -8.100518,\n      27.140134,\n      -191.294531\n    ],\n    \"min\": [\n      -39.555687,\n      -12.178452,\n      -228.567515\n    ],\n    \"size\": [\n      31.455169,\n      39.318586,\n      37.272984\n    ]\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 11655.642525\n}\n",
+      "stderr_tail": "",
+      "run": 1,
+      "produced": [
+        "OD-S03_steam-knob.step",
+        "OD-S03_steam-knob_datum.step"
+      ]
+    },
+    {
+      "returncode": 0,
+      "stdout_tail": "1 edges OK\nF05 draft 3.0062 deg on 6 side faces; cap top-circle radius at the step face 13.2487 (expected R0+H tan = 13.2487); valid=True\nF06 crown round fillet target R2.45906 used R2.45906 on 6 edges OK\nF07 step-face edge round fillet target R0.534362 used R0.534362 on 6 edges OK\nF08 pocket tool: 6 side faces drafted 3.9860 deg about z=13.6892; floor z 8.5350; valid=True\nF08 pocket cut: solids=1 faces=27\nF09 collar revolve: groove 10.141->8.823 bottom 16.278; join r 7.804; valid=True\nF10 stem revolve at (-0.1840,0.1127) [line at z=22.900]; valid=True\nF11 rib theta -0.903: width 1.073, tip r 6.634@17.07 -> 6.277@28.309, foot z 15.490 (groove bottom - OV)\nF11 rib theta 90.733: width 0.916, tip r 6.376@17.07 -> 5.842@28.211, foot z 15.490 (groove bottom - OV)\nF11 rib theta 179.402: width 1.244, tip r 6.481@17.07 -> 6.480@28.243, foot z 15.490 (groove bottom - OV)\nF11 rib theta -90.389: width 1.022, tip r 6.526@17.07 -> 6.320@28.171, foot z 15.490 (groove bottom - OV)\nF12 spigot revolve at (-0.0577,0.0563) [line at z=33.408]: 4 crests [32.945, 34.176, 35.407, 36.638], bottom round R0.6381 (derived c1-zb), top round R0.5791 (derived zt-c_n), cusp r 5.7712; valid=True\nF13 bottom ramp cut: rise 1.0591 over 132.65->255.39 deg; tool valid=True; spigot solids=1 valid=True\nF14 top tail union: rise 0.9076 over 124.62->245.43 deg; tool valid=True; spigot solids=1 valid=True\nF15a +collar: solids=1\nF15b +stem: solids=1\nF15c +ribs: solids=1\nF15d +spigot: solids=1\nF15 union+clean: solids=1 faces=83 valid=True volume=11655.642\nall params used\n{\n  \"closed\": true,\n  \"faces\": 83,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 4,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"scan_bbox\": {\n    \"max\": [\n      -8.100518,\n      27.140134,\n      -191.294531\n    ],\n    \"min\": [\n      -39.555687,\n      -12.178452,\n      -228.567515\n    ],\n    \"size\": [\n      31.455169,\n      39.318586,\n      37.272984\n    ]\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 11655.642525\n}\n",
+      "stderr_tail": "",
+      "run": 2,
+      "produced": [
+        "OD-S03_steam-knob.step",
+        "OD-S03_steam-knob_datum.step"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "OD-S03_steam-knob.step",
+      "original_volume_mm3": 11655.642525224026,
+      "rebuild_volume_mm3": 11655.642525224026,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        31.45516937918483,
+        39.31858607185098,
+        37.27298402956967
+      ],
+      "rebuild_bbox_mm": [
+        31.45516937918483,
+        39.31858607185098,
+        37.27298402956967
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 11655.642525224026,
+          "rebuild_volume_mm3": 11655.642525224026,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            31.45516937918483,
+            39.31858607185098,
+            37.27298402956967
+          ],
+          "rebuild_bbox_mm": [
+            31.45516937918483,
+            39.31858607185098,
+            37.27298402956967
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 11655.642525224026,
+          "rebuild_volume_mm3": 11655.642525224026,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            31.45516937918483,
+            39.31858607185098,
+            37.27298402956967
+          ],
+          "rebuild_bbox_mm": [
+            31.45516937918483,
+            39.31858607185098,
+            37.27298402956967
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 83,
+        "valid": true,
+        "surface_census": {
+          "BSPLINE": 9,
+          "CONE": 15,
+          "CYLINDER": 11,
+          "PLANE": 30,
+          "REVOLUTION": 1,
+          "TORUS": 17
+        },
+        "volume_mm3": 11655.642525224026,
+        "area_mm2": 3886.0069188836605,
+        "bbox_min": [
+          -39.555687271099835,
+          -12.178451677734701,
+          -228.56751483492909
+        ],
+        "bbox_max": [
+          -8.100517891915002,
+          27.140134394116277,
+          -191.29453080535941
+        ]
+      }
+    },
+    {
+      "file": "OD-S03_steam-knob_datum.step",
+      "original_volume_mm3": 11655.642525224019,
+      "rebuild_volume_mm3": 11655.642525224019,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        40.96290923506,
+        26.439803990398,
+        38.10426591888
+      ],
+      "rebuild_bbox_mm": [
+        40.96290923506,
+        26.439803990398,
+        38.10426591888
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 11655.642525224019,
+          "rebuild_volume_mm3": 11655.642525224019,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            40.96290923506,
+            26.439803990398,
+            38.10426591888
+          ],
+          "rebuild_bbox_mm": [
+            40.96290923506,
+            26.439803990398,
+            38.10426591888
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 11655.642525224019,
+          "rebuild_volume_mm3": 11655.642525224019,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            40.96290923506,
+            26.439803990398,
+            38.10426591888
+          ],
+          "rebuild_bbox_mm": [
+            40.96290923506,
+            26.439803990398,
+            38.10426591888
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 83,
+        "valid": true,
+        "surface_census": {
+          "BSPLINE": 9,
+          "CONE": 15,
+          "CYLINDER": 11,
+          "PLANE": 30,
+          "REVOLUTION": 1,
+          "TORUS": 17
+        },
+        "volume_mm3": 11655.642525224019,
+        "area_mm2": 3886.0069188836605,
+        "bbox_min": [
+          -13.187901995199,
+          -13.315001995199001,
+          -4.440892098501e-16
+        ],
+        "bbox_max": [
+          27.775007239861,
+          13.124801995199,
+          38.10426591888
+        ]
+      }
+    }
+  ]
+}

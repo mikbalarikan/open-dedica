@@ -1,0 +1,880 @@
+{
+ "cap_cx": {
+  "value": 0.032,
+  "estimator": "cap wall cone fit (axes.json): Z-parallel axis, faces z 2.8-12.9, lever sector -50..50 excluded",
+  "rms": 0.0234,
+  "n": 59927
+ },
+ "cap_cy": {
+  "value": -0.0951,
+  "estimator": "same fit",
+  "rms": 0.0234
+ },
+ "cap_R_z0": {
+  "value": 12.5298,
+  "estimator": "cone r(z)=R0+k z extrapolated to the crown plane z=0 (same fit)",
+  "rms": 0.0234
+ },
+ "cap_draft_deg": {
+  "value": 3.0038,
+  "estimator": "cone slope k -> atan(k) (same fit)",
+  "rms": 0.0234
+ },
+ "crown_round_R": {
+  "value": 2.4361121114480517,
+  "estimator": "circle fit in (r,z) to cap faces r 10.0-12.9, z 0.06-2.6, theta outside -60..60 (cap frame)",
+  "rms": 0.037825261248793554,
+  "p95": 0.05838756775741045,
+  "n": 19775,
+  "centre_r": 10.21278872101494,
+  "centre_z": 2.4832127038434884
+ },
+ "crown_z": {
+  "value": 0.0007848239499702104,
+  "estimator": "area-weighted mean z of crown faces (n_z<-0.995, r<10) - the datum primary plane",
+  "std": 0.013443067623231381,
+  "n": 44188
+ },
+ "step_z": {
+  "value": [
+   13.668672150203847,
+   13.709689764086232
+  ],
+  "estimator": "area-weighted z of up(+Z)-facing faces: [cap annulus r 12.55-13.05, lever underside x>23]",
+  "std": [
+   0.018414988553379953,
+   0.022401228384842226
+  ],
+  "n": [
+   933,
+   1117
+  ]
+ },
+ "step_edge_R": {
+  "value": 0.4502430481771125,
+  "estimator": "circle fit (r,z) cap faces r 12.85-13.4, z 12.9-13.66, n_z>0.05 (edge round wall->step face)",
+  "rms": 0.046772354408434254,
+  "p95": 0.09486401954546267,
+  "n": 3893
+ },
+ "collar_cx": {
+  "value": -0.1166,
+  "estimator": "collar cylinder fit z 14.6-15.9 (axes.json)",
+  "rms": 0.0271,
+  "n": 8715
+ },
+ "collar_cy": {
+  "value": -0.0469,
+  "estimator": "same fit",
+  "rms": 0.0271
+ },
+ "collar_R": {
+  "value": 11.1163,
+  "estimator": "same fit (Z-parallel cylinder)",
+  "rms": 0.0271
+ },
+ "mouth_chamfer_slope": {
+  "value": -0.6696937005458121,
+  "estimator": "line z=a+b r through the mouth chamfer faces r 11.95-12.45 (collar frame)",
+  "std": 0.037907794247983094,
+  "n": 3220,
+  "a": 21.97702520790645
+ },
+ "mouth_ring_z": {
+  "value": 14.103858006286387,
+  "estimator": "area-weighted z of +Z-facing ring faces r 11.45-11.95",
+  "std": 0.02835277941687088,
+  "n": 1799
+ },
+ "mouth_chamfer_r_out": {
+  "value": 12.406198611292222,
+  "estimator": "chamfer line evaluated at step_z[0]"
+ },
+ "mouth_chamfer_r_in": {
+  "value": 11.756370405161784,
+  "estimator": "chamfer line evaluated at mouth_ring_z"
+ },
+ "collar_top_round_R": {
+  "value": 0.3257186819926497,
+  "estimator": "circle fit (r,z) faces r 11.1-11.55, z 14.1-14.5, n_z>0.1 (concave round ring face -> collar)",
+  "rms": 0.034830198775593915,
+  "p95": 0.06545240880987781,
+  "n": 4124
+ },
+ "collar_bot_z": {
+  "value": 16.60339580905414,
+  "estimator": "area-weighted z of +Z-facing faces r 10.25-10.8, z 16.3-16.9",
+  "std": 0.028635677080733616,
+  "n": 1330
+ },
+ "collar_bot_round_R": {
+  "value": 0.5684779205935221,
+  "estimator": "circle fit (r,z) faces r 10.6-11.2, z 15.9-collar_bot_z, n_z>0.1 (convex round collar -> bottom face)",
+  "rms": 0.04247170524544459,
+  "p95": 0.08260538077861698,
+  "n": 4684
+ },
+ "groove_out_rc": {
+  "value": 9.539385695534538,
+  "estimator": "median over 30-deg sectors of circle fits (r,z) to the collar-face groove faces r 8.9-10.25 (collar frame)",
+  "per_sector": [
+   9.469485329721703,
+   9.523381669738198,
+   9.434895547684581,
+   8.539679051993373,
+   9.55538972133088,
+   9.573289856054188,
+   9.602766937339696,
+   9.565033197720124
+  ]
+ },
+ "groove_out_bottom_z": {
+  "value": 16.27846092326373,
+  "estimator": "same fits: centre_z - R (groove bottom)",
+  "per_sector": [
+   16.29995614882356,
+   16.2569656977039,
+   15.90517392980698,
+   15.769988240011868,
+   16.224593511950044,
+   16.35155785546538,
+   16.35854035157297,
+   16.368762776143086
+  ],
+  "spread": 0.5987745361312182
+ },
+ "groove_out_R": {
+  "value": 0.7198535320752644,
+  "estimator": "same fits: arc radius",
+  "per_sector": [
+   0.806123677719845,
+   0.6481360434617256,
+   0.5446536011970213,
+   1.8935925447197355,
+   0.6282669529277917,
+   0.706231642482042,
+   0.7334754216684868,
+   0.8267144953534968
+  ]
+ },
+ "flange_z": {
+  "value": 17.070069789886475,
+  "estimator": "mean of 45-deg sector medians of z of +Z-facing faces r 7.4-8.6 (stem flange ring face; the face is not level: see spread)",
+  "per_sector": [
+   [
+    -180,
+    17.043121019999184
+   ],
+   [
+    -135,
+    17.099286397298176
+   ],
+   [
+    -90,
+    17.08142534891764
+   ],
+   [
+    -45,
+    17.168178876241047
+   ],
+   [
+    0,
+    17.15080706278483
+   ],
+   [
+    45,
+    16.848833084106445
+   ],
+   [
+    90,
+    17.082945505777992
+   ],
+   [
+    135,
+    17.08596102396647
+   ]
+  ],
+  "spread": 0.3193457921346017
+ },
+ "stem_axis_x0": {
+  "value": -0.459164131118209,
+  "estimator": "line fit through 20 station centres (stem core, neck, sleeve, bore), axis_stations.json",
+  "resid_rms": 0.04175657327449736,
+  "resid_max": 0.08147172326844994
+ },
+ "stem_axis_y0": {
+  "value": 0.23551107196663656,
+  "estimator": "line fit through 20 station centres (stem core, neck, sleeve, bore), axis_stations.json",
+  "resid_rms": 0.04175657327449736,
+  "resid_max": 0.08147172326844994
+ },
+ "stem_axis_dxdz": {
+  "value": 0.012016439420779582,
+  "estimator": "line fit through 20 station centres (stem core, neck, sleeve, bore), axis_stations.json",
+  "resid_rms": 0.04175657327449736,
+  "resid_max": 0.08147172326844994
+ },
+ "stem_axis_dydz": {
+  "value": -0.005363209016705826,
+  "estimator": "line fit through 20 station centres (stem core, neck, sleeve, bore), axis_stations.json",
+  "resid_rms": 0.04175657327449736,
+  "resid_max": 0.08147172326844994
+ },
+ "stem_core_R_z18": {
+  "value": 5.308295164395676,
+  "estimator": "line R(z) through stem-core station circle fits z 18.5-27.5, evaluated at z=18",
+  "std": 0.010723274350624165,
+  "n": 10
+ },
+ "stem_core_R_z28": {
+  "value": 5.159438661502205,
+  "estimator": "same line evaluated at z=28",
+  "std": 0.010723274350624165,
+  "n": 10
+ },
+ "neck_R": {
+  "value": 4.735663041806651,
+  "estimator": "mean of neck station circle fits z 30.3, 30.9",
+  "reads": [
+   4.73079013172286,
+   4.740535951890442
+  ]
+ },
+ "shoulder_profile_between_ribs": {
+  "value": [
+   [
+    28.0,
+    5.139563446751952
+   ],
+   [
+    28.1,
+    5.1307085209649035
+   ],
+   [
+    28.2,
+    5.118381175269018
+   ],
+   [
+    28.3,
+    5.100006994823304
+   ],
+   [
+    28.4,
+    5.095932537264023
+   ],
+   [
+    28.5,
+    5.090855728482696
+   ],
+   [
+    28.6,
+    5.084884776793462
+   ],
+   [
+    28.7,
+    5.079204342260412
+   ],
+   [
+    28.8,
+    5.083765286024282
+   ],
+   [
+    28.9,
+    5.067510850734832
+   ],
+   [
+    29.0,
+    5.054256202858408
+   ],
+   [
+    29.1,
+    4.996372177959925
+   ],
+   [
+    29.2,
+    4.952918286019468
+   ],
+   [
+    29.3,
+    4.885370861255575
+   ],
+   [
+    29.4,
+    4.839637895749464
+   ],
+   [
+    29.5,
+    4.804127800530022
+   ],
+   [
+    29.6,
+    4.779459599071728
+   ],
+   [
+    29.7,
+    4.763663411555634
+   ],
+   [
+    29.8,
+    4.7463166907849
+   ],
+   [
+    29.9,
+    4.741402773139112
+   ],
+   [
+    30.0,
+    4.736203585781766
+   ],
+   [
+    30.1,
+    4.731210400905177
+   ],
+   [
+    30.2,
+    4.729200977556991
+   ]
+  ],
+  "estimator": "median r of outward faces per 0.1 mm z, theta 20-70 mod 90 (between ribs), stem frame"
+ },
+ "stem_core_top_z": {
+  "value": 28.4,
+  "estimator": "highest z (0.1 steps) where the between-rib radius is within 0.06 of the core line",
+  "profile": "shoulder_profile_between_ribs"
+ },
+ "neck_bot_z": {
+  "value": 29.6,
+  "estimator": "lowest z (0.1 steps) where the between-rib radius is within 0.05 of neck_R"
+ },
+ "rib_theta_deg": {
+  "value": [
+   -0.9033470309879494,
+   90.73320027289223,
+   179.40166708650366,
+   -90.389177918125
+  ],
+  "estimator": "per rib: (r-5.7)-weighted mean azimuth of rib faces r>5.75, z 18-27.5 (stem frame)"
+ },
+ "rib_tip_r_z18": {
+  "value": [
+   6.604656861157123,
+   6.331892544620095,
+   6.481216567544608,
+   6.509025501737616
+  ],
+  "estimator": "per rib: p98 radius in +-12 deg, z 17.5-18.5"
+ },
+ "rib_tip_r_z27": {
+  "value": [
+   6.318731367604556,
+   5.900176277667483,
+   6.480433560062407,
+   6.341586538634544
+  ],
+  "estimator": "per rib: p98 radius in +-12 deg, z 26.5-27.5"
+ },
+ "rib_width": {
+  "value": [
+   1.073097851589798,
+   0.9163428708064233,
+   1.2438698411523716,
+   1.0224177523708993
+  ],
+  "estimator": "per rib: tangential extent at r=5.85+-0.06, median over z 18.5-27 (1 mm steps)"
+ },
+ "rib_top_z": {
+  "value": [
+   28.30913716296523,
+   28.21065322714356,
+   28.242705838231593,
+   28.170787468573547
+  ],
+  "estimator": "per rib: z where the crest radius (max r within +-2.5 deg, 0.05 mm steps) crosses the midpoint between the z=27 tip radius and the core radius at z=28"
+ },
+ "groove_in_rc": {
+  "value": 6.237598273522876,
+  "estimator": "median of circle fits (r,z) to +Z-ish faces r 5.5-7.1, z 15.6-16.9, 50-deg sectors between ribs (stem frame)",
+  "per_sector": [
+   6.186008331241577,
+   6.04554098101264,
+   6.289188215804174,
+   6.305624320518867
+  ]
+ },
+ "groove_in_bottom_z": {
+  "value": 15.990104963795549,
+  "estimator": "same fits: centre_z - R",
+  "per_sector": [
+   16.23837734406688,
+   16.13043116073282,
+   15.794259760351839,
+   15.849778766858277
+  ]
+ },
+ "groove_in_R": {
+  "value": 0.6784358600574218,
+  "estimator": "same fits: arc radius",
+  "per_sector": [
+   0.6711454202077409,
+   0.4954471891497931,
+   0.6857262999071029,
+   0.7356074262633834
+  ]
+ },
+ "sleeve_bottom_z": {
+  "value": 32.306779463634534,
+  "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve bottom edge heights at 3-deg azimuths (jog.json)",
+  "rms": 0.07293123353919756,
+  "p95": 0.14765890611644109
+ },
+ "sleeve_bottom_ramp_start_deg": {
+  "value": 132.64858124712623,
+  "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve bottom edge heights at 3-deg azimuths (jog.json)",
+  "rms": 0.07293123353919756,
+  "p95": 0.14765890611644109
+ },
+ "sleeve_bottom_ramp_end_deg": {
+  "value": 255.3913420333695,
+  "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve bottom edge heights at 3-deg azimuths (jog.json)",
+  "rms": 0.07293123353919756,
+  "p95": 0.14765890611644109
+ },
+ "sleeve_bottom_ramp_h": {
+  "value": 1.0591251520992002,
+  "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve bottom edge heights at 3-deg azimuths (jog.json)",
+  "rms": 0.07293123353919756,
+  "p95": 0.14765890611644109
+ },
+ "sleeve_top_z": {
+  "value": 37.216634692221646,
+  "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve top edge heights at 3-deg azimuths (jog.json)",
+  "rms": 0.05564828454364688,
+  "p95": 0.1478240461645157
+ },
+ "sleeve_top_ramp_start_deg": {
+  "value": 124.61786322695295,
+  "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve top edge heights at 3-deg azimuths (jog.json)",
+  "rms": 0.05564828454364688,
+  "p95": 0.1478240461645157
+ },
+ "sleeve_top_ramp_end_deg": {
+  "value": 245.43108504471908,
+  "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve top edge heights at 3-deg azimuths (jog.json)",
+  "rms": 0.05564828454364688,
+  "p95": 0.1478240461645157
+ },
+ "sleeve_top_ramp_h": {
+  "value": 0.9076311303221684,
+  "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve top edge heights at 3-deg azimuths (jog.json)",
+  "rms": 0.05564828454364688,
+  "p95": 0.1478240461645157
+ },
+ "sleeve_crest_R": {
+  "value": 5.952164603532699,
+  "estimator": "fit of touching-arc ripple r(z)=Rc-rho+sqrt(rho^2-dz^2), period p, to sleeve OD faces z 32.6-36.95, theta -95..120 (planar sector, stem frame)",
+  "rms": 0.04045387685848302,
+  "n": 9249
+ },
+ "sleeve_ripple_rho": {
+  "value": 1.1370690681234017,
+  "estimator": "same fit: crest arc radius",
+  "rms": 0.04045387685848302
+ },
+ "sleeve_ripple_pitch": {
+  "value": 1.2309007371128005,
+  "estimator": "same fit: period (ring pitch)",
+  "rms": 0.04045387685848302
+ },
+ "sleeve_first_crest_z": {
+  "value": 32.944855495218206,
+  "estimator": "same fit: z of the first crest",
+  "rms": 0.04045387685848302
+ },
+ "sleeve_ripple_depth_derived": {
+  "value": 0.18095876615672368,
+  "estimator": "rho - sqrt(rho^2 - (p/2)^2) from the ripple fit (derived, not a param)"
+ },
+ "sleeve_bot_round_R": {
+  "value": 0.6469024231934679,
+  "estimator": "circle fit (r,z) sleeve faces z bottom_level..+0.6, r 5.0-6.05, n_z<-0.1, planar sector",
+  "rms": 0.044193764247264164,
+  "p95": 0.08741875741241219,
+  "n": 2077
+ },
+ "sleeve_top_round_R": {
+  "value": 0.5583312569152796,
+  "estimator": "circle fit (r,z) sleeve faces z top_level-0.6..top_level, r 5.3-6.05, n_z>0.1, planar sector",
+  "rms": 0.050388868636097074,
+  "p95": 0.09530129857528576,
+  "n": 2005
+ },
+ "sleeve_tail_r_in": {
+  "value": 4.611641671053853,
+  "estimator": "p2 radius of scan faces above top_level+0.25 inside the top-ramp sector (inner edge of the helical tail)",
+  "n": 1324
+ },
+ "bore_R": {
+  "value": 4.088408104221392,
+  "estimator": "mean of bore station circle fits z 36.3, 36.8 (inward faces)",
+  "reads": [
+   4.080974978557975,
+   4.095841229884808
+  ]
+ },
+ "bore_shoulder_slope": {
+  "value": 0.9126771626997533,
+  "estimator": "line z=a+b r through +Z-facing bore-shoulder faces r 2.8-4.05, z 34.8-36.0",
+  "std": 0.185410643021285,
+  "n": 886,
+  "a": 32.10105605911567
+ },
+ "bore_seen_min_z": {
+  "value": 34.673437957763674,
+  "estimator": "p0.5 z of scan faces inside the bore (deepest observed)",
+  "n": 1265
+ },
+ "bore_seen_min_r": {
+  "value": 3.072284527095475,
+  "estimator": "p1 radius of bore faces below z 35.3 (innermost observed)"
+ },
+ "lever_flank_py_y18_z0": {
+  "value": 4.512472209874857,
+  "estimator": "lever +Y flank: line y(x=18)(z) through per-z plane-strip fits z 4-12.8 (lever.json), extrapolated to z=0",
+  "std": 0.004743931076188414,
+  "n": 7
+ },
+ "lever_flank_py_draft_deg": {
+  "value": 3.1323904209729814,
+  "estimator": "same line: atan(|dy/dz|)",
+  "std": 0.004743931076188414
+ },
+ "lever_flank_py_plan_deg": {
+  "value": -0.3062827245752724,
+  "estimator": "median over z of the per-z plan slope dy/dx (lever.json)",
+  "reads": [
+   -0.009127490175431147,
+   -0.008475445386008784,
+   -0.013342661121156629,
+   -0.005345692905222134,
+   -0.0010050964260509907,
+   0.0014751116448197673,
+   -0.0021936215825456456
+  ]
+ },
+ "lever_flank_my_y18_z0": {
+  "value": -4.446144374927403,
+  "estimator": "lever -Y flank: line y(x=18)(z) through per-z plane-strip fits z 4-12.8 (lever.json), extrapolated to z=0",
+  "std": 0.004939859861427824,
+  "n": 7
+ },
+ "lever_flank_my_draft_deg": {
+  "value": 2.882357737969624,
+  "estimator": "same line: atan(|dy/dz|)",
+  "std": 0.004939859861427824
+ },
+ "lever_flank_my_plan_deg": {
+  "value": 0.7376797203576325,
+  "estimator": "median over z of the per-z plan slope dy/dx (lever.json)",
+  "reads": [
+   0.010807826159381462,
+   0.01242794856096835,
+   0.012875651393457133,
+   0.012960000106938643,
+   0.012532154870771996,
+   0.014903031196704067,
+   0.018813709013172236
+  ]
+ },
+ "lever_tip_R_z0": {
+  "value": 4.588169823626818,
+  "estimator": "tip cone: line R(z) through per-z circle fits of tip faces x>23.5 (lever.json), extrapolated to z=0",
+  "std": 0.030444047470279526,
+  "n": 7
+ },
+ "lever_tip_draft_deg": {
+  "value": 2.1587276291448547,
+  "estimator": "same line: atan(dR/dz)",
+  "std": 0.030444047470279526
+ },
+ "lever_tip_cx": {
+  "value": 22.648160389960804,
+  "estimator": "median of per-z tip circle centres x",
+  "reads": [
+   22.5168269973699,
+   22.60215026377682,
+   22.593830534638855,
+   22.64829603977412,
+   22.727368527074095,
+   22.648160389960804,
+   22.734631983161822
+  ]
+ },
+ "lever_tip_cy": {
+  "value": 0.11799163041019477,
+  "estimator": "median of per-z tip circle centres y",
+  "reads": [
+   0.10603296567356499,
+   0.0948681689465919,
+   0.12559006274194115,
+   0.12803631694606693,
+   0.09340183321229345,
+   0.12608510509931053,
+   0.11799163041019477
+  ]
+ },
+ "lever_blend_R_z0": {
+  "value": 6.559580261710577,
+  "estimator": "line R(z) through plan circle fits to the concave lever-cap blend faces (z 4, 7, 10, 12.5; both sides), extrapolated to z=0 (a drafted concave blend shrinks with z)",
+  "per_fit": {
+   "+Y": [
+    [
+     4.0,
+     6.066788984258352,
+     0.02138169263505459,
+     92
+    ],
+    [
+     7.0,
+     5.715344888076685,
+     0.027127658415883722,
+     130
+    ],
+    [
+     10.0,
+     5.2061671448240805,
+     0.03287453259190076,
+     98
+    ],
+    [
+     12.5,
+     5.812496942476708,
+     0.042704214803513926,
+     64
+    ]
+   ],
+   "-Y": [
+    [
+     4.0,
+     6.801635271866856,
+     0.029160909005928423,
+     454
+    ],
+    [
+     7.0,
+     6.250496851354811,
+     0.025695386514120015,
+     481
+    ],
+    [
+     10.0,
+     5.957198550236708,
+     0.023621755441945842,
+     459
+    ],
+    [
+     12.5,
+     6.074780589433528,
+     0.022121676417656496,
+     436
+    ]
+   ]
+  },
+  "slope": -0.06853332643517761,
+  "std": 0.3673809290758098,
+  "n": 8
+ },
+ "lever_crown_round_R": {
+  "value": 2.482014668669176,
+  "estimator": "circle fit (x,z) to lever-tip crown-round faces x>23.8, |y|<2, z 0.06-2.9",
+  "rms": 0.11361578447236333,
+  "p95": 0.25567115260658707,
+  "n": 1484
+ },
+ "lever_under_edge_R": {
+  "value": 0.6184817765072868,
+  "estimator": "circle fit (x,z) lever-tip underside edge faces x>26.6, |y|<2, z 12.8-13.8",
+  "rms": 0.09990429684743365,
+  "p95": 0.19399167390411517,
+  "n": 915
+ },
+ "pocket_y_plus_at_step": {
+  "value": 2.3121243514643446,
+  "estimator": "pocket wall 'wall+Y (normal -Y)': line through per-z medians z 10-13.3 (pocket.json), evaluated at the lever step face z",
+  "std": 0.008084376466812026,
+  "n": 5
+ },
+ "pocket_y_plus_draft_deg": {
+  "value": 3.0027185371181417,
+  "estimator": "same line: atan(|d/dz|)",
+  "std": 0.008084376466812026
+ },
+ "pocket_y_minus_at_step": {
+  "value": -2.194239837158206,
+  "estimator": "pocket wall 'wall-Y (normal +Y)': line through per-z medians z 10-13.3 (pocket.json), evaluated at the lever step face z",
+  "std": 0.006254975697965829,
+  "n": 5
+ },
+ "pocket_y_minus_draft_deg": {
+  "value": 5.5745963412383555,
+  "estimator": "same line: atan(|d/dz|)",
+  "std": 0.006254975697965829
+ },
+ "pocket_x_inner_at_step": {
+  "value": 13.195574380593001,
+  "estimator": "pocket wall 'end_inner (normal +X)': line through per-z medians z 10-13.3 (pocket.json), evaluated at the lever step face z",
+  "std": 0.008234221247547791,
+  "n": 5
+ },
+ "pocket_x_inner_draft_deg": {
+  "value": 3.3805831932844357,
+  "estimator": "same line: atan(|d/dz|)",
+  "std": 0.008234221247547791
+ },
+ "pocket_floor_z": {
+  "value": 8.535,
+  "estimator": "floor seen sparsely: 64 +Z-facing faces in the pocket footprint, z p5 8.42 / p50 8.65 (pocket.json); value = mid of p5..p50",
+  "n": 64
+ },
+ "pocket_end_cx": {
+  "value": 20.147878970609426,
+  "estimator": "plan circle fit to the pocket outer-end wall faces x 19.9-22.6, z 11.8-13.4 (inward-facing)",
+  "rms": 0.08721063196675928,
+  "n": 623,
+  "R": 2.177986564011296,
+  "cy": 0.14187394545422832
+ },
+ "pocket_corner_R": {
+  "value": 0.61108092797602,
+  "estimator": "mean of plan circle fits to the two inner-end corner wall faces (z 11.5-13.4)",
+  "reads": [
+   0.5483870227316384,
+   0.6737748332204015
+  ]
+ },
+ "stem_base_z": {
+  "value": 17.4,
+  "estimator": "lowest z (0.1 steps, z 16.6-19.5) where the between-rib median outward radius is within 0.03 of the stem-core cone line (stem frame)",
+  "profile": [
+   [
+    16.6,
+    5.4804381789432455
+   ],
+   [
+    16.7,
+    5.474197715453129
+   ],
+   [
+    16.8,
+    5.430635412854617
+   ],
+   [
+    16.9,
+    5.422238669191548
+   ],
+   [
+    17.0,
+    5.409627472995917
+   ],
+   [
+    17.1,
+    5.4018631456695925
+   ],
+   [
+    17.2,
+    5.387354640584421
+   ],
+   [
+    17.3,
+    5.365912939782435
+   ],
+   [
+    17.4,
+    5.338072988375694
+   ],
+   [
+    17.5,
+    5.334814201327559
+   ],
+   [
+    17.6,
+    5.329139769777472
+   ],
+   [
+    17.7,
+    5.3232251679709925
+   ],
+   [
+    17.8,
+    5.3267228515716845
+   ],
+   [
+    17.9,
+    5.322964250962647
+   ],
+   [
+    18.0,
+    5.3239908427680005
+   ],
+   [
+    18.1,
+    5.317992131350515
+   ],
+   [
+    18.2,
+    5.310418483703931
+   ],
+   [
+    18.3,
+    5.306593091866867
+   ],
+   [
+    18.4,
+    5.303600900028076
+   ],
+   [
+    18.5,
+    5.304729554128155
+   ],
+   [
+    18.6,
+    5.29905053623799
+   ],
+   [
+    18.7,
+    5.295625790515818
+   ],
+   [
+    18.8,
+    5.291546275405427
+   ],
+   [
+    18.9,
+    5.289307323780889
+   ],
+   [
+    19.0,
+    5.290008354534455
+   ],
+   [
+    19.1,
+    5.283106364463626
+   ],
+   [
+    19.2,
+    5.284110321017163
+   ],
+   [
+    19.3,
+    5.275187018662067
+   ],
+   [
+    19.4,
+    5.27008525074327
+   ],
+   [
+    19.5,
+    5.268435918597164
+   ]
+  ]
+ }
+}

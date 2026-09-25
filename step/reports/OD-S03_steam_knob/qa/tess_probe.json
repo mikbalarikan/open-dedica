@@ -1,0 +1,1845 @@
+{
+ "schema": "stl-re/tess_probe@1",
+ "tool": "qa_scripts/tess_probe.py (QA-own)",
+ "seed": null,
+ "inputs": {
+  "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step": "826a271bd95072f773007b43b784589ac42a7d5c10f1bb128d7da7ae100e4277",
+  "_it1_SUPERSEDED/build/OD-S03_steam-knob.step": "02fd041c44d3e6f2de67d849225a5859936f06cce7740ec7bd914eba6e372db5",
+  "build/OD-S03_steam-knob_datum.step": "67889051991478880adc82c1ca88afa292fc478f2e8dba7b7f3d6ff3bf72742c",
+  "build/OD-S03_steam-knob.step": "4b4a6390d838a5c9a211fe4805f7ae9b1e92e2af2d9df4f51a6a340cdbd54e3f"
+ },
+ "settings": [
+  [
+   0.005,
+   0.1
+  ],
+  [
+   0.005,
+   0.05
+  ],
+  [
+   0.01,
+   0.1
+  ],
+  [
+   0.01,
+   0.05
+  ],
+  [
+   0.003,
+   0.1
+  ],
+  [
+   0.02,
+   0.1
+  ]
+ ],
+ "results": [
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.1,
+   "tris": 136820,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 17,
+   "components": 17,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.411,
+      -0.229,
+      15.99
+     ],
+     "r": 6.416,
+     "theta_deg": 182.0
+    },
+    {
+     "xyz": [
+      -6.419,
+      -0.077,
+      15.99
+     ],
+     "r": 6.419,
+     "theta_deg": 180.7
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.025,
+      15.99
+     ],
+     "r": 6.421,
+     "theta_deg": 179.8
+    },
+    {
+     "xyz": [
+      -6.422,
+      0.115,
+      15.99
+     ],
+     "r": 6.423,
+     "theta_deg": 179.0
+    },
+    {
+     "xyz": [
+      -6.417,
+      0.358,
+      15.99
+     ],
+     "r": 6.427,
+     "theta_deg": 176.8
+    },
+    {
+     "xyz": [
+      -6.419,
+      0.269,
+      15.99
+     ],
+     "r": 6.424,
+     "theta_deg": 177.6
+    },
+    {
+     "xyz": [
+      -6.409,
+      0.488,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 175.6
+    },
+    {
+     "xyz": [
+      -6.413,
+      0.443,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 176.0
+    },
+    {
+     "xyz": [
+      -6.399,
+      0.642,
+      15.99
+     ],
+     "r": 6.431,
+     "theta_deg": 174.3
+    },
+    {
+     "xyz": [
+      -5.239,
+      -1.132,
+      32.307
+     ],
+     "r": 5.36,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.241,
+      -1.132,
+      32.307
+     ],
+     "r": 5.361,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.242,
+      -1.132,
+      32.307
+     ],
+     "r": 5.363,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.243,
+      -1.133,
+      32.307
+     ],
+     "r": 5.364,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.244,
+      -1.134,
+      32.307
+     ],
+     "r": 5.365,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.246,
+      -1.134,
+      32.307
+     ],
+     "r": 5.367,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.247,
+      -1.135,
+      32.307
+     ],
+     "r": 5.368,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.248,
+      -1.136,
+      32.307
+     ],
+     "r": 5.37,
+     "theta_deg": 192.2
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.05,
+   "tris": 534250,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 3,
+   "components": 3,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.414,
+      -0.192,
+      15.99
+     ],
+     "r": 6.417,
+     "theta_deg": 181.7
+    },
+    {
+     "xyz": [
+      -6.415,
+      0.407,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 176.4
+    },
+    {
+     "xyz": [
+      -6.407,
+      0.547,
+      15.99
+     ],
+     "r": 6.43,
+     "theta_deg": 175.1
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.1,
+   "tris": 136920,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 17,
+   "components": 17,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.411,
+      -0.229,
+      15.99
+     ],
+     "r": 6.416,
+     "theta_deg": 182.0
+    },
+    {
+     "xyz": [
+      -6.419,
+      -0.077,
+      15.99
+     ],
+     "r": 6.419,
+     "theta_deg": 180.7
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.025,
+      15.99
+     ],
+     "r": 6.421,
+     "theta_deg": 179.8
+    },
+    {
+     "xyz": [
+      -6.422,
+      0.115,
+      15.99
+     ],
+     "r": 6.423,
+     "theta_deg": 179.0
+    },
+    {
+     "xyz": [
+      -6.417,
+      0.358,
+      15.99
+     ],
+     "r": 6.427,
+     "theta_deg": 176.8
+    },
+    {
+     "xyz": [
+      -6.419,
+      0.269,
+      15.99
+     ],
+     "r": 6.424,
+     "theta_deg": 177.6
+    },
+    {
+     "xyz": [
+      -6.409,
+      0.488,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 175.6
+    },
+    {
+     "xyz": [
+      -6.413,
+      0.443,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 176.0
+    },
+    {
+     "xyz": [
+      -6.399,
+      0.642,
+      15.99
+     ],
+     "r": 6.431,
+     "theta_deg": 174.3
+    },
+    {
+     "xyz": [
+      -5.24,
+      -1.132,
+      32.307
+     ],
+     "r": 5.361,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.241,
+      -1.132,
+      32.307
+     ],
+     "r": 5.362,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.243,
+      -1.133,
+      32.307
+     ],
+     "r": 5.363,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.244,
+      -1.133,
+      32.307
+     ],
+     "r": 5.365,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.245,
+      -1.134,
+      32.307
+     ],
+     "r": 5.366,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.246,
+      -1.135,
+      32.307
+     ],
+     "r": 5.368,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.248,
+      -1.135,
+      32.307
+     ],
+     "r": 5.369,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.249,
+      -1.136,
+      32.307
+     ],
+     "r": 5.37,
+     "theta_deg": 192.2
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.05,
+   "tris": 539862,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 13,
+   "components": 13,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.41,
+      -0.267,
+      15.99
+     ],
+     "r": 6.415,
+     "theta_deg": 182.4
+    },
+    {
+     "xyz": [
+      -6.414,
+      -0.192,
+      15.99
+     ],
+     "r": 6.417,
+     "theta_deg": 181.7
+    },
+    {
+     "xyz": [
+      -6.417,
+      -0.127,
+      15.99
+     ],
+     "r": 6.418,
+     "theta_deg": 181.1
+    },
+    {
+     "xyz": [
+      -6.419,
+      -0.052,
+      15.99
+     ],
+     "r": 6.42,
+     "theta_deg": 180.5
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.025,
+      15.99
+     ],
+     "r": 6.421,
+     "theta_deg": 179.8
+    },
+    {
+     "xyz": [
+      -6.422,
+      0.101,
+      15.99
+     ],
+     "r": 6.422,
+     "theta_deg": 179.1
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.178,
+      15.99
+     ],
+     "r": 6.424,
+     "theta_deg": 178.4
+    },
+    {
+     "xyz": [
+      -6.42,
+      0.254,
+      15.99
+     ],
+     "r": 6.425,
+     "theta_deg": 177.7
+    },
+    {
+     "xyz": [
+      -6.418,
+      0.331,
+      15.99
+     ],
+     "r": 6.426,
+     "theta_deg": 177.0
+    },
+    {
+     "xyz": [
+      -6.415,
+      0.407,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 176.4
+    },
+    {
+     "xyz": [
+      -6.41,
+      0.484,
+      15.99
+     ],
+     "r": 6.429,
+     "theta_deg": 175.7
+    },
+    {
+     "xyz": [
+      -6.407,
+      0.547,
+      15.99
+     ],
+     "r": 6.43,
+     "theta_deg": 175.1
+    },
+    {
+     "xyz": [
+      -6.4,
+      0.624,
+      15.99
+     ],
+     "r": 6.431,
+     "theta_deg": 174.4
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.003,
+   "angular_rad": 0.1,
+   "tris": 139412,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 17,
+   "components": 17,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.411,
+      -0.229,
+      15.99
+     ],
+     "r": 6.416,
+     "theta_deg": 182.0
+    },
+    {
+     "xyz": [
+      -6.419,
+      -0.077,
+      15.99
+     ],
+     "r": 6.419,
+     "theta_deg": 180.7
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.025,
+      15.99
+     ],
+     "r": 6.421,
+     "theta_deg": 179.8
+    },
+    {
+     "xyz": [
+      -6.422,
+      0.115,
+      15.99
+     ],
+     "r": 6.423,
+     "theta_deg": 179.0
+    },
+    {
+     "xyz": [
+      -6.417,
+      0.358,
+      15.99
+     ],
+     "r": 6.427,
+     "theta_deg": 176.8
+    },
+    {
+     "xyz": [
+      -6.419,
+      0.269,
+      15.99
+     ],
+     "r": 6.424,
+     "theta_deg": 177.6
+    },
+    {
+     "xyz": [
+      -6.409,
+      0.488,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 175.6
+    },
+    {
+     "xyz": [
+      -6.413,
+      0.443,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 176.0
+    },
+    {
+     "xyz": [
+      -6.399,
+      0.642,
+      15.99
+     ],
+     "r": 6.431,
+     "theta_deg": 174.3
+    },
+    {
+     "xyz": [
+      -5.24,
+      -1.132,
+      32.307
+     ],
+     "r": 5.361,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.241,
+      -1.132,
+      32.307
+     ],
+     "r": 5.362,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.242,
+      -1.133,
+      32.307
+     ],
+     "r": 5.363,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.244,
+      -1.133,
+      32.307
+     ],
+     "r": 5.365,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.245,
+      -1.134,
+      32.307
+     ],
+     "r": 5.366,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.246,
+      -1.135,
+      32.307
+     ],
+     "r": 5.367,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.248,
+      -1.135,
+      32.307
+     ],
+     "r": 5.369,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.249,
+      -1.136,
+      32.307
+     ],
+     "r": 5.371,
+     "theta_deg": 192.2
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.02,
+   "angular_rad": 0.1,
+   "tris": 137236,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 16,
+   "components": 16,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.411,
+      -0.229,
+      15.99
+     ],
+     "r": 6.416,
+     "theta_deg": 182.0
+    },
+    {
+     "xyz": [
+      -6.419,
+      -0.077,
+      15.99
+     ],
+     "r": 6.419,
+     "theta_deg": 180.7
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.025,
+      15.99
+     ],
+     "r": 6.421,
+     "theta_deg": 179.8
+    },
+    {
+     "xyz": [
+      -6.422,
+      0.115,
+      15.99
+     ],
+     "r": 6.423,
+     "theta_deg": 179.0
+    },
+    {
+     "xyz": [
+      -6.417,
+      0.358,
+      15.99
+     ],
+     "r": 6.427,
+     "theta_deg": 176.8
+    },
+    {
+     "xyz": [
+      -6.419,
+      0.269,
+      15.99
+     ],
+     "r": 6.424,
+     "theta_deg": 177.6
+    },
+    {
+     "xyz": [
+      -6.409,
+      0.488,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 175.6
+    },
+    {
+     "xyz": [
+      -6.413,
+      0.443,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 176.0
+    },
+    {
+     "xyz": [
+      -6.399,
+      0.642,
+      15.99
+     ],
+     "r": 6.431,
+     "theta_deg": 174.3
+    },
+    {
+     "xyz": [
+      -5.24,
+      -1.132,
+      32.307
+     ],
+     "r": 5.36,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.241,
+      -1.132,
+      32.307
+     ],
+     "r": 5.362,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.242,
+      -1.132,
+      32.307
+     ],
+     "r": 5.363,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.243,
+      -1.133,
+      32.307
+     ],
+     "r": 5.365,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.245,
+      -1.134,
+      32.307
+     ],
+     "r": 5.366,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.247,
+      -1.135,
+      32.307
+     ],
+     "r": 5.368,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.248,
+      -1.136,
+      32.307
+     ],
+     "r": 5.37,
+     "theta_deg": 192.2
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.1,
+   "tris": 137288,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 18,
+   "components": 18,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.411,
+      -0.229,
+      15.99
+     ],
+     "r": 6.416,
+     "theta_deg": 182.0
+    },
+    {
+     "xyz": [
+      -6.419,
+      -0.077,
+      15.99
+     ],
+     "r": 6.419,
+     "theta_deg": 180.7
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.025,
+      15.99
+     ],
+     "r": 6.421,
+     "theta_deg": 179.8
+    },
+    {
+     "xyz": [
+      -6.422,
+      0.115,
+      15.99
+     ],
+     "r": 6.423,
+     "theta_deg": 179.0
+    },
+    {
+     "xyz": [
+      -6.417,
+      0.358,
+      15.99
+     ],
+     "r": 6.427,
+     "theta_deg": 176.8
+    },
+    {
+     "xyz": [
+      -6.419,
+      0.269,
+      15.99
+     ],
+     "r": 6.424,
+     "theta_deg": 177.6
+    },
+    {
+     "xyz": [
+      -6.409,
+      0.488,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 175.6
+    },
+    {
+     "xyz": [
+      -6.413,
+      0.443,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 176.0
+    },
+    {
+     "xyz": [
+      -6.399,
+      0.642,
+      15.99
+     ],
+     "r": 6.431,
+     "theta_deg": 174.3
+    },
+    {
+     "xyz": [
+      -5.239,
+      -1.132,
+      32.307
+     ],
+     "r": 5.36,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.241,
+      -1.132,
+      32.307
+     ],
+     "r": 5.362,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.242,
+      -1.133,
+      32.307
+     ],
+     "r": 5.363,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.243,
+      -1.133,
+      32.307
+     ],
+     "r": 5.365,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.245,
+      -1.134,
+      32.307
+     ],
+     "r": 5.366,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.246,
+      -1.135,
+      32.307
+     ],
+     "r": 5.367,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.248,
+      -1.135,
+      32.307
+     ],
+     "r": 5.369,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.249,
+      -1.136,
+      32.307
+     ],
+     "r": 5.37,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.25,
+      -1.137,
+      32.307
+     ],
+     "r": 5.372,
+     "theta_deg": 192.2
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.05,
+   "tris": 536080,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 12,
+   "components": 12,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.41,
+      -0.267,
+      15.99
+     ],
+     "r": 6.415,
+     "theta_deg": 182.4
+    },
+    {
+     "xyz": [
+      -6.414,
+      -0.192,
+      15.99
+     ],
+     "r": 6.417,
+     "theta_deg": 181.7
+    },
+    {
+     "xyz": [
+      -6.417,
+      -0.127,
+      15.99
+     ],
+     "r": 6.418,
+     "theta_deg": 181.1
+    },
+    {
+     "xyz": [
+      -6.419,
+      -0.052,
+      15.99
+     ],
+     "r": 6.42,
+     "theta_deg": 180.5
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.025,
+      15.99
+     ],
+     "r": 6.421,
+     "theta_deg": 179.8
+    },
+    {
+     "xyz": [
+      -6.422,
+      0.101,
+      15.99
+     ],
+     "r": 6.422,
+     "theta_deg": 179.1
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.178,
+      15.99
+     ],
+     "r": 6.424,
+     "theta_deg": 178.4
+    },
+    {
+     "xyz": [
+      -6.42,
+      0.254,
+      15.99
+     ],
+     "r": 6.425,
+     "theta_deg": 177.7
+    },
+    {
+     "xyz": [
+      -6.418,
+      0.331,
+      15.99
+     ],
+     "r": 6.426,
+     "theta_deg": 177.0
+    },
+    {
+     "xyz": [
+      -6.4,
+      0.624,
+      15.99
+     ],
+     "r": 6.431,
+     "theta_deg": 174.4
+    },
+    {
+     "xyz": [
+      -6.407,
+      0.547,
+      15.99
+     ],
+     "r": 6.43,
+     "theta_deg": 175.1
+    },
+    {
+     "xyz": [
+      -6.41,
+      0.484,
+      15.99
+     ],
+     "r": 6.429,
+     "theta_deg": 175.7
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.1,
+   "tris": 137778,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 16,
+   "components": 16,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.411,
+      -0.229,
+      15.99
+     ],
+     "r": 6.416,
+     "theta_deg": 182.0
+    },
+    {
+     "xyz": [
+      -6.419,
+      -0.077,
+      15.99
+     ],
+     "r": 6.419,
+     "theta_deg": 180.7
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.025,
+      15.99
+     ],
+     "r": 6.421,
+     "theta_deg": 179.8
+    },
+    {
+     "xyz": [
+      -6.422,
+      0.115,
+      15.99
+     ],
+     "r": 6.423,
+     "theta_deg": 179.0
+    },
+    {
+     "xyz": [
+      -6.417,
+      0.358,
+      15.99
+     ],
+     "r": 6.427,
+     "theta_deg": 176.8
+    },
+    {
+     "xyz": [
+      -6.419,
+      0.269,
+      15.99
+     ],
+     "r": 6.424,
+     "theta_deg": 177.6
+    },
+    {
+     "xyz": [
+      -6.409,
+      0.488,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 175.6
+    },
+    {
+     "xyz": [
+      -6.413,
+      0.443,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 176.0
+    },
+    {
+     "xyz": [
+      -6.399,
+      0.642,
+      15.99
+     ],
+     "r": 6.431,
+     "theta_deg": 174.3
+    },
+    {
+     "xyz": [
+      -5.239,
+      -1.131,
+      32.307
+     ],
+     "r": 5.36,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.24,
+      -1.132,
+      32.307
+     ],
+     "r": 5.361,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.242,
+      -1.132,
+      32.307
+     ],
+     "r": 5.363,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.243,
+      -1.133,
+      32.307
+     ],
+     "r": 5.364,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.244,
+      -1.134,
+      32.307
+     ],
+     "r": 5.365,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.246,
+      -1.134,
+      32.307
+     ],
+     "r": 5.367,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.247,
+      -1.135,
+      32.307
+     ],
+     "r": 5.368,
+     "theta_deg": 192.2
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.05,
+   "tris": 537646,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 2,
+   "components": 2,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.414,
+      -0.192,
+      15.99
+     ],
+     "r": 6.417,
+     "theta_deg": 181.7
+    },
+    {
+     "xyz": [
+      -6.407,
+      0.547,
+      15.99
+     ],
+     "r": 6.43,
+     "theta_deg": 175.1
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.003,
+   "angular_rad": 0.1,
+   "tris": 138006,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 16,
+   "components": 16,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.411,
+      -0.229,
+      15.99
+     ],
+     "r": 6.416,
+     "theta_deg": 182.0
+    },
+    {
+     "xyz": [
+      -6.419,
+      -0.077,
+      15.99
+     ],
+     "r": 6.419,
+     "theta_deg": 180.7
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.025,
+      15.99
+     ],
+     "r": 6.421,
+     "theta_deg": 179.8
+    },
+    {
+     "xyz": [
+      -6.422,
+      0.115,
+      15.99
+     ],
+     "r": 6.423,
+     "theta_deg": 179.0
+    },
+    {
+     "xyz": [
+      -6.417,
+      0.358,
+      15.99
+     ],
+     "r": 6.427,
+     "theta_deg": 176.8
+    },
+    {
+     "xyz": [
+      -6.419,
+      0.269,
+      15.99
+     ],
+     "r": 6.424,
+     "theta_deg": 177.6
+    },
+    {
+     "xyz": [
+      -6.409,
+      0.488,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 175.6
+    },
+    {
+     "xyz": [
+      -6.413,
+      0.443,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 176.0
+    },
+    {
+     "xyz": [
+      -6.399,
+      0.642,
+      15.99
+     ],
+     "r": 6.431,
+     "theta_deg": 174.3
+    },
+    {
+     "xyz": [
+      -5.239,
+      -1.132,
+      32.307
+     ],
+     "r": 5.36,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.24,
+      -1.132,
+      32.307
+     ],
+     "r": 5.361,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.242,
+      -1.132,
+      32.307
+     ],
+     "r": 5.363,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.243,
+      -1.133,
+      32.307
+     ],
+     "r": 5.364,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.244,
+      -1.133,
+      32.307
+     ],
+     "r": 5.365,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.246,
+      -1.134,
+      32.307
+     ],
+     "r": 5.367,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.247,
+      -1.135,
+      32.307
+     ],
+     "r": 5.368,
+     "theta_deg": 192.2
+    }
+   ]
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.02,
+   "angular_rad": 0.1,
+   "tris": 137024,
+   "watertight": false,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 15,
+   "components": 15,
+   "volume_mm3": null,
+   "defect_locations_datum_frame": [
+    {
+     "xyz": [
+      -6.411,
+      -0.229,
+      15.99
+     ],
+     "r": 6.416,
+     "theta_deg": 182.0
+    },
+    {
+     "xyz": [
+      -6.419,
+      -0.077,
+      15.99
+     ],
+     "r": 6.419,
+     "theta_deg": 180.7
+    },
+    {
+     "xyz": [
+      -6.421,
+      0.025,
+      15.99
+     ],
+     "r": 6.421,
+     "theta_deg": 179.8
+    },
+    {
+     "xyz": [
+      -6.422,
+      0.115,
+      15.99
+     ],
+     "r": 6.423,
+     "theta_deg": 179.0
+    },
+    {
+     "xyz": [
+      -6.417,
+      0.358,
+      15.99
+     ],
+     "r": 6.427,
+     "theta_deg": 176.8
+    },
+    {
+     "xyz": [
+      -6.419,
+      0.269,
+      15.99
+     ],
+     "r": 6.424,
+     "theta_deg": 177.6
+    },
+    {
+     "xyz": [
+      -6.409,
+      0.488,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 175.6
+    },
+    {
+     "xyz": [
+      -6.413,
+      0.443,
+      15.99
+     ],
+     "r": 6.428,
+     "theta_deg": 176.0
+    },
+    {
+     "xyz": [
+      -6.399,
+      0.642,
+      15.99
+     ],
+     "r": 6.431,
+     "theta_deg": 174.3
+    },
+    {
+     "xyz": [
+      -5.241,
+      -1.132,
+      32.307
+     ],
+     "r": 5.361,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.242,
+      -1.133,
+      32.307
+     ],
+     "r": 5.363,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.244,
+      -1.133,
+      32.307
+     ],
+     "r": 5.365,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.246,
+      -1.134,
+      32.307
+     ],
+     "r": 5.367,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.247,
+      -1.135,
+      32.307
+     ],
+     "r": 5.369,
+     "theta_deg": 192.2
+    },
+    {
+     "xyz": [
+      -5.249,
+      -1.136,
+      32.307
+     ],
+     "r": 5.37,
+     "theta_deg": 192.2
+    }
+   ]
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.1,
+   "tris": 135142,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11646.75721674115,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.05,
+   "tris": 523914,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11653.259683918557,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.1,
+   "tris": 134536,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11646.748464942108,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.05,
+   "tris": 526370,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11653.267713783722,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.003,
+   "angular_rad": 0.1,
+   "tris": 137560,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11646.757642575622,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.02,
+   "angular_rad": 0.1,
+   "tris": 135268,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11646.714726876578,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.1,
+   "tris": 135142,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11646.75946150602,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.05,
+   "tris": 523274,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11653.262301541274,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.1,
+   "tris": 135558,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11646.757144247944,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.05,
+   "tris": 525746,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11653.260852034842,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.003,
+   "angular_rad": 0.1,
+   "tris": 137046,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11646.760113017894,
+   "defect_locations_datum_frame": []
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.02,
+   "angular_rad": 0.1,
+   "tris": 135066,
+   "watertight": true,
+   "winding_consistent": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0,
+   "components": 1,
+   "volume_mm3": 11646.746189698906,
+   "defect_locations_datum_frame": []
+  }
+ ]
+}

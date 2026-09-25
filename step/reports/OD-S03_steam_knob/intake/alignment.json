@@ -1,0 +1,518 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/intake/work.stl": "1fc4e887e2910da10f773913bbeb2dc547d9785458c9726d0a5d1e81141c0f47",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/intake/datum_spec.json": "3b74e052c071349ce222c7485f61793bbe4a49bb6239eeb0a15e08436cf7ed03",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/input/scan.stl": "ce4a9dfcb0acf91a9e1632f0f67c2317ab6890ab8d86e2edcf0c958957fb0dfd",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/intake/intake.json": "0c742d30add965eb529de6cefc17c16060c92b358ac7b6f066b73670c185973f"
+ },
+ "seed": 0,
+ "created": "2026-09-25T13:43:06+00:00",
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [],
+ "matrix_4x4": [
+  [
+   -0.5495877686386216,
+   0.055971622963454835,
+   -0.8335589133262614,
+   -183.3176107831595
+  ],
+  [
+   0.8233915786999859,
+   -0.13252214082118596,
+   -0.5517827383292402,
+   -93.03975846361719
+  ],
+  [
+   -0.14134918708208466,
+   -0.9895984335148307,
+   0.02674598467484931,
+   27.80876472158314
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.01870648825491811,
+  "method": "rms of RANSAC+SVD plane on lever -Y flank (flat chrome side face of the lever wing) (12006 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "cap crown face, flat field only (normals within 3 deg: excludes the onset of the crown edge round at r>10; coplanar lever top included)",
+  "why": "largest moulded flat perpendicular to the knob axis; the cap and lever are referenced from it; its normal is the turning axis direction",
+  "fit_rms_mm": 0.01463896245582717,
+  "fit_max_mm": 0.09798353111580575,
+  "fit_p95_mm": 0.029116673896175924,
+  "n_faces": 45575,
+  "area_mm2": 320.34615611006774,
+  "fit_untrimmed": {
+   "rms": 0.014663182844387088,
+   "p95": 0.02912649569598177,
+   "max": 0.10803591479140055,
+   "n_faces": 45578
+  },
+  "inlier_frac": 0.9970819254903681,
+  "normal_raw": [
+   0.1413491870820847,
+   0.9895984335148305,
+   -0.026745984674849302
+  ],
+  "centroid_raw": [
+   -21.70063348396627,
+   25.60114370738439,
+   -207.1817501601706
+  ],
+  "material_side": "+z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.9970819254903681
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "spigot thread envelope sections (closed loops) + cap outer wall faces (drafted)",
+  "why": "the threaded spigot is the functional interface to the valve spindle / cap body; long axial span for CHK-TILT",
+  "fit_rms_mm": 0.04311528607276201,
+  "fit_max_mm": 0.35070494034780886,
+  "fit_metric": "median / worst circle residual over stations (kasa,wall_faces)",
+  "stations": 25,
+  "r_by_feature": {
+   "spigot thread envelope sections (closed loops)": {
+    "n": 14,
+    "r_mean": 5.880299334037671,
+    "r_std": 0.03223127030048204
+   },
+   "cap outer wall faces (drafted)": {
+    "n": 11,
+    "r_mean": 12.989022685996593,
+    "r_std": 0.18699840976381654
+   }
+  },
+  "centre_std_mm": [
+   0.048341245878946996,
+   0.1519702578933001
+  ],
+  "station_detail": [
+   {
+    "z": 33.45,
+    "cx": -204.61815,
+    "cy": 18.7287,
+    "r": 5.84978,
+    "rms": 0.05927,
+    "max": 0.13705,
+    "n": 572,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 33.7,
+    "cx": -204.6033,
+    "cy": 18.80298,
+    "r": 5.8322,
+    "rms": 0.06872,
+    "max": 0.11928,
+    "n": 563,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 33.95,
+    "cx": -204.69866,
+    "cy": 18.862,
+    "r": 5.89095,
+    "rms": 0.06007,
+    "max": 0.13331,
+    "n": 569,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 34.2,
+    "cx": -204.76248,
+    "cy": 18.83152,
+    "r": 5.93184,
+    "rms": 0.05069,
+    "max": 0.13074,
+    "n": 570,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 34.45,
+    "cx": -204.73314,
+    "cy": 18.79363,
+    "r": 5.9092,
+    "rms": 0.0441,
+    "max": 0.10104,
+    "n": 581,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 34.7,
+    "cx": -204.66257,
+    "cy": 18.7931,
+    "r": 5.85657,
+    "rms": 0.03957,
+    "max": 0.06839,
+    "n": 576,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 34.95,
+    "cx": -204.66785,
+    "cy": 18.83892,
+    "r": 5.84577,
+    "rms": 0.04877,
+    "max": 0.08413,
+    "n": 574,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 35.2,
+    "cx": -204.74273,
+    "cy": 18.85899,
+    "r": 5.89903,
+    "rms": 0.04237,
+    "max": 0.10015,
+    "n": 562,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 35.45,
+    "cx": -204.78635,
+    "cy": 18.8299,
+    "r": 5.92397,
+    "rms": 0.04271,
+    "max": 0.0953,
+    "n": 563,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 35.7,
+    "cx": -204.7445,
+    "cy": 18.80307,
+    "r": 5.89264,
+    "rms": 0.04271,
+    "max": 0.0829,
+    "n": 564,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 35.95,
+    "cx": -204.68346,
+    "cy": 18.81612,
+    "r": 5.84469,
+    "rms": 0.04048,
+    "max": 0.078,
+    "n": 567,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 36.2,
+    "cx": -204.70947,
+    "cy": 18.86026,
+    "r": 5.84479,
+    "rms": 0.04974,
+    "max": 0.10282,
+    "n": 579,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 36.45,
+    "cx": -204.7902,
+    "cy": 18.86289,
+    "r": 5.89398,
+    "rms": 0.04562,
+    "max": 0.10778,
+    "n": 574,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 36.7,
+    "cx": -204.81749,
+    "cy": 18.82639,
+    "r": 5.90879,
+    "rms": 0.04902,
+    "max": 0.1075,
+    "n": 581,
+    "feature": "spigot thread envelope sections (closed loops)"
+   },
+   {
+    "z": 3.35,
+    "cx": -204.67582,
+    "cy": 19.16334,
+    "r": 12.71518,
+    "rms": 0.06929,
+    "max": 0.3507,
+    "p95": 0.06903,
+    "n": 1046,
+    "iterations": 15,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 4.25,
+    "cx": -204.66783,
+    "cy": 18.93614,
+    "r": 12.75611,
+    "rms": 0.06756,
+    "max": 0.33396,
+    "p95": 0.05339,
+    "n": 1110,
+    "iterations": 16,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 5.15,
+    "cx": -204.69892,
+    "cy": 18.99137,
+    "r": 12.81875,
+    "rms": 0.04134,
+    "max": 0.24568,
+    "p95": 0.04563,
+    "n": 1261,
+    "iterations": 11,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 6.05,
+    "cx": -204.6954,
+    "cy": 18.97433,
+    "r": 12.86114,
+    "rms": 0.03814,
+    "max": 0.22311,
+    "p95": 0.04162,
+    "n": 1257,
+    "iterations": 11,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 6.95,
+    "cx": -204.70616,
+    "cy": 19.03164,
+    "r": 12.92162,
+    "rms": 0.03985,
+    "max": 0.20513,
+    "p95": 0.0535,
+    "n": 1265,
+    "iterations": 12,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 7.85,
+    "cx": -204.69952,
+    "cy": 19.00936,
+    "r": 12.96467,
+    "rms": 0.03399,
+    "max": 0.17573,
+    "p95": 0.03672,
+    "n": 1279,
+    "iterations": 9,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 8.75,
+    "cx": -204.70958,
+    "cy": 19.08275,
+    "r": 13.02828,
+    "rms": 0.0285,
+    "max": 0.13325,
+    "p95": 0.04565,
+    "n": 1325,
+    "iterations": 9,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 9.65,
+    "cx": -204.72426,
+    "cy": 19.17961,
+    "r": 13.1084,
+    "rms": 0.03394,
+    "max": 0.08693,
+    "p95": 0.06895,
+    "n": 1303,
+    "iterations": 9,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 10.55,
+    "cx": -204.72823,
+    "cy": 19.20425,
+    "r": 13.17178,
+    "rms": 0.03745,
+    "max": 0.10423,
+    "p95": 0.07605,
+    "n": 1248,
+    "iterations": 10,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 11.45,
+    "cx": -204.72995,
+    "cy": 19.22335,
+    "r": 13.23861,
+    "rms": 0.04694,
+    "max": 0.11907,
+    "p95": 0.0906,
+    "n": 1221,
+    "iterations": 9,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 12.35,
+    "cx": -204.71759,
+    "cy": 19.20469,
+    "r": 13.29471,
+    "rms": 0.04312,
+    "max": 0.13584,
+    "p95": 0.08041,
+    "n": 1249,
+    "iterations": 9,
+    "feature": "cap outer wall faces (drafted)"
+   }
+  ],
+  "noise_ref": {
+   "value": 0.04359919934652581,
+   "p95_mm": 0.08515065386673801,
+   "max_mm": 0.12194472576045534,
+   "method": "rms of IRLS circle on cap-mouth ring section z=14.0 (chrome ring just below the step face) at z=14.0 (n=1098)",
+   "circle": {
+    "cx": -0.04235337204562282,
+    "cy": -0.06616548068447514,
+    "r": 11.950386627677329,
+    "rms": 0.04359919934652581,
+    "max": 0.12194472576045534,
+    "p95": 0.08515065386673801,
+    "n": 1098,
+    "iterations": 8
+   }
+  }
+ },
+ "clock": {
+  "rule": "fourier_mass: lever wing centreline -> +X (area-weighted face-centre phase, run via intake/workaround/align_areaw.py)",
+  "angle_deg": -147.8263092068164,
+  "why": "the lever is the only non-axisymmetric feature; n=1 so the label is unique. Area weighting: the vertex-count phase was 3.8 deg off the flank-plane bisector (scan vertex density/holes)",
+  "detail": {
+   "n": 1,
+   "candidates_deg": [
+    147.8263092068164
+   ],
+   "chosen_deg": 147.8263092068164,
+   "strength": 0.9841296567001868,
+   "n_faces": 54953,
+   "weighting": "AREA-weighted face centres (workaround wrapper align_areaw.py; align.py vertex-count fourier is density-biased)",
+   "label_rule": "single lever, n=1"
+  }
+ },
+ "tilt_deg": {
+  "value": 1.500603778240613,
+  "stderr_deg": 0.04455398458792302,
+  "direction_deg": 114.73772285959545,
+  "method": "common slope, per-feature intercept, 25 stations over 2 feature(s), z 3.350..36.700 vs frame Z; NOT RESOLVABLE (heuristic): 'cap outer wall faces (drafted)' (1.46 deg @ 103.9 deg) vs 'spigot thread envelope sections (closed loops)' (2.57 deg @ 157.1 deg) differ by 2.06 deg > combined stderr 0.99 deg",
+  "z_span_mm": 33.35,
+  "per_feature": [
+   {
+    "feature": "cap outer wall faces (drafted)",
+    "n_stations": 11,
+    "value": 1.4637079738085073,
+    "stderr_deg": 0.35062045688995963,
+    "direction_deg": 103.87058136215609,
+    "z_span_mm": 9.000000000000002
+   },
+   {
+    "feature": "spigot thread envelope sections (closed loops)",
+    "n_stations": 14,
+    "value": 2.565292768906118,
+    "stderr_deg": 0.6409414982900845,
+    "direction_deg": 157.0978694081324,
+    "z_span_mm": 3.25
+   }
+  ],
+  "resolvable": false,
+  "disagreement": "'cap outer wall faces (drafted)' (1.46 deg @ 103.9 deg) vs 'spigot thread envelope sections (closed loops)' (2.57 deg @ 157.1 deg) differ by 2.06 deg > combined stderr 0.99 deg"
+ },
+ "origin": {
+  "definition": "spigot/cap common axis (median of section centres) \u2229 cap crown face plane"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": -0.0007628029971478156,
+   "tol": 0.01870648825491811,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "spigot tip is the +Z extreme",
+   "stat": "zmax",
+   "expected": 38.2,
+   "tol": 0.5,
+   "observed": 38.09916084068219,
+   "ok": true,
+   "tol_source": "provisional-frame profile survey (work/prov.stl), sign/feature check only"
+  },
+  {
+   "name": "lever tip radius",
+   "stat": "rmax",
+   "expected": 27.7,
+   "tol": 0.5,
+   "observed": 27.737263709809387,
+   "ok": true,
+   "tol_source": "provisional-frame profile survey, sign/feature check only"
+  },
+  {
+   "name": "cap step face z (lever underside plane)",
+   "stat": "zmedian",
+   "expected": 13.7,
+   "tol": 0.3,
+   "observed": 13.692502971708997,
+   "ok": true,
+   "tol_source": "provisional-frame profile survey (underside faces n_z>0.995, r 20-28 median 13.70)"
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -13.194677459471123,
+   -13.363339671375043,
+   -0.05601073409106405
+  ],
+  [
+   27.832789832504513,
+   13.112096714238575,
+   38.09916084068219
+  ]
+ ],
+ "extents_aligned": [
+  41.02746729197564,
+  26.47543638561362,
+  38.15517157477325
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/intake/aligned_work.stl",
+  "sha256": "1cbbfab272e0b8542805f4d3af733473555ccab5970b2ea06c26cac64e7080bc"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "finding",
+   "note": "not resolvable: per-feature tilt vectors disagree beyond their combined stderr (heuristic, review M2); common slope, per-feature intercept, 25 stations over 2 feature(s), z 3.350..36.700 vs frame Z; NOT RESOLVABLE (heuristic): 'cap outer wall faces (drafted)' (1.46 deg @ 103.9 deg) vs 'spigot thread envelope sections (closed loops)' (2.57 deg @ 157.1 deg) differ by 2.06 deg > combined stderr 0.99 deg; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": true,
+   "result": "finding",
+   "note": "FLAG: no calipers, no scale reference in photos (DECISIONS.md MEASUREMENTS); units assumed mm, scale unverified"
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

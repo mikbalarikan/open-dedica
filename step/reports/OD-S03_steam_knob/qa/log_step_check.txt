@@ -1,0 +1,2 @@
+OD-S03_steam-knob_datum.step: solids 1 valid True closed [True] naked 0 faces 83 vol 11655.643 | analytic area 97.6% | [('bspline', 9), ('cone', 15), ('cylinder', 11), ('plane', 30), ('revolution', 1), ('torus', 17)]
+OD-S03_steam-knob.step: solids 1 valid True closed [True] naked 0 faces 83 vol 11655.643 | analytic area 97.6% | [('bspline', 9), ('cone', 15), ('cylinder', 11), ('plane', 30), ('revolution', 1), ('torus', 17)]

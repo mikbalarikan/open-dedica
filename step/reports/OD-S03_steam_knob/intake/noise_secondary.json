@@ -1,0 +1,26 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/aligned_work.stl": "dcb03627be938366bdf88a93c1fd9ee30699b461e59aa4420d3aab31bc3a7c6c"
+ },
+ "seed": 0,
+ "created": "2026-09-25T13:39:50+00:00",
+ "scan_noise_mm": {
+  "value": 0.04359919934652581,
+  "p95_mm": 0.08515065386673801,
+  "max_mm": 0.12194472576045534,
+  "method": "rms of IRLS circle on cap-mouth ring section z=14.0 (chrome ring just below the step face) at z=14.0 (n=1098)",
+  "circle": {
+   "cx": -0.04235337204562282,
+   "cy": -0.06616548068447514,
+   "r": 11.950386627677329,
+   "rms": 0.04359919934652581,
+   "max": 0.12194472576045534,
+   "p95": 0.08515065386673801,
+   "n": 1098,
+   "iterations": 8
+  }
+ }
+}

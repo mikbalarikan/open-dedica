@@ -1,0 +1,1237 @@
+{
+  "schema": "stl-re/MANIFEST@1",
+  "tool": "make_manifest.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "deliver/README.md": "e525f32791227c3cc64842884c640502ddfe7f229e8b39ad5533bf8ad6f85d87",
+    "deliver/repro.json": "5d35294c691cad73c2ee9a48c2d69b42688ef2c15ec4996657252b84035da39f",
+    "qa/gate.json": "f70ad05cf7edc26706c3c5a8fae476ee97239cf4ac096fea7f07fe2fe8fdb2e4"
+  },
+  "seed": 0,
+  "created": "2026-09-25T19:58:43+00:00",
+  "part": "OD-S03_steam-knob",
+  "verdict": "BAND_NOT_MET",
+  "regime": "baseline-skill",
+  "iteration": 2,
+  "acceptance": {
+    "date": "2026-09-25",
+    "who": "Ikbal (owner, decision card)",
+    "id": "ACCEPT-BAND",
+    "decision": "Accept and deliver: accepts scan_to_cad:masked, cad_to_scan_observable and zone:Z4 crown cap wall lever:scan_to_cad misses, gate f70ad05cf7ed (created 2026-09-25T15:11:43+00:00); scan->CAD p95 passes, max from a cap-wall scan artefact, CAD->scan observable from unreached assumed floors.",
+    "evidence": "decisions/accept_band.md"
+  },
+  "checks": {
+    "CHK-PUBLISH": {
+      "ran": true,
+      "result": "pass",
+      "note": "verdict BAND_NOT_MET"
+    },
+    "CHK-SUPERSEDED": {
+      "ran": true,
+      "result": "pass",
+      "iteration": 2,
+      "superseded": [
+        "_it1_SUPERSEDED"
+      ],
+      "note": "all earlier iterations kept intact"
+    },
+    "inputs_unchanged": {
+      "ran": true,
+      "result": "pass",
+      "note": "6 input file(s) unchanged"
+    },
+    "hash_frozen": {
+      "ran": true,
+      "result": "pass",
+      "note": "every build/ STEP matches hash_frozen"
+    },
+    "regime_declared": {
+      "ran": true,
+      "result": "pass",
+      "note": "regime 'baseline-skill'"
+    }
+  },
+  "deliverables": [
+    {
+      "path": "build/OD-S03_steam-knob.step",
+      "bytes": 599777,
+      "sha256": "4b4a6390d838a5c9a211fe4805f7ae9b1e92e2af2d9df4f51a6a340cdbd54e3f",
+      "role": "DELIVERABLE: STEP, scan frame (overlays the raw scan)"
+    },
+    {
+      "path": "build/OD-S03_steam-knob_datum.step",
+      "bytes": 598028,
+      "sha256": "67889051991478880adc82c1ca88afa292fc478f2e8dba7b7f3d6ff3bf72742c",
+      "role": "DELIVERABLE: STEP, datum frame"
+    },
+    {
+      "path": "deliver/README.md",
+      "bytes": 47834,
+      "sha256": "e525f32791227c3cc64842884c640502ddfe7f229e8b39ad5533bf8ad6f85d87",
+      "role": "DELIVERABLE: delivery document (rendered from JSON)"
+    }
+  ],
+  "note": "Every file under the run folder is listed in included or excluded (with a reason). deliver/MANIFEST.json itself is not listed: a file cannot contain its own hash.",
+  "unused_excludes": [],
+  "included": [
+    {
+      "path": "BUILDER_REPORT.md",
+      "bytes": 9711,
+      "sha256": "1628751ad9ac9d50ce27e4882e062c60707d5932f21af58da17469e655178925",
+      "role": "unclassified (BUILDER_REPORT.md); review"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 3410,
+      "sha256": "40cb9b10a25fc54b3b7620d72fcba3b171163f1d1f33060f93fba1a025c3a0e2",
+      "role": "record: human decisions (append-only)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/ROUTE",
+      "bytes": 9,
+      "sha256": "4566d685661c94433e385b572c207878bbfe8f136794907e34f0b660ce7cec5a",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/MODELING_PLAN.md",
+      "bytes": 12923,
+      "sha256": "ccae192ff8da13cbed4a35ca79ca73bdd2679a5b5aa927252a3eb980328578bc",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+      "bytes": 652426,
+      "sha256": "02fd041c44d3e6f2de67d849225a5859936f06cce7740ec7bd914eba6e372db5",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/OD-S03_steam-knob_cad.stl",
+      "bytes": 27298284,
+      "sha256": "9dd9c78b5e53e663f219e228d5b9991968cc0d4ee18b98319d9f5e1e936e25cd",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+      "bytes": 650677,
+      "sha256": "826a271bd95072f773007b43b784589ac42a7d5c10f1bb128d7da7ae100e4277",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/build_log.txt",
+      "bytes": 1920,
+      "sha256": "bb3b1716737cf43dd11d60975581e5dea872a625a5652f0c6882f4fc658211a0",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/export_check.json",
+      "bytes": 7815,
+      "sha256": "55558fa37494ec4efe3f8f3863245ba0885c0605a1aebfb89aeb553cb40fd2a0",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/face_stats.json",
+      "bytes": 1624,
+      "sha256": "be1294dfb5d2a03599f147709b3ee4eba30ca2556de75c04dd15999b9b740d82",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/fillets.json",
+      "bytes": 2057,
+      "sha256": "dce4fcd65d652ff19822e48b83ddd5be6111e56fdd296a5244c0cc634fd7e028",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/model.py",
+      "bytes": 18542,
+      "sha256": "c1d6c10c47a05ca712de6d4aa4b331d633439fef1aca300fa9b3929ccf3e6834",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/selfcheck_NOT_QA.py",
+      "bytes": 2173,
+      "sha256": "7c8e463dafb0c70484326761967f716baac9afa10fb4c9646327863b7e3c3e6f",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/PARAM_TABLE.md",
+      "bytes": 24343,
+      "sha256": "578cf8819239c0fb3ca9cdb96c21608963e71add70661662945bf8365fbf68c9",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/axes.json",
+      "bytes": 1245,
+      "sha256": "0e19c3ecf691f434be4730b1f3e623b7cfd537fabc9063d48bf9b111c67932c5",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/axis_stations.json",
+      "bytes": 6267,
+      "sha256": "4c58d04b3aa3c3a95a6f8f2ddb6336d9746e999e1e81a0a0ee9c7baec3df8bda",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/cluster_bore_axis.json",
+      "bytes": 813,
+      "sha256": "a6d22186ef49e29632f9b1f6debc5e7f10067e79b0e754a14e7174bdb36ccaf3",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/count_ribs.json",
+      "bytes": 5976,
+      "sha256": "a0fe62fecedc342a0397c69461bfa3035163e13f4b6a159b87f8b19651837dca",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/jog.json",
+      "bytes": 6961,
+      "sha256": "037a9335d96b7e5a1104c7b54af2fce8b379b60bb780425ee61bf95c82e05b5a",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/lever.json",
+      "bytes": 4844,
+      "sha256": "606c6f6ca72746f86613a377c3e7e5f2abee9d13ca53131e3733d70d623a03a0",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/measurements.json",
+      "bytes": 20795,
+      "sha256": "e3c3b14003c366f53a73cafd662fffd39836d1e6da57df59f329ce7f4ce77078",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/meridian_cap.npz",
+      "bytes": 59464,
+      "sha256": "645ca2265b4a7d42808cacd3e1f0f30e925e995788c9e584e1bada946f57779d",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/meridian_lev0.npz",
+      "bytes": 21538,
+      "sha256": "bea63c0d1a31a5f5860c5d9485f6b312a664ae72e20a6ceb130dd2c082216bb9",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/meridian_stem.npz",
+      "bytes": 67064,
+      "sha256": "9235c97afe0e6d1a5f3037713eabb5b0bc72813102287071d5d64336acee07ca",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/meridian_stem0.npz",
+      "bytes": 21602,
+      "sha256": "3f66380ea978fff437c57ca845d5dd747ddf4d96a92864d04d761d2e9942ed9f",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/pocket.json",
+      "bytes": 1743,
+      "sha256": "7452405886102f717b94a0ffc1347b73cfacbb22192f17f3260f20b07bc0097e",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/radial.json",
+      "bytes": 1775,
+      "sha256": "108a977900077e44768c9f2676150ce1c16a33d741764813d06d366a9a9296c5",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/radial.npz",
+      "bytes": 149604,
+      "sha256": "6d877918049f92d00bb2d5ed5810a8f426caf66abb1467d76730be152e1d37f5",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/rib_tip.json",
+      "bytes": 2706,
+      "sha256": "fba8f115bbfd03f16c81a71924fae2323048148fe3edaaccdff8b27ad0ba9cf8",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/ribs.json",
+      "bytes": 7287,
+      "sha256": "74413e741ef4b1832aa517742cf28224bb19a7c1f5460a84349630f1962d4a91",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/sleeve_unroll_theta_z.png",
+      "bytes": 295285,
+      "sha256": "94400290216bdc05e0bcd3fa3aa9116fdbfbee351db31eca63130c8f63d6f840",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/axes.py",
+      "bytes": 2581,
+      "sha256": "6f5a8ab7b355541716bff8ee931968ba1640b59e4ccd2d0051ea08be80bbdd84",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/build_params.py",
+      "bytes": 18550,
+      "sha256": "91371813760a62d0fe1599864a247fa82f25b5a9ffdb000cbe31d0388612cab5",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/jog.py",
+      "bytes": 3088,
+      "sha256": "0bdb5d374df91e2a2e1c07e924780b8d5d7a8da58107b92bc17e67e035c0cc37",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/lever.py",
+      "bytes": 1660,
+      "sha256": "4478cba1e2d280a418c3806f132dbd1b42a0edbb77ec5d44daebd4e0b9f64b9e",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/measure_all.py",
+      "bytes": 23756,
+      "sha256": "4c38e4ca8f410f6bab83f11713ba09389e394f9079ca42021413b243365a6589",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/meridian.py",
+      "bytes": 1813,
+      "sha256": "c5a42b448c173def5ee19ba26dcd89bc378860dccff77814100d033e76adc8fa",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/plansec.py",
+      "bytes": 860,
+      "sha256": "f9802c9c82135299449756a5cbaca195fc0423426a5528fe4fff5ee702b3ebaf",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/pocket.py",
+      "bytes": 1989,
+      "sha256": "3c4addfd7dfee4072d90f132b158f94db22023eed64c91f2310992f1d2b2b773",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/rib_tip.py",
+      "bytes": 1619,
+      "sha256": "f2718056155964ed437f7fd43530c3016c3e0aede4166458712403995267f30f",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/ribs.py",
+      "bytes": 1710,
+      "sha256": "40e85039c772e3ebe4d5f50e0004b09c7d8ee9563c38e8b16985445e58ef751a",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/ribtop.py",
+      "bytes": 704,
+      "sha256": "adaf93572f5e664d5a0f4fb6e3a998be635ffad3045fc75014ca3d40ca3bd9f4",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/stations.py",
+      "bytes": 2923,
+      "sha256": "983577e77b74b0c9e03929f3f14e47c36065fae3f1d1523d587e21ff21f5d2db",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/stem_base.py",
+      "bytes": 1399,
+      "sha256": "ea430e7b59e828d246af80bc4a16b17016a91bafb425e97abe239df6e0e4bf3a",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/stem_rtheta.py",
+      "bytes": 1133,
+      "sha256": "7387d5fb5b5064122d5816cffdace55df6cd69fbfb78b9d1b8b1174ed82ed431",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/src/thread.py",
+      "bytes": 2002,
+      "sha256": "dabe51cf4ded194a737c38742c48f8a1f60bafbb40e8659d12e6cc9f6bb1c9ce",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/stem_rtheta.json",
+      "bytes": 21646,
+      "sha256": "bb4fcdd3fefee853a1f16c9e8bbfeb3db2b781c48d7b7f6d510f02b43856593a",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/thread.json",
+      "bytes": 42920,
+      "sha256": "c1a4bb08641aa099c96c8e3bf9c236c3b09458316146d4eada05df80d3d35388",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/views_datum_frame.png",
+      "bytes": 973187,
+      "sha256": "0ebf97fd830d2fa740bea74e8ffead7e8a1e317aa3df56838e6270a3117e86b1",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/params.json",
+      "bytes": 38259,
+      "sha256": "cb75654a2a1a0c50ae039a2bfc3b686defab8409125de5df50cc268ff2713560",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/VERDICT.md",
+      "bytes": 17444,
+      "sha256": "33471398f03c31fac9da90df87586aab0b2b111d6c8d1ed5e88f6b4be90c4da1",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/c2s_residual_probe.json",
+      "bytes": 600,
+      "sha256": "a2f219adacfe95af154b9dd0ce7a268dc20aeb94ef79b6023fbbf0729d5e62ef",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/clock_crosscheck.json",
+      "bytes": 596,
+      "sha256": "3c1714d11f78908f791f1e012cfc31045f1acf9beae0d078ba69d547f74d28f7",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/cluster_probe.json",
+      "bytes": 781,
+      "sha256": "d18fb09ade6d2de08cacb9bec7d578f1c68c3a006c88e8926bf0c4bc6f3914be",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/datum_audit.json",
+      "bytes": 2269,
+      "sha256": "8d0021f69fd29805310550416046d5514f60829a8fd30ec1539a315c4c1bbdcc",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/datum_spec.json",
+      "bytes": 480,
+      "sha256": "3f7cf2bd2e3f7d0461c3fe16160fc1930e1118958256dcabf3cfb500ae2c86a7",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/dev_arrays.npz",
+      "bytes": 15318578,
+      "sha256": "ec97d5ecf4bd2238f61c2cb701d7da36e5e2dc1d0478e5d5bae55ee68cfffa97",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/deviation.json",
+      "bytes": 36604,
+      "sha256": "08d863c76e17f8e7b25e0d63dc50424baa8a622866f6fb0c50a37765a4aae204",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/deviation_datum.json",
+      "bytes": 36487,
+      "sha256": "4c04ba41ffc010cb60683073bb07918c2906a86726fe38acd308e2d57e1cf319",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/dims.json",
+      "bytes": 357,
+      "sha256": "08746fed9c9898ce32d583350c93fc3d4cf0d3498323b1d27a05787c3b9baa5f",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/gate.json",
+      "bytes": 111099,
+      "sha256": "e97e186b3d4faf49da731970057c3a18470df6103723787b60cf27eff1f9398a",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/hash_freeze.json",
+      "bytes": 853,
+      "sha256": "9aa2ac794a16dbdd83b8b100765e36470ea05fd034bbf6530099c1e394c22de4",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/icp_scan_masks.json",
+      "bytes": 115,
+      "sha256": "db7fc69eccd07306db5521c421fe18f948ca884cf104adcdb40e22f11c84a93d",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/log_dev.txt",
+      "bytes": 2954,
+      "sha256": "34022d58c58a39ea874bb8c1de112a4680a7d5560c4a5922ddcecc934a725d7c",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/log_dev_datum.txt",
+      "bytes": 2953,
+      "sha256": "902b183d241b8207a6763b0561fd7ad8f041d70c6ef268bf1d76e5c0af6f102b",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/masks.json",
+      "bytes": 988,
+      "sha256": "f4effa9076fa49b9d2c74c215988d28f0c1a05ba7cf513d256c43eacaba7fb92",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/overlays/overlay_theta.json",
+      "bytes": 2431,
+      "sha256": "cea8f8b3555277ca763987bf5eef1aea7389dcec9322e6c612c3eae4cda1a673",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/overlays/overlay_theta.png",
+      "bytes": 192600,
+      "sha256": "dec427d4f6e7cf6e72428a632d3323114cc6baea6195fb534103ce32fb547a76",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/overlays/overlay_z.json",
+      "bytes": 2899,
+      "sha256": "97ee77175dbf95cd7f10e6563923f62e117fd920f2370f87c1ccefb11f5d6b3a",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/overlays/overlay_z.png",
+      "bytes": 534378,
+      "sha256": "188baf4851b76c74326295a78a5ab5a9efd12e78d31ad5b85a6ffe6f73321b46",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/qa_scripts/c2s_residual_probe.py",
+      "bytes": 1962,
+      "sha256": "597d7863a8914e11e3732fc387828a2aefe54f7aeb8f34ea24fe440f2efe6883",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/qa_scripts/clock_crosscheck.py",
+      "bytes": 1923,
+      "sha256": "6417e22f45d00400eceadb5b34bd8afc6d6e9fe11f4e19bf1acff23e154582be",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/qa_scripts/cluster_probe.py",
+      "bytes": 1944,
+      "sha256": "60e355305c2131da253905c46d88bd0a08758f93873642aeae2d7eca80bfc97a",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/qa_scripts/tess_probe.py",
+      "bytes": 1225,
+      "sha256": "1ac990ef20d5970af876e6d2616414e3dcdc67ff830a440cd462934269a534bd",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/regime.json",
+      "bytes": 545,
+      "sha256": "abbec205e14255d5941ad668a9b6272dab76a6913b7ca2bedfbe69191182b0b9",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/registration.json",
+      "bytes": 2931,
+      "sha256": "1e419ac46001dc4dc4daafc97ef5b435c7b5238a454668e336efad6bb9162beb",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/review.json",
+      "bytes": 7795,
+      "sha256": "ad0734cdaf09c0c64e2db0aa09349842522e7c3d63e305dfb06356a05b55ff1c",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/step_check.json",
+      "bytes": 3463,
+      "sha256": "ccf99de6232b3b9d429fa9723f5fd88d31ff74c1e1861bfca6936ce918f082f4",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/tess_probe.json",
+      "bytes": 1828,
+      "sha256": "b63e5d842762372c3844eecb575ab1a5bfe8cbcf81fba7b2b0933e29c00611fc",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/zones.json",
+      "bytes": 2007,
+      "sha256": "e5b746205add5d11f8ee13492e3aa367b3cecfa124ff1cf56f55f2e44e7d7173",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "build/MODELING_PLAN.md",
+      "bytes": 15369,
+      "sha256": "6b56f39a2924aacfa5c761935b0b0d646eb1545400823aaa6cc9e3c54d982fc9",
+      "role": "build: written feature plan"
+    },
+    {
+      "path": "build/OD-S03_steam-knob.step",
+      "bytes": 599777,
+      "sha256": "4b4a6390d838a5c9a211fe4805f7ae9b1e92e2af2d9df4f51a6a340cdbd54e3f",
+      "role": "DELIVERABLE: STEP, scan frame (overlays the raw scan)"
+    },
+    {
+      "path": "build/OD-S03_steam-knob_cad.stl",
+      "bytes": 26791884,
+      "sha256": "0fc6a6e020d40636d4a4661210423d85719e67f05714ac55afbdb52f2c25187b",
+      "role": "preview: tessellated CAD, scan frame"
+    },
+    {
+      "path": "build/OD-S03_steam-knob_datum.step",
+      "bytes": 598028,
+      "sha256": "67889051991478880adc82c1ca88afa292fc478f2e8dba7b7f3d6ff3bf72742c",
+      "role": "DELIVERABLE: STEP, datum frame"
+    },
+    {
+      "path": "build/build_log.txt",
+      "bytes": 2004,
+      "sha256": "b157745a5926736c7cec84bd04a88b43a90a804d276a87497c180629531675b9",
+      "role": "build: build log (fillet OK/FAILED)"
+    },
+    {
+      "path": "build/export_check.json",
+      "bytes": 7811,
+      "sha256": "017d92c512ae950b0b87ea424614a93231fb92ce638da5e4bd3c4d4efafef715",
+      "role": "build: STEP re-import check, both frames"
+    },
+    {
+      "path": "build/face_stats.json",
+      "bytes": 1622,
+      "sha256": "d0882245b28b4e4245aadf651f1bf43ee90612730b2dd102556a84ebdd987893",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/fillets.json",
+      "bytes": 2057,
+      "sha256": "eb5cc5762fce99b0092d0118b392d6741174c77f81ace0eda88ae20f20bfaa67",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/model.py",
+      "bytes": 19136,
+      "sha256": "e5bbc4c347dcb4ff1a1e528cbae90d922a65a24e223000cf1616ffc09affad32",
+      "role": "build: editable design-intent source"
+    },
+    {
+      "path": "build/selfcheck_NOT_QA.py",
+      "bytes": 2173,
+      "sha256": "7c8e463dafb0c70484326761967f716baac9afa10fb4c9646327863b7e3c3e6f",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/tess_check_NOT_QA.py",
+      "bytes": 948,
+      "sha256": "c82fb0171fdcde9036299275127a8b026bc20d15c680dc4d8a19e5112b4d23bf",
+      "role": "build: working file"
+    },
+    {
+      "path": "decisions/accept_band.md",
+      "bytes": 1132,
+      "sha256": "ae29d1e549ea239ea4c3fc485b072a87b1f804fcae3cfe87683aaa9297d90ab9",
+      "role": "unclassified (accept_band.md); review"
+    },
+    {
+      "path": "deliver/README.md",
+      "bytes": 47834,
+      "sha256": "e525f32791227c3cc64842884c640502ddfe7f229e8b39ad5533bf8ad6f85d87",
+      "role": "DELIVERABLE: delivery document (rendered from JSON)"
+    },
+    {
+      "path": "deliver/limitations.json",
+      "bytes": 15063,
+      "sha256": "21bdeb6bbcb11550bdf93bbe454c43fc0ad42fe497acbb78154132f9931288cf",
+      "role": "deliver: limitations, assumptions, claim boundary (prose)"
+    },
+    {
+      "path": "deliver/repro.json",
+      "bytes": 11010,
+      "sha256": "5d35294c691cad73c2ee9a48c2d69b42688ef2c15ec4996657252b84035da39f",
+      "role": "deliver: fresh-process reproducibility check"
+    },
+    {
+      "path": "input/INPUT_HASHES.json",
+      "bytes": 2686,
+      "sha256": "2d81202e7636c0e88f6305fbdcc9e095e3a9c7f2315fd87699c089fb2507e1f9",
+      "role": "evidence: input hashes at init"
+    },
+    {
+      "path": "input/photos/1.png",
+      "bytes": 199884,
+      "sha256": "2c8bdc043967cd44c84ac770ef54d15434dc26a2c0378b0881877535a9911c59",
+      "role": "evidence: photo"
+    },
+    {
+      "path": "input/photos/2.png",
+      "bytes": 85591,
+      "sha256": "0687812e3e27a1ba81fb4099cd5845b2d5ffdbb8b429645d52e464ec1c6ea075",
+      "role": "evidence: photo"
+    },
+    {
+      "path": "input/photos/3.png",
+      "bytes": 317085,
+      "sha256": "981d3c7954636359448f7f7dd9bf0df99bf2da688c56e9762b6fae16bbe34e19",
+      "role": "evidence: photo"
+    },
+    {
+      "path": "input/photos/4.png",
+      "bytes": 93470,
+      "sha256": "0c34282e68690266127a2f7c57e74afd5b4a14e672e29a9da3a18d9716585d8d",
+      "role": "evidence: photo"
+    },
+    {
+      "path": "input/photos/5.png",
+      "bytes": 137153,
+      "sha256": "baf627924ac043b64f5ffd6a2b2a048fa66b4edf13bc018b5f8bb0deb5046887",
+      "role": "evidence: photo"
+    },
+    {
+      "path": "input/scan.stl",
+      "bytes": 18199484,
+      "sha256": "ce4a9dfcb0acf91a9e1632f0f67c2317ab6890ab8d86e2edcf0c958957fb0dfd",
+      "role": "evidence: raw scan (never modified)"
+    },
+    {
+      "path": "intake/INTAKE_CARD.md",
+      "bytes": 12222,
+      "sha256": "d2c961fbc1185f3b9ccb7e79a8fb9fff0287aaad459c88661645686fc44e2b27",
+      "role": "intake: intake card"
+    },
+    {
+      "path": "intake/MEASUREMENTS.md",
+      "bytes": 3183,
+      "sha256": "c86bc3e1cfb338feae984e2039fc99c4556c368c4eeb150afd92595049a23897",
+      "role": "intake: measurement request"
+    },
+    {
+      "path": "intake/aligned_work.stl",
+      "bytes": 18199484,
+      "sha256": "1cbbfab272e0b8542805f4d3af733473555ccab5970b2ea06c26cac64e7080bc",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/alignment.json",
+      "bytes": 13788,
+      "sha256": "da75c108fad2f778fe0fe76926c6be9cdeabb6c16ec1a287e629054c0b1e583e",
+      "role": "intake: datum alignment (scan -> datum)"
+    },
+    {
+      "path": "intake/alignment_attempt1_STOP.json",
+      "bytes": 11069,
+      "sha256": "502383c161761e1877781962b553079d12b9309da0f7b91269b33703289e8c0a",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/coverage.json",
+      "bytes": 6447,
+      "sha256": "0aaf80b064e2053afa98a449cf5f9e55790a9509477681ded2268797079af25d",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/datum_spec.json",
+      "bytes": 2895,
+      "sha256": "3b74e052c071349ce222c7485f61793bbe4a49bb6239eeb0a15e08436cf7ed03",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/intake.json",
+      "bytes": 2577,
+      "sha256": "0c742d30add965eb529de6cefc17c16060c92b358ac7b6f066b73670c185973f",
+      "role": "intake: scan stats"
+    },
+    {
+      "path": "intake/noise_primary.json",
+      "bytes": 502,
+      "sha256": "a291173fc3ee22ebd272bfbaa7fc781d078363d8d154e23b1ffb8564a94b42a5",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/noise_secondary.json",
+      "bytes": 757,
+      "sha256": "29e859a393d121179894f675c92d197af14d7992b72e798e565cb092423aef8d",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/regime.json",
+      "bytes": 545,
+      "sha256": "abbec205e14255d5941ad668a9b6272dab76a6913b7ca2bedfbe69191182b0b9",
+      "role": "intake: declared band regime"
+    },
+    {
+      "path": "intake/work.stl",
+      "bytes": 18199484,
+      "sha256": "1fc4e887e2910da10f773913bbeb2dc547d9785458c9726d0a5d1e81141c0f47",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/workaround/align_areaw.py",
+      "bytes": 2164,
+      "sha256": "fa37716a95cb12da2b85fa076a3e870d77ac22a269ea10e8188cc2c1637f9739",
+      "role": "intake: working file"
+    },
+    {
+      "path": "measure/PARAM_TABLE.md",
+      "bytes": 24343,
+      "sha256": "578cf8819239c0fb3ca9cdb96c21608963e71add70661662945bf8365fbf68c9",
+      "role": "measure: parameter table rendered from params.json"
+    },
+    {
+      "path": "measure/figures/axes.json",
+      "bytes": 1245,
+      "sha256": "0e19c3ecf691f434be4730b1f3e623b7cfd537fabc9063d48bf9b111c67932c5",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/axis_stations.json",
+      "bytes": 6267,
+      "sha256": "4c58d04b3aa3c3a95a6f8f2ddb6336d9746e999e1e81a0a0ee9c7baec3df8bda",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/cluster_bore_axis.json",
+      "bytes": 813,
+      "sha256": "a6d22186ef49e29632f9b1f6debc5e7f10067e79b0e754a14e7174bdb36ccaf3",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/count_ribs.json",
+      "bytes": 5976,
+      "sha256": "a0fe62fecedc342a0397c69461bfa3035163e13f4b6a159b87f8b19651837dca",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/jog.json",
+      "bytes": 6961,
+      "sha256": "037a9335d96b7e5a1104c7b54af2fce8b379b60bb780425ee61bf95c82e05b5a",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/lever.json",
+      "bytes": 4844,
+      "sha256": "606c6f6ca72746f86613a377c3e7e5f2abee9d13ca53131e3733d70d623a03a0",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/measurements.json",
+      "bytes": 20795,
+      "sha256": "e3c3b14003c366f53a73cafd662fffd39836d1e6da57df59f329ce7f4ce77078",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/meridian_cap.npz",
+      "bytes": 59464,
+      "sha256": "645ca2265b4a7d42808cacd3e1f0f30e925e995788c9e584e1bada946f57779d",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/meridian_lev0.npz",
+      "bytes": 21538,
+      "sha256": "bea63c0d1a31a5f5860c5d9485f6b312a664ae72e20a6ceb130dd2c082216bb9",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/meridian_stem.npz",
+      "bytes": 67064,
+      "sha256": "9235c97afe0e6d1a5f3037713eabb5b0bc72813102287071d5d64336acee07ca",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/meridian_stem0.npz",
+      "bytes": 21602,
+      "sha256": "3f66380ea978fff437c57ca845d5dd747ddf4d96a92864d04d761d2e9942ed9f",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/pocket.json",
+      "bytes": 1743,
+      "sha256": "7452405886102f717b94a0ffc1347b73cfacbb22192f17f3260f20b07bc0097e",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/radial.json",
+      "bytes": 1775,
+      "sha256": "108a977900077e44768c9f2676150ce1c16a33d741764813d06d366a9a9296c5",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/radial.npz",
+      "bytes": 149604,
+      "sha256": "6d877918049f92d00bb2d5ed5810a8f426caf66abb1467d76730be152e1d37f5",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/rib_tip.json",
+      "bytes": 2706,
+      "sha256": "fba8f115bbfd03f16c81a71924fae2323048148fe3edaaccdff8b27ad0ba9cf8",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/ribs.json",
+      "bytes": 7287,
+      "sha256": "74413e741ef4b1832aa517742cf28224bb19a7c1f5460a84349630f1962d4a91",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/sleeve_unroll_theta_z.png",
+      "bytes": 295285,
+      "sha256": "94400290216bdc05e0bcd3fa3aa9116fdbfbee351db31eca63130c8f63d6f840",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/axes.py",
+      "bytes": 2581,
+      "sha256": "6f5a8ab7b355541716bff8ee931968ba1640b59e4ccd2d0051ea08be80bbdd84",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/build_params.py",
+      "bytes": 18550,
+      "sha256": "91371813760a62d0fe1599864a247fa82f25b5a9ffdb000cbe31d0388612cab5",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/jog.py",
+      "bytes": 3088,
+      "sha256": "0bdb5d374df91e2a2e1c07e924780b8d5d7a8da58107b92bc17e67e035c0cc37",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/lever.py",
+      "bytes": 1660,
+      "sha256": "4478cba1e2d280a418c3806f132dbd1b42a0edbb77ec5d44daebd4e0b9f64b9e",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/measure_all.py",
+      "bytes": 23756,
+      "sha256": "4c38e4ca8f410f6bab83f11713ba09389e394f9079ca42021413b243365a6589",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/meridian.py",
+      "bytes": 1813,
+      "sha256": "c5a42b448c173def5ee19ba26dcd89bc378860dccff77814100d033e76adc8fa",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/plansec.py",
+      "bytes": 860,
+      "sha256": "f9802c9c82135299449756a5cbaca195fc0423426a5528fe4fff5ee702b3ebaf",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/pocket.py",
+      "bytes": 1989,
+      "sha256": "3c4addfd7dfee4072d90f132b158f94db22023eed64c91f2310992f1d2b2b773",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/rib_tip.py",
+      "bytes": 1619,
+      "sha256": "f2718056155964ed437f7fd43530c3016c3e0aede4166458712403995267f30f",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/ribs.py",
+      "bytes": 1710,
+      "sha256": "40e85039c772e3ebe4d5f50e0004b09c7d8ee9563c38e8b16985445e58ef751a",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/ribtop.py",
+      "bytes": 704,
+      "sha256": "adaf93572f5e664d5a0f4fb6e3a998be635ffad3045fc75014ca3d40ca3bd9f4",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/stations.py",
+      "bytes": 2923,
+      "sha256": "983577e77b74b0c9e03929f3f14e47c36065fae3f1d1523d587e21ff21f5d2db",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/stem_base.py",
+      "bytes": 1399,
+      "sha256": "ea430e7b59e828d246af80bc4a16b17016a91bafb425e97abe239df6e0e4bf3a",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/stem_rtheta.py",
+      "bytes": 1133,
+      "sha256": "7387d5fb5b5064122d5816cffdace55df6cd69fbfb78b9d1b8b1174ed82ed431",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/src/thread.py",
+      "bytes": 2002,
+      "sha256": "dabe51cf4ded194a737c38742c48f8a1f60bafbb40e8659d12e6cc9f6bb1c9ce",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/stem_rtheta.json",
+      "bytes": 21646,
+      "sha256": "bb4fcdd3fefee853a1f16c9e8bbfeb3db2b781c48d7b7f6d510f02b43856593a",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/thread.json",
+      "bytes": 42920,
+      "sha256": "c1a4bb08641aa099c96c8e3bf9c236c3b09458316146d4eada05df80d3d35388",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/views_datum_frame.png",
+      "bytes": 973187,
+      "sha256": "0ebf97fd830d2fa740bea74e8ffead7e8a1e317aa3df56838e6270a3117e86b1",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/params.json",
+      "bytes": 38259,
+      "sha256": "cb75654a2a1a0c50ae039a2bfc3b686defab8409125de5df50cc268ff2713560",
+      "role": "measure: parameter table, source of truth"
+    },
+    {
+      "path": "qa/VERDICT.md",
+      "bytes": 26941,
+      "sha256": "edbbdf97e1caf3fc610e5c50893e1792c961ede9911f5494c007962da8d881a5",
+      "role": "qa: verdict and reasoning"
+    },
+    {
+      "path": "qa/brep_selfcheck.json",
+      "bytes": 11931,
+      "sha256": "a497588fe14f3c82d8594b764b212c5cb930b8b5d91e4fe1141bc708ad7f94a5",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/c2s_masked_locate.json",
+      "bytes": 2002,
+      "sha256": "e246a376a438927a44a997a4e760b12132ae144ba0c81dc845585414512a1b0e",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/c2s_residual_probe.json",
+      "bytes": 612,
+      "sha256": "d27121be486510004e0821b7f1065653c4b7443df859573f209740b06f0145d7",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/clock_crosscheck.json",
+      "bytes": 596,
+      "sha256": "3c1714d11f78908f791f1e012cfc31045f1acf9beae0d078ba69d547f74d28f7",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/cluster_probe.json",
+      "bytes": 783,
+      "sha256": "65375026398f5cd14193158d74214014c917d277647e3c62a5a7d6ef926cb05d",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/cos_dev.json",
+      "bytes": 234,
+      "sha256": "d39edc7ba67f4e3271fd2c3d4bf3a060e4ca3206af6553d642d0608446ec439a",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/datum_audit.json",
+      "bytes": 2269,
+      "sha256": "a9d99d8505afa1ea7902a7aaa3b4a85987e40a332c8693d1eaa155d2bb768cf4",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/datum_spec.json",
+      "bytes": 480,
+      "sha256": "3f7cf2bd2e3f7d0461c3fe16160fc1930e1118958256dcabf3cfb500ae2c86a7",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dev_arrays.npz",
+      "bytes": 15317028,
+      "sha256": "c086389f30d08fd24c45ec99d3d7786a99473b232b9611c1c9d6ece2f30856f8",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/deviation.json",
+      "bytes": 36356,
+      "sha256": "adfc1510fff1826dceaa143d9b4d124eb08f2721cbc33cafcb39a90fe06b2750",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/deviation_datum.json",
+      "bytes": 36310,
+      "sha256": "590a0f895b4a9bd76b7d9aa33834bb80a395f7eeb9042ac0808e6b4bae8f6e62",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dims.json",
+      "bytes": 357,
+      "sha256": "08746fed9c9898ce32d583350c93fc3d4cf0d3498323b1d27a05787c3b9baa5f",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/gate.json",
+      "bytes": 113173,
+      "sha256": "f70ad05cf7edc26706c3c5a8fae476ee97239cf4ac096fea7f07fe2fe8fdb2e4",
+      "role": "qa: gate numbers and verdict (source for the README)"
+    },
+    {
+      "path": "qa/hash_freeze.json",
+      "bytes": 853,
+      "sha256": "6bb0e0d7b93741815c9adf904c04adbe908c903448a5df11aacc0a80c0dba21d",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/icp_scan_masks.json",
+      "bytes": 115,
+      "sha256": "db7fc69eccd07306db5521c421fe18f948ca884cf104adcdb40e22f11c84a93d",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/it1_vs_it2.json",
+      "bytes": 18237,
+      "sha256": "36c0b9a7c1b8efe615ad1311ae0f4689b4fbe7be39f5cb3b91e07156b26177ea",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_datum_audit.txt",
+      "bytes": 161,
+      "sha256": "69b624d4c64f79f114ef282ab309e32586a35dd8ca5f8928b4528fc3c58d34f8",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_dev.txt",
+      "bytes": 2980,
+      "sha256": "77af3bf56a0ae2463d9b66b57cf64467e7e912866654462d5b774d2156ddc425",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_dev_datum.txt",
+      "bytes": 2979,
+      "sha256": "368c57b6349f8684fd318338efcb1d9e2e1cdfacf6ccc05f42eee70a26536657",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_step_check.txt",
+      "bytes": 428,
+      "sha256": "4b8f5332b615c5de9661d35887d1f503de24bde1babb69d4e25e1004b1a4cbf4",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/masks.json",
+      "bytes": 988,
+      "sha256": "f4effa9076fa49b9d2c74c215988d28f0c1a05ba7cf513d256c43eacaba7fb92",
+      "role": "qa: deviation masks"
+    },
+    {
+      "path": "qa/overlays/overlay_theta.json",
+      "bytes": 2886,
+      "sha256": "e8a6ece164158c83271e2238553481d8e53e77ff4b5ad58223b579f0bcdc5c38",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_theta.png",
+      "bytes": 226922,
+      "sha256": "ad570efa50aa99bceaba5504cd52cf70369c79488ce6aef7b8c7aaf09b43db51",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_z.json",
+      "bytes": 3103,
+      "sha256": "a8c612f3074d0f62653f9047a1daf7f8f0bcd256ece6077fe341350e951ac0d3",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_z.png",
+      "bytes": 574366,
+      "sha256": "687781c52f89d032d46b02c396e0fbdcf0bf1749692af3e2196e793d737a29a2",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/qa_scripts/append_verdict.py",
+      "bytes": 4416,
+      "sha256": "acdc03c1037177956e99dbe41d869667ec9d87006289c23217ebe74cc0007f07",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/qa_scripts/brep_selfcheck.py",
+      "bytes": 1816,
+      "sha256": "cffcda23c375ff09b2db61a7327bda231fcb3e58cffa538fb8b57222700ceb80",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/qa_scripts/c2s_masked_locate.py",
+      "bytes": 1901,
+      "sha256": "e988602e0cc6e7eddbc2623931a5e5e000fc5bc557713f21941cc698c7ce84f7",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/qa_scripts/c2s_residual_probe.py",
+      "bytes": 1962,
+      "sha256": "597d7863a8914e11e3732fc387828a2aefe54f7aeb8f34ea24fe440f2efe6883",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/qa_scripts/clock_crosscheck.py",
+      "bytes": 1923,
+      "sha256": "6417e22f45d00400eceadb5b34bd8afc6d6e9fe11f4e19bf1acff23e154582be",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/qa_scripts/cluster_probe.py",
+      "bytes": 1944,
+      "sha256": "60e355305c2131da253905c46d88bd0a08758f93873642aeae2d7eca80bfc97a",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/qa_scripts/compare_it1_it2.py",
+      "bytes": 3744,
+      "sha256": "2ca1e42b7658645ca30170f7419a6d6358d772991b132b183577a36b09adc51f",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/qa_scripts/cos_dev.py",
+      "bytes": 2123,
+      "sha256": "b00d4f2efca6a46f5bf2d2010c83924ed624fcfd31d07478e9535e0592bed1b4",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/qa_scripts/tess_probe.py",
+      "bytes": 2621,
+      "sha256": "ad9fc72843de64ed00492663bdf4342c5a126987789e4fbc7f33b6a95fe16c6d",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/regime.json",
+      "bytes": 545,
+      "sha256": "abbec205e14255d5941ad668a9b6272dab76a6913b7ca2bedfbe69191182b0b9",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/registration.json",
+      "bytes": 3006,
+      "sha256": "223fe82054270644098827017123e6525ede2eb6abdc499c8d559139045cf391",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/review.json",
+      "bytes": 9609,
+      "sha256": "f6e47f27ce27db85f65a8c44ac689a2efe13548a2ddc68ecbc59ec864a812d42",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/step_check.json",
+      "bytes": 3455,
+      "sha256": "8ef6b87a86aa7dc07f45943ec300eaac3e93d82117085dcea5ca3d150ac30eab",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/tess_probe.json",
+      "bytes": 27793,
+      "sha256": "548310568952d3c17a81083bbb233713e68ee7cafeccb23e95b4c2b7e943348c",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/zones.json",
+      "bytes": 2007,
+      "sha256": "e5b746205add5d11f8ee13492e3aa367b3cecfa124ff1cf56f55f2e44e7d7173",
+      "role": "qa: working file"
+    }
+  ],
+  "excluded": []
+}

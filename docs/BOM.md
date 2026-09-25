@@ -162,7 +162,7 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-S00` | OD-000 | ASM | **Steam system (phase 2 — not in v1)** |  |  | 1 | DESIGN |  |  |  |  | ⏸ |
 | `OD-S01` | OD-S00 | OEM | Steam valve assembly | 17 | AS00002707 | 1 | SCAN |  | FixPart | 15 |  | ⏸ |
 | `OD-S02` | OD-S00 | OEM | Steam hose assembly | 10 | AS00002705 | 1 | ENVELOPE |  | FixPart | 12 |  | ⏸ |
-| `OD-S03` | OD-S00 | OEM | Steam knob | 13 | 7313285479 | 1 | CALIPER |  | FixPart | 6 |  | ⏸ |
+| `OD-S03` | OD-S00 | OEM | Steam knob | 13 | 7313285479 | 1 | SCAN |  | FixPart | 6 | #31 | 🧊 |
 | `OD-S04` | OD-S00 | OEM | Nozzle | 77 | AS00002710 | 1 | CALIPER |  | FixPart | 5 |  | ⏸ |
 | `OD-S05` | OD-S00 | OEM | Dispenser cover | 11 | 5313237931 | 1 | CALIPER |  | FixPart | 4 |  | ⏸ |
 | `OD-S06` | OD-S00 | OEM | Steam valve bracket |  |  | 1 | SCAN |  | donor |  |  | ⏸ |

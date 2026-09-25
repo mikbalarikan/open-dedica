@@ -1,0 +1,67 @@
+{
+  "created": "2026-09-25T13:29:31+00:00",
+  "files": [
+    {
+      "bytes": 18199484,
+      "mode": "copy",
+      "path": "input/scan.stl",
+      "role": "scan",
+      "sha256": "ce4a9dfcb0acf91a9e1632f0f67c2317ab6890ab8d86e2edcf0c958957fb0dfd",
+      "source": "/root/.claude/uploads/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/d3cb48a1-OD-S03-Steam-Knob.stl"
+    },
+    {
+      "bytes": 199884,
+      "mode": "copy",
+      "path": "input/photos/1.png",
+      "role": "photo",
+      "sha256": "2c8bdc043967cd44c84ac770ef54d15434dc26a2c0378b0881877535a9911c59",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/images/1.png"
+    },
+    {
+      "bytes": 85591,
+      "mode": "copy",
+      "path": "input/photos/2.png",
+      "role": "photo",
+      "sha256": "0687812e3e27a1ba81fb4099cd5845b2d5ffdbb8b429645d52e464ec1c6ea075",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/images/2.png"
+    },
+    {
+      "bytes": 317085,
+      "mode": "copy",
+      "path": "input/photos/3.png",
+      "role": "photo",
+      "sha256": "981d3c7954636359448f7f7dd9bf0df99bf2da688c56e9762b6fae16bbe34e19",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/images/3.png"
+    },
+    {
+      "bytes": 93470,
+      "mode": "copy",
+      "path": "input/photos/4.png",
+      "role": "photo",
+      "sha256": "0c34282e68690266127a2f7c57e74afd5b4a14e672e29a9da3a18d9716585d8d",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/images/4.png"
+    },
+    {
+      "bytes": 137153,
+      "mode": "copy",
+      "path": "input/photos/5.png",
+      "role": "photo",
+      "sha256": "baf627924ac043b64f5ffd6a2b2a048fa66b4edf13bc018b5f8bb0deb5046887",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/images/5.png"
+    }
+  ],
+  "inputs": {
+    "input/photos/1.png": "2c8bdc043967cd44c84ac770ef54d15434dc26a2c0378b0881877535a9911c59",
+    "input/photos/2.png": "0687812e3e27a1ba81fb4099cd5845b2d5ffdbb8b429645d52e464ec1c6ea075",
+    "input/photos/3.png": "981d3c7954636359448f7f7dd9bf0df99bf2da688c56e9762b6fae16bbe34e19",
+    "input/photos/4.png": "0c34282e68690266127a2f7c57e74afd5b4a14e672e29a9da3a18d9716585d8d",
+    "input/photos/5.png": "baf627924ac043b64f5ffd6a2b2a048fa66b4edf13bc018b5f8bb0deb5046887",
+    "input/scan.stl": "ce4a9dfcb0acf91a9e1632f0f67c2317ab6890ab8d86e2edcf0c958957fb0dfd"
+  },
+  "part": "OD-S03_steam-knob",
+  "scan_resolution": "full",
+  "schema": "stl-re/INPUT_HASHES@1",
+  "seed": 0,
+  "tool": "init_run.py",
+  "tool_version": "stl-re-orchestrate@1"
+}

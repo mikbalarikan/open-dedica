@@ -1,0 +1,32 @@
+{
+ "0": {
+  "n": 205,
+  "radial_normal_component_median": 0.34099639859551145,
+  "nz_median": -0.21621146220218632,
+  "dist_to_open_boundary_mm": {
+   "p50": 0.3049564132734548,
+   "max": 0.7499341428315327
+  },
+  "frac_within_1mm_of_boundary": 1.0,
+  "neighbourhood_3mm_r_range": [
+   10.632979750599494,
+   13.076417176183233
+  ],
+  "neighbourhood_3mm_frac_over_band": 0.3850467289719626
+ },
+ "1": {
+  "n": 23,
+  "radial_normal_component_median": 0.37889594124972015,
+  "nz_median": 0.7479026985349313,
+  "dist_to_open_boundary_mm": {
+   "p50": 0.19982427544183803,
+   "max": 0.5448164573145009
+  },
+  "frac_within_1mm_of_boundary": 1.0,
+  "neighbourhood_3mm_r_range": [
+   5.059047430347517,
+   7.846430927064415
+  ],
+  "neighbourhood_3mm_frac_over_band": 0.03418803418803419
+ }
+}

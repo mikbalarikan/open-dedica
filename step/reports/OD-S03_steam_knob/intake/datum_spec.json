@@ -1,0 +1,120 @@
+{
+ "mesh": "work.stl",
+ "raw_scan": "../input/scan.stl",
+ "intake_json": "intake.json",
+ "out_dir": ".",
+ "seed": 0,
+ "noise": {
+  "from": "noise_primary.json"
+ },
+ "primary": {
+  "type": "plane",
+  "approx_normal": [
+   0.14216,
+   0.98922,
+   -0.03513
+  ],
+  "material_side": "+z",
+  "desc": "cap crown face, flat field only (normals within 3 deg: excludes the onset of the crown edge round at r>10; coplanar lever top included)",
+  "why": "largest moulded flat perpendicular to the knob axis; the cap and lever are referenced from it; its normal is the turning axis direction",
+  "cone_deg": 3.0
+ },
+ "origin": {
+  "xy": [
+   {
+    "method": "kasa",
+    "r_hint": 5.88,
+    "r_tol": 0.15,
+    "rms_max": 0.08,
+    "z_range": [
+     33.45,
+     36.7
+    ],
+    "stations": 14,
+    "desc": "spigot thread envelope sections (closed loops)",
+    "why": "the threaded spigot is the functional interface to the valve spindle"
+   },
+   {
+    "method": "wall_faces",
+    "wall": "outer",
+    "r_min": 12.3,
+    "r_max": 13.4,
+    "perp_max": 0.3,
+    "centre_guess": [
+     -204.66,
+     17.2
+    ],
+    "r_hint": 12.9,
+    "r_tol": 0.5,
+    "rms_max": 0.3,
+    "z_range": [
+     2.0,
+     12.8
+    ],
+    "stations": 12,
+    "desc": "cap outer wall faces (drafted)",
+    "why": "cap body; long axial span for CHK-TILT"
+   }
+  ],
+  "definition": "spigot/cap common axis (median of section centres) \u2229 cap crown face plane"
+ },
+ "clock": {
+  "rule": "fourier_mass",
+  "n": 1,
+  "r_range": [
+   16.0,
+   28.5
+  ],
+  "pick_nearest_deg": 0.0,
+  "desc": "lever wing centreline -> +X (area-weighted face-centre phase, run via intake/workaround/align_areaw.py)",
+  "why": "the lever is the only non-axisymmetric feature; n=1 so the label is unique. Area weighting: the vertex-count phase was 3.8 deg off the flank-plane bisector (scan vertex density/holes)",
+  "label_rule": "single lever, n=1"
+ },
+ "chk_scale": {
+  "ran": true,
+  "result": "finding",
+  "note": "FLAG: no calipers, no scale reference in photos (DECISIONS.md MEASUREMENTS); units assumed mm, scale unverified"
+ },
+ "landmarks": [
+  {
+   "name": "spigot tip is the +Z extreme",
+   "stat": "zmax",
+   "r_range": [
+    0,
+    7
+   ],
+   "expected": 38.2,
+   "tol": 0.5,
+   "tol_source": "provisional-frame profile survey (work/prov.stl), sign/feature check only"
+  },
+  {
+   "name": "lever tip radius",
+   "stat": "rmax",
+   "z_range": [
+    1,
+    12
+   ],
+   "expected": 27.7,
+   "tol": 0.5,
+   "tol_source": "provisional-frame profile survey, sign/feature check only"
+  },
+  {
+   "name": "cap step face z (lever underside plane)",
+   "stat": "zmedian",
+   "r_range": [
+    20,
+    26
+   ],
+   "z_range": [
+    13.0,
+    14.2
+   ],
+   "expected": 13.7,
+   "tol": 0.3,
+   "tol_source": "provisional-frame profile survey (underside faces n_z>0.995, r 20-28 median 13.70)"
+  }
+ ],
+ "noise_secondary": {
+  "from": "noise_secondary.json"
+ }
+}

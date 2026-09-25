@@ -1,0 +1,20 @@
+{
+ "schema": "stl-re/hash_freeze@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-S03_steam-knob_datum.step": "67889051991478880adc82c1ca88afa292fc478f2e8dba7b7f3d6ff3bf72742c",
+  "build/OD-S03_steam-knob.step": "4b4a6390d838a5c9a211fe4805f7ae9b1e92e2af2d9df4f51a6a340cdbd54e3f"
+ },
+ "seed": null,
+ "created": "2026-09-25T14:57:25+00:00",
+ "before": {
+  "build/OD-S03_steam-knob_datum.step": "67889051991478880adc82c1ca88afa292fc478f2e8dba7b7f3d6ff3bf72742c",
+  "build/OD-S03_steam-knob.step": "4b4a6390d838a5c9a211fe4805f7ae9b1e92e2af2d9df4f51a6a340cdbd54e3f"
+ },
+ "after": {
+  "build/OD-S03_steam-knob_datum.step": "67889051991478880adc82c1ca88afa292fc478f2e8dba7b7f3d6ff3bf72742c",
+  "build/OD-S03_steam-knob.step": "4b4a6390d838a5c9a211fe4805f7ae9b1e92e2af2d9df4f51a6a340cdbd54e3f"
+ },
+ "unchanged": true
+}

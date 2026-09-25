@@ -1,0 +1,396 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/intake/work.stl": "1fc4e887e2910da10f773913bbeb2dc547d9785458c9726d0a5d1e81141c0f47",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/intake/datum_spec.json": "bcd41a4ab2a3a40750015344a938d495bde4ba9a65ff93ebb7a96afbaf3fab87",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/input/scan.stl": "ce4a9dfcb0acf91a9e1632f0f67c2317ab6890ab8d86e2edcf0c958957fb0dfd",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/intake/intake.json": "0c742d30add965eb529de6cefc17c16060c92b358ac7b6f066b73670c185973f"
+ },
+ "seed": 0,
+ "created": "2026-09-25T13:36:13+00:00",
+ "status": "STOP",
+ "stop_reasons": [
+  "primary fit rms 0.0216 > noise floor 0.0187"
+ ],
+ "findings": [
+  "secondary circle residual not compared: no noise_secondary measured on a clean circle (plane noise is not comparable to section-circle residuals)"
+ ],
+ "matrix_4x4": [
+  [
+   -0.6072260386851169,
+   0.0650642362431784,
+   -0.7918605831236158,
+   -176.065232988706
+  ],
+  [
+   0.781891250936025,
+   -0.12811757007779478,
+   -0.610108154303038,
+   -106.03719164420754
+  ],
+  [
+   -0.14114747483564583,
+   -0.9896224196123758,
+   0.026923167496926362,
+   27.845366542194245
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.01870648825491811,
+  "method": "rms of RANSAC+SVD plane on lever -Y flank (flat chrome side face of the lever wing) (12006 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "cap crown face (closed end of the chrome cap, coplanar with the lever top)",
+  "why": "largest moulded flat perpendicular to the knob axis; the cap and lever are referenced from it; its normal is the turning axis direction",
+  "fit_rms_mm": 0.021602450962488893,
+  "fit_max_mm": 0.09993160556207374,
+  "fit_p95_mm": 0.04531741224608727,
+  "n_faces": 60886,
+  "area_mm2": 429.3519704279556,
+  "fit_untrimmed": {
+   "rms": 0.024251955123137672,
+   "p95": 0.049896770427631944,
+   "max": 0.2905707052649449,
+   "n_faces": 61422
+  },
+  "inlier_frac": 0.9546416593403015,
+  "normal_raw": [
+   0.1411474748356459,
+   0.9896224196123758,
+   -0.026923167496926362
+  ],
+  "centroid_raw": [
+   -21.96381944493187,
+   25.628093265748696,
+   -207.38156190307066
+  ],
+  "material_side": "+z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.9546416593403015
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "spigot neck cylinder (plain band between stem and thread) + cap outer wall faces (drafted)",
+  "why": "the spigot/thread is the functional interface to the valve spindle / cap body is coaxial with the spigot",
+  "fit_rms_mm": 0.05906843667736236,
+  "fit_max_mm": 0.6425605128356686,
+  "fit_metric": "median / worst circle residual over stations (kasa,wall_faces)",
+  "stations": 15,
+  "r_by_feature": {
+   "spigot neck cylinder (plain band between stem and thread)": {
+    "n": 9,
+    "r_mean": 4.795166834735011,
+    "r_std": 0.061895149324377514
+   },
+   "cap outer wall faces (drafted)": {
+    "n": 6,
+    "r_mean": 12.94823803474376,
+    "r_std": 0.18184500204346524
+   }
+  },
+  "centre_std_mm": [
+   0.051943936795036096,
+   0.16194988841408775
+  ],
+  "station_detail": [
+   {
+    "z": 29.2,
+    "cx": -204.59621,
+    "cy": 18.62963,
+    "r": 4.93903,
+    "rms": 0.05907,
+    "max": 0.26289,
+    "n": 491,
+    "feature": "spigot neck cylinder (plain band between stem and thread)"
+   },
+   {
+    "z": 29.525,
+    "cx": -204.61189,
+    "cy": 18.63493,
+    "r": 4.81681,
+    "rms": 0.06459,
+    "max": 0.24074,
+    "n": 479,
+    "feature": "spigot neck cylinder (plain band between stem and thread)"
+   },
+   {
+    "z": 29.85,
+    "cx": -204.61408,
+    "cy": 18.66539,
+    "r": 4.76318,
+    "rms": 0.06723,
+    "max": 0.19007,
+    "n": 438,
+    "feature": "spigot neck cylinder (plain band between stem and thread)"
+   },
+   {
+    "z": 30.175,
+    "cx": -204.621,
+    "cy": 18.68513,
+    "r": 4.7443,
+    "rms": 0.06134,
+    "max": 0.18278,
+    "n": 458,
+    "feature": "spigot neck cylinder (plain band between stem and thread)"
+   },
+   {
+    "z": 30.5,
+    "cx": -204.63361,
+    "cy": 18.6873,
+    "r": 4.73926,
+    "rms": 0.058,
+    "max": 0.16618,
+    "n": 441,
+    "feature": "spigot neck cylinder (plain band between stem and thread)"
+   },
+   {
+    "z": 30.825,
+    "cx": -204.65488,
+    "cy": 18.67344,
+    "r": 4.74319,
+    "rms": 0.05632,
+    "max": 0.15555,
+    "n": 432,
+    "feature": "spigot neck cylinder (plain band between stem and thread)"
+   },
+   {
+    "z": 31.15,
+    "cx": -204.6876,
+    "cy": 18.65896,
+    "r": 4.76429,
+    "rms": 0.05541,
+    "max": 0.16003,
+    "n": 446,
+    "feature": "spigot neck cylinder (plain band between stem and thread)"
+   },
+   {
+    "z": 31.475,
+    "cx": -204.72397,
+    "cy": 18.64758,
+    "r": 4.79724,
+    "rms": 0.05532,
+    "max": 0.18417,
+    "n": 433,
+    "feature": "spigot neck cylinder (plain band between stem and thread)"
+   },
+   {
+    "z": 31.8,
+    "cx": -204.78765,
+    "cy": 18.63314,
+    "r": 4.84919,
+    "rms": 0.07158,
+    "max": 0.25663,
+    "n": 444,
+    "feature": "spigot neck cylinder (plain band between stem and thread)"
+   },
+   {
+    "z": 2.875,
+    "cx": -204.67834,
+    "cy": 19.01187,
+    "r": 12.6989,
+    "rms": 0.09344,
+    "max": 0.64256,
+    "p95": 0.09468,
+    "n": 4453,
+    "iterations": 15,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 4.625,
+    "cx": -204.67955,
+    "cy": 18.91158,
+    "r": 12.78198,
+    "rms": 0.08097,
+    "max": 0.55794,
+    "p95": 0.07534,
+    "n": 4927,
+    "iterations": 14,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 6.375,
+    "cx": -204.69981,
+    "cy": 18.92749,
+    "r": 12.88329,
+    "rms": 0.06744,
+    "max": 0.47965,
+    "p95": 0.0705,
+    "n": 5242,
+    "iterations": 13,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 8.125,
+    "cx": -204.71216,
+    "cy": 18.95442,
+    "r": 12.99027,
+    "rms": 0.05884,
+    "max": 0.38347,
+    "p95": 0.06456,
+    "n": 5275,
+    "iterations": 16,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 9.875,
+    "cx": -204.72407,
+    "cy": 19.0212,
+    "r": 13.11063,
+    "rms": 0.05598,
+    "max": 0.26453,
+    "p95": 0.09351,
+    "n": 5573,
+    "iterations": 15,
+    "feature": "cap outer wall faces (drafted)"
+   },
+   {
+    "z": 11.625,
+    "cx": -204.71832,
+    "cy": 19.0503,
+    "r": 13.22435,
+    "rms": 0.05084,
+    "max": 0.20813,
+    "p95": 0.09119,
+    "n": 5055,
+    "iterations": 11,
+    "feature": "cap outer wall faces (drafted)"
+   }
+  ],
+  "noise_ref": null
+ },
+ "clock": {
+  "rule": "fourier_mass: lever wing centreline -> +X",
+  "angle_deg": -143.72503747928852,
+  "why": "the lever is the only non-axisymmetric feature; n=1 so the label is unique",
+  "detail": {
+   "n": 1,
+   "candidates_deg": [
+    143.72503747928852
+   ],
+   "chosen_deg": 143.72503747928852,
+   "strength": 0.9867986995181005,
+   "n_vertices": 27822,
+   "label_rule": "single lever, n=1"
+  }
+ },
+ "tilt_deg": {
+  "value": 0.8312804528638595,
+  "stderr_deg": 0.05514208235399072,
+  "direction_deg": 145.833034300741,
+  "method": "common slope, per-feature intercept, 15 stations over 2 feature(s), z 2.875..31.800 vs frame Z; NOT RESOLVABLE (heuristic): 'cap outer wall faces (drafted)' (0.61 deg @ 122.3 deg) vs 'spigot neck cylinder (plain band between stem and thread)' (3.76 deg @ 178.8 deg) differ by 3.47 deg > combined stderr 0.86 deg",
+  "z_span_mm": 28.925,
+  "per_feature": [
+   {
+    "feature": "cap outer wall faces (drafted)",
+    "n_stations": 6,
+    "value": 0.6060550368550041,
+    "stderr_deg": 0.29897518606224055,
+    "direction_deg": 122.25436284844548,
+    "z_span_mm": 8.75
+   },
+   {
+    "feature": "spigot neck cylinder (plain band between stem and thread)",
+    "n_stations": 9,
+    "value": 3.7648989087770723,
+    "stderr_deg": 0.556766864064148,
+    "direction_deg": 178.77357564578756,
+    "z_span_mm": 2.6000000000000014
+   }
+  ],
+  "resolvable": false,
+  "disagreement": "'cap outer wall faces (drafted)' (0.61 deg @ 122.3 deg) vs 'spigot neck cylinder (plain band between stem and thread)' (3.76 deg @ 178.8 deg) differ by 3.47 deg > combined stderr 0.86 deg"
+ },
+ "origin": {
+  "definition": "spigot/cap common axis \u2229 cap crown face plane"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": -0.0034944425114590656,
+   "tol": 0.01870648825491811,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "spigot tip is the +Z extreme",
+   "stat": "zmax",
+   "expected": 38.2,
+   "tol": 0.5,
+   "observed": 38.09517598092579,
+   "ok": true,
+   "tol_source": "provisional-frame profile survey (work/prov.stl), sign/feature check only"
+  },
+  {
+   "name": "lever tip radius",
+   "stat": "rmax",
+   "expected": 27.7,
+   "tol": 0.5,
+   "observed": 27.838595504886506,
+   "ok": true,
+   "tol_source": "provisional-frame profile survey, sign/feature check only"
+  },
+  {
+   "name": "cap step face z (lever underside plane)",
+   "stat": "zmax",
+   "expected": 13.4,
+   "tol": 0.5,
+   "observed": 13.958510140342645,
+   "ok": false,
+   "tol_source": "provisional-frame profile survey"
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -13.063774967054735,
+   -13.465541920198957,
+   -0.06345816163029028
+  ],
+  [
+   27.859998060859002,
+   13.02938548124403,
+   38.09517598092579
+  ]
+ ],
+ "extents_aligned": [
+  40.92377302791374,
+  26.494927401442986,
+  38.15863414255608
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/intake/aligned_work.stl",
+  "sha256": "eaaebeb03a6bfe75f77d6f5b0213d00b859f2213836044f696d27e15c39b468e"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "finding",
+   "note": "not resolvable: per-feature tilt vectors disagree beyond their combined stderr (heuristic, review M2); common slope, per-feature intercept, 15 stations over 2 feature(s), z 2.875..31.800 vs frame Z; NOT RESOLVABLE (heuristic): 'cap outer wall faces (drafted)' (0.61 deg @ 122.3 deg) vs 'spigot neck cylinder (plain band between stem and thread)' (3.76 deg @ 178.8 deg) differ by 3.47 deg > combined stderr 0.86 deg; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": true,
+   "result": "finding",
+   "note": "FLAG: no calipers, no scale reference in photos (DECISIONS.md MEASUREMENTS); units assumed mm, scale unverified"
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}
