@@ -1,0 +1,28 @@
+{
+ "rule": "coverage proxy: CAD point is a coverage gap when its nearest scan vertex is within 0.8 mm of a scan open-boundary vertex",
+ "all": {
+  "n": 300000,
+  "p95": 0.4578496878721255,
+  "max": 2.9869911283521033
+ },
+ "not_gap": {
+  "n": 252833,
+  "p95": 0.15542780496013153,
+  "max": 0.9874705607942913
+ },
+ "gap_fraction": 0.15722333333333333,
+ "residual_over_0p8_not_gap": {
+  "n": 5,
+  "crevice z14.9-17.2 r5.4-10.7": 5,
+  "pocket floor": 0,
+  "bore deep z<35.5 r<4.3": 0,
+  "z_range": [
+   15.990520532823671,
+   16.004626820628392
+  ],
+  "r_range": [
+   6.025293797387739,
+   6.187521782016159
+  ]
+ }
+}

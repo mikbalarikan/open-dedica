@@ -1,0 +1,953 @@
+{
+ "schema": "stl-re/it_compare@1",
+ "tool": "qa_scripts/compare_it1_it2.py (QA-own)",
+ "seed": null,
+ "inputs": {
+  "_it1_SUPERSEDED/qa/deviation.json": "08d863c76e17f8e7b25e0d63dc50424baa8a622866f6fb0c50a37765a4aae204",
+  "qa/deviation.json": "adfc1510fff1826dceaa143d9b4d124eb08f2721cbc33cafcb39a90fe06b2750",
+  "_it1_SUPERSEDED/qa/registration.json": "1e419ac46001dc4dc4daafc97ef5b435c7b5238a454668e336efad6bb9162beb",
+  "qa/registration.json": "223fe82054270644098827017123e6525ede2eb6abdc499c8d559139045cf391",
+  "qa/tess_probe.json": "548310568952d3c17a81083bbb233713e68ee7cafeccb23e95b4c2b7e943348c"
+ },
+ "protocol": {
+  "inputs_identical": {
+   "regime.json": true,
+   "masks.json": true,
+   "zones.json": true,
+   "icp_scan_masks.json": true,
+   "datum_spec.json": true
+  },
+  "sampling_identical": true,
+  "icp_params_identical": true,
+  "observability_params_identical": true,
+  "label": [
+   "OFFICIAL (full-res)",
+   "OFFICIAL (full-res)"
+  ]
+ },
+ "registration": {
+  "it1": {
+   "iterations": 44,
+   "converged": true,
+   "delta_deg": 0.0728594672113027,
+   "delta_mm": 0.022361925338063856,
+   "final_kept_fraction": 0.83918
+  },
+  "it2": {
+   "iterations": 35,
+   "converged": true,
+   "delta_deg": 0.07300532547665839,
+   "delta_mm": 0.02373625377209812,
+   "final_kept_fraction": 0.8407533333333334
+  }
+ },
+ "datum_audit": {
+  "it1": {
+   "angle_deg": 3.8752172762635895,
+   "axis_angle_deg": 0.02052148203237886,
+   "origin_offset_mm": 0.020584853693223163,
+   "point_disagreement_p95_mm": 1.6320248704187035
+  },
+  "it2": {
+   "angle_deg": 3.8752172762635895,
+   "axis_angle_deg": 0.02052148203237886,
+   "origin_offset_mm": 0.020584853693223163,
+   "point_disagreement_p95_mm": 1.6320248704187035
+  }
+ },
+ "validity": {
+  "it1": {
+   "OD-S03_steam-knob_datum.step": {
+    "faces": 88,
+    "volume_mm3": 11657.117,
+    "brepcheck_valid": true,
+    "tess_watertight_0.005_0.05": false
+   },
+   "OD-S03_steam-knob.step": {
+    "faces": 88,
+    "volume_mm3": 11657.117,
+    "brepcheck_valid": true,
+    "tess_watertight_0.005_0.05": false
+   }
+  },
+  "it2": {
+   "OD-S03_steam-knob_datum.step": {
+    "faces": 83,
+    "volume_mm3": 11655.643,
+    "brepcheck_valid": true,
+    "tess_watertight_0.005_0.05": true
+   },
+   "OD-S03_steam-knob.step": {
+    "faces": 83,
+    "volume_mm3": 11655.643,
+    "brepcheck_valid": true,
+    "tess_watertight_0.005_0.05": true
+   }
+  }
+ },
+ "tessellation_probe": [
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.1,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 17
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.05,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 3
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.1,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 17
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.05,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 13
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.003,
+   "angular_rad": 0.1,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 17
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.02,
+   "angular_rad": 0.1,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 16
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.1,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 18
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.05,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 12
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.1,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 16
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.05,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 2
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.003,
+   "angular_rad": 0.1,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 16
+  },
+  {
+   "iteration": "it1",
+   "step": "_it1_SUPERSEDED/build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.02,
+   "angular_rad": 0.1,
+   "watertight": false,
+   "open_edges": 0,
+   "nonmanifold_edges": 15
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.1,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.05,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.1,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.05,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.003,
+   "angular_rad": 0.1,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob_datum.step",
+   "tolerance_mm": 0.02,
+   "angular_rad": 0.1,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.1,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.005,
+   "angular_rad": 0.05,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.1,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.01,
+   "angular_rad": 0.05,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.003,
+   "angular_rad": 0.1,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  },
+  {
+   "iteration": "it2",
+   "step": "build/OD-S03_steam-knob.step",
+   "tolerance_mm": 0.02,
+   "angular_rad": 0.1,
+   "watertight": true,
+   "open_edges": 0,
+   "nonmanifold_edges": 0
+  }
+ ],
+ "deviation": {
+  "scan_to_cad": {
+   "it1": {
+    "n": 182580,
+    "rms": 0.0903,
+    "p50": 0.0256,
+    "p95": 0.15,
+    "p99": 0.278,
+    "max": 2.3484
+   },
+   "it2": {
+    "n": 182580,
+    "rms": 0.0902,
+    "p50": 0.0258,
+    "p95": 0.1502,
+    "p99": 0.278,
+    "max": 2.3484
+   }
+  },
+  "cad_to_scan": {
+   "it1": {
+    "n": 300000,
+    "rms": 0.2676,
+    "p50": 0.0353,
+    "p95": 0.4798,
+    "p99": 1.3973,
+    "max": 2.9901
+   },
+   "it2": {
+    "n": 300000,
+    "rms": 0.2668,
+    "p50": 0.0353,
+    "p95": 0.4578,
+    "p99": 1.4132,
+    "max": 2.987
+   }
+  },
+  "cad_to_scan_masked": {
+   "it1": {
+    "n": 251986,
+    "rms": 0.076,
+    "p50": 0.0283,
+    "p95": 0.1565,
+    "p99": 0.2887,
+    "max": 0.8932
+   },
+   "it2": {
+    "n": 252457,
+    "rms": 0.0723,
+    "p50": 0.0284,
+    "p95": 0.1545,
+    "p99": 0.2752,
+    "max": 0.7534
+   }
+  },
+  "cad_to_scan_observable": {
+   "it1": {
+    "n": 19951,
+    "rms": 0.2695,
+    "p50": 0.0352,
+    "p95": 0.45,
+    "p99": 1.4283,
+    "max": 2.7958
+   },
+   "it2": {
+    "n": 19960,
+    "rms": 0.2667,
+    "p50": 0.0348,
+    "p95": 0.4385,
+    "p99": 1.4439,
+    "max": 2.792
+   }
+  },
+  "zone Z1 threaded sleeve OD scan_to_cad (masked)": {
+   "it1": {
+    "n": 13841,
+    "rms": 0.0854,
+    "p50": 0.0552,
+    "p95": 0.1853,
+    "p99": 0.2454,
+    "max": 0.2878
+   },
+   "it2": {
+    "n": 13837,
+    "rms": 0.0855,
+    "p50": 0.0544,
+    "p95": 0.1878,
+    "p99": 0.2455,
+    "max": 0.2925
+   }
+  },
+  "zone Z1 threaded sleeve OD cad_to_scan (masked)": {
+   "it1": {
+    "n": 18986,
+    "rms": 0.1166,
+    "p50": 0.0522,
+    "p95": 0.1995,
+    "p99": 0.577,
+    "max": 0.8932
+   },
+   "it2": {
+    "n": 18672,
+    "rms": 0.0842,
+    "p50": 0.0509,
+    "p95": 0.182,
+    "p99": 0.2571,
+    "max": 0.517
+   }
+  },
+  "zone Z2 sleeve bore visible scan_to_cad (masked)": {
+   "it1": {
+    "n": 1701,
+    "rms": 0.0846,
+    "p50": 0.0513,
+    "p95": 0.1664,
+    "p99": 0.2472,
+    "max": 0.3697
+   },
+   "it2": {
+    "n": 1703,
+    "rms": 0.0851,
+    "p50": 0.0523,
+    "p95": 0.1677,
+    "p99": 0.2481,
+    "max": 0.3715
+   }
+  },
+  "zone Z2 sleeve bore visible cad_to_scan (masked)": {
+   "it1": {
+    "n": 2935,
+    "rms": 0.0937,
+    "p50": 0.053,
+    "p95": 0.1673,
+    "p99": 0.3557,
+    "max": 0.5137
+   },
+   "it2": {
+    "n": 2946,
+    "rms": 0.096,
+    "p50": 0.0541,
+    "p95": 0.1691,
+    "p99": 0.3825,
+    "max": 0.5178
+   }
+  },
+  "zone Z3 stem ribs and core scan_to_cad (masked)": {
+   "it1": {
+    "n": 26608,
+    "rms": 0.078,
+    "p50": 0.045,
+    "p95": 0.1581,
+    "p99": 0.2402,
+    "max": 0.5163
+   },
+   "it2": {
+    "n": 26609,
+    "rms": 0.078,
+    "p50": 0.0454,
+    "p95": 0.158,
+    "p99": 0.2409,
+    "max": 0.5176
+   }
+  },
+  "zone Z3 stem ribs and core cad_to_scan (masked)": {
+   "it1": {
+    "n": 38218,
+    "rms": 0.0973,
+    "p50": 0.0519,
+    "p95": 0.2127,
+    "p99": 0.3165,
+    "max": 0.4686
+   },
+   "it2": {
+    "n": 38192,
+    "rms": 0.0969,
+    "p50": 0.0521,
+    "p95": 0.2133,
+    "p99": 0.3093,
+    "max": 0.5674
+   }
+  },
+  "zone Z4 crown cap wall lever scan_to_cad (masked)": {
+   "it1": {
+    "n": 105817,
+    "rms": 0.0889,
+    "p50": 0.0178,
+    "p95": 0.1104,
+    "p99": 0.2253,
+    "max": 2.3484
+   },
+   "it2": {
+    "n": 105799,
+    "rms": 0.0891,
+    "p50": 0.0179,
+    "p95": 0.1113,
+    "p99": 0.2259,
+    "max": 2.3484
+   }
+  },
+  "zone Z4 crown cap wall lever cad_to_scan (masked)": {
+   "it1": {
+    "n": 135130,
+    "rms": 0.0488,
+    "p50": 0.0194,
+    "p95": 0.103,
+    "p99": 0.1785,
+    "max": 0.3896
+   },
+   "it2": {
+    "n": 135627,
+    "rms": 0.0488,
+    "p50": 0.0195,
+    "p95": 0.1036,
+    "p99": 0.1769,
+    "max": 0.3897
+   }
+  },
+  "zone Z5 step face and collar scan_to_cad (masked)": {
+   "it1": {
+    "n": 21231,
+    "rms": 0.0809,
+    "p50": 0.0303,
+    "p95": 0.1407,
+    "p99": 0.3787,
+    "max": 0.7243
+   },
+   "it2": {
+    "n": 21240,
+    "rms": 0.0804,
+    "p50": 0.0299,
+    "p95": 0.1404,
+    "p99": 0.3757,
+    "max": 0.7203
+   }
+  },
+  "zone Z5 step face and collar cad_to_scan (masked)": {
+   "it1": {
+    "n": 35472,
+    "rms": 0.0693,
+    "p50": 0.0312,
+    "p95": 0.1391,
+    "p99": 0.287,
+    "max": 0.4535
+   },
+   "it2": {
+    "n": 35494,
+    "rms": 0.0678,
+    "p50": 0.0308,
+    "p95": 0.1366,
+    "p99": 0.2748,
+    "max": 0.462
+   }
+  },
+  "zone I1 lever pocket floor scan_to_cad (masked)": {
+   "it1": {
+    "n": 2493,
+    "rms": 0.1231,
+    "p50": 0.0314,
+    "p95": 0.3058,
+    "p99": 0.5216,
+    "max": 0.6754
+   },
+   "it2": {
+    "n": 2493,
+    "rms": 0.1232,
+    "p50": 0.0316,
+    "p95": 0.3057,
+    "p99": 0.522,
+    "max": 0.6751
+   }
+  },
+  "zone I1 lever pocket floor cad_to_scan (masked)": {
+   "it1": {
+    "n": 2891,
+    "rms": 0.0497,
+    "p50": 0.0265,
+    "p95": 0.1027,
+    "p99": 0.1714,
+    "max": 0.2587
+   },
+   "it2": {
+    "n": 2962,
+    "rms": 0.0507,
+    "p50": 0.027,
+    "p95": 0.105,
+    "p99": 0.1631,
+    "max": 0.2522
+   }
+  },
+  "zone I2 stem collar crevice scan_to_cad (masked)": {
+   "it1": {
+    "n": 6380,
+    "rms": 0.1883,
+    "p50": 0.077,
+    "p95": 0.4115,
+    "p99": 0.6399,
+    "max": 1.0951
+   },
+   "it2": {
+    "n": 6374,
+    "rms": 0.1872,
+    "p50": 0.0778,
+    "p95": 0.41,
+    "p99": 0.6359,
+    "max": 1.0914
+   }
+  },
+  "zone I2 stem collar crevice cad_to_scan (masked)": {
+   "it1": {
+    "n": 13451,
+    "rms": 0.1312,
+    "p50": 0.062,
+    "p95": 0.299,
+    "p99": 0.3883,
+    "max": 0.6931
+   },
+   "it2": {
+    "n": 13323,
+    "rms": 0.1298,
+    "p50": 0.0616,
+    "p95": 0.2927,
+    "p99": 0.3778,
+    "max": 0.7534
+   }
+  },
+  "zone I3 bore below visible depth scan_to_cad (masked)": {
+   "it1": {
+    "n": 270,
+    "rms": 0.1663,
+    "p50": 0.1191,
+    "p95": 0.3325,
+    "p99": 0.3933,
+    "max": 0.5979
+   },
+   "it2": {
+    "n": 268,
+    "rms": 0.165,
+    "p50": 0.1178,
+    "p95": 0.3345,
+    "p99": 0.3939,
+    "max": 0.5957
+   }
+  },
+  "zone I3 bore below visible depth cad_to_scan (masked)": {
+   "it1": {
+    "n": 10,
+    "rms": 0.1166,
+    "p50": 0.098,
+    "p95": 0.1633,
+    "p99": 0.1685,
+    "max": 0.1698
+   },
+   "it2": {
+    "n": 23,
+    "rms": 0.1108,
+    "p50": 0.0928,
+    "p95": 0.1586,
+    "p99": 0.1613,
+    "max": 0.162
+   }
+  },
+  "zone B z 0-5 scan_to_cad (masked)": {
+   "it1": {
+    "n": 59604,
+    "rms": 0.0517,
+    "p50": 0.0156,
+    "p95": 0.1056,
+    "p99": 0.229,
+    "max": 0.3932
+   },
+   "it2": {
+    "n": 59587,
+    "rms": 0.0522,
+    "p50": 0.0157,
+    "p95": 0.1073,
+    "p99": 0.2291,
+    "max": 0.3943
+   }
+  },
+  "zone B z 0-5 cad_to_scan (masked)": {
+   "it1": {
+    "n": 67609,
+    "rms": 0.0522,
+    "p50": 0.0165,
+    "p95": 0.1052,
+    "p99": 0.2311,
+    "max": 0.3896
+   },
+   "it2": {
+    "n": 67632,
+    "rms": 0.0523,
+    "p50": 0.0165,
+    "p95": 0.107,
+    "p99": 0.2283,
+    "max": 0.3897
+   }
+  },
+  "zone B z 5-13.2 scan_to_cad (masked)": {
+   "it1": {
+    "n": 46213,
+    "rms": 0.121,
+    "p50": 0.0206,
+    "p95": 0.1168,
+    "p99": 0.2008,
+    "max": 2.3484
+   },
+   "it2": {
+    "n": 46212,
+    "rms": 0.1211,
+    "p50": 0.0206,
+    "p95": 0.117,
+    "p99": 0.2009,
+    "max": 2.3484
+   }
+  },
+  "zone B z 5-13.2 cad_to_scan (masked)": {
+   "it1": {
+    "n": 67521,
+    "rms": 0.0451,
+    "p50": 0.0225,
+    "p95": 0.1009,
+    "p99": 0.152,
+    "max": 0.2587
+   },
+   "it2": {
+    "n": 67995,
+    "rms": 0.045,
+    "p50": 0.0225,
+    "p95": 0.1011,
+    "p99": 0.1521,
+    "max": 0.2522
+   }
+  },
+  "zone B z 13.2-17 scan_to_cad (masked)": {
+   "it1": {
+    "n": 27419,
+    "rms": 0.1074,
+    "p50": 0.0352,
+    "p95": 0.2281,
+    "p99": 0.4581,
+    "max": 1.0951
+   },
+   "it2": {
+    "n": 27418,
+    "rms": 0.1069,
+    "p50": 0.0349,
+    "p95": 0.2265,
+    "p99": 0.4554,
+    "max": 1.0914
+   }
+  },
+  "zone B z 13.2-17 cad_to_scan (masked)": {
+   "it1": {
+    "n": 45809,
+    "rms": 0.0773,
+    "p50": 0.0343,
+    "p95": 0.1592,
+    "p99": 0.2951,
+    "max": 0.6931
+   },
+   "it2": {
+    "n": 45779,
+    "rms": 0.0762,
+    "p50": 0.0339,
+    "p95": 0.1556,
+    "p99": 0.2856,
+    "max": 0.6939
+   }
+  },
+  "zone B z 17-29.5 scan_to_cad (masked)": {
+   "it1": {
+    "n": 27507,
+    "rms": 0.073,
+    "p50": 0.0444,
+    "p95": 0.1487,
+    "p99": 0.2143,
+    "max": 0.3353
+   },
+   "it2": {
+    "n": 27519,
+    "rms": 0.073,
+    "p50": 0.0447,
+    "p95": 0.1484,
+    "p99": 0.2154,
+    "max": 0.3364
+   }
+  },
+  "zone B z 17-29.5 cad_to_scan (masked)": {
+   "it1": {
+    "n": 40927,
+    "rms": 0.1012,
+    "p50": 0.0527,
+    "p95": 0.227,
+    "p99": 0.3281,
+    "max": 0.4686
+   },
+   "it2": {
+    "n": 41051,
+    "rms": 0.101,
+    "p50": 0.0529,
+    "p95": 0.2289,
+    "p99": 0.3234,
+    "max": 0.7534
+   }
+  },
+  "zone B z 29.5-32.2 neck scan_to_cad (masked)": {
+   "it1": {
+    "n": 4363,
+    "rms": 0.1051,
+    "p50": 0.0514,
+    "p95": 0.2213,
+    "p99": 0.274,
+    "max": 0.4668
+   },
+   "it2": {
+    "n": 4361,
+    "rms": 0.1049,
+    "p50": 0.0516,
+    "p95": 0.2206,
+    "p99": 0.2728,
+    "max": 0.4648
+   }
+  },
+  "zone B z 29.5-32.2 neck cad_to_scan (masked)": {
+   "it1": {
+    "n": 5703,
+    "rms": 0.1158,
+    "p50": 0.0548,
+    "p95": 0.2386,
+    "p99": 0.3839,
+    "max": 0.5332
+   },
+   "it2": {
+    "n": 5783,
+    "rms": 0.1149,
+    "p50": 0.0537,
+    "p95": 0.2412,
+    "p99": 0.3787,
+    "max": 0.5596
+   }
+  },
+  "zone B z 32.2-38.4 sleeve scan_to_cad (masked)": {
+   "it1": {
+    "n": 17474,
+    "rms": 0.0893,
+    "p50": 0.0565,
+    "p95": 0.1898,
+    "p99": 0.25,
+    "max": 0.5979
+   },
+   "it2": {
+    "n": 17483,
+    "rms": 0.0892,
+    "p50": 0.0561,
+    "p95": 0.1902,
+    "p99": 0.2503,
+    "max": 0.5957
+   }
+  },
+  "zone B z 32.2-38.4 sleeve cad_to_scan (masked)": {
+   "it1": {
+    "n": 24417,
+    "rms": 0.1225,
+    "p50": 0.055,
+    "p95": 0.2221,
+    "p99": 0.5501,
+    "max": 0.8932
+   },
+   "it2": {
+    "n": 24217,
+    "rms": 0.0989,
+    "p50": 0.054,
+    "p95": 0.2026,
+    "p99": 0.3466,
+    "max": 0.6233
+   }
+  }
+ },
+ "scan_to_cad_clusters": {
+  "it1": [
+   {
+    "n": 206,
+    "r_range": [
+     10.633,
+     12.064
+    ],
+    "theta_deg_range": [
+     99.6,
+     108.9
+    ],
+    "d_max": 2.3483956259973398
+   },
+   {
+    "n": 25,
+    "r_range": [
+     5.247,
+     5.883
+    ],
+    "theta_deg_range": [
+     295.1,
+     307.7
+    ],
+    "d_max": 1.0950811541110046
+   }
+  ],
+  "it2": [
+   {
+    "n": 206,
+    "r_range": [
+     10.633,
+     12.064
+    ],
+    "theta_deg_range": [
+     99.6,
+     108.9
+    ],
+    "d_max": 2.3483580297248587
+   },
+   {
+    "n": 24,
+    "r_range": [
+     5.247,
+     5.883
+    ],
+    "theta_deg_range": [
+     295.1,
+     307.6
+    ],
+    "d_max": 1.0913500877131181
+   }
+  ]
+ },
+ "mask_dependent_passes": {
+  "it1": [
+   "zone Z3 stem ribs and core cad_to_scan",
+   "zone Z4 crown cap wall lever cad_to_scan"
+  ],
+  "it2": [
+   "whole part cad_to_scan",
+   "zone Z3 stem ribs and core cad_to_scan",
+   "zone Z4 crown cap wall lever cad_to_scan"
+  ]
+ },
+ "unobservable_fraction": {
+  "it1": 0.002449999999999952,
+  "it2": 0.0020000000000000018
+ }
+}

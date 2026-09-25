@@ -1,0 +1,758 @@
+{
+ "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step": {
+  "faulty": [
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -6.416,
+       -0.337,
+       15.99,
+       -6.387,
+       0.692,
+       15.99
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -7.67,
+       -7.373,
+       15.99,
+       7.302,
+       7.599,
+       17.148
+      ]
+     }
+    ],
+    "max_dist": 1.033653885108191e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -2.051,
+       -4.682,
+       29.203,
+       4.678,
+       0.056,
+       29.6
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -5.337,
+       -5.041,
+       28.4,
+       4.969,
+       5.266,
+       29.6
+      ]
+     }
+    ],
+    "max_dist": 2.812662670692824e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -5.99,
+       -5.536,
+       32.945,
+       -1.515,
+       4.264,
+       33.547
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -6.5,
+       -6.386,
+       32.141,
+       6.385,
+       6.499,
+       33.749
+      ]
+     }
+    ],
+    "max_dist": 2.0189476646460376e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -5.99,
+       -5.536,
+       32.945,
+       -1.515,
+       4.264,
+       33.547
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -6.583,
+       -5.703,
+       32.287,
+       -1.398,
+       4.434,
+       33.984
+      ]
+     }
+    ],
+    "max_dist": 2.0226900460685724e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -5.662,
+       1.436,
+       35.71,
+       -3.416,
+       4.921,
+       36.022
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -6.552,
+       -5.339,
+       35.71,
+       -1.975,
+       4.938,
+       36.618
+      ]
+     }
+    ],
+    "max_dist": 2.8237467765095057e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -5.993,
+       -5.339,
+       36.788,
+       -2.524,
+       3.256,
+       36.788
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -6.5,
+       -6.386,
+       36.638,
+       6.385,
+       6.499,
+       37.217
+      ]
+     }
+    ],
+    "max_dist": 3.143222168648838e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -5.993,
+       -5.339,
+       36.788,
+       -2.524,
+       3.256,
+       36.788
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -6.552,
+       -5.339,
+       35.71,
+       -2.524,
+       4.938,
+       37.525
+      ]
+     }
+    ],
+    "max_dist": 3.1693431095153753e-07
+   }
+  ],
+  "brepcheck_valid": true,
+  "argument_analyzer_has_faulty": true,
+  "n_faulty": 7
+ },
+ "_it1_SUPERSEDED/build/OD-S03_steam-knob.step": {
+  "faulty": [
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -19.231,
+       9.176,
+       -199.517,
+       -18.389,
+       9.314,
+       -198.94
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -29.64,
+       7.486,
+       -211.684,
+       -15.105,
+       10.501,
+       -197.018
+      ]
+     }
+    ],
+    "max_dist": 1.0336540503547801e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -28.96,
+       -3.395,
+       -208.036,
+       -26.758,
+       -2.846,
+       -200.047
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -29.132,
+       -4.548,
+       -209.188,
+       -18.929,
+       -1.938,
+       -198.885
+      ]
+     }
+    ],
+    "max_dist": 2.81266288643624e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -28.678,
+       -7.956,
+       -202.802,
+       -19.011,
+       -7.099,
+       -198.095
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -31.044,
+       -8.769,
+       -210.3,
+       -18.534,
+       -5.556,
+       -197.678
+      ]
+     }
+    ],
+    "max_dist": 2.0189477470982102e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -28.678,
+       -7.956,
+       -202.802,
+       -19.011,
+       -7.099,
+       -198.095
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -28.853,
+       -8.01,
+       -203.163,
+       -18.941,
+       -6.931,
+       -197.534
+      ]
+     }
+    ],
+    "max_dist": 2.0226899654286104e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -21.008,
+       -10.766,
+       -203.8,
+       -19.329,
+       -10.704,
+       -199.997
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -28.395,
+       -10.811,
+       -203.826,
+       -19.308,
+       -10.22,
+       -197.509
+      ]
+     }
+    ],
+    "max_dist": 2.8237466976562366e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -28.419,
+       -11.67,
+       -201.488,
+       -19.952,
+       -10.389,
+       -197.954
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -31.566,
+       -12.165,
+       -210.202,
+       -19.056,
+       -9.958,
+       -197.58
+      ]
+     }
+    ],
+    "max_dist": 3.1432223369698336e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -28.419,
+       -11.67,
+       -201.488,
+       -19.952,
+       -10.389,
+       -197.954
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -28.523,
+       -11.709,
+       -203.8,
+       -19.308,
+       -10.22,
+       -197.484
+      ]
+     }
+    ],
+    "max_dist": 3.1693433194930276e-07
+   }
+  ],
+  "brepcheck_valid": true,
+  "argument_analyzer_has_faulty": true,
+  "n_faulty": 7
+ },
+ "build/OD-S03_steam-knob_datum.step": {
+  "faulty": [
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -2.051,
+       -4.682,
+       29.203,
+       4.678,
+       0.056,
+       29.6
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -5.337,
+       -5.041,
+       28.4,
+       4.969,
+       5.266,
+       29.6
+      ]
+     }
+    ],
+    "max_dist": 2.812662670692824e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -5.99,
+       -5.536,
+       32.945,
+       -1.515,
+       4.264,
+       33.547
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -6.5,
+       -6.386,
+       32.141,
+       6.385,
+       6.499,
+       33.749
+      ]
+     }
+    ],
+    "max_dist": 2.0189476646460376e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -5.99,
+       -5.536,
+       32.945,
+       -1.515,
+       4.264,
+       33.547
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -6.583,
+       -5.703,
+       32.287,
+       -1.398,
+       4.434,
+       33.984
+      ]
+     }
+    ],
+    "max_dist": 2.0226900460685724e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -5.662,
+       1.436,
+       35.71,
+       -3.416,
+       4.921,
+       36.022
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -6.552,
+       -5.339,
+       35.71,
+       -1.975,
+       4.938,
+       36.618
+      ]
+     }
+    ],
+    "max_dist": 2.8237467765095057e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -5.993,
+       -5.339,
+       36.788,
+       -2.524,
+       3.256,
+       36.788
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -6.5,
+       -6.386,
+       36.638,
+       6.385,
+       6.499,
+       37.217
+      ]
+     }
+    ],
+    "max_dist": 3.143222168648838e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -5.993,
+       -5.339,
+       36.788,
+       -2.524,
+       3.256,
+       36.788
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -6.552,
+       -5.339,
+       35.71,
+       -2.524,
+       4.938,
+       37.525
+      ]
+     }
+    ],
+    "max_dist": 3.1693431095153753e-07
+   }
+  ],
+  "brepcheck_valid": true,
+  "argument_analyzer_has_faulty": true,
+  "n_faulty": 6
+ },
+ "build/OD-S03_steam-knob.step": {
+  "faulty": [
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -28.96,
+       -3.395,
+       -208.036,
+       -26.758,
+       -2.846,
+       -200.047
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -29.132,
+       -4.548,
+       -209.188,
+       -18.929,
+       -1.938,
+       -198.885
+      ]
+     }
+    ],
+    "max_dist": 2.81266288643624e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -28.678,
+       -7.956,
+       -202.802,
+       -19.011,
+       -7.099,
+       -198.095
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -31.044,
+       -8.769,
+       -210.3,
+       -18.534,
+       -5.556,
+       -197.678
+      ]
+     }
+    ],
+    "max_dist": 2.0189477470982102e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -28.678,
+       -7.956,
+       -202.802,
+       -19.011,
+       -7.099,
+       -198.095
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -28.853,
+       -8.01,
+       -203.163,
+       -18.941,
+       -6.931,
+       -197.534
+      ]
+     }
+    ],
+    "max_dist": 2.0226899654286104e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -21.008,
+       -10.766,
+       -203.8,
+       -19.329,
+       -10.704,
+       -199.997
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -28.395,
+       -10.811,
+       -203.826,
+       -19.308,
+       -10.22,
+       -197.509
+      ]
+     }
+    ],
+    "max_dist": 2.8237466976562366e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -28.419,
+       -11.67,
+       -201.488,
+       -19.952,
+       -10.389,
+       -197.954
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -31.566,
+       -12.165,
+       -210.202,
+       -19.056,
+       -9.958,
+       -197.58
+      ]
+     }
+    ],
+    "max_dist": 3.1432223369698336e-07
+   },
+   {
+    "status": "BOPAlgo_InvalidCurveOnSurface",
+    "shapes": [
+     {
+      "type": "TopAbs_EDGE",
+      "bbox": [
+       -28.419,
+       -11.67,
+       -201.488,
+       -19.952,
+       -10.389,
+       -197.954
+      ]
+     },
+     {
+      "type": "TopAbs_FACE",
+      "bbox": [
+       -28.523,
+       -11.709,
+       -203.8,
+       -19.308,
+       -10.22,
+       -197.484
+      ]
+     }
+    ],
+    "max_dist": 3.1693433194930276e-07
+   }
+  ],
+  "brepcheck_valid": true,
+  "argument_analyzer_has_faulty": true,
+  "n_faulty": 6
+ }
+}

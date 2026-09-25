@@ -1,0 +1,37 @@
+scan->CAD: 182580 scan points
+CAD->scan: 300000 CAD samples
+scan_to_cad              n   182580 rms 0.0920 p50 0.0253 p95 0.1610 p99 0.2882 max 2.3284
+cad_to_scan              n   300000 rms 0.2677 p50 0.0348 p95 0.4576 p99 1.4181 max 2.9923
+scan_to_cad_masked       n   182580 rms 0.0920 p50 0.0253 p95 0.1610 p99 0.2882 max 2.3284
+cad_to_scan_masked       n   252542 rms 0.0743 p50 0.0279 p95 0.1647 p99 0.2836 max 0.7315
+cad_to_scan_observable   n    19960 rms 0.2675 p50 0.0343 p95 0.4407 p99 1.4520 max 2.7937
+unobservable CAD fraction 0.20%
+  zone Z1 threaded sleeve OD          scan_to_cad  n   13815 p95 0.187 max 0.290
+  zone Z1 threaded sleeve OD          cad_to_scan  n   18805 p95 0.183 max 0.520
+  zone Z2 sleeve bore visible         scan_to_cad  n    1687 p95 0.166 max 0.376
+  zone Z2 sleeve bore visible         cad_to_scan  n    4091 p95 0.213 max 0.523
+  zone Z3 stem ribs and core          scan_to_cad  n   26611 p95 0.161 max 0.519
+  zone Z3 stem ribs and core          cad_to_scan  n   43438 p95 0.433 max 0.947
+  zone Z4 crown cap wall lever        scan_to_cad  n  105822 p95 0.127 max 2.328
+  zone Z4 crown cap wall lever        cad_to_scan  n  159159 p95 0.501 max 2.767
+  zone Z5 step face and collar        scan_to_cad  n   21231 p95 0.142 max 0.731
+  zone Z5 step face and collar        cad_to_scan  n   39289 p95 0.193 max 0.582
+  zone I1 lever pocket floor          scan_to_cad  n    2489 p95 0.322 max 0.665
+  zone I1 lever pocket floor          cad_to_scan  n    9015 p95 2.047 max 2.767
+  zone I2 stem collar crevice         scan_to_cad  n    6368 p95 0.414 max 1.099
+  zone I2 stem collar crevice         cad_to_scan  n   28300 p95 0.654 max 1.130
+  zone I3 bore below visible depth    scan_to_cad  n     269 p95 0.342 max 0.592
+  zone I3 bore below visible depth    cad_to_scan  n    3920 p95 2.295 max 2.992
+  zone B z 0-5                        scan_to_cad  n   59611 p95 0.115 max 0.417
+  zone B z 0-5                        cad_to_scan  n   80556 p95 0.377 max 2.090
+  zone B z 5-13.2                     scan_to_cad  n   46211 p95 0.140 max 2.328
+  zone B z 5-13.2                     cad_to_scan  n   78603 p95 0.727 max 2.767
+  zone B z 13.2-17                    scan_to_cad  n   27406 p95 0.233 max 1.099
+  zone B z 13.2-17                    cad_to_scan  n   58138 p95 0.445 max 1.130
+  zone B z 17-29.5                    scan_to_cad  n   27509 p95 0.150 max 0.344
+  zone B z 17-29.5                    cad_to_scan  n   46876 p95 0.329 max 0.947
+  zone B z 29.5-32.2 neck             scan_to_cad  n    4365 p95 0.228 max 0.466
+  zone B z 29.5-32.2 neck             cad_to_scan  n    6312 p95 0.246 max 0.568
+  zone B z 32.2-38.4 sleeve           scan_to_cad  n   17478 p95 0.189 max 0.592
+  zone B z 32.2-38.4 sleeve           cad_to_scan  n   29515 p95 1.046 max 2.992
+label: NO QA REGISTRATION | mask-dependent passes: ['whole part cad_to_scan', 'zone Z3 stem ribs and core cad_to_scan', 'zone Z4 crown cap wall lever cad_to_scan']

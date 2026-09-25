@@ -1,0 +1,129 @@
+{
+ "per_z": [
+  {
+   "z": 13.3,
+   "n": 335,
+   "wall+Y (normal -Y)": [
+    2.301,
+    125
+   ],
+   "wall-Y (normal +Y)": [
+    -2.164,
+    98
+   ],
+   "end_inner (normal +X)": [
+    13.209,
+    43
+   ],
+   "end_outer (normal -X)": [
+    22.203,
+    21
+   ]
+  },
+  {
+   "z": 12.8,
+   "n": 722,
+   "wall+Y (normal -Y)": [
+    2.25,
+    355
+   ],
+   "wall-Y (normal +Y)": [
+    -2.097,
+    170
+   ],
+   "end_inner (normal +X)": [
+    13.263,
+    80
+   ],
+   "end_outer (normal -X)": [
+    22.181,
+    40
+   ]
+  },
+  {
+   "z": 12.0,
+   "n": 844,
+   "wall+Y (normal -Y)": [
+    2.224,
+    504
+   ],
+   "wall-Y (normal +Y)": [
+    -2.024,
+    159
+   ],
+   "end_inner (normal +X)": [
+    13.298,
+    72
+   ],
+   "end_outer (normal -X)": [
+    22.091,
+    16
+   ]
+  },
+  {
+   "z": 11.0,
+   "n": 725,
+   "wall+Y (normal -Y)": [
+    2.173,
+    491
+   ],
+   "wall-Y (normal +Y)": [
+    -1.928,
+    104
+   ],
+   "end_inner (normal +X)": [
+    13.35,
+    59
+   ],
+   "end_outer (normal -X)": [
+    21.896,
+    8
+   ]
+  },
+  {
+   "z": 10.0,
+   "n": 472,
+   "wall+Y (normal -Y)": [
+    2.117,
+    369
+   ],
+   "wall-Y (normal +Y)": [
+    -1.836,
+    33
+   ],
+   "end_inner (normal +X)": [
+    13.416,
+    18
+   ],
+   "end_outer (normal -X)": [
+    21.765,
+    4
+   ]
+  },
+  {
+   "z": 9.0,
+   "n": 191,
+   "wall+Y (normal -Y)": [
+    2.03,
+    187
+   ],
+   "wall-Y (normal +Y)": null,
+   "end_inner (normal +X)": null,
+   "end_outer (normal -X)": null
+  },
+  {
+   "z": 8.5,
+   "n": 17,
+   "wall+Y (normal -Y)": [
+    1.95,
+    16
+   ],
+   "wall-Y (normal +Y)": null,
+   "end_inner (normal +X)": null,
+   "end_outer (normal -X)": null
+  }
+ ],
+ "deepest_wall_z_p1": 8.901495234171549,
+ "deepest_wall_z_min": 8.600467999776205,
+ "floor_faces_plusZ_normal": 64
+}

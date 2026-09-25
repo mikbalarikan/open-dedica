@@ -1,0 +1,995 @@
+{
+ "schema": "stl-re/params.json@1",
+ "tool": "build_params.py (measure/figures/src)",
+ "tool_version": "stl-re-measure-intent/1.0 (builder scripts)",
+ "inputs": {
+  "intake/aligned_work.stl": "1cbbfab272e0b8542805f4d3af733473555ccab5970b2ea06c26cac64e7080bc",
+  "intake/alignment.json": "da75c108fad2f778fe0fe76926c6be9cdeabb6c16ec1a287e629054c0b1e583e",
+  "measure/figures/measurements.json": "e3c3b14003c366f53a73cafd662fffd39836d1e6da57df59f329ce7f4ce77078"
+ },
+ "seed": 0,
+ "created": "2026-09-25T14:10:51+00:00",
+ "part": "OD-S03_steam-knob",
+ "frame": "datum frame from intake/alignment.json (frozen): primary = cap crown face -> XY at z=0, material +Z (toward the sleeve); origin = median of sleeve-envelope + cap-wall section centres; clock = lever centreline -> +X (area-weighted fourier_mass). theta CCW about +Z from +X. Sub-body axes (cap, collar, stem group) are measured positions IN this frame, never a re-levelled frame.",
+ "scan_noise_mm": 0.01870648825491811,
+ "params": {
+  "cap_cx": {
+   "value": 0.032,
+   "unit": "mm",
+   "measured": 0.032,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "cap wall cone fit (axes.json): Z-parallel axis, faces z 2.8-12.9, lever sector -50..50 excluded",
+   "uncertainty_mm": 0.0234,
+   "evidence": "measure/figures/measurements.json#cap_cx",
+   "critical": false
+  },
+  "cap_cy": {
+   "value": -0.0951,
+   "unit": "mm",
+   "measured": -0.0951,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit",
+   "uncertainty_mm": 0.0234,
+   "evidence": "measure/figures/measurements.json#cap_cy",
+   "critical": false
+  },
+  "collar_cx": {
+   "value": -0.1166,
+   "unit": "mm",
+   "measured": -0.1166,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "collar cylinder fit z 14.6-15.9 (axes.json)",
+   "uncertainty_mm": 0.0271,
+   "evidence": "measure/figures/measurements.json#collar_cx",
+   "critical": false
+  },
+  "collar_cy": {
+   "value": -0.0469,
+   "unit": "mm",
+   "measured": -0.0469,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit",
+   "uncertainty_mm": 0.0271,
+   "evidence": "measure/figures/measurements.json#collar_cy",
+   "critical": false
+  },
+  "stem_axis_x0": {
+   "value": -0.459164131118209,
+   "unit": "mm",
+   "measured": -0.459164131118209,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "stem-group axis line x(z)=x0+tan(tilt)cos(dir) z: LSQ line through 20 Z-parallel circle-fit centres (stem core 18.5-27.5, neck 30.3/30.9, sleeve 33.7-36.7, bore 36.3/36.8); resid rms 0.0418 max 0.0815",
+   "uncertainty_mm": 0.04175657327449736,
+   "evidence": "measure/figures/axis_stations.json#stem_group_line",
+   "critical": false
+  },
+  "stem_axis_y0": {
+   "value": 0.23551107196663656,
+   "unit": "mm",
+   "measured": 0.23551107196663656,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same line, y intercept at z=0",
+   "uncertainty_mm": 0.04175657327449736,
+   "evidence": "measure/figures/axis_stations.json#stem_group_line",
+   "critical": false
+  },
+  "stem_axis_tilt_deg": {
+   "value": 0.7539106614839252,
+   "unit": "deg",
+   "measured": 0.7539106614839252,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same line: atan(|(dx/dz, dy/dz)|) relative to datum Z (crown normal)",
+   "uncertainty_mm": 0.04175657327449736,
+   "evidence": "measure/figures/axis_stations.json#stem_group_line",
+   "critical": false,
+   "frame": "datum frame; tilt of the stem-group line from +Z"
+  },
+  "stem_axis_dir_deg": {
+   "value": -24.052288641590245,
+   "unit": "deg",
+   "measured": -24.052288641590245,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same line: atan2(dy/dz, dx/dz) = azimuth toward which the axis leans with +z",
+   "uncertainty_mm": 0.04175657327449736,
+   "evidence": "measure/figures/axis_stations.json#stem_group_line",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "crown_z": {
+   "value": 0.0,
+   "unit": "mm",
+   "measured": 0.0007848239499702104,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "area-weighted mean z of crown faces (n_z<-0.995, r<10) - the datum primary plane; the crown is the datum primary (z=0 by construction), measured offset is inside the plane noise",
+   "uncertainty_mm": 0.013443067623231381,
+   "evidence": "measure/figures/measurements.json#crown_z",
+   "critical": false
+  },
+  "cap_R_z0": {
+   "value": 12.5298,
+   "unit": "mm",
+   "measured": 12.5298,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "cone r(z)=R0+k z extrapolated to the crown plane z=0 (same fit)",
+   "uncertainty_mm": 0.0234,
+   "evidence": "measure/figures/measurements.json#cap_R_z0",
+   "critical": false
+  },
+  "draft_deg": {
+   "value": 3.0061827196475353,
+   "unit": "deg",
+   "measured": [
+    3.0038,
+    3.1323904209729814,
+    2.882357737969624
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "mean of the three moulded-wall draft reads [cap wall cone, lever +Y flank, lever -Y flank] (each: see measurements.json); one mould draft for cap, lever flanks, tip and blends",
+   "uncertainty_mm": 0.029892670858626385,
+   "evidence": "measure/figures/measurements.json#cap_draft_deg,lever_flank_py_draft_deg,lever_flank_my_draft_deg",
+   "critical": false,
+   "note": "lever tip cone read 2.159 deg (lever_tip_draft_deg) - declared simplification"
+  },
+  "crown_round_R": {
+   "value": 2.459063390058614,
+   "unit": "mm",
+   "measured": [
+    2.4361121114480517,
+    2.482014668669176
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "mean of [cap crown-round circle fit (r,z), lever-tip crown-round circle fit (x,z)]; one fillet around the whole crown loop",
+   "uncertainty_mm": 0.11361578447236333,
+   "evidence": "measure/figures/measurements.json#crown_round_R,lever_crown_round_R",
+   "critical": false
+  },
+  "step_z": {
+   "value": 13.68918095714504,
+   "unit": "mm",
+   "measured": [
+    13.668672150203847,
+    13.709689764086232
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "mean of [cap step-face annulus z, lever underside z] (area-weighted +Z-facing faces, same moulded face)",
+   "uncertainty_mm": 0.022401228384842226,
+   "evidence": "measure/figures/measurements.json#step_z",
+   "critical": false
+  },
+  "step_edge_R": {
+   "value": 0.5343624123421996,
+   "unit": "mm",
+   "measured": [
+    0.4502430481771125,
+    0.6184817765072868
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "mean of [cap wall->step-face round fit, lever-tip underside edge round fit]; one fillet around the step-face outer loop",
+   "uncertainty_mm": 0.09990429684743365,
+   "evidence": "measure/figures/measurements.json#step_edge_R,lever_under_edge_R",
+   "critical": false
+  },
+  "lever_flank_py_y0": {
+   "value": 4.6086946821688555,
+   "unit": "mm",
+   "measured": 4.6086946821688555,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "lever +Y flank line at z=0 in plan, y = y0 + tan(plan_deg) x: y0 = y(x=18,z=0) - 18 tan(plan_deg), from lever +Y flank: line y(x=18)(z) through per-z plane-strip fits z 4-12.8 (lever.json), extrapolated to z=0",
+   "uncertainty_mm": 0.004743931076188414,
+   "evidence": "measure/figures/measurements.json#lever_flank_py_y18_z0,lever_flank_py_plan_deg",
+   "critical": false
+  },
+  "lever_flank_py_plan_deg": {
+   "value": -0.3062827245752724,
+   "unit": "deg",
+   "measured": -0.3062827245752724,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median over z of the per-z plan slope dy/dx (lever.json)",
+   "uncertainty_mm": 0.004743931076188414,
+   "evidence": "measure/figures/measurements.json#lever_flank_py_plan_deg",
+   "critical": false,
+   "frame": "datum frame, plan angle of the flank line from +X, CCW positive"
+  },
+  "lever_flank_my_y0": {
+   "value": -4.677906100009632,
+   "unit": "mm",
+   "measured": -4.677906100009632,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "lever -Y flank line at z=0 in plan, y = y0 + tan(plan_deg) x: y0 = y(x=18,z=0) - 18 tan(plan_deg), from lever -Y flank: line y(x=18)(z) through per-z plane-strip fits z 4-12.8 (lever.json), extrapolated to z=0",
+   "uncertainty_mm": 0.004939859861427824,
+   "evidence": "measure/figures/measurements.json#lever_flank_my_y18_z0,lever_flank_my_plan_deg",
+   "critical": false
+  },
+  "lever_flank_my_plan_deg": {
+   "value": 0.7376797203576325,
+   "unit": "deg",
+   "measured": 0.7376797203576325,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median over z of the per-z plan slope dy/dx (lever.json)",
+   "uncertainty_mm": 0.004939859861427824,
+   "evidence": "measure/figures/measurements.json#lever_flank_my_plan_deg",
+   "critical": false,
+   "frame": "datum frame, plan angle of the flank line from +X, CCW positive"
+  },
+  "lever_tip_cx": {
+   "value": 22.648160389960804,
+   "unit": "mm",
+   "measured": 22.648160389960804,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median of per-z tip circle centres x",
+   "uncertainty_mm": 0.07116258843528259,
+   "evidence": "measure/figures/measurements.json#lever_tip_cx",
+   "critical": false
+  },
+  "lever_blend_R_py_z0": {
+   "value": 6.104510944456032,
+   "unit": "mm",
+   "measured": 6.104510944456032,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "concave lever-cap blend +Y: line R(z) through plan circle fits at z 4/7/10/12.5 (lever_blend_R_z0.per_fit), extrapolated to z=0 (slope -0.0483)",
+   "uncertainty_mm": 0.2722456529523778,
+   "evidence": "measure/figures/measurements.json#lever_blend_R_z0",
+   "critical": false
+  },
+  "lever_blend_R_my_z0": {
+   "value": 7.014649578965134,
+   "unit": "mm",
+   "measured": 7.014649578965134,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "concave lever-cap blend -Y: line R(z) through plan circle fits at z 4/7/10/12.5 (lever_blend_R_z0.per_fit), extrapolated to z=0 (slope -0.0888)",
+   "uncertainty_mm": 0.15668139267359665,
+   "evidence": "measure/figures/measurements.json#lever_blend_R_z0",
+   "critical": false
+  },
+  "pocket_y_plus_at_step": {
+   "value": 2.3121243514643446,
+   "unit": "mm",
+   "measured": 2.3121243514643446,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "pocket wall 'wall+Y (normal -Y)': line through per-z medians z 10-13.3 (pocket.json), evaluated at the lever step face z",
+   "uncertainty_mm": 0.008084376466812026,
+   "evidence": "measure/figures/measurements.json#pocket_y_plus_at_step",
+   "critical": false
+  },
+  "pocket_y_minus_at_step": {
+   "value": -2.194239837158206,
+   "unit": "mm",
+   "measured": -2.194239837158206,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "pocket wall 'wall-Y (normal +Y)': line through per-z medians z 10-13.3 (pocket.json), evaluated at the lever step face z",
+   "uncertainty_mm": 0.006254975697965829,
+   "evidence": "measure/figures/measurements.json#pocket_y_minus_at_step",
+   "critical": false
+  },
+  "pocket_x_inner_at_step": {
+   "value": 13.195574380593001,
+   "unit": "mm",
+   "measured": 13.195574380593001,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "pocket wall 'end_inner (normal +X)': line through per-z medians z 10-13.3 (pocket.json), evaluated at the lever step face z",
+   "uncertainty_mm": 0.008234221247547791,
+   "evidence": "measure/figures/measurements.json#pocket_x_inner_at_step",
+   "critical": false
+  },
+  "pocket_end_cx": {
+   "value": 20.147878970609426,
+   "unit": "mm",
+   "measured": 20.147878970609426,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "plan circle fit to the pocket outer-end wall faces x 19.9-22.6, z 11.8-13.4 (inward-facing)",
+   "uncertainty_mm": 0.08721063196675928,
+   "evidence": "measure/figures/measurements.json#pocket_end_cx",
+   "critical": false
+  },
+  "pocket_draft_deg": {
+   "value": 3.9859660238803105,
+   "unit": "deg",
+   "measured": [
+    3.0027185371181417,
+    5.5745963412383555,
+    3.3805831932844357
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "mean of the pocket wall drafts [+Y wall, -Y wall, inner end] (lines through per-z wall medians z 10-13.3)",
+   "uncertainty_mm": 0.14,
+   "evidence": "measure/figures/measurements.json#pocket_y_plus_draft_deg,pocket_y_minus_draft_deg,pocket_x_inner_draft_deg",
+   "critical": false
+  },
+  "pocket_floor_z": {
+   "value": 8.535,
+   "unit": "mm",
+   "measured": 8.535,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "floor seen sparsely: 64 +Z-facing faces in the pocket footprint, z p5 8.42 / p50 8.65 (pocket.json); value = mid of p5..p50",
+   "uncertainty_mm": 0.12,
+   "evidence": "measure/figures/measurements.json#pocket_floor_z",
+   "critical": false,
+   "note": "floor only sparsely scanned (64 faces, z p5 8.42 / p50 8.65); depth ~5.15 below the step face"
+  },
+  "pocket_corner_R": {
+   "value": 0.61108092797602,
+   "unit": "mm",
+   "measured": 0.61108092797602,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mean of plan circle fits to the two inner-end corner wall faces (z 11.5-13.4)",
+   "uncertainty_mm": 0.12538781048876313,
+   "evidence": "measure/figures/measurements.json#pocket_corner_R",
+   "critical": false
+  },
+  "collar_R": {
+   "value": 11.1163,
+   "unit": "mm",
+   "measured": 11.1163,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit (Z-parallel cylinder)",
+   "uncertainty_mm": 0.0271,
+   "evidence": "measure/figures/measurements.json#collar_R",
+   "critical": false
+  },
+  "mouth_chamfer_r_out": {
+   "value": 12.406198611292222,
+   "unit": "mm",
+   "measured": 12.406198611292222,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "chamfer line evaluated at step_z[0]",
+   "uncertainty_mm": 0.037907794247983094,
+   "evidence": "measure/figures/measurements.json#mouth_chamfer_r_out",
+   "critical": false
+  },
+  "mouth_chamfer_r_in": {
+   "value": 11.756370405161784,
+   "unit": "mm",
+   "measured": 11.756370405161784,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "chamfer line evaluated at mouth_ring_z",
+   "uncertainty_mm": 0.037907794247983094,
+   "evidence": "measure/figures/measurements.json#mouth_chamfer_r_in",
+   "critical": false
+  },
+  "mouth_ring_z": {
+   "value": 14.103858006286387,
+   "unit": "mm",
+   "measured": 14.103858006286387,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "area-weighted z of +Z-facing ring faces r 11.45-11.95",
+   "uncertainty_mm": 0.02835277941687088,
+   "evidence": "measure/figures/measurements.json#mouth_ring_z",
+   "critical": false
+  },
+  "collar_top_round_R": {
+   "value": 0.3257186819926497,
+   "unit": "mm",
+   "measured": 0.3257186819926497,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "circle fit (r,z) faces r 11.1-11.55, z 14.1-14.5, n_z>0.1 (concave round ring face -> collar)",
+   "uncertainty_mm": 0.034830198775593915,
+   "evidence": "measure/figures/measurements.json#collar_top_round_R",
+   "critical": false
+  },
+  "collar_bot_z": {
+   "value": 16.60339580905414,
+   "unit": "mm",
+   "measured": 16.60339580905414,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "area-weighted z of +Z-facing faces r 10.25-10.8, z 16.3-16.9",
+   "uncertainty_mm": 0.028635677080733616,
+   "evidence": "measure/figures/measurements.json#collar_bot_z",
+   "critical": false
+  },
+  "collar_bot_round_R": {
+   "value": 0.5684779205935221,
+   "unit": "mm",
+   "measured": 0.5684779205935221,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "circle fit (r,z) faces r 10.6-11.2, z 15.9-collar_bot_z, n_z>0.1 (convex round collar -> bottom face)",
+   "uncertainty_mm": 0.04247170524544459,
+   "evidence": "measure/figures/measurements.json#collar_bot_round_R",
+   "critical": false
+  },
+  "groove_out_rc": {
+   "value": 9.539385695534538,
+   "unit": "mm",
+   "measured": "8.5397..9.6028",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median over 30-deg sectors of circle fits (r,z) to the collar-face groove faces r 8.9-10.25 (collar frame) (per-sector reads 9.469, 9.523, 9.435, 8.540, 9.555, 9.573, 9.603, 9.565)",
+   "uncertainty_mm": 0.3323093561495562,
+   "evidence": "measure/figures/measurements.json#groove_out_rc",
+   "critical": false
+  },
+  "groove_out_bottom_z": {
+   "value": 16.27846092326373,
+   "unit": "mm",
+   "measured": "15.7700..16.3688",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fits: centre_z - R (groove bottom) (per-sector reads 16.300, 16.257, 15.905, 15.770, 16.225, 16.352, 16.359, 16.369)",
+   "uncertainty_mm": 0.21264406276392153,
+   "evidence": "measure/figures/measurements.json#groove_out_bottom_z",
+   "critical": false
+  },
+  "groove_out_R": {
+   "value": 0.7198535320752644,
+   "unit": "mm",
+   "measured": "0.5447..1.8936",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fits: arc radius (per-sector reads 0.806, 0.648, 0.545, 1.894, 0.628, 0.706, 0.733, 0.827)",
+   "uncertainty_mm": 0.40449514677906573,
+   "evidence": "measure/figures/measurements.json#groove_out_R",
+   "critical": false
+  },
+  "groove_in_rc": {
+   "value": 6.237598273522876,
+   "unit": "mm",
+   "measured": "6.0455..6.3056",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median of circle fits (r,z) to +Z-ish faces r 5.5-7.1, z 15.6-16.9, 50-deg sectors between ribs (stem frame) (per-sector reads 6.186, 6.046, 6.289, 6.306)",
+   "uncertainty_mm": 0.10367093794729172,
+   "evidence": "measure/figures/measurements.json#groove_in_rc",
+   "critical": false
+  },
+  "groove_in_bottom_z": {
+   "value": 15.990104963795549,
+   "unit": "mm",
+   "measured": "15.7943..16.2384",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fits: centre_z - R (per-sector reads 16.238, 16.130, 15.794, 15.850)",
+   "uncertainty_mm": 0.18620569902243017,
+   "evidence": "measure/figures/measurements.json#groove_in_bottom_z",
+   "critical": false
+  },
+  "groove_in_R": {
+   "value": 0.6784358600574218,
+   "unit": "mm",
+   "measured": "0.4954..0.7356",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fits: arc radius (per-sector reads 0.671, 0.495, 0.686, 0.736)",
+   "uncertainty_mm": 0.09069489612225869,
+   "evidence": "measure/figures/measurements.json#groove_in_R",
+   "critical": false
+  },
+  "flange_z": {
+   "value": 17.070069789886475,
+   "unit": "mm",
+   "measured": "16.8488..17.1682",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mean of 45-deg sector medians of z of +Z-facing faces r 7.4-8.6 (stem flange ring face; the face is not level: see spread)",
+   "uncertainty_mm": 0.09166289495557459,
+   "evidence": "measure/figures/measurements.json#flange_z",
+   "critical": false
+  },
+  "stem_base_z": {
+   "value": 17.4,
+   "unit": "mm",
+   "measured": 17.4,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "lowest z (0.1 steps, z 16.6-19.5) where the between-rib median outward radius is within 0.03 of the stem-core cone line (stem frame)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json#stem_base_z",
+   "critical": false
+  },
+  "stem_core_top_z": {
+   "value": 28.4,
+   "unit": "mm",
+   "measured": 28.4,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "highest z (0.1 steps) where the between-rib radius is within 0.06 of the core line",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json#stem_core_top_z",
+   "critical": false
+  },
+  "neck_bot_z": {
+   "value": 29.6,
+   "unit": "mm",
+   "measured": 29.6,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "lowest z (0.1 steps) where the between-rib radius is within 0.05 of neck_R",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json#neck_bot_z",
+   "critical": false
+  },
+  "stem_core_R_base": {
+   "value": 5.3172265545692845,
+   "unit": "mm",
+   "measured": 5.3172265545692845,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "stem-core cone line R(z) through station circle fits z 18.5-27.5 (R(18)=5.3083, R(28)=5.1594, measurements.json) evaluated at stem_base_z",
+   "uncertainty_mm": 0.087,
+   "evidence": "measure/figures/measurements.json#stem_core_R_z18,stem_core_R_z28,stem_base_z",
+   "critical": false,
+   "note": "stem core is not perfectly round: station circle rms 0.072-0.087 (axis_stations.json)"
+  },
+  "stem_core_R_top": {
+   "value": 5.153484401386466,
+   "unit": "mm",
+   "measured": 5.153484401386466,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "stem-core cone line R(z) through station circle fits z 18.5-27.5 (R(18)=5.3083, R(28)=5.1594, measurements.json) evaluated at stem_core_top_z",
+   "uncertainty_mm": 0.087,
+   "evidence": "measure/figures/measurements.json#stem_core_R_z18,stem_core_R_z28,stem_core_top_z",
+   "critical": false,
+   "note": "stem core is not perfectly round: station circle rms 0.072-0.087 (axis_stations.json)"
+  },
+  "neck_R": {
+   "value": 4.735663041806651,
+   "unit": "mm",
+   "measured": 4.735663041806651,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mean of neck station circle fits z 30.3, 30.9",
+   "uncertainty_mm": 0.052,
+   "evidence": "measure/figures/measurements.json#neck_R",
+   "critical": false
+  },
+  "rib_count": {
+   "value": 4,
+   "unit": "count",
+   "measured": 4,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "pattern_count.py radius signal, rotational-order FFT dominant order 4 at z 19.5/22.5/25.5, residual local minimum at every station (CHK-COUNT pass)",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/count_ribs.json",
+   "critical": false
+  },
+  "rib_tip_r_flange": {
+   "value": [
+    6.634200278301139,
+    6.376499877824169,
+    6.48129747224599,
+    6.526326229530908
+   ],
+   "unit": "mm",
+   "measured": [
+    6.634200278301139,
+    6.376499877824169,
+    6.48129747224599,
+    6.526326229530908
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "per rib: tip line through the p98 tip radii at z 18 and 27 (rib_tip_r_z18/_z27, measurements.json) evaluated at flange_z",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measurements.json#rib_tip_r_z18,rib_tip_r_z27,flange_z",
+   "critical": false
+  },
+  "rib_tip_r_top": {
+   "value": [
+    6.277140735443574,
+    5.842103089690088,
+    6.48032544362135,
+    6.319804823106541
+   ],
+   "unit": "mm",
+   "measured": [
+    6.277140735443574,
+    5.842103089690088,
+    6.48032544362135,
+    6.319804823106541
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "per rib: same tip line evaluated at that rib's rib_top_z",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measurements.json#rib_tip_r_z18,rib_tip_r_z27,rib_top_z",
+   "critical": false
+  },
+  "rib_theta_deg": {
+   "value": [
+    -0.9033470309879494,
+    90.73320027289223,
+    179.40166708650366,
+    -90.389177918125
+   ],
+   "unit": "deg",
+   "measured": [
+    -0.9033470309879494,
+    90.73320027289223,
+    179.40166708650366,
+    -90.389177918125
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "per rib: (r-5.7)-weighted mean azimuth of rib faces r>5.75, z 18-27.5 (stem frame) - per rib in the order [~0, ~90, ~180, ~-90 deg]",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/measurements.json#rib_theta_deg",
+   "critical": true,
+   "frame": "stem-group local frame (tilted line), theta CCW about +Z from datum +X",
+   "rerun_trigger": "one caliper reading of this dimension (or the thread/bore spec from the owner) -> re-run measure + rebuild"
+  },
+  "rib_width": {
+   "value": [
+    1.073097851589798,
+    0.9163428708064233,
+    1.2438698411523716,
+    1.0224177523708993
+   ],
+   "unit": "mm",
+   "measured": [
+    1.073097851589798,
+    0.9163428708064233,
+    1.2438698411523716,
+    1.0224177523708993
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "per rib: tangential extent at r=5.85+-0.06, median over z 18.5-27 (1 mm steps) - per rib in the order [~0, ~90, ~180, ~-90 deg]",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measurements.json#rib_width",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this dimension (or the thread/bore spec from the owner) -> re-run measure + rebuild",
+   "note": "rib tip modelled as a full round (R = width/2): fitted tip radius median 0.497 (rib_tip.json), mean width/2 0.532"
+  },
+  "rib_top_z": {
+   "value": [
+    28.30913716296523,
+    28.21065322714356,
+    28.242705838231593,
+    28.170787468573547
+   ],
+   "unit": "mm",
+   "measured": [
+    28.30913716296523,
+    28.21065322714356,
+    28.242705838231593,
+    28.170787468573547
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "per rib: z where the crest radius (max r within +-2.5 deg, 0.05 mm steps) crosses the midpoint between the z=27 tip radius and the core radius at z=28 - per rib in the order [~0, ~90, ~180, ~-90 deg]",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measurements.json#rib_top_z",
+   "critical": false
+  },
+  "sleeve_bottom_z": {
+   "value": 32.306779463634534,
+   "unit": "mm",
+   "measured": 32.306779463634534,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve bottom edge heights at 3-deg azimuths (jog.json)",
+   "uncertainty_mm": 0.07293123353919756,
+   "evidence": "measure/figures/measurements.json#sleeve_bottom_z",
+   "critical": false
+  },
+  "sleeve_top_z": {
+   "value": 37.216634692221646,
+   "unit": "mm",
+   "measured": 37.216634692221646,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve top edge heights at 3-deg azimuths (jog.json)",
+   "uncertainty_mm": 0.05564828454364688,
+   "evidence": "measure/figures/measurements.json#sleeve_top_z",
+   "critical": false
+  },
+  "sleeve_bottom_ramp_start_deg": {
+   "value": 132.64858124712623,
+   "unit": "deg",
+   "measured": 132.64858124712623,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve bottom edge heights at 3-deg azimuths (jog.json)",
+   "uncertainty_mm": 0.07293123353919756,
+   "evidence": "measure/figures/measurements.json#sleeve_bottom_ramp_start_deg",
+   "critical": false,
+   "frame": "spigot local frame (stem-group line), theta CCW about +Z from datum +X, 0..360; ramp rises with theta (right-hand)"
+  },
+  "sleeve_bottom_ramp_end_deg": {
+   "value": 255.3913420333695,
+   "unit": "deg",
+   "measured": 255.3913420333695,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve bottom edge heights at 3-deg azimuths (jog.json)",
+   "uncertainty_mm": 0.07293123353919756,
+   "evidence": "measure/figures/measurements.json#sleeve_bottom_ramp_end_deg",
+   "critical": false,
+   "frame": "spigot local frame (stem-group line), theta CCW about +Z from datum +X, 0..360; ramp rises with theta (right-hand)"
+  },
+  "sleeve_bottom_ramp_h": {
+   "value": 1.0591251520992002,
+   "unit": "mm",
+   "measured": 1.0591251520992002,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve bottom edge heights at 3-deg azimuths (jog.json)",
+   "uncertainty_mm": 0.07293123353919756,
+   "evidence": "measure/figures/measurements.json#sleeve_bottom_ramp_h",
+   "critical": false
+  },
+  "sleeve_top_ramp_start_deg": {
+   "value": 124.61786322695295,
+   "unit": "deg",
+   "measured": 124.61786322695295,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve top edge heights at 3-deg azimuths (jog.json)",
+   "uncertainty_mm": 0.05564828454364688,
+   "evidence": "measure/figures/measurements.json#sleeve_top_ramp_start_deg",
+   "critical": false,
+   "frame": "spigot local frame (stem-group line), theta CCW about +Z from datum +X, 0..360; ramp rises with theta (right-hand)"
+  },
+  "sleeve_top_ramp_end_deg": {
+   "value": 245.43108504471908,
+   "unit": "deg",
+   "measured": 245.43108504471908,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve top edge heights at 3-deg azimuths (jog.json)",
+   "uncertainty_mm": 0.05564828454364688,
+   "evidence": "measure/figures/measurements.json#sleeve_top_ramp_end_deg",
+   "critical": false,
+   "frame": "spigot local frame (stem-group line), theta CCW about +Z from datum +X, 0..360; ramp rises with theta (right-hand)"
+  },
+  "sleeve_top_ramp_h": {
+   "value": 0.9076311303221684,
+   "unit": "mm",
+   "measured": 0.9076311303221684,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "piecewise fit (level + linear helical ramp + step) to the sleeve top edge heights at 3-deg azimuths (jog.json)",
+   "uncertainty_mm": 0.05564828454364688,
+   "evidence": "measure/figures/measurements.json#sleeve_top_ramp_h",
+   "critical": false
+  },
+  "sleeve_crest_R": {
+   "value": 5.952164603532699,
+   "unit": "mm",
+   "measured": 5.952164603532699,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fit of touching-arc ripple r(z)=Rc-rho+sqrt(rho^2-dz^2), period p, to sleeve OD faces z 32.6-36.95, theta -95..120 (planar sector, stem frame)",
+   "uncertainty_mm": 0.04045387685848302,
+   "evidence": "measure/figures/measurements.json#sleeve_crest_R",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this dimension (or the thread/bore spec from the owner) -> re-run measure + rebuild"
+  },
+  "sleeve_ripple_rho": {
+   "value": 1.1370690681234017,
+   "unit": "mm",
+   "measured": 1.1370690681234017,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: crest arc radius",
+   "uncertainty_mm": 0.04045387685848302,
+   "evidence": "measure/figures/measurements.json#sleeve_ripple_rho",
+   "critical": false
+  },
+  "sleeve_ripple_pitch": {
+   "value": 1.2309007371128005,
+   "unit": "mm",
+   "measured": 1.2309007371128005,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: period (ring pitch)",
+   "uncertainty_mm": 0.04045387685848302,
+   "evidence": "measure/figures/measurements.json#sleeve_ripple_pitch",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this dimension (or the thread/bore spec from the owner) -> re-run measure + rebuild"
+  },
+  "sleeve_first_crest_z": {
+   "value": 32.944855495218206,
+   "unit": "mm",
+   "measured": 32.944855495218206,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: z of the first crest",
+   "uncertainty_mm": 0.04045387685848302,
+   "evidence": "measure/figures/measurements.json#sleeve_first_crest_z",
+   "critical": false
+  },
+  "sleeve_tail_r_in": {
+   "value": 4.611641671053853,
+   "unit": "mm",
+   "measured": 4.611641671053853,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p2 radius of scan faces above top_level+0.25 inside the top-ramp sector (inner edge of the helical tail)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json#sleeve_tail_r_in",
+   "critical": false
+  },
+  "bore_R": {
+   "value": 4.088408104221392,
+   "unit": "mm",
+   "measured": 4.088408104221392,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mean of bore station circle fits z 36.3, 36.8 (inward faces)",
+   "uncertainty_mm": 0.064,
+   "evidence": "measure/figures/measurements.json#bore_R",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this dimension (or the thread/bore spec from the owner) -> re-run measure + rebuild"
+  },
+  "bore_shoulder_top_z": {
+   "value": 35.832452767635125,
+   "unit": "mm",
+   "measured": 35.832452767635125,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "bore shoulder cone: line z=a+b r through +Z-facing shoulder faces r 2.8-4.05 (a=32.1011, b=0.9127), evaluated at r=bore_R",
+   "uncertainty_mm": 0.185410643021285,
+   "evidence": "measure/figures/measurements.json#bore_shoulder_slope",
+   "critical": false
+  },
+  "bore_floor_z": {
+   "value": 34.673437957763674,
+   "unit": "mm",
+   "measured": 34.673437957763674,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p0.5 z of scan faces inside the bore (deepest observed) - the model closes the bore with a flat floor here (floor shape assumed, see open_questions)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json#bore_seen_min_z",
+   "critical": false
+  },
+  "bore_floor_r": {
+   "value": 2.8185014414502776,
+   "unit": "mm",
+   "measured": 2.8185014414502776,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "shoulder line (a,b above) evaluated at bore_floor_z; cf. innermost observed radius 3.072 (bore_seen_min_r)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json#bore_shoulder_slope,bore_seen_min_z",
+   "critical": false
+  }
+ },
+ "struck": [],
+ "simplifications": [
+  {
+   "name": "stem group axis",
+   "modelled_as": "stem revolve and spigot revolve each Z-parallel, centred on the fitted tilted line (tilt 0.754 deg) at their mid heights",
+   "deviation_cost": "<= 0.072 mm lateral over the stem core half-span (5.5 mm x tan tilt), <= 0.050 over the spigot half-span"
+  },
+  {
+   "name": "stem core roundness",
+   "modelled_as": "cone R(z) through station circle fits",
+   "deviation_cost": "station circle rms 0.072-0.087, p95 0.165 mm (axes.json stem_core_45)"
+  },
+  {
+   "name": "one mould draft",
+   "modelled_as": "draft_deg on cap wall, lever flanks, lever tip and blends",
+   "deviation_cost": "flanks +/-0.030 mm over 13.7 mm; lever tip cone read 2.16 deg -> <= 0.10 mm at z=0/13.7"
+  },
+  {
+   "name": "lever tip tangent to flanks",
+   "modelled_as": "tip arc tangent to both flank lines, centre on their bisector at x=lever_tip_cx",
+   "deviation_cost": "fitted tip circle R(z=0) 4.588 centre y 0.118 vs tangent arc: <= 0.22 mm at z=0 on +Y, ~0.06 mm at mid height"
+  },
+  {
+   "name": "single crown round",
+   "modelled_as": "one fillet R=crown_round_R on the whole crown loop",
+   "deviation_cost": "reads 2.436 (cap, rms 0.038) / 2.482 (lever tip, rms 0.114, not circular): <= 0.1 mm"
+  },
+  {
+   "name": "single step-edge round",
+   "modelled_as": "one fillet R=step_edge_R on the step-face outer loop",
+   "deviation_cost": "reads 0.450 / 0.619: <= 0.05 mm"
+  },
+  {
+   "name": "pocket single draft, flat floor, no floor fillet, no mouth round",
+   "modelled_as": "one draft pocket_draft_deg, flat floor at pocket_floor_z",
+   "deviation_cost": "wall drafts 3.0/5.6/3.4 deg -> <= 0.14 mm at the floor; floor seen by only 64 faces; mouth round ~0.3 not modelled -> <= 0.09 mm"
+  },
+  {
+   "name": "sleeve ripple as rings",
+   "modelled_as": "4 touching crest arcs (tori) at fixed z; helical crossover only on the end faces",
+   "deviation_cost": "inside the ramp sectors (about 120 deg) the scanned crests rise with the crossover; ring ripple is misplaced there by at most the ripple depth 0.181 mm"
+  },
+  {
+   "name": "sleeve end ramps",
+   "modelled_as": "level + linear right-hand helical ramp + step (bottom cut tool, top tail)",
+   "deviation_cost": "edge-height fit rms 0.073 / 0.056, p95 0.148 mm (jog.json)"
+  },
+  {
+   "name": "groove depths",
+   "modelled_as": "one arc per groove (median over sectors)",
+   "deviation_cost": "outer groove bottom spread 0.60 mm, inner 0.44 mm across sectors -> up to ~0.3 mm locally"
+  },
+  {
+   "name": "stem flange face level",
+   "modelled_as": "plane z=flange_z",
+   "deviation_cost": "sector medians spread 0.32 mm -> +/-0.16 mm"
+  },
+  {
+   "name": "rib ends and roots",
+   "modelled_as": "flat rib top at rib_top_z (mid-crossing), no root fillets, full-round tips",
+   "deviation_cost": "crest falls from tip to core over ~0.5 mm in z -> <= 0.25 mm at the rib tops; root fillets <= 0.1 mm"
+  },
+  {
+   "name": "bore notch (E20) not modelled",
+   "modelled_as": "plain bore",
+   "deviation_cost": "notch ~0.5 mm deep, ~25 deg wide at theta ~180, z 36-37 (bore r(theta) max 4.59 vs 4.09)"
+  },
+  {
+   "name": "sleeve top inner lip not modelled",
+   "modelled_as": "flat top face",
+   "deviation_cost": "lip r 4.2-4.4 stands ~0.1 mm above the top face"
+  },
+  {
+   "name": "stem base flare",
+   "modelled_as": "straight line from the inner groove's innermost point to the core at stem_base_z",
+   "deviation_cost": "<= 0.05 mm (between-rib profile, measurements.json#stem_base_z)"
+  },
+  {
+   "name": "interior",
+   "modelled_as": "solid (the scan is an outer skin; cap/stem/sleeve interfaces unobservable)",
+   "deviation_cost": "not observable by the scan; CAD->scan on hidden interior not evaluated"
+  }
+ ],
+ "checks": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "pass",
+   "note": "stem ribs: pattern_count.py radius signal, FFT dominant order 4 at z 19.5/22.5/25.5, residual minimum (count_ribs.json)"
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": false,
+   "result": "pass",
+   "note": "no caliper or photo readings exist (scan-only run, DECISIONS.md MEASUREMENTS); nothing to prove achievable"
+  },
+  "CHK-CLUSTER": {
+   "ran": true,
+   "result": "pass",
+   "note": "bore/axis box z 35.2-38.3 r<3.9: one coherent component = the planned bore shoulder cone E19 (cluster_bore_axis.json); nothing above the sleeve tail; E20 bore notch is missing material, declared in simplifications"
+  },
+  "CHK-FRAME": {
+   "ran": true,
+   "result": "pass",
+   "note": "every angle re-measured on the aligned scan in the frozen frame (theta CCW from +X); intake clock check: lever flank planes -0.64/+1.03 deg about +X agree with lever_flank_*_plan_deg"
+  }
+ },
+ "open_questions": [
+  "Thread/sleeve form: the scan shows planar ring turns (pitch 1.231) with a ~1 mm helical crossover over ~120 deg at both ends (a formed coil?), ripple only 0.181 mm deep; true thread profile/spec unobservable on this chrome scan.",
+  "Bore below z 34.67 and the internal splines of photo 5 are not scanned; the model closes the bore with a flat floor at bore_floor_z (assumed shape).",
+  "Lever pocket floor seen sparsely (64 faces); floor depth should be confirmed with a depth rod (MEASUREMENTS F11).",
+  "Absolute scale unverified (no calipers, CHK-SCALE FLAG)."
+ ]
+}

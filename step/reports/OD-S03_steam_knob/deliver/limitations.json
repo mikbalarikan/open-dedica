@@ -1,0 +1,123 @@
+{
+  "schema": "stl-re/limitations@1",
+  "part": {
+    "name": "OD-S03_steam-knob",
+    "what_it_is": "Steam-valve knob of an espresso machine: a chrome cap with one lever and a drafted slot pocket, a chrome collar, a white four-rib stem and a chrome threaded sleeve with a splined bore that locates on the valve spindle. Reverse-engineered from one full-resolution scan and five catalogue photos (no scale reference), scan-only (no caliper readings).",
+    "reference_photo": "input/photos/1.png"
+  },
+  "method_summary": [
+    "Intake: scan stats, orientation and holes; datum frame with the cap crown face as z = 0 (+Z toward the sleeve), origin on the sleeve/cap axis, lever clocked to +X (area-weighted Fourier clock, DECISIONS.md OTHER); feature enumeration E01-E20; regime baseline-skill plastic declared before any gate numbers.",
+    "Measure: every parameter taken from the scan by scripted fits in measure/figures/src (station circles, meridians, plane and cone fits, ripple and ramp fits); sub-body axes kept as measured positions; simplifications and open questions recorded in measure/params.json.",
+    "Rebuild: params-driven build123d model (build/model.py, plan build/MODELING_PLAN.md F01-F15): drafted cap and lever, loop fillets, pocket, collar/stem/spigot revolves, four ribs, helical end ramps; exported in the datum frame and the scan frame.",
+    "Iteration 1 was sent back (REVISE, non-watertight tessellation at the rib foot and under the sleeve bottom ramp); iteration 2 changed only those two constructions, parameters unchanged.",
+    "Verify in a fresh, independent agent context (CHK-INDEP pass): own ICP, two-way deviation with pre-declared masks and zones, over-band cluster attribution, overlays, photo plausibility. Verdict BAND_NOT_MET, accepted in writing by the owner (decisions/accept_band.md)."
+  ],
+  "limitations": [
+    {
+      "id": "L7",
+      "text": "Sleeve thread form is a SIMPLIFICATION, not a true thread: the scan shows planar ring turns (pitch {{params:sleeve_ripple_pitch.value}} mm, crest radius {{params:sleeve_crest_R.value}} mm, scanner-smoothed ripple), modelled as touching torus rings plus right-hand helical ramps only on the two sleeve end faces. The real thread profile and spec (formed coil or cut thread, depth, handedness over the full length) are UNVERIFIED on this chrome scan and remain an open owner question. The spindle interface (thread and bore, bore radius {{params:bore_R.value}} mm) is the highest-risk feature.",
+      "rerun_trigger": "Thread spec from the owner/manufacturer, or a thread gauge / pitch-gauge reading and a caliper reading over the crests on the physical knob -> rebuild the sleeve as a true helical thread and re-verify.",
+      "evidence": "measure/params.json#open_questions,simplifications (sleeve ripple as rings, sleeve end ramps); build/MODELING_PLAN.md F12-F14"
+    },
+    {
+      "id": "L1",
+      "text": "Tier-1 not run: no Tier-1 (no calipers run), owner chose scan-only. Every dimension is ABSENT, not passed; the parameter table carries scan values only.",
+      "rerun_trigger": "any caliper reading supplied -> re-run Tier-1 and this gate",
+      "evidence": "qa/gate.json#limitations L1, #auto_limitations; DECISIONS.md MEASUREMENTS"
+    },
+    {
+      "id": "L2",
+      "text": "Absolute scale UNVERIFIED (CHK-SCALE FLAG at intake): units assumed mm, scale factor {{align:scale_factor}} (none applied). The photos carry no scale reference.",
+      "rerun_trigger": "one caliper reading on any feature (e.g. sleeve OD over crests or cap OD)",
+      "evidence": "qa/gate.json#limitations L2; intake/alignment.json#scale_factor"
+    },
+    {
+      "id": "L8",
+      "text": "ASSUMED closures: the lever-pocket floor (flat, at z {{params:pocket_floor_z.value}} mm, seen by only a few scan faces, uncertainty {{params:pocket_floor_z.uncertainty_mm}} mm) and the bore floor (flat disc at z {{params:bore_floor_z.value}} mm, radius {{params:bore_floor_r.value}} mm, at the deepest observed scan point) are not surfaces the scanner reached. The bore below that depth and the internal splines seen in photo 5 are not modelled; the solid interior is assumed solid. These closures are the CAD->scan over-band clusters (max {{gate:deviation.over_band_clusters.cad_to_scan.clusters.0.d_max}} mm at the pocket floor) that drive the cad_to_scan_observable miss.",
+      "rerun_trigger": "a depth-rod reading of the lever-pocket floor and of the bore depth (or a sectioned/rescanned bore) -> rebuild those closures and re-verify.",
+      "evidence": "build/MODELING_PLAN.md section 6; measure/params.json#open_questions; qa/gate.json#deviation.over_band_clusters.cad_to_scan"
+    },
+    {
+      "id": "L9",
+      "text": "Scan->CAD max NOT MET from a scan artefact: a chrome skin flap hanging inside the cap wall at a reflection hole (cluster 0, max {{gate:deviation.over_band_clusters.scan_to_cad.clusters.0.d_max}} mm vs band {{gate:regime.bands.max_mm}} mm) makes whole-part and zone Z4 scan->CAD max fail while p95 passes ({{gate:deviation.scan_to_cad.p95}} mm vs {{gate:regime.bands.p95_mm}} mm). The CAD holds the smooth, intact cap wall the photos show; the flap is not modelled. Accepted by the owner (ACCEPT-BAND).",
+      "rerun_trigger": "rescan the chrome cap with matting spray and re-run verify unchanged.",
+      "evidence": "qa/gate.json#miss_explanations.0, #deviation.over_band_clusters.scan_to_cad.clusters.0; qa/cluster_probe.json; decisions/accept_band.md"
+    },
+    {
+      "id": "L4",
+      "text": "Observability ray test (known defect) counts open-mouthed unscanned regions (lever pocket floor, bore floor, crevice floor) as observable: unobservable fraction only {{gate:deviation.unobservable_fraction}}, so the gated observable CAD->scan number (p95 {{gate:deviation.cad_to_scan_observable.p95}} / max {{gate:deviation.cad_to_scan_observable.max}} mm) is inflated and is NOT MET. A QA coverage proxy (not the gate) keeps CAD->scan outside scan-hole neighbourhoods near band except a few points at the unscanned crevice floor.",
+      "rerun_trigger": "observability.py fixed to treat unreached cavities as unobservable -> re-run deviation_gate.py",
+      "evidence": "qa/gate.json#limitations L4; qa/c2s_residual_probe.json (coverage proxy, not the gate)"
+    },
+    {
+      "id": "L6",
+      "text": "MASKED PASS (mask-dependent pass): whole-part CAD->scan (unmasked p95 {{gate:deviation.cad_to_scan.p95}} / max {{gate:deviation.cad_to_scan.max}} mm; masked p95 {{gate:deviation.cad_to_scan_masked.p95}} / max {{gate:deviation.cad_to_scan_masked.max}} mm), zone Z3 CAD->scan (unmasked p95 {{gate:deviation.zones.Z3 stem ribs and core.cad_to_scan.unmasked.p95}} / max {{gate:deviation.zones.Z3 stem ribs and core.cad_to_scan.unmasked.max}} mm) and zone Z4 CAD->scan (unmasked p95 {{gate:deviation.zones.Z4 crown cap wall lever.cad_to_scan.unmasked.p95}} / max {{gate:deviation.zones.Z4 crown cap wall lever.cad_to_scan.unmasked.max}} mm) pass only with the pre-declared M1 open-boundary / M2 skin-normal masks. These are not clean passes.",
+      "rerun_trigger": "rescan closing the chrome holes / pocket and bore floors -> re-run without masks",
+      "evidence": "qa/gate.json#limitations L6, #auto_limitations, #deviation.mask_dependent_passes, #deviation.masks"
+    },
+    {
+      "id": "L10",
+      "text": "SIMPLIFICATION, non-rotational crevice: the stem/collar crevice is modelled as one revolved inner groove (median depth over sectors), but the scanned crevice floor varies around the axis; near theta 300 deg the scan wall continues deeper than the CAD groove (scan->CAD cluster 1, max {{gate:deviation.over_band_clusters.scan_to_cad.clusters.1.d_max}} mm). Crevice floor partly unscanned.",
+      "rerun_trigger": "a photo or depth reading of the crevice floor around the full circumference (or a rescan of the stem/collar joint) -> model a local, non-rotational groove and re-verify (would remove this cluster, not the cap-wall miss).",
+      "evidence": "qa/gate.json#miss_explanations.1, #deviation.over_band_clusters.scan_to_cad.clusters.1; measure/params.json#simplifications (groove depths)"
+    },
+    {
+      "id": "L11",
+      "text": "UNMODELLED feature: the bore notch E20 (theta about 180 deg, near the sleeve top, visible in the scan and the Z overlay) is not modelled; the CAD bore is plain. Also not modelled: the sleeve top inner lip, rib root fillets. Each is a declared simplification with its measured cost in measure/params.json.",
+      "rerun_trigger": "the owner confirms the notch is functional (keying the spindle) or supplies its size -> model it and re-verify.",
+      "evidence": "measure/params.json#simplifications (bore notch (E20) not modelled, sleeve top inner lip, rib ends and roots); qa/VERDICT.md CHK-ENUM"
+    },
+    {
+      "id": "L5",
+      "text": "Datum audit clock differs by {{gate:datum_audit.angle_deg}} deg (report-only, outside the reference band): datum_audit.py's Fourier clock is vertex-count weighted (known defect); QA area-weighted Fourier and a lever-flank bisector reproduce the builder clock closely. Axis {{gate:datum_audit.axis_angle_deg}} deg, origin {{gate:datum_audit.origin_offset_mm}} mm.",
+      "rerun_trigger": "datum_audit.py fourier clock made area-weighted -> re-run audit",
+      "evidence": "qa/gate.json#limitations L5, #datum_audit; qa/clock_crosscheck.json"
+    },
+    {
+      "id": "L3",
+      "text": "scan_resolution 'full' is an orchestrator inference (DECISIONS.md OTHER), not owner-confirmed.",
+      "rerun_trigger": "owner states the scan is a decimated copy -> relabel INSPECTION ONLY",
+      "evidence": "qa/gate.json#limitations L3; input/INPUT_HASHES.json#scan_resolution"
+    }
+  ],
+  "assumptions": [
+    {"text": "Units are millimetres; no scale was applied (scan-only, no caliper).", "source": "assumed", "evidence": "intake/alignment.json#scale_factor; DECISIONS.md MEASUREMENTS"},
+    {"text": "Lever-pocket floor is flat at the sparsely seen floor level, with no floor fillet or mouth round.", "source": "assumed", "evidence": "measure/params.json#pocket_floor_z, #simplifications"},
+    {"text": "Bore is closed by a flat floor disc at the deepest observed scan point; splines below are not modelled.", "source": "assumed", "evidence": "build/MODELING_PLAN.md section 6; measure/params.json#open_questions"},
+    {"text": "Interior (cap/stem/sleeve internal interfaces) is modelled solid; the scan is an outer skin. The four coaxial sub-bodies are joined with a documented burial overlap (OV in build/model.py), which is construction clearance, not geometry.", "source": "assumed", "evidence": "build/MODELING_PLAN.md section 6; build/model.py header"},
+    {"text": "Sleeve ripple is treated as planar rings with helical crossovers only at the end faces (formed coil reading of the scan), not a continuous helical thread.", "source": "assumed", "evidence": "measure/params.json#simplifications, #open_questions"},
+    {"text": "One mould draft for cap wall, lever flanks, tip and blends; lever tip arc tangent to both flanks.", "source": "assumed", "evidence": "measure/params.json#simplifications"}
+  ],
+  "claim_boundary": {
+    "not_fit_for": [
+      "Not fit for manufacture or tooling of the spindle interface (sleeve thread form, bore splines and notch) until the thread spec is known and the sleeve and bore are calipered.",
+      "Not fit for any use that depends on absolute size, pocket depth or bore depth: scale and depths are not caliper-verified (scan-only).",
+      "Not a clean pass: the plastic band (p95 {{gate:regime.bands.p95_mm}} / max {{gate:regime.bands.max_mm}} mm) is NOT MET and was accepted by the owner; physical interchangeability requires mating-part or physical fit verification."
+    ],
+    "fit_for": [
+      "Visualisation, packaging and envelope/clearance work on the outer shape (cap, lever, collar, stem, sleeve envelope).",
+      "A design-intent starting point: build/model.py driven by measure/params.json, to be updated when caliper readings or the thread spec arrive."
+    ]
+  },
+  "repro_commands": [
+    "python3 build/model.py --params measure/params.json --alignment intake/alignment.json --out build --part OD-S03_steam-knob   # from the run root",
+    "python3 <skills>/stl-re-deliver/scripts/repro_check.py --run <run> -- python3 build/model.py --params measure/params.json --alignment intake/alignment.json --out build --part OD-S03_steam-knob"
+  ],
+  "feature_tree": [
+    {"id": "F01", "feature": "cap cylinder, crown to step", "params": ["cap_R_z0", "crown_z", "step_z"]},
+    {"id": "F02", "feature": "lever plan sketch + extrude (tip arc tangent to flanks)", "params": ["lever_flank_py_y0", "lever_flank_py_plan_deg", "lever_flank_my_y0", "lever_flank_my_plan_deg", "lever_tip_cx"]},
+    {"id": "F03", "feature": "union cap and lever", "params": []},
+    {"id": "F04", "feature": "lever-cap blend fillets", "params": ["lever_blend_R_py_z0", "lever_blend_R_my_z0"]},
+    {"id": "F05", "feature": "one mould draft on all side faces", "params": ["draft_deg"]},
+    {"id": "F06", "feature": "crown loop fillet", "params": ["crown_round_R"]},
+    {"id": "F07", "feature": "step-face outer loop fillet", "params": ["step_edge_R"]},
+    {"id": "F08", "feature": "drafted lever slot pocket (assumed flat floor)", "params": ["pocket_x_inner_at_step", "pocket_end_cx", "pocket_y_plus_at_step", "pocket_y_minus_at_step", "pocket_floor_z", "pocket_corner_R", "pocket_draft_deg"]},
+    {"id": "F09", "feature": "collar revolve with mouth chamfer, rounds and outer groove", "params": ["mouth_chamfer_r_out", "mouth_chamfer_r_in", "mouth_ring_z", "collar_R", "collar_top_round_R", "collar_bot_round_R", "collar_bot_z", "groove_out_rc", "groove_out_R", "groove_out_bottom_z", "flange_z"]},
+    {"id": "F10", "feature": "stem revolve with inner groove (one revolved crevice)", "params": ["groove_in_rc", "groove_in_R", "groove_in_bottom_z", "stem_base_z", "stem_core_R_base", "stem_core_R_top", "stem_core_top_z", "neck_R", "neck_bot_z"]},
+    {"id": "F11", "feature": "four ribs along the measured tip lines", "params": ["rib_count", "rib_theta_deg", "rib_width", "rib_tip_r_flange", "rib_tip_r_top", "rib_top_z"]},
+    {"id": "F12", "feature": "spigot revolve: neck, sleeve with torus crest rings, bore, shoulder cone, assumed bore floor", "params": ["sleeve_bottom_z", "sleeve_top_z", "sleeve_crest_R", "sleeve_ripple_rho", "sleeve_ripple_pitch", "sleeve_first_crest_z", "bore_R", "bore_shoulder_top_z", "bore_floor_r", "bore_floor_z"]},
+    {"id": "F13", "feature": "sleeve bottom helical ramp cut", "params": ["sleeve_bottom_ramp_start_deg", "sleeve_bottom_ramp_end_deg", "sleeve_bottom_ramp_h"]},
+    {"id": "F14", "feature": "sleeve top helical tail", "params": ["sleeve_top_ramp_start_deg", "sleeve_top_ramp_end_deg", "sleeve_top_ramp_h", "sleeve_tail_r_in"]},
+    {"id": "F15", "feature": "union all sub-bodies, export datum and scan frames", "params": ["cap_cx", "cap_cy", "collar_cx", "collar_cy", "stem_axis_x0", "stem_axis_y0", "stem_axis_tilt_deg", "stem_axis_dir_deg"]}
+  ]
+}

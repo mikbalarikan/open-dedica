@@ -1,0 +1,9 @@
+{"declared": "before any QA deviation number was computed; from intake/INTAKE_CARD.md §2-§3 (17 open-boundary chrome holes, unscanned pocket floor / crevice floor / deep bore). No scan-side masks: every scan point stays in scan->CAD.",
+ "masks": [
+  {"name": "M1 open boundary", "type": "open_boundary", "applies_to": "cad", "radius_mm": 0.8,
+   "why": "CAD->scan distance measured to the EDGE of a scan hole (17 chrome-reflection holes, unscanned pocket floor, crevice floor, deep bore) is a coverage gap, not a surface deviation",
+   "evidence": "intake/INTAKE_CARD.md §2 (1,202 open edges / 17 loops) and §3 coverage map; B02 q20_tier2.py:9-10 precedent"},
+  {"name": "M2 skin normal", "type": "normal_disagreement", "applies_to": "cad", "angle_deg": 70,
+   "why": "a CAD point whose nearest scan point faces >70 deg away is corresponding to a different (occluded/opposite) wall, not an outer-skin deviation",
+   "evidence": "B02 q20_tier2.py:11-12 precedent; mask-policy.md"}
+ ]}

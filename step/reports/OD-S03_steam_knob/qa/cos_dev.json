@@ -1,0 +1,10 @@
+{
+ "_it1_SUPERSEDED/build/OD-S03_steam-knob_datum.step": {
+  "pairs_over_tol": [],
+  "max_dev_mm": 2.8125694098458605e-06
+ },
+ "build/OD-S03_steam-knob_datum.step": {
+  "pairs_over_tol": [],
+  "max_dev_mm": 2.8125694098458605e-06
+ }
+}

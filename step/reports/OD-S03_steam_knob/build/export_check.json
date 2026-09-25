@@ -1,0 +1,337 @@
+{
+  "alignment_matrix_4x4": [
+    [
+      -0.549588,
+      0.055972,
+      -0.833559,
+      -183.317611
+    ],
+    [
+      0.823392,
+      -0.132522,
+      -0.551783,
+      -93.039758
+    ],
+    [
+      -0.141349,
+      -0.989598,
+      0.026746,
+      27.808765
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "created": "2026-09-25T14:52:32+00:00",
+  "datum": {
+    "analytic_area_share": 0.986998,
+    "area_mm2": 3886.006919,
+    "bbox": {
+      "max": [
+        27.775007,
+        13.124802,
+        38.104266
+      ],
+      "min": [
+        -13.187902,
+        -13.315002,
+        -0.0
+      ],
+      "size": [
+        40.962909,
+        26.439804,
+        38.104266
+      ]
+    },
+    "closed": true,
+    "edges": 202,
+    "faces": 83,
+    "failures": [],
+    "fillets": [
+      {
+        "feature": "F04 lever-cap blend +Y",
+        "n_edges": 1,
+        "op": "fillet",
+        "param": "lever_blend_R_py_z0",
+        "status": "OK",
+        "target": 6.104510944456032,
+        "tried": [
+          {
+            "error": null,
+            "radius": 6.104510944456032
+          }
+        ],
+        "used": 6.104510944456032,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F04 lever-cap blend -Y",
+        "n_edges": 1,
+        "op": "fillet",
+        "param": "lever_blend_R_my_z0",
+        "status": "OK",
+        "target": 7.014649578965134,
+        "tried": [
+          {
+            "error": null,
+            "radius": 7.014649578965134
+          }
+        ],
+        "used": 7.014649578965134,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F06 crown round",
+        "n_edges": 6,
+        "op": "fillet",
+        "param": "crown_round_R",
+        "status": "OK",
+        "target": 2.459063390058614,
+        "tried": [
+          {
+            "error": null,
+            "radius": 2.459063390058614
+          }
+        ],
+        "used": 2.459063390058614,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F07 step-face edge round",
+        "n_edges": 6,
+        "op": "fillet",
+        "param": "step_edge_R",
+        "status": "OK",
+        "target": 0.5343624123421996,
+        "tried": [
+          {
+            "error": null,
+            "radius": 0.5343624123421996
+          }
+        ],
+        "used": 0.5343624123421996,
+        "why_fallback": ""
+      }
+    ],
+    "naked_edges": 0,
+    "nonmanifold_edges": 0,
+    "pass": true,
+    "ruled_like_faces": 7,
+    "sha256": "67889051991478880adc82c1ca88afa292fc478f2e8dba7b7f3d6ff3bf72742c",
+    "shell_closed": [
+      true
+    ],
+    "shells": 1,
+    "solids": 1,
+    "step": "OD-S03_steam-knob_datum.step",
+    "surface_types": {
+      "bspline": {
+        "area_mm2": 50.52588,
+        "area_share": 0.013002,
+        "count": 9
+      },
+      "cone": {
+        "area_mm2": 1505.689223,
+        "area_share": 0.387464,
+        "count": 15
+      },
+      "cylinder": {
+        "area_mm2": 379.617825,
+        "area_share": 0.097688,
+        "count": 11
+      },
+      "plane": {
+        "area_mm2": 1062.774055,
+        "area_share": 0.273487,
+        "count": 30
+      },
+      "revolution": {
+        "area_mm2": 42.425957,
+        "area_share": 0.010918,
+        "count": 1
+      },
+      "torus": {
+        "area_mm2": 844.973978,
+        "area_share": 0.21744,
+        "count": 17
+      }
+    },
+    "valid": true,
+    "vertices": 128,
+    "volume_mm3": 11655.642525
+  },
+  "failures": [],
+  "frames_agree": {
+    "faces_equal": true,
+    "note": "scan-frame STEP moved back to the datum frame with the SAME trsf inverted; numerical round-trip only. It cannot prove the direction of T was applied correctly - verify that by overlaying the scan, not this number.",
+    "numeric_roundtrip_bbox_mm": 2.398e-07,
+    "volume_rel_diff": 0.0
+  },
+  "inputs": {
+    "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/build/model.py": "e5bbc4c347dcb4ff1a1e528cbae90d922a65a24e223000cf1616ffc09affad32",
+    "build/fillets.json": "eb5cc5762fce99b0092d0118b392d6741174c77f81ace0eda88ae20f20bfaa67",
+    "intake/alignment.json": "da75c108fad2f778fe0fe76926c6be9cdeabb6c16ec1a287e629054c0b1e583e",
+    "measure/params.json": "cb75654a2a1a0c50ae039a2bfc3b686defab8409125de5df50cc268ff2713560"
+  },
+  "inverse_rotation": {
+    "det": 1.0,
+    "orthonormalisation_max_abs": 1.388e-16,
+    "singular_values": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "part": "OD-S03_steam-knob",
+  "pass": true,
+  "scan": {
+    "analytic_area_share": 0.986998,
+    "area_mm2": 3886.006919,
+    "bbox": {
+      "max": [
+        -8.100518,
+        27.140134,
+        -191.294531
+      ],
+      "min": [
+        -39.555687,
+        -12.178452,
+        -228.567515
+      ],
+      "size": [
+        31.455169,
+        39.318586,
+        37.272984
+      ]
+    },
+    "closed": true,
+    "edges": 202,
+    "faces": 83,
+    "failures": [],
+    "fillets": [
+      {
+        "feature": "F04 lever-cap blend +Y",
+        "n_edges": 1,
+        "op": "fillet",
+        "param": "lever_blend_R_py_z0",
+        "status": "OK",
+        "target": 6.104510944456032,
+        "tried": [
+          {
+            "error": null,
+            "radius": 6.104510944456032
+          }
+        ],
+        "used": 6.104510944456032,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F04 lever-cap blend -Y",
+        "n_edges": 1,
+        "op": "fillet",
+        "param": "lever_blend_R_my_z0",
+        "status": "OK",
+        "target": 7.014649578965134,
+        "tried": [
+          {
+            "error": null,
+            "radius": 7.014649578965134
+          }
+        ],
+        "used": 7.014649578965134,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F06 crown round",
+        "n_edges": 6,
+        "op": "fillet",
+        "param": "crown_round_R",
+        "status": "OK",
+        "target": 2.459063390058614,
+        "tried": [
+          {
+            "error": null,
+            "radius": 2.459063390058614
+          }
+        ],
+        "used": 2.459063390058614,
+        "why_fallback": ""
+      },
+      {
+        "feature": "F07 step-face edge round",
+        "n_edges": 6,
+        "op": "fillet",
+        "param": "step_edge_R",
+        "status": "OK",
+        "target": 0.5343624123421996,
+        "tried": [
+          {
+            "error": null,
+            "radius": 0.5343624123421996
+          }
+        ],
+        "used": 0.5343624123421996,
+        "why_fallback": ""
+      }
+    ],
+    "naked_edges": 0,
+    "nonmanifold_edges": 0,
+    "pass": true,
+    "ruled_like_faces": 7,
+    "sha256": "4b4a6390d838a5c9a211fe4805f7ae9b1e92e2af2d9df4f51a6a340cdbd54e3f",
+    "shell_closed": [
+      true
+    ],
+    "shells": 1,
+    "solids": 1,
+    "step": "OD-S03_steam-knob.step",
+    "surface_types": {
+      "bspline": {
+        "area_mm2": 50.52588,
+        "area_share": 0.013002,
+        "count": 9
+      },
+      "cone": {
+        "area_mm2": 1505.689223,
+        "area_share": 0.387464,
+        "count": 15
+      },
+      "cylinder": {
+        "area_mm2": 379.617825,
+        "area_share": 0.097688,
+        "count": 11
+      },
+      "plane": {
+        "area_mm2": 1062.774055,
+        "area_share": 0.273487,
+        "count": 30
+      },
+      "revolution": {
+        "area_mm2": 42.425957,
+        "area_share": 0.010918,
+        "count": 1
+      },
+      "torus": {
+        "area_mm2": 844.973978,
+        "area_share": 0.21744,
+        "count": 17
+      }
+    },
+    "valid": true,
+    "vertices": 128,
+    "volume_mm3": 11655.642525
+  },
+  "schema": "stl-re/export_check@1",
+  "seed": 0,
+  "stl": {
+    "angular_tolerance": 0.05,
+    "frame": "scan",
+    "path": "OD-S03_steam-knob_cad.stl",
+    "tolerance": 0.003
+  },
+  "tool": "export_frames.py",
+  "tool_version": "stl-re-rebuild-build123d@1"
+}

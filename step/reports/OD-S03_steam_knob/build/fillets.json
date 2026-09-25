@@ -1,0 +1,85 @@
+{
+  "check": "CHK-FILLET",
+  "created": "2026-09-25T14:52:25+00:00",
+  "fillets": [
+    {
+      "feature": "F04 lever-cap blend +Y",
+      "n_edges": 1,
+      "op": "fillet",
+      "param": "lever_blend_R_py_z0",
+      "status": "OK",
+      "target": 6.104510944456032,
+      "tried": [
+        {
+          "error": null,
+          "radius": 6.104510944456032
+        }
+      ],
+      "used": 6.104510944456032,
+      "why_fallback": ""
+    },
+    {
+      "feature": "F04 lever-cap blend -Y",
+      "n_edges": 1,
+      "op": "fillet",
+      "param": "lever_blend_R_my_z0",
+      "status": "OK",
+      "target": 7.014649578965134,
+      "tried": [
+        {
+          "error": null,
+          "radius": 7.014649578965134
+        }
+      ],
+      "used": 7.014649578965134,
+      "why_fallback": ""
+    },
+    {
+      "feature": "F06 crown round",
+      "n_edges": 6,
+      "op": "fillet",
+      "param": "crown_round_R",
+      "status": "OK",
+      "target": 2.459063390058614,
+      "tried": [
+        {
+          "error": null,
+          "radius": 2.459063390058614
+        }
+      ],
+      "used": 2.459063390058614,
+      "why_fallback": ""
+    },
+    {
+      "feature": "F07 step-face edge round",
+      "n_edges": 6,
+      "op": "fillet",
+      "param": "step_edge_R",
+      "status": "OK",
+      "target": 0.5343624123421996,
+      "tried": [
+        {
+          "error": null,
+          "radius": 0.5343624123421996
+        }
+      ],
+      "used": 0.5343624123421996,
+      "why_fallback": ""
+    }
+  ],
+  "inputs": {
+    "/tmp/claude-0/-home-user-agentic-STL-to-CAD/9155e2f4-24ea-56fd-9dd7-9d1972aab7f3/scratchpad/OD-S03_steam-knob/build/model.py": "e5bbc4c347dcb4ff1a1e528cbae90d922a65a24e223000cf1616ffc09affad32",
+    "measure/params.json": "cb75654a2a1a0c50ae039a2bfc3b686defab8409125de5df50cc268ff2713560"
+  },
+  "schema": "stl-re/fillets@1",
+  "seed": 0,
+  "summary": {
+    "FAILED": 0,
+    "NO_EDGES": 0,
+    "OK": 4,
+    "REDUCED": 0,
+    "SELECTOR_ERROR": 0
+  },
+  "tool": "fillet_log.py",
+  "tool_version": "stl-re-rebuild-build123d@1"
+}

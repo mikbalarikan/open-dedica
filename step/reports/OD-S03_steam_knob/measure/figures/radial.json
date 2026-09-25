@@ -1,0 +1,124 @@
+{
+ "schema": "stl-re/sections_radial.json@1",
+ "tool": "sections.py",
+ "tool_version": "stl-re-measure-intent@1.0.0",
+ "inputs": {
+  "intake/aligned_work.stl": "1cbbfab272e0b8542805f4d3af733473555ccab5970b2ea06c26cac64e7080bc"
+ },
+ "seed": 0,
+ "created": "2026-09-25T13:46:11+00:00",
+ "frame": "datum; z along +Z, theta CCW about +Z from +X",
+ "planes": {
+  "theta_0": {
+   "chunks": 3,
+   "r_range": [
+    0.028249,
+    27.819869
+   ],
+   "z_range": [
+    -0.041599,
+    37.42909
+   ]
+  },
+  "theta_45": {
+   "chunks": 3,
+   "r_range": [
+    0.030835,
+    13.299834
+   ],
+   "z_range": [
+    -0.041665,
+    37.275011
+   ]
+  },
+  "theta_90": {
+   "chunks": 3,
+   "r_range": [
+    0.054737,
+    13.104409
+   ],
+   "z_range": [
+    -0.04176,
+    37.253814
+   ]
+  },
+  "theta_135": {
+   "chunks": 3,
+   "r_range": [
+    0.063492,
+    13.166682
+   ],
+   "z_range": [
+    -0.042168,
+    37.316199
+   ]
+  },
+  "theta_180": {
+   "chunks": 3,
+   "r_range": [
+    0.053725,
+    13.187168
+   ],
+   "z_range": [
+    -0.042084,
+    37.616311
+   ]
+  },
+  "theta_-135": {
+   "chunks": 2,
+   "r_range": [
+    0.080036,
+    13.294419
+   ],
+   "z_range": [
+    -0.041391,
+    37.994617
+   ]
+  },
+  "theta_-90": {
+   "chunks": 1,
+   "r_range": [
+    0.018843,
+    13.358079
+   ],
+   "z_range": [
+    -0.04153,
+    37.303833
+   ]
+  },
+  "theta_-45": {
+   "chunks": 2,
+   "r_range": [
+    0.015985,
+    13.31761
+   ],
+   "z_range": [
+    -0.041557,
+    37.302292
+   ]
+  },
+  "theta_-150": {
+   "chunks": 2,
+   "r_range": [
+    0.069982,
+    13.277216
+   ],
+   "z_range": [
+    -0.041571,
+    37.853416
+   ]
+  },
+  "theta_150": {
+   "chunks": 2,
+   "r_range": [
+    0.055711,
+    13.089406
+   ],
+   "z_range": [
+    -0.042326,
+    37.401143
+   ]
+  }
+ },
+ "arrays": "measure/figures/radial.npz"
+}
