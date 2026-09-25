@@ -31,8 +31,10 @@ In the overlays, grey is the rebuilt STEP and red is the raw scan. Where both sh
 
 ## Parts on the scanner
 
-Donor parts on the scan turntable, matched to BOM numbers. Items 2 and 4 are still to be confirmed against the part codes.
+Donor parts on the scan turntable, matched to BOM numbers. Parts tagged **check** are still to be confirmed against the part codes.
 
 ![Donor parts matched to BOM numbers](img/donor_parts_bom.png)
+
+![Donor parts matched to BOM numbers, electronics and steam valve](img/donor_parts_bom_2.png)
 
 Next up: check-fixtures for `OD-H01`, `OD-H11`, `OD-H24` and `OD-H22` (stage 4). Every part still marked `open` in stage 1 needs someone with the part to scan it. See [CONTRIBUTING.md](../CONTRIBUTING.md).
