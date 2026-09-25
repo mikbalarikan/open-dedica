@@ -1,0 +1,17 @@
+{"schema": "oguz-expected-v0",
+ "units": "mm",
+ "tolerance_default_pct": 1.0,
+ "closed_solid": true,
+ "solid_count": 1,
+ "bbox_mm": {"x": {"value": 54.05, "tol_mm": 0.3},
+             "y": {"value": 55.2, "tol_mm": 0.5},
+             "z": {"value": 121.95, "tol_mm": 0.5}},
+ "critical_dims": [
+   {"name": "coil_od_scan",        "kind": "cyl_diameter", "value": 47.3, "tol_mm": 0.3},
+   {"name": "body_od_scan",        "kind": "cyl_diameter", "value": 24.0, "tol_mm": 0.2},
+   {"name": "step_od_scan",        "kind": "cyl_diameter", "value": 20.5, "tol_mm": 0.2},
+   {"name": "nozzle_od_scan",      "kind": "cyl_diameter", "value": 14.0, "tol_mm": 0.15},
+   {"name": "nozzle_bore_scan",    "kind": "cyl_diameter", "value": 9.1,  "tol_mm": 0.2},
+   {"name": "inlet_boss_od_scan",  "kind": "cyl_diameter", "value": 13.0, "tol_mm": 0.15},
+   {"name": "barb_od_scan",        "kind": "cyl_diameter", "value": 5.9,  "tol_mm": 0.2},
+   {"name": "overall_length_scan", "kind": "bbox_z",       "value": 121.95, "tol_mm": 0.5}]}
