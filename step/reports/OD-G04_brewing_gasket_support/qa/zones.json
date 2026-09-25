@@ -1,0 +1,200 @@
+{
+ "_note": "QA-written zones, datum frame (post-ICP scan). Functional zones from intake/INTAKE_CARD.md \u00a74 (Z1-Z4); z/r extents read from QA's own radial profile of the aligned scan; boss axis locations read from the STEP's hole faces (B-rep query, used only to place the reporting boxes). Regime baseline-skill has no interface band (interface_max_mm null) so functional_interface zones are reported, not separately gated; the whole-part band covers them.",
+ "zones": [
+  {
+   "name": "Z1_back_face_bead",
+   "kind": "functional_interface",
+   "select": {
+    "r": [
+     0,
+     22.0
+    ],
+    "z": [
+     -0.5,
+     1.4
+    ]
+   },
+   "note": "plate back face + back bead (seats against brew-group stack)"
+  },
+  {
+   "name": "Z2_flange_lip",
+   "kind": "functional_interface",
+   "select": {
+    "r": [
+     23.2,
+     31.3
+    ],
+    "z": [
+     -14.2,
+     -7.0
+    ]
+   },
+   "note": "flange + gasket lip + lip bead (gasket seat)"
+  },
+  {
+   "name": "Z3_bayonet_tabs",
+   "kind": "functional_interface",
+   "select": {
+    "r": [
+     31.3,
+     36.5
+    ],
+    "z": [
+     -10.6,
+     -7.4
+    ]
+   },
+   "note": "3 bayonet tabs (locking)"
+  },
+  {
+   "name": "Z4_boss_holes",
+   "kind": "functional_interface",
+   "select": {
+    "any_of": [
+     {
+      "x": [
+       13.097,
+       17.697
+      ],
+      "y": [
+       -4.082,
+       0.518
+      ],
+      "z": [
+       -16.6,
+       -10.0
+      ]
+     },
+     {
+      "x": [
+       -17.681,
+       -13.081
+      ],
+      "y": [
+       -0.384,
+       4.216
+      ],
+      "z": [
+       -16.6,
+       -10.0
+      ]
+     },
+     {
+      "x": [
+       6.62,
+       11.22
+      ],
+      "y": [
+       -19.076,
+       -14.476
+      ],
+      "z": [
+       -16.6,
+       -10.0
+      ]
+     },
+     {
+      "x": [
+       -9.815,
+       -5.215
+      ],
+      "y": [
+       15.15,
+       19.75
+      ],
+      "z": [
+       -16.6,
+       -10.0
+      ]
+     }
+    ]
+   },
+   "note": "4 screw bosses with counterbored holes, 4.6 mm boxes round each boss axis"
+  },
+  {
+   "name": "I1_hub_interior",
+   "kind": "interior",
+   "select": {
+    "r": [
+     0,
+     7.8
+    ],
+    "z": [
+     -16.5,
+     -2.6
+    ]
+   },
+   "note": "intake \u00a73: hub interior unscanned except centre bore"
+  },
+  {
+   "name": "I2_plate_underside_unscanned_sectors",
+   "kind": "interior",
+   "select": {
+    "r": [
+     10,
+     20
+    ],
+    "z": [
+     -3.0,
+     -2.2
+    ],
+    "not": {
+     "theta_deg": [
+      20,
+      80
+     ]
+    }
+   },
+   "note": "intake \u00a73: plate underside scanned only at theta 20-80"
+  },
+  {
+   "name": "I3_outer_wall_gap",
+   "kind": "interior",
+   "select": {
+    "r": [
+     22.4,
+     27.0
+    ],
+    "z": [
+     -11.2,
+     0.2
+    ],
+    "theta_deg": [
+     291,
+     27
+    ]
+   },
+   "note": "intake \u00a73: outer wall/flange-top scan gap theta -69..+27 (reported as a coverage region, not a mask)"
+  },
+  {
+   "name": "B1_zband_plate",
+   "kind": "region",
+   "select": {
+    "z": [
+     -3.0,
+     1.4
+    ]
+   }
+  },
+  {
+   "name": "B2_zband_mid",
+   "kind": "region",
+   "select": {
+    "z": [
+     -11.0,
+     -3.0
+    ]
+   }
+  },
+  {
+   "name": "B3_zband_front",
+   "kind": "region",
+   "select": {
+    "z": [
+     -17.0,
+     -11.0
+    ]
+   }
+  }
+ ]
+}

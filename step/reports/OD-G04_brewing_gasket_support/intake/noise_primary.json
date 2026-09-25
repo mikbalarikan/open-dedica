@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "c3df09d6cc2b4d850390c46a60a69fd0be9a84e58d5d635be8e3fd4ef5779ba1"
+ },
+ "seed": 0,
+ "created": "2026-09-25T12:40:36+00:00",
+ "scan_noise_mm": {
+  "value": 0.04892255856114139,
+  "p95_mm": 0.08740943877602547,
+  "max_mm": 0.10973214744890776,
+  "method": "rms of RANSAC+SVD plane on plate back face (flat outer face of the support disc, R<19) (9868 faces)"
+ }
+}

@@ -1,0 +1,12 @@
+rib -154.5: +side d=-0.036 (n686) -side d=-1.442 (n243) t=1.406 mid=-2.82deg offset -0.739mm
+    deep bottom along r: [14.6  20.06]   shallow bottom along r: [10.17 15.81]
+rib -94.5: +side d=-0.047 (n574) -side d=-1.356 (n588) t=1.309 mid=-2.68deg offset -0.701mm
+    deep bottom along r: [14.47 19.49]   shallow bottom along r: [10.13 15.81]
+rib -39.5: +side d=1.338 (n222) -side d=-0.037 (n287) t=1.375 mid=2.48deg offset 0.650mm
+    deep bottom along r: [14.43 19.76]   shallow bottom along r: [10.1  15.79]
+rib 25.5: +side d=0.072 (n910) -side d=-1.321 (n133) t=1.392 mid=-2.38deg offset -0.625mm
+    deep bottom along r: [14.46 20.29]   shallow bottom along r: [10.11 15.77]
+rib 81.0: +side d=1.284 (n342) -side d=-0.012 (n449) t=1.296 mid=2.43deg offset 0.636mm
+    deep bottom along r: [14.58 20.34]   shallow bottom along r: [10.19 15.87]
+rib 140.5: +side d=1.409 (n119) -side d=0.088 (n295) t=1.321 mid=2.86deg offset 0.748mm
+    deep bottom along r: [14.67 19.41]   shallow bottom along r: [10.21 15.96]

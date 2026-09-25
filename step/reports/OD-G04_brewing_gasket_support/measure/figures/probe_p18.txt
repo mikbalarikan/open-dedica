@@ -1,0 +1,17 @@
+flange inner corner profile: per r bin, median z of faces with n.z<-0.1 or inward (z -13.4..-10)
+  r 20.4 zmin -13.107 z50 -10.651 n 1034
+  r 20.6 zmin -11.682 z50 -10.833 n 2480
+  r 20.8 zmin -12.849 z50 -11.478 n 1374
+  r 21.0 zmin -13.012 z50 -11.906 n 951
+  r 21.2 zmin -13.024 z50 -12.180 n 793
+  r 21.4 zmin -13.031 z50 -12.405 n 724
+  r 21.6 zmin -13.038 z50 -12.587 n 625
+  r 21.8 zmin -13.057 z50 -12.743 n 569
+  r 22.0 zmin -13.091 z50 -12.879 n 531
+  r 22.2 zmin -13.152 z50 -12.986 n 550
+  r 22.4 zmin -13.166 z50 -13.073 n 530
+  r 22.6 zmin -13.199 z50 -13.130 n 488
+  r 22.8 zmin -13.237 z50 -13.179 n 447
+  r 23.0 zmin -13.265 z50 -13.191 n 434
+flange-lip inner fillet [np.float64(28.153), np.float64(-9.555), np.float64(1.084), np.float64(0.046)] 6778
+constrained tangent-arc R=2.65 rms=0.179 n=9156

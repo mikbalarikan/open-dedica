@@ -1,0 +1,18 @@
+{
+ "schema": "stl-re/regime@1",
+ "tool": "intake.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {},
+ "seed": 0,
+ "created": "2026-09-25T12:42:56+00:00",
+ "name": "baseline-skill",
+ "source": "baseline/skills/stl2step-build123d/SKILL.md:87",
+ "bands": {
+  "p95_mm": 0.3,
+  "max_mm": 0.8,
+  "tier1_abs_mm": null,
+  "interface_max_mm": null
+ },
+ "material_class": "plastic",
+ "why": "owner: 'p95 plastik par\u00e7a tolerans\u0131 kullan' (session message); moulded plastic part, scan-only"
+}

@@ -5,12 +5,14 @@
 | | |
 |---|---|
 | Part | `OD-H22` (ref 43, OEM AS00004266) — molded plastic 3-way valve body |
-| Input | [`scans/OD-H22_3way_valve/OD-H22_3way_valve_raw.stl`](../../../scans/OD-H22_3way_valve/) — 495 881 triangles, full resolution, + 4 photos |
+| Input | [`scans/OD-H22_3way_valve/OD-H22_3way_valve_raw.stl`](../../../scans/OD-H22_3way_valve/) — 495 881 triangles, full resolution, + 1 own photo |
 | Method | staged pipeline — intake → measure → build (build123d, features F01–F12 from 52 parameters) → **independent verifier** (own ICP, zones, masks) → deliver |
 | Caliper data | **none** — scan-only (48 parameters from the scan, 4 assumed) |
 | Verdict | **`BAND_NOT_MET` — accepted by the owner for delivery** ([`decisions/accept_band.md`](decisions/accept_band.md)) |
 
 **Full report: [`deliver/README.md`](deliver/README.md)** (method, frames, all parameters, per-zone deviation, masks, clusters, limitations, reproduction, provenance).
+
+> Photos 1–3 of the run were seller catalogue images and are **not redistributed**; only `input/photos/photo_4.png` (own photo) is kept, so links to photos 1–3 in the run documents are intentionally broken.
 
 ## Delivered STEP
 

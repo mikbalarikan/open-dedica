@@ -1,0 +1,28 @@
+scan->CAD: 245660 scan points
+CAD->scan: 300000 CAD samples
+scan_to_cad              n   245660 rms 0.2005 p50 0.1359 p95 0.3756 p99 0.4501 max 0.8316
+cad_to_scan              n   300000 rms 1.0848 p50 0.2413 p95 2.5939 p99 3.5552 max 4.8136
+scan_to_cad_masked       n   245660 rms 0.2005 p50 0.1359 p95 0.3756 p99 0.4501 max 0.8316
+cad_to_scan_masked       n   300000 rms 1.0848 p50 0.2413 p95 2.5939 p99 3.5552 max 4.8136
+cad_to_scan_observable   n    18753 rms 0.9217 p50 0.2193 p95 2.3247 p99 3.2740 max 4.5923
+unobservable CAD fraction 6.24%
+  zone Z1_back_face_bead              scan_to_cad  n   32326 p95 0.366 max 0.430
+  zone Z1_back_face_bead              cad_to_scan  n   33406 p95 0.380 max 1.006
+  zone Z2_flange_lip                  scan_to_cad  n   79465 p95 0.383 max 0.551
+  zone Z2_flange_lip                  cad_to_scan  n   79008 p95 0.461 max 2.761
+  zone Z3_bayonet_tabs                scan_to_cad  n   20554 p95 0.419 max 0.832
+  zone Z3_bayonet_tabs                cad_to_scan  n   15488 p95 0.727 max 2.095
+  zone Z4_boss_holes                  scan_to_cad  n    6804 p95 0.367 max 0.545
+  zone Z4_boss_holes                  cad_to_scan  n    3828 p95 0.854 max 1.362
+  zone I1_hub_interior                scan_to_cad  n    2054 p95 0.210 max 0.352
+  zone I1_hub_interior                cad_to_scan  n    1644 p95 2.426 max 3.133
+  zone I2_plate_underside_unscanned_sectors cad_to_scan  n   12326 p95 2.546 max 2.832
+  zone I3_outer_wall_gap              scan_to_cad  n    3121 p95 0.320 max 0.359
+  zone I3_outer_wall_gap              cad_to_scan  n   11141 p95 3.874 max 4.814
+  zone B1_zband_plate                 scan_to_cad  n   46209 p95 0.360 max 0.626
+  zone B1_zband_plate                 cad_to_scan  n   66836 p95 2.384 max 2.873
+  zone B2_zband_mid                   scan_to_cad  n  116220 p95 0.359 max 0.832
+  zone B2_zband_mid                   cad_to_scan  n  164577 p95 3.035 max 4.814
+  zone B3_zband_front                 scan_to_cad  n   83231 p95 0.401 max 0.817
+  zone B3_zband_front                 cad_to_scan  n   68587 p95 0.418 max 1.362
+label: OFFICIAL (full-res) | mask-dependent passes: none

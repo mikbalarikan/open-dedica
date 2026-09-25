@@ -1,0 +1,5 @@
+exec(open('measure/figures/probe_p8.py').read().split('runs(B(31.5')[0])
+runs(B(14.9,16.0,r)&(n[:,2]<-0.8)&B(-11,-10.3,c[:,2]),'ring rib bottom')
+runs(B(14.6,15.1,r)&(abs(n[:,2])<0.3)&B(-10,-3,c[:,2]),'ring rib inner wall')
+runs(B(15.9,16.4,r)&(abs(n[:,2])<0.3)&B(-10,-3,c[:,2]),'ring rib outer wall')
+runs(B(10,20,r)&(n[:,2]<-0.8)&B(-11,-10.3,c[:,2]),'any bottom -10.7 r10-20')

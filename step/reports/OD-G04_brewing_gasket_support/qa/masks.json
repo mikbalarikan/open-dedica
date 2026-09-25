@@ -1,0 +1,4 @@
+{
+ "_note": "No masks declared, decided before any deviation number was computed. The moulded text (E14, plate underside, theta 20-80, relief <=0.3 mm, declared simplification) and scan coverage gaps are left in the statistics; coverage is handled by the observability split, which is reported alongside the raw CAD->scan number.",
+ "masks": []
+}

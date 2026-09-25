@@ -1,0 +1,6 @@
+rib~-154.5: side angles -156.65/-157.06 rms 0.049/0.039 n 647/260 -> dir -156.86 offset -0.037 thick 1.190
+rib~-94.5: side angles -97.62/-96.86 rms 0.086/0.044 n 541/623 -> dir -97.24 offset 0.010 thick 1.433
+rib~-39.5: side angles -37.18/-39.81 rms 0.025/0.060 n 217/266 -> dir -38.50 offset 0.360 thick 0.667
+rib~25.5: side angles 23.32/22.39 rms 0.042/0.226 n 840/129 -> dir 22.86 offset 0.153 thick 1.025
+rib~81.0: side angles 83.36/83.30 rms 0.050/0.041 n 344/401 -> dir 83.33 offset 0.045 thick 1.283
+rib~140.5: side angles 144.30/143.41 rms 0.043/0.054 n 165/274 -> dir 143.86 offset -0.207 thick 1.006

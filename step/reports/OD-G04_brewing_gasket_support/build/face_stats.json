@@ -1,0 +1,57 @@
+{
+  "census": {
+    "analytic_area_share": 1.0,
+    "analytic_set": [
+      "plane",
+      "cylinder",
+      "cone",
+      "sphere",
+      "torus",
+      "revolution"
+    ],
+    "by_type": {
+      "cone": {
+        "area_mm2": 87.258686,
+        "area_share": 0.005506,
+        "count": 1
+      },
+      "cylinder": {
+        "area_mm2": 6887.604092,
+        "area_share": 0.43458,
+        "count": 54
+      },
+      "plane": {
+        "area_mm2": 6547.649976,
+        "area_share": 0.41313,
+        "count": 107
+      },
+      "torus": {
+        "area_mm2": 2326.372758,
+        "area_share": 0.146785,
+        "count": 12
+      }
+    },
+    "faces": 174,
+    "freeform_faces": 0,
+    "plane_face_count": 107,
+    "plane_face_median_area_mm2": 13.380103,
+    "ruled_like_faces": 0,
+    "total_area_mm2": 15848.885511
+  },
+  "check": "CHK-PATCHWORK",
+  "created": "2026-09-25T13:10:16+00:00",
+  "expected_faces": [
+    140,
+    220
+  ],
+  "faces_in_expected_range": true,
+  "gated": false,
+  "inputs": {
+    "build/OD-G04_brewing-gasket-support_datum.step": "16b9f024720fb91444866d01cb982874a961e4d49ad5b67782b413cb8f6d753f"
+  },
+  "notes": [],
+  "schema": "stl-re/face_stats@1",
+  "seed": 0,
+  "tool": "face_stats.py",
+  "tool_version": "stl-re-rebuild-build123d@1"
+}

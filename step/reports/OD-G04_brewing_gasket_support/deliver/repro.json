@@ -1,0 +1,244 @@
+{
+  "schema": "stl-re/repro@1",
+  "tool": "repro_check.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "build/OD-G04_brewing-gasket-support.step": "6d333f8a2949fd759ac4f1596afe7955b4a8a4898894d7d6ee5489070d66a4db",
+    "build/OD-G04_brewing-gasket-support_datum.step": "16b9f024720fb91444866d01cb982874a961e4d49ad5b67782b413cb8f6d753f",
+    "build/model.py": "1de53637a3bc367666a8f4d8552b7a5128d4a8a111dd70b6b159c747b32da9bd",
+    "measure/params.json": "749756129bf812963194fcd622265cd0cf959683023aeb2aa3539d2f11881b9f"
+  },
+  "seed": 0,
+  "created": "2026-09-25T19:58:11+00:00",
+  "method": "2 fresh subprocess rebuild(s) of build/model.py in a scratch copy; STEP re-imported; solids, faces, surface census, volume, bbox compared (raw hash reported, not required)",
+  "command": [
+    "python3",
+    "model.py",
+    "--params",
+    "../measure/params.json",
+    "--alignment",
+    "../intake/alignment.json",
+    "--out",
+    ".",
+    "--part",
+    "OD-G04_brewing-gasket-support",
+    "--scripts",
+    "/home/user/agentic_STL-to-CAD/skills/stl-re-rebuild-build123d/scripts"
+  ],
+  "cwd": "build",
+  "tolerance_mm": 0.0,
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "build123d": "0.13.0",
+    "OCP": "8.0.1.0",
+    "numpy": "2.4.6"
+  },
+  "reproducible": true,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=../measure/params.json\nF01 revolve (r,z) profile, 25 vertices; cone bottom z=-2.2016; faces=30\nF01b lip bead: arc through r=31.175 at z=-8.3, z -9.1..-7.6\nF02 3 tabs, span 61.08 deg, centres [-3.3, 116.7, 236.7]\nF03 6 ribs t=1.35 at [22.9, 82.9, 142.9, 202.9, 262.9, 322.9]; shallow bottom -10.68 r<14.55, deep bottom = flange_bot_z beyond\nF04 ring-rib arcs [(26, 141), (205, 321)] (+/-2.50 deg overlap into ribs)\nF05 4 bosses R=3.49: [(15.5, -6.55, -16.12), (15.5, 172.95, -16.12), (19.03, 113.27, -14.88), (19.03, -62.02, -14.88)]\nF05b 2 webs t=1.18 bottom -10.69 through boss pair A, hub tube to cup wall\nF06 cut once: 4 counterbored pilot holes + 4 through slots (span 40.25 deg, phase -4.9)\n{\n  \"closed\": true,\n  \"faces\": 174,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 0,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"scan_bbox\": {\n    \"max\": [\n      11.701512,\n      20.681078,\n      -190.856194\n    ],\n    \"min\": [\n      -56.230423,\n      -29.885121,\n      -238.119206\n    ],\n    \"size\": [\n      67.931936,\n      50.5662,\n      47.263012\n    ]\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 17086.24424\n}\n",
+      "stderr_tail": "",
+      "run": 1,
+      "produced": [
+        "OD-G04_brewing-gasket-support.step",
+        "OD-G04_brewing-gasket-support_datum.step"
+      ]
+    },
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=../measure/params.json\nF01 revolve (r,z) profile, 25 vertices; cone bottom z=-2.2016; faces=30\nF01b lip bead: arc through r=31.175 at z=-8.3, z -9.1..-7.6\nF02 3 tabs, span 61.08 deg, centres [-3.3, 116.7, 236.7]\nF03 6 ribs t=1.35 at [22.9, 82.9, 142.9, 202.9, 262.9, 322.9]; shallow bottom -10.68 r<14.55, deep bottom = flange_bot_z beyond\nF04 ring-rib arcs [(26, 141), (205, 321)] (+/-2.50 deg overlap into ribs)\nF05 4 bosses R=3.49: [(15.5, -6.55, -16.12), (15.5, 172.95, -16.12), (19.03, 113.27, -14.88), (19.03, -62.02, -14.88)]\nF05b 2 webs t=1.18 bottom -10.69 through boss pair A, hub tube to cup wall\nF06 cut once: 4 counterbored pilot holes + 4 through slots (span 40.25 deg, phase -4.9)\n{\n  \"closed\": true,\n  \"faces\": 174,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 0,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"scan_bbox\": {\n    \"max\": [\n      11.701512,\n      20.681078,\n      -190.856194\n    ],\n    \"min\": [\n      -56.230423,\n      -29.885121,\n      -238.119206\n    ],\n    \"size\": [\n      67.931936,\n      50.5662,\n      47.263012\n    ]\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 17086.24424\n}\n",
+      "stderr_tail": "",
+      "run": 2,
+      "produced": [
+        "OD-G04_brewing-gasket-support.step",
+        "OD-G04_brewing-gasket-support_datum.step"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "OD-G04_brewing-gasket-support.step",
+      "original_volume_mm3": 17086.24424005698,
+      "rebuild_volume_mm3": 17086.24424005698,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        67.93193579848345,
+        50.56619961436444,
+        47.26301174760658
+      ],
+      "rebuild_bbox_mm": [
+        67.93193579848345,
+        50.56619961436444,
+        47.26301174760658
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 17086.24424005698,
+          "rebuild_volume_mm3": 17086.24424005698,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            67.93193579848345,
+            50.56619961436444,
+            47.26301174760658
+          ],
+          "rebuild_bbox_mm": [
+            67.93193579848345,
+            50.56619961436444,
+            47.26301174760658
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 17086.24424005698,
+          "rebuild_volume_mm3": 17086.24424005698,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            67.93193579848345,
+            50.56619961436444,
+            47.26301174760658
+          ],
+          "rebuild_bbox_mm": [
+            67.93193579848345,
+            50.56619961436444,
+            47.26301174760658
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 174,
+        "valid": true,
+        "surface_census": {
+          "CONE": 1,
+          "CYLINDER": 54,
+          "PLANE": 107,
+          "TORUS": 12
+        },
+        "volume_mm3": 17086.24424005698,
+        "area_mm2": 15848.885511264833,
+        "bbox_min": [
+          -56.23042339548708,
+          -29.885121312746655,
+          -238.11920571163301
+        ],
+        "bbox_max": [
+          11.70151240299637,
+          20.681078301617788,
+          -190.85619396402643
+        ]
+      }
+    },
+    {
+      "file": "OD-G04_brewing-gasket-support_datum.step",
+      "original_volume_mm3": 17086.244240056978,
+      "rebuild_volume_mm3": 17086.244240056978,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        65.69633733402601,
+        68.99995681398754,
+        17.210000100000002
+      ],
+      "rebuild_bbox_mm": [
+        65.69633733402601,
+        68.99995681398754,
+        17.210000100000002
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 17086.244240056978,
+          "rebuild_volume_mm3": 17086.244240056978,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            65.69633733402601,
+            68.99995681398754,
+            17.210000100000002
+          ],
+          "rebuild_bbox_mm": [
+            65.69633733402601,
+            68.99995681398754,
+            17.210000100000002
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 17086.244240056978,
+          "rebuild_volume_mm3": 17086.244240056978,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            65.69633733402601,
+            68.99995681398754,
+            17.210000100000002
+          ],
+          "rebuild_bbox_mm": [
+            65.69633733402601,
+            68.99995681398754,
+            17.210000100000002
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 174,
+        "valid": true,
+        "surface_census": {
+          "CONE": 1,
+          "CYLINDER": 54,
+          "PLANE": 107,
+          "TORUS": 12
+        },
+        "volume_mm3": 17086.244240056978,
+        "area_mm2": 15848.885511264833,
+        "bbox_min": [
+          -31.176337234026,
+          -34.47995671398753,
+          -16.12
+        ],
+        "bbox_max": [
+          34.52000010000001,
+          34.52000010000001,
+          1.0900001
+        ]
+      }
+    }
+  ]
+}

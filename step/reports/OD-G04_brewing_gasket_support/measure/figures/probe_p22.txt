@@ -1,0 +1,2 @@
+boss -6.55: +side d 0.534 n128 | -side d -0.599 n18 | bottom z -10.688 n73
+boss 172.95: +side d 0.653 n78 | -side d -0.575 n84 | bottom z -10.588 n49

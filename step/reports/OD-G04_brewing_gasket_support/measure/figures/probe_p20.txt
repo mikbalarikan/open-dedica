@@ -1,0 +1,18 @@
+outermost r per z bin (p98 of all faces r 30-32.5), away from tabs; and angular coverage
+  z -10.0 r98 30.952 r50 30.839 n 191 bins_with_pts 15/36
+  z -9.8 r98 31.157 r50 30.841 n 190 bins_with_pts 15/36
+  z -9.6 r98 31.356 r50 30.857 n 199 bins_with_pts 15/36
+  z -9.4 r98 31.348 r50 30.876 n 210 bins_with_pts 15/36
+  z -9.2 r98 31.379 r50 30.892 n 236 bins_with_pts 15/36
+  z -9.0 r98 31.339 r50 30.925 n 387 bins_with_pts 15/36
+  z -8.8 r98 31.235 r50 31.001 n 522 bins_with_pts 15/36
+  z -8.6 r98 31.246 r50 31.086 n 848 bins_with_pts 15/36
+  z -8.4 r98 31.314 r50 31.175 n 1219 bins_with_pts 15/36
+  z -8.2 r98 31.359 r50 31.143 n 1132 bins_with_pts 15/36
+  z -8.0 r98 31.335 r50 31.052 n 872 bins_with_pts 15/36
+  z -7.8 r98 31.268 r50 30.997 n 492 bins_with_pts 15/36
+  z -7.6 r98 31.016 r50 30.941 n 438 bins_with_pts 15/36
+  z -7.4 r98 30.951 r50 30.868 n 726 bins_with_pts 15/36
+  z -7.2 r98 30.840 r50 30.647 n 1655 bins_with_pts 15/36
+  z -7.0 r98 30.532 r50 30.293 n 168 bins_with_pts 8/36
+bulge faces angular hist 5deg: [177, 215, 227, 253, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 295, 378, 172, 97, 109, 100, 102, 115, 109, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 161, 169, 175, 208, 114, 170, 158, 146, 137, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 112, 121, 112, 120, 146]

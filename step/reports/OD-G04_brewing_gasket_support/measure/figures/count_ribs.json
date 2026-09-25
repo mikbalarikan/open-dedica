@@ -1,0 +1,312 @@
+{
+ "schema": "stl-re/pattern_count.json@1",
+ "tool": "pattern_count.py",
+ "tool_version": "stl-re-measure-intent@1.0.0",
+ "inputs": {
+  "intake/aligned_work.stl": "4ab66fb732235a07bb9add2e25fcfdbb914434a2d8f464508b0380dab2434080"
+ },
+ "seed": 0,
+ "created": "2026-09-25T12:51:07+00:00",
+ "name": "ribs",
+ "signal": "mass",
+ "frame": "datum; theta CCW about +Z from +X",
+ "tolerance": null,
+ "metric": "rms",
+ "scan_noise_mm": null,
+ "orders_searched": [
+  3,
+  12
+ ],
+ "count": 12,
+ "check": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "pass",
+   "note": "FFT-dominant order identical at every station (P03 method); residual is a local minimum at every station; crest-peak counts [126, 275, 127] disagree with 12: expected, peaks are diagnostic only (M02 31/16)"
+  }
+ },
+ "stations": [
+  {
+   "z": -10.75,
+   "z_band": [
+    -10.85,
+    -10.65
+   ],
+   "r_band": [
+    10.4,
+    11.8
+   ],
+   "n_samples": 10200,
+   "coverage": 1.0,
+   "signal_ptp": 0.110913,
+   "fft_dominant_order": 12,
+   "fft_top5": [
+    12,
+    10,
+    11,
+    6,
+    4
+   ],
+   "residual_metric": "rms",
+   "tolerance": null,
+   "qualified_orders": [],
+   "selected_maximal_order": null,
+   "min_residual_order": 3,
+   "contrast_selected_vs_neighbours": 0.960379,
+   "fft_dominant_is_residual_local_min": true,
+   "crest_phase_deg_of_selected": 22.839,
+   "diagnostic_peak_count": 126,
+   "diagnostic_peak_prominence": 0.008873,
+   "order_table": [
+    {
+     "order": 3,
+     "rms": 0.003091244,
+     "max_abs": 0.073942156,
+     "fft_mag": 0.923342
+    },
+    {
+     "order": 4,
+     "rms": 0.003266422,
+     "max_abs": 0.083184926,
+     "fft_mag": 1.239744
+    },
+    {
+     "order": 5,
+     "rms": 0.003550736,
+     "max_abs": 0.088730587,
+     "fft_mag": 0.848263
+    },
+    {
+     "order": 6,
+     "rms": 0.003395456,
+     "max_abs": 0.085786252,
+     "fft_mag": 1.56876
+    },
+    {
+     "order": 7,
+     "rms": 0.003593008,
+     "max_abs": 0.095068486,
+     "fft_mag": 0.776271
+    },
+    {
+     "order": 8,
+     "rms": 0.003635187,
+     "max_abs": 0.09704908,
+     "fft_mag": 1.18818
+    },
+    {
+     "order": 9,
+     "rms": 0.003643022,
+     "max_abs": 0.098589542,
+     "fft_mag": 0.924983
+    },
+    {
+     "order": 10,
+     "rms": 0.003737501,
+     "max_abs": 0.099821911,
+     "fft_mag": 1.749418
+    },
+    {
+     "order": 11,
+     "rms": 0.003725523,
+     "max_abs": 0.100830213,
+     "fft_mag": 1.617047
+    },
+    {
+     "order": 12,
+     "rms": 0.003577915,
+     "max_abs": 0.09562168,
+     "fft_mag": 4.519073
+    }
+   ]
+  },
+  {
+   "z": -10.6,
+   "z_band": [
+    -10.7,
+    -10.5
+   ],
+   "r_band": [
+    10.4,
+    11.8
+   ],
+   "n_samples": 10200,
+   "coverage": 1.0,
+   "signal_ptp": 0.110913,
+   "fft_dominant_order": 12,
+   "fft_top5": [
+    12,
+    6,
+    4,
+    10,
+    8
+   ],
+   "residual_metric": "rms",
+   "tolerance": null,
+   "qualified_orders": [],
+   "selected_maximal_order": null,
+   "min_residual_order": 3,
+   "contrast_selected_vs_neighbours": 0.94681,
+   "fft_dominant_is_residual_local_min": true,
+   "crest_phase_deg_of_selected": 23.037,
+   "diagnostic_peak_count": 275,
+   "diagnostic_peak_prominence": 0.008873,
+   "order_table": [
+    {
+     "order": 3,
+     "rms": 0.004718485,
+     "max_abs": 0.073942156,
+     "fft_mag": 0.588417
+    },
+    {
+     "order": 4,
+     "rms": 0.005172421,
+     "max_abs": 0.083184926,
+     "fft_mag": 2.029898
+    },
+    {
+     "order": 5,
+     "rms": 0.005709403,
+     "max_abs": 0.088730587,
+     "fft_mag": 0.816286
+    },
+    {
+     "order": 6,
+     "rms": 0.005172627,
+     "max_abs": 0.085786252,
+     "fft_mag": 6.942681
+    },
+    {
+     "order": 7,
+     "rms": 0.005735526,
+     "max_abs": 0.095068486,
+     "fft_mag": 0.485998
+    },
+    {
+     "order": 8,
+     "rms": 0.005810199,
+     "max_abs": 0.09704908,
+     "fft_mag": 1.642308
+    },
+    {
+     "order": 9,
+     "rms": 0.005795105,
+     "max_abs": 0.098589542,
+     "fft_mag": 0.712141
+    },
+    {
+     "order": 10,
+     "rms": 0.005974229,
+     "max_abs": 0.099821911,
+     "fft_mag": 2.010873
+    },
+    {
+     "order": 11,
+     "rms": 0.005969002,
+     "max_abs": 0.100830213,
+     "fft_mag": 0.19153
+    },
+    {
+     "order": 12,
+     "rms": 0.005651509,
+     "max_abs": 0.098349743,
+     "fft_mag": 10.724255
+    }
+   ]
+  },
+  {
+   "z": -10.45,
+   "z_band": [
+    -10.549999999999999,
+    -10.35
+   ],
+   "r_band": [
+    10.4,
+    11.8
+   ],
+   "n_samples": 10200,
+   "coverage": 1.0,
+   "signal_ptp": 0.083611,
+   "fft_dominant_order": 12,
+   "fft_top5": [
+    12,
+    6,
+    4,
+    10,
+    8
+   ],
+   "residual_metric": "rms",
+   "tolerance": null,
+   "qualified_orders": [],
+   "selected_maximal_order": null,
+   "min_residual_order": 3,
+   "contrast_selected_vs_neighbours": 0.96409,
+   "fft_dominant_is_residual_local_min": true,
+   "crest_phase_deg_of_selected": 23.376,
+   "diagnostic_peak_count": 127,
+   "diagnostic_peak_prominence": 0.006689,
+   "order_table": [
+    {
+     "order": 3,
+     "rms": 0.003320446,
+     "max_abs": 0.05204647,
+     "fft_mag": 0.06121
+    },
+    {
+     "order": 4,
+     "rms": 0.003528685,
+     "max_abs": 0.062708385,
+     "fft_mag": 1.121262
+    },
+    {
+     "order": 5,
+     "rms": 0.003823988,
+     "max_abs": 0.066888944,
+     "fft_mag": 0.13941
+    },
+    {
+     "order": 6,
+     "rms": 0.003637356,
+     "max_abs": 0.065657644,
+     "fft_mag": 2.953623
+    },
+    {
+     "order": 7,
+     "rms": 0.003881949,
+     "max_abs": 0.071666726,
+     "fft_mag": 0.372514
+    },
+    {
+     "order": 8,
+     "rms": 0.003919836,
+     "max_abs": 0.073159783,
+     "fft_mag": 0.895578
+    },
+    {
+     "order": 9,
+     "rms": 0.00393117,
+     "max_abs": 0.07308961,
+     "fft_mag": 0.159046
+    },
+    {
+     "order": 10,
+     "rms": 0.004029126,
+     "max_abs": 0.075250062,
+     "fft_mag": 1.09966
+    },
+    {
+     "order": 11,
+     "rms": 0.004002281,
+     "max_abs": 0.074380789,
+     "fft_mag": 0.110042
+    },
+    {
+     "order": 12,
+     "rms": 0.00385856,
+     "max_abs": 0.07346401,
+     "fft_mag": 4.703754
+    }
+   ]
+  }
+ ]
+}

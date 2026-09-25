@@ -1,0 +1,12 @@
+flange inner-bottom round: centre r=22.566 z=-11.159 R=1.686 rms=0.104 n=5453
+x: centre r=20.089 z=-11.714 R=0.848 rms=0.112 n=1468
+hub tube bottom U: centre r=9.186 z=-14.974 R=0.808 rms=0.047 n=4904
+lip top: centre r=30.180 z=-7.834 R=0.875 rms=0.058 n=12796
+bead top: centre r=20.901 z=0.552 R=0.607 rms=0.048 n=13637
+plate outer edge round: centre r=22.553 z=-0.282 R=0.316 rms=0.054 n=3672
+hub top inner (cone->flat) round: centre r=4.972 z=0.205 R=0.706 rms=0.019 n=531
+hub ring outer top round: centre r=5.806 z=0.592 R=0.337 rms=0.047 n=1588
+tab outer edge: centre r=33.866 z=-8.595 R=0.775 rms=0.152 n=10822
+flange outer-bottom round: centre r=30.508 z=-12.768 R=0.196 rms=0.070 n=4471
+wall-flange top fillet: centre r=23.479 z=-10.378 R=0.380 rms=0.060 n=4074
+flange-lip inner fillet few

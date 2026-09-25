@@ -1,0 +1,10 @@
+slot outer wall (inward-facing): n=549 area=12.4 r50=7.501 r05=7.405 r95=7.559
+slot inner wall = hub ring outer (below z0): n=546 area=16.9 r50=6.141 r05=6.067 r95=6.242
+slot outer wall          [(-168, -161), (-106, -72), (-25, 15), (62, 94)]
+slot end 1 50 th 63.32 n 82
+slot end 1 140 th 153.00 n 62
+slot end -1 50 th 105.38 n 10
+slot end -1 -130 th -72.94 n 55
+wrap slot ends [-163.7 -161.1] 112
+bore bottom? few 0
+centre bore wall: n=459 area=9.3 r50=1.302 r05=1.181 r95=1.389
