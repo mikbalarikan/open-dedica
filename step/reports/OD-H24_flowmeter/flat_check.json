@@ -1,0 +1,24 @@
+{
+  "OD-H24_flowmeter_scanframe.step": {
+    "solids": 1,
+    "faces": 203,
+    "valid": true,
+    "PRODUCT": 1,
+    "NEXT_ASSEMBLY_USAGE_OCCURRENCE": 0,
+    "MANIFOLD_SOLID_BREP": 1,
+    "CLOSED_SHELL": 1,
+    "BREP_WITH_VOIDS": 0,
+    "size_MB": 0.91
+  },
+  "OD-H24_flowmeter.step": {
+    "solids": 1,
+    "faces": 203,
+    "valid": true,
+    "PRODUCT": 1,
+    "NEXT_ASSEMBLY_USAGE_OCCURRENCE": 0,
+    "MANIFOLD_SOLID_BREP": 1,
+    "CLOSED_SHELL": 1,
+    "BREP_WITH_VOIDS": 0,
+    "size_MB": 0.87
+  }
+}
