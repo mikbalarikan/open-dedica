@@ -25,9 +25,10 @@ Nobody is pre-assigned — **pick any open issue**. Start with [`good first issu
 ## Repository layout
 
 ```
-docs/          SOURCING_GUIDE.md (sourcing + reverse-engineering guide), BOM.md (master BOM)
-scans/         <ref#>_<code>_<name>/  photos/, calipers.md, raw STL/PLY   (phase 1)
-step/          <ref#>_<code>_<name>.step  clean parametric models      (phase 2)
+docs/          SOURCING_GUIDE.md, BOM.md (generated) + bom.csv (source), PART_NUMBERING.md
+tools/         build_bom.py — regenerates docs/BOM.md from docs/bom.csv
+scans/         OD-Xnn_<name>/  photos/, calipers.md, raw STL/PLY   (phase 1)
+step/          OD-Xnn_<name>.step  clean parametric models          (phase 2)
 chassis/       printed chassis CAD + STL/3MF exports                     (phase 3)
 electronics/   wiring, pinouts, firmware                                  (phase 4)
 ```

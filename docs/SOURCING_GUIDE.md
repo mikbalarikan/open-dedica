@@ -164,7 +164,7 @@ The thesis blocked the steam line with high-temp epoxy for prototype 1 and never
 | Part | EC885 code (ref#) |
 |---|---|
 | Power PCB | 59: AS00002829 — AliExpress: [EC680/EC685 power board ~$40](https://www.aliexpress.com/item/4001101696035.html); eBay: [power PCB 230V EC680/685/695/785](https://www.ebay.com/itm/175759949100) |
-| Control board (front buttons) | 15: 7313285179 |
+| Control board (front buttons) | 15: 7313285189 |
 | Microswitch | 16: 5113210421 |
 | On/off button 28: 5913216331, unipolar switch 29: 5128109300, mains cord 53, wiring looms 56–58 | |
 
@@ -196,14 +196,14 @@ The thesis SSR/relay/thermocouple part links (RS, TME, Pimoroni) are preserved i
 
 ## 5. From Parts to STEP Files (scan & CAD workflow)
 
-Goal: a `STEP/` library where every purchased part has a dimensionally-trusted model, so the chassis is designed against reality.
+Goal: a `step/` library where every purchased part has a dimensionally-trusted model, so the chassis is designed against reality.
 
 **Per-part workflow:**
 1. **Photograph** the part on a grid mat (top/bottom/sides + connector close-ups). Store in `SCANS/<part>/photos/`.
 2. **Measure** critical interfaces with calipers: mounting hole patterns, boss diameters, tube spigots, connector pitch. Interfaces must be caliper-accurate — scans are for envelopes, calipers are for fits.
 3. **Scan** organic/complex parts (thermoblock casting, pump body, tank): photogrammetry (60–100 photos, matte spray on shiny silicone/chrome) or a structured-light scanner. Export mesh (STL/PLY).
 4. **Rebuild as parametric CAD**, don't ship raw meshes: import mesh as reference, model clean solids over it (Fusion/SolidWorks/FreeCAD). Simple parts (tubes, gaskets, brackets) get modeled from caliper dims alone.
-5. **Export STEP (AP214)** to `STEP/` with the naming scheme `<ref#>_<code>_<name>.step` (e.g. `40_AS00002825_ulka_ep5_pump.step`).
+5. **Export STEP (AP214)** to `step/` with the naming scheme `OD-Xnn_<name>.step` (e.g. `OD-H01_ulka_ep5_pump.step`; see [PART_NUMBERING.md](PART_NUMBERING.md)).
 6. **Validate**: print a check-fixture (a ring or cradle) for each critical part and test-fit the real component before trusting the model in the chassis assembly.
 
 We already have a FreeCAD batch pipeline (freecadcmd) for STEP→STL conversion from other projects — reuse it for print exports.

@@ -1,14 +1,14 @@
 name: 3D scan request
 description: Request photos + caliper sheet + raw STL for a physical part (phase 1)
-title: "[Scan] <ref#> <part name>"
+title: "[Scan] OD-Xnn <part name>"
 labels: ["phase: scan", "help wanted"]
 body:
   - type: input
     id: part
     attributes:
       label: Part
-      description: "Ref# / OEM code / name, as in docs/BOM.md"
-      placeholder: "40 / AS00002825 / ULKA EP5 pump"
+      description: "OD part number / Ref# / OEM code / name, as in docs/BOM.md"
+      placeholder: "OD-H01 / 40 / AS00002825 / ULKA EP5 pump"
     validations:
       required: true
   - type: textarea
