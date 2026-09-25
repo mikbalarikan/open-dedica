@@ -6,6 +6,12 @@ The only part of a Dedica you cannot buy as a spare is the group-head housing, w
 
 > ⚠️ **Safety:** this machine runs on mains voltage (230 V / 120 V), heats water to ~125 °C and pressurizes it to 15 bar. Keep the wet side separated from the electric side, keep the 192 °C thermal cutoff (TCO) in circuit, test behind an RCD/GFCI, and never print load-bearing or heat-adjacent parts in PLA.
 
+## How it works
+
+[![Water path schematic](docs/img/water_flow.svg)](docs/WATER_FLOW.md)
+
+Tank → flowmeter → ULKA pump → 3-way valve (bypass back to tank) → thermoblock → 3-way connector → group head. The steam branch is phase 2. Details: [docs/WATER_FLOW.md](docs/WATER_FLOW.md).
+
 ## Roadmap
 
 | Phase | Goal | Tracking |
@@ -25,7 +31,7 @@ Nobody is pre-assigned — **pick any open issue**. Start with [`good first issu
 ## Repository layout
 
 ```
-docs/          SOURCING_GUIDE.md, BOM.md (generated) + bom.csv (source), PART_NUMBERING.md
+docs/          SOURCING_GUIDE.md, BOM.md (generated) + bom.csv (source), PART_NUMBERING.md, WATER_FLOW.md
 tools/         build_bom.py — regenerates docs/BOM.md from docs/bom.csv
 scans/         OD-Xnn_<name>/  photos/, calipers.md, raw STL/PLY   (phase 1)
 step/          OD-Xnn_<name>.step  clean parametric models          (phase 2)
