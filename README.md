@@ -25,7 +25,8 @@ Nobody is pre-assigned — **pick any open issue**. Start with [`good first issu
 ## Repository layout
 
 ```
-docs/          SOURCING_GUIDE.md (sourcing + reverse-engineering guide), BOM.md (master BOM)
+docs/          SOURCING_GUIDE.md (sourcing + reverse-engineering guide), BOM.md (master BOM),
+               ALIEXPRESS_SHOPPING_LIST.md (ready-to-order AliExpress carts)
 scans/         <ref#>_<code>_<name>/  photos/, calipers.md, raw STL/PLY   (phase 1)
 step/          <ref#>_<code>_<name>.step  clean parametric models      (phase 2)
 chassis/       printed chassis CAD + STL/3MF exports                     (phase 3)

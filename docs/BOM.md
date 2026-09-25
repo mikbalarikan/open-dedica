@@ -1,6 +1,6 @@
 # Master BOM — Open-Source DIY Dedica (EC685 platform, 230 V build)
 
-Companion to [SOURCING_GUIDE.md](SOURCING_GUIDE.md).
+Companion to [SOURCING_GUIDE.md](SOURCING_GUIDE.md). Ready-to-order AliExpress carts: [ALIEXPRESS_SHOPPING_LIST.md](ALIEXPRESS_SHOPPING_LIST.md).
 Ref# = position in `EC885 Exploded View .pdf`. Codes are De'Longhi OEM part codes (EC885.M table; EC680/EC685 equivalents interchange on the wet side — verify by PNC before ordering).
 Prices are 2026 estimates; ✔ in **Scan** = part needs a STEP model because the chassis touches it.
 
