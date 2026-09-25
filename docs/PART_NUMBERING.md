@@ -1,35 +1,35 @@
 # Part numbering
 
-Every part in the project — OEM spare, printed part, screw, assembly, test fixture — has one **part number** `OD-NNN`.
+Every part in the project — OEM spare, printed part, screw, assembly, test fixture — has one **part number** `OD-Xnn`.
 The same number is used in the BOM, CAD file names, scan folders, issue titles and PR titles.
 
 ## Format
 
 ```
-OD-NNN
+OD-Xnn
    │└┴─ item within the group (01–99)
-   └─── group
+   └─── group letter
 ```
 
-| Range | Group |
-|---|---|
-| `OD-000` | Top assembly (whole machine) |
-| `OD-1xx` | Hydraulic core — pump, thermoblock (`OD-110` sub-assembly), valves, flowmeter |
-| `OD-2xx` | Group head & portafilter |
-| `OD-3xx` | Water path — tank, tubes, springs, O-rings, clips |
-| `OD-4xx` | Electronics — `OD-401…449` OEM path 1, `OD-451…499` open-controller path 2 |
-| `OD-5xx` | Chassis & body — `OD-501…519` printed chassis, `OD-521…` tray / cup rest / feet |
-| `OD-6xx` | Standard hardware & consumables |
-| `OD-7xx` | Steam system (phase 2) |
-| `OD-8xx` | OEM parts we do **not** use — reference only |
-| `OD-9xx` | Fixtures & test rigs |
+| Letter | Group | Examples |
+|---|---|---|
+| `OD-000` | Top assembly (whole machine) | |
+| **H** | **H**ydraulic core — pump, thermoblock, valves, flowmeter | `OD-H01` pump, `OD-H10` thermoblock sub-assy, `OD-H11` thermoblock |
+| **G** | **G**roup head & portafilter | `OD-G01` printed group head housing, `OD-G10` portafilter |
+| **W** | **W**ater path — tank, tubes, springs, O-rings, clips | `OD-W01` water tank assy |
+| **E** | **E**lectronics — `E01…E49` OEM path 1, `E51…E99` open-controller path 2 | `OD-E01` power PCB, `OD-E51` ESP32 |
+| **C** | **C**hassis & body — `C01…C19` printed chassis, `C21…` tray / cup rest / feet | `OD-C03` pump cradle |
+| **F** | **F**asteners, standard hardware & consumables | `OD-F01` M3 heat-set insert |
+| **S** | **S**team system (phase 2) | `OD-S01` steam valve |
+| **R** | OEM parts we do not use — **R**eference only | `OD-R01` OEM upper cover |
+| **T** | **T**est fixtures & rigs | `OD-T01` group head pressure rig |
 
 Rules:
 
-1. **`OD-x00` is the assembly of its group.** Sub-assemblies inside a group use a round ten (`OD-110` thermoblock sub-assembly, `OD-210` portafilter).
+1. **`OD-X00` is the assembly of its group** (`OD-H00` hydraulic core, `OD-C00` chassis). Sub-assemblies inside a group use a round ten (`OD-H10` thermoblock sub-assembly, `OD-G10` portafilter).
 2. **Numbers are never reused.** A dropped part keeps its number with status `deferred`; a new part takes the next free number in its group.
-3. **Variants of the same part** get a letter suffix: `OD-201A`, `OD-201B` (e.g. two group-head housing designs being compared). The winner keeps the plain number.
-4. **Check fixtures** use the part number plus `-FX`: `OD-111-FX` is the check-fixture for the thermoblock. They are not listed in the BOM.
+3. **Variants of the same part** get a letter suffix: `OD-G01A`, `OD-G01B` (e.g. two group-head housing designs being compared). The winner keeps the plain number.
+4. **Check fixtures** use the part number plus `-FX`: `OD-H11-FX` is the check-fixture for the thermoblock. They are not listed in the BOM.
 5. **Revisions are git history**, not file names. Tag releases (`v0.1`, …) instead of `_rev2` files.
 6. The BOM keeps the De'Longhi **Ref#** and **OEM code** next to every OEM part, so ordering and the exploded view stay traceable.
 
@@ -41,15 +41,15 @@ Rules:
 
 | Where | Example |
 |---|---|
-| Scan folder | `scans/OD-111_thermoblock/` |
-| STEP | `step/OD-111_thermoblock.step` |
-| Assembly STEP | `step/OD-110_thermoblock_assy.step` |
-| Printed part | `chassis/OD-503_pump_cradle.step` + `.3mf` |
-| Check fixture | `step/OD-111-FX_thermoblock_fixture.step` |
+| Scan folder | `scans/OD-H11_thermoblock/` |
+| STEP | `step/OD-H11_thermoblock.step` |
+| Assembly STEP | `step/OD-H10_thermoblock_assy.step` |
+| Printed part | `chassis/OD-C03_pump_cradle.step` + `.3mf` |
+| Check fixture | `step/OD-H11-FX_thermoblock_fixture.step` |
 
 `short_name`: lowercase, `snake_case`, ≤ 30 characters.
 
-In CAD, name the **body / component** with the part number too (`OD-111 Thermoblock`) so assemblies stay readable after STEP export.
+In CAD, name the **body / component** with the part number too (`OD-H11 Thermoblock`) so assemblies stay readable after STEP export.
 
 ## Adding a part
 

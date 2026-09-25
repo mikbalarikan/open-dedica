@@ -203,7 +203,7 @@ Goal: a `step/` library where every purchased part has a dimensionally-trusted m
 2. **Measure** critical interfaces with calipers: mounting hole patterns, boss diameters, tube spigots, connector pitch. Interfaces must be caliper-accurate — scans are for envelopes, calipers are for fits.
 3. **Scan** organic/complex parts (thermoblock casting, pump body, tank): photogrammetry (60–100 photos, matte spray on shiny silicone/chrome) or a structured-light scanner. Export mesh (STL/PLY).
 4. **Rebuild as parametric CAD**, don't ship raw meshes: import mesh as reference, model clean solids over it (Fusion/SolidWorks/FreeCAD). Simple parts (tubes, gaskets, brackets) get modeled from caliper dims alone.
-5. **Export STEP (AP214)** to `step/` with the naming scheme `OD-NNN_<name>.step` (e.g. `OD-101_ulka_ep5_pump.step`; see [PART_NUMBERING.md](PART_NUMBERING.md)).
+5. **Export STEP (AP214)** to `step/` with the naming scheme `OD-Xnn_<name>.step` (e.g. `OD-H01_ulka_ep5_pump.step`; see [PART_NUMBERING.md](PART_NUMBERING.md)).
 6. **Validate**: print a check-fixture (a ring or cradle) for each critical part and test-fit the real component before trusting the model in the chassis assembly.
 
 We already have a FreeCAD batch pipeline (freecadcmd) for STEP→STL conversion from other projects — reuse it for print exports.

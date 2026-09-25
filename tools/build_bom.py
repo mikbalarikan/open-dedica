@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CSV = ROOT / "docs" / "bom.csv"
 MD = ROOT / "docs" / "BOM.md"
 
-PART_NO = re.compile(r"^OD-\d{3}$")
+PART_NO = re.compile(r"^OD-(000|[HGWECFSRT]\d{2})$")
 TYPES = {"ASM", "OEM", "PRINT", "MFG", "ELEC", "STD", "REF", "FIX"}
 CADS = {"SCAN", "CALIPER", "ENVELOPE", "DESIGN", "VENDOR", "—"}
 STATUS = {"todo", "proposed", "scanned", "modeled", "validated", "deferred", "ref"}
@@ -21,22 +21,22 @@ STATUS_ICON = {"todo": "☐", "proposed": "✎", "scanned": "📷", "modeled": "
 
 GROUPS = [
     ("OD-0", "OD-000 — Top assembly"),
-    ("OD-1", "OD-100 — Hydraulic core"),
-    ("OD-2", "OD-200 — Group head & portafilter"),
-    ("OD-3", "OD-300 — Water path"),
-    ("OD-4", "OD-400 — Electronics"),
-    ("OD-5", "OD-500 — Chassis & body"),
-    ("OD-6", "OD-600 — Standard hardware & consumables"),
-    ("OD-7", "OD-700 — Steam system (phase 2)"),
-    ("OD-8", "OD-800 — OEM parts not used (reference only)"),
-    ("OD-9", "OD-900 — Fixtures & test rigs"),
+    ("OD-H", "H — Hydraulic core"),
+    ("OD-G", "G — Group head & portafilter"),
+    ("OD-W", "W — Water path"),
+    ("OD-E", "E — Electronics"),
+    ("OD-C", "C — Chassis & body"),
+    ("OD-F", "F — Fasteners, standard hardware & consumables"),
+    ("OD-S", "S — Steam system (phase 2)"),
+    ("OD-R", "R — OEM parts not used (reference only)"),
+    ("OD-T", "T — Test fixtures & rigs"),
 ]
 
 HEADER = """# Master BOM — Open Dedica (EC685 platform, 230 V build)
 
 > **Generated from [`bom.csv`](bom.csv) by `tools/build_bom.py` — edit the CSV, not this file.**
 
-Every part that appears in CAD, in a scan folder, or on the shopping list has a project **part number** `OD-NNN`.
+Every part that appears in CAD, in a scan folder, or on the shopping list has a project **part number** `OD-Xnn`.
 See [PART_NUMBERING.md](PART_NUMBERING.md) for the rules. Ref# / OEM code = De'Longhi EC885.M exploded view
 (EC680/EC685 interchange on the wet side — verify by PNC before ordering). Prices are 2026 estimates in €.
 
@@ -111,11 +111,11 @@ BUDGET = """## Budget summary (230 V, no donor)
 
 | Block | Estimate |
 |---|---|
-| OD-100 Hydraulic core | €85–120 |
-| OD-200 Group head + portafilter | €45–60 |
-| OD-300 Water path | €50 |
-| OD-400 Electronics (either path) | €60–100 |
-| OD-500/600 Chassis hardware | €50 |
+| H Hydraulic core | €85–120 |
+| G Group head + portafilter | €45–60 |
+| W Water path | €50 |
+| E Electronics (either path) | €60–100 |
+| C/F Chassis hardware | €50 |
 | **Total (all new parts)** | **€290–380** |
 | **Donor-machine route** (broken EC685 €50 + wear kit €40 + chassis €50) | **~€140** |
 

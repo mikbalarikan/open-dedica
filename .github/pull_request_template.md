@@ -4,7 +4,7 @@ Closes #
 <!-- part name, folder, method -->
 
 ## Checklist
-- [ ] Folder / file names follow `OD-NNN_<short_name>` ([PART_NUMBERING](../docs/PART_NUMBERING.md))
+- [ ] Folder / file names follow `OD-Xnn_<short_name>` ([PART_NUMBERING](../docs/PART_NUMBERING.md))
 - [ ] New parts added to `docs/bom.csv` and `docs/BOM.md` regenerated
 - [ ] Units are millimetres
 - [ ] Interfaces measured with calipers (scan) / match calipers.md (STEP)

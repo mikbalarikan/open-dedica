@@ -12,10 +12,10 @@ All work is coordinated through **GitHub issues and pull requests** — no one i
 
 ## Naming
 
-Every part has a project part number `OD-NNN` — see [docs/PART_NUMBERING.md](docs/PART_NUMBERING.md) and [docs/BOM.md](docs/BOM.md). Files and folders are named:
+Every part has a project part number `OD-Xnn` — see [docs/PART_NUMBERING.md](docs/PART_NUMBERING.md) and [docs/BOM.md](docs/BOM.md). Files and folders are named:
 
 ```
-<part_no>_<short_name>          e.g.  OD-101_ulka_ep5_pump
+<part_no>_<short_name>          e.g.  OD-H01_ulka_ep5_pump
 ```
 
 A part that is missing from the BOM gets a number first: add it to `docs/bom.csv`, run `python tools/build_bom.py`, commit both.
@@ -39,8 +39,8 @@ A part that is missing from the BOM gets a number first: add it to `docs/bom.csv
 ## Phase 2 — STEP deliverables (`step/`)
 
 - Parametric rebuild over the mesh — **no raw-mesh STEP exports**. Tubes, gaskets and brackets can be modeled from calipers alone.
-- STEP AP214, millimetres, file name per the naming scheme; name the CAD body/component `OD-NNN Name` too.
-- Check-fixtures are named `OD-NNN-FX_<name>`.
+- STEP AP214, millimetres, file name per the naming scheme; name the CAD body/component `OD-Xnn Name` too.
+- Check-fixtures are named `OD-Xnn-FX_<name>`.
 - When a part moves to scanned / modeled / validated, update its `status` in `docs/bom.csv` in the same PR.
 - Validate with a printed check-fixture (ring / cradle) against the real part; add a photo of the fit to the PR.
 
