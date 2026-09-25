@@ -17,7 +17,7 @@ OD-H19,OD-H10,OEM,TCO fixing bracket,69,6013211951,1,SCAN,steel,FixPart,3,#2,tod
 OD-H21,OD-H00,OEM,Anti-drip valve,39,7313260161,1,SCAN,,FixPart / 4delonghi,5,#6,todo
 OD-H22,OD-H00,OEM,3-way valve,43,AS00004266,1,SCAN,,4delonghi `valve BARM30E`,5,#6,todo
 OD-H23,OD-H00,OEM,3-way valve connector,75,AS00005380,1,CALIPER,,4delonghi,3,#6,todo
-OD-H24,OD-H00,OEM,Flowmeter,45,5213225251,1,SCAN,,FixPart / 4delonghi,10–15,#7,todo
+OD-H24,OD-H00,OEM,Flowmeter,45,5213225251,1,SCAN,,FixPart / 4delonghi,10–15,#7,scanned
 OD-H25,OD-H00,OEM,Flowmeter–pump tube,37,AS00005774,1,ENVELOPE,,FixPart,4,,todo
 OD-G00,OD-000,ASM,Group head,,,1,DESIGN,,,,#3,todo
 OD-G01,OD-G00,PRINT,Group head housing (open-source replacement for the molded OEM housing),,,1,DESIGN,ABS/ASA,printed — thesis Appendix 2 as starting point,print,#3,todo

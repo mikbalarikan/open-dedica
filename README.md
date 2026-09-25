@@ -22,6 +22,10 @@ Tank → flowmeter → ULKA pump → 3-way valve (bypass back to tank) → therm
 | 4. Electronics | OEM PCB (path 1) vs ESP32 + SSR open controller (path 2) | `phase: electronics` |
 | 5. Test & release | Pressure / leak / PAT tests, BOM + STEP + STL/3MF + build guide | `phase: test` |
 
+**Scan → STEP progress** (auto-generated from the BOM, details in [docs/STEP_PROGRESS.md](docs/STEP_PROGRESS.md)):
+
+[![Scan to STEP progress](docs/img/step_progress.svg)](docs/STEP_PROGRESS.md)
+
 **Milestone 1:** donor machine torn down, every part catalogued against the BOM, STEP library validated with printed check-fixtures, printed group-head housing bench-tested under pressure.
 
 ## How to help
@@ -31,7 +35,7 @@ Nobody is pre-assigned — **pick any open issue**. Start with [`good first issu
 ## Repository layout
 
 ```
-docs/          SOURCING_GUIDE.md, BOM.md (generated) + bom.csv (source), PART_NUMBERING.md, WATER_FLOW.md
+docs/          SOURCING_GUIDE.md, BOM.md (generated) + bom.csv (source), PART_NUMBERING.md, WATER_FLOW.md, STEP_PROGRESS.md
 tools/         build_bom.py — regenerates docs/BOM.md from docs/bom.csv
 scans/         OD-Xnn_<name>/  photos/, calipers.md, raw STL/PLY   (phase 1)
 step/          OD-Xnn_<name>.step  clean parametric models          (phase 2)
