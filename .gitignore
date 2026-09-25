@@ -1,0 +1,6 @@
+desktop.ini
+.DS_Store
+Thumbs.db
+*.FCStd1
+*.FCBak
+__pycache__/

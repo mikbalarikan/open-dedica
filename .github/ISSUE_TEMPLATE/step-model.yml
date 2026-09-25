@@ -1,0 +1,27 @@
+name: STEP model (mesh → CAD)
+description: Rebuild a merged scan as a clean parametric STEP (phase 2)
+title: "[STEP] <ref#> <part name>"
+labels: ["phase: step", "help wanted"]
+body:
+  - type: input
+    id: part
+    attributes:
+      label: Part
+      placeholder: "40 / AS00002825 / ULKA EP5 pump"
+    validations:
+      required: true
+  - type: input
+    id: scan
+    attributes:
+      label: Source scan issue / folder
+      placeholder: "#12 — scans/40_AS00002825_ulka_ep5_pump/"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] Parametric solid (no mesh-wrapped STEP), mm, AP214
+        - [ ] All interfaces match calipers.md
+        - [ ] Printed check-fixture fits the real part (photo in PR)

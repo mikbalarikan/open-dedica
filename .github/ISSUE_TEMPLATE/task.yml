@@ -1,0 +1,21 @@
+name: Task / idea
+description: Any other work item (chassis, electronics, sourcing, docs)
+labels: ["triage"]
+body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      options: [scan, step, chassis, electronics, test, docs, sourcing]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs to be done
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done

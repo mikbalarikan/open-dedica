@@ -1,0 +1,5 @@
+*.stl binary
+*.ply binary
+*.3mf binary
+*.step binary
+*.stp binary
