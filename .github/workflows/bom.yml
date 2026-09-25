@@ -1,0 +1,16 @@
+name: BOM check
+on:
+  pull_request:
+    paths: ["docs/bom.csv", "docs/BOM.md", "tools/build_bom.py"]
+  push:
+    branches: [main]
+    paths: ["docs/bom.csv", "docs/BOM.md", "tools/build_bom.py"]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/build_bom.py --check

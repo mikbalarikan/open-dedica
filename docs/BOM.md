@@ -1,116 +1,197 @@
-# Master BOM — Open-Source DIY Dedica (EC685 platform, 230 V build)
+# Master BOM — Open Dedica (EC685 platform, 230 V build)
 
-Companion to [SOURCING_GUIDE.md](SOURCING_GUIDE.md).
-Ref# = position in `EC885 Exploded View .pdf`. Codes are De'Longhi OEM part codes (EC885.M table; EC680/EC685 equivalents interchange on the wet side — verify by PNC before ordering).
-Prices are 2026 estimates; ✔ in **Scan** = part needs a STEP model because the chassis touches it.
+> **Generated from [`bom.csv`](bom.csv) by `tools/build_bom.py` — edit the CSV, not this file.**
 
-## A. Hydraulic core
+Every part that appears in CAD, in a scan folder, or on the shopping list has a project **part number** `OD-NNN`.
+See [PART_NUMBERING.md](PART_NUMBERING.md) for the rules. Ref# / OEM code = De'Longhi EC885.M exploded view
+(EC680/EC685 interchange on the wet side — verify by PNC before ordering). Prices are 2026 estimates in €.
 
-| Ref# | Part | OEM code | Qty | ~Price | Source | Scan | Status |
-|---|---|---|---|---|---|---|---|
-| 40 | Pump ULKA EP5/EX5 48W 230V 15bar | AS00002825 | 1 | €12–25 | AliExpress `ULKA EP5 48W 230V` / eBay / ulkapumps.com | ✔ | ☐ |
-| 41 | Pump protector (rubber sleeve) | 5213211161 | 1 | €4 | AliExpress / FixPart | ✔ | ☐ |
-| 42 | Pump/OPV spring | 6113210761 | 1 | €3 | FixPart / 4delonghi | | ☐ |
-| 60 | Thermoblock generator 230V 1300W | 5513226671 | 1 | €25–40 | AliExpress `EC680 thermoblock` / espressocoffeeshop | ✔ | ☐ |
-| 61 | Spacer | 5332239300 | 2 | €3 | 4delonghi (thesis link) | | ☐ |
-| 62 | Generator gasket | 5313228791 | 2+2 spare | €3 | 4delonghi (thesis link) | | ☐ |
-| 67 | Connection | 5332242400 | 1 | €3 | 4delonghi (thesis link) | | ☐ |
-| 70 | Right-angle generator connection | 5313218931 | 1 | €4 | 4delonghi (thesis link) | | ☐ |
-| 39 | Anti-drip valve | 7313260161 | 1 | €5 | FixPart / 4delonghi (thesis link) | ✔ | ☐ |
-| 43 | 3-way valve | AS00004266 | 1 | €5 | 4delonghi `valve BARM30E` (thesis link) | ✔ | ☐ |
-| 75 | 3-way valve connector | AS00005380 | 1 | €3 | 4delonghi (thesis link) | | ☐ |
-| 45 | Flowmeter | 5213225251 | 1 | €10–15 | FixPart / 4delonghi (thesis link, "switch") | ✔ | ☐ |
-| 37 | Flowmeter–pump tube | AS00005774 | 1 | €4 | FixPart | | ☐ |
+**Type:** ASM assembly · OEM De'Longhi spare · PRINT our printed part · MFG our non-printed part ·
+ELEC off-the-shelf electronics · STD standard hardware · REF reference only · FIX fixture/test rig
+**CAD:** SCAN scan + parametric rebuild · CALIPER model from calipers · ENVELOPE simple placeholder solid ·
+DESIGN native design · VENDOR vendor STEP
+**Status:** ☐ todo · ✎ proposed · 📷 scanned · 🧊 modeled · ✅ validated (check-fixture) · ⏸ deferred
 
-## B. Group head (printed housing + OEM internals)
+## Assembly tree
 
-| Ref# | Part | OEM code | Qty | ~Price | Source | Scan | Status |
-|---|---|---|---|---|---|---|---|
-| — | **Group head housing — 3D printed (ABS/ASA)** | *open-source, ours* | 1 | print | thesis Appendix 2 CAD as starting point | ✔ | ☐ |
-| 46 | Brewing gasket | 537177 | 1+1 | €3 | 4delonghi (thesis link) | | ☐ |
-| 47 | Closure gasket | 5313221481 | 1+1 | €3 | FixPart | | ☐ |
-| 48 | Brewing gasket support | AS00005377 | 1 | €3 | 4delonghi (thesis link) | | ☐ |
-| 49 | Bottom/diffuser gasket | AS00005075 | 1+1 | €3 | 4delonghi (thesis link) | | ☐ |
-| 52 | Diffuser (shower screen) | 6013211191 | 1 | €3 | 4delonghi (thesis link) | ✔ | ☐ |
-| 54 | Connectors gasket | 5313237781 | 1 | €3 | FixPart | | ☐ |
-| 06 | Filter holder assembly 51 mm | AS00002706 | 1 | €20–30 | OEM or AliExpress `51mm bottomless portafilter Dedica` | ✔ | ☐ |
-| 03/04 | 1-cup / 2-cup filter baskets | AS00003137 / AS00003138 | 1 ea | €5 | OEM / aftermarket | | ☐ |
+- `OD-000` Open Dedica espresso machine (top assembly)
+  - `OD-100` Hydraulic core
+    - `OD-110` Thermoblock sub-assembly
+  - `OD-200` Group head
+    - `OD-210` Portafilter 51 mm (filter holder assembly)
+  - `OD-300` Water path
+    - `OD-301` Water tank assembly
+  - `OD-400` Electronics (choose Path 1 OEM or Path 2 open controller)
+  - `OD-500` Chassis & body
+    - `OD-521` Drip tray (or printed replacement)
+  - `OD-700` Steam system (phase 2 — not in v1)
 
-## C. Water path
+## OD-000 — Top assembly
 
-| Ref# | Part | OEM code | Qty | ~Price | Source | Scan | Status |
-|---|---|---|---|---|---|---|---|
-| 32 | Water tank | 7313285109 | 1 | €8–15 | 4delonghi (thesis link) / FixPart | ✔ | ☐ |
-| 30 | Tray gasket | 5313236391 | 1 | €3 | 4delonghi (thesis link) | | ☐ |
-| 31 | Tube L270 (tank→flowmeter) | 5313219841 | 1 | €4 | 4delonghi (thesis link) | | ☐ |
-| 33 | Tube L150 | 5313236101 | 1 | €4 | FixPart | | ☐ |
-| 71 | Tube 2 bushes L230 | 7313285899 | 1 | €5 | 4delonghi (thesis link) | | ☐ |
-| 72 | Tube 1 bush L135 | 5513213661 | 1 | €4 | FixPart | | ☐ |
-| 73 | PTFE tube DI2-DE4 L100 | 5532111900 | 1 | €4 | FixPart | | ☐ |
-| 35 | Connector springs | 6132101300 | 4 | €8 | 4delonghi (thesis link) | | ☐ |
-| 36 | O-ring D3.85 T2 | 5313217701 | 5+5 | €8 | 4delonghi (thesis link) | | ☐ |
-| 65 | Wire clips AISI302 | 6113213191 | 3 | €4 | FixPart | | ☐ |
+| Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `OD-000` |  | ASM | **Open Dedica espresso machine (top assembly)** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
 
-## D. Electronics — Path 1: OEM (pick one path)
+## OD-100 — Hydraulic core
 
-| Ref# | Part | OEM code | Qty | ~Price | Source | Scan | Status |
-|---|---|---|---|---|---|---|---|
-| 59 | Power PCB 230V | AS00002829 | 1 | €35–45 | [AliExpress 4001101696035](https://www.aliexpress.com/item/4001101696035.html) / eBay | ✔ | ☐ |
-| 15 | Control board (front panel) | 7313285179 | 1 | €15–25 | FixPart / eBay | ✔ | ☐ |
-| 16 | Microswitch | 5113210421 | 1 | €4 | FixPart | | ☐ |
-| 55 | NTC sensor | 5217100200 | 1 | €5 | FixPart | | ☐ |
-| 66 | NTC fixing bracket | 6113211071 | 1 | €3 | FixPart | | ☐ |
-| 68 | TCO 192 °C | 511876 | 1+1 | €5 | FixPart — **mandatory in heater circuit** | | ☐ |
-| 69 | TCO fixing bracket | 6013211951 | 1 | €3 | FixPart | | ☐ |
-| 53 | Mains cord w/ plug | region-specific | 1 | €8 | FixPart / generic IEC inlet | | ☐ |
-| 56–58 | Wiring looms | 5013211961 / 5032509200 / 5013276049 | 1 set | €10 | FixPart, or crimp own (6.3 mm spade, 105 °C wire) | | ☐ |
-| 29 | Unipolar switch 16A 250V | 5128109300 | 1 | €4 | FixPart | | ☐ |
+| Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `OD-100` | OD-000 | ASM | **Hydraulic core** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
+| `OD-101` | OD-100 | OEM | Pump ULKA EP5/EX5 48 W 230 V 15 bar | 40 | AS00002825 | 1 | SCAN |  | AliExpress `ULKA EP5 48W 230V` / eBay / ulkapumps.com | 12–25 | #1 | ☐ |
+| `OD-102` | OD-100 | OEM | Pump protector (rubber sleeve) | 41 | 5213211161 | 1 | SCAN | rubber | AliExpress / FixPart | 4 | #1 | ☐ |
+| `OD-103` | OD-100 | OEM | Pump suspension spring | 42 | 6113210761 | 1 | CALIPER | steel | FixPart / 4delonghi | 3 | #1 | ☐ |
+| `OD-110` | OD-100 | ASM | **Thermoblock sub-assembly** |  |  | 1 | DESIGN |  |  |  | #2 | ☐ |
+| `OD-111` | OD-110 | OEM | Thermoblock (generator 230 V 1300 W + plastic connector) | 60 | 5513226671 | 1 | SCAN | aluminium casting | AliExpress `EC680 thermoblock` / espressocoffeeshop | 25–40 | #2 | 📷 |
+| `OD-112` | OD-110 | OEM | Spacer | 61 | 5332239300 | 2 | CALIPER |  | 4delonghi | 3 |  | ☐ |
+| `OD-113` | OD-110 | OEM | Generator gasket | 62 | 5313228791 | 2 (+2 spare) | CALIPER | rubber | 4delonghi | 3 |  | ☐ |
+| `OD-114` | OD-110 | OEM | Connection | 67 | 5332242400 | 1 | CALIPER |  | 4delonghi | 3 |  | ☐ |
+| `OD-115` | OD-110 | OEM | Right-angle generator connection | 70 | 5313218931 | 1 | CALIPER |  | 4delonghi | 4 |  | ☐ |
+| `OD-116` | OD-110 | OEM | NTC sensor | 55 | 5217100200 | 1 | CALIPER |  | FixPart | 5 | #2 | ☐ |
+| `OD-117` | OD-110 | OEM | NTC fixing bracket | 66 | 6113211071 | 1 | SCAN | steel | FixPart | 3 | #2 | ☐ |
+| `OD-118` | OD-110 | OEM | TCO 192 °C thermal cutoff — **mandatory** | 68 | 511876 | 1 (+1 spare) | CALIPER |  | FixPart | 5 | #2 | ☐ |
+| `OD-119` | OD-110 | OEM | TCO fixing bracket | 69 | 6013211951 | 1 | SCAN | steel | FixPart | 3 | #2 | ☐ |
+| `OD-121` | OD-100 | OEM | Anti-drip valve | 39 | 7313260161 | 1 | SCAN |  | FixPart / 4delonghi | 5 | #6 | ☐ |
+| `OD-122` | OD-100 | OEM | 3-way valve | 43 | AS00004266 | 1 | SCAN |  | 4delonghi `valve BARM30E` | 5 | #6 | ☐ |
+| `OD-123` | OD-100 | OEM | 3-way valve connector | 75 | AS00005380 | 1 | CALIPER |  | 4delonghi | 3 | #6 | ☐ |
+| `OD-124` | OD-100 | OEM | Flowmeter | 45 | 5213225251 | 1 | SCAN |  | FixPart / 4delonghi | 10–15 | #7 | ☐ |
+| `OD-125` | OD-100 | OEM | Flowmeter–pump tube | 37 | AS00005774 | 1 | ENVELOPE |  | FixPart | 4 |  | ☐ |
 
-## D'. Electronics — Path 2: open controller (thesis/ESP32 route)
+## OD-200 — Group head & portafilter
 
-| Part | Spec | Qty | ~Price | Source | Status |
-|---|---|---|---|---|---|
-| ESP32 dev board (or 2× Arduino Uno per thesis) | 3.3V, WiFi | 1 | €5–10 | AliExpress | ☐ |
-| SSR for heater | ≥25 A, zero-cross, mains-rated | 1 | €8–15 | RS/TME (thesis links in docx) — avoid no-name for mains | ☐ |
-| Relay/SSR for pump | ≥2 A 230 V | 1 | €5–12 | RS/TME (thesis link) | ☐ |
-| Thermocouple K + MAX31855 | glass-braid, on thermoblock | 1 | €20 | Pimoroni (thesis links) / AliExpress | ☐ |
-| Pressure transducer (optional) | 0–300 PSI, G1/4 + tee | 1 | €15 | per CaiJonas repo BOM | ☐ |
-| PSU for logic | 5 V or 24 V (thesis used 24 V for relays) | 1 | €10 | Meanwell-style | ☐ |
-| 55/66/68/69 from Path 1 (NTC + TCO + brackets) | | 1 set | €16 | FixPart | ☐ |
+| Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `OD-200` | OD-000 | ASM | **Group head** |  |  | 1 | DESIGN |  |  |  | #3 | ☐ |
+| `OD-201` | OD-200 | PRINT | Group head housing (open-source replacement for the molded OEM housing) |  |  | 1 | DESIGN | ABS/ASA | printed — thesis Appendix 2 as starting point | print | #3 | ☐ |
+| `OD-202` | OD-200 | OEM | Brewing gasket | 46 | 537177 | 1 (+1 spare) | CALIPER | silicone | 4delonghi | 3 | #3 | ☐ |
+| `OD-203` | OD-200 | OEM | Closure gasket | 47 | 5313221481 | 1 (+1 spare) | CALIPER |  | FixPart | 3 | #3 | ☐ |
+| `OD-204` | OD-200 | OEM | Brewing gasket support | 48 | AS00005377 | 1 | CALIPER |  | 4delonghi | 3 | #3 | ☐ |
+| `OD-205` | OD-200 | OEM | Bottom (diffuser) gasket | 49 | AS00005075 | 1 (+1 spare) | CALIPER |  | 4delonghi | 3 | #3 | ☐ |
+| `OD-206` | OD-200 | OEM | Diffuser (shower screen) | 52 | 6013211191 | 1 | SCAN | stainless | 4delonghi | 3 | #3 | ☐ |
+| `OD-207` | OD-200 | OEM | Connectors gasket | 54 | 5313237781 | 1 | CALIPER |  | FixPart | 3 | #3 | ☐ |
+| `OD-208` | OD-200 | MFG | Group head face plate with portafilter lugs (optional upgrade) |  |  | 1 | DESIGN | aluminium / stainless (laser-cut or machined) | local shop | — |  | ✎ |
+| `OD-210` | OD-200 | OEM | Portafilter 51 mm (filter holder assembly) | 06 | AS00002706 | 1 | SCAN |  | OEM / AliExpress `51mm bottomless portafilter Dedica` | 20–30 | #4 | ☐ |
+| `OD-211` | OD-210 | OEM | Filter basket 1-cup | 03 | AS00003137 | 1 | CALIPER | stainless | OEM / aftermarket | 5 | #4 | ☐ |
+| `OD-212` | OD-210 | OEM | Filter basket 2-cup | 04 | AS00003138 | 1 | CALIPER | stainless | OEM / aftermarket | 5 | #4 | ☐ |
+| `OD-213` | OD-210 | OEM | ESE pods filter (optional) | 05 | 5513281011 | 1 | CALIPER |  | OEM | 5 |  | ☐ |
 
-## E. Chassis & body (the open-source part)
+## OD-300 — Water path
 
-| Part | Qty | ~Price | Source | Status |
-|---|---|---|---|---|
-| 3D-printed chassis set (ABS/ASA + PETG) | 1 | ~1.5 kg filament | our STEP/STL release | ☐ |
-| M3 heat-set inserts + M3×8 screws | ~40 | €10 | AliExpress | ☐ |
-| Acrylic panels 3 mm (optional skins, thesis style) | per design | €25 | local laser / leftover stock | ☐ |
-| 09/08 Drip tray + float (or printed) | 1 | €8–12 | FixPart / printed | ☐ |
-| 07/12 Cup rest grid | 1 | €5 / printed | FixPart / printed | ☐ |
-| 34/76 Rubber feet (or TPU printed) | 4 | €4 | FixPart / printed | ☐ |
-| Food-safe silicone tube 4×2 mm (custom routing reserve) | 1 m | €5 | AliExpress | ☐ |
-| High-temp epoxy (steam port blank, per thesis) | 1 | €8 | hardware store | ☐ |
+| Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `OD-300` | OD-000 | ASM | **Water path** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
+| `OD-301` | OD-300 | OEM | Water tank assembly | 18 | 5513200359 | 1 | SCAN |  | FixPart / 4delonghi | 8–15 | #5 | ☐ |
+| `OD-302` | OD-301 | OEM | Water tank | 32 | 7313285109 | 1 | SCAN |  | 4delonghi / FixPart | (in OD-301) | #5 | ☐ |
+| `OD-303` | OD-301 | OEM | Tray gasket | 30 | 5313236391 | 1 | CALIPER |  | 4delonghi | 3 | #5 | ☐ |
+| `OD-311` | OD-300 | OEM | Tube L270 (tank → flowmeter) | 31 | 5313219841 | 1 | ENVELOPE | silicone | 4delonghi | 4 |  | ☐ |
+| `OD-312` | OD-300 | OEM | Tube L150 | 33 | 5313236101 | 1 | ENVELOPE | silicone | FixPart | 4 |  | ☐ |
+| `OD-313` | OD-300 | OEM | Tube with 2 bushes L230 | 71 | 7313285899 | 1 | ENVELOPE |  | 4delonghi | 5 |  | ☐ |
+| `OD-314` | OD-300 | OEM | Tube with 1 bush L135 | 72 | 5513213661 | 1 | ENVELOPE |  | FixPart | 4 |  | ☐ |
+| `OD-315` | OD-300 | OEM | PTFE tube with 2 bushes DI2-DE4 L100 | 73 | 5532111900 | 1 | ENVELOPE | PTFE | FixPart | 4 |  | ☐ |
+| `OD-321` | OD-300 | OEM | Connector spring | 35 | 6132101300 | 4 | CALIPER | steel | 4delonghi | 8 (set) |  | ☐ |
+| `OD-322` | OD-300 | OEM | O-ring D3.85 T2 | 36 | 5313217701 | 5 (+5 spare) | CALIPER | rubber | 4delonghi | 8 (set) |  | ☐ |
+| `OD-323` | OD-300 | OEM | Clip (wire 1.2 AISI302) | 65 | 6113213191 | 3 | CALIPER | stainless | FixPart | 4 |  | ☐ |
 
-## F. Optional / phase 2 — steam
+## OD-400 — Electronics
 
-| Ref# | Part | OEM code | Qty | ~Price | Status |
-|---|---|---|---|---|---|
-| 17 | Steam valve assembly | AS00002707 | 1 | €15 | ☐ |
-| 10 | Steam hose assembly | AS00002705 | 1 | €12 | ☐ |
-| 13 | Steam knob | 7313285479 | 1 | €6 | ☐ |
-| 77 | Nozzle | AS00002710 | 1 | €5 | ☐ |
+| Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `OD-400` | OD-000 | ASM | **Electronics (choose Path 1 OEM or Path 2 open controller)** |  |  | 1 | DESIGN |  |  |  | #8 | ☐ |
+| `OD-401` | OD-400 | OEM | Power PCB 230 V — Path 1 | 59 | AS00002829 | 1 | SCAN |  | AliExpress 4001101696035 / eBay | 35–45 | #8 | ☐ |
+| `OD-402` | OD-400 | OEM | Control board assembly (front buttons) — Path 1 | 15 | 7313285189 | 1 | SCAN |  | FixPart / eBay | 15–25 | #8 | ☐ |
+| `OD-403` | OD-400 | OEM | Microswitch | 16 | 5113210421 | 1 | CALIPER |  | FixPart | 4 | #8 | ☐ |
+| `OD-404` | OD-400 | OEM | On/off push button | 28 | 5913216331 | 1 | CALIPER |  | FixPart | 3 |  | ☐ |
+| `OD-405` | OD-400 | OEM | Unipolar switch 16 A 250 V | 29 | 5128109300 | 1 | CALIPER |  | FixPart | 4 |  | ☐ |
+| `OD-406` | OD-400 | OEM | Power supply cord with plug (region-specific; AU code shown) | 53 | 5013276449 | 1 | ENVELOPE |  | FixPart / generic | 8 |  | ☐ |
+| `OD-407` | OD-400 | OEM | 6-pole wiring | 56 | 5013211961 | 1 | ENVELOPE |  | FixPart | 10 (set) |  | ☐ |
+| `OD-408` | OD-400 | OEM | Wiring with connectors | 57 | 5032509200 | 1 | ENVELOPE |  | FixPart | (set) |  | ☐ |
+| `OD-409` | OD-400 | OEM | Wiring | 58 | 5013276049 | 1 | ENVELOPE |  | FixPart | (set) |  | ☐ |
+| `OD-451` | OD-400 | ELEC | ESP32 dev board — Path 2 |  |  | 1 | VENDOR | 3.3 V WiFi | AliExpress | 5–10 |  | ☐ |
+| `OD-452` | OD-400 | ELEC | SSR for heater — Path 2 |  |  | 1 | VENDOR | ≥25 A zero-cross mains-rated | RS / TME (no no-name for mains) | 8–15 |  | ☐ |
+| `OD-453` | OD-400 | ELEC | Relay / SSR for pump — Path 2 |  |  | 1 | VENDOR | ≥2 A 230 V | RS / TME | 5–12 |  | ☐ |
+| `OD-454` | OD-400 | ELEC | Thermocouple type K — Path 2 |  |  | 1 | ENVELOPE | glass-braid | Pimoroni / AliExpress | 20 (with OD-455) |  | ☐ |
+| `OD-455` | OD-400 | ELEC | MAX31855 thermocouple board — Path 2 |  |  | 1 | VENDOR |  | Pimoroni / AliExpress | (with OD-454) |  | ☐ |
+| `OD-456` | OD-400 | ELEC | Pressure transducer (optional) — Path 2 |  |  | 1 | VENDOR | 0–300 PSI G1/4 | per CaiJonas repo BOM | 15 |  | ☐ |
+| `OD-457` | OD-400 | STD | G1/4 tee for pressure transducer (optional) |  |  | 1 | VENDOR | brass; 15 bar / 125 °C rated | hardware / AliExpress | 5 |  | ☐ |
+| `OD-458` | OD-400 | ELEC | Logic PSU — Path 2 |  |  | 1 | VENDOR | 5 V or 24 V | Mean Well-style | 10 |  | ☐ |
+| `OD-459` | OD-400 | MFG | SSR heat-sink plate |  |  | 1 | DESIGN | aluminium | local shop / scrap | — |  | ✎ |
+| `OD-460` | OD-400 | STD | IEC inlet with fuse (alternative to OD-406) |  |  | 1 | VENDOR |  | TME / AliExpress | 4 |  | ☐ |
 
----
+## OD-500 — Chassis & body
 
-### Budget summary (230 V, no donor)
+| Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `OD-500` | OD-000 | ASM | **Chassis & body** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
+| `OD-501` | OD-500 | PRINT | Base frame / floor plate |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
+| `OD-502` | OD-500 | PRINT | Wet/electric bulkhead with drainage path |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
+| `OD-503` | OD-500 | PRINT | Pump cradle (sleeve + spring suspension) |  |  | 1 | DESIGN | PETG | printed | print | #1 | ✎ |
+| `OD-504` | OD-500 | PRINT | Thermoblock mount (≥10 mm air gap to printed walls) |  |  | 1 | DESIGN | ASA / PC | printed | print | #2 | ✎ |
+| `OD-505` | OD-500 | PRINT | Group head carrier (ties OD-200 to frame) |  |  | 1 | DESIGN | ASA | printed | print | #3 | ✎ |
+| `OD-506` | OD-500 | PRINT | Water tank dock / inlet seat |  |  | 1 | DESIGN | PETG | printed | print | #5 | ✎ |
+| `OD-507` | OD-500 | PRINT | Valve & flowmeter mount (OPV reachable without disassembly) |  |  | 1 | DESIGN | PETG | printed | print | #6 | ✎ |
+| `OD-508` | OD-500 | PRINT | Electronics bay tray |  |  | 1 | DESIGN | PETG | printed | print | #8 | ✎ |
+| `OD-509` | OD-500 | PRINT | Front panel with button bezel |  |  | 1 | DESIGN | ASA | printed | print | #8 | ✎ |
+| `OD-510` | OD-500 | PRINT | Top panel (removable — 4 screws) |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
+| `OD-511` | OD-500 | PRINT | Back panel (removable — 4 screws) |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
+| `OD-512` | OD-500 | PRINT | Left side panel |  |  | 1 | DESIGN | ASA / PETG or 3 mm acrylic | printed | print |  | ✎ |
+| `OD-513` | OD-500 | PRINT | Right side panel |  |  | 1 | DESIGN | ASA / PETG or 3 mm acrylic | printed | print |  | ✎ |
+| `OD-514` | OD-500 | PRINT | Cable strain relief / grommet |  |  | 2 | DESIGN | TPU | printed | print |  | ✎ |
+| `OD-515` | OD-500 | PRINT | Foot (alternative to OD-525/526) |  |  | 4 | DESIGN | TPU | printed | print |  | ✎ |
+| `OD-516` | OD-500 | PRINT | Corner bracket for acrylic skins (optional) |  |  | 16 | DESIGN | ASA / PETG | printed | print |  | ✎ |
+| `OD-521` | OD-500 | OEM | Drip tray (or printed replacement) | 09 | 5313249971 | 1 | SCAN |  | FixPart / printed | 8–12 | #9 | ☐ |
+| `OD-522` | OD-521 | OEM | Float | 08 | 5313249981 | 1 | SCAN |  | FixPart | (with OD-521) | #9 | ☐ |
+| `OD-523` | OD-500 | OEM | Cup holder | 07 | 6013214801 | 1 | CALIPER |  | FixPart / printed | 5 | #9 | ☐ |
+| `OD-524` | OD-500 | OEM | Cup holder with frame | 12 | 5513226761 | 1 | CALIPER |  | FixPart / printed | (with OD-523) | #9 | ☐ |
+| `OD-525` | OD-500 | OEM | Rubber foot pad | 34 | 5313229381 | 2 | CALIPER | rubber | FixPart | 4 (set) |  | ☐ |
+| `OD-526` | OD-500 | OEM | Rubber foot pad | 76 | 5313274719 | 2 | CALIPER | rubber | FixPart | (set) |  | ☐ |
+
+## OD-600 — Standard hardware & consumables
+
+| Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `OD-601` | OD-000 | STD | M3 heat-set insert |  |  | ~40 | VENDOR | brass M3 | AliExpress | 10 (set) |  | ☐ |
+| `OD-602` | OD-000 | STD | M3×8 screw |  |  | ~40 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
+| `OD-603` | OD-000 | STD | Acrylic sheet 3 mm (optional skins) |  |  | per design | — | PMMA | local laser / leftover stock | 25 |  | ☐ |
+| `OD-604` | OD-000 | STD | Food-safe silicone tube 4×2 mm (routing reserve) |  |  | 1 m | ENVELOPE | silicone | AliExpress | 5 |  | ☐ |
+| `OD-605` | OD-000 | STD | High-temp epoxy (steam port blank) |  |  | 1 | — | 125 °C / 15 bar | hardware store | 8 |  | ☐ |
+| `OD-606` | OD-000 | STD | 6.3 mm insulated spade terminals + 105 °C wire (own looms) |  |  | 1 set | — |  | TME / AliExpress | 5 |  | ☐ |
+
+## OD-700 — Steam system (phase 2)
+
+| Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `OD-700` | OD-000 | ASM | **Steam system (phase 2 — not in v1)** |  |  | 1 | DESIGN |  |  |  |  | ⏸ |
+| `OD-701` | OD-700 | OEM | Steam valve assembly | 17 | AS00002707 | 1 | SCAN |  | FixPart | 15 |  | ⏸ |
+| `OD-702` | OD-700 | OEM | Steam hose assembly | 10 | AS00002705 | 1 | ENVELOPE |  | FixPart | 12 |  | ⏸ |
+| `OD-703` | OD-700 | OEM | Steam knob | 13 | 7313285479 | 1 | CALIPER |  | FixPart | 6 |  | ⏸ |
+| `OD-704` | OD-700 | OEM | Nozzle | 77 | AS00002710 | 1 | CALIPER |  | FixPart | 5 |  | ⏸ |
+| `OD-705` | OD-700 | OEM | Dispenser cover | 11 | 5313237931 | 1 | CALIPER |  | FixPart | 4 |  | ⏸ |
+
+## OD-800 — OEM parts not used (reference only)
+
+| Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `OD-801` |  | REF | Upper cover (OEM case — reference only) | 01 | 7313285179 | 0 | — |  | donor | — |  | — |
+| `OD-802` |  | REF | Left profile (OEM case — reference only) | 19 | 5313251321 | 0 | — |  | donor | — |  | — |
+| `OD-803` |  | REF | Right profile (OEM case — reference only) | 26 | 5313251311 | 0 | — |  | donor | — |  | — |
+| `OD-804` |  | REF | Coffee measuring spoon (accessory) | 02 | 7313286119 | 0 | — |  | donor | — |  | — |
+| `OD-805` |  | REF | Cleaning tool (accessory) | 000 | AS00003850 | 0 | — |  | donor | — |  | — |
+| `OD-806` |  | REF | Ecomulticlean 10 ml vial (accessory) | 000 | AS00000378 | 0 | — |  | donor | — |  | — |
+
+## OD-900 — Fixtures & test rigs
+
+| Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `OD-901` |  | FIX | Group head bench pressure-test rig (M1 close-out) |  |  | 1 | DESIGN |  | printed + fittings | — | #3 | ✎ |
+
+## Budget summary (230 V, no donor)
 
 | Block | Estimate |
 |---|---|
-| A. Hydraulic core | €85–120 |
-| B. Group head + portafilter | €45–60 |
-| C. Water path | €50 |
-| D. Electronics (either path) | €60–100 |
-| E. Chassis hardware | €50 |
+| OD-100 Hydraulic core | €85–120 |
+| OD-200 Group head + portafilter | €45–60 |
+| OD-300 Water path | €50 |
+| OD-400 Electronics (either path) | €60–100 |
+| OD-500/600 Chassis hardware | €50 |
 | **Total (all new parts)** | **€290–380** |
 | **Donor-machine route** (broken EC685 €50 + wear kit €40 + chassis €50) | **~€140** |
 
