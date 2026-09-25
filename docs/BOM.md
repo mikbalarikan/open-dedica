@@ -41,7 +41,7 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-H02` | OD-H00 | OEM | Pump protector (rubber sleeve) | 41 | 5213211161 | 1 | SCAN | rubber | AliExpress / FixPart | 4 | #1 | ☐ |
 | `OD-H03` | OD-H00 | OEM | Pump suspension spring | 42 | 6113210761 | 1 | CALIPER | steel | FixPart / 4delonghi | 3 | #1 | ☐ |
 | `OD-H10` | OD-H00 | ASM | **Thermoblock sub-assembly** |  |  | 1 | DESIGN |  |  |  | #2 | ☐ |
-| `OD-H11` | OD-H10 | OEM | Thermoblock (generator 230 V 1300 W + plastic connector) | 60 | 5513226671 | 1 | SCAN | aluminium casting | AliExpress `EC680 thermoblock` / espressocoffeeshop | 25–40 | #2 | 📷 |
+| `OD-H11` | OD-H10 | OEM | Thermoblock (generator 230 V 1300 W + plastic connector) | 60 | 5513226671 | 1 | SCAN | aluminium casting | AliExpress `EC680 thermoblock` / espressocoffeeshop | 25–40 | #2 | 🧊 |
 | `OD-H12` | OD-H10 | OEM | Spacer | 61 | 5332239300 | 2 | CALIPER |  | 4delonghi | 3 |  | ☐ |
 | `OD-H13` | OD-H10 | OEM | Generator gasket | 62 | 5313228791 | 2 (+2 spare) | CALIPER | rubber | 4delonghi | 3 |  | ☐ |
 | `OD-H14` | OD-H10 | OEM | Connection | 67 | 5332242400 | 1 | CALIPER |  | 4delonghi | 3 |  | ☐ |

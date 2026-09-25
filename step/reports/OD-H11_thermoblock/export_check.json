@@ -1,0 +1,80 @@
+{
+  "T_scan_to_datum": [
+    [
+      0.694782098,
+      -0.114532926,
+      0.710042284,
+      145.181215407
+    ],
+    [
+      0.267698295,
+      0.957487227,
+      -0.107498062,
+      -5.621764544
+    ],
+    [
+      -0.66754435,
+      0.264764838,
+      0.695905253,
+      158.107511752
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "exports": {
+    "datum": {
+      "step": "OD-H11_thermoblock.step",
+      "solids": 1,
+      "valid": true,
+      "closed": true,
+      "faces": 406,
+      "surface_types": {
+        "PLANE": 284,
+        "CONE": 43,
+        "CYLINDER": 73,
+        "BSPLINE": 6
+      },
+      "volume_mm3": 159766.5,
+      "bbox_min": [
+        -43.27,
+        -53.508,
+        -0.0
+      ],
+      "bbox_max": [
+        42.839,
+        53.381,
+        50.79
+      ],
+      "size_MB": 2.4
+    },
+    "scan": {
+      "step": "OD-H11_thermoblock_scanframe.step",
+      "solids": 1,
+      "valid": true,
+      "closed": true,
+      "faces": 406,
+      "surface_types": {
+        "PLANE": 284,
+        "CONE": 43,
+        "CYLINDER": 73,
+        "BSPLINE": 6
+      },
+      "volume_mm3": 159766.5,
+      "bbox_min": [
+        -60.941,
+        -69.977,
+        -244.032
+      ],
+      "bbox_max": [
+        21.486,
+        34.815,
+        -154.917
+      ],
+      "size_MB": 2.4
+    }
+  }
+}
