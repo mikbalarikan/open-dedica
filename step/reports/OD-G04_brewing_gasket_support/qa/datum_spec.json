@@ -1,0 +1,5 @@
+{"_source": "written by QA from intake/INTAKE_CARD.md §6 and intake/alignment.json descriptions (primary: plate back face, flat, material -z; secondary: outer cylindrical wall of the cup R~22.9; clock: fourier n=3 on the bayonet tabs r 32-35, tab nearest +X = tab 1). Not from builder code.",
+ "primary": {"type": "plane", "method": "vote", "cone_deg": 3.0, "band_mm": 0.30,
+             "region": {"r": [0, 19.0], "z": [-0.6, 0.6]}},
+ "position": {"type": "circle", "region": {"r": [22.3, 23.5], "z": [-7.0, -2.0]}, "single_wall": "outer", "wall": "outer"},
+ "clock": {"type": "fourier", "order": 3, "region": {"r": [32.0, 35.0]}, "offset_deg": 0.0}}

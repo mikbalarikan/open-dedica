@@ -1,0 +1,187 @@
+{
+  "alignment_matrix_4x4": [
+    [
+      0.814965,
+      -0.338986,
+      -0.470021,
+      -84.615798
+    ],
+    [
+      0.557588,
+      0.679655,
+      0.476618,
+      118.365353
+    ],
+    [
+      0.157885,
+      -0.650505,
+      0.74291,
+      150.286705
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "created": "2026-09-25T13:08:51+00:00",
+  "datum": {
+    "analytic_area_share": 1.0,
+    "area_mm2": 15848.885511,
+    "bbox": {
+      "max": [
+        34.52,
+        34.52,
+        1.09
+      ],
+      "min": [
+        -31.176337,
+        -34.479957,
+        -16.12
+      ],
+      "size": [
+        65.696337,
+        68.999957,
+        17.21
+      ]
+    },
+    "closed": true,
+    "edges": 473,
+    "faces": 174,
+    "failures": [],
+    "fillets": [],
+    "naked_edges": 0,
+    "nonmanifold_edges": 0,
+    "pass": true,
+    "ruled_like_faces": 0,
+    "sha256": "16b9f024720fb91444866d01cb982874a961e4d49ad5b67782b413cb8f6d753f",
+    "shell_closed": [
+      true
+    ],
+    "shells": 1,
+    "solids": 1,
+    "step": "OD-G04_brewing-gasket-support_datum.step",
+    "surface_types": {
+      "cone": {
+        "area_mm2": 87.258686,
+        "area_share": 0.005506,
+        "count": 1
+      },
+      "cylinder": {
+        "area_mm2": 6887.604092,
+        "area_share": 0.43458,
+        "count": 54
+      },
+      "plane": {
+        "area_mm2": 6547.649976,
+        "area_share": 0.41313,
+        "count": 107
+      },
+      "torus": {
+        "area_mm2": 2326.372758,
+        "area_share": 0.146785,
+        "count": 12
+      }
+    },
+    "valid": true,
+    "vertices": 312,
+    "volume_mm3": 17086.24424
+  },
+  "failures": [],
+  "frames_agree": {
+    "faces_equal": true,
+    "note": "scan-frame STEP moved back to the datum frame with the SAME trsf inverted; numerical round-trip only. It cannot prove the direction of T was applied correctly - verify that by overlaying the scan, not this number.",
+    "numeric_roundtrip_bbox_mm": 2.86e-07,
+    "volume_rel_diff": 0.0
+  },
+  "inputs": {
+    "../intake/alignment.json": "e3b7455c62cdb4f61ee56c503962bfd084c0cb5e0d1b30a623e4840f16bebe74",
+    "../measure/params.json": "749756129bf812963194fcd622265cd0cf959683023aeb2aa3539d2f11881b9f",
+    "/home/user/agentic_STL-to-CAD/runs/OD-G04_brewing-gasket-support/build/model.py": "1de53637a3bc367666a8f4d8552b7a5128d4a8a111dd70b6b159c747b32da9bd",
+    "fillets.json": "70eeca3351e9035b519f4a70572bd43205300aef4f5910f7980c90f68215778a"
+  },
+  "inverse_rotation": {
+    "det": 1.0,
+    "orthonormalisation_max_abs": 2.22e-16,
+    "singular_values": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "part": "OD-G04_brewing-gasket-support",
+  "pass": true,
+  "scan": {
+    "analytic_area_share": 1.0,
+    "area_mm2": 15848.885511,
+    "bbox": {
+      "max": [
+        11.701512,
+        20.681078,
+        -190.856194
+      ],
+      "min": [
+        -56.230423,
+        -29.885121,
+        -238.119206
+      ],
+      "size": [
+        67.931936,
+        50.5662,
+        47.263012
+      ]
+    },
+    "closed": true,
+    "edges": 473,
+    "faces": 174,
+    "failures": [],
+    "fillets": [],
+    "naked_edges": 0,
+    "nonmanifold_edges": 0,
+    "pass": true,
+    "ruled_like_faces": 0,
+    "sha256": "6d333f8a2949fd759ac4f1596afe7955b4a8a4898894d7d6ee5489070d66a4db",
+    "shell_closed": [
+      true
+    ],
+    "shells": 1,
+    "solids": 1,
+    "step": "OD-G04_brewing-gasket-support.step",
+    "surface_types": {
+      "cone": {
+        "area_mm2": 87.258686,
+        "area_share": 0.005506,
+        "count": 1
+      },
+      "cylinder": {
+        "area_mm2": 6887.604092,
+        "area_share": 0.43458,
+        "count": 54
+      },
+      "plane": {
+        "area_mm2": 6547.649976,
+        "area_share": 0.41313,
+        "count": 107
+      },
+      "torus": {
+        "area_mm2": 2326.372758,
+        "area_share": 0.146785,
+        "count": 12
+      }
+    },
+    "valid": true,
+    "vertices": 312,
+    "volume_mm3": 17086.24424
+  },
+  "schema": "stl-re/export_check@1",
+  "seed": 0,
+  "stl": {
+    "angular_tolerance": 0.05,
+    "frame": "scan",
+    "path": "OD-G04_brewing-gasket-support_cad.stl",
+    "tolerance": 0.003
+  },
+  "tool": "export_frames.py",
+  "tool_version": "stl-re-rebuild-build123d@1"
+}

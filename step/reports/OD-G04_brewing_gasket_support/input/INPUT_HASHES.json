@@ -1,0 +1,58 @@
+{
+  "created": "2026-09-25T12:37:50+00:00",
+  "files": [
+    {
+      "bytes": 24228984,
+      "mode": "copy",
+      "path": "input/scan.stl",
+      "role": "scan",
+      "sha256": "328fdbef574049ee1f0464882a402b6c40b59d231c812a10770938f445ba6010",
+      "source": "/root/.claude/uploads/87ae32b4-f4c0-5474-a996-b7cecace273f/f98a1526-OD-G04_Brewing_gasket_support.stl"
+    },
+    {
+      "bytes": 169252,
+      "mode": "copy",
+      "path": "input/photos/1.png",
+      "role": "photo",
+      "sha256": "7fce3d1172ce910474858262d8233d1622b68a0296a18738fe8373c74157453d",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/87ae32b4-f4c0-5474-a996-b7cecace273f/images/1.png"
+    },
+    {
+      "bytes": 164847,
+      "mode": "copy",
+      "path": "input/photos/2.png",
+      "role": "photo",
+      "sha256": "ba124ed3364db214b7c939a0847cdc112570fa52e0de457cfc1dffb6afc3e0e4",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/87ae32b4-f4c0-5474-a996-b7cecace273f/images/2.png"
+    },
+    {
+      "bytes": 101800,
+      "mode": "copy",
+      "path": "input/photos/3.png",
+      "role": "photo",
+      "sha256": "3b0eea4c8683441c53a6fed7f60463441c927c18335aaa0a411bbf501553f3cf",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/87ae32b4-f4c0-5474-a996-b7cecace273f/images/3.png"
+    },
+    {
+      "bytes": 83712,
+      "mode": "copy",
+      "path": "input/photos/4.png",
+      "role": "photo",
+      "sha256": "c4a6fe9e56cc796a9e57db4231e6b7d8109633a565c98d5b443a4f8aae3b4608",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/87ae32b4-f4c0-5474-a996-b7cecace273f/images/4.png"
+    }
+  ],
+  "inputs": {
+    "input/photos/1.png": "7fce3d1172ce910474858262d8233d1622b68a0296a18738fe8373c74157453d",
+    "input/photos/2.png": "ba124ed3364db214b7c939a0847cdc112570fa52e0de457cfc1dffb6afc3e0e4",
+    "input/photos/3.png": "3b0eea4c8683441c53a6fed7f60463441c927c18335aaa0a411bbf501553f3cf",
+    "input/photos/4.png": "c4a6fe9e56cc796a9e57db4231e6b7d8109633a565c98d5b443a4f8aae3b4608",
+    "input/scan.stl": "328fdbef574049ee1f0464882a402b6c40b59d231c812a10770938f445ba6010"
+  },
+  "part": "OD-G04_brewing-gasket-support",
+  "scan_resolution": "full",
+  "schema": "stl-re/INPUT_HASHES@1",
+  "seed": 0,
+  "tool": "init_run.py",
+  "tool_version": "stl-re-orchestrate@1"
+}

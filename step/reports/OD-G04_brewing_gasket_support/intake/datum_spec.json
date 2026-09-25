@@ -1,0 +1,56 @@
+{
+ "mesh": "work.stl",
+ "raw_scan": "../input/scan.stl",
+ "intake_json": "intake.json",
+ "out_dir": ".",
+ "seed": 0,
+ "noise": {
+  "from": "noise_primary.json"
+ },
+ "primary": {
+  "type": "plane",
+  "approx_normal": [
+   0.158234,
+   -0.652198,
+   0.74135
+  ],
+  "material_side": "-z",
+  "offset_range": [
+   -150.3,
+   -149.7
+  ],
+  "desc": "plate back face (flat outer face of the support disc)",
+  "why": "largest clean moulded flat; the back face that seats against the brew-group piston/gasket stack, all features stand off it"
+ },
+ "origin": {
+  "xy": {
+   "method": "wall_faces",
+   "wall": "outer",
+   "perp_max": 0.3,
+   "r_min": 21.0,
+   "r_max": 25.0,
+   "r_hint": 22.9,
+   "r_tol": 0.8,
+   "rms_max": 0.3,
+   "z_range": [
+    -9.5,
+    -2.0
+   ],
+   "stations": 8,
+   "desc": "outer cylindrical wall of the support cup (R~22.9, ~270 deg scanned)"
+  },
+  "definition": "cup outer wall axis \u2229 plate back face plane"
+ },
+ "clock": {
+  "rule": "fourier_mass",
+  "n": 3,
+  "r_range": [
+   32.0,
+   35.0
+  ],
+  "pick_nearest_deg": 0.0,
+  "label_rule": "the bayonet tab whose angular-mass centre is nearest +X is tab 1 -> +X",
+  "desc": "3 bayonet tabs on the outer rim",
+  "why": "tabs lock the part into the brew group; the only non-axisymmetric outer feature"
+ }
+}

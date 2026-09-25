@@ -1,0 +1,36 @@
+tab centre -123.44
+   da   -30  R_out 34.433  top -7.756  bot -9.495
+   da   -24  R_out 34.555  top -7.772  bot -9.517
+   da   -18  R_out 34.553  top -7.780  bot -9.519
+   da   -12  R_out 34.536  top -7.775  bot -9.518
+   da    -6  R_out 34.530  top -7.758  bot -9.502
+   da    +0  R_out 34.583  top -7.744  bot -9.502
+   da    +6  R_out 34.660  top -7.770  bot -9.519
+   da   +12  R_out 34.739  top -7.792  bot -9.536
+   da   +18  R_out 34.876  top -7.790  bot -9.549
+   da   +24  R_out 34.810  top -7.778  bot -9.546
+   da   +30  R_out 34.385  top -7.768  bot -9.536
+tab centre -3.29
+   da   -30  R_out 34.238  top   -     bot -9.571
+   da   -24  R_out 34.377  top   -     bot -9.603
+   da   -18  R_out 34.395  top   -     bot -9.616
+   da   -12  R_out 34.454  top   -     bot -9.633
+   da    -6  R_out 34.414  top -7.918  bot -9.646
+   da    +0  R_out 34.456  top -7.918  bot -9.655
+   da    +6  R_out 34.436  top -7.924  bot -9.657
+   da   +12  R_out 34.452  top -7.925  bot -9.653
+   da   +18  R_out 34.449  top -7.915  bot -9.642
+   da   +24  R_out 34.542  top -7.887  bot -9.619
+   da   +30  R_out 34.504  top -7.865  bot -9.587
+tab centre 116.78
+   da   -30  R_out 34.449  top -7.771  bot -9.480
+   da   -24  R_out 34.558  top -7.778  bot -9.484
+   da   -18  R_out 34.544  top -7.774  bot -9.470
+   da   -12  R_out 34.520  top -7.762  bot -9.296
+   da    -6  R_out 34.518  top -7.750  bot -9.260
+   da    +0  R_out 34.563  top -7.741  bot -9.252
+   da    +6  R_out 34.530  top -7.725  bot -9.248
+   da   +12  R_out 34.554  top -7.721  bot -9.415
+   da   +18  R_out 34.547  top -7.719  bot -9.419
+   da   +24  R_out 34.555  top -7.709  bot -9.410
+   da   +30  R_out 34.422  top -7.706  bot -9.404

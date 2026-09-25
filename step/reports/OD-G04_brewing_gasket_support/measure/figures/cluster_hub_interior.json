@@ -1,0 +1,37 @@
+{
+ "schema": "stl-re/sections_cluster.json@1",
+ "tool": "sections.py",
+ "tool_version": "stl-re-measure-intent@1.0.0",
+ "inputs": {
+  "intake/aligned_work.stl": "4ab66fb732235a07bb9add2e25fcfdbb914434a2d8f464508b0380dab2434080"
+ },
+ "seed": 0,
+ "created": "2026-09-25T12:51:20+00:00",
+ "frame": "datum; z along +Z, theta CCW about +Z from +X",
+ "cluster": {
+  "box": {
+   "z": "-16.5,-2.7",
+   "r": "0,7.7",
+   "theta": null
+  },
+  "n_vertices": 444,
+  "n_faces": 766,
+  "area_mm2": 13.337641,
+  "z_p50": -3.993638,
+  "z_p99": -2.724189,
+  "z_max": -2.703499,
+  "components": 14,
+  "largest_component_area_fraction": 0.758,
+  "top_plane": {
+   "n_faces": 29,
+   "tilt_from_z_deg": 0.380727,
+   "z": -2.755133,
+   "residual": {
+    "n": 29,
+    "rms": 0.029035,
+    "p95": 0.046702,
+    "max": 0.049681
+   }
+  }
+ }
+}

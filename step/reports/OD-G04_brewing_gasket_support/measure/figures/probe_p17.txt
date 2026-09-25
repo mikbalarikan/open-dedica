@@ -1,0 +1,4 @@
+hub bore step face (down-facing): n=237 area=5.8 z50=-10.445 z05=-10.498 z95=-10.401
+hub bore upper (z -9.5..-4): n=1758 area=83.6 r50=7.811 r05=7.738 r95=7.895
+hub bore lower (z -15..-10.8): n=3105 area=223.5 r50=8.384 r05=8.302 r95=8.461
+hub tube outer all z: n=7091 area=447.6 r50=10.027 r05=9.932 r95=10.100

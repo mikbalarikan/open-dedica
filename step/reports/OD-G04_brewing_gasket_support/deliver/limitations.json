@@ -1,0 +1,40 @@
+{
+ "schema": "stl-re/limitations@1",
+ "part": {"name": "OD-G04_brewing-gasket-support",
+  "what_it_is": "Brew-group gasket support disc: a moulded plastic cup with a flat back face, back bead and conical centre recess; on the front a stepped hub tube, six radial ribs, two ring-rib arcs, four screw bosses and two boss webs; an outer flange with a beaded gasket lip and three bayonet tabs at equal pitch.",
+  "reference_photo": "input/photos/1.png"},
+ "method_summary": [
+  "Intake: hashed the full-resolution scan, decimated a working copy, and aligned it to a datum frame (plate back face = z 0, cup outer wall axis = +Z, bayonet tab 1 toward +X).",
+  "Measure: derived every parameter from the scan (scan-only, no calipers; four catalogue photos for feature identification), with probe scripts and figures kept in measure/figures.",
+  "Build: build123d model.py built one revolve profile plus tabs, ribs, ring arcs, bosses, webs and cut tools from params.json and exported datum-frame and scan-frame STEP.",
+  "Verify: an independent agent re-registered the scan by its own ICP and graded two-way full-resolution deviation against the baseline-skill plastic band.",
+  "Deliver: packaged the owner-accepted BAND_NOT_MET result with a fresh-process reproducibility check and a delivery zip."],
+ "limitations": [
+  {"id": "L1", "text": "Tier-1 not run: no caliper sheet was supplied (scan-only run, DECISIONS.md MEASUREMENTS); no Tier-1 dimension is verified.", "rerun_trigger": "any caliper reading", "evidence": "qa/gate.json#limitations; qa/gate.json#auto_limitations: no Tier-1 (no calipers run); DECISIONS.md"},
+  {"id": "L2", "text": "Absolute scale not caliper-verified (CHK-SCALE not run; units assumed mm).", "rerun_trigger": "any caliper reading", "evidence": "qa/gate.json#limitations"},
+  {"id": "L3", "text": "The gated scan-to-CAD p95 ({{gate:deviation.scan_to_cad.p95}} mm) comes from the verifier's default ICP, which paired faces across the thin walls and shifted the CAD along z; the datum-frame grade and a diagnostic ICP with a tighter correspondence distance both stay inside the p95 band (qa/deviation_datum.json, qa/diagnostic/). The gate number is reported as graded.", "rerun_trigger": "a skill decision on the ICP correspondence distance for thin-walled parts, then re-run verify", "evidence": "qa/gate.json#limitations; qa/VERDICT.md 'Misses, per region'"},
+  {"id": "L4", "text": "CAD-to-scan observable miss ({{gate:deviation.cad_to_scan_observable.p95}} / {{gate:deviation.cad_to_scan_observable.max}} mm) is driven by surfaces the scanner never reached (front cavity: plate underside outside the scanned sector, rib sides, hub interior; outer-wall gap); the observability test counts them as observable. The model extrapolates those regions from the scanned ones.", "rerun_trigger": "a rescan covering the front cavity and the outer wall gap", "evidence": "qa/gate.json#limitations; intake/INTAKE_CARD.md section 3"},
+  {"id": "L5", "text": "Verify ran the observability step through a call wrapper with a smaller ray chunk to avoid running out of memory (identical per-ray results; no skill script edited).", "rerun_trigger": "none needed unless the skill changes the ray engine", "evidence": "qa/gate.json#limitations"},
+  {"id": "L6", "text": "Scan-to-CAD max ({{gate:deviation.scan_to_cad.max}} mm) is three isolated scan points (no cluster): one on a bayonet-tab end corner, two at the cup-wall/flange root.", "rerun_trigger": "a caliper reading of the across-tabs dimension", "evidence": "qa/VERDICT.md 'Misses, per region'"},
+  {"id": "L7", "text": "Centre post outer radius ({{params:centre_post_R_out.value}} mm) is photo-inferred; the plate underside is scanned only in one sector and assumed planar elsewhere at plate_under_z.", "rerun_trigger": "a caliper reading of plate thickness or the centre post", "evidence": "measure/params.json#centre_post_R_out, plate_under_z"},
+  {"id": "L8", "text": "Declared simplifications: equal tab heights (tab 1 measured lower), equal rib pitch (measured scatter kept in params), straight walls instead of mould draft, moulded text, ejector-pin marks and small rib/boss root fillets not modelled.", "rerun_trigger": "a functional fit issue on the tabs or a request for draft-exact geometry", "evidence": "measure/params.json#simplifications; qa/gate.json#checks.CHK-ENUM"},
+  {"id": "L9", "text": "The builder's own scan-to-CAD self-comparison that drove plan changes is a consistency check, not independent evidence (CHK-CIRCULAR); only the verifier's gate is evidence.", "rerun_trigger": "none; informative", "evidence": "qa/gate.json#checks.CHK-CIRCULAR; build/MODELING_PLAN.md section 0"}
+ ],
+ "assumptions": [
+  {"text": "Plate underside outside the scanned sector assumed planar at the scanned level; hub interior between the centre post and the hub bore closed at the plate underside.", "source": "assumed", "evidence": "build/MODELING_PLAN.md section 6"},
+  {"text": "Units are millimetres (no caliper check).", "source": "assumed", "evidence": "DECISIONS.md MEASUREMENTS"}
+ ],
+ "claim_boundary": {
+  "not_fit_for": ["tooling, mould design or mating-interface manufacture until the tabs, flange, lip and plate thickness are calipered", "tolerance-grade inspection: Tier-1 was not run and the scale is unverified"],
+  "fit_for": ["form, visual and fit-check prototyping (e.g. 3D-printed replacement trials)", "an editable parametric base: build/model.py driven by measure/params.json"]},
+ "repro_commands": ["cd build && python3 model.py --params ../measure/params.json --alignment ../intake/alignment.json --out . --part OD-G04_brewing-gasket-support --scripts <path to stl-re-rebuild-build123d/scripts>"],
+ "feature_tree": [
+  {"id": "F01", "feature": "revolve profile: plate, bead, hub ring, cone, centre bore/post, stepped hub tube, cup wall, flange, lip", "params": ["plate_under_z", "bead_R_in", "cup_R_out", "flange_bot_z", "lip_R_in", "hub_bore_R_upper"]},
+  {"id": "F01b", "feature": "lip outer bead", "params": ["lip_bead_R", "lip_bead_z"]},
+  {"id": "F02", "feature": "3 bayonet tabs", "params": ["tab_R_out", "tab_span_deg", "tab_phase_deg"]},
+  {"id": "F03", "feature": "6 radial ribs (stepped bottom)", "params": ["rib_t", "rib_phase_deg", "rib_step_r"]},
+  {"id": "F04", "feature": "2 ring-rib arcs", "params": ["ring_rib_R_in", "ring_rib_arcs_deg"]},
+  {"id": "F05", "feature": "4 screw bosses + 2 webs", "params": ["boss_R_out", "bossA_theta_deg", "bossB_theta_deg", "webA_t"]},
+  {"id": "F06", "feature": "cut: counterbored boss holes + 4 back slots", "params": ["boss_hole_r", "boss_cb_r", "slot_span_deg"]}
+ ]
+}

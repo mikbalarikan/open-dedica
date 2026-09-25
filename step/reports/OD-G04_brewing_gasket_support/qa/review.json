@@ -1,0 +1,98 @@
+{
+ "verdict": "BAND_NOT_MET",
+ "independence": "fresh agent (stl-re-verify stage), did not build the model; QA scripts from skills/stl-re-verify only; build/model.py only grepped for loft/polyline (never imported/executed); measure/params.json and build_log.txt not read; datum spec, zones and masks written by QA from INTAKE_CARD/alignment descriptions. Boss-hole zone boxes were placed from the STEP's own hole faces (B-rep query, reporting boxes only, not expected values).",
+ "photos": [
+  "input/photos/1.png",
+  "input/photos/2.png",
+  "input/photos/3.png",
+  "input/photos/4.png"
+ ],
+ "checks": {
+  "CHK-CIRCULAR": {
+   "ran": true,
+   "result": "finding",
+   "note": "QA gate independent: own ICP (T_refine QA-only, not written back), no expected values used. Finding: the builder's plan-change loop used a scan->CAD self-comparison on 100k samples (MODELING_PLAN \u00a70) and every param is scan-derived (scan-only run) - that record is a consistency check, not independent evidence."
+  },
+  "CHK-LIKE4LIKE": {
+   "ran": true,
+   "result": "n/a",
+   "note": "iteration 1; no _itN_SUPERSEDED to compare"
+  },
+  "CHK-INDEP": {
+   "ran": true,
+   "result": "pass",
+   "note": "fresh agent context; own scripts; builder numbers not used"
+  },
+  "CHK-FILLET": {
+   "ran": true,
+   "result": "pass",
+   "note": "export_check fillets [] (no fillet ops); all rounds are tangent arcs in revolve profiles, declared in MODELING_PLAN \u00a70/\u00a75; rib/boss root fillets declared not modelled (not silent)"
+  },
+  "CHK-PATCHWORK": {
+   "ran": true,
+   "result": "pass",
+   "note": "QA census: 174 faces, analytic area 100% (plane 107, cylinder 54, torus 12, cone 1), 0 freeform; grep of build/model.py: no loft/ruled/polyline"
+  },
+  "CHK-ENUM": {
+   "ran": true,
+   "result": "finding",
+   "note": "intake E1-E13 all present in CAD and visible in overlays/photos (6 ribs, 2 ring arcs, 4 bosses, 2 webs, 3 tabs, hub tube, 4 back slots, centre post); nothing hallucinated. Finding: E14 moulded text and the ejector-pin dimples on the flange (photo 1) are not modelled (declared/cosmetic); no scan->CAD over-band cluster >=20 pts"
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": true,
+   "result": "n/a",
+   "note": "Tier-1 not run (no calipers)"
+  },
+  "PHOTO-PLAUSIBILITY": {
+   "ran": true,
+   "result": "pass",
+   "note": "4 catalogue photos walked: front (ribs, arcs, bosses, hub, tabs), back (plate, bead, conical recess, 4 slots, centre bore) and side views agree with CAD overlays; no scale reference"
+  }
+ },
+ "cluster_explanations": {},
+ "limitations": [
+  {
+   "id": "L1",
+   "text": "Tier-1 not run: no caliper sheet (scan-only run, DECISIONS.md MEASUREMENTS).",
+   "rerun_trigger": "any caliper reading"
+  },
+  {
+   "id": "L2",
+   "text": "Absolute scale not caliper-verified (CHK-SCALE not run; units assumed mm).",
+   "rerun_trigger": "any caliper reading"
+  },
+  {
+   "id": "L3",
+   "text": "Default-parameter QA ICP (max_corr 3.0 mm) converged only after raising the cap 60->300 (run1 at cap 60 not converged: registration_run1_cap60.json) and applies a 0.29 mm +z shift contradicting QA's own datum audit (plane origin offset 0.03 mm); a diagnostic ICP with max_corr 1.0 mm (qa/diagnostic/, not the gate) moves only 0.044 mm.",
+   "rerun_trigger": "skill decision on ICP correspondence distance for thin-walled parts, then re-run verify"
+  },
+  {
+   "id": "L4",
+   "text": "Observability split is blind to line-of-sight-visible but unscanned surfaces: the front cavity (plate underside outside 20-80 deg, rib sides, hub interior) and the outer-wall gap count as 'observable'. 65% of CAD->scan over-band samples have their nearest scan point within 0.8 mm of a scan hole edge.",
+   "rerun_trigger": "a rescan covering the front cavity and the outer wall theta -69..+27"
+  },
+  {
+   "id": "L5",
+   "text": "deviation_gate.py observability OOM-killed at ~13.6 GB with the default 2000-ray chunk; run through a call wrapper that lowers observable_split(chunk=) to 50 (identical per-ray results). No skill script was edited.",
+   "rerun_trigger": "none needed unless the skill changes the ray engine"
+  }
+ ],
+ "miss_explanations": [
+  {
+   "region": "whole part scan->CAD p95 (0.376 vs 0.30)",
+   "cause": "registration, not geometry: default QA ICP matched CAD faces to the opposite skin across 2.3-2.6 mm walls (sign-free normal test, 3 mm correspondence) and shifted the CAD 0.29 mm in z; even the flat back face Z1 reads p95 0.366 post-ICP vs 0.146 in the builder datum frame. Datum frame p95 0.218 and diagnostic ICP (max_corr 1.0) p95 0.194 both pass.",
+   "options": "accept on the datum-frame/diagnostic evidence (human ACCEPT-BAND), or re-grade after a skill-level decision on ICP correspondence distance"
+  },
+  {
+   "region": "whole part scan->CAD max (0.832 vs 0.80)",
+   "cause": "3 isolated scan points of 245,660 (no cluster >=20): one on a bayonet-tab end corner r 35.35 theta 257.6 z -8.55 (scan extends ~0.8 mm beyond the CAD tab radius 34.52 locally), two at r 21.6 theta 263 z -13.5 at the cup-wall/flange root. Persists in every frame (datum 0.833, diagnostic 0.857).",
+   "options": "REVISE tab end/root geometry locally (small), or accept as scan edge fuzz; a caliper reading of tab outer radius would arbitrate"
+  },
+  {
+   "region": "CAD->scan observable (p95 2.325 / max 4.592 vs 0.30/0.80)",
+   "cause": "coverage: the front cavity (plate underside outside 20-80 deg, rib sides, cup inner wall, hub interior) and the outer wall gap theta -69..+27 were not scanned (INTAKE_CARD \u00a73); the ray test counts them as observable. Where the scan exists it overlays the CAD (overlays). Not fixable by geometry.",
+   "options": "rescan the front cavity/outer wall, or calipers on plate thickness, rib heights and wall thickness; or human acceptance of the unscanned-region extrapolation"
+  }
+ ],
+ "claim_boundary": "Not a caliper-verified or tolerance-grade model: no Tier-1, scale unverified, front cavity and hub interior extrapolated from partial scan. Fit for form/visual and fit-check prototyping only; not for tooling or mating-interface manufacture until calipered."
+}

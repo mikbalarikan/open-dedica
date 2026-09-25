@@ -64,7 +64,7 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-G01` | OD-G00 | PRINT | Group head housing (open-source replacement for the molded OEM housing) |  |  | 1 | DESIGN | ABS/ASA | printed — thesis Appendix 2 as starting point | print | #3 | ☐ |
 | `OD-G02` | OD-G00 | OEM | Brewing gasket | 46 | 537177 | 1 (+1 spare) | CALIPER | silicone | 4delonghi | 3 | #3 | ☐ |
 | `OD-G03` | OD-G00 | OEM | Closure gasket | 47 | 5313221481 | 1 (+1 spare) | CALIPER |  | FixPart | 3 | #3 | ☐ |
-| `OD-G04` | OD-G00 | OEM | Brewing gasket support | 48 | AS00005377 | 1 | CALIPER |  | 4delonghi | 3 | #3 | ☐ |
+| `OD-G04` | OD-G00 | OEM | Brewing gasket support | 48 | AS00005377 | 1 | SCAN |  | 4delonghi | 3 | #3 | 🧊 |
 | `OD-G05` | OD-G00 | OEM | Bottom (diffuser) gasket | 49 | AS00005075 | 1 (+1 spare) | CALIPER |  | 4delonghi | 3 | #3 | ☐ |
 | `OD-G06` | OD-G00 | OEM | Diffuser (shower screen) | 52 | 6013211191 | 1 | SCAN | stainless | 4delonghi | 3 | #3 | ☐ |
 | `OD-G07` | OD-G00 | OEM | Connectors gasket | 54 | 5313237781 | 1 | CALIPER |  | FixPart | 3 | #3 | ☐ |

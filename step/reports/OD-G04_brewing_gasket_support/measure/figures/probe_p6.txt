@@ -1,0 +1,43 @@
+z -11.5
+   (np.float64(15.343), np.float64(-1.78), np.float64(3.522), np.float64(0.023), -6.62, 15.446)
+z -13.5
+   (np.float64(8.89), np.float64(-16.766), np.float64(1.551), np.float64(0.027), -62.07, 18.977)
+   (np.float64(8.896), np.float64(-16.732), np.float64(3.494), np.float64(0.015), -62.0, 18.95)
+   (np.float64(15.353), np.float64(-1.769), np.float64(3.489), np.float64(0.01), -6.57, 15.455)
+   (np.float64(-7.537), np.float64(17.59), np.float64(1.559), np.float64(0.041), 113.19, 19.137)
+   (np.float64(-7.541), np.float64(17.525), np.float64(3.491), np.float64(0.012), 113.28, 19.079)
+   (np.float64(-15.428), np.float64(1.906), np.float64(3.504), np.float64(0.013), 172.96, 15.545)
+z -14.0
+   (np.float64(8.879), np.float64(-16.817), np.float64(1.88), np.float64(0.027), -62.17, 19.017)
+   (np.float64(8.898), np.float64(-16.744), np.float64(3.494), np.float64(0.009), -62.01, 18.961)
+   (np.float64(15.353), np.float64(-1.763), np.float64(3.488), np.float64(0.011), -6.55, 15.453)
+   (np.float64(-7.547), np.float64(17.553), np.float64(1.993), np.float64(0.028), 113.27, 19.107)
+   (np.float64(-7.543), np.float64(17.537), np.float64(3.488), np.float64(0.009), 113.27, 19.091)
+   (np.float64(-15.471), np.float64(1.91), np.float64(1.91), np.float64(0.047), 172.96, 15.589)
+   (np.float64(-15.433), np.float64(1.904), np.float64(3.498), np.float64(0.01), 172.97, 15.55)
+z -14.5
+   (np.float64(8.881), np.float64(-16.74), np.float64(1.998), np.float64(0.015), -62.05, 18.95)
+   (np.float64(8.893), np.float64(-16.744), np.float64(3.484), np.float64(0.011), -62.03, 18.959)
+   (np.float64(15.358), np.float64(-1.761), np.float64(3.482), np.float64(0.008), -6.54, 15.458)
+   (np.float64(15.372), np.float64(-1.729), np.float64(1.521), np.float64(0.065), -6.42, 15.469)
+   (np.float64(-7.538), np.float64(17.533), np.float64(3.475), np.float64(0.014), 113.26, 19.084)
+   (np.float64(-7.55), np.float64(17.555), np.float64(1.991), np.float64(0.015), 113.27, 19.109)
+   (np.float64(-15.434), np.float64(1.924), np.float64(1.995), np.float64(0.014), 172.89, 15.553)
+   (np.float64(-15.443), np.float64(1.911), np.float64(3.493), np.float64(0.01), 172.95, 15.561)
+z -15.0
+   (np.float64(7.022), np.float64(-14.964), np.float64(0.964), np.float64(0.331), -64.86, 16.529)
+   (np.float64(15.358), np.float64(-1.756), np.float64(3.479), np.float64(0.009), -6.52, 15.458)
+   (np.float64(15.323), np.float64(-1.735), np.float64(1.608), np.float64(0.023), -6.46, 15.421)
+   (np.float64(-15.464), np.float64(1.938), np.float64(2.19), np.float64(0.011), 172.86, 15.584)
+   (np.float64(-15.451), np.float64(1.913), np.float64(3.487), np.float64(0.007), 172.94, 15.569)
+b175 ring 0 1.4 down z50 -13.347 n 5
+b175 ring 1.6 2.8 down z50 -16.107 n 179
+b175 ring 2.9 4.2 down z50 -16.066 n 196
+b-3 ring 0 1.4 down z50 -13.458 n 3
+b-3 ring 1.6 2.8 down z50 -16.174 n 357
+b-3 ring 2.9 4.2 down z50 -16.143 n 324
+b113 ring 1.6 2.8 down z50 -14.844 n 228
+b113 ring 2.9 4.2 down z50 -14.824 n 332
+b-62 ring 0 1.4 down z50 -12.135 n 7
+b-62 ring 1.6 2.8 down z50 -14.937 n 316
+b-62 ring 2.9 4.2 down z50 -14.916 n 528

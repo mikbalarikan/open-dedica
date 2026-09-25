@@ -1,0 +1,20 @@
+{
+ "schema": "stl-re/hash_freeze@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-G04_brewing-gasket-support_datum.step": "16b9f024720fb91444866d01cb982874a961e4d49ad5b67782b413cb8f6d753f",
+  "build/OD-G04_brewing-gasket-support.step": "6d333f8a2949fd759ac4f1596afe7955b4a8a4898894d7d6ee5489070d66a4db"
+ },
+ "seed": null,
+ "created": "2026-09-25T13:12:08+00:00",
+ "before": {
+  "build/OD-G04_brewing-gasket-support_datum.step": "16b9f024720fb91444866d01cb982874a961e4d49ad5b67782b413cb8f6d753f",
+  "build/OD-G04_brewing-gasket-support.step": "6d333f8a2949fd759ac4f1596afe7955b4a8a4898894d7d6ee5489070d66a4db"
+ },
+ "after": {
+  "build/OD-G04_brewing-gasket-support_datum.step": "16b9f024720fb91444866d01cb982874a961e4d49ad5b67782b413cb8f6d753f",
+  "build/OD-G04_brewing-gasket-support.step": "6d333f8a2949fd759ac4f1596afe7955b4a8a4898894d7d6ee5489070d66a4db"
+ },
+ "unchanged": true
+}

@@ -1,0 +1,241 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/home/user/agentic_STL-to-CAD/runs/OD-G04_brewing-gasket-support/intake/work.stl": "c3df09d6cc2b4d850390c46a60a69fd0be9a84e58d5d635be8e3fd4ef5779ba1",
+  "/home/user/agentic_STL-to-CAD/runs/OD-G04_brewing-gasket-support/intake/datum_spec.json": "ff4ae815aa8e9471fb72433d759f139cf836023e87f1dd4a3fb4ea63f57f9bf7",
+  "/home/user/agentic_STL-to-CAD/runs/OD-G04_brewing-gasket-support/input/scan.stl": "328fdbef574049ee1f0464882a402b6c40b59d231c812a10770938f445ba6010",
+  "/home/user/agentic_STL-to-CAD/runs/OD-G04_brewing-gasket-support/intake/intake.json": "04ca10ad64e97d5029cdd278e0637ac66c54ceb2a871ba1ab64e957334f11184"
+ },
+ "seed": 0,
+ "created": "2026-09-25T12:41:32+00:00",
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [
+  "secondary circle residual not compared: no noise_secondary measured on a clean circle (plane noise is not comparable to section-circle residuals)"
+ ],
+ "matrix_4x4": [
+  [
+   0.8149651102294598,
+   -0.33898635105718095,
+   -0.47002140685890276,
+   -84.61579847607786
+  ],
+  [
+   0.5575877132474145,
+   0.6796551496240515,
+   0.47661810669028015,
+   118.36535273743843
+  ],
+  [
+   0.1578854367704745,
+   -0.6505052892839888,
+   0.7429098582394439,
+   150.28670544698878
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.04892255856114139,
+  "method": "rms of RANSAC+SVD plane on plate back face (flat outer face of the support disc, R<19) (9868 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "plate back face (flat outer face of the support disc)",
+  "why": "largest clean moulded flat; the back face that seats against the brew-group piston/gasket stack, all features stand off it",
+  "fit_rms_mm": 0.04892255856114139,
+  "fit_max_mm": 0.10973214744890776,
+  "fit_p95_mm": 0.08740943877602547,
+  "n_faces": 9868,
+  "area_mm2": 1067.7166869892733,
+  "fit_untrimmed": {
+   "rms": 0.0663582271114409,
+   "p95": 0.13209297457314098,
+   "max": 0.1929618629343314,
+   "n_faces": 11609
+  },
+  "inlier_frac": 0.5546558704453441,
+  "normal_raw": [
+   0.15788543677047456,
+   -0.6505052892839889,
+   0.7429098582394439
+  ],
+  "centroid_raw": [
+   -21.39307473444103,
+   -12.9542876107652,
+   -209.0911587531005
+  ],
+  "material_side": "-z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.5546558704453441
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "outer cylindrical wall of the support cup (R~22.9, ~270 deg scanned)",
+  "why": "",
+  "fit_rms_mm": 0.019786061278645406,
+  "fit_max_mm": 3.0728940849183175,
+  "fit_metric": "median / worst circle residual over stations (wall_faces)",
+  "stations": 4,
+  "r_by_feature": {
+   "outer cylindrical wall of the support cup (R~22.9, ~270 deg scanned)": {
+    "n": 4,
+    "r_mean": 22.90346056359496,
+    "r_std": 0.02026859229136214
+   }
+  },
+  "centre_std_mm": [
+   0.0035645215774715053,
+   0.005040767149347194
+  ],
+  "station_detail": [
+   {
+    "z": -5.28125,
+    "cx": 98.08483,
+    "cy": -107.47501,
+    "r": 22.92473,
+    "rms": 0.24157,
+    "max": 3.07289,
+    "p95": 0.0546,
+    "n": 352,
+    "iterations": 6,
+    "feature": "outer cylindrical wall of the support cup (R~22.9, ~270 deg scanned)"
+   },
+   {
+    "z": -4.34375,
+    "cx": 98.08592,
+    "cy": -107.47077,
+    "r": 22.92159,
+    "rms": 0.01868,
+    "max": 0.0583,
+    "p95": 0.03844,
+    "n": 330,
+    "iterations": 7,
+    "feature": "outer cylindrical wall of the support cup (R~22.9, ~270 deg scanned)"
+   },
+   {
+    "z": -3.40625,
+    "cx": 98.07897,
+    "cy": -107.46595,
+    "r": 22.89033,
+    "rms": 0.02022,
+    "max": 0.06409,
+    "p95": 0.04265,
+    "n": 321,
+    "iterations": 7,
+    "feature": "outer cylindrical wall of the support cup (R~22.9, ~270 deg scanned)"
+   },
+   {
+    "z": -2.46875,
+    "cx": 98.08876,
+    "cy": -107.46159,
+    "r": 22.8772,
+    "rms": 0.01935,
+    "max": 0.05939,
+    "p95": 0.03893,
+    "n": 340,
+    "iterations": 6,
+    "feature": "outer cylindrical wall of the support cup (R~22.9, ~270 deg scanned)"
+   }
+  ],
+  "noise_ref": null
+ },
+ "clock": {
+  "rule": "fourier_mass: 3 bayonet tabs on the outer rim",
+  "angle_deg": -6.82658824947103,
+  "why": "tabs lock the part into the brew group; the only non-axisymmetric outer feature",
+  "detail": {
+   "n": 3,
+   "candidates_deg": [
+    -113.173411750529,
+    6.82658824947103,
+    126.826588249471
+   ],
+   "chosen_deg": 6.82658824947103,
+   "strength": 0.58257998707879,
+   "n_vertices": 9083,
+   "label_rule": "the bayonet tab whose angular-mass centre is nearest +X is tab 1 -> +X"
+  }
+ },
+ "tilt_deg": {
+  "value": 0.27703816034664186,
+  "stderr_deg": 0.13627134118532233,
+  "direction_deg": 83.88597871298181,
+  "method": "common slope, per-feature intercept, 4 stations over 1 feature(s), z -5.281..-2.469 vs frame Z",
+  "z_span_mm": 2.8125,
+  "per_feature": [
+   {
+    "feature": "outer cylindrical wall of the support cup (R~22.9, ~270 deg scanned)",
+    "n_stations": 4,
+    "value": 0.27703816034664186,
+    "stderr_deg": 0.09635848027879777,
+    "direction_deg": 83.88597871298181,
+    "z_span_mm": 2.8125
+   }
+  ],
+  "resolvable": null
+ },
+ "origin": {
+  "definition": "cup outer wall axis \u2229 plate back face plane"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": -0.00878788830242172,
+   "tol": 0.04892255856114139,
+   "tol_source": "measured noise floor",
+   "ok": true
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -31.233581354470157,
+   -34.69666483976738,
+   -16.24301300308548
+  ],
+  [
+   34.5510690485149,
+   34.65236775177977,
+   1.1758031567989065
+  ]
+ ],
+ "extents_aligned": [
+  65.78465040298505,
+  69.34903259154714,
+  17.418816159884386
+ ],
+ "aligned_mesh": {
+  "path": "/home/user/agentic_STL-to-CAD/runs/OD-G04_brewing-gasket-support/intake/aligned_work.stl",
+  "sha256": "4ab66fb732235a07bb9add2e25fcfdbb914434a2d8f464508b0380dab2434080"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "pass",
+   "note": "common slope, per-feature intercept, 4 stations over 1 feature(s), z -5.281..-2.469 vs frame Z; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": false,
+   "result": "finding",
+   "note": "no CHK-SCALE record passed in spec"
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

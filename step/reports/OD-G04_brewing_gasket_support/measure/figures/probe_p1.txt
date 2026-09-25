@@ -1,0 +1,27 @@
+plate back z0 r7-19.5: n=8932 area=1028.0 z50=-0.020 z05=-0.084 z95=0.075
+plate underside (front floor) r11-19 few 0
+back bead top: n=2473 area=81.9 z50=1.091 z05=1.055 z95=1.153
+bead inner wall: n=2442 area=68.7 r50=20.333 r05=20.244 r95=20.406
+bead outer wall: n=2114 area=62.9 r50=21.469 r05=21.386 r95=21.527
+plate step outside bead: n=1968 area=109.8 z50=0.100 z05=0.015 z95=0.159
+cup outer wall: n=7676 area=773.8 r50=22.952 r05=22.850 r95=23.084
+cup inner wall: n=5558 area=296.3 r50=20.598 r05=20.489 r95=20.716
+flange top: n=9238 area=675.5 z50=-10.755 z05=-10.814 z95=-10.685
+flange bottom: n=11555 area=1137.6 z50=-13.122 z05=-13.259 z95=-12.868
+lip inner wall: n=4311 area=254.0 r50=29.317 r05=29.226 r95=29.424
+lip outer wall below tabs: n=5960 area=489.8 r50=30.796 r05=30.655 r95=30.928
+lip top: n=3107 area=151.2 z50=-7.034 z05=-7.147 z95=-6.982
+tab top: n=2265 area=203.2 z50=-7.761 z05=-7.920 z95=-7.696
+tab bottom: n=3583 area=237.6 z50=-9.524 z05=-9.657 z95=-9.253
+tab outer: n=2453 area=58.5 r50=34.384 r05=34.229 r95=34.674
+hub ring top: n=941 area=36.0 z50=0.942 z05=0.885 z95=0.988
+hub ring outer wall: n=1046 area=31.5 r50=6.116 r05=6.061 r95=6.187
+hub tube inner: n=5900 area=292.2 r50=8.323 r05=7.771 r95=8.453
+hub tube outer: n=6162 area=382.9 r50=10.034 r05=9.951 r95=10.102
+hub tube bottom: n=986 area=36.8 z50=-15.730 z05=-15.770 z95=-15.685
+ring rib inner: n=905 area=39.0 r50=14.853 r05=14.750 r95=14.939
+ring rib outer: n=1878 area=90.0 r50=16.086 r05=16.002 r95=16.168
+ring rib bottom: n=1046 area=27.2 z50=-10.671 z05=-10.738 z95=-10.569
+centre pin wall few 0
+centre pin bottom few 0
+text pad face few 0

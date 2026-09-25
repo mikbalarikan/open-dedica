@@ -1,0 +1,7 @@
+underside sector 0-95: n=2612 area=90.3 z50=-2.589 z05=-2.671 z95=-2.513
+ sector 20 927 [-2.79 -2.61 -2.55] r [11.1 19.7]
+ sector 40 1175 [-2.76 -2.59 -2.49] r [11.1 19.8]
+ sector 60 782 [-2.7  -2.56 -2.49] r [11.4 19.9]
+centre r<3.5 z<-0.5: n 1653 [-5.64 -4.6  -2.12 -0.76 -0.52]
+centre cone faces r<5 nz dist
+ cone fit z=0.924*r+-3.407 n=1393 angle from axis 47.3 deg

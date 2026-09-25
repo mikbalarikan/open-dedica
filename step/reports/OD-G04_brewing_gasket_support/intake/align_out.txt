@@ -1,0 +1,68 @@
+{
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [
+  "secondary circle residual not compared: no noise_secondary measured on a clean circle (plane noise is not comparable to section-circle residuals)"
+ ],
+ "scale_factor": 1.0,
+ "tilt_deg": {
+  "value": 0.27703816034664186,
+  "stderr_deg": 0.13627134118532233,
+  "direction_deg": 83.88597871298181,
+  "method": "common slope, per-feature intercept, 4 stations over 1 feature(s), z -5.281..-2.469 vs frame Z",
+  "z_span_mm": 2.8125,
+  "per_feature": [
+   {
+    "feature": "outer cylindrical wall of the support cup (R~22.9, ~270 deg scanned)",
+    "n_stations": 4,
+    "value": 0.27703816034664186,
+    "stderr_deg": 0.09635848027879777,
+    "direction_deg": 83.88597871298181,
+    "z_span_mm": 2.8125
+   }
+  ],
+  "resolvable": null
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": -0.00878788830242172,
+   "tol": 0.04892255856114139,
+   "tol_source": "measured noise floor",
+   "ok": true
+  }
+ ],
+ "primary": {
+  "type": "plane",
+  "fit_rms_mm": 0.04892255856114139,
+  "fit_max_mm": 0.10973214744890776,
+  "n_faces": 9868
+ },
+ "secondary": {
+  "type": "axis",
+  "fit_rms_mm": 0.019786061278645406,
+  "fit_max_mm": 3.0728940849183175,
+  "stations": 4,
+  "r_by_feature": {
+   "outer cylindrical wall of the support cup (R~22.9, ~270 deg scanned)": {
+    "n": 4,
+    "r_mean": 22.90346056359496,
+    "r_std": 0.02026859229136214
+   }
+  },
+  "centre_std_mm": [
+   0.0035645215774715053,
+   0.005040767149347194
+  ]
+ },
+ "clock": {
+  "rule": "fourier_mass: 3 bayonet tabs on the outer rim",
+  "angle_deg": -6.82658824947103
+ },
+ "extents_aligned": [
+  65.78465040298505,
+  69.34903259154714,
+  17.418816159884386
+ ]
+}
