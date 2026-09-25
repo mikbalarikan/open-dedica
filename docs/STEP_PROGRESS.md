@@ -31,7 +31,7 @@ In the overlays, grey is the rebuilt STEP and red is the raw scan. Where both sh
 
 ## Parts on the scanner
 
-Donor parts on the scan turntable, matched to BOM numbers. Parts tagged **check** are still to be confirmed against the part codes.
+Donor parts on the scan turntable, matched to BOM numbers. All matches are confirmed.
 
 ![Donor parts matched to BOM numbers](img/donor_parts_bom.png)
 
