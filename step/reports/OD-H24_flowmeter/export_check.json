@@ -1,0 +1,88 @@
+{
+  "T_scan_to_datum": [
+    [
+      0.571708763,
+      -0.515733746,
+      0.638097009,
+      128.557434331
+    ],
+    [
+      -0.58502372,
+      0.289033078,
+      0.757764559,
+      159.912361882
+    ],
+    [
+      -0.575235897,
+      -0.806522525,
+      -0.136473731,
+      -60.758728343
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "exports": {
+    "datum": {
+      "step": "OD-H24_flowmeter.step",
+      "solids": 1,
+      "valid": true,
+      "closed": true,
+      "faces": 203,
+      "surface_types": {
+        "CONE": 14,
+        "TORUS": 8,
+        "CYLINDER": 47,
+        "PLANE": 134
+      },
+      "volume_mm3": 19858.9,
+      "area_mm2": 7919.7,
+      "bbox_min": [
+        -20.36,
+        -36.709,
+        -7.03
+      ],
+      "bbox_max": [
+        20.36,
+        20.36,
+        36.5
+      ],
+      "size_MB": 0.88,
+      "step_BREP_WITH_VOIDS": 0,
+      "step_CLOSED_SHELL": 1,
+      "step_MANIFOLD_SOLID_BREP": 1
+    },
+    "scan": {
+      "step": "OD-H24_flowmeter_scanframe.step",
+      "solids": 1,
+      "valid": true,
+      "closed": true,
+      "faces": 203,
+      "surface_types": {
+        "CONE": 14,
+        "TORUS": 8,
+        "CYLINDER": 47,
+        "PLANE": 134
+      },
+      "volume_mm3": 19858.9,
+      "area_mm2": 7919.7,
+      "bbox_min": [
+        -42.761,
+        -65.061,
+        -247.924
+      ],
+      "bbox_max": [
+        -1.629,
+        -17.752,
+        -193.213
+      ],
+      "size_MB": 0.89,
+      "step_BREP_WITH_VOIDS": 0,
+      "step_CLOSED_SHELL": 1,
+      "step_MANIFOLD_SOLID_BREP": 1
+    }
+  }
+}
