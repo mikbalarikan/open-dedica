@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "fe337680addf8bdaff9fec879841c4bc0511c721fd6534af8279a2ee9a375e9c"
+ },
+ "seed": 0,
+ "created": "2026-09-28T12:45:21+00:00",
+ "scan_noise_mm": {
+  "value": 0.03470593909277056,
+  "p95_mm": 0.061196252935370045,
+  "max_mm": 0.07859916346621226,
+  "method": "rms of RANSAC+SVD plane on nozzle end face (down-facing moulded annulus at the nozzle tip, r 4.0-5.8, raw offset -78.4..-77.8 along -axis) (964 faces)"
+ }
+}

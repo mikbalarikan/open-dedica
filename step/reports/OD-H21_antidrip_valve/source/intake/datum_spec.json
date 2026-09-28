@@ -1,0 +1,116 @@
+{
+ "mesh": "work.stl",
+ "raw_scan": "../input/scan.stl",
+ "intake_json": "intake.json",
+ "out_dir": ".",
+ "seed": 0,
+ "scale_factor": 1.0,
+ "chk_scale": {
+  "ran": true,
+  "result": "finding",
+  "note": "FLAG: no calipers, no scale reference in the catalogue photos (DECISIONS.md MEASUREMENTS). Units assumed mm, scale unverified, no scale applied."
+ },
+ "noise": {
+  "from": "noise_primary.json"
+ },
+ "primary": {
+  "type": "plane",
+  "approx_normal": [
+   0.58996454,
+   -0.05805619,
+   -0.80533926
+  ],
+  "material_side": "-z",
+  "offset_range": [
+   105.0,
+   105.6
+  ],
+  "desc": "band top face: up-facing annular step (r 10-11.5) where the body cylinder leaves the band ring",
+  "why": "flat perpendicular to the valve axis at the band/body assembly interface; the cleanest scanned flat (rms 0.027 over seeds 0-7, vs nozzle shoulder 0.041-0.042 and cap top 0.044-0.046, intake/noise_plane_*.json); its normal agrees with the body-cylinder axis and the nozzle-shoulder normal within ~0.4 deg (rough-frame exploration)"
+ },
+ "origin": {
+  "xy": [
+   {
+    "method": "kasa",
+    "r_hint": 5.78,
+    "r_tol": 0.12,
+    "rms_max": 0.08,
+    "z_range": [
+     -22.0,
+     -15.0
+    ],
+    "stations": 15,
+    "desc": "nozzle OD sections",
+    "why": "nozzle = the plug-in spigot of the valve (the functional insertion axis); cleanest circle on the part"
+   }
+  ],
+  "definition": "nozzle OD axis ∩ band top face plane"
+ },
+ "clock": {
+  "rule": "plane_normal",
+  "approx_normal_raw": [
+   -0.79105,
+   -0.2114,
+   -0.57407
+  ],
+  "offset_range": [
+   22.2,
+   23.0
+  ],
+  "desc": "side-outlet collar outer face normal -> +X",
+  "why": "the side outlet (threaded, O-ring sealed) is the second functional port; its collar face is the cleanest flat whose normal is the outlet axis"
+ },
+ "landmarks": [
+  {
+   "name": "nozzle tip (zmin)",
+   "stat": "zmin",
+   "r_range": [
+    3.5,
+    6.2
+   ],
+   "expected": -27.3,
+   "tol": 0.4,
+   "tol_source": "rough-frame exploration value (tilt <= 1 deg x r 6 = 0.1) + 0.3 exploration binning"
+  },
+  {
+   "name": "nozzle shoulder (median z)",
+   "stat": "zmedian",
+   "r_range": [
+    7.0,
+    10.0
+   ],
+   "z_range": [
+    -14.6,
+    -13.4
+   ],
+   "expected": -14.0,
+   "tol": 0.3,
+   "tol_source": "rough-frame r-z map read to +-0.2 + tilt"
+  },
+  {
+   "name": "cap top (median z)",
+   "stat": "zmedian",
+   "r_range": [
+    3.0,
+    11.0
+   ],
+   "z_range": [
+    22.5,
+    25.0
+   ],
+   "expected": 23.7,
+   "tol": 0.5,
+   "tol_source": "rough-frame r-z map; cap measured tilted ~2.5 deg (x r 11 = 0.5)"
+  },
+  {
+   "name": "barb top (zmax)",
+   "stat": "zmax",
+   "expected": 28.5,
+   "tol": 0.6,
+   "tol_source": "rough-frame zmax 133.81 - 105.3; cap tilt"
+  }
+ ],
+ "noise_secondary": {
+  "from": "noise_circle.json"
+ }
+}

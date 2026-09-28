@@ -1,0 +1,40 @@
+{
+  "created": "2026-09-28T12:30:45+00:00",
+  "files": [
+    {
+      "bytes": 30007184,
+      "mode": "copy",
+      "path": "input/scan.stl",
+      "role": "scan",
+      "sha256": "4553ccbeee70167f15be759ac21ebe8b1b3cba9cd03a87f75b310eba0be85aad",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/OD-H21-Antidrip-valve.stl"
+    },
+    {
+      "bytes": 52320,
+      "mode": "copy",
+      "path": "input/photos/photo_1.png",
+      "role": "photo",
+      "sha256": "e6b32ea454b6a94c5cd15f377f64c5453685af0087bb6a52777ad763ecfd6a79",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/photos/photo_1.png"
+    },
+    {
+      "bytes": 185864,
+      "mode": "copy",
+      "path": "input/photos/photo_2.png",
+      "role": "photo",
+      "sha256": "66d8ab5f6ac11d24e541066a7c5e808d822fc4683676108ab9754a83f58b1723",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/photos/photo_2.png"
+    }
+  ],
+  "inputs": {
+    "input/photos/photo_1.png": "e6b32ea454b6a94c5cd15f377f64c5453685af0087bb6a52777ad763ecfd6a79",
+    "input/photos/photo_2.png": "66d8ab5f6ac11d24e541066a7c5e808d822fc4683676108ab9754a83f58b1723",
+    "input/scan.stl": "4553ccbeee70167f15be759ac21ebe8b1b3cba9cd03a87f75b310eba0be85aad"
+  },
+  "part": "OD-H21_antidrip-valve",
+  "scan_resolution": "full",
+  "schema": "stl-re/INPUT_HASHES@1",
+  "seed": 0,
+  "tool": "init_run.py",
+  "tool_version": "stl-re-orchestrate@1"
+}

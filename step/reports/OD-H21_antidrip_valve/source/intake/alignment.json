@@ -1,0 +1,386 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/runs/OD-H21_antidrip-valve/intake/work.stl": "fe337680addf8bdaff9fec879841c4bc0511c721fd6534af8279a2ee9a375e9c",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/runs/OD-H21_antidrip-valve/intake/datum_spec.json": "d32b985d082a5948186cedecefdec09070b552739f52ca2be24a2a6873e592fc",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/runs/OD-H21_antidrip-valve/input/scan.stl": "4553ccbeee70167f15be759ac21ebe8b1b3cba9cd03a87f75b310eba0be85aad",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/runs/OD-H21_antidrip-valve/intake/intake.json": "5046e2e7d0e1e939d6855b6c1665dca7025d307a3b39beb3af06e2d55e2a90e8"
+ },
+ "seed": 0,
+ "created": "2026-09-28T12:47:09+00:00",
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [],
+ "matrix_4x4": [
+  [
+   -0.7886453360338654,
+   -0.21866331132006753,
+   -0.5746519731407651,
+   -110.01181036515213
+  ],
+  [
+   -0.15067994337517637,
+   0.9748580962187182,
+   -0.16415616619935403,
+   -17.568500402677984
+  ],
+  [
+   0.5960990593990942,
+   -0.04287246808103677,
+   -0.8017654662456818,
+   -104.57532688707828
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.03470593909277056,
+  "method": "rms of RANSAC+SVD plane on nozzle end face (down-facing moulded annulus at the nozzle tip, r 4.0-5.8, raw offset -78.4..-77.8 along -axis) (964 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "band top face: up-facing annular step (r 10-11.5) where the body cylinder leaves the band ring",
+  "why": "flat perpendicular to the valve axis at the band/body assembly interface; the cleanest scanned flat (rms 0.027 over seeds 0-7, vs nozzle shoulder 0.041-0.042 and cap top 0.044-0.046, intake/noise_plane_*.json); its normal agrees with the body-cylinder axis and the nozzle-shoulder normal within ~0.4 deg (rough-frame exploration)",
+  "fit_rms_mm": 0.026564756034936247,
+  "fit_max_mm": 0.10162902270969325,
+  "fit_p95_mm": 0.0542692359216967,
+  "n_faces": 7175,
+  "area_mm2": 52.584411879968506,
+  "fit_untrimmed": {
+   "rms": 0.025637064995650896,
+   "p95": 0.05612890183084216,
+   "max": 0.10162902270969325,
+   "n_faces": 5721
+  },
+  "inlier_frac": 0.9868904037755637,
+  "normal_raw": [
+   0.5960990593990945,
+   -0.04287246808103678,
+   -0.8017654662456819
+  ],
+  "centroid_raw": [
+   -26.402144752085952,
+   -11.440139555025562,
+   -149.44913265356715
+  ],
+  "material_side": "-z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.9868904037755637
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "nozzle OD sections",
+  "why": "nozzle = the plug-in spigot of the valve (the functional insertion axis); cleanest circle on the part",
+  "fit_rms_mm": 0.03130735711065184,
+  "fit_max_mm": 0.11304062773449619,
+  "fit_metric": "median / worst circle residual over stations (kasa)",
+  "stations": 15,
+  "r_by_feature": {
+   "nozzle OD sections": {
+    "n": 15,
+    "r_mean": 5.777801818535334,
+    "r_std": 0.011103785867685326
+   }
+  },
+  "centre_std_mm": [
+   0.03155560660246725,
+   0.03634261865803007
+  ],
+  "station_detail": [
+   {
+    "z": -22.0,
+    "cx": 111.07305,
+    "cy": -9.26116,
+    "r": 5.79797,
+    "rms": 0.03488,
+    "max": 0.08715,
+    "n": 615,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -21.5,
+    "cx": 111.06353,
+    "cy": -9.27423,
+    "r": 5.79298,
+    "rms": 0.03571,
+    "max": 0.08115,
+    "n": 612,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -21.0,
+    "cx": 111.05996,
+    "cy": -9.28446,
+    "r": 5.79346,
+    "rms": 0.03564,
+    "max": 0.11304,
+    "n": 600,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -20.5,
+    "cx": 111.04818,
+    "cy": -9.29101,
+    "r": 5.78736,
+    "rms": 0.03148,
+    "max": 0.09565,
+    "n": 574,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -20.0,
+    "cx": 111.03349,
+    "cy": -9.29972,
+    "r": 5.78258,
+    "rms": 0.02858,
+    "max": 0.06821,
+    "n": 598,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -19.5,
+    "cx": 111.02586,
+    "cy": -9.30935,
+    "r": 5.78369,
+    "rms": 0.03034,
+    "max": 0.0654,
+    "n": 541,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -19.0,
+    "cx": 111.02346,
+    "cy": -9.31856,
+    "r": 5.77864,
+    "rms": 0.03189,
+    "max": 0.07422,
+    "n": 548,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -18.5,
+    "cx": 111.0144,
+    "cy": -9.33031,
+    "r": 5.7755,
+    "rms": 0.03079,
+    "max": 0.0709,
+    "n": 521,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -18.0,
+    "cx": 111.00229,
+    "cy": -9.33522,
+    "r": 5.77223,
+    "rms": 0.03131,
+    "max": 0.06359,
+    "n": 508,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -17.5,
+    "cx": 110.99769,
+    "cy": -9.34154,
+    "r": 5.77181,
+    "rms": 0.03313,
+    "max": 0.06847,
+    "n": 501,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -17.0,
+    "cx": 110.99251,
+    "cy": -9.35011,
+    "r": 5.77089,
+    "rms": 0.03346,
+    "max": 0.08697,
+    "n": 474,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -16.5,
+    "cx": 110.99234,
+    "cy": -9.36131,
+    "r": 5.7691,
+    "rms": 0.02913,
+    "max": 0.06372,
+    "n": 424,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -16.0,
+    "cx": 110.98247,
+    "cy": -9.37136,
+    "r": 5.76684,
+    "rms": 0.02733,
+    "max": 0.07358,
+    "n": 385,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -15.5,
+    "cx": 110.97699,
+    "cy": -9.37486,
+    "r": 5.76138,
+    "rms": 0.02822,
+    "max": 0.06429,
+    "n": 384,
+    "feature": "nozzle OD sections"
+   },
+   {
+    "z": -15.0,
+    "cx": 110.97429,
+    "cy": -9.37444,
+    "r": 5.76257,
+    "rms": 0.02557,
+    "max": 0.07222,
+    "n": 427,
+    "feature": "nozzle OD sections"
+   }
+  ],
+  "noise_ref": {
+   "value": 0.03254637530459819,
+   "p95_mm": 0.06497526221479157,
+   "max_mm": 0.12691237398317057,
+   "method": "rms of IRLS circle on cap OD section at datum z=19.5 (first-pass frame; clean moulded cylinder, not the origin feature) at z=19.5 (n=1183)",
+   "circle": {
+    "cx": 0.2472305777337954,
+    "cy": -0.25234949745147617,
+    "r": 12.162996495603606,
+    "rms": 0.03254637530459819,
+    "max": 0.12691237398317057,
+    "p95": 0.06497526221479157,
+    "n": 1183,
+    "iterations": 6
+   }
+  }
+ },
+ "clock": {
+  "rule": "plane_normal: side-outlet collar outer face normal -> +X",
+  "angle_deg": 13.877506897863375,
+  "why": "the side outlet (threaded, O-ring sealed) is the second functional port; its collar face is the cleanest flat whose normal is the outlet axis",
+  "detail": {
+   "plane_fit_rms_mm": 0.0255117245761975,
+   "plane_fit_max_mm": 0.09533257612463122,
+   "plane_n_faces": 3929,
+   "plane_out_of_perpendicular_deg": 0.5441589274875582
+  }
+ },
+ "tilt_deg": {
+  "value": 1.2668587043644268,
+  "stderr_deg": 0.03171298397090574,
+  "direction_deg": -130.77217561551984,
+  "method": "common slope, per-feature intercept, 15 stations over 1 feature(s), z -22.000..-15.000 vs frame Z",
+  "z_span_mm": 7.0,
+  "per_feature": [
+   {
+    "feature": "nozzle OD sections",
+    "n_stations": 15,
+    "value": 1.2668587043644268,
+    "stderr_deg": 0.03046884968881155,
+    "direction_deg": -130.77217561551984,
+    "z_span_mm": 7.0
+   }
+  ],
+  "resolvable": null
+ },
+ "origin": {
+  "definition": "nozzle OD axis \u2229 band top face plane"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": -0.00025110982772484175,
+   "tol": 0.03470593909277056,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "nozzle tip (zmin)",
+   "stat": "zmin",
+   "expected": -27.3,
+   "tol": 0.4,
+   "observed": -27.455350278845046,
+   "ok": true,
+   "tol_source": "rough-frame exploration value (tilt <= 1 deg x r 6 = 0.1) + 0.3 exploration binning"
+  },
+  {
+   "name": "nozzle shoulder (median z)",
+   "stat": "zmedian",
+   "expected": -14.0,
+   "tol": 0.3,
+   "observed": -14.033438676801694,
+   "ok": true,
+   "tol_source": "rough-frame r-z map read to +-0.2 + tilt"
+  },
+  {
+   "name": "cap top (median z)",
+   "stat": "zmedian",
+   "expected": 23.7,
+   "tol": 0.5,
+   "observed": 23.47954755035404,
+   "ok": true,
+   "tol_source": "rough-frame r-z map; cap measured tilted ~2.5 deg (x r 11 = 0.5)"
+  },
+  {
+   "name": "barb top (zmax)",
+   "stat": "zmax",
+   "expected": 28.5,
+   "tol": 0.6,
+   "observed": 28.483205881628564,
+   "ok": true,
+   "tol_source": "rough-frame zmax 133.81 - 105.3; cap tilt"
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -13.617798792699954,
+   -13.431834223023559,
+   -27.455350278845046
+  ],
+  [
+   30.213027374695205,
+   24.582764770791393,
+   28.483205881628564
+  ]
+ ],
+ "extents_aligned": [
+  43.83082616739516,
+  38.01459899381495,
+  55.93855616047361
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/runs/OD-H21_antidrip-valve/intake/aligned_work.stl",
+  "sha256": "ba45c057adfe16feead33a20c2904ac9c38e4325c1880d7c01052b6d88f2a6f4"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "finding",
+   "note": "common slope, per-feature intercept, 15 stations over 1 feature(s), z -22.000..-15.000 vs frame Z; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": true,
+   "result": "finding",
+   "note": "FLAG: no calipers, no scale reference in the catalogue photos (DECISIONS.md MEASUREMENTS). Units assumed mm, scale unverified, no scale applied."
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

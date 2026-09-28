@@ -1,0 +1,13 @@
+{"comment": "Declared BEFORE any QA deviation number was computed, from INTAKE_CARD.md §3 coverage facts (open loops L1, L3, L6) located on the scan's own open-boundary loops (mask-policy rule 7). Masked AND unmasked numbers are both reported; the gate is not cleared silently.",
+ "masks": [
+  {"name": "M1 unscanned bore interiors", "type": "region", "applies_to": "both",
+   "select": {"any_of": [
+      {"r": [null, 4.2], "z": [-26.4, -14.0]},
+      {"x": [27.0, 29.8], "abs_y": [null, 1.75], "z": [1.75, 5.25]},
+      {"r": [25.5, 28.2], "theta_deg": [53.0, 58.3], "z": [23.2, 26.0]}]},
+   "why": "the three end bores (nozzle, outlet, barb) were seen only 1.5-4 mm deep; beyond that the scanner bridged them with a membrane (scan side: artefact, not a part surface) and the CAD bore wall/floor has no scan behind it (CAD side: coverage gap). Neither is a surface deviation of the modelled part.",
+   "evidence": "INTAKE_CARD.md §3 L1/L3/L6, §5 E02/E15/E20 'bore depth occluded'; MODELING_PLAN.md §6 bore floors; scan open-boundary loops (qa run-local probe)"},
+  {"name": "M2 open boundary", "type": "open_boundary", "applies_to": "cad", "radius_mm": 0.8,
+   "why": "distance from CAD to a scan hole EDGE (7 open loops: bore mouths, 2 ring windows, 2 skirt slits) is not a surface deviation",
+   "evidence": "B02 q20_tier2.py:9-10 (mask-policy.md); INTAKE_CARD.md §2 238 open edges / 7 loops"}
+ ]}

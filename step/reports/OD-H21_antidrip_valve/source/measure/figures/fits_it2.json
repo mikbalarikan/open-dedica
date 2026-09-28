@@ -1,0 +1,2022 @@
+{
+ "inputs": {
+  "intake/aligned_work.stl": "ba45c057adfe16feead33a20c2904ac9c38e4325c1880d7c01052b6d88f2a6f4",
+  "measure/figures/fits.json": "d6a6a79ba8ce7339aec95dc5e811292c46fd6dc6a182b92c49a7b77375bdee1e"
+ },
+ "note": "it2 re-measurement; it1 values stay in _it1_SUPERSEDED/measure",
+ "latch_windows": [
+  {
+   "side_theta_deg": 113.9705811151601,
+   "cut_dtheta": [
+    -39.0,
+    37.0
+   ],
+   "cut_plane_d": 5.42472855447349,
+   "cut_plane_d_p10_p90": [
+    4.82640360564533,
+    5.613824098330877
+   ],
+   "n_bins": 24,
+   "cut_half_width": [
+    -4.392858567829664,
+    4.087826172931774
+   ],
+   "method": "1-deg bins of the outer envelope, u -25.2..-24.65, vs the fitted lug outline; cut-back = bins > 0.25 mm inside it; its floor is a plane parallel to the b-side flat at distance d = median(env * cos(dtheta)) over wall bins 3 deg inside the cut edges; lateral extent y' = d tan(edge dtheta)",
+   "through_theta": [
+    82.9705811151601,
+    137.9705811151601
+   ],
+   "through_bins": 33,
+   "through_u_p3_p97": [
+    -25.308951512988937,
+    -24.18398154907437
+   ],
+   "bridge_rho_p10_p50": [
+    4.276373195919271,
+    4.890056730318425
+   ],
+   "through_method": "first..last 1-deg bin inside the cut-back with no nozzle-wall vertex (rho > noz_R - 0.25): window open through the wall (bore wall / bridge seen)",
+   "bins": [
+    {
+     "dtheta": -59.5,
+     "env": 6.540831394250254,
+     "outline": 6.51,
+     "deficit": -0.03083139425025383,
+     "min_rho": 3.866735903223067,
+     "wall_present": true
+    },
+    {
+     "dtheta": -58.5,
+     "env": 6.596023151603761,
+     "outline": 6.58,
+     "deficit": -0.01602315160376122,
+     "min_rho": 6.5560342879588065,
+     "wall_present": true
+    },
+    {
+     "dtheta": -57.5,
+     "env": 6.656440996127131,
+     "outline": 6.65,
+     "deficit": -0.0064409961271305605,
+     "min_rho": 6.493496372963048,
+     "wall_present": true
+    },
+    {
+     "dtheta": -56.5,
+     "env": 6.7452700485599895,
+     "outline": 6.7250000000000005,
+     "deficit": -0.02027004855998893,
+     "min_rho": 6.615345920886004,
+     "wall_present": true
+    },
+    {
+     "dtheta": -55.5,
+     "env": 6.817280572189037,
+     "outline": 6.805,
+     "deficit": -0.012280572189037109,
+     "min_rho": 6.760888770843133,
+     "wall_present": true
+    },
+    {
+     "dtheta": -54.5,
+     "env": 6.91873174225861,
+     "outline": 6.890000000000001,
+     "deficit": -0.02873174225860975,
+     "min_rho": 3.7771577586596794,
+     "wall_present": true
+    },
+    {
+     "dtheta": -53.5,
+     "env": 6.984224436157455,
+     "outline": 6.98,
+     "deficit": -0.004224436157454825,
+     "min_rho": 3.8034576575084023,
+     "wall_present": true
+    },
+    {
+     "dtheta": -52.5,
+     "env": 7.060662047955296,
+     "outline": 7.07,
+     "deficit": 0.00933795204470389,
+     "min_rho": 3.7663837716163027,
+     "wall_present": true
+    },
+    {
+     "dtheta": -51.5,
+     "env": 7.160137581597536,
+     "outline": 7.17,
+     "deficit": 0.009862418402463824,
+     "min_rho": 3.7469136834503574,
+     "wall_present": true
+    },
+    {
+     "dtheta": -50.5,
+     "env": 7.272101218272951,
+     "outline": 7.2700000000000005,
+     "deficit": -0.0021012182729505113,
+     "min_rho": 7.180035606996447,
+     "wall_present": true
+    },
+    {
+     "dtheta": -49.5,
+     "env": 7.355897603201399,
+     "outline": 7.375,
+     "deficit": 0.019102396798601262,
+     "min_rho": 3.7353007653814054,
+     "wall_present": true
+    },
+    {
+     "dtheta": -48.5,
+     "env": 7.462837266760883,
+     "outline": 7.49,
+     "deficit": 0.02716273323911711,
+     "min_rho": 7.379779346440496,
+     "wall_present": true
+    },
+    {
+     "dtheta": -47.5,
+     "env": 7.5693798774153755,
+     "outline": 7.61,
+     "deficit": 0.040620122584624774,
+     "min_rho": 3.746488534914997,
+     "wall_present": true
+    },
+    {
+     "dtheta": -46.5,
+     "env": 7.674214824980268,
+     "outline": 7.735,
+     "deficit": 0.06078517501973213,
+     "min_rho": 7.56004813029115,
+     "wall_present": true
+    },
+    {
+     "dtheta": -45.5,
+     "env": 7.752989739007915,
+     "outline": 7.855,
+     "deficit": 0.10201026099208566,
+     "min_rho": 7.703413265428208,
+     "wall_present": true
+    },
+    {
+     "dtheta": -44.5,
+     "env": 7.862530534825985,
+     "outline": 7.925,
+     "deficit": 0.06246946517401497,
+     "min_rho": 3.6799716854341455,
+     "wall_present": true
+    },
+    {
+     "dtheta": -43.5,
+     "env": 7.8762938406985725,
+     "outline": 7.95,
+     "deficit": 0.07370615930142765,
+     "min_rho": 7.754617329206931,
+     "wall_present": true
+    },
+    {
+     "dtheta": -42.5,
+     "env": 7.852309306154137,
+     "outline": 7.94,
+     "deficit": 0.0876906938458637,
+     "min_rho": 7.771025269826461,
+     "wall_present": true
+    },
+    {
+     "dtheta": -41.5,
+     "env": 7.760818681786754,
+     "outline": 7.890000000000001,
+     "deficit": 0.12918131821324685,
+     "min_rho": 7.7063358108825755,
+     "wall_present": true
+    },
+    {
+     "dtheta": -40.5,
+     "env": 7.656305733226705,
+     "outline": 7.785,
+     "deficit": 0.12869426677329532,
+     "min_rho": 3.723227766847678,
+     "wall_present": true
+    },
+    {
+     "dtheta": -39.5,
+     "env": 7.4677351226678885,
+     "outline": 7.67,
+     "deficit": 0.2022648773321114,
+     "min_rho": 6.196230570439497,
+     "wall_present": true
+    },
+    {
+     "dtheta": -38.5,
+     "env": 7.074784246660376,
+     "outline": 7.565,
+     "deficit": 0.4902157533396245,
+     "min_rho": 6.064910086218099,
+     "wall_present": true
+    },
+    {
+     "dtheta": -37.5,
+     "env": 6.61028733296274,
+     "outline": 7.46,
+     "deficit": 0.8497126670372603,
+     "min_rho": 5.896734144587603,
+     "wall_present": true
+    },
+    {
+     "dtheta": -36.5,
+     "env": 6.917775949901285,
+     "outline": 7.365,
+     "deficit": 0.4472240500987148,
+     "min_rho": 3.6438970481237365,
+     "wall_present": true
+    },
+    {
+     "dtheta": -35.5,
+     "env": 6.773737821596204,
+     "outline": 7.2700000000000005,
+     "deficit": 0.4962621784037964,
+     "min_rho": 5.659467878559032,
+     "wall_present": true
+    },
+    {
+     "dtheta": -34.5,
+     "env": 5.837060722067,
+     "outline": 7.1850000000000005,
+     "deficit": 1.3479392779330004,
+     "min_rho": 3.661477583798508,
+     "wall_present": true
+    },
+    {
+     "dtheta": -33.5,
+     "env": 5.7203027890976195,
+     "outline": 7.1000000000000005,
+     "deficit": 1.379697210902381,
+     "min_rho": 5.1581516497670785,
+     "wall_present": true
+    },
+    {
+     "dtheta": -32.5,
+     "env": 5.765495118279806,
+     "outline": 7.0200000000000005,
+     "deficit": 1.2545048817201945,
+     "min_rho": 5.206347639060102,
+     "wall_present": true
+    },
+    {
+     "dtheta": -31.5,
+     "env": 5.64236150144383,
+     "outline": 6.945,
+     "deficit": 1.3026384985561705,
+     "min_rho": 5.228426214453551,
+     "wall_present": true
+    },
+    {
+     "dtheta": -30.5,
+     "env": 5.504891107801363,
+     "outline": 6.87,
+     "deficit": 1.365108892198637,
+     "min_rho": 3.7453741018046345,
+     "wall_present": false
+    },
+    {
+     "dtheta": -29.5,
+     "env": 5.455695648703442,
+     "outline": 6.8,
+     "deficit": 1.3443043512965582,
+     "min_rho": 5.1902551207256655,
+     "wall_present": false
+    },
+    {
+     "dtheta": -28.5,
+     "env": 5.429456259115532,
+     "outline": 6.735,
+     "deficit": 1.3055437408844686,
+     "min_rho": 5.0654411769261625,
+     "wall_present": false
+    },
+    {
+     "dtheta": -27.5,
+     "env": 5.30137721312758,
+     "outline": 6.675,
+     "deficit": 1.3736227868724198,
+     "min_rho": 4.958702812623712,
+     "wall_present": false
+    },
+    {
+     "dtheta": -26.5,
+     "env": 5.3358966977314175,
+     "outline": 6.615,
+     "deficit": 1.2791033022685827,
+     "min_rho": 3.7752318040383677,
+     "wall_present": false
+    },
+    {
+     "dtheta": -25.5,
+     "env": 5.371779616683806,
+     "outline": 6.5600000000000005,
+     "deficit": 1.1882203833161942,
+     "min_rho": 3.7541260024633565,
+     "wall_present": false
+    },
+    {
+     "dtheta": -24.5,
+     "env": 5.270319271840292,
+     "outline": 6.505,
+     "deficit": 1.2346807281597076,
+     "min_rho": 3.7687455071061997,
+     "wall_present": false
+    },
+    {
+     "dtheta": -23.5,
+     "env": 5.202401955900845,
+     "outline": 6.455,
+     "deficit": 1.2525980440991553,
+     "min_rho": 3.7683971801145817,
+     "wall_present": false
+    },
+    {
+     "dtheta": -22.5,
+     "env": 4.747110192216323,
+     "outline": 6.405,
+     "deficit": 1.6578898077836772,
+     "min_rho": 3.7903838241066543,
+     "wall_present": false
+    },
+    {
+     "dtheta": -21.5,
+     "env": 5.16544987835094,
+     "outline": 6.36,
+     "deficit": 1.1945501216490602,
+     "min_rho": 4.724927156317732,
+     "wall_present": false
+    },
+    {
+     "dtheta": -20.5,
+     "env": 4.902713233588396,
+     "outline": 6.32,
+     "deficit": 1.4172867664116042,
+     "min_rho": 4.664034431713557,
+     "wall_present": false
+    },
+    {
+     "dtheta": -19.5,
+     "env": 4.922848811331893,
+     "outline": 6.28,
+     "deficit": 1.357151188668107,
+     "min_rho": 3.8442992754403056,
+     "wall_present": false
+    },
+    {
+     "dtheta": -18.5,
+     "env": 4.662248183097558,
+     "outline": 6.24,
+     "deficit": 1.5777518169024418,
+     "min_rho": 3.9305720265396578,
+     "wall_present": false
+    },
+    {
+     "dtheta": -17.5,
+     "env": 4.572521254164684,
+     "outline": 6.205,
+     "deficit": 1.632478745835316,
+     "min_rho": 3.888221477382572,
+     "wall_present": false
+    },
+    {
+     "dtheta": -16.5,
+     "env": 4.504332951965085,
+     "outline": 6.175,
+     "deficit": 1.6706670480349146,
+     "min_rho": 3.9488390825591857,
+     "wall_present": false
+    },
+    {
+     "dtheta": -15.5,
+     "env": 4.276129442543739,
+     "outline": 6.1450000000000005,
+     "deficit": 1.8688705574562618,
+     "min_rho": 3.999400261303057,
+     "wall_present": false
+    },
+    {
+     "dtheta": -8.5,
+     "env": 4.689646149850926,
+     "outline": 5.985,
+     "deficit": 1.2953538501490742,
+     "min_rho": 3.9506049421518186,
+     "wall_present": false
+    },
+    {
+     "dtheta": -6.5,
+     "env": 4.684175989247171,
+     "outline": 5.96,
+     "deficit": 1.275824010752829,
+     "min_rho": 3.990236493167529,
+     "wall_present": false
+    },
+    {
+     "dtheta": -5.5,
+     "env": 4.886427194135172,
+     "outline": 5.945,
+     "deficit": 1.058572805864828,
+     "min_rho": 4.47041499984463,
+     "wall_present": false
+    },
+    {
+     "dtheta": -4.5,
+     "env": 4.683639038939254,
+     "outline": 5.94,
+     "deficit": 1.2563609610607465,
+     "min_rho": 3.8821267503867554,
+     "wall_present": false
+    },
+    {
+     "dtheta": -3.5,
+     "env": 4.699433892980452,
+     "outline": 5.93,
+     "deficit": 1.2305661070195475,
+     "min_rho": 3.8805363081222173,
+     "wall_present": false
+    },
+    {
+     "dtheta": -2.5,
+     "env": 4.5286803750652425,
+     "outline": 5.925,
+     "deficit": 1.3963196249347574,
+     "min_rho": 3.933658132358674,
+     "wall_present": false
+    },
+    {
+     "dtheta": -1.5,
+     "env": 4.58953726771404,
+     "outline": 5.92,
+     "deficit": 1.3304627322859597,
+     "min_rho": 3.8990851561109134,
+     "wall_present": false
+    },
+    {
+     "dtheta": -0.5,
+     "env": 4.590819200158719,
+     "outline": 5.92,
+     "deficit": 1.3291807998412812,
+     "min_rho": 4.217762550339233,
+     "wall_present": false
+    },
+    {
+     "dtheta": 0.5,
+     "env": 4.570480432218331,
+     "outline": 5.92,
+     "deficit": 1.3495195677816687,
+     "min_rho": 3.8676482349440087,
+     "wall_present": false
+    },
+    {
+     "dtheta": 1.5,
+     "env": 5.694285479477833,
+     "outline": 5.92,
+     "deficit": 0.22571452052216667,
+     "min_rho": 4.389028634439527,
+     "wall_present": true
+    },
+    {
+     "dtheta": 2.5,
+     "env": 5.704003649340235,
+     "outline": 5.925,
+     "deficit": 0.22099635065976475,
+     "min_rho": 3.9025590737367337,
+     "wall_present": true
+    },
+    {
+     "dtheta": 3.5,
+     "env": 5.738387022165303,
+     "outline": 5.93,
+     "deficit": 0.19161297783469688,
+     "min_rho": 4.0778493283994965,
+     "wall_present": true
+    },
+    {
+     "dtheta": 4.5,
+     "env": 5.699310823629752,
+     "outline": 5.94,
+     "deficit": 0.24068917637024878,
+     "min_rho": 3.9745671233069184,
+     "wall_present": true
+    },
+    {
+     "dtheta": 5.5,
+     "env": 5.599234047533334,
+     "outline": 5.945,
+     "deficit": 0.3457659524666665,
+     "min_rho": 4.338973689484608,
+     "wall_present": true
+    },
+    {
+     "dtheta": 6.5,
+     "env": 5.662520398084428,
+     "outline": 5.96,
+     "deficit": 0.29747960191557166,
+     "min_rho": 4.045969457783336,
+     "wall_present": true
+    },
+    {
+     "dtheta": 7.5,
+     "env": 5.6799554369555185,
+     "outline": 5.97,
+     "deficit": 0.29004456304448123,
+     "min_rho": 3.9273629237394325,
+     "wall_present": true
+    },
+    {
+     "dtheta": 8.5,
+     "env": 5.720224738906375,
+     "outline": 5.985,
+     "deficit": 0.26477526109362515,
+     "min_rho": 4.47169195618727,
+     "wall_present": true
+    },
+    {
+     "dtheta": 9.5,
+     "env": 5.768919662676758,
+     "outline": 6.0,
+     "deficit": 0.23108033732324174,
+     "min_rho": 3.984999567596884,
+     "wall_present": true
+    },
+    {
+     "dtheta": 10.5,
+     "env": 5.680247836817101,
+     "outline": 6.0200000000000005,
+     "deficit": 0.339752163182899,
+     "min_rho": 3.9202512165896466,
+     "wall_present": true
+    },
+    {
+     "dtheta": 11.5,
+     "env": 5.8032276522043595,
+     "outline": 6.04,
+     "deficit": 0.2367723477956405,
+     "min_rho": 3.9324513487551753,
+     "wall_present": true
+    },
+    {
+     "dtheta": 12.5,
+     "env": 5.459684557794024,
+     "outline": 6.065,
+     "deficit": 0.6053154422059768,
+     "min_rho": 4.039746096911352,
+     "wall_present": false
+    },
+    {
+     "dtheta": 13.5,
+     "env": 5.660168244197151,
+     "outline": 6.085,
+     "deficit": 0.42483175580284893,
+     "min_rho": 3.9645769731729255,
+     "wall_present": true
+    },
+    {
+     "dtheta": 14.5,
+     "env": 4.959607320091806,
+     "outline": 6.115,
+     "deficit": 1.1553926799081946,
+     "min_rho": 4.122893113149492,
+     "wall_present": false
+    },
+    {
+     "dtheta": 15.5,
+     "env": 4.867513957958607,
+     "outline": 6.1450000000000005,
+     "deficit": 1.2774860420413932,
+     "min_rho": 3.979567063069263,
+     "wall_present": false
+    },
+    {
+     "dtheta": 16.5,
+     "env": 4.837659719710649,
+     "outline": 6.175,
+     "deficit": 1.337340280289351,
+     "min_rho": 3.9031199997324753,
+     "wall_present": false
+    },
+    {
+     "dtheta": 17.5,
+     "env": 4.756294771004111,
+     "outline": 6.205,
+     "deficit": 1.4487052289958893,
+     "min_rho": 4.032324600270062,
+     "wall_present": false
+    },
+    {
+     "dtheta": 18.5,
+     "env": 5.5028211330007455,
+     "outline": 6.24,
+     "deficit": 0.7371788669992547,
+     "min_rho": 3.9047319886223186,
+     "wall_present": false
+    },
+    {
+     "dtheta": 19.5,
+     "env": 5.635447983649519,
+     "outline": 6.28,
+     "deficit": 0.644552016350481,
+     "min_rho": 4.5234416714639485,
+     "wall_present": true
+    },
+    {
+     "dtheta": 20.5,
+     "env": 5.712937618178419,
+     "outline": 6.32,
+     "deficit": 0.6070623818215815,
+     "min_rho": 4.525715941075028,
+     "wall_present": true
+    },
+    {
+     "dtheta": 21.5,
+     "env": 5.790357239184169,
+     "outline": 6.36,
+     "deficit": 0.5696427608158317,
+     "min_rho": 3.8674844310484544,
+     "wall_present": true
+    },
+    {
+     "dtheta": 22.5,
+     "env": 5.470513130407326,
+     "outline": 6.405,
+     "deficit": 0.934486869592674,
+     "min_rho": 3.9566851707550352,
+     "wall_present": false
+    },
+    {
+     "dtheta": 23.5,
+     "env": 5.270070061612073,
+     "outline": 6.455,
+     "deficit": 1.1849299383879268,
+     "min_rho": 3.868270459536878,
+     "wall_present": false
+    },
+    {
+     "dtheta": 24.5,
+     "env": 6.002460965681231,
+     "outline": 6.505,
+     "deficit": 0.5025390343187688,
+     "min_rho": 3.9173428497949607,
+     "wall_present": true
+    },
+    {
+     "dtheta": 25.5,
+     "env": 6.085114486955009,
+     "outline": 6.5600000000000005,
+     "deficit": 0.4748855130449918,
+     "min_rho": 4.7910660433266585,
+     "wall_present": true
+    },
+    {
+     "dtheta": 26.5,
+     "env": 6.14798932073603,
+     "outline": 6.615,
+     "deficit": 0.46701067926397055,
+     "min_rho": 3.880072623666602,
+     "wall_present": true
+    },
+    {
+     "dtheta": 27.5,
+     "env": 6.218283982277288,
+     "outline": 6.675,
+     "deficit": 0.4567160177227114,
+     "min_rho": 5.11009717355223,
+     "wall_present": true
+    },
+    {
+     "dtheta": 28.5,
+     "env": 6.307770945423577,
+     "outline": 6.735,
+     "deficit": 0.427229054576423,
+     "min_rho": 5.168641079089846,
+     "wall_present": true
+    },
+    {
+     "dtheta": 29.5,
+     "env": 6.124713712486175,
+     "outline": 6.8,
+     "deficit": 0.675286287513825,
+     "min_rho": 3.8690084161958427,
+     "wall_present": true
+    },
+    {
+     "dtheta": 30.5,
+     "env": 6.221883570021674,
+     "outline": 6.87,
+     "deficit": 0.6481164299783257,
+     "min_rho": 3.881261101639437,
+     "wall_present": true
+    },
+    {
+     "dtheta": 31.5,
+     "env": 6.081344698091656,
+     "outline": 6.945,
+     "deficit": 0.8636553019083442,
+     "min_rho": 3.8783023917100743,
+     "wall_present": true
+    },
+    {
+     "dtheta": 32.5,
+     "env": 6.052320322793743,
+     "outline": 7.0200000000000005,
+     "deficit": 0.9676796772062577,
+     "min_rho": 5.300780213631707,
+     "wall_present": true
+    },
+    {
+     "dtheta": 33.5,
+     "env": 6.093936126861865,
+     "outline": 7.1000000000000005,
+     "deficit": 1.0060638731381353,
+     "min_rho": 5.915520836729459,
+     "wall_present": true
+    },
+    {
+     "dtheta": 34.5,
+     "env": 6.031008553327653,
+     "outline": 7.1850000000000005,
+     "deficit": 1.1539914466723475,
+     "min_rho": 3.8917413128620555,
+     "wall_present": true
+    },
+    {
+     "dtheta": 35.5,
+     "env": 6.0918739036502085,
+     "outline": 7.2700000000000005,
+     "deficit": 1.178126096349792,
+     "min_rho": 3.8961619522642357,
+     "wall_present": true
+    },
+    {
+     "dtheta": 36.5,
+     "env": 6.796884329188433,
+     "outline": 7.365,
+     "deficit": 0.5681156708115669,
+     "min_rho": 5.8153276446322275,
+     "wall_present": true
+    },
+    {
+     "dtheta": 37.5,
+     "env": 7.47844849939114,
+     "outline": 7.46,
+     "deficit": -0.01844849939114024,
+     "min_rho": 3.9193017750704477,
+     "wall_present": true
+    },
+    {
+     "dtheta": 38.5,
+     "env": 7.640629660397069,
+     "outline": 7.565,
+     "deficit": -0.07562966039706875,
+     "min_rho": 5.87871367994276,
+     "wall_present": true
+    },
+    {
+     "dtheta": 39.5,
+     "env": 7.746679277309663,
+     "outline": 7.67,
+     "deficit": -0.07667927730966273,
+     "min_rho": 3.9260081654510253,
+     "wall_present": true
+    },
+    {
+     "dtheta": 40.5,
+     "env": 7.864846407000352,
+     "outline": 7.785,
+     "deficit": -0.0798464070003515,
+     "min_rho": 3.9529295618079057,
+     "wall_present": true
+    },
+    {
+     "dtheta": 41.5,
+     "env": 8.02234238441089,
+     "outline": 7.8950000000000005,
+     "deficit": -0.1273423844108903,
+     "min_rho": 7.880370347122814,
+     "wall_present": true
+    },
+    {
+     "dtheta": 42.5,
+     "env": 8.053043147842889,
+     "outline": 7.96,
+     "deficit": -0.09304314784288881,
+     "min_rho": 7.931954819433913,
+     "wall_present": true
+    },
+    {
+     "dtheta": 43.5,
+     "env": 8.043626270380525,
+     "outline": 7.98,
+     "deficit": -0.06362627038052437,
+     "min_rho": 3.9544531111699484,
+     "wall_present": true
+    },
+    {
+     "dtheta": 44.5,
+     "env": 7.970981564990967,
+     "outline": 7.965,
+     "deficit": -0.0059815649909671365,
+     "min_rho": 7.864773578410013,
+     "wall_present": true
+    },
+    {
+     "dtheta": 45.5,
+     "env": 7.847804106666868,
+     "outline": 7.91,
+     "deficit": 0.06219589333313191,
+     "min_rho": 7.751395253721474,
+     "wall_present": true
+    },
+    {
+     "dtheta": 46.5,
+     "env": 7.757569652978343,
+     "outline": 7.795,
+     "deficit": 0.03743034702165726,
+     "min_rho": 3.9319376434856315,
+     "wall_present": true
+    },
+    {
+     "dtheta": 47.5,
+     "env": 7.645387548290558,
+     "outline": 7.67,
+     "deficit": 0.024612451709441707,
+     "min_rho": 7.463614410729183,
+     "wall_present": true
+    },
+    {
+     "dtheta": 48.5,
+     "env": 7.533787841403775,
+     "outline": 7.55,
+     "deficit": 0.01621215859622449,
+     "min_rho": 7.32242382366969,
+     "wall_present": true
+    },
+    {
+     "dtheta": 49.5,
+     "env": 7.469217415123823,
+     "outline": 7.4350000000000005,
+     "deficit": -0.03421741512382237,
+     "min_rho": 7.350332810671523,
+     "wall_present": true
+    },
+    {
+     "dtheta": 50.5,
+     "env": 7.3543010368736965,
+     "outline": 7.33,
+     "deficit": -0.024301036873696447,
+     "min_rho": 3.927473531869216,
+     "wall_present": true
+    },
+    {
+     "dtheta": 51.5,
+     "env": 7.292948897069571,
+     "outline": 7.2250000000000005,
+     "deficit": -0.06794889706957008,
+     "min_rho": 3.937087789794278,
+     "wall_present": true
+    },
+    {
+     "dtheta": 52.5,
+     "env": 7.109616479908769,
+     "outline": 7.125,
+     "deficit": 0.01538352009123134,
+     "min_rho": 7.031750321517779,
+     "wall_present": true
+    },
+    {
+     "dtheta": 53.5,
+     "env": 7.02457225542389,
+     "outline": 7.035,
+     "deficit": 0.010427744576110065,
+     "min_rho": 3.92002180570455,
+     "wall_present": true
+    },
+    {
+     "dtheta": 54.5,
+     "env": 6.981199357470542,
+     "outline": 6.945,
+     "deficit": -0.036199357470541926,
+     "min_rho": 6.772631258642914,
+     "wall_present": true
+    },
+    {
+     "dtheta": 55.5,
+     "env": 6.828979569089813,
+     "outline": 6.86,
+     "deficit": 0.031020430910187358,
+     "min_rho": 3.9999105790342817,
+     "wall_present": true
+    },
+    {
+     "dtheta": 56.5,
+     "env": 6.776284687507413,
+     "outline": 6.78,
+     "deficit": 0.003715312492587053,
+     "min_rho": 3.9364672327347647,
+     "wall_present": true
+    },
+    {
+     "dtheta": 57.5,
+     "env": 6.697332086656574,
+     "outline": 6.705,
+     "deficit": 0.007667913343426314,
+     "min_rho": 3.938810730333684,
+     "wall_present": true
+    },
+    {
+     "dtheta": 58.5,
+     "env": 6.5762486102130495,
+     "outline": 6.63,
+     "deficit": 0.053751389786950377,
+     "min_rho": 6.500858916399351,
+     "wall_present": true
+    },
+    {
+     "dtheta": 59.5,
+     "env": 6.541393251632375,
+     "outline": 6.5600000000000005,
+     "deficit": 0.01860674836762577,
+     "min_rho": 6.453392408718012,
+     "wall_present": true
+    }
+   ]
+  },
+  {
+   "side_theta_deg": -66.0294188848399,
+   "cut_dtheta": [
+    -37.0,
+    36.0
+   ],
+   "cut_plane_d": 5.572421904796972,
+   "cut_plane_d_p10_p90": [
+    5.439622353998558,
+    5.664152030582345
+   ],
+   "n_bins": 66,
+   "cut_half_width": [
+    -4.199121095241285,
+    4.048601497823641
+   ],
+   "method": "1-deg bins of the outer envelope, u -25.2..-24.65, vs the fitted lug outline; cut-back = bins > 0.25 mm inside it; its floor is a plane parallel to the b-side flat at distance d = median(env * cos(dtheta)) over wall bins 3 deg inside the cut edges; lateral extent y' = d tan(edge dtheta)",
+   "bins": [
+    {
+     "dtheta": -59.5,
+     "env": 6.583331533653687,
+     "outline": 6.5600000000000005,
+     "deficit": -0.023331533653686343,
+     "min_rho": 3.6786414334328277,
+     "wall_present": true
+    },
+    {
+     "dtheta": -58.5,
+     "env": 6.634520111023774,
+     "outline": 6.63,
+     "deficit": -0.004520111023774476,
+     "min_rho": 6.465359003166589,
+     "wall_present": true
+    },
+    {
+     "dtheta": -57.5,
+     "env": 6.675095916947759,
+     "outline": 6.705,
+     "deficit": 0.029904083052240793,
+     "min_rho": 6.470623780086687,
+     "wall_present": true
+    },
+    {
+     "dtheta": -56.5,
+     "env": 6.736969923556521,
+     "outline": 6.78,
+     "deficit": 0.043030076443479004,
+     "min_rho": 6.598094161424578,
+     "wall_present": true
+    },
+    {
+     "dtheta": -55.5,
+     "env": 6.837205762150132,
+     "outline": 6.86,
+     "deficit": 0.022794237849868004,
+     "min_rho": 6.667683772954453,
+     "wall_present": true
+    },
+    {
+     "dtheta": -54.5,
+     "env": 6.895087268890164,
+     "outline": 6.945,
+     "deficit": 0.04991273110983663,
+     "min_rho": 6.753915745542409,
+     "wall_present": true
+    },
+    {
+     "dtheta": -53.5,
+     "env": 7.011439833582043,
+     "outline": 7.035,
+     "deficit": 0.02356016641795744,
+     "min_rho": 6.802472295976216,
+     "wall_present": true
+    },
+    {
+     "dtheta": -52.5,
+     "env": 7.066946517713888,
+     "outline": 7.125,
+     "deficit": 0.058053482286111624,
+     "min_rho": 6.977467453125651,
+     "wall_present": true
+    },
+    {
+     "dtheta": -51.5,
+     "env": 7.193094648996594,
+     "outline": 7.2250000000000005,
+     "deficit": 0.03190535100340686,
+     "min_rho": 6.9885717255603454,
+     "wall_present": true
+    },
+    {
+     "dtheta": -50.5,
+     "env": 7.271188576562574,
+     "outline": 7.33,
+     "deficit": 0.05881142343742596,
+     "min_rho": 7.122430211293897,
+     "wall_present": true
+    },
+    {
+     "dtheta": -49.5,
+     "env": 7.375739073195131,
+     "outline": 7.4350000000000005,
+     "deficit": 0.059260926804869385,
+     "min_rho": 7.270842080441865,
+     "wall_present": true
+    },
+    {
+     "dtheta": -48.5,
+     "env": 7.4502431367489645,
+     "outline": 7.55,
+     "deficit": 0.09975686325103528,
+     "min_rho": 3.4658488241555094,
+     "wall_present": true
+    },
+    {
+     "dtheta": -47.5,
+     "env": 7.587991357016054,
+     "outline": 7.67,
+     "deficit": 0.08200864298394617,
+     "min_rho": 7.382111486343732,
+     "wall_present": true
+    },
+    {
+     "dtheta": -46.5,
+     "env": 7.724192987303949,
+     "outline": 7.795,
+     "deficit": 0.07080701269605072,
+     "min_rho": 7.516136938913055,
+     "wall_present": true
+    },
+    {
+     "dtheta": -45.5,
+     "env": 7.8623080354324095,
+     "outline": 7.925,
+     "deficit": 0.0626919645675903,
+     "min_rho": 7.6190911304363365,
+     "wall_present": true
+    },
+    {
+     "dtheta": -44.5,
+     "env": 7.911833729706448,
+     "outline": 8.005,
+     "deficit": 0.09316627029355296,
+     "min_rho": 7.740073741224837,
+     "wall_present": true
+    },
+    {
+     "dtheta": -43.5,
+     "env": 7.96887386573722,
+     "outline": 8.040000000000001,
+     "deficit": 0.07112613426278092,
+     "min_rho": 7.872581912703262,
+     "wall_present": true
+    },
+    {
+     "dtheta": -42.5,
+     "env": 7.997116821539514,
+     "outline": 8.035,
+     "deficit": 0.03788317846048628,
+     "min_rho": 7.949916159312231,
+     "wall_present": true
+    },
+    {
+     "dtheta": -41.5,
+     "env": 7.97961106616866,
+     "outline": 7.99,
+     "deficit": 0.010388933831340097,
+     "min_rho": 7.897786455251202,
+     "wall_present": true
+    },
+    {
+     "dtheta": -40.5,
+     "env": 7.948545609471126,
+     "outline": 7.8950000000000005,
+     "deficit": -0.053545609471125744,
+     "min_rho": 7.488286031751347,
+     "wall_present": true
+    },
+    {
+     "dtheta": -39.5,
+     "env": 7.798716757677263,
+     "outline": 7.78,
+     "deficit": -0.018716757677262663,
+     "min_rho": 3.6005352156267367,
+     "wall_present": true
+    },
+    {
+     "dtheta": -38.5,
+     "env": 7.711883250376275,
+     "outline": 7.67,
+     "deficit": -0.04188325037627472,
+     "min_rho": 6.68721069020637,
+     "wall_present": true
+    },
+    {
+     "dtheta": -37.5,
+     "env": 7.560351483667404,
+     "outline": 7.57,
+     "deficit": 0.009648516332596557,
+     "min_rho": 6.544291406087041,
+     "wall_present": true
+    },
+    {
+     "dtheta": -36.5,
+     "env": 6.658967063845803,
+     "outline": 7.47,
+     "deficit": 0.8110329361541968,
+     "min_rho": 3.510378655984971,
+     "wall_present": true
+    },
+    {
+     "dtheta": -35.5,
+     "env": 6.614854897038627,
+     "outline": 7.375,
+     "deficit": 0.7601451029613733,
+     "min_rho": 6.489435394766837,
+     "wall_present": true
+    },
+    {
+     "dtheta": -34.5,
+     "env": 6.679560614210533,
+     "outline": 7.285,
+     "deficit": 0.6054393857894675,
+     "min_rho": 6.495643394437632,
+     "wall_present": true
+    },
+    {
+     "dtheta": -33.5,
+     "env": 6.659808420515806,
+     "outline": 7.2,
+     "deficit": 0.540191579484194,
+     "min_rho": 3.6484509385956163,
+     "wall_present": true
+    },
+    {
+     "dtheta": -32.5,
+     "env": 6.579910816324163,
+     "outline": 7.12,
+     "deficit": 0.5400891836758372,
+     "min_rho": 3.3837776793199414,
+     "wall_present": true
+    },
+    {
+     "dtheta": -31.5,
+     "env": 6.528911739157271,
+     "outline": 7.04,
+     "deficit": 0.5110882608427287,
+     "min_rho": 6.304328241846178,
+     "wall_present": true
+    },
+    {
+     "dtheta": -30.5,
+     "env": 6.3839944541335845,
+     "outline": 6.97,
+     "deficit": 0.5860055458664153,
+     "min_rho": 6.180162600788924,
+     "wall_present": true
+    },
+    {
+     "dtheta": -29.5,
+     "env": 6.255302765087181,
+     "outline": 6.9,
+     "deficit": 0.6446972349128197,
+     "min_rho": 3.3137150891588316,
+     "wall_present": true
+    },
+    {
+     "dtheta": -28.5,
+     "env": 6.163863249372357,
+     "outline": 6.83,
+     "deficit": 0.6661367506276434,
+     "min_rho": 3.693916809376693,
+     "wall_present": true
+    },
+    {
+     "dtheta": -27.5,
+     "env": 5.959951350269768,
+     "outline": 6.7700000000000005,
+     "deficit": 0.8100486497302324,
+     "min_rho": 3.625247130589091,
+     "wall_present": true
+    },
+    {
+     "dtheta": -26.5,
+     "env": 5.92908202913178,
+     "outline": 6.71,
+     "deficit": 0.7809179708682201,
+     "min_rho": 5.841375584470811,
+     "wall_present": true
+    },
+    {
+     "dtheta": -25.5,
+     "env": 5.848316215439721,
+     "outline": 6.65,
+     "deficit": 0.8016837845602796,
+     "min_rho": 3.65328998527507,
+     "wall_present": true
+    },
+    {
+     "dtheta": -24.5,
+     "env": 5.967186276086696,
+     "outline": 6.6000000000000005,
+     "deficit": 0.6328137239133049,
+     "min_rho": 5.872401664497556,
+     "wall_present": true
+    },
+    {
+     "dtheta": -23.5,
+     "env": 5.933470080507524,
+     "outline": 6.545,
+     "deficit": 0.6115299194924759,
+     "min_rho": 5.79044488944439,
+     "wall_present": true
+    },
+    {
+     "dtheta": -22.5,
+     "env": 6.074357528499272,
+     "outline": 6.5,
+     "deficit": 0.4256424715007281,
+     "min_rho": 5.753375628603886,
+     "wall_present": true
+    },
+    {
+     "dtheta": -21.5,
+     "env": 6.060056948636142,
+     "outline": 6.455,
+     "deficit": 0.39494305136385766,
+     "min_rho": 3.207937679655737,
+     "wall_present": true
+    },
+    {
+     "dtheta": -20.5,
+     "env": 6.055568464478666,
+     "outline": 6.41,
+     "deficit": 0.3544315355213339,
+     "min_rho": 5.682232816087188,
+     "wall_present": true
+    },
+    {
+     "dtheta": -19.5,
+     "env": 5.909184983999995,
+     "outline": 6.37,
+     "deficit": 0.4608150160000051,
+     "min_rho": 5.659744625694965,
+     "wall_present": true
+    },
+    {
+     "dtheta": -18.5,
+     "env": 5.761847011163675,
+     "outline": 6.33,
+     "deficit": 0.5681529888363253,
+     "min_rho": 5.625118296847132,
+     "wall_present": true
+    },
+    {
+     "dtheta": -17.5,
+     "env": 5.7810182444636995,
+     "outline": 6.295,
+     "deficit": 0.5139817555363004,
+     "min_rho": 5.630082162428882,
+     "wall_present": true
+    },
+    {
+     "dtheta": -15.5,
+     "env": 5.883051898930947,
+     "outline": 6.23,
+     "deficit": 0.3469481010690538,
+     "min_rho": 5.633417158091152,
+     "wall_present": true
+    },
+    {
+     "dtheta": -14.5,
+     "env": 5.852782284494662,
+     "outline": 6.2,
+     "deficit": 0.3472177155053382,
+     "min_rho": 5.667856127037469,
+     "wall_present": true
+    },
+    {
+     "dtheta": -13.5,
+     "env": 5.827846407998447,
+     "outline": 6.175,
+     "deficit": 0.34715359200155316,
+     "min_rho": 5.660817595281834,
+     "wall_present": true
+    },
+    {
+     "dtheta": -12.5,
+     "env": 5.85304064875665,
+     "outline": 6.15,
+     "deficit": 0.29695935124335016,
+     "min_rho": 5.717387594984976,
+     "wall_present": true
+    },
+    {
+     "dtheta": -11.5,
+     "env": 5.749807021031185,
+     "outline": 6.125,
+     "deficit": 0.37519297896881465,
+     "min_rho": 5.646668126542965,
+     "wall_present": true
+    },
+    {
+     "dtheta": -10.5,
+     "env": 5.746338686559616,
+     "outline": 6.105,
+     "deficit": 0.35866131344038443,
+     "min_rho": 5.611464774439973,
+     "wall_present": true
+    },
+    {
+     "dtheta": -9.5,
+     "env": 5.740676629527638,
+     "outline": 6.085,
+     "deficit": 0.3443233704723623,
+     "min_rho": 5.59652345347784,
+     "wall_present": true
+    },
+    {
+     "dtheta": -8.5,
+     "env": 5.722914446376334,
+     "outline": 6.07,
+     "deficit": 0.3470855536236659,
+     "min_rho": 5.586340361345401,
+     "wall_present": true
+    },
+    {
+     "dtheta": -7.5,
+     "env": 5.612583491279054,
+     "outline": 6.055,
+     "deficit": 0.44241650872094596,
+     "min_rho": 5.561927952186824,
+     "wall_present": true
+    },
+    {
+     "dtheta": -6.5,
+     "env": 5.717002333210901,
+     "outline": 6.04,
+     "deficit": 0.32299766678909947,
+     "min_rho": 5.5529611382893735,
+     "wall_present": true
+    },
+    {
+     "dtheta": -5.5,
+     "env": 5.6841013825973725,
+     "outline": 6.03,
+     "deficit": 0.34589861740262773,
+     "min_rho": 5.549005330546988,
+     "wall_present": true
+    },
+    {
+     "dtheta": -4.5,
+     "env": 5.686799680151204,
+     "outline": 6.0200000000000005,
+     "deficit": 0.33320031984879606,
+     "min_rho": 5.543776868574552,
+     "wall_present": true
+    },
+    {
+     "dtheta": -3.5,
+     "env": 5.614124928614282,
+     "outline": 6.015000000000001,
+     "deficit": 0.40087507138571876,
+     "min_rho": 5.597088709358727,
+     "wall_present": true
+    },
+    {
+     "dtheta": -2.5,
+     "env": 5.570651373217596,
+     "outline": 6.01,
+     "deficit": 0.4393486267824036,
+     "min_rho": 5.536953500993103,
+     "wall_present": true
+    },
+    {
+     "dtheta": -1.5,
+     "env": 5.576511796452833,
+     "outline": 6.005,
+     "deficit": 0.4284882035471673,
+     "min_rho": 5.544495930473938,
+     "wall_present": true
+    },
+    {
+     "dtheta": -0.5,
+     "env": 5.566494298618714,
+     "outline": 6.005,
+     "deficit": 0.43850570138128564,
+     "min_rho": 5.535926438709423,
+     "wall_present": true
+    },
+    {
+     "dtheta": 0.5,
+     "env": 5.568744546886473,
+     "outline": 6.005,
+     "deficit": 0.4362554531135272,
+     "min_rho": 5.547075902615244,
+     "wall_present": true
+    },
+    {
+     "dtheta": 1.5,
+     "env": 5.591954527791647,
+     "outline": 6.005,
+     "deficit": 0.41304547220835275,
+     "min_rho": 5.548295979331571,
+     "wall_present": true
+    },
+    {
+     "dtheta": 2.5,
+     "env": 5.66611562121724,
+     "outline": 6.01,
+     "deficit": 0.3438843787827599,
+     "min_rho": 5.573877259771937,
+     "wall_present": true
+    },
+    {
+     "dtheta": 3.5,
+     "env": 5.666120954424751,
+     "outline": 6.015000000000001,
+     "deficit": 0.3488790455752495,
+     "min_rho": 5.584440965658854,
+     "wall_present": true
+    },
+    {
+     "dtheta": 4.5,
+     "env": 5.678221907986435,
+     "outline": 6.0200000000000005,
+     "deficit": 0.34177809201356535,
+     "min_rho": 5.578386003905742,
+     "wall_present": true
+    },
+    {
+     "dtheta": 5.5,
+     "env": 5.6654544974071985,
+     "outline": 6.03,
+     "deficit": 0.3645455025928017,
+     "min_rho": 5.554677769478753,
+     "wall_present": true
+    },
+    {
+     "dtheta": 6.5,
+     "env": 5.616269997522341,
+     "outline": 6.04,
+     "deficit": 0.4237300024776589,
+     "min_rho": 5.520690201459392,
+     "wall_present": true
+    },
+    {
+     "dtheta": 7.5,
+     "env": 5.638553483201944,
+     "outline": 6.055,
+     "deficit": 0.41644651679805555,
+     "min_rho": 5.492863096671883,
+     "wall_present": true
+    },
+    {
+     "dtheta": 8.5,
+     "env": 5.644238210654366,
+     "outline": 6.07,
+     "deficit": 0.4257617893456347,
+     "min_rho": 5.477942772916145,
+     "wall_present": true
+    },
+    {
+     "dtheta": 9.5,
+     "env": 5.543627302029793,
+     "outline": 6.085,
+     "deficit": 0.5413726979702069,
+     "min_rho": 5.483187364919657,
+     "wall_present": true
+    },
+    {
+     "dtheta": 10.5,
+     "env": 5.623557649397409,
+     "outline": 6.105,
+     "deficit": 0.4814423506025918,
+     "min_rho": 5.5270751090112045,
+     "wall_present": true
+    },
+    {
+     "dtheta": 11.5,
+     "env": 5.717849833537517,
+     "outline": 6.125,
+     "deficit": 0.4071501664624826,
+     "min_rho": 5.569620901680849,
+     "wall_present": true
+    },
+    {
+     "dtheta": 12.5,
+     "env": 5.788692296338151,
+     "outline": 6.15,
+     "deficit": 0.3613077036618497,
+     "min_rho": 5.610774273897677,
+     "wall_present": true
+    },
+    {
+     "dtheta": 13.5,
+     "env": 5.786332790132406,
+     "outline": 6.175,
+     "deficit": 0.3886672098675934,
+     "min_rho": 5.646302056290691,
+     "wall_present": true
+    },
+    {
+     "dtheta": 14.5,
+     "env": 5.740337670799347,
+     "outline": 6.2,
+     "deficit": 0.4596623292006532,
+     "min_rho": 5.653947347698206,
+     "wall_present": true
+    },
+    {
+     "dtheta": 15.5,
+     "env": 5.770319726825847,
+     "outline": 6.23,
+     "deficit": 0.45968027317415316,
+     "min_rho": 5.643599438530463,
+     "wall_present": true
+    },
+    {
+     "dtheta": 16.5,
+     "env": 5.722396424870782,
+     "outline": 6.26,
+     "deficit": 0.5376035751292179,
+     "min_rho": 5.611751336311202,
+     "wall_present": true
+    },
+    {
+     "dtheta": 17.5,
+     "env": 5.706209804884337,
+     "outline": 6.295,
+     "deficit": 0.5887901951156627,
+     "min_rho": 5.605879789055173,
+     "wall_present": true
+    },
+    {
+     "dtheta": 18.5,
+     "env": 5.767029857609067,
+     "outline": 6.33,
+     "deficit": 0.5629701423909328,
+     "min_rho": 5.59167607422939,
+     "wall_present": true
+    },
+    {
+     "dtheta": 19.5,
+     "env": 5.610206874361329,
+     "outline": 6.37,
+     "deficit": 0.7597931256386712,
+     "min_rho": 5.587480888252387,
+     "wall_present": true
+    },
+    {
+     "dtheta": 20.5,
+     "env": 5.805548896427088,
+     "outline": 6.41,
+     "deficit": 0.6044511035729121,
+     "min_rho": 5.597925238756864,
+     "wall_present": true
+    },
+    {
+     "dtheta": 21.5,
+     "env": 5.881735396977832,
+     "outline": 6.455,
+     "deficit": 0.5732646030221682,
+     "min_rho": 5.616590767460563,
+     "wall_present": true
+    },
+    {
+     "dtheta": 22.5,
+     "env": 5.963682400459028,
+     "outline": 6.5,
+     "deficit": 0.5363175995409719,
+     "min_rho": 5.642509869798683,
+     "wall_present": true
+    },
+    {
+     "dtheta": 23.5,
+     "env": 6.048834894124641,
+     "outline": 6.545,
+     "deficit": 0.49616510587535867,
+     "min_rho": 5.710457557109126,
+     "wall_present": true
+    },
+    {
+     "dtheta": 24.5,
+     "env": 6.069418561368019,
+     "outline": 6.6000000000000005,
+     "deficit": 0.5305814386319812,
+     "min_rho": 5.81495699411055,
+     "wall_present": true
+    },
+    {
+     "dtheta": 25.5,
+     "env": 6.067270669671242,
+     "outline": 6.65,
+     "deficit": 0.5827293303287586,
+     "min_rho": 5.962565711409916,
+     "wall_present": true
+    },
+    {
+     "dtheta": 26.5,
+     "env": 6.233156299377182,
+     "outline": 6.71,
+     "deficit": 0.4768437006228181,
+     "min_rho": 6.071587793619115,
+     "wall_present": true
+    },
+    {
+     "dtheta": 27.5,
+     "env": 6.305931050146416,
+     "outline": 6.7700000000000005,
+     "deficit": 0.4640689498535844,
+     "min_rho": 6.163605830603548,
+     "wall_present": true
+    },
+    {
+     "dtheta": 28.5,
+     "env": 6.306037245668691,
+     "outline": 6.83,
+     "deficit": 0.5239627543313095,
+     "min_rho": 6.248436385745782,
+     "wall_present": true
+    },
+    {
+     "dtheta": 29.5,
+     "env": 6.446235124957951,
+     "outline": 6.9,
+     "deficit": 0.4537648750420491,
+     "min_rho": 6.317927797021282,
+     "wall_present": true
+    },
+    {
+     "dtheta": 30.5,
+     "env": 6.510668777066763,
+     "outline": 6.97,
+     "deficit": 0.4593312229332369,
+     "min_rho": 6.392486394381979,
+     "wall_present": true
+    },
+    {
+     "dtheta": 31.5,
+     "env": 6.586906208513256,
+     "outline": 7.04,
+     "deficit": 0.45309379148674367,
+     "min_rho": 6.467284431044547,
+     "wall_present": true
+    },
+    {
+     "dtheta": 32.5,
+     "env": 6.63752398251672,
+     "outline": 7.12,
+     "deficit": 0.48247601748327984,
+     "min_rho": 6.527828625806918,
+     "wall_present": true
+    },
+    {
+     "dtheta": 33.5,
+     "env": 6.645421178498838,
+     "outline": 7.2,
+     "deficit": 0.5545788215011624,
+     "min_rho": 6.5672955925783,
+     "wall_present": true
+    },
+    {
+     "dtheta": 34.5,
+     "env": 6.702398511851896,
+     "outline": 7.285,
+     "deficit": 0.5826014881481045,
+     "min_rho": 6.610765954499269,
+     "wall_present": true
+    },
+    {
+     "dtheta": 35.5,
+     "env": 6.983331739345595,
+     "outline": 7.375,
+     "deficit": 0.39166826065440485,
+     "min_rho": 6.641597516133817,
+     "wall_present": true
+    },
+    {
+     "dtheta": 36.5,
+     "env": 7.36954303325809,
+     "outline": 7.47,
+     "deficit": 0.10045696674190996,
+     "min_rho": 6.683711563263048,
+     "wall_present": true
+    },
+    {
+     "dtheta": 37.5,
+     "env": 7.5413997419613885,
+     "outline": 7.57,
+     "deficit": 0.02860025803861177,
+     "min_rho": 6.907061981976837,
+     "wall_present": true
+    },
+    {
+     "dtheta": 38.5,
+     "env": 7.71755545459153,
+     "outline": 7.67,
+     "deficit": -0.04755545459152977,
+     "min_rho": 7.531194547124226,
+     "wall_present": true
+    },
+    {
+     "dtheta": 39.5,
+     "env": 7.82358564058758,
+     "outline": 7.78,
+     "deficit": -0.04358564058757963,
+     "min_rho": 7.705832683196685,
+     "wall_present": true
+    },
+    {
+     "dtheta": 40.5,
+     "env": 7.9431285984762665,
+     "outline": 7.8950000000000005,
+     "deficit": -0.04812859847626605,
+     "min_rho": 7.855480037373426,
+     "wall_present": true
+    },
+    {
+     "dtheta": 41.5,
+     "env": 7.9809537814478375,
+     "outline": 7.9750000000000005,
+     "deficit": -0.005953781447836981,
+     "min_rho": 7.9433321677576085,
+     "wall_present": true
+    },
+    {
+     "dtheta": 42.5,
+     "env": 7.991173945449264,
+     "outline": 8.01,
+     "deficit": 0.01882605455073616,
+     "min_rho": 7.958465942750081,
+     "wall_present": true
+    },
+    {
+     "dtheta": 43.5,
+     "env": 7.968663818844614,
+     "outline": 8.005,
+     "deficit": 0.03633618115538706,
+     "min_rho": 7.906641750099805,
+     "wall_present": true
+    },
+    {
+     "dtheta": 44.5,
+     "env": 7.860096220348136,
+     "outline": 7.96,
+     "deficit": 0.09990377965186426,
+     "min_rho": 7.722819199883755,
+     "wall_present": true
+    },
+    {
+     "dtheta": 45.5,
+     "env": 7.835902052070209,
+     "outline": 7.865,
+     "deficit": 0.029097947929790813,
+     "min_rho": 7.601831806222373,
+     "wall_present": true
+    },
+    {
+     "dtheta": 46.5,
+     "env": 7.707677701911896,
+     "outline": 7.735,
+     "deficit": 0.02732229808810427,
+     "min_rho": 7.451092598433435,
+     "wall_present": true
+    },
+    {
+     "dtheta": 47.5,
+     "env": 7.558957597148139,
+     "outline": 7.61,
+     "deficit": 0.05104240285186101,
+     "min_rho": 7.320323581984952,
+     "wall_present": true
+    },
+    {
+     "dtheta": 48.5,
+     "env": 7.4814601716311895,
+     "outline": 7.49,
+     "deficit": 0.008539828368810731,
+     "min_rho": 7.256905571773868,
+     "wall_present": true
+    },
+    {
+     "dtheta": 49.5,
+     "env": 7.35591777674514,
+     "outline": 7.375,
+     "deficit": 0.019082223254859976,
+     "min_rho": 7.144370515106783,
+     "wall_present": true
+    },
+    {
+     "dtheta": 50.5,
+     "env": 7.230171978657317,
+     "outline": 7.2700000000000005,
+     "deficit": 0.03982802134268315,
+     "min_rho": 6.982008111709325,
+     "wall_present": true
+    },
+    {
+     "dtheta": 51.5,
+     "env": 7.14983930960671,
+     "outline": 7.17,
+     "deficit": 0.020160690393289826,
+     "min_rho": 6.9274428989780645,
+     "wall_present": true
+    },
+    {
+     "dtheta": 52.5,
+     "env": 7.040584006730015,
+     "outline": 7.07,
+     "deficit": 0.029415993269985563,
+     "min_rho": 6.872419213796478,
+     "wall_present": true
+    },
+    {
+     "dtheta": 53.5,
+     "env": 6.977690149065148,
+     "outline": 6.98,
+     "deficit": 0.0023098509348526974,
+     "min_rho": 6.764206424565763,
+     "wall_present": true
+    },
+    {
+     "dtheta": 54.5,
+     "env": 6.857239264022066,
+     "outline": 6.890000000000001,
+     "deficit": 0.032760735977934274,
+     "min_rho": 6.669238330782821,
+     "wall_present": true
+    },
+    {
+     "dtheta": 55.5,
+     "env": 6.803121677081432,
+     "outline": 6.805,
+     "deficit": 0.0018783229185679318,
+     "min_rho": 6.596976042134904,
+     "wall_present": true
+    },
+    {
+     "dtheta": 56.5,
+     "env": 6.688833789891186,
+     "outline": 6.7250000000000005,
+     "deficit": 0.03616621010881449,
+     "min_rho": 6.540295831529209,
+     "wall_present": true
+    },
+    {
+     "dtheta": 57.5,
+     "env": 6.644888831107052,
+     "outline": 6.65,
+     "deficit": 0.005111168892947937,
+     "min_rho": 6.520032790559905,
+     "wall_present": true
+    },
+    {
+     "dtheta": 58.5,
+     "env": 6.589955055766627,
+     "outline": 6.58,
+     "deficit": -0.009955055766626586,
+     "min_rho": 6.434709975456493,
+     "wall_present": true
+    },
+    {
+     "dtheta": 59.5,
+     "env": 6.5112415621473145,
+     "outline": 6.51,
+     "deficit": -0.0012415621473147453,
+     "min_rho": 6.3440421794831,
+     "wall_present": true
+    }
+   ]
+  }
+ ],
+ "ring_windows": [
+  {
+   "theta0": -74.75,
+   "theta1": -58.75,
+   "u_lo": 12.399999999999997,
+   "u_hi": 14.599999999999989,
+   "floor_rho": 11.925806523388445,
+   "deep_cells": 0,
+   "open_cells": 151,
+   "floor_rule": "median of the per-cell minimum radius over window cells >= r 11.0; cells < r 11.0 (>= 6) form a deeper through-window to their p10 radius",
+   "method": "cap frame, 1 deg x 0.2 mm cells; open = scanned cell with no outer-skirt vertex (rho > ring_R - 0.35); theta span = columns open in >= 50 % of rows u 12.7..13.9; u span = rows open in >= 50 % of those columns"
+  },
+  {
+   "theta0": -8.25,
+   "theta1": 8.75,
+   "u_lo": 12.399999999999997,
+   "u_hi": 13.999999999999991,
+   "floor_rho": 12.126295993844877,
+   "deep_cells": 0,
+   "open_cells": 122,
+   "floor_rule": "median of the per-cell minimum radius over window cells >= r 11.0; cells < r 11.0 (>= 6) form a deeper through-window to their p10 radius",
+   "method": "cap frame, 1 deg x 0.2 mm cells; open = scanned cell with no outer-skirt vertex (rho > ring_R - 0.35); theta span = columns open in >= 50 % of rows u 12.7..13.9; u span = rows open in >= 50 % of those columns"
+  },
+  {
+   "theta0": 103.0,
+   "theta1": 121.0,
+   "u_lo": 12.399999999999997,
+   "u_hi": 14.39999999999999,
+   "floor_rho": 11.495332684982746,
+   "deep_cells": 44,
+   "open_cells": 163,
+   "deep_theta": [
+    104.0,
+    116.0
+   ],
+   "deep_u": [
+    12.799999999999995,
+    13.999999999999991
+   ],
+   "deep_floor_rho": 10.513386737512786,
+   "floor_rule": "median of the per-cell minimum radius over window cells >= r 11.0; cells < r 11.0 (>= 6) form a deeper through-window to their p10 radius",
+   "method": "cap frame, 1 deg x 0.2 mm cells; open = scanned cell with no outer-skirt vertex (rho > ring_R - 0.35); theta span = columns open in >= 50 % of rows u 12.7..13.9; u span = rows open in >= 50 % of those columns"
+  },
+  {
+   "theta0": 174.0,
+   "theta1": -173.0,
+   "u_lo": 12.599999999999996,
+   "u_hi": 14.19999999999999,
+   "floor_rho": 11.905788755126297,
+   "deep_cells": 0,
+   "open_cells": 93,
+   "floor_rule": "median of the per-cell minimum radius over window cells >= r 11.0; cells < r 11.0 (>= 6) form a deeper through-window to their p10 radius",
+   "method": "cap frame, 1 deg x 0.2 mm cells; open = scanned cell with no outer-skirt vertex (rho > ring_R - 0.35); theta span = columns open in >= 50 % of rows u 12.7..13.9; u span = rows open in >= 50 % of those columns"
+  }
+ ],
+ "skirt_slits": [
+  {
+   "theta0": -148.459301731781,
+   "theta1": -135.81062907848457,
+   "u_top": 10.702449548333544,
+   "u_min": 9.78095680073559,
+   "rho_in": 10.149793332865032,
+   "rho_out": 11.086388017331016,
+   "n": 20,
+   "datum_theta": [
+    -149.0890388076643,
+    -136.7150725550825
+   ],
+   "method": "open-boundary loop (intake/coverage.json L5/L7) vertices in the cap frame: the scanned edge of each slit",
+   "ceiling_theta0": -158.1349654051328,
+   "ceiling_theta1": -140.1349654051328,
+   "ceiling_u": 10.862181540132148,
+   "ceiling_rho_p2_p95": [
+    10.05677879868492,
+    10.735900439277714
+   ],
+   "ceiling_n": 105,
+   "ceiling_method": "1-deg bins of the highest scan vertex inside the skirt (rho 10.0..11.8); slit = contiguous bins above ring_bottom_u + 0.9 around the loop; ceiling = median of those maxima; radial span = p2..p95 of the vertices above ring_bottom_u + 0.9"
+  },
+  {
+   "theta0": 151.75556088361776,
+   "theta1": 163.4588797764067,
+   "u_top": 10.978116883158481,
+   "u_min": 9.86730403724186,
+   "rho_in": 10.376561809468857,
+   "rho_out": 11.063152746420762,
+   "n": 17,
+   "datum_theta": [
+    152.26363827962496,
+    163.7508756174606
+   ],
+   "method": "open-boundary loop (intake/coverage.json L5/L7) vertices in the cap frame: the scanned edge of each slit",
+   "ceiling_theta0": 151.60722033001224,
+   "ceiling_theta1": 172.60722033001224,
+   "ceiling_u": 10.950203632096017,
+   "ceiling_rho_p2_p95": [
+    10.012666251974675,
+    10.631202143101008
+   ],
+   "ceiling_n": 52,
+   "ceiling_method": "1-deg bins of the highest scan vertex inside the skirt (rho 10.0..11.8); slit = contiguous bins above ring_bottom_u + 0.9 around the loop; ceiling = median of those maxima; radial span = p2..p95 of the vertices above ring_bottom_u + 0.9"
+  }
+ ]
+}

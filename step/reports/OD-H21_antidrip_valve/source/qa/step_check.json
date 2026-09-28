@@ -1,0 +1,140 @@
+{
+ "schema": "stl-re/step_check@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-H21_antidrip-valve_datum.step": "293413a365cc66c59589501ee2cd1ec26768ec01cb4940d078b43609b50da331",
+  "build/OD-H21_antidrip-valve.step": "59110901b473df3617bb9355248a759267b2b961eb090dadf0fff966f893de85"
+ },
+ "seed": null,
+ "created": "2026-09-28T14:27:00+00:00",
+ "steps": {
+  "build/OD-H21_antidrip-valve_datum.step": {
+   "validity": {
+    "counts": {
+     "solid": 1,
+     "shell": 1,
+     "face": 146,
+     "edge": 728,
+     "vertex": 1456
+    },
+    "brepcheck_valid": true,
+    "shells_closed": [
+     true
+    ],
+    "naked_edges": 0,
+    "volume_mm3": 19376.495312554947,
+    "area_mm2": 5993.22503268792,
+    "bbox": [
+     -13.471425142189169,
+     -13.430926750779173,
+     -27.424121712662036,
+     30.017897945173438,
+     24.75069286323943,
+     28.373947745159988
+    ],
+    "single_valid_closed_solid": true
+   },
+   "tessellation": {
+    "tolerance": 0.005,
+    "angular_tolerance": 0.05,
+    "tris": 519352,
+    "watertight": true,
+    "winding": true,
+    "euler": 0,
+    "components": 1,
+    "degenerate_faces": 0,
+    "volume_mm3": 19373.932989845474,
+    "volume_vs_brep_mm3": -2.5623227094729373
+   },
+   "surface_census": {
+    "faces": 146,
+    "by_type": {
+     "plane": {
+      "count": 80,
+      "area_mm2": 1455.4795550238657
+     },
+     "torus": {
+      "count": 11,
+      "area_mm2": 588.4386278695669
+     },
+     "cylinder": {
+      "count": 33,
+      "area_mm2": 2794.790166766697
+     },
+     "cone": {
+      "count": 22,
+      "area_mm2": 1154.5166830277913
+     }
+    },
+    "analytic_area_share": 1.0,
+    "gated": false,
+    "note": "reported, not gated (QUESTIONS.md Q3)"
+   }
+  },
+  "build/OD-H21_antidrip-valve.step": {
+   "validity": {
+    "counts": {
+     "solid": 1,
+     "shell": 1,
+     "face": 146,
+     "edge": 728,
+     "vertex": 1456
+    },
+    "brepcheck_valid": true,
+    "shells_closed": [
+     true
+    ],
+    "naked_edges": 0,
+    "volume_mm3": 19376.49531255494,
+    "area_mm2": 5993.22503268792,
+    "bbox": [
+     -51.07008150892044,
+     -25.51600774065555,
+     -185.4458665171049,
+     -3.6432749718531947,
+     8.588317524136258,
+     -124.82442910516598
+    ],
+    "single_valid_closed_solid": true
+   },
+   "tessellation": {
+    "tolerance": 0.005,
+    "angular_tolerance": 0.05,
+    "tris": 517110,
+    "watertight": true,
+    "winding": true,
+    "euler": 0,
+    "components": 1,
+    "degenerate_faces": 0,
+    "volume_mm3": 19373.93613916329,
+    "volume_vs_brep_mm3": -2.5591733916517114
+   },
+   "surface_census": {
+    "faces": 146,
+    "by_type": {
+     "plane": {
+      "count": 80,
+      "area_mm2": 1455.4795550238657
+     },
+     "torus": {
+      "count": 11,
+      "area_mm2": 588.4386278695669
+     },
+     "cylinder": {
+      "count": 33,
+      "area_mm2": 2794.790166766697
+     },
+     "cone": {
+      "count": 22,
+      "area_mm2": 1154.5166830277913
+     }
+    },
+    "analytic_area_share": 1.0,
+    "gated": false,
+    "note": "reported, not gated (QUESTIONS.md Q3)"
+   }
+  }
+ },
+ "all_single_valid_closed_solid": true
+}

@@ -1,0 +1,516 @@
+{
+ "schema": "stl-re/pattern_count.json@1",
+ "tool": "pattern_count.py",
+ "tool_version": "stl-re-measure-intent@1.0.0",
+ "inputs": {
+  "intake/aligned_work.stl": "ba45c057adfe16feead33a20c2904ac9c38e4325c1880d7c01052b6d88f2a6f4"
+ },
+ "seed": 0,
+ "created": "2026-09-28T13:03:57+00:00",
+ "name": "nut_ribs",
+ "signal": "radius",
+ "frame": "datum; theta CCW about +Z from +X",
+ "tolerance": null,
+ "metric": "rms",
+ "scan_noise_mm": null,
+ "orders_searched": [
+  3,
+  24
+ ],
+ "count": 8,
+ "check": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "pass",
+   "note": "FFT-dominant order identical at every station (P03 method); residual is a local minimum at every station"
+  }
+ },
+ "stations": [
+  {
+   "z": -12.5,
+   "n_polylines": 1,
+   "r_max": 12.262854,
+   "r_min": 10.575084,
+   "d_from_rmax": 24.525707,
+   "n_samples": 10200,
+   "coverage": 1.0,
+   "signal_ptp": 1.68777,
+   "fft_dominant_order": 8,
+   "fft_top5": [
+    8,
+    16,
+    24,
+    17,
+    9
+   ],
+   "residual_metric": "rms",
+   "tolerance": null,
+   "qualified_orders": [],
+   "selected_maximal_order": null,
+   "min_residual_order": 4,
+   "contrast_selected_vs_neighbours": 0.266661,
+   "fft_dominant_is_residual_local_min": true,
+   "crest_phase_deg_of_selected": 23.776,
+   "diagnostic_peak_count": 8,
+   "diagnostic_peak_prominence": 0.135022,
+   "order_table": [
+    {
+     "order": 3,
+     "rms": 0.445212242,
+     "max_abs": 1.03176752,
+     "fft_mag": 75.25308
+    },
+    {
+     "order": 4,
+     "rms": 0.120592868,
+     "max_abs": 0.28233595,
+     "fft_mag": 23.03921
+    },
+    {
+     "order": 5,
+     "rms": 0.45273095,
+     "max_abs": 1.169847699,
+     "fft_mag": 28.323249
+    },
+    {
+     "order": 6,
+     "rms": 0.44616208,
+     "max_abs": 1.070051391,
+     "fft_mag": 22.703665
+    },
+    {
+     "order": 7,
+     "rms": 0.453050665,
+     "max_abs": 1.20790653,
+     "fft_mag": 132.850669
+    },
+    {
+     "order": 8,
+     "rms": 0.120776244,
+     "max_abs": 0.277565752,
+     "fft_mag": 2682.962541
+    },
+    {
+     "order": 9,
+     "rms": 0.452919824,
+     "max_abs": 1.1497935,
+     "fft_mag": 152.807948
+    },
+    {
+     "order": 10,
+     "rms": 0.453341088,
+     "max_abs": 1.176900429,
+     "fft_mag": 57.737057
+    },
+    {
+     "order": 11,
+     "rms": 0.453335669,
+     "max_abs": 1.16976479,
+     "fft_mag": 17.681399
+    },
+    {
+     "order": 12,
+     "rms": 0.446210075,
+     "max_abs": 1.078681169,
+     "fft_mag": 21.139533
+    },
+    {
+     "order": 13,
+     "rms": 0.453407463,
+     "max_abs": 1.183218927,
+     "fft_mag": 39.524572
+    },
+    {
+     "order": 14,
+     "rms": 0.45344079,
+     "max_abs": 1.183565786,
+     "fft_mag": 4.054635
+    },
+    {
+     "order": 15,
+     "rms": 0.453269926,
+     "max_abs": 1.197307458,
+     "fft_mag": 89.912543
+    },
+    {
+     "order": 16,
+     "rms": 0.399363974,
+     "max_abs": 0.864905513,
+     "fft_mag": 1543.082295
+    },
+    {
+     "order": 17,
+     "rms": 0.452785342,
+     "max_abs": 1.146673405,
+     "fft_mag": 175.053555
+    },
+    {
+     "order": 18,
+     "rms": 0.453437597,
+     "max_abs": 1.18095878,
+     "fft_mag": 29.09238
+    },
+    {
+     "order": 19,
+     "rms": 0.453443925,
+     "max_abs": 1.183581997,
+     "fft_mag": 8.396322
+    },
+    {
+     "order": 20,
+     "rms": 0.453425008,
+     "max_abs": 1.177905611,
+     "fft_mag": 19.391647
+    },
+    {
+     "order": 21,
+     "rms": 0.453449826,
+     "max_abs": 1.184891067,
+     "fft_mag": 1.02844
+    },
+    {
+     "order": 22,
+     "rms": 0.453444434,
+     "max_abs": 1.18268295,
+     "fft_mag": 18.606484
+    },
+    {
+     "order": 23,
+     "rms": 0.453376392,
+     "max_abs": 1.195762217,
+     "fft_mag": 61.262784
+    },
+    {
+     "order": 24,
+     "rms": 0.446224215,
+     "max_abs": 1.073996666,
+     "fft_mag": 581.838355
+    }
+   ]
+  },
+  {
+   "z": -10.0,
+   "n_polylines": 1,
+   "r_max": 12.271966,
+   "r_min": 10.616858,
+   "d_from_rmax": 24.543932,
+   "n_samples": 10200,
+   "coverage": 1.0,
+   "signal_ptp": 1.655108,
+   "fft_dominant_order": 8,
+   "fft_top5": [
+    8,
+    16,
+    24,
+    7,
+    17
+   ],
+   "residual_metric": "rms",
+   "tolerance": null,
+   "qualified_orders": [],
+   "selected_maximal_order": null,
+   "min_residual_order": 4,
+   "contrast_selected_vs_neighbours": 0.296265,
+   "fft_dominant_is_residual_local_min": true,
+   "crest_phase_deg_of_selected": 23.755,
+   "diagnostic_peak_count": 8,
+   "diagnostic_peak_prominence": 0.132409,
+   "order_table": [
+    {
+     "order": 3,
+     "rms": 0.432634499,
+     "max_abs": 0.994341665,
+     "fft_mag": 41.449688
+    },
+    {
+     "order": 4,
+     "rms": 0.129705334,
+     "max_abs": 0.281807147,
+     "fft_mag": 40.721686
+    },
+    {
+     "order": 5,
+     "rms": 0.439205987,
+     "max_abs": 1.13608698,
+     "fft_mag": 37.734451
+    },
+    {
+     "order": 6,
+     "rms": 0.433446971,
+     "max_abs": 1.017037236,
+     "fft_mag": 14.185525
+    },
+    {
+     "order": 7,
+     "rms": 0.43910971,
+     "max_abs": 1.144486943,
+     "fft_mag": 165.321465
+    },
+    {
+     "order": 8,
+     "rms": 0.130092712,
+     "max_abs": 0.301513637,
+     "fft_mag": 2594.502788
+    },
+    {
+     "order": 9,
+     "rms": 0.439455849,
+     "max_abs": 1.124721784,
+     "fft_mag": 116.79068
+    },
+    {
+     "order": 10,
+     "rms": 0.439767478,
+     "max_abs": 1.140955935,
+     "fft_mag": 6.325916
+    },
+    {
+     "order": 11,
+     "rms": 0.439756104,
+     "max_abs": 1.120731868,
+     "fft_mag": 13.303307
+    },
+    {
+     "order": 12,
+     "rms": 0.433493886,
+     "max_abs": 1.026214293,
+     "fft_mag": 28.006474
+    },
+    {
+     "order": 13,
+     "rms": 0.439760068,
+     "max_abs": 1.125401649,
+     "fft_mag": 28.185692
+    },
+    {
+     "order": 14,
+     "rms": 0.439761141,
+     "max_abs": 1.127571268,
+     "fft_mag": 34.678915
+    },
+    {
+     "order": 15,
+     "rms": 0.439447292,
+     "max_abs": 1.150723447,
+     "fft_mag": 127.323075
+    },
+    {
+     "order": 16,
+     "rms": 0.389657426,
+     "max_abs": 0.830939497,
+     "fft_mag": 1468.572738
+    },
+    {
+     "order": 17,
+     "rms": 0.439257112,
+     "max_abs": 1.115176014,
+     "fft_mag": 158.228474
+    },
+    {
+     "order": 18,
+     "rms": 0.439775886,
+     "max_abs": 1.128402435,
+     "fft_mag": 33.683933
+    },
+    {
+     "order": 19,
+     "rms": 0.43978265,
+     "max_abs": 1.137712848,
+     "fft_mag": 26.557258
+    },
+    {
+     "order": 20,
+     "rms": 0.439775,
+     "max_abs": 1.143299125,
+     "fft_mag": 36.846353
+    },
+    {
+     "order": 21,
+     "rms": 0.439771902,
+     "max_abs": 1.130678071,
+     "fft_mag": 41.421721
+    },
+    {
+     "order": 22,
+     "rms": 0.439792553,
+     "max_abs": 1.130531858,
+     "fft_mag": 16.941263
+    },
+    {
+     "order": 23,
+     "rms": 0.439680982,
+     "max_abs": 1.140320324,
+     "fft_mag": 74.689636
+    },
+    {
+     "order": 24,
+     "rms": 0.433516925,
+     "max_abs": 1.033530911,
+     "fft_mag": 534.519388
+    }
+   ]
+  },
+  {
+   "z": -7.8,
+   "n_polylines": 1,
+   "r_max": 12.300734,
+   "r_min": 10.704348,
+   "d_from_rmax": 24.601468,
+   "n_samples": 10200,
+   "coverage": 1.0,
+   "signal_ptp": 1.596386,
+   "fft_dominant_order": 8,
+   "fft_top5": [
+    8,
+    16,
+    24,
+    15,
+    3
+   ],
+   "residual_metric": "rms",
+   "tolerance": null,
+   "qualified_orders": [],
+   "selected_maximal_order": null,
+   "min_residual_order": 4,
+   "contrast_selected_vs_neighbours": 0.334047,
+   "fft_dominant_is_residual_local_min": true,
+   "crest_phase_deg_of_selected": 23.691,
+   "diagnostic_peak_count": 8,
+   "diagnostic_peak_prominence": 0.127711,
+   "order_table": [
+    {
+     "order": 3,
+     "rms": 0.415273859,
+     "max_abs": 0.952221213,
+     "fft_mag": 159.871529
+    },
+    {
+     "order": 4,
+     "rms": 0.140405171,
+     "max_abs": 0.262851197,
+     "fft_mag": 78.980887
+    },
+    {
+     "order": 5,
+     "rms": 0.422395954,
+     "max_abs": 1.113655282,
+     "fft_mag": 39.450407
+    },
+    {
+     "order": 6,
+     "rms": 0.417148156,
+     "max_abs": 0.990887644,
+     "fft_mag": 37.534503
+    },
+    {
+     "order": 7,
+     "rms": 0.422706316,
+     "max_abs": 1.114199688,
+     "fft_mag": 148.961236
+    },
+    {
+     "order": 8,
+     "rms": 0.141203825,
+     "max_abs": 0.268885822,
+     "fft_mag": 2435.285062
+    },
+    {
+     "order": 9,
+     "rms": 0.422751185,
+     "max_abs": 1.09404549,
+     "fft_mag": 146.951855
+    },
+    {
+     "order": 10,
+     "rms": 0.423267775,
+     "max_abs": 1.10526432,
+     "fft_mag": 28.557162
+    },
+    {
+     "order": 11,
+     "rms": 0.423221665,
+     "max_abs": 1.082987734,
+     "fft_mag": 24.003117
+    },
+    {
+     "order": 12,
+     "rms": 0.41722444,
+     "max_abs": 0.996068018,
+     "fft_mag": 48.521369
+    },
+    {
+     "order": 13,
+     "rms": 0.423288652,
+     "max_abs": 1.103090051,
+     "fft_mag": 6.92107
+    },
+    {
+     "order": 14,
+     "rms": 0.423259449,
+     "max_abs": 1.096049529,
+     "fft_mag": 19.036924
+    },
+    {
+     "order": 15,
+     "rms": 0.422624021,
+     "max_abs": 1.124784836,
+     "fft_mag": 172.485801
+    },
+    {
+     "order": 16,
+     "rms": 0.372833557,
+     "max_abs": 0.809329816,
+     "fft_mag": 1443.372087
+    },
+    {
+     "order": 17,
+     "rms": 0.422778397,
+     "max_abs": 1.088328098,
+     "fft_mag": 151.292013
+    },
+    {
+     "order": 18,
+     "rms": 0.423254984,
+     "max_abs": 1.107595654,
+     "fft_mag": 39.837343
+    },
+    {
+     "order": 19,
+     "rms": 0.423296655,
+     "max_abs": 1.102337834,
+     "fft_mag": 16.00817
+    },
+    {
+     "order": 20,
+     "rms": 0.42329222,
+     "max_abs": 1.102759082,
+     "fft_mag": 20.414446
+    },
+    {
+     "order": 21,
+     "rms": 0.423274493,
+     "max_abs": 1.100713075,
+     "fft_mag": 36.24864
+    },
+    {
+     "order": 22,
+     "rms": 0.423269152,
+     "max_abs": 1.094952109,
+     "fft_mag": 36.011087
+    },
+    {
+     "order": 23,
+     "rms": 0.423034451,
+     "max_abs": 1.11192791,
+     "fft_mag": 109.364065
+    },
+    {
+     "order": 24,
+     "rms": 0.417292848,
+     "max_abs": 1.008299824,
+     "fft_mag": 512.572145
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "verdict": "BAND_NOT_MET",
+ "independence": "same independent verifier agent as it1 (stl-re-verify), did not build the model (it1 or it2); QA scripts from skills/stl-re-verify only, plus declared run-local helpers in qa/src/ (observability chunking wrapper, residual/mask composition analysis, datum supplement, zoom sections, heatmaps). Read only input/, intake/INTAKE_CARD.md, alignment.json, regime.json, build/*.step, build/export_check.json, build/MODELING_PLAN.md, DECISIONS.md; build/model.py grepped read-only for CHK-PATCHWORK, never imported. BUILDER_REPORT.md, build_log.txt, measure/ not opened. The STEP was tessellated by QA (0.005 mm / 0.05 rad); build/*_cad.stl not used. MODELING_PLAN.md quotes the builder's self-check numbers; they were not used as expectations. it2: MODELING_PLAN.md §9 was read for the list of changed features only; its self-check numbers were not used as expectations.",
+ "checks": {
+  "CHK-CIRCULAR": {
+   "ran": true,
+   "result": "pass",
+   "note": "datum not ICP'd to own CAD; QA T_refine (qa/registration.json) is QA-only and not written back; no expected value taken from the builder. The builder's build/selfcheck.json (frozen datum, no ICP) is a consistency check, not independent evidence."
+  },
+  "CHK-LIKE4LIKE": {
+   "ran": true,
+   "result": "pass",
+   "note": "it1 (_it1_SUPERSEDED/qa/gate.json dd052135f7c2) vs it2 use the identical protocol: same regime.json, byte-identical zones.json and masks.json (declared at it1, before any number), same ICP params (39 its both), same deviation sampling/seeds, same observability params, same QA tessellation (0.005/0.05), same run-local helpers (obs chunk 64). Every it1->it2 delta is geometry, not protocol."
+  },
+  "CHK-INDEP": {
+   "ran": true,
+   "result": "pass",
+   "note": "fresh context; see independence"
+  },
+  "CHK-FILLET": {
+   "ran": true,
+   "result": "pass",
+   "note": "export_check.json fillets: [] (0 3D fillet ops, as MODELING_PLAN §5 plans: every round is a profile arc); nothing silently skipped or reduced"
+  },
+  "CHK-PATCHWORK": {
+   "ran": true,
+   "result": "pass",
+   "note": "QA census it2: 146 faces, 100 % analytic (plane 80, cylinder 33, cone 22, torus 11), 0 B-spline/ruled; model.py grep: no loft/sweep/spline; the same 2 make_polygon calls as it1 (4-pt rectangle model.py:112, 5-pt web model.py:238)"
+  },
+  "CHK-ENUM": {
+   "ran": true,
+   "result": "pass",
+   "note": "every INTAKE feature E01-E25 exists in the CAD; every photographed feature present. it2 fixed the three it1 extent findings: latch now a through-window (photo_2 slot), slits trimmed (no CAD pocket at theta 147 / 229.5), window near 110 deepened to the gap. Remaining window/latch residuals sit behind scanner bridge membranes (see miss_explanations)."
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": true,
+   "result": "n/a",
+   "note": "no Tier-1 (scan-only, no calipers)"
+  },
+  "PHOTO-PLAUSIBILITY": {
+   "ran": true,
+   "result": "pass",
+   "note": "photo_1, photo_2 (catalogue, no scale): nozzle with tip slot, 8-rib nut, band, body, side outlet with collar, black O-ring and thread, cap ring with rectangular windows, cap, hose barb - all present in CAD. Declared simplifications visible in photos: thread modelled as plain cylinder, O-ring fused to the outlet."
+  }
+ },
+ "photos": [
+  "photo_1.png",
+  "photo_2.png"
+ ],
+ "cluster_explanations": {
+  "0": "outlet end bore (L3): scanner bridge membrane curling into the bore at x 28.1-28.4, 48 pts, max 1.085 (zoom 'outlet end theta=0'); scanner artefact inside declared mask M1. Unchanged from it1 (the outlet was not rebuilt). The it1 latch cluster is gone."
+ },
+ "limitations": [
+  {
+   "id": "L1",
+   "text": "Tier-1 not run: scan-only job, no caliper readings supplied (DECISIONS MEASUREMENTS). Every caliper-coverable dim is ABSENT, not passed.",
+   "rerun_trigger": "any caliper reading (nozzle OD, lug span, thread OD, O-ring OD, barb OD, window width) -> re-run Tier-1 and the gate"
+  },
+  {
+   "id": "L2",
+   "text": "Absolute scale not caliper-verified (CHK-SCALE flag at intake; units assumed mm, scale 1.0).",
+   "rerun_trigger": "one caliper reading of any dimension"
+  },
+  {
+   "id": "L3",
+   "text": "scan_resolution = full by agent inference (DECISIONS OTHER: 600,142 faces, mean edge 0.152 mm), not owner-confirmed. The gate is labelled OFFICIAL (full-res) on that inference.",
+   "rerun_trigger": "owner confirms the scan is the original export; if it is decimated, re-label INSPECTION ONLY and re-grade on the original"
+  },
+  {
+   "id": "L4",
+   "text": "Bore interiors (nozzle, outlet, barb) and all internal passages are unscanned/bridged; named mask M1 removes them. The whole-part scan->CAD pass is MASK-DEPENDENT: masked max 0.799 (0.001 under the band; 0.800 in the builder datum frame, i.e. fragile), unmasked max 1.085 at the outlet bore bridge membrane.",
+   "rerun_trigger": "a sectioned part, CT scan or depth-gauge reading of the three bores"
+  },
+  {
+   "id": "L5",
+   "text": "Assembly scanned as one closed shell: sub-part poses kept as scanned (nozzle 1.3 deg, cap part 3.4 deg tilt), O-ring fused into the single solid, thread modelled as a plain cylinder (MODELING_PLAN §4, §6).",
+   "rerun_trigger": "owner asks for a nominal (coaxial) design, separate parts or a real thread"
+  },
+  {
+   "id": "L6",
+   "text": "Observability ray test (observability.py) counts CAD surfaces inside open-mouthed bores, windows and slits as observable although no scan covers them (unobservable fraction 0.09 %); the gated cad_to_scan_observable therefore contains the unscanned nozzle bore floor and far bore wall (max 3.120). QA's run-local composition observable AND NOT (M1, M2) is in qa/residual_analysis.json (p95 0.213 / max 0.871).",
+   "rerun_trigger": "a scan-coverage-aware observability test (or mask composition in deviation_gate/verdict) -> re-run the gate"
+  },
+  {
+   "id": "L7",
+   "text": "Datum audit (report-only) agrees with alignment.json within 0.018 deg / 0.007 mm; but the as-built origin is the nozzle axis at its measured mid-station projected along the band normal, while the literal 'nozzle axis ∩ band plane' along the 1.16-1.27 deg tilted axis lies 0.37 mm away (qa/datum_supplement.json). No effect on deviation (ICP delta 0.045 deg / 0.015 mm).",
+   "rerun_trigger": "owner states which origin definition downstream users need"
+  }
+ ],
+ "miss_explanations": [
+  {
+   "region": "cad_to_scan_observable (whole part) - nozzle bore floor and far bore wall (B1, M1)",
+   "cause": "max 3.120: the CAD bore floor (at the scanner bridge) and the bore wall at theta ~280-340 above z -26 have no scan behind them; the scan's bore wall ends at the ragged mouth z ~-26.1 on that side (qa/overlays/zoom_it2_extra.png 'bore far wall theta=300/315'). COVERAGE FACT, not a through-window error: the through-window cut itself fits the scan (bore wall on the window side theta 60-160 c2s p50 0.04-0.23, max 0.46), and the far wall is the unchanged it1 bore cylinder whose radius matches the scanned wall below z -26 (p50 0.15). The it2 window only opens a new ray path to it, which the OD-H22 #3 ray-test defect then counts as observable.",
+   "options": "A) owner ACCEPT-BAND citing this gate hash and 'cad_to_scan_observable'; B) fix the observability test to be scan-coverage-aware / compose declared masks (skill defect) and re-grade; C) sectioned part or depth reading of the bore."
+  },
+  {
+   "region": "zone I1 nozzle spigot, CAD->scan (latch through-window edge, theta ~83, r 4.7, z -24.1)",
+   "cause": "max 0.867 on 2 points: the upper face of the new through-window near its theta-83 edge sits ~0.87 mm from the scan, whose surface there is the bridge membrane sagging into the window (zoom 'latch edge theta=83'). Scanner fact (membrane), not a fixable geometry error; scan->CAD in I1 now passes (0.799).",
+   "options": "accept (ACCEPT-BAND, 'zone:I1'), or a caliper/photo with scale of the latch slot height to arbitrate; no further rebuild recommended (it would follow a membrane)."
+  },
+  {
+   "region": "zone I5 ring windows, CAD->scan (windows near theta 121 and 285)",
+   "cause": "masked p95 0.453 / max 0.996 (unmasked p95 0.559 / max 1.044). The CAD window floors and walls lie behind scanner bridge membranes: at theta 121 and 285 the scanned skirt sags 0.3-0.4 mm inward exactly over the window z-span (13-15 and 12-14), i.e. a membrane across an opening, not closed skirt (zoom 'ring window theta=121/285'); the window at 290 is scanned open and matches the CAD. Scanner fact. scan->CAD in I5 now passes (p95 0.277 / max 0.562).",
+   "options": "accept (ACCEPT-BAND, 'zone:I5'), or caliper the window width/height; modelling the CAD to the membrane would model an artefact."
+  },
+  {
+   "region": "outlet collar / O-ring junction (theta ~8, x 22.7, z 0.4; outside I3)",
+   "cause": "6 CAD points up to 0.828 at the fused O-ring-to-collar fill (declared invented connection, MODELING_PLAN §6 / L5); present in it1 too (1 pt 0.846). Declared simplification, not a coverage defect; it does not decide any gated result on its own (the gated CAD->scan term is already over band from the bore floor).",
+   "options": "keep as declared (L5), or model the O-ring as a separate body."
+  }
+ ],
+ "claim_boundary": "Outer-envelope reconstruction of a scanned assembly (one fused solid, sub-parts as scanned). Not a functional flow part (internal passages, valve seat, spring not modelled), not caliper-verified in scale or any dimension, bore depths are scanner-bridge depths, window/latch floors behind scanner membranes are unverified, thread is a plain cylinder. Not fit for tooling, moulding, fits or thread engagement until calipered; fit for visual/envelope/packaging use only after a recorded ACCEPT-BAND."
+}

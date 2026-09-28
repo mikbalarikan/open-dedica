@@ -1,0 +1,40 @@
+scan->CAD: 300181 scan points
+CAD->scan: 300000 CAD samples
+scan_to_cad              n   300181 rms 0.0884 p50 0.0414 p95 0.1789 p99 0.2966 max 1.0733
+cad_to_scan              n   300000 rms 0.1858 p50 0.0440 p95 0.2580 p99 0.6276 max 3.2340
+scan_to_cad_masked       n   297888 rms 0.0853 p50 0.0411 p95 0.1758 p99 0.2845 max 0.8003
+cad_to_scan_masked       n   289800 rms 0.1015 p50 0.0425 p95 0.2163 p99 0.3808 max 1.0158
+cad_to_scan_observable   n    19982 rms 0.1879 p50 0.0437 p95 0.2546 p99 0.6238 max 3.1243
+unobservable CAD fraction 0.09%
+  zone I1 nozzle spigot OD lugs latch scan_to_cad  n   31017 p95 0.252 max 0.800
+  zone I1 nozzle spigot OD lugs latch cad_to_scan  n   32022 p95 0.295 max 0.868
+  zone I2 nozzle shoulder             scan_to_cad  n    4185 p95 0.119 max 0.197
+  zone I2 nozzle shoulder             cad_to_scan  n   13178 p95 0.204 max 0.458
+  zone I3 outlet thread and O-ring    scan_to_cad  n   18913 p95 0.172 max 0.708
+  zone I3 outlet thread and O-ring    cad_to_scan  n   13923 p95 0.200 max 0.578
+  zone I4 barb tube and bulb          scan_to_cad  n   16794 p95 0.205 max 0.764
+  zone I4 barb tube and bulb          cad_to_scan  n   16312 p95 0.170 max 0.856
+  zone I5 ring windows                scan_to_cad  n    7034 p95 0.275 max 0.559
+  zone I5 ring windows                cad_to_scan  n    7730 p95 0.561 max 1.035
+  zone B1 nozzle bore interior        scan_to_cad  n    1189 p95 0.357 max 0.733
+  zone B1 nozzle bore interior        cad_to_scan  n    5924 p95 2.326 max 3.234
+  zone B2 outlet end bore interior    scan_to_cad  n     657 p95 0.866 max 1.073
+  zone B2 outlet end bore interior    cad_to_scan  n     688 p95 0.813 max 1.007
+  zone B3 barb end bore interior      scan_to_cad  n     447 p95 0.623 max 0.751
+  zone B3 barb end bore interior      cad_to_scan  n     465 p95 0.782 max 0.927
+  zone R nozzle                       scan_to_cad  n   33608 p95 0.255 max 0.800
+  zone R nozzle                       cad_to_scan  n   39543 p95 0.866 max 3.234
+  zone R nut                          scan_to_cad  n   38359 p95 0.187 max 0.443
+  zone R nut                          cad_to_scan  n   45081 p95 0.219 max 0.506
+  zone R band                         scan_to_cad  n   39078 p95 0.141 max 0.317
+  zone R band                         cad_to_scan  n   40180 p95 0.182 max 0.782
+  zone R body outlet web              scan_to_cad  n   67765 p95 0.163 max 1.073
+  zone R body outlet web              cad_to_scan  n   62585 p95 0.230 max 1.007
+  zone R ring skirt                   scan_to_cad  n   43236 p95 0.185 max 0.670
+  zone R ring skirt                   cad_to_scan  n   41848 p95 0.308 max 1.035
+  zone R cap                          scan_to_cad  n   49266 p95 0.130 max 0.714
+  zone R cap                          cad_to_scan  n   46920 p95 0.144 max 0.597
+  zone R barb above cap               scan_to_cad  n   28869 p95 0.209 max 0.764
+  zone R barb above cap               cad_to_scan  n   23843 p95 0.210 max 0.927
+label: NO QA REGISTRATION | mask-dependent passes: ['zone I4 barb tube and bulb cad_to_scan']
+[run_deviation] obs chunk 64; peak RSS 1.46 GB

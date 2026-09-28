@@ -1,0 +1,7 @@
+{"comment": "Written by QA from INTAKE_CARD.md §6 and alignment.json primary/secondary/clock mesh_region_desc (not from builder code). Regions select faces in the builder datum frame only; all fits are on the raw scan.",
+ "primary":  {"type": "plane", "method": "region", "cone_deg": 10.0,
+              "region": {"r": [10.0, 11.5], "z": [-0.3, 0.3], "nz": [0.9, null], "comment": "band top face: up-facing annulus r 10-11.5 at z=0 (INTAKE_CARD §6)"}},
+ "position": {"type": "circle", "single_wall": "outer",
+              "region": {"z": [-22.0, -15.0], "r": [5.3, 6.3], "comment": "nozzle OD sections z -22..-15 (alignment.json secondary: 15 stations), outer wall only"}},
+ "clock":    {"type": "plane_normal",
+              "region": {"x": [22.3, 23.1], "nx": [0.9, null], "comment": "side-outlet collar outer face, normal -> +X (INTAKE_CARD §6)"}}}
