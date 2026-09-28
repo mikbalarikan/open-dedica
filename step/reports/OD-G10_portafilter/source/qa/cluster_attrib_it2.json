@@ -1,0 +1,302 @@
+{
+ "schema": "stl-re/cluster_attrib@1",
+ "tool": "qa/scripts/cluster_attrib.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "qa/dev_arrays.npz": "21387af0ea4091ade0e1cf74bd60a1565e489e62aee6ff6c28ca6b5db70b0d62",
+  "build/OD-G11_portafilter_datum.step": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+  "qa/deviation.json": "a5a8b12c1732e7041e1de297b1e8a53d1e64767e7912a05628fada80704e9197"
+ },
+ "seed": 5,
+ "created": "2026-09-28T10:58:26+00:00",
+ "note": "QA diagnostic, not a gate and not a mask: region buckets describe where the over-band points are; gate.json pass/fail is unaffected.",
+ "threshold_mm": 0.8,
+ "scan_to_cad_by_region": {
+  "grip_strip_unscanned": {
+   "n": 5009,
+   "frac_of_set": 0.01997113375755546,
+   "p95": 0.15944941445701935,
+   "max": 0.3973134698412164,
+   "n_over_max_band": 0,
+   "share_of_over_band": 0.0
+  },
+  "spout_tips_heads": {
+   "n": 5973,
+   "frac_of_set": 0.02381465001674561,
+   "p95": 0.5683861208349511,
+   "max": 1.0985209942739957,
+   "n_over_max_band": 97,
+   "share_of_over_band": 0.2068230277185501
+  },
+  "outlet_pockets_trough": {
+   "n": 13029,
+   "frac_of_set": 0.05194727524998804,
+   "p95": 0.4335185786071569,
+   "max": 0.982479011070315,
+   "n_over_max_band": 39,
+   "share_of_over_band": 0.08315565031982942
+  },
+  "insert_centre_urib": {
+   "n": 18411,
+   "frac_of_set": 0.07340557868044591,
+   "p95": 0.3292739301357228,
+   "max": 1.0178058443012852,
+   "n_over_max_band": 18,
+   "share_of_over_band": 0.03837953091684435
+  },
+  "insert_wall_ring": {
+   "n": 14539,
+   "frac_of_set": 0.0579677208427029,
+   "p95": 0.48190390235460495,
+   "max": 1.2233845311163862,
+   "n_over_max_band": 87,
+   "share_of_over_band": 0.18550106609808104
+  },
+  "wire_bore_top": {
+   "n": 18663,
+   "frac_of_set": 0.07441031529591885,
+   "p95": 0.3661994983652816,
+   "max": 1.345533158665419,
+   "n_over_max_band": 161,
+   "share_of_over_band": 0.34328358208955223
+  },
+  "lugs": {
+   "n": 12999,
+   "frac_of_set": 0.05182766374814602,
+   "p95": 0.5048304816432114,
+   "max": 0.9672887258813999,
+   "n_over_max_band": 58,
+   "share_of_over_band": 0.12366737739872068
+  },
+  "neck_pad": {
+   "n": 22246,
+   "frac_of_set": 0.0886959156659171,
+   "p95": 0.38073109670453786,
+   "max": 0.8513173667339008,
+   "n_over_max_band": 4,
+   "share_of_over_band": 0.008528784648187633
+  },
+  "handle": {
+   "n": 53498,
+   "frac_of_set": 0.21329920418480774,
+   "p95": 0.1242440547094373,
+   "max": 0.32222758829841036,
+   "n_over_max_band": 0,
+   "share_of_over_band": 0.0
+  },
+  "other": {
+   "n": 86445,
+   "frac_of_set": 0.34466054255777234,
+   "p95": 0.16896840698869717,
+   "max": 0.892920999058922,
+   "n_over_max_band": 5,
+   "share_of_over_band": 0.010660980810234541
+  }
+ },
+ "scan_to_cad_over_band_by_cluster": {
+  "0": 159,
+  "1": 44,
+  "2": 40,
+  "3": 40,
+  "4": 26,
+  "5": 24,
+  "6": 23,
+  "7": 20
+ },
+ "scan_to_cad_over_band_in_small_clusters": 93,
+ "observable_reproduced": {
+  "n": [
+   19241,
+   19241
+  ],
+  "p95": [
+   0.37825610138053983,
+   0.37825610138053983
+  ],
+  "max": [
+   4.901621748021518,
+   4.901621748021518
+  ]
+ },
+ "cad_to_scan_observable_by_region": {
+  "grip_strip_unscanned": {
+   "n": 968,
+   "frac_of_set": 0.05030923548672107,
+   "p95": 2.136246613077683,
+   "max": 4.901621748021518,
+   "n_over_max_band": 137,
+   "share_of_over_band": 0.3477157360406091
+  },
+  "spout_tips_heads": {
+   "n": 244,
+   "frac_of_set": 0.012681253573099112,
+   "p95": 0.6065318069280854,
+   "max": 1.1382377598720954,
+   "n_over_max_band": 5,
+   "share_of_over_band": 0.012690355329949238
+  },
+  "outlet_pockets_trough": {
+   "n": 1176,
+   "frac_of_set": 0.06111948443428096,
+   "p95": 1.9898426074281668,
+   "max": 3.3163864856682004,
+   "n_over_max_band": 109,
+   "share_of_over_band": 0.2766497461928934
+  },
+  "insert_centre_urib": {
+   "n": 1413,
+   "frac_of_set": 0.07343693155241411,
+   "p95": 1.204602350297037,
+   "max": 3.946641542004259,
+   "n_over_max_band": 92,
+   "share_of_over_band": 0.233502538071066
+  },
+  "insert_wall_ring": {
+   "n": 1258,
+   "frac_of_set": 0.06538121719245361,
+   "p95": 0.5999668017214423,
+   "max": 3.257748457437685,
+   "n_over_max_band": 34,
+   "share_of_over_band": 0.08629441624365482
+  },
+  "wire_bore_top": {
+   "n": 922,
+   "frac_of_set": 0.047918507354087626,
+   "p95": 0.41025130859216336,
+   "max": 1.2201955221429395,
+   "n_over_max_band": 7,
+   "share_of_over_band": 0.017766497461928935
+  },
+  "lugs": {
+   "n": 866,
+   "frac_of_set": 0.04500805571435996,
+   "p95": 0.5183743496764285,
+   "max": 1.1500770010353076,
+   "n_over_max_band": 9,
+   "share_of_over_band": 0.02284263959390863
+  },
+  "neck_pad": {
+   "n": 1497,
+   "frac_of_set": 0.07780260901200561,
+   "p95": 0.43977682233662413,
+   "max": 1.0656940702275985,
+   "n_over_max_band": 1,
+   "share_of_over_band": 0.0025380710659898475
+  },
+  "handle": {
+   "n": 4798,
+   "frac_of_set": 0.24936333870380958,
+   "p95": 0.11103856766955196,
+   "max": 0.29872497885922206,
+   "n_over_max_band": 0,
+   "share_of_over_band": 0.0
+  },
+  "other": {
+   "n": 6099,
+   "frac_of_set": 0.3169793669767684,
+   "p95": 0.16482770127575896,
+   "max": 0.7745600212618885,
+   "n_over_max_band": 0,
+   "share_of_over_band": 0.0
+  }
+ },
+ "cad_to_scan_observable_over_band_by_full_cluster": {
+  "0": 92,
+  "1": 38,
+  "2": 85,
+  "3": 137,
+  "4": 3,
+  "5": 4,
+  "6": 6,
+  "7": 1,
+  "8": 3,
+  "9": 2,
+  "11": 3,
+  "12": 1,
+  "14": 2,
+  "15": 1
+ },
+ "cad_to_scan_observable_over_band_in_small_clusters": 16,
+ "cad_to_scan_observable_top8": [
+  {
+   "d": 4.901621748021518,
+   "xyz": [
+    151.01,
+    14.0,
+    -34.68
+   ],
+   "region": "grip_strip_unscanned",
+   "full_cluster": 3
+  },
+  {
+   "d": 4.7795178711201265,
+   "xyz": [
+    151.94,
+    14.04,
+    -34.54
+   ],
+   "region": "grip_strip_unscanned",
+   "full_cluster": 3
+  },
+  {
+   "d": 4.661115925964135,
+   "xyz": [
+    150.64,
+    13.95,
+    -34.84
+   ],
+   "region": "grip_strip_unscanned",
+   "full_cluster": 3
+  },
+  {
+   "d": 4.350890197889148,
+   "xyz": [
+    147.29,
+    14.01,
+    -34.34
+   ],
+   "region": "grip_strip_unscanned",
+   "full_cluster": 3
+  },
+  {
+   "d": 4.273525682131352,
+   "xyz": [
+    149.15,
+    14.26,
+    -32.95
+   ],
+   "region": "grip_strip_unscanned",
+   "full_cluster": 3
+  },
+  {
+   "d": 4.145039728346092,
+   "xyz": [
+    152.23,
+    13.79,
+    -35.55
+   ],
+   "region": "grip_strip_unscanned",
+   "full_cluster": 3
+  },
+  {
+   "d": 3.946641542004259,
+   "xyz": [
+    12.51,
+    -2.48,
+    -37.35
+   ],
+   "region": "insert_centre_urib",
+   "full_cluster": 0
+  },
+  {
+   "d": 3.6563156192956225,
+   "xyz": [
+    11.9,
+    -2.65,
+    -37.04
+   ],
+   "region": "insert_centre_urib",
+   "full_cluster": 0
+  }
+ ]
+}

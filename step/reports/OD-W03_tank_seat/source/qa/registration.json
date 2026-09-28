@@ -1,0 +1,116 @@
+{
+ "schema": "stl-re/registration@1",
+ "tool": "tier2_icp.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "4784d93dafd0e5ba815368c89572b92c2ba1af17b054725a6503b4c1fa59e1fb",
+  "intake/alignment.json": "218719d01b7d3a6df1391dc44b12d31a8199de5e58cf294cf4ca35f6abf2c506",
+  "build/OD-W03_datum.step": "a74589f0ac36ee40b206c25c0ac709b7804e47f72e0f535fa01b25c055b44c5f",
+  "qa/icp_scan_masks.json": "8ed8ca3572bbfcd4895b7705d3c6be66869a9511c886295abb6639b84ada4412"
+ },
+ "seed": 11,
+ "created": "2026-09-28T08:01:51+00:00",
+ "method": "point-to-point ICP, CAD samples -> scan samples, masked correspondences (B02 q20_tier2.py), SIGNED normal agreement (QA workaround qa/scripts/tier2_icp_signed.py; tier2_icp.py:52 is sign-free)",
+ "scan_kind": "full",
+ "iterations": 29,
+ "max_iterations": 60,
+ "converged": true,
+ "delta_deg": 0.08556625021693,
+ "delta_mm": 0.027201508577129323,
+ "max_point_move_mm": 0.04125165575401889,
+ "final_kept_fraction": 0.44561666666666666,
+ "T_refine": [
+  [
+   0.9999999624779787,
+   0.00014332423035246953,
+   -0.00023345709101855962,
+   -0.010611344780560748
+  ],
+  [
+   -0.00014298134402125406,
+   0.9999989121349788,
+   0.0014680889634723579,
+   -0.02458231431771366
+  ],
+  [
+   0.0002336672497694907,
+   -0.0014680555283784027,
+   0.9999988951056811,
+   -0.0047990888306882135
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "T_refine_meaning": "maps datum-frame CAD onto the aligned scan; deviation_gate applies its inverse to the scan. QA-only: never written back to alignment.json (CHK-CIRCULAR).",
+ "trace_tail": [
+  {
+   "it": 23,
+   "step": 1.6045125670234252e-05,
+   "rot_deg": 1.0386604689550578e-05,
+   "trans_mm": 5.658520980683673e-06,
+   "kept_fraction": 0.44561666666666666,
+   "mean_d_kept": 0.10134179458363052
+  },
+  {
+   "it": 24,
+   "step": 9.80574914495976e-06,
+   "rot_deg": 6.613302226726415e-06,
+   "trans_mm": 3.1924469182333456e-06,
+   "kept_fraction": 0.44561666666666666,
+   "mean_d_kept": 0.10134181352956675
+  },
+  {
+   "it": 25,
+   "step": 8.63721535945268e-06,
+   "rot_deg": 6.3890569402603996e-06,
+   "trans_mm": 2.2481584191922807e-06,
+   "kept_fraction": 0.44561666666666666,
+   "mean_d_kept": 0.1013417858039497
+  },
+  {
+   "it": 26,
+   "step": 5.9565124019760454e-06,
+   "rot_deg": 4.829673078902934e-06,
+   "trans_mm": 1.1268393230731114e-06,
+   "kept_fraction": 0.44561666666666666,
+   "mean_d_kept": 0.10134179476603869
+  },
+  {
+   "it": 27,
+   "step": 3.4234682724549863e-06,
+   "rot_deg": 2.4148365394514667e-06,
+   "trans_mm": 1.0086317330035196e-06,
+   "kept_fraction": 0.44561666666666666,
+   "mean_d_kept": 0.10134180634543759
+  },
+  {
+   "it": 28,
+   "step": 1.4566299686614898e-13,
+   "rot_deg": 0.0,
+   "trans_mm": 1.4566299686614898e-13,
+   "kept_fraction": 0.44561666666666666,
+   "mean_d_kept": 0.10134179912847277
+  }
+ ],
+ "reference_masks_removed": [],
+ "params": {
+  "ns": 3000000,
+  "scan_seed": 11,
+  "nc": 300000,
+  "cad_seed": 13,
+  "normal_deg": 70.0,
+  "boundary_mm": 0.8,
+  "max_corr_mm": 3.0,
+  "max_iter": 60,
+  "tol": 1e-06
+ },
+ "notes": [
+  "welded: 202383 verts / 400657 faces"
+ ],
+ "variant": "signed-normal correspondence; all other parameters = tier2_icp.py defaults",
+ "companion_run": "qa/registration_default_signfree.json (tier2_icp.py as shipped)"
+}

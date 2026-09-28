@@ -1,0 +1,5 @@
+{"comment": "Written by QA from INTAKE_CARD.md §6 / alignment.json descriptions (primary: rod taper spigot axis; origin: rod axis ∩ knob top face annulus; clock: steel tube leaving the elbow -> +X). Regions select faces only; all fits on raw scan.",
+ "primary": {"type": "axis", "region": {"z": [30, 62], "r": [3.2, 4.8], "abs_nz": [0, 0.15]}},
+ "level": {"region": {"z": [-0.4, 0.4], "r": [6.6, 9.0], "nz": [0.95, null]}},
+ "position": {"type": "axis_line", "region": {"z": [30, 62], "r": [3.2, 4.8], "abs_nz": [0, 0.15]}},
+ "clock": {"type": "none", "comment": "tube-axis clock is not a type datum_audit.py supports; audited separately by qa/clock_check.py (report-only)"}}

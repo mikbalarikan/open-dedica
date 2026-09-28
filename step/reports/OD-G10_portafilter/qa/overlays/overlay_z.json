@@ -1,0 +1,129 @@
+{
+ "schema": "stl-re/overlay@1",
+ "tool": "overlay.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "9eb34045f9be50df2320a989f96fc1135a7a75e1d4cc9ac673b2e1bfce0c30aa",
+  "build/OD-G11_portafilter_datum.step": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+  "intake/alignment.json": "0a2b0dbca01e7d48b144991ff743a06bcf0a6f8f466f5ddbbb9198c4f5380e0a"
+ },
+ "seed": null,
+ "created": "2026-09-28T10:54:46+00:00",
+ "png": "qa/overlays/overlay_z.png",
+ "panels": [
+  {
+   "panel": "Z=-0.15",
+   "scan_segments": 2645,
+   "scan_length_mm": 376.6960057057341,
+   "cad_segments": 1272,
+   "cad_length_mm": 392.12383178634445,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-2.0",
+   "scan_segments": 2498,
+   "scan_length_mm": 404.8836315069767,
+   "cad_segments": 1066,
+   "cad_length_mm": 409.2120090535917,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-3.4",
+   "scan_segments": 3546,
+   "scan_length_mm": 509.99371463044633,
+   "cad_segments": 2158,
+   "cad_length_mm": 588.0898858841391,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-5.5",
+   "scan_segments": 2193,
+   "scan_length_mm": 358.9593995201138,
+   "cad_segments": 576,
+   "cad_length_mm": 391.35407252946936,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-8.0",
+   "scan_segments": 2170,
+   "scan_length_mm": 364.50976992244284,
+   "cad_segments": 509,
+   "cad_length_mm": 364.21803492660825,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-11.0",
+   "scan_segments": 2323,
+   "scan_length_mm": 363.6497377090003,
+   "cad_segments": 635,
+   "cad_length_mm": 363.005334595309,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-20.0",
+   "scan_segments": 3403,
+   "scan_length_mm": 624.7907631481937,
+   "cad_segments": 1311,
+   "cad_length_mm": 625.369365950171,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-31.0",
+   "scan_segments": 4385,
+   "scan_length_mm": 767.4446431042977,
+   "cad_segments": 2225,
+   "cad_length_mm": 886.1965193503182,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-36.5",
+   "scan_segments": 4016,
+   "scan_length_mm": 685.5069573361473,
+   "cad_segments": 2943,
+   "cad_length_mm": 845.6153454157834,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-41.0",
+   "scan_segments": 3131,
+   "scan_length_mm": 538.3472794760494,
+   "cad_segments": 2740,
+   "cad_length_mm": 582.466980280746,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-50.0",
+   "scan_segments": 453,
+   "scan_length_mm": 81.18719859472984,
+   "cad_segments": 2165,
+   "cad_length_mm": 124.63767691810162,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-57.0",
+   "scan_segments": 510,
+   "scan_length_mm": 68.54422122655396,
+   "cad_segments": 1274,
+   "cad_length_mm": 68.35965013027358,
+   "scan_empty": false,
+   "cad_empty": false
+  }
+ ],
+ "empty_scan_panels": [],
+ "CHK-OVERLAY": {
+  "ran": true,
+  "result": "pass",
+  "note": "every panel shows scan"
+ }
+}

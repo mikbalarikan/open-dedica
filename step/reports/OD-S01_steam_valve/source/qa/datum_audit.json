@@ -1,0 +1,81 @@
+{
+ "schema": "stl-re/datum_audit@1",
+ "tool": "datum_audit.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "98cd118312fbb9b43d844cbc063c3be897c553541154b1f5988d5be0c2127ebf",
+  "intake/alignment.json": "fff8c3ae96c69e11fd6baafe2cd4edfd5d47d7a4e7a10e6910d54391fd68abf4",
+  "qa/datum_spec.json": "2d034b80f89bbe8c0d9cf453f291b13f8358cf4168b86ea00e587e717ce38bb0"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:01:48+00:00",
+ "independence": "builder matrix used only to select named regions; all fits are QA code on raw scan",
+ "primary": {
+  "type": "plane",
+  "method": "region SVD",
+  "faces": 12122,
+  "fit_rms_mm": 0.08091058482973637,
+  "fit_max_mm": 0.34330472461973277
+ },
+ "position": {
+  "type": "circle",
+  "wall": "outer",
+  "single_wall": "outer",
+  "faces": 7379,
+  "R_mm": 5.386791603514721,
+  "fit_rms_mm": 0.0457102442442502,
+  "method": "IRLS Cauchy circle (q03:88-100)"
+ },
+ "clock": {
+  "type": "plane_normal",
+  "faces": 187,
+  "fit_rms_mm": 0.021347111341280388
+ },
+ "angle_deg": 0.25620399761277646,
+ "axis_angle_deg": 0.23411689302281363,
+ "clock_audited": true,
+ "origin_offset_mm": 0.16562201095656,
+ "origin_offset_vec_mm": [
+  -0.05030471542109893,
+  -0.1568770921469138,
+  -0.017019520534546473
+ ],
+ "point_disagreement_mean_mm": 0.1019921231026251,
+ "point_disagreement_p95_mm": 0.18809047571508558,
+ "point_disagreement_max_mm": 0.2313423775917712,
+ "reference_band": "\u22640.3\u00b0 / \u22640.15 mm (RE_SPEC.md:241)",
+ "reference": {
+  "angle_deg": 0.3,
+  "origin_offset_mm": 0.15,
+  "source": "baseline/oomwoo-re-pipeline/RE_SPEC.md:241"
+ },
+ "within_reference": false,
+ "blocking": false,
+ "note": "REPORT-ONLY (QUESTIONS.md Q2). Golden precedent: both B02 and P03 exceeded this reference band and were still approved with it recorded (see analysis/golden/OOM-B02.md and OOM-P03.md for the actual figures).",
+ "T_qa": [
+  [
+   -0.8970809993760884,
+   0.013106298699799264,
+   0.4416717168812036,
+   60.98948234406384
+  ],
+  [
+   0.20733825319342944,
+   -0.8702001458111756,
+   0.4469480450711316,
+   77.0093509858136
+  ],
+  [
+   0.39020062701268926,
+   0.49252404120469145,
+   0.7779225793832595,
+   190.23024106196425
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ]
+}

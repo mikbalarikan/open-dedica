@@ -1,0 +1,2 @@
+ICP NOT CONVERGED in 60/60 its | correction 0.1707 deg, 0.0328 mm | max point move 0.1558 mm | kept 93.1%
+DONE

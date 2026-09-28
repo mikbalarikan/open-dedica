@@ -1,0 +1,62 @@
+{
+  "schema": "stl-re/limitations@1",
+  "part": {
+    "name": "OD-G11_portafilter",
+    "what_it_is": "Espresso portafilter scanned as one assembly: cast cup with three bayonet lugs, two spout bosses with pan-head screws and a centre screw, open-bottom arch neck, tapered grip with collar and end cap, a pressurised insert (funnel floor, outlet trough, U rib, two V ribs, outlet pockets) and a round-wire retaining spring. Delivered as ONE fused solid (owner decision).",
+    "reference_photo": "input/photos/1.webp"
+  },
+  "method_summary": [
+    "Datum: cup rim end face (gasket seat) is z = 0 with +Z out of the opening; cup axis from wall-face circle fits; handle end-cap normal clocks the handle to +X.",
+    "Scan-only parameters: every value is a primitive fit on the aligned scan (lines, circles, spheres, cones, planes) kept as measured; see the source column. No calipers.",
+    "build123d: revolved cup profile minus a revolved cavity cut by a funnel cone and an outlet trough; lugs with two ramp planes, pad, arch neck, neck/collar/grip revolves, spouts, drafted ribs, screws, wire arcs; one valid solid exported in the datum and scan frames.",
+    "Two independent verifications on the full-resolution scan under regime {{gate:regime.name}}; iteration 1 REVISE, iteration 2 {{gate:verdict}}, band miss accepted by the owner."
+  ],
+  "limitations": [
+    {"id": "L1", "text": "Tier-1 not run (tier1 partial: none of the requested dims has a caliper reading, owner chose scan-only); absolute scale is not caliper-verified (CHK-SCALE flag). All requested dims are absent, not passed.",
+     "rerun_trigger": "any caliper reading (rim bore ID, ledge depth, lug under-face heights, spout spacing): fill input/MEASUREMENTS.md, rehash, re-run verify", "evidence": "qa/gate.json#limitations"},
+    {"id": "L2", "text": "Unscanned or occluded regions carry invented or interpolated CAD and set the observable CAD->scan miss (max {{gate:deviation.cad_to_scan_observable.max}} mm): the two outlet-pocket bores (depth assumed), the insert floor inside the U rib (open scan region) and a strip along the grip that the scanner missed.",
+     "rerun_trigger": "a rescan covering the pocket interiors, the insert floor inside the U rib and the grip strip, or a depth-gauge reading of the pocket depth", "evidence": "qa/gate.json#limitations"},
+    {"id": "L3", "text": "The fine tessellation of both STEPs has two zero-area triangles each (spout-1 root / bottom-round junction and the insert floor near the trough); the B-rep itself is one valid closed solid with no naked edges.",
+     "rerun_trigger": "any rebuild: re-run step_check and the tessellation probe", "evidence": "qa/gate.json#limitations"},
+    {"id": "L4", "text": "Verify ICP needed its iteration cap raised once (same as iteration 1); both runs and the no-ICP datum-frame run agree, so the gate numbers do not depend on it.",
+     "rerun_trigger": "any rebuild: re-run ICP at the default cap first", "evidence": "qa/gate.json#limitations"},
+    {"id": "L5", "text": "One fused solid of an assembly: internal interfaces between cup, insert, grip, cap, screws and wire are not represented; the wire is three planar arcs and the screw heads are simplified. The wire arc sets the scan->CAD max {{gate:deviation.scan_to_cad.max}} mm.",
+     "rerun_trigger": "an owner decision to model the wire as a swept path, orient the screw recesses, or model the bodies separately", "evidence": "qa/gate.json#limitations"},
+    {"id": "L6", "text": "The verify deviation gate ran through a memory-only wrapper (smaller observability ray chunk) because the unmodified script was killed for lack of memory; the per-point result is identical.",
+     "rerun_trigger": "observability chunk size exposed on the deviation_gate.py CLI: re-run it directly", "evidence": "qa/gate.json#limitations"},
+    {"id": "L7", "text": "Protocol carried unchanged from iteration 1: masks apply to CAD->scan only, so scan points on scan-hole edges stay in the gated scan->CAD statistic, and the observable CAD->scan subset is unmasked.",
+     "rerun_trigger": "a protocol decision declared before the next gate (for example a scan-side open-boundary mask), then re-run verify reporting both", "evidence": "qa/gate.json#limitations"},
+    {"id": "L8", "text": "CHK-FILLET: the leg-foot rounds on the flared neck-cone part were built REDUCED ({{params:arch_foot_round_R.value}} mm target, a smaller declared fallback used; see export_check.json fillets); all other fillets are at their target radius.",
+     "rerun_trigger": "a rebuild of the neck that splits the cone-part foot edges so the full radius applies", "evidence": "build/export_check.json#fillets"}
+  ],
+  "assumptions": [
+    {"text": "Spout pocket bore radius and depth below the insert floor are invented (the scan has open holes there).", "source": "assumed", "evidence": "measure/params.json#pocket_bore_bottom_z"},
+    {"text": "Screw cross-recess width and orientation, spout screw head rim radius, collar crest and end-face rounds were read by eye from section figures.", "source": "assumed", "evidence": "measure/params.json"},
+    {"text": "Material between the outer and inner scanned surfaces is filled solid (one fused solid of cast cup, plastic insert, grip, cap, screws and wire).", "source": "assumed", "evidence": "DECISIONS.md PART-CLASS"},
+    {"text": "Units assumed millimetres; no scale applied (no calipers).", "source": "assumed", "evidence": "intake/alignment.json#checks"}
+  ],
+  "claim_boundary": {
+    "not_fit_for": [
+      "manufacture, tooling or fit-critical use: the band was NOT met (max and observable CAD->scan) and no dimension is caliper-verified",
+      "modelling the separate bodies (cup, insert, grip, screws, wire): this is one fused solid",
+      "the pocket interiors and the grip strip, which are invented or interpolated"
+    ],
+    "fit_for": [
+      "visualisation, packaging and fixture design around the portafilter envelope",
+      "a design-intent starting point (cup, rim, lugs, bore, handle agree with the scan within the p95 band)",
+      "re-measurement with calipers against the named parameters"
+    ]
+  },
+  "repro_commands": [
+    "cd build && python3 model.py --params ../measure/params.json --alignment ../intake/alignment.json --out . --part OD-G11_portafilter --scripts <stl-re-rebuild-build123d/scripts>"
+  ],
+  "feature_tree": [
+    {"id": "F01", "feature": "cup outer revolve (dome, drafted wall, rim)", "params": ["dome_centre_z", "dome_R", "outer_wall_r_at_z0", "outer_wall_dr_dz"]},
+    {"id": "F02", "feature": "cavity: bore, ledge, taper, insert wall, funnel floor, outlet trough", "params": ["bore_r_at_z0", "ledge_z", "insert_wall_r_at_z0", "funnel_apex_z", "trough_rc"]},
+    {"id": "F04", "feature": "spout bosses with screw heads, pockets", "params": ["spout1_x", "spout1_tip_z", "pocket_bore_r"]},
+    {"id": "F06", "feature": "U plateau, U rib, V ribs", "params": ["uplat_z0", "urib_inner_absy", "vrib1_joint", "vrib_width_top"]},
+    {"id": "F09", "feature": "three bayonet lugs with ramp and lead-out, rim notches", "params": ["lug1_centre_deg", "lug1_under_z_centre", "lug1_leadout_z_centre", "notch1_centre_deg"]},
+    {"id": "F11", "feature": "pad, arch neck with rounded feet, neck cone, collar, grip, end cap", "params": ["pad_R_at_z0", "arch_outer_r", "arch_foot_round_R", "neck_cone_r_at_t0", "grip_r_at_t0", "end_face_t"]},
+    {"id": "F14", "feature": "screw recesses, wire groove, wire arcs", "params": ["recess_depth", "groove_depth", "wire1_R", "wire_r"]}
+  ]
+}

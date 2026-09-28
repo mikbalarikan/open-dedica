@@ -1,0 +1,250 @@
+{
+  "schema": "stl-re/repro@1",
+  "tool": "repro_check.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "build/OD-S02_steam-rod.step": "254dcac712cf5d7e4221579e85aa64ebf9bb4999a10aa0d9a657f76151809a5a",
+    "build/OD-S02_steam-rod_datum.step": "cac05e75aac6dfbf9603e7594363092986de53a1e50134c62e6437666f476897",
+    "build/model.py": "aecb6e4e7894d476ea7ca0cc5d997774f76ed9437e0bd000713f74b570a47ee8",
+    "measure/params.json": "a39aa148455ef3e4e6a90f6d91c7e28065356d3ce92f03926b742dba016fc102"
+  },
+  "seed": 0,
+  "created": "2026-09-28T10:02:50+00:00",
+  "method": "2 fresh subprocess rebuild(s) of build/model.py in a scratch copy; STEP re-imported; solids, faces, surface census, volume, bbox compared (raw hash reported, not required)",
+  "command": [
+    "python3",
+    "model.py",
+    "--params",
+    "../measure/params.json",
+    "--alignment",
+    "../intake/alignment.json",
+    "--out",
+    ".",
+    "--part",
+    "OD-S02_steam-rod",
+    "--scripts",
+    "/home/user/agentic_STL-to-CAD/skills/stl-re-rebuild-build123d/scripts"
+  ],
+  "cwd": "build",
+  "tolerance_mm": 0.0,
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "build123d": "0.13.0",
+    "OCP": "8.0.1.0",
+    "numpy": "2.4.6"
+  },
+  "reproducible": true,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=../measure/params.json\nF01 rod+knob revolve: cone1 meets taper at z 25.849; faces 27\nF02 O-ring cord revolved (inner half buried)\nF02b fairing loft through 6 ellipse sections, clipped at z 0.0\nF03 lug corner round fillet target R0.6 used R0.6 on 4 edges OK\nF03 lug placed\nF04 plate: faces 8, volume 2592.1\nF05 plate perimeter round (free outline only) fillet target R1.946 used R1.946 on 6 edges OK\nF06 dish sphere cut R 17.972 depth 0.902\nF06b underside dish sphere cut R 19.263\nF09-F11 tube: straight B r 2.9967, bend spline through 10 scanned stations r 2.9098, straight C r 2.9967\nF12b 6 underside windows r 4.5..7.0, depth 2.52 (scan lower bound, it2)\nF12 bushing revolved about its own axis\nF13 tip: start t -14.911, end 3.9, bore r 2.032 depth 13.6 (scan lower bound, it2)\nfused: 1 solid(s), faces 122, volume 13753.5\nUNUSED params (plan/measure mismatch?): ['bend_R']\n{\n  \"closed\": true,\n  \"faces\": 122,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 2,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 13753.489353\n}\n",
+      "stderr_tail": "",
+      "run": 1,
+      "produced": [
+        "OD-S02_steam-rod.step",
+        "OD-S02_steam-rod_datum.step"
+      ]
+    },
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=../measure/params.json\nF01 rod+knob revolve: cone1 meets taper at z 25.849; faces 27\nF02 O-ring cord revolved (inner half buried)\nF02b fairing loft through 6 ellipse sections, clipped at z 0.0\nF03 lug corner round fillet target R0.6 used R0.6 on 4 edges OK\nF03 lug placed\nF04 plate: faces 8, volume 2592.1\nF05 plate perimeter round (free outline only) fillet target R1.946 used R1.946 on 6 edges OK\nF06 dish sphere cut R 17.972 depth 0.902\nF06b underside dish sphere cut R 19.263\nF09-F11 tube: straight B r 2.9967, bend spline through 10 scanned stations r 2.9098, straight C r 2.9967\nF12b 6 underside windows r 4.5..7.0, depth 2.52 (scan lower bound, it2)\nF12 bushing revolved about its own axis\nF13 tip: start t -14.911, end 3.9, bore r 2.032 depth 13.6 (scan lower bound, it2)\nfused: 1 solid(s), faces 122, volume 13753.5\nUNUSED params (plan/measure mismatch?): ['bend_R']\n{\n  \"closed\": true,\n  \"faces\": 122,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 2,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 13753.489353\n}\n",
+      "stderr_tail": "",
+      "run": 2,
+      "produced": [
+        "OD-S02_steam-rod.step",
+        "OD-S02_steam-rod_datum.step"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "OD-S02_steam-rod.step",
+      "original_volume_mm3": 13753.489352881707,
+      "rebuild_volume_mm3": 13753.489352881707,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        107.45656470688978,
+        68.00484236009919,
+        72.28596274449231
+      ],
+      "rebuild_bbox_mm": [
+        107.45656470688978,
+        68.00484236009919,
+        72.28596274449231
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 13753.489352881707,
+          "rebuild_volume_mm3": 13753.489352881707,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            107.45656470688978,
+            68.00484236009919,
+            72.28596274449231
+          ],
+          "rebuild_bbox_mm": [
+            107.45656470688978,
+            68.00484236009919,
+            72.28596274449231
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 13753.489352881707,
+          "rebuild_volume_mm3": 13753.489352881707,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            107.45656470688978,
+            68.00484236009919,
+            72.28596274449231
+          ],
+          "rebuild_bbox_mm": [
+            107.45656470688978,
+            68.00484236009919,
+            72.28596274449231
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 122,
+        "valid": true,
+        "surface_census": {
+          "BSPLINE": 5,
+          "CONE": 33,
+          "CYLINDER": 31,
+          "PLANE": 47,
+          "REVOLUTION": 3,
+          "SPHERE": 2,
+          "TORUS": 1
+        },
+        "volume_mm3": 13753.489352881707,
+        "area_mm2": 6676.201547832328,
+        "bbox_min": [
+          -38.46977458621369,
+          -55.363553890859876,
+          -222.49443640183372
+        ],
+        "bbox_max": [
+          68.98679012067609,
+          12.64128846923931,
+          -150.20847365734141
+        ]
+      }
+    },
+    {
+      "file": "OD-S02_steam-rod_datum.step",
+      "original_volume_mm3": 13753.4893528817,
+      "rebuild_volume_mm3": 13753.4893528817,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        71.63504202978878,
+        25.22057480401512,
+        125.19082373070705
+      ],
+      "rebuild_bbox_mm": [
+        71.63504202978878,
+        25.22057480401512,
+        125.19082373070705
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 13753.4893528817,
+          "rebuild_volume_mm3": 13753.4893528817,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            71.63504202978878,
+            25.22057480401512,
+            125.19082373070705
+          ],
+          "rebuild_bbox_mm": [
+            71.63504202978878,
+            25.22057480401512,
+            125.19082373070705
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 13753.4893528817,
+          "rebuild_volume_mm3": 13753.4893528817,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            71.63504202978878,
+            25.22057480401512,
+            125.19082373070705
+          ],
+          "rebuild_bbox_mm": [
+            71.63504202978878,
+            25.22057480401512,
+            125.19082373070705
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 122,
+        "valid": true,
+        "surface_census": {
+          "BSPLINE": 5,
+          "CONE": 33,
+          "CYLINDER": 31,
+          "PLANE": 47,
+          "REVOLUTION": 3,
+          "SPHERE": 2,
+          "TORUS": 1
+        },
+        "volume_mm3": 13753.4893528817,
+        "area_mm2": 6676.201547832328,
+        "bbox_min": [
+          -21.486002489458617,
+          -16.06737470401512,
+          -57.933823730707054
+        ],
+        "bbox_max": [
+          50.149039540330165,
+          9.1532001,
+          67.257
+        ]
+      }
+    }
+  ]
+}

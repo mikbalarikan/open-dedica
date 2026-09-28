@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "5931d7807765cac8c854b431f12ac5bd6753dfa83522b1601af116441a276894"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:01:24+00:00",
+ "scan_noise_mm": {
+  "value": 0.03493680309172588,
+  "p95_mm": 0.07568465303863196,
+  "max_mm": 0.10833262893699999,
+  "method": "rms of RANSAC+SVD plane on lever paddle back face (flat side, no dimple) (8800 faces)"
+ }
+}

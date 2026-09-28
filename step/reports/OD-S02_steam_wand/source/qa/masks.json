@@ -1,0 +1,9 @@
+{"masks": [
+ {"name": "M1 D1 torn flash", "type": "region", "applies_to": "both",
+  "select": {"x": [6.5, 13.0], "z": [-15.0, -1.0]},
+  "why": "torn rubber flash/flap at the knob/sleeve junction is specimen damage, not design geometry, and is deliberately not modelled; points there are not a surface deviation of the modelled part",
+  "evidence": "PRE-DECLARED at intake before any gate number: intake/INTAKE_CARD.md §2 'Artefact zones' D1 (datum x 6.5..13, z -15..-1) and §8; photo_1 and photo_2 show the torn flap (QA looked at both). Box used exactly as declared; it also contains intact sleeve/knob-fairing surface, which is therefore ungraded under the mask."},
+ {"name": "M2 open boundary", "type": "open_boundary", "applies_to": "cad", "radius_mm": 0.8,
+  "why": "CAD->scan distance measured to a scan hole EDGE (33 open-boundary loops, intake coverage.json) is not a surface deviation",
+  "evidence": "QA-ADDED (not pre-declared at intake): standard B02 q20_tier2.py:9-10 mask; affects only the reported CAD->scan masked number, never the gated observable CAD->scan or scan->CAD; radius swept 0..2.5 mm"}
+]}

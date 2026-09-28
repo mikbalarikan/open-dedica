@@ -1,0 +1,362 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/0bfad0c9-f032-5978-bb8b-45df87dc606b/scratchpad/jobs/OD-E02/intake/work.stl": "b798d9e1fc0b85dfde8a0eed1b20bc4948d84944bad0f00ee36c683cf6d99cdf",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/0bfad0c9-f032-5978-bb8b-45df87dc606b/scratchpad/jobs/OD-E02/intake/datum_spec.json": "cb7706240be20020a2dd72cd602fe1b600f77d3fd86208299b0cc68315ea30f8",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/0bfad0c9-f032-5978-bb8b-45df87dc606b/scratchpad/jobs/OD-E02/input/scan.stl": "a0e8b66e15d5b404d69149ba6ea843348d588e2d0f3202a069412341d3b4a12f",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/0bfad0c9-f032-5978-bb8b-45df87dc606b/scratchpad/jobs/OD-E02/intake/intake.json": "887a49109a18b8e29d6df54fa733b407f8a8308ad80fc9b9995c3e639bb9bb41"
+ },
+ "seed": 0,
+ "created": "2026-09-28T06:26:04+00:00",
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [],
+ "matrix_4x4": [
+  [
+   -0.6237832452420943,
+   -0.7772908009066024,
+   -0.08193579059979797,
+   -33.06752751181056
+  ],
+  [
+   0.5271733646110013,
+   -0.4958083203124878,
+   0.6901176371848686,
+   111.90907680882096
+  ],
+  [
+   -0.5770465376379603,
+   0.38728945290942557,
+   0.7190439298576689,
+   115.02716675200078
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.026463984194224962,
+  "method": "rms of RANSAC+SVD plane on mounting-tab top face (moulded flat, parallel to the back floor, 18.9 mm above it) (1638 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "back cover floor (flat rear face inside the rim wall)",
+  "why": "the back cover is the board plane: the three button axes, the screw-boss holes and the connector shroud are all normal to it; largest clean moulded flat (logos excluded by the RANSAC trim)",
+  "fit_rms_mm": 0.02180277203466539,
+  "fit_max_mm": 0.09974247544195768,
+  "fit_p95_mm": 0.0403671373390542,
+  "n_faces": 14256,
+  "area_mm2": 1290.9651292093972,
+  "fit_untrimmed": {
+   "rms": 0.025885632716290904,
+   "p95": 0.04302929132615119,
+   "max": 0.17251821898683323,
+   "n_faces": 14442
+  },
+  "inlier_frac": 0.9630937543276554,
+  "normal_raw": [
+   -0.5770465376379603,
+   0.38728945290942557,
+   0.7190439298576689
+  ],
+  "centroid_raw": [
+   -16.732877875122906,
+   -12.478049042844036,
+   -166.67994016875016
+  ],
+  "material_side": "-z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.9630937543276554
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "middle button collar (housing bore boss around the espresso-2-cups button)",
+  "why": "housing feature that guides the middle button; the part is mirror-symmetric about it (side buttons at +/-27 mm). The loose button cap itself sits 1.6 deg tilted in its bore and is rougher (circle rms 0.03-0.08), so it is not used as the datum",
+  "fit_rms_mm": 0.029375901509709715,
+  "fit_max_mm": 0.09541984570668127,
+  "fit_metric": "median / worst circle residual over stations (kasa)",
+  "stations": 9,
+  "r_by_feature": {
+   "middle button collar (housing bore boss around the espresso-2-cups button)": {
+    "n": 9,
+    "r_mean": 8.195472039072282,
+    "r_std": 0.029849771719516378
+   }
+  },
+  "centre_std_mm": [
+   0.023134522851931103,
+   0.020457647430259955
+  ],
+  "station_detail": [
+   {
+    "z": -18.7,
+    "cx": -116.23973,
+    "cy": 10.21166,
+    "r": 8.14943,
+    "rms": 0.03786,
+    "max": 0.08834,
+    "n": 417,
+    "feature": "middle button collar (housing bore boss around the espresso-2-cups button)"
+   },
+   {
+    "z": -18.4125,
+    "cx": -116.23981,
+    "cy": 10.22167,
+    "r": 8.1719,
+    "rms": 0.03272,
+    "max": 0.07623,
+    "n": 365,
+    "feature": "middle button collar (housing bore boss around the espresso-2-cups button)"
+   },
+   {
+    "z": -18.125,
+    "cx": -116.24483,
+    "cy": 10.22764,
+    "r": 8.18585,
+    "rms": 0.02772,
+    "max": 0.06451,
+    "n": 348,
+    "feature": "middle button collar (housing bore boss around the espresso-2-cups button)"
+   },
+   {
+    "z": -17.8375,
+    "cx": -116.24329,
+    "cy": 10.22698,
+    "r": 8.1911,
+    "rms": 0.02553,
+    "max": 0.06183,
+    "n": 347,
+    "feature": "middle button collar (housing bore boss around the espresso-2-cups button)"
+   },
+   {
+    "z": -17.55,
+    "cx": -116.2377,
+    "cy": 10.22877,
+    "r": 8.19379,
+    "rms": 0.02676,
+    "max": 0.06208,
+    "n": 348,
+    "feature": "middle button collar (housing bore boss around the espresso-2-cups button)"
+   },
+   {
+    "z": -17.2625,
+    "cx": -116.24062,
+    "cy": 10.23029,
+    "r": 8.19481,
+    "rms": 0.02817,
+    "max": 0.07165,
+    "n": 365,
+    "feature": "middle button collar (housing bore boss around the espresso-2-cups button)"
+   },
+   {
+    "z": -16.975,
+    "cx": -116.24317,
+    "cy": 10.23581,
+    "r": 8.19783,
+    "rms": 0.02938,
+    "max": 0.08553,
+    "n": 355,
+    "feature": "middle button collar (housing bore boss around the espresso-2-cups button)"
+   },
+   {
+    "z": -16.6875,
+    "cx": -116.25703,
+    "cy": 10.24829,
+    "r": 8.20787,
+    "rms": 0.03124,
+    "max": 0.07806,
+    "n": 362,
+    "feature": "middle button collar (housing bore boss around the espresso-2-cups button)"
+   },
+   {
+    "z": -16.4,
+    "cx": -116.31492,
+    "cy": 10.28685,
+    "r": 8.26667,
+    "rms": 0.03822,
+    "max": 0.09542,
+    "n": 418,
+    "feature": "middle button collar (housing bore boss around the espresso-2-cups button)"
+   }
+  ],
+  "noise_ref": {
+   "value": 0.029376921900108943,
+   "p95_mm": 0.03807950821791515,
+   "max_mm": 0.03822873518197285,
+   "method": "median IRLS circle rms over the 9 origin stations of the middle button collar (z -18.7..-16.4); SELF-REFERENTIAL (same surface as the origin fit), declared",
+   "stations": [
+    {
+     "z": -18.7,
+     "irls_rms": 0.0378556677718286,
+     "r": 8.149365830129359
+    },
+    {
+     "z": -18.412499999999998,
+     "irls_rms": 0.03272139845347509,
+     "r": 8.171812429532226
+    },
+    {
+     "z": -18.125,
+     "irls_rms": 0.027721159870637335,
+     "r": 8.185778465974662
+    },
+    {
+     "z": -17.8375,
+     "irls_rms": 0.025529189231012862,
+     "r": 8.191048730843212
+    },
+    {
+     "z": -17.549999999999997,
+     "irls_rms": 0.026763519086627784,
+     "r": 8.19370755310013
+    },
+    {
+     "z": -17.2625,
+     "irls_rms": 0.02816897518883166,
+     "r": 8.194719726936462
+    },
+    {
+     "z": -16.974999999999998,
+     "irls_rms": 0.029376921900108943,
+     "r": 8.1977379754396
+    },
+    {
+     "z": -16.6875,
+     "irls_rms": 0.031243136241282825,
+     "r": 8.207736650690423
+    },
+    {
+     "z": -16.4,
+     "irls_rms": 0.03822873518197285,
+     "r": 8.266481713075787
+    }
+   ],
+   "independent_circle_survey_rms_mm": {
+    "left screw-boss hole z=-0.3/-1": [
+     0.0172,
+     0.0105
+    ],
+    "right screw-boss hole z=-0.3/-1/-2": [
+     0.0229,
+     0.0288,
+     0.0393
+    ],
+    "middle button cap z=-19.5/-22/-26": [
+     0.0372,
+     0.0277,
+     0.0389
+    ]
+   },
+   "note": "single-station circle noise on the collar (z=-17.5) was 0.0266 vs the 9-station median 0.0294: a tie within estimator precision (skill defect D1, evals/real-runs/OD-H22.md). The collar residual sits inside the range of the other clean circles on this scan (0.0105-0.0393), so it is not warp or artefact."
+  }
+ },
+ "clock": {
+  "rule": "plane_normal: +X end face of the housing rim/steps (end nearest the steam button) -> +X",
+  "angle_deg": 111.49041869622673,
+  "why": "the housing long axis (line of the three buttons) is X; the end walls are its normals",
+  "detail": {
+   "plane_fit_rms_mm": 0.02734404723908881,
+   "plane_fit_max_mm": 0.08781774399279785,
+   "plane_n_faces": 1141,
+   "plane_out_of_perpendicular_deg": 1.6122312865514061
+  }
+ },
+ "tilt_deg": {
+  "value": 1.7576787667226323,
+  "stderr_deg": 0.4646025205062612,
+  "direction_deg": 130.87901118881211,
+  "method": "common slope, per-feature intercept, 9 stations over 1 feature(s), z -18.700..-16.400 vs frame Z",
+  "z_span_mm": 2.3000000000000007,
+  "per_feature": [
+   {
+    "feature": "middle button collar (housing bore boss around the espresso-2-cups button)",
+    "n_stations": 9,
+    "value": 1.7576787667226323,
+    "stderr_deg": 0.4301396986907988,
+    "direction_deg": 130.87901118881211,
+    "z_span_mm": 2.3000000000000007
+   }
+  ],
+  "resolvable": null
+ },
+ "origin": {
+  "definition": "middle button collar axis \u2229 back cover floor plane"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": -0.001005147649458138,
+   "tol": 0.026463984194224962,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "mounting tab top face (highest point)",
+   "stat": "zmax",
+   "expected": 18.95,
+   "tol": 0.15,
+   "observed": 18.980109852876993,
+   "ok": true,
+   "tol_source": "planes survey peak bin (0.1 mm) + 2x noise floor"
+  },
+  {
+   "name": "middle button top face centre (median, r<3 mm)",
+   "stat": "zmedian",
+   "expected": -29.1,
+   "tol": 0.15,
+   "observed": -29.1527455293853,
+   "ok": true,
+   "tol_source": "planes survey peak bin (-29.05 provisional frame, +0.07 frame offset) + 2x noise floor"
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -38.716502396572096,
+   -37.841192880206606,
+   -29.250679217472893
+  ],
+  [
+   38.30619271586948,
+   16.25104922916376,
+   18.980109852876993
+  ]
+ ],
+ "extents_aligned": [
+  77.02269511244157,
+  54.09224210937036,
+  48.230789070349886
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/0bfad0c9-f032-5978-bb8b-45df87dc606b/scratchpad/jobs/OD-E02/intake/aligned_work.stl",
+  "sha256": "5180031d0377a5a60c15556b61ab8ae09dde94f55af3a9c5f074034b2fd6b521"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "finding",
+   "note": "common slope, per-feature intercept, 9 stations over 1 feature(s), z -18.700..-16.400 vs frame Z; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": true,
+   "result": "finding",
+   "note": "FLAG: no caliper or operator dimensions (scan-only, DECISIONS.md MEASUREMENTS). Units assumed mm, scale unverified; no scale applied."
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

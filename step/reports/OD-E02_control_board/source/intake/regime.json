@@ -1,0 +1,18 @@
+{
+ "schema": "stl-re/regime@1",
+ "tool": "intake.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {},
+ "seed": 0,
+ "created": "2026-09-28T06:26:17+00:00",
+ "name": "baseline-skill",
+ "source": "baseline/skills/stl2step-build123d/SKILL.md:87",
+ "bands": {
+  "p95_mm": 0.3,
+  "max_mm": 0.8,
+  "tier1_abs_mm": null,
+  "interface_max_mm": null
+ },
+ "material_class": "plastic",
+ "why": "Owner instruction 'p95 plastik par\u00e7a tolerans\u0131 kullan': moulded black plastic button board, scan-only (no calipers); baseline-skill consumer-plastic band p95<=0.30 / max<=0.80 mm"
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "b798d9e1fc0b85dfde8a0eed1b20bc4948d84944bad0f00ee36c683cf6d99cdf"
+ },
+ "seed": 0,
+ "created": "2026-09-28T06:22:41+00:00",
+ "scan_noise_mm": {
+  "value": 0.026463984194224962,
+  "p95_mm": 0.05710954401128566,
+  "max_mm": 0.09575063040675458,
+  "method": "rms of RANSAC+SVD plane on mounting-tab top face (moulded flat, parallel to the back floor, 18.9 mm above it) (1638 faces)"
+ }
+}

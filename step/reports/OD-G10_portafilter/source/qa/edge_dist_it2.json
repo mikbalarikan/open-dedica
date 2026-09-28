@@ -1,0 +1,63 @@
+{
+ "n_boundary_vertices": 1484,
+ "all_scan_points_dist_to_boundary_p50": 11.316493914199825,
+ "frac_all_scan_points_within_3mm_of_boundary": 0.09507918281421941,
+ "clusters": [
+  {
+   "cluster": 0,
+   "n": 159,
+   "dist_to_scan_boundary_p50": 5.03,
+   "dist_to_scan_boundary_max": 7.21,
+   "frac_within_3mm": 0.29
+  },
+  {
+   "cluster": 1,
+   "n": 44,
+   "dist_to_scan_boundary_p50": 0.18,
+   "dist_to_scan_boundary_max": 0.63,
+   "frac_within_3mm": 1.0
+  },
+  {
+   "cluster": 2,
+   "n": 40,
+   "dist_to_scan_boundary_p50": 1.1,
+   "dist_to_scan_boundary_max": 1.76,
+   "frac_within_3mm": 1.0
+  },
+  {
+   "cluster": 3,
+   "n": 40,
+   "dist_to_scan_boundary_p50": 12.74,
+   "dist_to_scan_boundary_max": 13.33,
+   "frac_within_3mm": 0.0
+  },
+  {
+   "cluster": 4,
+   "n": 26,
+   "dist_to_scan_boundary_p50": 17.55,
+   "dist_to_scan_boundary_max": 19.03,
+   "frac_within_3mm": 0.0
+  },
+  {
+   "cluster": 5,
+   "n": 24,
+   "dist_to_scan_boundary_p50": 13.83,
+   "dist_to_scan_boundary_max": 14.31,
+   "frac_within_3mm": 0.0
+  },
+  {
+   "cluster": 6,
+   "n": 23,
+   "dist_to_scan_boundary_p50": 0.0,
+   "dist_to_scan_boundary_max": 0.37,
+   "frac_within_3mm": 1.0
+  },
+  {
+   "cluster": 7,
+   "n": 20,
+   "dist_to_scan_boundary_p50": 0.35,
+   "dist_to_scan_boundary_max": 1.12,
+   "frac_within_3mm": 1.0
+  }
+ ]
+}

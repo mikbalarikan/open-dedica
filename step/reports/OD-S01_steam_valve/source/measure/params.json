@@ -1,0 +1,1989 @@
+{
+ "schema": "stl-re/params.json@1",
+ "tool": "measure/params_src.py",
+ "tool_version": "OD-S01 builder",
+ "inputs": {
+  "intake/aligned_work.stl": "5cc4663cd30183495981fa493bcac3c687da3dcbc3b7121f3f452dfbc3fb5a43",
+  "intake/alignment.json": "fff8c3ae96c69e11fd6baafe2cd4edfd5d47d7a4e7a10e6910d54391fd68abf4"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:57:59+00:00",
+ "part": "OD-S01_steam-valve",
+ "frame": "datum frame of intake/alignment.json: primary = cap disc outer face (z=0, +Z into the body), axis = upper valve column, clock = microswitch outer face normal -> +X; theta CCW about +Z from +X",
+ "scan_noise_mm": 0.035995208297944864,
+ "params": {
+  "spindle_r": {
+   "value": 3.7,
+   "unit": "mm",
+   "measured": "3.68..3.75",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median outer radius over theta 45..315 (clear of flat and key), 6 z stations; spline teeth not resolved",
+   "uncertainty_mm": 0.12,
+   "evidence": "measure/figures/spline_pitch.json",
+   "critical": true,
+   "rerun_trigger": "a caliper reading of the spindle OD or a tooth count from the mating knob",
+   "note": "the fine spline (CHK-COUNT finding: order 23..25 not resolved) is modelled as its median cylinder"
+  },
+  "spindle_tip_z": {
+   "value": -14.76,
+   "unit": "mm",
+   "measured": -14.756,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) z- faces |x|,|y|<3",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_spindle.png",
+   "critical": false
+  },
+  "spindle_flat_x": {
+   "value": 2.43,
+   "unit": "mm",
+   "measured": "2.40..2.47",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) x+ faces on both sides of the key",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_spindle.png",
+   "critical": true,
+   "rerun_trigger": "caliper reading flat-to-opposite-crest"
+  },
+  "spindle_key_x": {
+   "value": 3.82,
+   "unit": "mm",
+   "measured": 3.82,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) x+ faces |y|<0.5",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_spindle.png",
+   "critical": true,
+   "rerun_trigger": "caliper key height"
+  },
+  "spindle_key_y": {
+   "value": [
+    -0.74,
+    0.76
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.74,
+    0.759
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) y- / y+ faces of the key",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_spindle.png",
+   "critical": true,
+   "rerun_trigger": "caliper key width"
+  },
+  "spindle_tip_chamfer": {
+   "value": 0.7,
+   "unit": "mm",
+   "measured": "0.6..0.8",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/rprofile.py (percentile of radial-facing face radii per z bin) r(z) at theta 180: 3.1 at z -14.8 vs 3.70 body",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/rz_a.png",
+   "critical": false
+  },
+  "cap_r": {
+   "value": 14.36,
+   "unit": "mm",
+   "measured": 14.364,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) z 0.3..1.9",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_zlow.png",
+   "critical": true,
+   "rerun_trigger": "caliper cap OD"
+  },
+  "cap_top_z": {
+   "value": 2.13,
+   "unit": "mm",
+   "measured": 2.131,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) z+ faces z 1.5..3",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/rz_a.png",
+   "critical": false
+  },
+  "column_r": {
+   "value": 8.6,
+   "unit": "mm",
+   "measured": 8.603,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) z 16..26",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/rz_a.png",
+   "critical": true,
+   "rerun_trigger": "caliper column OD"
+  },
+  "column_top_z": {
+   "value": 27.67,
+   "unit": "mm",
+   "measured": 27.67,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) z+ faces r<8.6, z 26.5..28.5",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/rz_a.png",
+   "critical": false
+  },
+  "neck_lo_r": {
+   "value": 5.35,
+   "unit": "mm",
+   "measured": 5.346,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) z 28..33",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/rz_a.png",
+   "critical": false
+  },
+  "neck_up_r": {
+   "value": 5.38,
+   "unit": "mm",
+   "measured": 5.382,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) z 36.3..42.8",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/rz_a.png",
+   "critical": true,
+   "rerun_trigger": "caliper neck OD"
+  },
+  "top_blk_x": {
+   "value": [
+    -6.36,
+    6.33
+   ],
+   "unit": "mm",
+   "measured": [
+    -6.356,
+    6.326
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) x-/x+ faces z 43.5..47",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_ztop.png",
+   "critical": true,
+   "rerun_trigger": "caliper across flats"
+  },
+  "top_blk_y": {
+   "value": [
+    -6.26,
+    6.16
+   ],
+   "unit": "mm",
+   "measured": [
+    -6.263,
+    6.162
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) y-/y+ faces z 43.5..47",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_ztop.png",
+   "critical": true,
+   "rerun_trigger": "caliper across flats"
+  },
+  "top_blk_bot_z": {
+   "value": 43.36,
+   "unit": "mm",
+   "measured": 43.358,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) z- faces z 41.5..44",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_ztop.png",
+   "critical": false
+  },
+  "top_blk_top_z": {
+   "value": 47.4,
+   "unit": "mm",
+   "measured": "47.2..47.6",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "section sequence z 46.8 (square) / 48.0 (round)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/sec_ztop.png",
+   "critical": false
+  },
+  "top_round_r": {
+   "value": 6.61,
+   "unit": "mm",
+   "measured": 6.613,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) z 47.6..48.4",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_ztop.png",
+   "critical": false
+  },
+  "top_z": {
+   "value": 48.57,
+   "unit": "mm",
+   "measured": 48.573,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) z+ faces z 47..49.5",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_ztop.png",
+   "critical": true,
+   "rerun_trigger": "caliper overall height"
+  },
+  "top_bore_r": {
+   "value": 4.97,
+   "unit": "mm",
+   "measured": 4.974,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) inner wall z 44..48",
+   "uncertainty_mm": 0.125,
+   "evidence": "measure/figures/sec_ztop.png",
+   "critical": true,
+   "rerun_trigger": "pin gauge on the port bore"
+  },
+  "top_bore_bot_z": {
+   "value": 43.9,
+   "unit": "mm",
+   "measured": "43.8..44.0",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "section z 43.8 shows the bore wall, z 42.8 does not",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/sec_ztop.png",
+   "critical": false
+  },
+  "pu_axis_yz": {
+   "value": [
+    12.92,
+    30.06
+   ],
+   "unit": "mm",
+   "measured": [
+    12.92,
+    30.06
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) 4 x-stations",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": true,
+   "rerun_trigger": "caliper port centre height",
+   "note": "measured: [12.914..12.994, 30.035..30.094]"
+  },
+  "pl_axis_yz": {
+   "value": [
+    -14.05,
+    18.17
+   ],
+   "unit": "mm",
+   "measured": [
+    -14.05,
+    18.17
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) 4 x-stations",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_xport_lo.png",
+   "critical": true,
+   "rerun_trigger": "caliper port centre height",
+   "note": "measured: [-14.058..-14.023, 18.148..18.192]"
+  },
+  "port_r_end": {
+   "value": 5.47,
+   "unit": "mm",
+   "measured": "5.461..5.478",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) x -20.3..-17 (both ports)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": true,
+   "rerun_trigger": "caliper port OD"
+  },
+  "port_r_root": {
+   "value": 5.58,
+   "unit": "mm",
+   "measured": "5.568..5.586",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) x -11..-8 (both ports): drafted OD",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": false
+  },
+  "port_bore_r": {
+   "value": 4.0,
+   "unit": "mm",
+   "measured": "3.932..4.048",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) inner wall, 8 stations",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": true,
+   "rerun_trigger": "pin gauge on the port bore"
+  },
+  "port_end_x": {
+   "value": -20.44,
+   "unit": "mm",
+   "measured": "-20.47..-20.41",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) x- end faces of both ports",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": true,
+   "rerun_trigger": "caliper overall X"
+  },
+  "barb_axis_xz": {
+   "value": [
+    -0.09,
+    30.76
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.086,
+    30.762
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) shaft y -19..-10",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_ybarb.png",
+   "critical": true,
+   "rerun_trigger": "caliper"
+  },
+  "barb_shaft_r": {
+   "value": 2.7,
+   "unit": "mm",
+   "measured": 2.695,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) shaft y -19..-10",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_ybarb.png",
+   "critical": true,
+   "rerun_trigger": "caliper hose-barb OD"
+  },
+  "barb_bore_r": {
+   "value": 1.42,
+   "unit": "mm",
+   "measured": 1.42,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) inner wall y -21.5..-15",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/sec_ybarb.png",
+   "critical": false
+  },
+  "barb_crest": {
+   "value": [
+    -19.25,
+    3.45
+   ],
+   "unit": "mm",
+   "measured": [
+    -19.25,
+    3.45
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "r p95 per 0.25 mm y-slice (max at y -19.25)",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_ybarb.png",
+   "critical": true,
+   "rerun_trigger": "caliper barb OD"
+  },
+  "barb_tip": {
+   "value": [
+    -21.92,
+    1.95
+   ],
+   "unit": "mm",
+   "measured": [
+    -21.92,
+    1.95
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) y- tip face; r p95 at y -22..-21.75",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_ybarb.png",
+   "critical": false,
+   "note": "measured: [-21.917, '1.87..2.13']"
+  },
+  "barb_back_y": {
+   "value": -18.45,
+   "unit": "mm",
+   "measured": "-18.5..-18.4",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "r p95 per y-slice falls to the shaft by y -18.5",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/sec_ybarb.png",
+   "critical": false
+  },
+  "barb_collar": {
+   "value": [
+    -8.67,
+    -7.3,
+    4.88
+   ],
+   "unit": "mm",
+   "measured": [
+    -8.667,
+    -7.298,
+    4.88
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) y faces; measure/mlib.py cyl_fit (IRLS Cauchy 0.3 circle on wall faces projected along the axis) y -8.5..-7.5",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_ybarb.png",
+   "critical": false
+  },
+  "sw_x": {
+   "value": [
+    9.73,
+    15.65
+   ],
+   "unit": "mm",
+   "measured": [
+    9.732,
+    15.652
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) x faces",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_x_sw.png",
+   "critical": false
+  },
+  "sw_y": {
+   "value": [
+    -9.66,
+    10.02
+   ],
+   "unit": "mm",
+   "measured": [
+    -9.66,
+    10.023
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) y faces",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_x_sw.png",
+   "critical": false
+  },
+  "sw_z": {
+   "value": [
+    15.74,
+    25.11
+   ],
+   "unit": "mm",
+   "measured": [
+    15.739,
+    25.112
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) z faces",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_x_sw.png",
+   "critical": false
+  },
+  "sw_blade_x": {
+   "value": [
+    10.51,
+    14.09
+   ],
+   "unit": "mm",
+   "measured": [
+    10.514,
+    14.085
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) blade x faces",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_x_sw.png",
+   "critical": false
+  },
+  "sw_blade_top_z": {
+   "value": 33.3,
+   "unit": "mm",
+   "measured": 33.295,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) blade tops",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_x_sw.png",
+   "critical": false
+  },
+  "sw_tab": {
+   "value": [
+    8.6,
+    18.0,
+    10.0,
+    11.51,
+    18.02,
+    21.11
+   ],
+   "unit": "mm",
+   "measured": [
+    8.6,
+    18.0,
+    10.0,
+    11.51,
+    18.02,
+    21.11
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) tab faces (x start at the bracket, x end, y-, y+, z-, z+); sections y 10.5/11.2 show it running from the bracket",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_y_pos.png",
+   "critical": false,
+   "note": "measured: ['bracket face', 17.997, '9.07..10.02', 11.514, 18.02, 21.108]"
+  },
+  "brk_box": {
+   "value": [
+    -0.29,
+    8.37,
+    8.3,
+    13.35,
+    15.75,
+    23.31
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.29,
+    8.37,
+    8.3,
+    13.35,
+    15.75,
+    23.31
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) bracket plate faces (x-, x+ step, y- read from the z 19 section line, y+, z-, z+)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/sec_y_pos.png",
+   "critical": false,
+   "note": "measured: [-0.291, 8.368, '8.2..8.4', 13.348, 15.754, 23.313]"
+  },
+  "cam_top_z": {
+   "value": 8.2,
+   "unit": "mm",
+   "measured": "8.16..8.3",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) skirt top; map edge",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false
+  },
+  "cam_phase": {
+   "value": 1.0,
+   "unit": "deg",
+   "measured": [
+    1.0,
+    121.3,
+    240.0
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "post centres from flank-line fits (unwrapped map, r=11.6 crossings); pattern period 120",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "scatter_mm": 0.3,
+   "scatter_note": "3-fold intent (posts at 1/121.3/240.0, teeth at 61.8/181.7/300.35); spread 0.6 deg = 0.13 mm at r 12.6"
+  },
+  "cam_post_half": {
+   "value": 32.1,
+   "unit": "deg",
+   "measured": [
+    32.2,
+    32.5,
+    31.2
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "post half-widths at z 2.5 (flank-line fits)",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "scatter_mm": 0.28,
+   "scatter_note": "3-fold intent; 1.3 deg spread = 0.28 mm at r 12.6"
+  },
+  "cam_post_r": {
+   "value": 12.65,
+   "unit": "mm",
+   "measured": "12.63..12.78",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy post outer radius z 3..8",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false
+  },
+  "cam_tooth_r": {
+   "value": 12.49,
+   "unit": "mm",
+   "measured": "12.34..12.59",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy tooth outer radius z 3..8",
+   "uncertainty_mm": 0.12,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false
+  },
+  "cam_flank_z": {
+   "value": [
+    2.5,
+    8.0
+   ],
+   "unit": "mm",
+   "measured": [
+    2.5,
+    8.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "z stations at which the tooth half-widths were read off the flank-line fits",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false
+  },
+  "cam_tooth_half_bot": {
+   "value": 22.6,
+   "unit": "deg",
+   "measured": [
+    22.6,
+    22.6,
+    22.55
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "tooth half-width at z 2.5 (flank-line fits, 3 teeth)",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "scatter_mm": 0.01,
+   "scatter_note": "3-fold intent; 0.05 deg spread"
+  },
+  "cam_tooth_half_top": {
+   "value": 13.3,
+   "unit": "deg",
+   "measured": [
+    13.4,
+    13.5,
+    12.9
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "tooth half-width at z 8.0 (flank-line fits, 3 teeth)",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "scatter_mm": 0.13,
+   "scatter_note": "3-fold intent; 0.6 deg spread = 0.13 mm at r 12.5"
+  },
+  "blk240": {
+   "value": [
+    212.0,
+    269.0,
+    12.6,
+    12.3
+   ],
+   "unit": "mm",
+   "measured": [
+    212.0,
+    269.0,
+    12.6,
+    12.3
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy r>12 extent per z",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: [211..214, 266..269, 12.50..12.66, 12.3]"
+  },
+  "port_web_x0": {
+   "value": -15.5,
+   "unit": "mm",
+   "measured": [
+    -15.5,
+    -15.5
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "x of the -X-facing web face (both ports): area histogram, 0.25 mm bins",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": false
+  },
+  "port_web_x1": {
+   "value": -13.625,
+   "unit": "mm",
+   "measured": [
+    -13.5,
+    -13.75
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "area histogram (0.25 mm bins) of x-facing faces inside the bore r<3.9, both ports",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": false
+  },
+  "port_orifice_r": {
+   "value": 2.0,
+   "unit": "mm",
+   "measured": "1.94..2.09",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p5 radius of x-facing web faces (both ports)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": false
+  },
+  "fin": {
+   "value": [
+    12.79,
+    -4.76,
+    -3.52,
+    8.52
+   ],
+   "unit": "mm",
+   "measured": [
+    12.794,
+    -4.758,
+    -3.523,
+    8.518
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) fin faces (x end, y-, y+, z bottom); top meets the switch bottom",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/sec_zlow.png",
+   "critical": false
+  },
+  "port_window": {
+   "value": [
+    -8.0,
+    4.0
+   ],
+   "unit": "mm",
+   "measured": [
+    -8.0,
+    4.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "side renders: U-window from x -0.3 to -12 (semicircle end), height 8 = bore diameter; centre x of the end arc and radius",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/zoom_up_py.png",
+   "critical": false,
+   "note": "window opens the bore on the +Y side of the upper port and the -Y side of the lower port measured: [-8 (U end at x -12), 4.0]"
+  },
+  "port_trim": {
+   "value": [
+    -5.0,
+    13.52,
+    -13.3
+   ],
+   "unit": "mm",
+   "measured": [
+    -5.0,
+    13.52,
+    -13.3
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) flats beside the windows (x -6..-1.5): x start, upper +Y flat, lower -Y flat",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": false,
+   "note": "measured: [None, 13.515, -13.3]"
+  },
+  "top_slot": {
+   "value": [
+    0.85,
+    4.45,
+    44.63,
+    45.87
+   ],
+   "unit": "mm",
+   "measured": [
+    0.84,
+    4.57,
+    44.61,
+    45.9
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "x=+-6.0 section loops of the two clip slots per side (1st/99th percentiles), 4 instances",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/sec_x_top.png",
+   "critical": false,
+   "scatter_mm": 0.14,
+   "scatter_note": "mirror intent about y=0 and x=0; 0.14 spread over 4 instances"
+  },
+  "top_blk_edge_r": {
+   "value": 1.7,
+   "unit": "mm",
+   "measured": "1.5..1.9",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "x=+-6 section: corner arcs of the lug outline (edges parallel to X at y=+-6.2, z 43.4/47.4)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/sec_x_top.png",
+   "critical": false
+  },
+  "collar_z": {
+   "value": 10.2,
+   "unit": "mm",
+   "measured": "10.0..10.4",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy collar level ends between z 10.0 and 10.4",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false
+  },
+  "rib_top_z": {
+   "value": 13.0,
+   "unit": "mm",
+   "measured": "12.8..13.4",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy ribs present at z 12.8, gone by z 14 (r 8.5..8.6 there)",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false
+  },
+  "cap_slot_3": {
+   "value": [
+    -10.87,
+    0.13,
+    88.3,
+    2.0,
+    0.8
+   ],
+   "unit": "mm",
+   "measured": [
+    -10.87,
+    0.13,
+    88.3,
+    2.0,
+    0.8
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "centre and axis from the partial wall loop (1.31 x 0.58 visible); size 2.0 x 0.8 from the -Z render (it1 used 4.0 x 1.0, flagged by QA c2s cluster 6)",
+   "uncertainty_mm": 0.5,
+   "evidence": "intake/figures/view_mz.png",
+   "critical": false
+  },
+  "cap_slot_1": {
+   "value": [
+    3.16,
+    8.69,
+    131.7,
+    5.0,
+    2.1
+   ],
+   "unit": "mm",
+   "measured": [
+    3.04,
+    8.83,
+    131.5,
+    4.6,
+    2.22
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "slot wall faces z 0.15..2 (centre, long-axis angle, length, width from SVD extents); slot 3 barely scanned, size from the -Z render",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/sec_z_cap.png",
+   "critical": false,
+   "scatter_mm": 0.6,
+   "scatter_note": "slots 1 and 2 mirror about the X axis (the scan shows them as mirror images); size averaged, spread 0.6 mm"
+  },
+  "cap_slot_2": {
+   "value": [
+    3.16,
+    -8.69,
+    48.3,
+    5.0,
+    2.1
+   ],
+   "unit": "mm",
+   "measured": [
+    3.28,
+    -8.55,
+    48.1,
+    5.77,
+    2.58
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "slot wall faces z 0.15..2 (centre, long-axis angle, length, width from SVD extents)",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/sec_z_cap.png",
+   "critical": false,
+   "scatter_mm": 0.6,
+   "scatter_note": "mirror of slot 1 about the X axis; size averaged, spread 0.6 mm"
+  },
+  "holder_y0": {
+   "value": -4.97,
+   "unit": "mm",
+   "measured": -4.974,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) -y face of the switch holder between the column and the switch (x 7.3..9.6)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/sec_z_brk.png",
+   "critical": false
+  },
+  "col_top_fillet": {
+   "value": 1.5,
+   "unit": "mm",
+   "measured": "1.4..1.6",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) profile (theta windows clear of attachments): r 8.57 at z 25.9 -> 7.4 at 27.5, top at 27.67",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/profiles.json#column_top",
+   "critical": false
+  },
+  "top_cbore": {
+   "value": [
+    5.45,
+    46.8
+   ],
+   "unit": "mm",
+   "measured": [
+    5.45,
+    46.8
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) inner radii z 46.6..48.6 (p10..p50; internal ribs averaged)",
+   "uncertainty_mm": 0.25,
+   "evidence": "measure/figures/sec_ztop.png",
+   "critical": false,
+   "note": "measured: [5.1..5.68 (ribbed), 46.6..47.0]"
+  },
+  "finger_slot": {
+   "value": [
+    10.5,
+    6.5
+   ],
+   "unit": "mm",
+   "measured": [
+    10.5,
+    6.5
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "inward-facing faces at r 9.8..12.4 in the tooth sectors (only seen z 6.5..8)",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "slot behind the top of each trapezoid tooth (snap finger); its bottom is not visible below z 6.5 (occluded), so 6.5 is the visibility limit, not a measured floor measured: [10.23..11.15, visible from z 6.5]"
+  },
+  "port_col_x": {
+   "value": -0.12,
+   "unit": "mm",
+   "measured": [
+    -0.129,
+    -0.117
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) +X-facing end walls of both port blocks beside the neck (it1 CAD stopped at x -1: QA clusters 0, 2)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": false
+  },
+  "port_junction_x0": {
+   "value": -4.0,
+   "unit": "mm",
+   "measured": -4.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "x sections -4..0: the port blocks are solid from the neck to the U-window between the plates (sec_xport_up/lo x -4, -2, -1, -0.5)",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": false
+  },
+  "pu_lip": {
+   "value": [
+    -1.34,
+    9.4,
+    22.6
+   ],
+   "unit": "mm",
+   "measured": [
+    -1.337,
+    9.4,
+    22.595
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) -X face x, y start (QA cluster 10), bottom z of the lip under the upper port block",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": false
+  },
+  "sw_bump": {
+   "value": [
+    10.7,
+    13.9,
+    1.79,
+    3.84,
+    14.39
+   ],
+   "unit": "mm",
+   "measured": [
+    10.7,
+    13.895,
+    1.794,
+    3.837,
+    14.387
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) bump faces under the switch (x-, x+, y-, y+, bottom); x- from the z 14.6 loop (QA cluster 4)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/sec_z_brk.png",
+   "critical": false
+  },
+  "bar330": {
+   "value": [
+    12.3,
+    -6.74,
+    -5.6,
+    10.85,
+    12.22
+   ],
+   "unit": "mm",
+   "measured": [
+    12.3,
+    -6.737,
+    -5.6,
+    10.846,
+    12.222
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) bar faces (x end and y+ from the QA cluster-5 extents, y-, bottom, top)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/rz_b.png",
+   "critical": false
+  },
+  "lug320": {
+   "value": [
+    312.1,
+    328.5,
+    10.41,
+    22.26,
+    23.16
+   ],
+   "unit": "mm",
+   "measured": [
+    312.1,
+    328.5,
+    10.41,
+    22.26,
+    23.163
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "theta 2/98 pct, r p95, bottom/top faces of the column lug (QA cluster 8)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/rz_b.png",
+   "critical": false
+  },
+  "barb_rib": {
+   "value": [
+    -0.32,
+    0.23,
+    -8.67,
+    36.85,
+    -4.5,
+    37.53
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.317,
+    0.231,
+    -8.67,
+    36.85,
+    -4.5,
+    37.527
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) rib side faces; top z at the collar (section y -8.0) and near the neck (z+ faces p50)",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/sec_ybarb.png",
+   "critical": false
+  },
+  "top_bore2": {
+   "value": [
+    3.61,
+    43.0
+   ],
+   "unit": "mm",
+   "measured": [
+    3.61,
+    43.007
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "lower bore wall r p50 z 42.2..43.8 and floor z+ faces p50 (QA cluster 9: floor ~1 mm lower than it1)",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/sec_ztop.png",
+   "critical": false
+  },
+  "blk120_lo": {
+   "value": [
+    100.0,
+    150.0,
+    14.0,
+    12.4
+   ],
+   "unit": "mm",
+   "measured": [
+    100.0,
+    150.0,
+    14.0,
+    12.39
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy r>13.3 extent below z 12 (theta0, theta1, r, top z at theta 145)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/rz_b.png",
+   "critical": false
+  },
+  "blk120_up": {
+   "value": [
+    104.0,
+    142.0,
+    10.05,
+    14.0,
+    15.05
+   ],
+   "unit": "mm",
+   "measured": [
+    104.0,
+    142.0,
+    10.05,
+    14.0,
+    15.048
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "upper shell: theta edges (unwrap), inner wall r median theta 115..140, outer r, flat top z p50 theta 125..140",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/rz_b.png",
+   "critical": false
+  },
+  "blk120_slope": {
+   "value": [
+    104.0,
+    12.0,
+    125.0,
+    15.05
+   ],
+   "unit": "mm",
+   "measured": [
+    104.0,
+    12.0,
+    125.0,
+    15.048
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy left edge of the r>13.3 region: theta 104 at z 12.0 rising to theta 125 at the flat top (QA cluster 1: it1 used 2 flat steps)",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false
+  },
+  "holder_edge": {
+   "value": [
+    3.86,
+    7.0,
+    6.6,
+    4.9
+   ],
+   "unit": "mm",
+   "measured": [
+    3.86,
+    7.0,
+    6.6,
+    4.9
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "x 2/98 pct of the holder top/bottom faces per 1 mm y-strip (y 5: x>=6.44..6.67, y 6: 5.54..5.67, y 7: 3.83..3.86, y 8..9: 2.07..2.28): inner diagonal edge from (3.86, 7.0) to (6.6, 4.9); for x < 3.86 the scanned -y face at y 8.2..8.6 is the bracket underside; the region inside it (toward the column) is open (QA c2s cluster 4)",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/sec_z_brk.png",
+   "critical": false
+  },
+  "pu_plate_faces_1": {
+   "value": [
+    6.5,
+    36.316,
+    12.5,
+    35.632,
+    0.868
+   ],
+   "unit": "mm",
+   "measured": [
+    6.5,
+    36.316,
+    12.5,
+    35.632,
+    0.868
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of z-facing faces per 1 mm y-strip, x -19.5..-12 (outer face line (y,z)x2 + thickness to the inner face)",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": false,
+   "note": "plates are drafted (outer faces slope 0.07..0.11 mm/mm); [top plate, bottom plate] measured: [[y 6.5..12.5: 36.316..35.632, under 35.448@6.5], [24.05..24.487, over 24.978@6.5]]"
+  },
+  "pu_plate_faces_2": {
+   "value": [
+    6.5,
+    24.05,
+    12.5,
+    24.487,
+    0.928
+   ],
+   "unit": "mm",
+   "measured": [
+    6.5,
+    24.05,
+    12.5,
+    24.487,
+    0.928
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of z-facing faces per 1 mm y-strip, x -19.5..-12 (outer face line (y,z)x2 + thickness to the inner face)",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/sec_xport_up.png",
+   "critical": false,
+   "note": "plates are drafted (outer faces slope 0.07..0.11 mm/mm); [top plate, bottom plate] measured: [[y 6.5..12.5: 36.316..35.632, under 35.448@6.5], [24.05..24.487, over 24.978@6.5]]"
+  },
+  "pl_plate_faces_1": {
+   "value": [
+    -6.5,
+    24.221,
+    -13.5,
+    23.689,
+    0.929
+   ],
+   "unit": "mm",
+   "measured": [
+    -6.5,
+    24.221,
+    -13.5,
+    23.689,
+    0.929
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of z-facing faces per 1 mm y-strip, x -19.5..-12",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/sec_xport_lo.png",
+   "critical": false,
+   "note": "measured: [[y -6.5..-13.5: 24.221..23.689, under 23.292@-6.5], [15.717..15.598, over 16.613@-5.5]]"
+  },
+  "pl_plate_faces_2": {
+   "value": [
+    -5.5,
+    15.717,
+    -8.5,
+    15.598,
+    0.896
+   ],
+   "unit": "mm",
+   "measured": [
+    -5.5,
+    15.717,
+    -8.5,
+    15.598,
+    0.896
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of z-facing faces per 1 mm y-strip, x -19.5..-12",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/sec_xport_lo.png",
+   "critical": false,
+   "note": "measured: [[y -6.5..-13.5: 24.221..23.689, under 23.292@-6.5], [15.717..15.598, over 16.613@-5.5]]"
+  },
+  "pu_plate_edge_1": {
+   "value": [
+    -19.38,
+    6.25
+   ],
+   "unit": "mm",
+   "measured": [
+    -19.38,
+    6.25
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/loop_simplify.py (section loop, Douglas-Peucker 0.2) - vertex read inner plate edge (two plates share the line)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/sec_zplates.png",
+   "critical": false,
+   "note": "measured: [[-19.38,6.25],[-9.74,2.96]] z 24.65; [[-19.45,6.29],[-8.77,2.59]] z 35.7"
+  },
+  "pu_plate_edge_2": {
+   "value": [
+    -9.74,
+    2.96
+   ],
+   "unit": "mm",
+   "measured": [
+    -9.74,
+    2.96
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/loop_simplify.py (section loop, Douglas-Peucker 0.2) - vertex read inner plate edge (two plates share the line)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/sec_zplates.png",
+   "critical": false,
+   "note": "measured: [[-19.38,6.25],[-9.74,2.96]] z 24.65; [[-19.45,6.29],[-8.77,2.59]] z 35.7"
+  },
+  "pl_plate_edge_1": {
+   "value": [
+    -20.1,
+    -7.25
+   ],
+   "unit": "mm",
+   "measured": [
+    -20.1,
+    -7.25
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/loop_simplify.py (section loop, Douglas-Peucker 0.2) - vertex read inner plate edge",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/sec_zplates.png",
+   "critical": false,
+   "note": "measured: [[-20.10,-7.25],[-8.61,-2.72]] z 23.6; [[-15.25,-5.05],[-8.92,-2.81]] z 16.1"
+  },
+  "pl_plate_edge_2": {
+   "value": [
+    -8.61,
+    -2.72
+   ],
+   "unit": "mm",
+   "measured": [
+    -8.61,
+    -2.72
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/loop_simplify.py (section loop, Douglas-Peucker 0.2) - vertex read inner plate edge",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/sec_zplates.png",
+   "critical": false,
+   "note": "measured: [[-20.10,-7.25],[-8.61,-2.72]] z 23.6; [[-15.25,-5.05],[-8.92,-2.81]] z 16.1"
+  },
+  "sw_blade_y_1": {
+   "value": [
+    -0.76,
+    -0.26
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.758,
+    -0.264
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) blade faces",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_x_sw.png",
+   "critical": false
+  },
+  "sw_blade_y_2": {
+   "value": [
+    7.94,
+    8.46
+   ],
+   "unit": "mm",
+   "measured": [
+    7.941,
+    8.459
+   ],
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "measure/mlib.py plane_pos (p50 of faces with normal within 18 deg of the axis, in a box) blade faces",
+   "uncertainty_mm": 0.036,
+   "evidence": "measure/figures/sec_x_sw.png",
+   "critical": false
+  },
+  "cam_floor_1": {
+   "value": [
+    10.58,
+    6.0
+   ],
+   "unit": "mm",
+   "measured": [
+    10.58,
+    6.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy pocket-centre medians z 2.5..5.8 and 6.2..8.1; step z from the map",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "pocket floor radius, lower then upper level (r, z_top) measured: [[10.38..10.89, 6.0], [9.30..9.92, ~8.2]]"
+  },
+  "cam_floor_2": {
+   "value": [
+    9.5,
+    8.2
+   ],
+   "unit": "mm",
+   "measured": [
+    9.5,
+    8.2
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy pocket-centre medians z 2.5..5.8 and 6.2..8.1; step z from the map",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "pocket floor radius, lower then upper level (r, z_top) measured: [[10.38..10.89, 6.0], [9.30..9.92, ~8.2]]"
+  },
+  "col_windows_1": {
+   "value": [
+    160.0,
+    205.0
+   ],
+   "unit": "deg",
+   "measured": [
+    160.0,
+    205.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy r<7.5 regions",
+   "uncertainty_mm": 2.0,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: theta 155..205 and 335..25 at z 10..15"
+  },
+  "col_windows_2": {
+   "value": [
+    340.0,
+    385.0
+   ],
+   "unit": "deg",
+   "measured": [
+    340.0,
+    385.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy r<7.5 regions",
+   "uncertainty_mm": 2.0,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: theta 155..205 and 335..25 at z 10..15"
+  },
+  "col_window_cone_1": {
+   "value": [
+    8.75,
+    10.2
+   ],
+   "unit": "mm",
+   "measured": [
+    8.75,
+    10.2
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) of outward faces inside the two window sectors (theta 165..195, 350..8)",
+   "uncertainty_mm": 0.12,
+   "evidence": "measure/figures/profiles.json#window_180",
+   "critical": false,
+   "note": "measured: (r,z): 10.2 8.71..8.86, 14.4 6.18..6.25, 15.2 6.08..6.24; column resumes by z 16"
+  },
+  "col_window_cone_2": {
+   "value": [
+    6.15,
+    14.4
+   ],
+   "unit": "mm",
+   "measured": [
+    6.15,
+    14.4
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) of outward faces inside the two window sectors (theta 165..195, 350..8)",
+   "uncertainty_mm": 0.12,
+   "evidence": "measure/figures/profiles.json#window_180",
+   "critical": false,
+   "note": "measured: (r,z): 10.2 8.71..8.86, 14.4 6.18..6.25, 15.2 6.08..6.24; column resumes by z 16"
+  },
+  "col_window_cone_3": {
+   "value": [
+    6.15,
+    15.4
+   ],
+   "unit": "mm",
+   "measured": [
+    6.15,
+    15.4
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) of outward faces inside the two window sectors (theta 165..195, 350..8)",
+   "uncertainty_mm": 0.12,
+   "evidence": "measure/figures/profiles.json#window_180",
+   "critical": false,
+   "note": "measured: (r,z): 10.2 8.71..8.86, 14.4 6.18..6.25, 15.2 6.08..6.24; column resumes by z 16"
+  },
+  "collar_sectors_1": {
+   "value": [
+    328.0,
+    388.0,
+    9.45
+   ],
+   "unit": "mm",
+   "measured": [
+    328.0,
+    388.0,
+    9.45
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy 1-deg runs at z 9.0 (theta0, theta1, r)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: z 9.0 row: 328..28 9.38-9.6, 152..209 9.85, 270..287 9.58, 72..96 9.41"
+  },
+  "collar_sectors_2": {
+   "value": [
+    152.0,
+    210.0,
+    9.85
+   ],
+   "unit": "mm",
+   "measured": [
+    152.0,
+    210.0,
+    9.85
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy 1-deg runs at z 9.0 (theta0, theta1, r)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: z 9.0 row: 328..28 9.38-9.6, 152..209 9.85, 270..287 9.58, 72..96 9.41"
+  },
+  "collar_sectors_3": {
+   "value": [
+    270.0,
+    288.0,
+    9.55
+   ],
+   "unit": "mm",
+   "measured": [
+    270.0,
+    288.0,
+    9.55
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy 1-deg runs at z 9.0 (theta0, theta1, r)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: z 9.0 row: 328..28 9.38-9.6, 152..209 9.85, 270..287 9.58, 72..96 9.41"
+  },
+  "collar_sectors_4": {
+   "value": [
+    72.0,
+    99.0,
+    9.42
+   ],
+   "unit": "mm",
+   "measured": [
+    72.0,
+    99.0,
+    9.42
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy 1-deg runs at z 9.0 (theta0, theta1, r)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: z 9.0 row: 328..28 9.38-9.6, 152..209 9.85, 270..287 9.58, 72..96 9.41"
+  },
+  "rib_sectors_1": {
+   "value": [
+    17.0,
+    28.0,
+    9.36
+   ],
+   "unit": "mm",
+   "measured": [
+    17.0,
+    28.0,
+    9.36
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy 1-deg runs at z 10.4/11.0/11.6/12.2 (theta0, theta1, r)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: runs at z 10.4..12.8 with r 9.36..9.92"
+  },
+  "rib_sectors_2": {
+   "value": [
+    72.0,
+    99.0,
+    9.42
+   ],
+   "unit": "mm",
+   "measured": [
+    72.0,
+    99.0,
+    9.42
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy 1-deg runs at z 10.4/11.0/11.6/12.2 (theta0, theta1, r)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: runs at z 10.4..12.8 with r 9.36..9.92"
+  },
+  "rib_sectors_3": {
+   "value": [
+    151.0,
+    160.0,
+    9.56
+   ],
+   "unit": "mm",
+   "measured": [
+    151.0,
+    160.0,
+    9.56
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy 1-deg runs at z 10.4/11.0/11.6/12.2 (theta0, theta1, r)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: runs at z 10.4..12.8 with r 9.36..9.92"
+  },
+  "rib_sectors_4": {
+   "value": [
+    201.0,
+    210.0,
+    9.9
+   ],
+   "unit": "mm",
+   "measured": [
+    201.0,
+    210.0,
+    9.9
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy 1-deg runs at z 10.4/11.0/11.6/12.2 (theta0, theta1, r)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: runs at z 10.4..12.8 with r 9.36..9.92"
+  },
+  "rib_sectors_5": {
+   "value": [
+    270.0,
+    287.0,
+    9.55
+   ],
+   "unit": "mm",
+   "measured": [
+    270.0,
+    287.0,
+    9.55
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "measure/unwrap.py r_max(theta,z) map (1 deg x 0.2 mm), measure/figures/unwrap_low.png/.npy 1-deg runs at z 10.4/11.0/11.6/12.2 (theta0, theta1, r)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/unwrap_low.png",
+   "critical": false,
+   "note": "measured: runs at z 10.4..12.8 with r 9.36..9.92"
+  },
+  "groove_profile_1": {
+   "value": [
+    5.35,
+    32.9
+   ],
+   "unit": "mm",
+   "measured": [
+    5.35,
+    32.9
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) profile, theta windows 300..60 and 165..250 (clear of attachments)",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/profiles.json#neck_groove",
+   "critical": false,
+   "note": "measured: (r,z) p50 per 0.2 mm: 33.0 5.31, 34.0 4.85, 34.8 4.00, 35.2 3.99, 36.0 4.63, 36.8 5.21, 37.2 5.33"
+  },
+  "groove_profile_2": {
+   "value": [
+    4.85,
+    34.0
+   ],
+   "unit": "mm",
+   "measured": [
+    4.85,
+    34.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) profile, theta windows 300..60 and 165..250 (clear of attachments)",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/profiles.json#neck_groove",
+   "critical": false,
+   "note": "measured: (r,z) p50 per 0.2 mm: 33.0 5.31, 34.0 4.85, 34.8 4.00, 35.2 3.99, 36.0 4.63, 36.8 5.21, 37.2 5.33"
+  },
+  "groove_profile_3": {
+   "value": [
+    4.02,
+    34.75
+   ],
+   "unit": "mm",
+   "measured": [
+    4.02,
+    34.75
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) profile, theta windows 300..60 and 165..250 (clear of attachments)",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/profiles.json#neck_groove",
+   "critical": false,
+   "note": "measured: (r,z) p50 per 0.2 mm: 33.0 5.31, 34.0 4.85, 34.8 4.00, 35.2 3.99, 36.0 4.63, 36.8 5.21, 37.2 5.33"
+  },
+  "groove_profile_4": {
+   "value": [
+    4.02,
+    35.35
+   ],
+   "unit": "mm",
+   "measured": [
+    4.02,
+    35.35
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) profile, theta windows 300..60 and 165..250 (clear of attachments)",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/profiles.json#neck_groove",
+   "critical": false,
+   "note": "measured: (r,z) p50 per 0.2 mm: 33.0 5.31, 34.0 4.85, 34.8 4.00, 35.2 3.99, 36.0 4.63, 36.8 5.21, 37.2 5.33"
+  },
+  "groove_profile_5": {
+   "value": [
+    4.63,
+    36.0
+   ],
+   "unit": "mm",
+   "measured": [
+    4.63,
+    36.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) profile, theta windows 300..60 and 165..250 (clear of attachments)",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/profiles.json#neck_groove",
+   "critical": false,
+   "note": "measured: (r,z) p50 per 0.2 mm: 33.0 5.31, 34.0 4.85, 34.8 4.00, 35.2 3.99, 36.0 4.63, 36.8 5.21, 37.2 5.33"
+  },
+  "groove_profile_6": {
+   "value": [
+    5.21,
+    36.8
+   ],
+   "unit": "mm",
+   "measured": [
+    5.21,
+    36.8
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) profile, theta windows 300..60 and 165..250 (clear of attachments)",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/profiles.json#neck_groove",
+   "critical": false,
+   "note": "measured: (r,z) p50 per 0.2 mm: 33.0 5.31, 34.0 4.85, 34.8 4.00, 35.2 3.99, 36.0 4.63, 36.8 5.21, 37.2 5.33"
+  },
+  "groove_profile_7": {
+   "value": [
+    5.38,
+    37.3
+   ],
+   "unit": "mm",
+   "measured": [
+    5.38,
+    37.3
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fine r(z) profile, theta windows 300..60 and 165..250 (clear of attachments)",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/profiles.json#neck_groove",
+   "critical": false,
+   "note": "measured: (r,z) p50 per 0.2 mm: 33.0 5.31, 34.0 4.85, 34.8 4.00, 35.2 3.99, 36.0 4.63, 36.8 5.21, 37.2 5.33"
+  }
+ },
+ "struck": [],
+ "simplifications": [
+  {
+   "name": "spindle spline teeth",
+   "modelled_as": "median cylinder r 3.70 with the measured D-flat and key",
+   "deviation_cost": "+-0.23 mm (outer radius p5..p95 3.44..3.91 over theta 45..315, measure/figures/spline_pitch.json)"
+  },
+  {
+   "name": "cap disc dimples (3 shallow round recesses on the knob face)",
+   "modelled_as": "not modelled (flat face)",
+   "deviation_cost": "<=0.4 mm (builder self-check colour map, build/selfcheck_v9.png -Z view)"
+  },
+  {
+   "name": "cap disc slots",
+   "modelled_as": "3 through stadium slots at the measured centres (mirror pair + 1)",
+   "deviation_cost": "up to ~1.0 mm on the slot walls (the scanned walls are partial and irregular; _it1_SUPERSEDED/build/selfcheck/scv9_unwrap_low.png)"
+  },
+  {
+   "name": "cam ring flanks and edges",
+   "modelled_as": "posts with radial flanks, teeth with planar sloped flanks, sharp edges",
+   "deviation_cost": "0.3..1.0 mm along flank edges (_it1_SUPERSEDED/build/selfcheck/scv9_unwrap_low.png)"
+  },
+  {
+   "name": "shoulder block (post 120) upper shell",
+   "modelled_as": "outer r 14.0 / inner r 10.05 shell with a planar sloped top through the measured left-edge line (it2; it1 used 2 flat steps)",
+   "deviation_cost": "<=0.6 mm at the slope/edges (builder self-check it2)"
+  },
+  {
+   "name": "microswitch labels, moulded marks and edge rounds",
+   "modelled_as": "plain box with sharp edges",
+   "deviation_cost": "switch-region self-check p95 0.44 mm, local up to ~0.6 mm"
+  },
+  {
+   "name": "switch terminal blades: hole and tip shape",
+   "modelled_as": "plain rectangular blades",
+   "deviation_cost": "<=0.5 mm (hole r ~0.4)"
+  },
+  {
+   "name": "port plate inner-edge lips and hooks",
+   "modelled_as": "plates end at the measured inner edge line without lips",
+   "deviation_cost": "<=0.6 mm (_it1_SUPERSEDED/build/selfcheck/sc_sec_xup.png)"
+  },
+  {
+   "name": "top port internal ribs",
+   "modelled_as": "counterbore r 5.45 (ribbed wall averaged)",
+   "deviation_cost": "+-0.25 mm (inner radius p10..p50 5.1..5.68)"
+  },
+  {
+   "name": "neck-to-top-block flare and small fillets",
+   "modelled_as": "sharp junctions",
+   "deviation_cost": "<=0.3 mm"
+  },
+  {
+   "name": "port junctions near the column",
+   "modelled_as": "port blocks run to the scanned end wall x -0.12, junction boxes from x -4, flat trims + stadium windows; lip under the upper block (it2)",
+   "deviation_cost": "<=0.6 mm at the junction corners (builder self-check it2)"
+  },
+  {
+   "name": "cap/column relative tilt (CHK-TILT not resolvable, 0.46 deg column vs cap face)",
+   "modelled_as": "coaxial, perpendicular to the cap face",
+   "deviation_cost": "<=0.11 mm at the cap rim (0.46 deg x 14 mm)"
+  },
+  {
+   "name": "cam pocket floors (6 pockets)",
+   "modelled_as": "one two-level floor (r 10.58 to z 6.0, r 9.50 to z 8.2) for all pockets",
+   "deviation_cost": "per-pocket floor medians differ by up to 0.47 mm (z 3..5.8: 10.45..10.92; measure/figures/unwrap_low.npy); lowest mm near z 3 is ~10.0 (drafted floor)"
+  },
+  {
+   "name": "cam x~0 step walls at theta 93..99 and 266..269 (QA it1 clusters 6, 7)",
+   "modelled_as": "not modelled (radial post flanks)",
+   "deviation_cost": "up to ~1.5 mm locally (QA it1 clusters 6/7)"
+  }
+ ],
+ "checks": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "finding",
+   "note": "spindle spline: FFT-dominant order 24/25 across 4 stations (pattern_count.py, count_spline.json) and 23..25 on the partial arc (spline_pitch.json): count NOT established; the spline is modelled as its median cylinder (declared simplification). Cam ring: 6 pockets / 3-fold pattern from flank-line fits on the unwrapped map (12 flank lines, residual 0.2..1.6 deg), not an FFT count."
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": false,
+   "result": "pass",
+   "note": "n/a: scan-only run, no caliper readings (DECISIONS.md MEASUREMENTS)"
+  },
+  "CHK-CLUSTER": {
+   "ran": true,
+   "result": "finding",
+   "note": "it2: the QA it1 clusters were re-measured: port end walls, lip, switch bump, bar, column lug, barb rib, top-bore floor, shoulder slope and holder opening are now modelled; the remaining builder self-check clusters sit at enumerated features declared as simplifications"
+  },
+  "CHK-FRAME": {
+   "ran": true,
+   "result": "pass",
+   "note": "every angle measured on intake/aligned_work.stl in the frozen datum frame; theta CCW about +Z from +X; no intake-card angle copied"
+  }
+ },
+ "open_questions": [
+  "Spindle spline tooth count (23..25) is not resolved by the scan: a tooth count or the mating knob would fix it.",
+  "The scan is an assembly (cap + body + microswitch + terminals); it is delivered as ONE fused solid as scanned. A multi-body STEP would be a separate job.",
+  "Interior (valve bore, spool, flow passages) was not scanned and is not modelled; the column is solid below the top port bore."
+ ]
+}

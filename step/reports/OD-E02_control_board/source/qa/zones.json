@@ -1,0 +1,17 @@
+{"note": "Zones are predicates in the datum frame, written by QA from intake/INTAKE_CARD.md §3-§5 and a QA survey of the raw scan (shroud walls located on the scan). Regime baseline-skill has interface_max_mm = null, so the Z1-Z6 functional interfaces are REPORTED per zone (no interface band exists in this regime); every one of their points is still inside the whole-part scan->CAD gate (p95 0.30 / max 0.80).",
+ "zones": [
+  {"name": "Z1 back cover floor", "kind": "functional_interface", "select": {"z": [-0.25, 0.25], "nz": [0.8, null]}, "note": "INTAKE_CARD §4 Z1, primary datum plane"},
+  {"name": "Z2 housing tiers", "kind": "functional_interface", "select": {"z": [-16.2, -0.3]}, "note": "INTAKE_CARD §4 Z2, T0..T4 below the floor (includes hoops, band bar, screw-hole walls in this z range)"},
+  {"name": "Z3 caps and collars", "kind": "functional_interface", "select": {"z": [null, -16.2]}, "note": "INTAKE_CARD §4 Z3, collars z -16.1..-19.1 and caps B1-B3"},
+  {"name": "Z4 mounting tab", "kind": "functional_interface", "select": {"z": [5.2, null], "y": [null, -14.0]}, "note": "INTAKE_CARD §4 Z4, above the rim top on the -Y side"},
+  {"name": "Z5 screw holes", "kind": "functional_interface", "select": {"any_of": [{"x": [8.5, 17.5], "y": [-12.5, -3.5]}, {"x": [-17.5, -8.5], "y": [-12.5, -3.5]}], "z": [-16.2, -0.3], "abs_nz": [0.0, 0.5]}, "note": "INTAKE_CARD §4 Z5, bore walls around (+-13, -8)"},
+  {"name": "Z6 connector shroud", "kind": "functional_interface", "select": {"x": [-23.5, 6.5], "y": [-1.0, 12.2], "z": [0.3, 11.0]}, "note": "INTAKE_CARD §4 Z6, walls x -22.6..5.6, y -0.2..11.5 located on the scan"},
+  {"name": "I1 shroud interior", "kind": "interior", "select": {"x": [-21.4, 4.2], "y": [1.15, 10.3], "z": [-6.0, 10.0]}, "note": "INTAKE_CARD §3 connector shroud interior (header, pins) occluded"},
+  {"name": "I2 cap-collar gaps", "kind": "interior", "select": {"any_of": [{"r": [6.5, 8.0]}, {"x": [-34.5, -19.5], "abs_y": [0, 7.5]}, {"x": [19.5, 34.5], "abs_y": [0, 7.5]}], "z": [-19.4, -14.8]}, "note": "INTAKE_CARD §3 narrow gaps around the caps"},
+  {"name": "zb tab z>5", "kind": "region", "select": {"z": [5.0, null]}},
+  {"name": "zb rim z0-5", "kind": "region", "select": {"z": [0.0, 5.0]}},
+  {"name": "zb tiers z-13.2-0", "kind": "region", "select": {"z": [-13.2, 0.0]}},
+  {"name": "zb band z-16.2--13.2", "kind": "region", "select": {"z": [-16.2, -13.2]}},
+  {"name": "zb collars z-19.2--16.2", "kind": "region", "select": {"z": [-19.2, -16.2]}},
+  {"name": "zb caps z<-19.2", "kind": "region", "select": {"z": [null, -19.2]}}
+ ]}

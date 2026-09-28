@@ -1,0 +1,40 @@
+{
+  "created": "2026-09-28T06:56:09+00:00",
+  "files": [
+    {
+      "bytes": 24958284,
+      "mode": "copy",
+      "path": "input/scan.stl",
+      "role": "scan",
+      "sha256": "75cedf513bc86fcf51dfc22194a93a93f12857925e45854a095752be6f57c5e9",
+      "source": "/root/.claude/uploads/c5251275-e57c-5a90-9212-2596ee9cc5b4/0b0d9e84-OD-S02-Steam-Rod.stl"
+    },
+    {
+      "bytes": 49112,
+      "mode": "copy",
+      "path": "input/photos/photo_1.webp",
+      "role": "photo",
+      "sha256": "2f3b1b9d94e4da5057fb265e0dc717d06202eeda057cbade82fc0df70a507b0a",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/c5251275-e57c-5a90-9212-2596ee9cc5b4/photos/photo_1.webp"
+    },
+    {
+      "bytes": 55864,
+      "mode": "copy",
+      "path": "input/photos/photo_2.webp",
+      "role": "photo",
+      "sha256": "61929d6ddf25b239644e4e84a0294ac91b303bdcf4a2fd199ed9f106535f775a",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/c5251275-e57c-5a90-9212-2596ee9cc5b4/photos/photo_2.webp"
+    }
+  ],
+  "inputs": {
+    "input/photos/photo_1.webp": "2f3b1b9d94e4da5057fb265e0dc717d06202eeda057cbade82fc0df70a507b0a",
+    "input/photos/photo_2.webp": "61929d6ddf25b239644e4e84a0294ac91b303bdcf4a2fd199ed9f106535f775a",
+    "input/scan.stl": "75cedf513bc86fcf51dfc22194a93a93f12857925e45854a095752be6f57c5e9"
+  },
+  "part": "OD-S02_steam-rod",
+  "scan_resolution": "full",
+  "schema": "stl-re/INPUT_HASHES@1",
+  "seed": 0,
+  "tool": "init_run.py",
+  "tool_version": "stl-re-orchestrate@1"
+}

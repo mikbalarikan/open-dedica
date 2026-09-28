@@ -1,0 +1,307 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/d8e5b691-152f-55fe-9a52-555e01807691/scratchpad/job/OD-W03_water-tank-valve/intake/work.stl": "7f753ac456f5a05e3db88fce55298236f84009fc96c4a10f73ffd5625c0c9c0d",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/d8e5b691-152f-55fe-9a52-555e01807691/scratchpad/job/OD-W03_water-tank-valve/intake/datum_spec.json": "ac396292f663af643d265ce2f63c8f721743854897a00fcd1242f7f27e66be9d",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/d8e5b691-152f-55fe-9a52-555e01807691/scratchpad/job/OD-W03_water-tank-valve/input/scan.stl": "4784d93dafd0e5ba815368c89572b92c2ba1af17b054725a6503b4c1fa59e1fb",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/d8e5b691-152f-55fe-9a52-555e01807691/scratchpad/job/OD-W03_water-tank-valve/intake/intake.json": "2628429db220e4543ce9c5103a7188e31f963680ccf4b02e398e0729735276ab"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:10:00+00:00",
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [],
+ "matrix_4x4": [
+  [
+   -0.6900882379171156,
+   -0.6810520202079607,
+   -0.24483947732975134,
+   -61.160042902328975
+  ],
+  [
+   0.3015848495868283,
+   -0.5781437951913724,
+   0.7581532368732634,
+   136.57791940745568
+  ],
+  [
+   -0.6578942182358349,
+   0.4493527543616172,
+   0.6043652039615514,
+   142.2044980149267
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.04086956874051109,
+  "method": "rms of RANSAC+SVD plane on flange top face (stadium plate top between/around the cups) (23812 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "flange top face (stadium plate top around the cups)",
+  "why": "flange plate top: the plate's underside (not scanned) seats on the tank; the top is the largest clean moulded flat, parallel to it, and every cup, boss and ear rises from it",
+  "fit_rms_mm": 0.04086956874051109,
+  "fit_max_mm": 0.10259001213779265,
+  "fit_p95_mm": 0.08244773086857064,
+  "n_faces": 23812,
+  "area_mm2": 582.7169046578236,
+  "fit_untrimmed": {
+   "rms": 0.05431502106710948,
+   "p95": 0.11399088394630079,
+   "max": 0.20900601220664722,
+   "n_faces": 25851
+  },
+  "inlier_frac": 0.7069359018993463,
+  "normal_raw": [
+   -0.6578942182358349,
+   0.44935275436161726,
+   0.6043652039615515
+  ],
+  "centroid_raw": [
+   9.89782299342672,
+   -25.88106355936231,
+   -205.27828121970222
+  ],
+  "material_side": "-z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.7069359018993463
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "cup A outer wall (-X cup) + cup B outer wall (+X cup)",
+  "why": "the two valve cups are the functional features; their axes define the pitch line. Band z 1.2-3.6 = the cleanest wall band (higher bands carry +/-0.15 mm scan ripple on the translucent wall) / second cup axis; origin = midpoint of the two cup axes (combine=midpoint)",
+  "fit_rms_mm": 0.08285435988834391,
+  "fit_max_mm": 0.6563860272654694,
+  "fit_metric": "median / worst circle residual over stations (wall_faces,wall_faces)",
+  "stations": 6,
+  "r_by_feature": {
+   "cup A outer wall (-X cup)": {
+    "n": 3,
+    "r_mean": 11.905935166974894,
+    "r_std": 0.027890353602808032
+   },
+   "cup B outer wall (+X cup)": {
+    "n": 3,
+    "r_mean": 11.8716708131381,
+    "r_std": 0.0391113890575793
+   }
+  },
+  "centre_std_mm": [
+   9.672443207188987,
+   16.914838693784503
+  ],
+  "station_detail": [
+   {
+    "z": 1.6,
+    "cx": -139.24615,
+    "cy": 31.62514,
+    "r": 11.93726,
+    "rms": 0.07144,
+    "max": 0.56268,
+    "p95": 0.13982,
+    "n": 3306,
+    "iterations": 10,
+    "feature": "cup A outer wall (-X cup)"
+   },
+   {
+    "z": 2.4,
+    "cx": -139.24563,
+    "cy": 31.61278,
+    "r": 11.91103,
+    "rms": 0.0809,
+    "max": 0.54048,
+    "p95": 0.16623,
+    "n": 3511,
+    "iterations": 12,
+    "feature": "cup A outer wall (-X cup)"
+   },
+   {
+    "z": 3.2,
+    "cx": -139.25767,
+    "cy": 31.62187,
+    "r": 11.86951,
+    "rms": 0.09161,
+    "max": 0.55888,
+    "p95": 0.19095,
+    "n": 3753,
+    "iterations": 14,
+    "feature": "cup A outer wall (-X cup)"
+   },
+   {
+    "z": 1.6,
+    "cx": -158.58928,
+    "cy": -2.21148,
+    "r": 11.91338,
+    "rms": 0.06801,
+    "max": 0.58586,
+    "p95": 0.11885,
+    "n": 3370,
+    "iterations": 10,
+    "feature": "cup B outer wall (+X cup)"
+   },
+   {
+    "z": 2.4,
+    "cx": -158.60286,
+    "cy": -2.21463,
+    "r": 11.88228,
+    "rms": 0.08481,
+    "max": 0.61676,
+    "p95": 0.18885,
+    "n": 3416,
+    "iterations": 11,
+    "feature": "cup B outer wall (+X cup)"
+   },
+   {
+    "z": 3.2,
+    "cx": -158.59196,
+    "cy": -2.20312,
+    "r": 11.81935,
+    "rms": 0.13182,
+    "max": 0.65639,
+    "p95": 0.33072,
+    "n": 3357,
+    "iterations": 19,
+    "feature": "cup B outer wall (+X cup)"
+   }
+  ],
+  "noise_ref": {
+   "value": 0.082855,
+   "method": "SELF-REFERENTIAL: median IRLS circle rms over the secondary's own 6 stations (cup A/B outer wall z 1.2-3.6: 0.0714, 0.0809, 0.0916, 0.0680, 0.0848, 0.1318). Independent barb-shank circle noise = 0.0708 (z=16; slices z 14.5-17.5 range 0.050-0.127). Barb shanks as origin gave median rms 0.089 (worse). OD-H22 D1 precedent: the STOP rule has no tie margin."
+  }
+ },
+ "clock": {
+  "rule": "feature_line: cup A axis -> cup B axis along +X",
+  "angle_deg": 119.7622927958649,
+  "why": "the part's long axis is the line through the two cup (valve) axes; fourier_mass n=2 was biased 0.7 deg by the asymmetric necks/ears (first pass)",
+  "detail": {
+   "from": "cup A outer wall (-X cup)",
+   "to": "cup B outer wall (+X cup)",
+   "centre_from": [
+    9.672441519015536,
+    16.91483794115701
+   ],
+   "centre_to": [
+    -9.672441519015536,
+    -16.91483794115701
+   ],
+   "separation_mm": 38.97013561764343
+  }
+ },
+ "tilt_deg": {
+  "value": 0.270043438385856,
+  "stderr_deg": 0.3058749167235053,
+  "direction_deg": 160.27160820648814,
+  "method": "common slope, per-feature intercept, 6 stations over 2 feature(s), z 1.600..3.200 vs frame Z",
+  "z_span_mm": 1.6,
+  "per_feature": [
+   {
+    "feature": "cup A outer wall (-X cup)",
+    "n_stations": 3,
+    "value": 0.4285483455718087,
+    "stderr_deg": 0.3632600679597435,
+    "direction_deg": -164.1306226667152,
+    "z_span_mm": 1.6
+   },
+   {
+    "feature": "cup B outer wall (+X cup)",
+    "n_stations": 3,
+    "value": 0.31455783619454264,
+    "stderr_deg": 0.4170100429210515,
+    "direction_deg": 107.80124872424628,
+    "z_span_mm": 1.6
+   }
+  ],
+  "resolvable": true
+ },
+ "origin": {
+  "definition": "midpoint of cup A and cup B axes \u2229 flange top face"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": 0.00134034280035659,
+   "tol": 0.04086956874051109,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "cup A top face z",
+   "stat": "zmedian",
+   "expected": 12.4,
+   "tol": 0.3,
+   "observed": 12.329015275299895,
+   "ok": true,
+   "tol_source": "exploratory section read (pre-frame XZ sections, 0.3 mm plotted grid)"
+  },
+  {
+   "name": "barb tip z (max)",
+   "stat": "zmax",
+   "expected": 28.5,
+   "tol": 0.4,
+   "observed": 28.63827823205031,
+   "ok": true,
+   "tol_source": "exploratory section read (pre-frame YZ section x=-19.5)"
+  },
+  {
+   "name": "skirt lower edge z (min)",
+   "stat": "zmin",
+   "expected": -3.1,
+   "tol": 0.4,
+   "observed": -3.1666646076420477,
+   "ok": true,
+   "tol_source": "pre-frame bounds z_min -3.18"
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -42.437820172093375,
+   -15.587099736577299,
+   -3.1666646076420477
+  ],
+  [
+   42.65530257782018,
+   14.96710330607955,
+   28.63827823205031
+  ]
+ ],
+ "extents_aligned": [
+  85.09312274991356,
+  30.55420304265685,
+  31.80494283969236
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/d8e5b691-152f-55fe-9a52-555e01807691/scratchpad/job/OD-W03_water-tank-valve/intake/aligned_work.stl",
+  "sha256": "72fa2a32066f56de1d6b0ec6050ad74b7d74f381b992e56724973d7d788b9a21"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "pass",
+   "note": "common slope, per-feature intercept, 6 stations over 2 feature(s), z 1.600..3.200 vs frame Z; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": false,
+   "result": "finding",
+   "note": "FLAG: no calipers (scan-only, DECISIONS.md MEASUREMENTS 2026-09-28); units assumed mm, absolute scale unverified; no scale applied"
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

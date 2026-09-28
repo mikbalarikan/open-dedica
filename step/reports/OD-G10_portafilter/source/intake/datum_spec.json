@@ -1,0 +1,102 @@
+{
+ "mesh": "work.stl",
+ "raw_scan": "../input/scan.stl",
+ "intake_json": "intake.json",
+ "out_dir": ".",
+ "seed": 0,
+ "noise": {
+  "from": "noise_rim.json"
+ },
+ "primary": {
+  "type": "plane",
+  "approx_normal": [
+   0.516693,
+   0.024035,
+   -0.855833
+  ],
+  "material_side": "-z",
+  "desc": "cup rim end face (sealing face, incl. lug tops in the same plane)",
+  "why": "the rim end face seats against the group-head gasket; it is the functional axial datum of a portafilter"
+ },
+ "origin": {
+  "xy": [
+   {
+    "method": "wall_faces",
+    "wall": "outer",
+    "perp_max": 0.3,
+    "r_min": 28.0,
+    "r_max": 31.5,
+    "r_hint": 29.8,
+    "r_tol": 1.2,
+    "rms_max": 0.4,
+    "z_range": [
+     -36.0,
+     -12.0
+    ],
+    "stations": 12,
+    "desc": "cup outer wall (drafted)",
+    "why": "the cast cup is turned about this axis; lugs and handle sit on it"
+   },
+   {
+    "method": "wall_faces",
+    "wall": "inner",
+    "perp_max": 0.3,
+    "r_min": 27.0,
+    "r_max": 29.0,
+    "r_hint": 28.0,
+    "r_tol": 0.8,
+    "rms_max": 0.4,
+    "z_range": [
+     -10.8,
+     -3.2
+    ],
+    "stations": 4,
+    "desc": "cup rim bore above the basket flange",
+    "why": "coaxial bore of the same casting (tilt cross-check)"
+   }
+  ],
+  "definition": "cup axis (outer wall) ∩ rim end-face plane"
+ },
+ "clock": {
+  "rule": "plane_normal",
+  "approx_normal_raw": [
+   -0.783787,
+   0.417242,
+   -0.459987
+  ],
+  "desc": "handle end-cap flat normal -> +X",
+  "why": "the handle is the one non-axisymmetric feature that sets the part's orientation; its end cap is a clean flat perpendicular to the cup axis"
+ },
+ "landmarks": [
+  {
+   "name": "spout boss tips (part bottom)",
+   "stat": "zmin",
+   "expected": -59.0,
+   "tol": 0.6,
+   "tol_source": "intake exploration r-z plot (provisional frame, 0.5 mm reading resolution)"
+  },
+  {
+   "name": "lug outer radius",
+   "stat": "rmax",
+   "z_range": [
+    -4.0,
+    0.2
+   ],
+   "r_range": [
+    0,
+    40
+   ],
+   "expected": 36.0,
+   "tol": 0.8,
+   "tol_source": "intake exploration r-z plot"
+  }
+ ],
+ "noise_secondary": {
+  "from": "noise_circle.json"
+ },
+ "chk_scale": {
+  "ran": true,
+  "result": "finding",
+  "note": "FLAG: no calipers (scan-only, DECISIONS MEASUREMENTS 2026-09-28); units assumed mm, scale unverified, none applied"
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "schema": "stl-re/datum_audit@1",
+ "tool": "datum_audit.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "94adb6866780b8cdc771dad5cb006d218143b05fd55b6032780e6b2b7b7301f3",
+  "intake/alignment.json": "f17c3c04898f9354b69f4699e22944fb9dfbbfb40c0480315c6a0fa3d13608c4",
+  "qa/datum_spec_clock_sens.json": "124b75a0c58ed19eb06f59efea8beac41652d1f5bd70b9c192eacd095f861d20"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:21:23+00:00",
+ "independence": "builder matrix used only to select named regions; all fits are QA code on raw scan",
+ "primary": {
+  "type": "plane",
+  "method": "region SVD",
+  "faces": 1817,
+  "fit_rms_mm": 0.042463172167459214,
+  "fit_max_mm": 0.15982872692146274
+ },
+ "position": {
+  "type": "circle",
+  "wall": "outer",
+  "single_wall": "outer",
+  "faces": 75202,
+  "R_mm": 40.105990707072486,
+  "fit_rms_mm": 0.06185442493834918,
+  "method": "IRLS Cauchy circle (q03:88-100)"
+ },
+ "clock": {
+  "type": "fourier",
+  "order": 3,
+  "phase_deg_local": 218.07865198968963,
+  "order_strength": 0.6564544431557653
+ },
+ "angle_deg": 4.017594864671209,
+ "axis_angle_deg": 0.010386073920672702,
+ "clock_audited": true,
+ "origin_offset_mm": 0.004861696656918679,
+ "origin_offset_vec_mm": [
+  0.001575905814021894,
+  -0.0031088503252831856,
+  0.0033893457929536908
+ ],
+ "point_disagreement_mean_mm": 2.532482744544663,
+ "point_disagreement_p95_mm": 2.8160318711829166,
+ "point_disagreement_max_mm": 2.846122596857812,
+ "reference_band": "\u22640.3\u00b0 / \u22640.15 mm (RE_SPEC.md:241)",
+ "reference": {
+  "angle_deg": 0.3,
+  "origin_offset_mm": 0.15,
+  "source": "baseline/oomwoo-re-pipeline/RE_SPEC.md:241"
+ },
+ "within_reference": false,
+ "blocking": false,
+ "note": "REPORT-ONLY (QUESTIONS.md Q2). Golden precedent: both B02 and P03 exceeded this reference band and were still approved with it recorded (see analysis/golden/OOM-B02.md and OOM-P03.md for the actual figures).",
+ "T_qa": [
+  [
+   0.6135066222792253,
+   -0.7522276164115658,
+   0.2403398375786055,
+   28.19483772046348
+  ],
+  [
+   0.7830346740503444,
+   0.6189061603709346,
+   -0.0617402938912506,
+   -21.616619665144302
+  ],
+  [
+   -0.10230505194958377,
+   0.22607250554342387,
+   0.9687233343854743,
+   212.9667849781535
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ]
+}

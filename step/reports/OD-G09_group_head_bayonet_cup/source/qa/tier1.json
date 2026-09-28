@@ -1,0 +1,42 @@
+{
+ "schema": "stl-re/tier1@1",
+ "tool": "sim_caliper.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-G10_porta_filter_holder_datum.step": "74eda9cd5898c6f4afee8d89c7237bce9109da6d673e517adbd203a25681ad42",
+  "qa/dims.json": "558c77f6d37d934f1d205a520cd5b202049597ef8d7635bd5dbd9b0f2644c366",
+  "qa/regime.json": "d48265034c224f40b77bbf3725ec5a64aa76597048cb585a06c9461255fd89ec"
+ },
+ "seed": null,
+ "created": "2026-09-28T08:22:15+00:00",
+ "band_abs_mm": null,
+ "band_source": "baseline/skills/stl2step-build123d/SKILL.md:87",
+ "tessellation": {
+  "tolerance": 0.005,
+  "angular_tolerance": 0.05
+ },
+ "dims": {},
+ "worst_gated_abs_delta": null,
+ "coverage": {
+  "gated": 0,
+  "requested_total": 15,
+  "absent": [
+   "ENV-D",
+   "ENV-Z1",
+   "ENV-Z2",
+   "F-BORE",
+   "F-LUG",
+   "F-LUGT",
+   "F-STOP",
+   "F-SHELF",
+   "F-POCK",
+   "F-PLATE",
+   "F-KEY",
+   "F-BOSS",
+   "W-CUP",
+   "W-NOTCH",
+   "W-LUGR"
+  ]
+ },
+ "all_pass": null
+}

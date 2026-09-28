@@ -1,0 +1,34 @@
+{
+  "schema": "stl-re/limitations@1",
+  "part": {
+    "name": "OD-W03",
+    "what_it_is": "Water tank valve cover (translucent moulded plastic): stadium flange with skirt, two valve cups with conical shoulders and single-barb hose nipples, a middle boss with a top hole, four ribs, and an L-shaped ear with a fixing hole at each end.",
+    "reference_photo": "input/photos/OD-W03_photo1.png"
+  },
+  "method_summary": [
+    "Intake: full-resolution scan (owner-confirmed), nothing removed; datum = flange top face (z = 0), origin = midpoint of the two cup axes, +X from cup A to cup B (align.py feature_line clock).",
+    "Measure: meridian profiles, binned-median line fits, IRLS circles and open-boundary loops on the aligned scan; per-cup and per-ear values kept where they differ beyond noise; tops re-measured as cones after a builder self-check.",
+    "Rebuild: build123d, revolved cup and boss meridians, stadium flange extrude, planar ribs, tapered tab prisms and slot lugs, one cut-tool set for the hollow shell (owner decision); 5 fillets logged, all at target.",
+    "Verify: independent agent, own ICP, two-way full-res deviation under regime {{gate:regime.name}}; verdict BAND_NOT_MET, accepted by the owner."
+  ],
+  "limitations": [
+    {"id": "L1", "text": "No calipers: tier1 partial, none of the requested dimensions is calipered (ABSENT, not passed), and the absolute scale is not caliper-verified. Every size is scan-derived.", "rerun_trigger": "Any caliper reading in input/MEASUREMENTS.md (ENV-X / ENV-Y first, for scale) triggers a re-run of verify.", "evidence": "qa/gate.json#tier1; intake/MEASUREMENTS.md"},
+    {"id": "L2", "text": "Interior, underside, wall thickness ({{params:wall_t.value}} mm), barb-bore and boss-hole depths are assumed (owner decision: hollow shell), not measured. The observable CAD->scan miss comes almost entirely from these unscanned surfaces.", "rerun_trigger": "A scan of the underside/interior or a wall-thickness caliper reading triggers a rebuild and re-run.", "evidence": "DECISIONS.md; measure/params.json#wall_t; qa/VERDICT.md"},
+    {"id": "L3", "text": "The gate registration is a QA workaround (qa/scripts/tier2_icp_signed.py, signed normal agreement). The shipped tier2_icp.py paired the invented inner walls with the outer skin and converged to a shifted frame; that run is kept and reported (qa/deviation_run1.json).", "rerun_trigger": "tier2_icp.py fixed to use signed normal agreement triggers a re-run of the gate.", "evidence": "qa/gate.json#deviation_runs; qa/registration.json"},
+    {"id": "L4", "text": "Scan->CAD max passes only masked: M1 (bridging film across the barb A bore mouth) and M2 (junk facets at the tab/lug junction). Unmasked max is {{gate:deviation.scan_to_cad.max}} mm. Scan->CAD p95 misses the band masked ({{gate:deviation.scan_to_cad_masked.p95}}) and unmasked ({{gate:deviation.scan_to_cad.p95}}).", "rerun_trigger": "A rescan of the barb tips and ear junctions (matt spray) triggers an unmasked re-run.", "evidence": "qa/masks.json; qa/gate.json#band_fails"},
+    {"id": "L5", "text": "The datum audit ran through qa/scripts/datum_audit_pair.py, because datum_audit.py has no two-feature midpoint origin or feature_line clock; it reuses datum_audit.py's own fit functions.", "rerun_trigger": "datum_audit.py gains circle-pair origin and feature_line clock support: re-run the audit.", "evidence": "qa/datum_audit.json"},
+    {"id": "L6", "text": "Overlays are drawn in the builder's datum frame (overlay.py has no registration option); the ICP correction is below what the panels resolve.", "rerun_trigger": "A registration correction larger than the panel resolution: regenerate the overlays in the ICP frame.", "evidence": "qa/overlays/"},
+    {"id": "L7", "text": "Functional-interface zones Z1-Z4 are reported, not gated (baseline-skill has no interface band); the Z2/Z4 CAD->scan zone numbers include invented bore and cavity walls.", "rerun_trigger": "A regime with an interface band declared at intake triggers a re-run.", "evidence": "qa/zones.json; qa/gate.json#deviation.zones"},
+    {"id": "L8", "text": "Known fixable residuals left in the model by the owner's accept-now decision: cup B upper wall reads short of the scan, and the skirt's lower edge (scan inside the CAD) is either a real draft or scan curl the data cannot separate.", "rerun_trigger": "Owner asks for a REVISE loop, or a caliper reading on cup B / the skirt, triggers a measure-route loop 2.", "evidence": "qa/gate.json#miss_explanations; decisions/accept_band.md"}
+  ],
+  "assumptions": [
+    {"text": "Hollow moulded shell: cups and boss open from below, plate/skirt/cup walls at the assumed thickness, barb bores through into the cup cavities, boss hole through into its cavity.", "source": "assumed", "evidence": "DECISIONS.md; build/MODELING_PLAN.md §6"},
+    {"text": "Lug underside flat at the lowest point where the scan saw the lug side walls (the underside itself is not scanned).", "source": "scan bound", "evidence": "measure/params.json#lug_bottom_z"},
+    {"text": "Units assumed mm; no scale correction applied.", "source": "assumed", "evidence": "intake/alignment.json#checks.CHK-SCALE"}
+  ],
+  "claim_boundary": {
+    "fit_for": ["visual / outer-envelope model of the part (the outer skin follows the full-resolution scan)", "a starting CAD for a caliper-verified revision"],
+    "not_fit_for": ["tooling or manufacture release until calipered and the underside is captured", "hose, seal or fixing-hole fit decisions (no dimension is caliper-verified; interior invented)"]
+  },
+  "repro_commands": ["cd build && python3 model.py --params ../measure/params.json --alignment ../intake/alignment.json --out . --part OD-W03 --scripts <skills>/stl-re-rebuild-build123d/scripts"]
+}

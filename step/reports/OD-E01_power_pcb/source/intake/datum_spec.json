@@ -1,0 +1,68 @@
+{
+ "mesh": "work.stl",
+ "raw_scan": "../input/scan.stl",
+ "intake_json": "intake.json",
+ "out_dir": ".",
+ "seed": 0,
+ "noise": {
+  "from": "noise_boardtop.json"
+ },
+ "chk_scale": {
+  "ran": true,
+  "result": "finding",
+  "note": "FLAG: no calipers (scan-only, DECISIONS.md MEASUREMENTS); units assumed mm, scale unverified, none applied"
+ },
+ "primary": {
+  "type": "plane",
+  "approx_normal": [
+   -0.82228241,
+   0.31609237,
+   0.47322009
+  ],
+  "material_side": "-z",
+  "desc": "PCB top face (component side, solder mask)",
+  "why": "the board top is the seating plane of every component and the reference an enclosure / mating part locates the PCB on"
+ },
+ "origin": {
+  "xy": {
+   "method": "wall_faces",
+   "wall": "inner",
+   "perp_max": 0.3,
+   "r_min": 1.5,
+   "r_max": 2.6,
+   "centre_guess": [
+    -117.25,
+    24.714
+   ],
+   "r_hint": 2.02,
+   "r_tol": 0.3,
+   "rms_max": 0.2,
+   "z_range": [
+    -1.45,
+    -0.15
+   ],
+   "stations": 5,
+   "desc": "mounting hole H1 wall faces (corner hole, wall fully scanned)",
+   "why": "mounting holes locate the PCB in the enclosure"
+  },
+  "definition": "mounting hole H1 axis \u2229 PCB top face"
+ },
+ "clock": {
+  "rule": "plane_normal",
+  "approx_normal_raw": [
+   -0.518926,
+   -0.757817,
+   -0.395512
+  ],
+  "offset_range": [
+   94.3,
+   96.3
+  ],
+  "cone_deg": 10.0,
+  "desc": "PCB short edge on the far side from H1 (edge face outward normal) -> +X",
+  "why": "board outline edges are the second locating reference; the long board axis runs along +X"
+ },
+ "noise_secondary": {
+  "from": "noise_circle.json"
+ }
+}

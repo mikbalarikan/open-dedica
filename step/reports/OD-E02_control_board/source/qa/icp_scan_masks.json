@@ -1,0 +1,1 @@
+{"masks": [], "note": "No ICP reference masks. The only unmodelled scanned body is the connector header inside the shroud (a few small patches, MODELING_PLAN §0); it is left in the ICP reference and handled by the 3.0 mm correspondence cut-off and 70 deg normal test. Declared so the registration is not tuned by masking."}

@@ -1,0 +1,66 @@
+{
+ "schema": "stl-re/limitations@1",
+ "part": {"name": "OD-E01_Power-PCB",
+          "what_it_is": "Populated appliance power PCB (board id PCB00572-01): board, heatsink with a TO-220 and spring clip, electrolytic and film capacitors, faston tabs, connectors and SMD parts, delivered as ONE fused envelope solid of the component side for enclosure / fit design.",
+          "reference_photo": "input/photos/1.png"},
+ "method_summary": [
+  "Intake: full-resolution scan hashed, noise floors measured, datum = PCB top face (z 0, +Z out of the component side), mounting hole H1 axis as origin, +X along the long board edge (clock on the +X short edge).",
+  "Measure: seeded height map plus per-part fits on the frozen datum-frame scan (run-local measure/measure_pcb.py): edge-line fits for the board, bore-wall circle fits for holes, side-wall faces for tall boxes, per-z-bin circle fits for the leaning cans, profile fits for the heatsink, SDF fit for the Y-capacitor; every value in measure/params.json with its estimator.",
+  "Rebuild: params-driven build123d model (build/model.py): board plate with slot and holes, one extruded heatsink profile, cans revolved on their measured axes, boxes and wires for the rest, one union; exported in the datum frame and the scan frame.",
+  "Verify: independent fresh-context QA with its own ICP and two-way deviation on the full-resolution scan; iteration 1 REVISE (five geometry findings), iteration 2 BAND_NOT_MET, accepted by the owner for delivery (decisions/accept_band_it2.md)."
+ ],
+ "limitations": [
+  {"id": "L1", "text": "No Tier-1 (no calipers run): scan-only job, every requested dimension is ABSENT, not passed; absolute scale is not caliper-verified (units assumed mm).",
+   "rerun_trigger": "caliper readings for ENV-X, ENV-Y, F01 (H1 diameter), F02 (H1-H2 pitch) and F03 (board thickness) entered in input/MEASUREMENTS.md",
+   "evidence": "qa/gate.json#limitations.0; intake/MEASUREMENTS.md"},
+  {"id": "L2", "text": "Unscanned surfaces are invented: the whole solder side (board bottom), deep heatsink fin and spine sides and roots, connector cavity floors, lower can walls between the caps, undersides of raised parts and the Y-cap back. They drive the observable CAD-to-scan miss (p95 {{gate:deviation.cad_to_scan_observable.p95}} / max {{gate:deviation.cad_to_scan_observable.max}} mm); the solder-side mask alone removes a fraction {{gate:deviation.masks.0.fraction}} of the CAD samples.",
+   "rerun_trigger": "a solder-side scan and oblique scans between the heatsink fins and caps",
+   "evidence": "qa/gate.json#limitations.1; build/MODELING_PLAN.md §6, §9"},
+  {"id": "L3", "text": "QA ICP bias: with the golden ICP parameters the invented board bottom corresponds to the scanned board top, so the ICP lifts the CAD (correction {{gate:registration.delta_mm}} mm) and the official scan-to-CAD reads p95 {{gate:deviation.scan_to_cad.p95}} / max {{gate:deviation.scan_to_cad.max}} mm; in the builder datum frame the same statistic reads p95 {{gate:deviation_datum_frame.scan_to_cad.p95}} / max {{gate:deviation_datum_frame.scan_to_cad.max}} mm.",
+   "rerun_trigger": "a solder-side scan, or an owner / skill decision on the ICP correspondence radius or a signed normal test for thin plates with one invented face (QUESTIONS.md §F)",
+   "evidence": "qa/gate.json#limitations.2; qa/gate.json#auto_limitations: datum-frame vs post-ICP scan_to_cad p95 differ by 0.471 mm (> band 0.3 mm)"},
+  {"id": "L4", "text": "Board warp is not modelled: the board is a flat design-intent plate while the scanned board top is bowed / twisted by a few tenths of a millimetre (worst at the H1 corner).",
+   "rerun_trigger": "the owner asks for the as-scanned warped board, or an enclosure fit check needs the warp",
+   "evidence": "qa/gate.json#limitations.3; intake/INTAKE_CARD.md §6, §8"},
+  {"id": "L5", "text": "QA ICP did not converge at its default iteration cap; the cap was raised once (same reason as iteration 1) and it converged; both runs are kept.",
+   "rerun_trigger": "any rebuild: re-run ICP with the same cap and report both runs again",
+   "evidence": "qa/gate.json#limitations.4; qa/registration_run1_cap60.json"},
+  {"id": "L6", "text": "The photos are catalogue / installed photos; photos 2-4 show a variant heatsink without the spring clip, so heatsink, clip and spine details are confirmed by photo 1 only.",
+   "rerun_trigger": "photos of the scanned unit (top, both heatsink sides, spine top)",
+   "evidence": "qa/gate.json#limitations.5; qa/review.json#photos"},
+  {"id": "L7", "text": "A scanned surface inside the heatsink spine above the TO-220 tab is not modelled (real slot or reconstruction artefact is undecided); it holds the largest datum-frame scan-to-CAD residual after the edge fringe.",
+   "rerun_trigger": "a side photo / oblique scan of the spine above the TO-220 tab, or an owner statement",
+   "evidence": "qa/gate.json#limitations.6; build/MODELING_PLAN.md §9"},
+  {"id": "L8", "text": "Simplifications with a deviation cost: SMD terminations, solder fillets and lead toes below half part height are not modelled; lead bends are straight segments with square knuckles; can tops are flat (vent crosses and rim crimp omitted); the Y-cap is a rounded disc without its epoxy necks.",
+   "rerun_trigger": "a use that needs pad-level or lead-level geometry",
+   "evidence": "measure/params.json#simplifications"}
+ ],
+ "assumptions": [
+  {"text": "Heatsink root stands on the board top (fin roots hidden).", "source": "assumed", "evidence": "measure/params.json#hs_bottom_z"},
+  {"text": "TO-220 lead cross-section and through-hole lead wire diameter are standard values.", "source": "standard", "evidence": "measure/params.json#q1_lead_w, q1_lead_t, lead_d"},
+  {"text": "Every sub-body is embedded slightly into the board top (and the TO-220 tab into the spine) so the union has no coplanar faces (documented clearance in build/model.py).", "source": "assumed", "evidence": "build/model.py#EMBED"},
+  {"text": "The board bottom is an invented flat face at the measured board thickness below the datum top face.", "source": "assumed", "evidence": "measure/params.json#board_thickness"}
+ ],
+ "claim_boundary": {
+  "not_fit_for": ["manufacture, tooling, PCB footprint or electrical work",
+                  "solder-side or board-thickness-critical fits (the solder side is invented, scale not caliper-verified)",
+                  "fits that depend on hidden geometry: heatsink fin roots and sides, connector cavities, part undersides"],
+  "fit_for": ["component-side envelope and clearance studies for an enclosure (lid heights, part positions, mounting holes, faston access), with the band miss and limitations above in mind"]
+ },
+ "repro_commands": ["python3 build/model.py   (from the run root; writes build/*.step, *_cad.stl, export_check.json)",
+                    "python3 measure/measure_pcb.py && python3 measure/make_params.py   (re-derives measure/params.json from intake/aligned_work.stl)"],
+ "feature_tree": [
+  {"id": "F01", "feature": "board plate - slot - holes H1..H6", "params": ["board_x_min", "board_x_max", "board_y_min", "board_y_max", "board_thickness", "slot_y", "slot_x_end", "hole_H1"]},
+  {"id": "F02", "feature": "heatsink extruded profile (hubs with C-channels, spine, fins) - spine notch - screw hole", "params": ["hs_hub_upper", "hs_hub_lower", "hs_spine_x", "hs_fin_01", "hs_shortfin_01", "hs_top_z", "hs_spine_notch", "hs_spine_hole"]},
+  {"id": "F03", "feature": "TO-220 body, tab with hole, bent leads", "params": ["q1_body", "q1_tab", "q1_tab_hole", "q1_lead_1"]},
+  {"id": "F04", "feature": "spring clip strap and lower hook", "params": ["clip_path", "clip_hook", "clip_width", "clip_z"]},
+  {"id": "F05", "feature": "electrolytic cans (base, groove, body on a leaning axis), C1 V-chip base, C5 stem", "params": ["cap_C1", "cap_C3", "cap_C1_base", "capstem_C5"]},
+  {"id": "F06", "feature": "X2 film capacitor box", "params": ["x2_CX1"]},
+  {"id": "F07", "feature": "6 faston tabs (chamfered blade, detent hole, foot)", "params": ["faston_x", "faston_y", "faston_width", "faston_thickness", "faston_top_z", "faston_chamfer"]},
+  {"id": "F08", "feature": "connector housings - cavities + inner contacts", "params": ["conn_J1", "conn_J2", "conn_J3"]},
+  {"id": "F09", "feature": "base + sloped riser blocks", "params": ["blk_K1", "blk_K2"]},
+  {"id": "F10", "feature": "axial parts along Y with leads", "params": ["ax_R1", "ax_D1", "ax_D2", "ax_L2", "lead_d"]},
+  {"id": "F11", "feature": "Y-capacitor rounded disc with leads", "params": ["ycap_CY1", "ycap_lead_1", "ycap_lead_2"]},
+  {"id": "F12", "feature": "SMD / low-part boxes", "params": ["box_001"]}
+ ]
+}

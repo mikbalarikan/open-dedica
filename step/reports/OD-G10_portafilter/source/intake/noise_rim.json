@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "4a08aeaa5190e02be876e6446afe66675bbfdefc2df3f6b888730633d799adc5"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:50:07+00:00",
+ "scan_noise_mm": {
+  "value": 0.02244846109291158,
+  "p95_mm": 0.044095577377531,
+  "max_mm": 0.09757281466143322,
+  "method": "rms of RANSAC+SVD plane on cup rim end face (sealing face, incl. lug tops in the same plane) (3756 faces)"
+ }
+}

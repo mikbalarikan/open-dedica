@@ -1,0 +1,24 @@
+{
+ "schema": "stl-re/revise_probe@1",
+ "tool": "measure/scripts/revise_it2_probe.py (run-local)",
+ "tool_version": "OD-S02",
+ "inputs": {
+  "measure/figures/bushing_frame.stl": "7f6dd7d7637f2306bccf49b9a044af62b3c79df726572ff3fa7a530177b6e5a4"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:15:00+00:00",
+ "window_surface_t_p1_p5_p50": [
+  2.3831046438217163,
+  3.189842367172241,
+  4.239045143127441
+ ],
+ "n_window": 1123,
+ "window_depth_below_bottom_from_p1": 2.5238953561782838,
+ "bore_wall_t_min_max": [
+  5.2107110023498535,
+  6.039141654968262
+ ],
+ "n_bore": 176,
+ "bore_wall_deepest_tip_t": -9.699861867650146,
+ "bore_depth_from_tip_end_needed": 13.599861867650146
+}

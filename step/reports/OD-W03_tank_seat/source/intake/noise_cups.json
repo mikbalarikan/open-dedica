@@ -1,0 +1,103 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "orchestrator (inline, from the cup-pass alignment.json station detail)",
+ "tool_version": "n/a",
+ "inputs": {
+  "intake/alignment.json (cups z1.2-3.6 pass)": "stations below"
+ },
+ "seed": 0,
+ "scan_noise_mm": {
+  "value": 0.082855,
+  "method": "SELF-REFERENTIAL: median IRLS circle rms over the secondary's own 6 stations (cup A/B outer wall z 1.2-3.6: 0.0714, 0.0809, 0.0916, 0.0680, 0.0848, 0.1318). Independent barb-shank circle noise = 0.0708 (z=16; slices z 14.5-17.5 range 0.050-0.127). Barb shanks as origin gave median rms 0.089 (worse). OD-H22 D1 precedent: the STOP rule has no tie margin."
+ },
+ "independent_reference": {
+  "value": 0.07080753350801938,
+  "p95_mm": 0.1537742424760516,
+  "max_mm": 0.19506287708827807,
+  "method": "rms of IRLS circle on barb A shank circle (z=16, first-pass aligned frame) at z=16.0 (n=242)",
+  "circle": {
+   "cx": 0.08410509365529646,
+   "cy": -0.044661517603652,
+   "r": 2.928430664452273,
+   "rms": 0.07080753350801938,
+   "max": 0.19506287708827807,
+   "p95": 0.1537742424760516,
+   "n": 242,
+   "iterations": 13
+  }
+ },
+ "stations": [
+  {
+   "z": 1.6,
+   "cx": -139.24615,
+   "cy": 31.62514,
+   "r": 11.93726,
+   "rms": 0.07144,
+   "max": 0.56268,
+   "p95": 0.13982,
+   "n": 3306,
+   "iterations": 10,
+   "feature": "cup A outer wall (-X cup)"
+  },
+  {
+   "z": 2.4,
+   "cx": -139.24563,
+   "cy": 31.61278,
+   "r": 11.91103,
+   "rms": 0.0809,
+   "max": 0.54048,
+   "p95": 0.16623,
+   "n": 3511,
+   "iterations": 12,
+   "feature": "cup A outer wall (-X cup)"
+  },
+  {
+   "z": 3.2,
+   "cx": -139.25767,
+   "cy": 31.62187,
+   "r": 11.86951,
+   "rms": 0.09161,
+   "max": 0.55888,
+   "p95": 0.19095,
+   "n": 3753,
+   "iterations": 14,
+   "feature": "cup A outer wall (-X cup)"
+  },
+  {
+   "z": 1.6,
+   "cx": -158.58928,
+   "cy": -2.21148,
+   "r": 11.91338,
+   "rms": 0.06801,
+   "max": 0.58586,
+   "p95": 0.11885,
+   "n": 3370,
+   "iterations": 10,
+   "feature": "cup B outer wall (+X cup)"
+  },
+  {
+   "z": 2.4,
+   "cx": -158.60286,
+   "cy": -2.21463,
+   "r": 11.88228,
+   "rms": 0.08481,
+   "max": 0.61676,
+   "p95": 0.18885,
+   "n": 3416,
+   "iterations": 11,
+   "feature": "cup B outer wall (+X cup)"
+  },
+  {
+   "z": 3.2,
+   "cx": -158.59196,
+   "cy": -2.20312,
+   "r": 11.81935,
+   "rms": 0.13182,
+   "max": 0.65639,
+   "p95": 0.33072,
+   "n": 3357,
+   "iterations": 19,
+   "feature": "cup B outer wall (+X cup)"
+  }
+ ]
+}

@@ -1,0 +1,2013 @@
+{
+ "schema": "stl-re/params.json@1",
+ "tool": "make_params.py",
+ "tool_version": "OD-E02 run",
+ "inputs": {
+  "intake/aligned_work.stl": "5180031d0377a5a60c15556b61ab8ae09dde94f55af3a9c5f074034b2fd6b521",
+  "intake/alignment.json": "2e300002ef7139dcb81437f825bf7d668fc56cc3107a75f2d3b521e9630ff57e",
+  "measure/figures/m_all.json": "f0b4cd4f28bfd8aaf436c145f0661955e393ae8e37fe88d81b4040bd4ec935c8"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:38:56+00:00",
+ "part": "OD-E02_control-button-board",
+ "frame": "datum frame of intake/alignment.json: back cover floor = XY at z 0 (housing hangs to -Z), origin = middle button collar axis, +X = +X end face normal; theta CCW about +Z from +X",
+ "scan_noise_mm": 0.026463984194224962,
+ "params": {
+  "rim_top_z": {
+   "value": 4.94,
+   "unit": "mm",
+   "measured": 4.94,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rim wall top: area-weighted flat-face z (65.4 mm2, 1665 faces)",
+   "uncertainty_mm": 0.0265,
+   "evidence": "measure/figures/m_all.json#z.rim_top",
+   "critical": false
+  },
+  "T0_bottom_z": {
+   "value": -7.5969,
+   "unit": "mm",
+   "measured": -7.5969,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "tier-0 shelf (bottom face): area-weighted flat-face z (97.9 mm2, 1978 faces)",
+   "uncertainty_mm": 0.0265,
+   "evidence": "measure/figures/m_all.json#z.T0_bottom",
+   "critical": false
+  },
+  "T2_bottom_z": {
+   "value": -10.1215,
+   "unit": "mm",
+   "measured": -10.1215,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "tier-2 bottom face: area-weighted flat-face z (71.5 mm2, 2413 faces)",
+   "uncertainty_mm": 0.0265,
+   "evidence": "measure/figures/m_all.json#z.T2_bottom",
+   "critical": false
+  },
+  "T3_bottom_z": {
+   "value": -13.1911,
+   "unit": "mm",
+   "measured": -13.1911,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "tier-3 bottom face: area-weighted flat-face z (135.2 mm2, 1055 faces)",
+   "uncertainty_mm": 0.0265,
+   "evidence": "measure/figures/m_all.json#z.T3_bottom",
+   "critical": false
+  },
+  "band_bottom_z": {
+   "value": -16.1349,
+   "unit": "mm",
+   "measured": -16.1349,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "button-band bottom face: area-weighted flat-face z (168.1 mm2, 1807 faces)",
+   "uncertainty_mm": 0.0265,
+   "evidence": "measure/figures/m_all.json#z.band_bottom",
+   "critical": false
+  },
+  "collar_bottom_z": {
+   "value": -19.1069,
+   "unit": "mm",
+   "measured": -19.1069,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "button collar bottom face: area-weighted flat-face z (9.9 mm2, 533 faces)",
+   "uncertainty_mm": 0.0265,
+   "evidence": "measure/figures/m_all.json#z.collar_bottom",
+   "critical": false
+  },
+  "hoop_bottom_z": {
+   "value": -5.5662,
+   "unit": "mm",
+   "measured": -5.5662,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "latch-hoop bottom face: area-weighted flat-face z (19.6 mm2, 397 faces)",
+   "uncertainty_mm": 0.0265,
+   "evidence": "measure/figures/m_all.json#z.hoop_bottom",
+   "critical": false
+  },
+  "shroud_top_z": {
+   "value": 10.4956,
+   "unit": "mm",
+   "measured": 10.4956,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "connector shroud top: area-weighted flat-face z (12.5 mm2, 606 faces)",
+   "uncertainty_mm": 0.0265,
+   "evidence": "measure/figures/m_all.json#z.shroud_top",
+   "critical": false
+  },
+  "screw_cb_floor_z": {
+   "value": -2.9158,
+   "unit": "mm",
+   "measured": -2.9158,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "screw counterbore floor: area-weighted flat-face z (32.0 mm2, 766 faces)",
+   "uncertainty_mm": 0.0265,
+   "evidence": "measure/figures/m_all.json#z.screw_cb_floor",
+   "critical": false
+  },
+  "core_BL": {
+   "value": [
+    -32.7922,
+    -12.7062
+   ],
+   "unit": "mm",
+   "measured": [
+    -32.7922,
+    -12.7062
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median centre of Kasa corner-arc fits at z -3/-4.5/-6.6/-9 (tiers are offsets of one core); spread x 0.094 y 0.109",
+   "uncertainty_mm": 0.1092,
+   "evidence": "measure/figures/m_all.json#core.BL",
+   "critical": false
+  },
+  "core_BR": {
+   "value": [
+    32.3237,
+    -13.1173
+   ],
+   "unit": "mm",
+   "measured": [
+    32.3237,
+    -13.1173
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median centre of Kasa corner-arc fits at z -3/-4.5/-6.6/-9 (tiers are offsets of one core); spread x 0.084 y 0.127",
+   "uncertainty_mm": 0.1267,
+   "evidence": "measure/figures/m_all.json#core.BR",
+   "critical": false
+  },
+  "core_TR": {
+   "value": [
+    32.2973,
+    1.0667
+   ],
+   "unit": "mm",
+   "measured": [
+    32.2973,
+    1.0667
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median centre of Kasa corner-arc fits at z -3/-4.5/-6.6/-9 (tiers are offsets of one core); spread x 0.082 y 0.062",
+   "uncertainty_mm": 0.0822,
+   "evidence": "measure/figures/m_all.json#core.TR",
+   "critical": false
+  },
+  "core_TL": {
+   "value": [
+    -32.7317,
+    1.486
+   ],
+   "unit": "mm",
+   "measured": [
+    -32.7317,
+    1.486
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median centre of Kasa corner-arc fits at z -3/-4.5/-6.6/-9 (tiers are offsets of one core); spread x 0.092 y 0.087",
+   "uncertainty_mm": 0.092,
+   "evidence": "measure/figures/m_all.json#core.TL",
+   "critical": false
+  },
+  "bump_TL": {
+   "value": [
+    -20.0741,
+    8.994
+   ],
+   "unit": "mm",
+   "measured": [
+    -20.0741,
+    8.994
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median centre of Kasa corner-arc fits at z -3/-4.5/-6.6/-9 (tiers are offsets of one core); spread x 0.388 y 0.326",
+   "uncertainty_mm": 0.3881,
+   "evidence": "measure/figures/m_all.json#core.bumpTL",
+   "critical": false
+  },
+  "bump_TR": {
+   "value": [
+    10.8061,
+    8.7833
+   ],
+   "unit": "mm",
+   "measured": [
+    10.8061,
+    8.7833
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median centre of Kasa corner-arc fits at z -3/-4.5/-6.6/-9 (tiers are offsets of one core); spread x 0.131 y 0.148",
+   "uncertainty_mm": 0.1477,
+   "evidence": "measure/figures/m_all.json#core.bumpTR",
+   "critical": false
+  },
+  "rim_out_R_main": {
+   "value": 5.6065,
+   "unit": "mm",
+   "measured": 5.6065,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rim outer wall (z 1..3.4): median outline-to-core distance, main walls",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#tiers.rim_out",
+   "critical": false
+  },
+  "rim_out_R_bump": {
+   "value": 5.3929,
+   "unit": "mm",
+   "measured": 5.3929,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rim outer wall (z 1..3.4): median outline-to-core distance, bump",
+   "uncertainty_mm": 0.0877,
+   "evidence": "measure/figures/m_all.json#tiers.rim_out",
+   "critical": false
+  },
+  "rim_in_R_main": {
+   "value": 4.43,
+   "unit": "mm",
+   "measured": 4.43,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rim inner (pocket) wall: mode of outline-to-core distance 3.8..5.0, z 1..3.4",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#rim_in",
+   "critical": false
+  },
+  "rim_in_R_bump": {
+   "value": 4.0792,
+   "unit": "mm",
+   "measured": 4.0792,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rim inner wall on the bump top: median y - bump core line, z 1..3.4",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#rim_in",
+   "critical": false
+  },
+  "T0_R_main": {
+   "value": 5.8363,
+   "unit": "mm",
+   "measured": 5.8363,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "T0: median outline-to-core distance over stations [-1.0, -2.0, -3.0, -4.0, -5.0, -6.0] (main walls; -Y excluded on T3 = chamfer)",
+   "uncertainty_mm": 0.1004,
+   "evidence": "measure/figures/m_all.json#tiers.T0",
+   "critical": false
+  },
+  "T0_R_bump": {
+   "value": 5.4723,
+   "unit": "mm",
+   "measured": 5.4723,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "T0: median outline-to-core distance on the bump",
+   "uncertainty_mm": 0.0834,
+   "evidence": "measure/figures/m_all.json#tiers.T0",
+   "critical": false
+  },
+  "T2_R_main": {
+   "value": 3.65,
+   "unit": "mm",
+   "measured": 3.65,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "T2: median outline-to-core distance over stations [-8.2, -8.8, -9.4, -9.8] (main walls; -Y excluded on T3 = chamfer)",
+   "uncertainty_mm": 0.0893,
+   "evidence": "measure/figures/m_all.json#tiers.T2",
+   "critical": false
+  },
+  "T2_R_bump": {
+   "value": 3.3099,
+   "unit": "mm",
+   "measured": 3.3099,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "T2: median outline-to-core distance on the bump",
+   "uncertainty_mm": 0.0372,
+   "evidence": "measure/figures/m_all.json#tiers.T2",
+   "critical": false
+  },
+  "T3_R_main": {
+   "value": 2.3823,
+   "unit": "mm",
+   "measured": 2.3823,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "T3: median outline-to-core distance over stations [-10.6, -11.2, -11.8, -12.4] (main walls; -Y excluded on T3 = chamfer)",
+   "uncertainty_mm": 0.199,
+   "evidence": "measure/figures/m_all.json#tiers.T3",
+   "critical": false
+  },
+  "T3_R_bump": {
+   "value": 2.1832,
+   "unit": "mm",
+   "measured": 2.1832,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "T3: median outline-to-core distance on the bump",
+   "uncertainty_mm": 0.1263,
+   "evidence": "measure/figures/m_all.json#tiers.T3",
+   "critical": false
+  },
+  "T0_concave_r": {
+   "value": 1.1067,
+   "unit": "mm",
+   "measured": 1.1067,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa on the -X bump junction arc at z -4 (the +X junction fit is contaminated by latch hoop H4 and is not used)",
+   "uncertainty_mm": 0.0291,
+   "evidence": "measure/figures/m_all.json#concave.T0",
+   "critical": false
+  },
+  "T2_concave_r": {
+   "value": [
+    2.2241,
+    1.9535
+   ],
+   "unit": "mm",
+   "measured": [
+    2.2241,
+    1.9535
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa on both bump junction arcs at z -9 [L, R]",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#concave.T2",
+   "critical": false
+  },
+  "T3_concave_r": {
+   "value": [
+    3.003,
+    2.8232
+   ],
+   "unit": "mm",
+   "measured": [
+    3.003,
+    2.8232
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa on both bump junction arcs at z -11.8 [L, R]",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#concave.T3",
+   "critical": false
+  },
+  "chamfer_normal": {
+   "value": [
+    -0.0064,
+    -0.7088,
+    -0.7053
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.0064,
+    -0.7088,
+    -0.7053
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on faces n.(0,-1,-1)/sqrt2 > 0.97, z -17..-10, y < -8 (6403 faces, rms 0.0456); unit outward normal (dimensionless, listed as mm)",
+   "uncertainty_mm": 0.0456,
+   "evidence": "measure/figures/m_all.json#chamfer",
+   "critical": false,
+   "note": "angle to Z 45.14 deg"
+  },
+  "chamfer_offset": {
+   "value": 18.0023,
+   "unit": "mm",
+   "measured": 18.0023,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "plane offset n.p of the same fit (outward normal)",
+   "uncertainty_mm": 0.0456,
+   "evidence": "measure/figures/m_all.json#chamfer",
+   "critical": false
+  },
+  "band_top_y": {
+   "value": [
+    3.261,
+    2.9692
+   ],
+   "unit": "mm",
+   "measured": [
+    3.261,
+    2.9692
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit on the +Y band edge at z -14.4 for x -22..-10 and 10..22; y at x = -16 and +16",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m_all.json#band.top_line_*",
+   "critical": false,
+   "note": "the band top edge sits 1.8-1.9 mm outside the core top edge"
+  },
+  "band_disk_L": {
+   "value": [
+    -26.7231,
+    -4.8071,
+    8.1524
+   ],
+   "unit": "mm",
+   "measured": [
+    -26.7231,
+    -4.8071,
+    8.1524
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa on the band end arc at z -14.4 (|x| > 28.5), rms 0.017 [cx, cy, r]",
+   "uncertainty_mm": 0.0167,
+   "evidence": "measure/figures/m_all.json#band.end_disk_L",
+   "critical": false
+  },
+  "band_disk_R": {
+   "value": [
+    26.3142,
+    -5.2418,
+    8.326
+   ],
+   "unit": "mm",
+   "measured": [
+    26.3142,
+    -5.2418,
+    8.326
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa on the band end arc at z -14.4 (|x| > 28.5), rms 0.021 [cx, cy, r]",
+   "uncertainty_mm": 0.0214,
+   "evidence": "measure/figures/m_all.json#band.end_disk_R",
+   "critical": false
+  },
+  "collar_B2_r": {
+   "value": 8.1939,
+   "unit": "mm",
+   "measured": 8.1939,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa radius of the B2 collar, 9 stations z -18.7..-16.4 (same surface as the datum origin; centre is the origin)",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m_all.json#collars.B2",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "collar_B1": {
+   "value": [
+    -26.5131,
+    -4.828,
+    8.0898
+   ],
+   "unit": "mm",
+   "measured": [
+    -26.5131,
+    -4.828,
+    8.0898
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa over 6 stations z -18.7..-16.5 [cx, cy, r]",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#collars.B1",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "collar_B3": {
+   "value": [
+    26.4568,
+    -5.2691,
+    8.1907
+   ],
+   "unit": "mm",
+   "measured": [
+    26.4568,
+    -5.2691,
+    8.1907
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa over 6 stations z -18.7..-16.5 [cx, cy, r]",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#collars.B3",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "collar_B1_sector_floor_z": {
+   "value": -15.0636,
+   "unit": "mm",
+   "measured": -15.0636,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of -z faces at z -15.6..-14.6, r < 8.4 about the collar (2.6 mm2): the flat floor of the outer collar cut",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#collars.B1.sector_floor",
+   "critical": false
+  },
+  "collar_B1_floor_sector_deg": {
+   "value": [
+    174.4734,
+    217.1657
+   ],
+   "unit": "deg",
+   "measured": [
+    174.4734,
+    217.1657
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "4-deg bins of the ring's lower boundary that sit within 0.45 of the floor z (bin edges; theta CCW from +X about the collar centre)",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/m_all.json#collars.B1.floor_sector_deg",
+   "critical": false
+  },
+  "collar_B1_cut_plane": {
+   "value": [
+    0.44,
+    0.1022,
+    0.8922,
+    -29.3653
+   ],
+   "unit": "mm",
+   "measured": [
+    0.44,
+    0.1022,
+    0.8922,
+    -29.3653
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "least-squares plane through the ring's lower boundary (1st-percentile z per 4-deg bin, r 7.6..8.7, 41 bins above z -18.9; rms 0.086, max 0.224, tilt 26.9 deg); material below it is cut away near the collar [nx, ny, nz, n.p], normal pointing up",
+   "uncertainty_mm": 0.0857,
+   "evidence": "measure/figures/m_all.json#collars.B1.cut_plane",
+   "critical": false,
+   "note": "replaces the it1 vertical-wedge sector model (self-check max 1.76 at the wedge walls)"
+  },
+  "collar_B3_sector_floor_z": {
+   "value": -14.7494,
+   "unit": "mm",
+   "measured": -14.7494,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of -z faces at z -15.6..-14.6, r < 8.4 about the collar (1.5 mm2): the flat floor of the outer collar cut",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#collars.B3.sector_floor",
+   "critical": false
+  },
+  "collar_B3_floor_sector_deg": {
+   "value": [
+    -24.1881,
+    -2.8978
+   ],
+   "unit": "deg",
+   "measured": [
+    -24.1881,
+    -2.8978
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "4-deg bins of the ring's lower boundary that sit within 0.45 of the floor z (bin edges; theta CCW from +X about the collar centre)",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/m_all.json#collars.B3.floor_sector_deg",
+   "critical": false
+  },
+  "collar_B3_cut_plane": {
+   "value": [
+    -0.4553,
+    0.0974,
+    0.885,
+    -29.6148
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.4553,
+    0.0974,
+    0.885,
+    -29.6148
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "least-squares plane through the ring's lower boundary (1st-percentile z per 4-deg bin, r 7.6..8.7, 41 bins above z -18.9; rms 0.100, max 0.248, tilt 27.7 deg); material below it is cut away near the collar [nx, ny, nz, n.p], normal pointing up",
+   "uncertainty_mm": 0.1003,
+   "evidence": "measure/figures/m_all.json#collars.B3.cut_plane",
+   "critical": false,
+   "note": "replaces the it1 vertical-wedge sector model (self-check max 1.76 at the wedge walls)"
+  },
+  "collar_B2_recess": {
+   "value": [
+    7.4064,
+    -18.2353
+   ],
+   "unit": "mm",
+   "measured": [
+    7.4064,
+    -18.2353
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "annular clearance recess around the B2 cap: r = 99th pct radius of samples r 6.45..7.7 at z -18.95..-17.9 (97th pct); top = 95th pct z [r, top_z]",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m_all.json#recess.B2",
+   "critical": false
+  },
+  "collar_B1_recess": {
+   "value": [
+    7.6533,
+    -17.9697
+   ],
+   "unit": "mm",
+   "measured": [
+    7.6533,
+    -17.9697
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "clearance recess around the side cap (circle about the collar centre): r = 97th pct radius of samples r 6.45..7.7 at z -18.95..-17.9; top = 95th pct z on the inner half [r, top_z]",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m_all.json#recess.B1",
+   "critical": false
+  },
+  "collar_B1_recess_ramp_plane": {
+   "value": [
+    0.5323,
+    0.1007,
+    0.8406,
+    -30.1273
+   ],
+   "unit": "mm",
+   "measured": [
+    0.5323,
+    0.1007,
+    0.8406,
+    -30.1273
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "plane through the recess ceiling ramp: 10-deg bins (r 6.5..7.3, 90th-pct z) between the inner ceiling and the floor (7 bins, rms 0.266, max 0.435) [nx, ny, nz, n.p], normal up; the recess is cut up to min(floor, this plane) where that is above the inner ceiling",
+   "uncertainty_mm": 0.2661,
+   "evidence": "measure/figures/m_all.json#recess.B1_ramp",
+   "critical": false
+  },
+  "collar_B1_recess_mid_1": {
+   "value": [
+    120.0,
+    150.0,
+    -16.2106
+   ],
+   "unit": "mm",
+   "measured": [
+    120.0,
+    150.0,
+    -16.2106
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "it3: sector whose 10-deg bins (r 6.5..7.3) have a 90th-pct z 0.6..1.3 below the floor; cut up to the lowest of those bins [a0 deg, a1 deg, z mm] (theta CCW from +X about the collar centre; the angles are degrees stored in a mm-unit list)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m_all.json#recess.B1_mid",
+   "critical": false,
+   "note": "it3: verify it2 found the B1 cap lip inside the gap at these angles"
+  },
+  "collar_B1_recess_floor_sector_deg": {
+   "value": [
+    150.0,
+    250.0
+   ],
+   "unit": "deg",
+   "measured": [
+    150.0,
+    250.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "sector where the recess is open up to the collar sector floor: 10-deg bins (r 6.5..7.3) whose 90th-pct z is within 0.6 of the floor z [a0, a1] (theta CCW from +X about the collar centre)",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/m_all.json#recess.B1",
+   "critical": false
+  },
+  "collar_B3_recess": {
+   "value": [
+    7.6381,
+    -17.7484
+   ],
+   "unit": "mm",
+   "measured": [
+    7.6381,
+    -17.7484
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "clearance recess around the side cap (circle about the collar centre): r = 97th pct radius of samples r 6.45..7.7 at z -18.95..-17.9; top = 95th pct z on the inner half [r, top_z]",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m_all.json#recess.B3",
+   "critical": false
+  },
+  "collar_B3_recess_mid_1": {
+   "value": [
+    40.0,
+    50.0,
+    -15.6689
+   ],
+   "unit": "mm",
+   "measured": [
+    40.0,
+    50.0,
+    -15.6689
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "it3: sector whose 10-deg bins (r 6.5..7.3) have a 90th-pct z 0.6..1.3 below the floor; cut up to the lowest of those bins [a0 deg, a1 deg, z mm] (theta CCW from +X about the collar centre; the angles are degrees stored in a mm-unit list)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m_all.json#recess.B3_mid",
+   "critical": false,
+   "note": "it3: verify it2 found the B1 cap lip inside the gap at these angles"
+  },
+  "collar_B3_recess_floor_sector_deg": {
+   "value": [
+    -90.0,
+    40.0
+   ],
+   "unit": "deg",
+   "measured": [
+    -90.0,
+    40.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "sector where the recess is open up to the collar sector floor: 10-deg bins (r 6.5..7.3) whose 90th-pct z is within 0.6 of the floor z [a0, a1] (theta CCW from +X about the collar centre)",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/m_all.json#recess.B3",
+   "critical": false
+  },
+  "cap_B2_r": {
+   "value": 6.3395,
+   "unit": "mm",
+   "measured": 6.3395,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa radius over 12 stations z -28.6..-19.8 (lower half 6.36-6.40, upper 6.30-6.34: a 0.06 mould step at z -24.5, not modelled)",
+   "uncertainty_mm": 0.04,
+   "evidence": "measure/figures/m_all.json#caps.B2",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "cap_B2_axis_dir": {
+   "value": [
+    -0.0128,
+    -0.009,
+    0.9999
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.0128,
+    -0.009,
+    0.9999
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit through the 12 station centres (tilt 0.90 deg toward -145 deg); unit vector",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m_all.json#caps.B2.axis",
+   "critical": false,
+   "note": "loose cap: pose as scanned"
+  },
+  "cap_B2_axis_xy0": {
+   "value": [
+    -0.2362,
+    -0.2446
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.2362,
+    -0.2446
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same line: x, y at z = 0",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m_all.json#caps.B2.axis",
+   "critical": false
+  },
+  "cap_B2_top_normal": {
+   "value": [
+    0.0103,
+    0.0055,
+    -0.9999
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0103,
+    0.0055,
+    -0.9999
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the B2 top (r < 5.8, 1409 faces, rms 0.036); outward unit normal",
+   "uncertainty_mm": 0.0362,
+   "evidence": "measure/figures/m_all.json#caps.B2.top",
+   "critical": false
+  },
+  "cap_B2_top_offset": {
+   "value": 29.1492,
+   "unit": "mm",
+   "measured": 29.1492,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same plane: n.p",
+   "uncertainty_mm": 0.0362,
+   "evidence": "measure/figures/m_all.json#caps.B2.top",
+   "critical": false
+  },
+  "cap_B1_ellipse": {
+   "value": [
+    -26.5135,
+    -4.7522,
+    5.9182,
+    6.3589,
+    13.7633
+   ],
+   "unit": "mm",
+   "measured": [
+    -26.5135,
+    -4.7522,
+    5.9182,
+    6.3589,
+    13.7633
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "least-squares ellipse, median of 6 stations z -21.2..-19.4 [cx, cy, a along x', b along y', phi deg]; rms 0.033 (circle rms 0.15-0.19)",
+   "uncertainty_mm": 0.0326,
+   "evidence": "measure/figures/m_all.json#caps.B1.ellipse",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)",
+   "note": "side caps are oval in plan, a < b; phi is the x' axis angle from +X"
+  },
+  "cap_B1_top_normal": {
+   "value": [
+    -0.3412,
+    -0.0601,
+    -0.9381
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.3412,
+    -0.0601,
+    -0.9381
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the inclined top (1166 faces, 82.5 mm2, rms 0.039); outward unit normal, 20.3 deg from -Z",
+   "uncertainty_mm": 0.0391,
+   "evidence": "measure/figures/m_all.json#caps.B1.top",
+   "critical": false
+  },
+  "cap_B1_top_offset": {
+   "value": 31.9729,
+   "unit": "mm",
+   "measured": 31.9729,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same plane: n.p",
+   "uncertainty_mm": 0.0391,
+   "evidence": "measure/figures/m_all.json#caps.B1.top",
+   "critical": false
+  },
+  "cap_B3_ellipse": {
+   "value": [
+    26.5737,
+    -5.2348,
+    5.934,
+    6.3955,
+    -10.9268
+   ],
+   "unit": "mm",
+   "measured": [
+    26.5737,
+    -5.2348,
+    5.934,
+    6.3955,
+    -10.9268
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "least-squares ellipse, median of 6 stations z -21.2..-19.4 [cx, cy, a along x', b along y', phi deg]; rms 0.042 (circle rms 0.15-0.19)",
+   "uncertainty_mm": 0.0419,
+   "evidence": "measure/figures/m_all.json#caps.B3.ellipse",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)",
+   "note": "side caps are oval in plan, a < b; phi is the x' axis angle from +X"
+  },
+  "cap_B3_top_normal": {
+   "value": [
+    0.3498,
+    -0.0781,
+    -0.9336
+   ],
+   "unit": "mm",
+   "measured": [
+    0.3498,
+    -0.0781,
+    -0.9336
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the inclined top (1987 faces, 86.1 mm2, rms 0.039); outward unit normal, 21.0 deg from -Z",
+   "uncertainty_mm": 0.0392,
+   "evidence": "measure/figures/m_all.json#caps.B3.top",
+   "critical": false
+  },
+  "cap_B3_top_offset": {
+   "value": 32.1747,
+   "unit": "mm",
+   "measured": 32.1747,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same plane: n.p",
+   "uncertainty_mm": 0.0392,
+   "evidence": "measure/figures/m_all.json#caps.B3.top",
+   "critical": false
+  },
+  "screw_L_xy": {
+   "value": [
+    -13.2349,
+    -7.9445
+   ],
+   "unit": "mm",
+   "measured": [
+    -13.2349,
+    -7.9445
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa centre of the back counterbore, 4 stations z -0.6..-2.4",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m_all.json#holes.L",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "screw_L_cb_r": {
+   "value": 3.788,
+   "unit": "mm",
+   "measured": 3.788,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa radius, same stations",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m_all.json#holes.L",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "screw_L_through_r": {
+   "value": 1.7688,
+   "unit": "mm",
+   "measured": 1.7688,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median radial distance of 843 surface samples r < 2.4, z -5.5..-3.3",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#holes.L",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "screw_L_front": {
+   "value": [
+    -12.9534,
+    -7.8192,
+    3.3781
+   ],
+   "unit": "mm",
+   "measured": [
+    -12.9534,
+    -7.8192,
+    3.3781
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa [cx, cy, r] of the front-bore arcs (upper arc, points < 4.2 from the counterbore axis) at z -13.6/-14.2/-14.8; the front bore is offset from the counterbore axis",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#holes.L.front_stations",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "screw_L_front_top_z": {
+   "value": -11.8357,
+   "unit": "mm",
+   "measured": -11.8357,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "99th percentile z of the front-bore wall samples: the scan's deepest view into the bore; the true bore depth is not visible",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/m_all.json#holes.L",
+   "critical": false,
+   "note": "bore continues deeper in reality (unscanned); CAD stops the bore here"
+  },
+  "screw_R_xy": {
+   "value": [
+    12.7485,
+    -8.0013
+   ],
+   "unit": "mm",
+   "measured": [
+    12.7485,
+    -8.0013
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa centre of the back counterbore, 4 stations z -0.6..-2.4",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m_all.json#holes.R",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "screw_R_cb_r": {
+   "value": 3.7418,
+   "unit": "mm",
+   "measured": 3.7418,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa radius, same stations",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m_all.json#holes.R",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "screw_R_through_r": {
+   "value": 1.7206,
+   "unit": "mm",
+   "measured": 1.7206,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median radial distance of 1179 surface samples r < 2.4, z -5.5..-3.3",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#holes.R",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "screw_R_front": {
+   "value": [
+    13.0483,
+    -8.0557,
+    3.3248
+   ],
+   "unit": "mm",
+   "measured": [
+    13.0483,
+    -8.0557,
+    3.3248
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa [cx, cy, r] of the front-bore arcs (upper arc, points < 4.2 from the counterbore axis) at z -13.6/-14.2/-14.8; the front bore is offset from the counterbore axis",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#holes.R.front_stations",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "screw_R_front_top_z": {
+   "value": -12.4694,
+   "unit": "mm",
+   "measured": -12.4694,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "99th percentile z of the front-bore wall samples: the scan's deepest view into the bore; the true bore depth is not visible",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/m_all.json#holes.R",
+   "critical": false,
+   "note": "bore continues deeper in reality (unscanned); CAD stops the bore here"
+  },
+  "shroud_outer": {
+   "value": [
+    -22.6105,
+    5.5799,
+    -0.1439,
+    11.7071
+   ],
+   "unit": "mm",
+   "measured": [
+    -22.6105,
+    5.5799,
+    -0.1439,
+    11.7071
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "outer wall faces: median of section-histogram peaks at z 3/5/7/9 (y_max from the z 7 outline percentile) [xmin, xmax, ymin, ymax]",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m_all.json#shroud",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "shroud_inner": {
+   "value": [
+    -21.5183,
+    4.5011,
+    0.9798,
+    10.661
+   ],
+   "unit": "mm",
+   "measured": [
+    -21.5183,
+    4.5011,
+    0.9798,
+    10.661
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "inner wall faces: median of section-histogram peaks at z 3/5/7/9 [xmin, xmax, ymin, ymax]",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m_all.json#shroud",
+   "critical": false
+  },
+  "shroud_outer_corner_r": {
+   "value": 0.6516,
+   "unit": "mm",
+   "measured": 0.6516,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa on the 4 outer corner arcs at z 7 ([0.644, 0.652, 0.644, 0.683])",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#shroud",
+   "critical": false
+  },
+  "shroud_inner_floor_z": {
+   "value": -2.3134,
+   "unit": "mm",
+   "measured": -2.3134,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "0.5th percentile z of the inner +Y wall samples: the deepest scanned point; the interior floor itself is not scanned",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/m_all.json#shroud",
+   "critical": false,
+   "note": "interior (header, pins, floor) unscanned: the pocket is cut to the deepest scanned wall point"
+  },
+  "header_pad_1": {
+   "value": [
+    -16.7467,
+    -14.6228,
+    2.4613,
+    0.0329
+   ],
+   "unit": "mm",
+   "measured": [
+    -16.7467,
+    -14.6228,
+    2.4613,
+    0.0329
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "scanned header-base pad inside the shroud next to the -Y inner wall (190 samples at z -0.8..0.6): x-extent, 98th-pct y, 90th-pct z [x0, x1, y_max, top_z]",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m_all.json#shroud.header_pads",
+   "critical": false,
+   "note": "it2: added for verify it1 scan->CAD cluster 0 (pin-header base)"
+  },
+  "header_pad_2": {
+   "value": [
+    -6.6845,
+    -4.5535,
+    2.2001,
+    0.1486
+   ],
+   "unit": "mm",
+   "measured": [
+    -6.6845,
+    -4.5535,
+    2.2001,
+    0.1486
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "scanned header-base pad inside the shroud next to the -Y inner wall (73 samples at z -0.8..0.6): x-extent, 98th-pct y, 90th-pct z [x0, x1, y_max, top_z]",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m_all.json#shroud.header_pads",
+   "critical": false,
+   "note": "it2: added for verify it1 scan->CAD cluster 0 (pin-header base)"
+  },
+  "tab_top_plane": {
+   "value": [
+    -0.0019,
+    0.0114,
+    0.9999,
+    18.5383
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.0019,
+    0.0114,
+    0.9999,
+    18.5383
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane, horizontal flange top face (1253 faces, rms 0.022) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0225,
+   "evidence": "measure/figures/m_all.json#tab.top",
+   "critical": false
+  },
+  "tab_under_plane": {
+   "value": [
+    0.0014,
+    -0.0116,
+    -0.9999,
+    -16.0036
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0014,
+    -0.0116,
+    -0.9999,
+    -16.0036
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane, horizontal flange underside (2521 faces, rms 0.020) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/m_all.json#tab.under",
+   "critical": false
+  },
+  "tab_incline_upper_plane": {
+   "value": [
+    -0.0023,
+    0.7155,
+    0.6987,
+    -7.2239
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.0023,
+    0.7155,
+    0.6987,
+    -7.2239
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane, 45-deg plate upper face (4069 faces, rms 0.011) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0105,
+   "evidence": "measure/figures/m_all.json#tab.incline_upper",
+   "critical": false
+  },
+  "tab_incline_lower_plane": {
+   "value": [
+    0.0011,
+    -0.7179,
+    -0.6962,
+    9.1071
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0011,
+    -0.7179,
+    -0.6962,
+    9.1071
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane, 45-deg plate lower face (2479 faces, rms 0.012) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0117,
+   "evidence": "measure/figures/m_all.json#tab.incline_lower",
+   "critical": false
+  },
+  "tab_leg_outer_plane": {
+   "value": [
+    -0.001,
+    -0.9997,
+    -0.0227,
+    18.5305
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.001,
+    -0.9997,
+    -0.0227,
+    18.5305
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane, vertical leg outer (-Y) face (1372 faces, rms 0.008) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0083,
+   "evidence": "measure/figures/m_all.json#tab.leg_outer",
+   "critical": false
+  },
+  "tab_leg_inner_plane": {
+   "value": [
+    -0.0003,
+    0.9999,
+    0.017,
+    -16.5912
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.0003,
+    0.9999,
+    0.017,
+    -16.5912
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane, vertical leg inner (+Y) face (1206 faces, rms 0.009) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0088,
+   "evidence": "measure/figures/m_all.json#tab.leg_inner",
+   "critical": false
+  },
+  "tab_flange_incline_plane": {
+   "value": [
+    0.0023,
+    -0.7184,
+    -0.6956,
+    19.6738
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0023,
+    -0.7184,
+    -0.6956,
+    19.6738
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane, side-flange lower 45-deg edge face (616 faces, rms 0.022) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0224,
+   "evidence": "measure/figures/m_all.json#tab.flange_lower_incline",
+   "critical": false
+  },
+  "tab_flange_inner_neg_plane": {
+   "value": [
+    0.999,
+    0.0077,
+    -0.0434,
+    -14.2827
+   ],
+   "unit": "mm",
+   "measured": [
+    0.999,
+    0.0077,
+    -0.0434,
+    -14.2827
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the -X side flange inner face (1756 faces, rms 0.022, draft 2.5 deg) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.022,
+   "evidence": "measure/figures/m_all.json#tab.flange_inner_x.neg",
+   "critical": false
+  },
+  "tab_flange_outer_neg_plane": {
+   "value": [
+    -0.999,
+    -0.0066,
+    0.0452,
+    16.2506
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.999,
+    -0.0066,
+    0.0452,
+    16.2506
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the -X side flange outer face (2298 faces, rms 0.023, draft 2.6 deg) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0227,
+   "evidence": "measure/figures/m_all.json#tab.flange_outer_x.neg",
+   "critical": false
+  },
+  "tab_flange_inner_pos_plane": {
+   "value": [
+    -0.9986,
+    0.003,
+    -0.052,
+    -13.8073
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.9986,
+    0.003,
+    -0.052,
+    -13.8073
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the +X side flange inner face (1542 faces, rms 0.018, draft 3.0 deg) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0176,
+   "evidence": "measure/figures/m_all.json#tab.flange_inner_x.pos",
+   "critical": false
+  },
+  "tab_flange_outer_pos_plane": {
+   "value": [
+    0.9987,
+    0.0015,
+    0.0516,
+    15.6597
+   ],
+   "unit": "mm",
+   "measured": [
+    0.9987,
+    0.0015,
+    0.0516,
+    15.6597
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the +X side flange outer face (2437 faces, rms 0.024, draft 3.0 deg) [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0237,
+   "evidence": "measure/figures/m_all.json#tab.flange_outer_x.pos",
+   "critical": false
+  },
+  "tab_flange_bottom_z": {
+   "value": -1.9598,
+   "unit": "mm",
+   "measured": -1.9598,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "area-weighted -z faces of the side flanges, y > -19",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#tab.flange_bottom",
+   "critical": false
+  },
+  "tab_end_y": {
+   "value": -37.4736,
+   "unit": "mm",
+   "measured": -37.4736,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "0.2th percentile y of samples on the flange end (|x| < 10, z 17..18.5)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#tab.end_y",
+   "critical": false
+  },
+  "tab_hole": {
+   "value": [
+    -0.218,
+    -32.7639,
+    1.6428
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.218,
+    -32.7639,
+    1.6428
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa on the hole loop at z 17.7 (rms 0.033) [cx, cy, r]",
+   "uncertainty_mm": 0.0325,
+   "evidence": "measure/figures/m_all.json#tab.hole",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature should trigger a re-run (scan-only job)"
+  },
+  "hoop_H1": {
+   "value": [
+    -28.7075,
+    -19.6107,
+    -26.872,
+    -21.4957,
+    -3.4558,
+    4.688,
+    -20.3633
+   ],
+   "unit": "mm",
+   "measured": [
+    -28.7075,
+    -19.6107,
+    -26.872,
+    -21.4957,
+    -3.4558,
+    4.688,
+    -20.3633
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "XZ section at y -19.7 (-Y side): bar x-extent at z < -4.5 (0.5/99.5 pct), leg inner edges at z 1..4, window bottom (99th pct z between the legs), top (99.5 pct), outer face y (median of faces n.y outward, z -5.3..-3.8) [x0, x1, wx0, wx1, window_bottom_z, top_z, outer_y]",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m_all.json#hoops.H1",
+   "critical": false
+  },
+  "hoop_H2": {
+   "value": [
+    19.2954,
+    28.3688,
+    21.0902,
+    26.4221,
+    -2.5416,
+    4.7268,
+    -20.3846
+   ],
+   "unit": "mm",
+   "measured": [
+    19.2954,
+    28.3688,
+    21.0902,
+    26.4221,
+    -2.5416,
+    4.7268,
+    -20.3846
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "XZ section at y -19.7 (-Y side): bar x-extent at z < -4.5 (0.5/99.5 pct), leg inner edges at z 1..4, window bottom (99th pct z between the legs), top (99.5 pct), outer face y (median of faces n.y outward, z -5.3..-3.8) [x0, x1, wx0, wx1, window_bottom_z, top_z, outer_y]",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m_all.json#hoops.H2",
+   "critical": false
+  },
+  "hoop_H3": {
+   "value": [
+    -20.7166,
+    -11.687,
+    -18.9135,
+    -13.5487,
+    -2.6655,
+    4.6764,
+    16.1729
+   ],
+   "unit": "mm",
+   "measured": [
+    -20.7166,
+    -11.687,
+    -18.9135,
+    -13.5487,
+    -2.6655,
+    4.6764,
+    16.1729
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "XZ section at y 15.3 (+Y side): bar x-extent at z < -4.5 (0.5/99.5 pct), leg inner edges at z 1..4, window bottom (99th pct z between the legs), top (99.5 pct), outer face y (median of faces n.y outward, z -5.3..-3.8) [x0, x1, wx0, wx1, window_bottom_z, top_z, outer_y]",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m_all.json#hoops.H3",
+   "critical": false
+  },
+  "hoop_H4": {
+   "value": [
+    19.3352,
+    28.3032,
+    21.1156,
+    26.4588,
+    -3.0193,
+    4.7127,
+    8.7329
+   ],
+   "unit": "mm",
+   "measured": [
+    19.3352,
+    28.3032,
+    21.1156,
+    26.4588,
+    -3.0193,
+    4.7127,
+    8.7329
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "XZ section at y 7.9 (+Y side): bar x-extent at z < -4.5 (0.5/99.5 pct), leg inner edges at z 1..4, window bottom (99th pct z between the legs), top (99.5 pct), outer face y (median of faces n.y outward, z -5.3..-3.8) [x0, x1, wx0, wx1, window_bottom_z, top_z, outer_y]",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m_all.json#hoops.H4",
+   "critical": false
+  },
+  "boss_top_z": {
+   "value": 3.4799,
+   "unit": "mm",
+   "measured": 3.4799,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "inner latch boss top: area-weighted +z faces z 3.2..3.8 (26.6 mm2)",
+   "uncertainty_mm": 0.0265,
+   "evidence": "measure/figures/m_all.json#z.boss_top",
+   "critical": false
+  },
+  "boss_mY_L": {
+   "value": [
+    -31.1336,
+    -17.4341,
+    -16.0391
+   ],
+   "unit": "mm",
+   "measured": [
+    -31.1336,
+    -17.4341,
+    -16.0391
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "x-extent: median over z 0.6/1.5/2.5 of the inner-wall segment displaced from the rim inner wall; inner face y: area-weighted faces with the pocket-facing normal (35.3 mm2) [x0, x1, inner_face_y]",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m_all.json#bosses.mY_L",
+   "critical": false
+  },
+  "boss_mY_R": {
+   "value": [
+    16.9185,
+    30.6476,
+    -16.03
+   ],
+   "unit": "mm",
+   "measured": [
+    16.9185,
+    30.6476,
+    -16.03
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "x-extent: median over z 0.6/1.5/2.5 of the inner-wall segment displaced from the rim inner wall; inner face y: area-weighted faces with the pocket-facing normal (35.8 mm2) [x0, x1, inner_face_y]",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m_all.json#bosses.mY_R",
+   "critical": false
+  },
+  "boss_pY_R": {
+   "value": [
+    16.9587,
+    30.6859,
+    4.2802
+   ],
+   "unit": "mm",
+   "measured": [
+    16.9587,
+    30.6859,
+    4.2802
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "x-extent: median over z 0.6/1.5/2.5 of the inner-wall segment displaced from the rim inner wall; inner face y: area-weighted faces with the pocket-facing normal (35.4 mm2) [x0, x1, inner_face_y]",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m_all.json#bosses.pY_R",
+   "critical": false
+  },
+  "round_T0_bottom_edge": {
+   "value": 1.6993,
+   "unit": "mm",
+   "measured": 1.6993,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "T0 bottom outer edge: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (819 points, d IQR 0.662..0.720)",
+   "uncertainty_mm": 0.0705,
+   "evidence": "measure/figures/m_edges.json#T0_bottom_edge",
+   "critical": false
+  },
+  "round_T2_bottom_edge": {
+   "value": 0.5335,
+   "unit": "mm",
+   "measured": 0.5335,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "T2 bottom outer edge (+Y, ends, bump): r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (400 points, d IQR 0.200..0.236)",
+   "uncertainty_mm": 0.0429,
+   "evidence": "measure/figures/m_edges.json#T2_bottom_edge",
+   "critical": false
+  },
+  "round_T3_bump_bottom_edge": {
+   "value": 1.6379,
+   "unit": "mm",
+   "measured": 1.6379,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "T3 bottom outer edge on the bump: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (187 points, d IQR 0.663..0.709)",
+   "uncertainty_mm": 0.0558,
+   "evidence": "measure/figures/m_edges.json#T3_bump_bottom_edge",
+   "critical": false
+  },
+  "round_band_top_bottom_edge": {
+   "value": 1.9973,
+   "unit": "mm",
+   "measured": 1.9973,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "button-band bar +Y bottom edge: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (80 points, d IQR 0.791..0.835)",
+   "uncertainty_mm": 0.0528,
+   "evidence": "measure/figures/m_edges.json#band_top_bottom_edge",
+   "critical": false
+  },
+  "round_rim_top_outer_edge": {
+   "value": 0.5451,
+   "unit": "mm",
+   "measured": 0.5451,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rim top outer edge: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (444 points, d IQR 0.141..0.280)",
+   "uncertainty_mm": 0.1675,
+   "evidence": "measure/figures/m_edges.json#rim_top_outer_edge",
+   "critical": false
+  },
+  "round_rim_top_inner_edge": {
+   "value": 0.6488,
+   "unit": "mm",
+   "measured": 0.6488,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rim top inner edge: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (414 points, d IQR 0.178..0.324)",
+   "uncertainty_mm": 0.1762,
+   "evidence": "measure/figures/m_edges.json#rim_top_inner_edge",
+   "critical": false
+  },
+  "round_cap_B2_top_edge": {
+   "value": 0.7756,
+   "unit": "mm",
+   "measured": 0.7756,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "B2 cap top edge: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (400 points, d IQR 0.279..0.364)",
+   "uncertainty_mm": 0.1025,
+   "evidence": "measure/figures/m_edges.json#cap_B2_top_edge",
+   "critical": false
+  },
+  "round_cap_B1_top_edge": {
+   "value": 0.7803,
+   "unit": "mm",
+   "measured": 0.7803,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "B1 cap top edge: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (400 points, d IQR 0.261..0.447)",
+   "uncertainty_mm": 0.2247,
+   "evidence": "measure/figures/m_edges.json#cap_B1_top_edge",
+   "critical": false
+  },
+  "round_cap_B3_top_edge": {
+   "value": 0.7758,
+   "unit": "mm",
+   "measured": 0.7758,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "B3 cap top edge: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (400 points, d IQR 0.268..0.485)",
+   "uncertainty_mm": 0.2628,
+   "evidence": "measure/figures/m_edges.json#cap_B3_top_edge",
+   "critical": false
+  },
+  "round_shroud_top_outer_edge": {
+   "value": 0.6138,
+   "unit": "mm",
+   "measured": 0.6138,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "shroud top outer edge: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (315 points, d IQR 0.183..0.328)",
+   "uncertainty_mm": 0.1746,
+   "evidence": "measure/figures/m_edges.json#shroud_top_outer_edge",
+   "critical": false
+  },
+  "round_shroud_top_inner_edge": {
+   "value": 0.6254,
+   "unit": "mm",
+   "measured": 0.6254,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "shroud top inner edge: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (184 points, d IQR 0.233..0.338)",
+   "uncertainty_mm": 0.1277,
+   "evidence": "measure/figures/m_edges.json#shroud_top_inner_edge",
+   "critical": false
+  },
+  "round_shroud_inner_vertical_corner": {
+   "value": 1.2593,
+   "unit": "mm",
+   "measured": 1.2593,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "shroud inner vertical corners: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (120 points, d IQR 0.476..0.547)",
+   "uncertainty_mm": 0.086,
+   "evidence": "measure/figures/m_edges.json#shroud_inner_vertical_corner",
+   "critical": false
+  },
+  "round_tab_end_top_edge": {
+   "value": 1.3871,
+   "unit": "mm",
+   "measured": 1.3871,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "tab end top edge: r = d / 0.4142 (90 deg edge), d = median nearest-scan distance from the sharp corner computed from params (60 points, d IQR 0.566..0.584)",
+   "uncertainty_mm": 0.0218,
+   "evidence": "measure/figures/m_edges.json#tab_end_top_edge",
+   "critical": false
+  },
+  "tab_end_under_edge_note": {
+   "value": 0.0,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "tab end underside edge reads r_est 0.165 (d 0.068): within noise of sharp; built sharp",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/m_edges.json#tab_end_under_edge",
+   "critical": false
+  },
+  "hoop_H1_ramp_plane": {
+   "value": [
+    0.0056,
+    -0.7617,
+    0.6479,
+    12.8228
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0056,
+    -0.7617,
+    0.6479,
+    12.8228
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the up-facing faces between the legs (79 faces, rms 0.056, 49.6 deg from horizontal): the catch ramp that floors the hoop window [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0559,
+   "evidence": "measure/figures/m_all.json#hoops.H1.window_ramp",
+   "critical": false,
+   "note": "replaces window_bottom_z (kept in hoop_* for reference) as the window floor"
+  },
+  "hoop_H2_ramp_plane": {
+   "value": [
+    0.0681,
+    0.8036,
+    -0.5913,
+    -12.589
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0681,
+    0.8036,
+    -0.5913,
+    -12.589
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the up-facing faces between the legs (162 faces, rms 0.066, 53.7 deg from horizontal): the catch ramp that floors the hoop window [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0658,
+   "evidence": "measure/figures/m_all.json#hoops.H2.window_ramp",
+   "critical": false,
+   "note": "replaces window_bottom_z (kept in hoop_* for reference) as the window floor"
+  },
+  "hoop_H3_ramp_plane": {
+   "value": [
+    0.0023,
+    0.4089,
+    0.9126,
+    3.2873
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0023,
+    0.4089,
+    0.9126,
+    3.2873
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the up-facing faces between the legs (230 faces, rms 0.032, 24.1 deg from horizontal): the catch ramp that floors the hoop window [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0316,
+   "evidence": "measure/figures/m_all.json#hoops.H3.window_ramp",
+   "critical": false,
+   "note": "replaces window_bottom_z (kept in hoop_* for reference) as the window floor"
+  },
+  "hoop_H4_ramp_plane": {
+   "value": [
+    0.0117,
+    0.3336,
+    0.9426,
+    -0.3117
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0117,
+    0.3336,
+    0.9426,
+    -0.3117
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "trimmed SVD plane on the up-facing faces between the legs (375 faces, rms 0.031, 19.5 deg from horizontal): the catch ramp that floors the hoop window [nx, ny, nz, n.p]",
+   "uncertainty_mm": 0.0309,
+   "evidence": "measure/figures/m_all.json#hoops.H4.window_ramp",
+   "critical": false,
+   "note": "replaces window_bottom_z (kept in hoop_* for reference) as the window floor"
+  },
+  "shroud_slot_note": {
+   "value": 0.0,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "the narrow slot between the shroud +Y wall and the rim (x -22..4, y 11.7..13) has no scan points below z 0; modelled closed at the floor (z 0)",
+   "uncertainty_mm": 0.0,
+   "evidence": "intake/coverage.json loop 2; measure probe in make_params docstring",
+   "critical": false,
+   "note": "value is the floor z used to close the slot"
+  },
+  "rim_concave_r": {
+   "value": [
+    1.1943,
+    1.4009
+   ],
+   "unit": "mm",
+   "measured": [
+    1.1943,
+    1.4009
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rim outer wall bump-junction fillet: median Kasa radius at z 1/2/3 [L, R] (points off both walls, split from the other rim face by core distance); worst median rms 0.137",
+   "uncertainty_mm": 0.1374,
+   "evidence": "measure/figures/m_all.json#rim_junctions.outer",
+   "critical": false,
+   "note": "added after the it1 self-check (the rim reused T0_concave_r; the pocket corners were built sharp)"
+  },
+  "pocket_concave_r": {
+   "value": [
+    2.9999,
+    2.7905
+   ],
+   "unit": "mm",
+   "measured": [
+    2.9999,
+    2.7905
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rim pocket (inner) wall bump-junction fillet: median Kasa radius at z 1/2/3 [L, R] (points off both walls, split from the other rim face by core distance); worst median rms 0.019",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m_all.json#rim_junctions.pocket",
+   "critical": false,
+   "note": "added after the it1 self-check (the rim reused T0_concave_r; the pocket corners were built sharp)"
+  }
+ },
+ "struck": [],
+ "simplifications": [
+  {
+   "name": "T0 wall draft",
+   "modelled_as": "vertical wall at the median offset",
+   "deviation_cost": "offset reads 5.73..5.91 over z -1..-6 vs 5.836: about +-0.1 mm"
+  },
+  {
+   "name": "small edge blends (rim top, shroud top, tier edges, tab edges, hoop edges)",
+   "modelled_as": "sharp edges",
+   "deviation_cost": "an unmodelled round of radius r leaves up to 0.41 r at the edge; rims read r 0.3-0.8 -> up to about 0.3 mm, local"
+  },
+  {
+   "name": "B2 cap mould step at z -24.5",
+   "modelled_as": "one cylinder at the median radius",
+   "deviation_cost": "station radii 6.27..6.40 vs value: +-0.07 mm"
+  },
+  {
+   "name": "embossed logos (back floor) and button icons",
+   "modelled_as": "not modelled (cosmetic)",
+   "deviation_cost": "relief height about 0.1-0.3 mm, local"
+  },
+  {
+   "name": "connector shroud draft",
+   "modelled_as": "straight walls at the median of z 3..9",
+   "deviation_cost": "wall peaks move about 0.1-0.2 mm between z 3 and z 9"
+  },
+  {
+   "name": "side-collar sector cut",
+   "modelled_as": "a wedge with radial side walls at the measured gap angles",
+   "deviation_cost": "gap edges read from 2-deg bins at one z: +-1 deg (about 0.15 mm at r 8.2)"
+  },
+  {
+   "name": "latch hoops",
+   "modelled_as": "U-frame boxes (no ramps or catch lips)",
+   "deviation_cost": "hoop section bottoms read -5.75..-5.56 and windows differ per hoop; up to about 0.2 mm, local"
+  },
+  {
+   "name": "B3 recess ceiling ramp",
+   "modelled_as": "inner ceiling + floor sector only",
+   "deviation_cost": "only 3 ramp bins (sharp transition); a plane is not determined; up to the bin step (10 deg) at the sector edges"
+  }
+ ],
+ "checks": {
+  "CHK-COUNT": {
+   "ran": false,
+   "result": "pass",
+   "note": "no rotational pattern on this part; all instance counts (3 caps, 2 screw holes, 4 hoops) are enumerated individually and placed at measured positions"
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": false,
+   "result": "pass",
+   "note": "no caliper readings (scan-only job)"
+  },
+  "CHK-CLUSTER": {
+   "ran": true,
+   "result": "pass",
+   "note": "interior material seen through the rim/shroud slot was traced to the bump outer walls (T0/T2) seen below the floor plane, not a new feature; no unexplained cluster (measure/figures/interior.png)"
+  },
+  "CHK-FRAME": {
+   "ran": true,
+   "result": "pass",
+   "note": "all values measured on intake/aligned_work.stl in the frozen datum frame; no angle copied from the intake card; theta CCW about +Z from +X"
+  }
+ },
+ "open_questions": [
+  "Scan-only: every critical interface (caps, collars, screw holes, tab hole, shroud) is held at its scan fit; one caliper reading on any of them should trigger a re-run.",
+  "Loose button caps are modelled at their scanned pose (B2 tilted 0.9 deg)."
+ ]
+}

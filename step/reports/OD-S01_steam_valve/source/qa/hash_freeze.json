@@ -1,0 +1,20 @@
+{
+ "schema": "stl-re/hash_freeze@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-S01_steam-valve_datum.step": "549eafe79ff3f665d946fe412fb26ef6fa0276d5328cc961ec03868cdb1f3848",
+  "build/OD-S01_steam-valve.step": "af802ab6cb06274be3c032e159f9549a47702ef26d98898f5607ddb7e53757ce"
+ },
+ "seed": null,
+ "created": "2026-09-28T08:01:18+00:00",
+ "before": {
+  "build/OD-S01_steam-valve_datum.step": "549eafe79ff3f665d946fe412fb26ef6fa0276d5328cc961ec03868cdb1f3848",
+  "build/OD-S01_steam-valve.step": "af802ab6cb06274be3c032e159f9549a47702ef26d98898f5607ddb7e53757ce"
+ },
+ "after": {
+  "build/OD-S01_steam-valve_datum.step": "549eafe79ff3f665d946fe412fb26ef6fa0276d5328cc961ec03868cdb1f3848",
+  "build/OD-S01_steam-valve.step": "af802ab6cb06274be3c032e159f9549a47702ef26d98898f5607ddb7e53757ce"
+ },
+ "unchanged": true
+}

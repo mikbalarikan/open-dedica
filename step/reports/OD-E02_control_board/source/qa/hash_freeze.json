@@ -1,0 +1,20 @@
+{
+ "schema": "stl-re/hash_freeze@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-E02_control-button-board_datum.step": "5c8b50930e2bd57c3758111fde3e257126dffd4ad02d28a67cfb2343e3aacea7",
+  "build/OD-E02_control-button-board.step": "49517db6cf5c5e65e11a81dbc006dad4529a49640ad24fd1833ea68ab30ea994"
+ },
+ "seed": null,
+ "created": "2026-09-28T08:42:57+00:00",
+ "before": {
+  "build/OD-E02_control-button-board_datum.step": "5c8b50930e2bd57c3758111fde3e257126dffd4ad02d28a67cfb2343e3aacea7",
+  "build/OD-E02_control-button-board.step": "49517db6cf5c5e65e11a81dbc006dad4529a49640ad24fd1833ea68ab30ea994"
+ },
+ "after": {
+  "build/OD-E02_control-button-board_datum.step": "5c8b50930e2bd57c3758111fde3e257126dffd4ad02d28a67cfb2343e3aacea7",
+  "build/OD-E02_control-button-board.step": "49517db6cf5c5e65e11a81dbc006dad4529a49640ad24fd1833ea68ab30ea994"
+ },
+ "unchanged": true
+}

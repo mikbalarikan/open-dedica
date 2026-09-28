@@ -1,0 +1,433 @@
+{
+ "schema": "stl-re/attribution_probe@1",
+ "tool": "qa/attribution_probe.py (run-local)",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "qa/dev_arrays.npz": "79670bcd92bfb47934f74cc7d9e4367a0121d269818c2a1fc09f59f032177f24",
+  "qa/registration.json": "b11785c6b91c2f03819599ac90dd0c18507826bf51da11ed3915c6a1c3839991",
+  "build/OD-S02_steam-rod_datum.step": "cac05e75aac6dfbf9603e7594363092986de53a1e50134c62e6437666f476897",
+  "_it2_SUPERSEDED/qa/it1_it2_diff.json": "e65368986d6f7829de9f25910b8f119921ef0a4c86a2b84388f39d4ed11e8a42",
+  "qa/it2_it3_diff.json": "20dca9ab2d6192061f6aebc8e20bba8828860ee3296a32a3cf7288c9e76fd35b",
+  "input/scan.stl": "75cedf513bc86fcf51dfc22194a93a93f12857925e45854a095752be6f57c5e9"
+ },
+ "seed": null,
+ "created": "2026-09-28T09:21:40+00:00",
+ "it3": {
+  "n_faces_it3": 122,
+  "n_win_bore_faces_matched_in_it3": 32,
+  "n_it3_changed_faces_matched": 38,
+  "c2s_all": {
+   "n": 300000,
+   "p95": 0.896,
+   "max": 2.617
+  },
+  "c2s_minus_D1": {
+   "n": 287777,
+   "p95": 0.881,
+   "max": 2.617
+  },
+  "c2s_minus_D1_holes": {
+   "n": 240198,
+   "p95": 0.275,
+   "max": 2.602
+  },
+  "c2s_minus_D1_holes_bore_it1pred": {
+   "n": 236282,
+   "p95": 0.236,
+   "max": 2.602
+  },
+  "c2s_minus_D1_holes_boreext": {
+   "n": 235766,
+   "p95": 0.233,
+   "max": 2.602
+  },
+  "bore_it1pred_pts": {
+   "n": 6355,
+   "p95": 1.078,
+   "max": 1.216
+  },
+  "bore_ext_pts": {
+   "n": 7740,
+   "p95": 1.105,
+   "max": 2.24
+  },
+  "near_hole_pts": {
+   "n": 50870,
+   "p95": 1.628,
+   "max": 2.617
+  },
+  "Z4_c2s": {
+   "n": 72226,
+   "p95": 1.571,
+   "max": 2.617
+  },
+  "Z4_c2s_on_windows_bore_faces": {
+   "n": 22440,
+   "p95": 2.071,
+   "max": 2.617
+  },
+  "Z4_c2s_on_other_faces": {
+   "n": 49786,
+   "p95": 0.317,
+   "max": 1.272
+  },
+  "Z4_c2s_other_faces_not_near_hole": {
+   "n": 40329,
+   "p95": 0.241,
+   "max": 0.511
+  },
+  "Z4_c2s_windows_bore_not_near_hole": {
+   "n": 7258,
+   "p95": 1.908,
+   "max": 2.602
+  },
+  "Z4_c2s_on_it3_changed_faces(neck)": {
+   "n": 17253,
+   "p95": 0.358,
+   "max": 1.272
+  },
+  "Z4_over0.8_total": 13992,
+  "Z4_over0.8_on_windows_bore_faces": 13892,
+  "Z4_over0.8_near_hole": 7686,
+  "c2s_residual_top_after_D1_holes_bore": [
+   [
+    44.27,
+    -5.65,
+    -42.94,
+    2.602
+   ],
+   [
+    44.49,
+    -6.19,
+    -42.81,
+    2.602
+   ],
+   [
+    35.65,
+    -12.39,
+    -39.62,
+    2.559
+   ],
+   [
+    44.42,
+    -5.89,
+    -42.89,
+    2.558
+   ],
+   [
+    35.63,
+    -12.38,
+    -39.62,
+    2.552
+   ],
+   [
+    44.48,
+    -5.99,
+    -42.87,
+    2.545
+   ],
+   [
+    44.61,
+    -6.5,
+    -42.73,
+    2.534
+   ],
+   [
+    44.74,
+    -7.06,
+    -42.57,
+    2.522
+   ],
+   [
+    44.6,
+    -6.33,
+    -42.78,
+    2.519
+   ],
+   [
+    44.41,
+    -5.76,
+    -42.93,
+    2.517
+   ],
+   [
+    44.74,
+    -7.27,
+    -42.51,
+    2.516
+   ],
+   [
+    44.74,
+    -7.75,
+    -42.36,
+    2.516
+   ]
+  ],
+  "Z4_s2c": {
+   "n": 54593,
+   "p95": 0.301,
+   "max": 0.737
+  },
+  "Z4_s2c_p95_exact": 0.3008232929589064,
+  "Z4_s2c_not_near_hole": {
+   "n": 40501,
+   "p95": 0.247,
+   "max": 0.549
+  },
+  "Z4_s2c_near_hole(<=0.8 mm of a scan boundary edge)": {
+   "n": 14092,
+   "p95": 0.429,
+   "max": 0.737
+  },
+  "Z4_s2c_p95_exact_not_near_hole": 0.24692087947915697,
+  "Z4_s2c_over0.3_by_nearest_face (sign: outside = scan beyond the CAD surface, CAD too small there)": {
+   "64:CONE area 71.819 c [39.98, -0.07, -33.76]": {
+    "n_over0.3": 895,
+    "n_face_pts": 3477,
+    "frac_over0.3": 0.257,
+    "frac_scan_outside_cad": 1.0,
+    "frac_near_hole": 0.752,
+    "t_range": [
+     -22.32,
+     -21.42
+    ],
+    "r_range": [
+     2.24,
+     6.57
+    ],
+    "d_max": 0.724
+   },
+   "68:REVOLUTION area 533.346 c [39.01, 1.47, -41.51]": {
+    "n_over0.3": 597,
+    "n_face_pts": 23631,
+    "frac_over0.3": 0.025,
+    "frac_scan_outside_cad": 0.784,
+    "frac_near_hole": 0.357,
+    "t_range": [
+     -12.84,
+     -8.61
+    ],
+    "r_range": [
+     7.51,
+     10.18
+    ],
+    "d_max": 0.649
+   },
+   "117:CYLINDER area 200.847 c [37.27, -13.09, -50.12] [it3 changed]": {
+    "n_over0.3": 226,
+    "n_face_pts": 8185,
+    "frac_over0.3": 0.028,
+    "frac_scan_outside_cad": 0.0,
+    "frac_near_hole": 0.96,
+    "t_range": [
+     -4.5,
+     3.56
+    ],
+    "r_range": [
+     2.44,
+     3.02
+    ],
+    "d_max": 0.463
+   },
+   "70:PLANE area 111.938 c [38.29, -8.11, -43.98] [it3 changed]": {
+    "n_over0.3": 191,
+    "n_face_pts": 6296,
+    "frac_over0.3": 0.03,
+    "frac_scan_outside_cad": 0.927,
+    "frac_near_hole": 0.817,
+    "t_range": [
+     -9.28,
+     -8.53
+    ],
+    "r_range": [
+     2.15,
+     8.15
+    ],
+    "d_max": 0.484
+   },
+   "66:CONE area 96.874 c [39.83, 0.82, -35.11]": {
+    "n_over0.3": 129,
+    "n_face_pts": 3892,
+    "frac_over0.3": 0.033,
+    "frac_scan_outside_cad": 0.0,
+    "frac_near_hole": 0.0,
+    "t_range": [
+     -21.12,
+     -19.74
+    ],
+    "r_range": [
+     3.93,
+     5.57
+    ],
+    "d_max": 0.343
+   },
+   "60:CYLINDER area 121.918 c [40.38, -6.57, -28.9] [it3 changed]": {
+    "n_over0.3": 122,
+    "n_face_pts": 1737,
+    "frac_over0.3": 0.07,
+    "frac_scan_outside_cad": 1.0,
+    "frac_near_hole": 1.0,
+    "t_range": [
+     -21.88,
+     -21.43
+    ],
+    "r_range": [
+     2.75,
+     4.63
+    ],
+    "d_max": 0.645
+   },
+   "120:CYLINDER area 173.637 c [37.31, -12.12, -50.11] [win/bore]": {
+    "n_over0.3": 120,
+    "n_face_pts": 852,
+    "frac_over0.3": 0.141,
+    "frac_scan_outside_cad": 0.025,
+    "frac_near_hole": 1.0,
+    "t_range": [
+     -4.54,
+     4.2
+    ],
+    "r_range": [
+     1.84,
+     2.74
+    ],
+    "d_max": 0.461
+   },
+   "89:CYLINDER area 16.45 c [36.16, -13.96, -40.54] [win/bore]": {
+    "n_over0.3": 115,
+    "n_face_pts": 164,
+    "frac_over0.3": 0.701,
+    "frac_scan_outside_cad": 0.0,
+    "frac_near_hole": 1.0,
+    "t_range": [
+     -9.95,
+     -8.96
+    ],
+    "r_range": [
+     8.04,
+     8.28
+    ],
+    "d_max": 0.472
+   },
+   "94:PLANE area 6.316 c [32.97, -6.06, -42.5] [win/bore]": {
+    "n_over0.3": 70,
+    "n_face_pts": 123,
+    "frac_over0.3": 0.569,
+    "frac_scan_outside_cad": 1.0,
+    "frac_near_hole": 1.0,
+    "t_range": [
+     -9.77,
+     -8.72
+    ],
+    "r_range": [
+     5.22,
+     6.93
+    ],
+    "d_max": 0.694
+   },
+   "90:PLANE area 6.316 c [39.12, -13.23, -41.2] [win/bore]": {
+    "n_over0.3": 49,
+    "n_face_pts": 227,
+    "frac_over0.3": 0.216,
+    "frac_scan_outside_cad": 1.0,
+    "frac_near_hole": 1.0,
+    "t_range": [
+     -10.38,
+     -9.23
+    ],
+    "r_range": [
+     5.61,
+     6.4
+    ],
+    "d_max": 0.672
+   },
+   "83:PLANE area 6.316 c [43.69, -10.15, -42.81] [win/bore]": {
+    "n_over0.3": 41,
+    "n_face_pts": 65,
+    "frac_over0.3": 0.631,
+    "frac_scan_outside_cad": 1.0,
+    "frac_near_hole": 1.0,
+    "t_range": [
+     -9.37,
+     -9.1
+    ],
+    "r_range": [
+     4.99,
+     6.52
+    ],
+    "d_max": 0.737
+   },
+   "92:CYLINDER area 9.851 c [36.98, -11.74, -41.34] [win/bore]": {
+    "n_over0.3": 38,
+    "n_face_pts": 145,
+    "frac_over0.3": 0.262,
+    "frac_scan_outside_cad": 1.0,
+    "frac_near_hole": 1.0,
+    "t_range": [
+     -9.98,
+     -8.79
+    ],
+    "r_range": [
+     5.55,
+     6.04
+    ],
+    "d_max": 0.731
+   },
+   "81:CYLINDER area 16.45 c [42.97, -13.02, -41.82] [win/bore]": {
+    "n_over0.3": 26,
+    "n_face_pts": 202,
+    "frac_over0.3": 0.129,
+    "frac_scan_outside_cad": 0.538,
+    "frac_near_hole": 1.0,
+    "t_range": [
+     -9.48,
+     -9.19
+    ],
+    "r_range": [
+     6.4,
+     7.8
+    ],
+    "d_max": 0.607
+   },
+   "88:CYLINDER area 6.574 c [38.26, -10.65, -43.41] [it3 changed]": {
+    "n_over0.3": 19,
+    "n_face_pts": 336,
+    "frac_over0.3": 0.057,
+    "frac_scan_outside_cad": 1.0,
+    "frac_near_hole": 1.0,
+    "t_range": [
+     -9.02,
+     -8.56
+    ],
+    "r_range": [
+     2.11,
+     3.58
+    ],
+    "d_max": 0.399
+   },
+   "93:CYLINDER area 9.851 c [34.08, -8.36, -41.96] [win/bore]": {
+    "n_over0.3": 19,
+    "n_face_pts": 411,
+    "frac_over0.3": 0.046,
+    "frac_scan_outside_cad": 1.0,
+    "frac_near_hole": 1.0,
+    "t_range": [
+     -10.58,
+     -9.7
+    ],
+    "r_range": [
+     5.25,
+     5.42
+    ],
+    "d_max": 0.457
+   }
+  },
+  "Z4_s2c_n_over0.3": 2754,
+  "Z4_s2c_n_over0.3_near_hole": 1975,
+  "whatif_Z4_s2c_p95_if_face_group_at_median": {
+   "64:CONE area 71.819 c [39.98, -0.07, -33.76]": 0.2717,
+   "68:REVOLUTION area 533.346 c [39.01, 1.47, -41.51]": 0.2727,
+   "117:CYLINDER area 200.847 c [37.27, -13.09, -50.12] [it3 changed]": 0.2926
+  }
+ }
+}

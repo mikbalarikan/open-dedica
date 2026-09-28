@@ -1,0 +1,244 @@
+{
+  "schema": "stl-re/repro@1",
+  "tool": "repro_check.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "build/OD-G10_porta_filter_holder.step": "1637d69dca058c35ff3ca111cff4fa9103344abfcae7cbc2bfb3722415a0f317",
+    "build/OD-G10_porta_filter_holder_datum.step": "74eda9cd5898c6f4afee8d89c7237bce9109da6d673e517adbd203a25681ad42",
+    "build/model.py": "d2ec88ea1aa703fd627c379993214b573b135eccab8636f36013de8b1777d758",
+    "measure/params.json": "3ff6ce4d12f11b7d9c79677371f500410d1acc882ccf89fa9789575a79262710"
+  },
+  "seed": 0,
+  "created": "2026-09-28T10:13:38+00:00",
+  "method": "2 fresh subprocess rebuild(s) of build/model.py in a scratch copy; STEP re-imported; solids, faces, surface census, volume, bbox compared (raw hash reported, not required)",
+  "command": [
+    "python3",
+    "model.py",
+    "--params",
+    "../measure/params.json",
+    "--alignment",
+    "../intake/alignment.json",
+    "--out",
+    ".",
+    "--part",
+    "OD-G10_porta_filter_holder",
+    "--scripts",
+    "/home/user/agentic_STL-to-CAD/skills/stl-re-rebuild-build123d/scripts"
+  ],
+  "cwd": "build",
+  "tolerance_mm": 0.0,
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "build123d": "0.13.0",
+    "OCP": "8.0.1.0",
+    "numpy": "2.4.6"
+  },
+  "reproducible": true,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=../measure/params.json\nF01 rim outer corner fillet_2d (profile, before revolve) target C0.4 used C0.4 on 1 edges OK\nF01 rim lip outer corner fillet_2d (profile, before revolve) target C0.3 used C0.3 on 1 edges OK\nF01 rim lip bore corner fillet_2d (profile, before revolve) target C0.3 used C0.3 on 1 edges OK\nF01 revolve: faces=12 vol=33961.6\nF02 gap 1 shelf edge fillet_2d (profile, before revolve) target C2.426 used C2.426 on 1 edges OK\nF02 gap 2 shelf edge fillet_2d (profile, before revolve) target C2.483 used C2.483 on 1 edges OK\nF02 gap 3 shelf edge fillet_2d (profile, before revolve) target C1.961 used C1.961 on 1 edges OK\nF01-F03 unioned: solids=1 faces=37; lug-sector blank top -13.440\nF03b/F06 floor cylinders + recess cut: solids=1 faces=81\nF04 lug instance: faces=13 vol=926.95; shallow plane n=(0.021459937550790287, -0.047264308390053786, 0.99865186938829), ramp n=(0.4094524008524229, -0.36970910048039873, 0.8340646932092026)\nF04 lugs unioned: solids=1 faces=120\nF04b stop root fillet fillet target R1 used R1 on 3 edges OK\nF05-F09 cut tools subtracted once: notches=6 keyhole+lobes, holes=3; bosses=2\nfinal: solids=1 faces=182 vol=40425.4\n{\n  \"closed\": true,\n  \"faces\": 182,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 7,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"scan_bbox\": {\n    \"max\": [\n      64.164118,\n      25.967456,\n      -201.732744\n    ],\n    \"min\": [\n      -18.684061,\n      -58.923389,\n      -251.342721\n    ],\n    \"size\": [\n      82.848179,\n      84.890845,\n      49.609977\n    ]\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 40425.375514\n}\n",
+      "stderr_tail": "",
+      "run": 1,
+      "produced": [
+        "OD-G10_porta_filter_holder.step",
+        "OD-G10_porta_filter_holder_datum.step"
+      ]
+    },
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=../measure/params.json\nF01 rim outer corner fillet_2d (profile, before revolve) target C0.4 used C0.4 on 1 edges OK\nF01 rim lip outer corner fillet_2d (profile, before revolve) target C0.3 used C0.3 on 1 edges OK\nF01 rim lip bore corner fillet_2d (profile, before revolve) target C0.3 used C0.3 on 1 edges OK\nF01 revolve: faces=12 vol=33961.6\nF02 gap 1 shelf edge fillet_2d (profile, before revolve) target C2.426 used C2.426 on 1 edges OK\nF02 gap 2 shelf edge fillet_2d (profile, before revolve) target C2.483 used C2.483 on 1 edges OK\nF02 gap 3 shelf edge fillet_2d (profile, before revolve) target C1.961 used C1.961 on 1 edges OK\nF01-F03 unioned: solids=1 faces=37; lug-sector blank top -13.440\nF03b/F06 floor cylinders + recess cut: solids=1 faces=81\nF04 lug instance: faces=13 vol=926.95; shallow plane n=(0.021459937550790287, -0.047264308390053786, 0.99865186938829), ramp n=(0.4094524008524229, -0.36970910048039873, 0.8340646932092026)\nF04 lugs unioned: solids=1 faces=120\nF04b stop root fillet fillet target R1 used R1 on 3 edges OK\nF05-F09 cut tools subtracted once: notches=6 keyhole+lobes, holes=3; bosses=2\nfinal: solids=1 faces=182 vol=40425.4\n{\n  \"closed\": true,\n  \"faces\": 182,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 7,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"scan_bbox\": {\n    \"max\": [\n      64.164118,\n      25.967456,\n      -201.732744\n    ],\n    \"min\": [\n      -18.684061,\n      -58.923389,\n      -251.342721\n    ],\n    \"size\": [\n      82.848179,\n      84.890845,\n      49.609977\n    ]\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 40425.375514\n}\n",
+      "stderr_tail": "",
+      "run": 2,
+      "produced": [
+        "OD-G10_porta_filter_holder.step",
+        "OD-G10_porta_filter_holder_datum.step"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "OD-G10_porta_filter_holder.step",
+      "original_volume_mm3": 40425.37551374619,
+      "rebuild_volume_mm3": 40425.37551374619,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        82.84817857510461,
+        84.89084491866659,
+        49.609976582413395
+      ],
+      "rebuild_bbox_mm": [
+        82.84817857510461,
+        84.89084491866659,
+        49.609976582413395
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 40425.37551374619,
+          "rebuild_volume_mm3": 40425.37551374619,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            82.84817857510461,
+            84.89084491866659,
+            49.609976582413395
+          ],
+          "rebuild_bbox_mm": [
+            82.84817857510461,
+            84.89084491866659,
+            49.609976582413395
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 40425.37551374619,
+          "rebuild_volume_mm3": 40425.37551374619,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            82.84817857510461,
+            84.89084491866659,
+            49.609976582413395
+          ],
+          "rebuild_bbox_mm": [
+            82.84817857510461,
+            84.89084491866659,
+            49.609976582413395
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 182,
+        "valid": true,
+        "surface_census": {
+          "CONE": 8,
+          "CYLINDER": 57,
+          "PLANE": 98,
+          "TORUS": 19
+        },
+        "volume_mm3": 40425.37551374619,
+        "area_mm2": 25259.528704709177,
+        "bbox_min": [
+          -18.684061005592014,
+          -58.92338856869655,
+          -251.34272098504033
+        ],
+        "bbox_max": [
+          64.1641175695126,
+          25.967456349970032,
+          -201.73274440262693
+        ]
+      }
+    },
+    {
+      "file": "OD-G10_porta_filter_holder_datum.step",
+      "original_volume_mm3": 40425.37551374613,
+      "rebuild_volume_mm3": 40425.37551374613,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        80.2200002,
+        80.22,
+        31.1330001
+      ],
+      "rebuild_bbox_mm": [
+        80.2200002,
+        80.22,
+        31.1330001
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 40425.37551374613,
+          "rebuild_volume_mm3": 40425.37551374613,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            80.2200002,
+            80.22,
+            31.1330001
+          ],
+          "rebuild_bbox_mm": [
+            80.2200002,
+            80.22,
+            31.1330001
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 40425.37551374613,
+          "rebuild_volume_mm3": 40425.37551374613,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            80.2200002,
+            80.22,
+            31.1330001
+          ],
+          "rebuild_bbox_mm": [
+            80.2200002,
+            80.22,
+            31.1330001
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 182,
+        "valid": true,
+        "surface_census": {
+          "CONE": 8,
+          "CYLINDER": 57,
+          "PLANE": 98,
+          "TORUS": 19
+        },
+        "volume_mm3": 40425.37551374613,
+        "area_mm2": 25259.52870470917,
+        "bbox_min": [
+          -40.1100001,
+          -40.11,
+          -27.835
+        ],
+        "bbox_max": [
+          40.1100001,
+          40.11,
+          3.2980001
+        ]
+      }
+    }
+  ]
+}

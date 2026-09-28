@@ -1,0 +1,99 @@
+{
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [
+  "primary STOP check is self-referential (noise measured on the primary itself)"
+ ],
+ "scale_factor": 1.0,
+ "tilt_deg": {
+  "value": 0.2624537650697059,
+  "stderr_deg": 0.11290508405653948,
+  "direction_deg": 75.70473024116335,
+  "method": "common slope, per-feature intercept, 15 stations over 2 feature(s), z -35.000..-6.050 vs frame Z",
+  "z_span_mm": 28.95,
+  "per_feature": [
+   {
+    "feature": "cup outer wall (drafted)",
+    "n_stations": 12,
+    "value": 0.28257457407765024,
+    "stderr_deg": 0.06357682085397956,
+    "direction_deg": 75.45231965619811,
+    "z_span_mm": 22.0
+   },
+   {
+    "feature": "cup rim bore above the basket flange",
+    "n_stations": 3,
+    "value": 1.3348279331932569,
+    "stderr_deg": 4.323425205568083,
+    "direction_deg": -108.53163605638768,
+    "z_span_mm": 3.8000000000000007
+   }
+  ],
+  "resolvable": true
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": 0.002701784062172881,
+   "tol": 0.02244846109291158,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "spout boss tips (part bottom)",
+   "stat": "zmin",
+   "expected": -59.0,
+   "tol": 0.6,
+   "observed": -59.073919967749276,
+   "ok": true,
+   "tol_source": "intake exploration r-z plot (provisional frame, 0.5 mm reading resolution)"
+  },
+  {
+   "name": "lug outer radius",
+   "stat": "rmax",
+   "expected": 36.0,
+   "tol": 0.8,
+   "observed": 36.0032063002953,
+   "ok": true,
+   "tol_source": "intake exploration r-z plot"
+  }
+ ],
+ "primary": {
+  "type": "plane",
+  "fit_rms_mm": 0.02244846109291158,
+  "fit_max_mm": 0.09757281466143322,
+  "n_faces": 3756
+ },
+ "secondary": {
+  "type": "axis",
+  "fit_rms_mm": 0.02690335188982498,
+  "fit_max_mm": 0.1265730881880991,
+  "stations": 15,
+  "r_by_feature": {
+   "cup outer wall (drafted)": {
+    "n": 12,
+    "r_mean": 29.480334745525372,
+    "r_std": 0.3054626214829205
+   },
+   "cup rim bore above the basket flange": {
+    "n": 3,
+    "r_mean": 27.52950848165463,
+    "r_std": 0.08417550627347996
+   }
+  },
+  "centre_std_mm": [
+   0.05158739279632829,
+   0.09287830661856808
+  ]
+ },
+ "clock": {
+  "rule": "plane_normal: handle end-cap flat normal -> +X",
+  "angle_deg": -25.42308130904137
+ },
+ "extents_aligned": [
+  201.6026630049068,
+  69.20610186640454,
+  59.14162215250997
+ ]
+}

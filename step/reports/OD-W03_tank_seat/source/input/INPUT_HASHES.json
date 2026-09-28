@@ -1,0 +1,31 @@
+{
+  "created": "2026-09-28T07:02:16+00:00",
+  "files": [
+    {
+      "bytes": 20032934,
+      "mode": "copy",
+      "path": "input/scan.stl",
+      "role": "scan",
+      "sha256": "4784d93dafd0e5ba815368c89572b92c2ba1af17b054725a6503b4c1fa59e1fb",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/d8e5b691-152f-55fe-9a52-555e01807691/scratchpad/job/OD-W03_scan.stl"
+    },
+    {
+      "bytes": 53784,
+      "mode": "copy",
+      "path": "input/photos/OD-W03_photo1.png",
+      "role": "photo",
+      "sha256": "ee684f8800c60636e4e9334dbf99d2d2209ac3bbab57a2caf3475d387c81bf82",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/d8e5b691-152f-55fe-9a52-555e01807691/scratchpad/job/OD-W03_photo1.png"
+    }
+  ],
+  "inputs": {
+    "input/photos/OD-W03_photo1.png": "ee684f8800c60636e4e9334dbf99d2d2209ac3bbab57a2caf3475d387c81bf82",
+    "input/scan.stl": "4784d93dafd0e5ba815368c89572b92c2ba1af17b054725a6503b4c1fa59e1fb"
+  },
+  "part": "OD-W03",
+  "scan_resolution": "full",
+  "schema": "stl-re/INPUT_HASHES@1",
+  "seed": 0,
+  "tool": "init_run.py",
+  "tool_version": "stl-re-orchestrate@1"
+}

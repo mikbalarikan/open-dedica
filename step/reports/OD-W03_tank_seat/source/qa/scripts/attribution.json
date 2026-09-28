@@ -1,0 +1,41 @@
+{
+ "note": "attribution only, not a mask and not a gate",
+ "masked_p95": 0.3072535837616397,
+ "leave_region_out": {
+  "skirt z<-1.5": {
+   "n_region": 7362,
+   "p95_without_region": 0.2883103830175649,
+   "over_0.30_in_region": 2315
+  },
+  "tab/lug x>=32 z>=11": {
+   "n_region": 11647,
+   "p95_without_region": 0.3039117840643852,
+   "over_0.30_in_region": 929
+  },
+  "tabs x>=32 z<11": {
+   "n_region": 10922,
+   "p95_without_region": 0.30611938916262826,
+   "over_0.30_in_region": 684
+  },
+  "cup B upper wall z9.5-11.8": {
+   "n_region": 7157,
+   "p95_without_region": 0.2959773113620771,
+   "over_0.30_in_region": 1526
+  },
+  "cup walls both (z0.3-11.8)": {
+   "n_region": 62700,
+   "p95_without_region": 0.3031755942112171,
+   "over_0.30_in_region": 3683
+  },
+  "barbs z>=16": {
+   "n_region": 18544,
+   "p95_without_region": 0.3076204905364205,
+   "over_0.30_in_region": 998
+  },
+  "webs |y|<1.2": {
+   "n_region": 19992,
+   "p95_without_region": 0.30812336696453685,
+   "over_0.30_in_region": 984
+  }
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "n": 250308,
+ "frac_over_0.3": 0.1079,
+ "frac_over_0.8": 0.0105,
+ "p95": 0.4495,
+ "points_over_0.3_to_remove_for_p95_0.30": 14488,
+ "buckets": {
+  "z<0": {
+   "n": 16768,
+   "frac_over_0.3": 0.0395,
+   "share_of_all_over_0.3": 0.0246,
+   "n_over_0.8": 61
+  },
+  "0-8.2": {
+   "n": 46719,
+   "frac_over_0.3": 0.1661,
+   "share_of_all_over_0.3": 0.2873,
+   "n_over_0.8": 986
+  },
+  "8.2-15.4": {
+   "n": 31120,
+   "frac_over_0.3": 0.1269,
+   "share_of_all_over_0.3": 0.1462,
+   "n_over_0.8": 305
+  },
+  "15.4-27.7": {
+   "n": 84036,
+   "frac_over_0.3": 0.1068,
+   "share_of_all_over_0.3": 0.3324,
+   "n_over_0.8": 458
+  },
+  "27.7-43.4": {
+   "n": 54016,
+   "frac_over_0.3": 0.0531,
+   "share_of_all_over_0.3": 0.1062,
+   "n_over_0.8": 824
+  },
+  ">43.4": {
+   "n": 17649,
+   "frac_over_0.3": 0.158,
+   "share_of_all_over_0.3": 0.1032,
+   "n_over_0.8": 4
+  }
+ },
+ "it1_regions_same_boxes": {
+  "R1 upper port +X end wall / U-window": {
+   "n": 3354,
+   "n_over_0.3": 602,
+   "n_over_0.8": 443,
+   "max": 1.679
+  },
+  "R2 lower port +X end wall / U-window": {
+   "n": 2993,
+   "n_over_0.3": 620,
+   "n_over_0.8": 46,
+   "max": 1.253
+  },
+  "R3 shoulder block 120 slope": {
+   "n": 4966,
+   "n_over_0.3": 1606,
+   "n_over_0.8": 383,
+   "max": 1.593
+  },
+  "R4 barb top rib": {
+   "n": 1199,
+   "n_over_0.3": 36,
+   "n_over_0.8": 0,
+   "max": 0.431
+  },
+  "R5 switch side tab / bar 330": {
+   "n": 949,
+   "n_over_0.3": 23,
+   "n_over_0.8": 0,
+   "max": 0.452
+  },
+  "R6 switch underside bump": {
+   "n": 816,
+   "n_over_0.3": 195,
+   "n_over_0.8": 0,
+   "max": 0.681
+  },
+  "R7 cam pockets th 96/270": {
+   "n": 1440,
+   "n_over_0.3": 1060,
+   "n_over_0.8": 412,
+   "max": 1.542
+  },
+  "R8 holder/bracket junction th 45..95": {
+   "n": 505,
+   "n_over_0.3": 302,
+   "n_over_0.8": 120,
+   "max": 1.356
+  },
+  "R9 top bore floor": {
+   "n": 767,
+   "n_over_0.3": 40,
+   "n_over_0.8": 0,
+   "max": 0.508
+  },
+  "R10 spindle teeth": {
+   "n": 16768,
+   "n_over_0.3": 663,
+   "n_over_0.8": 61,
+   "max": 1.338
+  },
+  "N1 (it2) upper port junction box by the neck": {
+   "n": 1012,
+   "n_over_0.3": 957,
+   "n_over_0.8": 790,
+   "max": 1.94
+  }
+ },
+ "all_clusters_ge20_perfect_(bbox+1.5mm)": {
+  "n_points_zeroed": 25143,
+  "p95_if_perfect": 0.3423,
+  "max_if_perfect": 1.0896,
+  "frac_over_0.3_left": 0.0685,
+  "note": "hypothetical upper bound on what fixing every >0.8 mm cluster region could achieve; not a gate"
+ }
+}

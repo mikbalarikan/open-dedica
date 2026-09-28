@@ -1,0 +1,671 @@
+{
+  "schema": "stl-re/MANIFEST@1",
+  "tool": "make_manifest.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "deliver/README.md": "0ee18922c5133ff6bc5e78496d0669ccc63344af2aa528a0ea500584fb885cfe",
+    "deliver/repro.json": "27bcb715c047984ea0d76cc4f131e1d320ba96d9e040c47f4fb9c5a91dafbd6b",
+    "qa/gate.json": "a415ac1263b6cb0d8e020fb40ff6403ab5c9500502a4f744a9a417edad758a84"
+  },
+  "seed": 0,
+  "created": "2026-09-28T10:14:47+00:00",
+  "part": "OD-G10_porta_filter_holder",
+  "verdict": "HALT",
+  "regime": "baseline-skill",
+  "iteration": 1,
+  "acceptance": null,
+  "checks": {
+    "CHK-PUBLISH": {
+      "ran": true,
+      "result": "pass",
+      "note": "verdict HALT"
+    },
+    "CHK-SUPERSEDED": {
+      "ran": true,
+      "result": "pass",
+      "iteration": 1,
+      "superseded": [],
+      "note": "all earlier iterations kept intact"
+    },
+    "inputs_unchanged": {
+      "ran": true,
+      "result": "pass",
+      "note": "3 input file(s) unchanged"
+    },
+    "hash_frozen": {
+      "ran": true,
+      "result": "pass",
+      "note": "every build/ STEP matches hash_frozen"
+    },
+    "regime_declared": {
+      "ran": true,
+      "result": "pass",
+      "note": "regime 'baseline-skill'"
+    }
+  },
+  "deliverables": [
+    {
+      "path": "build/OD-G10_porta_filter_holder.step",
+      "bytes": 1129866,
+      "sha256": "1637d69dca058c35ff3ca111cff4fa9103344abfcae7cbc2bfb3722415a0f317",
+      "role": "DELIVERABLE: STEP, scan frame (overlays the raw scan)"
+    },
+    {
+      "path": "build/OD-G10_porta_filter_holder_datum.step",
+      "bytes": 1128094,
+      "sha256": "74eda9cd5898c6f4afee8d89c7237bce9109da6d673e517adbd203a25681ad42",
+      "role": "DELIVERABLE: STEP, datum frame"
+    },
+    {
+      "path": "deliver/README.md",
+      "bytes": 50074,
+      "sha256": "0ee18922c5133ff6bc5e78496d0669ccc63344af2aa528a0ea500584fb885cfe",
+      "role": "DELIVERABLE: delivery document (rendered from JSON)"
+    }
+  ],
+  "note": "Every file under the run folder is listed in included or excluded (with a reason). deliver/MANIFEST.json itself is not listed: a file cannot contain its own hash.",
+  "unused_excludes": [],
+  "included": [
+    {
+      "path": "DECISIONS.md",
+      "bytes": 2261,
+      "sha256": "e5994a2c20bc23f91a815cb332df260f3a3eb5986333d785b381ff676e8901f3",
+      "role": "record: human decisions (append-only)"
+    },
+    {
+      "path": "build/MODELING_PLAN.md",
+      "bytes": 8586,
+      "sha256": "4c01d33c1da08ff1b4a629040810caefbfdcdd08ef1d6790c9c61aa2884eb5c9",
+      "role": "build: written feature plan"
+    },
+    {
+      "path": "build/OD-G10_porta_filter_holder.step",
+      "bytes": 1129866,
+      "sha256": "1637d69dca058c35ff3ca111cff4fa9103344abfcae7cbc2bfb3722415a0f317",
+      "role": "DELIVERABLE: STEP, scan frame (overlays the raw scan)"
+    },
+    {
+      "path": "build/OD-G10_porta_filter_holder_cad.stl",
+      "bytes": 5955884,
+      "sha256": "f7a53dd899c41c2d41c94e734503c1e30f110c9b08aafd541fce3dabb0a13cf1",
+      "role": "preview: tessellated CAD, scan frame"
+    },
+    {
+      "path": "build/OD-G10_porta_filter_holder_datum.step",
+      "bytes": 1128094,
+      "sha256": "74eda9cd5898c6f4afee8d89c7237bce9109da6d673e517adbd203a25681ad42",
+      "role": "DELIVERABLE: STEP, datum frame"
+    },
+    {
+      "path": "build/build_log.txt",
+      "bytes": 1185,
+      "sha256": "b236ffdc8dd5b0b00b1c7d7979306ba2ca0b3cfff4f15df3322183a1b70467d0",
+      "role": "build: build log (fillet OK/FAILED)"
+    },
+    {
+      "path": "build/export_check.json",
+      "bytes": 8468,
+      "sha256": "3f4018b1b86969ac2aa9a8c0fbd9142f0c3673879fbeed15f90bc91d2bce02f1",
+      "role": "build: STEP re-import check, both frames"
+    },
+    {
+      "path": "build/face_stats.json",
+      "bytes": 1266,
+      "sha256": "a5c9e3dba1b52d2a95d23a8205b71b48bf6d172ca77273c9b9b20447a3cb5cd3",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/fillets.json",
+      "bytes": 2572,
+      "sha256": "07e90cc87d9c275b320021c7165070e3ff6ad8e67ff141bcf273e5bb903dcd87",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/model.py",
+      "bytes": 18122,
+      "sha256": "d2ec88ea1aa703fd627c379993214b573b135eccab8636f36013de8b1777d758",
+      "role": "build: editable design-intent source"
+    },
+    {
+      "path": "build/selfcheck/cad_views.png",
+      "bytes": 1223560,
+      "sha256": "139b035f670bf309575f3d1468c2b7e5a685b54c4353bd52ab24a73ba5892f97",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/selfcheck/selfcheck.json",
+      "bytes": 1307,
+      "sha256": "c50b1c60eb4b005f547d50577cc714199824cd46e7522089b32f196640e41c7f",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/selfcheck/selfcheck.py",
+      "bytes": 2485,
+      "sha256": "34a27f7ee02974c98e1d04b746402d4923d5a10fe8cfcb32d56d16aaeadb5e71",
+      "role": "build: working file"
+    },
+    {
+      "path": "decisions/owner_override_2026-09-28.md",
+      "bytes": 1153,
+      "sha256": "88782ae4931e80f46d3752534a50fadecf70bfd12771e2808a53544c5ae2fd63",
+      "role": "unclassified (owner_override_2026-09-28.md); review"
+    },
+    {
+      "path": "decisions/owner_request_2026-09-28.md",
+      "bytes": 1120,
+      "sha256": "c1afc9d00daadf61dbbd950675bed37499765f03bf36f51831c8899f1d1d7f2b",
+      "role": "unclassified (owner_request_2026-09-28.md); review"
+    },
+    {
+      "path": "deliver/README.md",
+      "bytes": 50074,
+      "sha256": "0ee18922c5133ff6bc5e78496d0669ccc63344af2aa528a0ea500584fb885cfe",
+      "role": "DELIVERABLE: delivery document (rendered from JSON)"
+    },
+    {
+      "path": "deliver/limitations.json",
+      "bytes": 8338,
+      "sha256": "21eb22f8fe17d7f156b0813abeeffdfbe228cf2f7d576b15f8abe4727b36dbe2",
+      "role": "deliver: limitations, assumptions, claim boundary (prose)"
+    },
+    {
+      "path": "deliver/repro.json",
+      "bytes": 10165,
+      "sha256": "27bcb715c047984ea0d76cc4f131e1d320ba96d9e040c47f4fb9c5a91dafbd6b",
+      "role": "deliver: fresh-process reproducibility check"
+    },
+    {
+      "path": "deliver/src/override_run.py",
+      "bytes": 741,
+      "sha256": "daa15ca3d89d294525f88cb6b613a1e6a1b98fcc0b98ac04023213e85450df13",
+      "role": "deliver: file"
+    },
+    {
+      "path": "input/INPUT_HASHES.json",
+      "bytes": 1491,
+      "sha256": "cf1a43d23da04ef1f2b1555dde89e685b4decbac58582c1c27c8af2759c0af38",
+      "role": "evidence: input hashes at init"
+    },
+    {
+      "path": "input/photos/1.webp",
+      "bytes": 187620,
+      "sha256": "bc5cac895501d7462c0161918a4e85c1154b37ef62b6f4b47309343caded5ed5",
+      "role": "evidence: photo"
+    },
+    {
+      "path": "input/photos/2.webp",
+      "bytes": 151860,
+      "sha256": "961286a0acff3ef2c09cbdf2ed6a4513f33d45045212783be493159929e33c07",
+      "role": "evidence: photo"
+    },
+    {
+      "path": "input/scan.stl",
+      "bytes": 20006234,
+      "sha256": "94adb6866780b8cdc771dad5cb006d218143b05fd55b6032780e6b2b7b7301f3",
+      "role": "evidence: raw scan (never modified)"
+    },
+    {
+      "path": "intake/INTAKE_CARD.md",
+      "bytes": 11230,
+      "sha256": "4900e2fabda63a85db73ca9a78294dbcad6b396a5fb6a7aa09c10c1cdecf5f2c",
+      "role": "intake: intake card"
+    },
+    {
+      "path": "intake/MEASUREMENTS.md",
+      "bytes": 3300,
+      "sha256": "cb330364a23cccc9924710ffbf65af7c2ec6e940777ea3a93c908da8aeac7ffc",
+      "role": "intake: measurement request"
+    },
+    {
+      "path": "intake/aligned_work.stl",
+      "bytes": 12500084,
+      "sha256": "0d9c31b439e6ad310fc08dd1d1406a634fd15914125a632bd5b71b1f83b0fff4",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/alignment.json",
+      "bytes": 8296,
+      "sha256": "f17c3c04898f9354b69f4699e22944fb9dfbbfb40c0480315c6a0fa3d13608c4",
+      "role": "intake: datum alignment (scan -> datum)"
+    },
+    {
+      "path": "intake/coverage.json",
+      "bytes": 5809,
+      "sha256": "b7b3da7c56ffc227b66cbd340dc1d03d0647b28ffe74fa8985e31b25b1bbb7da",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/datum_spec.json",
+      "bytes": 2317,
+      "sha256": "5925910ee132c7df449eb2f4f327d6d1a6f336c86fd040113df43685bdfaec83",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/intake.json",
+      "bytes": 2868,
+      "sha256": "15d092d601f3627db5c951d4b4af8ab1ad31645afae236efbd662477fdf49344",
+      "role": "intake: scan stats"
+    },
+    {
+      "path": "intake/noise_floor.json",
+      "bytes": 451,
+      "sha256": "556fbc2d01913fc89a5dffe9da75741fd20678ceed3ed8f5c268b2fb0b8d2d3a",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/noise_primary.json",
+      "bytes": 449,
+      "sha256": "ada7344b44349f99d86d2cf88ef0cc1cc3f7d146852abb399abc4b393df79bea",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/noise_shelf.json",
+      "bytes": 450,
+      "sha256": "60fa1aa2f3dd45bac15b80184904093bd723510f4f17cc8d8ed112cb978aece7",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/noise_step25.json",
+      "bytes": 451,
+      "sha256": "168c2bd6fbb2ee7af14168e27d3f7c6199f0c311ea2c492931fbb4cba292a1a5",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/planes.json",
+      "bytes": 2878,
+      "sha256": "9e7085e71a674ac48a04b4026570b0ce8c7d2023d09b62b210fc75964c76739e",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/regime.json",
+      "bytes": 548,
+      "sha256": "d48265034c224f40b77bbf3725ec5a64aa76597048cb585a06c9461255fd89ec",
+      "role": "intake: declared band regime"
+    },
+    {
+      "path": "intake/work.stl",
+      "bytes": 12500084,
+      "sha256": "3a3c4c70e8bad48800631309cb53ac669373b936c0051b3674f1660806877532",
+      "role": "intake: working file"
+    },
+    {
+      "path": "measure/PARAM_TABLE.md",
+      "bytes": 20064,
+      "sha256": "29ab601aece8f72a8bf6bdf3ed32cf079d2bdfd98474d6787666c9525db2e76f",
+      "role": "measure: parameter table rendered from params.json"
+    },
+    {
+      "path": "measure/figures/count_lugs.json",
+      "bytes": 6084,
+      "sha256": "320504a8285e41f6ad07cfcef427af246decb46c2aaea3c95a92f155139866f1",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/floor_rmin.json",
+      "bytes": 520,
+      "sha256": "804a875640d2341479610c2e06205e78ff4921a5e3cac77d6710ebcddb7bdddc",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/instances.json",
+      "bytes": 1609,
+      "sha256": "930c19d8606c2bc80828deca33e3bd8842a3aab86694c3c9a68d971c244dccf6",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/levels.json",
+      "bytes": 5223,
+      "sha256": "44df68b7c36b8fda946050931e782a6ad1a164bcd3bd626d13bdbb595326aec6",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/lug_faces_unwrapped.png",
+      "bytes": 244963,
+      "sha256": "401291ac22e02be3c178550e9ab4ade969b68a68af992f97b429ec1b76c1eb6c",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/lugs.json",
+      "bytes": 4792,
+      "sha256": "3343de8ea1dc22fc0161cf5a41e22dafbaba4dc15a3e25b849e2b2512915d62e",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/misc_fits.json",
+      "bytes": 1788,
+      "sha256": "a8268564a2fe6ab9a8ef8e9fcea1cd6a1068cb1818c21555613078bd09628229",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/p2_plate.png",
+      "bytes": 1195640,
+      "sha256": "44bf3369786d9415578b7ccd8dd045ff7c5f68f9482e6f1142bdb561f51ad83b",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/p2_polar.png",
+      "bytes": 1073802,
+      "sha256": "4b0233c294a1a9ce29880793675ee48c0bba87888cb7a4fa0d1aa28a68040acd",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/prof_bead.png",
+      "bytes": 98070,
+      "sha256": "640126c14afc865fdcb18cf93739d0cb83441ddc2dd552c4a1483ef1ad6b7496",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/prof_lug.png",
+      "bytes": 85205,
+      "sha256": "109488480d135f92c1d31a4788162c0084ed8ed1f80400ceb961d9739c3df0df",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/prof_nonlug.png",
+      "bytes": 72879,
+      "sha256": "e9326f5b1ebdbccb7010cd04073b2669c621f1f0ee7db5426cf6026ae8e0e2b4",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/prof_rim.png",
+      "bytes": 110907,
+      "sha256": "8630ddcd8957e8bafbb032aed292ac156c92463920b32b2ccece9a08b0df85bb",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/prof_rimnotch.png",
+      "bytes": 94491,
+      "sha256": "5edf8239215a3de6c35beb772af2e14adf5e806fc81c51f46f652a7287b2ef83",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/prof_stop_start.png",
+      "bytes": 145098,
+      "sha256": "523fa9a02851b9da30eb51064f0f699769abd06b908c272455c3b62f6a41fc1d",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/rz_profile.json",
+      "bytes": 4599,
+      "sha256": "0d44870f86209688bcad96d8f576215374a02052d42102a864e669307a2f7bb8",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/underside_notch.json",
+      "bytes": 514,
+      "sha256": "dedcfeb5425ec9bfc0c07999e8f4995fb53906cd499de69e3ebcfd0934c153ae",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/valley_fit.json",
+      "bytes": 1170,
+      "sha256": "4ca7076c6b9774d61eced08f70b7a8b1a9181148300de82f3d77bf30d301511e",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/ztheta.png",
+      "bytes": 194216,
+      "sha256": "95f69a9d23abafa96dbd5816a7a0d9c790c64c66b4f5810a2df03e74fb3c25e4",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/params.json",
+      "bytes": 30959,
+      "sha256": "3ff6ce4d12f11b7d9c79677371f500410d1acc882ccf89fa9789575a79262710",
+      "role": "measure: parameter table, source of truth"
+    },
+    {
+      "path": "measure/src/build_params.py",
+      "bytes": 22079,
+      "sha256": "e03643c9f5532fcc9bf273d828d4de2b4d2c025ef7b4ed3ac27bf10da97efb15",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/src/instances.py",
+      "bytes": 3005,
+      "sha256": "73492a86a8931036366c64c44a4eff5699af255a65e99513b856fafe0683874d",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/src/levels.py",
+      "bytes": 1802,
+      "sha256": "86db03cfe388ba5280cdb50698746b1558885f56674005c282912724efbb33a8",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/src/lugs.py",
+      "bytes": 3542,
+      "sha256": "467a87ed6827ea40dd99b955823f6ac9534dcaa93a9b26e79745b6d34bc5de95",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/src/misc_fits.py",
+      "bytes": 2518,
+      "sha256": "966b2c0d5a020d2f3b2829ceac80f45d5ae0293167bf3462ce57c282aab52fed",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/src/profile_plot.py",
+      "bytes": 1217,
+      "sha256": "1695a1b647912db324c4250018ffcb557c2994ab7d1b9aa0d7cc509bd2b32dd8",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/src/rz_profile.py",
+      "bytes": 1972,
+      "sha256": "cd6e9cc029cc62301da9d93218834c647c53261c57c9fa3d5473596141018f60",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/src/valley_fit.py",
+      "bytes": 3594,
+      "sha256": "dcd1b007f03fef368e04d94ed7fd22bdc9bf1048d1e9c84e835c2e09b363c700",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/src/ztheta.py",
+      "bytes": 1067,
+      "sha256": "48bd956641eb79afe75cf6d5934939f2970277bc8923c528c92b54bab6dcec10",
+      "role": "measure: working file"
+    },
+    {
+      "path": "qa/VERDICT.md",
+      "bytes": 24185,
+      "sha256": "70381db10f329c0a6be1a826a8e6606cd940f64464c6cd54c3670e31c719bcdd",
+      "role": "qa: verdict and reasoning"
+    },
+    {
+      "path": "qa/datum_audit.json",
+      "bytes": 2267,
+      "sha256": "8e697251f40841a4a64cf51e082fb10f693976c84d735a56b249d055c66ed8d2",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/datum_audit_clock_sens.json",
+      "bytes": 2276,
+      "sha256": "51d70feeb8f31dc4ce2db1665e23ea4c1404143e16a9755177250697e7b32490",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/datum_spec.json",
+      "bytes": 820,
+      "sha256": "68411e468d21111f206bf2a9b52f81cf147472ccc7b014ded54e5ff2c4b63770",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/datum_spec_clock_sens.json",
+      "bytes": 851,
+      "sha256": "124b75a0c58ed19eb06f59efea8beac41652d1f5bd70b9c192eacd095f861d20",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dev_arrays.npz",
+      "bytes": 15573654,
+      "sha256": "92285ac4bf550e26dbe2aa1c9ac96e70776321ac54713cd05594c510cc31bdfa",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dev_arrays_datum.npz",
+      "bytes": 15513744,
+      "sha256": "19195ff670ddb8e4999d66514388d914cc52b9e143049190f2e779672088608e",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dev_datum.log",
+      "bytes": 2644,
+      "sha256": "09da75d67bc5bace66b6b199e7ab3588ec555f842468628a18011022e46ac681",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dev_icp.log",
+      "bytes": 2633,
+      "sha256": "f6b91b98f728151fc902cd147ae36a430323a432e2a9774c71b3be8d8bae7c1f",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/deviation.json",
+      "bytes": 49318,
+      "sha256": "9961aab841e511442e05e1b882646b75867e2ca4216cfb2f0aefd63751f48ab7",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/deviation_datum.json",
+      "bytes": 44358,
+      "sha256": "7ff61543a7901ce9e7c994391e97e738409e9d091abbafb98959e4f972d129a9",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dims.json",
+      "bytes": 660,
+      "sha256": "558c77f6d37d934f1d205a520cd5b202049597ef8d7635bd5dbd9b0f2644c366",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/gate.json",
+      "bytes": 131612,
+      "sha256": "a415ac1263b6cb0d8e020fb40ff6403ab5c9500502a4f744a9a417edad758a84",
+      "role": "qa: gate numbers and verdict (source for the README)"
+    },
+    {
+      "path": "qa/hash_freeze.json",
+      "bytes": 907,
+      "sha256": "928dfe0223d966b5871e6aa8abebad61329b86031fb6ef03b5c6985371b3aeac",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/icp_diagnose.json",
+      "bytes": 1324,
+      "sha256": "f6222e6764c6e19a5588e235c6c863fb91ee2809c2923b130b536967e32d6448",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/icp_diagnose.py",
+      "bytes": 2335,
+      "sha256": "e97f7b3ffa11a1f9947ff56688efd5983403b72e5881eb601603a54361ad8894",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/icp_run2.log",
+      "bytes": 115,
+      "sha256": "8a3a519584b3bb154ebe692ad21e3c003fcc69657562ca46cd4c25e5c7955e3d",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/masks.json",
+      "bytes": 2894,
+      "sha256": "f74ca4b7e007c15ce10685997f9fea464322e4f7ba4300d2648b20be739c9ef1",
+      "role": "qa: deviation masks"
+    },
+    {
+      "path": "qa/overlays/overlay.json",
+      "bytes": 4099,
+      "sha256": "acea9db864187a48f011bcd73fe6c970cd7421bad2f3f43e979c5dd1e430a308",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay.png",
+      "bytes": 643310,
+      "sha256": "d25979ad60b2c71f4801ad39a9d8266d46f9a542cc81d800ff3f3798705d2f1b",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/regime.json",
+      "bytes": 548,
+      "sha256": "d48265034c224f40b77bbf3725ec5a64aa76597048cb585a06c9461255fd89ec",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/registration.json",
+      "bytes": 2966,
+      "sha256": "3cca744dccecd81d7a49852bc0f63270470d414d717ec1ae47d0d43b53d5ffed",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/registration_run1_cap60.json",
+      "bytes": 2975,
+      "sha256": "4a32cefae166c8b397252e73ebe7e4a74c25a56de014b2b7e090f636ce0718ae",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/registration_run2_cap500.json",
+      "bytes": 2966,
+      "sha256": "3cca744dccecd81d7a49852bc0f63270470d414d717ec1ae47d0d43b53d5ffed",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/residual_locate.py",
+      "bytes": 3491,
+      "sha256": "48a8da19a7e3d62264a0ee3b361e38d80c7153329f20a5f18a09f6c391231829",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/residual_locate_datum.json",
+      "bytes": 7495,
+      "sha256": "0fb5d00a84f8c271aa297bc73220164dd6eea2349dc1c8a5f5f23667ffa7a752",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/review.json",
+      "bytes": 14744,
+      "sha256": "68b1b0d6010873ce5541c9a5237fc23afa9cd4a83ac82e3f10c053000f22f90e",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scan_coverage_survey.json",
+      "bytes": 1701,
+      "sha256": "f83418d855704aab7a5fee7b286b2363ce9730261d57ca6bc418f101818a30f0",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scan_coverage_survey.py",
+      "bytes": 2147,
+      "sha256": "38ff0972f4269c561a3ac62dfa06d0cea1d6f6daf6032b16482a5256fe220708",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/step_check.json",
+      "bytes": 3089,
+      "sha256": "eb74cec07dc999b72b70eb1dd94c1d6121033d14d0e9d05c6cca79d6592cd994",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/step_check.log",
+      "bytes": 378,
+      "sha256": "b9f8cbf6fbff7fa14b6c5b790105117fcedb5560bd2bd8aec600770faf0eb59b",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/tier1.json",
+      "bytes": 952,
+      "sha256": "3243233785f6776fb372106f50143e7b1cef39dd76f451d2431f977e6095b4c2",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/zones.json",
+      "bytes": 2315,
+      "sha256": "4fc8147f3e9b7dbff7bf80cc81d017ddfb5d42d29d3f76cb4dea8ba7c7f7a4c9",
+      "role": "qa: working file"
+    }
+  ],
+  "excluded": []
+}

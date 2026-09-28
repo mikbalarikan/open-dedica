@@ -1,0 +1,2 @@
+OD-G11_portafilter_datum.step: solids 1 valid True closed [True] naked 0 faces 202 vol 137692.565 | analytic area 95.4% | [('bspline', 16), ('cone', 25), ('cylinder', 30), ('plane', 108), ('revolution', 4), ('sphere', 3), ('torus', 16)]
+OD-G11_portafilter.step: solids 1 valid True closed [True] naked 0 faces 202 vol 137692.565 | analytic area 95.4% | [('bspline', 16), ('cone', 25), ('cylinder', 30), ('plane', 108), ('revolution', 4), ('sphere', 3), ('torus', 16)]

@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "75027a143951617fe658c7f589b186cc1bc0f3710c2d01270e6cab9a36fe2fe1"
+ },
+ "seed": 0,
+ "created": "2026-09-28T06:08:38+00:00",
+ "scan_noise_mm": {
+  "value": 0.034373155090951374,
+  "p95_mm": 0.07097087821709248,
+  "max_mm": 0.11063557386720511,
+  "method": "rms of RANSAC+SVD plane on PCB top face (solder-mask side) (76252 faces)"
+ }
+}

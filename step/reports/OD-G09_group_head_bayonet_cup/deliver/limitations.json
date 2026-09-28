@@ -1,0 +1,173 @@
+{
+ "schema": "stl-re/limitations@1",
+ "part": {
+  "name": "OD-G10_porta_filter_holder",
+  "what_it_is": "Espresso-machine portafilter holder (group-head collar), moulded plastic: a cup with three internal bayonet lugs (stop block, ramped underside, top channel), a stepped shelf with under-lug pockets, a lip ring and a bottom plate with a two-lobed water opening and two screw bosses.",
+  "reference_photo": "input/photos/2.webp"
+ },
+ "method_summary": [
+  "Intake: scan hashed, working copy, noise floor on the lug top pads, coverage map (C1-C6), feature list from mesh and both photos, band regime declared by the owner (baseline-skill plastic), scan-only.",
+  "Datum: lug top pads -> XY at z = 0; outer cup wall axis -> Z; 3-fold lug phase -> clock; tilt measured.",
+  "Measure: r-z and theta-z maps on the full-res scan, per-lug angular extents, line and cylinder fits (bore draft, lug underside edge, concave under-lug floors), photo-inferred plate interior; every value with source and rule in measure/params.json.",
+  "Rebuild: one revolved profile + revolved sectors per gap and per lug + three lug instances at 120 deg pitch + cut tools; build123d, one closed solid, all-analytic faces, datum- and scan-frame STEP.",
+  "Verify in a fresh agent: returned HALT because its own ICP did not converge (gate INVALID). The owner chose to take delivery as is; the verdict stays HALT."
+ ],
+ "limitations": [
+  {
+   "id": "L0",
+   "text": "NO OFFICIAL GRADE. Verdict HALT: the independent ICP did not converge, so the full-res Tier-2 gate is INVALID. The numbers in this README are inspection-only: datum-frame scan to CAD p95 {{gate:deviation_datum_frame.scan_to_cad.p95}} / max {{gate:deviation_datum_frame.scan_to_cad.max}} mm against the p95 {{gate:regime.bands.p95_mm}} / max {{gate:regime.bands.max_mm}} band. Delivered on the owner's explicit override, not because a gate passed.",
+   "rerun_trigger": "tier2_icp.py fixed to exclude the declared CAD-side coverage regions and antiparallel-normal pairs -> re-run verify in a fresh agent",
+   "evidence": "decisions/owner_override_2026-09-28.md; qa/gate.json#registration"
+  },
+  {
+   "id": "L1",
+   "text": "Tier-1 not run (no calipers): tier1 partial, none of the requested dims measured; absent is not passed.",
+   "rerun_trigger": "filled input/MEASUREMENTS.md with caliper readings -> re-run verify",
+   "evidence": "qa/gate.json#tier1; intake/MEASUREMENTS.md"
+  },
+  {
+   "id": "L2",
+   "text": "Absolute scale not caliper-verified (CHK-SCALE not run; units assumed mm).",
+   "rerun_trigger": "one caliper reading of ENV-D (outer cup diameter) and ENV-Z2 -> re-run verify",
+   "evidence": "intake/alignment.json#checks"
+  },
+  {
+   "id": "L3",
+   "text": "Independent ICP did not converge (see verify's diagnosis): unscanned CAD faces pair with the opposite wall with antiparallel normals and pull the registration; the post-ICP numbers are biased and the datum-frame vs post-ICP scan_to_cad p95 differ by more than the band (datum finding reported by verify).",
+   "rerun_trigger": "human decision on the registration protocol, e.g. an ICP that excludes the declared coverage regions -> re-run verify",
+   "evidence": "qa/gate.json#auto_limitations: datum-frame vs post-ICP scan_to_cad p95 differ by 0.728 mm (> band 0.3 mm); qa/icp_diagnose.json"
+  },
+  {
+   "id": "L4",
+   "text": "Coverage: the scan has no underside, no outer wall over theta 38-151 deg, nothing below the scan extent and no plate interior; the CAD surfaces there are not evidence-backed and the observable CAD to scan number is dominated by coverage, not geometry.",
+   "rerun_trigger": "a scan with the C6 sector, the underside and the under-lug region covered -> re-run verify",
+   "evidence": "intake/INTAKE_CARD.md#3; qa/gate.json#limitations L4"
+  },
+  {
+   "id": "L5",
+   "text": "Photo-inferred and assumed geometry is not graded: plate keyhole, bosses and side hole (photo-only), plate thickness, lower wall, lug undersides and stop radial depth (hidden).",
+   "rerun_trigger": "caliper readings F-KEY, F-BOSS, F-PLATE, F-LUGT, F-STOP or a photo with a scale -> re-run verify",
+   "evidence": "measure/params.json (photo-inferred / assumed rows)"
+  },
+  {
+   "id": "L6",
+   "text": "Datum audit (report-only): axis and origin agree with the builder; the 3-fold Fourier clock differs by {{gate:datum_audit.angle_deg}} deg overall and is region-sensitive on this part.",
+   "rerun_trigger": "a clock datum on a named flat face (e.g. a lug stop face) agreed with the owner -> re-run datum audit",
+   "evidence": "qa/datum_audit.json; qa/datum_audit_clock_sens.json"
+  },
+  {
+   "id": "L7",
+   "text": "Full resolution is an agent declaration, not an owner statement.",
+   "rerun_trigger": "owner says the upload was decimated -> re-run verify on the original",
+   "evidence": "DECISIONS.md OTHER 2026-09-28"
+  },
+  {
+   "id": "L8",
+   "text": "Unenumerated feature: photo 1 shows a small rectangular window at the base of the outer cup wall (flange junction), below the scanned region; it is not modelled.",
+   "rerun_trigger": "a scan or caliper reading of the lower wall -> add the feature and re-run",
+   "evidence": "qa/gate.json#checks.CHK-ENUM"
+  },
+  {
+   "id": "L9",
+   "text": "Builder iterations inside it1 were steered by a builder self-check against the same scan (consistency check, not independent evidence); the independent datum-frame number is the one quoted above.",
+   "rerun_trigger": "a converged independent ICP gate -> quote only the official numbers",
+   "evidence": "build/MODELING_PLAN.md#8; qa/gate.json#checks.CHK-CIRCULAR"
+  }
+ ],
+ "assumptions": [
+  {
+   "text": "The inner stepped ring (shelf, pockets, lip) is modelled as part of the one solid; it may be a separate rubber gasket.",
+   "source": "assumed",
+   "evidence": "intake/INTAKE_CARD.md#8"
+  },
+  {
+   "text": "Outer wall continues as the same cylinder over the unscanned sector; the solid is closed by a flat face at the scan extent (not a real face).",
+   "source": "assumed",
+   "evidence": "measure/params.json#Z_BOTTOM"
+  }
+ ],
+ "claim_boundary": {
+  "not_fit_for": [
+   "Anything that needs an official deviation grade: the gate is INVALID (HALT).",
+   "Manufacture, tooling or fit-critical use (bayonet engagement): scale and all dimensions are uncalipered; lug undersides, stop depth, plate underside and everything below the plate are assumed; the plate keyhole, bosses and holes are photo-inferred.",
+   "Evidence of the outer wall over theta 38-151 deg or below the scan extent (unscanned)."
+  ],
+  "fit_for": [
+   "A design-intent parametric starting model (build/model.py + measure/params.json) to be refined with calipers and a fuller scan.",
+   "Visual and packaging studies of the scanned upper cup region."
+  ]
+ },
+ "repro_commands": [
+  "cd build && python3 model.py --params ../measure/params.json --alignment ../intake/alignment.json --out . --part OD-G10_porta_filter_holder --scripts <skills>/stl-re-rebuild-build123d/scripts"
+ ],
+ "feature_tree": [
+  {
+   "id": "F01",
+   "feature": "revolved cup profile (outer wall, stepped rim, drafted bore, plate, lower wall)",
+   "params": [
+    "WALL_R_OUT",
+    "RIM_LIP_TOP_Z",
+    "BORE_R_Z0",
+    "BORE_DRAFT_DEG",
+    "FLOOR_Z",
+    "PLATE_T"
+   ]
+  },
+  {
+   "id": "F02",
+   "feature": "3 gap sectors: shelf per gap + lip with fitted edge rounding",
+   "params": [
+    "SHELF_Z",
+    "SHELF_EDGE_FILLET_R",
+    "LIP_UPPER_R",
+    "LIP_LOWER_R"
+   ]
+  },
+  {
+   "id": "F03",
+   "feature": "3 lug sectors cut by fitted concave cylinders (pocket floors)",
+   "params": [
+    "VALLEY_OUTER_ZMIN",
+    "POCKET_INNER_ZMIN",
+    "POCKET_RISER_R"
+   ]
+  },
+  {
+   "id": "F04",
+   "feature": "3 bayonet lugs: stop block, two underside planes, channel",
+   "params": [
+    "LUG1_START_DEG",
+    "LUG_SPAN_DEG",
+    "LUG_INNER_R",
+    "STOP_END_OFF_DEG",
+    "RAMP_START_OFF_DEG"
+   ]
+  },
+  {
+   "id": "F05",
+   "feature": "6 rim notches",
+   "params": [
+    "NOTCH1_START_OFF_DEG",
+    "NOTCH2_START_OFF_DEG",
+    "NOTCH_WIDTH_DEG"
+   ]
+  },
+  {
+   "id": "F06",
+   "feature": "bore recess + groove behind each lug",
+   "params": [
+    "BORE_RECESS_R",
+    "GROOVE_BOTTOM_Z"
+   ]
+  },
+  {
+   "id": "F07",
+   "feature": "plate keyhole, bosses, holes (photo-inferred)",
+   "params": [
+    "KEY_CENTRAL_R",
+    "BOSS_PCR",
+    "SIDE_HOLE_D"
+   ]
+  }
+ ]
+}

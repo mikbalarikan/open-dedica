@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "3a3c4c70e8bad48800631309cb53ac669373b936c0051b3674f1660806877532"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:41:15+00:00",
+ "scan_noise_mm": {
+  "value": 0.03534386944190085,
+  "p95_mm": 0.07099953813494106,
+  "max_mm": 0.10057693417683142,
+  "method": "rms of RANSAC+SVD plane on step25 (2574 faces)"
+ }
+}

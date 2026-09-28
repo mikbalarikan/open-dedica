@@ -1,0 +1,34 @@
+{
+ "schema": "stl-re/datum_crosscheck@1",
+ "tool": "qa/datum_crosscheck.py (run-local)",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "75cedf513bc86fcf51dfc22194a93a93f12857925e45854a095752be6f57c5e9",
+  "intake/alignment.json": "17596743e9e2f8950aa01f5cf943f26bbeeebaea6fb411191c29e6622dffc292"
+ },
+ "seed": null,
+ "created": "2026-09-28T08:58:14+00:00",
+ "rod_taper_section_axis": {
+  "stations": 33,
+  "tilt_vs_datum_Z_deg": 0.04279324177558355,
+  "tilt_dir_deg": 25.8420821666142,
+  "axis_xy_at_z0_mm": [
+   -0.026896788757116076,
+   -0.020861975627074106
+  ],
+  "offset_at_z0_mm": 0.03403908448400984,
+  "station_rms_median_mm": 0.018152548975226012
+ },
+ "tube_clock": {
+  "faces": 6034,
+  "azimuth_deg_in_datum": -0.560842638140132,
+  "elevation_deg": -9.091893722062698,
+  "radius_mm": 2.987395560844938,
+  "point": [
+   27.0202396661553,
+   0.3713527822746595,
+   -13.31475798893533
+  ],
+  "note": "builder rule: this azimuth -> 0 deg. A non-zero value is the clock disagreement (report-only)."
+ }
+}

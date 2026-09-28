@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "7f753ac456f5a05e3db88fce55298236f84009fc96c4a10f73ffd5625c0c9c0d"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:05:20+00:00",
+ "scan_noise_mm": {
+  "value": 0.04086956874051109,
+  "p95_mm": 0.08244773086857064,
+  "max_mm": 0.10259001213779265,
+  "method": "rms of RANSAC+SVD plane on flange top face (stadium plate top between/around the cups) (23812 faces)"
+ }
+}

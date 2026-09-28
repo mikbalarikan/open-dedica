@@ -1,0 +1,987 @@
+{
+ "schema": "stl-re/params.json@1",
+ "tool": "measure/src/build_params.py",
+ "tool_version": "run-local@1",
+ "inputs": {
+  "input/scan.stl": "94adb6866780b8cdc771dad5cb006d218143b05fd55b6032780e6b2b7b7301f3",
+  "intake/alignment.json": "f17c3c04898f9354b69f4699e22944fb9dfbbfb40c0480315c6a0fa3d13608c4",
+  "input/photos/1.webp": "bc5cac895501d7462c0161918a4e85c1154b37ef62b6f4b47309343caded5ed5",
+  "input/photos/2.webp": "961286a0acff3ef2c09cbdf2ed6a4513f33d45045212783be493159929e33c07"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:17:01+00:00",
+ "part": "OD-G10_porta_filter_holder",
+ "frame": "datum frame of intake/alignment.json: z = 0 on the bayonet lug top pads (+z toward the cup mouth), axis = outer cup wall, lug 1 near +X (fourier_mass clock 34.76 deg); theta CCW about +Z from +X",
+ "scan_noise_mm": 0.040451104818123,
+ "params": {
+  "WALL_R_OUT": {
+   "value": 40.11,
+   "unit": "mm",
+   "measured": "40.067..40.156",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median r of outer-wall points per 1 mm z bin, z -28..+1 (rz_profile.py); one cylinder, no resolvable draft",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/rz_profile.json#outer_wall_r_vs_z",
+   "critical": true,
+   "rerun_trigger": "caliper reading ENV-D"
+  },
+  "Z_BOTTOM": {
+   "value": -27.835,
+   "unit": "mm",
+   "measured": -27.835,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "lowest scan point (alignment.json bounds_aligned); scan truncation, the CAD closes the solid here",
+   "uncertainty_mm": 0.040451104818123,
+   "evidence": "intake/alignment.json#bounds_aligned",
+   "critical": false,
+   "note": "closure face at the scan extent (coverage C2), not a real part face"
+  },
+  "RIM_LIP_TOP_Z": {
+   "value": 3.298,
+   "unit": "mm",
+   "measured": 3.298,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of up-facing faces r 37.4-38.2 (levels.py)",
+   "uncertainty_mm": 0.040451104818123,
+   "evidence": "measure/figures/levels.json#rim_lip_top",
+   "critical": false
+  },
+  "RIM_LIP_OUTER_R": {
+   "value": 38.5,
+   "unit": "mm",
+   "measured": "38.422..38.72",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "lip top p99 radius vs ledge p1 radius, gap sectors (misc_fits.py)",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/misc_fits.json",
+   "critical": false
+  },
+  "RIM_LEDGE_Z_AT_38p5": {
+   "value": 2.618,
+   "unit": "mm",
+   "measured": 2.618,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit z(r) of up faces z 2..2.8, r 38..40, gap sectors",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/misc_fits.json#rim_ledge_line_z_vs_r",
+   "critical": false
+  },
+  "RIM_LEDGE_Z_AT_39p8": {
+   "value": 2.348,
+   "unit": "mm",
+   "measured": 2.348,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same line fit",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/misc_fits.json#rim_ledge_line_z_vs_r",
+   "critical": false
+  },
+  "RIM_OUTER_FILLET_R": {
+   "value": 0.4,
+   "unit": "mm",
+   "measured": "0.3..0.5",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "read from gap-sector r-z scatter at the outer rim corner",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/prof_rim.png",
+   "critical": false
+  },
+  "RIM_LIP_FILLET_R": {
+   "value": 0.3,
+   "unit": "mm",
+   "measured": "0.2..0.4",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "read from gap-sector r-z scatter at the lip corners",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/prof_rim.png",
+   "critical": false
+  },
+  "BORE_R_Z0": {
+   "value": 37.074,
+   "unit": "mm",
+   "measured": 37.074,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r(z) of bore faces z -13.5..2.5 in gap sectors, value at z 0",
+   "uncertainty_mm": 0.0815,
+   "evidence": "measure/figures/misc_fits.json#bore_gap_line",
+   "critical": true,
+   "rerun_trigger": "caliper reading F-BORE"
+  },
+  "BORE_DRAFT_DEG": {
+   "value": 0.645,
+   "unit": "deg",
+   "measured": 0.645,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same line fit (opens toward +z)",
+   "uncertainty_mm": 0.0815,
+   "evidence": "measure/figures/misc_fits.json#bore_gap_line",
+   "critical": false
+  },
+  "SHELF_Z": {
+   "value": [
+    -14.101,
+    -13.44,
+    -14.233
+   ],
+   "unit": "mm",
+   "measured": [
+    -14.101,
+    -13.44,
+    -14.233
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "per-gap median z of up faces r 32.5-36.5 (gap k follows lug k)",
+   "uncertainty_mm": 0.040451104818123,
+   "evidence": "measure/figures/instances.json#gaps",
+   "critical": false,
+   "note": "per-instance levels: gap 2 is 0.7 mm above gaps 1 and 3 (beyond noise); kept, not symmetrised"
+  },
+  "SHELF_EDGE_FILLET_R": {
+   "value": [
+    2.426,
+    2.483,
+    1.961
+   ],
+   "unit": "mm",
+   "measured": [
+    2.426,
+    2.483,
+    1.961
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "least-squares arc tangent to the per-gap shelf plane and the lip wall (LIP_UPPER_R), gap-sector points",
+   "uncertainty_mm": 0.13,
+   "evidence": "measure/figures/valley_fit.json#shelf_edge",
+   "critical": false,
+   "note": "it1 draft read R1.0 by eye from a profile plot; the builder self-check showed 0.5-0.6 mm misfit there; replaced by this fit (change log)"
+  },
+  "LIP_UPPER_R": {
+   "value": 30.82,
+   "unit": "mm",
+   "measured": "30.742..30.936",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median r per 0.25 mm z bin, gap sectors, z -17.7..-15.6",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/rz_profile.json#lip_gap_r_vs_z",
+   "critical": false
+  },
+  "LIP_LOWER_R": {
+   "value": 31.33,
+   "unit": "mm",
+   "measured": "31.307..31.362",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median r per 0.25 mm z bin, gap sectors, z -19.5..-18.2",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/rz_profile.json#lip_gap_r_vs_z",
+   "critical": false
+  },
+  "LIP_STEP_Z": {
+   "value": -17.9,
+   "unit": "mm",
+   "measured": "-18.1..-17.75",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "z where the gap-sector lip radius steps from ~30.9 to ~31.3",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/rz_profile.json#lip_gap_r_vs_z",
+   "critical": false
+  },
+  "LIP_LUG_R": {
+   "value": 30.74,
+   "unit": "mm",
+   "measured": "30.716..30.757",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median r per 0.25 mm z bin, lug sectors, z -18.8..-17.2",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/rz_profile.json#lip_lug_r_vs_z",
+   "critical": false
+  },
+  "FLOOR_Z": {
+   "value": -19.937,
+   "unit": "mm",
+   "measured": -19.937,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of up faces r 24.5-30 (plate top)",
+   "uncertainty_mm": 0.040451104818123,
+   "evidence": "measure/figures/instances.json#floor_z_p50",
+   "critical": true,
+   "rerun_trigger": "depth reading ENV-Z2"
+  },
+  "PLATE_T": {
+   "value": 2.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "no scan of the underside (coverage C1); photo 1 keyhole edge suggests ~2-3 mm",
+   "uncertainty_mm": 1.0,
+   "evidence": "input/photos/1.webp",
+   "critical": false,
+   "note": "confirm with F-PLATE"
+  },
+  "LOWER_WALL_R_IN": {
+   "value": 37.0,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "below the plate the cup wall is assumed to continue at the bore radius to the scan extent",
+   "uncertainty_mm": 1.0,
+   "evidence": "intake/INTAKE_CARD.md#3",
+   "critical": false,
+   "note": "not scanned (C1, C2)"
+  },
+  "LUG_COUNT": {
+   "value": 3,
+   "unit": "count",
+   "measured": 3,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "pattern_count.py mass signal, r 31.2-32.4, 3 stations z -4.5/-3.5/-2.0, FFT rotational order + residual local minimum",
+   "uncertainty_mm": 0,
+   "evidence": "measure/figures/count_lugs.json",
+   "critical": false
+  },
+  "LUG1_START_DEG": {
+   "value": 336.0,
+   "unit": "deg",
+   "measured": 336.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "first 0.5 deg bin of lug top faces (z 0, r 31.9-34), lugs.py",
+   "uncertainty_mm": 0.25,
+   "evidence": "measure/figures/lugs.json#lug_top",
+   "critical": false
+  },
+  "LUG_PITCH_DEG": {
+   "value": 120.0,
+   "unit": "deg",
+   "measured": [
+    120.0,
+    120.0,
+    120.0
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "differences of lug start angles",
+   "uncertainty_mm": 0.25,
+   "evidence": "measure/figures/lugs.json#lug_top",
+   "critical": false,
+   "scatter_mm": 0.0,
+   "scatter_note": "starts 336/96/216 deg at 0.5 deg bin resolution: 120 deg pitch exactly"
+  },
+  "LUG_SPAN_DEG": {
+   "value": 54.0,
+   "unit": "deg",
+   "measured": [
+    54.0,
+    53.5,
+    54.0
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "lug top angular extent per lug",
+   "uncertainty_mm": 0.25,
+   "evidence": "measure/figures/lugs.json#lugs",
+   "critical": false,
+   "scatter_mm": 0.0,
+   "scatter_note": "53.5/54/54 deg: 0.5 deg = one bin; equal by intent (3-fold bayonet)"
+  },
+  "LUG_INNER_R": {
+   "value": 31.682,
+   "unit": "mm",
+   "measured": 31.682,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "IRLS circle through the inner faces of all 3 lugs (z -5..-1, dtheta 8..40); centre offset (0.04, 0.19) from the datum axis",
+   "uncertainty_mm": 0.0487,
+   "evidence": "measure/figures/instances.json#lug_inner_faces_circle",
+   "critical": true,
+   "rerun_trigger": "caliper reading F-LUG",
+   "note": "per-lug medians 31.695/31.842/31.490 differ because the lug ring sits 0.19 mm off the outer-wall axis; modelled coaxial (simplification)"
+  },
+  "CHANNEL_INNER_R": {
+   "value": 34.455,
+   "unit": "mm",
+   "measured": [
+    34.436,
+    34.623,
+    34.305
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "median r of the channel inner wall per lug (vertical faces r 33.8-35.2, z -2.7..-0.5)",
+   "uncertainty_mm": 0.16,
+   "evidence": "measure/figures/lugs.json#lugs",
+   "critical": false
+  },
+  "CHANNEL_Z": {
+   "value": -2.911,
+   "unit": "mm",
+   "measured": -2.911,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of up faces r 34.8-36.8, z -3.6..-2.2",
+   "uncertainty_mm": 0.040451104818123,
+   "evidence": "measure/figures/levels.json#lug_channel",
+   "critical": false
+  },
+  "CHANNEL_START_OFF_DEG": {
+   "value": 3.83,
+   "unit": "deg",
+   "measured": [
+    4.0,
+    3.0,
+    4.5
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "channel floor first bin minus lug start",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/lugs.json#channel_floor",
+   "critical": false
+  },
+  "CHANNEL_END_OFF_DEG": {
+   "value": 44.5,
+   "unit": "deg",
+   "measured": [
+    43.5,
+    45.0,
+    45.0
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "channel floor last bin minus lug start",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/lugs.json#channel_floor",
+   "critical": false
+  },
+  "STOP_END_OFF_DEG": {
+   "value": 5.76,
+   "unit": "deg",
+   "measured": [
+    5.2,
+    6.54,
+    5.54
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "p99 of theta-offset of inner-face points below z -8 (stop face), per lug",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/lugs.json#lugs",
+   "critical": false
+  },
+  "STOP_BOTTOM_Z": {
+   "value": -10.524,
+   "unit": "mm",
+   "measured": [
+    -10.663,
+    -10.338,
+    -10.57
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "mean inner-face lower edge (1st pct) in the stop bins, per lug",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/lugs.json#lugs",
+   "critical": false
+  },
+  "STOP_ROOT_FILLET_R": {
+   "value": 1.0,
+   "unit": "mm",
+   "measured": "0.8..1.2",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "concave rounding between the stop bottom and the recessed bore wall, read from the r-z scatter at the stop start faces (lugs 1-2)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/prof_stop_start.png",
+   "critical": false,
+   "note": "added after the builder self-check showed the corner (0.8 mm) unmodelled"
+  },
+  "UNDERSIDE_Z_AT_7": {
+   "value": -6.574,
+   "unit": "mm",
+   "measured": -6.574,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of inner-face lower edge vs dtheta 9..37 (3 lugs pooled), evaluated at +7",
+   "uncertainty_mm": 0.11054358633461202,
+   "evidence": "measure/figures/underside_notch.json#underside_shallow",
+   "critical": false,
+   "note": "only the lower EDGE of the underside is scanned (C4); the surface is modelled as a plane through that edge"
+  },
+  "RAMP_START_OFF_DEG": {
+   "value": 41.84,
+   "unit": "deg",
+   "measured": 41.84,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "intersection of the shallow and ramp edge lines",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/underside_notch.json",
+   "critical": false
+  },
+  "UNDERSIDE_Z_AT_RAMP": {
+   "value": -5.588,
+   "unit": "mm",
+   "measured": -5.588,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "shallow line evaluated at the ramp start",
+   "uncertainty_mm": 0.11054358633461202,
+   "evidence": "measure/figures/underside_notch.json#underside_shallow",
+   "critical": false
+  },
+  "RAMP_Z_AT_54": {
+   "value": -1.149,
+   "unit": "mm",
+   "measured": -1.149,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of inner-face lower edge vs dtheta 43..53 (lugs 1-2; lug 3 is a coverage gap there) at +54",
+   "uncertainty_mm": 0.09411471386068898,
+   "evidence": "measure/figures/underside_notch.json#underside_ramp",
+   "critical": false
+  },
+  "POCKET_START_OFF_DEG": {
+   "value": -5.0,
+   "unit": "deg",
+   "measured": [
+    -5.5,
+    -5.0,
+    -4.5
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "pocket inner floor first bin minus lug start",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/lugs.json#pocket_inner_floor",
+   "critical": false
+  },
+  "POCKET_END_OFF_DEG": {
+   "value": 58.5,
+   "unit": "deg",
+   "measured": [
+    58.0,
+    59.0
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "pocket inner floor last bin minus lug start (lug 3 end lies in a coverage gap, excluded)",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/lugs.json#pocket_inner_floor",
+   "critical": false
+  },
+  "VALLEY_OUTER_THETA_C": {
+   "value": [
+    2.14,
+    119.46,
+    250.61
+   ],
+   "unit": "deg",
+   "measured": [
+    2.14,
+    119.46,
+    250.61
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "least-squares (soft_l1) fit of a concave horizontal-axis cylinder to up faces of the outer band r 34.8-36.6 (shelf outer part + pocket outer step), per lug; axis along the radial direction at theta_c",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/valley_fit.json#outer_valley",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "VALLEY_OUTER_ZMIN": {
+   "value": [
+    -15.267,
+    -15.036,
+    -15.085
+   ],
+   "unit": "mm",
+   "measured": [
+    -15.267,
+    -15.036,
+    -15.085
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: lowest z of the cylinder surface",
+   "uncertainty_mm": 0.097,
+   "evidence": "measure/figures/valley_fit.json#outer_valley",
+   "critical": false
+  },
+  "VALLEY_OUTER_RC": {
+   "value": [
+    237.2,
+    209.8,
+    207.5
+   ],
+   "unit": "mm",
+   "measured": [
+    237.2,
+    209.8,
+    207.5
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: cylinder radius",
+   "uncertainty_mm": 0.097,
+   "evidence": "measure/figures/valley_fit.json#outer_valley",
+   "critical": false,
+   "note": "fit rms per lug 0.097, 0.076, 0.072 mm; replaces the it1-draft flat per-lug level (change log)"
+  },
+  "POCKET_INNER_THETA_C": {
+   "value": [
+    1.44,
+    121.63,
+    248.68
+   ],
+   "unit": "deg",
+   "measured": [
+    1.44,
+    121.63,
+    248.68
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "least-squares (soft_l1) fit of a concave horizontal-axis cylinder to up faces of the pocket inner floor r 31.8-34.0, per lug; axis along the radial direction at theta_c",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/valley_fit.json#pocket_inner",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "POCKET_INNER_ZMIN": {
+   "value": [
+    -16.808,
+    -16.665,
+    -16.794
+   ],
+   "unit": "mm",
+   "measured": [
+    -16.808,
+    -16.665,
+    -16.794
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: lowest z of the cylinder surface",
+   "uncertainty_mm": 0.057,
+   "evidence": "measure/figures/valley_fit.json#pocket_inner",
+   "critical": false
+  },
+  "POCKET_INNER_RC": {
+   "value": [
+    209.0,
+    217.8,
+    169.3
+   ],
+   "unit": "mm",
+   "measured": [
+    209.0,
+    217.8,
+    169.3
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: cylinder radius",
+   "uncertainty_mm": 0.057,
+   "evidence": "measure/figures/valley_fit.json#pocket_inner",
+   "critical": false,
+   "note": "fit rms per lug 0.026, 0.034, 0.057 mm; replaces the it1-draft flat per-lug level (change log)"
+  },
+  "BORE_RECESS_R": {
+   "value": 37.379,
+   "unit": "mm",
+   "measured": "37.294..37.508",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median r of vertical faces r 36.9-37.9, z -15..-5 behind lugs 1-2 (lug 3: coverage gap)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/valley_fit.json#bore_recess",
+   "critical": false,
+   "note": "the bore is recessed behind each lug and over the pocket ends (r 37.2-37.46 at dtheta -5..0 and 54..58.5, lugs 1-2); modelled over the pocket span from the groove bottom up to the channel floor"
+  },
+  "POCKET_RISER_R": {
+   "value": 34.391,
+   "unit": "mm",
+   "measured": 34.391,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median r of vertical faces r 33.6-35.2, z -16.3..-15.2, lug sectors",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/misc_fits.json#pocket_riser_r",
+   "critical": false
+  },
+  "GROOVE_R_IN": {
+   "value": 36.7,
+   "unit": "mm",
+   "measured": "36.6..36.8",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "radius where the lug-sector pocket floor starts to drop (groove_lug)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/misc_fits.json#groove_lug",
+   "critical": false
+  },
+  "GROOVE_BOTTOM_Z": {
+   "value": -15.571,
+   "unit": "mm",
+   "measured": [
+    -15.514,
+    -15.577,
+    -15.614,
+    -15.578
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "median z per 0.1 mm r bin, r 36.95-37.3, lug sectors",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/misc_fits.json#groove_lug",
+   "critical": false,
+   "note": "modelled in lug sectors only; gap-sector groove is ~0.2-0.3 deep and not modelled"
+  },
+  "NOTCH1_START_OFF_DEG": {
+   "value": 5.0,
+   "unit": "deg",
+   "measured": [
+    5.0,
+    5.0,
+    5.0
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "rim notch (ledge at lip radius) first bin minus lug start",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/lugs.json#rim_ledge_at_lip_radius",
+   "critical": false
+  },
+  "NOTCH2_START_OFF_DEG": {
+   "value": 34.83,
+   "unit": "deg",
+   "measured": [
+    35.0,
+    34.5,
+    35.0
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "second rim notch first bin minus lug start",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/lugs.json#rim_ledge_at_lip_radius",
+   "critical": false
+  },
+  "NOTCH_WIDTH_DEG": {
+   "value": 7.5,
+   "unit": "deg",
+   "measured": [
+    7.5,
+    7.5,
+    7.5,
+    7.5,
+    7.5,
+    7.5
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "angular width of each of the 6 notches",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/lugs.json#rim_ledge_at_lip_radius",
+   "critical": false
+  },
+  "NOTCH_FLOOR_Z": {
+   "value": 2.515,
+   "unit": "mm",
+   "measured": [
+    2.499,
+    2.55,
+    2.529,
+    2.526,
+    2.497,
+    2.492
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "median z of up faces r 37.3-38.3 inside each notch",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/underside_notch.json#rim_notch_floor_z",
+   "critical": false
+  },
+  "KEY_CENTRAL_R": {
+   "value": 13.0,
+   "unit": "mm",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "mean of top (14.6) and bottom (11.6) edge distance from the plate centre",
+   "uncertainty_mm": 3.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS"
+  },
+  "KEY_LOBE_A_THETA": {
+   "value": 133.0,
+   "unit": "deg",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "left lobe axis, photo angle 180 -> datum",
+   "uncertainty_mm": 10.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS",
+   "frame": "datum frame, theta CCW about +Z from +X (photo angle mapped by lug matching)"
+  },
+  "KEY_LOBE_A_REACH": {
+   "value": 23.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "left lobe end distance (photo 24.0)",
+   "uncertainty_mm": 3.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS"
+  },
+  "KEY_LOBE_A_WIDTH": {
+   "value": 7.2,
+   "unit": "mm",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "left lobe width across",
+   "uncertainty_mm": 3.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS"
+  },
+  "KEY_LOBE_B_THETA": {
+   "value": 310.0,
+   "unit": "deg",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "right lobe axis, photo angle ~0 -> datum",
+   "uncertainty_mm": 10.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS",
+   "frame": "datum frame, theta CCW about +Z from +X (photo angle mapped by lug matching)"
+  },
+  "KEY_LOBE_B_REACH": {
+   "value": 20.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "right lobe end distance",
+   "uncertainty_mm": 3.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS"
+  },
+  "KEY_LOBE_B_WIDTH": {
+   "value": 10.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "right lobe width across",
+   "uncertainty_mm": 3.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS"
+  },
+  "BOSS_THETA_1": {
+   "value": 66.0,
+   "unit": "deg",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "upper-left boss, photo 120 -> datum",
+   "uncertainty_mm": 10.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS",
+   "frame": "datum frame, theta CCW about +Z from +X (photo angle mapped by lug matching)"
+  },
+  "BOSS_PCR": {
+   "value": 20.0,
+   "unit": "mm",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "mean of the two boss distances (21.8, 18.1; perspective)",
+   "uncertainty_mm": 3.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS"
+  },
+  "BOSS_HOLE_D": {
+   "value": 3.4,
+   "unit": "mm",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "bright hole diameter in the boss",
+   "uncertainty_mm": 3.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS"
+  },
+  "BOSS_OD": {
+   "value": 8.0,
+   "unit": "mm",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "outer ring of the boss",
+   "uncertainty_mm": 3.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS"
+  },
+  "SIDE_HOLE_THETA": {
+   "value": 269.0,
+   "unit": "deg",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "bright through-hole next to the lower boss, photo 313 -> datum",
+   "uncertainty_mm": 10.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS",
+   "frame": "datum frame, theta CCW about +Z from +X (photo angle mapped by lug matching)"
+  },
+  "SIDE_HOLE_R": {
+   "value": 20.8,
+   "unit": "mm",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "photo distance 22.3, moved in so the hole edge (r+D/2) stays 0.3 inside the scanned floor edge r_min 24.1 at theta 270 (measure/figures/floor_rmin.json)",
+   "uncertainty_mm": 3.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS"
+  },
+  "SIDE_HOLE_D": {
+   "value": 6.0,
+   "unit": "mm",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "diameter",
+   "uncertainty_mm": 3.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "note": "not scanned (coverage C3); confirm with F-KEY / F-BOSS"
+  },
+  "BOSS_PITCH_DEG": {
+   "value": 180.0,
+   "unit": "deg",
+   "measured": null,
+   "rule": "photo-inferred",
+   "source": "photo-inferred",
+   "estimator": "the two bosses read 178 deg apart after lug matching; intent: opposite",
+   "uncertainty_mm": 10.0,
+   "evidence": "input/photos/2.webp (polar unwrap measure/figures/p2_polar.png, zoom p2_plate.png); photo angle -> datum angle by piecewise-linear lug matching",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "BOSS_H": {
+   "value": 0.6,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "raised boss ring height; photo shows a ring, height not measurable",
+   "uncertainty_mm": 0.5,
+   "evidence": "input/photos/1.webp",
+   "critical": false
+  }
+ },
+ "struck": [],
+ "simplifications": [
+  {
+   "name": "shelf levels",
+   "modelled_as": "one flat per gap at the median",
+   "deviation_cost": "p5..p95 within each gap: [-14.288, -13.928], [-13.735, -13.216], [-14.369, -14.107]"
+  },
+  {
+   "name": "under-lug floors",
+   "modelled_as": "concave horizontal-axis cylinders per lug (inner pocket floor, outer band), fitted",
+   "deviation_cost": "fit rms outer 0.097, 0.076, 0.072; inner 0.026, 0.034, 0.057"
+  },
+  {
+   "name": "floor",
+   "modelled_as": "flat plane at the median",
+   "deviation_cost": "p5..p95 [-20.141, -19.787] (0.24 deg tilt, levels.json#floor)"
+  },
+  {
+   "name": "lug ring coaxial",
+   "modelled_as": "lug faces coaxial with the outer wall",
+   "deviation_cost": "lug ring centre offset 0.19 mm (instances.json#lug_inner_faces_circle); per-lug median r 31.49..31.84"
+  },
+  {
+   "name": "outer wall",
+   "modelled_as": "one cylinder",
+   "deviation_cost": "median r per z bin 40.067..40.156"
+  },
+  {
+   "name": "lug undersides",
+   "modelled_as": "two planes (shallow + ramp) through the fitted lower-edge lines",
+   "deviation_cost": "edge line rms 0.111 / 0.094 mm; surfaces themselves unscanned"
+  },
+  {
+   "name": "gap-sector bore groove",
+   "modelled_as": "not modelled (groove/recess only over the pocket span)",
+   "deviation_cost": "0.2..0.3 mm local (misc_fits.json#groove_gap)"
+  }
+ ],
+ "checks": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "pass",
+   "note": "lugs: FFT order 3 at 3 stations, residual local minimum (count_lugs.json); rim notches 6 = 2 per lug (lugs.json)"
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": false,
+   "result": "pass",
+   "note": "no caliper readings supplied (scan-only); nothing to check"
+  },
+  "CHK-CLUSTER": {
+   "ran": true,
+   "result": "pass",
+   "note": "no material above the rim (z max 3.42) or on the axis; every region in the (r,z)/(theta,z) maps (maps1.png, ztheta.png) maps to F01-F17"
+  },
+  "CHK-FRAME": {
+   "ran": true,
+   "result": "pass",
+   "note": "all angles measured on the full-res scan through alignment.json in this run; none copied from intake"
+  }
+ },
+ "open_questions": [
+  "Is the inner stepped ring (shelf, pockets, lip) a separate rubber gasket? (modelled as one solid)",
+  "Plate interior dimensions (keyhole, bosses, holes) need a caliper or a photo with a scale.",
+  "Shelf/pocket waviness: moulding warp or design?"
+ ]
+}

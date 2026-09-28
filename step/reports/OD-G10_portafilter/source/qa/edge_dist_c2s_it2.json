@@ -1,0 +1,100 @@
+{
+ "cad_to_scan_clusters": [
+  {
+   "cluster": 0,
+   "n": 4811,
+   "dist_to_scan_boundary_p50": 2.97,
+   "frac_within_3mm": 0.51
+  },
+  {
+   "cluster": 1,
+   "n": 4758,
+   "dist_to_scan_boundary_p50": 3.5,
+   "frac_within_3mm": 0.41
+  },
+  {
+   "cluster": 2,
+   "n": 3179,
+   "dist_to_scan_boundary_p50": 2.73,
+   "frac_within_3mm": 0.54
+  },
+  {
+   "cluster": 3,
+   "n": 2215,
+   "dist_to_scan_boundary_p50": 1.78,
+   "frac_within_3mm": 0.87
+  },
+  {
+   "cluster": 4,
+   "n": 112,
+   "dist_to_scan_boundary_p50": 1.15,
+   "frac_within_3mm": 1.0
+  },
+  {
+   "cluster": 5,
+   "n": 109,
+   "dist_to_scan_boundary_p50": 1.84,
+   "frac_within_3mm": 0.77
+  },
+  {
+   "cluster": 6,
+   "n": 102,
+   "dist_to_scan_boundary_p50": 1.21,
+   "frac_within_3mm": 1.0
+  },
+  {
+   "cluster": 7,
+   "n": 72,
+   "dist_to_scan_boundary_p50": 1.14,
+   "frac_within_3mm": 1.0
+  },
+  {
+   "cluster": 8,
+   "n": 67,
+   "dist_to_scan_boundary_p50": 17.76,
+   "frac_within_3mm": 0.0
+  },
+  {
+   "cluster": 9,
+   "n": 67,
+   "dist_to_scan_boundary_p50": 1.65,
+   "frac_within_3mm": 1.0
+  },
+  {
+   "cluster": 10,
+   "n": 56,
+   "dist_to_scan_boundary_p50": 1.05,
+   "frac_within_3mm": 1.0
+  },
+  {
+   "cluster": 11,
+   "n": 44,
+   "dist_to_scan_boundary_p50": 16.61,
+   "frac_within_3mm": 0.0
+  },
+  {
+   "cluster": 12,
+   "n": 37,
+   "dist_to_scan_boundary_p50": 16.46,
+   "frac_within_3mm": 0.0
+  },
+  {
+   "cluster": 13,
+   "n": 34,
+   "dist_to_scan_boundary_p50": 4.37,
+   "frac_within_3mm": 0.0
+  },
+  {
+   "cluster": 14,
+   "n": 31,
+   "dist_to_scan_boundary_p50": 1.14,
+   "frac_within_3mm": 1.0
+  },
+  {
+   "cluster": 15,
+   "n": 28,
+   "dist_to_scan_boundary_p50": 0.94,
+   "frac_within_3mm": 1.0
+  }
+ ]
+}

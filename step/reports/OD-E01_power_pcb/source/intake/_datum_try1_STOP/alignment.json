@@ -1,0 +1,299 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc1d16d6-e29e-5083-93d9-02d5e75eef66/scratchpad/OD-E01/run/intake/work.stl": "75027a143951617fe658c7f589b186cc1bc0f3710c2d01270e6cab9a36fe2fe1",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc1d16d6-e29e-5083-93d9-02d5e75eef66/scratchpad/OD-E01/run/intake/datum_spec.json": "1bd309490428eabecac7313eae8423ad07cfeccd0e56f6b6425b6848116b3cd5",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc1d16d6-e29e-5083-93d9-02d5e75eef66/scratchpad/OD-E01/run/input/scan.stl": "41448c67a63083726a1c7f2288364cfd9445e66204d05ac3bd13a9ba726c5d93",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc1d16d6-e29e-5083-93d9-02d5e75eef66/scratchpad/OD-E01/run/intake/intake.json": "5b8c06b2ac17bccb441e45f91c1ccde6b688363348949a79a321b0103665e61f"
+ },
+ "seed": 0,
+ "created": "2026-09-28T06:10:02+00:00",
+ "status": "STOP",
+ "stop_reasons": [
+  "primary fit rms 0.0342 > noise floor 0.0275"
+ ],
+ "findings": [
+  "secondary circle residual not compared: no noise_secondary measured on a clean circle (plane noise is not comparable to section-circle residuals)"
+ ],
+ "matrix_4x4": [
+  [
+   -0.5177963996070739,
+   -0.7589116091452366,
+   -0.3948924639171267,
+   -41.15028543889336
+  ],
+  [
+   0.23441076996372298,
+   -0.569783740200838,
+   0.7876535280996072,
+   112.51015946970146
+  ],
+  [
+   -0.8227627115268202,
+   0.3152771144681003,
+   0.4729290238647891,
+   128.86810585883833
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.027482246950715945,
+  "method": "rms of RANSAC+SVD plane on top face of the grey X2 film capacitor box (C4), 10.7 mm above the board (1134 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "PCB top face (component side, solder mask)",
+  "why": "the board top is the seating plane of every component and the reference an enclosure / mating part locates the PCB on",
+  "fit_rms_mm": 0.03415346614911914,
+  "fit_max_mm": 0.1100679968309988,
+  "fit_p95_mm": 0.07034317547580574,
+  "n_faces": 76112,
+  "area_mm2": 3369.739392828771,
+  "fit_untrimmed": {
+   "rms": 0.0497914033104625,
+   "p95": 0.11250556816244073,
+   "max": 0.2539199104763197,
+   "n_faces": 82201
+  },
+  "inlier_frac": 0.7890901570540504,
+  "normal_raw": [
+   -0.8227627115268203,
+   0.3152771144681003,
+   0.47292902386478913
+  ],
+  "centroid_raw": [
+   26.59270770544748,
+   -28.122939936107777,
+   -207.47742949881138
+  ],
+  "material_side": "-z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.7890901570540504
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "mounting hole H1 (the corner hole with a fully scanned wall)",
+  "why": "mounting holes locate the PCB in the enclosure",
+  "fit_rms_mm": 0.02049998451780899,
+  "fit_max_mm": 0.20076873317613164,
+  "fit_metric": "median / worst circle residual over stations (kasa)",
+  "stations": 11,
+  "r_by_feature": {
+   "mounting hole H1 (the corner hole with a fully scanned wall)": {
+    "n": 11,
+    "r_mean": 2.0217865167889966,
+    "r_std": 0.016415816237935706
+   }
+  },
+  "centre_std_mm": [
+   12.686869570927739,
+   7.901635900569741
+  ],
+  "station_detail": [
+   {
+    "z": -1.3,
+    "cx": -117.24561,
+    "cy": 24.62136,
+    "r": 2.03297,
+    "rms": 0.02475,
+    "max": 0.09734,
+    "n": 109,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   },
+   {
+    "z": -1.2,
+    "cx": -117.24443,
+    "cy": 24.62445,
+    "r": 2.03189,
+    "rms": 0.0212,
+    "max": 0.07734,
+    "n": 108,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   },
+   {
+    "z": -1.1,
+    "cx": -117.24234,
+    "cy": 24.62555,
+    "r": 2.02792,
+    "rms": 0.01737,
+    "max": 0.05249,
+    "n": 111,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   },
+   {
+    "z": -1.0,
+    "cx": -117.24031,
+    "cy": 24.63123,
+    "r": 2.02681,
+    "rms": 0.01191,
+    "max": 0.04303,
+    "n": 113,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   },
+   {
+    "z": -0.9,
+    "cx": -117.24016,
+    "cy": 24.63574,
+    "r": 2.02336,
+    "rms": 0.01297,
+    "max": 0.03705,
+    "n": 117,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   },
+   {
+    "z": -0.8,
+    "cx": -117.23884,
+    "cy": 24.63354,
+    "r": 2.01757,
+    "rms": 0.01463,
+    "max": 0.04269,
+    "n": 118,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   },
+   {
+    "z": -0.7,
+    "cx": -117.23617,
+    "cy": 24.6298,
+    "r": 2.01202,
+    "rms": 0.01725,
+    "max": 0.06362,
+    "n": 118,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   },
+   {
+    "z": -0.6,
+    "cx": -117.23398,
+    "cy": 24.62807,
+    "r": 2.01024,
+    "rms": 0.0205,
+    "max": 0.08473,
+    "n": 124,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   },
+   {
+    "z": -0.5,
+    "cx": -117.2299,
+    "cy": 24.62699,
+    "r": 2.01759,
+    "rms": 0.02351,
+    "max": 0.08553,
+    "n": 129,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   },
+   {
+    "z": -0.4,
+    "cx": -117.22358,
+    "cy": 24.63073,
+    "r": 2.05427,
+    "rms": 0.02419,
+    "max": 0.06181,
+    "n": 149,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   },
+   {
+    "z": -0.3,
+    "cx": -161.36887,
+    "cy": 52.11463,
+    "r": 1.98501,
+    "rms": 0.05645,
+    "max": 0.20077,
+    "n": 111,
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)"
+   }
+  ],
+  "noise_ref": null
+ },
+ "clock": {
+  "rule": "plane_normal: PCB short edge on the far side from H1 (edge face outward normal) -> +X",
+  "angle_deg": 121.95401779863876,
+  "why": "board outline edges are the second locating reference; the long board axis runs along +X",
+  "detail": {
+   "plane_fit_rms_mm": 0.029660821764897823,
+   "plane_fit_max_mm": 0.09213739248228892,
+   "plane_n_faces": 128,
+   "plane_out_of_perpendicular_deg": 7.246983663388477
+  }
+ },
+ "tilt_deg": {
+  "value": 87.5758276679969,
+  "stderr_deg": 84.41949826928564,
+  "direction_deg": 148.0536734720708,
+  "method": "common slope, per-feature intercept, 11 stations over 1 feature(s), z -1.300..-0.300 vs frame Z",
+  "z_span_mm": 1.0,
+  "per_feature": [
+   {
+    "feature": "mounting hole H1 (the corner hole with a fully scanned wall)",
+    "n_stations": 11,
+    "value": 87.5758276679969,
+    "stderr_deg": 84.08331757376799,
+    "direction_deg": 148.0536734720708,
+    "z_span_mm": 1.0
+   }
+  ],
+  "resolvable": null
+ },
+ "origin": {
+  "definition": "mounting hole H1 axis \u2229 PCB top face"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": 0.001096936751347736,
+   "tol": 0.027482246950715945,
+   "tol_source": "measured noise floor",
+   "ok": true
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -5.8254795028050035,
+   -56.45646128839573,
+   -2.1112845679206482
+  ],
+  [
+   96.02577331106305,
+   4.3547308312260515,
+   25.463462132957698
+  ]
+ ],
+ "extents_aligned": [
+  101.85125281386806,
+  60.81119211962178,
+  27.574746700878347
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc1d16d6-e29e-5083-93d9-02d5e75eef66/scratchpad/OD-E01/run/intake/aligned_work.stl",
+  "sha256": "241f406d8ce0888ea67c0a6765badb9e603018120c90059fbd5e5d4c19827251"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "finding",
+   "note": "common slope, per-feature intercept, 11 stations over 1 feature(s), z -1.300..-0.300 vs frame Z; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": true,
+   "result": "finding",
+   "note": "FLAG: no calipers (scan-only, DECISIONS.md MEASUREMENTS); units assumed mm, scale unverified, none applied"
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

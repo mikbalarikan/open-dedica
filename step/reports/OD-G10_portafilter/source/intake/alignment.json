@@ -1,0 +1,413 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc506760-1589-506d-be19-e4c0f022b577/scratchpad/jobs/OD-G11/run/intake/work.stl": "4a08aeaa5190e02be876e6446afe66675bbfdefc2df3f6b888730633d799adc5",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc506760-1589-506d-be19-e4c0f022b577/scratchpad/jobs/OD-G11/run/intake/datum_spec.json": "d38172837e868bb30b9c54efd7e28dc7da56eb7080ec83a23eca2f588028e2a7",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc506760-1589-506d-be19-e4c0f022b577/scratchpad/jobs/OD-G11/run/input/scan.stl": "9eb34045f9be50df2320a989f96fc1135a7a75e1d4cc9ac673b2e1bfce0c30aa",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc506760-1589-506d-be19-e4c0f022b577/scratchpad/jobs/OD-G11/run/intake/intake.json": "8502997fbbee5db3aa5790d9f3c0bc3c9197b44f5b24fd2c8605d31b89541875"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:50:21+00:00",
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [
+  "primary STOP check is self-referential (noise measured on the primary itself)"
+ ],
+ "matrix_4x4": [
+  [
+   -0.783297572695653,
+   0.41689211840904156,
+   -0.46113541852423323,
+   -52.41788385303689
+  ],
+  [
+   0.3457255477668875,
+   0.9086384754467447,
+   0.23420069717893896,
+   25.86111577843189
+  ],
+  [
+   0.516641808442158,
+   0.024022542459889086,
+   -0.8558645682719779,
+   -232.22697066573954
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.02244846109291158,
+  "method": "rms of RANSAC+SVD plane on cup rim end face (sealing face, incl. lug tops in the same plane) (3756 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "cup rim end face (sealing face, incl. lug tops in the same plane)",
+  "why": "the rim end face seats against the group-head gasket; it is the functional axial datum of a portafilter",
+  "fit_rms_mm": 0.02244846109291158,
+  "fit_max_mm": 0.09757281466143322,
+  "fit_p95_mm": 0.044095577377531,
+  "n_faces": 3756,
+  "area_mm2": 515.9833555608964,
+  "fit_untrimmed": {
+   "rms": 0.023364080529481655,
+   "p95": 0.04517569666039119,
+   "max": 0.14003304755574317,
+   "n_faces": 3768
+  },
+  "inlier_frac": 0.9745222929936306,
+  "normal_raw": [
+   0.5166418084421579,
+   0.024022542459889083,
+   -0.8558645682719779
+  ],
+  "centroid_raw": [
+   72.01341594023033,
+   -0.6212953583598223,
+   -227.88272998635094
+  ],
+  "material_side": "-z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.9745222929936306
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "cup outer wall (drafted) + cup rim bore above the basket flange",
+  "why": "the cast cup is turned about this axis; lugs and handle sit on it / coaxial bore of the same casting (tilt cross-check)",
+  "fit_rms_mm": 0.02690335188982498,
+  "fit_max_mm": 0.1265730881880991,
+  "fit_metric": "median / worst circle residual over stations (wall_faces,wall_faces)",
+  "stations": 15,
+  "r_by_feature": {
+   "cup outer wall (drafted)": {
+    "n": 12,
+    "r_mean": 29.480334745525372,
+    "r_std": 0.3054626214829205
+   },
+   "cup rim bore above the basket flange": {
+    "n": 3,
+    "r_mean": 27.52950848165463,
+    "r_std": 0.08417550627347996
+   }
+  },
+  "centre_std_mm": [
+   0.05158739279632829,
+   0.09287830661856808
+  ],
+  "station_detail": [
+   {
+    "z": -35.0,
+    "cx": 58.43671,
+    "cy": -0.86966,
+    "r": 29.0041,
+    "rms": 0.0252,
+    "max": 0.05251,
+    "p95": 0.04283,
+    "n": 245,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -33.0,
+    "cx": 58.43419,
+    "cy": -0.89183,
+    "r": 29.08835,
+    "rms": 0.0269,
+    "max": 0.0576,
+    "p95": 0.04542,
+    "n": 224,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -31.0,
+    "cx": 58.42404,
+    "cy": -0.92943,
+    "r": 29.16985,
+    "rms": 0.02708,
+    "max": 0.06575,
+    "p95": 0.05106,
+    "n": 215,
+    "iterations": 8,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -29.0,
+    "cx": 58.44218,
+    "cy": -0.84377,
+    "r": 29.2667,
+    "rms": 0.02406,
+    "max": 0.06071,
+    "p95": 0.0475,
+    "n": 218,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -27.0,
+    "cx": 58.44401,
+    "cy": -0.85227,
+    "r": 29.34606,
+    "rms": 0.02481,
+    "max": 0.05824,
+    "p95": 0.04567,
+    "n": 225,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -25.0,
+    "cx": 58.44143,
+    "cy": -0.88786,
+    "r": 29.42309,
+    "rms": 0.02621,
+    "max": 0.05771,
+    "p95": 0.04612,
+    "n": 215,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -23.0,
+    "cx": 58.44175,
+    "cy": -0.88653,
+    "r": 29.51187,
+    "rms": 0.02795,
+    "max": 0.06528,
+    "p95": 0.05218,
+    "n": 246,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -21.0,
+    "cx": 58.44322,
+    "cy": -0.89474,
+    "r": 29.59941,
+    "rms": 0.02768,
+    "max": 0.06494,
+    "p95": 0.04866,
+    "n": 235,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -19.0,
+    "cx": 58.45069,
+    "cy": -0.85384,
+    "r": 29.69458,
+    "rms": 0.02538,
+    "max": 0.06059,
+    "p95": 0.04442,
+    "n": 224,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -17.0,
+    "cx": 58.45283,
+    "cy": -0.83124,
+    "r": 29.78878,
+    "rms": 0.0248,
+    "max": 0.06754,
+    "p95": 0.04576,
+    "n": 228,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -15.0,
+    "cx": 58.45531,
+    "cy": -0.79833,
+    "r": 29.885,
+    "rms": 0.02891,
+    "max": 0.06136,
+    "p95": 0.04866,
+    "n": 268,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -13.0,
+    "cx": 58.46184,
+    "cy": -0.74437,
+    "r": 29.98622,
+    "rms": 0.02547,
+    "max": 0.05512,
+    "p95": 0.04684,
+    "n": 274,
+    "iterations": 7,
+    "feature": "cup outer wall (drafted)"
+   },
+   {
+    "z": -9.85,
+    "cx": 58.54163,
+    "cy": -0.83053,
+    "r": 27.41227,
+    "rms": 0.03139,
+    "max": 0.10732,
+    "p95": 0.07573,
+    "n": 122,
+    "iterations": 7,
+    "feature": "cup rim bore above the basket flange"
+   },
+   {
+    "z": -7.95,
+    "cx": 58.62421,
+    "cy": -0.53419,
+    "r": 27.57027,
+    "rms": 0.03938,
+    "max": 0.08045,
+    "p95": 0.06743,
+    "n": 89,
+    "iterations": 9,
+    "feature": "cup rim bore above the basket flange"
+   },
+   {
+    "z": -6.05,
+    "cx": 58.51349,
+    "cy": -0.91448,
+    "r": 27.60599,
+    "rms": 0.03771,
+    "max": 0.12657,
+    "p95": 0.09307,
+    "n": 99,
+    "iterations": 9,
+    "feature": "cup rim bore above the basket flange"
+   }
+  ],
+  "noise_ref": {
+   "value": 0.05776920280081951,
+   "p95_mm": 0.11715167434974205,
+   "max_mm": 0.19904310899814348,
+   "method": "rms of IRLS circle on rim bore circle z=-7 at z=-7.0 (n=786)",
+   "circle": {
+    "cx": 0.1269654419332555,
+    "cy": 0.04364037880472438,
+    "r": 27.566573773109532,
+    "rms": 0.05776920280081951,
+    "max": 0.19904310899814348,
+    "p95": 0.11715167434974205,
+    "n": 786,
+    "iterations": 9
+   }
+  }
+ },
+ "clock": {
+  "rule": "plane_normal: handle end-cap flat normal -> +X",
+  "angle_deg": -25.42308130904137,
+  "why": "the handle is the one non-axisymmetric feature that sets the part's orientation; its end cap is a clean flat perpendicular to the cup axis",
+  "detail": {
+   "plane_fit_rms_mm": 0.02206922373440217,
+   "plane_fit_max_mm": 0.09620655152983666,
+   "plane_n_faces": 2136,
+   "plane_out_of_perpendicular_deg": 0.08682645427894897
+  }
+ },
+ "tilt_deg": {
+  "value": 0.2624537650697059,
+  "stderr_deg": 0.11290508405653948,
+  "direction_deg": 75.70473024116335,
+  "method": "common slope, per-feature intercept, 15 stations over 2 feature(s), z -35.000..-6.050 vs frame Z",
+  "z_span_mm": 28.95,
+  "per_feature": [
+   {
+    "feature": "cup outer wall (drafted)",
+    "n_stations": 12,
+    "value": 0.28257457407765024,
+    "stderr_deg": 0.06357682085397956,
+    "direction_deg": 75.45231965619811,
+    "z_span_mm": 22.0
+   },
+   {
+    "feature": "cup rim bore above the basket flange",
+    "n_stations": 3,
+    "value": 1.3348279331932569,
+    "stderr_deg": 4.323425205568083,
+    "direction_deg": -108.53163605638768,
+    "z_span_mm": 3.8000000000000007
+   }
+  ],
+  "resolvable": true
+ },
+ "origin": {
+  "definition": "cup axis (outer wall) \u2229 rim end-face plane"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": 0.002701784062172881,
+   "tol": 0.02244846109291158,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "spout boss tips (part bottom)",
+   "stat": "zmin",
+   "expected": -59.0,
+   "tol": 0.6,
+   "observed": -59.073919967749276,
+   "ok": true,
+   "tol_source": "intake exploration r-z plot (provisional frame, 0.5 mm reading resolution)"
+  },
+  {
+   "name": "lug outer radius",
+   "stat": "rmax",
+   "expected": 36.0,
+   "tol": 0.8,
+   "observed": 36.0032063002953,
+   "ok": true,
+   "tol_source": "intake exploration r-z plot"
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -35.739585735394904,
+   -34.626554499103236,
+   -59.073919967749276
+  ],
+  [
+   165.86307726951188,
+   34.57954736730131,
+   0.0677021847606909
+  ]
+ ],
+ "extents_aligned": [
+  201.6026630049068,
+  69.20610186640454,
+  59.14162215250997
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc506760-1589-506d-be19-e4c0f022b577/scratchpad/jobs/OD-G11/run/intake/aligned_work.stl",
+  "sha256": "2af41bca4e8e637950f272c6a426a9ba8dac092ed9d5b56c0caa6b53b8a3fa0f"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "pass",
+   "note": "common slope, per-feature intercept, 15 stations over 2 feature(s), z -35.000..-6.050 vs frame Z; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": true,
+   "result": "finding",
+   "note": "FLAG: no calipers (scan-only, DECISIONS MEASUREMENTS 2026-09-28); units assumed mm, scale unverified, none applied"
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

@@ -1,0 +1,40 @@
+{
+  "created": "2026-09-28T08:45:41+00:00",
+  "files": [
+    {
+      "bytes": 25009184,
+      "mode": "copy",
+      "path": "input/scan.stl",
+      "role": "scan",
+      "sha256": "9eb34045f9be50df2320a989f96fc1135a7a75e1d4cc9ac673b2e1bfce0c30aa",
+      "source": "/root/.claude/uploads/cc506760-1589-506d-be19-e4c0f022b577/8aad0a40-OD-G11-Portafilter.stl"
+    },
+    {
+      "bytes": 65572,
+      "mode": "copy",
+      "path": "input/photos/1.webp",
+      "role": "photo",
+      "sha256": "b16b7540325bbc1b7fe73d955955eb5a1b0e0e7d1720a5ad91d5c1ddbee9ec27",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc506760-1589-506d-be19-e4c0f022b577/images/1.webp"
+    },
+    {
+      "bytes": 100266,
+      "mode": "copy",
+      "path": "input/photos/2.webp",
+      "role": "photo",
+      "sha256": "6ccce3f9d52e19c655e209632b920d70549f8649509f780c3decf8e65ec546cc",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc506760-1589-506d-be19-e4c0f022b577/images/2.webp"
+    }
+  ],
+  "inputs": {
+    "input/photos/1.webp": "b16b7540325bbc1b7fe73d955955eb5a1b0e0e7d1720a5ad91d5c1ddbee9ec27",
+    "input/photos/2.webp": "6ccce3f9d52e19c655e209632b920d70549f8649509f780c3decf8e65ec546cc",
+    "input/scan.stl": "9eb34045f9be50df2320a989f96fc1135a7a75e1d4cc9ac673b2e1bfce0c30aa"
+  },
+  "part": "OD-G11_portafilter",
+  "scan_resolution": "full",
+  "schema": "stl-re/INPUT_HASHES@1",
+  "seed": 0,
+  "tool": "init_run.py",
+  "tool_version": "stl-re-orchestrate@1"
+}

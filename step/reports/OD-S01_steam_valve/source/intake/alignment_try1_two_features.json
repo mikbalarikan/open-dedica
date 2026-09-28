@@ -1,0 +1,360 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/scratchpad/OD-S01_steam-valve/intake/work.stl": "857984d7129fe8505bf6f709031f9cbcdddc30f1abf35d51444e5075322c0c8e",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/scratchpad/OD-S01_steam-valve/intake/datum_spec.json": "5b492e43b9f7a4f39d9012041a03044e09c90a5b8137737e513f14758f092dfe",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/scratchpad/OD-S01_steam-valve/input/scan.stl": "98cd118312fbb9b43d844cbc063c3be897c553541154b1f5988d5be0c2127ebf",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/scratchpad/OD-S01_steam-valve/intake/intake.json": "b9ab837a64979a6ef4483705254dcb316c26471198e80887c72bf7e7c38a045a"
+ },
+ "seed": 0,
+ "created": "2026-09-28T06:35:54+00:00",
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [
+  "primary STOP check is self-referential (noise measured on the primary itself)",
+  "secondary circle residual not compared: no noise_secondary measured on a clean circle (plane noise is not comparable to section-circle residuals)"
+ ],
+ "matrix_4x4": [
+  [
+   -0.8962969759672648,
+   0.012039857220561221,
+   0.44329084437877225,
+   61.28542903186271
+  ],
+  [
+   0.21050935512859067,
+   -0.8682695508955359,
+   0.44921464623385693,
+   77.47989940359321
+  ],
+  [
+   0.39030442256690007,
+   0.49594659876419434,
+   0.7756928702127832,
+   189.8441827731715
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.035995208297944864,
+  "method": "rms of RANSAC+SVD plane on cap disc outer face (knob side, perpendicular to the splined spindle) (3497 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "cap disc outer face (knob side, perpendicular to the splined spindle)",
+  "why": "the cap disc outer face is the flat the control knob side seats against; it is perpendicular to the splined spindle (rotation axis of the valve)",
+  "fit_rms_mm": 0.034304438783088226,
+  "fit_max_mm": 0.10390885401230883,
+  "fit_p95_mm": 0.06756488679867162,
+  "n_faces": 3426,
+  "area_mm2": 377.9499619187907,
+  "fit_untrimmed": {
+   "rms": 0.07039290226284671,
+   "p95": 0.16378847201720673,
+   "max": 0.22916273459490227,
+   "n_faces": 4240
+  },
+  "inlier_frac": 0.682311320754717,
+  "normal_raw": [
+   -0.39030442256690007,
+   -0.49594659876419434,
+   -0.7756928702127833
+  ],
+  "centroid_raw": [
+   -35.64168896798513,
+   -25.311100019557763,
+   -210.62475400955483
+  ],
+  "material_side": "+z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.682311320754717
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "upper valve column OD (r~5.3) + cap disc OD (r~14.3)",
+  "why": "valve spool column, coaxial with the spindle / rotating cap, coaxial with the spindle",
+  "fit_rms_mm": 0.0618308629716471,
+  "fit_max_mm": 0.37304754943574103,
+  "fit_metric": "median / worst circle residual over stations (kasa,kasa)",
+  "stations": 14,
+  "r_by_feature": {
+   "upper valve column OD (r~5.3)": {
+    "n": 8,
+    "r_mean": 5.390219102820469,
+    "r_std": 0.004902302872855178
+   },
+   "cap disc OD (r~14.3)": {
+    "n": 6,
+    "r_mean": 14.355878022868936,
+    "r_std": 0.008232926618867408
+   }
+  },
+  "centre_std_mm": [
+   0.014486004386288501,
+   0.03852034567747318
+  ],
+  "station_detail": [
+   {
+    "z": 38.0,
+    "cx": 83.52302,
+    "cy": 52.7809,
+    "r": 5.38691,
+    "rms": 0.05872,
+    "max": 0.17801,
+    "n": 246,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 38.5,
+    "cx": 83.52087,
+    "cy": 52.78864,
+    "r": 5.39689,
+    "rms": 0.06012,
+    "max": 0.19471,
+    "n": 253,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 39.0,
+    "cx": 83.50634,
+    "cy": 52.77843,
+    "r": 5.38763,
+    "rms": 0.06354,
+    "max": 0.21118,
+    "n": 255,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 39.5,
+    "cx": 83.5172,
+    "cy": 52.77104,
+    "r": 5.39253,
+    "rms": 0.04485,
+    "max": 0.14324,
+    "n": 261,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 40.0,
+    "cx": 83.51808,
+    "cy": 52.77137,
+    "r": 5.39841,
+    "rms": 0.04781,
+    "max": 0.13682,
+    "n": 271,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 40.5,
+    "cx": 83.50935,
+    "cy": 52.77783,
+    "r": 5.38951,
+    "rms": 0.0468,
+    "max": 0.14481,
+    "n": 261,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 41.0,
+    "cx": 83.51,
+    "cy": 52.7593,
+    "r": 5.38582,
+    "rms": 0.03617,
+    "max": 0.0925,
+    "n": 260,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 41.5,
+    "cx": 83.50687,
+    "cy": 52.75915,
+    "r": 5.38407,
+    "rms": 0.03551,
+    "max": 0.0993,
+    "n": 266,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 0.5,
+    "cx": 83.5533,
+    "cy": 52.69171,
+    "r": 14.34048,
+    "rms": 0.08273,
+    "max": 0.31586,
+    "n": 607,
+    "feature": "cap disc OD (r~14.3)"
+   },
+   {
+    "z": 0.78,
+    "cx": 83.54823,
+    "cy": 52.69277,
+    "r": 14.36065,
+    "rms": 0.0876,
+    "max": 0.33105,
+    "n": 562,
+    "feature": "cap disc OD (r~14.3)"
+   },
+   {
+    "z": 1.06,
+    "cx": 83.53976,
+    "cy": 52.69198,
+    "r": 14.36605,
+    "rms": 0.09062,
+    "max": 0.32442,
+    "n": 537,
+    "feature": "cap disc OD (r~14.3)"
+   },
+   {
+    "z": 1.34,
+    "cx": 83.52827,
+    "cy": 52.68997,
+    "r": 14.36139,
+    "rms": 0.09555,
+    "max": 0.30968,
+    "n": 559,
+    "feature": "cap disc OD (r~14.3)"
+   },
+   {
+    "z": 1.62,
+    "cx": 83.52148,
+    "cy": 52.7003,
+    "r": 14.35295,
+    "rms": 0.09311,
+    "max": 0.30799,
+    "n": 579,
+    "feature": "cap disc OD (r~14.3)"
+   },
+   {
+    "z": 1.9,
+    "cx": 83.51203,
+    "cy": 52.72528,
+    "r": 14.35375,
+    "rms": 0.09445,
+    "max": 0.37305,
+    "n": 718,
+    "feature": "cap disc OD (r~14.3)"
+   }
+  ],
+  "noise_ref": null
+ },
+ "clock": {
+  "rule": "plane_normal: microswitch outer face normal -> +X",
+  "angle_deg": -160.62405428934136,
+  "why": "largest flat vertical face; the microswitch pocket walls, the two side lugs and the barb nipple are square to it (vertical-face normal histogram peaks at 90 deg steps)",
+  "detail": {
+   "plane_fit_rms_mm": 0.01807393447679873,
+   "plane_fit_max_mm": 0.09705311600186066,
+   "plane_n_faces": 2103,
+   "plane_out_of_perpendicular_deg": 0.8523972442242638
+  }
+ },
+ "tilt_deg": {
+  "value": 0.45659417018966325,
+  "stderr_deg": 0.008942821669036708,
+  "direction_deg": -149.0133384564991,
+  "method": "common slope, per-feature intercept, 14 stations over 2 feature(s), z 0.500..41.500 vs frame Z; NOT RESOLVABLE (heuristic): 'cap disc OD (r~14.3)' (2.06 deg @ 147.7 deg) vs 'upper valve column OD (r~5.3)' (0.46 deg @ -117.7 deg) differ by 2.15 deg > combined stderr 0.45 deg",
+  "z_span_mm": 41.0,
+  "per_feature": [
+   {
+    "feature": "cap disc OD (r~14.3)",
+    "n_stations": 6,
+    "value": 2.061040724820302,
+    "stderr_deg": 0.3536673640217599,
+    "direction_deg": 147.70524028858983,
+    "z_span_mm": 1.4
+   },
+   {
+    "feature": "upper valve column OD (r~5.3)",
+    "n_stations": 8,
+    "value": 0.4626393080467226,
+    "stderr_deg": 0.09719537571857059,
+    "direction_deg": -117.66946775916293,
+    "z_span_mm": 3.5
+   }
+  ],
+  "resolvable": false,
+  "disagreement": "'cap disc OD (r~14.3)' (2.06 deg @ 147.7 deg) vs 'upper valve column OD (r~5.3)' (0.46 deg @ -117.7 deg) differ by 2.15 deg > combined stderr 0.45 deg"
+ },
+ "origin": {
+  "definition": "valve column / cap axis \u2229 cap disc outer face"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": 0.0016769105236704713,
+   "tol": 0.035995208297944864,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "spindle tip (zmin)",
+   "stat": "zmin",
+   "expected": -14.8,
+   "tol": 0.5,
+   "observed": -14.849686243781035,
+   "ok": true,
+   "tol_source": "provisional-frame exploration (intake/figures/prov_views.png), sign check only"
+  },
+  {
+   "name": "top port face (zmax)",
+   "stat": "zmax",
+   "expected": 48.7,
+   "tol": 0.5,
+   "observed": 48.673132027461456,
+   "ok": true,
+   "tol_source": "provisional-frame exploration, sign check only"
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -20.62452840634867,
+   -22.110335158588878,
+   -14.849686243781035
+  ],
+  [
+   18.036979364167255,
+   18.37627665680885,
+   48.673132027461456
+  ]
+ ],
+ "extents_aligned": [
+  38.661507770515925,
+  40.48661181539773,
+  63.52281827124249
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/scratchpad/OD-S01_steam-valve/intake/aligned_work.stl",
+  "sha256": "29507801ba4e2073c6526c40b12baa5ea86f568f6128ce1e7096ef38dcb10491"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "finding",
+   "note": "not resolvable: per-feature tilt vectors disagree beyond their combined stderr (heuristic, review M2); common slope, per-feature intercept, 14 stations over 2 feature(s), z 0.500..41.500 vs frame Z; NOT RESOLVABLE (heuristic): 'cap disc OD (r~14.3)' (2.06 deg @ 147.7 deg) vs 'upper valve column OD (r~5.3)' (0.46 deg @ -117.7 deg) differ by 2.15 deg > combined stderr 0.45 deg; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": true,
+   "result": "finding",
+   "note": "FLAG: no calipers, no scale reference in photos; units assumed mm, scale unverified (DECISIONS.md MEASUREMENTS)"
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

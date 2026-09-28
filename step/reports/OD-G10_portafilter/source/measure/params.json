@@ -1,0 +1,1913 @@
+{
+ "schema": "stl-re/params.json@1",
+ "tool": "m99_write_params.py",
+ "tool_version": "run-local",
+ "inputs": {
+  "intake/aligned_work.stl": "2af41bca4e8e637950f272c6a426a9ba8dac092ed9d5b56c0caa6b53b8a3fa0f",
+  "intake/alignment.json": "0a2b0dbca01e7d48b144991ff743a06bcf0a6f8f466f5ddbbb9198c4f5380e0a"
+ },
+ "seed": 0,
+ "created": "2026-09-28T10:18:19+00:00",
+ "part": "OD-G11_portafilter",
+ "frame": "datum: primary = cup rim end face -> z = 0, material in -z (+Z points out of the cup opening); secondary = cup axis (outer wall + rim bore wall faces) -> Z axis; clock = handle end-cap flat normal -> +X (handle along +X); origin = cup axis ∩ rim plane. theta CCW about +Z from +X.",
+ "scan_noise_mm": 0.02244846109291158,
+ "params": {
+  "rim_top_z": {
+   "value": 0.0,
+   "unit": "mm",
+   "measured": -0.021914299989922812,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "median z of rim-top samples r 28.4..30.1, clean sectors (m03)",
+   "uncertainty_mm": 0.02244846109291158,
+   "evidence": "measure/figures/body_profile.json#rim_top_z",
+   "critical": true,
+   "note": "the datum plane itself (alignment.json primary); moved by less than the noise floor",
+   "rerun_trigger": "a caliper/height gauge reading of the rim face vs lug tops"
+  },
+  "outer_wall_r_at_z0": {
+   "value": 30.5864246494156,
+   "unit": "mm",
+   "measured": 30.5864246494156,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r = a + b z on outer-wall samples z -38..-3, clean sectors (m03)",
+   "uncertainty_mm": 0.02846759722260479,
+   "evidence": "measure/figures/body_profile.json#outer_wall",
+   "critical": true,
+   "rerun_trigger": "caliper OD of the cup just below the lugs"
+  },
+  "outer_wall_dr_dz": {
+   "value": 0.044918735268034235,
+   "unit": "mm",
+   "measured": 0.044918735268034235,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same line fit (draft)",
+   "uncertainty_mm": 0.02846759722260479,
+   "evidence": "measure/figures/body_profile.json#outer_wall",
+   "critical": false,
+   "note": "dimensionless slope dr/dz (unit field 'mm' per mm)"
+  },
+  "rim_outer_round_R": {
+   "value": 0.32718630708108415,
+   "unit": "mm",
+   "measured": 0.32718630708108415,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "circle fit (r,z) at the rim outer edge (m03)",
+   "uncertainty_mm": 0.041250896401779806,
+   "evidence": "measure/figures/body_profile.json#rim_outer_round",
+   "critical": false
+  },
+  "rim_inner_round_R": {
+   "value": 0.8540911276717749,
+   "unit": "mm",
+   "measured": 0.8540911276717749,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "circle fit (r,z) at the rim inner edge (m03)",
+   "uncertainty_mm": 0.03684879608585543,
+   "evidence": "measure/figures/body_profile.json#rim_inner_round",
+   "critical": false
+  },
+  "rim_inner_round_cr": {
+   "value": 28.673256640404748,
+   "unit": "mm",
+   "measured": 28.673256640404748,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "centre r of the same circle fit",
+   "uncertainty_mm": 0.03684879608585543,
+   "evidence": "measure/figures/body_profile.json#rim_inner_round",
+   "critical": false
+  },
+  "bore_r_at_z0": {
+   "value": 27.89636419975925,
+   "unit": "mm",
+   "measured": 27.89636419975925,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r = a + b z on rim-bore samples z -10.8..-7.5 (m03)",
+   "uncertainty_mm": 0.040613195389196784,
+   "evidence": "measure/figures/body_profile.json#bore_upper",
+   "critical": true,
+   "rerun_trigger": "caliper ID of the rim bore (basket seat)"
+  },
+  "bore_dr_dz": {
+   "value": 0.052080153869599057,
+   "unit": "mm",
+   "measured": 0.052080153869599057,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit",
+   "uncertainty_mm": 0.040613195389196784,
+   "evidence": "measure/figures/body_profile.json#bore_upper",
+   "critical": false
+  },
+  "ledge_z": {
+   "value": -11.526663328325704,
+   "unit": "mm",
+   "measured": -11.526663328325704,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of ledge samples r 26..27 (m03)",
+   "uncertainty_mm": 0.02244846109291158,
+   "evidence": "measure/figures/body_profile.json#ledge_z",
+   "critical": true,
+   "rerun_trigger": "depth gauge from the rim to the basket ledge"
+  },
+  "ledge_taper_r_at_z0": {
+   "value": 28.544748409445646,
+   "unit": "mm",
+   "measured": 28.544748409445646,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r = a + b z, z -15.5..-12.3 (m03)",
+   "uncertainty_mm": 0.039063426965287196,
+   "evidence": "measure/figures/body_profile.json#ledge_taper",
+   "critical": false
+  },
+  "ledge_taper_dr_dz": {
+   "value": 0.2631438588219626,
+   "unit": "mm",
+   "measured": 0.2631438588219626,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit",
+   "uncertainty_mm": 0.039063426965287196,
+   "evidence": "measure/figures/body_profile.json#ledge_taper",
+   "critical": false
+  },
+  "insert_wall_r_at_z0": {
+   "value": 24.675004226308914,
+   "unit": "mm",
+   "measured": 24.675004226308914,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r = a + b z, z -32..-17 (m03)",
+   "uncertainty_mm": 0.06201368799141872,
+   "evidence": "measure/figures/body_profile.json#insert_wall",
+   "critical": false
+  },
+  "insert_wall_dr_dz": {
+   "value": 0.029353247566968298,
+   "unit": "mm",
+   "measured": 0.029353247566968298,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit",
+   "uncertainty_mm": 0.06201368799141872,
+   "evidence": "measure/figures/body_profile.json#insert_wall",
+   "critical": false
+  },
+  "floor_fillet_R": {
+   "value": 2.705804348124756,
+   "unit": "mm",
+   "measured": 2.705804348124756,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "circle fit (r,z) floor-to-wall, back sectors (m03)",
+   "uncertainty_mm": 0.17327737090281736,
+   "evidence": "measure/figures/body_profile.json#floor_fillet",
+   "critical": false
+  },
+  "dome_centre_z": {
+   "value": 51.099999826258895,
+   "unit": "mm",
+   "measured": 51.099999826258895,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "sphere with centre on the axis fitted to bottom samples r 7..24 (m03)",
+   "uncertainty_mm": 0.01693615318326603,
+   "evidence": "measure/figures/body_profile.json#dome",
+   "critical": false
+  },
+  "dome_R": {
+   "value": 100.53618719046911,
+   "unit": "mm",
+   "measured": 100.53618719046911,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "radius of the same sphere fit",
+   "uncertainty_mm": 0.01693615318326603,
+   "evidence": "measure/figures/body_profile.json#dome",
+   "critical": false
+  },
+  "bottom_corner_R": {
+   "value": 4.677283851662964,
+   "unit": "mm",
+   "measured": 4.677283851662964,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "circle fit (r,z) wall-to-dome corner (m03)",
+   "uncertainty_mm": 0.032832401290316705,
+   "evidence": "measure/figures/body_profile.json#bottom_corner",
+   "critical": false
+  },
+  "lug1_centre_deg": {
+   "value": 59.5,
+   "unit": "deg",
+   "measured": 59.5,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mid-angle of the 1-deg bins where the outer radius > 33.2 over z -4.6..-0.6 (m04)",
+   "uncertainty_mm": 0.28798,
+   "evidence": "measure/figures/lugs_notches.json#lugs",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X",
+   "note": "kept at its measured angle; spacing 120.5/120.5/119 deg is not within noise, so no 3-fold symmetry is enforced"
+  },
+  "lug1_span_deg": {
+   "value": 37.0,
+   "unit": "deg",
+   "measured": 37.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "count of lug bins (m04)",
+   "uncertainty_mm": 0.57596,
+   "evidence": "measure/figures/lugs_notches.json#lugs",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "lug1_r_outer": {
+   "value": 35.964740217527535,
+   "unit": "mm",
+   "measured": 35.964740217527535,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median p99 radius over the lug core bins (m04)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/lugs_notches.json#lugs",
+   "critical": true,
+   "rerun_trigger": "caliper across a lug to the opposite wall"
+  },
+  "lug1_under_z_centre": {
+   "value": -5.127551247019729,
+   "unit": "mm",
+   "measured": -5.127551247019729,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of the lug under-face z vs theta, value at the lug centre (m11)",
+   "uncertainty_mm": 0.07149688079533388,
+   "evidence": "measure/figures/details.json#lug_ramps",
+   "critical": true,
+   "rerun_trigger": "feeler/height reading of the bayonet ramp at both lug ends"
+  },
+  "lug1_under_dz_per_deg": {
+   "value": 0.025428423266832763,
+   "unit": "mm",
+   "measured": 0.025428423266832763,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same ramp fit (mm per deg)",
+   "uncertainty_mm": 0.07149688079533388,
+   "evidence": "measure/figures/details.json#lug_ramps",
+   "critical": false
+  },
+  "lug2_centre_deg": {
+   "value": 180.0,
+   "unit": "deg",
+   "measured": 180.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mid-angle of the 1-deg bins where the outer radius > 33.2 over z -4.6..-0.6 (m04)",
+   "uncertainty_mm": 0.28798,
+   "evidence": "measure/figures/lugs_notches.json#lugs",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X",
+   "note": "kept at its measured angle; spacing 120.5/120.5/119 deg is not within noise, so no 3-fold symmetry is enforced"
+  },
+  "lug2_span_deg": {
+   "value": 36.0,
+   "unit": "deg",
+   "measured": 36.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "count of lug bins (m04)",
+   "uncertainty_mm": 0.57596,
+   "evidence": "measure/figures/lugs_notches.json#lugs",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "lug2_r_outer": {
+   "value": 35.77335607504091,
+   "unit": "mm",
+   "measured": 35.77335607504091,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median p99 radius over the lug core bins (m04)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/lugs_notches.json#lugs",
+   "critical": true,
+   "rerun_trigger": "caliper across a lug to the opposite wall"
+  },
+  "lug2_under_z_centre": {
+   "value": -5.102098602325094,
+   "unit": "mm",
+   "measured": -5.102098602325094,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of the lug under-face z vs theta, value at the lug centre (m11)",
+   "uncertainty_mm": 0.060913271779161546,
+   "evidence": "measure/figures/details.json#lug_ramps",
+   "critical": true,
+   "rerun_trigger": "feeler/height reading of the bayonet ramp at both lug ends"
+  },
+  "lug2_under_dz_per_deg": {
+   "value": 0.025982906205393296,
+   "unit": "mm",
+   "measured": 0.025982906205393296,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same ramp fit (mm per deg)",
+   "uncertainty_mm": 0.060913271779161546,
+   "evidence": "measure/figures/details.json#lug_ramps",
+   "critical": false
+  },
+  "lug3_centre_deg": {
+   "value": 300.5,
+   "unit": "deg",
+   "measured": 300.5,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mid-angle of the 1-deg bins where the outer radius > 33.2 over z -4.6..-0.6 (m04)",
+   "uncertainty_mm": 0.28798,
+   "evidence": "measure/figures/lugs_notches.json#lugs",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X",
+   "note": "kept at its measured angle; spacing 120.5/120.5/119 deg is not within noise, so no 3-fold symmetry is enforced"
+  },
+  "lug3_span_deg": {
+   "value": 35.0,
+   "unit": "deg",
+   "measured": 35.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "count of lug bins (m04)",
+   "uncertainty_mm": 0.57596,
+   "evidence": "measure/figures/lugs_notches.json#lugs",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "lug3_r_outer": {
+   "value": 35.941957293028565,
+   "unit": "mm",
+   "measured": 35.941957293028565,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median p99 radius over the lug core bins (m04)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/lugs_notches.json#lugs",
+   "critical": true,
+   "rerun_trigger": "caliper across a lug to the opposite wall"
+  },
+  "lug3_under_z_centre": {
+   "value": -5.017487231085134,
+   "unit": "mm",
+   "measured": -5.017487231085134,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of the lug under-face z vs theta, value at the lug centre (m11)",
+   "uncertainty_mm": 0.05228163278484102,
+   "evidence": "measure/figures/details.json#lug_ramps",
+   "critical": true,
+   "rerun_trigger": "feeler/height reading of the bayonet ramp at both lug ends"
+  },
+  "lug3_under_dz_per_deg": {
+   "value": 0.02585456218731317,
+   "unit": "mm",
+   "measured": 0.02585456218731317,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same ramp fit (mm per deg)",
+   "uncertainty_mm": 0.05228163278484102,
+   "evidence": "measure/figures/details.json#lug_ramps",
+   "critical": false
+  },
+  "lug1_leadout_z_centre": {
+   "value": -9.061677380851126,
+   "unit": "mm",
+   "measured": -9.061677380851126,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of the under-face z vs theta from the knee to the last bin, value extrapolated to the lug centre (m17; it2)",
+   "uncertainty_mm": 0.02152178131265564,
+   "evidence": "measure/figures/lug_ends.json",
+   "critical": true,
+   "rerun_trigger": "feeler/height reading of the bayonet ramp at both lug ends"
+  },
+  "lug1_leadout_dz_per_deg": {
+   "value": 0.3310976231889228,
+   "unit": "mm",
+   "measured": 0.3310976231889228,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same lead-out fit (mm per deg)",
+   "uncertainty_mm": 0.02152178131265564,
+   "evidence": "measure/figures/lug_ends.json",
+   "critical": false
+  },
+  "lug2_leadout_z_centre": {
+   "value": -8.526789073615227,
+   "unit": "mm",
+   "measured": -8.526789073615227,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of the under-face z vs theta from the knee to the last bin, value extrapolated to the lug centre (m17; it2)",
+   "uncertainty_mm": 0.05132071512368612,
+   "evidence": "measure/figures/lug_ends.json",
+   "critical": true,
+   "rerun_trigger": "feeler/height reading of the bayonet ramp at both lug ends"
+  },
+  "lug2_leadout_dz_per_deg": {
+   "value": 0.3040101585007157,
+   "unit": "mm",
+   "measured": 0.3040101585007157,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same lead-out fit (mm per deg)",
+   "uncertainty_mm": 0.05132071512368612,
+   "evidence": "measure/figures/lug_ends.json",
+   "critical": false
+  },
+  "lug3_leadout_z_centre": {
+   "value": -8.76377640559982,
+   "unit": "mm",
+   "measured": -8.76377640559982,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of the under-face z vs theta from the knee to the last bin, value extrapolated to the lug centre (m17; it2)",
+   "uncertainty_mm": 0.02687415619255365,
+   "evidence": "measure/figures/lug_ends.json",
+   "critical": true,
+   "rerun_trigger": "feeler/height reading of the bayonet ramp at both lug ends"
+  },
+  "lug3_leadout_dz_per_deg": {
+   "value": 0.33352454933816905,
+   "unit": "mm",
+   "measured": 0.33352454933816905,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same lead-out fit (mm per deg)",
+   "uncertainty_mm": 0.02687415619255365,
+   "evidence": "measure/figures/lug_ends.json",
+   "critical": false
+  },
+  "notch1_centre_deg": {
+   "value": 90.0,
+   "unit": "deg",
+   "measured": 90.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "centre of the theta span with no rim-top samples (m04)",
+   "uncertainty_mm": 0.5061466666666666,
+   "evidence": "measure/figures/lugs_notches.json#rim_notches",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "notch1_span_deg": {
+   "value": 14.0,
+   "unit": "deg",
+   "measured": 14.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "width of the same span",
+   "uncertainty_mm": 0.5061466666666666,
+   "evidence": "measure/figures/lugs_notches.json#rim_notches",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "notch1_floor_z": {
+   "value": -1.1237652471059236,
+   "unit": "mm",
+   "measured": -1.1237652471059236,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p90 z of samples inside the notch (m04)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/lugs_notches.json#rim_notches",
+   "critical": false
+  },
+  "notch2_centre_deg": {
+   "value": 270.0,
+   "unit": "deg",
+   "measured": 270.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "centre of the theta span with no rim-top samples (m04)",
+   "uncertainty_mm": 0.5061466666666666,
+   "evidence": "measure/figures/lugs_notches.json#rim_notches",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "notch2_span_deg": {
+   "value": 14.0,
+   "unit": "deg",
+   "measured": 14.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "width of the same span",
+   "uncertainty_mm": 0.5061466666666666,
+   "evidence": "measure/figures/lugs_notches.json#rim_notches",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "notch2_floor_z": {
+   "value": -1.0936274576042289,
+   "unit": "mm",
+   "measured": -1.0936274576042289,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p90 z of samples inside the notch (m04)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/lugs_notches.json#rim_notches",
+   "critical": false
+  },
+  "pad_axis_x": {
+   "value": -0.3178403223183153,
+   "unit": "mm",
+   "measured": -0.3178403223183153,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "cone with vertical axis fitted to pad-face samples z -32..-3 (m06)",
+   "uncertainty_mm": 0.054431039694753845,
+   "evidence": "measure/figures/pad_fit.json#cone_vertical_axis",
+   "critical": false
+  },
+  "pad_axis_y": {
+   "value": 0.02053393471771407,
+   "unit": "mm",
+   "measured": 0.02053393471771407,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit",
+   "uncertainty_mm": 0.054431039694753845,
+   "evidence": "measure/figures/pad_fit.json#cone_vertical_axis",
+   "critical": false
+  },
+  "pad_R_at_z0": {
+   "value": 30.884678920638372,
+   "unit": "mm",
+   "measured": 30.884678920638372,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit, radius at z = 0",
+   "uncertainty_mm": 0.054431039694753845,
+   "evidence": "measure/figures/pad_fit.json#cone_vertical_axis",
+   "critical": false
+  },
+  "pad_dR_dz": {
+   "value": -0.04921724473638042,
+   "unit": "mm",
+   "measured": -0.04921724473638042,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit, slope dR/dz (reverse draft)",
+   "uncertainty_mm": 0.054431039694753845,
+   "evidence": "measure/figures/pad_fit.json#cone_vertical_axis",
+   "critical": false
+  },
+  "pad_halfwidth_at_z0": {
+   "value": 15.906062483706705,
+   "unit": "mm",
+   "measured": 15.906062483706705,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of the pad half-width vs z, z -24..-4 (m11 from m05 edges)",
+   "uncertainty_mm": 0.027489916308371082,
+   "evidence": "measure/figures/details.json#pad_halfwidth",
+   "critical": false
+  },
+  "pad_halfwidth_dz": {
+   "value": 0.09856992177059788,
+   "unit": "mm",
+   "measured": 0.09856992177059788,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit",
+   "uncertainty_mm": 0.027489916308371082,
+   "evidence": "measure/figures/details.json#pad_halfwidth",
+   "critical": false
+  },
+  "pad_underchamfer_x_at_z0": {
+   "value": 46.09919934347188,
+   "unit": "mm",
+   "measured": 46.09919934347188,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit x = a + b z of the pad under-chamfer at |y| 8.5..11.8 (m11)",
+   "uncertainty_mm": 0.34671660612464256,
+   "evidence": "measure/figures/details.json#pad_underchamfer",
+   "critical": false
+  },
+  "pad_underchamfer_dx_dz": {
+   "value": 0.5170717876598891,
+   "unit": "mm",
+   "measured": 0.5170717876598891,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit",
+   "uncertainty_mm": 0.34671660612464256,
+   "evidence": "measure/figures/details.json#pad_underchamfer",
+   "critical": false
+  },
+  "handle_axis_y0": {
+   "value": 0.03823733861651066,
+   "unit": "mm",
+   "measured": 0.03823733861651066,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line through IRLS circle centres of x-sections 50..155 (m01/m02), value at x = 0",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/handle_axis.json",
+   "critical": false
+  },
+  "handle_axis_z0": {
+   "value": -30.407971833945542,
+   "unit": "mm",
+   "measured": -30.407971833945542,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line through IRLS circle centres of x-sections 50..155 (m01/m02), value at x = 0",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/handle_axis.json",
+   "critical": false
+  },
+  "handle_axis_dy_dx": {
+   "value": -0.004125434638828168,
+   "unit": "mm",
+   "measured": -0.004125434638828168,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same line",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/handle_axis.json",
+   "critical": false
+  },
+  "handle_axis_dz_dx": {
+   "value": -0.006186491728325051,
+   "unit": "mm",
+   "measured": -0.006186491728325051,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same line",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/handle_axis.json",
+   "critical": false
+  },
+  "grip_r_at_t0": {
+   "value": 12.14274380764901,
+   "unit": "mm",
+   "measured": 12.14274380764901,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r(t) of the station radii t 50..155 (m02)",
+   "uncertainty_mm": 0.025531049915275,
+   "evidence": "measure/figures/handle_axis.json#r_linear",
+   "critical": false
+  },
+  "grip_dr_dt": {
+   "value": 0.018676210496570204,
+   "unit": "mm",
+   "measured": 0.018676210496570204,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit (taper)",
+   "uncertainty_mm": 0.025531049915275,
+   "evidence": "measure/figures/handle_axis.json#r_linear",
+   "critical": false
+  },
+  "arch_outer_r": {
+   "value": 9.732402285419383,
+   "unit": "mm",
+   "measured": 9.732402285419383,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median radial distance about the handle axis, upper half, x 32..37.5 (m05)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/neck_pad.json#arch_outer_r",
+   "critical": false
+  },
+  "channel_halfwidth": {
+   "value": 6.152716021993823,
+   "unit": "mm",
+   "measured": 6.152716021993823,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mean |v| of the two channel side walls (m05)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/neck_pad.json#channel_halfwidth",
+   "critical": false
+  },
+  "channel_roof_r": {
+   "value": 5.840322373230533,
+   "unit": "mm",
+   "measured": 5.840322373230533,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median radial distance of the down-facing roof samples (m05)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/neck_pad.json#channel_roof_r",
+   "critical": false
+  },
+  "arch_foot_w": {
+   "value": -6.784713845991304,
+   "unit": "mm",
+   "measured": -6.784713845991304,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "lowest-decile median of the leg feet below the handle axis (m05)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/neck_pad.json#foot_min_w",
+   "critical": false
+  },
+  "arch_foot_round_R": {
+   "value": 1.2131229728359556,
+   "unit": "mm",
+   "measured": 1.2131229728359556,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median Kasa radius of the lowest 1.8 mm of each leg, x-sections 33..41 (m18; it2)",
+   "uncertainty_mm": 0.04836905707976369,
+   "evidence": "measure/figures/arch_feet.json",
+   "critical": false
+  },
+  "arch_foot_centre_v": {
+   "value": 7.433815306180987,
+   "unit": "mm",
+   "measured": 7.433815306180987,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median |v| of the foot-round centres, x 33..38 (arch part, m18)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/arch_feet.json",
+   "critical": false
+  },
+  "arch_foot_centre_w": {
+   "value": -5.469823526813369,
+   "unit": "mm",
+   "measured": -5.469823526813369,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median w of the foot-round centres, x 33..38 (arch part, m18)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/arch_feet.json",
+   "critical": false
+  },
+  "channel_start_t": {
+   "value": 29.57248909053587,
+   "unit": "mm",
+   "measured": 29.57248909053587,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p0.5 x of the down-facing channel-roof samples (m05)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/neck_pad.json#roof_x_extent",
+   "critical": false
+  },
+  "channel_end_t": {
+   "value": 41.65903547090712,
+   "unit": "mm",
+   "measured": 41.65903547090712,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median x of the channel end wall (m05)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/neck_pad.json#channel_end_x",
+   "critical": false
+  },
+  "neck_cone_r_at_t0": {
+   "value": -12.030652554434452,
+   "unit": "mm",
+   "measured": -12.030652554434452,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r(x) of IRLS circle fits on full x-sections [41.9, 44.2] (m20; it2, replaces the m09 upper-envelope fit)",
+   "uncertainty_mm": 0.04253931687325867,
+   "evidence": "measure/figures/neck_collar.json#neck_cone",
+   "critical": false
+  },
+  "neck_cone_dr_dt": {
+   "value": 0.5679822613749994,
+   "unit": "mm",
+   "measured": 0.5679822613749994,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit",
+   "uncertainty_mm": 0.04253931687325867,
+   "evidence": "measure/figures/neck_collar.json#neck_cone",
+   "critical": false
+  },
+  "neck_cone_axis_dy": {
+   "value": 0.042277865482582055,
+   "unit": "mm",
+   "measured": 0.042277865482582055,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median circle-centre offset from the grip axis, y (m20)",
+   "uncertainty_mm": 0.05587309952039971,
+   "evidence": "measure/figures/neck_collar.json#neck_cone",
+   "critical": false
+  },
+  "neck_cone_axis_dz": {
+   "value": -0.4070917990042311,
+   "unit": "mm",
+   "measured": -0.4070917990042311,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median circle-centre offset from the grip axis, z (m20)",
+   "uncertainty_mm": 0.05587309952039971,
+   "evidence": "measure/figures/neck_collar.json#neck_cone",
+   "critical": false
+  },
+  "collar_flank_r_at_t0": {
+   "value": -11.733136775298629,
+   "unit": "mm",
+   "measured": -11.733136775298629,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r(x) of IRLS circle fits on full x-sections [44.9, 47.3] (m20; it2, replaces the m09 upper-envelope fit)",
+   "uncertainty_mm": 0.006093209705594841,
+   "evidence": "measure/figures/neck_collar.json#collar_flank",
+   "critical": false
+  },
+  "collar_flank_dr_dt": {
+   "value": 0.5709706375219648,
+   "unit": "mm",
+   "measured": 0.5709706375219648,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit",
+   "uncertainty_mm": 0.006093209705594841,
+   "evidence": "measure/figures/neck_collar.json#collar_flank",
+   "critical": false
+  },
+  "collar_flank_axis_dy": {
+   "value": -0.059218454843869534,
+   "unit": "mm",
+   "measured": -0.059218454843869534,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median circle-centre offset from the grip axis, y (m20)",
+   "uncertainty_mm": 0.04385926363992638,
+   "evidence": "measure/figures/neck_collar.json#collar_flank",
+   "critical": false
+  },
+  "collar_flank_axis_dz": {
+   "value": -0.1342631775950025,
+   "unit": "mm",
+   "measured": -0.1342631775950025,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median circle-centre offset from the grip axis, z (m20)",
+   "uncertainty_mm": 0.04385926363992638,
+   "evidence": "measure/figures/neck_collar.json#collar_flank",
+   "critical": false
+  },
+  "collar_step_t": {
+   "value": 44.450000000000045,
+   "unit": "mm",
+   "measured": 44.450000000000045,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "t of the largest envelope step 44..45.5 (m09)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/handle_profile.json#collar_step_t",
+   "critical": false
+  },
+  "collar_peak_r": {
+   "value": 15.613707889210149,
+   "unit": "mm",
+   "measured": 15.613707889210149,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "max of the envelope t 47..49 (m09)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/handle_profile.json#collar_peak_r",
+   "critical": false
+  },
+  "collar_back_t": {
+   "value": 49.15000000000011,
+   "unit": "mm",
+   "measured": 49.15000000000011,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "first envelope bin after the peak with r < 13.6 (m09)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/handle_profile.json#collar_back_t",
+   "critical": false
+  },
+  "end_chamfer_r_at_t0": {
+   "value": 104.30194028556478,
+   "unit": "mm",
+   "measured": 104.30194028556478,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of the envelope t 160.2..164.3 (m09)",
+   "uncertainty_mm": 0.008032124862896808,
+   "evidence": "measure/figures/handle_profile.json#end_chamfer",
+   "critical": false
+  },
+  "end_chamfer_dr_dt": {
+   "value": -0.5573080068657538,
+   "unit": "mm",
+   "measured": -0.5573080068657538,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit",
+   "uncertainty_mm": 0.008032124862896808,
+   "evidence": "measure/figures/handle_profile.json#end_chamfer",
+   "critical": false
+  },
+  "end_face_t": {
+   "value": 165.86737981293277,
+   "unit": "mm",
+   "measured": 165.86737981293277,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median t of end-face samples (m09)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/handle_profile.json#end_face_t",
+   "critical": true,
+   "rerun_trigger": "overall length reading (rim centre to handle end)"
+  },
+  "end_round_R": {
+   "value": 0.6,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "not measurable on the scan: the end-face edge round is a few samples wide; value read by eye from handle_meridian.png",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/handle_meridian.png",
+   "critical": false,
+   "note": "not scan evidence; confirm physically"
+  },
+  "collar_top_round_R": {
+   "value": 0.6,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "not measurable on the scan: collar crest round read by eye from handle_meridian.png",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/handle_meridian.png",
+   "critical": false,
+   "note": "not scan evidence; confirm physically"
+  },
+  "spout1_x": {
+   "value": 9.936275468121906,
+   "unit": "mm",
+   "measured": 9.936275468121906,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median centre of IRLS circle fits z -55..-49.5 (m07)",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/spouts_screw.json#spout_0",
+   "critical": true,
+   "rerun_trigger": "caliper spout-to-spout distance"
+  },
+  "spout1_y": {
+   "value": 14.905982728737643,
+   "unit": "mm",
+   "measured": 14.905982728737643,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/spouts_screw.json#spout_0",
+   "critical": true,
+   "rerun_trigger": "caliper spout-to-spout distance"
+  },
+  "spout1_wall_r_at_z0": {
+   "value": 11.342755961251774,
+   "unit": "mm",
+   "measured": 11.342755961251774,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r = a + b z of the boss wall z -55.3..-50.3 (m11)",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "spout1_wall_dr_dz": {
+   "value": 0.0984781236729967,
+   "unit": "mm",
+   "measured": 0.0984781236729967,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "spout1_ring_z": {
+   "value": -56.377663665192316,
+   "unit": "mm",
+   "measured": -56.377663665192316,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of the down-facing bottom ring r 4.3..5.4 (m11)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "spout1_tip_z": {
+   "value": -59.06257826144132,
+   "unit": "mm",
+   "measured": -59.06257826144132,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p0.5 z within r < 1.5 of the boss axis (m07)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/spouts_screw.json#spout_0",
+   "critical": true,
+   "rerun_trigger": "height reading rim face to spout tip"
+  },
+  "spout1_head_z_r3p2": {
+   "value": -57.64607305608382,
+   "unit": "mm",
+   "measured": -57.64607305608382,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of head samples at r 3.0..3.4 (m11)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "spout2_x": {
+   "value": 9.899210128754254,
+   "unit": "mm",
+   "measured": 9.899210128754254,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median centre of IRLS circle fits z -55..-49.5 (m07)",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/spouts_screw.json#spout_1",
+   "critical": true,
+   "rerun_trigger": "caliper spout-to-spout distance"
+  },
+  "spout2_y": {
+   "value": -15.111633825002734,
+   "unit": "mm",
+   "measured": -15.111633825002734,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/spouts_screw.json#spout_1",
+   "critical": true,
+   "rerun_trigger": "caliper spout-to-spout distance"
+  },
+  "spout2_wall_r_at_z0": {
+   "value": 11.541705112266058,
+   "unit": "mm",
+   "measured": 11.541705112266058,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r = a + b z of the boss wall z -55.3..-50.3 (m11)",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "spout2_wall_dr_dz": {
+   "value": 0.10258409671846036,
+   "unit": "mm",
+   "measured": 0.10258409671846036,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same fit",
+   "uncertainty_mm": 0.02,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "spout2_ring_z": {
+   "value": -56.321804098048275,
+   "unit": "mm",
+   "measured": -56.321804098048275,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of the down-facing bottom ring r 4.3..5.4 (m11)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "spout2_tip_z": {
+   "value": -59.033491454366384,
+   "unit": "mm",
+   "measured": -59.033491454366384,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p0.5 z within r < 1.5 of the boss axis (m07)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/spouts_screw.json#spout_1",
+   "critical": true,
+   "rerun_trigger": "height reading rim face to spout tip"
+  },
+  "spout2_head_z_r3p2": {
+   "value": -57.69537473056813,
+   "unit": "mm",
+   "measured": -57.69537473056813,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of head samples at r 3.0..3.4 (m11)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "cscrew_x": {
+   "value": -2.9763440860215042,
+   "unit": "mm",
+   "measured": -2.9763440860215042,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "centroid of the raised disc on the bottom height map (m07)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/spouts_screw.json#centre_screw",
+   "critical": false
+  },
+  "cscrew_y": {
+   "value": -0.040322580645159964,
+   "unit": "mm",
+   "measured": -0.040322580645159964,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/spouts_screw.json#centre_screw",
+   "critical": false
+  },
+  "cscrew_disc_r": {
+   "value": 4.022136613864307,
+   "unit": "mm",
+   "measured": 4.022136613864307,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p98 radius of the raised disc cells (m07)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/spouts_screw.json#centre_screw",
+   "critical": false
+  },
+  "cscrew_disc_raise": {
+   "value": 0.19326629082754465,
+   "unit": "mm",
+   "measured": 0.19326629082754465,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median height of the disc above the dome sphere (m07)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/spouts_screw.json#centre_screw",
+   "critical": false
+  },
+  "recess_arm": {
+   "value": 1.5236559139784958,
+   "unit": "mm",
+   "measured": 1.5236559139784958,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "max half-extent of cells > 0.6 mm deep (m07)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/spouts_screw.json#centre_screw",
+   "critical": false
+  },
+  "recess_depth": {
+   "value": 2.2074204695642976,
+   "unit": "mm",
+   "measured": 2.2074204695642976,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "max depth of the cross recess over the dome (m07)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/spouts_screw.json#centre_screw",
+   "critical": false
+  },
+  "recess_width": {
+   "value": 0.9,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "not measurable on the scan: cross-recess slot width below the 0.2 mm height-map cell resolution; read by eye from spouts_screw.png",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/spouts_screw.png",
+   "critical": false,
+   "note": "not scan evidence; confirm physically"
+  },
+  "spout_boss_root_R": {
+   "value": 1.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "not measurable on the scan: boss-to-dome round read by eye from spouts_screw.png",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/spouts_screw.png",
+   "critical": false,
+   "note": "not scan evidence; confirm physically"
+  },
+  "spout_head_r": {
+   "value": 3.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "not measurable on the scan: screw-head rim radius read by eye from spouts_screw.png and the pocket ring profile (head sits in a r~3.5 counterbore)",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/spouts_screw.png",
+   "critical": false,
+   "note": "not scan evidence; confirm physically"
+  },
+  "pocket_bore_r": {
+   "value": 3.5,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "not measurable on the scan: inner pocket opening radius: the inside height map drops to the screw head inside r ~3.5 of the boss axis (ring medians, it1 notes)",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/floor_heightmap_max_z.npy",
+   "critical": false,
+   "note": "not scan evidence; confirm physically"
+  },
+  "pocket_bore_bottom_z": {
+   "value": -54.0,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "not measurable on the scan: the pocket interior is not scanned (open mesh); depth invented, leaves ~2.3 mm above the bottom ring",
+   "uncertainty_mm": 0.5,
+   "evidence": "build/MODELING_PLAN.md",
+   "critical": false,
+   "note": "not scan evidence; confirm physically"
+  },
+  "funnel_apex_z": {
+   "value": -42.64731677661379,
+   "unit": "mm",
+   "measured": -42.64731677661379,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "vertical-axis cone z = apex + k*rho fitted to flat floor cells outside the U (m08)",
+   "uncertainty_mm": 0.10608085366907498,
+   "evidence": "measure/figures/ribs_floor.json#floor_funnel_cone",
+   "critical": false
+  },
+  "funnel_slope": {
+   "value": 0.15629260065424003,
+   "unit": "mm",
+   "measured": 0.15629260065424003,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit, dz/drho",
+   "uncertainty_mm": 0.10608085366907498,
+   "evidence": "measure/figures/ribs_floor.json#floor_funnel_cone",
+   "critical": false
+  },
+  "funnel_axis_x": {
+   "value": 19.523096353922753,
+   "unit": "mm",
+   "measured": 19.523096353922753,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit, axis x",
+   "uncertainty_mm": 0.10608085366907498,
+   "evidence": "measure/figures/ribs_floor.json#floor_funnel_cone",
+   "critical": false
+  },
+  "funnel_axis_y": {
+   "value": -0.5045749122566272,
+   "unit": "mm",
+   "measured": -0.5045749122566272,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit, axis y",
+   "uncertainty_mm": 0.10608085366907498,
+   "evidence": "measure/figures/ribs_floor.json#floor_funnel_cone",
+   "critical": false
+  },
+  "trough_rc": {
+   "value": 17.756993882290313,
+   "unit": "mm",
+   "measured": 17.756993882290313,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "circular (r,z) section revolved about the cup axis, fitted to floor cells r 13..23.6 between the spout angles (m16; it2; the model spans the same spout angles, from spout{1,2}_x/y)",
+   "uncertainty_mm": 0.30335976773781875,
+   "evidence": "measure/figures/trough.json#const",
+   "critical": false
+  },
+  "trough_zc": {
+   "value": -36.76629163189169,
+   "unit": "mm",
+   "measured": -36.76629163189169,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "circular (r,z) section revolved about the cup axis, fitted to floor cells r 13..23.6 between the spout angles (m16; it2; the model spans the same spout angles, from spout{1,2}_x/y)",
+   "uncertainty_mm": 0.30335976773781875,
+   "evidence": "measure/figures/trough.json#const",
+   "critical": false
+  },
+  "trough_rho": {
+   "value": 6.01671163130228,
+   "unit": "mm",
+   "measured": 6.01671163130228,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "circular (r,z) section revolved about the cup axis, fitted to floor cells r 13..23.6 between the spout angles (m16; it2; the model spans the same spout angles, from spout{1,2}_x/y)",
+   "uncertainty_mm": 0.30335976773781875,
+   "evidence": "measure/figures/trough.json#const",
+   "critical": false
+  },
+  "uplat_z0": {
+   "value": -33.830526164480304,
+   "unit": "mm",
+   "measured": -33.830526164480304,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "plane z = z0 + a x + b y fitted to the floor cells inside the U (m08)",
+   "uncertainty_mm": 0.04211805837353921,
+   "evidence": "measure/figures/ribs_floor.json#floor_in_U_plane",
+   "critical": false
+  },
+  "uplat_dz_dx": {
+   "value": 0.1747406544386211,
+   "unit": "mm",
+   "measured": 0.1747406544386211,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit",
+   "uncertainty_mm": 0.04211805837353921,
+   "evidence": "measure/figures/ribs_floor.json#floor_in_U_plane",
+   "critical": false
+  },
+  "uplat_dz_dy": {
+   "value": 0.005051289834380902,
+   "unit": "mm",
+   "measured": 0.005051289834380902,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit",
+   "uncertainty_mm": 0.04211805837353921,
+   "evidence": "measure/figures/ribs_floor.json#floor_in_U_plane",
+   "critical": false
+  },
+  "urib_top_z": {
+   "value": -26.915756606087438,
+   "unit": "mm",
+   "measured": -26.915756606087438,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of U-rib top cells (m08)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/ribs_floor.json#U_top_z",
+   "critical": false
+  },
+  "urib_inner_absy": {
+   "value": 5.092976942790662,
+   "unit": "mm",
+   "measured": 5.092976942790662,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median |y| of the U-leg inner-face samples (m11)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "urib_outer_absy": {
+   "value": 6.487294255151665,
+   "unit": "mm",
+   "measured": 6.487294255151665,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median |y| of the U-leg outer-face samples z -33..-28.5 (m11)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "urib_open_end_x": {
+   "value": -15.013972192305976,
+   "unit": "mm",
+   "measured": -15.013972192305976,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p0.2 x of the U-rib top samples (m11)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "urib_round_end_outer_x": {
+   "value": 7.014874345371252,
+   "unit": "mm",
+   "measured": 7.014874345371252,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p99.8 x of the U-rib top samples (m11)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/details.json",
+   "critical": false
+  },
+  "vrib1_outer_end": {
+   "value": [
+    -5.247967215250474,
+    21.965662839827864
+   ],
+   "unit": "mm",
+   "measured": [
+    -5.247967215250474,
+    21.965662839827864
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "two-segment TLS fit of the crest centreline, segment-1 point at the m08 outer end (m15; it2)",
+   "uncertainty_mm": 0.09378453656361094,
+   "evidence": "measure/figures/vrib_segments.json#V_pos",
+   "critical": false
+  },
+  "vrib1_joint": {
+   "value": [
+    10.711930859195661,
+    7.917518795754618
+   ],
+   "unit": "mm",
+   "measured": [
+    10.711930859195661,
+    7.917518795754618
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "intersection of the two crest segments (m15; it2)",
+   "uncertainty_mm": 0.10165233292613429,
+   "evidence": "measure/figures/vrib_segments.json#V_pos",
+   "critical": false
+  },
+  "vrib1_tip": {
+   "value": [
+    12.763084452351977,
+    3.3925491322469172
+   ],
+   "unit": "mm",
+   "measured": [
+    12.763084452351977,
+    3.3925491322469172
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "segment-2 point at the last crest bin (m15; it2)",
+   "uncertainty_mm": 0.10165233292613429,
+   "evidence": "measure/figures/vrib_segments.json#V_pos",
+   "critical": false
+  },
+  "vrib1_top_z": {
+   "value": -28.951093510212218,
+   "unit": "mm",
+   "measured": -28.951093510212218,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of the rib top cells (m08)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/ribs_floor.json#V_pos",
+   "critical": false
+  },
+  "vrib2_outer_end": {
+   "value": [
+    -5.90173671549098,
+    -21.711125596645
+   ],
+   "unit": "mm",
+   "measured": [
+    -5.90173671549098,
+    -21.711125596645
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "two-segment TLS fit of the crest centreline, segment-1 point at the m08 outer end (m15; it2)",
+   "uncertainty_mm": 0.1042267360317789,
+   "evidence": "measure/figures/vrib_segments.json#V_neg",
+   "critical": false
+  },
+  "vrib2_joint": {
+   "value": [
+    10.567295263152744,
+    -7.753123165740367
+   ],
+   "unit": "mm",
+   "measured": [
+    10.567295263152744,
+    -7.753123165740367
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "intersection of the two crest segments (m15; it2)",
+   "uncertainty_mm": 0.1042267360317789,
+   "evidence": "measure/figures/vrib_segments.json#V_neg",
+   "critical": false
+  },
+  "vrib2_tip": {
+   "value": [
+    12.477966797104331,
+    -3.654474748503445
+   ],
+   "unit": "mm",
+   "measured": [
+    12.477966797104331,
+    -3.654474748503445
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "segment-2 point at the last crest bin (m15; it2)",
+   "uncertainty_mm": 0.07788468121406274,
+   "evidence": "measure/figures/vrib_segments.json#V_neg",
+   "critical": false
+  },
+  "vrib2_top_z": {
+   "value": -28.998438298988162,
+   "unit": "mm",
+   "measured": -28.998438298988162,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of the rib top cells (m08)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/ribs_floor.json#V_neg",
+   "critical": false
+  },
+  "vrib_width_top": {
+   "value": 1.563737263785125,
+   "unit": "mm",
+   "measured": 1.563737263785125,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "V_neg inner minus outer flank offset in the z = -29.5 bin (m13; V_pos outer flank is occluded, same law used)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/vrib_flanks.json",
+   "critical": false
+  },
+  "vrib_width_base": {
+   "value": 2.3633601935386856,
+   "unit": "mm",
+   "measured": 2.3633601935386856,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same, z = -37.5 bin (m13)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/vrib_flanks.json",
+   "critical": false
+  },
+  "vrib_width_z_top": {
+   "value": -29.5,
+   "unit": "mm",
+   "measured": -29.5,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "z of the top width bin",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/vrib_flanks.json",
+   "critical": false
+  },
+  "vrib_width_z_base": {
+   "value": -37.5,
+   "unit": "mm",
+   "measured": -37.5,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "z of the base width bin",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/vrib_flanks.json",
+   "critical": false
+  },
+  "wire1_cx": {
+   "value": -42.12948254976495,
+   "unit": "mm",
+   "measured": -42.12948254976495,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.11714974345403219,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire1_cy": {
+   "value": -28.401533308640087,
+   "unit": "mm",
+   "measured": -28.401533308640087,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.11714974345403219,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire1_R": {
+   "value": 75.54327049548424,
+   "unit": "mm",
+   "measured": 75.54327049548424,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.11714974345403219,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire1_zc": {
+   "value": -3.0143859366571184,
+   "unit": "mm",
+   "measured": -3.0143859366571184,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.11714974345403219,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire1_theta_span": {
+   "value": [
+    359.98984122050285,
+    67.11119467611297
+   ],
+   "unit": "deg",
+   "measured": [
+    359.98984122050285,
+    67.11119467611297
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "theta range of the exposed samples (m10)",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "wire2_cx": {
+   "value": 34.087165740622304,
+   "unit": "mm",
+   "measured": 34.087165740622304,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.32287898525148173,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire2_cy": {
+   "value": -33.559439835119086,
+   "unit": "mm",
+   "measured": -33.559439835119086,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.32287898525148173,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire2_R": {
+   "value": 71.8468185883422,
+   "unit": "mm",
+   "measured": 71.8468185883422,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.32287898525148173,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire2_zc": {
+   "value": -3.8667842612276413,
+   "unit": "mm",
+   "measured": -3.8667842612276413,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.32287898525148173,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire2_theta_span": {
+   "value": [
+    92.6449121178849,
+    173.64011373778337
+   ],
+   "unit": "deg",
+   "measured": [
+    92.6449121178849,
+    173.64011373778337
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "theta range of the exposed samples (m10)",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "wire3_cx": {
+   "value": 2.2590169704581053,
+   "unit": "mm",
+   "measured": 2.2590169704581053,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.4370803304541459,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire3_cy": {
+   "value": 42.9912240549625,
+   "unit": "mm",
+   "measured": 42.9912240549625,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.4370803304541459,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire3_R": {
+   "value": 68.24843429909875,
+   "unit": "mm",
+   "measured": 68.24843429909875,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.4370803304541459,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire3_zc": {
+   "value": -3.1316639860588618,
+   "unit": "mm",
+   "measured": -3.1316639860588618,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "torus-section fit (circle path in xy at constant z, tube radius) to the exposed wire samples (m10)",
+   "uncertainty_mm": 0.4370803304541459,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  },
+  "wire3_theta_span": {
+   "value": [
+    235.0639162185677,
+    298.6866438252106
+   ],
+   "unit": "deg",
+   "measured": [
+    235.0639162185677,
+    298.6866438252106
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "theta range of the exposed samples (m10)",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "groove_theta_start": {
+   "value": 5.0,
+   "unit": "deg",
+   "measured": 5.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "first 5-deg bin of the groove run (m19; it2)",
+   "uncertainty_mm": 2.5,
+   "evidence": "measure/figures/wire_groove.json",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "groove_theta_end": {
+   "value": 170.0,
+   "unit": "deg",
+   "measured": 170.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "end of the last 5-deg bin of the groove run (m19)",
+   "uncertainty_mm": 2.5,
+   "evidence": "measure/figures/wire_groove.json",
+   "critical": false,
+   "frame": "datum frame, theta CCW about +Z from +X"
+  },
+  "groove_depth": {
+   "value": 0.732112756155864,
+   "unit": "mm",
+   "measured": 0.732112756155864,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median max depth behind the bore line per bin (m19)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/wire_groove.json",
+   "critical": false
+  },
+  "groove_apex_z": {
+   "value": -3.344461672683252,
+   "unit": "mm",
+   "measured": -3.344461672683252,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of the deepest point per bin (m19)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/wire_groove.json",
+   "critical": false
+  },
+  "groove_upper_z": {
+   "value": -2.583321599526734,
+   "unit": "mm",
+   "measured": -2.583321599526734,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p75 z of groove samples above the apex (m19)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/wire_groove.json",
+   "critical": false
+  },
+  "groove_lower_z": {
+   "value": -3.6737134126559994,
+   "unit": "mm",
+   "measured": -3.6737134126559994,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p25 z of groove samples below the apex (m19)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/wire_groove.json",
+   "critical": false
+  },
+  "wire_r": {
+   "value": 0.5837518974281195,
+   "unit": "mm",
+   "measured": 0.5837518974281195,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "tube radius of the cleanest segment fit (m10)",
+   "uncertainty_mm": 0.11714974345403219,
+   "evidence": "measure/figures/wire.json#segments",
+   "critical": false
+  }
+ },
+ "struck": [],
+ "simplifications": [
+  {
+   "name": "floor trough (+X)",
+   "modelled_as": "one circular (r,z) section revolved about the cup axis between the spout angles",
+   "deviation_cost": "rms 0.303 / p95 0.573 mm on floor cells (includes rib-base cells)"
+  },
+  {
+   "name": "handle grip",
+   "modelled_as": "straight cone about a straight fitted axis",
+   "deviation_cost": "station radius residual rms 0.026 / max 0.075 mm (quadratic rms 0.014)"
+  },
+  {
+   "name": "funnel floor",
+   "modelled_as": "one vertical-axis cone",
+   "deviation_cost": "rms 0.106 / p95 0.141 / max 0.788 mm on flat floor cells"
+  },
+  {
+   "name": "pad face",
+   "modelled_as": "one vertical-axis cone (reverse draft) above the under-chamfer",
+   "deviation_cost": "rms 0.054 / p95 0.059 / max 0.719 mm; z < -26 transitions deviate more (station fits in pad_fit.json)"
+  },
+  {
+   "name": "lug under-faces",
+   "modelled_as": "two inclined planes per lug: the main ramp and the trailing lead-out (helical ramps approximated)",
+   "deviation_cost": "ramp line rms 0.071/0.061/0.052 mm; plane vs helix < 0.06 mm over the lug width"
+  },
+  {
+   "name": "ribs",
+   "modelled_as": "U rib constant thickness (no draft); V ribs drafted, two straight crest segments each",
+   "deviation_cost": "V crest segments rms 0.09+0.10/0.10+0.08 mm; U-leg inner 5.09 vs outer 6.49 at mid-height (draft ignored)"
+  },
+  {
+   "name": "wire spring",
+   "modelled_as": "three planar arcs of round wire; the ends diving into the bore windows are not modelled",
+   "deviation_cost": "fit rms 0.12/0.32/0.44 mm; hidden wire behind the bore not modelled"
+  },
+  {
+   "name": "lug-to-wall and small edge rounds",
+   "modelled_as": "sharp except the measured rounds",
+   "deviation_cost": "local, < 1 mm at the lug roots (see lugs_notches.json)"
+  }
+ ],
+ "checks": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "pass",
+   "note": "lugs 3, spouts 2, wire arcs 3, V ribs 2: counted as separated angular/area clusters (lugs_notches.json, spouts_screw.json, wire.json, ribs_floor.json); no rotational-order FFT count was needed because no pattern is repeated more than 3 times"
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": false,
+   "result": "pass",
+   "note": "no caliper readings (scan-only job)"
+  },
+  "CHK-CLUSTER": {
+   "ran": true,
+   "result": "finding",
+   "note": "every coherent cluster in the height maps is assigned to a feature (ribs, screw heads, wire, pockets); the spout pockets are open holes in the mesh (unscanned) and are modelled as assumed geometry"
+  },
+  "CHK-FRAME": {
+   "ran": true,
+   "result": "pass",
+   "note": "all angles re-measured in the frozen datum frame; none copied from intake"
+  }
+ },
+ "open_questions": [
+  "Is the black insert (floor, ribs, pockets) wanted as part of the single solid or only the cast body? (owner chose one fused solid)",
+  "Spout pocket depth is invented (not scanned)."
+ ]
+}

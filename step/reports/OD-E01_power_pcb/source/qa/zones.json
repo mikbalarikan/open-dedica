@@ -1,0 +1,229 @@
+{
+ "note": "it2 QA: identical zone predicates to the it1 QA (_it1_SUPERSEDED/qa/zones.json) for CHK-LIKE4LIKE. Zones are predicates in the datum frame (origin H1 axis x PCB top face, +X long board edge, +Z component side), written by QA from intake/INTAKE_CARD.md \u00a73-\u00a74 and located on the raw scan (faston row y from scan faces z 9-11). The regime (baseline-skill plastic) has no interface band (interface_max_mm null), so the named interfaces I1-I4 are reported per zone, not separately gated; the whole-part band still applies to every point in them.",
+ "zones": [
+  {
+   "name": "I1 board top face",
+   "kind": "functional_interface",
+   "note": "INTAKE_CARD \u00a74 I1: PCB top face (seating plane); upward-facing faces within the board outline, z -0.5..0.3",
+   "select": {
+    "z": [
+     -0.5,
+     0.3
+    ],
+    "nz": [
+     0.9,
+     null
+    ],
+    "x": [
+     -5.5,
+     95.5
+    ],
+    "y": [
+     -56.5,
+     4.3
+    ]
+   }
+  },
+  {
+   "name": "I1 board outline edges",
+   "kind": "functional_interface",
+   "note": "INTAKE_CARD \u00a74 I1: the four board edge walls (card guides), z -1.7..0.1, near-horizontal normals",
+   "select": {
+    "z": [
+     -1.7,
+     0.1
+    ],
+    "abs_nz": [
+     null,
+     0.5
+    ],
+    "any_of": [
+     {
+      "x": [
+       null,
+       -4.4
+      ]
+     },
+     {
+      "x": [
+       94.2,
+       null
+      ]
+     },
+     {
+      "y": [
+       null,
+       -55.2
+      ]
+     },
+     {
+      "y": [
+       3.1,
+       null
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "name": "I2 mounting holes H1 H2",
+   "kind": "functional_interface",
+   "note": "INTAKE_CARD \u00a74 I2 / E02: bore walls of H1 (0,0) and H2 (0,-51.8), r <= 2.6 about each axis (box approximation)",
+   "select": {
+    "z": [
+     -1.7,
+     0.1
+    ],
+    "abs_nz": [
+     null,
+     0.5
+    ],
+    "any_of": [
+     {
+      "x": [
+       -2.6,
+       2.6
+      ],
+      "y": [
+       -2.6,
+       2.6
+      ]
+     },
+     {
+      "x": [
+       -2.6,
+       2.6
+      ],
+      "y": [
+       -54.4,
+       -49.2
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "name": "I3 faston tab row",
+   "kind": "functional_interface",
+   "note": "INTAKE_CARD \u00a74 I3 / E11: six faston blades at x 36-88, y -53.7..-47.4 (located on scan faces z 9-11), z 0.3..11.5",
+   "select": {
+    "x": [
+     33.0,
+     91.0
+    ],
+    "y": [
+     -54.5,
+     -46.5
+    ],
+    "z": [
+     0.3,
+     11.5
+    ]
+   }
+  },
+  {
+   "name": "I4 heatsink top and tallest parts",
+   "kind": "functional_interface",
+   "note": "INTAKE_CARD \u00a74 I4: lid clearance; everything above z 12 (heatsink, clip, big caps)",
+   "select": {
+    "z": [
+     12.0,
+     null
+    ]
+   }
+  },
+  {
+   "name": "X solder side",
+   "kind": "interior",
+   "note": "INTAKE_CARD \u00a73: board bottom, not scanned (reported only)",
+   "select": {
+    "z": [
+     null,
+     -1.3
+    ]
+   }
+  },
+  {
+   "name": "X under heatsink clip TO-220",
+   "kind": "interior",
+   "note": "INTAKE_CARD \u00a73: x 38-55, y -41..-1, below z 12, partly occluded (reported only)",
+   "select": {
+    "x": [
+     38.0,
+     55.0
+    ],
+    "y": [
+     -41.0,
+     -1.0
+    ],
+    "z": [
+     0.3,
+     12.0
+    ]
+   }
+  },
+  {
+   "name": "X between caps",
+   "kind": "interior",
+   "note": "INTAKE_CARD \u00a73: x 74-86, y -30..-8, shadowed (reported only)",
+   "select": {
+    "x": [
+     74.0,
+     86.0
+    ],
+    "y": [
+     -30.0,
+     -8.0
+    ],
+    "z": [
+     0.3,
+     12.0
+    ]
+   }
+  },
+  {
+   "name": "Z1 board band z<0.3",
+   "kind": "region",
+   "note": "z bucket",
+   "select": {
+    "z": [
+     null,
+     0.3
+    ]
+   }
+  },
+  {
+   "name": "Z2 low parts z 0.3-3",
+   "kind": "region",
+   "note": "z bucket (SMD parts, leads)",
+   "select": {
+    "z": [
+     0.3,
+     3.0
+    ]
+   }
+  },
+  {
+   "name": "Z3 mid parts z 3-12",
+   "kind": "region",
+   "note": "z bucket",
+   "select": {
+    "z": [
+     3.0,
+     12.0
+    ]
+   }
+  },
+  {
+   "name": "Z4 high parts z>12",
+   "kind": "region",
+   "note": "z bucket",
+   "select": {
+    "z": [
+     12.0,
+     null
+    ]
+   }
+  }
+ ]
+}

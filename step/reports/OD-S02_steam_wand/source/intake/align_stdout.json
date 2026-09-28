@@ -1,0 +1,93 @@
+{
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [
+  "axis-primary radial residual not compared: no noise_secondary (circle noise) measured on a clean circle (plane noise is not comparable to a radial residual)",
+  "secondary circle residual not compared: no noise_secondary measured on a clean circle (plane noise is not comparable to section-circle residuals)"
+ ],
+ "scale_factor": 1.0,
+ "tilt_deg": {
+  "value": 0.05301734370727882,
+  "stderr_deg": 0.008166090480976773,
+  "direction_deg": 21.760806082621677,
+  "method": "common slope, per-feature intercept, 40 stations over 2 feature(s), z 16.500..63.000 vs frame Z; NOT RESOLVABLE (heuristic): 'rod collar cylinder' (0.71 deg @ -54.3 deg) vs 'rod taper' (0.05 deg @ 32.0 deg) differ by 0.71 deg > combined stderr 0.06 deg",
+  "z_span_mm": 46.5,
+  "per_feature": [
+   {
+    "feature": "rod collar cylinder",
+    "n_stations": 11,
+    "value": 0.7088087205443216,
+    "stderr_deg": 0.047342470542364574,
+    "direction_deg": -54.311841877072716,
+    "z_span_mm": 5.0
+   },
+   {
+    "feature": "rod taper",
+    "n_stations": 29,
+    "value": 0.052262093007402755,
+    "stderr_deg": 0.016446768265651522,
+    "direction_deg": 32.03372851798778,
+    "z_span_mm": 28.0
+   }
+  ],
+  "resolvable": false,
+  "disagreement": "'rod collar cylinder' (0.71 deg @ -54.3 deg) vs 'rod taper' (0.05 deg @ 32.0 deg) differ by 0.71 deg > combined stderr 0.06 deg"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "rod tip end above knob top (z max near axis)",
+   "stat": "zmax",
+   "expected": 67.3,
+   "tol": 0.5,
+   "observed": 67.25703471919637,
+   "ok": true,
+   "tol_source": "independent provisional-frame read (PCA frame, knob top z 12.2, rod tip 79.5); 0.5 = read resolution of that plot"
+  },
+  {
+   "name": "tube tip end is below the knob (z min)",
+   "stat": "zmin",
+   "expected": -57.8,
+   "tol": 1.0,
+   "observed": -57.815695867094064,
+   "ok": true,
+   "tol_source": "provisional-frame zmin -45.6 minus knob-top z 12.2 (first spec had an arithmetic slip, -49.5; corrected before any gate); 1.0 = coarse side check"
+  }
+ ],
+ "primary": {
+  "type": "axis",
+  "fit_rms_mm": 0.025494353421383793,
+  "fit_max_mm": 0.2384942290453278,
+  "n_faces": 41461
+ },
+ "secondary": {
+  "type": "axis",
+  "fit_rms_mm": 0.02141822849316225,
+  "fit_max_mm": 0.4394013814567197,
+  "stations": 40,
+  "r_by_feature": {
+   "rod taper": {
+    "n": 29,
+    "r_mean": 3.9293582697672638,
+    "r_std": 0.3651028992141036
+   },
+   "rod collar cylinder": {
+    "n": 11,
+    "r_mean": 6.525208124027086,
+    "r_std": 0.02329715232310161
+   }
+  },
+  "centre_std_mm": [
+   0.06677874882959679,
+   0.025198046936775898
+  ]
+ },
+ "clock": {
+  "rule": "axis_direction: steel tube leaving the elbow (\u00d86 segment between the sleeve O-ring and the bend) -> +X",
+  "angle_deg": -3.0634760010613347
+ },
+ "extents_aligned": [
+  68.98033399908297,
+  25.726889505756905,
+  125.07273058629043
+ ]
+}

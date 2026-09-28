@@ -1,0 +1,40 @@
+{
+  "created": "2026-09-28T06:17:27+00:00",
+  "files": [
+    {
+      "bytes": 29306934,
+      "mode": "copy",
+      "path": "input/scan.stl",
+      "role": "scan",
+      "sha256": "a0e8b66e15d5b404d69149ba6ea843348d588e2d0f3202a069412341d3b4a12f",
+      "source": "/root/.claude/uploads/0bfad0c9-f032-5978-bb8b-45df87dc606b/2a11c59d-OD-E02-Control-Button-Board-Assembly.stl"
+    },
+    {
+      "bytes": 194292,
+      "mode": "copy",
+      "path": "input/photos/1.png",
+      "role": "photo",
+      "sha256": "397ea1b7a06af16feb6eed28686177c0c8074abc91c6235e0138a9136a7148c9",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/0bfad0c9-f032-5978-bb8b-45df87dc606b/images/1.png"
+    },
+    {
+      "bytes": 292260,
+      "mode": "copy",
+      "path": "input/photos/2.png",
+      "role": "photo",
+      "sha256": "d77b753f2ff32d580de80f7a48d1ef371c1b06ad174574d224843b5f8fbc87dc",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/0bfad0c9-f032-5978-bb8b-45df87dc606b/images/2.png"
+    }
+  ],
+  "inputs": {
+    "input/photos/1.png": "397ea1b7a06af16feb6eed28686177c0c8074abc91c6235e0138a9136a7148c9",
+    "input/photos/2.png": "d77b753f2ff32d580de80f7a48d1ef371c1b06ad174574d224843b5f8fbc87dc",
+    "input/scan.stl": "a0e8b66e15d5b404d69149ba6ea843348d588e2d0f3202a069412341d3b4a12f"
+  },
+  "part": "OD-E02_control-button-board",
+  "scan_resolution": "full",
+  "schema": "stl-re/INPUT_HASHES@1",
+  "seed": 0,
+  "tool": "init_run.py",
+  "tool_version": "stl-re-orchestrate@1"
+}

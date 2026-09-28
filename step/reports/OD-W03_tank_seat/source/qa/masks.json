@@ -1,0 +1,51 @@
+{
+ "comment": "Declared by QA BEFORE any deviation number, only from intake evidence (INTAKE_CARD \u00a72 'Artefact zones', \u00a73 coverage). Masked AND unmasked are always reported; cup-wall ripple (\u00b10.15, translucent) is on the gated skin and is NOT masked.",
+ "masks": [
+  {
+   "name": "M1 barb-tip bridging membrane",
+   "type": "region",
+   "applies_to": "scan",
+   "select": {
+    "abs_x": [
+     18.14,
+     20.84
+    ],
+    "abs_y": [
+     null,
+     1.35
+    ],
+    "z": [
+     27.0,
+     29.0
+    ]
+   },
+   "why": "scanner bridging film across the open barb bore mouth (translucent tip): scan material inside a through hole is not a surface of the part",
+   "evidence": "intake/INTAKE_CARD.md \u00a72 artefact zones ('bridging membrane inside the barb tips'), \u00a73 (bore opening r\u22481.2 at z 27.7\u201328.6); photo OD-W03_photo1 shows open (dark) tips"
+  },
+  {
+   "name": "M2 tab-lug junction junk facets",
+   "type": "region",
+   "applies_to": "scan",
+   "select": {
+    "abs_x": [
+     32.0,
+     34.0
+    ],
+    "z": [
+     12.3,
+     14.7
+    ]
+   },
+   "why": "junk scan facets where the tab inner face meets the lug underside (occluded re-entrant corner, partly seen): scanner artefact, not part surface",
+   "evidence": "intake/INTAKE_CARD.md \u00a72 artefact zones ('junk facets ... x\u2248\u00b133, z 12.5\u201314.5'), \u00a73 (tab inner faces / lug undersides partly occluded)"
+  },
+  {
+   "name": "M3 open boundary",
+   "type": "open_boundary",
+   "applies_to": "cad",
+   "radius_mm": 0.8,
+   "why": "distance from CAD to a scan hole EDGE is not a surface deviation (25 open loops incl. the 358\u00b0 skirt lower-edge loop)",
+   "evidence": "intake/coverage.json open_boundary_loops; mask-policy.md M3 (B02 q20_tier2.py:9-10)"
+  }
+ ]
+}

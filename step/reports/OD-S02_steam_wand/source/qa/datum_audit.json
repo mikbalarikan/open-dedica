@@ -1,0 +1,79 @@
+{
+ "schema": "stl-re/datum_audit@1",
+ "tool": "datum_audit.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "75cedf513bc86fcf51dfc22194a93a93f12857925e45854a095752be6f57c5e9",
+  "intake/alignment.json": "17596743e9e2f8950aa01f5cf943f26bbeeebaea6fb411191c29e6622dffc292",
+  "qa/datum_spec.json": "4d0591f2a75e78928db0a538da4634315cfa375b08cfbf5b8492834da505e67f"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:58:03+00:00",
+ "independence": "builder matrix used only to select named regions; all fits are QA code on raw scan",
+ "primary": {
+  "type": "axis",
+  "method": "smallest eigenvector of sum(a n n^T)",
+  "faces": 41622
+ },
+ "level": {
+  "faces": 7767,
+  "method": "median height along audited axis"
+ },
+ "position": {
+  "type": "axis_line",
+  "faces": 41622,
+  "R_mm": 3.9798825732877234,
+  "fit_rms_mm": 0.39941626562035487
+ },
+ "clock": {
+  "type": "none",
+  "note": "clock not audited; builder clock adopted"
+ },
+ "angle_deg": 0.4215790521949162,
+ "axis_angle_deg": 0.4215787739205662,
+ "clock_audited": false,
+ "origin_offset_mm": 0.3258797483365153,
+ "origin_offset_vec_mm": [
+  0.051090887828195264,
+  0.3205240480343292,
+  -0.029183320381414912
+ ],
+ "point_disagreement_mean_mm": 0.3969873378516148,
+ "point_disagreement_p95_mm": 0.656558446747759,
+ "point_disagreement_max_mm": 0.7464050198952111,
+ "reference_band": "\u22640.3\u00b0 / \u22640.15 mm (RE_SPEC.md:241)",
+ "reference": {
+  "angle_deg": 0.3,
+  "origin_offset_mm": 0.15,
+  "source": "baseline/oomwoo-re-pipeline/RE_SPEC.md:241"
+ },
+ "within_reference": false,
+ "blocking": false,
+ "note": "REPORT-ONLY (QUESTIONS.md Q2). Golden precedent: both B02 and P03 exceeded this reference band and were still approved with it recorded (see analysis/golden/OOM-B02.md and OOM-P03.md for the actual figures).",
+ "T_qa": [
+  [
+   0.1186804595060245,
+   0.016331360911920133,
+   -0.9927981845179833,
+   -170.0946956844099
+  ],
+  [
+   0.5591157040263058,
+   0.8251809576144677,
+   0.08041154582296282,
+   19.28478194175933
+  ],
+  [
+   0.8205513865947747,
+   -0.5646323351006695,
+   0.08880173487133043,
+   -3.167579378887788
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ]
+}

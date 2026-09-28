@@ -1,0 +1,13 @@
+{
+ "comment": "it2 QA: reused verbatim from _it1_SUPERSEDED/qa/masks.json (CHK-LIKE4LIKE); declared BEFORE any it2 deviation number was computed; no mask added, removed or changed. Declared by QA BEFORE any deviation number was computed (2026-09-28, before the first deviation_gate.py run). Policy: only points that are not a surface deviation of the modelled part are masked. No scan-side (scan->CAD) mask is declared: unmodelled features (dimples, labels, barb rib, spline teeth, tip hole, plate hooks) ARE deviations of the part and stay in the gated number; artefacts are explained per cluster in review.json instead of masked. Gated CAD->scan is the observable split, which masks do not touch.",
+ "masks": [
+  {
+   "name": "M1 open boundary",
+   "type": "open_boundary",
+   "applies_to": "cad",
+   "radius_mm": 0.8,
+   "why": "a CAD point whose nearest scan point lies within 0.8 mm of a scan hole edge measures the distance to the edge of a coverage gap (22 open loops: port-web orifices, bore interiors, column windows, cap slots), not a surface deviation",
+   "evidence": "intake/coverage.json#open_boundary_loops; INTAKE_CARD.md \u00a73; B02 q20_tier2.py:9-10 (parameter 0.8 mm)"
+  }
+ ]
+}

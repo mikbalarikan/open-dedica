@@ -1,0 +1,80 @@
+{
+ "schema": "stl-re/noise@1",
+ "tool": "datum_fit.py (inline, orchestrator)",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/0bfad0c9-f032-5978-bb8b-45df87dc606b/scratchpad/jobs/OD-E02/intake/aligned_work.stl": "5180031d0377a5a60c15556b61ab8ae09dde94f55af3a9c5f074034b2fd6b521"
+ },
+ "seed": 0,
+ "created": "2026-09-28T06:26:01+00:00",
+ "scan_noise_mm": {
+  "value": 0.029376921900108943,
+  "p95_mm": 0.03807950821791515,
+  "max_mm": 0.03822873518197285,
+  "method": "median IRLS circle rms over the 9 origin stations of the middle button collar (z -18.7..-16.4); SELF-REFERENTIAL (same surface as the origin fit), declared",
+  "stations": [
+   {
+    "z": -18.7,
+    "irls_rms": 0.0378556677718286,
+    "r": 8.149365830129359
+   },
+   {
+    "z": -18.412499999999998,
+    "irls_rms": 0.03272139845347509,
+    "r": 8.171812429532226
+   },
+   {
+    "z": -18.125,
+    "irls_rms": 0.027721159870637335,
+    "r": 8.185778465974662
+   },
+   {
+    "z": -17.8375,
+    "irls_rms": 0.025529189231012862,
+    "r": 8.191048730843212
+   },
+   {
+    "z": -17.549999999999997,
+    "irls_rms": 0.026763519086627784,
+    "r": 8.19370755310013
+   },
+   {
+    "z": -17.2625,
+    "irls_rms": 0.02816897518883166,
+    "r": 8.194719726936462
+   },
+   {
+    "z": -16.974999999999998,
+    "irls_rms": 0.029376921900108943,
+    "r": 8.1977379754396
+   },
+   {
+    "z": -16.6875,
+    "irls_rms": 0.031243136241282825,
+    "r": 8.207736650690423
+   },
+   {
+    "z": -16.4,
+    "irls_rms": 0.03822873518197285,
+    "r": 8.266481713075787
+   }
+  ],
+  "independent_circle_survey_rms_mm": {
+   "left screw-boss hole z=-0.3/-1": [
+    0.0172,
+    0.0105
+   ],
+   "right screw-boss hole z=-0.3/-1/-2": [
+    0.0229,
+    0.0288,
+    0.0393
+   ],
+   "middle button cap z=-19.5/-22/-26": [
+    0.0372,
+    0.0277,
+    0.0389
+   ]
+  },
+  "note": "single-station circle noise on the collar (z=-17.5) was 0.0266 vs the 9-station median 0.0294: a tie within estimator precision (skill defect D1, evals/real-runs/OD-H22.md). The collar residual sits inside the range of the other clean circles on this scan (0.0105-0.0393), so it is not warp or artefact."
+ }
+}

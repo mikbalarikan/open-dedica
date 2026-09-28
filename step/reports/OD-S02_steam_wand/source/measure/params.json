@@ -1,0 +1,1640 @@
+{
+ "schema": "stl-re/params.json@1",
+ "tool": "measure/scripts/build_params.py (run-local)",
+ "tool_version": "OD-S02",
+ "inputs": {
+  "measure/figures/measurements.json": "96f2b7c3bcb40e5273481b0ff106c6779ec891f6f3f727714f88f29b71eaf41c",
+  "intake/alignment.json": "17596743e9e2f8950aa01f5cf943f26bbeeebaea6fb411191c29e6622dffc292"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:50:54+00:00",
+ "part": "OD-S02_steam-rod",
+ "frame": "datum: +Z = rod spigot axis toward the rod tip (axis primary, section-circle refined); origin z = knob top face; clock: tube B (steel, leaving the elbow) projected on XY -> +X. theta CCW about +Z from +X. Vectors are in this frame.",
+ "scan_noise_mm": 0.018717065728388264,
+ "params": {
+  "rod_collar_r": {
+   "value": 6.4454,
+   "unit": "mm",
+   "measured": "6.4044..6.4879",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table p50 (vertex radius about datum Z, lug sector excluded), median over the window z 0.75..6.25",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "lower collar, z 0..groove"
+  },
+  "rod_collar_z1": {
+   "value": 6.8,
+   "unit": "mm",
+   "measured": "6.75..6.85",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table: p50 crosses mid-radius between z 6.75 (6.20) and 7.25 (5.19)",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_groove_r": {
+   "value": 5.1269,
+   "unit": "mm",
+   "measured": "5.1131..5.1920",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table p50 (vertex radius about datum Z, lug sector excluded), median over the window z 7.25..8.25",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_groove_z2": {
+   "value": 9.15,
+   "unit": "mm",
+   "measured": "9.1..9.2",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table: p50 crosses mid-radius between z 8.75 (5.29) and 9.25 (6.23)",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_body_r": {
+   "value": 6.4782,
+   "unit": "mm",
+   "measured": "6.4551..6.5709",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table p50 (vertex radius about datum Z, lug sector excluded), median over the window z 13..17.25 (also used z 9.5..11 and 12.75..17.5)",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_bead_z": {
+   "value": [
+    9.75,
+    10.0,
+    10.25,
+    10.5,
+    10.75,
+    11.0,
+    11.25,
+    11.5,
+    11.75,
+    12.0,
+    12.25,
+    12.5,
+    12.75
+   ],
+   "unit": "mm",
+   "measured": [
+    9.75,
+    10.0,
+    10.25,
+    10.5,
+    10.75,
+    11.0,
+    11.25,
+    11.5,
+    11.75,
+    12.0,
+    12.25,
+    12.5,
+    12.75
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table stations z 9.75..12.75 (bead + shallow groove between the lower groove and the body)",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_bead_r": {
+   "value": [
+    6.4667,
+    6.4006,
+    6.4832,
+    6.6433,
+    6.566,
+    6.5647,
+    6.3465,
+    6.2241,
+    6.1213,
+    6.1339,
+    6.2013,
+    6.322,
+    6.4647
+   ],
+   "unit": "mm",
+   "measured": [
+    6.4667,
+    6.4006,
+    6.4832,
+    6.6433,
+    6.566,
+    6.5647,
+    6.3465,
+    6.2241,
+    6.1213,
+    6.1339,
+    6.2013,
+    6.322,
+    6.4647
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table p50 at rod_bead_z (profile kept as measured: bead 6.57 @10.75, groove 6.12 @11.75)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_flare_r": {
+   "value": 6.8726,
+   "unit": "mm",
+   "measured": "6.8628..6.8823",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table p50 (vertex radius about datum Z, lug sector excluded), median over the window z 20.5..20.75",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "body flares from rod_body_r at z 17.5 to this at the step"
+  },
+  "rod_flare_z0": {
+   "value": 17.5,
+   "unit": "mm",
+   "measured": "17.25..17.75",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table: p50 leaves 6.47-6.50 at z 17.5",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_step_z": {
+   "value": 21.1,
+   "unit": "mm",
+   "measured": "21.0..21.2",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table: p50 6.88@20.75 -> 5.76@21.75, step face at the mid (p10 5.96 @21.25)",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_cone1_r0": {
+   "value": 5.7564,
+   "unit": "mm",
+   "measured": [
+    5.7564,
+    5.7564
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table p50 (vertex radius about datum Z, lug sector excluded), median over the window z 21.75",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_cone1_r1": {
+   "value": 4.8112,
+   "unit": "mm",
+   "measured": [
+    4.8112,
+    4.8112
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table p50 (vertex radius about datum Z, lug sector excluded), median over the window z 25.75",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_cone1_z": {
+   "value": [
+    21.75,
+    25.75
+   ],
+   "unit": "mm",
+   "measured": [
+    21.75,
+    25.75
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table stations of rod_cone1_r0/r1; the model extends this cone line up to the step face and down to where it meets the long taper",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_taper_r_z30": {
+   "value": 4.6065,
+   "unit": "mm",
+   "measured": 4.6065,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "LSQ line through rod_radius_table p50, z 30..64, rms 0.0082",
+   "uncertainty_mm": 0.0082,
+   "evidence": "measure/figures/measurements.json",
+   "critical": true,
+   "note": "tapered spigot (machine interface)",
+   "rerun_trigger": "one caliper reading of the spigot diameter at a marked height"
+  },
+  "rod_taper_drdz": {
+   "value": -0.0437,
+   "unit": "mm",
+   "measured": -0.0437,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same LSQ line (mm radius per mm z)",
+   "uncertainty_mm": 0.001,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_oring_center": {
+   "value": [
+    4.67,
+    27.3
+   ],
+   "unit": "mm",
+   "measured": [
+    4.67,
+    27.3
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rod_radius_table: bump base 4.7-4.8 at z 26.2/28.4, peak 5.77 @27.25; circle through base+peak",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "[r, z] of the O-ring cord centre"
+  },
+  "rod_oring_cord_r": {
+   "value": 1.1,
+   "unit": "mm",
+   "measured": "1.05..1.12",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "half base width (26.2..28.4)/2 and peak 5.77 - 4.67",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_tip_z": {
+   "value": 67.257,
+   "unit": "mm",
+   "measured": 67.257,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "max z of scan vertices within r 3.5 of datum Z",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "rod_tip_round_r": {
+   "value": 2.0,
+   "unit": "mm",
+   "measured": "1.9..2.1",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "round-nose fit to rod_radius_table p50 at z 66.25 (2.77), 66.75 (2.36), 67.25 (1.16) with the end at rod_tip_z",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "lug_theta": {
+   "value": -90.92,
+   "unit": "deg",
+   "measured": "-96.25..-90.25",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median theta of lug vertices (r > 7.6) + tangential centre offset",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "datum frame, theta CCW about +Z from +X",
+   "frame": "datum frame (alignment.json), theta CCW about +Z from +X"
+  },
+  "lug_width": {
+   "value": 3.3983,
+   "unit": "mm",
+   "measured": 3.3983,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "tangential p1..p99 of lug face vertices (r > 7.6)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "lug_z": {
+   "value": [
+    3.2059,
+    5.6543
+   ],
+   "unit": "mm",
+   "measured": [
+    3.2059,
+    5.6543
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p1/p99 z of lug vertices",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "lug_r_top": {
+   "value": 8.3406,
+   "unit": "mm",
+   "measured": 8.3406,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p95 radius of lug vertices",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "lug_corner_r": {
+   "value": 0.6,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "not measured: corner round of the small rounded-rect lug (photo shows rounded corners)",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "knob_r": {
+   "value": 9.1532,
+   "unit": "mm",
+   "measured": "8.9736..9.2920",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mean of the sector medians (+Y, -Y, -X) z -3.6..-0.6; Kasa centre offset -0.225, 0.101",
+   "uncertainty_mm": 0.12,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "knob modelled coaxial with the rod; its Kasa centre is 0.22/0.10 mm off (an offset revolve was tried in the self-check and was worse, because the meridian is measured about Z)"
+  },
+  "knob_top_z": {
+   "value": 0.0,
+   "unit": "mm",
+   "measured": "-0.0291",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "datum origin plane (alignment.json origin.z); face median z",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "knob_meridian_z": {
+   "value": [
+    -3.5,
+    -4.0,
+    -4.5,
+    -5.0,
+    -5.5,
+    -6.0,
+    -6.5,
+    -7.0,
+    -7.5,
+    -8.0,
+    -8.5,
+    -9.0,
+    -9.5,
+    -10.0,
+    -10.5,
+    -11.0,
+    -11.5,
+    -12.0,
+    -12.5,
+    -13.0,
+    -13.5
+   ],
+   "unit": "mm",
+   "measured": [
+    -3.5,
+    -4.0,
+    -4.5,
+    -5.0,
+    -5.5,
+    -6.0,
+    -6.5,
+    -7.0,
+    -7.5,
+    -8.0,
+    -8.5,
+    -9.0,
+    -9.5,
+    -10.0,
+    -10.5,
+    -11.0,
+    -11.5,
+    -12.0,
+    -12.5,
+    -13.0,
+    -13.5
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "knob_meridian z stations",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "knob_meridian_r": {
+   "value": [
+    9.1007,
+    9.0497,
+    9.0018,
+    8.967,
+    8.9024,
+    8.8064,
+    8.6891,
+    8.5434,
+    8.3843,
+    8.1819,
+    7.9651,
+    7.7062,
+    7.4279,
+    6.9863,
+    6.5862,
+    6.1405,
+    5.6379,
+    5.0289,
+    4.2527,
+    3.4354,
+    2.8382
+   ],
+   "unit": "mm",
+   "measured": [
+    9.1007,
+    9.0497,
+    9.0018,
+    8.967,
+    8.9024,
+    8.8064,
+    8.6891,
+    8.5434,
+    8.3843,
+    8.1819,
+    7.9651,
+    7.7062,
+    7.4279,
+    6.9863,
+    6.5862,
+    6.1405,
+    5.6379,
+    5.0289,
+    4.2527,
+    3.4354,
+    2.8382
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "knob_meridian: mean of +Y and -Y sector medians per station",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "spline meridian of the rounded knob bottom; +Y/-Y differ by up to 0.4 (off-centre); the spline closes on the axis at knob_bottom_z"
+  },
+  "knob_bottom_z": {
+   "value": -14.4,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "not observable (inside the lever plate): extrapolation of the meridian slope below z -13.5 to r = 0",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "fair_x": {
+   "value": [
+    0.0,
+    1.5,
+    3.0,
+    4.5,
+    6.0,
+    7.0
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0,
+    1.5,
+    3.0,
+    4.5,
+    6.0,
+    7.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "fairing section stations (x = const planes)",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "fair_yc": {
+   "value": [
+    0.078,
+    0.0816,
+    0.1229,
+    0.2029,
+    0.34,
+    0.433
+   ],
+   "unit": "mm",
+   "measured": [
+    0.078,
+    0.0816,
+    0.1229,
+    0.2029,
+    0.34,
+    0.433
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "knob_fairing_ellipses: soft-L1 ellipse fit (centre yc,zc, semi-axes ay,az) to the scan section in the plane x = const, points z -15.5..-3.5 outside the lever plate",
+   "uncertainty_mm": 0.1371,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "per-station ellipse fit rms 0.028, 0.033, 0.046, 0.060, 0.109, 0.137"
+  },
+  "fair_zc": {
+   "value": [
+    -3.8094,
+    -3.9499,
+    -4.2058,
+    -5.4863,
+    -7.0443,
+    -7.9801
+   ],
+   "unit": "mm",
+   "measured": [
+    -3.8094,
+    -3.9499,
+    -4.2058,
+    -5.4863,
+    -7.0443,
+    -7.9801
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "knob_fairing_ellipses: soft-L1 ellipse fit (centre yc,zc, semi-axes ay,az) to the scan section in the plane x = const, points z -15.5..-3.5 outside the lever plate",
+   "uncertainty_mm": 0.1371,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "fair_ay": {
+   "value": [
+    9.0206,
+    8.8848,
+    8.5334,
+    7.8436,
+    7.1032,
+    6.7628
+   ],
+   "unit": "mm",
+   "measured": [
+    9.0206,
+    8.8848,
+    8.5334,
+    7.8436,
+    7.1032,
+    6.7628
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "knob_fairing_ellipses: soft-L1 ellipse fit (centre yc,zc, semi-axes ay,az) to the scan section in the plane x = const, points z -15.5..-3.5 outside the lever plate",
+   "uncertainty_mm": 0.1371,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "fair_az": {
+   "value": [
+    9.7773,
+    9.9643,
+    10.0739,
+    9.0583,
+    7.7486,
+    7.0012
+   ],
+   "unit": "mm",
+   "measured": [
+    9.7773,
+    9.9643,
+    10.0739,
+    9.0583,
+    7.7486,
+    7.0012
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "knob_fairing_ellipses: soft-L1 ellipse fit (centre yc,zc, semi-axes ay,az) to the scan section in the plane x = const, points z -15.5..-3.5 outside the lever plate",
+   "uncertainty_mm": 0.1371,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "paddle_face_pos": {
+   "value": [
+    0.0368,
+    0.0197,
+    2.8676
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0368,
+    0.0197,
+    2.8676
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "+Y face plane y = a x + b z + c, LSQ plane, 5 passes dropping points >0.15 below (the dish)",
+   "uncertainty_mm": 0.0656,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "paddle_face_neg": {
+   "value": [
+    0.0395,
+    0.01,
+    -2.4007
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0395,
+    0.01,
+    -2.4007
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "-Y face plane, LSQ plane on the underside outside the dish (ring rho 5.6..8.8 about the end circle + knob-side flat), 3-sigma trimmed x4",
+   "uncertainty_mm": 0.0636,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "paddle_end_c": {
+   "value": [
+    -11.4525,
+    -16.8839
+   ],
+   "unit": "mm",
+   "measured": [
+    -11.4525,
+    -16.8839
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa circle on plate edge faces (|n_y|<0.35) of the round end, xz",
+   "uncertainty_mm": 0.0917,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "paddle_end_r": {
+   "value": 10.0335,
+   "unit": "mm",
+   "measured": 10.0335,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same Kasa fit",
+   "uncertainty_mm": 0.0917,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "paddle_upper_line": {
+   "value": [
+    0.6897,
+    3.1217
+   ],
+   "unit": "mm",
+   "measured": [
+    0.6897,
+    3.1217
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "LSQ line z = k x + b on the upper straight edge",
+   "uncertainty_mm": 0.0695,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "modelled as the tangent from the end circle with this slope"
+  },
+  "paddle_lower_end": {
+   "value": [
+    8.8916,
+    -15.2594
+   ],
+   "unit": "mm",
+   "measured": [
+    8.8916,
+    -15.2594
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "xz of the lower edge where it meets the sleeve (max x of lower-edge faces, median z)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "lower edge modelled as the tangent from the end circle to this point (the edge is slightly convex: line rms 0.216)"
+  },
+  "paddle_edge_fillet_r": {
+   "value": 1.946,
+   "unit": "mm",
+   "measured": [
+    1.8704,
+    2.0216
+   ],
+   "rule": "mean-of-n",
+   "source": "scan",
+   "estimator": "round tangent to the face plane and the end-circle outline, soft-L1 LSQ on scan vertices 0..3.5 mm inside the outline, end arc 100..280 deg; mean of the +Y and -Y fits",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measure_it3.json",
+   "critical": false,
+   "note": "it3: 1.2 (assumed) -> scan fit (_it2_SUPERSEDED/qa Z3: CAD fuller than the scan at the perimeter)"
+  },
+  "under_dish_c": {
+   "value": [
+    -10.289,
+    -21.4172,
+    -16.4812
+   ],
+   "unit": "mm",
+   "measured": [
+    -10.289,
+    -21.4172,
+    -16.4812
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "soft-L1 sphere fit to underside faces within 4.6 of the end-circle centre",
+   "uncertainty_mm": 0.0489,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "under_dish_R": {
+   "value": 19.2634,
+   "unit": "mm",
+   "measured": 19.2634,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "soft-L1 sphere fit to underside faces within 4.6 of the end-circle centre",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "dish_c": {
+   "value": [
+    -11.5695,
+    -16.6736
+   ],
+   "unit": "mm",
+   "measured": [
+    -11.5695,
+    -16.6736
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "spherical cap in the +Y face (soft-L1 LSQ, depth below the fitted face)",
+   "uncertainty_mm": 0.0449,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "concentric with paddle_end_c within 0.24 mm; kept measured"
+  },
+  "dish_depth": {
+   "value": 0.9019,
+   "unit": "mm",
+   "measured": 0.9019,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "spherical cap in the +Y face (soft-L1 LSQ, depth below the fitted face)",
+   "uncertainty_mm": 0.0449,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "dish_sphere_r": {
+   "value": 17.972,
+   "unit": "mm",
+   "measured": 17.972,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "spherical cap in the +Y face (soft-L1 LSQ, depth below the fitted face)",
+   "uncertainty_mm": 0.5,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "tubeB_point": {
+   "value": [
+    -0.0002,
+    0.358,
+    -9.2949
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.0002,
+    0.358,
+    -9.2949
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa section circles on the steel segment (clock crop), line through centres; point closest to datum Z",
+   "uncertainty_mm": 0.0518,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "tubeB_dir": {
+   "value": [
+    0.9891,
+    0.0006,
+    -0.1471
+   ],
+   "unit": "mm",
+   "measured": [
+    0.9891,
+    0.0006,
+    -0.1471
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit (unit vector)",
+   "uncertainty_mm": 0.002,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "elevation -8.458 deg (tube dips away from the rod)"
+  },
+  "tube_r": {
+   "value": 2.9967,
+   "unit": "mm",
+   "measured": "2.9875..3.0059",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median of the B and C straight-segment radii",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measurements.json",
+   "critical": true,
+   "rerun_trigger": "caliper reading of the steel tube OD"
+  },
+  "sleeve_point": {
+   "value": [
+    14.8842,
+    0.2448,
+    -11.1813
+   ],
+   "unit": "mm",
+   "measured": [
+    14.8842,
+    0.2448,
+    -11.1813
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa section circles on the black sleeve, B t 10.3..20.2, own axis",
+   "uncertainty_mm": 0.0921,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "sleeve_dir": {
+   "value": [
+    0.9848,
+    0.0046,
+    -0.1738
+   ],
+   "unit": "mm",
+   "measured": [
+    0.9848,
+    0.0046,
+    -0.1738
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit",
+   "uncertainty_mm": 0.003,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "1.57 deg / 0.35 mm off tube B (kept measured)"
+  },
+  "sleeve_r_at_point": {
+   "value": 3.8795,
+   "unit": "mm",
+   "measured": 3.8795,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "LSQ r(t) line over the sleeve stations",
+   "uncertainty_mm": 0.0921,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "sleeve_drdt": {
+   "value": -0.0348,
+   "unit": "mm",
+   "measured": -0.0348,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "slope of the same line (draft)",
+   "uncertainty_mm": 0.003,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "sleeve_end_t": {
+   "value": 20.55,
+   "unit": "mm",
+   "measured": "20.5..20.6",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "B_profile: p50 3.71@20.0, 3.88@20.5 (step), 5.01@21.0; end of sleeve = start of band",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "band_r": {
+   "value": 5.0103,
+   "unit": "mm",
+   "measured": "4.9822..5.0340",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "B_profile p50, t 21..22",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "band_t": {
+   "value": [
+    20.55,
+    22.4,
+    23.0,
+    23.5,
+    23.8
+   ],
+   "unit": "mm",
+   "measured": [
+    20.55,
+    22.4,
+    23.0,
+    23.5,
+    23.8
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "B_profile: band start, flat end, rounded fall 4.75@23.0, 4.07@23.5, tube at 23.8-24",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "band_fall_r": {
+   "value": [
+    4.75,
+    4.07
+   ],
+   "unit": "mm",
+   "measured": [
+    4.75,
+    4.07
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "B_profile p50 at t 23.0, 23.5",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bend_vertex": {
+   "value": [
+    41.2526,
+    0.2992,
+    -15.4061
+   ],
+   "unit": "mm",
+   "measured": [
+    41.2526,
+    0.2992,
+    -15.4061
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "midpoint of the closest points of lines B and C (gap 0.172)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bend_R": {
+   "value": 11.6,
+   "unit": "mm",
+   "measured": "10.4..12.8",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "arc-centreline radius minimising the rms of the tube-surface distance (0.2 mm scan)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "tube is ovalised in the bend (median r 2.916 vs 2.987 straight)"
+  },
+  "bend_cl_x": {
+   "value": [
+    30.6426,
+    32.5718,
+    34.4441,
+    36.1953,
+    37.7426,
+    38.9722,
+    39.8889,
+    40.4484,
+    40.6266,
+    40.607
+   ],
+   "unit": "mm",
+   "measured": [
+    30.6426,
+    32.5718,
+    34.4441,
+    36.1953,
+    37.7426,
+    38.9722,
+    39.8889,
+    40.4484,
+    40.6266,
+    40.607
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "marching Kasa section circles, 1 mm steps (slab +/-0.3 mm, r < 4.2), direction from the last 3 centres; starts on tube B at t 25; every 2nd station 6..24",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measure_it3.json",
+   "critical": false,
+   "note": "it3: the bend follows the scanned centreline (spline) instead of a circular arc (_it2_SUPERSEDED/qa Z2: arc 0.1..0.22 off the scanned centreline)"
+  },
+  "bend_cl_y": {
+   "value": [
+    0.3197,
+    0.2385,
+    0.1028,
+    -0.1106,
+    -0.3969,
+    -0.8098,
+    -1.26,
+    -1.7904,
+    -2.3346,
+    -2.8584
+   ],
+   "unit": "mm",
+   "measured": [
+    0.3197,
+    0.2385,
+    0.1028,
+    -0.1106,
+    -0.3969,
+    -0.8098,
+    -1.26,
+    -1.7904,
+    -2.3346,
+    -2.8584
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measure_it3.json",
+   "critical": false
+  },
+  "bend_cl_z": {
+   "value": [
+    -13.9784,
+    -14.5046,
+    -15.2105,
+    -16.1723,
+    -17.4354,
+    -18.9924,
+    -20.7305,
+    -22.5971,
+    -24.5336,
+    -26.4687
+   ],
+   "unit": "mm",
+   "measured": [
+    -13.9784,
+    -14.5046,
+    -15.2105,
+    -16.1723,
+    -17.4354,
+    -18.9924,
+    -20.7305,
+    -22.5971,
+    -24.5336,
+    -26.4687
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measure_it3.json",
+   "critical": false
+  },
+  "bend_tube_r": {
+   "value": 2.9098,
+   "unit": "mm",
+   "measured": "2.8832..2.9686",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median section-circle radius over the bend stations 8..22 (ovalised/thinned bend)",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/measure_it3.json",
+   "critical": false
+  },
+  "tubeC_dir_up": {
+   "value": [
+    0.0587,
+    0.2677,
+    0.9617
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0587,
+    0.2677,
+    0.9617
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa section circles on the steel segment between bend and bushing, line through centres",
+   "uncertainty_mm": 0.002,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bush_point": {
+   "value": [
+    38.9661,
+    -6.6886,
+    -39.3299
+   ],
+   "unit": "mm",
+   "measured": [
+    38.9661,
+    -6.6886,
+    -39.3299
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "barrel-circle centre (Kasa stations t -5..2) projected onto the tip axis",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bush_dir_down": {
+   "value": [
+    -0.1376,
+    -0.2904,
+    -0.9469
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.1376,
+    -0.2904,
+    -0.9469
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "= tip axis: the bushing bottom ring/hub faces are normal to within 0.7/1.4 deg of it (flat_face_normals); barrel-circle axis was 3.4 deg off",
+   "uncertainty_mm": 0.01,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "bushing coaxial with the tip (design intent from the flat faces); tip is off tube C, see tip_dir_down"
+  },
+  "bush_c_t": {
+   "value": 25.0019,
+   "unit": "mm",
+   "measured": 25.0019,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "distance of bush_point from bend_vertex along -C",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bush_barrel_t": {
+   "value": [
+    -5.0,
+    -4.0,
+    -3.0,
+    -2.0,
+    -1.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    4.5
+   ],
+   "unit": "mm",
+   "measured": [
+    -5.0,
+    -4.0,
+    -3.0,
+    -2.0,
+    -1.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    4.5
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "bushing outer_profile stations (t along bush_dir_down from bush_point)",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bush_barrel_r": {
+   "value": [
+    5.9995,
+    6.6433,
+    7.3617,
+    7.8632,
+    8.2545,
+    8.4943,
+    8.6415,
+    8.7867,
+    8.6025,
+    8.3711,
+    8.1777
+   ],
+   "unit": "mm",
+   "measured": [
+    5.9995,
+    6.6433,
+    7.3617,
+    7.8632,
+    8.2545,
+    8.4943,
+    8.6415,
+    8.7867,
+    8.6025,
+    8.3711,
+    8.1777
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "bushing outer_profile p50 (outward faces) at bush_barrel_t",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bush_top_t": {
+   "value": -7.5925,
+   "unit": "mm",
+   "measured": "-7.639..-7.546",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "axial faces facing the bend, t50 for r 4..6 (bushing frame about the tip axis)",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "it1 self-check: no neck above the top face (the r 3.6 'neck' read at t -9 was the 2.5 deg-tilted tube)"
+  },
+  "bush_top_cone": {
+   "value": [
+    3.5,
+    -7.084
+   ],
+   "unit": "mm",
+   "measured": [
+    3.5,
+    -7.084
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "top face is conical: t50 of faces facing the bend at r 3..4 (-7.084) vs r 4..6 (bush_top_t)",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "[r, t] of the inner point of the top face (outer point = bush_flange_r at bush_top_t)"
+  },
+  "bush_flange_r": {
+   "value": 5.8828,
+   "unit": "mm",
+   "measured": "5.8255..5.9035",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "bushing outer_profile p50 t -7..-5.5, median",
+   "uncertainty_mm": 0.0187,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bush_bottom": {
+   "value": [
+    8.2,
+    4.907
+   ],
+   "unit": "mm",
+   "measured": [
+    8.2,
+    4.907
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "bottom face: t50 of downward faces r 7..9 (outer ring); outer corner r 8.2 = last dense bottom-face bin (bushing_windows bottom_faces_by_r)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "[r, t] of the bottom outer corner"
+  },
+  "bush_frame_x": {
+   "value": [
+    0.0,
+    -0.956,
+    0.2932
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0,
+    -0.956,
+    0.2932
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "reference x of the bushing frame (axfit.frame of bush_dir_down), used for the spoke phase",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bush_spoke_count": {
+   "value": 6,
+   "unit": "count",
+   "measured": 6,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "pattern_count.py --signal mass, FFT-dominant rotational order 6 at 3 stations t 4.85/5.0/5.15, residual local minimum (CHK-COUNT pass), on measure/figures/bushing_frame.stl",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/count_bushing_spokes.json",
+   "critical": false
+  },
+  "bush_spoke_phase": {
+   "value": 49.433,
+   "unit": "deg",
+   "measured": 49.433,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mean crest phase of the order-6 signal over the 3 stations (bushing frame, CCW about bush_dir_down from bush_frame_x)",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/count_bushing_spokes.json",
+   "critical": false,
+   "frame": "bushing frame: z = bush_dir_down, x = bush_frame_x, theta CCW about z"
+  },
+  "bush_window_r": {
+   "value": [
+    4.5,
+    7.0
+   ],
+   "unit": "mm",
+   "measured": [
+    4.5,
+    7.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "bushing underside: bottom-face area dense for r < 4.5 (hub) and r >= 7.0 (ring), sparse between (spokes only); hub side wall at r 4.5",
+   "uncertainty_mm": 0.25,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bush_spoke_w": {
+   "value": 0.8022,
+   "unit": "mm",
+   "measured": 0.8022,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "FWHM (8 deg) of the folded order-6 bottom-face area at r 4.8..6.7, chord at r 5.75",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "bush_window_depth": {
+   "value": 2.52,
+   "unit": "mm",
+   "measured": "2.524",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "it2: p1 of scan vertices on window surfaces (r 4.7..6.8, off the spokes) below the bottom face (revise_it2_probe.json); a lower bound, deeper is not observable",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/revise_it2_probe.json",
+   "critical": false,
+   "note": "it1 1.5 (assumed) -> it2 measured lower bound: it1 verify found scan material 1 mm deeper than the it1 pocket floor (_it1_SUPERSEDED/qa clusters 2+3)"
+  },
+  "tip_point": {
+   "value": [
+    36.9138,
+    -11.0194,
+    -53.4502
+   ],
+   "unit": "mm",
+   "measured": [
+    36.9138,
+    -11.0194,
+    -53.4502
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa section circles on outer tip faces (r > 2.55), line through centres",
+   "uncertainty_mm": 0.089,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "tip_dir_down": {
+   "value": [
+    -0.1376,
+    -0.2904,
+    -0.9469
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.1376,
+    -0.2904,
+    -0.9469
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit",
+   "uncertainty_mm": 0.01,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false,
+   "note": "4.79 deg off tube C (kept measured)"
+  },
+  "tip_r": {
+   "value": 2.9598,
+   "unit": "mm",
+   "measured": "2.7191..2.9884",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median station radius",
+   "uncertainty_mm": 0.089,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "tip_neck_t": {
+   "value": [
+    -9.6,
+    -9.4,
+    -9.2,
+    -9.0,
+    -8.8,
+    -8.6,
+    -8.4,
+    -8.2
+   ],
+   "unit": "mm",
+   "measured": [
+    -9.6,
+    -9.4,
+    -9.2,
+    -9.0,
+    -8.8,
+    -8.6,
+    -8.4,
+    -8.2
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "tip-axis t stations of the neck just below the bushing (bottom at tip-t -10.00); -10.0/-9.8 left out (they mix the bushing hub face)",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/measure_it3.json",
+   "critical": false
+  },
+  "tip_neck_r": {
+   "value": [
+    2.587,
+    2.4977,
+    2.5002,
+    2.5464,
+    2.596,
+    2.8048,
+    2.9422,
+    2.9779
+   ],
+   "unit": "mm",
+   "measured": [
+    2.587,
+    2.4977,
+    2.5002,
+    2.5464,
+    2.596,
+    2.8048,
+    2.9422,
+    2.9779
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p50 vertex radius about the tip axis, slab +/-0.08 mm, r 2.2..3.4",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measure_it3.json",
+   "critical": false,
+   "note": "it3: neck (crimp groove) under the bushing, r down to 2.5 (_it2_SUPERSEDED/qa Z4: scan inside the CAD at the hub, r < 3.5)"
+  },
+  "tip_end_t": {
+   "value": 3.9,
+   "unit": "mm",
+   "measured": "3.869..3.95",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p99.9 of vertex t along the tip axis (r < 3.3), rounded up to the chamfer end",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "tip_chamfer": {
+   "value": [
+    1.1,
+    0.5
+   ],
+   "unit": "mm",
+   "measured": [
+    1.1,
+    0.5
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "end_profile p50: 2.885@3.0, 2.813@3.25, 2.702@3.5, 2.559@3.75 -> linear fall, axial x radial",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "tip_bore_r": {
+   "value": 2.032,
+   "unit": "mm",
+   "measured": 2.032,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median vertex radius inside the tip bore, t 1.8..3.0",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/measurements.json",
+   "critical": false
+  },
+  "tip_bore_depth": {
+   "value": 13.6,
+   "unit": "mm",
+   "measured": "13.600",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "it2: bore wall (r 1.8..2.4 about the tip axis) is scanned up to just below the bushing bottom; depth from the tip end to the deepest bore-wall vertex (revise_it2_probe.json); a lower bound",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/revise_it2_probe.json",
+   "critical": false,
+   "note": "it1 8.0 (assumed) -> it2 measured lower bound (_it1_SUPERSEDED/qa cluster 2)"
+  }
+ },
+ "struck": [],
+ "simplifications": [
+  {
+   "name": "rod lower body coaxial",
+   "modelled_as": "rod collar/groove/body revolved about the spigot axis",
+   "deviation_cost": "circle centres z 0.8..20.5 sit 0.11-0.19 mm off the axis (rod_station_circles); up to ~0.2 mm locally"
+  },
+  {
+   "name": "knob coaxial, one meridian",
+   "modelled_as": "knob revolved about datum Z with the mean +Y/-Y meridian",
+   "deviation_cost": "Kasa centre 0.22/0.10 mm off axis; +Y vs -Y meridian differ up to 0.4 mm below z -10 (knob_meridian)"
+  },
+  {
+   "name": "paddle lower edge straight",
+   "modelled_as": "tangent line from the end circle to paddle_lower_end",
+   "deviation_cost": "line fit rms 0.216 mm (edge is slightly convex)"
+  },
+  {
+   "name": "bend cross-section round",
+   "modelled_as": "circle of bend_tube_r swept along the scanned centreline spline (it3)",
+   "deviation_cost": "section-circle rms in the bend up to 0.149 mm (ovalised tube)"
+  },
+  {
+   "name": "bushing underside windows",
+   "modelled_as": "6 annular-sector pockets between straight spokes, flat floor at an assumed depth",
+   "deviation_cost": "window floors/walls barely scanned (floor faces 2.8 mm2); floor depth assumed"
+  },
+  {
+   "name": "rod body",
+   "modelled_as": "rod_body_r flat z 12.75..17.5, bead/groove z 9.75..12.75 as measured polyline",
+   "deviation_cost": "polyline between 0.25 mm stations; body flat within p50 6.46..6.52"
+  }
+ ],
+ "checks": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "pass",
+   "note": "bushing underside spokes: 6 (pattern_count.py mass signal, FFT-dominant order 6 at 3 stations, residual local minimum), measure/figures/count_bushing_spokes.json"
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": false,
+   "result": "pass",
+   "note": "no caliper readings (scan-only run)"
+  },
+  "CHK-CLUSTER": {
+   "ran": true,
+   "result": "pass",
+   "note": "all material explained: rod, lug, knob, lever plate + dish, sleeve, band, steel tube B/bend/C, bushing, tip; small torn flash at the knob/sleeve junction (photos show torn rubber) is not a feature"
+  },
+  "CHK-FRAME": {
+   "ran": true,
+   "result": "pass",
+   "note": "all angles/vectors measured on intake/aligned_work.stl in the frozen datum frame; none copied from intake notes"
+  }
+ },
+ "open_questions": [
+  "Bushing underside window depth (a photo from below would decide).",
+  "Is the 2.5-5 deg misalignment of bushing and tip real (bent tube) or a seating artefact of this specimen?"
+ ]
+}

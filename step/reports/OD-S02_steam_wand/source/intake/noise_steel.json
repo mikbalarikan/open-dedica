@@ -1,0 +1,29 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "intake/steel_noise.py (run-local)",
+ "tool_version": "OD-S02",
+ "inputs": {
+  "intake/aligned_work.stl": "4b386689ef8fad9273bf9dab77654ad83704ac84aaad23ecb7f0cd8ae092011e"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:08:57+00:00",
+ "scan_noise_mm": {
+  "value": 0.05138962978671659,
+  "p95_mm": 0.08640627560332993,
+  "max_mm": 0.09210067617857139,
+  "method": "median Kasa rms of 13 slabs normal to the steel tube axis, segment between the bend and the white bushing (disjoint from the clock crop)"
+ },
+ "axis": {
+  "point": [
+   40.54066529842745,
+   -3.047493014118467,
+   -27.111120694885155
+  ],
+  "direction": [
+   0.05866465153554959,
+   0.2676620704117492,
+   0.9617252594806421
+  ],
+  "radius_median_mm": 3.0059020194892856
+ }
+}

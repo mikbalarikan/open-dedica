@@ -1,0 +1,58 @@
+{
+  "created": "2026-09-28T06:06:44+00:00",
+  "files": [
+    {
+      "bytes": 19904034,
+      "mode": "copy",
+      "path": "input/scan.stl",
+      "role": "scan",
+      "sha256": "41448c67a63083726a1c7f2288364cfd9445e66204d05ac3bd13a9ba726c5d93",
+      "source": "/root/.claude/uploads/cc1d16d6-e29e-5083-93d9-02d5e75eef66/fe50d1cd-OD-E01-Power-PCB.stl"
+    },
+    {
+      "bytes": 230174,
+      "mode": "copy",
+      "path": "input/photos/1.png",
+      "role": "photo",
+      "sha256": "a4bc174793d4a8ff2b214139c1734cfc889fba4dc48a51d166442601c57b10a9",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc1d16d6-e29e-5083-93d9-02d5e75eef66/scratchpad/OD-E01/photos_src/1.png"
+    },
+    {
+      "bytes": 378606,
+      "mode": "copy",
+      "path": "input/photos/2.png",
+      "role": "photo",
+      "sha256": "ac07f4acb654a0ab0dffe33c49da9446f13acd39995dd532f989360c9eb099fd",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc1d16d6-e29e-5083-93d9-02d5e75eef66/scratchpad/OD-E01/photos_src/2.png"
+    },
+    {
+      "bytes": 219712,
+      "mode": "copy",
+      "path": "input/photos/3.png",
+      "role": "photo",
+      "sha256": "80950607cc5fa349eadde2542270b6494df161b81f09546d4c86dfabfbb1f975",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc1d16d6-e29e-5083-93d9-02d5e75eef66/scratchpad/OD-E01/photos_src/3.png"
+    },
+    {
+      "bytes": 224501,
+      "mode": "copy",
+      "path": "input/photos/4.png",
+      "role": "photo",
+      "sha256": "f3df81d22d149c806a7254b970bc818d141946ce32a66fa5ad91434dd317c9e7",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/cc1d16d6-e29e-5083-93d9-02d5e75eef66/scratchpad/OD-E01/photos_src/4.png"
+    }
+  ],
+  "inputs": {
+    "input/photos/1.png": "a4bc174793d4a8ff2b214139c1734cfc889fba4dc48a51d166442601c57b10a9",
+    "input/photos/2.png": "ac07f4acb654a0ab0dffe33c49da9446f13acd39995dd532f989360c9eb099fd",
+    "input/photos/3.png": "80950607cc5fa349eadde2542270b6494df161b81f09546d4c86dfabfbb1f975",
+    "input/photos/4.png": "f3df81d22d149c806a7254b970bc818d141946ce32a66fa5ad91434dd317c9e7",
+    "input/scan.stl": "41448c67a63083726a1c7f2288364cfd9445e66204d05ac3bd13a9ba726c5d93"
+  },
+  "part": "OD-E01_Power-PCB",
+  "scan_resolution": "full",
+  "schema": "stl-re/INPUT_HASHES@1",
+  "seed": 0,
+  "tool": "init_run.py",
+  "tool_version": "stl-re-orchestrate@1"
+}

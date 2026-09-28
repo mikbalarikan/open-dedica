@@ -1,0 +1,244 @@
+{
+  "schema": "stl-re/repro@1",
+  "tool": "repro_check.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "build/OD-W03.step": "09297e22f7ac9b5a9b992b05cec8951fd709b3d315dcb3fcaad959f52a03cfe3",
+    "build/OD-W03_datum.step": "a74589f0ac36ee40b206c25c0ac709b7804e47f72e0f535fa01b25c055b44c5f",
+    "build/model.py": "85b649e02413add50971e32c28e4c416f529d492af9be4e0bb83777c825565b7",
+    "measure/params.json": "3adb924332695a96b7328d62e6c5243feae1189adaaaa49b11668db549283329"
+  },
+  "seed": 0,
+  "created": "2026-09-28T08:46:38+00:00",
+  "method": "2 fresh subprocess rebuild(s) of build/model.py in a scratch copy; STEP re-imported; solids, faces, surface census, volume, bbox compared (raw hash reported, not required)",
+  "command": [
+    "python3",
+    "model.py",
+    "--params",
+    "../measure/params.json",
+    "--alignment",
+    "../intake/alignment.json",
+    "--out",
+    ".",
+    "--part",
+    "OD-W03",
+    "--scripts",
+    "/home/user/agentic_STL-to-CAD/skills/stl-re-rebuild-build123d/scripts"
+  ],
+  "cwd": "build",
+  "tolerance_mm": 0.0,
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "build123d": "0.13.0",
+    "OCP": "8.0.1.0",
+    "numpy": "2.4.6"
+  },
+  "reproducible": true,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=params.json\nF01 stadium flange: faces=10\nF03a cup A top outer round fillet target R0.653 used R0.653 on 1 edges OK\nF03b cup A shoulder-shank round fillet target R0.646 used R0.646 on 1 edges OK\nF02 cup A at x=-19.4850: shoulder meets top at r=7.729, shank at z=15.590\nF03a cup B top outer round fillet target R0.469 used R0.469 on 1 edges OK\nF03b cup B shoulder-shank round fillet target R0.657 used R0.657 on 1 edges OK\nF02 cup B at x=19.4850: shoulder meets top at r=7.815, shank at z=15.632\nF04a boss top outer round fillet target R0.378 used R0.378 on 1 edges OK\nF05 webs x4: half width 0.964, top z 12.412\nF06/F07 ear neg: tab w 4.866->3.705, lug x -32.658..-42.388, z 12.207..15.046\nF06/F07 ear pos: tab w 4.832->3.899, lug x 32.586..42.408, z 12.212..14.963\nF08 fused outer body: solids=1 faces=80\nF09 cut tools subtracted once: solids=1 faces=106\n{\n  \"closed\": true,\n  \"faces\": 106,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 5,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 6260.771591\n}\n",
+      "stderr_tail": "",
+      "run": 1,
+      "produced": [
+        "OD-W03.step",
+        "OD-W03_datum.step"
+      ]
+    },
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=params.json\nF01 stadium flange: faces=10\nF03a cup A top outer round fillet target R0.653 used R0.653 on 1 edges OK\nF03b cup A shoulder-shank round fillet target R0.646 used R0.646 on 1 edges OK\nF02 cup A at x=-19.4850: shoulder meets top at r=7.729, shank at z=15.590\nF03a cup B top outer round fillet target R0.469 used R0.469 on 1 edges OK\nF03b cup B shoulder-shank round fillet target R0.657 used R0.657 on 1 edges OK\nF02 cup B at x=19.4850: shoulder meets top at r=7.815, shank at z=15.632\nF04a boss top outer round fillet target R0.378 used R0.378 on 1 edges OK\nF05 webs x4: half width 0.964, top z 12.412\nF06/F07 ear neg: tab w 4.866->3.705, lug x -32.658..-42.388, z 12.207..15.046\nF06/F07 ear pos: tab w 4.832->3.899, lug x 32.586..42.408, z 12.212..14.963\nF08 fused outer body: solids=1 faces=80\nF09 cut tools subtracted once: solids=1 faces=106\n{\n  \"closed\": true,\n  \"faces\": 106,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 5,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 6260.771591\n}\n",
+      "stderr_tail": "",
+      "run": 2,
+      "produced": [
+        "OD-W03.step",
+        "OD-W03_datum.step"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "OD-W03.step",
+      "original_volume_mm3": 6260.771590712634,
+      "rebuild_volume_mm3": 6260.771590712634,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        66.40433697031017,
+        64.30038040434371,
+        42.67757869614226
+      ],
+      "rebuild_bbox_mm": [
+        66.40433697031017,
+        64.30038040434371,
+        42.67757869614226
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 6260.771590712634,
+          "rebuild_volume_mm3": 6260.771590712634,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            66.40433697031017,
+            64.30038040434371,
+            42.67757869614226
+          ],
+          "rebuild_bbox_mm": [
+            66.40433697031017,
+            64.30038040434371,
+            42.67757869614226
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 6260.771590712634,
+          "rebuild_volume_mm3": 6260.771590712634,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            66.40433697031017,
+            64.30038040434371,
+            42.67757869614226
+          ],
+          "rebuild_bbox_mm": [
+            66.40433697031017,
+            64.30038040434371,
+            42.67757869614226
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 106,
+        "valid": true,
+        "surface_census": {
+          "BSPLINE": 8,
+          "CONE": 35,
+          "CYLINDER": 17,
+          "PLANE": 46
+        },
+        "volume_mm3": 6260.771590712634,
+        "area_mm2": 10056.058243242758,
+        "bbox_min": [
+          -29.192234820175106,
+          -54.47864238063616,
+          -222.9983608882927
+        ],
+        "bbox_max": [
+          37.21210215013507,
+          9.821738023707551,
+          -180.32078219215043
+        ]
+      }
+    },
+    {
+      "file": "OD-W03_datum.step",
+      "original_volume_mm3": 6260.771590712629,
+      "rebuild_volume_mm3": 6260.771590712629,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        84.79599999999999,
+        29.432000000000002,
+        31.41200000000022
+      ],
+      "rebuild_bbox_mm": [
+        84.79599999999999,
+        29.432000000000002,
+        31.41200000000022
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 6260.771590712629,
+          "rebuild_volume_mm3": 6260.771590712629,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            84.79599999999999,
+            29.432000000000002,
+            31.41200000000022
+          ],
+          "rebuild_bbox_mm": [
+            84.79599999999999,
+            29.432000000000002,
+            31.41200000000022
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 6260.771590712629,
+          "rebuild_volume_mm3": 6260.771590712629,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            84.79599999999999,
+            29.432000000000002,
+            31.41200000000022
+          ],
+          "rebuild_bbox_mm": [
+            84.79599999999999,
+            29.432000000000002,
+            31.41200000000022
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 106,
+        "valid": true,
+        "surface_census": {
+          "BSPLINE": 8,
+          "CONE": 35,
+          "CYLINDER": 17,
+          "PLANE": 46
+        },
+        "volume_mm3": 6260.771590712629,
+        "area_mm2": 10056.058243242758,
+        "bbox_min": [
+          -42.388,
+          -14.858,
+          -3.1000000000001933
+        ],
+        "bbox_max": [
+          42.407999999999994,
+          14.574,
+          28.312000000000026
+        ]
+      }
+    }
+  ]
+}

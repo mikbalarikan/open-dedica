@@ -1,0 +1,53 @@
+{
+ "schema": "stl-re/tier1@1",
+ "tool": "sim_caliper.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-G11_portafilter_datum.step": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+  "qa/dims.json": "953c29bd346f1552bbe830db749efcffca6bc44a0b5c0da8fdd0f03b60f9b69b",
+  "qa/regime.json": "80f0aece6d9ba230c501031ded7aff8eb4d04ca65182d06a721da3c753e615fa"
+ },
+ "seed": null,
+ "created": "2026-09-28T10:23:10+00:00",
+ "band_abs_mm": null,
+ "band_source": "baseline/skills/stl2step-build123d/SKILL.md:87",
+ "tessellation": {
+  "tolerance": 0.005,
+  "angular_tolerance": 0.05
+ },
+ "dims": {
+  "F01": {
+   "name": "rim bore ID just above the ledge (CAD only, ungated)",
+   "caliper": null,
+   "cad": 54.64355330495364,
+   "source": "absent (scan-only run)",
+   "gated": false,
+   "uncertainty_mm": null,
+   "method": "bore",
+   "detail": {
+    "value": 54.64355330495364,
+    "d_2rmax": 54.64696693340936,
+    "d_2rmin": 54.631557818102046,
+    "d_fit": 54.64355330495364
+   },
+   "delta": null,
+   "pass": null
+  }
+ },
+ "worst_gated_abs_delta": null,
+ "coverage": {
+  "gated": 0,
+  "requested_total": 8,
+  "absent": [
+   "ENV-X rim centre to handle end",
+   "ENV-Y cup OD at z~-10",
+   "ENV-Z rim face to spout tip",
+   "F01 rim bore ID just above the ledge",
+   "F02 ledge depth from the rim",
+   "F03 lug under-face height at both ends of a lug",
+   "F04 spout centre distance",
+   "F05 grip OD at collar end and at cap"
+  ]
+ },
+ "all_pass": null
+}

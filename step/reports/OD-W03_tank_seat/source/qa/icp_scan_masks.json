@@ -1,0 +1,1 @@
+{"comment": "No unmodelled body in the scan (one body, no table, no COTS part: INTAKE_CARD §2). Scanner artefacts are not removed from the ICP reference (mask-policy rule 6: reference removal only for unmodelled bodies).", "masks": []}

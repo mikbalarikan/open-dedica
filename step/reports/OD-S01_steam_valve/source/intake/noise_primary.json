@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "857984d7129fe8505bf6f709031f9cbcdddc30f1abf35d51444e5075322c0c8e"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:43:21+00:00",
+ "scan_noise_mm": {
+  "value": 0.035995208297944864,
+  "p95_mm": 0.07173926908409697,
+  "max_mm": 0.10482579707696232,
+  "method": "rms of RANSAC+SVD plane on cap disc outer face (knob side, perpendicular to the splined spindle) (3497 faces)"
+ }
+}

@@ -1,0 +1,153 @@
+{
+ "schema": "stl-re/limitations@1",
+ "part": {
+  "name": "OD-S02_steam-rod",
+  "what_it_is": "Coffee-machine steam wand assembly (black connector rod with O-ring seats, knob with lever paddle, sleeve and sealing band, bent steel tube, white bushing, steel tip), scanned as one mesh and delivered as ONE fused solid (owner decision).",
+  "reference_photo": "input/photos/photo_1.webp"
+ },
+ "method_summary": [
+  "Datum: rod spigot axis is +Z (axis primary, section-circle refined cone fit), origin on the knob top face, the steel tube leaving the elbow clocks +X.",
+  "Scan-only parameters (no calipers): per-axis section-circle fits for rod, sleeve, tubes, tip and bushing; ellipse sections for the knob fairing; planes and sphere caps for the lever; the bushing spoke count by rotational-order FFT.",
+  "build123d sub-bodies on their measured axes, fused: revolves, one fitted non-ruled loft (knob fairing), one sweep for the bent tube, sphere-cap dishes, window pockets; both frames exported and re-imported.",
+  "Independent verification in a fresh agent with its own ICP, two-way deviation on the full-resolution scan, regime {{gate:regime.name}}."
+ ],
+ "limitations": [
+  {
+   "id": "L1",
+   "text": "Scan-only: no calipers. no Tier-1 (no calipers run); absolute scale not caliper-verified (units assumed mm).",
+   "rerun_trigger": "any caliper reading (>=3 envelope dims for a scale test) -> re-run Tier-1 and scale check",
+   "evidence": "qa/gate.json#limitations; qa/VERDICT.md"
+  },
+  {
+   "id": "L2",
+   "text": "Masks, mask-dependent pass: the whole-part scan-to-CAD pass holds only with mask M1 (the pre-declared torn-flash box D1); unmasked it is over the band (torn flash). Zone Z1 and zone Z2 CAD-to-scan pass only with the QA-added open-boundary mask M2. Masked and unmasked numbers are side by side in qa/VERDICT.md.",
+   "rerun_trigger": "rescan with the torn flap trimmed or pressed back (or a replacement part), and a supplementary scan covering the 33 hole loops (rod theta 180..260, bushing top / tube entry) -> re-run unmasked",
+   "evidence": "qa/gate.json#limitations; qa/VERDICT.md"
+  },
+  {
+   "id": "L3",
+   "text": "Unobservable or uncovered CAD surface: the tip bore interior and the bushing window pockets (both modelled to the depth the scan proves, as lower bounds), the hidden assembly interfaces and the scan holes. The observability ray test counts most of them as visible, so they sit inside the gated observable CAD-to-scan number and cause its miss.",
+   "rerun_trigger": "a pin-gauge/depth reading of the tip bore and of one window pocket, or a supplementary scan of the bushing underside -> re-run CAD->scan",
+   "evidence": "qa/gate.json#limitations; qa/VERDICT.md"
+  },
+  {
+   "id": "L4",
+   "text": "Datum audit (report-only) is outside the RE_SPEC reference with the normals-eigen method; the QA section-circle cross-check agrees with the builder datum. The Z4 scan-to-CAD p95 is at the band edge and frame-sensitive (passes in the builder frame, misses after ICP).",
+   "rerun_trigger": "any datum change at intake -> re-run the whole QA",
+   "evidence": "qa/gate.json#limitations; qa/VERDICT.md"
+  },
+  {
+   "id": "L5",
+   "text": "Overlays are drawn in the builder alignment frame (no registration input in overlay.py); the ICP correction is below the line widths.",
+   "rerun_trigger": "if the ICP correction ever exceeds the overlay line width (see qa/VERDICT.md L5) -> redraw overlays in the registered frame",
+   "evidence": "qa/gate.json#limitations; qa/VERDICT.md"
+  },
+  {
+   "id": "L6",
+   "text": "Known unmodelled geometry: the raised collar on the bushing top where tube C enters, and the barrel underside rim. They cause the Z4 scan-to-CAD band miss, which the owner accepted instead of a fourth loop.",
+   "rerun_trigger": "any rebuild of the bushing (collar/rim modelled), a caliper reading of the collar, or a supplementary scan of the bushing top -> re-run the full verify",
+   "evidence": "qa/gate.json#limitations; qa/VERDICT.md"
+  },
+  {
+   "id": "L7",
+   "text": "Datum STOP rule passed on the self-referential path: the rod spigot (the cleanest surface) residual exceeds the one-loop IRLS circle noise floor, a different estimator; recorded in DECISIONS.md.",
+   "rerun_trigger": "a noise-floor estimator matching the datum residual (QUESTIONS.md section F), or any datum change -> re-run intake and verify",
+   "evidence": "DECISIONS.md; intake/alignment.json#findings"
+  },
+  {
+   "id": "L8",
+   "text": "Torn rubber flash at the knob/sleeve junction (specimen damage D1) is not modelled; the intact surface under it is modelled from the neighbouring scan.",
+   "rerun_trigger": "a rescan of an undamaged part or with the flap removed -> re-run measure (fairing, sleeve root) and verify",
+   "evidence": "intake/INTAKE_CARD.md section 2"
+  },
+  {
+   "id": "L9",
+   "text": "Process: the intake card and measurement request were rendered after the measure pass, and the modelling plan after the self-check builds (declared, no number changed).",
+   "rerun_trigger": "none needed for the geometry; any audit of the run order reads DECISIONS.md",
+   "evidence": "DECISIONS.md; build/MODELING_PLAN.md section 0"
+  }
+ ],
+ "assumptions": [
+  {
+   "text": "Hidden interfaces between the assembly parts (inside the knob, sleeve, bushing) are not modelled: the STEP is one fused outer solid.",
+   "source": "assumed",
+   "evidence": "DECISIONS.md PART-CLASS"
+  },
+  {
+   "text": "The torn rubber flash at the knob/sleeve junction (specimen damage, photos) is not modelled.",
+   "source": "assumed",
+   "evidence": "intake/INTAKE_CARD.md section 2 (D1)"
+  }
+ ],
+ "claim_boundary": {
+  "not_fit_for": [
+   "any use that needs the declared band: the band is NOT met and was accepted by the owner (DECISIONS.md ACCEPT-BAND)",
+   "manufacture or tooling of any single component: the parts of the assembly are fused and their hidden interfaces are not modelled",
+   "fit-critical use of the spigot or tube diameters until calipered (absolute scale not caliper-verified)"
+  ],
+  "fit_for": [
+   "visual and packaging/clearance models of the whole steam wand",
+   "a starting point for splitting into component models once calipers and part boundaries are supplied"
+  ]
+ },
+ "repro_commands": [
+  "cd build && python3 model.py --params ../measure/params.json --alignment ../intake/alignment.json --out . --part OD-S02_steam-rod --scripts <skills>/stl-re-rebuild-build123d/scripts"
+ ],
+ "feature_tree": [
+  {
+   "id": "F01",
+   "feature": "rod + knob revolves (knob meridian spline, rod profile with O-ring seats, spigot taper, round nose)",
+   "params": [
+    "knob_meridian_r",
+    "rod_taper_r_z30",
+    "rod_tip_z"
+   ]
+  },
+  {
+   "id": "F02",
+   "feature": "O-ring cord, knob fairing loft (6 ellipse sections), collar lug",
+   "params": [
+    "rod_oring_center",
+    "fair_ay",
+    "lug_theta"
+   ]
+  },
+  {
+   "id": "F04",
+   "feature": "lever plate between two fitted planes, perimeter round, top and underside sphere dishes",
+   "params": [
+    "paddle_end_r",
+    "paddle_face_pos",
+    "dish_depth",
+    "under_dish_R"
+   ]
+  },
+  {
+   "id": "F07",
+   "feature": "sleeve cone and sealing band on their own axes",
+   "params": [
+    "sleeve_dir",
+    "band_r"
+   ]
+  },
+  {
+   "id": "F09",
+   "feature": "steel tube: one sweep line B, bend arc, line C",
+   "params": [
+    "tube_r",
+    "bend_R",
+    "bend_vertex"
+   ]
+  },
+  {
+   "id": "F12",
+   "feature": "bushing on the tip axis with 6 underside windows, tip with chamfer and bore",
+   "params": [
+    "bush_barrel_r",
+    "bush_spoke_count",
+    "tip_r",
+    "tip_bore_r"
+   ]
+  }
+ ]
+}

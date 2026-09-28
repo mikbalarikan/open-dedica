@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "5931d7807765cac8c854b431f12ac5bd6753dfa83522b1601af116441a276894"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:01:27+00:00",
+ "scan_noise_mm": {
+  "value": 0.018717065728388264,
+  "p95_mm": 0.03827961904421104,
+  "max_mm": 0.0821638062710688,
+  "method": "rms of RANSAC+SVD plane on knob top face (annulus around rod) (6283 faces)"
+ }
+}

@@ -1,0 +1,291 @@
+{
+ "comment": "Datum-frame predicates written by QA from INTAKE_CARD \u00a73/\u00a74 and MODELING_PLAN \u00a76, before any deviation number was seen. Cups at x=\u00b119.49 (datum audit), flange top z=0. interface_max is null under baseline-skill, so functional_interface zones are REPORTED, not gated (INTAKE_CARD \u00a74 'reported'). Scan-point normals are vertex normals (outward, checked on the flange top: 100% nz>0); CAD normals are tessellation face normals.",
+ "zones": [
+  {
+   "name": "Z1 flange top + skirt outline",
+   "kind": "functional_interface",
+   "note": "INTAKE \u00a74 Z1 (seat/locate). Flange top z\u00b10.3 facing up, plus outward-facing skirt faces z -3.3..-0.3 (outward = normal points away from the part centre; excludes the invented pocket/skirt inner faces)",
+   "select": {
+    "any_of": [
+     {
+      "z": [
+       -0.3,
+       0.3
+      ],
+      "nz": [
+       0.9,
+       null
+      ]
+     },
+     {
+      "z": [
+       -3.3,
+       -0.3
+      ],
+      "any_of": [
+       {
+        "y": [
+         0,
+         null
+        ],
+        "ny": [
+         0.5,
+         null
+        ]
+       },
+       {
+        "y": [
+         null,
+         0
+        ],
+        "ny": [
+         null,
+         -0.5
+        ]
+       },
+       {
+        "x": [
+         19.5,
+         null
+        ],
+        "nx": [
+         0.5,
+         null
+        ]
+       },
+       {
+        "x": [
+         null,
+         -19.5
+        ],
+        "nx": [
+         null,
+         -0.5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "name": "Z2 barb nipples A+B",
+   "kind": "functional_interface",
+   "note": "INTAKE \u00a74 Z2 (hose connections): shank, flare, lip, tip, z>=14.5 within 4.5 mm of each cup axis in y. CAD side also contains the invented through-bore wall (see I3)",
+   "select": {
+    "abs_x": [
+     15.0,
+     24.0
+    ],
+    "abs_y": [
+     null,
+     4.5
+    ],
+    "z": [
+     14.5,
+     29.0
+    ]
+   }
+  },
+  {
+   "name": "Z3 ear lugs + holes",
+   "kind": "functional_interface",
+   "note": "INTAKE \u00a74 Z3 (screw/peg fixing): |x| 34.5..43, z 11..15.5. Lug underside only partly seen (INTAKE \u00a73)",
+   "select": {
+    "abs_x": [
+     34.5,
+     43.0
+    ],
+    "z": [
+     11.0,
+     15.5
+    ]
+   }
+  },
+  {
+   "name": "Z4 cup outer walls",
+   "kind": "functional_interface",
+   "note": "INTAKE \u00a74 Z4 (valve housing): side walls |x| 7..32, |y|>=1.5 (off the webs), z 0.3..11.8, near-vertical normals. CAD side also contains cavity walls behind (invented)",
+   "select": {
+    "abs_x": [
+     7.0,
+     32.0
+    ],
+    "abs_y": [
+     1.5,
+     null
+    ],
+    "z": [
+     0.3,
+     11.8
+    ],
+    "abs_nz": [
+     null,
+     0.5
+    ]
+   }
+  },
+  {
+   "name": "I1 underside + skirt inner (unscanned)",
+   "kind": "interior",
+   "note": "INTAKE \u00a73 row 1 (not scanned at all) + MODELING_PLAN \u00a76 (under-plate pocket, wall_t 1.2 assumed)",
+   "select": {
+    "z": [
+     null,
+     -0.3
+    ],
+    "not": {
+     "any_of": [
+      {
+       "y": [
+        0,
+        null
+       ],
+       "ny": [
+        0.5,
+        null
+       ]
+      },
+      {
+       "y": [
+        null,
+        0
+       ],
+       "ny": [
+        null,
+        -0.5
+       ]
+      },
+      {
+       "x": [
+        19.5,
+        null
+       ],
+       "nx": [
+        0.5,
+        null
+       ]
+      },
+      {
+       "x": [
+        null,
+        -19.5
+       ],
+       "nx": [
+        null,
+        -0.5
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "I2 downward-facing interior (cavity ceilings, inner shoulders)",
+   "kind": "interior",
+   "note": "INTAKE \u00a73 row 2 (cup/boss interiors not scanned) + MODELING_PLAN \u00a76 (cavities = skin offset by wall_t). Below z 19 inside |x|<32 no outer face points down",
+   "select": {
+    "z": [
+     0.3,
+     19.0
+    ],
+    "nz": [
+     null,
+     -0.5
+    ],
+    "abs_x": [
+     null,
+     32.0
+    ]
+   }
+  },
+  {
+   "name": "I3 barb bores",
+   "kind": "interior",
+   "note": "INTAKE \u00a73 row 3 (opening only) + MODELING_PLAN \u00a76 (depth assumed through). Box |dx|,|y| <= 1.35 about each cup axis (corner r 1.91 < barb tip skin)",
+   "select": {
+    "abs_x": [
+     18.14,
+     20.84
+    ],
+    "abs_y": [
+     null,
+     1.35
+    ],
+    "z": [
+     12.0,
+     29.0
+    ]
+   }
+  },
+  {
+   "name": "I4 boss hole",
+   "kind": "interior",
+   "note": "INTAKE \u00a73 row 4 (opening + ~1 mm wall) + MODELING_PLAN \u00a76 (depth assumed through)",
+   "select": {
+    "abs_x": [
+     null,
+     1.9
+    ],
+    "abs_y": [
+     null,
+     1.9
+    ],
+    "z": [
+     -1.3,
+     12.0
+    ]
+   }
+  },
+  {
+   "name": "B1 z -3.3..0.3 skirt+plate",
+   "kind": "region",
+   "select": {
+    "z": [
+     -3.3,
+     0.3
+    ]
+   }
+  },
+  {
+   "name": "B2 z 0.3..7 lower walls",
+   "kind": "region",
+   "select": {
+    "z": [
+     0.3,
+     7.0
+    ]
+   }
+  },
+  {
+   "name": "B3 z 7..12.6 upper walls+tops",
+   "kind": "region",
+   "select": {
+    "z": [
+     7.0,
+     12.6
+    ]
+   }
+  },
+  {
+   "name": "B4 z 12.6..18 shoulders+lugs",
+   "kind": "region",
+   "select": {
+    "z": [
+     12.6,
+     18.0
+    ]
+   }
+  },
+  {
+   "name": "B5 z 18..29 barbs",
+   "kind": "region",
+   "select": {
+    "z": [
+     18.0,
+     29.0
+    ]
+   }
+  }
+ ]
+}

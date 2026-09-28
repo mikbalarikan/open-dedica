@@ -1,0 +1,1208 @@
+{
+ "schema": "stl-re/deviation@1",
+ "tool": "deviation_gate.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "75cedf513bc86fcf51dfc22194a93a93f12857925e45854a095752be6f57c5e9",
+  "build/OD-S02_steam-rod_datum.step": "cac05e75aac6dfbf9603e7594363092986de53a1e50134c62e6437666f476897",
+  "intake/alignment.json": "17596743e9e2f8950aa01f5cf943f26bbeeebaea6fb411191c29e6622dffc292",
+  "qa/registration.json": "b11785c6b91c2f03819599ac90dd0c18507826bf51da11ed3915c6a1c3839991",
+  "qa/regime.json": "eef2646d7a952020360970c519dc468bc821d70c8b2fbda66a11e9bf6744e261",
+  "qa/zones.json": "7aaccdc53e626953b2ff4ff66dcbc06f5164b7df7885dbc2744f90c3420f38f9",
+  "qa/masks.json": "9ee5986b4415e699e8072c3b66ed865d8c5ed8c5aa24c47960736c34bf1e9593"
+ },
+ "seed": 0,
+ "created": "2026-09-28T09:04:24+00:00",
+ "scan": {
+  "path": "input/scan.stl",
+  "sha256": "75cedf513bc86fcf51dfc22194a93a93f12857925e45854a095752be6f57c5e9",
+  "kind": "full",
+  "full_res": true,
+  "vertices": 251631,
+  "faces": 499164
+ },
+ "cad": {
+  "path": "build/OD-S02_steam-rod_datum.step",
+  "sha256": "cac05e75aac6dfbf9603e7594363092986de53a1e50134c62e6437666f476897",
+  "tessellated_by_qa": true,
+  "tessellation": {
+   "tolerance": 0.005,
+   "angular_tolerance": 0.05
+  },
+  "faces": 484432
+ },
+ "frame": "datum",
+ "registration": {
+  "method": "point-to-point ICP, CAD samples -> scan samples, masked correspondences (B02 q20_tier2.py)",
+  "iterations": 44,
+  "max_iterations": 60,
+  "converged": true,
+  "delta_deg": 0.05309797435423524,
+  "delta_mm": 0.05856163536317603,
+  "file": "qa/registration.json"
+ },
+ "sampling": {
+  "s2c_points": "all",
+  "s2c_seed": 0,
+  "c2s_samples": 300000,
+  "c2s_seed": 2,
+  "k": 8,
+  "n_samp": 3000000,
+  "dist_seed": 0,
+  "vertex_candidates": false,
+  "method": "KD candidates -> exact point-to-triangle (OD gate.py:8-17)"
+ },
+ "regime": {
+  "name": "baseline-skill",
+  "source": "baseline/skills/stl2step-build123d/SKILL.md:87",
+  "bands": {
+   "p95_mm": 0.3,
+   "max_mm": 0.8,
+   "tier1_abs_mm": null,
+   "interface_max_mm": null
+  }
+ },
+ "scan_to_cad": {
+  "n": 251631,
+  "rms": 0.3578153827395237,
+  "mean": 0.13400836645886172,
+  "p50": 0.06630930306403644,
+  "p95": 0.31218461941637676,
+  "p99": 2.0560702342022523,
+  "max": 4.518365634524969
+ },
+ "cad_to_scan": {
+  "n": 300000,
+  "rms": 0.36513592248364896,
+  "mean": 0.1746037113231632,
+  "p50": 0.06980662354255514,
+  "p95": 0.895529390385254,
+  "p99": 1.6924611841052173,
+  "max": 2.617349787144376
+ },
+ "scan_to_cad_masked": {
+  "n": 234665,
+  "rms": 0.11474514654907868,
+  "mean": 0.08433092319764224,
+  "p50": 0.06267198888120858,
+  "p95": 0.2362767630708719,
+  "p99": 0.36622841725076083,
+  "max": 0.7374206229089714
+ },
+ "cad_to_scan_masked": {
+  "n": 240232,
+  "rms": 0.22544318312962677,
+  "mean": 0.10602518321908963,
+  "p50": 0.058074720901372265,
+  "p95": 0.2750678640520509,
+  "p99": 1.0595539942126981,
+  "max": 2.60234740607235
+ },
+ "unmasked": {
+  "scan_to_cad": {
+   "n": 251631,
+   "rms": 0.3578153827395237,
+   "mean": 0.13400836645886172,
+   "p50": 0.06630930306403644,
+   "p95": 0.31218461941637676,
+   "p99": 2.0560702342022523,
+   "max": 4.518365634524969
+  },
+  "cad_to_scan": {
+   "n": 300000,
+   "rms": 0.36513592248364896,
+   "mean": 0.1746037113231632,
+   "p50": 0.06980662354255514,
+   "p95": 0.895529390385254,
+   "p99": 1.6924611841052173,
+   "max": 2.617349787144376
+  }
+ },
+ "masked_fraction": {
+  "scan_to_cad": 0.0674241250084449,
+  "cad_to_scan": 0.19922666666666666
+ },
+ "bands": {
+  "scan_to_cad": {
+   "unmasked": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "p95_over_by": 0.012184619416376774,
+    "max_over_by": 3.718365634524969
+   },
+   "masked": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": true
+   }
+  },
+  "cad_to_scan": {
+   "unmasked": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "p95_over_by": 0.5955293903852541,
+    "max_over_by": 1.8173497871443758
+   },
+   "masked": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "max_over_by": 1.80234740607235
+   }
+  },
+  "cad_to_scan_observable": {
+   "p95_band": 0.3,
+   "max_band": 0.8,
+   "pass": false,
+   "p95_over_by": 0.4662380441577974,
+   "max_over_by": 1.801230246791112
+  }
+ },
+ "masks": [
+  {
+   "name": "M1 D1 torn flash",
+   "type": "region",
+   "why": "torn rubber flash/flap at the knob/sleeve junction is specimen damage, not design geometry, and is deliberately not modelled; points there are not a surface deviation of the modelled part",
+   "evidence": "PRE-DECLARED at intake before any gate number: intake/INTAKE_CARD.md \u00a72 'Artefact zones' D1 (datum x 6.5..13, z -15..-1) and \u00a78; photo_1 and photo_2 show the torn flap (QA looked at both). Box used exactly as declared; it also contains intact sleeve/knob-fairing surface, which is therefore ungraded under the mask.",
+   "fraction": 0.0674241250084449,
+   "stats_inside": {
+    "n": 16966,
+    "rms": 1.310263740804789,
+    "mean": 0.8211212524009854,
+    "p50": 0.2750975579777637,
+    "p95": 2.9842232531138855,
+    "p99": 3.960702483740163,
+    "max": 4.518365634524969
+   },
+   "direction": "scan_to_cad"
+  },
+  {
+   "name": "M1 D1 torn flash",
+   "type": "region",
+   "why": "torn rubber flash/flap at the knob/sleeve junction is specimen damage, not design geometry, and is deliberately not modelled; points there are not a surface deviation of the modelled part",
+   "evidence": "PRE-DECLARED at intake before any gate number: intake/INTAKE_CARD.md \u00a72 'Artefact zones' D1 (datum x 6.5..13, z -15..-1) and \u00a78; photo_1 and photo_2 show the torn flap (QA looked at both). Box used exactly as declared; it also contains intact sleeve/knob-fairing surface, which is therefore ungraded under the mask.",
+   "fraction": 0.04074333333333333,
+   "stats_inside": {
+    "n": 12223,
+    "rms": 0.5292311417502857,
+    "mean": 0.3346541087605675,
+    "p50": 0.16037740624071453,
+    "p95": 1.305634190535909,
+    "p99": 1.7609792342225796,
+    "max": 2.1129248367917275
+   },
+   "direction": "cad_to_scan"
+  },
+  {
+   "name": "M2 open boundary",
+   "type": "open_boundary",
+   "why": "CAD->scan distance measured to a scan hole EDGE (33 open-boundary loops, intake coverage.json) is not a surface deviation",
+   "evidence": "QA-ADDED (not pre-declared at intake): standard B02 q20_tier2.py:9-10 mask; affects only the reported CAD->scan masked number, never the gated observable CAD->scan or scan->CAD; radius swept 0..2.5 mm",
+   "fraction": 0.16944666666666666,
+   "stats_inside": {
+    "n": 50834,
+    "rms": 0.7193894360917675,
+    "mean": 0.4867517202777784,
+    "p50": 0.2664405385503992,
+    "p95": 1.624655006785589,
+    "p99": 2.239257082805407,
+    "max": 2.617349787144376
+   },
+   "direction": "cad_to_scan"
+  }
+ ],
+ "cad_to_scan_observable": {
+  "n": 19656,
+  "rms": 0.3466114410312722,
+  "mean": 0.15961677257738027,
+  "p50": 0.06717309896617576,
+  "p95": 0.7662380441577974,
+  "p99": 1.6983824608405862,
+  "max": 2.601230246791112
+ },
+ "unobservable_fraction": 0.017199999999999993,
+ "observability": {
+  "observable": {
+   "n": 19656,
+   "rms": 0.3466114410312722,
+   "mean": 0.15961677257738027,
+   "p50": 0.06717309896617576,
+   "p95": 0.7662380441577974,
+   "p99": 1.6983824608405862,
+   "max": 2.601230246791112
+  },
+  "unobservable_fraction": 0.017199999999999993,
+  "n_subsample": 20000,
+  "n_far_tested": 1687,
+  "params": {
+   "method": "ray cone on CAD (OD gate.py:57-84)",
+   "subsample": 20000,
+   "seed": 5,
+   "far_mm": 0.5,
+   "cone_deg": 60.0,
+   "n_ring": 6,
+   "offset_mm": 0.05,
+   "max_range_mm": null,
+   "helper": [
+    0.3,
+    0.5,
+    0.8
+   ],
+   "helper_switched_for_n_points": 308,
+   "ray_engine": "trimesh.ray.ray_triangle.RayMeshIntersector"
+  }
+ },
+ "zones": {
+  "Z1 rod spigot taper + O-ring seats": {
+   "kind": "whole",
+   "note": "machine interface (intake Z1, z 21..67); gated at the regime p95/max as the intake table states",
+   "band": [
+    0.3,
+    0.8
+   ],
+   "scan_to_cad": {
+    "unmasked": {
+     "n": 39907,
+     "rms": 0.06248714371259819,
+     "mean": 0.04671313211166694,
+     "p50": 0.0357252535028442,
+     "p95": 0.13061547695376316,
+     "p99": 0.19237190122975623,
+     "max": 0.5650398839905671
+    },
+    "masked": {
+     "n": 39907,
+     "rms": 0.06248714371259819,
+     "mean": 0.04671313211166694,
+     "p50": 0.0357252535028442,
+     "p95": 0.13061547695376316,
+     "p99": 0.19237190122975623,
+     "max": 0.5650398839905671
+    },
+    "masked_fraction": 0.0,
+    "band_unmasked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": true
+    },
+    "band_masked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": true
+    }
+   },
+   "cad_to_scan": {
+    "unmasked": {
+     "n": 57398,
+     "rms": 0.23089432742820737,
+     "mean": 0.09657602300928866,
+     "p50": 0.03625269832092931,
+     "p95": 0.5011531151692018,
+     "p99": 1.1972748371673583,
+     "max": 1.6892527425720063
+    },
+    "masked": {
+     "n": 48538,
+     "rms": 0.06342245244493724,
+     "mean": 0.04485647424007022,
+     "p50": 0.03298759215387984,
+     "p95": 0.13293874712391732,
+     "p99": 0.22342460529438737,
+     "max": 0.6926453780702025
+    },
+    "masked_fraction": 0.15436077912122373,
+    "band_unmasked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": false,
+     "p95_over_by": 0.2011531151692018,
+     "max_over_by": 0.8892527425720063
+    },
+    "band_masked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": true
+    }
+   }
+  },
+  "Z2 steel tube B-bend-C": {
+   "kind": "whole",
+   "note": "intake Z2; box starts after the sealing band (x>23.5) and ends above the bushing (z>-31)",
+   "band": [
+    0.3,
+    0.8
+   ],
+   "scan_to_cad": {
+    "unmasked": {
+     "n": 26716,
+     "rms": 0.12853882516207424,
+     "mean": 0.10790118032366132,
+     "p50": 0.0991462896138999,
+     "p95": 0.22862829331638884,
+     "p99": 0.29811538371687946,
+     "max": 0.5804600637574511
+    },
+    "masked": {
+     "n": 26716,
+     "rms": 0.12853882516207424,
+     "mean": 0.10790118032366132,
+     "p50": 0.0991462896138999,
+     "p95": 0.22862829331638884,
+     "p99": 0.29811538371687946,
+     "max": 0.5804600637574511
+    },
+    "masked_fraction": 0.0,
+    "band_unmasked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": true
+    },
+    "band_masked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": true
+    }
+   },
+   "cad_to_scan": {
+    "unmasked": {
+     "n": 26372,
+     "rms": 0.13424580194357233,
+     "mean": 0.10748437106605092,
+     "p50": 0.0949457750271375,
+     "p95": 0.2282856036629292,
+     "p99": 0.42419112841651985,
+     "max": 0.8018135710048421
+    },
+    "masked": {
+     "n": 23764,
+     "rms": 0.11834275797014937,
+     "mean": 0.10041307759892776,
+     "p50": 0.09297062975262374,
+     "p95": 0.214237051573073,
+     "p99": 0.24978846666044743,
+     "max": 0.34508131653276225
+    },
+    "masked_fraction": 0.09889276505384499,
+    "band_unmasked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": false,
+     "max_over_by": 0.0018135710048420295
+    },
+    "band_masked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": true
+    }
+   }
+  },
+  "Z3 lever paddle": {
+   "kind": "whole",
+   "note": "intake Z3; paddle outboard of the knob",
+   "band": [
+    0.3,
+    0.8
+   ],
+   "scan_to_cad": {
+    "unmasked": {
+     "n": 20978,
+     "rms": 0.07023517414222435,
+     "mean": 0.057740508047988165,
+     "p50": 0.05098867118626073,
+     "p95": 0.1339951710258764,
+     "p99": 0.1682496526210322,
+     "max": 0.24746072741099737
+    },
+    "masked": {
+     "n": 20978,
+     "rms": 0.07023517414222435,
+     "mean": 0.057740508047988165,
+     "p50": 0.05098867118626073,
+     "p95": 0.1339951710258764,
+     "p99": 0.1682496526210322,
+     "max": 0.24746072741099737
+    },
+    "masked_fraction": 0.0,
+    "band_unmasked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": true
+    },
+    "band_masked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": true
+    }
+   },
+   "cad_to_scan": {
+    "unmasked": {
+     "n": 24256,
+     "rms": 0.07905384251996359,
+     "mean": 0.060097588043544585,
+     "p50": 0.051746624845627476,
+     "p95": 0.1348546584247742,
+     "p99": 0.18459047852888394,
+     "max": 0.7437559546258917
+    },
+    "masked": {
+     "n": 23232,
+     "rms": 0.06835921910248224,
+     "mean": 0.05641380606967578,
+     "p50": 0.05052554664600811,
+     "p95": 0.13014003730852564,
+     "p99": 0.1614120696865479,
+     "max": 0.23474410227614034
+    },
+    "masked_fraction": 0.04221635883905013,
+    "band_unmasked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": true
+    },
+    "band_masked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": true
+    }
+   }
+  },
+  "Z4 bushing + tip": {
+   "kind": "whole",
+   "note": "intake Z4; includes the bushing underside windows and the tip bore mouth (partly unobservable)",
+   "band": [
+    0.3,
+    0.8
+   ],
+   "scan_to_cad": {
+    "unmasked": {
+     "n": 54593,
+     "rms": 0.14354046390877123,
+     "mean": 0.10575484396527207,
+     "p50": 0.07953888681495047,
+     "p95": 0.3008232929589064,
+     "p99": 0.4549657290997476,
+     "max": 0.7374206229089714
+    },
+    "masked": {
+     "n": 54593,
+     "rms": 0.14354046390877123,
+     "mean": 0.10575484396527207,
+     "p50": 0.07953888681495047,
+     "p95": 0.3008232929589064,
+     "p99": 0.4549657290997476,
+     "max": 0.7374206229089714
+    },
+    "masked_fraction": 0.0,
+    "band_unmasked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": false,
+     "p95_over_by": 0.0008232929589064297
+    },
+    "band_masked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": false,
+     "p95_over_by": 0.0008232929589064297
+    }
+   },
+   "cad_to_scan": {
+    "unmasked": {
+     "n": 72226,
+     "rms": 0.6308119121281481,
+     "mean": 0.36888119106361145,
+     "p50": 0.12230014235177217,
+     "p95": 1.5711279594181542,
+     "p99": 2.205740857800618,
+     "max": 2.617349787144376
+    },
+    "masked": {
+     "n": 47622,
+     "rms": 0.46351155040806735,
+     "mean": 0.23829688884050482,
+     "p50": 0.08718238308041555,
+     "p95": 1.0628743971660986,
+     "p99": 1.8374176749016795,
+     "max": 2.60234740607235
+    },
+    "masked_fraction": 0.3406529504610528,
+    "band_unmasked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": false,
+     "p95_over_by": 1.2711279594181542,
+     "max_over_by": 1.8173497871443758
+    },
+    "band_masked": {
+     "p95_band": 0.3,
+     "max_band": 0.8,
+     "pass": false,
+     "p95_over_by": 0.7628743971660985,
+     "max_over_by": 1.80234740607235
+    }
+   }
+  },
+  "R rod lower (collar, groove, bead, lug)": {
+   "kind": "region",
+   "note": "region bucket, reported",
+   "band": [
+    null,
+    null
+   ],
+   "scan_to_cad": {
+    "unmasked": {
+     "n": 35685,
+     "rms": 0.12431145155930248,
+     "mean": 0.09737253300967365,
+     "p50": 0.08336229268817257,
+     "p95": 0.23616894735520547,
+     "p99": 0.3750596355112907,
+     "max": 0.5071310776715627
+    },
+    "masked": {
+     "n": 35685,
+     "rms": 0.12431145155930248,
+     "mean": 0.09737253300967365,
+     "p50": 0.08336229268817257,
+     "p95": 0.23616894735520547,
+     "p99": 0.3750596355112907,
+     "max": 0.5071310776715627
+    },
+    "masked_fraction": 0.0,
+    "band_unmasked": null,
+    "band_masked": null
+   },
+   "cad_to_scan": {
+    "unmasked": {
+     "n": 46029,
+     "rms": 0.2635196734396519,
+     "mean": 0.14249949600899517,
+     "p50": 0.09080853207421768,
+     "p95": 0.46057864148880145,
+     "p99": 1.3366932235966538,
+     "max": 2.0816777944507736
+    },
+    "masked": {
+     "n": 38130,
+     "rms": 0.11242830697908823,
+     "mean": 0.08853913114224053,
+     "p50": 0.07774950954609439,
+     "p95": 0.21119648586994724,
+     "p99": 0.33564570578412933,
+     "max": 0.6455863084991824
+    },
+    "masked_fraction": 0.1716092028938278,
+    "band_unmasked": null,
+    "band_masked": null
+   }
+  },
+  "R knob + sleeve + band junction": {
+   "kind": "region",
+   "note": "region bucket, reported; contains D1",
+   "band": [
+    null,
+    null
+   ],
+   "scan_to_cad": {
+    "unmasked": {
+     "n": 72677,
+     "rms": 0.6405855793023674,
+     "mean": 0.2533232309364661,
+     "p50": 0.07025494664620517,
+     "p95": 1.6444359760022575,
+     "p99": 3.1349329578676763,
+     "max": 4.518365634524969
+    },
+    "masked": {
+     "n": 55711,
+     "rms": 0.11176596474677604,
+     "mean": 0.08040834460940259,
+     "p50": 0.05604724409321329,
+     "p95": 0.2524607961586601,
+     "p99": 0.349564035681194,
+     "max": 0.47873266758056227
+    },
+    "masked_fraction": 0.23344386807380602,
+    "band_unmasked": null,
+    "band_masked": null
+   },
+   "cad_to_scan": {
+    "unmasked": {
+     "n": 70322,
+     "rms": 0.24449224794866406,
+     "mean": 0.12441411414439077,
+     "p50": 0.060878125369181316,
+     "p95": 0.4181153335944113,
+     "p99": 1.2469523747942959,
+     "max": 2.1129248367917275
+    },
+    "masked": {
+     "n": 56135,
+     "rms": 0.11353803801284358,
+     "mean": 0.07819750371638445,
+     "p50": 0.05110638924329107,
+     "p95": 0.25877679512858237,
+     "p99": 0.36894724396035394,
+     "max": 0.741117506149755
+    },
+    "masked_fraction": 0.20174340889053213,
+    "band_unmasked": null,
+    "band_masked": null
+   }
+  }
+ },
+ "sensitivity": [
+  {
+   "direction": "scan_to_cad",
+   "variant": "all masks except M1 D1 torn flash",
+   "stats": {
+    "n": 251631,
+    "rms": 0.3578153827395237,
+    "mean": 0.13400836645886172,
+    "p50": 0.06630930306403644,
+    "p95": 0.31218461941637676,
+    "p99": 2.0560702342022523,
+    "max": 4.518365634524969
+   },
+   "band": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "p95_over_by": 0.012184619416376774,
+    "max_over_by": 3.718365634524969
+   }
+  },
+  {
+   "direction": "cad_to_scan",
+   "variant": "all masks except M1 D1 torn flash",
+   "stats": {
+    "n": 249166,
+    "rms": 0.2343964441050196,
+    "mean": 0.11092033603440427,
+    "p50": 0.05949402083181764,
+    "p95": 0.2996673465293984,
+    "p99": 1.0893234205830216,
+    "max": 2.60234740607235
+   },
+   "band": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "max_over_by": 1.80234740607235
+   }
+  },
+  {
+   "direction": "cad_to_scan",
+   "variant": "all masks except M2 open boundary",
+   "stats": {
+    "n": 287777,
+    "rms": 0.35649785476975326,
+    "mean": 0.16780575315459031,
+    "p50": 0.06793879679801706,
+    "p95": 0.8812589220295087,
+    "p99": 1.6876039576986326,
+    "max": 2.617349787144376
+   },
+   "band": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "p95_over_by": 0.5812589220295088,
+    "max_over_by": 1.8173497871443758
+   }
+  },
+  {
+   "direction": "cad_to_scan",
+   "variant": "M2 open boundary radius 0.0 mm",
+   "stats": {
+    "n": 275234,
+    "rms": 0.2731160267695983,
+    "mean": 0.13083141544485577,
+    "p50": 0.06377566923963814,
+    "p95": 0.482864311720968,
+    "p99": 1.3869759503834134,
+    "max": 2.60234740607235
+   },
+   "band": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "p95_over_by": 0.182864311720968,
+    "max_over_by": 1.80234740607235
+   },
+   "zones": {}
+  },
+  {
+   "direction": "cad_to_scan",
+   "variant": "M2 open boundary radius 0.2 mm",
+   "stats": {
+    "n": 258680,
+    "rms": 0.23658495371941107,
+    "mean": 0.1121029082288225,
+    "p50": 0.0598119817830656,
+    "p95": 0.30484957442349037,
+    "p99": 1.087526545107106,
+    "max": 2.60234740607235
+   },
+   "band": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "p95_over_by": 0.004849574423490377,
+    "max_over_by": 1.80234740607235
+   },
+   "zones": {}
+  },
+  {
+   "direction": "cad_to_scan",
+   "variant": "M2 open boundary radius 0.4 mm",
+   "stats": {
+    "n": 252080,
+    "rms": 0.22842906476194955,
+    "mean": 0.10852709643017672,
+    "p50": 0.059009729602941485,
+    "p95": 0.2880503364113584,
+    "p99": 1.065474208146707,
+    "max": 2.60234740607235
+   },
+   "band": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "max_over_by": 1.80234740607235
+   },
+   "zones": {}
+  },
+  {
+   "direction": "cad_to_scan",
+   "variant": "M2 open boundary radius 0.8 mm",
+   "stats": {
+    "n": 240232,
+    "rms": 0.22544318312962677,
+    "mean": 0.10602518321908963,
+    "p50": 0.058074720901372265,
+    "p95": 0.2750678640520509,
+    "p99": 1.0595539942126981,
+    "max": 2.60234740607235
+   },
+   "band": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "max_over_by": 1.80234740607235
+   },
+   "zones": {}
+  },
+  {
+   "direction": "cad_to_scan",
+   "variant": "M2 open boundary radius 1.5 mm",
+   "stats": {
+    "n": 220226,
+    "rms": 0.2255214015481473,
+    "mean": 0.1039621229599622,
+    "p50": 0.05660745156167253,
+    "p95": 0.2673102217763069,
+    "p99": 1.07132096910376,
+    "max": 2.60234740607235
+   },
+   "band": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "max_over_by": 1.80234740607235
+   },
+   "zones": {}
+  },
+  {
+   "direction": "cad_to_scan",
+   "variant": "M2 open boundary radius 2.5 mm",
+   "stats": {
+    "n": 191467,
+    "rms": 0.19195355843680903,
+    "mean": 0.09226962669255175,
+    "p50": 0.054357613419300226,
+    "p95": 0.2369936766184809,
+    "p99": 0.9034600364056871,
+    "max": 2.60234740607235
+   },
+   "band": {
+    "p95_band": 0.3,
+    "max_band": 0.8,
+    "pass": false,
+    "max_over_by": 1.80234740607235
+   },
+   "zones": {}
+  }
+ ],
+ "mask_dependent_passes": [
+  "whole part scan_to_cad",
+  "zone Z1 rod spigot taper + O-ring seats cad_to_scan",
+  "zone Z2 steel tube B-bend-C cad_to_scan"
+ ],
+ "over_band_clusters": {
+  "scan_to_cad": {
+   "threshold_mm": 0.8,
+   "eps_mm": 1.0,
+   "min_pts": 20,
+   "n_over": 5721,
+   "fraction_over": 0.022735672472787533,
+   "clusters": [
+    {
+     "n": 3857,
+     "centroid": [
+      10.336,
+      -3.767,
+      -5.904
+     ],
+     "bbox_min": [
+      7.801,
+      -6.731,
+      -14.028
+     ],
+     "bbox_max": [
+      12.7,
+      1.907,
+      -1.825
+     ],
+     "r_range": [
+      8.458,
+      13.944
+     ],
+     "theta_deg_range": [
+      0.0,
+      360.0
+     ],
+     "d_p50": 1.9988128877181326,
+     "d_max": 4.518365634524969
+    },
+    {
+     "n": 1864,
+     "centroid": [
+      9.077,
+      6.139,
+      -8.991
+     ],
+     "bbox_min": [
+      7.708,
+      4.317,
+      -13.398
+     ],
+     "bbox_max": [
+      10.781,
+      7.245,
+      -5.033
+     ],
+     "r_range": [
+      9.0,
+      12.823
+     ],
+     "theta_deg_range": [
+      26.1,
+      42.1
+     ],
+     "d_p50": 1.7960323506496185,
+     "d_max": 3.190137955264521
+    }
+   ],
+   "n_clusters_ge_min": 2,
+   "points_in_small_clusters": 0
+  },
+  "cad_to_scan": {
+   "threshold_mm": 0.8,
+   "eps_mm": 1.0,
+   "min_pts": 20,
+   "n_over": 18561,
+   "fraction_over": 0.06187,
+   "clusters": [
+    {
+     "n": 8240,
+     "centroid": [
+      38.771,
+      -7.429,
+      -42.061
+     ],
+     "bbox_min": [
+      31.481,
+      -14.177,
+      -45.201
+     ],
+     "bbox_max": [
+      45.568,
+      -0.692,
+      -39.347
+     ],
+     "r_range": [
+      32.23,
+      46.308
+     ],
+     "theta_deg_range": [
+      338.7,
+      359.0
+     ],
+     "d_p50": 1.4708754999293285,
+     "d_max": 2.617349787144376
+    },
+    {
+     "n": 5751,
+     "centroid": [
+      37.399,
+      -9.689,
+      -49.83
+     ],
+     "bbox_min": [
+      34.512,
+      -13.757,
+      -56.645
+     ],
+     "bbox_max": [
+      40.704,
+      -6.637,
+      -43.726
+     ],
+     "r_range": [
+      36.365,
+      41.741
+     ],
+     "theta_deg_range": [
+      339.4,
+      350.6
+     ],
+     "d_p50": 0.9155406681586674,
+     "d_max": 2.2396651008186788
+    },
+    {
+     "n": 1374,
+     "centroid": [
+      -2.435,
+      -2.629,
+      52.854
+     ],
+     "bbox_min": [
+      -3.327,
+      -3.627,
+      37.167
+     ],
+     "bbox_max": [
+      -1.421,
+      -1.7,
+      65.065
+     ],
+     "r_range": [
+      3.074,
+      4.292
+     ],
+     "theta_deg_range": [
+      209.5,
+      243.6
+     ],
+     "d_p50": 1.0936326351855248,
+     "d_max": 1.6892527425720063
+    },
+    {
+     "n": 967,
+     "centroid": [
+      -3.469,
+      -3.732,
+      9.022
+     ],
+     "bbox_min": [
+      -5.979,
+      -6.204,
+      7.762
+     ],
+     "bbox_max": [
+      0.779,
+      1.236,
+      10.34
+     ],
+     "r_range": [
+      5.127,
+      6.54
+     ],
+     "theta_deg_range": [
+      167.1,
+      278.6
+     ],
+     "d_p50": 1.2377808830780959,
+     "d_max": 2.0816777944507736
+    },
+    {
+     "n": 923,
+     "centroid": [
+      7.528,
+      -4.055,
+      -9.371
+     ],
+     "bbox_min": [
+      7.0,
+      -5.58,
+      -13.575
+     ],
+     "bbox_max": [
+      11.001,
+      -2.239,
+      -4.802
+     ],
+     "r_range": [
+      7.368,
+      11.635
+     ],
+     "theta_deg_range": [
+      321.4,
+      343.3
+     ],
+     "d_p50": 1.2022027116172835,
+     "d_max": 2.1129248367917275
+    },
+    {
+     "n": 607,
+     "centroid": [
+      7.226,
+      4.881,
+      -8.932
+     ],
+     "bbox_min": [
+      7.0,
+      3.264,
+      -12.006
+     ],
+     "bbox_max": [
+      8.848,
+      6.296,
+      -5.713
+     ],
+     "r_range": [
+      8.11,
+      9.767
+     ],
+     "theta_deg_range": [
+      22.5,
+      42.0
+     ],
+     "d_p50": 1.2007707742909148,
+     "d_max": 1.853874967476687
+    },
+    {
+     "n": 350,
+     "centroid": [
+      -3.53,
+      -3.247,
+      26.17
+     ],
+     "bbox_min": [
+      -5.308,
+      -5.358,
+      25.388
+     ],
+     "bbox_max": [
+      -0.823,
+      -0.926,
+      26.65
+     ],
+     "r_range": [
+      4.772,
+      5.557
+     ],
+     "theta_deg_range": [
+      189.9,
+      260.9
+     ],
+     "d_p50": 1.0956209234484051,
+     "d_max": 1.5266812653185868
+    },
+    {
+     "n": 283,
+     "centroid": [
+      -3.847,
+      -5.348,
+      18.947
+     ],
+     "bbox_min": [
+      -5.065,
+      -6.234,
+      17.158
+     ],
+     "bbox_max": [
+      -2.605,
+      -4.439,
+      20.221
+     ],
+     "r_range": [
+      6.477,
+      6.774
+     ],
+     "theta_deg_range": [
+      221.6,
+      247.3
+     ],
+     "d_p50": 1.1361620443104479,
+     "d_max": 1.8955228407152176
+    },
+    {
+     "n": 38,
+     "centroid": [
+      -3.248,
+      -5.242,
+      12.045
+     ],
+     "bbox_min": [
+      -3.735,
+      -5.614,
+      11.519
+     ],
+     "bbox_max": [
+      -2.724,
+      -4.926,
+      12.477
+     ],
+     "r_range": [
+      6.121,
+      6.311
+     ],
+     "theta_deg_range": [
+      232.9,
+      244.1
+     ],
+     "d_p50": 0.9389756234379512,
+     "d_max": 1.1311689273227292
+    },
+    {
+     "n": 25,
+     "centroid": [
+      9.056,
+      -0.503,
+      -4.017
+     ],
+     "bbox_min": [
+      8.991,
+      -0.99,
+      -4.331
+     ],
+     "bbox_max": [
+      9.129,
+      -0.036,
+      -3.769
+     ],
+     "r_range": [
+      9.008,
+      9.144
+     ],
+     "theta_deg_range": [
+      353.8,
+      359.8
+     ],
+     "d_p50": 0.8917541693871566,
+     "d_max": 1.0105378579495294
+    }
+   ],
+   "n_clusters_ge_min": 10,
+   "points_in_small_clusters": 3
+  },
+  "reading": "scan_to_cad clusters = scan material the CAD lacks (missing feature or artefact); cad_to_scan clusters = CAD material with no scan (invented or unobservable)"
+ },
+ "gate_valid": true,
+ "gate_invalid_reasons": [],
+ "label": "OFFICIAL (full-res)"
+}

@@ -1,0 +1,119 @@
+{
+ "verdict": "HALT",
+ "independence": "fresh agent that did not build the model; QA scripts from stl-re-verify only (plus run-local helpers qa/scan_coverage_survey.py, qa/residual_locate.py, qa/icp_diagnose.py, report-only); builder numbers not used as expected values; build/model.py only grepped read-only; measure/, build_log, selfcheck/ not read. QA had read the builder's self-check figures quoted in build/MODELING_PLAN.md §8 before choosing masks.",
+ "checks": {
+  "CHK-CIRCULAR": {
+   "ran": true,
+   "result": "finding",
+   "note": "QA grading is independent: own ICP (not written back), own datum audit, no expected value from this scan (Tier-1 has none). Finding on the builder record: MODELING_PLAN §8 iterated geometry against its own scan self-check (NOT QA) to max 0.761 -- a consistency check, not independent evidence; QA's datum-frame max on the full-res scan is 0.878. The intake noise floor was measured on the same lug pads that set the primary datum (INTAKE_CARD §6, self-referential)."
+  },
+  "CHK-LIKE4LIKE": {
+   "ran": true,
+   "result": "n/a",
+   "note": "first QA run (it1); no superseded qa/. Builder self-check numbers (MODELING_PLAN §8) use a different protocol and are not compared as an improvement."
+  },
+  "CHK-INDEP": {
+   "ran": true,
+   "result": "pass",
+   "note": "fresh agent; see independence"
+  },
+  "CHK-FILLET": {
+   "ran": true,
+   "result": "pass",
+   "note": "build/export_check.json: 7 fillets (6 fillet_2d profile + F04b 3D stop-root R1.0), every status OK, target == used, both frames"
+  },
+  "CHK-PATCHWORK": {
+   "ran": true,
+   "result": "pass",
+   "note": "census: 182 faces, 100 % analytic area (plane 98, cylinder 57, cone 8, torus 19), no B-spline/ruled faces; model.py grep: no loft/ruled; Wire.make_polygon used only for parameter-driven (r,z) revolve profiles of 4-~20 named points, not stacks of scan slices; matches MODELING_PLAN (revolve/split/boolean only)"
+  },
+  "CHK-ENUM": {
+   "ran": true,
+   "result": "finding",
+   "note": "intake F01-F17 ticked against CAD, overlays and photos 1-2: F01-F12 present and track the scan in the overlays; F13-F15 keyhole, 2 bosses with holes, side hole present (photo-inferred, no scan); dimples not modelled (cosmetic, declared); F16 flange not modelled (outside scan, declared); F17 simplified in gap sectors (declared). No CAD feature lacks photo/scan support. Finding: photo 1 shows a small rectangular window at the base of the outer cup wall (front right, at the flange junction) that the intake list does not enumerate; the scan has no evidence of it (outer-wall coverage tapers at the ragged lower scan edge z -27.8..-24, no scan->CAD cluster), and it is not modelled."
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": true,
+   "result": "n/a",
+   "note": "no Tier-1 reading, so no Tier-1 miss to attribute"
+  },
+  "PHOTO-PLAUSIBILITY": {
+   "ran": true,
+   "result": "pass",
+   "note": "photos 1 (3/4 view) and 2 (top view) walked: 3 lugs with L-shaped top channels and stops, 6 rim notches, shelf + pocket arcs, lip ring, plate with two-lobed keyhole, 2 screw bosses, bright through-hole, dimples -- CAD is plausible against both; see CHK-ENUM for the one unenumerated photo feature"
+  }
+ },
+ "photos": [
+  "input/photos/1.webp",
+  "input/photos/2.webp"
+ ],
+ "cluster_explanations": {
+  "0": "outer wall theta 249-307, z ~-17: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "1": "bore/rim theta 35-132: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "2": "lip ring / plate edge theta 223-338: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "3": "lug-3 top and channel theta 217-268: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "4": "rim theta 184-329: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "5": "lug-3 inner/channel theta 214-273: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "6": "shelf/pockets theta 170-264: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "7": "lip ring theta 50-146: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "8": "shelf/pockets theta 284-330: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "9": "lip ring theta 52-90: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "10": "lug-2 inner face theta 97-130: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878).",
+  "11": "bore theta 105-127 z ~-14: registration artefact, not a missing feature: the ICP pose (T_refine, NOT converged at 500 its) is biased by contaminated correspondences (qa/icp_diagnose.json: unscanned CAD faces pair with the opposite wall/plate through 2.4-2.8 mm, pulling ~+z and -y), so the whole scan sits ~0.9 mm off the CAD (scan->CAD p50 0.53). In the builder datum frame (qa/deviation_datum.json) this region has no over-band cluster: scan->CAD has 0 clusters >= 20 pts and only 6 points > 0.8 mm in total (lug-3 end, theta 270.7, z -1.7, max 0.878)."
+ },
+ "limitations": [
+  {
+   "id": "L1",
+   "text": "Tier-1 not run (no calipers): 0 of 15 requested dims measured; all ABSENT, not passed (intake/MEASUREMENTS.md; its header says 16 rows, the tables hold 15 ids).",
+   "rerun_trigger": "filled input/MEASUREMENTS.md with caliper readings -> re-run verify"
+  },
+  {
+   "id": "L2",
+   "text": "Absolute scale not caliper-verified (CHK-SCALE not run; units assumed mm).",
+   "rerun_trigger": "one caliper reading of ENV-D (outer cup diameter) and ENV-Z2 -> re-run verify"
+  },
+  {
+   "id": "L3",
+   "text": "Independent ICP did not converge: 60/60 its (0.506 deg / 0.987 mm) and, after the one allowed raise, 500/500 its (0.904 deg / 0.989 mm), still sliding about the axis (~0.0006 deg/it). Diagnosis (qa/icp_diagnose.json, report-only): ~13 % of kept correspondences come from unscanned CAD faces (downward faces, below-plate walls, C6 outer wall) that pair with the opposite wall/plate across 2.4-2.8 mm with antiparallel normals, which tier2_icp.py accepts (|n.n| filter, 3.0 mm cut-off). The Tier-2 gate is therefore INVALID and the post-ICP numbers are biased (scan->CAD p95 0.97 vs 0.24 in the datum frame).",
+   "rerun_trigger": "human decision on the registration protocol (e.g. an ICP that excludes the declared unscanned CAD regions or uses signed normals, or accepting datum-frame grading) -> re-run verify"
+  },
+  {
+   "id": "L4",
+   "text": "Coverage: the CAD->scan observability split is a CAD line-of-sight test and does not exclude surfaces the scanner could not or did not see (C4 bore behind the lugs, C6 outer wall sector theta 37-152, the open cavity below the plate): only 4.1-4.5 % reads unobservable, so the observable-only CAD->scan number is dominated by coverage, not by geometry.",
+   "rerun_trigger": "a scan with the C6 sector, the underside and the under-lug region covered -> re-run verify"
+  },
+  {
+   "id": "L5",
+   "text": "Photo-inferred and assumed geometry not graded: keyhole, bosses, side hole (photo-only, +-3 mm / +-10 deg), plate thickness 2.5, lower wall, lug undersides and stop radial depth (hidden, C1-C4).",
+   "rerun_trigger": "caliper readings F-KEY, F-BOSS, F-PLATE, F-LUGT, F-STOP or a photo with a scale -> re-run verify"
+  },
+  {
+   "id": "L6",
+   "text": "Datum audit (report-only): axis 0.010 deg and origin 0.005 mm agree with the builder, but the 3-fold Fourier clock differs by 1.89 deg overall (4.02 deg with a wider lug-band region, qa/datum_audit_clock_sens.json): the clock is region-sensitive on this part.",
+   "rerun_trigger": "a clock datum on a named flat face (e.g. a lug stop face) agreed with the owner -> re-run datum audit"
+  },
+  {
+   "id": "L7",
+   "text": "Full resolution is an agent declaration (DECISIONS.md OTHER 2026-09-28), not an owner statement.",
+   "rerun_trigger": "owner says the upload was decimated -> re-run verify on the original"
+  }
+ ],
+ "miss_explanations": [
+  {
+   "region": "whole part scan->CAD (datum frame, inspection only)",
+   "cause": "p95 0.244 passes; max 0.878 > 0.80 from 6 points (no cluster >= 20) at the lug-3 end, theta 270.7, r 33.4-34.3, z -1.7 (overlay panel theta 270.7 shows a thin scan trace past the modelled lug end); lugs are one instance copied at 120 deg pitch.",
+   "options": "measure the lug-3 end angle on the scan and model per-instance lug spans, or declare it as edge fuzz with photo evidence"
+  },
+  {
+   "region": "CAD->scan observable (both frames)",
+   "cause": "coverage, not geometry: unscanned CAD surfaces the ray test calls observable (C6 outer wall sector, C4 bore behind the lugs, cavity below the plate) -- datum frame observable p95 9.31 / max 14.61; masked (M1-M5) p95 0.357 / max 5.13, residual dominated by the hidden bore behind the lugs (r 36.4-37.7, z -14..-3.5, lug sectors).",
+   "options": "more scan coverage, or a human decision to grade CAD->scan on the scanned region only; geometry changes cannot fix it"
+  },
+  {
+   "region": "post-ICP gate (INVALID)",
+   "cause": "unconverged, contaminated ICP pose shifts the scan ~0.9 mm; every post-ICP band misses for this reason (scan->CAD p95 0.97 / max 1.83).",
+   "options": "see L3"
+  }
+ ],
+ "claim_boundary": "No official Tier-2 grade: the QA registration did not converge, so the full-res gate is INVALID; datum-frame numbers are inspection only. Not fit for manufacture, tooling or fit-critical use (bayonet engagement): scale and all dimensions are uncalipered, the lug undersides/ramps, stop depth, plate underside and everything below the plate are assumed, and the plate keyhole/bosses/holes are photo-inferred. Not evidence of the outer wall over theta 37-152 or below z -27.84 (unscanned)."
+}
