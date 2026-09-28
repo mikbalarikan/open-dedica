@@ -39,10 +39,10 @@ In the overlays, grey is the rebuilt STEP and red is the raw scan. Where both sh
 | ![OD-S01 Steam valve](img/progress/OD-S01_steam_valve_overlay.png) | ![OD-S02 Steam wand](img/progress/OD-S02_steam_wand_overlay.png) | ![OD-W03 Tray gasket (tank seat)](img/progress/OD-W03_tank_seat_overlay.png) | ![OD-G09 Group head bayonet cup](img/progress/OD-G09_group_head_bayonet_cup_overlay.png) |
 | [report](../step/reports/OD-S01_steam_valve/) | [report](../step/reports/OD-S02_steam_wand/) | [report](../step/reports/OD-W03_tank_seat/) | [report](../step/reports/OD-G09_group_head_bayonet_cup/) |
 
-| `OD-G10` Portafilter: modeled |
-|---|
-| ![OD-G10 Portafilter](img/progress/OD-G10_portafilter_overlay.png) |
-| [report](../step/reports/OD-G10_portafilter/) |
+| `OD-G10` Portafilter: modeled | `OD-H21` Anti-drip valve: modeled |
+|---|---|
+| ![OD-G10 Portafilter](img/progress/OD-G10_portafilter_overlay.png) | ![OD-H21 Anti-drip valve](img/progress/OD-H21_antidrip_valve_overlay.png) |
+| [report](../step/reports/OD-G10_portafilter/) | [report](../step/reports/OD-H21_antidrip_valve/) |
 
 ## Parts on the scanner
 

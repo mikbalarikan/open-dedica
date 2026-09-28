@@ -1,0 +1,106 @@
+{
+ "schema": "stl-re/intake@1",
+ "tool": "intake.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/runs/OD-H21_antidrip-valve/input/scan.stl": "4553ccbeee70167f15be759ac21ebe8b1b3cba9cd03a87f75b310eba0be85aad"
+ },
+ "seed": 0,
+ "created": "2026-09-28T12:31:03+00:00",
+ "libs": {
+  "trimesh": "5.1.0",
+  "numpy": "2.4.6"
+ },
+ "input_bytes": 30007184,
+ "raw_unwelded": {
+  "faces": 600142,
+  "verts": 1800426
+ },
+ "raw_welded": {
+  "faces": 600142,
+  "verts": 300181,
+  "bounds": [
+   [
+    -50.99764633178711,
+    -25.477176666259766,
+    -185.45188903808594
+   ],
+   [
+    -3.629087448120117,
+    8.419920921325684,
+    -124.81996154785156
+   ]
+  ],
+  "extents": [
+   47.36855888366699,
+   33.89709758758545,
+   60.631927490234375
+  ],
+  "watertight": false,
+  "winding_consistent": true,
+  "euler": -9,
+  "area_mm2": 5667.726997185964,
+  "signed_volume_mm3": 18440.116678260467,
+  "open_boundary_edges": 238,
+  "open_boundary_loops": 7,
+  "open_boundary_loops_note": "vertex-connected boundary components (touching loops merge)"
+ },
+ "welded_vertex_reduction": 1500245,
+ "bodies": 1,
+ "body_faces_top5": [
+  600142
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": []
+ },
+ "normals_flipped": false,
+ "orientation": {
+  "method": "ray vote on the working copy (open mesh: volume sign is origin-dependent)",
+  "signed_volume_mm3_unreliable": 18440.116678260467,
+  "samples": 500,
+  "seed": 0,
+  "hit_along_normal": 0.088,
+  "hit_against_normal": 0.98,
+  "verdict": "outward"
+ },
+ "working_full": {
+  "faces": 600142,
+  "verts": 300181,
+  "bounds": [
+   [
+    -50.99764633178711,
+    -25.477176666259766,
+    -185.45188903808594
+   ],
+   [
+    -3.629087448120117,
+    8.419920921325684,
+    -124.81996154785156
+   ]
+  ],
+  "extents": [
+   47.36855888366699,
+   33.89709758758545,
+   60.631927490234375
+  ],
+  "watertight": false,
+  "winding_consistent": true,
+  "euler": -9,
+  "area_mm2": 5667.726997185964,
+  "signed_volume_mm3": 18440.116678260467,
+  "open_boundary_edges": 238,
+  "open_boundary_loops": 7,
+  "open_boundary_loops_note": "vertex-connected boundary components (touching loops merge)"
+ },
+ "decimation": {
+  "applied": false
+ },
+ "work_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/runs/OD-H21_antidrip-valve/intake/work.stl",
+  "sha256": "fe337680addf8bdaff9fec879841c4bc0511c721fd6534af8279a2ee9a375e9c",
+  "faces": 600142
+ },
+ "note": "input file untouched; weld, fragment/table removal and normal flip applied to the working copy only. Official gates run on the full-resolution original."
+}

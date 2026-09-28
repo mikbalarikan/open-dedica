@@ -1,0 +1,102 @@
+{
+ "schema": "stl-re/overlay@1",
+ "tool": "overlay.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "4553ccbeee70167f15be759ac21ebe8b1b3cba9cd03a87f75b310eba0be85aad",
+  "build/OD-H21_antidrip-valve_datum.step": "293413a365cc66c59589501ee2cd1ec26768ec01cb4940d078b43609b50da331",
+  "intake/alignment.json": "b1976a9df8d163ce442e397ccd163ee51e48c4abb2e477a0399be89a9008ed4a"
+ },
+ "seed": null,
+ "created": "2026-09-28T14:31:28+00:00",
+ "png": "qa/overlays/overlay_z.png",
+ "panels": [
+  {
+   "panel": "Z=-25.0",
+   "scan_segments": 1051,
+   "scan_length_mm": 64.6378405412215,
+   "cad_segments": 1037,
+   "cad_length_mm": 67.14972626830344,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-20.0",
+   "scan_segments": 598,
+   "scan_length_mm": 36.40629341655321,
+   "cad_segments": 504,
+   "cad_length_mm": 36.32036027960161,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-14.2",
+   "scan_segments": 486,
+   "scan_length_mm": 41.30235082524331,
+   "cad_segments": 994,
+   "cad_length_mm": 37.40736154878984,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-10.0",
+   "scan_segments": 1247,
+   "scan_length_mm": 75.6746555957574,
+   "cad_segments": 2089,
+   "cad_length_mm": 78.40090024514213,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=-3.0",
+   "scan_segments": 1373,
+   "scan_length_mm": 87.4831512780281,
+   "cad_segments": 571,
+   "cad_length_mm": 88.44914549853956,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=3.4",
+   "scan_segments": 1930,
+   "scan_length_mm": 109.27792833001538,
+   "cad_segments": 1489,
+   "cad_length_mm": 114.35912017272662,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=11.0",
+   "scan_segments": 1527,
+   "scan_length_mm": 95.38083534013441,
+   "cad_segments": 765,
+   "cad_length_mm": 100.14637335377412,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=14.0",
+   "scan_segments": 1333,
+   "scan_length_mm": 84.36349054690362,
+   "cad_segments": 556,
+   "cad_length_mm": 96.09345689786642,
+   "scan_empty": false,
+   "cad_empty": false
+  },
+  {
+   "panel": "Z=20.0",
+   "scan_segments": 1194,
+   "scan_length_mm": 76.47919185305975,
+   "cad_segments": 574,
+   "cad_length_mm": 76.3485891300129,
+   "scan_empty": false,
+   "cad_empty": false
+  }
+ ],
+ "empty_scan_panels": [],
+ "CHK-OVERLAY": {
+  "ran": true,
+  "result": "pass",
+  "note": "every panel shows scan"
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [],
+ "scale_factor": 1.0,
+ "tilt_deg": {
+  "value": 1.2668587043644268,
+  "stderr_deg": 0.03171298397090574,
+  "direction_deg": -130.77217561551984,
+  "method": "common slope, per-feature intercept, 15 stations over 1 feature(s), z -22.000..-15.000 vs frame Z",
+  "z_span_mm": 7.0,
+  "per_feature": [
+   {
+    "feature": "nozzle OD sections",
+    "n_stations": 15,
+    "value": 1.2668587043644268,
+    "stderr_deg": 0.03046884968881155,
+    "direction_deg": -130.77217561551984,
+    "z_span_mm": 7.0
+   }
+  ],
+  "resolvable": null
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": -0.00025110982772484175,
+   "tol": 0.03470593909277056,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "nozzle tip (zmin)",
+   "stat": "zmin",
+   "expected": -27.3,
+   "tol": 0.4,
+   "observed": -27.455350278845046,
+   "ok": true,
+   "tol_source": "rough-frame exploration value (tilt <= 1 deg x r 6 = 0.1) + 0.3 exploration binning"
+  },
+  {
+   "name": "nozzle shoulder (median z)",
+   "stat": "zmedian",
+   "expected": -14.0,
+   "tol": 0.3,
+   "observed": -14.033438676801694,
+   "ok": true,
+   "tol_source": "rough-frame r-z map read to +-0.2 + tilt"
+  },
+  {
+   "name": "cap top (median z)",
+   "stat": "zmedian",
+   "expected": 23.7,
+   "tol": 0.5,
+   "observed": 23.47954755035404,
+   "ok": true,
+   "tol_source": "rough-frame r-z map; cap measured tilted ~2.5 deg (x r 11 = 0.5)"
+  },
+  {
+   "name": "barb top (zmax)",
+   "stat": "zmax",
+   "expected": 28.5,
+   "tol": 0.6,
+   "observed": 28.483205881628564,
+   "ok": true,
+   "tol_source": "rough-frame zmax 133.81 - 105.3; cap tilt"
+  }
+ ],
+ "primary": {
+  "type": "plane",
+  "fit_rms_mm": 0.026564756034936247,
+  "fit_max_mm": 0.10162902270969325,
+  "n_faces": 7175
+ },
+ "secondary": {
+  "type": "axis",
+  "fit_rms_mm": 0.03130735711065184,
+  "fit_max_mm": 0.11304062773449619,
+  "stations": 15,
+  "r_by_feature": {
+   "nozzle OD sections": {
+    "n": 15,
+    "r_mean": 5.777801818535334,
+    "r_std": 0.011103785867685326
+   }
+  },
+  "centre_std_mm": [
+   0.03155560660246725,
+   0.03634261865803007
+  ]
+ },
+ "clock": {
+  "rule": "plane_normal: side-outlet collar outer face normal -> +X",
+  "angle_deg": 13.877506897863375
+ },
+ "extents_aligned": [
+  43.83082616739516,
+  38.01459899381495,
+  55.93855616047361
+ ]
+}

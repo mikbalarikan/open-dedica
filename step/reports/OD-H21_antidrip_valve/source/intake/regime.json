@@ -1,0 +1,18 @@
+{
+ "schema": "stl-re/regime@1",
+ "tool": "intake.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {},
+ "seed": 0,
+ "created": "2026-09-28T12:47:34+00:00",
+ "name": "baseline-skill",
+ "source": "baseline/skills/stl2step-build123d/SKILL.md:87",
+ "bands": {
+  "p95_mm": 0.3,
+  "max_mm": 0.8,
+  "tier1_abs_mm": null,
+  "interface_max_mm": null
+ },
+ "material_class": "plastic",
+ "why": "Owner instruction 2026-09-28 (session message): 'p95 plastik parca toleransi kullan' = baseline-skill plastic class; scan-only job (no calipers), so RE_SPEC Tier-1 cannot run; same regime as the sibling OD-H22 run. DECISIONS.md REGIME line (orchestrator) records it."
+}

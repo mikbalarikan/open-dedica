@@ -1,0 +1,80 @@
+{
+ "schema": "stl-re/sections_radial.json@1",
+ "tool": "sections.py",
+ "tool_version": "stl-re-measure-intent@1.0.0",
+ "inputs": {
+  "intake/aligned_work.stl": "ba45c057adfe16feead33a20c2904ac9c38e4325c1880d7c01052b6d88f2a6f4"
+ },
+ "seed": 0,
+ "created": "2026-09-28T13:03:53+00:00",
+ "frame": "datum; z along +Z, theta CCW about +Z from +X",
+ "planes": {
+  "theta_0": {
+   "chunks": 2,
+   "r_range": [
+    0.008167,
+    30.010747
+   ],
+   "z_range": [
+    -27.295615,
+    27.093212
+   ]
+  },
+  "theta_55.66": {
+   "chunks": 2,
+   "r_range": [
+    0.004994,
+    28.540539
+   ],
+   "z_range": [
+    -27.230861,
+    28.284575
+   ]
+  },
+  "theta_23.8": {
+   "chunks": 1,
+   "r_range": [
+    0.005678,
+    13.288948
+   ],
+   "z_range": [
+    -27.267381,
+    27.112178
+   ]
+  },
+  "theta_113.97": {
+   "chunks": 2,
+   "r_range": [
+    0.010483,
+    13.479091
+   ],
+   "z_range": [
+    -27.179852,
+    27.030576
+   ]
+  },
+  "theta_-66.75": {
+   "chunks": 1,
+   "r_range": [
+    0.085316,
+    13.461502
+   ],
+   "z_range": [
+    -27.346595,
+    27.112495
+   ]
+  },
+  "theta_180": {
+   "chunks": 2,
+   "r_range": [
+    0.012691,
+    13.571946
+   ],
+   "z_range": [
+    -27.379576,
+    27.030403
+   ]
+  }
+ },
+ "arrays": "measure/figures/radial.npz"
+}

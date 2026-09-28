@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "fe337680addf8bdaff9fec879841c4bc0511c721fd6534af8279a2ee9a375e9c"
+ },
+ "seed": 0,
+ "created": "2026-09-28T12:45:23+00:00",
+ "scan_noise_mm": {
+  "value": 0.04070487094839063,
+  "p95_mm": 0.06893694598329662,
+  "max_mm": 0.09341347961025086,
+  "method": "rms of RANSAC+SVD plane on shoulder (6213 faces)"
+ }
+}

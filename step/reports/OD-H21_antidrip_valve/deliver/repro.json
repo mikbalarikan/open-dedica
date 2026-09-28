@@ -1,0 +1,244 @@
+{
+  "schema": "stl-re/repro@1",
+  "tool": "repro_check.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "build/OD-H21_antidrip-valve.step": "59110901b473df3617bb9355248a759267b2b961eb090dadf0fff966f893de85",
+    "build/OD-H21_antidrip-valve_datum.step": "293413a365cc66c59589501ee2cd1ec26768ec01cb4940d078b43609b50da331",
+    "build/model.py": "f13df5c7718df3c5dd0aced32ac9fcf99cbebd1c52acfa9b32634cdcede90233",
+    "measure/params.json": "856833293b94d48ce2f63a8b335f872dd550530a8b8aef8003e8ef2e61f53d1d"
+  },
+  "seed": 0,
+  "created": "2026-09-28T21:56:28+00:00",
+  "method": "2 fresh subprocess rebuild(s) of build/model.py in a scratch copy; STEP re-imported; solids, faces, surface census, volume, bbox compared (raw hash reported, not required)",
+  "command": [
+    "python3",
+    "model.py",
+    "--params",
+    "../measure/params.json",
+    "--alignment",
+    "../intake/alignment.json",
+    "--out",
+    ".",
+    "--part",
+    "OD-H21_antidrip-valve",
+    "--scripts",
+    "/home/user/agentic_STL-to-CAD/skills/stl-re-rebuild-build123d/scripts"
+  ],
+  "cwd": "build",
+  "tolerance_mm": 0.0,
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "build123d": "0.13.0",
+    "OCP": "8.0.1.0",
+    "numpy": "2.4.6"
+  },
+  "reproducible": true,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=../measure/params.json\nframes: nozzle tilt 1.361 deg, cap tilt 3.361 deg\nF01 nozzle revolve R=5.7799 tip_u=-27.3016 tip_round=0.5227 root=0.5096 faces=6\nF02 lugs a=5.634 b=5.9639 rc=0.4931 phi=23.9706\nF03 nut revolve shoulder=-14.037 R(-10)=10.8335 k=0.0311 chamfer -6.779->-6.15\nF04 ribs placed: 8 at ['-156.36', '-110.94', '-66.04', '-21.15', '23.81', '68.72', '113.63', '158.66']\nF05 band_lo cone R(-4.35)=12.2048 k=0.051 -6.15->-2.5407\nF06 band_up R=12.0089 top round=0.5647\nF07 body R=10.0218\nF08 cap part ring R=13.2709 u 9.5778..16.817, cap R=12.1411 top 23.2744; 2 skirt slits\nF09 outlet tube R=4.6084 collar R=6.8482 thread cyl R=4.4169 (pitch 0.908 not modelled) end u=29.9816\nF09b outlet-ring web: half-width 3.528 at x 10.5 -> 0 at x 13.064, y centre -0.4327, z 6.382..9.8\nF10 O-ring torus centre u=23.5965 rho=4.4273 a=0.9153 (fused: invented connection)\nF11/F12 barb tube R(17.5)=2.7516 flare 23.406->25.077 bulb max 3.745 end 28.3727\nF13 union: solids=1 faces=106\nF14 cuts: nozzle bore to u -23.4063, 2 lug cut-back boxes + 1 through latch window, 4 ring windows (sectors) + 1 deep window sector; solids=1\n{\n  \"closed\": true,\n  \"faces\": 146,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 0,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"scan_bbox\": {\n    \"max\": [\n      -3.643275,\n      8.588318,\n      -124.824429\n    ],\n    \"min\": [\n      -51.070082,\n      -25.516008,\n      -185.445867\n    ],\n    \"size\": [\n      47.426807,\n      34.104325,\n      60.621437\n    ]\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 19376.495313\n}\n",
+      "stderr_tail": "",
+      "run": 1,
+      "produced": [
+        "OD-H21_antidrip-valve.step",
+        "OD-H21_antidrip-valve_datum.step"
+      ]
+    },
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=../measure/params.json\nframes: nozzle tilt 1.361 deg, cap tilt 3.361 deg\nF01 nozzle revolve R=5.7799 tip_u=-27.3016 tip_round=0.5227 root=0.5096 faces=6\nF02 lugs a=5.634 b=5.9639 rc=0.4931 phi=23.9706\nF03 nut revolve shoulder=-14.037 R(-10)=10.8335 k=0.0311 chamfer -6.779->-6.15\nF04 ribs placed: 8 at ['-156.36', '-110.94', '-66.04', '-21.15', '23.81', '68.72', '113.63', '158.66']\nF05 band_lo cone R(-4.35)=12.2048 k=0.051 -6.15->-2.5407\nF06 band_up R=12.0089 top round=0.5647\nF07 body R=10.0218\nF08 cap part ring R=13.2709 u 9.5778..16.817, cap R=12.1411 top 23.2744; 2 skirt slits\nF09 outlet tube R=4.6084 collar R=6.8482 thread cyl R=4.4169 (pitch 0.908 not modelled) end u=29.9816\nF09b outlet-ring web: half-width 3.528 at x 10.5 -> 0 at x 13.064, y centre -0.4327, z 6.382..9.8\nF10 O-ring torus centre u=23.5965 rho=4.4273 a=0.9153 (fused: invented connection)\nF11/F12 barb tube R(17.5)=2.7516 flare 23.406->25.077 bulb max 3.745 end 28.3727\nF13 union: solids=1 faces=106\nF14 cuts: nozzle bore to u -23.4063, 2 lug cut-back boxes + 1 through latch window, 4 ring windows (sectors) + 1 deep window sector; solids=1\n{\n  \"closed\": true,\n  \"faces\": 146,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 0,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"scan_bbox\": {\n    \"max\": [\n      -3.643275,\n      8.588318,\n      -124.824429\n    ],\n    \"min\": [\n      -51.070082,\n      -25.516008,\n      -185.445867\n    ],\n    \"size\": [\n      47.426807,\n      34.104325,\n      60.621437\n    ]\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 19376.495313\n}\n",
+      "stderr_tail": "",
+      "run": 2,
+      "produced": [
+        "OD-H21_antidrip-valve.step",
+        "OD-H21_antidrip-valve_datum.step"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "OD-H21_antidrip-valve.step",
+      "original_volume_mm3": 19376.49531255494,
+      "rebuild_volume_mm3": 19376.49531255494,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        47.42680653706724,
+        34.10432526479181,
+        60.62143741193891
+      ],
+      "rebuild_bbox_mm": [
+        47.42680653706724,
+        34.10432526479181,
+        60.62143741193891
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 19376.49531255494,
+          "rebuild_volume_mm3": 19376.49531255494,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            47.42680653706724,
+            34.10432526479181,
+            60.62143741193891
+          ],
+          "rebuild_bbox_mm": [
+            47.42680653706724,
+            34.10432526479181,
+            60.62143741193891
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 19376.49531255494,
+          "rebuild_volume_mm3": 19376.49531255494,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            47.42680653706724,
+            34.10432526479181,
+            60.62143741193891
+          ],
+          "rebuild_bbox_mm": [
+            47.42680653706724,
+            34.10432526479181,
+            60.62143741193891
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 146,
+        "valid": true,
+        "surface_census": {
+          "CONE": 22,
+          "CYLINDER": 33,
+          "PLANE": 80,
+          "TORUS": 11
+        },
+        "volume_mm3": 19376.49531255494,
+        "area_mm2": 5993.22503268792,
+        "bbox_min": [
+          -51.07008150892044,
+          -25.51600774065555,
+          -185.4458665171049
+        ],
+        "bbox_max": [
+          -3.6432749718531947,
+          8.588317524136258,
+          -124.82442910516598
+        ]
+      }
+    },
+    {
+      "file": "OD-H21_antidrip-valve_datum.step",
+      "original_volume_mm3": 19376.495312554947,
+      "rebuild_volume_mm3": 19376.495312554947,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        43.48932308736261,
+        38.1816196140186,
+        55.798069457822024
+      ],
+      "rebuild_bbox_mm": [
+        43.48932308736261,
+        38.1816196140186,
+        55.798069457822024
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 19376.495312554947,
+          "rebuild_volume_mm3": 19376.495312554947,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            43.48932308736261,
+            38.1816196140186,
+            55.798069457822024
+          ],
+          "rebuild_bbox_mm": [
+            43.48932308736261,
+            38.1816196140186,
+            55.798069457822024
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 19376.495312554947,
+          "rebuild_volume_mm3": 19376.495312554947,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            43.48932308736261,
+            38.1816196140186,
+            55.798069457822024
+          ],
+          "rebuild_bbox_mm": [
+            43.48932308736261,
+            38.1816196140186,
+            55.798069457822024
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 146,
+        "valid": true,
+        "surface_census": {
+          "CONE": 22,
+          "CYLINDER": 33,
+          "PLANE": 80,
+          "TORUS": 11
+        },
+        "volume_mm3": 19376.495312554947,
+        "area_mm2": 5993.22503268792,
+        "bbox_min": [
+          -13.471425142189169,
+          -13.430926750779173,
+          -27.424121712662036
+        ],
+        "bbox_max": [
+          30.017897945173438,
+          24.75069286323943,
+          28.373947745159988
+        ]
+      }
+    }
+  ]
+}

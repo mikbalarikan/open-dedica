@@ -1,0 +1,1616 @@
+{
+ "schema": "stl-re/params.json@1",
+ "tool": "make_params.py (it1) + make_params_it2.py (it2 overlay, run-local, builder)",
+ "tool_version": "stl-re-measure-intent/1.0",
+ "inputs": {
+  "measure/figures/fits.json": "d6a6a79ba8ce7339aec95dc5e811292c46fd6dc6a182b92c49a7b77375bdee1e",
+  "intake/alignment.json": "b1976a9df8d163ce442e397ccd163ee51e48c4abb2e477a0399be89a9008ed4a",
+  "intake/aligned_work.stl": "ba45c057adfe16feead33a20c2904ac9c38e4325c1880d7c01052b6d88f2a6f4",
+  "input/photos/photo_1.png": "e6b32ea454b6a94c5cd15f377f64c5453685af0087bb6a52777ad763ecfd6a79",
+  "input/photos/photo_2.png": "66d8ab5f6ac11d24e541066a7c5e808d822fc4683676108ab9754a83f58b1723",
+  "measure/figures/fits_it2.json": "1d426fb028c59b918cc275036b562b0ab3e45a85c92153109db06b8373c88e3a"
+ },
+ "seed": 0,
+ "created": "2026-09-28T14:21:22+00:00",
+ "part": "OD-H21_antidrip-valve",
+ "frame": "datum frame of intake/alignment.json: primary = band top face (z=0, +Z to the cap), origin = nozzle OD axis ∩ band top face, +X = side-outlet collar face normal; theta CCW about +Z from +X. Sub-part axes (nozzle, nut, bands, body, cap part, outlet, barb) are params in this frame; local angles say which local frame they use (e1 = datum X projected on the local plane, CCW about the local axis).",
+ "scan_noise_mm": 0.03470593909277056,
+ "authority": "scan-only job (DECISIONS.md MEASUREMENTS): every dimension is scan authority; no caliper, no photo dimension",
+ "params": {
+  "noz_axis_c": {
+   "value": [
+    -0.0036,
+    0.0049
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.0036,
+    0.0049
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "tilted-cylinder fit (soft-l1) of nozzle OD faces z -22.3..-14.7, r 5.3..6.3; centre at z0=-18.5; rms 0.0340",
+   "uncertainty_mm": 0.034,
+   "evidence": "measure/figures/fits.json#segments.nozzle",
+   "critical": false,
+   "note": "nozzle axis point at z = -18.5 (datum). Nozzle is its own sub-part (as-scanned assembly)"
+  },
+  "noz_axis_tilt": {
+   "value": [
+    -0.6193,
+    -1.2119
+   ],
+   "unit": "deg",
+   "measured": [
+    -0.6193,
+    -1.2119
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: axis direction = (tan tx, tan ty, 1) normalised",
+   "uncertainty_mm": 0.034,
+   "evidence": "measure/figures/fits.json#segments.nozzle",
+   "critical": false,
+   "note": "total tilt 1.361 deg vs band-face normal (CHK-TILT finding, alignment.json)",
+   "frame": "datum frame; theta CCW about +Z from +X (+X = outlet collar normal)"
+  },
+  "nut_axis_c": {
+   "value": [
+    -0.067,
+    -0.1553
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.067,
+    -0.1553
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "centre of the nut surface fit (tilt fixed 0: tilt-free fit gives 0.2715371699851625 deg); rms 0.0314",
+   "uncertainty_mm": 0.0314,
+   "evidence": "measure/figures/fits.json#segments.nut",
+   "critical": false,
+   "note": "axis parallel to datum Z; centre offset kept as scanned (assembly misalignment beyond noise, intent-rules §5)"
+  },
+  "bandlo_axis_c": {
+   "value": [
+    -0.096,
+    -0.2359
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.096,
+    -0.2359
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "centre of the band_lo surface fit (tilt fixed 0: tilt-free fit gives n/a deg); rms 0.0611",
+   "uncertainty_mm": 0.0611,
+   "evidence": "measure/figures/fits.json#segments.band_lo",
+   "critical": false,
+   "note": "axis parallel to datum Z; centre offset kept as scanned (assembly misalignment beyond noise, intent-rules §5)"
+  },
+  "bandup_axis_c": {
+   "value": [
+    0.1076,
+    -0.196
+   ],
+   "unit": "mm",
+   "measured": [
+    0.1076,
+    -0.196
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "centre of the band_up surface fit (tilt fixed 0: tilt-free fit gives n/a deg); rms 0.0440",
+   "uncertainty_mm": 0.044,
+   "evidence": "measure/figures/fits.json#segments.band_up",
+   "critical": false,
+   "note": "axis parallel to datum Z; centre offset kept as scanned (assembly misalignment beyond noise, intent-rules §5)"
+  },
+  "body_axis_c": {
+   "value": [
+    0.1495,
+    -0.1614
+   ],
+   "unit": "mm",
+   "measured": [
+    0.1495,
+    -0.1614
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "centre of the body surface fit (tilt fixed 0: tilt-free fit gives 0.10714090394364661 deg); rms 0.0601",
+   "uncertainty_mm": 0.0601,
+   "evidence": "measure/figures/fits.json#segments.body",
+   "critical": false,
+   "note": "axis parallel to datum Z; centre offset kept as scanned (assembly misalignment beyond noise, intent-rules §5)"
+  },
+  "cap_axis_c": {
+   "value": [
+    0.1136,
+    -0.1879
+   ],
+   "unit": "mm",
+   "measured": [
+    0.1136,
+    -0.1879
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "joint ring+cap tilted-cylinder fit, centre at z0=17.0; ring rms 0.0512, cap rms 0.0349",
+   "uncertainty_mm": 0.0349,
+   "evidence": "measure/figures/fits.json#segments.cap_part",
+   "critical": false
+  },
+  "cap_axis_tilt": {
+   "value": [
+    2.8553,
+    -1.7752
+   ],
+   "unit": "deg",
+   "measured": [
+    2.8553,
+    -1.7752
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same joint fit: axis = (tan tx, tan ty, 1)",
+   "uncertainty_mm": 0.0349,
+   "evidence": "measure/figures/fits.json#segments.cap_part",
+   "critical": false,
+   "note": "cap part tilted 3.361 deg towards -31.9 deg: as-scanned assembly state, kept (a square cap would leave ~0.7 mm at r 12)",
+   "frame": "datum frame; theta CCW about +Z from +X (+X = outlet collar normal)"
+  },
+  "outlet_axis_p": {
+   "value": [
+    0.0008,
+    -0.1633,
+    3.4172
+   ],
+   "unit": "mm",
+   "measured": [
+    0.0008,
+    -0.1633,
+    3.4172
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "outlet tube tilted-cylinder fit u 11..19.2 (3 refinements), point where the axis crosses the plane through Z normal to its horizontal projection",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/fits.json#outlet",
+   "critical": false
+  },
+  "outlet_axis_d": {
+   "value": [
+    1.0,
+    0.0048,
+    0.0076
+   ],
+   "unit": "mm",
+   "measured": [
+    1.0,
+    0.0048,
+    0.0076
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit; unit direction (az 0.278 deg, elev 0.433 deg)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/fits.json#outlet",
+   "critical": false,
+   "note": "unit vector (unit field mm = dimensionless direction cosines)"
+  },
+  "barb_axis_p": {
+   "value": [
+    0.4488,
+    -0.3066,
+    24.2486
+   ],
+   "unit": "mm",
+   "measured": [
+    0.4488,
+    -0.3066,
+    24.2486
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "barb tube tilted-cylinder fit u 13.5..22.5, re-anchored at the Z axis",
+   "uncertainty_mm": 0.0478,
+   "evidence": "measure/figures/fits.json#barb",
+   "critical": false
+  },
+  "barb_axis_d": {
+   "value": [
+    0.5641,
+    0.8257,
+    0.0082
+   ],
+   "unit": "mm",
+   "measured": [
+    0.5641,
+    0.8257,
+    0.0082
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit; unit direction (az 55.660 deg, elev 0.469 deg)",
+   "uncertainty_mm": 0.0478,
+   "evidence": "measure/figures/fits.json#barb",
+   "critical": false,
+   "note": "unit vector"
+  },
+  "noz_R": {
+   "value": 5.7799,
+   "unit": "mm",
+   "measured": 5.7799,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "radius of the nozzle tilted-cylinder fit",
+   "uncertainty_mm": 0.034,
+   "evidence": "measure/figures/fits.json#segments.nozzle",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this feature -> re-run measure (scan-only value, CHK-SCALE FLAG)"
+  },
+  "noz_tip_u": {
+   "value": -27.3016,
+   "unit": "mm",
+   "measured": -27.3016,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median axial coordinate of tip-face faces (n.axis < -0.97, r 4.2..5.4)",
+   "uncertainty_mm": 0.0362,
+   "evidence": "measure/figures/fits.json#levels.nozzle_tip",
+   "critical": false
+  },
+  "noz_tip_round_R": {
+   "value": 0.5227,
+   "unit": "mm",
+   "measured": 0.5227,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the tip outer edge vertices u -27.3..-26.8",
+   "uncertainty_mm": 0.0282,
+   "evidence": "measure/figures/fits.json#rounds.nozzle_tip_outer",
+   "critical": false
+  },
+  "noz_root_R": {
+   "value": 0.5096,
+   "unit": "mm",
+   "measured": 0.5096,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the nozzle/shoulder root fillet vertices",
+   "uncertainty_mm": 0.054,
+   "evidence": "measure/figures/fits.json#rounds.shoulder_root",
+   "critical": false
+  },
+  "noz_bore_R": {
+   "value": 3.9415,
+   "unit": "mm",
+   "measured": 3.9415,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "IRLS circle on bore-wall vertices u -26.9..-25.0 (nozzle frame)",
+   "uncertainty_mm": 0.1022,
+   "evidence": "measure/figures/fits.json#nozzle_bore",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this feature -> re-run measure (scan-only value, CHK-SCALE FLAG)"
+  },
+  "noz_bore_floor_u": {
+   "value": -23.4063,
+   "unit": "mm",
+   "measured": "-23.6878..-23.1248",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "area-weighted quantiles of the axial position of scan faces inside the bore radius (the scanner bridge): minimax level = mid of p10..p90 (p10 -23.688, p90 -23.125); bore wall observed up to u -23.8 (p95 of wall vertices)",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/fits.json#bore_floors.nozzle; intake/coverage.json loop 1",
+   "critical": false,
+   "note": "blind recess to the observed (bridged) floor only; the real flow bore continues (unscanned), not invented"
+  },
+  "lug_c": {
+   "value": [
+    -0.0033,
+    -0.0477
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.0033,
+    -0.0477
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "rounded-rectangle SDF fit (soft-l1) to the outer envelope u -24.8..-23.6 (points outside the nozzle cylinder; latch-window side excluded)",
+   "uncertainty_mm": 0.0524,
+   "evidence": "measure/figures/fits.json#lip",
+   "critical": false
+  },
+  "lug_half_a": {
+   "value": 5.634,
+   "unit": "mm",
+   "measured": 5.634,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: half-width along phi (this side lies inside the nozzle cylinder, set by the corners)",
+   "uncertainty_mm": 0.0524,
+   "evidence": "measure/figures/fits.json#lip",
+   "critical": false,
+   "note": "band-to-band spread 5.251..5.634 (hidden side, corners only)"
+  },
+  "lug_half_b": {
+   "value": 5.9639,
+   "unit": "mm",
+   "measured": 5.9639,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: half-width along phi+90 (the latch-window sides)",
+   "uncertainty_mm": 0.0524,
+   "evidence": "measure/figures/fits.json#lip",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this feature -> re-run measure (scan-only value, CHK-SCALE FLAG)"
+  },
+  "lug_corner_R": {
+   "value": 0.4931,
+   "unit": "mm",
+   "measured": 0.4931,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: corner radius",
+   "uncertainty_mm": 0.0524,
+   "evidence": "measure/figures/fits.json#lip",
+   "critical": false
+  },
+  "lug_phi_deg": {
+   "value": 23.9706,
+   "unit": "deg",
+   "measured": 23.9706,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: direction of the a-side normal in the nozzle local frame (e1 = datum X projected)",
+   "uncertainty_mm": 0.0524,
+   "evidence": "measure/figures/fits.json#lip",
+   "critical": false,
+   "frame": "nozzle local frame, theta CCW about the nozzle axis from projected datum +X"
+  },
+  "lug_u_lo": {
+   "value": -25.7555,
+   "unit": "mm",
+   "measured": -25.7555,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median over 4 corners of the p1 axial coordinate of corner vertices (rho > 7.2)",
+   "uncertainty_mm": 0.0947,
+   "evidence": "measure/figures/fits.json#lip.corner_z_p1_p99",
+   "critical": false
+  },
+  "lug_u_hi": {
+   "value": -23.1261,
+   "unit": "mm",
+   "measured": -23.1261,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median over 4 corners of the p99 axial coordinate of corner vertices",
+   "uncertainty_mm": 0.0287,
+   "evidence": "measure/figures/fits.json#lip.corner_z_p1_p99",
+   "critical": false
+  },
+  "latch_u_lo": {
+   "value": [
+    -25.3037,
+    -25.2525
+   ],
+   "unit": "mm",
+   "measured": [
+    -25.3037,
+    -25.2525
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p3 axial coordinate of wall vertices inside noz_R - 0.12 within the window span",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/fits.json#latch_windows",
+   "critical": false
+  },
+  "latch_u_hi": {
+   "value": [
+    -24.168,
+    -24.5909
+   ],
+   "unit": "mm",
+   "measured": [
+    -24.168,
+    -24.5909
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same: p97 axial coordinate",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/fits.json#latch_windows",
+   "critical": false
+  },
+  "nut_shoulder_u": {
+   "value": -14.037,
+   "unit": "mm",
+   "measured": -14.037,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median axial coordinate of shoulder faces (normal < -0.97 along the nut axis, r 7..10)",
+   "uncertainty_mm": 0.0581,
+   "evidence": "measure/figures/fits.json#levels.shoulder",
+   "critical": false
+  },
+  "nut_R0": {
+   "value": 10.8335,
+   "unit": "mm",
+   "measured": 10.8335,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "drafted-cone fit of the nut base between ribs (ribs +-11 deg excluded), radius at z0=-10",
+   "uncertainty_mm": 0.0314,
+   "evidence": "measure/figures/fits.json#segments.nut",
+   "critical": false
+  },
+  "nut_k": {
+   "value": 0.0311,
+   "unit": "mm",
+   "measured": 0.0311,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: d rho / d u (draft 1.781 deg, wider towards +Z)",
+   "uncertainty_mm": 0.0314,
+   "evidence": "measure/figures/fits.json#segments.nut",
+   "critical": false,
+   "note": "unit mm/mm"
+  },
+  "nut_chamfer_u0": {
+   "value": -6.7794,
+   "unit": "mm",
+   "measured": -6.7794,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "derived: intersection of the nut cone with the line fit through the nut->band transition (u -6.7..-6.15, ribs excluded)",
+   "uncertainty_mm": 0.1208,
+   "evidence": "measure/figures/fits.json#nut_chamfer",
+   "critical": false
+  },
+  "nut_top_u": {
+   "value": -6.15,
+   "unit": "mm",
+   "measured": -6.15,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "upper end of the straight chamfer fit window (the transition curves on into the band above it)",
+   "uncertainty_mm": 0.1208,
+   "evidence": "measure/figures/fits.json#nut_chamfer; #tables body_frame",
+   "critical": false
+  },
+  "nut_top_rho": {
+   "value": 11.6626,
+   "unit": "mm",
+   "measured": 11.6626,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "chamfer line evaluated at nut_top_u",
+   "uncertainty_mm": 0.1208,
+   "evidence": "measure/figures/fits.json#nut_chamfer",
+   "critical": false
+  },
+  "rib_theta_deg": {
+   "value": [
+    -156.3638,
+    -110.9358,
+    -66.0427,
+    -21.1463,
+    23.8071,
+    68.7206,
+    113.6286,
+    158.6603
+   ],
+   "unit": "deg",
+   "measured": [
+    -156.3638,
+    -110.9358,
+    -66.0427,
+    -21.1463,
+    23.8071,
+    68.7206,
+    113.6286,
+    158.6603
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "per rib: IRLS circle (scale 0.1) on rib faces r > base+0.2, z -13.2..-7.3, angle of the rod centre about the nut axis",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/fits.json#ribs",
+   "critical": false,
+   "note": "pitch 44.9..45.4 deg, phase 23.75 +- 0.25: equal pitch within the measured scatter, kept as measured per instance",
+   "frame": "datum frame; theta CCW about +Z from +X (+X = outlet collar normal)"
+  },
+  "rib_rho_c": {
+   "value": [
+    10.6615,
+    10.501,
+    10.5797,
+    10.6452,
+    10.4459,
+    10.5318,
+    10.5361,
+    10.601
+   ],
+   "unit": "mm",
+   "measured": [
+    10.6615,
+    10.501,
+    10.5797,
+    10.6452,
+    10.4459,
+    10.5318,
+    10.5361,
+    10.601
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fits: rod-centre radius about the nut axis",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/fits.json#ribs",
+   "critical": false
+  },
+  "rib_rod_R": {
+   "value": [
+    1.3415,
+    1.421,
+    1.4451,
+    1.4158,
+    1.5281,
+    1.4255,
+    1.433,
+    1.3824
+   ],
+   "unit": "mm",
+   "measured": [
+    1.3415,
+    1.421,
+    1.4451,
+    1.4158,
+    1.5281,
+    1.4255,
+    1.433,
+    1.3824
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fits: rod radius (rib crest modelled as a vertical cylinder)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/fits.json#ribs",
+   "critical": false
+  },
+  "rib_count": {
+   "value": 8,
+   "unit": "count",
+   "measured": 8,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "pattern_count.py radius signal, 3 stations z -12.5/-10/-7.8, FFT-dominant rotational order 8 at every station, residual local minimum (CHK-COUNT pass)",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/count_nut_ribs.json",
+   "critical": false
+  },
+  "bandlo_R0": {
+   "value": 12.2048,
+   "unit": "mm",
+   "measured": 12.2048,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "drafted-cone fit of the lower band ring u -5.8..-2.9 (outlet sector excluded), radius at z0=-4.35",
+   "uncertainty_mm": 0.0611,
+   "evidence": "measure/figures/fits.json#segments.band_lo",
+   "critical": false
+  },
+  "bandlo_k": {
+   "value": 0.051,
+   "unit": "mm",
+   "measured": 0.051,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: d rho/d u (draft 2.92 deg)",
+   "uncertainty_mm": 0.0611,
+   "evidence": "measure/figures/fits.json#segments.band_lo",
+   "critical": false,
+   "note": "unit mm/mm"
+  },
+  "bandlo_base_u": {
+   "value": -5.6,
+   "unit": "mm",
+   "measured": -5.6,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "profile table (band frame): first station where rho p50 reaches the cone within noise (12.12 vs 12.14); the nut->band transition ends here",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/fits.json#tables_cols; measure/figures/fits.json tables body_frame",
+   "critical": false
+  },
+  "band_step_u": {
+   "value": -2.5407,
+   "unit": "mm",
+   "measured": -2.5407,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median axial coordinate of the up-facing step faces (normal > 0.9) at r 12.0..12.3",
+   "uncertainty_mm": 0.0655,
+   "evidence": "measure/figures/fits.json#levels.band_step",
+   "critical": false
+  },
+  "bandup_R": {
+   "value": 12.0089,
+   "unit": "mm",
+   "measured": 12.0089,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "cylinder fit of the upper band ring u -2.3..-0.75",
+   "uncertainty_mm": 0.044,
+   "evidence": "measure/figures/fits.json#segments.band_up",
+   "critical": false
+  },
+  "bandup_top_round_R": {
+   "value": 0.5647,
+   "unit": "mm",
+   "measured": 0.5647,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the band top outer edge",
+   "uncertainty_mm": 0.0369,
+   "evidence": "measure/figures/fits.json#rounds.band_up_top",
+   "critical": false
+  },
+  "primary_u": {
+   "value": 0.0002,
+   "unit": "mm",
+   "measured": 0.0002,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median axial coordinate of the band top face (= the datum primary, z=0 by construction)",
+   "uncertainty_mm": 0.028,
+   "evidence": "measure/figures/fits.json#levels.primary",
+   "critical": false
+  },
+  "body_R": {
+   "value": 10.0218,
+   "unit": "mm",
+   "measured": 10.0218,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "cylinder fit of the body u 0.5..8.4 (outlet sector +-35 deg excluded)",
+   "uncertainty_mm": 0.0601,
+   "evidence": "measure/figures/fits.json#segments.body",
+   "critical": false
+  },
+  "ring_R": {
+   "value": 13.2709,
+   "unit": "mm",
+   "measured": 13.2709,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "joint cap-part fit: ring skirt radius (windows excluded)",
+   "uncertainty_mm": 0.0512,
+   "evidence": "measure/figures/fits.json#segments.cap_part",
+   "critical": false
+  },
+  "cap_R": {
+   "value": 12.1411,
+   "unit": "mm",
+   "measured": 12.1411,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "joint cap-part fit: cap radius (barb sector excluded)",
+   "uncertainty_mm": 0.0349,
+   "evidence": "measure/figures/fits.json#segments.cap_part",
+   "critical": false
+  },
+  "ring_bottom_u": {
+   "value": 9.5778,
+   "unit": "mm",
+   "measured": 9.5778,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median axial coordinate of down-facing faces along the cap axis, r 10.3..12.6",
+   "uncertainty_mm": 0.0863,
+   "evidence": "measure/figures/fits.json#levels.ring_bottom",
+   "critical": false
+  },
+  "ring_bottom_round_R": {
+   "value": 0.8026,
+   "unit": "mm",
+   "measured": 0.8026,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the ring bottom outer edge",
+   "uncertainty_mm": 0.0785,
+   "evidence": "measure/figures/fits.json#rounds.ring_bottom_outer",
+   "critical": false
+  },
+  "ring_top_u": {
+   "value": 16.817,
+   "unit": "mm",
+   "measured": 16.817,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median axial coordinate of up-facing faces r 12.3..12.9 (ring top step)",
+   "uncertainty_mm": 0.0688,
+   "evidence": "measure/figures/fits.json#levels.ring_top",
+   "critical": false
+  },
+  "ring_top_round_R": {
+   "value": 0.5206,
+   "unit": "mm",
+   "measured": 0.5206,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the ring top outer edge",
+   "uncertainty_mm": 0.0405,
+   "evidence": "measure/figures/fits.json#rounds.ring_top_outer",
+   "critical": false
+  },
+  "cap_root_R": {
+   "value": 0.4232,
+   "unit": "mm",
+   "measured": 0.4232,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the concave cap root fillet",
+   "uncertainty_mm": 0.0373,
+   "evidence": "measure/figures/fits.json#rounds.cap_root",
+   "critical": false
+  },
+  "cap_top_u": {
+   "value": 23.2744,
+   "unit": "mm",
+   "measured": 23.2744,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median axial coordinate of up-facing faces r 3.5..11.5 along the cap axis",
+   "uncertainty_mm": 0.0584,
+   "evidence": "measure/figures/fits.json#levels.cap_top",
+   "critical": false
+  },
+  "cap_top_round_R": {
+   "value": 0.5583,
+   "unit": "mm",
+   "measured": 0.5583,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the cap top edge",
+   "uncertainty_mm": 0.0381,
+   "evidence": "measure/figures/fits.json#rounds.cap_top_edge",
+   "critical": false
+  },
+  "win_u_lo": {
+   "value": [
+    12.4,
+    12.4,
+    12.4,
+    12.6
+   ],
+   "unit": "mm",
+   "measured": [
+    12.4,
+    12.4,
+    12.4,
+    12.6
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same map: first row open in >= 50 % of the window columns",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/fits_it2.json#ring_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 2): it1 [12.2869, 12.2855, 12.1798, 12.4642] -> it2 [12.4, 12.4, 12.4, 12.6]. "
+  },
+  "win_u_hi": {
+   "value": [
+    14.6,
+    14.0,
+    14.4,
+    14.2
+   ],
+   "unit": "mm",
+   "measured": [
+    14.6,
+    14.0,
+    14.4,
+    14.2
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same map: last open row + 0.2",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/fits_it2.json#ring_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 2): it1 [14.8568, 14.1629, 14.5205, 14.4293] -> it2 [14.6, 14.0, 14.4, 14.2]. "
+  },
+  "win_floor_rho": {
+   "value": [
+    11.9258,
+    12.1263,
+    11.4953,
+    11.9058
+   ],
+   "unit": "mm",
+   "measured": [
+    11.9258,
+    12.1263,
+    11.4953,
+    11.9058
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median of the per-cell minimum radius over window cells >= r 11.0; cells < r 11.0 (>= 6) form a deeper through-window to their p10 radius",
+   "uncertainty_mm": 0.4,
+   "evidence": "measure/figures/fits_it2.json#ring_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 2): it1 [12.0722, 12.1231, 11.3465, 12.0094] -> it2 [11.9258, 12.1263, 11.4953, 11.9058]. "
+  },
+  "slit_theta0_deg": {
+   "value": [
+    -158.135,
+    151.6072
+   ],
+   "unit": "deg",
+   "measured": [
+    -158.135,
+    151.6072
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "1-deg bins of the highest scan vertex inside the skirt (rho 10.0..11.8); slit = contiguous bins above ring_bottom_u + 0.9 around the loop; ceiling = median of those maxima; radial span = p2..p95 of the vertices above ring_bottom_u + 0.9: first bin",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/fits_it2.json#skirt_slits",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 3): it1 [-159.9594, 146.4008] -> it2 [-158.135, 151.6072]. the open loops L5/L7 (theta -148.5..-135.8, 151.8..163.5) mark only the hole in the scanned slit surface; the scanned slit ceiling spans the value given",
+   "frame": "cap local frame (e1 = datum X projected), CCW"
+  },
+  "slit_theta1_deg": {
+   "value": [
+    -140.135,
+    172.6072
+   ],
+   "unit": "deg",
+   "measured": [
+    -140.135,
+    172.6072
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same bins: last bin + 1 deg",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/fits_it2.json#skirt_slits",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 3): it1 [-126.933, 172.8675] -> it2 [-140.135, 172.6072]. ",
+   "frame": "cap local frame (e1 = datum X projected), CCW"
+  },
+  "slit_u_top": {
+   "value": [
+    10.8622,
+    10.9502
+   ],
+   "unit": "mm",
+   "measured": [
+    10.8622,
+    10.9502
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same bins: median of the per-bin highest vertex (slit ceiling)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/fits_it2.json#skirt_slits",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 3): it1 [10.9686, 11.0493] -> it2 [10.8622, 10.9502]. "
+  },
+  "slit_rho_in": {
+   "value": [
+    10.0568,
+    10.0127
+   ],
+   "unit": "mm",
+   "measured": [
+    10.0568,
+    10.0127
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p2 radius of the vertices above ring_bottom_u + 0.9 in the slit span",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/fits_it2.json#skirt_slits",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 3): it1 [10.1105, 10.1075] -> it2 [10.0568, 10.0127]. "
+  },
+  "slit_rho_out": {
+   "value": [
+    10.7359,
+    10.6312
+   ],
+   "unit": "mm",
+   "measured": [
+    10.7359,
+    10.6312
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p95 radius of the same vertices",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/fits_it2.json#skirt_slits",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 3): it1 [11.0966, 10.9822] -> it2 [10.7359, 10.6312]. "
+  },
+  "web_hw_at_10p5": {
+   "value": 3.5278,
+   "unit": "mm",
+   "measured": 3.5278,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "linear fit of the web half-width vs x over 19 two-sided section crossings at z 8.3/8.4/8.5 (between the outlet tube top and the ring bottom), value at x 10.5",
+   "uncertainty_mm": 0.179,
+   "evidence": "measure/figures/fits.json#outlet_ring_web",
+   "critical": false
+  },
+  "web_hw_slope": {
+   "value": -1.3759,
+   "unit": "mm",
+   "measured": -1.3759,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: d(half-width)/dx",
+   "uncertainty_mm": 0.179,
+   "evidence": "measure/figures/fits.json#outlet_ring_web",
+   "critical": false,
+   "note": "unit mm/mm"
+  },
+  "web_y_centre": {
+   "value": -0.4327,
+   "unit": "mm",
+   "measured": -0.4327,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median centre y of the same crossings (datum frame)",
+   "uncertainty_mm": 0.179,
+   "evidence": "measure/figures/fits.json#outlet_ring_web",
+   "critical": false
+  },
+  "out_tube_R": {
+   "value": 4.6084,
+   "unit": "mm",
+   "measured": 4.6084,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "outlet tube cylinder fit u 11..19.2",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/fits.json#outlet.tube",
+   "critical": false
+  },
+  "out_root_R": {
+   "value": 0.5272,
+   "unit": "mm",
+   "measured": 0.5272,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the tube/collar concave fillet",
+   "uncertainty_mm": 0.0821,
+   "evidence": "measure/figures/fits.json#outlet.root_round",
+   "critical": false
+  },
+  "out_collar_in_u": {
+   "value": 20.0062,
+   "unit": "mm",
+   "measured": 20.0062,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median u of collar inner-face faces (normal < -0.95)",
+   "uncertainty_mm": 0.0542,
+   "evidence": "measure/figures/fits.json#outlet.collar_inner_face",
+   "critical": false
+  },
+  "out_collar_R": {
+   "value": 6.8482,
+   "unit": "mm",
+   "measured": 6.8482,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median rho of collar OD faces u 20.9..22.3",
+   "uncertainty_mm": 0.0348,
+   "evidence": "measure/figures/fits.json#outlet",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this feature -> re-run measure (scan-only value, CHK-SCALE FLAG)"
+  },
+  "out_collar_round_R": {
+   "value": 1.0766,
+   "unit": "mm",
+   "measured": 1.0766,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the collar inner outer edge",
+   "uncertainty_mm": 0.0442,
+   "evidence": "measure/figures/fits.json#outlet.collar_round",
+   "critical": false
+  },
+  "out_collar_out_u": {
+   "value": 22.706,
+   "unit": "mm",
+   "measured": 22.706,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median u of collar outer-face faces (normal > 0.95; the clock plane)",
+   "uncertainty_mm": 0.0324,
+   "evidence": "measure/figures/fits.json#outlet.collar_outer_face",
+   "critical": false
+  },
+  "oring_u": {
+   "value": 23.5965,
+   "unit": "mm",
+   "measured": 23.5965,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the O-ring section vertices u 22.85..24.35, rho 4.9..5.7",
+   "uncertainty_mm": 0.0889,
+   "evidence": "measure/figures/fits.json#outlet.oring",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this feature -> re-run measure (scan-only value, CHK-SCALE FLAG)"
+  },
+  "oring_rho": {
+   "value": 4.4273,
+   "unit": "mm",
+   "measured": 4.4273,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: section centre radius (torus major radius)",
+   "uncertainty_mm": 0.0889,
+   "evidence": "measure/figures/fits.json#outlet.oring",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this feature -> re-run measure (scan-only value, CHK-SCALE FLAG)"
+  },
+  "oring_a": {
+   "value": 0.9153,
+   "unit": "mm",
+   "measured": 0.9153,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: section radius (torus minor radius)",
+   "uncertainty_mm": 0.0889,
+   "evidence": "measure/figures/fits.json#outlet.oring",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this feature -> re-run measure (scan-only value, CHK-SCALE FLAG)"
+  },
+  "out_thread_R": {
+   "value": 4.4169,
+   "unit": "mm",
+   "measured": 4.4169,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mean rho of thread-zone vertices u 25..29 (p1 4.211, p99 4.577); plain cylinder in place of the helix",
+   "uncertainty_mm": 0.1829,
+   "evidence": "measure/figures/fits.json#outlet.thread_rho",
+   "critical": true,
+   "rerun_trigger": "thread gauge / caliper on the crests -> re-run; a helical thread would need the scan to resolve the profile"
+  },
+  "out_thread_pitch": {
+   "value": 0.908,
+   "unit": "mm",
+   "measured": 0.908,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "helical phase coherence of (rho - mean) over (u, theta), pitch scan 0.80..1.10 step 0.002, both hands",
+   "uncertainty_mm": 0.01,
+   "evidence": "measure/figures/fits.json#outlet.thread_pitch",
+   "critical": false,
+   "note": "0.908 = 28 TPI (BSP/G 1/8) within 0.001: recorded for identification only, not modelled (plain cylinder)"
+  },
+  "out_chamfer_slope": {
+   "value": -0.4463,
+   "unit": "mm",
+   "measured": -0.4463,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of rho(u) over u 29.3..29.85 (end chamfer)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/fits.json#outlet.end_chamfer",
+   "critical": false,
+   "note": "unit mm/mm"
+  },
+  "out_chamfer_rho0": {
+   "value": 4.3882,
+   "unit": "mm",
+   "measured": 4.3882,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same line at u 29.3",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/fits.json#outlet.end_chamfer",
+   "critical": false
+  },
+  "out_end_u": {
+   "value": 29.9816,
+   "unit": "mm",
+   "measured": 29.9816,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median u of end-face faces",
+   "uncertainty_mm": 0.0359,
+   "evidence": "measure/figures/fits.json#outlet.end_face",
+   "critical": false
+  },
+  "out_bore_R": {
+   "value": 1.5923,
+   "unit": "mm",
+   "measured": 1.5923,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "IRLS circle on end-bore vertices u 28.4..29.8",
+   "uncertainty_mm": 0.0987,
+   "evidence": "measure/figures/fits.json#outlet.end_bore",
+   "critical": false
+  },
+  "out_bore_floor_u": {
+   "value": 29.2112,
+   "unit": "mm",
+   "measured": "28.3385..30.0840",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "area-weighted quantiles of the axial position of scan faces inside the bore radius (the scanner bridge): minimax level = mid of p10..p90 (p10 28.338, p90 30.084)",
+   "uncertainty_mm": 0.6,
+   "evidence": "measure/figures/fits.json#bore_floors.outlet",
+   "critical": false,
+   "note": "blind recess to the observed floor; the flow bore beyond is unscanned"
+  },
+  "out_tube_u0": {
+   "value": 5.0,
+   "unit": "mm",
+   "measured": 5.0,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "tube start inside the body cylinder (body_R 10.02 > tube reach): any value between the axis and the body wall gives the same solid",
+   "uncertainty_mm": 0.0,
+   "evidence": "measure/figures/fits.json#outlet",
+   "critical": false,
+   "note": "construction value inside material; not a visible dimension"
+  },
+  "barb_R0": {
+   "value": 2.7516,
+   "unit": "mm",
+   "measured": 2.7516,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "drafted-cone fit of the barb tube u 12.6..22.5 (beyond the cap rim), radius at u 17.5",
+   "uncertainty_mm": 0.0425,
+   "evidence": "measure/figures/fits.json#barb.tube_taper",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this feature -> re-run measure (scan-only value, CHK-SCALE FLAG)"
+  },
+  "barb_k": {
+   "value": -0.0084,
+   "unit": "mm",
+   "measured": -0.0084,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: d rho/d u (tube narrows outward)",
+   "uncertainty_mm": 0.0425,
+   "evidence": "measure/figures/fits.json#barb.tube_taper",
+   "critical": false,
+   "note": "unit mm/mm"
+  },
+  "barb_rear_u": {
+   "value": -2.9976,
+   "unit": "mm",
+   "measured": -2.9976,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median u of the rear end face faces (normal < -0.9)",
+   "uncertainty_mm": 0.0661,
+   "evidence": "measure/figures/fits.json#barb.rear_face",
+   "critical": false
+  },
+  "barb_rear_round_R": {
+   "value": 0.9344,
+   "unit": "mm",
+   "measured": 0.9344,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "(u,rho) circle fit to the rear end edge",
+   "uncertainty_mm": 0.0798,
+   "evidence": "measure/figures/fits.json#barb.rear_round",
+   "critical": false
+  },
+  "barb_flare_slope": {
+   "value": 0.6245,
+   "unit": "mm",
+   "measured": 0.6245,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit rho(u) over u 23.6..24.7 (flare)",
+   "uncertainty_mm": 0.2641,
+   "evidence": "measure/figures/fits.json#barb.flare",
+   "critical": false,
+   "note": "unit mm/mm"
+  },
+  "barb_flare_rho0": {
+   "value": 2.823,
+   "unit": "mm",
+   "measured": 2.823,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same line at u 23.6",
+   "uncertainty_mm": 0.2641,
+   "evidence": "measure/figures/fits.json#barb.flare",
+   "critical": false
+  },
+  "bulb_offset": {
+   "value": [
+    0.1744,
+    -0.0616
+   ],
+   "unit": "mm",
+   "measured": [
+    0.1744,
+    -0.0616
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "drafted-cone fit of the bulb u 25.1..27.9 with free centre (tilt fixed to the tube axis): centre offset in the barb local frame (e1 ~ datum up)",
+   "uncertainty_mm": 0.067,
+   "evidence": "measure/figures/fits.json#barb.bulb_cone_offset",
+   "critical": false
+  },
+  "bulb_R0": {
+   "value": 3.3506,
+   "unit": "mm",
+   "measured": 3.3506,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: radius at u 26.5",
+   "uncertainty_mm": 0.067,
+   "evidence": "measure/figures/fits.json#barb.bulb_cone_offset",
+   "critical": true,
+   "rerun_trigger": "one caliper reading of this feature -> re-run measure (scan-only value, CHK-SCALE FLAG)"
+  },
+  "bulb_k": {
+   "value": -0.2775,
+   "unit": "mm",
+   "measured": -0.2775,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit: d rho/d u (half-angle 15.51 deg)",
+   "uncertainty_mm": 0.067,
+   "evidence": "measure/figures/fits.json#barb.bulb_cone_offset",
+   "critical": false,
+   "note": "unit mm/mm"
+  },
+  "barb_end_u": {
+   "value": 28.3727,
+   "unit": "mm",
+   "measured": 28.3727,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median u of end-face faces",
+   "uncertainty_mm": 0.067,
+   "evidence": "measure/figures/fits.json#barb.end_face",
+   "critical": false
+  },
+  "barb_bore_R": {
+   "value": 1.2518,
+   "unit": "mm",
+   "measured": 1.2518,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "IRLS circle on end-bore vertices u 26.9..28.2",
+   "uncertainty_mm": 0.0951,
+   "evidence": "measure/figures/fits.json#barb.end_bore",
+   "critical": false
+  },
+  "barb_bore_floor_u": {
+   "value": 27.2827,
+   "unit": "mm",
+   "measured": "26.6189..27.9464",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "area-weighted quantiles of the axial position of scan faces inside the bore radius (the scanner bridge): minimax level = mid of p10..p90 (p10 26.619, p90 27.946)",
+   "uncertainty_mm": 0.4,
+   "evidence": "measure/figures/fits.json#bore_floors.barb",
+   "critical": false,
+   "note": "blind recess to the observed floor"
+  },
+  "latch_cut_d": {
+   "value": [
+    5.4247,
+    5.5724
+   ],
+   "unit": "mm",
+   "measured": [
+    5.4247,
+    5.5724
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "1-deg bins of the outer envelope, u -25.2..-24.65, vs the fitted lug outline; cut-back = bins > 0.25 mm inside it; its floor is a plane parallel to the b-side flat at distance d = median(env * cos(dtheta)) over wall bins 3 deg inside the cut edges; lateral extent y' = d tan(edge dtheta)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/fits_it2.json#latch_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 1): new param. the lug cut-back floor is a plane parallel to the b-side flat (it1 modelled a cylindrical floor at the nozzle radius, which cut 0.84 too deep near the phi-90 corners)",
+   "frame": "nozzle local frame; x' along the lug b-side normal (phi+90 / phi-90), y' CCW"
+  },
+  "latch_cut_y0": {
+   "value": [
+    -4.3929,
+    -4.1991
+   ],
+   "unit": "mm",
+   "measured": [
+    -4.3929,
+    -4.1991
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "lateral extent y' = d tan(first cut bin edge)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/fits_it2.json#latch_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 1): new param. ",
+   "frame": "nozzle local frame; x' along the lug b-side normal (phi+90 / phi-90), y' CCW"
+  },
+  "latch_cut_y1": {
+   "value": [
+    4.0878,
+    4.0486
+   ],
+   "unit": "mm",
+   "measured": [
+    4.0878,
+    4.0486
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "lateral extent y' = d tan(last cut bin edge)",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/fits_it2.json#latch_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 1): new param. ",
+   "frame": "nozzle local frame; x' along the lug b-side normal (phi+90 / phi-90), y' CCW"
+  },
+  "latch_through_theta": {
+   "value": [
+    82.9706,
+    137.9706
+   ],
+   "unit": "deg",
+   "measured": [
+    82.9706,
+    137.9706
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "first..last 1-deg bin inside the cut-back with no nozzle-wall vertex (rho > noz_R - 0.25): window open through the wall (bore wall / bridge seen)",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/fits_it2.json#latch_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 1): new param. through-window into the bore on the phi+90 side (scanned bridge p10/p50 r 4.28/4.89); it1 cut only to r 4.79 over 90..114",
+   "frame": "nozzle local frame, CCW about the nozzle axis"
+  },
+  "win_theta0_deg": {
+   "value": [
+    -74.75,
+    -8.25,
+    103.0,
+    174.0
+   ],
+   "unit": "deg",
+   "measured": [
+    -74.75,
+    -8.25,
+    103.0,
+    174.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "cap frame, 1 deg x 0.2 mm cells; open = scanned cell with no outer-skirt vertex (rho > ring_R - 0.35); theta span = columns open in >= 50 % of rows u 12.7..13.9; u span = rows open in >= 50 % of those columns",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/fits_it2.json#ring_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 2): new param. ",
+   "frame": "cap local frame (e1 = datum X projected), CCW"
+  },
+  "win_theta1_deg": {
+   "value": [
+    -58.75,
+    8.75,
+    121.0,
+    -173.0
+   ],
+   "unit": "deg",
+   "measured": [
+    -58.75,
+    8.75,
+    121.0,
+    -173.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same map: last open column + 1 deg",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/fits_it2.json#ring_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 2): new param. ",
+   "frame": "cap local frame (e1 = datum X projected), CCW"
+  },
+  "win_deep_theta": {
+   "value": [
+    104.0,
+    116.0
+   ],
+   "unit": "deg",
+   "measured": [
+    104.0,
+    116.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "bounding box of window cells whose minimum radius is < 11.0 (opening into the skirt/body gap)",
+   "uncertainty_mm": 1.0,
+   "evidence": "measure/figures/fits_it2.json#ring_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 2): new param. window centred near 110 deg only",
+   "frame": "cap local frame (e1 = datum X projected), CCW"
+  },
+  "win_deep_u": {
+   "value": [
+    12.8,
+    14.0
+   ],
+   "unit": "mm",
+   "measured": [
+    12.8,
+    14.0
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same cells: axial extent",
+   "uncertainty_mm": 0.2,
+   "evidence": "measure/figures/fits_it2.json#ring_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 2): new param. "
+  },
+  "win_deep_floor_rho": {
+   "value": 10.5134,
+   "unit": "mm",
+   "measured": 10.5134,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same cells: p10 of the minimum radius (the scanned membrane in the gap)",
+   "uncertainty_mm": 0.3,
+   "evidence": "measure/figures/fits_it2.json#ring_windows",
+   "critical": false,
+   "note": "it2 REVISE (gate dd052135f7c2, finding 2): new param. "
+  }
+ },
+ "struck": [],
+ "simplifications": [
+  {
+   "name": "outlet thread (pitch 0.908, E14)",
+   "modelled_as": "plain cylinder at the mean thread radius out_thread_R",
+   "deviation_cost": "<= 0.160 / 0.206 mm (scan p99/p1 about the mean); scanner-smoothed profile only 0.37 mm peak-to-peak"
+  },
+  {
+   "name": "O-ring (E13)",
+   "modelled_as": "torus fused to the outlet (single-solid deliverable; invented connection of two real parts)",
+   "deviation_cost": "section fit rms 0.089, max 0.436 mm"
+  },
+  {
+   "name": "nut->band transition",
+   "modelled_as": "one straight chamfer (nut) + one straight segment (band) instead of the scanned curve",
+   "deviation_cost": "chamfer line rms 0.121, max 0.379 mm"
+  },
+  {
+   "name": "nut ribs",
+   "modelled_as": "8 vertical cylinders (rods) from the shoulder to nut_top_u, no draft",
+   "deviation_cost": "rod fit rms 0.067..0.102 mm"
+  },
+  {
+   "name": "body cylinder out-of-round",
+   "modelled_as": "circular cylinder body_R",
+   "deviation_cost": "rms 0.060, max 0.304 mm"
+  },
+  {
+   "name": "barb flare",
+   "modelled_as": "straight cone between the tube and the bulb cone",
+   "deviation_cost": "line rms 0.264, max 0.626 mm"
+  },
+  {
+   "name": "ring-top speckle (E22)",
+   "modelled_as": "not modelled",
+   "deviation_cost": "< 0.3 mm"
+  },
+  {
+   "name": "outlet-to-ring web (E25)",
+   "modelled_as": "vertical-walled pentagon prism (half-width linear in x) from the tube to inside the ring; concave blends into tube and ring not modelled",
+   "deviation_cost": "half-width fit rms 0.179, max 0.346 mm"
+  },
+  {
+   "name": "gap between ring skirt and body (E21)",
+   "modelled_as": "closed ring bottom except the two scanned slits (sector pockets)",
+   "deviation_cost": "scan dips 0.2..0.5 mm into the gap at the ring-bottom/body corner elsewhere"
+  },
+  {
+   "name": "small edge rounds not listed (collar outer edge, end-face edges, body root at z=0)",
+   "modelled_as": "sharp edges",
+   "deviation_cost": "<= 0.15 mm (edge rounds <= ~0.3 mm radius read from the profile tables)"
+  },
+  {
+   "name": "ring windows",
+   "modelled_as": "annular-sector pockets (radial walls) over the measured open theta/u span to the median shallow floor; the window near 110 deg also gets a deeper sector to the membrane seen in the skirt/body gap",
+   "deviation_cost": "window floors are sloped (latch-hook ramps): per-cell minimum radius spreads about 11..12.9 around the median floor; window corners are rounded, not rectangular"
+  },
+  {
+   "name": "unscanned interior (E24) and bore depths (E02, E15, E20)",
+   "modelled_as": "outer envelope + blind bores to the observed floor; no flow passages or valve internals",
+   "deviation_cost": "none against the scan (not scanned); CAD is not a functional flow part"
+  }
+ ],
+ "checks": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "pass",
+   "note": "nut ribs: FFT order 8 at 3 stations, residual local minimum (count_nut_ribs.json). Ring windows (4) are an irregular set (theta -66.75, -0.25, 112.0, 180.0): enumerated from envelope gaps, placed per instance, no rotational order claimed."
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": false,
+   "result": "pass",
+   "note": "no caliper or photo readings exist (scan-only); nothing to test"
+  },
+  "CHK-CLUSTER": {
+   "ran": true,
+   "result": "finding",
+   "note": "on-axis material above the cap top (r<3, z 23.4..27.1) = barb tube crossing the axis (E19). Three coherent clusters were first found as builder self-check residuals (not by the intake enumeration) and are now measured and modelled: (1) the web joining the outlet tube top to the ring bottom (E25, z 8.0..9.0, x 10..13), (2) two slits under the ring skirt (E21, open loops L5/L7), (3) the lug cut-back on BOTH latch sides (E23 was declared a 0.25 mm recess; it is the bridged twin of the phi+90 latch window). CHK-ENUM addendum in intake/INTAKE_CARD.md."
+  },
+  "CHK-FRAME": {
+   "ran": true,
+   "result": "pass",
+   "note": "all angles re-measured in the frozen datum frame or in named local frames; no intake angle copied (the intake clock 13.878 deg is the frame definition itself)"
+  }
+ },
+ "open_questions": [
+  "Is the 3.36 deg cap tilt and the 1.36 deg nozzle tilt a real assembly state (snap fit / insert play) or specimen damage? A nominal coaxial model is a different deliverable.",
+  "Owner to confirm scan_resolution=full and units mm (no calipers)."
+ ],
+ "revisions": [
+  {
+   "iteration": 2,
+   "route": "geometry",
+   "gate": "dd052135f7c2",
+   "changed": [
+    "latch_cut_d",
+    "latch_cut_y0",
+    "latch_cut_y1",
+    "latch_through_theta",
+    "slit_rho_in",
+    "slit_rho_out",
+    "slit_theta0_deg",
+    "slit_theta1_deg",
+    "slit_u_top",
+    "win_deep_floor_rho",
+    "win_deep_theta",
+    "win_deep_u",
+    "win_floor_rho",
+    "win_theta0_deg",
+    "win_theta1_deg",
+    "win_u_hi",
+    "win_u_lo"
+   ],
+   "removed": [
+    "latch_deep_floor_rho",
+    "latch_deep_theta",
+    "latch_floor_rho",
+    "latch_theta0_deg",
+    "latch_theta1_deg",
+    "win_theta_deg",
+    "win_width_deg"
+   ],
+   "why": "verifier findings: latch window under-cut (+ phi-90 cut-back too deep), ring windows over-cut / wrong depth, skirt slits over-cut"
+  }
+ ]
+}

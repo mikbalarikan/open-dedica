@@ -1,0 +1,26 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "aligned_work.stl": "ba45c057adfe16feead33a20c2904ac9c38e4325c1880d7c01052b6d88f2a6f4"
+ },
+ "seed": 0,
+ "created": "2026-09-28T12:47:04+00:00",
+ "scan_noise_mm": {
+  "value": 0.03254637530459819,
+  "p95_mm": 0.06497526221479157,
+  "max_mm": 0.12691237398317057,
+  "method": "rms of IRLS circle on cap OD section at datum z=19.5 (first-pass frame; clean moulded cylinder, not the origin feature) at z=19.5 (n=1183)",
+  "circle": {
+   "cx": 0.2472305777337954,
+   "cy": -0.25234949745147617,
+   "r": 12.162996495603606,
+   "rms": 0.03254637530459819,
+   "max": 0.12691237398317057,
+   "p95": 0.06497526221479157,
+   "n": 1183,
+   "iterations": 6
+  }
+ }
+}

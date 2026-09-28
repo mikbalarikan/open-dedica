@@ -1,0 +1,20 @@
+{
+ "schema": "stl-re/hash_freeze@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-H21_antidrip-valve_datum.step": "293413a365cc66c59589501ee2cd1ec26768ec01cb4940d078b43609b50da331",
+  "build/OD-H21_antidrip-valve.step": "59110901b473df3617bb9355248a759267b2b961eb090dadf0fff966f893de85"
+ },
+ "seed": null,
+ "created": "2026-09-28T14:26:45+00:00",
+ "before": {
+  "build/OD-H21_antidrip-valve_datum.step": "293413a365cc66c59589501ee2cd1ec26768ec01cb4940d078b43609b50da331",
+  "build/OD-H21_antidrip-valve.step": "59110901b473df3617bb9355248a759267b2b961eb090dadf0fff966f893de85"
+ },
+ "after": {
+  "build/OD-H21_antidrip-valve_datum.step": "293413a365cc66c59589501ee2cd1ec26768ec01cb4940d078b43609b50da331",
+  "build/OD-H21_antidrip-valve.step": "59110901b473df3617bb9355248a759267b2b961eb090dadf0fff966f893de85"
+ },
+ "unchanged": true
+}

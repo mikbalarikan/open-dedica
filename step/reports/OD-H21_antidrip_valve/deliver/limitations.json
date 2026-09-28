@@ -1,0 +1,89 @@
+{
+  "schema": "stl-re/limitations@1",
+  "part": {
+    "name": "OD-H21_antidrip-valve",
+    "what_it_is": "DeLonghi anti-drip valve (OD-H21): a turned plastic assembly with a snap nozzle and corner lugs, an 8-rib nut, bands, a body with a radial threaded outlet carrying an O-ring, a windowed cap ring and a hose barb on the cap. Scanned as one closed shell; the CAD is one fused solid of the outer envelope plus the observed openings.",
+    "reference_photo": "input/photos/photo_2.png"
+  },
+  "method_summary": [
+    "Intake: full working copy, noise floors, coverage map, feature enumeration from mesh and both photos; regime {{gate:regime.name}} declared by the owner before any gate numbers.",
+    "Datum: upper band top face (primary, z = 0), nozzle axis as the origin on that face, +X along the side-outlet collar normal (intake/alignment.json).",
+    "Measure: every parameter from the full-res scan (scan-only, no calipers), each with rule, estimator and evidence (measure/params.json).",
+    "Rebuild: build123d revolves of fitted (r,u) profiles about each sub-part's measured axis, prisms for lugs, ribs and web, a torus for the O-ring, one fused cut pass; exported in datum and scan frames.",
+    "Verify: an independent agent with its own ICP, two-way full-res deviation, zones, declared masks and observability; iteration 1 REVISE (three geometric findings), iteration 2 BAND_NOT_MET with no rebuild target left.",
+    "Owner accepted the remaining band misses for delivery (DECISIONS.md ACCEPT-BAND, decisions/accept_band.md)."
+  ],
+  "limitations": [
+    {
+      "id": "L1",
+      "text": "no Tier-1 (no calipers run): scan-only job, no caliper readings supplied (DECISIONS MEASUREMENTS). Every caliper-coverable dimension is ABSENT, not passed.",
+      "rerun_trigger": "any caliper reading (nozzle OD, lug span, thread OD, O-ring OD, barb OD, window width) triggers a Tier-1 run and a re-grade",
+      "evidence": "qa/gate.json#tier1; DECISIONS.md MEASUREMENTS"
+    },
+    {
+      "id": "L2",
+      "text": "Absolute scale is UNVERIFIED (CHK-SCALE flag at intake): units assumed mm, no scale applied.",
+      "rerun_trigger": "one caliper reading of any dimension",
+      "evidence": "intake/INTAKE_CARD.md; intake/alignment.json#scale_factor"
+    },
+    {
+      "id": "L3",
+      "text": "scan_resolution = full is an agent inference from face count and mean edge length, not owner-confirmed; the gate is labelled OFFICIAL on that inference.",
+      "rerun_trigger": "owner confirms the scan is the original export; if it is decimated, the grade becomes inspection-only and is redone on the original",
+      "evidence": "DECISIONS.md OTHER scan_resolution; input/INPUT_HASHES.json#scan_resolution"
+    },
+    {
+      "id": "L4",
+      "text": "MASKED PASS, mask-dependent pass: bore interiors (nozzle, outlet, barb) and all internal passages were bridged or never reached by the scanner; named mask M1 removes them. Whole-part scan to CAD passes only masked (max {{gate:deviation.scan_to_cad_masked.max}}, right at the band and fragile); unmasked max is {{gate:deviation.scan_to_cad.max}} at the outlet bore bridge membrane. The zone I4 barb CAD to scan pass is also mask-dependent. Bores stop at the observed scanner bridge; the real bores continue.",
+      "rerun_trigger": "a sectioned part, a CT scan or depth-gauge readings of the three bores",
+      "evidence": "qa/gate.json#deviation.masks; qa/gate.json#auto_limitations; qa/VERDICT.md"
+    },
+    {
+      "id": "L5",
+      "text": "NOT A FUNCTIONAL FLOW PART, ASSUMED assembly pose: the assembly was scanned as one closed shell. Sub-part poses are kept as scanned (the nozzle and the cap part sit on their own tilted axes), the O-ring is fused into the single solid (invented connection), the outlet thread is a plain cylinder at the fitted diameter (pitch recorded for identification only), and no internal passages, seat or spring are modelled.",
+      "rerun_trigger": "owner asks for a nominal coaxial design, separate parts, a real thread, or supplies the internal geometry",
+      "evidence": "build/MODELING_PLAN.md §1, §6; measure/params.json#out_thread_pitch"
+    },
+    {
+      "id": "L6",
+      "text": "NOT MET, cad_to_scan_observable: the observability ray test counts CAD surfaces inside open-mouthed bores, windows and slits as observable although no scan covers them, so the gated term holds the unscanned nozzle bore floor and far bore wall (max {{gate:deviation.cad_to_scan_observable.max}}, p95 {{gate:deviation.cad_to_scan_observable.p95}} passes). Zone I1 (latch edge) and zone I5 (ring windows) CAD to scan misses come from scanner bridge membranes over the openings; the independent verifier found no rebuild target left. Accepted by the owner (ACCEPT-BAND).",
+      "rerun_trigger": "a scan-coverage-aware observability test, or a rescan that reaches into the bores and windows, triggers a re-grade",
+      "evidence": "qa/gate.json#band_fails; qa/gate.json#miss_explanations; qa/residual_analysis.json; decisions/accept_band.md"
+    },
+    {
+      "id": "L7",
+      "text": "Origin definition: the as-built origin is the nozzle axis at its measured mid-station projected along the band normal; the literal intersection of the tilted nozzle axis with the band plane lies a fraction of a millimetre away. The datum audit (report-only) agrees with alignment.json; no effect on the deviation.",
+      "rerun_trigger": "owner states which origin definition downstream users need",
+      "evidence": "qa/datum_supplement.json; qa/gate.json#datum_audit"
+    }
+  ],
+  "assumptions": [
+    {
+      "text": "Sub-body stubs inside neighbouring bodies (nozzle stub above the shoulder, body top inside the ring, outlet tube start, groove fill under the O-ring) are construction extents inside material, not visible surfaces.",
+      "source": "assumed",
+      "evidence": "build/MODELING_PLAN.md §6"
+    },
+    {
+      "text": "Bore, window and latch pocket floors are placed at the observed scanner bridge / floor; the real openings continue beyond what was scanned.",
+      "source": "assumed",
+      "evidence": "build/MODELING_PLAN.md §6"
+    },
+    {
+      "text": "The O-ring is joined to the outlet groove to make one solid; the joint itself is invented.",
+      "source": "assumed",
+      "evidence": "build/MODELING_PLAN.md §6"
+    }
+  ],
+  "claim_boundary": {
+    "not_fit_for": [
+      "functional flow use or as a working valve: internal passages, seat and spring are not modelled",
+      "manufacture, tooling or fit-critical interfaces (nozzle snap, outlet thread, O-ring gland, barb) until calipered: Tier-1 absent, scale unverified",
+      "a thread specification: the outlet thread is a plain cylinder"
+    ],
+    "fit_for": [
+      "external envelope, packaging and clearance studies",
+      "visualisation and as a design-intent reference for the outer geometry",
+      "a starting model for a parametric redesign (every dimension is a named parameter in build/model.py and measure/params.json)"
+    ]
+  }
+}

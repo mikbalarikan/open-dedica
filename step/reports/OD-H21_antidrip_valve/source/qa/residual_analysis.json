@@ -1,0 +1,198 @@
+{
+ "schema": "stl-re/residual_analysis@1",
+ "tool": "qa/src/residual_analysis.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/runs/OD-H21_antidrip-valve/qa/dev_arrays.npz": "f0da19c244a419e2c13a161360025c5e6df695fcdc989cc88eaba202327e30d8",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/runs/OD-H21_antidrip-valve/qa/masks.json": "0be4e505c383b541d44ee20c3a920e9dbcf3033aebba5558ecff7de2ee8fd96e",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/29dc8b82-0120-522a-ac9c-44e99738afc1/scratchpad/runs/OD-H21_antidrip-valve/qa/registration.json": "d47d47575ac4eaf535f22bc86669898b458eac2e7da4211cccb2945320548087"
+ },
+ "seed": 5,
+ "created": "2026-09-28T14:30:11+00:00",
+ "same_cad_samples_as_deviation_json": true,
+ "observable_unmasked": {
+  "n": 19982,
+  "rms": 0.18768268483440645,
+  "mean": 0.08277174592750512,
+  "p50": 0.04407033618920027,
+  "p95": 0.25543659155497395,
+  "p99": 0.6224760325009159,
+  "max": 3.1202689995045207
+ },
+ "unobservable_fraction": 0.0009000000000000119,
+ "observable_and_not_masked": {
+  "n": 19318,
+  "rms": 0.09929674513068852,
+  "mean": 0.066286437362886,
+  "p50": 0.04275599659900024,
+  "p95": 0.21268047700550843,
+  "p99": 0.3702120837212551,
+  "max": 0.8705502708533045
+ },
+ "observable_but_in_M1": {
+  "n": 476,
+  "rms": 1.0193454909974076,
+  "mean": 0.6899939383299398,
+  "p50": 0.3674236127008543,
+  "p95": 2.3121716249473745,
+  "p99": 2.714748517071642,
+  "max": 3.1202689995045207
+ },
+ "observable_but_in_M1_fraction_of_subsample": 0.0238,
+ "observable_and_not_masked_band": {
+  "p95_band": 0.3,
+  "max_band": 0.8,
+  "pass": false,
+  "max_over_by": 0.07055027085330445
+ },
+ "params": {
+  "method": "ray cone on CAD (OD gate.py:57-84)",
+  "subsample": 20000,
+  "seed": 5,
+  "far_mm": 0.5,
+  "cone_deg": 60.0,
+  "n_ring": 6,
+  "offset_mm": 0.05,
+  "max_range_mm": null,
+  "helper": [
+   0.3,
+   0.5,
+   0.8
+  ],
+  "helper_switched_for_n_points": 2,
+  "ray_engine": "trimesh.ray.ray_triangle.RayMeshIntersector",
+  "masks_composed": [
+   "M1 unscanned bore interiors",
+   "M2 open boundary (0.8 mm)"
+  ]
+ },
+ "residual_over_band_after_masks": {
+  "scan_to_cad": [],
+  "cad_to_scan": [
+   {
+    "n": 6,
+    "centroid": [
+     3.2,
+     -11.64,
+     13.96
+    ],
+    "bbox_min": [
+     3.12,
+     -11.76,
+     13.61
+    ],
+    "bbox_max": [
+     3.33,
+     -11.54,
+     14.08
+    ],
+    "r": [
+     12.01,
+     12.2
+    ],
+    "theta_deg": 285.4,
+    "d_max": 0.996
+   },
+   {
+    "n": 9,
+    "centroid": [
+     -5.98,
+     9.86,
+     14.89
+    ],
+    "bbox_min": [
+     -6.04,
+     9.78,
+     14.64
+    ],
+    "bbox_max": [
+     -5.93,
+     9.96,
+     15.01
+    ],
+    "r": [
+     11.46,
+     11.61
+    ],
+    "theta_deg": 121.2,
+    "d_max": 0.875
+   },
+   {
+    "n": 2,
+    "centroid": [
+     0.62,
+     4.69,
+     -24.1
+    ],
+    "bbox_min": [
+     0.62,
+     4.65,
+     -24.1
+    ],
+    "bbox_max": [
+     0.63,
+     4.74,
+     -24.1
+    ],
+    "r": [
+     4.69,
+     4.78
+    ],
+    "theta_deg": 82.5,
+    "d_max": 0.867
+   },
+   {
+    "n": 6,
+    "centroid": [
+     22.72,
+     3.35,
+     0.41
+    ],
+    "bbox_min": [
+     22.71,
+     3.2,
+     0.27
+    ],
+    "bbox_max": [
+     22.72,
+     3.47,
+     0.57
+    ],
+    "r": [
+     22.94,
+     22.98
+    ],
+    "theta_deg": 8.4,
+    "d_max": 0.828
+   }
+  ]
+ },
+ "residual_over_band_unmasked": {
+  "scan_to_cad": [
+   {
+    "n": 48,
+    "centroid": [
+     28.3,
+     -0.2,
+     2.46
+    ],
+    "bbox_min": [
+     28.13,
+     -1.06,
+     2.12
+    ],
+    "bbox_max": [
+     28.41,
+     0.54,
+     2.95
+    ],
+    "r": [
+     28.14,
+     28.43
+    ],
+    "theta_deg": 359.6,
+    "d_max": 1.085
+   }
+  ]
+ }
+}
