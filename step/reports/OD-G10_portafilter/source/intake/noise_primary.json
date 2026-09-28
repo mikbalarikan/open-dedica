@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "4a08aeaa5190e02be876e6446afe66675bbfdefc2df3f6b888730633d799adc5"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:49:12+00:00",
+ "scan_noise_mm": {
+  "value": 0.022069223734402094,
+  "p95_mm": 0.04617732502635255,
+  "max_mm": 0.09620655152985343,
+  "method": "rms of RANSAC+SVD plane on handle end-cap flat face (2136 faces)"
+ }
+}

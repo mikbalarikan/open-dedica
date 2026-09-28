@@ -1,0 +1,782 @@
+{
+ "schema": "stl-re/params.json@1",
+ "tool": "measure/scripts/m07_params.py",
+ "tool_version": "run-local",
+ "inputs": {
+  "intake/aligned_work.stl": "72fa2a32066f56de1d6b0ec6050ad74b7d74f381b992e56724973d7d788b9a21",
+  "intake/alignment.json": "218719d01b7d3a6df1391dc44b12d31a8199de5e58cf294cf4ca35f6abf2c506",
+  "input/photos/OD-W03_photo1.png": "ee684f8800c60636e4e9334dbf99d2d2209ac3bbab57a2caf3475d387c81bf82",
+  "measure/figures/m08_top_annulus.json": "f9f5a70d099a6ea3bd23ef615e1ba56975400379d1c601bf71e7a84452efc3cd"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:48:21+00:00",
+ "part": "OD-W03",
+ "frame": "datum frame of intake/alignment.json: z=0 flange top face (material below), origin = midpoint of cup A/B axes, +X from cup A axis to cup B axis; theta CCW about +Z from +X. Lists: cups [A (-X), B (+X)], ears [neg (-X), pos (+X)].",
+ "scan_noise_mm": 0.04086956874051109,
+ "params": {
+  "cup_pitch": {
+   "value": 38.97,
+   "unit": "mm",
+   "measured": 38.97,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "distance between cup A and cup B axis centres (wall-face IRLS, z 1.2-3.6, 3 stations each) = the clock feature_line; cups at x = -/+ pitch/2",
+   "uncertainty_mm": 0.01,
+   "evidence": "intake/alignment.json#clock.detail.separation_mm",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature -> re-run measure/rebuild/verify"
+  },
+  "flange_half_width": {
+   "value": 14.716,
+   "unit": "mm",
+   "measured": 14.716,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "half of (median y of the +y straight skirt side - median y of the -y side), sections z -0.5/-1.0/-1.5, |x|<15",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m01_flange.json#skirt_y_top,skirt_y_bot",
+   "critical": false
+  },
+  "flange_centre_y": {
+   "value": -0.142,
+   "unit": "mm",
+   "measured": -0.142,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mid of the two straight skirt sides (same sections); the flange sits 0.14 mm -y of the cup-axis line",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m01_flange.json",
+   "critical": false,
+   "note": "kept, not snapped to 0: 3.5x the plane noise floor; the end arcs (cy -0.137/-0.122) agree"
+  },
+  "flange_end_arc_cx": {
+   "value": [
+    -19.466,
+    19.719
+   ],
+   "unit": "mm",
+   "measured": [
+    -19.466,
+    19.719
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "IRLS circle (Cauchy 0.3) on skirt section points with |x|>22, |y|>5.8 per end; arc radius set = flange_half_width (tangent stadium)",
+   "uncertainty_mm": 0.14,
+   "evidence": "measure/figures/m01_flange.json#ends.*.arc_fit",
+   "critical": false,
+   "note": "measured arc radii 14.679 / 14.642 vs half width 14.716 (0.04-0.07 apart)"
+  },
+  "end_face_x": {
+   "value": [
+    -34.119,
+    34.271
+   ],
+   "unit": "mm",
+   "measured": [
+    -34.119,
+    34.271
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median x of +-X-facing faces |y|<3.5, z -2.5..11 (ear tab outer face; the flange end flat is flush with it: m01 end_flat_x -34.164 / 34.303)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m04_ears_webs.json#*.tab_outer_face_x",
+   "critical": false
+  },
+  "skirt_bottom_z": {
+   "value": -3.1,
+   "unit": "mm",
+   "measured": "-3.17..-3.03",
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "deepest scanned skirt z per 10-deg perimeter bin; the 6 deepest bins span -3.03..-3.17 (scan edge is ragged; the true edge is at or below the deepest reach)",
+   "uncertainty_mm": 0.07,
+   "evidence": "measure/figures/m01_flange.json#skirt_wall_z; intake/alignment.json#sanity_landmarks[3]",
+   "critical": false
+  },
+  "flange_top_z": {
+   "value": 0.0,
+   "unit": "mm",
+   "measured": -0.004,
+   "rule": "round-within-noise",
+   "source": "scan",
+   "estimator": "primary datum plane; median z of up-facing faces |z|<0.3",
+   "uncertainty_mm": 0.04086956874051109,
+   "evidence": "intake/alignment.json#primary; measure/figures/m01_flange.json#flange_top_z_p50",
+   "critical": false
+  },
+  "wall_t": {
+   "value": 1.2,
+   "unit": "mm",
+   "measured": null,
+   "rule": "assumed",
+   "source": "assumed",
+   "estimator": "not scanned (underside and interiors); typical moulded wall; owner chose a hollow shell (DECISIONS.md 2026-09-28)",
+   "uncertainty_mm": null,
+   "evidence": "DECISIONS.md OTHER interior design intent; intake/coverage.json",
+   "critical": false,
+   "note": "applies to flange plate, skirt, cup, shoulder and boss walls"
+  },
+  "cup_lower_r0": {
+   "value": [
+    12.037,
+    11.995
+   ],
+   "unit": "mm",
+   "measured": [
+    12.037,
+    11.995
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "lower outer wall r at z=0 from a line fit to 0.25-mm z-bin medians of meridian r, z 0.9..6.6, sectors >30 deg from +-X",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m06_refine.json#cup*.lower_wall; m02_cup_profile.png",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature -> re-run measure/rebuild/verify"
+  },
+  "cup_lower_draft_deg": {
+   "value": [
+    3.58,
+    3.794
+   ],
+   "unit": "deg",
+   "measured": [
+    3.58,
+    3.794
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "atan(-slope) of the same binned-median line",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m06_refine.json#cup*.lower_wall",
+   "critical": false
+  },
+  "cup_upper_r0": {
+   "value": [
+    11.743,
+    11.96
+   ],
+   "unit": "mm",
+   "measured": [
+    11.743,
+    11.96
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "upper outer wall line r(z) intercept at z=0 (binned medians z 7.8..10.7)",
+   "uncertainty_mm": 0.04,
+   "evidence": "measure/figures/m06_refine.json#cup*.upper_wall",
+   "critical": false
+  },
+  "cup_upper_draft_deg": {
+   "value": [
+    4.119,
+    6.09
+   ],
+   "unit": "deg",
+   "measured": [
+    4.119,
+    6.09
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "atan(-slope) of the upper-wall binned-median line",
+   "uncertainty_mm": 0.04,
+   "evidence": "measure/figures/m06_refine.json#cup*.upper_wall",
+   "critical": false
+  },
+  "cup_step_z_lo": {
+   "value": [
+    7.175,
+    7.275
+   ],
+   "unit": "mm",
+   "measured": [
+    7.175,
+    7.275
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "last 0.05-mm bin whose median r is within 0.04 of the lower-wall line",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m06_refine.json#cup*.step_z_lo",
+   "critical": false
+  },
+  "cup_step_z_hi": {
+   "value": [
+    7.925,
+    8.075
+   ],
+   "unit": "mm",
+   "measured": [
+    7.925,
+    8.075
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "first bin above step_z_lo whose median r is within 0.04 of the upper-wall line; step modelled as a cone between the two knees",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m06_refine.json#cup*.step_z_hi",
+   "critical": false
+  },
+  "cup_top_z_r9": {
+   "value": [
+    12.378,
+    12.279
+   ],
+   "unit": "mm",
+   "measured": [
+    12.378,
+    12.279
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "top annulus cone: line fit z(r) to 0.2-mm r-bin medians, r 8.4..10.1 (rms of medians 0.009 / 0.016), evaluated at r = 9",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m08_top_annulus.json#cup*",
+   "critical": false,
+   "note": "it1 attempt 2: replaces the flat cup_top_z (median 12.338 / 12.259, m03) after the builder self-check showed a ring on the flat top"
+  },
+  "cup_top_slope_deg": {
+   "value": [
+    8.67,
+    8.291
+   ],
+   "unit": "deg",
+   "measured": [
+    8.67,
+    8.291
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "atan(-dz/dr) of the same line (top falls outward)",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m08_top_annulus.json#cup*",
+   "critical": false
+  },
+  "cup_top_round_r": {
+   "value": [
+    0.653,
+    0.469
+   ],
+   "unit": "mm",
+   "measured": [
+    0.653,
+    0.469
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa circle on meridian points of the top outer corner (rms 0.107 / 0.168)",
+   "uncertainty_mm": 0.17,
+   "evidence": "measure/figures/m03_profile_fits.json#cup*.top_corner_round",
+   "critical": false
+  },
+  "shoulder_angle_deg": {
+   "value": [
+    30.884,
+    31.132
+   ],
+   "unit": "deg",
+   "measured": [
+    30.884,
+    31.132
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit z(r) on meridian points r 4.4..7.4 (conical shoulder), angle from horizontal",
+   "uncertainty_mm": 0.12,
+   "evidence": "measure/figures/m03_profile_fits.json#cup*.shoulder_z_vs_r",
+   "critical": false
+  },
+  "shoulder_z_at_r5": {
+   "value": [
+    14.204,
+    14.152
+   ],
+   "unit": "mm",
+   "measured": [
+    14.204,
+    14.152
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "the same line evaluated at r = 5",
+   "uncertainty_mm": 0.12,
+   "evidence": "measure/figures/m03_profile_fits.json#cup*.shoulder_z_vs_r",
+   "critical": false
+  },
+  "barb_shank_r": {
+   "value": [
+    2.683,
+    2.549
+   ],
+   "unit": "mm",
+   "measured": [
+    2.683,
+    2.549
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median meridian r, z 16.8..22.8 (p10-p90 A 2.44-2.85, B 2.38-2.74)",
+   "uncertainty_mm": 0.14,
+   "evidence": "measure/figures/m03_profile_fits.json#cup*.shank_r_p50",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature -> re-run measure/rebuild/verify",
+   "note": "A and B differ by 0.13 (> noise); kept per barb, not averaged"
+  },
+  "shank_fillet_r": {
+   "value": [
+    0.646,
+    0.657
+   ],
+   "unit": "mm",
+   "measured": [
+    0.646,
+    0.657
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa circle on meridian points r 2.6..3.9, z 14.6..16.4 (shoulder-to-shank round; rms 0.22)",
+   "uncertainty_mm": 0.23,
+   "evidence": "measure/figures/m03_profile_fits.json#cup*.shank_fillet",
+   "critical": false
+  },
+  "barb_flare_z0": {
+   "value": [
+    23.178,
+    23.012
+   ],
+   "unit": "mm",
+   "measured": [
+    23.178,
+    23.012
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "z where the flare line r(z) (fit z 23.0..24.2) meets the shank radius",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/m03_profile_fits.json#cup*.barb_flare_r_vs_z",
+   "critical": false
+  },
+  "barb_lip_r": {
+   "value": [
+    3.439,
+    3.419
+   ],
+   "unit": "mm",
+   "measured": [
+    3.439,
+    3.419
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median of the 50 largest meridian r in z 23.6..25.0",
+   "uncertainty_mm": 0.07,
+   "evidence": "measure/figures/m03_profile_fits.json#cup*.lip_r_top50_median",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature -> re-run measure/rebuild/verify"
+  },
+  "barb_lip_z": {
+   "value": [
+    24.552,
+    24.482
+   ],
+   "unit": "mm",
+   "measured": [
+    24.552,
+    24.482
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of those 50 points",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m03_profile_fits.json#cup*.lip_z_at_rmax",
+   "critical": false
+  },
+  "barb_top_z": {
+   "value": [
+    28.271,
+    28.312
+   ],
+   "unit": "mm",
+   "measured": [
+    28.271,
+    28.312
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of meridian points r 1.9..2.8, z > 28",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m03_profile_fits.json#cup*.barb_top_z_p50",
+   "critical": false
+  },
+  "barb_tip_r": {
+   "value": [
+    2.871,
+    2.751
+   ],
+   "unit": "mm",
+   "measured": [
+    2.871,
+    2.751
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "taper line r(z) (fit z 25.0..27.9, rms 0.068/0.123) evaluated at barb_top_z; profile runs lip -> tip straight",
+   "uncertainty_mm": 0.12,
+   "evidence": "measure/figures/m03_profile_fits.json#cup*.barb_taper_r_vs_z",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature -> re-run measure/rebuild/verify"
+  },
+  "barb_bore_r": {
+   "value": 1.214,
+   "unit": "mm",
+   "measured": 1.214,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa circle on the open-boundary loop at the barb B tip (73 verts, z 27.7..28.6, rms 0.21); barb A loop not closed -> same value used",
+   "uncertainty_mm": 0.21,
+   "evidence": "measure/figures/m04_ears_webs.json#hole_loops.barbB",
+   "critical": false,
+   "note": "bore depth beyond ~0.9 mm is not scanned: assumed through into the cup cavity"
+  },
+  "boss_r0": {
+   "value": 6.253,
+   "unit": "mm",
+   "measured": 6.253,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit r(z) on meridian points z 1..10.5 about x=0 (rms 0.10)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m03_profile_fits.json#boss.wall_r_vs_z",
+   "critical": false
+  },
+  "boss_draft_deg": {
+   "value": 0.614,
+   "unit": "deg",
+   "measured": 0.614,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "atan(-slope) of that line",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m03_profile_fits.json#boss.wall_r_vs_z",
+   "critical": false
+  },
+  "boss_top_z_r4": {
+   "value": 12.341,
+   "unit": "mm",
+   "measured": 12.341,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "boss top cone: line fit z(r) to 0.2-mm r-bin medians r 2.6..5.2 (rms 0.014), at r = 4",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m08_top_annulus.json#boss",
+   "critical": false,
+   "note": "it1 attempt 2: replaces the flat boss_top_z (median 12.354, m03)"
+  },
+  "boss_top_slope_deg": {
+   "value": 3.715,
+   "unit": "deg",
+   "measured": 3.715,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "atan(-dz/dr) of that line",
+   "uncertainty_mm": 0.03,
+   "evidence": "measure/figures/m08_top_annulus.json#boss",
+   "critical": false
+  },
+  "boss_top_round_r": {
+   "value": 0.378,
+   "unit": "mm",
+   "measured": 0.378,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa circle on the top outer corner (rms 0.17)",
+   "uncertainty_mm": 0.17,
+   "evidence": "measure/figures/m03_profile_fits.json#boss.top_corner_round",
+   "critical": false
+  },
+  "boss_hole_r": {
+   "value": 2.078,
+   "unit": "mm",
+   "measured": 2.078,
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "Kasa circle on the open-boundary loop in the boss top (82 verts, z 11.0..11.8)",
+   "uncertainty_mm": 0.14,
+   "evidence": "measure/figures/m04_ears_webs.json#hole_loops.boss",
+   "critical": false,
+   "note": "hole assumed through into the boss cavity"
+  },
+  "web_half_width": {
+   "value": 0.964,
+   "unit": "mm",
+   "measured": [
+    0.922,
+    0.958,
+    0.883,
+    0.994,
+    1.018,
+    0.985,
+    1.014,
+    0.936
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "median |y| of the +-y-facing web side faces (4 webs x 2 sides), z 1..12",
+   "uncertainty_mm": 0.07,
+   "evidence": "measure/figures/m04_ears_webs.json#*.web_*_side_*",
+   "critical": false,
+   "scatter_mm": 0.135,
+   "scatter_note": "four identical 1.9-mm moulded ribs by intent; side-face medians scatter 0.135 on a rough, partly occluded face; residual <= 0.07 per side"
+  },
+  "web_top_z": {
+   "value": 12.412,
+   "unit": "mm",
+   "measured": [
+    12.504,
+    12.354,
+    12.42,
+    12.371
+   ],
+   "rule": "symmetry",
+   "source": "scan",
+   "estimator": "median z of up-facing faces on the web tops |y|<0.8",
+   "uncertainty_mm": 0.06,
+   "evidence": "measure/figures/m04_ears_webs.json#*.web_*_top_z",
+   "critical": false,
+   "scatter_mm": 0.15,
+   "scatter_note": "one rib height by intent (cup tops 12.26-12.34, boss 12.35); residual <= 0.09"
+  },
+  "tab_inner_x": {
+   "value": [
+    -32.658,
+    32.586
+   ],
+   "unit": "mm",
+   "measured": [
+    -32.658,
+    32.586
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "mean of the medians of the cup-facing tab faces either side of the web (x 31.8..33.2)",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/m04_ears_webs.json#*.tab_inner_face_x*",
+   "critical": false
+  },
+  "tab_half_width_z0": {
+   "value": [
+    4.668,
+    4.672
+   ],
+   "unit": "mm",
+   "measured": [
+    4.668,
+    4.672
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "line fit of the tab half-width (median side-face y, 4 z bands) vs z, value at z=0",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m04_ears_webs.json#*.tab_side_*",
+   "critical": false
+  },
+  "tab_side_draft_deg": {
+   "value": [
+    3.663,
+    2.957
+   ],
+   "unit": "deg",
+   "measured": [
+    3.663,
+    2.957
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "atan(-slope) of that line (each side tapers inward going up)",
+   "uncertainty_mm": 0.05,
+   "evidence": "measure/figures/m04_ears_webs.json#*.tab_side_*",
+   "critical": false
+  },
+  "lug_top_z": {
+   "value": [
+    15.046,
+    14.963
+   ],
+   "unit": "mm",
+   "measured": [
+    15.046,
+    14.963
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "median z of up-facing lug faces x 34.5..41.5, |y|<3.5 (also the tab top)",
+   "uncertainty_mm": 0.06,
+   "evidence": "measure/figures/m04_ears_webs.json#*.lug_top_z",
+   "critical": false
+  },
+  "lug_bottom_z": {
+   "value": [
+    12.207,
+    12.212
+   ],
+   "unit": "mm",
+   "measured": [
+    12.207,
+    12.212
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p1 z of the lug side faces (x 35..41): the lowest the scan saw the side walls; the underside itself is not scanned",
+   "uncertainty_mm": 0.15,
+   "evidence": "measure/figures/m06_refine.json#lug_side_*_z",
+   "critical": false,
+   "note": "a bound, not a seen face: the underside may sit lower only if the side walls were occluded below 12.2"
+  },
+  "lug_half_width": {
+   "value": [
+    3.692,
+    3.852
+   ],
+   "unit": "mm",
+   "measured": [
+    3.692,
+    3.852
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "half of the gap between median +-y lug side faces, x 34.5..38.5",
+   "uncertainty_mm": 0.08,
+   "evidence": "measure/figures/m04_ears_webs.json#*.lug_side_*",
+   "critical": false
+  },
+  "lug_end_x": {
+   "value": [
+    -42.388,
+    42.408
+   ],
+   "unit": "mm",
+   "measured": [
+    -42.388,
+    42.408
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "p99 of |x| of lug-end faces |y|<2 (end arc apex); end = semicircle of radius lug_half_width",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m04_ears_webs.json#*.lug_end_x_extreme_p99",
+   "critical": false
+  },
+  "lug_hole_cx": {
+   "value": [
+    -38.553,
+    38.508
+   ],
+   "unit": "mm",
+   "measured": [
+    -38.553,
+    38.508
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "IRLS circle on hole-wall section points z 13.6/13.9/14.2/14.5",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m04_ears_webs.json#*.lug_hole_fit",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature -> re-run measure/rebuild/verify"
+  },
+  "lug_hole_cy": {
+   "value": [
+    -0.08,
+    -0.142
+   ],
+   "unit": "mm",
+   "measured": [
+    -0.08,
+    -0.142
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m04_ears_webs.json#*.lug_hole_fit",
+   "critical": false
+  },
+  "lug_hole_r": {
+   "value": [
+    2.079,
+    2.107
+   ],
+   "unit": "mm",
+   "measured": [
+    2.079,
+    2.107
+   ],
+   "rule": "keep-measured",
+   "source": "scan",
+   "estimator": "same fit (rms 0.093 / 0.106)",
+   "uncertainty_mm": 0.1,
+   "evidence": "measure/figures/m04_ears_webs.json#*.lug_hole_fit",
+   "critical": true,
+   "rerun_trigger": "one caliper reading on this feature -> re-run measure/rebuild/verify"
+  }
+ },
+ "struck": [],
+ "simplifications": [
+  {
+   "name": "cup wall ripple",
+   "modelled_as": "straight drafted lines (binned-median fits)",
+   "deviation_cost": "raw-point rms about the line 0.08-0.17 mm (m03 lower/upper wall rms) vs 0.02-0.04 mm for the bin medians"
+  },
+  {
+   "name": "barb shank",
+   "modelled_as": "cylinder at the median radius",
+   "deviation_cost": "p10-p90 spread A 0.40 / B 0.36 mm (rough scan on a small radius)"
+  },
+  {
+   "name": "barb tip taper",
+   "modelled_as": "straight cone lip -> tip",
+   "deviation_cost": "fitted taper line rms 0.068 / 0.123 mm; lip edge sharp"
+  },
+  {
+   "name": "webs, tabs",
+   "modelled_as": "planar ribs of one width; tab as a trapezoid prism",
+   "deviation_cost": "web side scatter 0.135 (<= 0.07 per side); tab half-width line residual < 0.05"
+  },
+  {
+   "name": "cosmetic parting line on the cup shoulders along y=0",
+   "modelled_as": "not modelled",
+   "deviation_cost": "faint ridge, < 0.1 mm high (m05 shaded top view)"
+  }
+ ],
+ "checks": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "pass",
+   "note": "no rotational patterns: 2 cups, 1 boss, 4 webs, 2 ears counted directly in sections and the top view (m05_heightmap.png)"
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": false,
+   "result": "pass",
+   "note": "no caliper readings (scan-only run): nothing to check"
+  },
+  "CHK-CLUSTER": {
+   "ran": true,
+   "result": "pass",
+   "note": "top-view height map and meridian profiles show no unexplained material; above the cups only the barbs (coverage radial bands); faint y=0 ridge on the shoulders = parting line (cosmetic, declared); junk facets at the tab/lug junction x~+-33 z 12.5-14.5 are scan artefacts (many small loops, no flat top)"
+  },
+  "CHK-FRAME": {
+   "ran": true,
+   "result": "pass",
+   "note": "no angles carried over from intake; all positions re-measured on intake/aligned_work.stl in the frozen datum frame"
+  }
+ },
+ "open_questions": [
+  "Interior (underside, cup/boss cavities, bore depth) is assumed: wall 1.2 mm, hollow shell (owner decision).",
+  "Lug underside not scanned: lug_bottom_z is the lowest visible side-wall point.",
+  "Absolute scale unverified (no calipers)."
+ ]
+}

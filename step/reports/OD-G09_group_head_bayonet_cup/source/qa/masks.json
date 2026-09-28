@@ -1,0 +1,24 @@
+{
+ "decided": "M1-M5 fixed after ICP run 1 (registration numbers only) and BEFORE any deviation_gate number was produced by QA. Each is located from the scan (qa/scan_coverage_survey.py -> qa/scan_coverage_survey.json) and cites the INTAKE_CARD coverage table (C1-C6), declared at intake. QA had read the builder's own self-check figures in build/MODELING_PLAN.md §8 (NOT QA) before choosing; no mask was chosen to clear a number. No scan-side mask: the scan holds no unmodelled body; rust/deposit and rim-notch stray points were not located at intake, so any cluster they cause is explained, not masked.",
+ "masks": [
+  {"name": "M1 C1 downward-facing CAD", "type": "region", "applies_to": "cad",
+   "select": {"nz": [null, -0.5]},
+   "why": "the scan has almost no downward-facing surface (scanned from above): CAD faces facing down (lug undersides, plate underside, bottom closure) have no scan behind them; their CAD->scan distance is a coverage fact, not a surface deviation",
+   "evidence": "INTAKE_CARD §3 C1; qa/scan_coverage_survey.json C1_area_frac_nz_lt_-0.5 = 0.25 % of scan area"},
+  {"name": "M2 C2 below plate top inside wall", "type": "region", "applies_to": "cad",
+   "select": {"z": [null, -20.3], "r": [null, 39.5]},
+   "why": "no scan exists inside the outer wall below the plate top: the plate underside, the assumed lower inner wall and the closure at the scan extent are assumed geometry (MODELING_PLAN §6) with nothing to compare against",
+   "evidence": "INTAKE_CARD §3 C2 (scan ends at z -27.84) and C1; qa/scan_coverage_survey.json: 0 scan faces with z < -20.3 and r < 39.5"},
+  {"name": "M3 C3 plate interior", "type": "region", "applies_to": "cad",
+   "select": {"r": [null, 24.0]},
+   "why": "the plate inside r ~24 is not in the scan; the keyhole, bosses and side hole there are photo-inferred, so no scan distance is meaningful",
+   "evidence": "INTAKE_CARD §3 C3, §5 F13-F15; qa/scan_coverage_survey.json plate-level coverage: 0 faces r < 22.4, 19 faces r 22.4-24.0"},
+  {"name": "M4 C6 outer wall unscanned sector", "type": "region", "applies_to": "cad",
+   "select": {"r": [39.5, null], "theta_deg": [37, 152]},
+   "why": "the outer cup wall is not scanned at all over this sector (cup joined to the machine housing there, photos 1-2); the CAD continues the cylinder (assumed) with no scan behind it",
+   "evidence": "INTAKE_CARD §3 C6 (theta 38-151); located on the scan by QA: outer-wall scan area per 5 deg bin < 5 mm2 for theta 40-150, 15.6 mm2 at 35-40, 46 mm2 at 150-155 vs ~100 elsewhere (qa/scan_coverage_survey.json)"},
+  {"name": "M5 open boundary", "type": "open_boundary", "applies_to": "cad", "radius_mm": 0.8,
+   "why": "distance from CAD to a scan hole EDGE is not a surface deviation (the scan is open: 5,151 boundary edges / 16 loops)",
+   "evidence": "INTAKE_CARD §2 scan health; B02 q20_tier2.py:9-10 radius parameter 0.8 mm"}
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "verdict": "BAND_NOT_MET",
+ "independence": "Fresh QA agent (iteration 2) that did not build the model; every gate number re-derived with the stl-re-verify scripts on the full-resolution input/scan.stl (own ICP, own tessellation of the frozen STEP). Not read: build/selfcheck/, build/build_log.txt, measure/params.json values (only #simplifications, to name declared simplifications), _it1_SUPERSEDED/build/selfcheck; build/model.py only grepped for loft|ruled|Polyline. build/MODELING_PLAN.md quotes builder self-check aggregates; they were not used as expectations. Datum spec, zones and masks are the it1 QA files reused verbatim (CHK-LIKE4LIKE), fixed before any it2 deviation number existed. qa/probe/*.py are QA-only localisation aids, never gate numbers.",
+ "checks": {
+  "CHK-CIRCULAR": {
+   "ran": true,
+   "result": "pass",
+   "note": "grading gate = QA's own ICP on the raw full-res scan against the frozen it2 STEP; T_refine is QA-only and not written back to intake/alignment.json; no expected value taken from params.json. Builder self-check numbers in MODELING_PLAN \u00a78 are a consistency check, not independent evidence, and were not used."
+  },
+  "CHK-LIKE4LIKE": {
+   "ran": true,
+   "result": "pass",
+   "note": "it1 vs it2 use the same protocol: same regime file content, same scan (sha256 98cd1183...), identical alignment matrix (max abs diff 0.0; the alignment.json hash differs only by its re-written header), same datum_spec/zones/masks (copied verbatim), same ICP parameters (3M/seed 11, 300k/seed 13, 70 deg, 0.8 mm, 3.0 mm, cap 60, tol 1e-6), same deviation sampling (all scan verts, 300k CAD samples seed 2, k 8, n_samp 3M, seed 0; observability 20k seed 5, 0.5 mm, 60 deg), same tessellation tolerance. Only the CAD changed, so it1->it2 deltas are geometry changes, not protocol. Overlays add panels (Z=29, theta 20/110, x=-2.0, y=6.0) for new clusters; the it1 panels are all kept. Side-by-side table: qa/probe/like4like_it1_it2.json and the generated section at the end of VERDICT.md."
+  },
+  "CHK-INDEP": {
+   "ran": true,
+   "result": "pass",
+   "note": "fresh agent, own scripts; see independence"
+  },
+  "CHK-FILLET": {
+   "ran": true,
+   "result": "pass",
+   "note": "build/export_check.json + fillets.json: 3/3 OK (col_top_fillet 1.5, spindle_tip_chamfer 0.7, top_blk_edge_r 1.7 x4 edges), target == used, 0 FAILED/REDUCED/NO_EDGES/SELECTOR_ERROR. No other edge rounds are modelled (declared sharp edges); qa/probe/edge_share.json shows the 0.3..0.8 mm population is not an edge-only effect."
+  },
+  "CHK-PATCHWORK": {
+   "ran": true,
+   "result": "pass",
+   "note": "QA census (qa/step_check.json): 351 faces, 100 % analytic area (plane 254, cylinder 76, cone 20, torus 1), 0 B-spline/ruled faces; plane median area ~5.9 mm2 (face_stats.json, reported not gated). grep of build/model.py for loft|ruled|Polyline: 0 hits. No faceted skin."
+  },
+  "CHK-ENUM": {
+   "ran": true,
+   "result": "finding",
+   "note": "it1 findings closed: switch underside bump (E16), column lug at 320 (E17), bar at 330 (E18), barb top rib all now in the CAD; their it1 clusters are gone (qa/probe/over_share_it2.json regions R4/R5/R6 now max <= 0.68). No new unenumerated scan feature found: every one of the 26 scan->CAD clusters >= 20 pts (qa/probe/cluster_probe.json) sits on an enumerated feature. Remaining finding: CAD material with no scan behind it at the it2 port junction boxes (s2c cluster 0: 790 scan pts INSIDE the CAD by up to 1.94 mm at x -3.2..-1.0, y 4.7..7.7, z 27.3..32.3; c2s clusters 0/4/8) - the it2 junction box between the upper port and the neck fills a region where the scan shows a -X-facing sloped wall (overlays Z=29, Z=30.8, y=6.0, x=-2.0). Declared-not-modelled features stay over band: spline teeth, spindle tip hole (cluster 10), cap dimples, cam x~0 step walls (clusters 2, 3, 6), switch labels, plate lips."
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": true,
+   "result": "n/a",
+   "note": "no Tier-1 (no calipers, DECISIONS.md MEASUREMENTS scan-only); nothing to attribute"
+  },
+  "PHOTO-PLAUSIBILITY": {
+   "ran": true,
+   "result": "finding",
+   "note": "photos 1..5 (catalogue, low-res, no scale) walked by this QA agent: splined spindle with tip hole (1,2,4), cap disc with slots and dimples (2,4), cam ring/teeth (2,3,4,5), two side ports with clip plates (1,3,5), barb (3,5), top clip port (1,3,5), microswitch with blades and bracket (1,2,4) are all present in the CAD; nothing in the CAD is absent from photos+scan except the interior material inside the column and the port junction boxes (buried/assumed, MODELING_PLAN \u00a76). Photographed but not modelled (declared): spline teeth, spindle tip hole, cap dimples."
+  }
+ },
+ "photos": [
+  "input/photos/1.png",
+  "input/photos/2.png",
+  "input/photos/3.png",
+  "input/photos/4.png",
+  "input/photos/5.png"
+ ],
+ "cluster_explanations": {
+  "0": "NEW IN IT2, REAL GEOMETRY ERROR (CAD excess, fixable). Upper side port junction box by the neck: 790 scan points all INSIDE the CAD (mean scan normal -X/-Y), x -3.2..-1.0, y 4.7..7.7, z 27.3..32.3, up to 1.94 mm. The it2 junction box (x -4..-0.12, MODELING_PLAN F10) fills the space between the port underside and the neck where the scan shows a sloped -X-facing wall running from the port (y ~7.7) down to the neck (r ~5.3). Overlays Z=29, Z=30.8 (CAD rectangle vs scan diagonal), y=6.0, x=-2.0. The it1 end-wall cluster at x ~-0.1 is gone, but this box over-fills. Largest single cluster; the scan->CAD max comes from here.",
+  "1": "DECLARED SIMPLIFICATION, still over band. Shoulder block on post 120, sloped top: 381 pts INSIDE the CAD (was 657 in it1), theta 136..149, r 8.6..12.0, z 4.2..11.6, up to 1.59 mm, scan normal outward/up. The it2 planar slope (params simplifications 'shoulder block upper shell') does not follow the scanned surface near its lower/outer edge; overlays radial 135, x=-7, y=6.0.",
+  "2": "DECLARED SIMPLIFICATION ('cam x~0 step walls ... not modelled'), same as it1 cluster 6: +X-facing step wall at x -1.6..-0.6, theta 93..100, z 5.9..7.4, 196 pts INSIDE the CAD, up to 1.54 mm. Overlays radial 96, Z=6.5.",
+  "3": "DECLARED SIMPLIFICATION, same as it1 cluster 7: cam x~0 step wall at theta 266..269, z 4.7..7.5, 134 pts INSIDE the CAD, up to 1.21 mm. Overlay radial 270.",
+  "4": "CAD EXCESS at the switch-holder / +Y bracket junction, unchanged from it1 cluster 11 (120 pts INSIDE the CAD, x 0.4..2.5, y 8.2..10.7, z 18.4..22.5, up to 1.36 mm); the it2 holder opening did not reach this face. c2s cluster 7 (x 2.3..3.9, y 7.7..8.3, up to 2.49 mm) is the same CAD material with no scan behind it. Overlays Z=18, Z=23, radial 80.",
+  "5": "CAM RING FLANK (declared 'cam ring flanks and edges ... 0.3..1.0 mm'): post/tooth flank at theta 14..29, r 9.4..10.5, z 5.9..7.4, 91 pts INSIDE the CAD, up to 1.27 mm (CAD flank placed ~1 mm into the scanned pocket). Overlays radial 20, Z=6.5.",
+  "6": "DECLARED SIMPLIFICATION, cam x~0 step wall family (theta 93..96, z 2.7..4.0, 82 pts INSIDE the CAD, up to 1.32 mm), lower level of cluster 2.",
+  "7": "DECLARED SIMPLIFICATION ('port plate inner-edge lips and hooks'): upper port clip plate edge at x -10.8..-9.3, y 15.6..17.1, z 31.6..33.0, 64 pts OUTSIDE the CAD, up to 0.91 mm (lip not modelled). Overlay y=12.9 / Z=30.8.",
+  "8": "HOLDER FACE (fixable, small): scan face y ~-4.05 (normal -Y) at x 7.7..8.9, z 17.1..19.3 lies INSIDE the CAD: the CAD holder/fin -Y face stands ~0.9 mm proud of the scan here, 63 pts, up to 1.04 mm. Overlay Z=18.",
+  "9": "LOWER PORT JUNCTION (fixable, same family as cluster 0): x -2.7..-0.9, y -12.5..-11.3, z 22.2..23.4, 61 pts INSIDE the CAD, up to 1.25 mm - top edge of the it2 lower junction box; c2s clusters 0/8 are the matching CAD-with-no-scan. Overlay Z=23.",
+  "10": "DECLARED NOT MODELLED: spindle tip hole (r 0.4..1.1, z -13.9..-13.4), 61 pts INSIDE the CAD (CAD solid where the scan has a hole), up to 1.34 mm. INTAKE E01 'tip hole ... not modelled'; photos 2/4 show it. Would need a ~r0.9 hole of known depth (depth partly unscanned).",
+  "11": "COLLAR / SHOULDER-BLOCK EDGE (fixable, small): theta 105..108, r 9.5..10.1, z 10.9..11.6, 52 pts INSIDE the CAD, up to 1.30 mm - the collar sector edge next to the post-120 block stands proud of the scan (CAD excess). Overlays radial 110, Z=11.5."
+ },
+ "scan_to_cad_clusters_beyond_top12_not_listed_in_gate_json": "qa/probe/cluster_probe.json ranks 12..25 (14 clusters, 20..49 pts each, all <= 1.26 mm): 12 cam flank theta ~335 (inside CAD); 13 upper port junction box top edge x -3.5..-1.0, z 34.3..35.5 (inside CAD, same cause as cluster 0); 14 shoulder block 120 side face (inside); 15 microswitch face y ~9.1 (outside, labels/marks declared); 16/18/21/24 cap slot walls z 0..1.3 (outside CAD: slots declared partly scanned, up to ~1.0 mm); 17 bracket/holder junction (inside); 19 holder/fin face (inside); 20 bracket plate +Y face (outside); 22 under-switch region x 6.8..8.5, z 11.4..14.7 (outside); 23 lower port plate root z 10.4..11.8 (outside); 25 tooth 182 outer face r ~13.35, z 3..4 (outside, small lip). None is a new unenumerated feature.",
+ "cad_to_scan_cluster_explanations_not_gated_by_verdict_py": {
+  "0": "lower port junction x -9.9..0, y -12.5..-4.9, z 8.2..23.4 (4284 pts, up to 3.47 mm): CAD junction box / port block and U-window material with no scan behind it (same cause as s2c 9) plus unscanned port-bore interior",
+  "1": "barb along -Y (3289 pts, z 29.3..32.2, up to 2.65 mm): CAD barb bore r ~1.4 with no scan (bore interior not scanned) - coverage fact",
+  "2": "upper port x -17.8..-0.8, z 28.2..35.9 (3012 pts): unscanned port-bore interior and junction material",
+  "3": "top-port bore floor/counterbore z 43.0..45.9 (1583 pts, up to 2.90 mm): CAD floor lowered to z 43.0 in it2 now matches the scanned floor (s2c I1 max 0.89, was 1.38), but the counterbore/rib walls above it have no scan (occluded bore interior, declared 'internal ribs averaged')",
+  "4": "upper port junction top x -3.9..-0.12, y 10.8..13.5, z 33.6..36.3 (718 pts, up to 2.92 mm): the it2 'lip under the upper block' / junction box top has no scan behind it",
+  "5": "lower port clip plate x -8.9..-5.0, y -17.9..-15.1, z 12.7..14.3 (478 pts, up to 2.89 mm): plate material inside its inner edge with no scan (lip region)",
+  "6": "lower port clip plate, upper plate x -8.5..-5.0, z 22.1..23.6 (462 pts, up to 2.96 mm): same as 5",
+  "7": "holder/bracket junction x 2.3..3.9, y 7.7..8.3, z 16.6..22.6 (452 pts, up to 2.49 mm): remnant of the it1 invented wedge (s2c 4)",
+  "8": "lower port junction x -2.4..-0.12, y -13.3..-11.7, z 21.4..24.2 (403 pts): junction box top (s2c 9)",
+  "9": "holder top face x 8.2..9.7, y -4.6..2.5, z 23.3..24.2 (380 pts, up to 1.36 mm): CAD holder top under the switch with no scan (occluded between the column and the switch)",
+  "10": "upper port clip plate x -8.5..-5.0, y 14.3..16.8, z 24.8..26.1 (379 pts, up to 2.82 mm): plate material with no scan (lip region)",
+  "11": "lower port plate tip x -14.6..-11.9, y -18.1..-15.6, z 15.6..20.5 (361 pts, up to 1.75 mm): plate outline beyond the scanned edge"
+ },
+ "limitations": [
+  {
+   "id": "L1",
+   "text": "Tier-1 not run: no calipers (DECISIONS.md MEASUREMENTS, scan-only). Every intake/MEASUREMENTS.md row is ABSENT, not passed.",
+   "rerun_trigger": "any caliper reading supplied"
+  },
+  {
+   "id": "L2",
+   "text": "Absolute scale not caliper-verified (CHK-SCALE FLAG). The it1 QA uniform-scale probe on the same scan and alignment read about -0.13 %, so scale does not explain the miss; not re-run in it2 because scan and matrix are identical.",
+   "rerun_trigger": "one caliper reading of any overall dimension"
+  },
+  {
+   "id": "L3",
+   "text": "Datum audit outside the RE_SPEC reference band (report-only, never blocking): see gate.json#datum_audit; identical to it1 because intake it2 reproduced the same matrix. The QA ICP correction is small (gate.json#registration) and the datum-frame and post-ICP scan->CAD p95 agree within a few hundredths of a mm (deviation_datum_frame), so the datum is not the cause of the miss.",
+   "rerun_trigger": "a new intake alignment (route datum with a changed spec)"
+  },
+  {
+   "id": "L4",
+   "text": "Overlays (qa/overlays/*.png) are drawn in the builder's alignment frame (overlay.py has no --registration option); the gate itself is post-ICP. The ICP correction is below the drawn line width at these scales.",
+   "rerun_trigger": "overlay.py gains a --registration option"
+  },
+  {
+   "id": "L5",
+   "text": "deviation_gate.py keeps only the top 12 scan->CAD clusters in gate.json while 26 clusters of >= 20 pts exist; the other 14 (all <= 49 pts, <= 1.26 mm) are characterised in qa/probe/cluster_probe.json and summarised in review.json, not individually in gate.json.",
+   "rerun_trigger": "fix of the 12-cluster cap in deviation_gate.py, then re-run QA"
+  }
+ ],
+ "miss_explanations": [
+  {
+   "region": "whole part scan->CAD (gated)",
+   "cause": "p95 and max over band (numbers in the gate table; it1 vs it2 in the generated table at the end). 10.8 % of scan points are over 0.30 mm (p95 <= 0.30 needs <= 5 %) and 1.05 % over 0.80 mm in 26 clusters >= 20 pts plus 65 points in small clusters (qa/probe/over_share_it2.json). Scan is clean (noise ~0.04 mm), full-res, datum/ICP not implicated. Over-0.30 share by z band: cam ring z 0..8.2 29 %, column/lower port z 15.4..27.7 33 %, collar band z 8.2..15.4 15 %, neck/upper port 11 %, top clip port 10 %, spindle 2 %. Two populations: (a) >0.8 mm clusters on named regions - it2 port junction boxes over-filling by the neck (cluster 0, new regression, 790 pts), shoulder-block slope (1), declared cam x~0 steps (2, 3, 6), holder/bracket junction (4), cam flanks (5, 12), declared spindle tip hole (10), cap slots, plate lips; (b) a diffuse 0.3..0.8 mm face-placement population (cam flanks and pocket floors, top-port lug outline rounded vs rectangular CAD - overlay Z=45.5, collar sectors) that is NOT concentrated at sharp edges (qa/probe/edge_share.json: excluding points within 1 mm of sharp CAD edges does not lower p95). Hypothetical upper bound (probe, not a gate): making EVERY >0.8 mm cluster neighbourhood perfect (bbox +1.5 mm, 10 % of the scan) would still leave p95 ~0.34 and max ~1.09.",
+   "options": "(1) ACCEPT-BAND now (owner decision in DECISIONS.md citing this gate.json hash and a band_fails name), delivering it2 with this per-region list. (2) Loop 3 (last) on the fixable items: trim the it2 port junction boxes to the scanned sloped wall (cluster 0/9/13, c2s 0/4/8), refit the shoulder-block slope (1), open the holder/bracket junction (4, c2s 7), model the cam x~0 steps (2/3/6), tip hole (10), plate lips (7, c2s 5/6/10/11), cam flank placement (5/12), top-port lug outline. Realistic expectation: p95 falls toward ~0.35-0.40 and max toward ~1.1-1.3 mm; the probe bound says p95 0.30 and max 0.80 are NOT reachable by cluster fixes alone and would also need a full refit of the diffuse 0.3..0.8 mm face placement plus features the scan cannot define (spline tooth count unresolved, cap slots/dimples partly scanned). (3) Supply calipers/measurements or a different regime - an owner decision, never QA's."
+  },
+  {
+   "region": "whole part CAD->scan, observable subset (gated)",
+   "cause": "p95 and max over band. Unobservable fraction is small (~2.8 %), so this is not mainly a coverage artefact: the biggest contributors are CAD material with no scan behind it at the port junction boxes and lower/upper port plates (c2s 0, 4, 5, 6, 8, 10, 11, up to ~3.5 mm), the holder/bracket junction remnant (c2s 7) and the holder top under the switch (c2s 9); the barb/port bore interiors (c2s 1, 2) and the top-bore counterbore walls (c2s 3) are unscanned and count only where the ray test found line of sight.",
+   "options": "same as above; trimming the junction boxes and plate inner edges to the scanned outline is the main fixable lever; bore interiors cannot be graded without more scan data."
+  },
+  {
+   "region": "Z2_cap_cam_ring (gated, whole band)",
+   "cause": "p95 and max over band, essentially unchanged from it1: shoulder-block slope (cluster 1, smaller than it1), declared cam x~0 step walls (2, 3, 6), cam flank placement (5, 12), cap slot walls (probe 16/18/21/24), declared dimples; 16.6 % of this zone is over 0.30 mm.",
+   "options": "model the x~0 steps and per-pocket floors, refit post/tooth flanks per instance (not one 120-degree pattern), refit the block slope; or accept."
+  },
+  {
+   "region": "Z6_microswitch (gated)",
+   "cause": "p95 and max both improved strongly vs it1 (bump and bar 330 now modelled; see the it1/it2 table) but both stay over band: max is at the switch outer face y ~9.1 (probe cluster 15, 41 pts OUTSIDE the CAD, moulded marks/labels, declared) and the p95 residual is spread over the plain sharp-edged box (switch edge rounds and labels declared not modelled).",
+   "options": "model the switch box edge rounds and raised marks, or accept (purchased part)."
+  },
+  {
+   "region": "Z3_top_clip_port (gated)",
+   "cause": "p95 over band, max just over (0.89): bore floor fixed in it2, remaining miss is the lug outline (scan rounded/irregular vs CAD rectangle with 1.7 mm rounds, overlay Z=45.5) and averaged internal ribs (declared).",
+   "options": "model the lug outline from the scan section; ribs need better scan coverage."
+  },
+  {
+   "region": "Z1_spindle (gated)",
+   "cause": "p95 passes, max over band at the declared-not-modelled tip hole (cluster 10) and spline teeth (median cylinder; tooth count unresolved, CHK-COUNT).",
+   "options": "model the tip hole; teeth need a tooth count (photo/caliper) or stay a declared miss."
+  },
+  {
+   "region": "Z4_side_ports (gated)",
+   "cause": "p95 passes, max over band at plate lips (cluster 7, declared) and plate/junction edges.",
+   "options": "model plate lips/hooks; trim junction boxes."
+  }
+ ],
+ "claim_boundary": "Not an approved model. This QA result grades iteration 2 against the owner's baseline-skill plastic band (p95 <= 0.30 / max <= 0.80 mm) on the scan only: the band is missed in both gated directions and in 5 of 6 zones. It is not evidence of any dimension (no calipers, scale unverified), says nothing about the unscanned interior (bores, spool, passages are not modelled and not graded), and is not fit for tooling, manufacture or mating-part design. Delivery needs a recorded ACCEPT-BAND. Zone Z5 (barb) passing is a local result and does not excuse the whole part."
+}

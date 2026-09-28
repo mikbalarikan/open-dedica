@@ -1,0 +1,26 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/aligned_work.stl": "f44c02986f86c5c4a80cae20aa51770e7d8af40755ecc67cf7afe3c5cf8884fc"
+ },
+ "seed": 0,
+ "created": "2026-09-28T08:50:08+00:00",
+ "scan_noise_mm": {
+  "value": 0.05776920280081951,
+  "p95_mm": 0.11715167434974205,
+  "max_mm": 0.19904310899814348,
+  "method": "rms of IRLS circle on rim bore circle z=-7 at z=-7.0 (n=786)",
+  "circle": {
+   "cx": 0.1269654419332555,
+   "cy": 0.04364037880472438,
+   "r": 27.566573773109532,
+   "rms": 0.05776920280081951,
+   "max": 0.19904310899814348,
+   "p95": 0.11715167434974205,
+   "n": 786,
+   "iterations": 9
+  }
+ }
+}

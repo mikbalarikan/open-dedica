@@ -1,0 +1,10 @@
+{
+ "comment": "Written by QA from intake/INTAKE_CARD.md §6 and intake/alignment.json mesh_region_desc (not from builder code). Primary: flange top face -> XY @ z=0, material -z. Secondary/origin: cup A (-X) and cup B (+X) outer-wall axes, wall faces z 1.2-3.6, origin = midpoint of the two axes on the primary plane. Clock: feature_line cup A axis -> cup B axis = +X. Regions are datum-frame predicates used ONLY to select scan faces; the webs (1.9 mm wide at y=0, INTAKE_CARD E08) are excluded from the cup-wall selection by |y|>=1.5.",
+ "primary": {"type": "plane", "method": "vote", "cone_deg": 3.0, "band_mm": 0.30,
+             "region": {"z": [-0.5, 0.5], "abs_nz": [0.9, null]}},
+ "position": {"type": "circle_pair", "combine": "midpoint", "single_wall": "outer", "perp_max_dot": 0.30, "cauchy_scale_mm": 0.30,
+              "region_a": {"x": [-32.0, -7.0], "abs_y": [1.5, 13.5], "z": [1.2, 3.6]},
+              "region_b": {"x": [7.0, 32.0], "abs_y": [1.5, 13.5], "z": [1.2, 3.6]},
+              "note": "datum_audit.py supports one circle only; qa/scripts/datum_audit_pair.py fits both with datum_audit.py's own circle_irls and composes midpoint + feature_line clock"},
+ "clock": {"type": "feature_line", "from": "region_a", "to": "region_b", "axis": "+X"}
+}

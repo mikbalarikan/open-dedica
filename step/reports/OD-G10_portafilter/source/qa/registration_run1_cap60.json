@@ -1,0 +1,114 @@
+{
+ "schema": "stl-re/registration@1",
+ "tool": "tier2_icp.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "9eb34045f9be50df2320a989f96fc1135a7a75e1d4cc9ac673b2e1bfce0c30aa",
+  "intake/alignment.json": "0a2b0dbca01e7d48b144991ff743a06bcf0a6f8f466f5ddbbb9198c4f5380e0a",
+  "build/OD-G11_portafilter_datum.step": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+  "qa/icp_scan_masks.json": "f9748b2c1328591bda902d66e03e1071109a951e5a1006081351862e3b06ed3e"
+ },
+ "seed": 11,
+ "created": "2026-09-28T10:23:19+00:00",
+ "method": "point-to-point ICP, CAD samples -> scan samples, masked correspondences (B02 q20_tier2.py)",
+ "scan_kind": "full",
+ "iterations": 60,
+ "max_iterations": 60,
+ "converged": false,
+ "delta_deg": 0.1707338156580491,
+ "delta_mm": 0.032759599461964696,
+ "max_point_move_mm": 0.15584744451241353,
+ "final_kept_fraction": 0.9313966666666667,
+ "T_refine": [
+  [
+   0.9999997082351582,
+   -0.0007299281559564671,
+   0.00022524322942041956,
+   -0.02422311020531113
+  ],
+  [
+   0.000729276362915324,
+   0.9999955858034731,
+   0.0028803696947229144,
+   0.02044253948195012
+  ],
+  [
+   -0.00022734469809344415,
+   -0.0028802045897670997,
+   0.9999958263592444,
+   0.008278578888832296
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "T_refine_meaning": "maps datum-frame CAD onto the aligned scan; deviation_gate applies its inverse to the scan. QA-only: never written back to alignment.json (CHK-CIRCULAR).",
+ "trace_tail": [
+  {
+   "it": 54,
+   "step": 1.655152769400672e-05,
+   "rot_deg": 1.3766686389570068e-05,
+   "trans_mm": 2.784841304436654e-06,
+   "kept_fraction": 0.9313966666666667,
+   "mean_d_kept": 0.1441641100226372
+  },
+  {
+   "it": 55,
+   "step": 2.491774100985385e-05,
+   "rot_deg": 1.8587967992817196e-05,
+   "trans_mm": 6.3297730170366534e-06,
+   "kept_fraction": 0.9313966666666667,
+   "mean_d_kept": 0.14416466812061113
+  },
+  {
+   "it": 56,
+   "step": 1.900722082030366e-05,
+   "rot_deg": 1.4028932551663055e-05,
+   "trans_mm": 4.978288268640603e-06,
+   "kept_fraction": 0.9313966666666667,
+   "mean_d_kept": 0.14416517584482974
+  },
+  {
+   "it": 57,
+   "step": 1.6443614065597773e-05,
+   "rot_deg": 1.1952831047522336e-05,
+   "trans_mm": 4.490783018075436e-06,
+   "kept_fraction": 0.9313966666666667,
+   "mean_d_kept": 0.14416560494999142
+  },
+  {
+   "it": 58,
+   "step": 1.06028800160199e-05,
+   "rot_deg": 6.9360898910140305e-06,
+   "trans_mm": 3.6667901250058698e-06,
+   "kept_fraction": 0.9313966666666667,
+   "mean_d_kept": 0.14416591512106192
+  },
+  {
+   "it": 59,
+   "step": 1.1237785116824236e-05,
+   "rot_deg": 7.824964720612764e-06,
+   "trans_mm": 3.412820396211473e-06,
+   "kept_fraction": 0.9313966666666667,
+   "mean_d_kept": 0.14416599563416924
+  }
+ ],
+ "reference_masks_removed": [],
+ "params": {
+  "ns": 3000000,
+  "scan_seed": 11,
+  "nc": 300000,
+  "cad_seed": 13,
+  "normal_deg": 70.0,
+  "boundary_mm": 0.8,
+  "max_corr_mm": 3.0,
+  "max_iter": 60,
+  "tol": 1e-06
+ },
+ "notes": [
+  "welded: 250812 verts / 500182 faces"
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "3a3c4c70e8bad48800631309cb53ac669373b936c0051b3674f1660806877532"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:41:18+00:00",
+ "scan_noise_mm": {
+  "value": 0.03237195533267475,
+  "p95_mm": 0.07053809116802885,
+  "max_mm": 0.11380433068862529,
+  "method": "rms of RANSAC+SVD plane on shelf (2452 faces)"
+ }
+}

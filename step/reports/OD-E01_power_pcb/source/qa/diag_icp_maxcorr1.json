@@ -1,0 +1,115 @@
+{
+ "schema": "stl-re/registration@1",
+ "tool": "tier2_icp.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "41448c67a63083726a1c7f2288364cfd9445e66204d05ac3bd13a9ba726c5d93",
+  "intake/alignment.json": "c547794d77c9878a3d4102a69b4794ca11f3dd03ab0865b34c97029fc7de2dfe",
+  "build/OD-E01_Power-PCB_datum.step": "03464c966aba47f99dc1cdfdedc4da6402d39f0469bad47131ed641f92f2e830",
+  "qa/icp_scan_masks.json": "4faf31307ec4513b83f96e9fc395d2715c1e9ff559553f13c3cdc833c4fa5a83"
+ },
+ "seed": 11,
+ "created": "2026-09-28T08:48:03+00:00",
+ "method": "point-to-point ICP, CAD samples -> scan samples, masked correspondences (B02 q20_tier2.py)",
+ "scan_kind": "full",
+ "iterations": 59,
+ "max_iterations": 200,
+ "converged": true,
+ "delta_deg": 0.06396478461290041,
+ "delta_mm": 0.09425749825862735,
+ "max_point_move_mm": 0.10092949468319952,
+ "final_kept_fraction": 0.4426466666666667,
+ "T_refine": [
+  [
+   0.9999996951369805,
+   -0.00037983063086660727,
+   -0.0006822423672564532,
+   -0.045581738361102866
+  ],
+  [
+   0.0003803748581765435,
+   0.9999996094538947,
+   0.0007977512321328501,
+   -0.03690409755776479
+  ],
+  [
+   0.0006819390904560281,
+   -0.000798010496769094,
+   0.9999994490690092,
+   -0.07378935349630107
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "T_refine_meaning": "maps datum-frame CAD onto the aligned scan; deviation_gate applies its inverse to the scan. QA-only: never written back to alignment.json (CHK-CIRCULAR).",
+ "trace_tail": [
+  {
+   "it": 53,
+   "step": 8.725801381841551e-06,
+   "rot_deg": 3.4150945850063763e-06,
+   "trans_mm": 5.310706796835176e-06,
+   "kept_fraction": 0.4426466666666667,
+   "mean_d_kept": 0.11569633876257664
+  },
+  {
+   "it": 54,
+   "step": 8.9878516829986e-06,
+   "rot_deg": 2.9575586669421963e-06,
+   "trans_mm": 6.030293016056404e-06,
+   "kept_fraction": 0.4426466666666667,
+   "mean_d_kept": 0.11569656788844658
+  },
+  {
+   "it": 55,
+   "step": 3.615569177169638e-06,
+   "rot_deg": 0.0,
+   "trans_mm": 3.615569177169638e-06,
+   "kept_fraction": 0.4426466666666667,
+   "mean_d_kept": 0.11569673008326417
+  },
+  {
+   "it": 56,
+   "step": 7.196058242641316e-06,
+   "rot_deg": 3.1945284701301985e-06,
+   "trans_mm": 4.001529772511118e-06,
+   "kept_fraction": 0.4426466666666667,
+   "mean_d_kept": 0.11569687563636483
+  },
+  {
+   "it": 57,
+   "step": 1.2840001188328525e-06,
+   "rot_deg": 0.0,
+   "trans_mm": 1.2840001188328525e-06,
+   "kept_fraction": 0.4426466666666667,
+   "mean_d_kept": 0.11569705469939653
+  },
+  {
+   "it": 58,
+   "step": 7.22514627227157e-07,
+   "rot_deg": 0.0,
+   "trans_mm": 7.22514627227157e-07,
+   "kept_fraction": 0.4426466666666667,
+   "mean_d_kept": 0.11569708632015088
+  }
+ ],
+ "reference_masks_removed": [],
+ "params": {
+  "ns": 3000000,
+  "scan_seed": 11,
+  "nc": 300000,
+  "cad_seed": 13,
+  "normal_deg": 70.0,
+  "boundary_mm": 0.8,
+  "max_corr_mm": 1.0,
+  "max_iter": 200,
+  "tol": 1e-06
+ },
+ "notes": [
+  "welded: 203996 verts / 398079 faces",
+  "scan normals were inward -> inverted on the QA copy (evidence file untouched)"
+ ]
+}

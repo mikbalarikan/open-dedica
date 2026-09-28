@@ -1,0 +1,8 @@
+{
+ "tool": "measure/scripts/m02_cup_profile.py",
+ "cup_axis_x": [
+  -19.485067808821714,
+  19.485067808821714
+ ],
+ "sector_excl_deg": 30
+}

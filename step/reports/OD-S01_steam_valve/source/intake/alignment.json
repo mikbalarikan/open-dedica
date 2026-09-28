@@ -1,0 +1,320 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/scratchpad/OD-S01_steam-valve/intake/work.stl": "857984d7129fe8505bf6f709031f9cbcdddc30f1abf35d51444e5075322c0c8e",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/scratchpad/OD-S01_steam-valve/intake/datum_spec.json": "afbc068efd5158a932fe3961eb582d775f7d2bc108752be3e59d5e024129a5cb",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/scratchpad/OD-S01_steam-valve/input/scan.stl": "98cd118312fbb9b43d844cbc063c3be897c553541154b1f5988d5be0c2127ebf",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/scratchpad/OD-S01_steam-valve/intake/intake.json": "6d97b83bbf1b3a44d6b7e2cb32aa2086968c10220e5689d2562f5b6d573e3916"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:43:40+00:00",
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [
+  "primary STOP check is self-referential (noise measured on the primary itself)"
+ ],
+ "matrix_4x4": [
+  [
+   -0.8962969759672648,
+   0.012039857220561221,
+   0.44329084437877225,
+   61.276641816346185
+  ],
+  [
+   0.21050935512859067,
+   -0.8682695508955359,
+   0.44921464623385693,
+   77.49253503070378
+  ],
+  [
+   0.39030442256690007,
+   0.49594659876419434,
+   0.7756928702127832,
+   189.8441827731715
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.035995208297944864,
+  "method": "rms of RANSAC+SVD plane on cap disc outer face (knob side, perpendicular to the splined spindle) (3497 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "cap disc outer face (knob side, perpendicular to the splined spindle)",
+  "why": "the cap disc outer face is the flat the control knob side seats against; it is perpendicular to the splined spindle (rotation axis of the valve)",
+  "fit_rms_mm": 0.034304438783088226,
+  "fit_max_mm": 0.10390885401230883,
+  "fit_p95_mm": 0.06756488679867162,
+  "n_faces": 3426,
+  "area_mm2": 377.9499619187907,
+  "fit_untrimmed": {
+   "rms": 0.07039290226284671,
+   "p95": 0.16378847201720673,
+   "max": 0.22916273459490227,
+   "n_faces": 4240
+  },
+  "inlier_frac": 0.682311320754717,
+  "normal_raw": [
+   -0.39030442256690007,
+   -0.49594659876419434,
+   -0.7756928702127833
+  ],
+  "centroid_raw": [
+   -35.64168896798513,
+   -25.311100019557763,
+   -210.62475400955483
+  ],
+  "material_side": "+z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.682311320754717
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "upper valve column OD (r~5.3)",
+  "why": "valve spool column, coaxial with the spindle",
+  "fit_rms_mm": 0.04479121685751547,
+  "fit_max_mm": 0.5205422420150985,
+  "fit_metric": "median / worst circle residual over stations (kasa)",
+  "stations": 10,
+  "r_by_feature": {
+   "upper valve column OD (r~5.3)": {
+    "n": 10,
+    "r_mean": 5.391115693683621,
+    "r_std": 0.005809446147116313
+   }
+  },
+  "centre_std_mm": [
+   0.008240284803245996,
+   0.020667205205340815
+  ],
+  "station_detail": [
+   {
+    "z": 37.70909,
+    "cx": 83.52439,
+    "cy": 52.83388,
+    "r": 5.40092,
+    "rms": 0.10245,
+    "max": 0.52054,
+    "n": 274,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 38.16364,
+    "cx": 83.52178,
+    "cy": 52.78056,
+    "r": 5.3926,
+    "rms": 0.05981,
+    "max": 0.18918,
+    "n": 254,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 38.61818,
+    "cx": 83.52353,
+    "cy": 52.78097,
+    "r": 5.3948,
+    "rms": 0.06166,
+    "max": 0.19642,
+    "n": 258,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 39.07273,
+    "cx": 83.50034,
+    "cy": 52.78197,
+    "r": 5.38449,
+    "rms": 0.063,
+    "max": 0.20982,
+    "n": 256,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 39.52727,
+    "cx": 83.51789,
+    "cy": 52.7718,
+    "r": 5.39304,
+    "rms": 0.04308,
+    "max": 0.12996,
+    "n": 263,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 39.98182,
+    "cx": 83.51888,
+    "cy": 52.77054,
+    "r": 5.39875,
+    "rms": 0.0465,
+    "max": 0.13671,
+    "n": 273,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 40.43636,
+    "cx": 83.51197,
+    "cy": 52.77633,
+    "r": 5.38951,
+    "rms": 0.04266,
+    "max": 0.1341,
+    "n": 262,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 40.89091,
+    "cx": 83.51286,
+    "cy": 52.76824,
+    "r": 5.38683,
+    "rms": 0.04006,
+    "max": 0.09824,
+    "n": 266,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 41.34545,
+    "cx": 83.50984,
+    "cy": 52.75613,
+    "r": 5.38877,
+    "rms": 0.03869,
+    "max": 0.11747,
+    "n": 262,
+    "feature": "upper valve column OD (r~5.3)"
+   },
+   {
+    "z": 41.8,
+    "cx": 83.50088,
+    "cy": 52.75684,
+    "r": 5.38146,
+    "rms": 0.03617,
+    "max": 0.09486,
+    "n": 262,
+    "feature": "upper valve column OD (r~5.3)"
+   }
+  ],
+  "noise_ref": {
+   "value": 0.04794171549044783,
+   "p95_mm": 0.09895630106528513,
+   "max_mm": 0.13951635612814073,
+   "method": "rms of IRLS circle on upper valve column OD circle at z=40 at z=40.0 (n=270)",
+   "circle": {
+    "cx": -0.006732703395251516,
+    "cy": 0.0017344109201999913,
+    "r": 5.397837179887361,
+    "rms": 0.04794171549044783,
+    "max": 0.13951635612814073,
+    "p95": 0.09895630106528513,
+    "n": 270,
+    "iterations": 9
+   }
+  }
+ },
+ "clock": {
+  "rule": "plane_normal: microswitch outer face normal -> +X",
+  "angle_deg": -160.62405428934136,
+  "why": "largest flat vertical face; the microswitch pocket walls, the two side lugs and the barb nipple are square to it (vertical-face normal histogram peaks at 90 deg steps)",
+  "detail": {
+   "plane_fit_rms_mm": 0.018073934476798722,
+   "plane_fit_max_mm": 0.09705311600189655,
+   "plane_n_faces": 2103,
+   "plane_out_of_perpendicular_deg": 0.8523972442242638
+  }
+ },
+ "tilt_deg": {
+  "value": 0.7612011306341661,
+  "stderr_deg": 0.163422824597226,
+  "direction_deg": -108.28623374580694,
+  "method": "common slope, per-feature intercept, 10 stations over 1 feature(s), z 37.709..41.800 vs frame Z",
+  "z_span_mm": 4.0909090909090935,
+  "per_feature": [
+   {
+    "feature": "upper valve column OD (r~5.3)",
+    "n_stations": 10,
+    "value": 0.7612011306341661,
+    "stderr_deg": 0.15286810652396343,
+    "direction_deg": -108.28623374580694,
+    "z_span_mm": 4.0909090909090935
+   }
+  ],
+  "resolvable": null
+ },
+ "origin": {
+  "definition": "upper valve column axis \u2229 cap disc outer face"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": 0.0016769105236704713,
+   "tol": 0.035995208297944864,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "spindle tip (zmin)",
+   "stat": "zmin",
+   "expected": -14.8,
+   "tol": 0.5,
+   "observed": -14.849686243781035,
+   "ok": true,
+   "tol_source": "provisional-frame exploration (intake/figures/prov_views.png), sign check only"
+  },
+  {
+   "name": "top port face (zmax)",
+   "stat": "zmax",
+   "expected": 48.7,
+   "tol": 0.5,
+   "observed": 48.673132027461456,
+   "ok": true,
+   "tol_source": "provisional-frame exploration, sign check only"
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -20.63331562186519,
+   -22.09769953147831,
+   -14.849686243781035
+  ],
+  [
+   18.02819214865074,
+   18.38891228391942,
+   48.673132027461456
+  ]
+ ],
+ "extents_aligned": [
+  38.661507770515925,
+  40.48661181539773,
+  63.52281827124249
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/scratchpad/OD-S01_steam-valve/intake/aligned_work.stl",
+  "sha256": "5cc4663cd30183495981fa493bcac3c687da3dcbc3b7121f3f452dfbc3fb5a43"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "finding",
+   "note": "common slope, per-feature intercept, 10 stations over 1 feature(s), z 37.709..41.800 vs frame Z; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": true,
+   "result": "finding",
+   "note": "FLAG: no calipers, no scale reference in photos; units assumed mm, scale unverified (DECISIONS.md MEASUREMENTS)"
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

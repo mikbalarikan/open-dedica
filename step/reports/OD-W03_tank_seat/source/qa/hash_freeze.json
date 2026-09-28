@@ -1,0 +1,20 @@
+{
+ "schema": "stl-re/hash_freeze@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-W03_datum.step": "a74589f0ac36ee40b206c25c0ac709b7804e47f72e0f535fa01b25c055b44c5f",
+  "build/OD-W03.step": "09297e22f7ac9b5a9b992b05cec8951fd709b3d315dcb3fcaad959f52a03cfe3"
+ },
+ "seed": null,
+ "created": "2026-09-28T07:53:21+00:00",
+ "before": {
+  "build/OD-W03_datum.step": "a74589f0ac36ee40b206c25c0ac709b7804e47f72e0f535fa01b25c055b44c5f",
+  "build/OD-W03.step": "09297e22f7ac9b5a9b992b05cec8951fd709b3d315dcb3fcaad959f52a03cfe3"
+ },
+ "after": {
+  "build/OD-W03_datum.step": "a74589f0ac36ee40b206c25c0ac709b7804e47f72e0f535fa01b25c055b44c5f",
+  "build/OD-W03.step": "09297e22f7ac9b5a9b992b05cec8951fd709b3d315dcb3fcaad959f52a03cfe3"
+ },
+ "unchanged": true
+}

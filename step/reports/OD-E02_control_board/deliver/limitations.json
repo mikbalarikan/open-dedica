@@ -1,0 +1,160 @@
+{
+ "schema": "stl-re/limitations@1",
+ "part": {
+  "name": "OD-E02_control-button-board",
+  "what_it_is": "Front control button board of a DeLonghi espresso machine: stepped moulded housing with a snap-fitted back cover, PCB connector shroud, two screw holes, bent mounting tab, four latch hoops and three push-button caps (1 cup, 2 cups, steam), delivered as one fused solid of the assembly as scanned.",
+  "reference_photo": "input/photos/2.png"
+ },
+ "method_summary": [
+  "Intake: sha256 of the scan, working copy, noise floor on the mounting-tab top face, datum = back cover floor (XY), origin on the middle button collar axis, +X from the housing end face.",
+  "Measure: every dimension from the full-resolution scan in the frozen datum frame (scan-only, no calipers); the housing tiers are offsets of one core outline whose corner centres were fitted once; edge rounds measured from the scan distance at the sharp corners.",
+  "Rebuild: build123d, plan-first; tier prisms from the offset core, a fitted chamfer plane, sub-bodies for band, collars, caps, shroud, tab and hoops, cut tools for pocket, recesses, holes; every fillet logged; one valid closed solid exported in the datum and the scan frame.",
+  "Verify: an independent agent re-ran its own ICP and the two-way full-resolution deviation under the declared regime.",
+  "Deliver: README and manifest rendered from the JSON records, fresh-process reproducibility check, one zip with deliverables and all source files."
+ ],
+ "limitations": [
+  {
+   "id": "L1",
+   "text": "Scan-only: no calipers, so Tier-1 did not run (absent, not passed) and absolute scale is not caliper-verified (CHK-SCALE flag at intake). no Tier-1 (no calipers run).",
+   "rerun_trigger": "any caliper reading (envelope X/Y, a cap diameter, the tab hole)",
+   "evidence": "qa/gate.json#limitations"
+  },
+  {
+   "id": "L2",
+   "text": "Unscanned regions are modelled from assumptions: connector shroud interior depth, shroud-to-rim slot floor, screw through-bores, cap-collar recess ceilings. They hold almost all of the observable CAD-to-scan band miss, which the owner accepted (decisions/accept_band.md).",
+   "rerun_trigger": "a re-scan covering the shroud interior, the slot and the bores, or depth / pin-gauge readings of them",
+   "evidence": "qa/VERDICT.md"
+  },
+  {
+   "id": "L3",
+   "text": "The functional zones Z1-Z6 are reported per zone only: the baseline-skill regime has no interface band.",
+   "rerun_trigger": "a project spec that bands the interfaces",
+   "evidence": "qa/gate.json#limitations"
+  },
+  {
+   "id": "L4",
+   "text": "Two fillets were built smaller than measured because the wall is thinner than the two measured top rounds together: rim top outer edge and shroud top inner edge (REDUCED in build/export_check.json).",
+   "rerun_trigger": "a caliper reading of the rim and shroud wall thickness",
+   "evidence": "build/export_check.json#datum.fillets"
+  },
+  {
+   "id": "L5",
+   "text": "The loose button caps are fused to the housing at their scanned pose (the middle cap sits slightly tilted in its bore); the solid is the assembly as scanned.",
+   "rerun_trigger": "owner request for a per-part STEP or the nominal cap pose",
+   "evidence": "qa/gate.json#limitations"
+  },
+  {
+   "id": "L6",
+   "text": "Overlays and zoom sections are drawn in the builder datum frame, before the verifier's ICP correction of {{gate:deviation.registration.delta_mm}} mm.",
+   "rerun_trigger": "an ICP correction above the overlay tolerance on a re-run",
+   "evidence": "qa/gate.json#deviation.registration"
+  }
+ ],
+ "assumptions": [
+  {
+   "text": "Connector shroud interior (header, pins, floor) is not scanned; the interior pocket is cut down to the deepest scanned wall point.",
+   "source": "assumed",
+   "evidence": "measure/params.json#shroud_inner_floor_z"
+  },
+  {
+   "text": "Screw through-bore between the back counterbore and the front bore is not scanned; it is assumed continuous at the measured bore radius, and the front bore stops where the scan stops seeing it.",
+   "source": "assumed",
+   "evidence": "measure/params.json#screw_L_front_top_z"
+  },
+  {
+   "text": "The narrow slot between the connector shroud and the rim is closed at the floor plane (no scan below it).",
+   "source": "assumed",
+   "evidence": "measure/params.json#shroud_slot_note"
+  },
+  {
+   "text": "The loose button caps are fused to the housing at their scanned pose; the clearance between each cap and its bore is modelled only as far up as the scan saw it.",
+   "source": "assumed",
+   "evidence": "build/MODELING_PLAN.md"
+  }
+ ],
+ "claim_boundary": {
+  "not_fit_for": [
+   "manufacture or tooling of any part of the assembly until the functional interfaces (caps, collars, screw holes, tab hole, connector shroud) are calipered",
+   "separate-part use: housing, cover and caps are fused into one solid; a multi-body STEP is a separate job",
+   "the connector interior (header and pins were not scanned)"
+  ],
+  "fit_for": [
+   "envelope, packaging and fit studies of the scanned assembly in the machine front panel",
+   "a design-intent starting model for the housing (parametric build123d source and parameter table included)"
+  ]
+ },
+ "feature_tree": [
+  {
+   "id": "F01-F02",
+   "feature": "rim + pocket (offset core outline), inner latch bosses",
+   "params": [
+    "core_BL",
+    "rim_out_R_main",
+    "rim_in_R_main",
+    "rim_top_z",
+    "boss_mY_L"
+   ]
+  },
+  {
+   "id": "F03-F05",
+   "feature": "stepped tiers T0/T2/T3 with junction fillets and the -Y chamfer plane",
+   "params": [
+    "T0_R_main",
+    "T2_R_main",
+    "T3_R_main",
+    "chamfer_normal",
+    "chamfer_offset"
+   ]
+  },
+  {
+   "id": "F06-F10",
+   "feature": "button band, collars, outer collar cuts, cap clearance recesses",
+   "params": [
+    "band_top_y",
+    "band_disk_L",
+    "collar_B2_r",
+    "collar_B1_cut_plane",
+    "collar_B2_recess"
+   ]
+  },
+  {
+   "id": "F11-F12",
+   "feature": "button caps (B2 round and tilted as scanned, B1/B3 oval with inclined tops)",
+   "params": [
+    "cap_B2_r",
+    "cap_B2_axis_dir",
+    "cap_B1_ellipse",
+    "cap_B1_top_normal"
+   ]
+  },
+  {
+   "id": "F13-F15",
+   "feature": "connector shroud, shroud interior, screw holes",
+   "params": [
+    "shroud_outer",
+    "shroud_inner",
+    "screw_L_xy",
+    "screw_L_cb_r",
+    "screw_L_front"
+   ]
+  },
+  {
+   "id": "F16",
+   "feature": "mounting tab (plate, leg, drafted side flanges, hole)",
+   "params": [
+    "tab_top_plane",
+    "tab_incline_upper_plane",
+    "tab_flange_outer_neg_plane",
+    "tab_hole"
+   ]
+  },
+  {
+   "id": "F17",
+   "feature": "latch hoops with catch ramps",
+   "params": [
+    "hoop_H1",
+    "hoop_H1_ramp_plane"
+   ]
+  }
+ ]
+}

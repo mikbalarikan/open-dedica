@@ -1,0 +1,26 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/aligned_work.stl": "5cc4663cd30183495981fa493bcac3c687da3dcbc3b7121f3f452dfbc3fb5a43"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:43:37+00:00",
+ "scan_noise_mm": {
+  "value": 0.04794171549044783,
+  "p95_mm": 0.09895630106528513,
+  "max_mm": 0.13951635612814073,
+  "method": "rms of IRLS circle on upper valve column OD circle at z=40 at z=40.0 (n=270)",
+  "circle": {
+   "cx": -0.006732703395251516,
+   "cy": 0.0017344109201999913,
+   "r": 5.397837179887361,
+   "rms": 0.04794171549044783,
+   "max": 0.13951635612814073,
+   "p95": 0.09895630106528513,
+   "n": 270,
+   "iterations": 9
+  }
+ }
+}

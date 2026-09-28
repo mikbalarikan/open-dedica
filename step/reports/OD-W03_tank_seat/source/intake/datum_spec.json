@@ -1,0 +1,119 @@
+{
+ "mesh": "work.stl",
+ "raw_scan": "../input/scan.stl",
+ "intake_json": "intake.json",
+ "out_dir": ".",
+ "seed": 0,
+ "noise": {
+  "from": "noise_primary.json"
+ },
+ "primary": {
+  "type": "plane",
+  "approx_normal": [
+   -0.658069,
+   0.44949,
+   0.604073
+  ],
+  "material_side": "-z",
+  "desc": "flange top face (stadium plate top around the cups)",
+  "why": "flange plate top: the plate's underside (not scanned) seats on the tank; the top is the largest clean moulded flat, parallel to it, and every cup, boss and ear rises from it"
+ },
+ "origin": {
+  "xy": [
+   {
+    "method": "wall_faces",
+    "wall": "outer",
+    "centre_guess": [
+     -139.245,
+     31.62
+    ],
+    "perp_max": 0.3,
+    "r_min": 11.2,
+    "r_max": 12.5,
+    "r_hint": 11.85,
+    "r_tol": 0.4,
+    "rms_max": 0.3,
+    "z_range": [
+     1.2,
+     3.6
+    ],
+    "stations": 3,
+    "desc": "cup A outer wall (-X cup)",
+    "why": "the two valve cups are the functional features; their axes define the pitch line. Band z 1.2-3.6 = the cleanest wall band (higher bands carry +/-0.15 mm scan ripple on the translucent wall)"
+   },
+   {
+    "method": "wall_faces",
+    "wall": "outer",
+    "centre_guess": [
+     -158.59,
+     -2.21
+    ],
+    "perp_max": 0.3,
+    "r_min": 11.2,
+    "r_max": 12.5,
+    "r_hint": 11.85,
+    "r_tol": 0.4,
+    "rms_max": 0.3,
+    "z_range": [
+     1.2,
+     3.6
+    ],
+    "stations": 3,
+    "desc": "cup B outer wall (+X cup)",
+    "why": "second cup axis; origin = midpoint of the two cup axes (combine=midpoint)"
+   }
+  ],
+  "definition": "midpoint of cup A and cup B axes \u2229 flange top face",
+  "combine": "midpoint"
+ },
+ "clock": {
+  "rule": "feature_line",
+  "from": "cup A outer wall (-X cup)",
+  "to": "cup B outer wall (+X cup)",
+  "desc": "cup A axis -> cup B axis along +X",
+  "why": "the part's long axis is the line through the two cup (valve) axes; fourier_mass n=2 was biased 0.7 deg by the asymmetric necks/ears (first pass)"
+ },
+ "landmarks": [
+  {
+   "name": "cup A top face z",
+   "stat": "zmedian",
+   "r_range": [
+    16.0,
+    23.0
+   ],
+   "z_range": [
+    11.0,
+    13.5
+   ],
+   "expected": 12.4,
+   "tol": 0.3,
+   "tol_source": "exploratory section read (pre-frame XZ sections, 0.3 mm plotted grid)"
+  },
+  {
+   "name": "barb tip z (max)",
+   "stat": "zmax",
+   "expected": 28.5,
+   "tol": 0.4,
+   "tol_source": "exploratory section read (pre-frame YZ section x=-19.5)"
+  },
+  {
+   "name": "skirt lower edge z (min)",
+   "stat": "zmin",
+   "r_range": [
+    0,
+    60
+   ],
+   "expected": -3.1,
+   "tol": 0.4,
+   "tol_source": "pre-frame bounds z_min -3.18"
+  }
+ ],
+ "noise_secondary": {
+  "from": "noise_cups.json"
+ },
+ "chk_scale": {
+  "ran": false,
+  "result": "finding",
+  "note": "FLAG: no calipers (scan-only, DECISIONS.md MEASUREMENTS 2026-09-28); units assumed mm, absolute scale unverified; no scale applied"
+ }
+}

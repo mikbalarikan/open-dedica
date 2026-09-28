@@ -1,0 +1,20 @@
+{
+ "schema": "stl-re/hash_freeze@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-E01_Power-PCB_datum.step": "03464c966aba47f99dc1cdfdedc4da6402d39f0469bad47131ed641f92f2e830",
+  "build/OD-E01_Power-PCB.step": "b31181ef42b7f47c013862650923d7b5ef778d43788c1652796c4da1f6034858"
+ },
+ "seed": null,
+ "created": "2026-09-28T08:33:26+00:00",
+ "before": {
+  "build/OD-E01_Power-PCB_datum.step": "03464c966aba47f99dc1cdfdedc4da6402d39f0469bad47131ed641f92f2e830",
+  "build/OD-E01_Power-PCB.step": "b31181ef42b7f47c013862650923d7b5ef778d43788c1652796c4da1f6034858"
+ },
+ "after": {
+  "build/OD-E01_Power-PCB_datum.step": "03464c966aba47f99dc1cdfdedc4da6402d39f0469bad47131ed641f92f2e830",
+  "build/OD-E01_Power-PCB.step": "b31181ef42b7f47c013862650923d7b5ef778d43788c1652796c4da1f6034858"
+ },
+ "unchanged": true
+}

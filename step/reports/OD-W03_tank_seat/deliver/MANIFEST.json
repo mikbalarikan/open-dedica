@@ -1,0 +1,713 @@
+{
+  "schema": "stl-re/MANIFEST@1",
+  "tool": "make_manifest.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "deliver/README.md": "78b5519453bc82316d4ff96174e6e5e1f1c716a5a6c07512a568bc9186663b0c",
+    "deliver/repro.json": "73e60139d7c71c1af4945f853d368890dc00d1e692989a62dc41fc10298197c5",
+    "qa/gate.json": "2fe9569f1fa0d2d3f911e587f7278256490945939ceff4eacdc668946fa21ffd"
+  },
+  "seed": 0,
+  "created": "2026-09-28T08:51:43+00:00",
+  "part": "OD-W03",
+  "verdict": "BAND_NOT_MET",
+  "regime": "baseline-skill",
+  "iteration": 1,
+  "acceptance": {
+    "date": "2026-09-28",
+    "who": "Ikbal (owner, decision card)",
+    "id": "ACCEPT-BAND",
+    "decision": "Accept and deliver now: accepts scan_to_cad and cad_to_scan_observable band misses, gate 2fe9569f1fa0 (created 2026-09-28T08:17:23+00:00); REVISE for the cup B upper wall offered and declined.",
+    "evidence": "decisions/accept_band.md"
+  },
+  "checks": {
+    "CHK-PUBLISH": {
+      "ran": true,
+      "result": "pass",
+      "note": "verdict BAND_NOT_MET"
+    },
+    "CHK-SUPERSEDED": {
+      "ran": true,
+      "result": "pass",
+      "iteration": 1,
+      "superseded": [],
+      "note": "all earlier iterations kept intact"
+    },
+    "inputs_unchanged": {
+      "ran": true,
+      "result": "pass",
+      "note": "2 input file(s) unchanged"
+    },
+    "hash_frozen": {
+      "ran": true,
+      "result": "pass",
+      "note": "every build/ STEP matches hash_frozen"
+    },
+    "regime_declared": {
+      "ran": true,
+      "result": "pass",
+      "note": "regime 'baseline-skill'"
+    }
+  },
+  "deliverables": [
+    {
+      "path": "build/OD-W03.step",
+      "bytes": 562319,
+      "sha256": "09297e22f7ac9b5a9b992b05cec8951fd709b3d315dcb3fcaad959f52a03cfe3",
+      "role": "DELIVERABLE: STEP, scan frame (overlays the raw scan)"
+    },
+    {
+      "path": "build/OD-W03_datum.step",
+      "bytes": 560595,
+      "sha256": "a74589f0ac36ee40b206c25c0ac709b7804e47f72e0f535fa01b25c055b44c5f",
+      "role": "DELIVERABLE: STEP, datum frame"
+    },
+    {
+      "path": "deliver/README.md",
+      "bytes": 36905,
+      "sha256": "78b5519453bc82316d4ff96174e6e5e1f1c716a5a6c07512a568bc9186663b0c",
+      "role": "DELIVERABLE: delivery document (rendered from JSON)"
+    }
+  ],
+  "note": "Every file under the run folder is listed in included or excluded (with a reason). deliver/MANIFEST.json itself is not listed: a file cannot contain its own hash.",
+  "unused_excludes": [],
+  "included": [
+    {
+      "path": "DECISIONS.md",
+      "bytes": 2807,
+      "sha256": "268e388022ccb2ca93af78d42f49539efa1e32609ecec2c099e4de9ac43ca3f7",
+      "role": "record: human decisions (append-only)"
+    },
+    {
+      "path": "build/MODELING_PLAN.md",
+      "bytes": 6954,
+      "sha256": "e2e113e7366eff036cc3592ca71816eeba528b49593fa611db46fe89f637bf92",
+      "role": "build: written feature plan"
+    },
+    {
+      "path": "build/OD-W03.step",
+      "bytes": 562319,
+      "sha256": "09297e22f7ac9b5a9b992b05cec8951fd709b3d315dcb3fcaad959f52a03cfe3",
+      "role": "DELIVERABLE: STEP, scan frame (overlays the raw scan)"
+    },
+    {
+      "path": "build/OD-W03_cad.stl",
+      "bytes": 10083884,
+      "sha256": "5f820c0bfdd4639e265fa4f59ec796bef54fe442b9f7fd4361044956234ff3e4",
+      "role": "preview: tessellated CAD, scan frame"
+    },
+    {
+      "path": "build/OD-W03_datum.step",
+      "bytes": 560595,
+      "sha256": "a74589f0ac36ee40b206c25c0ac709b7804e47f72e0f535fa01b25c055b44c5f",
+      "role": "DELIVERABLE: STEP, datum frame"
+    },
+    {
+      "path": "build/build_log.txt",
+      "bytes": 880,
+      "sha256": "6735a52cf313edd929a946fff5d6570a6df3575ba1a826142726f7edab660eb4",
+      "role": "build: build log (fillet OK/FAILED)"
+    },
+    {
+      "path": "build/export_check.json",
+      "bytes": 7782,
+      "sha256": "b2958447827aef0bf257b3ee058f7c6f8e8fd5dd3c0789540eb89c3abbe20bfd",
+      "role": "build: STEP re-import check, both frames"
+    },
+    {
+      "path": "build/face_stats.json",
+      "bytes": 1251,
+      "sha256": "df42f6b26f3db80fce02458adeb43c6d3dc4967ae0a93a0c8dccd562c4bf0595",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/fillets.json",
+      "bytes": 2274,
+      "sha256": "a454aa6f2d0fd481321b83e9a52380615194473754d9a7fe899ea39d2d4bd922",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/model.py",
+      "bytes": 12511,
+      "sha256": "85b649e02413add50971e32c28e4c416f529d492af9be4e0bb83777c825565b7",
+      "role": "build: editable design-intent source"
+    },
+    {
+      "path": "build/selfcheck/README.md",
+      "bytes": 296,
+      "sha256": "09c3d639902bbf0e8caddd551aeeb02ed1e3a875eb12c494b3b70137a8edaff5",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/selfcheck/selfcheck.png",
+      "bytes": 1117221,
+      "sha256": "370fc636e2bddd6b954d8a2675a90f293c2d0bb6c00a47976d669f6d124f6ea7",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/selfcheck/selfcheck.py",
+      "bytes": 1333,
+      "sha256": "2c126d32e96c7a92a925e457a28fe4c507a73f4aac0bb9782433e72e92ff00ae",
+      "role": "build: working file"
+    },
+    {
+      "path": "decisions/accept_band.md",
+      "bytes": 905,
+      "sha256": "231d4b908b6d5c0c4330bf1eca4c693068504208068c1a7557169967e45cc8ab",
+      "role": "record: owner decision evidence (ACCEPT-BAND etc.)"
+    },
+    {
+      "path": "deliver/README.md",
+      "bytes": 36905,
+      "sha256": "78b5519453bc82316d4ff96174e6e5e1f1c716a5a6c07512a568bc9186663b0c",
+      "role": "DELIVERABLE: delivery document (rendered from JSON)"
+    },
+    {
+      "path": "deliver/limitations.json",
+      "bytes": 5771,
+      "sha256": "58318e93b0e650274aa566f334d877b7069157890cbc3ef798fc2e68280d9ace",
+      "role": "deliver: limitations, assumptions, claim boundary (prose)"
+    },
+    {
+      "path": "deliver/repro.json",
+      "bytes": 9032,
+      "sha256": "73e60139d7c71c1af4945f853d368890dc00d1e692989a62dc41fc10298197c5",
+      "role": "deliver: fresh-process reproducibility check"
+    },
+    {
+      "path": "input/INPUT_HASHES.json",
+      "bytes": 1114,
+      "sha256": "5b10a70b44f3d059fd5880e9fb67b2cbd5e5915ebeeeb7cb36e5497931580cce",
+      "role": "evidence: input hashes at init"
+    },
+    {
+      "path": "input/photos/OD-W03_photo1.png",
+      "bytes": 53784,
+      "sha256": "ee684f8800c60636e4e9334dbf99d2d2209ac3bbab57a2caf3475d387c81bf82",
+      "role": "evidence: photo"
+    },
+    {
+      "path": "input/scan.stl",
+      "bytes": 20032934,
+      "sha256": "4784d93dafd0e5ba815368c89572b92c2ba1af17b054725a6503b4c1fa59e1fb",
+      "role": "evidence: raw scan (never modified)"
+    },
+    {
+      "path": "intake/INTAKE_CARD.md",
+      "bytes": 7469,
+      "sha256": "6aa1fa4c60cb5d74cce070841a0091b170bf8603079ec41ede1f57d5db2345d0",
+      "role": "intake: intake card"
+    },
+    {
+      "path": "intake/MEASUREMENTS.md",
+      "bytes": 2277,
+      "sha256": "ac3347565120fc4e0c636258be896a8c88ca144f91804e23a6b25ad0ec4849aa",
+      "role": "intake: measurement request"
+    },
+    {
+      "path": "intake/aligned_work.stl",
+      "bytes": 20032934,
+      "sha256": "72fa2a32066f56de1d6b0ec6050ad74b7d74f381b992e56724973d7d788b9a21",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/alignment.json",
+      "bytes": 8740,
+      "sha256": "218719d01b7d3a6df1391dc44b12d31a8199de5e58cf294cf4ca35f6abf2c506",
+      "role": "intake: datum alignment (scan -> datum)"
+    },
+    {
+      "path": "intake/coverage.json",
+      "bytes": 6428,
+      "sha256": "7cc66e62bfda730feaedc91fce8377ea6025cdad7fff6950f71e674dec2c7643",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/datum_spec.json",
+      "bytes": 2853,
+      "sha256": "ac396292f663af643d265ce2f63c8f721743854897a00fcd1242f7f27e66be9d",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/README.md",
+      "bytes": 303,
+      "sha256": "d9a91ddeeedd3eba097da984ed84c0ff95bcf224944259f70fa64c98c9815ce3",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/crop_render.py",
+      "bytes": 1065,
+      "sha256": "6a36127d0a1ab8fa5836f4c7f53875eaccc049d5405072b8954314b2a091f1f7",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/cupXZ.png",
+      "bytes": 94238,
+      "sha256": "c9c52ad28c183ef4a718f35ed99f0719f9eee6f1d85cb811fb2b3b6f91f1fdaf",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/earXY.png",
+      "bytes": 158872,
+      "sha256": "6777202d9b3e620aad5ce25e82f8baa3b69fcfe800b67765c53ceefe995a18a4",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/earXZ.png",
+      "bytes": 98295,
+      "sha256": "314b0224a6d29f6ec7a3eec880783f1482efc3b2469757da214f8ab90f497dbf",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/earYZ.png",
+      "bytes": 78988,
+      "sha256": "15d7cb6d3866feed821e9a2a203f6b0909bacb81117305c0cb3d4b1f4a8dc93b",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/earYZn.png",
+      "bytes": 78154,
+      "sha256": "62d87def56197a7a01cde6da222657de3e212113a9982cfa608ee9f6bba460f7",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/flXY.png",
+      "bytes": 93770,
+      "sha256": "b7de57ce7560c5fa06be4fa9e389a454e03e5c97d44828f819bbc7c027e821ed",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/pre.py",
+      "bytes": 853,
+      "sha256": "ca28c91f719e5f64abd270d98fcd12df89db642ff0d54755430b783f7eefe043",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/pre_views.png",
+      "bytes": 322710,
+      "sha256": "0af2eaa1f70a4cda39ad95de2ea56f04b0914243db28694c9ba0d150028ca8ee",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/prof.py",
+      "bytes": 1109,
+      "sha256": "f0b9027e4bc59f42b49e1243d6069e040d7460304742aa68b9908c1b9839a828",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/render.py",
+      "bytes": 1312,
+      "sha256": "e418cbc37abe76259dcc4b6a3ac165f7abcb001d419df5c066802a34db806d25",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/sec.py",
+      "bytes": 746,
+      "sha256": "a4aa17182ba7ad5df777220e145f5ee669090c2ecf5b3a9c8a7ada3c95fc5355",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/sec2.py",
+      "bytes": 822,
+      "sha256": "c99bab3fba525032c6ef0f7264035775ff4294cc64b999841b1cc8e8f4161db9",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/secV.png",
+      "bytes": 106234,
+      "sha256": "6c0ad9dc06d7690741c173b8e3fd27b73bb3029d048580f7a201598b2ade8021",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/secXY.png",
+      "bytes": 159665,
+      "sha256": "b99780f2f4095e6be1008a3ab005088ff2a9269c4afe1b396589c344788cfc13",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/explore/webXZ.png",
+      "bytes": 88247,
+      "sha256": "feb9429402f873a8cfc381ca3d63173b5bc81950faaf25e028627d191e965fc1",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/intake.json",
+      "bytes": 2581,
+      "sha256": "2628429db220e4543ce9c5103a7188e31f963680ccf4b02e398e0729735276ab",
+      "role": "intake: scan stats"
+    },
+    {
+      "path": "intake/noise_circle.json",
+      "bytes": 727,
+      "sha256": "86d655723300cef0f7bb7af0b5b6bdd4a99e1a7cfd376c0563b8786fda10014b",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/noise_cups.json",
+      "bytes": 2423,
+      "sha256": "36e878ac7ee854946ed3d5fe61a4b7b42baf4baf1a3adae8e75dc31c6cbaa1c9",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/noise_primary.json",
+      "bytes": 505,
+      "sha256": "006c4f5da7556ed69ffb679ee1c1af55ee31220e7b9f11a647be4a5abd2a24c3",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/planes.json",
+      "bytes": 2875,
+      "sha256": "efef5b3be4d2597be9b0e175c9c6714844a1054aba9668fc893697f811f0edeb",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/regime.json",
+      "bytes": 567,
+      "sha256": "2df79623601b807932041c9b1aa9239156e161322ab78c29cb9d68343b9bf3d1",
+      "role": "intake: declared band regime"
+    },
+    {
+      "path": "intake/work.stl",
+      "bytes": 20032934,
+      "sha256": "7f753ac456f5a05e3db88fce55298236f84009fc96c4a10f73ffd5625c0c9c0d",
+      "role": "intake: working file"
+    },
+    {
+      "path": "measure/PARAM_TABLE.md",
+      "bytes": 14417,
+      "sha256": "e1c18746d2c2b7228cea04485663a1f44e569e9cc2d343140f970df57832904e",
+      "role": "measure: parameter table rendered from params.json"
+    },
+    {
+      "path": "measure/figures/m01_flange.json",
+      "bytes": 1195,
+      "sha256": "601457613eb979a74cf22eb6e146aa7c9d9d80531cb5d133ce8452b5d73590cd",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m01_flange.png",
+      "bytes": 67557,
+      "sha256": "2f7011ef3abcb4aa0962003c83f5e5a7e1820bf8c78e5ec1a7b5cacd993d74e8",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m02_cup_profile.json",
+      "bytes": 138,
+      "sha256": "d3a493ae30bab216db58e98e93c44fae73a4313e91f14555261aa0d3a46816fa",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m02_cup_profile.png",
+      "bytes": 154521,
+      "sha256": "1f25d5af7c9d0961f9ff525762213a2a8d0a0248c635c8bcc3ea75f5114fbb58",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m02_profile_boss.npz",
+      "bytes": 332687,
+      "sha256": "9c7d4eb1e31fd7a668f7b6c0e8e57c5a0b761cde0f5bd195a16e1310dbaae74b",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m02_profile_cupA.npz",
+      "bytes": 1013355,
+      "sha256": "f18afb4a90c474a959183d539de4aae8d503c3be52afedda04075f5e0f40c4cb",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m02_profile_cupB.npz",
+      "bytes": 1030998,
+      "sha256": "74fd57908bb1950fefeb3fba37a5c0e92f3588eae2270d4dd32502cea813b009",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m03_profile_fits.json",
+      "bytes": 6070,
+      "sha256": "0fc5a62fab4075ed475ea3898546e29b33f699d2a14627faf3abc73af7ed758a",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m04_ears_webs.json",
+      "bytes": 7014,
+      "sha256": "9f5e76c4dcbd465c77e75015d6fd62de75692b33b64f3f213265f1fd362d9231",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m05_heightmap.png",
+      "bytes": 673678,
+      "sha256": "451d2efcbea6b8f12da2bfb37f3381a2f628cd6b29841d39ad4e7e2407a3dc8b",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m06_refine.json",
+      "bytes": 1539,
+      "sha256": "d49c01092077734fda07207b3555ae35e8e13dbeee9d49c6ed7fdc571f83eae1",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/m08_top_annulus.json",
+      "bytes": 749,
+      "sha256": "f9f5a70d099a6ea3bd23ef615e1ba56975400379d1c601bf71e7a84452efc3cd",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/params.json",
+      "bytes": 22116,
+      "sha256": "3adb924332695a96b7328d62e6c5243feae1189adaaaa49b11668db549283329",
+      "role": "measure: parameter table, source of truth"
+    },
+    {
+      "path": "measure/scripts/m01_flange.py",
+      "bytes": 3033,
+      "sha256": "9887d78153bbb08494742a3a57a76d2267332a45227869805b16d0cd8e6e0b6b",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m02_cup_profile.py",
+      "bytes": 1593,
+      "sha256": "02f1a4acae59bcce9027b1de5c68c0230e3947b917379488c8f3390e09cc0504",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m03_profile_fits.py",
+      "bytes": 4007,
+      "sha256": "048cbc3a7d97985c988e64fd1ac657177b328b06e629b47adfc3c617ee615a6d",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m04_ears_webs.py",
+      "bytes": 4729,
+      "sha256": "ab04b90e03527d2674d8c2d0edb2f6c4b9cce9d9159f762af118fe958163598f",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m05_heightmap.py",
+      "bytes": 1114,
+      "sha256": "370e7a9c0107353f6d8def0e80653625ee1c376e11ead72256774f610c43043b",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m06_refine.py",
+      "bytes": 2458,
+      "sha256": "9da42f11eaeb52a7e7c7ff05aea4ce0775bac1a8e31b84ef9bf940ce16bd3fc9",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m07_params.py",
+      "bytes": 19188,
+      "sha256": "92b4ee540d0d5460ca5e968d2e46663c1a2334463921187633e70fda48ddc28a",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m08_top_annulus.py",
+      "bytes": 1337,
+      "sha256": "8dcdbd6fea0671f30ad973d7614315211e368c0f1ef5957c62eec02c537067e3",
+      "role": "measure: working file"
+    },
+    {
+      "path": "qa/VERDICT.md",
+      "bytes": 16751,
+      "sha256": "da43d302b5206a89b850ed1485519b82512e4a92de50ee71f34a13b1c2d78637",
+      "role": "qa: verdict and reasoning"
+    },
+    {
+      "path": "qa/datum_audit.json",
+      "bytes": 2655,
+      "sha256": "103ff1199bdcb6db2ecd3099a3e811c52480b0fd5bd5eee2ba260ec13fa357d0",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/datum_spec.json",
+      "bytes": 1269,
+      "sha256": "ea9332c6e79cf440df8cb2ec53410dfee027969158e441867a7f6e85448bad5e",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dev_arrays.npz",
+      "bytes": 15698571,
+      "sha256": "5c527d267be48484f9b4ad693613e841b1036d9120638581ec6fc4d040454400",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dev_arrays_datum.npz",
+      "bytes": 15546749,
+      "sha256": "8a99544a20c40bc2dd87fd0bbd618e51dd49377cafd6e3f6b198bb7d24d53a1c",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dev_arrays_default_icp.npz",
+      "bytes": 15696902,
+      "sha256": "f42b094561012434ecb00d9ebbec6b814f25e24bdeeaa46f0dc4cbc233657b1c",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/deviation.json",
+      "bytes": 40186,
+      "sha256": "79607207e828ebc656025fdb42aa241f9aeab5baead2c916ccf5c0c4424c88d3",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/deviation_datum.json",
+      "bytes": 40017,
+      "sha256": "9dc605aa77507eac91585e641b7e24c4397ead02d3a49c151887ffea18674b46",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/deviation_run1.json",
+      "bytes": 43494,
+      "sha256": "ab6039ed775364e00a3ffbacc3a4f95692c2ba6f3d59d3ff78b76f52d1c5e1d5",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dims.json",
+      "bytes": 1715,
+      "sha256": "37495c524204d0d49da65e69a31f0280901144b61cd6d0ace0a8b55f68dceb29",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/gate.json",
+      "bytes": 115825,
+      "sha256": "2fe9569f1fa0d2d3f911e587f7278256490945939ceff4eacdc668946fa21ffd",
+      "role": "qa: gate numbers and verdict (source for the README)"
+    },
+    {
+      "path": "qa/hash_freeze.json",
+      "bytes": 787,
+      "sha256": "6057c40a181a80ee1120f542d818f66b07aed7299f441f8d15be8b9b82121ad7",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/icp_scan_masks.json",
+      "bytes": 237,
+      "sha256": "8ed8ca3572bbfcd4895b7705d3c6be66869a9511c886295abb6639b84ada4412",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/masks.json",
+      "bytes": 1770,
+      "sha256": "70d6b13bf15d0b04de6e781035165633405f22ce440ba91b0e7e8853f6906114",
+      "role": "qa: deviation masks"
+    },
+    {
+      "path": "qa/overlays/overlay_sections.json",
+      "bytes": 2547,
+      "sha256": "9392a20df5f7f4dfa1d8ed08b2dcdfafba08bec9c8c8add9dcd8abd1265b66f5",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_sections.png",
+      "bytes": 294772,
+      "sha256": "4688b8edb3d255e72eadaf064a68008abb5589d6ae54004e2ab00fdff5a64e95",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_z.json",
+      "bytes": 2274,
+      "sha256": "2281566825f4144eb38a4638a7070086bfaf3b2b3f39fe0858887d3065dd6ea2",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_z.png",
+      "bytes": 292127,
+      "sha256": "0fb1fd1ba67ef5b23012976f691ed27f888f5b1cfd6481cff465d9d78b629a6c",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/regime.json",
+      "bytes": 567,
+      "sha256": "2df79623601b807932041c9b1aa9239156e161322ab78c29cb9d68343b9bf3d1",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/registration.json",
+      "bytes": 3281,
+      "sha256": "1524c7ca7fc476ff72161ed298cfa5c9de6f3cdb9797e2e753d156b139303fc3",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/registration_default_signfree.json",
+      "bytes": 2907,
+      "sha256": "bbf6a9f0450fa1c57e32c498d838377341969b23d8c5ce061774ee07db4335cb",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/review.json",
+      "bytes": 10327,
+      "sha256": "35cacece5b5ff2942b98565835353aa366469dcc6c93f09d37503f31f43f5e03",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/analyze_s2c.py",
+      "bytes": 1889,
+      "sha256": "0fd905e5abaa280ffb31c88ec0ab0751b4efaa3770a2700ea0d162e1e4f7c215",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/analyze_s2c_2.py",
+      "bytes": 2749,
+      "sha256": "f74d5a6295a3dead6eaf5c60b7d2d98122385e024668d76d0702419942983ff4",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/attribution.json",
+      "bytes": 1013,
+      "sha256": "5353ce193581290d6526bfa9564730952fa96596e72961ac996f563e0dd36247",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/attribution.py",
+      "bytes": 1754,
+      "sha256": "c50f46f760db6938519d56faf5fd6d13a4203d397b7d7f5663b818d54699134c",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/datum_audit_pair.py",
+      "bytes": 4546,
+      "sha256": "690372bb8fd9a339a2b9baaa82b65b042e2c9c92b753656a8bb0f6c96c494428",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/log_dev_datum.txt",
+      "bytes": 2834,
+      "sha256": "2044758e507b88a35b088aaac6f316e03890da99e736945cd999aac978226fb6",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/log_dev_default_icp.txt",
+      "bytes": 2835,
+      "sha256": "1128e4380e1886e9ecc217a1fec7ceb719fcc592155eb3c64bdcc2b735ec9032",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/log_dev_signed_icp.txt",
+      "bytes": 2790,
+      "sha256": "903d2f3febbcbe8fd74d73ac9ac61da229e2ade39be5aee50f3e9b9d653df11f",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/tier2_icp_signed.py",
+      "bytes": 3187,
+      "sha256": "09e7c4ab94341a12f94e63265f082431a4775febb088af0efb2f65188900c4ff",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/step_check.json",
+      "bytes": 3067,
+      "sha256": "1d46e34c194493bdbafe8beb75b3222fdc59daea1761478ca4bce49e4395589c",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/tier1.json",
+      "bytes": 2648,
+      "sha256": "63c1fbf33ac1addfbd0eb676f598d1087f464f3572fc5d8046592634ac5ee458",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/zones.json",
+      "bytes": 5219,
+      "sha256": "113232f2100d86239292ae7efa51c6b468c2ede4510ae6ebc524c8ecc17527d9",
+      "role": "qa: working file"
+    }
+  ],
+  "excluded": []
+}

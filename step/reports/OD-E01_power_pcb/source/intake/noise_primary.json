@@ -1,0 +1,16 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/work.stl": "75027a143951617fe658c7f589b186cc1bc0f3710c2d01270e6cab9a36fe2fe1"
+ },
+ "seed": 0,
+ "created": "2026-09-28T06:08:37+00:00",
+ "scan_noise_mm": {
+  "value": 0.027482246950715945,
+  "p95_mm": 0.05001783653749999,
+  "max_mm": 0.06859643163314583,
+  "method": "rms of RANSAC+SVD plane on top face of the grey X2 film capacitor box (C4), 10.7 mm above the board (1134 faces)"
+ }
+}

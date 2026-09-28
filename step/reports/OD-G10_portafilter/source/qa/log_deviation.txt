@@ -1,0 +1,42 @@
+scan->CAD: 250812 scan points
+CAD->scan: 300000 CAD samples
+scan_to_cad              n   250812 rms 0.1391 p50 0.0550 p95 0.2839 p99 0.5555 max 1.3455
+cad_to_scan              n   300000 rms 0.5512 p50 0.0548 p95 0.9097 p99 2.9496 max 5.7948
+scan_to_cad_masked       n   250812 rms 0.1391 p50 0.0550 p95 0.2839 p99 0.5555 max 1.3455
+cad_to_scan_masked       n   280776 rms 0.4086 p50 0.0508 p95 0.3592 p99 2.5960 max 5.6806
+cad_to_scan_observable   n    19241 rms 0.3091 p50 0.0518 p95 0.3783 p99 1.5407 max 4.9016
+unobservable CAD fraction 3.80%
+  zone RIM                            scan_to_cad  n    6605 p95 0.190 max 0.300
+  zone RIM                            cad_to_scan  n    6727 p95 0.297 max 1.237
+  zone LUGS                           scan_to_cad  n    6042 p95 0.605 max 0.967
+  zone LUGS                           cad_to_scan  n    6143 p95 0.724 max 1.443
+  zone BORE                           scan_to_cad  n    9675 p95 0.243 max 1.109
+  zone BORE                           cad_to_scan  n    9896 p95 0.239 max 1.075
+  zone SPOUTS                         scan_to_cad  n   10833 p95 0.422 max 1.099
+  zone SPOUTS                         cad_to_scan  n   13587 p95 3.332 max 5.795
+  zone INSERT_FLOOR                   scan_to_cad  n   42334 p95 0.435 max 1.223
+  zone INSERT_FLOOR                   cad_to_scan  n   58897 p95 2.211 max 5.795
+  zone WIRE                           scan_to_cad  n   12228 p95 0.393 max 1.325
+  zone WIRE                           cad_to_scan  n    9077 p95 0.623 max 1.532
+  zone CENTRE_SCREW                   scan_to_cad  n    1163 p95 0.223 max 0.435
+  zone CENTRE_SCREW                   cad_to_scan  n    1105 p95 0.361 max 0.786
+  zone CUP_OUTER                      scan_to_cad  n   45972 p95 0.095 max 0.229
+  zone CUP_OUTER                      cad_to_scan  n   47281 p95 0.098 max 0.221
+  zone NECK                           scan_to_cad  n   22323 p95 0.380 max 0.851
+  zone NECK                           cad_to_scan  n   22851 p95 0.437 max 1.429
+  zone HANDLE                         scan_to_cad  n   58507 p95 0.127 max 0.397
+  zone HANDLE                         cad_to_scan  n   87418 p95 0.173 max 5.274
+  zone ZB_0_10                        scan_to_cad  n   47374 p95 0.384 max 1.346
+  zone ZB_0_10                        cad_to_scan  n   43214 p95 0.465 max 1.532
+  zone ZB_10_20                       scan_to_cad  n   46066 p95 0.177 max 0.422
+  zone ZB_10_20                       cad_to_scan  n   50285 p95 0.158 max 0.418
+  zone ZB_20_30                       scan_to_cad  n   47373 p95 0.209 max 0.851
+  zone ZB_20_30                       cad_to_scan  n   61979 p95 0.221 max 1.511
+  zone ZB_30_40                       scan_to_cad  n   54828 p95 0.395 max 1.223
+  zone ZB_30_40                       cad_to_scan  n   75220 p95 1.984 max 5.274
+  zone ZB_40_50                       scan_to_cad  n   47228 p95 0.240 max 0.982
+  zone ZB_40_50                       cad_to_scan  n   60687 p95 1.090 max 5.795
+  zone ZB_50_60                       scan_to_cad  n    7943 p95 0.493 max 1.099
+  zone ZB_50_60                       cad_to_scan  n    8615 p95 2.804 max 3.269
+label: OFFICIAL (full-res) | mask-dependent passes: none
+EXIT 0

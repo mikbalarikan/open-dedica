@@ -1,0 +1,22 @@
+{
+ "n_sharp_edges": 21236,
+ "sharp_edge_length_mm": 3836.863888509164,
+ "d_0.3_0.8": {
+  "n": 24365,
+  "frac_of_all": 0.0973,
+  "within_0.5mm_of_sharp_edge": 0.16,
+  "within_1.0mm_of_sharp_edge": 0.654,
+  "within_1.5mm_of_sharp_edge": 0.815
+ },
+ "d_0.8_99": {
+  "n": 2638,
+  "frac_of_all": 0.0105,
+  "within_0.5mm_of_sharp_edge": 0.0,
+  "within_1.0mm_of_sharp_edge": 0.25,
+  "within_1.5mm_of_sharp_edge": 0.802
+ },
+ "all_points_within_0.5mm_of_sharp_edge": 0.327,
+ "p95_excluding_within_0.5mm_of_edges (hypothetical, not a gate)": 0.5349,
+ "all_points_within_1.0mm_of_sharp_edge": 0.582,
+ "p95_excluding_within_1.0mm_of_edges (hypothetical, not a gate)": 0.4646
+}

@@ -1,0 +1,26 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "aligned_work.stl": "4b386689ef8fad9273bf9dab77654ad83704ac84aaad23ecb7f0cd8ae092011e"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:07:31+00:00",
+ "scan_noise_mm": {
+  "value": 0.014405112914008126,
+  "p95_mm": 0.030039982609052274,
+  "max_mm": 0.05652158637612548,
+  "method": "rms of IRLS circle on rod taper circle z=30 (black plastic) at z=30.0 (n=376)",
+  "circle": {
+   "cx": -0.04014235775090736,
+   "cy": -0.02740135047574377,
+   "r": 4.589461501669198,
+   "rms": 0.014405112914008126,
+   "max": 0.05652158637612548,
+   "p95": 0.030039982609052274,
+   "n": 376,
+   "iterations": 4
+  }
+ }
+}

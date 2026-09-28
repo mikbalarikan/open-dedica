@@ -1,0 +1,116 @@
+{
+ "schema": "stl-re/intake@1",
+ "tool": "intake.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/0bfad0c9-f032-5978-bb8b-45df87dc606b/scratchpad/jobs/OD-E02/input/scan.stl": "a0e8b66e15d5b404d69149ba6ea843348d588e2d0f3202a069412341d3b4a12f"
+ },
+ "seed": 0,
+ "created": "2026-09-28T06:17:44+00:00",
+ "libs": {
+  "trimesh": "5.1.0",
+  "numpy": "2.4.6"
+ },
+ "input_bytes": 29306934,
+ "raw_unwelded": {
+  "faces": 586137,
+  "verts": 1758411
+ },
+ "raw_welded": {
+  "faces": 586137,
+  "verts": 294367,
+  "bounds": [
+   [
+    -52.487586975097656,
+    -48.192989349365234,
+    -189.70989990234375
+   ],
+   [
+    18.923076629638672,
+    24.086668014526367,
+    -145.65933227539062
+   ]
+  ],
+  "extents": [
+   71.41066360473633,
+   72.2796573638916,
+   44.050567626953125
+  ],
+  "watertight": false,
+  "winding_consistent": true,
+  "euler": -47,
+  "area_mm2": 13869.894976297977,
+  "signed_volume_mm3": 37777.93169388458,
+  "open_boundary_edges": 2691,
+  "open_boundary_loops": 23,
+  "open_boundary_loops_note": "vertex-connected boundary components (touching loops merge)"
+ },
+ "welded_vertex_reduction": 1464044,
+ "bodies": 1,
+ "body_faces_top5": [
+  586137
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": []
+ },
+ "normals_flipped": false,
+ "orientation": {
+  "method": "ray vote on the working copy (open mesh: volume sign is origin-dependent)",
+  "signed_volume_mm3_unreliable": 37777.93169388458,
+  "samples": 500,
+  "seed": 0,
+  "hit_along_normal": 0.166,
+  "hit_against_normal": 0.984,
+  "verdict": "outward"
+ },
+ "working_full": {
+  "faces": 586137,
+  "verts": 294367,
+  "bounds": [
+   [
+    -52.487586975097656,
+    -48.192989349365234,
+    -189.70989990234375
+   ],
+   [
+    18.923076629638672,
+    24.086668014526367,
+    -145.65933227539062
+   ]
+  ],
+  "extents": [
+   71.41066360473633,
+   72.2796573638916,
+   44.050567626953125
+  ],
+  "watertight": false,
+  "winding_consistent": true,
+  "euler": -47,
+  "area_mm2": 13869.894976297977,
+  "signed_volume_mm3": 37777.93169388458,
+  "open_boundary_edges": 2691,
+  "open_boundary_loops": 23,
+  "open_boundary_loops_note": "vertex-connected boundary components (touching loops merge)"
+ },
+ "decimation": {
+  "applied": true,
+  "method": "trimesh.simplify_quadric_decimation (fast_simplification)",
+  "from_faces": 586137,
+  "to_faces": 300000,
+  "work_vs_full_dev_mm": {
+   "n": 20000,
+   "p95": 0.004559212979243627,
+   "max": 0.027096419783781748,
+   "seed": 0,
+   "direction": "full-surface samples -> work mesh"
+  }
+ },
+ "work_mesh": {
+  "path": "intake/work.stl",
+  "sha256": "b798d9e1fc0b85dfde8a0eed1b20bc4948d84944bad0f00ee36c683cf6d99cdf",
+  "faces": 300000
+ },
+ "note": "input file untouched; weld, fragment/table removal and normal flip applied to the working copy only. Official gates run on the full-resolution original."
+}

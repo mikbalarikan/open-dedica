@@ -1,0 +1,26 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "intake/aligned_work.stl": "ab0f132d1ca04bc6efcb1fc71cdb81cb6a6a72ae92c23e75a8d52e99adc0b89f"
+ },
+ "seed": 0,
+ "created": "2026-09-28T06:12:23+00:00",
+ "scan_noise_mm": {
+  "value": 0.028122937921046327,
+  "p95_mm": 0.05271586940861619,
+  "max_mm": 0.07423739639338889,
+  "method": "rms of IRLS circle on electrolytic capacitor C20 can wall (\u00d86.5 class), datum frame at z=9.0 (n=163)",
+  "circle": {
+   "cx": 73.75570090295261,
+   "cy": -16.278664735630485,
+   "r": 3.238670428469624,
+   "rms": 0.028122937921046327,
+   "max": 0.07423739639338889,
+   "p95": 0.05271586940861619,
+   "n": 163,
+   "iterations": 6
+  }
+ }
+}

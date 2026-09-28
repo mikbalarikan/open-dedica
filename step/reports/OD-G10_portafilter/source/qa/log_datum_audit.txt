@@ -1,0 +1,1 @@
+datum audit: rot diff 0.0025 deg (axis 0.0019) | origin offset 0.0626 mm | points mean 0.0612 p95 0.0630 max 0.0635 mm | within RE_SPEC reference (report-only)

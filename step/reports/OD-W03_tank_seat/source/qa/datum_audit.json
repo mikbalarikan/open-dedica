@@ -1,0 +1,100 @@
+{
+ "schema": "stl-re/datum_audit@1",
+ "tool": "datum_audit.py (via qa/scripts/datum_audit_pair.py)",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "4784d93dafd0e5ba815368c89572b92c2ba1af17b054725a6503b4c1fa59e1fb",
+  "intake/alignment.json": "218719d01b7d3a6df1391dc44b12d31a8199de5e58cf294cf4ca35f6abf2c506",
+  "qa/datum_spec.json": "ea9332c6e79cf440df8cb2ec53410dfee027969158e441867a7f6e85448bad5e"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:54:26+00:00",
+ "independence": "builder matrix used only to select named regions; all fits are QA code (datum_audit.py functions) on raw scan",
+ "workaround": "qa/scripts/datum_audit_pair.py (datum_audit.py has no circle_pair/midpoint origin or feature_line clock)",
+ "primary": {
+  "type": "plane",
+  "method": "normal vote + height histogram",
+  "faces": 13241,
+  "fit_rms_mm": 0.051612987946501744,
+  "fit_max_mm": 0.2683703379260404
+ },
+ "position": {
+  "type": "circle_pair",
+  "combine": "midpoint",
+  "single_wall": "outer",
+  "region_a": {
+   "faces": 10221,
+   "R_mm": 11.900457815477345,
+   "fit_rms_mm": 0.07427419121551117,
+   "centre_builder_frame": [
+    -19.491648913372465,
+    0.0028978000774486645,
+    -0.0034887332883499766
+   ]
+  },
+  "region_b": {
+   "faces": 9808,
+   "R_mm": 11.86616369834079,
+   "fit_rms_mm": 0.09162385101703949,
+   "centre_builder_frame": [
+    19.490984150141124,
+    -0.0014196103302026586,
+    -0.0025704997349009773
+   ]
+  },
+  "separation_mm": 38.9826333134093
+ },
+ "clock": {
+  "type": "feature_line",
+  "from": "cup A",
+  "to": "cup B"
+ },
+ "angle_deg": 0.019679676176258834,
+ "axis_angle_deg": 0.018628468761196542,
+ "clock_diff_deg": -0.006345630716383504,
+ "clock_audited": true,
+ "origin_offset_mm": 0.0031361305741738296,
+ "origin_offset_vec_mm": [
+  -0.0003323816156637349,
+  0.0007390948736372138,
+  -0.003029616511639688
+ ],
+ "point_disagreement_mean_mm": 0.005658481344837589,
+ "point_disagreement_p95_mm": 0.010294942842475013,
+ "point_disagreement_max_mm": 0.012998018384173103,
+ "reference_band": "\u22640.3\u00b0 / \u22640.15 mm (RE_SPEC.md:241)",
+ "reference": {
+  "angle_deg": 0.3,
+  "origin_offset_mm": 0.15,
+  "source": "baseline/oomwoo-re-pipeline/RE_SPEC.md:241"
+ },
+ "within_reference": true,
+ "blocking": false,
+ "note": "REPORT-ONLY (QUESTIONS.md Q2).",
+ "T_qa": [
+  [
+   -0.6901371313217451,
+   -0.6809774006976915,
+   -0.24490920707480143,
+   -61.17148665520544
+  ],
+  [
+   0.30172173567001104,
+   -0.5783649077145234,
+   0.7579300942360362,
+   136.52428409255214
+  ],
+  [
+   -0.657780156431667,
+   0.4491812699383027,
+   0.6046167815578272,
+   142.25324727951707
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ]
+}

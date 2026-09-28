@@ -1,0 +1,84 @@
+{
+ "mesh": "work.stl",
+ "raw_scan": "../input/scan.stl",
+ "intake_json": "intake.json",
+ "out_dir": ".",
+ "seed": 0,
+ "scale_factor": 1.0,
+ "chk_scale": {
+  "ran": true,
+  "result": "finding",
+  "note": "FLAG: no calipers, no scale reference in photos; units assumed mm, scale unverified (DECISIONS.md MEASUREMENTS)"
+ },
+ "noise": {
+  "from": "noise_primary.json"
+ },
+ "primary": {
+  "type": "plane",
+  "approx_normal": [
+   -0.392,
+   -0.489,
+   -0.779
+  ],
+  "material_side": "+z",
+  "desc": "cap disc outer face (knob side, perpendicular to the splined spindle)",
+  "why": "the cap disc outer face is the flat the control knob side seats against; it is perpendicular to the splined spindle (rotation axis of the valve)"
+ },
+ "origin": {
+  "xy": [
+   {
+    "method": "kasa",
+    "r_hint": 5.3,
+    "r_tol": 0.6,
+    "rms_max": 0.25,
+    "z_range": [
+     36.8,
+     41.8
+    ],
+    "stations": 12,
+    "allow_open_arcs": true,
+    "desc": "upper valve column OD (r~5.3)",
+    "why": "valve spool column, coaxial with the spindle"
+   }
+  ],
+  "definition": "upper valve column axis \u2229 cap disc outer face"
+ },
+ "clock": {
+  "rule": "plane_normal",
+  "approx_normal_raw": [
+   -0.8998,
+   0.0276,
+   0.4354
+  ],
+  "offset_range": [
+   15.3,
+   16.3
+  ],
+  "desc": "microswitch outer face normal -> +X",
+  "why": "largest flat vertical face; the microswitch pocket walls, the two side lugs and the barb nipple are square to it (vertical-face normal histogram peaks at 90 deg steps)"
+ },
+ "landmarks": [
+  {
+   "name": "spindle tip (zmin)",
+   "stat": "zmin",
+   "r_range": [
+    0,
+    5
+   ],
+   "expected": -14.8,
+   "tol": 0.5,
+   "tol_source": "provisional-frame exploration (intake/figures/prov_views.png), sign check only"
+  },
+  {
+   "name": "top port face (zmax)",
+   "stat": "zmax",
+   "r_range": [
+    0,
+    10
+   ],
+   "expected": 48.7,
+   "tol": 0.5,
+   "tol_source": "provisional-frame exploration, sign check only"
+  }
+ ]
+}

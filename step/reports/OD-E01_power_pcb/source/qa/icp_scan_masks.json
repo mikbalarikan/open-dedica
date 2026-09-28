@@ -1,0 +1,2 @@
+{"note": "No region is removed from the ICP reference. Rule 6 (mask-policy.md) allows it only for unmodelled bodies (bristles, a COTS screw). Every scanned body on this PCB is declared modelled (MODELING_PLAN.md §4); the unmodelled items (edge pads, silkscreen, traces, solder joints) are < 0.1 mm relief, and board warp is not a separate body. Chosen before any deviation number was seen.",
+ "masks": []}

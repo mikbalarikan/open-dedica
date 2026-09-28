@@ -1,0 +1,13 @@
+{
+ "comment": "Every row of intake/MEASUREMENTS.md (the request). input/MEASUREMENTS.md does not exist: owner chose scan-only (DECISIONS.md MEASUREMENTS 2026-09-28). All 8 rows are ABSENT, not passed. F01 is re-measured on the STEP as a CAD-only reported value (ungated) so a later caliper reading can be compared directly.",
+ "total_requested": 8,
+ "absent": ["ENV-X rim centre to handle end", "ENV-Y cup OD at z~-10", "ENV-Z rim face to spout tip",
+            "F01 rim bore ID just above the ledge", "F02 ledge depth from the rim",
+            "F03 lug under-face height at both ends of a lug", "F04 spout centre distance",
+            "F05 grip OD at collar end and at cap"],
+ "dims": [
+  {"id": "F01", "name": "rim bore ID just above the ledge (CAD only, ungated)", "caliper": null, "gated": false,
+   "source": "absent (scan-only run)",
+   "method": {"kind": "bore", "plane": {"origin": [0, 0, -11.0], "normal": [0, 0, 1]}, "stat": "fit"}}
+ ]
+}

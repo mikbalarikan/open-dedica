@@ -1,0 +1,164 @@
+{
+ "schema": "stl-re/step_check@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-E02_control-button-board_datum.step": "5c8b50930e2bd57c3758111fde3e257126dffd4ad02d28a67cfb2343e3aacea7",
+  "build/OD-E02_control-button-board.step": "49517db6cf5c5e65e11a81dbc006dad4529a49640ad24fd1833ea68ab30ea994"
+ },
+ "seed": null,
+ "created": "2026-09-28T08:43:18+00:00",
+ "steps": {
+  "build/OD-E02_control-button-board_datum.step": {
+   "validity": {
+    "counts": {
+     "solid": 1,
+     "shell": 1,
+     "face": 374,
+     "edge": 2004,
+     "vertex": 4008
+    },
+    "brepcheck_valid": true,
+    "shells_closed": [
+     true
+    ],
+    "naked_edges": 0,
+    "volume_mm3": 36865.17164462161,
+    "area_mm2": 15513.33236902113,
+    "bbox": [
+     -38.6285,
+     -37.47360000000081,
+     -29.214736066863086,
+     38.160000100000005,
+     16.1729001,
+     18.951076867843867
+    ],
+    "single_valid_closed_solid": true
+   },
+   "tessellation": {
+    "tolerance": 0.005,
+    "angular_tolerance": 0.05,
+    "tris": 520604,
+    "watertight": true,
+    "winding": true,
+    "euler": -4,
+    "components": 1,
+    "degenerate_faces": 0,
+    "volume_mm3": 36863.7961844645,
+    "volume_vs_brep_mm3": -1.3754601571054081
+   },
+   "surface_census": {
+    "faces": 374,
+    "by_type": {
+     "plane": {
+      "count": 201,
+      "area_mm2": 10719.335222703048
+     },
+     "cylinder": {
+      "count": 110,
+      "area_mm2": 3669.076849827947
+     },
+     "torus": {
+      "count": 36,
+      "area_mm2": 272.05476337471794
+     },
+     "bspline": {
+      "count": 16,
+      "area_mm2": 200.45921335506972
+     },
+     "revolution": {
+      "count": 6,
+      "area_mm2": 15.43169359354457
+     },
+     "extrusion": {
+      "count": 2,
+      "area_mm2": 494.8340084630982
+     },
+     "cone": {
+      "count": 3,
+      "area_mm2": 142.14061770370733
+     }
+    },
+    "analytic_area_share": 0.9541861865326258,
+    "gated": false,
+    "note": "reported, not gated (QUESTIONS.md Q3)"
+   }
+  },
+  "build/OD-E02_control-button-board.step": {
+   "validity": {
+    "counts": {
+     "solid": 1,
+     "shell": 1,
+     "face": 374,
+     "edge": 2004,
+     "vertex": 4008
+    },
+    "brepcheck_valid": true,
+    "shells_closed": [
+     true
+    ],
+    "naked_edges": 0,
+    "volume_mm3": 36865.17164462163,
+    "area_mm2": 15513.33236902113,
+    "bbox": [
+     -52.7070211652419,
+     -48.19723429852278,
+     -189.61588926432188,
+     18.874440633525836,
+     23.9569139792031,
+     -145.36272518916792
+    ],
+    "single_valid_closed_solid": true
+   },
+   "tessellation": {
+    "tolerance": 0.005,
+    "angular_tolerance": 0.05,
+    "tris": 523864,
+    "watertight": true,
+    "winding": true,
+    "euler": -4,
+    "components": 1,
+    "degenerate_faces": 0,
+    "volume_mm3": 36863.81059568011,
+    "volume_vs_brep_mm3": -1.3610489415223128
+   },
+   "surface_census": {
+    "faces": 374,
+    "by_type": {
+     "plane": {
+      "count": 201,
+      "area_mm2": 10719.335222703052
+     },
+     "cylinder": {
+      "count": 110,
+      "area_mm2": 3669.076849827948
+     },
+     "torus": {
+      "count": 36,
+      "area_mm2": 272.05476337471794
+     },
+     "bspline": {
+      "count": 16,
+      "area_mm2": 200.45921335506972
+     },
+     "revolution": {
+      "count": 6,
+      "area_mm2": 15.43169359354457
+     },
+     "extrusion": {
+      "count": 2,
+      "area_mm2": 494.83400846309826
+     },
+     "cone": {
+      "count": 3,
+      "area_mm2": 142.14061770370733
+     }
+    },
+    "analytic_area_share": 0.9541861865326258,
+    "gated": false,
+    "note": "reported, not gated (QUESTIONS.md Q3)"
+   }
+  }
+ },
+ "all_single_valid_closed_solid": true
+}

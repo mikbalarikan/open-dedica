@@ -1,0 +1,5 @@
+{"masks": [
+ {"name": "D1 torn flash (ICP reference)", "select": {"x": [6.5, 13.0], "z": [-15.0, -1.0]},
+  "why": "torn rubber flash at the knob/sleeve junction: specimen damage, not modelled; removed from the ICP reference only so an unmodelled flap cannot pull the registration (mask-policy rule 6)",
+  "evidence": "intake/INTAKE_CARD.md §2 Artefact zones D1 (pre-declared at intake, before any gate number); photo_1, photo_2 (torn flap visible)"}
+]}

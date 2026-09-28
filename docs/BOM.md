@@ -69,7 +69,8 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-G06` | OD-G00 | OEM | Diffuser (shower screen) | 52 | 6013211191 | 1 | SCAN | stainless | 4delonghi | 3 | #3 | ☐ |
 | `OD-G07` | OD-G00 | OEM | Connectors gasket | 54 | 5313237781 | 1 | CALIPER |  | FixPart | 3 | #3 | ☐ |
 | `OD-G08` | OD-G00 | MFG | Group head face plate with portafilter lugs (optional upgrade) |  |  | 1 | DESIGN | aluminium / stainless (laser-cut or machined) | local shop | — |  | ✎ |
-| `OD-G10` | OD-G00 | OEM | Portafilter 51 mm (filter holder assembly) | 06 | AS00002706 | 1 | SCAN |  | OEM / AliExpress `51mm bottomless portafilter Dedica` | 20–30 | #4 | ☐ |
+| `OD-G09` | OD-G00 | REF | OEM group head bayonet cup (molded into the case — reference geometry for OD-G01) |  |  | 0 | SCAN | molded plastic | donor | — | #38 | 🧊 |
+| `OD-G10` | OD-G00 | OEM | Portafilter 51 mm (filter holder assembly) | 06 | AS00002706 | 1 | SCAN |  | OEM / AliExpress `51mm bottomless portafilter Dedica` | 20–30 | #39 | 🧊 |
 | `OD-G11` | OD-G10 | OEM | Filter basket 1-cup | 03 | AS00003137 | 1 | CALIPER | stainless | OEM / aftermarket | 5 | #4 | ☐ |
 | `OD-G12` | OD-G10 | OEM | Filter basket 2-cup | 04 | AS00003138 | 1 | CALIPER | stainless | OEM / aftermarket | 5 | #4 | ☐ |
 | `OD-G13` | OD-G10 | OEM | ESE pods filter (optional) | 05 | 5513281011 | 1 | CALIPER |  | OEM | 5 |  | ☐ |
@@ -81,7 +82,7 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-W00` | OD-000 | ASM | **Water path** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
 | `OD-W01` | OD-W00 | OEM | Water tank assembly | 18 | 5513200359 | 1 | SCAN |  | FixPart / 4delonghi | 8–15 | #5 | ☐ |
 | `OD-W02` | OD-W01 | OEM | Water tank | 32 | 7313285109 | 1 | SCAN |  | 4delonghi / FixPart | (in OD-W01) | #5 | ☐ |
-| `OD-W03` | OD-W01 | OEM | Tray gasket | 30 | 5313236391 | 1 | CALIPER |  | 4delonghi | 3 | #5 | ☐ |
+| `OD-W03` | OD-W01 | OEM | Tray gasket (water tank seat — white seat with 2 barbed ports + black double gasket) | 30 | 5313236391 | 1 | SCAN |  | 4delonghi | 3 | #37 | 🧊 |
 | `OD-W11` | OD-W00 | OEM | Tube L270 (tank → flowmeter) | 31 | 5313219841 | 1 | ENVELOPE | silicone | 4delonghi | 4 |  | ☐ |
 | `OD-W12` | OD-W00 | OEM | Tube L150 | 33 | 5313236101 | 1 | ENVELOPE | silicone | FixPart | 4 |  | ☐ |
 | `OD-W13` | OD-W00 | OEM | Tube with 2 bushes L230 | 71 | 7313285899 | 1 | ENVELOPE |  | 4delonghi | 5 |  | ☐ |
@@ -96,8 +97,8 @@ DESIGN native design · VENDOR vendor STEP
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `OD-E00` | OD-000 | ASM | **Electronics (choose Path 1 OEM or Path 2 open controller)** |  |  | 1 | DESIGN |  |  |  | #8 | ☐ |
-| `OD-E01` | OD-E00 | OEM | Power PCB 230 V — Path 1 | 59 | AS00002829 | 1 | SCAN |  | AliExpress 4001101696035 / eBay | 35–45 | #8 | ☐ |
-| `OD-E02` | OD-E00 | OEM | Control board assembly (front buttons) — Path 1 | 15 | 7313285189 | 1 | SCAN |  | FixPart / eBay | 15–25 | #8 | ☐ |
+| `OD-E01` | OD-E00 | OEM | Power PCB 230 V — Path 1 | 59 | AS00002829 | 1 | SCAN |  | AliExpress 4001101696035 / eBay | 35–45 | #33 | 🧊 |
+| `OD-E02` | OD-E00 | OEM | Control board assembly (front buttons) — Path 1 | 15 | 7313285189 | 1 | SCAN |  | FixPart / eBay | 15–25 | #34 | 🧊 |
 | `OD-E03` | OD-E00 | OEM | Microswitch | 16 | 5113210421 | 1 | CALIPER |  | FixPart | 4 | #8 | ☐ |
 | `OD-E04` | OD-E00 | OEM | On/off push button | 28 | 5913216331 | 1 | CALIPER |  | FixPart | 3 |  | ☐ |
 | `OD-E05` | OD-E00 | OEM | Unipolar switch 16 A 250 V | 29 | 5128109300 | 1 | CALIPER |  | FixPart | 4 |  | ☐ |
@@ -160,8 +161,8 @@ DESIGN native design · VENDOR vendor STEP
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `OD-S00` | OD-000 | ASM | **Steam system (phase 2 — not in v1)** |  |  | 1 | DESIGN |  |  |  |  | ⏸ |
-| `OD-S01` | OD-S00 | OEM | Steam valve assembly | 17 | AS00002707 | 1 | SCAN |  | FixPart | 15 |  | ⏸ |
-| `OD-S02` | OD-S00 | OEM | Steam hose assembly | 10 | AS00002705 | 1 | ENVELOPE |  | FixPart | 12 |  | ⏸ |
+| `OD-S01` | OD-S00 | OEM | Steam valve assembly | 17 | AS00002707 | 1 | SCAN |  | FixPart | 15 | #35 | 🧊 |
+| `OD-S02` | OD-S00 | OEM | Steam hose assembly (steam wand — scanned together with nozzle OD-S04) | 10 | AS00002705 | 1 | SCAN |  | FixPart | 12 | #36 | 🧊 |
 | `OD-S03` | OD-S00 | OEM | Steam knob | 13 | 7313285479 | 1 | SCAN |  | FixPart | 6 | #31 | 🧊 |
 | `OD-S04` | OD-S00 | OEM | Nozzle | 77 | AS00002710 | 1 | CALIPER |  | FixPart | 5 |  | ⏸ |
 | `OD-S05` | OD-S00 | OEM | Dispenser cover | 11 | 5313237931 | 1 | CALIPER |  | FixPart | 4 |  | ⏸ |

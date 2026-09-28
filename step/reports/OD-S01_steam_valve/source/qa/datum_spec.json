@@ -1,0 +1,49 @@
+{
+ "comment": "it2 QA: reused verbatim from _it1_SUPERSEDED/qa/datum_spec.json (CHK-LIKE4LIKE). Intake it2 re-ran the same datum spec and produced the identical matrix_4x4 (max abs diff 0.0 vs it1), and INTAKE_CARD.md \u00a76 is unchanged, so the QA spec written from it is unchanged. Written by QA from intake/INTAKE_CARD.md \u00a76 and intake/alignment.json (primary/secondary/clock mesh_region_desc), not from builder code. Regions select faces only; fits are on the raw scan.",
+ "primary": {
+  "type": "plane",
+  "method": "region",
+  "cone_deg": 10.0,
+  "region": {
+   "z": [
+    -0.3,
+    0.3
+   ],
+   "r": [
+    4.5,
+    13.8
+   ]
+  },
+  "comment": "cap disc outer face (knob side), z = 0, +Z into the body; spindle (r < ~3.5) and the rim edge excluded"
+ },
+ "position": {
+  "type": "circle",
+  "wall": "outer",
+  "single_wall": "outer",
+  "region": {
+   "z": [
+    37.7,
+    41.8
+   ],
+   "r": [
+    4.9,
+    5.9
+   ]
+  },
+  "comment": "upper valve column OD r ~5.39 over z 37.7..41.8 (INTAKE_CARD \u00a76 secondary); single outer wall, no counter-wall in this z range"
+ },
+ "clock": {
+  "type": "plane_normal",
+  "region": {
+   "x": [
+    17.5,
+    18.5
+   ],
+   "nx": [
+    0.9,
+    null
+   ]
+  },
+  "comment": "microswitch outer face normal -> +X (INTAKE_CARD \u00a76 clock)"
+ }
+}

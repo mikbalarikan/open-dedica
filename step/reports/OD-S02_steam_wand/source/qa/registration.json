@@ -1,0 +1,121 @@
+{
+ "schema": "stl-re/registration@1",
+ "tool": "tier2_icp.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "input/scan.stl": "75cedf513bc86fcf51dfc22194a93a93f12857925e45854a095752be6f57c5e9",
+  "intake/alignment.json": "17596743e9e2f8950aa01f5cf943f26bbeeebaea6fb411191c29e6622dffc292",
+  "build/OD-S02_steam-rod_datum.step": "cac05e75aac6dfbf9603e7594363092986de53a1e50134c62e6437666f476897",
+  "qa/icp_scan_masks.json": "94fb333c2897ade2ba84f88269e8d9bb6afe0a17194affd2120df630e3aac165"
+ },
+ "seed": 11,
+ "created": "2026-09-28T09:00:10+00:00",
+ "method": "point-to-point ICP, CAD samples -> scan samples, masked correspondences (B02 q20_tier2.py)",
+ "scan_kind": "full",
+ "iterations": 44,
+ "max_iterations": 60,
+ "converged": true,
+ "delta_deg": 0.05309797435423524,
+ "delta_mm": 0.05856163536317603,
+ "max_point_move_mm": 0.08823636204964903,
+ "final_kept_fraction": 0.7831933333333333,
+ "T_refine": [
+  [
+   0.9999995895618835,
+   0.000801846061895854,
+   0.0004218044084355807,
+   -0.052507259399186934
+  ],
+  [
+   -0.0008017638645941833,
+   0.9999996595740811,
+   -0.00019500366876147598,
+   0.012931442289257366
+  ],
+  [
+   -0.00042196062776774624,
+   0.00019466540119459903,
+   0.9999998920273028,
+   0.022477336299385912
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "T_refine_meaning": "maps datum-frame CAD onto the aligned scan; deviation_gate applies its inverse to the scan. QA-only: never written back to alignment.json (CHK-CIRCULAR).",
+ "trace_tail": [
+  {
+   "it": 38,
+   "step": 1.893064880505623e-05,
+   "rot_deg": 1.1952831047522336e-05,
+   "trans_mm": 6.9778177575338945e-06,
+   "kept_fraction": 0.7831933333333333,
+   "mean_d_kept": 0.10499535232975198
+  },
+  {
+   "it": 39,
+   "step": 1.2642611182333552e-05,
+   "rot_deg": 7.73124918760008e-06,
+   "trans_mm": 4.911361994733473e-06,
+   "kept_fraction": 0.7831933333333333,
+   "mean_d_kept": 0.10499606466639258
+  },
+  {
+   "it": 40,
+   "step": 1.2710487539665435e-05,
+   "rot_deg": 8.954453545231656e-06,
+   "trans_mm": 3.756033994433779e-06,
+   "kept_fraction": 0.7831933333333333,
+   "mean_d_kept": 0.10499660488331919
+  },
+  {
+   "it": 41,
+   "step": 5.682481434893956e-06,
+   "rot_deg": 3.1945284701301985e-06,
+   "trans_mm": 2.487952964763757e-06,
+   "kept_fraction": 0.7831933333333333,
+   "mean_d_kept": 0.10499694846758102
+  },
+  {
+   "it": 42,
+   "step": 4.913189779305711e-06,
+   "rot_deg": 2.9575586669421963e-06,
+   "trans_mm": 1.9556311123635154e-06,
+   "kept_fraction": 0.7831933333333333,
+   "mean_d_kept": 0.10499710274044985
+  },
+  {
+   "it": 43,
+   "step": 4.250283984403233e-07,
+   "rot_deg": 0.0,
+   "trans_mm": 4.250283984403233e-07,
+   "kept_fraction": 0.7831933333333333,
+   "mean_d_kept": 0.10499723200692702
+  }
+ ],
+ "reference_masks_removed": [
+  {
+   "name": "D1 torn flash (ICP reference)",
+   "why": "torn rubber flash at the knob/sleeve junction: specimen damage, not modelled; removed from the ICP reference only so an unmodelled flap cannot pull the registration (mask-policy rule 6)",
+   "faces": 33296,
+   "fraction": 0.06670352829931646
+  }
+ ],
+ "params": {
+  "ns": 3000000,
+  "scan_seed": 11,
+  "nc": 300000,
+  "cad_seed": 13,
+  "normal_deg": 70.0,
+  "boundary_mm": 0.8,
+  "max_corr_mm": 3.0,
+  "max_iter": 60,
+  "tol": 1e-06
+ },
+ "notes": [
+  "welded: 251631 verts / 499164 faces"
+ ]
+}

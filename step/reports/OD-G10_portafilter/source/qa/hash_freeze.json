@@ -1,0 +1,20 @@
+{
+ "schema": "stl-re/hash_freeze@1",
+ "tool": "step_check.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-G11_portafilter_datum.step": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+  "build/OD-G11_portafilter.step": "506aacec7fe7d7974d0c591027142978f40da31354a21346802de6e4c7a92200"
+ },
+ "seed": null,
+ "created": "2026-09-28T10:21:38+00:00",
+ "before": {
+  "build/OD-G11_portafilter_datum.step": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+  "build/OD-G11_portafilter.step": "506aacec7fe7d7974d0c591027142978f40da31354a21346802de6e4c7a92200"
+ },
+ "after": {
+  "build/OD-G11_portafilter_datum.step": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+  "build/OD-G11_portafilter.step": "506aacec7fe7d7974d0c591027142978f40da31354a21346802de6e4c7a92200"
+ },
+ "unchanged": true
+}

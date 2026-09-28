@@ -1,0 +1,26 @@
+{
+ "schema": "stl-re/datum_fit.noise@1",
+ "tool": "datum_fit.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "aligned_work.stl": "bbdb94f001428ea4c3d7083e1e4f44596f494036a61d098a6d0dd8c47ae6f459"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:06:18+00:00",
+ "scan_noise_mm": {
+  "value": 0.07080753350801938,
+  "p95_mm": 0.1537742424760516,
+  "max_mm": 0.19506287708827807,
+  "method": "rms of IRLS circle on barb A shank circle (z=16, first-pass aligned frame) at z=16.0 (n=242)",
+  "circle": {
+   "cx": 0.08410509365529646,
+   "cy": -0.044661517603652,
+   "r": 2.928430664452273,
+   "rms": 0.07080753350801938,
+   "max": 0.19506287708827807,
+   "p95": 0.1537742424760516,
+   "n": 242,
+   "iterations": 13
+  }
+ }
+}

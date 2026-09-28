@@ -1,0 +1,10 @@
+{
+ "source": "written by QA from intake/INTAKE_CARD.md §6 and intake/alignment.json mesh_region_desc (primary: back cover floor; secondary: middle button collar r 8.19, 9 stations z -18.7..-16.4; clock: +X end face of the housing). Not from builder code. Regions select faces only; all fits are QA code on the raw full-res scan.",
+ "primary": {"type": "plane", "method": "region", "cone_deg": 10.0,
+             "region": {"z": [-0.3, 0.3], "nz": [0.9, null]},
+             "why": "back cover floor inside the rim wall, z = 0, material on -z (INTAKE_CARD §6)"},
+ "position": {"type": "circle", "region": {"r": [7.8, 8.7], "z": [-18.8, -16.3]}, "single_wall": "outer",
+              "why": "middle button collar outer wall, r 8.19, stations z -18.7..-16.4; region deliberately selects the single outer wall of the boss (cap r 6.4 and recess r 7.3-7.6 excluded)"},
+ "clock": {"type": "plane_normal", "region": {"x": [37.5, 38.7], "nx": [0.95, null]},
+           "why": "+X end face of the housing rim/steps -> +X (alignment.json clock.rule)"}
+}

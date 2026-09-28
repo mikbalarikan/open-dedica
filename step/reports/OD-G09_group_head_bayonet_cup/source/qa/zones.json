@@ -1,0 +1,22 @@
+{"comment": "Datum frame. interface_max is null in this regime (INTAKE_CARD §4), so functional interfaces are reported per zone, not separately banded. Lug sectors from INTAKE_CARD §5 F05 (theta 336-30, 96-149.5, 216-270); stops F07 (theta_s .. theta_s+6.5).",
+ "zones": [
+  {"name": "I1 lug inner faces", "kind": "functional_interface", "note": "r ~31.7, 3 x 54 deg (INTAKE_CARD §4 I1)",
+   "select": {"r": [31.3, 32.2], "z": [-10.8, 0.1], "any_of": [{"theta_deg": [336, 30]}, {"theta_deg": [96, 149.5]}, {"theta_deg": [216, 270]}]}},
+  {"name": "I3 lug stops", "kind": "functional_interface", "note": "theta_s .. theta_s+6.5, down to z -10.5 (I3/F07)",
+   "select": {"r": [31.3, 37.6], "z": [-11.0, 0.1], "any_of": [{"theta_deg": [336, 342.5]}, {"theta_deg": [96, 102.5]}, {"theta_deg": [216, 222.5]}]}},
+  {"name": "I4 bore", "kind": "functional_interface", "note": "r ~37.0 drafted, gap sectors (I4/F04)",
+   "select": {"r": [36.5, 37.7], "z": [-13.0, 2.4], "abs_nz": [null, 0.3], "any_of": [{"theta_deg": [30, 96]}, {"theta_deg": [149.5, 216]}, {"theta_deg": [270, 336]}]}},
+  {"name": "I5 shelf and pockets", "kind": "functional_interface", "note": "z -13.4 .. -16.6 (I5/F09/F10)",
+   "select": {"r": [31.2, 37.3], "z": [-17.2, -13.0], "abs_nz": [0.7, null]}},
+  {"name": "I6 plate top", "kind": "functional_interface", "note": "z ~ -19.94, scanned part r >= 24 (I6/F12)",
+   "select": {"r": [24.0, 30.6], "z": [-20.3, -19.5], "abs_nz": [0.8, null]}},
+  {"name": "I2 lug undersides (hidden)", "kind": "interior", "note": "C4: hidden, not gateable (I2/F08)", "directions": ["cad_to_scan"],
+   "select": {"r": [31.6, 37.2], "z": [-15.0, -1.0], "nz": [null, -0.5]}},
+  {"name": "rim z above 0.1", "kind": "region", "select": {"z": [0.1, null]}},
+  {"name": "band z -7 to 0.1", "kind": "region", "select": {"z": [-7.0, 0.1]}},
+  {"name": "band z -14 to -7", "kind": "region", "select": {"z": [-14.0, -7.0]}},
+  {"name": "band z -20.3 to -14", "kind": "region", "select": {"z": [-20.3, -14.0]}},
+  {"name": "below z -20.3", "kind": "region", "select": {"z": [null, -20.3]}},
+  {"name": "outer wall scanned sectors", "kind": "region", "select": {"r": [39.5, null], "not": {"theta_deg": [37, 152]}}},
+  {"name": "outer wall C6 sector", "kind": "region", "select": {"r": [39.5, null], "theta_deg": [37, 152]}}
+ ]}

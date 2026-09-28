@@ -1,0 +1,1 @@
+ICP converged in 66/400 its | correction 0.1708 deg, 0.0328 mm | max point move 0.1559 mm | kept 93.1%

@@ -1,0 +1,11 @@
+{
+ "comment": "Written by QA from intake/INTAKE_CARD.md §6 and intake/alignment.json descriptions (primary/secondary/clock mesh_region_desc), not from builder code. Regions select faces in the builder datum frame only; all fits are QA code on the raw full-res scan.",
+ "primary": {"type": "plane", "method": "region", "cone_deg": 5.0,
+             "region": {"z": [-0.3, 0.3], "r": [28.3, 36.5]},
+             "desc": "cup rim end face incl. lug tops (sealing face), z=0, material -z"},
+ "position": {"type": "circle", "wall": "outer", "single_wall": "outer", "perp_max_dot": 0.30,
+              "region": {"z": [-36.0, -12.0], "r": [28.0, 31.5], "not": {"theta_deg": [320, 40]}},
+              "desc": "cup outer wall (drafted), away from the +X neck/pad; single wall (no counter-wall in this r band)"},
+ "clock": {"type": "plane_normal", "region": {"x": [165.4, null], "nx": [0.95, null]},
+           "desc": "handle end-cap flat normal -> +X"}
+}

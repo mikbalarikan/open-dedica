@@ -1,0 +1,316 @@
+{
+ "schema": "stl-re/alignment@1",
+ "tool": "align.py",
+ "tool_version": "stl-re-intake-datum/1.0",
+ "inputs": {
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/574e2695-7e67-514f-9af7-832e184f4278/scratchpad/jobs/OD-G10/intake/work.stl": "3a3c4c70e8bad48800631309cb53ac669373b936c0051b3674f1660806877532",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/574e2695-7e67-514f-9af7-832e184f4278/scratchpad/jobs/OD-G10/intake/datum_spec.json": "5925910ee132c7df449eb2f4f327d6d1a6f336c86fd040113df43685bdfaec83",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/574e2695-7e67-514f-9af7-832e184f4278/scratchpad/jobs/OD-G10/input/scan.stl": "94adb6866780b8cdc771dad5cb006d218143b05fd55b6032780e6b2b7b7301f3",
+  "/tmp/claude-0/-home-user-agentic-STL-to-CAD/574e2695-7e67-514f-9af7-832e184f4278/scratchpad/jobs/OD-G10/intake/intake.json": "15d092d601f3627db5c951d4b4af8ab1ad31645afae236efbd662477fdf49344"
+ },
+ "seed": 0,
+ "created": "2026-09-28T07:42:24+00:00",
+ "status": "OK",
+ "stop_reasons": [],
+ "findings": [
+  "secondary circle residual not compared: no noise_secondary measured on a clean circle (plane noise is not comparable to section-circle residuals)"
+ ],
+ "matrix_4x4": [
+  [
+   0.6668503236078772,
+   -0.7069946120659195,
+   0.2355191381052277,
+   26.633627698645657
+  ],
+  [
+   0.7381421406781796,
+   0.6700538762039905,
+   -0.07857469782978338,
+   -23.574392913070575
+  ],
+  [
+   -0.10225862339726643,
+   0.22624416344685486,
+   0.9686881605796207,
+   212.9639655299758
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "scale_factor": 1.0,
+ "scan_noise_mm": {
+  "value": 0.040451104818123,
+  "method": "rms of RANSAC+SVD plane on lugtop (2529 faces)"
+ },
+ "primary": {
+  "type": "plane",
+  "mesh_region_desc": "bayonet lug top pads",
+  "why": "three moulded bayonet lug pads, coplanar and square to the cup axis; they carry the portafilter bayonet (function) and are the cleanest flat that is square to the axis (the floor plate is tilted/warped ~0.3 deg vs the axis, see INTAKE_CARD)",
+  "fit_rms_mm": 0.040451104818123,
+  "fit_max_mm": 0.09879665703488161,
+  "fit_p95_mm": 0.07695547994262866,
+  "n_faces": 2529,
+  "area_mm2": 191.1333640399456,
+  "fit_untrimmed": {
+   "rms": 0.04362116517601953,
+   "p95": 0.08316839958313864,
+   "max": 0.15854012871363315,
+   "n_faces": 2589
+  },
+  "inlier_frac": 0.7427578215527231,
+  "normal_raw": [
+   -0.10225862339726623,
+   0.2262441634468548,
+   0.9686881605796205
+  ],
+  "centroid_raw": [
+   22.516517837638016,
+   -13.079045269758598,
+   -214.4161642609308
+  ],
+  "material_side": "-z",
+  "ransac": {
+   "tol_mm": 0.05,
+   "iters": 300,
+   "seed": 0,
+   "inlier_frac": 0.7427578215527231
+  }
+ },
+ "secondary": {
+  "type": "axis",
+  "mesh_region_desc": "outer cup wall faces",
+  "why": "cup outer cylinder = portafilter/bayonet rotation axis; cleanest cylinder (round within +-0.09 over the ~270 deg the scan covers)",
+  "fit_rms_mm": 0.05721825799539447,
+  "fit_max_mm": 0.5251807135503839,
+  "fit_metric": "median / worst circle residual over stations (wall_faces)",
+  "stations": 8,
+  "r_by_feature": {
+   "outer cup wall faces": {
+    "n": 8,
+    "r_mean": 40.10378584083161,
+    "r_std": 0.03253151367915784
+   }
+  },
+  "centre_std_mm": [
+   0.0036164447888565716,
+   0.02603674343991478
+  ],
+  "station_detail": [
+   {
+    "z": -23.5,
+    "cx": -8.4315,
+    "cy": 34.57062,
+    "r": 40.15837,
+    "rms": 0.04828,
+    "max": 0.11369,
+    "p95": 0.08953,
+    "n": 5251,
+    "iterations": 8,
+    "feature": "outer cup wall faces"
+   },
+   {
+    "z": -20.5,
+    "cx": -8.43732,
+    "cy": 34.55904,
+    "r": 40.13218,
+    "rms": 0.05319,
+    "max": 0.13875,
+    "p95": 0.09815,
+    "n": 5511,
+    "iterations": 9,
+    "feature": "outer cup wall faces"
+   },
+   {
+    "z": -17.5,
+    "cx": -8.43941,
+    "cy": 34.56461,
+    "r": 40.12141,
+    "rms": 0.05621,
+    "max": 0.26609,
+    "p95": 0.10328,
+    "n": 5689,
+    "iterations": 10,
+    "feature": "outer cup wall faces"
+   },
+   {
+    "z": -14.5,
+    "cx": -8.44186,
+    "cy": 34.56006,
+    "r": 40.11368,
+    "rms": 0.05923,
+    "max": 0.46172,
+    "p95": 0.10103,
+    "n": 5714,
+    "iterations": 10,
+    "feature": "outer cup wall faces"
+   },
+   {
+    "z": -11.5,
+    "cx": -8.44016,
+    "cy": 34.54531,
+    "r": 40.09885,
+    "rms": 0.06105,
+    "max": 0.52518,
+    "p95": 0.1034,
+    "n": 5815,
+    "iterations": 11,
+    "feature": "outer cup wall faces"
+   },
+   {
+    "z": -8.5,
+    "cx": -8.444,
+    "cy": 34.53229,
+    "r": 40.08504,
+    "rms": 0.06118,
+    "max": 0.2302,
+    "p95": 0.10713,
+    "n": 6039,
+    "iterations": 11,
+    "feature": "outer cup wall faces"
+   },
+   {
+    "z": -5.5,
+    "cx": -8.44168,
+    "cy": 34.51371,
+    "r": 40.06841,
+    "rms": 0.05823,
+    "max": 0.23791,
+    "p95": 0.10053,
+    "n": 6113,
+    "iterations": 10,
+    "feature": "outer cup wall faces"
+   },
+   {
+    "z": -2.5,
+    "cx": -8.44178,
+    "cy": 34.4913,
+    "r": 40.05236,
+    "rms": 0.05199,
+    "max": 0.44749,
+    "p95": 0.09037,
+    "n": 6461,
+    "iterations": 11,
+    "feature": "outer cup wall faces"
+   }
+  ],
+  "noise_ref": null
+ },
+ "clock": {
+  "rule": "fourier_mass: bayonet lug 1 centre -> +X",
+  "angle_deg": 34.75860855913422,
+  "why": "3 bayonet lugs are the only non-axisymmetric features the scan resolves",
+  "detail": {
+   "n": 3,
+   "candidates_deg": [
+    -154.75860855913425,
+    -34.75860855913422,
+    85.24139144086575
+   ],
+   "chosen_deg": -34.75860855913422,
+   "strength": 0.7031066748343889,
+   "n_vertices": 8904,
+   "label_rule": "lug 1 = the 3-fold candidate nearest +X after levelling (convention; lugs are nominally identical, see card)"
+  }
+ },
+ "tilt_deg": {
+  "value": 0.20460170231384087,
+  "stderr_deg": 0.024791149760247346,
+  "direction_deg": -96.75421904488412,
+  "method": "common slope, per-feature intercept, 8 stations over 1 feature(s), z -23.500..-2.500 vs frame Z",
+  "z_span_mm": 21.0,
+  "per_feature": [
+   {
+    "feature": "outer cup wall faces",
+    "n_stations": 8,
+    "value": 0.20460170231384087,
+    "stderr_deg": 0.022631120152346966,
+    "direction_deg": -96.75421904488412,
+    "z_span_mm": 21.0
+   }
+  ],
+  "resolvable": null
+ },
+ "origin": {
+  "definition": "cup outer-wall axis \u2229 bayonet lug top plane"
+ },
+ "sanity_landmarks": [
+  {
+   "name": "primary plane at z=0",
+   "expected": 0.0,
+   "observed": -0.0014574242105614605,
+   "tol": 0.040451104818123,
+   "tol_source": "measured noise floor",
+   "ok": true
+  },
+  {
+   "name": "rim top above lug plane",
+   "stat": "zmax",
+   "expected": 3.4,
+   "tol": 0.4,
+   "observed": 3.4206184009461538,
+   "ok": true,
+   "tol_source": "pre-alignment r-z survey (pre_rz.png): rim 31.2 vs lug top 27.84, +-0.4 for the provisional frame"
+  },
+  {
+   "name": "floor plate below lug plane",
+   "stat": "zmedian",
+   "expected": -19.95,
+   "tol": 0.4,
+   "observed": -19.942191736909507,
+   "ok": true,
+   "tol_source": "pre-alignment survey: floor 7.89 vs lug top 27.84"
+  },
+  {
+   "name": "outer wall radius",
+   "stat": "rmedian",
+   "expected": 40.1,
+   "tol": 0.2,
+   "observed": 40.10003074507771,
+   "ok": true,
+   "tol_source": "pre-alignment IRLS wall fits 40.05-40.17"
+  }
+ ],
+ "removed": {
+  "fragments_pct": 0.0,
+  "table_pct": 0.0,
+  "method": "nothing removed"
+ },
+ "bounds_aligned": [
+  [
+   -40.16287011821804,
+   -40.203472057541745,
+   -27.835482040177936
+  ],
+  [
+   40.23491790674162,
+   40.36180327447857,
+   3.4206184009461538
+  ]
+ ],
+ "extents_aligned": [
+  80.39778802495965,
+  80.56527533202032,
+  31.25610044112409
+ ],
+ "aligned_mesh": {
+  "path": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/574e2695-7e67-514f-9af7-832e184f4278/scratchpad/jobs/OD-G10/intake/aligned_work.stl",
+  "sha256": "0d9c31b439e6ad310fc08dd1d1406a634fd15914125a632bd5b71b1f83b0fff4"
+ },
+ "checks": {
+  "CHK-TILT": {
+   "ran": true,
+   "result": "pass",
+   "note": "common slope, per-feature intercept, 8 stations over 1 feature(s), z -23.500..-2.500 vs frame Z; reference 0.3 deg (RE_SPEC.md:241, report-only)"
+  },
+  "CHK-SCALE": {
+   "ran": false,
+   "result": "finding",
+   "note": "no calipers (scan-only, DECISIONS.md MEASUREMENTS): units assumed mm, scale unverified"
+  }
+ },
+ "note": "matrix_4x4 maps the RAW scan to the datum frame, row-major; scale_factor is folded in (T @ S, run-contract SS11). aligned_work.stl is exported at the scaled size (unchanged)."
+}

@@ -1,0 +1,64 @@
+{
+ "kept_fraction": 0.51299,
+ "mean_d_kept": 0.39239870780180575,
+ "regions": {
+  "M1 C1 downward-facing CAD": {
+   "cad_frac": 0.19737,
+   "kept_n": 2786,
+   "share_of_kept": 0.054309050858691206,
+   "mean_d_kept": 2.401958657435998,
+   "antiparallel_normals_frac": 0.9626704953338119,
+   "mean_pull_vec_mm": [
+    -0.005,
+    -0.059,
+    2.329
+   ]
+  },
+  "M2 C2 below plate top inside wall": {
+   "cad_frac": 0.22913,
+   "kept_n": 2375,
+   "share_of_kept": 0.0462971987758046,
+   "mean_d_kept": 2.4902344561486984,
+   "antiparallel_normals_frac": 1.0,
+   "mean_pull_vec_mm": [
+    -0.004,
+    -0.031,
+    2.448
+   ]
+  },
+  "M3 C3 plate interior": {
+   "cad_frac": 0.10355,
+   "kept_n": 0,
+   "share_of_kept": 0.0,
+   "mean_d_kept": null,
+   "antiparallel_normals_frac": null,
+   "mean_pull_vec_mm": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "M4 C6 outer wall unscanned sector": {
+   "cad_frac": 0.09858,
+   "kept_n": 1718,
+   "share_of_kept": 0.033489931577613596,
+   "mean_d_kept": 2.791448747755706,
+   "antiparallel_normals_frac": 0.9889406286379511,
+   "mean_pull_vec_mm": [
+    0.636,
+    -2.445,
+    0.092
+   ]
+  },
+  "scanned (outside M1-M4)": {
+   "kept_n": 46795,
+   "share_of_kept": 0.9122010175636952,
+   "mean_d_kept": 0.1846798919385371,
+   "mean_pull_vec_mm": [
+    0.008,
+    -0.043,
+    -0.004
+   ]
+  }
+ }
+}

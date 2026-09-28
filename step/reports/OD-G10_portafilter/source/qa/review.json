@@ -1,0 +1,120 @@
+{
+ "verdict": "BAND_NOT_MET",
+ "independence": "Fresh agent/context that did not build the model (iteration-2 verifier; did not write it1 QA either). QA scripts from stl-re-verify only, plus QA-owned helpers in qa/scripts/: run_gate_lowmem.py and tess_probe.py copied byte-identical from _it1_SUPERSEDED/qa/scripts/ (declared; memory-only wrapper and tessellation probe), and new diagnostics cluster_attrib.py, obs_residual.py, edge_dist.py, edge_dist_c2s.py, it_compare.py (read-only analysis of the saved gate arrays; none feeds a pass/fail). Inputs used: input/, intake/{INTAKE_CARD.md,alignment.json,regime.json,coverage.json (via INTAKE_CARD),MEASUREMENTS.md}, build/{both STEPs, export_check.json, fillets.json, face_stats.json, MODELING_PLAN.md}, _it1_SUPERSEDED/ (comparison + helpers). model.py only grepped for loft/ruled/polygon and 3 line ranges viewed read-only (never imported/executed). measure/params.json, build/selfcheck/, build/build_log.txt NOT opened. The builder self-check figure quoted in MODELING_PLAN.md (0.283, no ICP, working copy) was not used as an expectation.",
+ "checks": {
+  "CHK-CIRCULAR": {
+   "ran": true,
+   "result": "pass",
+   "note": "Datum audited on the raw full-res scan from INTAKE_CARD/alignment descriptions (0.0025 deg / 0.063 mm, identical to it1: alignment.json unchanged, sha 0a2b0dbc). QA ICP T_refine is evaluation-only, never written back. No expected value from params.json or this scan; the builder self-check in MODELING_PLAN.md is a consistency check, not independent evidence, and was not used."
+  },
+  "CHK-LIKE4LIKE": {
+   "ran": true,
+   "result": "pass",
+   "note": "Same protocol as it1: qa/regime.json, masks.json, zones.json, datum_spec.json, icp_scan_masks.json, dims.json and both helper scripts are byte-identical to _it1_SUPERSEDED/qa (sha256 prefixes 80f0aece, f93a3988, 060414e8, 9a66a838, f9748b2c, 953c29bd, 3b394b45, 2fc6ea14); same full-res scan (9eb34045); ICP params identical (60-cap run first: not converged in both iterations; cap raised once to 400 in both); deviation sampling/seeds identical; observability params identical (only the data-dependent helper-switch count 47->48 differs); same low-memory wrapper. Only the STEP changed, so every it1->it2 delta is geometry, not protocol. Per-cluster comparison in qa/it1_vs_it2_clusters.json (same bbox, both arrays). Side by side (qa/it1_vs_it2_gated.json, qa/it1_vs_it2_clusters.json): scan->CAD p95 0.365 -> 0.284, max 2.441 -> 1.346, points over 0.8: 2713 -> 469; CAD->scan observable p95 0.464 -> 0.378, max 4.984 -> 4.902; CAD->scan masked p95 0.432 -> 0.359; ICP 85/400 its 0.176 deg/0.047 mm -> 66/400 its 0.171 deg/0.033 mm; datum audit unchanged (0.003 deg/0.063 mm). it1 scan->CAD clusters (over-0.8 pts / max in the same box, it1 -> it2): 0 floor ring 645/1.961 -> 0/0.779 FIXED; 1 V-rib 1 306/1.374 -> 40/0.982 IMPROVED, open; 2 trough pocket 1 277/2.441 -> 9/0.918 IMPROVED, near-closed; 3 trough pocket 2 219/2.321 -> 0/0.750 FIXED; 4 wire arc 90-110 deg 162/1.353 -> 159/1.346 STILL OPEN (unchanged); 5 centre post 158/1.192 -> 0/0.690 FIXED; 6 wire/rim notch 90 124/0.960 -> 0/0.418 FIXED; 7 wire end 111/1.183 -> 0/0.614 FIXED; 8 lug 2 end 104/1.298 -> 16/0.923 IMPROVED, open; 9 lug 1 end 103/1.394 -> 26/0.967 IMPROVED, open; 10 V-rib 2 99/1.403 -> 1/0.890 FIXED (1 pt); 11 wire end 67/1.189 -> 0/0.523 FIXED. it1 CAD->scan clusters: 0-3 unscanned (pockets, U-rib centre, grip strip) unchanged (max 4.93/5.73/4.80/5.21 -> 4.95/5.80/4.79/5.27); 4 floor ring 1057/2.716 -> 0/0.761 FIXED; lug ends 5/6/7 190/1.995, 147/1.733, 137/1.858 -> 67/1.156, 35/1.097, 21/0.998 IMPROVED; 8 wire 110/1.320 -> 109/1.299 unchanged; 9 centre post 109/1.574 -> 0/0.754 FIXED; 10/11 U plateau round end / -X corner (hole edge, loop 6) 109/1.745, 93/1.621 -> 112/1.744, 102/1.605 unchanged. Improvement is geometry, not protocol."
+  },
+  "CHK-INDEP": {
+   "ran": true,
+   "result": "pass",
+   "note": "Fresh context; see independence. No builder numbers used."
+  },
+  "CHK-FILLET": {
+   "ran": true,
+   "result": "finding",
+   "note": "build/fillets.json / export_check: 11 OK (target == used), 1 REDUCED: 'F13 cone-part leg-foot rounds' target 1.213 -> used 0.970 (0.8x, fillet failed at target; declared plan section 6 fallback). The it1 finding (dropped arch-foot round) is addressed: overlay x=40 now shows rounded CAD feet following the scan; CAD foot bottom sits ~0.3 mm below the scan foot; zone NECK scan->CAD max 0.851 (4 points over 0.8)."
+  },
+  "CHK-PATCHWORK": {
+   "ran": true,
+   "result": "pass",
+   "note": "QA census (qa/step_check.json): 202 faces, analytic area 95.4 %, 16 B-spline (fillet) faces, 108 planes (builder face_stats median plane area 2.85 mm2), 0 ruled-like; within the plan's expected 150-300. model.py has no loft(/ruled/polyline stack; the 3 Wire.make_polygon calls (model.py:239 V-rib drafted section, :346 handle revolve profile, :421 wire-arc wedge) are single closed profiles, not stacks of scan slices."
+  },
+  "CHK-ENUM": {
+   "ran": true,
+   "result": "finding",
+   "note": "All 11 INTAKE_CARD section-5 feature families exist in the CAD (cup, bore/ledge, 3 lugs, 2 rim notches, pad, arch neck+collar+grip+cap, 2 spouts with screw heads, centre screw, insert floor/U rib/V ribs/2 outlet pockets+trough, 3 wire arcs; it2 adds a wire groove in the bore, consistent with it1 wire-end clusters 6/7/11 now gone). Cast lettering not modelled (declared cosmetic). Invented only where declared (pocket bores to z -54, grip strip). Finding: some features exist but are misshaped vs the scan: spout-head cross recesses (orientation/width assumed; Z=-57 overlay shows the scan recess lobes not on the CAD's axis-aligned cross), wire arc 1 near 90-110 deg, lug 1 ends (41-43 and 76-78 deg), rim notch at 270 deg outer edge -- see cluster explanations."
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": true,
+   "result": "n/a",
+   "note": "No Tier-1 reading exists (scan-only run): no Tier-1 miss to attribute. F01 re-measured CAD-only (54.644, ungated)."
+  },
+  "PHOTO-PLAUSIBILITY": {
+   "ran": true,
+   "result": "pass",
+   "note": "Photo 1 (top/inside): rim, 3 lugs, wire spring arcs across the bore, black insert with U rib, neck, collar ring, tapered black grip, cream end cap -- all present in CAD. Photo 2 (bottom): two spout bosses with cross-recess screws, centre cross screw, lugs, arch neck, collar, grip, cap -- all present. Rim notches not visible in photos (mesh-only, accepted at intake). Nothing in the CAD absent from both photos and scan except the declared invented pocket bores."
+  }
+ },
+ "photos": [
+  "input/photos/1.webp",
+  "input/photos/2.webp"
+ ],
+ "cluster_explanations": {
+  "0": "WIRE ARC 1 (declared simplification), STILL OPEN / unchanged vs it1 cluster 4 (it1 162 pts max 1.353 -> it2 159 pts max 1.346): r 25.5-26.8, theta 92.5-110, z -6.2..-4.9, lower side of the wire arc where it dives behind the bore. On well-scanned surface (median 5.0 mm from any scan hole edge, qa/edge_dist_it2.json), so a real shape difference: the CAD torus arc (constant R, one z) does not follow the wire's real 3D path there (overlays theta=92/110, Z=-5.5). This is the whole-part scan->CAD max. Fixable only by modelling the wire as a swept 3D path; the owner's PART-CLASS allowed the wire to be simplified.",
+  "1": "SCAN HOLE EDGE, insert wall-to-floor corner at theta 270-282 (44 pts, max 1.223; r 20.9-22.8, z -37.8..-35.4). All points within 0.63 mm of a scan open-boundary vertex (qa/edge_dist_it2.json; whole-scan median 11.3 mm) -- the edge of open-boundary loop 0 (INTAKE_CARD section 3: r 10.4-23.4, theta 256-351, z -44..-29). Overlay theta=276: the scan wall curls inward and stops where the gutter floor was not captured. Present at the same level in it1 (43 pts, 1.211; not in it1's top-12 list). Not a missing feature; not fixable without coverage of the gutter floor. No scan-side open-boundary mask exists in the protocol (it1 declared CAD->scan masks only), so these points stay in the gated statistic.",
+  "2": "V-RIB 1 crest/flank, IMPROVED vs it1 cluster 1 (306 pts max 1.374 -> 40 pts max 0.982): r 12.9-13.7, theta 12.5-14.2, z -41.3..-35.2, the rib's lower outer end next to the floor. Within 1.1-1.8 mm of a scan hole (shadowed flank, loop 2), overlay theta=13 shows a residual ~0.9 mm at the rib foot. Small, partly unobserved; fixable only marginally.",
+  "3": "SPOUT 1 SCREW HEAD (declared simplification), unchanged vs it1 (same box: 40 pts, 1.083 -> 1.099): r 15.4-16.5, theta 53-63, z -57.3..-56.2, the pan-head crown / cross-recess rim. Well scanned (12.7 mm from holes). Overlay Z=-57: the scan recess lobes are not on the CAD's axis-aligned cross (recess orientation/width assumed, MODELING_PLAN section 4). Fixable from the scan (orient/size the recess) but part of the owner-allowed screw-head simplification.",
+  "4": "LUG 1 trailing end, IMPROVED vs it1 cluster 9 (103 pts max 1.394 -> 26 pts max 0.967): r 30.8-35.2, theta 75.8-76.7, z -3.1..-2.0, the lead-out plane added in it2 sits ~0.9 mm off the scan at its top end (overlay theta=76). Well scanned (17.6 mm from holes): a real, small, fixable geometric residual (lead-out plane angle/height).",
+  "5": "SPOUT 2 SCREW HEAD (declared simplification), unchanged vs it1 (same box: 22 pts 1.024 -> 24 pts 1.030): r 16.9-19.1, theta 295-298, z -57.4..-56.4; same cause as cluster 3 (recess orientation assumed; overlay Z=-57).",
+  "6": "SCAN HOLE EDGE, insert wall-to-floor corner at theta 88-98 (23 pts, max 1.194; r 20.8-22.7, z -37.4..-35.3): all within 0.37 mm of a scan open-boundary vertex, edge of open-boundary loop 2 (theta 15-101). Same cause as cluster 1; present in it1 at the same level (22 pts, 1.164). Not fixable without coverage.",
+  "7": "SCAN HOLE EDGE, -X floor-to-wall corner at theta 188-198 (20 pts, max 1.162; r 21.4-22.9, z -35.2..-33.7): within 1.1 mm of open-boundary loop 6 (theta 188-203, r 12.4-23.0, z -36.7..-28.2). Overlay theta=180/193: the scan corner is rounder than the CAD fillet next to the hole. Paired with CAD->scan clusters 4/6 (U plateau round end, 1.74/1.61, unchanged vs it1 clusters 10/11). Partly unobserved; unchanged from it1 (19 pts, 1.157)."
+ },
+ "limitations": [
+  {
+   "id": "L1",
+   "text": "Tier-1 not run: 0 of 8 requested dims have a caliper reading (owner chose scan-only, DECISIONS MEASUREMENTS); absolute scale not caliper-verified (CHK-SCALE FLAG). All 8 are ABSENT, not passed. F01 reported CAD-only (54.644).",
+   "rerun_trigger": "any caliper reading (e.g. F01 bore ID, F02 ledge depth, F03 lug under-face heights, F04 spout spacing) -> fill input/MEASUREMENTS.md, rehash, re-run verify"
+  },
+  {
+   "id": "L2",
+   "text": "Unscanned/occluded regions carry invented or interpolated CAD and dominate the gated observable CAD->scan statistic: the two outlet-pocket bores (CAD->scan clusters 0/1, 4811+4758 samples, d up to 5.79), the U-rib centre open-boundary region (cluster 2, 3179 samples, d up to 4.79) and the unscanned strip along the +Y side of the grip (x 105-160, cluster 3, 2215 samples, d up to 5.27; the ray test calls it observable, so it sets the observable max 4.902). Diagnostic only (qa/obs_residual_it2.json, not a mask): observable CAD->scan without those four clusters' points reads p95 0.284 / max 1.461.",
+   "rerun_trigger": "a rescan covering the pocket interiors, the insert floor inside the U rib and the grip strip (e.g. matte spray), or a depth-gauge reading of the pocket depth"
+  },
+  {
+   "id": "L3",
+   "text": "Fine tessellation (0.005 mm / 0.05 rad) of both STEPs is not watertight by two zero-area triangles each (datum frame at (16.7, 19.0, -46.2), the spout-1 root / bottom-round junction as in it1, and new at (20.9, 10.8, -38.4) at the insert floor near the trough); with them removed the mesh is watertight (qa/tess_watertight_probe.json). BRep valid, 1 closed shell, 0 naked edges. step_check.py's validity flag does not include tessellation watertightness (script defect step_check.py:84).",
+   "rerun_trigger": "any rebuild -> re-run step_check and qa/scripts/tess_probe.py"
+  },
+  {
+   "id": "L4",
+   "text": "ICP did not converge at the default cap (60 its, qa/registration_run1_cap60.json: 0.1707 deg / 0.0328 mm); cap raised once to 400 (as in it1) and converged at 66 its (0.1708 deg / 0.0328 mm). The stop was reached on an iteration whose rotation evaluated to 0.0 (arccos precision; tier2_icp.py:71-72 adds deg and mm); neighbouring steps 7e-6..8e-6. Both runs agree to 1e-4 deg / 1e-4 mm, and the datum-frame run (qa/deviation_datum.json, no ICP) gives the same scan->CAD p95 0.284.",
+   "rerun_trigger": "any rebuild -> re-run ICP at the default cap first; ICP step metric fixed -> re-run"
+  },
+  {
+   "id": "L5",
+   "text": "Deliverable is ONE fused solid of an assembly (owner PART-CLASS): internal interfaces between cup, insert, grip, cap, screws and wire are not represented; wire and screw heads are simplified. These simplifications carry gated residuals: wire arc 1 sets the whole-part scan->CAD max 1.346 (cluster 0), the spout screw heads read up to 1.099 (clusters 3/5).",
+   "rerun_trigger": "an owner decision to model the wire as a swept path / orient the screw recesses, or to model the bodies separately"
+  },
+  {
+   "id": "L6",
+   "text": "Deviation gate ran through qa/scripts/run_gate_lowmem.py (observability ray chunk 200 instead of the hard-coded 2000; memory only, per-point result identical -- reproduced exactly by qa/scripts/cluster_attrib.py) because the unmodified deviation_gate.py was OOM-killed on this 15 GB machine in it1.",
+   "rerun_trigger": "observability chunk exposed on deviation_gate.py's CLI (observability.py:61 / deviation_gate.py:338) -> re-run deviation_gate.py directly"
+  },
+  {
+   "id": "L7",
+   "text": "Protocol facts carried from it1 unchanged (like-for-like, not re-decided after seeing numbers): masks apply CAD->scan only, so scan points on scan hole edges (clusters 1/6/7, 87 pts, max 1.223, all within 1.1 mm of an open boundary) stay in the gated scan->CAD statistic; and the observability split is computed on the unmasked CAD subsample (M1/M2 not applied), so the grip strip open boundary enters the gated observable statistic.",
+   "rerun_trigger": "an owner/orchestrator protocol decision declared BEFORE the next gate (e.g. a scan-side open-boundary mask, or masking the observable subset) -> re-run verify reporting both"
+  }
+ ],
+ "miss_explanations": [
+  {
+   "region": "Whole part scan->CAD max (p95 0.284 PASSES, max 1.346 vs 0.80)",
+   "cause": "469 of 250812 scan points (0.19 %) over 0.8 mm, in 8 clusters >= 20 pts (it1: 2713 pts, 18 clusters). Breakdown: wire arc 1, declared simplification, 159 pts, max 1.346 (unchanged vs it1); scan hole edges at the insert wall-to-floor corner (theta 90/190/276), 87 pts, max 1.223 (unchanged vs it1, not a modelling miss); spout screw heads, declared simplification, 64 pts, max 1.099; fixable small residuals on scanned surfaces: V-rib 1 foot 40 pts max 0.982, lug 1 end 26 pts max 0.967, lug 2 end 16 pts max 0.923.",
+   "options": "Accept (ACCEPT-BAND citing this gate). Or a final loop 3 (REVISE, the last one): swept-path wire arc 1, oriented screw recesses, lug lead-out planes -- would lower the max to ~1.22 (hole-edge points) but cannot reach 0.80 without coverage data or a pre-declared scan-side open-boundary mask."
+  },
+  {
+   "region": "Whole part CAD->scan observable (p95 0.378 vs 0.30, max 4.902 vs 0.80)",
+   "cause": "Dominated by unscanned regions (L2): of 394 observable over-band points, 137 are the grip strip (max 4.902) and 215 the pocket bores / U-rib centre open-boundary region. Without those four clusters (diagnostic only, qa/obs_residual_it2.json) p95 0.284 / max 1.461; the remaining observable over-band points (42) are: U plateau round end / -X floor corner at open-boundary loop 6 (1.461, 1.375; unchanged vs it1 CAD->scan clusters 10/11), wire arcs (1.220), lug 1 leading end theta 41-43 (1.150), spout-1 head (1.138), centre post r~5 (1.083), lug 1 lead-out (1.077), neck-pad hole edge theta 351-355 (1.066). Outside the observable subsample the full CAD->scan set also shows the rim notch at 270 deg outer edge (34 pts, max 1.237) and lug 1 leading end (44 pts, max 1.443, unchanged vs it1).",
+   "options": "Not fixable by geometry: the grip strip and pocket interiors need a rescan. Accept (ACCEPT-BAND) or rescan; geometry work can only trim the secondary residuals."
+  },
+  {
+   "region": "LUGS (functional interface; no interface band in this regime, reported)",
+   "cause": "Improved: scan->CAD p95 0.740->0.605, max 1.394->0.967; CAD->scan max 1.935->1.443. Remaining: lug 1 leading end theta 41-43 (CAD->scan 44 pts, 1.443, unchanged), lug 1 trailing lead-out theta 76-78 (0.967 / 1.156), lug 2 lead-out theta 197 (1.097).",
+   "options": "Caliper/feeler reading of F03 (lug under-face at both ends) would arbitrate; geometry trim of lead-out planes in a loop 3 if the owner wants the lugs within 0.8."
+  },
+  {
+   "region": "INSERT_FLOOR (interior, reported)",
+   "cause": "Largely fixed: scan->CAD p95 0.727->0.435, max 2.441->1.223 (it1 floor ring, both troughs, centre post, V-rib 2 fixed; V-rib 1 improved). Residual max is scan-hole-edge points (clusters 1/6/7).",
+   "options": "None by geometry; rescan the gutter floor."
+  }
+ ],
+ "claim_boundary": "Not a pass under baseline-skill plastic (p95<=0.30 / max<=0.80): QA does not certify this STEP for fit, tooling or manufacture. Scan->CAD p95 now meets 0.30 but both maxima and the observable CAD->scan p95 miss; the cup outer wall (p95 0.095), rim face, bore and handle agree with the scan well -- a regional observation, not a grade. No dimension is caliper-verified (absolute scale unverified); the one fused solid does not model the separate bodies; pocket interiors, the insert floor inside the U rib and a strip of the grip are invented/interpolated; wire and screw heads are simplified. Delivery needs a recorded ACCEPT-BAND decision."
+}

@@ -1,0 +1,125 @@
+{
+ "schema": "stl-re/tier1@1",
+ "tool": "sim_caliper.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-W03_datum.step": "a74589f0ac36ee40b206c25c0ac709b7804e47f72e0f535fa01b25c055b44c5f",
+  "qa/dims.json": "37495c524204d0d49da65e69a31f0280901144b61cd6d0ace0a8b55f68dceb29",
+  "qa/regime.json": "2df79623601b807932041c9b1aa9239156e161322ab78c29cb9d68343b9bf3d1"
+ },
+ "seed": null,
+ "created": "2026-09-28T07:55:26+00:00",
+ "band_abs_mm": null,
+ "band_source": "baseline/skills/stl2step-build123d/SKILL.md:87",
+ "tessellation": {
+  "tolerance": 0.005,
+  "angular_tolerance": 0.05
+ },
+ "dims": {
+  "ENV-X": {
+   "name": "length over the two ear lug ends",
+   "caliper": null,
+   "cad": 84.79600143432617,
+   "source": "absent",
+   "gated": false,
+   "uncertainty_mm": null,
+   "method": "jaw",
+   "detail": {
+    "value": 84.79600143432617,
+    "reduce": "along dir"
+   },
+   "delta": null,
+   "pass": null
+  },
+  "ENV-Y": {
+   "name": "flange width over straight skirt sides (mid-length)",
+   "caliper": null,
+   "cad": 29.432000160217285,
+   "source": "absent",
+   "gated": false,
+   "uncertainty_mm": null,
+   "method": "jaw",
+   "detail": {
+    "value": 29.432000160217285,
+    "reduce": "along dir"
+   },
+   "delta": null,
+   "pass": null
+  },
+  "F02": {
+   "name": "barb A shank OD z=20",
+   "caliper": null,
+   "cad": 5.366007386728159,
+   "source": "absent",
+   "gated": false,
+   "uncertainty_mm": null,
+   "method": "jaw",
+   "detail": {
+    "value": 5.366007386728159,
+    "reduce": "max",
+    "window": [
+     5.365628169879896,
+     5.366007386728159
+    ]
+   },
+   "delta": null,
+   "pass": null
+  },
+  "F04": {
+   "name": "cup A outer OD z=1 (jaws off the webs)",
+   "caliper": null,
+   "cad": 23.948872017111913,
+   "source": "absent",
+   "gated": false,
+   "uncertainty_mm": null,
+   "method": "jaw",
+   "detail": {
+    "value": 23.948872017111913,
+    "reduce": "max",
+    "window": [
+     23.758698925771448,
+     23.948872017111913
+    ]
+   },
+   "delta": null,
+   "pass": null
+  },
+  "F06": {
+   "name": "lug hole ID (+X) z=14",
+   "caliper": null,
+   "cad": 4.213851448777753,
+   "source": "absent",
+   "gated": false,
+   "uncertainty_mm": null,
+   "method": "bore",
+   "detail": {
+    "value": 4.213851448777753,
+    "d_2rmax": 4.50138531647893,
+    "d_2rmin": 3.926317456701438,
+    "d_fit": 4.213851448777753
+   },
+   "delta": null,
+   "pass": null
+  }
+ },
+ "worst_gated_abs_delta": null,
+ "coverage": {
+  "gated": 0,
+  "requested_total": 12,
+  "absent": [
+   "ENV-X",
+   "ENV-Y",
+   "ENV-Z",
+   "F01",
+   "F02",
+   "F03",
+   "F04",
+   "F05",
+   "F06",
+   "F07",
+   "F08",
+   "W01"
+  ]
+ },
+ "all_pass": null
+}

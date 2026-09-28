@@ -1,0 +1,177 @@
+{
+ "schema": "stl-re/limitations@1",
+ "part": {
+  "name": "OD-S01_steam-valve",
+  "what_it_is": "De'Longhi-type rotary steam valve assembly (cap with splined spindle and 3-fold cam ring, valve body with top clip port, two side hose ports, hose barb, microswitch), scanned as one mesh and delivered as one fused solid.",
+  "reference_photo": "input/photos/4.png"
+ },
+ "method_summary": [
+  "Intake: scan hash and health, working copy, datum = cap disc outer face (z 0, +Z into the body), upper valve column axis, microswitch face normal to +X (intake/alignment.json).",
+  "Measure: sections, unwrapped r(theta,z) maps, IRLS cylinder fits and plane percentiles on the aligned scan; every value in measure/params.json with its estimator and evidence.",
+  "Rebuild: one (r,z) revolve plus a 3-fold cam ring of sector solids, drafted port tubes and plates, barb, microswitch, cut tools subtracted once; one valid closed solid, all faces analytic.",
+  "Verify: two independent QA agents (iteration one REVISE, iteration two BAND_NOT_MET), each with its own ICP, two-way full-resolution deviation, zones, masks, overlays, verdict under the declared regime.",
+  "Deliver: README, MANIFEST, fresh-process reproducibility, one zip with deliverables and all source files."
+ ],
+ "limitations": [
+  {
+   "id": "L0",
+   "text": "Band NOT met under the declared regime (baseline-skill plastic): scan->CAD p95 {{gate:deviation.scan_to_cad.p95}} / max {{gate:deviation.scan_to_cad.max}} mm and observable CAD->scan p95 {{gate:deviation.cad_to_scan_observable.p95}} mm; only the barb zone passes. The misses sit in the cam ring, the top clip port, the microswitch, the spindle spline and the port junction by the neck (an it2 regression there sets the whole-part max). Accepted for delivery by the owner (ACCEPT-BAND, decisions/accept_band.md).",
+   "rerun_trigger": "calipers supplied, or a request to spend the third loop on the named regions",
+   "evidence": "qa/VERDICT.md; qa/gate.json#band_fails"
+  },
+  {
+   "id": "L1",
+   "text": "no Tier-1 (no calipers run): scan-only by owner decision. Every row of intake/MEASUREMENTS.md is ABSENT, not passed.",
+   "rerun_trigger": "any caliper reading supplied",
+   "evidence": "DECISIONS.md MEASUREMENTS; qa/gate.json#limitations"
+  },
+  {
+   "id": "L2",
+   "text": "Absolute scale not caliper-verified (CHK-SCALE FLAG). A QA uniform-scale probe on the same scan read a fraction of a percent, so scale does not explain the miss.",
+   "rerun_trigger": "one caliper reading of any overall dimension",
+   "evidence": "intake/alignment.json#checks; qa/gate.json#limitations"
+  },
+  {
+   "id": "L3",
+   "text": "Datum audit is outside the RE_SPEC reference band (report-only, never blocking); the QA ICP correction is small and the datum-frame and post-ICP deviations agree, so the datum is not the cause of the miss.",
+   "rerun_trigger": "a new intake alignment with a changed spec",
+   "evidence": "qa/gate.json#datum_audit"
+  },
+  {
+   "id": "L4",
+   "text": "The QA overlays are drawn in the builder's alignment frame (overlay.py has no registration option); the gate itself is post-ICP.",
+   "rerun_trigger": "overlay.py gains a registration option",
+   "evidence": "qa/overlays/"
+  },
+  {
+   "id": "L5",
+   "text": "deviation_gate.py keeps only the top twelve scan->CAD clusters in gate.json; the smaller remaining clusters are characterised in the QA probe files, not individually in gate.json.",
+   "rerun_trigger": "fix of the cluster cap in deviation_gate.py, then re-run QA",
+   "evidence": "qa/probe/cluster_probe.json"
+  },
+  {
+   "id": "L6",
+   "text": "Spindle spline teeth are not modelled: the tooth count is not resolved by the scan (CHK-COUNT finding), so the spindle is its median cylinder with the measured D-flat and key. It will not mate with a splined knob as modelled.",
+   "rerun_trigger": "a tooth count or the mating knob",
+   "evidence": "measure/params.json#checks; measure/figures/spline_pitch.json"
+  },
+  {
+   "id": "L7",
+   "text": "The scan is an assembly (cap, body, microswitch with blades) and is delivered as ONE fused solid; the interior (valve bore, spool, passages) was not scanned and is solid in the model.",
+   "rerun_trigger": "a request for a multi-body STEP or interior geometry (a separate job)",
+   "evidence": "intake/INTAKE_CARD.md#8; build/MODELING_PLAN.md#6"
+  },
+  {
+   "id": "L8",
+   "text": "Declared simplifications with their measured costs (cap dimples and slots, cam flank edges and pocket floors, microswitch labels, blade holes, plate lips, top-port ribs, small rounds) are listed in measure/params.json#simplifications and PARAM_TABLE.md.",
+   "rerun_trigger": "a higher-fidelity request for any listed region",
+   "evidence": "measure/params.json#simplifications"
+  }
+ ],
+ "assumptions": [
+  {
+   "text": "The column interior (valve bore, spool, flow passages) was not scanned and is modelled solid below the top-port bore; nothing was invented there.",
+   "source": "assumed",
+   "evidence": "build/MODELING_PLAN.md#6"
+  },
+  {
+   "text": "Sub-body connectors (port tubes and plates run into the column, barb root inside the neck, holder buried in the column) sit inside the column and are not visible.",
+   "source": "assumed",
+   "evidence": "build/MODELING_PLAN.md#6"
+  },
+  {
+   "text": "The assembly (cap, body, microswitch and blades) is one fused solid as scanned; it is not a multi-body STEP.",
+   "source": "assumed",
+   "evidence": "intake/INTAKE_CARD.md#8"
+  }
+ ],
+ "claim_boundary": {
+  "not_fit_for": [
+   "manufacture, tooling or a mould release: no caliper verified any dimension and the absolute scale is unverified",
+   "the knob or spindle fit: the spline is modelled as its median cylinder and the tooth count is not resolved",
+   "anything that needs the interior (spool bore, passages): it was not scanned"
+  ],
+  "fit_for": [
+   "packaging, envelope and clearance studies at the scan's accuracy",
+   "positioning of the ports, barb, top clip port and microswitch in an assembly model",
+   "a starting model for a calipered re-run"
+  ]
+ },
+ "feature_tree": [
+  {
+   "id": "F02",
+   "feature": "core revolve: cap disc, cam pocket floors, column, neck, groove",
+   "params": [
+    "cap_r",
+    "cam_floor_1",
+    "cam_floor_2",
+    "column_r",
+    "neck_lo_r",
+    "groove_profile_1",
+    "neck_up_r"
+   ]
+  },
+  {
+   "id": "F01",
+   "feature": "spindle with D-flat and key",
+   "params": [
+    "spindle_r",
+    "spindle_flat_x",
+    "spindle_key_x",
+    "spindle_key_y"
+   ]
+  },
+  {
+   "id": "F09",
+   "feature": "3-fold cam ring, shoulder blocks, collar, ribs",
+   "params": [
+    "cam_phase",
+    "cam_post_half",
+    "cam_tooth_half_bot",
+    "cam_tooth_half_top",
+    "blk120",
+    "blk240"
+   ]
+  },
+  {
+   "id": "F03",
+   "feature": "top clip port with slots and bore",
+   "params": [
+    "top_blk_x",
+    "top_blk_y",
+    "top_bore_r",
+    "top_slot"
+   ]
+  },
+  {
+   "id": "F04/F05",
+   "feature": "side ports: drafted tubes, plates, orifice webs, U-windows",
+   "params": [
+    "pu_axis_yz",
+    "pl_axis_yz",
+    "port_r_end",
+    "port_bore_r",
+    "port_window"
+   ]
+  },
+  {
+   "id": "F06",
+   "feature": "hose barb",
+   "params": [
+    "barb_axis_xz",
+    "barb_shaft_r",
+    "barb_crest"
+   ]
+  },
+  {
+   "id": "F07/F08",
+   "feature": "microswitch, blades, tab, bracket, holder",
+   "params": [
+    "sw_x",
+    "sw_y",
+    "sw_z",
+    "brk_box"
+   ]
+  }
+ ]
+}

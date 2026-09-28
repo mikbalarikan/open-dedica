@@ -1,0 +1,7 @@
+{"note": "Declared BEFORE any deviation number was computed. No scan-side mask: the gated scan->CAD statistic is therefore the unmasked one. The two CAD-side masks are the standard B02 protocol masks; they affect only the reported CAD->scan masked statistic (the gated CAD->scan statistic is the observable-only split, which does not use masks).",
+ "masks": [
+  {"name": "M3 open boundary", "type": "open_boundary", "applies_to": "cad", "radius_mm": 0.8,
+   "why": "distance from CAD to the edge of a scan hole (23 open loops, INTAKE_CARD §2-§3) is not a surface deviation", "evidence": "intake/coverage.json; B02 q20_tier2.py:9-10 (mask-policy.md)"},
+  {"name": "M4 skin normal", "type": "normal_disagreement", "applies_to": "cad", "angle_deg": 70,
+   "why": "a CAD point whose nearest scan triangle faces >70 deg away is an occluded/opposite-wall correspondence, not a skin deviation", "evidence": "B02 q20_tier2.py:11-12 (mask-policy.md)"}
+ ]}

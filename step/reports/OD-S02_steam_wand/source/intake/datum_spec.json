@@ -1,0 +1,130 @@
+{
+ "mesh": "work.stl",
+ "raw_scan": "../input/scan.stl",
+ "intake_json": "intake.json",
+ "out_dir": ".",
+ "seed": 0,
+ "noise": {
+  "from": "noise_knobtop.json"
+ },
+ "primary": {
+  "type": "axis",
+  "approx_axis": [
+   0.82622,
+   -0.5571,
+   0.08362
+  ],
+  "crop_point": [
+   50.349,
+   -41.311,
+   -166.043
+  ],
+  "crop_radius": 5.2,
+  "crop_axial": [
+   -15,
+   16
+  ],
+  "surface": "cone",
+  "perp_max": 0.3,
+  "iters": 4,
+  "desc": "rod taper spigot (black connector, z 44..75 above the knob)",
+  "why": "the rod is the machine interface: tapered spigot + O-ring seats that plug into the steam outlet; every turned feature of the rod and the knob dome is coaxial with it",
+  "refine": "section_circles"
+ },
+ "origin": {
+  "xy": [
+   {
+    "method": "kasa",
+    "r_hint": 3.9,
+    "r_tol": 0.8,
+    "rms_max": 0.1,
+    "z_range": [
+     35,
+     63
+    ],
+    "stations": 29,
+    "desc": "rod taper",
+    "why": "coaxial check along the spigot",
+    "allow_open_arcs": true
+   },
+   {
+    "method": "kasa",
+    "r_hint": 6.5,
+    "r_tol": 0.3,
+    "rms_max": 0.2,
+    "z_range": [
+     16.5,
+     21.5
+    ],
+    "stations": 11,
+    "desc": "rod collar cylinder",
+    "why": "second coaxial feature for CHK-TILT",
+    "allow_open_arcs": true
+   }
+  ],
+  "z": {
+   "type": "plane",
+   "approx_normal_datum": [
+    0,
+    0,
+    1
+   ],
+   "offset_range": [
+    2.9,
+    4.0
+   ],
+   "tol": 0.05
+  },
+  "definition": "rod axis \u2229 knob top face (annulus around the rod, facing the rod tip)"
+ },
+ "clock": {
+  "rule": "axis_direction",
+  "approx_axis_raw": [
+   -0.01188,
+   0.13328,
+   -0.99101
+  ],
+  "crop_point_raw": [
+   4.257,
+   -7.005,
+   -197.44
+  ],
+  "crop_radius": 3.8,
+  "crop_axial": [
+   -2.3,
+   2.5
+  ],
+  "target_deg": 0.0,
+  "desc": "steel tube leaving the elbow (\u00d86 segment between the sleeve O-ring and the bend) -> +X",
+  "why": "the tube exit is the only functional non-coaxial axis; the lever paddle flat is noisier than the scan noise floor (noise_paddle_back 0.035 vs knob top 0.019)",
+  "refine": "section_circles",
+  "noise": {
+   "from": "noise_steel.json"
+  }
+ },
+ "landmarks": [
+  {
+   "name": "rod tip end above knob top (z max near axis)",
+   "stat": "zmax",
+   "r_range": [
+    0,
+    4
+   ],
+   "expected": 67.3,
+   "tol": 0.5,
+   "tol_source": "independent provisional-frame read (PCA frame, knob top z 12.2, rod tip 79.5); 0.5 = read resolution of that plot"
+  },
+  {
+   "name": "tube tip end is below the knob (z min)",
+   "stat": "zmin",
+   "expected": -57.8,
+   "tol": 1.0,
+   "tol_source": "provisional-frame zmin -45.6 minus knob-top z 12.2 (first spec had an arithmetic slip, -49.5; corrected before any gate); 1.0 = coarse side check"
+  }
+ ],
+ "chk_scale": {
+  "ran": false,
+  "result": "finding",
+  "note": "no calipers (scan-only, DECISIONS MEASUREMENTS): units assumed mm, scale unverified; re-run trigger: any caliper reading (>=3 ENV dims for a scale test)"
+ }
+}

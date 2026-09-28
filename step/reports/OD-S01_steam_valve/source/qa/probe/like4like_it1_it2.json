@@ -1,0 +1,205 @@
+{
+ "it1_gate": {
+  "sha256_12": "9c4d18bf6798",
+  "created": "2026-09-28T07:41:27+00:00"
+ },
+ "it2_gate": {
+  "sha256_12": "19f6d742b0ae",
+  "created": "2026-09-28T08:12:03+00:00"
+ },
+ "protocol": "identical (see review.json CHK-LIKE4LIKE)",
+ "gated": [
+  {
+   "item": "scan_to_cad:masked",
+   "it1": {
+    "n": 250308,
+    "p95": 0.5198942879592271,
+    "max": 2.269603620001247
+   },
+   "it1_pass": false,
+   "it2": {
+    "n": 250308,
+    "p95": 0.4494669344205982,
+    "max": 1.9395192616975798
+   },
+   "it2_pass": false
+  },
+  {
+   "item": "cad_to_scan_observable",
+   "it1": {
+    "n": 19391,
+    "p95": 0.7997299162652054,
+    "max": 3.128733787948038
+   },
+   "it1_pass": false,
+   "it2": {
+    "n": 19446,
+    "p95": 0.7608532178386606,
+    "max": 2.889604470385049
+   },
+   "it2_pass": false
+  },
+  {
+   "item": "zone:Z1_spindle:scan_to_cad",
+   "it1": {
+    "n": 16789,
+    "p95": 0.27047720454972723,
+    "max": 1.3270698884209313
+   },
+   "it1_pass": false,
+   "it2": {
+    "n": 16768,
+    "p95": 0.2837642292100993,
+    "max": 1.3378257640831013
+   },
+   "it2_pass": false
+  },
+  {
+   "item": "zone:Z2_cap_cam_ring:scan_to_cad",
+   "it1": {
+    "n": 46804,
+    "p95": 0.6179951961547334,
+    "max": 1.6264822975348392
+   },
+   "it1_pass": false,
+   "it2": {
+    "n": 46719,
+    "p95": 0.6147749913522864,
+    "max": 1.5933152104671975
+   },
+   "it2_pass": false
+  },
+  {
+   "item": "zone:Z3_top_clip_port:scan_to_cad",
+   "it1": {
+    "n": 17605,
+    "p95": 0.4325784036593631,
+    "max": 0.8902591101505675
+   },
+   "it1_pass": false,
+   "it2": {
+    "n": 17649,
+    "p95": 0.42481486274125885,
+    "max": 0.8900272776905451
+   },
+   "it2_pass": false
+  },
+  {
+   "item": "zone:Z4_side_ports:scan_to_cad",
+   "it1": {
+    "n": 42338,
+    "p95": 0.2796854177049274,
+    "max": 0.9615666973958596
+   },
+   "it1_pass": false,
+   "it2": {
+    "n": 42323,
+    "p95": 0.2715591993110273,
+    "max": 0.9564469339718473
+   },
+   "it2_pass": false
+  },
+  {
+   "item": "zone:Z5_barb:scan_to_cad",
+   "it1": {
+    "n": 7250,
+    "p95": 0.14964187152447006,
+    "max": 0.7424026735931472
+   },
+   "it1_pass": true,
+   "it2": {
+    "n": 7270,
+    "p95": 0.152100214347746,
+    "max": 0.7637766180280766
+   },
+   "it2_pass": true
+  },
+  {
+   "item": "zone:Z6_microswitch:scan_to_cad",
+   "it1": {
+    "n": 25271,
+    "p95": 0.5155810589430381,
+    "max": 1.7471888440337118
+   },
+   "it1_pass": false,
+   "it2": {
+    "n": 25290,
+    "p95": 0.47408174799350866,
+    "max": 0.8834704588989624
+   },
+   "it2_pass": false
+  }
+ ],
+ "other": {
+  "registration": {
+   "it1": {
+    "iterations": 38,
+    "max_iterations": 60,
+    "converged": true,
+    "delta_deg": 0.09402633027296368,
+    "delta_mm": 0.06801276265170929
+   },
+   "it2": {
+    "iterations": 41,
+    "max_iterations": 60,
+    "converged": true,
+    "delta_deg": 0.13446017647534297,
+    "delta_mm": 0.06398460351848019
+   }
+  },
+  "datum_audit": {
+   "it1": {
+    "angle_deg": 0.25620399761277646,
+    "origin_offset_mm": 0.16562201095656,
+    "point_disagreement_p95_mm": 0.18809047571508558,
+    "point_disagreement_max_mm": 0.2313423775917712
+   },
+   "it2": {
+    "angle_deg": 0.25620399761277646,
+    "origin_offset_mm": 0.16562201095656,
+    "point_disagreement_p95_mm": 0.18809047571508558,
+    "point_disagreement_max_mm": 0.2313423775917712
+   }
+  },
+  "unobservable_fraction": {
+   "it1": 0.030449999999999977,
+   "it2": 0.027699999999999947
+  },
+  "cad_to_scan_raw": {
+   "it1": {
+    "p95": 1.0371843806047667,
+    "max": 3.498728355591672
+   },
+   "it2": {
+    "p95": 0.9335774735573523,
+    "max": 3.465458768221778
+   }
+  },
+  "datum_frame_scan_to_cad": {
+   "it1": {
+    "p95": 0.5165196307092348,
+    "max": 2.2538491434640378
+   },
+   "it2": {
+    "p95": 0.44021427529631085,
+    "max": 1.9307889168260317
+   }
+  },
+  "n_over_0.8_scan_to_cad": {
+   "it1": 4437,
+   "it2": 2638
+  },
+  "clusters_ge20": {
+   "it1": 31,
+   "it2": 26
+  },
+  "faces": {
+   "it1": 314,
+   "it2": 351
+  },
+  "verdict": {
+   "it1": "REVISE",
+   "it2": "BAND_NOT_MET"
+  }
+ }
+}

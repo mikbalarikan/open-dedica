@@ -1,0 +1,1315 @@
+{
+  "schema": "stl-re/MANIFEST@1",
+  "tool": "make_manifest.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "deliver/README.md": "ecfc7f58a985a62b3c9c4445ae60f5f81d748fe09e4418bb74ff07f6bbb8f63c",
+    "deliver/repro.json": "e34ed6ce350c83b7d0e32ef752467f1518adb607299df45dd42d36045965d197",
+    "qa/gate.json": "0f2d41f2bdd29d6c21ee9db91ef1f3242a715fd09dac0614170b76a3d5fcb894"
+  },
+  "seed": 0,
+  "created": "2026-09-28T11:19:50+00:00",
+  "part": "OD-G11_portafilter",
+  "verdict": "BAND_NOT_MET",
+  "regime": "baseline-skill",
+  "iteration": 2,
+  "acceptance": {
+    "date": "2026-09-28",
+    "who": "Ikbal (owner, session message)",
+    "id": "ACCEPT-BAND",
+    "decision": "\"tamam, band kaçarsa kabul ediyorum, teslim et\": accepts scan_to_cad:masked (max) and cad_to_scan_observable (p95, max) misses for delivery, gate 0f2d41f2bdd2 (created 2026-09-28T11:17:26+00:00).",
+    "evidence": "decisions/accept_band.md"
+  },
+  "checks": {
+    "CHK-PUBLISH": {
+      "ran": true,
+      "result": "pass",
+      "note": "verdict BAND_NOT_MET"
+    },
+    "CHK-SUPERSEDED": {
+      "ran": true,
+      "result": "pass",
+      "iteration": 2,
+      "superseded": [
+        "_it1_SUPERSEDED"
+      ],
+      "note": "all earlier iterations kept intact"
+    },
+    "inputs_unchanged": {
+      "ran": true,
+      "result": "pass",
+      "note": "3 input file(s) unchanged"
+    },
+    "hash_frozen": {
+      "ran": true,
+      "result": "pass",
+      "note": "every build/ STEP matches hash_frozen"
+    },
+    "regime_declared": {
+      "ran": true,
+      "result": "pass",
+      "note": "regime 'baseline-skill'"
+    }
+  },
+  "deliverables": [
+    {
+      "path": "build/OD-G11_portafilter.step",
+      "bytes": 2361573,
+      "sha256": "506aacec7fe7d7974d0c591027142978f40da31354a21346802de6e4c7a92200",
+      "role": "DELIVERABLE: STEP, scan frame (overlays the raw scan)"
+    },
+    {
+      "path": "build/OD-G11_portafilter_datum.step",
+      "bytes": 2359794,
+      "sha256": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+      "role": "DELIVERABLE: STEP, datum frame"
+    },
+    {
+      "path": "deliver/README.md",
+      "bytes": 58374,
+      "sha256": "ecfc7f58a985a62b3c9c4445ae60f5f81d748fe09e4418bb74ff07f6bbb8f63c",
+      "role": "DELIVERABLE: delivery document (rendered from JSON)"
+    }
+  ],
+  "note": "Every file under the run folder is listed in included or excluded (with a reason). deliver/MANIFEST.json itself is not listed: a file cannot contain its own hash.",
+  "unused_excludes": [],
+  "included": [
+    {
+      "path": "DECISIONS.md",
+      "bytes": 2978,
+      "sha256": "57994dcca37cbf165cccfa07a1739af2eadc1ee2e42af2062f44172e0b5450af",
+      "role": "record: human decisions (append-only)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/ROUTE",
+      "bytes": 8,
+      "sha256": "7f379cf3f69d0876d5c919ee8816f40c9b854d4bb7bed4ae6b225cf36264f548",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/MODELING_PLAN.md",
+      "bytes": 7886,
+      "sha256": "5dbffc252aff8c31ec3720c922ae64c84c273ea9b7ca169e06d265c1d478f618",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/OD-G11_portafilter.step",
+      "bytes": 1990114,
+      "sha256": "445164210d87555c84aa59cc2b5f8453c7dc5100b395579988971a40e5ca2063",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/OD-G11_portafilter_cad.stl",
+      "bytes": 24003484,
+      "sha256": "767359317a57a3d6cf8880ddb00f0b18c8130077faac3fc6d97fe4fd286744b5",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/OD-G11_portafilter_datum.step",
+      "bytes": 1988335,
+      "sha256": "9be8bc508474556ce407d70e59ba4653e37f0819fdffc1786dab57a2a460e627",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/build_log.txt",
+      "bytes": 2107,
+      "sha256": "d9ab6592b8d090f29dd825e54e5cbc394f0fbfe33cff37e28933770e8e9e9c2b",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/export_check.json",
+      "bytes": 13524,
+      "sha256": "fb849abb38d7bbf06b05737853b134a10223191ba33c7b01c4ea3c294644ded1",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/face_stats.json",
+      "bytes": 1601,
+      "sha256": "1184f9babd1f650b92e19fba83295b1f19fc0df465f58305f1dcc7ac047077a3",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/fillets.json",
+      "bytes": 4571,
+      "sha256": "0c159ed3aa2df463f0deb8ab3bf13a2ca64b43ca811eb6edbc9088ea9d17a7d8",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/model.py",
+      "bytes": 25908,
+      "sha256": "e1a42d6e800b24be1cf728721024d6d9e692e5d879373e6a4a9ee03320889a0b",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/selfcheck/selfcheck.json",
+      "bytes": 770,
+      "sha256": "05ea46562d78864ef0ede75e2af7d945f1cf2337fc01096f6cad0513a19b52dd",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/build/selfcheck/selfcheck_deviation.py",
+      "bytes": 855,
+      "sha256": "89ba14e05dc5bd2de5e9b67a95833a4867a5b9de7825204e8a290a6b82108b8c",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/PARAM_TABLE.md",
+      "bytes": 31649,
+      "sha256": "7b9e03f4d4db688258a0bca7937d852bf910c3ac1bb8039017b2525fd1dddb58",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/basin.json",
+      "bytes": 1202,
+      "sha256": "e668f9a22785622ec8a427fb98f09237c6fe38af2e451589fa5c49429139c1ea",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/body_profile.json",
+      "bytes": 1823,
+      "sha256": "269cae2ba0238f1e7a66435fdf1e9772cab4ea72792661dad0eed66eff7dd862",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/body_profile.png",
+      "bytes": 141101,
+      "sha256": "d955d5418499fca8a41c4e5c7e05ad203562ef236a22538b9a274dfe0347443d",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/details.json",
+      "bytes": 1367,
+      "sha256": "4435efcf0dda012185d47234478f06c152b0cbfecb28711574411bc1f6210ea2",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/floor_heightmap_max_z.npy",
+      "bytes": 500128,
+      "sha256": "350cdc977d95f99196ecf0c847d6e6e0e200b2155858e68bb62f5cb82ba80844",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/gutter.json",
+      "bytes": 299,
+      "sha256": "cb6766def3f56a3b98156a88e1c63e483a34a21dba61ad36302ea30cb0e7b820",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/handle_axis.json",
+      "bytes": 564,
+      "sha256": "d40277981bc855fe09bde9b02fd47dac9c048ba1fd0fda737461a092dbb285d5",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/handle_meridian.png",
+      "bytes": 174911,
+      "sha256": "f40a213d637e648e02e9a709e4c812a8a47690cd92c2219abd96824af50b12db",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/handle_profile.json",
+      "bytes": 14502,
+      "sha256": "48a8a57648895183b847d66767a91a1624c4b8403ff31183fc4d5e033f797350",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/handle_stations.json",
+      "bytes": 27310,
+      "sha256": "94d0a2e28865db149a584dd460e0f249401db3aacaebf2a0b109225a76f51a9f",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/lugs_notches.json",
+      "bytes": 42677,
+      "sha256": "2abaaaeeaaed2dc24761cd61383a777d250ff92f23b2b5bd4265f3dbe96fa206",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/neck_pad.json",
+      "bytes": 1965,
+      "sha256": "b7059b0fda81eb6bd2e9c2f4418ccea55b35aed70ba8d90fad867e4b57a1eb4f",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/pad_fit.json",
+      "bytes": 6733,
+      "sha256": "ba5ab70b5514e97e95334c16770a4dff676f23335c3310a791d4d7c8fe9b66c2",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/ribs_floor.json",
+      "bytes": 1389,
+      "sha256": "0ff176c0431275d8fc0d28252449c6eeff30e5f7905216537595469a0f3c41ab",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/spouts_screw.json",
+      "bytes": 4910,
+      "sha256": "3f4284a9e717c3b9d414d880eb0bc2ab56f2c600ede479ecb4945dc1fed216fc",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/spouts_screw.png",
+      "bytes": 172282,
+      "sha256": "cda5e9ce728fc9679c4f9d719d676fd39df94b8f57dca8e5ff191701edf983b6",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/vrib_flanks.json",
+      "bytes": 2621,
+      "sha256": "cb355cc76f337f733d2097a0be2cb102e150dc1c5633b4d7551903f925daa6c2",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/figures/wire.json",
+      "bytes": 947,
+      "sha256": "e6c6a417aa5d2102aa769ae7a8bef1a59a400b92ed58fabcb55a5c2b6a9a1b65",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/params.json",
+      "bytes": 55457,
+      "sha256": "2cac3868c440e42915eb7311074a4826a89353b8421acc2c3c55e25c2eda0ad3",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m01_handle_stations.py",
+      "bytes": 1141,
+      "sha256": "a9e5550606c7ae24f9a0134652092c2115d42189eedf4c43a9905294af4a973f",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m02_handle_meridian.py",
+      "bytes": 2181,
+      "sha256": "106818cd9de036e9f139b86228250152ca2bbd2420d83aef5f05c6c0f1dad4ee",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m03_body_profile.py",
+      "bytes": 4503,
+      "sha256": "9b25060da6c11b2e0cae40067a5c11c24045d659af641fa257e908e60cc35ff8",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m04_lugs_notches.py",
+      "bytes": 2848,
+      "sha256": "a045f9142d3b46abf428fb1b24b6884db23873d09567490b2bc5a175bf8ac384",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m05_neck_pad.py",
+      "bytes": 3482,
+      "sha256": "00c45dc87c63456228f3a66111836b60c0934887e88615650fff1d0e784a28da",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m06_pad_circles.py",
+      "bytes": 2139,
+      "sha256": "55ce78a3dce6fa592d65bd69ee401ba466cd490d970f5538ae12ce524dc0a1b6",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m07_spouts_screw.py",
+      "bytes": 3204,
+      "sha256": "c5591c9696f5075ebeb42a1e14f4787c670184ff1728aec624b0bde191eb8fa1",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m08_ribs_floor.py",
+      "bytes": 2823,
+      "sha256": "274a4a1164bfc026cadd9505f0797c85b5b4ea463768e7441333552943c0dac2",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m09_handle_profile.py",
+      "bytes": 2517,
+      "sha256": "f08c960095eb2a7a17e05f5b3a2ad1989220041702808b3b6a3bc64b49bc7f9b",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m10_wire.py",
+      "bytes": 2441,
+      "sha256": "a3403fb366725b0131abba62e776474405efbc92b39a6e401a09b326c025da55",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m11_details.py",
+      "bytes": 3479,
+      "sha256": "d5f6c231cf6826709eb86be80a7f75d9072d755e04029bdb6e2aac5aad7d462b",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m12_basin.py",
+      "bytes": 1476,
+      "sha256": "3de58c471ddb816e4caafe57349271479f5d0936e00c672a18fe3e0813281f14",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m13_vrib_flanks.py",
+      "bytes": 1781,
+      "sha256": "86ec7830acb095d76d55d10c42eb5a0e2541f0612309b74f1b0dc574a772486d",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m14_gutter.py",
+      "bytes": 1759,
+      "sha256": "1bd060ac1e4cdf80bd4e754e731fd1a623407a1e29b0d986c12aa38f9d9807b3",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/measure/scripts/m99_write_params.py",
+      "bytes": 22891,
+      "sha256": "8d2986bb75f051d041684df4e4e1592d1e062c9493e78926990233b3d2f1b681",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/VERDICT.md",
+      "bytes": 21496,
+      "sha256": "bb4d506d1820fd9d0cf88d8d20854e7bc8dc534dbd2a83c51a59b4116ebc0bfe",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/datum_audit.json",
+      "bytes": 2235,
+      "sha256": "6c7b3afe354eb71db8aa76958d99d1e8beb034ebcfe34c1caf531598dabe6484",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/datum_spec.json",
+      "bytes": 950,
+      "sha256": "9a66a838743b5fe953862d80a82c17898ec0e3fcf729bb05b5da97637dcb1699",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/dev_arrays.npz",
+      "bytes": 17619552,
+      "sha256": "23e0c6820535ac140f8bed8006c2f3dcbf183124cc2cab550fbf997d090c15c2",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/deviation.json",
+      "bytes": 48994,
+      "sha256": "a03cf896ddeb1ba8bb7c7236f9c929775a1c86985cb57c7875fbfdd3336268e7",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/deviation_datum.json",
+      "bytes": 48908,
+      "sha256": "519ec76e167ed2f75536799fa5efd1684f57f621d857dea739f00ef9027d6ad1",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/dims.json",
+      "bytes": 951,
+      "sha256": "953c29bd346f1552bbe830db749efcffca6bc44a0b5c0da8fdd0f03b60f9b69b",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/gate.json",
+      "bytes": 138506,
+      "sha256": "0c351e1ee95cdef88643eed2afb42b13800f5eb959b4d9e1560e64f5bc17d029",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/hash_freeze.json",
+      "bytes": 859,
+      "sha256": "5fbff376fa86a121414db27dd79478d9654e0c085703a4657797f4a1ea1bc444",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/icp_scan_masks.json",
+      "bytes": 340,
+      "sha256": "f9748b2c1328591bda902d66e03e1071109a951e5a1006081351862e3b06ed3e",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/masks.json",
+      "bytes": 1309,
+      "sha256": "f93a398854cee8e4d7bcb98aeb6fc6aa5bcd3c6cb0359e080dd284a5ec2a2aa9",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/overlays/overlay_planes.json",
+      "bytes": 1860,
+      "sha256": "03011ce64e4e66dbeea775cad9bd8e2e1af170113bdb26da4961d55d35a8947d",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/overlays/overlay_planes.png",
+      "bytes": 255253,
+      "sha256": "e644336122ea289c1a6a9c439571b0f7374def7d4f1d8c4fd62d8ca3a5a4fc72",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/overlays/overlay_theta.json",
+      "bytes": 3347,
+      "sha256": "d889e0880b367a85f666b67e2253ed9680b94d52bb44257b833fa5746eb60f20",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/overlays/overlay_theta.png",
+      "bytes": 403001,
+      "sha256": "39fa6f7e15012506174d5902fb57d66dd532fd8fdb7de150f132ca0f32ad1607",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/overlays/overlay_z.json",
+      "bytes": 3118,
+      "sha256": "e64fb8f5500fb907feb85d9f0797fe396f306267c0898325874782af7f2aee07",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/overlays/overlay_z.png",
+      "bytes": 592320,
+      "sha256": "a9106085f3785ab2680c4ff9a18d2cce286474c68bcc6d31eff4fe92d75db474",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/regime.json",
+      "bytes": 490,
+      "sha256": "80f0aece6d9ba230c501031ded7aff8eb4d04ca65182d06a721da3c753e615fa",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/registration.json",
+      "bytes": 2982,
+      "sha256": "cab3f0c3270d92eb4db21b30cffa78fa8f86d7361222ca288b86842bccda75e2",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/registration_run1_cap60.json",
+      "bytes": 3020,
+      "sha256": "1ac9c218ac65533cc0607b22b4a6562b9cb16bca45724f95554d6438cebe0c3a",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/review.json",
+      "bytes": 11561,
+      "sha256": "7ce625d6d953b82ef7fb285e1bf1116518d9c629edf70fb6c0a83c9783ba9a60",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/scripts/run_gate_lowmem.py",
+      "bytes": 844,
+      "sha256": "3b394b455bcd4176c8a382d7b8749ad873c6d2e6907533d43c936bd1103ebee1",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/scripts/tess_probe.py",
+      "bytes": 1703,
+      "sha256": "2fc6ea14541ce5b987e506e061268541b6e0b2b963a5db072aeb5e747143c8f6",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/step_check.json",
+      "bytes": 3641,
+      "sha256": "a67928f0b4a0b3718065052795e83c24ec05ceb4e3094ab41439eb0973ca843e",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/tess_watertight_probe.json",
+      "bytes": 1662,
+      "sha256": "fd389da5bc75d68e896d03490a56078ae3f6ab2ec206d35ef5a36fdb24e2131d",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/tier1.json",
+      "bytes": 1480,
+      "sha256": "fae5ab370dcde32ec4d68b066f5f0da500ae5a3666a37bd01b5fad4c48d9d02f",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "_it1_SUPERSEDED/qa/zones.json",
+      "bytes": 2979,
+      "sha256": "060414e8e812731011287284879bda825400577adff00ee96dff8e229302bc70",
+      "role": "superseded: iteration 1 kept intact (CHK-SUPERSEDED)"
+    },
+    {
+      "path": "build/MODELING_PLAN.md",
+      "bytes": 8515,
+      "sha256": "a7ac51b603be6ac71aa6df9e6347e41535d6ffb739a4d6d5424ccc0fb3d33789",
+      "role": "build: written feature plan"
+    },
+    {
+      "path": "build/OD-G11_portafilter.step",
+      "bytes": 2361573,
+      "sha256": "506aacec7fe7d7974d0c591027142978f40da31354a21346802de6e4c7a92200",
+      "role": "DELIVERABLE: STEP, scan frame (overlays the raw scan)"
+    },
+    {
+      "path": "build/OD-G11_portafilter_cad.stl",
+      "bytes": 26008584,
+      "sha256": "f13e5fc2b137767010d91ae1c8cb626a12b8df767bced8eb6eecfa772d2e86d0",
+      "role": "preview: tessellated CAD, scan frame"
+    },
+    {
+      "path": "build/OD-G11_portafilter_datum.step",
+      "bytes": 2359794,
+      "sha256": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+      "role": "DELIVERABLE: STEP, datum frame"
+    },
+    {
+      "path": "build/build_log.txt",
+      "bytes": 2376,
+      "sha256": "e7f0452b1a69f8c309f2d33b6db50f44b1a06641dc0b00fc1522bec4bd7e1a3a",
+      "role": "build: build log (fillet OK/FAILED)"
+    },
+    {
+      "path": "build/export_check.json",
+      "bytes": 15020,
+      "sha256": "ae92e56d50bf60fe933157852f5e173af33e9510bb16e0955078c6196e87bfe2",
+      "role": "build: STEP re-import check, both frames"
+    },
+    {
+      "path": "build/face_stats.json",
+      "bytes": 1603,
+      "sha256": "9f15ce9fa661637dca35f5bfcee93144053eff2631943714a60daabe69ee62f7",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/fillets.json",
+      "bytes": 5278,
+      "sha256": "1118c0658608a14dee1097a590edae6d3235acdf2ffb7e478d1feba910b2dc41",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/model.py",
+      "bytes": 28789,
+      "sha256": "9ea909f2b60c24cd29eb263d1896b5f78d6414e2b5f03959e963678f73c64161",
+      "role": "build: editable design-intent source"
+    },
+    {
+      "path": "build/selfcheck/selfcheck.json",
+      "bytes": 762,
+      "sha256": "d873688e70abb8e30a1d3a12b49830c45cfe3f60b007cbba6f5321c4af2829c5",
+      "role": "build: working file"
+    },
+    {
+      "path": "build/selfcheck/selfcheck_deviation.py",
+      "bytes": 1022,
+      "sha256": "e67ff8687313a490e380d39272f277c7b613469714d541f89985be28a9d5417b",
+      "role": "build: working file"
+    },
+    {
+      "path": "decisions/accept_band.md",
+      "bytes": 1099,
+      "sha256": "52f337f1406dc33a77cb1d3efd5104a7348e19248cbf477e0b313a38b0d39cd4",
+      "role": "unclassified (accept_band.md); review"
+    },
+    {
+      "path": "deliver/README.md",
+      "bytes": 58374,
+      "sha256": "ecfc7f58a985a62b3c9c4445ae60f5f81d748fe09e4418bb74ff07f6bbb8f63c",
+      "role": "DELIVERABLE: delivery document (rendered from JSON)"
+    },
+    {
+      "path": "deliver/limitations.json",
+      "bytes": 7543,
+      "sha256": "c03b290aba414306fb3312b17cf9f6438aecef587fb5bf0634f357a4bd931420",
+      "role": "deliver: limitations, assumptions, claim boundary (prose)"
+    },
+    {
+      "path": "deliver/repro.json",
+      "bytes": 11192,
+      "sha256": "e34ed6ce350c83b7d0e32ef752467f1518adb607299df45dd42d36045965d197",
+      "role": "deliver: fresh-process reproducibility check"
+    },
+    {
+      "path": "input/INPUT_HASHES.json",
+      "bytes": 1474,
+      "sha256": "524efc53b65850456b06e16694ce931e5b2414c33e6f749e3ce960a31182f088",
+      "role": "evidence: input hashes at init"
+    },
+    {
+      "path": "input/photos/1.webp",
+      "bytes": 65572,
+      "sha256": "b16b7540325bbc1b7fe73d955955eb5a1b0e0e7d1720a5ad91d5c1ddbee9ec27",
+      "role": "evidence: photo"
+    },
+    {
+      "path": "input/photos/2.webp",
+      "bytes": 100266,
+      "sha256": "6ccce3f9d52e19c655e209632b920d70549f8649509f780c3decf8e65ec546cc",
+      "role": "evidence: photo"
+    },
+    {
+      "path": "input/scan.stl",
+      "bytes": 25009184,
+      "sha256": "9eb34045f9be50df2320a989f96fc1135a7a75e1d4cc9ac673b2e1bfce0c30aa",
+      "role": "evidence: raw scan (never modified)"
+    },
+    {
+      "path": "intake/INTAKE_CARD.md",
+      "bytes": 10053,
+      "sha256": "cc9af23abf9cd951ee2619f008e555f3865a242a1032843319269f871d030cdc",
+      "role": "intake: intake card"
+    },
+    {
+      "path": "intake/MEASUREMENTS.md",
+      "bytes": 1212,
+      "sha256": "036cf4396619355bf36682171802887901dedad90a264133f37006f8b1f44ea9",
+      "role": "intake: measurement request"
+    },
+    {
+      "path": "intake/align_stdout.txt",
+      "bytes": 2369,
+      "sha256": "16f7571c7455d5fefbfe03bd517a110e087646f75ad09d6b8a8c3e4584e05f98",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/aligned_work.stl",
+      "bytes": 15000034,
+      "sha256": "2af41bca4e8e637950f272c6a426a9ba8dac092ed9d5b56c0caa6b53b8a3fa0f",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/alignment.json",
+      "bytes": 10342,
+      "sha256": "0a2b0dbca01e7d48b144991ff743a06bcf0a6f8f466f5ddbbb9198c4f5380e0a",
+      "role": "intake: datum alignment (scan -> datum)"
+    },
+    {
+      "path": "intake/coverage.json",
+      "bytes": 6458,
+      "sha256": "c0e3633bdb8dda304efae4bfde9b5a41a59ad6968865e3523ff3361e1eb6b526",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/datum_spec.json",
+      "bytes": 2286,
+      "sha256": "d38172837e868bb30b9c54efd7e28dc7da56eb7080ec83a23eca2f588028e2a7",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/intake.json",
+      "bytes": 2868,
+      "sha256": "8502997fbbee5db3aa5790d9f3c0bc3c9197b44f5b24fd2c8605d31b89541875",
+      "role": "intake: scan stats"
+    },
+    {
+      "path": "intake/noise_circle.json",
+      "bytes": 704,
+      "sha256": "c6f00e200e7b5b7c38ba74efa21b05611ac42b7880670924a77f56ca407e46f8",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/noise_primary.json",
+      "bytes": 470,
+      "sha256": "d2756a1a0245de41dfd7caee204ecfd3801512c4d72ca2089e964c4453839d77",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/noise_rim.json",
+      "bytes": 508,
+      "sha256": "8e076b2acdd034b8eaaa34c7f229fe5fdc1d02a9a391bc5b8b221b4fdefc1bde",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/planes.json",
+      "bytes": 2876,
+      "sha256": "7d21cf4eafdd506671452ba37ee2797a25c7975549b57711b261b33bfc1dcbb2",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/regime.json",
+      "bytes": 490,
+      "sha256": "80f0aece6d9ba230c501031ded7aff8eb4d04ca65182d06a721da3c753e615fa",
+      "role": "intake: declared band regime"
+    },
+    {
+      "path": "intake/scripts/write_card.py",
+      "bytes": 9473,
+      "sha256": "4a3b8cf2cb04e125f34adb664103466c60c429b156b38add91e262b089ec141d",
+      "role": "intake: working file"
+    },
+    {
+      "path": "intake/work.stl",
+      "bytes": 15000034,
+      "sha256": "4a08aeaa5190e02be876e6446afe66675bbfdefc2df3f6b888730633d799adc5",
+      "role": "intake: working file"
+    },
+    {
+      "path": "measure/PARAM_TABLE.md",
+      "bytes": 35468,
+      "sha256": "d40a17325361faa7e0422ede43d7e93aa50bc6507b1e5fbf697f8e8d8eae5b59",
+      "role": "measure: parameter table rendered from params.json"
+    },
+    {
+      "path": "measure/figures/arch_feet.json",
+      "bytes": 3740,
+      "sha256": "a9bfa27711ef4e9e78bfc658523ab8afee567028750074f6ae0acf8d12b21fc3",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/body_profile.json",
+      "bytes": 1823,
+      "sha256": "269cae2ba0238f1e7a66435fdf1e9772cab4ea72792661dad0eed66eff7dd862",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/body_profile.png",
+      "bytes": 141101,
+      "sha256": "d955d5418499fca8a41c4e5c7e05ad203562ef236a22538b9a274dfe0347443d",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/details.json",
+      "bytes": 1367,
+      "sha256": "4435efcf0dda012185d47234478f06c152b0cbfecb28711574411bc1f6210ea2",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/floor_heightmap_max_z.npy",
+      "bytes": 500128,
+      "sha256": "350cdc977d95f99196ecf0c847d6e6e0e200b2155858e68bb62f5cb82ba80844",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/handle_axis.json",
+      "bytes": 564,
+      "sha256": "d40277981bc855fe09bde9b02fd47dac9c048ba1fd0fda737461a092dbb285d5",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/handle_meridian.png",
+      "bytes": 174911,
+      "sha256": "f40a213d637e648e02e9a709e4c812a8a47690cd92c2219abd96824af50b12db",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/handle_profile.json",
+      "bytes": 14502,
+      "sha256": "48a8a57648895183b847d66767a91a1624c4b8403ff31183fc4d5e033f797350",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/handle_stations.json",
+      "bytes": 27310,
+      "sha256": "94d0a2e28865db149a584dd460e0f249401db3aacaebf2a0b109225a76f51a9f",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/lug_ends.json",
+      "bytes": 832,
+      "sha256": "4a9423f80b96af259c671710804a2eff23c2cc964195d0856277bc464cfdddca",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/lugs_notches.json",
+      "bytes": 42677,
+      "sha256": "2abaaaeeaaed2dc24761cd61383a777d250ff92f23b2b5bd4265f3dbe96fa206",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/neck_collar.json",
+      "bytes": 567,
+      "sha256": "0eda8672606b55101373c6d527893098badca228c2d9448370d113731f9df06e",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/neck_pad.json",
+      "bytes": 1965,
+      "sha256": "b7059b0fda81eb6bd2e9c2f4418ccea55b35aed70ba8d90fad867e4b57a1eb4f",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/pad_fit.json",
+      "bytes": 6733,
+      "sha256": "ba5ab70b5514e97e95334c16770a4dff676f23335c3310a791d4d7c8fe9b66c2",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/ribs_floor.json",
+      "bytes": 1389,
+      "sha256": "0ff176c0431275d8fc0d28252449c6eeff30e5f7905216537595469a0f3c41ab",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/spouts_screw.json",
+      "bytes": 4910,
+      "sha256": "3f4284a9e717c3b9d414d880eb0bc2ab56f2c600ede479ecb4945dc1fed216fc",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/spouts_screw.png",
+      "bytes": 172282,
+      "sha256": "cda5e9ce728fc9679c4f9d719d676fd39df94b8f57dca8e5ff191701edf983b6",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/trough.json",
+      "bytes": 992,
+      "sha256": "e729560cd764ac5cd808e057ec51edab226b074e1d99a6a1282b4dfd213e38a2",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/vrib_flanks.json",
+      "bytes": 2621,
+      "sha256": "cb355cc76f337f733d2097a0be2cb102e150dc1c5633b4d7551903f925daa6c2",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/vrib_segments.json",
+      "bytes": 725,
+      "sha256": "07ba1cf0ca21462cbce331c4a2605edf3fd1079a005891b6bbf5f03bbc00ccd7",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/wire.json",
+      "bytes": 947,
+      "sha256": "e6c6a417aa5d2102aa769ae7a8bef1a59a400b92ed58fabcb55a5c2b6a9a1b65",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/figures/wire_groove.json",
+      "bytes": 4992,
+      "sha256": "550b75b7d6c8dee9d16a3efd44984b71127f5dde13c5a21d6ba58c43fc5fd57f",
+      "role": "measure: figure"
+    },
+    {
+      "path": "measure/params.json",
+      "bytes": 61825,
+      "sha256": "bf59c5866c0bc367bb2457269e66a0b67197dc516065d29c3c55400304ee3738",
+      "role": "measure: parameter table, source of truth"
+    },
+    {
+      "path": "measure/scripts/m00_floor_heightmap.py",
+      "bytes": 817,
+      "sha256": "99bcc7b2005c827e18f999a271706e28ae6c88919f53fffac5648128b61d29f5",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m01_handle_stations.py",
+      "bytes": 1141,
+      "sha256": "a9e5550606c7ae24f9a0134652092c2115d42189eedf4c43a9905294af4a973f",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m02_handle_meridian.py",
+      "bytes": 2181,
+      "sha256": "106818cd9de036e9f139b86228250152ca2bbd2420d83aef5f05c6c0f1dad4ee",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m03_body_profile.py",
+      "bytes": 4503,
+      "sha256": "9b25060da6c11b2e0cae40067a5c11c24045d659af641fa257e908e60cc35ff8",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m04_lugs_notches.py",
+      "bytes": 2848,
+      "sha256": "a045f9142d3b46abf428fb1b24b6884db23873d09567490b2bc5a175bf8ac384",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m05_neck_pad.py",
+      "bytes": 3482,
+      "sha256": "00c45dc87c63456228f3a66111836b60c0934887e88615650fff1d0e784a28da",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m06_pad_circles.py",
+      "bytes": 2139,
+      "sha256": "55ce78a3dce6fa592d65bd69ee401ba466cd490d970f5538ae12ce524dc0a1b6",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m07_spouts_screw.py",
+      "bytes": 3204,
+      "sha256": "c5591c9696f5075ebeb42a1e14f4787c670184ff1728aec624b0bde191eb8fa1",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m08_ribs_floor.py",
+      "bytes": 2823,
+      "sha256": "274a4a1164bfc026cadd9505f0797c85b5b4ea463768e7441333552943c0dac2",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m09_handle_profile.py",
+      "bytes": 2517,
+      "sha256": "f08c960095eb2a7a17e05f5b3a2ad1989220041702808b3b6a3bc64b49bc7f9b",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m10_wire.py",
+      "bytes": 2441,
+      "sha256": "a3403fb366725b0131abba62e776474405efbc92b39a6e401a09b326c025da55",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m11_details.py",
+      "bytes": 3479,
+      "sha256": "d5f6c231cf6826709eb86be80a7f75d9072d755e04029bdb6e2aac5aad7d462b",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m13_vrib_flanks.py",
+      "bytes": 1781,
+      "sha256": "86ec7830acb095d76d55d10c42eb5a0e2541f0612309b74f1b0dc574a772486d",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m15_vrib_arcs.py",
+      "bytes": 2841,
+      "sha256": "81a9c5cad6c472d153d380fa4dd459429a8b2a4e9efc6bda4724a44c7a7cf2fe",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m16_trough.py",
+      "bytes": 2360,
+      "sha256": "0b413617653bd99404a2abcba3ac8eea2e40389aa4ff68bafd5029af64803cc1",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m17_lug_ends.py",
+      "bytes": 1784,
+      "sha256": "b928e96303a9741eb435c0377432f6ed500215325f007fcbd3bf36bb7e64da08",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m18_arch_feet.py",
+      "bytes": 1687,
+      "sha256": "ae852e3c331b8b9870178f670d3f7da865bd982b14d1c83e914a6542edb260c9",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m19_wire_groove.py",
+      "bytes": 2296,
+      "sha256": "6ad5d21567313883d8794597228c46bc1e6b75fe697a2117f39e209937fadcc4",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m20_neck_collar.py",
+      "bytes": 1742,
+      "sha256": "43a936216e92bf450f2c046c8bc5c941eefebec8ff6104e475f2a52edc558cf0",
+      "role": "measure: working file"
+    },
+    {
+      "path": "measure/scripts/m99_write_params.py",
+      "bytes": 24715,
+      "sha256": "68e812ef5fa4c585aacdd046c0aedccaa888075f5d50a292069d64695868d250",
+      "role": "measure: working file"
+    },
+    {
+      "path": "qa/VERDICT.md",
+      "bytes": 27230,
+      "sha256": "c192ba1de8912b61f25f44eeb61f6af6734d2feb41eda3ea9dffd18ca166de06",
+      "role": "qa: verdict and reasoning"
+    },
+    {
+      "path": "qa/cluster_attrib_it1.json",
+      "bytes": 6931,
+      "sha256": "9b174b3680319fbac6655b0281c5125886fac560aca03779f245b1435f0889b9",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/cluster_attrib_it2.json",
+      "bytes": 6677,
+      "sha256": "d475bb668181ef9e1657d61c483f5c29eccf8d4cb3da37df1a1db7ac498eea65",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/datum_audit.json",
+      "bytes": 2235,
+      "sha256": "a93b3cd7d8fff8c787c1b71bcb9dd13dd94fbb3633d6a7e270756328a27695c1",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/datum_spec.json",
+      "bytes": 950,
+      "sha256": "9a66a838743b5fe953862d80a82c17898ec0e3fcf729bb05b5da97637dcb1699",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dev_arrays.npz",
+      "bytes": 17621496,
+      "sha256": "21387af0ea4091ade0e1cf74bd60a1565e489e62aee6ff6c28ca6b5db70b0d62",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/deviation.json",
+      "bytes": 47259,
+      "sha256": "a5a8b12c1732e7041e1de297b1e8a53d1e64767e7912a05628fada80704e9197",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/deviation_datum.json",
+      "bytes": 46387,
+      "sha256": "b51ad2aa7d597132f4734fddc9cf3cbff8b7bee35f08b37ccdc63b2352e8a804",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/dims.json",
+      "bytes": 951,
+      "sha256": "953c29bd346f1552bbe830db749efcffca6bc44a0b5c0da8fdd0f03b60f9b69b",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/edge_dist_c2s_it2.json",
+      "bytes": 1689,
+      "sha256": "66bddc45c26878ad2cae0f6828bf88be62018d4432379fa4430babcdde7ca854",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/edge_dist_it2.json",
+      "bytes": 1307,
+      "sha256": "3ea9d34b3b69d8b1890f112b37e1adc2faad8e30b38491cbbe2a02a0c7609fda",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/gate.json",
+      "bytes": 141826,
+      "sha256": "0f2d41f2bdd29d6c21ee9db91ef1f3242a715fd09dac0614170b76a3d5fcb894",
+      "role": "qa: gate numbers and verdict (source for the README)"
+    },
+    {
+      "path": "qa/hash_freeze.json",
+      "bytes": 859,
+      "sha256": "bc6b303c4cd268adcd27db9190e09c1517455c838691770c87625740deec6bea",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/icp_scan_masks.json",
+      "bytes": 340,
+      "sha256": "f9748b2c1328591bda902d66e03e1071109a951e5a1006081351862e3b06ed3e",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/it1_vs_it2_clusters.json",
+      "bytes": 17358,
+      "sha256": "0af81b782a74a4f3c6ab5a106060817a587b2bf9212d2f33ce169cb433f74315",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/it1_vs_it2_gated.json",
+      "bytes": 9516,
+      "sha256": "c7e7dbb4385262a5b609c15e83b3edeed85641c3614099584b9c734e721e1bb7",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_attrib_it1.txt",
+      "bytes": 6263,
+      "sha256": "ba83d638299f6c50add983d991a8bcb3266f4627b7c25f13b5d0f7867025d145",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_attrib_it2.txt",
+      "bytes": 6057,
+      "sha256": "f42a0c0de586d900335e308d02252a9751d6891a4db99e499d08f5d2a1ae5403",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_datum_audit.txt",
+      "bytes": 160,
+      "sha256": "ee5df31c1e1552faeea3d5c27c6ed9f8717d6da0855f7b0fdd1b284874d7b899",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_deviation.txt",
+      "bytes": 3203,
+      "sha256": "1a10c62d6a6c204ec47b1e4663a39486d5d8a757fd5cf1ae58682832ef542194",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_deviation_datum.txt",
+      "bytes": 3202,
+      "sha256": "9427c1a4301bfaf70063f13b5468ad1be09220106033f2812a69b410bd6c2e5d",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_edge_dist.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_icp_cap400.txt",
+      "bytes": 103,
+      "sha256": "a73ad1211a211454420730c8a962ba7f35167e9449df3d06644a2c1159974bf3",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_icp_cap60.txt",
+      "bytes": 111,
+      "sha256": "840f5e28c69e649303f172bc40f91aaa01f5dadedc976514bcc24c7eb13e6eec",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_obs_residual_it1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_obs_residual_it2.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_step_check.txt",
+      "bytes": 468,
+      "sha256": "fed52d70d8fcbbef714df70e97850c2198280a82828b2536e0e94b126be2f5fb",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/log_tess_probe.txt",
+      "bytes": 1704,
+      "sha256": "0619632b226ef03b481abfdd03a6683de22cd00476777a2e2ef08703b60c597a",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/masks.json",
+      "bytes": 1309,
+      "sha256": "f93a398854cee8e4d7bcb98aeb6fc6aa5bcd3c6cb0359e080dd284a5ec2a2aa9",
+      "role": "qa: deviation masks"
+    },
+    {
+      "path": "qa/obs_residual_it1.json",
+      "bytes": 12649,
+      "sha256": "13fea9866c21b8967e5eb63ad6adb8e80750e703efbed51b0e15c555de2c9b2a",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/obs_residual_it2.json",
+      "bytes": 4532,
+      "sha256": "d2616b10ca4f39bcaadde53368eff17c6a21476ffacc122f7ef1c8e4f029d376",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/overlays/overlay_planes.json",
+      "bytes": 1860,
+      "sha256": "16a7ae9e7668a63ed88e7887ff1341531c6c17ea9dd3a72e8838477e066ea957",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_planes.png",
+      "bytes": 250176,
+      "sha256": "af2af521b7118fa0cd178cfb0ada97dbecbab548076a7fd0a03e30d518573c27",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_theta.json",
+      "bytes": 4252,
+      "sha256": "e32c3d132f4359f28bdaef9ac5311e03e0dbb33426f5a46a1dda5588cf133489",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_theta.png",
+      "bytes": 546822,
+      "sha256": "20a0e19f37f01c647f1bf56d6c76f3c6bfa5d072d2680179308781722b52577c",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_z.json",
+      "bytes": 3118,
+      "sha256": "9908fc7c3f6f4b2223f74bdca719ca72cc544ba564ad7253948296f8beabd197",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/overlays/overlay_z.png",
+      "bytes": 588893,
+      "sha256": "c2a596923e2178f5f4f1d50b75be55c0099e4607e584a07530c4e2920ff28443",
+      "role": "qa: overlay image"
+    },
+    {
+      "path": "qa/regime.json",
+      "bytes": 490,
+      "sha256": "80f0aece6d9ba230c501031ded7aff8eb4d04ca65182d06a721da3c753e615fa",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/registration.json",
+      "bytes": 3002,
+      "sha256": "9abdbbcb6634d6b1408beefe611c189438e045e7b1811d7e16f8bfe8219603f0",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/registration_run1_cap60.json",
+      "bytes": 3022,
+      "sha256": "01bb2f87a09a7560e1a75bbbfc93127737ffd9ed50be27126ad8a02caae738dc",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/review.json",
+      "bytes": 17930,
+      "sha256": "816f2e54334a475232f01a8b335edc482f3a2c737f071882cac64fdb4c527fd3",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/cluster_attrib.py",
+      "bytes": 5744,
+      "sha256": "14e7c5d147698e6aa08bf48c505a487983ffb5427ce3fd1822858ba7966bd980",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/edge_dist.py",
+      "bytes": 2195,
+      "sha256": "d5a45f30d3699eb3b25c5579ed3c2d7e4693fa7b4ae2d58d3cfa6074989ec97f",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/edge_dist_c2s.py",
+      "bytes": 1611,
+      "sha256": "3efb1d1870161c1b4aa2bee45bd2f62537efe193d05755370f9395eef8e26d54",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/it_compare.py",
+      "bytes": 2298,
+      "sha256": "078e9c7a704d53d45eabe8ce456ca20b222ed77cd7a1a9465c830d6cdc9c2b33",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/it_compare_gated.py",
+      "bytes": 2568,
+      "sha256": "94ed86c4de5df90f8729b45beb3c20f82895e5d58df066ff6611866b866567b0",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/obs_residual.py",
+      "bytes": 2032,
+      "sha256": "bea9f8f36d89a9dd096146e12b979018a009b4e44fb602937719289137970995",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/run_gate_lowmem.py",
+      "bytes": 844,
+      "sha256": "3b394b455bcd4176c8a382d7b8749ad873c6d2e6907533d43c936bd1103ebee1",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/scripts/tess_probe.py",
+      "bytes": 1703,
+      "sha256": "2fc6ea14541ce5b987e506e061268541b6e0b2b963a5db072aeb5e747143c8f6",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/step_check.json",
+      "bytes": 3642,
+      "sha256": "dcb9a0f7791eccfdb7ac9e7bf3c90f0d45d424829da5a3f2f29229eb51ca8d39",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/tess_watertight_probe.json",
+      "bytes": 2238,
+      "sha256": "b00df09391da42f5916ca8b30dc92cb601d8a98cc419b23663f892440c7a27c9",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/tier1.json",
+      "bytes": 1481,
+      "sha256": "34b4069e3c647d289fe9dd03817d9651f7a66581aa7142fdcdb098f7941c4cc6",
+      "role": "qa: working file"
+    },
+    {
+      "path": "qa/zones.json",
+      "bytes": 2979,
+      "sha256": "060414e8e812731011287284879bda825400577adff00ee96dff8e229302bc70",
+      "role": "qa: working file"
+    }
+  ],
+  "excluded": []
+}

@@ -1,0 +1,19 @@
+{"mesh": "work.stl", "raw_scan": "../input/scan.stl", "intake_json": "intake.json", "out_dir": ".", "seed": 0,
+ "noise": {"from": "noise_primary.json"},
+ "chk_scale": {"ran": false, "result": "finding", "note": "no calipers (scan-only, DECISIONS.md MEASUREMENTS): units assumed mm, scale unverified"},
+ "primary": {"type": "plane", "approx_normal": [-0.10102, 0.22614, 0.96884], "material_side": "-z",
+             "offset_range": [-213.5, -212.5],
+             "desc": "bayonet lug top pads", "why": "three moulded bayonet lug pads, coplanar and square to the cup axis; they carry the portafilter bayonet (function) and are the cleanest flat that is square to the axis (the floor plate is tilted/warped ~0.3 deg vs the axis, see INTAKE_CARD)"},
+ "origin": {"xy": {"method": "wall_faces", "wall": "outer", "perp_max": 0.2, "r_min": 39.3, "r_max": 41.0,
+                   "r_hint": 40.1, "r_tol": 0.4, "rms_max": 0.15, "z_range": [-25.0, -1.0], "stations": 8,
+                   "centre_guess": [-8.153, 34.578],
+                   "desc": "outer cup wall faces", "why": "cup outer cylinder = portafilter/bayonet rotation axis; cleanest cylinder (round within +-0.09 over the ~270 deg the scan covers)"},
+            "definition": "cup outer-wall axis ∩ bayonet lug top plane"},
+ "clock": {"rule": "fourier_mass", "n": 3, "r_range": [31.6, 35.0], "z_range": [-6.0, 0.5], "pick_nearest_deg": 0.0,
+           "desc": "bayonet lug 1 centre -> +X", "why": "3 bayonet lugs are the only non-axisymmetric features the scan resolves",
+           "label_rule": "lug 1 = the 3-fold candidate nearest +X after levelling (convention; lugs are nominally identical, see card)"},
+ "landmarks": [
+   {"name": "rim top above lug plane", "stat": "zmax", "r_range": [36.0, 41.5], "expected": 3.4, "tol": 0.4, "tol_source": "pre-alignment r-z survey (pre_rz.png): rim 31.2 vs lug top 27.84, +-0.4 for the provisional frame"},
+   {"name": "floor plate below lug plane", "stat": "zmedian", "r_range": [24.0, 29.0], "z_range": [-21.0, -19.0], "expected": -19.95, "tol": 0.4, "tol_source": "pre-alignment survey: floor 7.89 vs lug top 27.84"},
+   {"name": "outer wall radius", "stat": "rmedian", "r_range": [39.3, 41.0], "z_range": [-20.0, -5.0], "expected": 40.1, "tol": 0.2, "tol_source": "pre-alignment IRLS wall fits 40.05-40.17"}
+ ]}

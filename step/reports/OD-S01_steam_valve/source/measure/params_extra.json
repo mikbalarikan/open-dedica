@@ -1,0 +1,102 @@
+{
+ "struck": [],
+ "simplifications": [
+  {
+   "name": "spindle spline teeth",
+   "modelled_as": "median cylinder r 3.70 with the measured D-flat and key",
+   "deviation_cost": "+-0.23 mm (outer radius p5..p95 3.44..3.91 over theta 45..315, measure/figures/spline_pitch.json)"
+  },
+  {
+   "name": "cap disc dimples (3 shallow round recesses on the knob face)",
+   "modelled_as": "not modelled (flat face)",
+   "deviation_cost": "<=0.4 mm (builder self-check colour map, build/selfcheck_v9.png -Z view)"
+  },
+  {
+   "name": "cap disc slots",
+   "modelled_as": "3 through stadium slots at the measured centres (mirror pair + 1)",
+   "deviation_cost": "up to ~1.0 mm on the slot walls (the scanned walls are partial and irregular; _it1_SUPERSEDED/build/selfcheck/scv9_unwrap_low.png)"
+  },
+  {
+   "name": "cam ring flanks and edges",
+   "modelled_as": "posts with radial flanks, teeth with planar sloped flanks, sharp edges",
+   "deviation_cost": "0.3..1.0 mm along flank edges (_it1_SUPERSEDED/build/selfcheck/scv9_unwrap_low.png)"
+  },
+  {
+   "name": "shoulder block (post 120) upper shell",
+   "modelled_as": "outer r 14.0 / inner r 10.05 shell with a planar sloped top through the measured left-edge line (it2; it1 used 2 flat steps)",
+   "deviation_cost": "<=0.6 mm at the slope/edges (builder self-check it2)"
+  },
+  {
+   "name": "microswitch labels, moulded marks and edge rounds",
+   "modelled_as": "plain box with sharp edges",
+   "deviation_cost": "switch-region self-check p95 0.44 mm, local up to ~0.6 mm"
+  },
+  {
+   "name": "switch terminal blades: hole and tip shape",
+   "modelled_as": "plain rectangular blades",
+   "deviation_cost": "<=0.5 mm (hole r ~0.4)"
+  },
+  {
+   "name": "port plate inner-edge lips and hooks",
+   "modelled_as": "plates end at the measured inner edge line without lips",
+   "deviation_cost": "<=0.6 mm (_it1_SUPERSEDED/build/selfcheck/sc_sec_xup.png)"
+  },
+  {
+   "name": "top port internal ribs",
+   "modelled_as": "counterbore r 5.45 (ribbed wall averaged)",
+   "deviation_cost": "+-0.25 mm (inner radius p10..p50 5.1..5.68)"
+  },
+  {
+   "name": "neck-to-top-block flare and small fillets",
+   "modelled_as": "sharp junctions",
+   "deviation_cost": "<=0.3 mm"
+  },
+  {
+   "name": "port junctions near the column",
+   "modelled_as": "port blocks run to the scanned end wall x -0.12, junction boxes from x -4, flat trims + stadium windows; lip under the upper block (it2)",
+   "deviation_cost": "<=0.6 mm at the junction corners (builder self-check it2)"
+  },
+  {
+   "name": "cap/column relative tilt (CHK-TILT not resolvable, 0.46 deg column vs cap face)",
+   "modelled_as": "coaxial, perpendicular to the cap face",
+   "deviation_cost": "<=0.11 mm at the cap rim (0.46 deg x 14 mm)"
+  },
+  {
+   "name": "cam pocket floors (6 pockets)",
+   "modelled_as": "one two-level floor (r 10.58 to z 6.0, r 9.50 to z 8.2) for all pockets",
+   "deviation_cost": "per-pocket floor medians differ by up to 0.47 mm (z 3..5.8: 10.45..10.92; measure/figures/unwrap_low.npy); lowest mm near z 3 is ~10.0 (drafted floor)"
+  },
+  {
+   "name": "cam x~0 step walls at theta 93..99 and 266..269 (QA it1 clusters 6, 7)",
+   "modelled_as": "not modelled (radial post flanks)",
+   "deviation_cost": "up to ~1.5 mm locally (QA it1 clusters 6/7)"
+  }
+ ],
+ "checks": {
+  "CHK-COUNT": {
+   "ran": true,
+   "result": "finding",
+   "note": "spindle spline: FFT-dominant order 24/25 across 4 stations (pattern_count.py, count_spline.json) and 23..25 on the partial arc (spline_pitch.json): count NOT established; the spline is modelled as its median cylinder (declared simplification). Cam ring: 6 pockets / 3-fold pattern from flank-line fits on the unwrapped map (12 flank lines, residual 0.2..1.6 deg), not an FFT count."
+  },
+  "CHK-ACHIEVABLE": {
+   "ran": false,
+   "result": "pass",
+   "note": "n/a: scan-only run, no caliper readings (DECISIONS.md MEASUREMENTS)"
+  },
+  "CHK-CLUSTER": {
+   "ran": true,
+   "result": "finding",
+   "note": "it2: the QA it1 clusters were re-measured: port end walls, lip, switch bump, bar, column lug, barb rib, top-bore floor, shoulder slope and holder opening are now modelled; the remaining builder self-check clusters sit at enumerated features declared as simplifications"
+  },
+  "CHK-FRAME": {
+   "ran": true,
+   "result": "pass",
+   "note": "every angle measured on intake/aligned_work.stl in the frozen datum frame; theta CCW about +Z from +X; no intake-card angle copied"
+  }
+ },
+ "open_questions": [
+  "Spindle spline tooth count (23..25) is not resolved by the scan: a tooth count or the mating knob would fix it.",
+  "The scan is an assembly (cap + body + microswitch + terminals); it is delivered as ONE fused solid as scanned. A multi-body STEP would be a separate job.",
+  "Interior (valve bore, spool, flow passages) was not scanned and is not modelled; the column is solid below the top port bore."
+ ]
+}

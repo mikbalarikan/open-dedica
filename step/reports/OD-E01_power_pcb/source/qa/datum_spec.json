@@ -1,0 +1,11 @@
+{"comment": "Written by QA (it2 verify) from intake/INTAKE_CARD.md §6 and intake/alignment.json mesh_region_desc (primary: PCB top face; secondary: mounting hole H1 wall; clock: +X short board edge outward normal), not from builder code. Same region definitions as the it1 QA spec (like-for-like). Regions only SELECT raw-scan faces via the intake matrix; every fit is QA code on the raw scan.",
+ "primary": {"type": "plane", "method": "vote", "cone_deg": 3.0, "band_mm": 0.30,
+             "comment": "PCB top face (component side, solder mask): faces near the datum board top, inside the board outline",
+             "region": {"z": [-0.5, 0.4], "x": [-5.0, 95.0], "y": [-56.0, 3.8]}},
+ "position": {"type": "circle", "wall": "inner", "single_wall": "inner", "cauchy_scale_mm": 0.30, "perp_max_dot": 0.30,
+              "comment": "mounting hole H1 bore wall (single inner wall, no counter-wall in the selection), below the board top",
+              "region": {"r": [1.5, 2.6], "z": [-1.5, -0.1]}},
+ "clock": {"type": "plane_normal",
+           "comment": "+X short board edge (outward normal, far side from H1) -> +X; edge wall only, below the board top",
+           "region": {"x": [93.5, 97.0], "y": [-55.0, 3.0], "z": [-1.5, -0.1], "nx": [0.7, null]}}
+}

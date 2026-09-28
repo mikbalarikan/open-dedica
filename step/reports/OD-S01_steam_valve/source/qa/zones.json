@@ -1,0 +1,313 @@
+{
+ "comment": "it2 QA: reused verbatim from _it1_SUPERSEDED/qa/zones.json (CHK-LIKE4LIKE: same zones as it1 so zone numbers compare like-for-like); re-checked against the it2 INTAKE_CARD.md \u00a73/\u00a74 (unchanged Z1..Z6, same occluded interiors). Declared BEFORE any it2 deviation number was computed. QA zones, datum frame (post-ICP design frame). Written from intake/INTAKE_CARD.md \u00a74 (Z1..Z6, band 'regime'), \u00a73 (occluded interiors) and \u00a75 feature z ranges, BEFORE any deviation number was computed. Z1..Z6 are gated at the regime whole-part band (kind 'whole') on scan->CAD only, because under baseline-skill raw CAD->scan is reported, not gated (run-contract \u00a712); their CAD->scan counterparts are report-only 'region' zones. The regime has no interface_max band, so no zone uses kind functional_interface.",
+ "zones": [
+  {
+   "name": "Z1_spindle",
+   "kind": "whole",
+   "directions": [
+    "scan_to_cad"
+   ],
+   "select": {
+    "z": [
+     null,
+     -0.25
+    ]
+   },
+   "note": "INTAKE \u00a74 Z1 splined spindle, D-flat, key (E01, z -14.85..0)"
+  },
+  {
+   "name": "Z2_cap_cam_ring",
+   "kind": "whole",
+   "directions": [
+    "scan_to_cad"
+   ],
+   "select": {
+    "z": [
+     -0.25,
+     8.2
+    ],
+    "r": [
+     0,
+     15.5
+    ]
+   },
+   "note": "INTAKE \u00a74 Z2 cap disc + cam ring posts/teeth (E02, E03, z 0..8.2)"
+  },
+  {
+   "name": "Z3_top_clip_port",
+   "kind": "whole",
+   "directions": [
+    "scan_to_cad"
+   ],
+   "select": {
+    "z": [
+     43.4,
+     null
+    ]
+   },
+   "note": "INTAKE \u00a74 Z3 top clip port block, rim, bore, slots (E08, z 43.4..48.6)"
+  },
+  {
+   "name": "Z4_side_ports",
+   "kind": "whole",
+   "directions": [
+    "scan_to_cad"
+   ],
+   "select": {
+    "x": [
+     null,
+     -10.2
+    ],
+    "z": [
+     11.0,
+     37.0
+    ]
+   },
+   "note": "INTAKE \u00a74 Z4 side hose ports along -X beyond the column/collar radius (E09, E10)"
+  },
+  {
+   "name": "Z5_barb",
+   "kind": "whole",
+   "directions": [
+    "scan_to_cad"
+   ],
+   "select": {
+    "y": [
+     null,
+     -8.8
+    ],
+    "x": [
+     -6.0,
+     6.0
+    ],
+    "z": [
+     25.0,
+     37.0
+    ]
+   },
+   "note": "INTAKE \u00a74 Z5 hose barb along -Y (E11, axis z 30.76), beyond the column/neck radius"
+  },
+  {
+   "name": "Z6_microswitch",
+   "kind": "whole",
+   "directions": [
+    "scan_to_cad"
+   ],
+   "select": {
+    "x": [
+     11.5,
+     null
+    ],
+    "z": [
+     8.4,
+     null
+    ]
+   },
+   "note": "INTAKE \u00a74 Z6 microswitch box, blades, tab (E12, x 9.7..18); purchased part"
+  },
+  {
+   "name": "Z1_spindle_c2s",
+   "kind": "region",
+   "directions": [
+    "cad_to_scan"
+   ],
+   "select": {
+    "z": [
+     null,
+     -0.25
+    ]
+   },
+   "note": "report only"
+  },
+  {
+   "name": "Z2_cap_cam_ring_c2s",
+   "kind": "region",
+   "directions": [
+    "cad_to_scan"
+   ],
+   "select": {
+    "z": [
+     -0.25,
+     8.2
+    ],
+    "r": [
+     0,
+     15.5
+    ]
+   },
+   "note": "report only"
+  },
+  {
+   "name": "Z3_top_clip_port_c2s",
+   "kind": "region",
+   "directions": [
+    "cad_to_scan"
+   ],
+   "select": {
+    "z": [
+     43.4,
+     null
+    ]
+   },
+   "note": "report only"
+  },
+  {
+   "name": "Z4_side_ports_c2s",
+   "kind": "region",
+   "directions": [
+    "cad_to_scan"
+   ],
+   "select": {
+    "x": [
+     null,
+     -10.2
+    ],
+    "z": [
+     11.0,
+     37.0
+    ]
+   },
+   "note": "report only"
+  },
+  {
+   "name": "Z5_barb_c2s",
+   "kind": "region",
+   "directions": [
+    "cad_to_scan"
+   ],
+   "select": {
+    "y": [
+     null,
+     -8.8
+    ],
+    "x": [
+     -6.0,
+     6.0
+    ],
+    "z": [
+     25.0,
+     37.0
+    ]
+   },
+   "note": "report only"
+  },
+  {
+   "name": "Z6_microswitch_c2s",
+   "kind": "region",
+   "directions": [
+    "cad_to_scan"
+   ],
+   "select": {
+    "x": [
+     11.5,
+     null
+    ],
+    "z": [
+     8.4,
+     null
+    ]
+   },
+   "note": "report only"
+  },
+  {
+   "name": "I1_top_bore_interior",
+   "kind": "interior",
+   "select": {
+    "r": [
+     0,
+     4.95
+    ],
+    "z": [
+     42.5,
+     48.0
+    ]
+   },
+   "note": "INTAKE \u00a73: top-port bore r 2.9..4.9, z 42.6..46.7, open boundary loop; partly occluded"
+  },
+  {
+   "name": "I2_column_windows_below_switch",
+   "kind": "interior",
+   "select": {
+    "r": [
+     6.0,
+     9.4
+    ],
+    "z": [
+     8.0,
+     15.4
+    ],
+    "theta_deg": [
+     340,
+     25
+    ]
+   },
+   "note": "INTAKE \u00a73: column surface below the switch hidden by switch and holder; conical window 340..25"
+  },
+  {
+   "name": "B1_z_below_0",
+   "kind": "region",
+   "select": {
+    "z": [
+     null,
+     -0.25
+    ]
+   },
+   "note": "z bucket: spindle"
+  },
+  {
+   "name": "B2_z_0_8p2",
+   "kind": "region",
+   "select": {
+    "z": [
+     -0.25,
+     8.2
+    ]
+   },
+   "note": "z bucket: cap + cam ring"
+  },
+  {
+   "name": "B3_z_8p2_15p4",
+   "kind": "region",
+   "select": {
+    "z": [
+     8.2,
+     15.4
+    ]
+   },
+   "note": "z bucket: collar, ribs, windows, switch base"
+  },
+  {
+   "name": "B4_z_15p4_27p7",
+   "kind": "region",
+   "select": {
+    "z": [
+     15.4,
+     27.7
+    ]
+   },
+   "note": "z bucket: column, lower port, switch"
+  },
+  {
+   "name": "B5_z_27p7_43p4",
+   "kind": "region",
+   "select": {
+    "z": [
+     27.7,
+     43.4
+    ]
+   },
+   "note": "z bucket: neck, groove, upper port, barb"
+  },
+  {
+   "name": "B6_z_above_43p4",
+   "kind": "region",
+   "select": {
+    "z": [
+     43.4,
+     null
+    ]
+   },
+   "note": "z bucket: top clip port"
+  }
+ ]
+}

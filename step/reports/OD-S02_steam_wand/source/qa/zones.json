@@ -1,0 +1,15 @@
+{"comment": "Datum-frame predicates written by QA from INTAKE_CARD.md §4 (functional zones Z1-Z4, band = regime p95/max per the intake table; interface_max is null in this regime, so they are gated as kind 'whole' at the regime band) and from QA's own x-z projection of the aligned scan (qa/_work/scan_xz_yz.png) for the box limits.",
+ "zones": [
+  {"name": "Z1 rod spigot taper + O-ring seats", "kind": "whole", "select": {"z": [21.0, 68.0], "r": [0.0, 7.5]},
+   "note": "machine interface (intake Z1, z 21..67); gated at the regime p95/max as the intake table states"},
+  {"name": "Z2 steel tube B-bend-C", "kind": "whole", "select": {"x": [23.5, 50.0], "z": [-31.0, -5.0]},
+   "note": "intake Z2; box starts after the sealing band (x>23.5) and ends above the bushing (z>-31)"},
+  {"name": "Z3 lever paddle", "kind": "whole", "select": {"x": [-22.5, -9.5], "z": [-28.0, -3.0]},
+   "note": "intake Z3; paddle outboard of the knob"},
+  {"name": "Z4 bushing + tip", "kind": "whole", "select": {"x": [28.0, 50.0], "z": [-59.0, -31.0]},
+   "note": "intake Z4; includes the bushing underside windows and the tip bore mouth (partly unobservable)"},
+  {"name": "R rod lower (collar, groove, bead, lug)", "kind": "region", "select": {"z": [0.0, 21.0], "r": [0.0, 8.0]},
+   "note": "region bucket, reported"},
+  {"name": "R knob + sleeve + band junction", "kind": "region", "select": {"x": [-9.5, 23.5], "z": [-28.0, 0.0]},
+   "note": "region bucket, reported; contains D1"}
+ ]}

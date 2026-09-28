@@ -1,0 +1,7 @@
+{
+ "comment": "Scan-only run (DECISIONS.md MEASUREMENTS 2026-09-28): no input/MEASUREMENTS.md exists; the request intake/MEASUREMENTS.md lists 15 dimension rows (its header says '0 of 16 rows'; the tables hold 15 ids - discrepancy noted). No reading was supplied for any of them, so every dim is ABSENT, not passed. Scan-predicted values in the request are NOT used as expected values (CHK-CIRCULAR).",
+ "source": "intake/MEASUREMENTS.md (request, unfilled)",
+ "total_requested": 15,
+ "absent": ["ENV-D", "ENV-Z1", "ENV-Z2", "F-BORE", "F-LUG", "F-LUGT", "F-STOP", "F-SHELF", "F-POCK", "F-PLATE", "F-KEY", "F-BOSS", "W-CUP", "W-NOTCH", "W-LUGR"],
+ "dims": []
+}

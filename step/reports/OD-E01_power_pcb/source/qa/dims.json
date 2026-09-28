@@ -1,0 +1,6 @@
+{"schema": "stl-re/dims@1",
+ "note": "Scan-only run: input/MEASUREMENTS.md does not exist (DECISIONS.md 2026-09-28 MEASUREMENTS: owner chose scan-only). The intake request sheet intake/MEASUREMENTS.md lists 12 dims; none has a reading, so no caliper value exists and nothing is gated. Every requested dim is ABSENT, not passed. The regime (baseline-skill plastic) has no Tier-1 band (tier1_abs_mm null), so sim_caliper.py is not run and no qa/tier1.json exists (same as it1).",
+ "total_requested": 0,
+ "requested_in_intake_sheet": 12,
+ "absent": ["ENV-X PCB length", "ENV-Y PCB width", "ENV-Z board bottom to heatsink top", "F01 mounting hole H1 dia", "F02 H1-H2 pitch", "F03 PCB thickness", "F04 faston tab X positions", "F05 faston tab height", "F06 heatsink top above board", "F07 big electrolytic caps dia/height", "F08 X2 film cap LxWxH", "C01 connector housings LxWxH"],
+ "dims": []}

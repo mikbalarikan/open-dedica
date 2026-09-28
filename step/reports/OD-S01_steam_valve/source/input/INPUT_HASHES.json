@@ -1,0 +1,67 @@
+{
+  "created": "2026-09-28T06:29:57+00:00",
+  "files": [
+    {
+      "bytes": 24987884,
+      "mode": "copy",
+      "path": "input/scan.stl",
+      "role": "scan",
+      "sha256": "98cd118312fbb9b43d844cbc063c3be897c553541154b1f5988d5be0c2127ebf",
+      "source": "/root/.claude/uploads/eb7c7a98-afd7-570c-90bc-55f004ed8812/129985d4-OD-S01-Steam-Valve-Assembly.stl"
+    },
+    {
+      "bytes": 77212,
+      "mode": "copy",
+      "path": "input/photos/1.png",
+      "role": "photo",
+      "sha256": "89610f23df740488308f9003ceb9cc9f1603e1267149e06a9e6dc5406d1c983b",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/images/1.png"
+    },
+    {
+      "bytes": 95130,
+      "mode": "copy",
+      "path": "input/photos/2.png",
+      "role": "photo",
+      "sha256": "cad8d00b9f676a0558ac8552105bb4e73804c27047c0a89928c805902599bfd6",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/images/2.png"
+    },
+    {
+      "bytes": 64218,
+      "mode": "copy",
+      "path": "input/photos/3.png",
+      "role": "photo",
+      "sha256": "6b6c8a4d0ef5bfacbead2b59dc16eee82288b44f74010eac9949b285dacb49cd",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/images/3.png"
+    },
+    {
+      "bytes": 188998,
+      "mode": "copy",
+      "path": "input/photos/4.png",
+      "role": "photo",
+      "sha256": "84a77f35c6471c027adcd62c88647b004b9a53270a981eb80f5003afc7f6c9ea",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/images/4.png"
+    },
+    {
+      "bytes": 58882,
+      "mode": "copy",
+      "path": "input/photos/5.png",
+      "role": "photo",
+      "sha256": "53f484cce1d12ade66100eb68d09cebb87708e0524ad9cabaa11fb5c58b96b7a",
+      "source": "/tmp/claude-0/-home-user-agentic-STL-to-CAD/eb7c7a98-afd7-570c-90bc-55f004ed8812/images/5.png"
+    }
+  ],
+  "inputs": {
+    "input/photos/1.png": "89610f23df740488308f9003ceb9cc9f1603e1267149e06a9e6dc5406d1c983b",
+    "input/photos/2.png": "cad8d00b9f676a0558ac8552105bb4e73804c27047c0a89928c805902599bfd6",
+    "input/photos/3.png": "6b6c8a4d0ef5bfacbead2b59dc16eee82288b44f74010eac9949b285dacb49cd",
+    "input/photos/4.png": "84a77f35c6471c027adcd62c88647b004b9a53270a981eb80f5003afc7f6c9ea",
+    "input/photos/5.png": "53f484cce1d12ade66100eb68d09cebb87708e0524ad9cabaa11fb5c58b96b7a",
+    "input/scan.stl": "98cd118312fbb9b43d844cbc063c3be897c553541154b1f5988d5be0c2127ebf"
+  },
+  "part": "OD-S01_steam-valve",
+  "scan_resolution": "full",
+  "schema": "stl-re/INPUT_HASHES@1",
+  "seed": 0,
+  "tool": "init_run.py",
+  "tool_version": "stl-re-orchestrate@1"
+}

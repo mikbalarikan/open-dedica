@@ -1,0 +1,84 @@
+{
+ "mesh": "work.stl",
+ "raw_scan": "../input/scan.stl",
+ "intake_json": "intake.json",
+ "out_dir": ".",
+ "seed": 0,
+ "noise": {
+  "from": "noise_primary.json"
+ },
+ "chk_scale": {
+  "ran": true,
+  "result": "finding",
+  "note": "FLAG: no caliper or operator dimensions (scan-only, DECISIONS.md MEASUREMENTS). Units assumed mm, scale unverified; no scale applied."
+ },
+ "primary": {
+  "type": "plane",
+  "approx_normal": [
+   -0.5771,
+   0.3871,
+   0.7191
+  ],
+  "material_side": "-z",
+  "offset_range": [
+   -115.4,
+   -114.7
+  ],
+  "desc": "back cover floor (flat rear face inside the rim wall)",
+  "why": "the back cover is the board plane: the three button axes, the screw-boss holes and the connector shroud are all normal to it; largest clean moulded flat (logos excluded by the RANSAC trim)"
+ },
+ "origin": {
+  "xy": {
+   "method": "kasa",
+   "r_hint": 8.19,
+   "r_tol": 0.3,
+   "rms_max": 0.08,
+   "z_range": [
+    -18.7,
+    -16.4
+   ],
+   "stations": 9,
+   "desc": "middle button collar (housing bore boss around the espresso-2-cups button)",
+   "why": "housing feature that guides the middle button; the part is mirror-symmetric about it (side buttons at +/-27 mm). The loose button cap itself sits 1.6 deg tilted in its bore and is rougher (circle rms 0.03-0.08), so it is not used as the datum"
+  },
+  "definition": "middle button collar axis \u2229 back cover floor plane"
+ },
+ "clock": {
+  "rule": "plane_normal",
+  "approx_normal_raw": [
+   -0.6257,
+   -0.7755,
+   -0.0847
+  ],
+  "cone_deg": 6.0,
+  "desc": "+X end face of the housing rim/steps (end nearest the steam button) -> +X",
+  "why": "the housing long axis (line of the three buttons) is X; the end walls are its normals"
+ },
+ "landmarks": [
+  {
+   "name": "mounting tab top face (highest point)",
+   "stat": "zmax",
+   "expected": 18.95,
+   "tol": 0.15,
+   "tol_source": "planes survey peak bin (0.1 mm) + 2x noise floor"
+  },
+  {
+   "name": "middle button top face centre (median, r<3 mm)",
+   "stat": "zmedian",
+   "r_range": [
+    0,
+    3
+   ],
+   "z_range": [
+    -30,
+    -28.5
+   ],
+   "expected": -29.1,
+   "tol": 0.15,
+   "tol_source": "planes survey peak bin (-29.05 provisional frame, +0.07 frame offset) + 2x noise floor"
+  }
+ ],
+ "noise_secondary": {
+  "from": "noise_circle.json"
+ }
+}

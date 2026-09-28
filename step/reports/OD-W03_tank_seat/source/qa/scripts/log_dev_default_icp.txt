@@ -1,0 +1,39 @@
+scan->CAD: 202383 scan points
+CAD->scan: 300000 CAD samples
+scan_to_cad              n   202383 rms 0.3223 p50 0.1713 p95 0.5877 p99 0.6782 max 1.2000
+cad_to_scan              n   300000 rms 0.7518 p50 0.5679 p95 1.3725 p99 1.7614 max 3.0794
+scan_to_cad_masked       n   199647 rms 0.3188 p50 0.1690 p95 0.5861 p99 0.6547 max 1.1547
+cad_to_scan_masked       n   246294 rms 0.7218 p50 0.5676 p95 1.3057 p99 1.5947 max 2.3512
+cad_to_scan_observable   n    19727 rms 0.7397 p50 0.5635 p95 1.3412 p99 1.7371 max 2.9681
+unobservable CAD fraction 1.37%
+  zone Z1 flange top + skirt outline  scan_to_cad  n   20592 p95 0.536 max 0.681
+  zone Z1 flange top + skirt outline  cad_to_scan  n   37419 p95 0.786 max 2.349
+  zone Z2 barb nipples A+B            scan_to_cad  n   20978 p95 0.483 max 1.068
+  zone Z2 barb nipples A+B            cad_to_scan  n   24516 p95 1.611 max 2.127
+  zone Z3 ear lugs + holes            scan_to_cad  n    9814 p95 0.741 max 1.130
+  zone Z3 ear lugs + holes            cad_to_scan  n   10353 p95 1.194 max 1.957
+  zone Z4 cup outer walls             scan_to_cad  n   53263 p95 0.323 max 0.617
+  zone Z4 cup outer walls             cad_to_scan  n   83624 p95 1.313 max 2.123
+  zone I1 underside + skirt inner (unscanned) scan_to_cad  n   20176 p95 0.606 max 0.702
+  zone I1 underside + skirt inner (unscanned) cad_to_scan  n   44343 p95 1.385 max 2.378
+  zone I2 downward-facing interior (cavity ceilings, inner shoulders) scan_to_cad  n     304 p95 0.338 max 0.556
+  zone I2 downward-facing interior (cavity ceilings, inner shoulders) cad_to_scan  n   20884 p95 0.849 max 1.760
+  zone I3 barb bores                  scan_to_cad  n     686 p95 0.618 max 1.068
+  zone I3 barb bores                  cad_to_scan  n    6354 p95 1.941 max 2.127
+  zone I4 boss hole                   scan_to_cad  n     481 p95 0.610 max 0.831
+  zone I4 boss hole                   cad_to_scan  n     169 p95 0.384 max 0.636
+  zone B1 z -3.3..0.3 skirt+plate     scan_to_cad  n   46134 p95 0.592 max 0.702
+  zone B1 z -3.3..0.3 skirt+plate     cad_to_scan  n   88314 p95 1.258 max 2.391
+  zone B2 z 0.3..7 lower walls        scan_to_cad  n   49716 p95 0.270 max 0.795
+  zone B2 z 0.3..7 lower walls        cad_to_scan  n   77585 p95 1.430 max 3.079
+  zone B3 z 7..12.6 upper walls+tops  scan_to_cad  n   63417 p95 0.593 max 0.955
+  zone B3 z 7..12.6 upper walls+tops  cad_to_scan  n   86564 p95 1.353 max 2.127
+  zone B4 z 12.6..18 shoulders+lugs   scan_to_cad  n   26987 p95 0.716 max 1.200
+  zone B4 z 12.6..18 shoulders+lugs   cad_to_scan  n   30333 p95 1.242 max 1.816
+  zone B5 z 18..29 barbs              scan_to_cad  n   15399 p95 0.482 max 1.068
+  zone B5 z 18..29 barbs              cad_to_scan  n   17204 p95 1.682 max 2.127
+label: OFFICIAL (full-res) | mask-dependent passes: none
+
+real	3m37.159s
+user	2m37.874s
+sys	1m32.912s

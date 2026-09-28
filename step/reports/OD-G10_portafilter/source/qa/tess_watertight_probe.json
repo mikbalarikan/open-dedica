@@ -1,0 +1,137 @@
+{
+ "schema": "stl-re/tess_watertight_probe@1",
+ "tool": "qa/scripts/tess_probe.py",
+ "tool_version": "stl-re-verify@1",
+ "inputs": {
+  "build/OD-G11_portafilter_datum.step": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+  "build/OD-G11_portafilter.step": "506aacec7fe7d7974d0c591027142978f40da31354a21346802de6e4c7a92200"
+ },
+ "seed": null,
+ "created": "2026-09-28T10:54:03+00:00",
+ "steps": {
+  "build/OD-G11_portafilter_datum.step": {
+   "tris": 503342,
+   "watertight": false,
+   "edge_use_counts": {
+    "1": 2,
+    "2": 755008,
+    "4": 2
+   },
+   "non_manifold_or_open_edges": [
+    {
+     "uses": 4,
+     "p0": [
+      16.989,
+      18.925,
+      -46.16
+     ],
+     "len_mm": 0.41777182970079946
+    },
+    {
+     "uses": 1,
+     "p0": [
+      16.58,
+      18.982,
+      -46.226
+     ],
+     "len_mm": 0.0
+    },
+    {
+     "uses": 4,
+     "p0": [
+      21.036,
+      10.58,
+      -38.44
+     ],
+     "len_mm": 0.317541879862101
+    },
+    {
+     "uses": 1,
+     "p0": [
+      20.893,
+      10.861,
+      -38.399
+     ],
+     "len_mm": 0.0
+    }
+   ],
+   "zero_area_triangles": 2,
+   "zero_area_centres": [
+    [
+     16.717,
+     18.963,
+     -46.204
+    ],
+    [
+     20.941,
+     10.768,
+     -38.413
+    ]
+   ],
+   "watertight_without_zero_area": true,
+   "euler_without_zero_area": -4
+  },
+  "build/OD-G11_portafilter.step": {
+   "tris": 508006,
+   "watertight": false,
+   "edge_use_counts": {
+    "1": 2,
+    "2": 762004,
+    "4": 2
+   },
+   "non_manifold_or_open_edges": [
+    {
+     "uses": 1,
+     "p0": [
+      39.672,
+      26.983,
+      -192.62
+     ],
+     "len_mm": 0.0
+    },
+    {
+     "uses": 4,
+     "p0": [
+      39.672,
+      26.983,
+      -192.62
+     ],
+     "len_mm": 0.26769115357278234
+    },
+    {
+     "uses": 4,
+     "p0": [
+      37.345,
+      21.432,
+      -203.287
+     ],
+     "len_mm": 0.2543967847760893
+    },
+    {
+     "uses": 1,
+     "p0": [
+      37.529,
+      21.59,
+      -203.21
+     ],
+     "len_mm": 0.0
+    }
+   ],
+   "zero_area_triangles": 2,
+   "zero_area_centres": [
+    [
+     39.628,
+     27.042,
+     -192.67
+    ],
+    [
+     37.468,
+     21.537,
+     -203.236
+    ]
+   ],
+   "watertight_without_zero_area": true,
+   "euler_without_zero_area": -4
+  }
+ }
+}

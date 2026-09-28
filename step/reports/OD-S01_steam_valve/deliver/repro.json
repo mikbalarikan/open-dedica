@@ -1,0 +1,244 @@
+{
+  "schema": "stl-re/repro@1",
+  "tool": "repro_check.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "build/OD-S01_steam-valve.step": "af802ab6cb06274be3c032e159f9549a47702ef26d98898f5607ddb7e53757ce",
+    "build/OD-S01_steam-valve_datum.step": "549eafe79ff3f665d946fe412fb26ef6fa0276d5328cc961ec03868cdb1f3848",
+    "build/model.py": "3dbf27e994fec1465fe9c25e94e6ceddc6985e53f285db841739e861a0f76c22",
+    "measure/params.json": "19aee3e5fbabcedada3f072e2c223e5e05f7833d02830d4b4b86a4f36448d60a"
+  },
+  "seed": 0,
+  "created": "2026-09-28T08:15:50+00:00",
+  "method": "2 fresh subprocess rebuild(s) of build/model.py in a scratch copy; STEP re-imported; solids, faces, surface census, volume, bbox compared (raw hash reported, not required)",
+  "command": [
+    "python3",
+    "model.py",
+    "--params",
+    "../measure/params.json",
+    "--alignment",
+    "../intake/alignment.json",
+    "--out",
+    ".",
+    "--part",
+    "OD-S01_steam-valve",
+    "--scripts",
+    "/home/user/agentic_STL-to-CAD/skills/stl-re-rebuild-build123d/scripts"
+  ],
+  "cwd": "build",
+  "tolerance_mm": 0.0,
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "build123d": "0.13.0",
+    "OCP": "8.0.1.0",
+    "numpy": "2.4.6"
+  },
+  "reproducible": true,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=../measure/params.json\nF02 column top edge round (local: before ports/plates are fused onto it) fillet target R1.5 used R1.5 on 1 edges OK\nF02 core revolve faces=19\nF01 spindle tip chamfer chamfer target C0.7 used C0.7 on 1 edges OK\nF01 spindle fused\nF09 cam ring, shoulder blocks, collar fused\nF03 top block lug-outline rounds (edges parallel to X) fillet target R1.7 used R1.7 on 4 edges OK\nF03 top block fused\nF04/F05 port pu fused\nF04/F05 port pl fused\nF06 barb fused\nF07/F08 switch and bracket fused\ncuts: top bore, port bores, barb bore, port windows and trims\n{\n  \"closed\": true,\n  \"faces\": 351,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 3,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 15837.549714\n}\n",
+      "stderr_tail": "",
+      "run": 1,
+      "produced": [
+        "OD-S01_steam-valve.step",
+        "OD-S01_steam-valve_datum.step"
+      ]
+    },
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=../measure/params.json\nF02 column top edge round (local: before ports/plates are fused onto it) fillet target R1.5 used R1.5 on 1 edges OK\nF02 core revolve faces=19\nF01 spindle tip chamfer chamfer target C0.7 used C0.7 on 1 edges OK\nF01 spindle fused\nF09 cam ring, shoulder blocks, collar fused\nF03 top block lug-outline rounds (edges parallel to X) fillet target R1.7 used R1.7 on 4 edges OK\nF03 top block fused\nF04/F05 port pu fused\nF04/F05 port pl fused\nF06 barb fused\nF07/F08 switch and bracket fused\ncuts: top bore, port bores, barb bore, port windows and trims\n{\n  \"closed\": true,\n  \"faces\": 351,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 3,\n    \"REDUCED\": 0,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 15837.549714\n}\n",
+      "stderr_tail": "",
+      "run": 2,
+      "produced": [
+        "OD-S01_steam-valve.step",
+        "OD-S01_steam-valve_datum.step"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "OD-S01_steam-valve.step",
+      "original_volume_mm3": 15837.54971420833,
+      "rebuild_volume_mm3": 15837.54971420833,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        48.41938619892963,
+        47.7236325496377,
+        55.189602297015796
+      ],
+      "rebuild_bbox_mm": [
+        48.41938619892963,
+        47.7236325496377,
+        55.189602297015796
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 15837.54971420833,
+          "rebuild_volume_mm3": 15837.54971420833,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            48.41938619892963,
+            47.7236325496377,
+            55.189602297015796
+          ],
+          "rebuild_bbox_mm": [
+            48.41938619892963,
+            47.7236325496377,
+            55.189602297015796
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 15837.54971420833,
+          "rebuild_volume_mm3": 15837.54971420833,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            48.41938619892963,
+            47.7236325496377,
+            55.189602297015796
+          ],
+          "rebuild_bbox_mm": [
+            48.41938619892963,
+            47.7236325496377,
+            55.189602297015796
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 351,
+        "valid": true,
+        "surface_census": {
+          "CONE": 20,
+          "CYLINDER": 76,
+          "PLANE": 254,
+          "TORUS": 1
+        },
+        "volume_mm3": 15837.54971420833,
+        "area_mm2": 9707.258088445504,
+        "bbox_min": [
+          -48.70890794211452,
+          -40.075479569959654,
+          -222.577493550273
+        ],
+        "bbox_max": [
+          -0.28952174318488916,
+          7.648152979678046,
+          -167.3878912532572
+        ]
+      }
+    },
+    {
+      "file": "OD-S01_steam-valve_datum.step",
+      "original_volume_mm3": 15837.549714208324,
+      "rebuild_volume_mm3": 15837.549714208324,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        38.44000010000019,
+        40.35568907637328,
+        63.33000010000022
+      ],
+      "rebuild_bbox_mm": [
+        38.44000010000019,
+        40.35568907637328,
+        63.33000010000022
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 15837.549714208324,
+          "rebuild_volume_mm3": 15837.549714208324,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            38.44000010000019,
+            40.35568907637328,
+            63.33000010000022
+          ],
+          "rebuild_bbox_mm": [
+            38.44000010000019,
+            40.35568907637328,
+            63.33000010000022
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 15837.549714208324,
+          "rebuild_volume_mm3": 15837.549714208324,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            38.44000010000019,
+            40.35568907637328,
+            63.33000010000022
+          ],
+          "rebuild_bbox_mm": [
+            38.44000010000019,
+            40.35568907637328,
+            63.33000010000022
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 351,
+        "valid": true,
+        "surface_census": {
+          "CONE": 20,
+          "CYLINDER": 76,
+          "PLANE": 254,
+          "TORUS": 1
+        },
+        "volume_mm3": 15837.549714208324,
+        "area_mm2": 9707.258088445504,
+        "bbox_min": [
+          -20.44000010000019,
+          -21.92000000000053,
+          -14.760000000000215
+        ],
+        "bbox_max": [
+          18.0,
+          18.435689076372753,
+          48.5700001
+        ]
+      }
+    }
+  ]
+}

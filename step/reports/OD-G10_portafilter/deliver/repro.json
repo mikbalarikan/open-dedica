@@ -1,0 +1,250 @@
+{
+  "schema": "stl-re/repro@1",
+  "tool": "repro_check.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "build/OD-G11_portafilter.step": "506aacec7fe7d7974d0c591027142978f40da31354a21346802de6e4c7a92200",
+    "build/OD-G11_portafilter_datum.step": "f3f2fdc6878381352c7b36f33570859fde9e9f9def7d28e896615fc366baa8cf",
+    "build/model.py": "9ea909f2b60c24cd29eb263d1896b5f78d6414e2b5f03959e963678f73c64161",
+    "measure/params.json": "bf59c5866c0bc367bb2457269e66a0b67197dc516065d29c3c55400304ee3738"
+  },
+  "seed": 0,
+  "created": "2026-09-28T11:19:27+00:00",
+  "method": "2 fresh subprocess rebuild(s) of build/model.py in a scratch copy; STEP re-imported; solids, faces, surface census, volume, bbox compared (raw hash reported, not required)",
+  "command": [
+    "python3",
+    "model.py",
+    "--params",
+    "../measure/params.json",
+    "--alignment",
+    "../intake/alignment.json",
+    "--out",
+    ".",
+    "--part",
+    "OD-G11_portafilter",
+    "--scripts",
+    "/home/user/agentic_STL-to-CAD/skills/stl-re-rebuild-build123d/scripts"
+  ],
+  "cwd": "build",
+  "tolerance_mm": 0.0,
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "build123d": "0.13.0",
+    "OCP": "8.0.1.0",
+    "numpy": "2.4.6"
+  },
+  "reproducible": true,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout_tail": "03 rim inner round: fit centre r 28.673 vs bore+R 28.750\nF04 spout1 at (9.936,14.906): head cap R 4.323, rim z -57.277\nF04 spout1 root round fillet target R1.5 used R1.5 on 1 edges OK\nF04 spout2 at (9.899,-15.112): head cap R 4.495, rim z -57.359\nF04 spout2 root round fillet target R1.5 used R1.5 on 1 edges OK\nF05 pockets: bores (depth assumed)\nF07 U-rib top full round fillet target R0.683215 used R0.683215 on 8 edges OK\nF06/F07 U plateau + rib: x -15.01..0.53+R, faces |y| 5.093/6.487\nF08 V-rib 1 top full round fillet target R0.739348 used R0.739348 on 7 edges OK\nF08 V-rib 2 top full round fillet target R0.741666 used R0.741666 on 7 edges OK\nF08 V ribs added\nF09 lug1 centre 59.5 span 37.0 r_out 35.965 under z -5.128 + 0.0254/deg\nF09 lug2 centre 180.0 span 36.0 r_out 35.773 under z -5.102 + 0.0260/deg\nF09 lug3 centre 300.5 span 35.0 r_out 35.942 under z -5.017 + 0.0259/deg\nF10 rim notches cut\nF11 pad: cone axis (-0.318,0.021) R0 30.885 dR/dz -0.0492\nF12 feet: round R 1.213 at v +-7.434, w -5.470; lowest point w -6.683 vs measured -6.785\nF13 collar crest rounds fillet target R0.6 used R0.6 on 2 edges OK\nF13 end edge round fillet target R0.6 used R0.6 on 1 edges OK\nF13 cone-part leg-foot rounds fillet target R1.21312 used R0.970498 on 2 edges REDUCED tried=[1.2131229728359556, 0.9704983782687645]\nF12/F13 arch t 25.28..38.32, channel to t 41.66; collar peak t 47.90; grip->chamfer at t 160.00; end t 165.867\nF14 screws: centre counterbore r 4.02 at z -49.199; cross recess arm 1.52 depth 2.21\nF15b wire groove: depth 0.732 at z -3.344, theta 5..170\nF15 wire1: arc R 75.54 at z -3.014, 25.6 deg about its centre\nF15 wire2: arc R 71.85 at z -3.867, 29.3 deg about its centre\nF15 wire3: arc R 68.25 at z -3.132, 27.4 deg about its centre\nsolids=1 faces=202 volume=137692.6\n{\n  \"closed\": true,\n  \"faces\": 202,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 11,\n    \"REDUCED\": 1,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 137692.565102\n}\n",
+      "stderr_tail": "",
+      "run": 1,
+      "produced": [
+        "OD-G11_portafilter.step",
+        "OD-G11_portafilter_datum.step"
+      ]
+    },
+    {
+      "returncode": 0,
+      "stdout_tail": "03 rim inner round: fit centre r 28.673 vs bore+R 28.750\nF04 spout1 at (9.936,14.906): head cap R 4.323, rim z -57.277\nF04 spout1 root round fillet target R1.5 used R1.5 on 1 edges OK\nF04 spout2 at (9.899,-15.112): head cap R 4.495, rim z -57.359\nF04 spout2 root round fillet target R1.5 used R1.5 on 1 edges OK\nF05 pockets: bores (depth assumed)\nF07 U-rib top full round fillet target R0.683215 used R0.683215 on 8 edges OK\nF06/F07 U plateau + rib: x -15.01..0.53+R, faces |y| 5.093/6.487\nF08 V-rib 1 top full round fillet target R0.739348 used R0.739348 on 7 edges OK\nF08 V-rib 2 top full round fillet target R0.741666 used R0.741666 on 7 edges OK\nF08 V ribs added\nF09 lug1 centre 59.5 span 37.0 r_out 35.965 under z -5.128 + 0.0254/deg\nF09 lug2 centre 180.0 span 36.0 r_out 35.773 under z -5.102 + 0.0260/deg\nF09 lug3 centre 300.5 span 35.0 r_out 35.942 under z -5.017 + 0.0259/deg\nF10 rim notches cut\nF11 pad: cone axis (-0.318,0.021) R0 30.885 dR/dz -0.0492\nF12 feet: round R 1.213 at v +-7.434, w -5.470; lowest point w -6.683 vs measured -6.785\nF13 collar crest rounds fillet target R0.6 used R0.6 on 2 edges OK\nF13 end edge round fillet target R0.6 used R0.6 on 1 edges OK\nF13 cone-part leg-foot rounds fillet target R1.21312 used R0.970498 on 2 edges REDUCED tried=[1.2131229728359556, 0.9704983782687645]\nF12/F13 arch t 25.28..38.32, channel to t 41.66; collar peak t 47.90; grip->chamfer at t 160.00; end t 165.867\nF14 screws: centre counterbore r 4.02 at z -49.199; cross recess arm 1.52 depth 2.21\nF15b wire groove: depth 0.732 at z -3.344, theta 5..170\nF15 wire1: arc R 75.54 at z -3.014, 25.6 deg about its centre\nF15 wire2: arc R 71.85 at z -3.867, 29.3 deg about its centre\nF15 wire3: arc R 68.25 at z -3.132, 27.4 deg about its centre\nsolids=1 faces=202 volume=137692.6\n{\n  \"closed\": true,\n  \"faces\": 202,\n  \"fillets\": {\n    \"FAILED\": 0,\n    \"NO_EDGES\": 0,\n    \"OK\": 11,\n    \"REDUCED\": 1,\n    \"SELECTOR_ERROR\": 0\n  },\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 137692.565102\n}\n",
+      "stderr_tail": "",
+      "run": 2,
+      "produced": [
+        "OD-G11_portafilter.step",
+        "OD-G11_portafilter_datum.step"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "OD-G11_portafilter.step",
+      "original_volume_mm3": 137692.56510218556,
+      "rebuild_volume_mm3": 137692.56510218556,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        184.07032436169368,
+        109.73377856014079,
+        113.30843720068108
+      ],
+      "rebuild_bbox_mm": [
+        184.07032436169368,
+        109.73377856014079,
+        113.30843720068108
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 137692.56510218556,
+          "rebuild_volume_mm3": 137692.56510218556,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            184.07032436169368,
+            109.73377856014079,
+            113.30843720068108
+          ],
+          "rebuild_bbox_mm": [
+            184.07032436169368,
+            109.73377856014079,
+            113.30843720068108
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 137692.56510218556,
+          "rebuild_volume_mm3": 137692.56510218556,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            184.07032436169368,
+            109.73377856014079,
+            113.30843720068108
+          ],
+          "rebuild_bbox_mm": [
+            184.07032436169368,
+            109.73377856014079,
+            113.30843720068108
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 202,
+        "valid": true,
+        "surface_census": {
+          "BSPLINE": 16,
+          "CONE": 25,
+          "CYLINDER": 30,
+          "PLANE": 108,
+          "REVOLUTION": 4,
+          "SPHERE": 3,
+          "TORUS": 16
+        },
+        "volume_mm3": 137692.56510218556,
+        "area_mm2": 36971.43316271584,
+        "bbox_min": [
+          -83.62023421816328,
+          -26.637649833272697,
+          -289.4977562934274
+        ],
+        "bbox_max": [
+          100.45009014353042,
+          83.09612872686809,
+          -176.18931909274633
+        ]
+      }
+    },
+    {
+      "file": "OD-G11_portafilter_datum.step",
+      "original_volume_mm3": 137692.5651021855,
+      "rebuild_volume_mm3": 137692.5651021855,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        201.72175312499309,
+        70.19959161090857,
+        59.01547692002193
+      ],
+      "rebuild_bbox_mm": [
+        201.72175312499309,
+        70.19959161090857,
+        59.01547692002193
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 137692.5651021855,
+          "rebuild_volume_mm3": 137692.5651021855,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            201.72175312499309,
+            70.19959161090857,
+            59.01547692002193
+          ],
+          "rebuild_bbox_mm": [
+            201.72175312499309,
+            70.19959161090857,
+            59.01547692002193
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 137692.5651021855,
+          "rebuild_volume_mm3": 137692.5651021855,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            201.72175312499309,
+            70.19959161090857,
+            59.01547692002193
+          ],
+          "rebuild_bbox_mm": [
+            201.72175312499309,
+            70.19959161090857,
+            59.01547692002193
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 202,
+        "valid": true,
+        "surface_census": {
+          "BSPLINE": 16,
+          "CONE": 25,
+          "CYLINDER": 30,
+          "PLANE": 108,
+          "REVOLUTION": 4,
+          "SPHERE": 3,
+          "TORUS": 16
+        },
+        "volume_mm3": 137692.5651021855,
+        "area_mm2": 36971.43316271583,
+        "bbox_min": [
+          -35.773356075041,
+          -35.02076725611642,
+          -59.01547682002
+        ],
+        "bbox_max": [
+          165.9483970499521,
+          35.17882435479215,
+          1.0000193267624126e-07
+        ]
+      }
+    }
+  ]
+}

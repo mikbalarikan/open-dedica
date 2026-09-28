@@ -1,0 +1,2 @@
+{"masks": [],
+ "note": "No region is removed from the ICP reference: the owner decision PART-CLASS makes every scanned body (cup, insert, grip, cap, screws, wire) part of the deliverable, so there is no unmodelled body (unlike B02 bristles/COTS screw). Cast lettering is cosmetic, below noise (INTAKE_CARD §5 row 11) and is not removed."}

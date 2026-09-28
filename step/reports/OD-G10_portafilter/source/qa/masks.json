@@ -1,0 +1,9 @@
+{"comment": "Declared by QA BEFORE any deviation number was computed (mask-policy rules 1, 7, 8). Only CAD->scan masks; no scan->CAD mask: every scanned body is part of the deliverable (DECISIONS PART-CLASS), so no scan point is outside the modelled part. Simplified screw heads and the wire are NOT masked; they are reported as zones.",
+ "masks": [
+  {"name": "M1 open boundary", "type": "open_boundary", "applies_to": "cad", "radius_mm": 0.8,
+   "why": "distance from a CAD point to a scan hole EDGE is not a surface deviation: the scan has 15 open-boundary loops (spout/outlet pockets inside the insert, neck-channel roof end, bore/wire gaps, a slit along the grip)",
+   "evidence": "intake/coverage.json#open_boundary_loops; intake/INTAKE_CARD.md §2 artefact zones, §3 occluded; B02 q20_tier2.py:9-10 precedent"},
+  {"name": "M2 skin normal", "type": "normal_disagreement", "applies_to": "cad", "angle_deg": 70,
+   "why": "a CAD point whose nearest scan triangle faces >70 deg away is matched to an occluded/other surface (one fused solid of an assembly: internal faces, pocket walls in shadow, rib flanks in shadow), not an outer-skin deviation",
+   "evidence": "intake/INTAKE_CARD.md §3 'Occluded (from sections)'; build/MODELING_PLAN.md §4 invented geometry; B02 q20_tier2.py:11-12 precedent"}
+ ]}

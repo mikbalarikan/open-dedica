@@ -1,0 +1,232 @@
+{
+  "schema": "stl-re/repro@1",
+  "tool": "repro_check.py",
+  "tool_version": "1.0.0",
+  "inputs": {
+    "build/OD-E01_Power-PCB.step": "b31181ef42b7f47c013862650923d7b5ef778d43788c1652796c4da1f6034858",
+    "build/OD-E01_Power-PCB_datum.step": "03464c966aba47f99dc1cdfdedc4da6402d39f0469bad47131ed641f92f2e830",
+    "build/model.py": "c70bf162fc5fc95c607e893a63da6d52da62a8cac852a0eae4f51560d22fe412",
+    "measure/params.json": "00068f900e9fc900550f4f58bf4d8cef8be191068462d0fb440e3052f29e2571"
+  },
+  "seed": 0,
+  "created": "2026-09-28T09:18:15+00:00",
+  "method": "2 fresh subprocess rebuild(s) of build/model.py in a scratch copy; STEP re-imported; solids, faces, surface census, volume, bbox compared (raw hash reported, not required)",
+  "command": [
+    "/usr/local/bin/python3",
+    "build/model.py"
+  ],
+  "cwd": "run",
+  "tolerance_mm": 0.0,
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "build123d": "0.13.0",
+    "OCP": "8.0.1.0",
+    "numpy": "2.4.6"
+  },
+  "reproducible": true,
+  "runs": [
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=params.json\nF01 board 100.164 x 59.869 x 1.562, slot w 1.300, 6 holes\nF02 heatsink profile: 2 hubs, spine, 16 fins; extrude -0.050..25.262\nF03 TO-220 body x 42.86..46.08 z 6.11..14.98, tab x 46.08..47.48 to z 21.62, hole d 3.25, 3 bent leads\nF04 clip strap: 21 segments, w 0.80, z 6.90..13.34\nF05 cap_C1: r base/groove/body 2.316/2.316/2.446, groove z 1.5..2.5, top 5.423, lean 2.81 deg\nF05 cap_C2: r base/groove/body 3.147/2.975/3.235, groove z 2.5..3.5, top 11.957, lean 2.88 deg\nF05 cap_C3: r base/groove/body 5.042/4.755/5.089, groove z 2.5..4.5, top 13.371, lean 2.40 deg\nF05 cap_C4: r base/groove/body 5.031/4.767/5.095, groove z 2.5..4.5, top 13.392, lean 3.04 deg\nF05 cap_C5: r base/groove/body 3.850/3.405/3.906, groove z 2.5..5.5, top 7.113, lean 2.13 deg\nF05 cap_C1_base (SMD V-chip base plate) 5.09 x 5.17 x 1.59\nF06 X2 box 17.30 x 4.77 x 10.83\nF07 6 fastons: blade 6.318 x 0.779 x 10.617, chamfer 1.020, hole d 1.65 @ z 6.31\nF08 conn_J1: 5.52 x 17.28 x 6.82, cavity floor 2.89, 7 inner contacts/ribs\nF08 conn_J2: 5.58 x 9.77 x 6.88, cavity floor 3.32, 3 inner contacts/ribs\nF08 conn_J3: 4.89 x 7.24 x 5.79, cavity floor 1.86, 3 inner contacts/ribs\nF09 blk_K1: base top 2.88, riser top 9.54, back 6.92->7.83\nF09 blk_K2: base top 3.21, riser top 11.73, back -2.39->-2.76\nF10 ax_D1: r 1.294 axis z 1.639, y -11.60..-5.80, 2 leads\nF10 ax_D2: r 1.348 axis z 1.419, y -11.60..-5.80, 2 leads\nF10 ax_L2: r 1.507 axis z 1.769, y -24.60..-16.80, 1 leads\nF10 ax_R1: r 2.112 axis z 6.367, y -39.60..-27.20, 2 leads\nF11 Y-cap: D 10.394, t 3.306, normal (0.222,0.816,0.535); 2 leads\nF12 75 SMD / low-part boxes\nF13 union of board + 101 sub-bodies -> solids 1, faces 1233, valid True\n{\n  \"closed\": true,\n  \"faces\": 1233,\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 20609.894652\n}\n",
+      "stderr_tail": "",
+      "run": 1,
+      "produced": [
+        "OD-E01_Power-PCB.step",
+        "OD-E01_Power-PCB_datum.step"
+      ]
+    },
+    {
+      "returncode": 0,
+      "stdout_tail": "build123d 0.13.0  params=params.json\nF01 board 100.164 x 59.869 x 1.562, slot w 1.300, 6 holes\nF02 heatsink profile: 2 hubs, spine, 16 fins; extrude -0.050..25.262\nF03 TO-220 body x 42.86..46.08 z 6.11..14.98, tab x 46.08..47.48 to z 21.62, hole d 3.25, 3 bent leads\nF04 clip strap: 21 segments, w 0.80, z 6.90..13.34\nF05 cap_C1: r base/groove/body 2.316/2.316/2.446, groove z 1.5..2.5, top 5.423, lean 2.81 deg\nF05 cap_C2: r base/groove/body 3.147/2.975/3.235, groove z 2.5..3.5, top 11.957, lean 2.88 deg\nF05 cap_C3: r base/groove/body 5.042/4.755/5.089, groove z 2.5..4.5, top 13.371, lean 2.40 deg\nF05 cap_C4: r base/groove/body 5.031/4.767/5.095, groove z 2.5..4.5, top 13.392, lean 3.04 deg\nF05 cap_C5: r base/groove/body 3.850/3.405/3.906, groove z 2.5..5.5, top 7.113, lean 2.13 deg\nF05 cap_C1_base (SMD V-chip base plate) 5.09 x 5.17 x 1.59\nF06 X2 box 17.30 x 4.77 x 10.83\nF07 6 fastons: blade 6.318 x 0.779 x 10.617, chamfer 1.020, hole d 1.65 @ z 6.31\nF08 conn_J1: 5.52 x 17.28 x 6.82, cavity floor 2.89, 7 inner contacts/ribs\nF08 conn_J2: 5.58 x 9.77 x 6.88, cavity floor 3.32, 3 inner contacts/ribs\nF08 conn_J3: 4.89 x 7.24 x 5.79, cavity floor 1.86, 3 inner contacts/ribs\nF09 blk_K1: base top 2.88, riser top 9.54, back 6.92->7.83\nF09 blk_K2: base top 3.21, riser top 11.73, back -2.39->-2.76\nF10 ax_D1: r 1.294 axis z 1.639, y -11.60..-5.80, 2 leads\nF10 ax_D2: r 1.348 axis z 1.419, y -11.60..-5.80, 2 leads\nF10 ax_L2: r 1.507 axis z 1.769, y -24.60..-16.80, 1 leads\nF10 ax_R1: r 2.112 axis z 6.367, y -39.60..-27.20, 2 leads\nF11 Y-cap: D 10.394, t 3.306, normal (0.222,0.816,0.535); 2 leads\nF12 75 SMD / low-part boxes\nF13 union of board + 101 sub-bodies -> solids 1, faces 1233, valid True\n{\n  \"closed\": true,\n  \"faces\": 1233,\n  \"solids\": 1,\n  \"valid\": true,\n  \"volume_mm3\": 20609.894652\n}\n",
+      "stderr_tail": "",
+      "run": 2,
+      "produced": [
+        "OD-E01_Power-PCB.step",
+        "OD-E01_Power-PCB_datum.step"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "OD-E01_Power-PCB.step",
+      "original_volume_mm3": 20609.89465241445,
+      "rebuild_volume_mm3": 20609.89465241445,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        71.77096280605788,
+        110.62046801331228,
+        87.44875296486734
+      ],
+      "rebuild_bbox_mm": [
+        71.77096280605788,
+        110.62046801331228,
+        87.44875296486734
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 20609.89465241445,
+          "rebuild_volume_mm3": 20609.89465241445,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            71.77096280605788,
+            110.62046801331228,
+            87.44875296486734
+          ],
+          "rebuild_bbox_mm": [
+            71.77096280605788,
+            110.62046801331228,
+            87.44875296486734
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 20609.89465241445,
+          "rebuild_volume_mm3": 20609.89465241445,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            71.77096280605788,
+            110.62046801331228,
+            87.44875296486734
+          ],
+          "rebuild_bbox_mm": [
+            71.77096280605788,
+            110.62046801331228,
+            87.44875296486734
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 1233,
+        "valid": true,
+        "surface_census": {
+          "CYLINDER": 178,
+          "PLANE": 1054,
+          "TORUS": 1
+        },
+        "volume_mm3": 20609.89465241445,
+        "area_mm2": 24734.89241368658,
+        "bbox_min": [
+          -8.557885815640425,
+          -82.5440581015256,
+          -248.17713545460984
+        ],
+        "bbox_max": [
+          63.213076990417456,
+          28.07640991178668,
+          -160.7283824897425
+        ]
+      }
+    },
+    {
+      "file": "OD-E01_Power-PCB_datum.step",
+      "original_volume_mm3": 20609.89465241442,
+      "rebuild_volume_mm3": 20609.89465241442,
+      "volume_abs_delta_mm3": 0.0,
+      "original_bbox_mm": [
+        100.164,
+        59.869,
+        26.824
+      ],
+      "rebuild_bbox_mm": [
+        100.164,
+        59.869,
+        26.824
+      ],
+      "bbox_max_abs_delta_mm": 0.0,
+      "faces_equal": true,
+      "solids_equal": true,
+      "surface_census_equal": true,
+      "geometry_measurements_identical": true,
+      "raw_sha256_equal": false,
+      "runs": [
+        {
+          "original_volume_mm3": 20609.89465241442,
+          "rebuild_volume_mm3": 20609.89465241442,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            100.164,
+            59.869,
+            26.824
+          ],
+          "rebuild_bbox_mm": [
+            100.164,
+            59.869,
+            26.824
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 1,
+          "raw_sha256_equal": false
+        },
+        {
+          "original_volume_mm3": 20609.89465241442,
+          "rebuild_volume_mm3": 20609.89465241442,
+          "volume_abs_delta_mm3": 0.0,
+          "original_bbox_mm": [
+            100.164,
+            59.869,
+            26.824
+          ],
+          "rebuild_bbox_mm": [
+            100.164,
+            59.869,
+            26.824
+          ],
+          "bbox_max_abs_delta_mm": 0.0,
+          "faces_equal": true,
+          "solids_equal": true,
+          "surface_census_equal": true,
+          "geometry_measurements_identical": true,
+          "run": 2,
+          "raw_sha256_equal": false
+        }
+      ],
+      "original": {
+        "solids": 1,
+        "faces": 1233,
+        "valid": true,
+        "surface_census": {
+          "CYLINDER": 178,
+          "PLANE": 1054,
+          "TORUS": 1
+        },
+        "volume_mm3": 20609.89465241442,
+        "area_mm2": 24734.89241368658,
+        "bbox_min": [
+          -5.162,
+          -56.0,
+          -1.562
+        ],
+        "bbox_max": [
+          95.002,
+          3.869,
+          25.262
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+ "comment": "Scan-only run: input/MEASUREMENTS.md does not exist; intake/MEASUREMENTS.md (the request) lists 12 rows, 0 readings (DECISIONS.md 2026-09-28 MEASUREMENTS). Every row is ABSENT, not passed. The CAD values below are QA's own jaw reading on the STEP, recorded ungated (caliper null) so a later caliper pass has a comparison point; they are NOT evidence of anything.",
+ "total_requested": 12,
+ "absent": ["ENV-X", "ENV-Y", "ENV-Z", "F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "W01"],
+ "dims": [
+  {"id": "ENV-X", "name": "length over the two ear lug ends", "caliper": null, "gated": false, "source": "absent",
+   "method": {"kind": "jaw", "plane": {"origin": [0, 0, 14.0], "normal": [0, 0, 1]}, "dir": [1, 0, 0]}},
+  {"id": "ENV-Y", "name": "flange width over straight skirt sides (mid-length)", "caliper": null, "gated": false, "source": "absent",
+   "method": {"kind": "jaw", "plane": {"origin": [0, 0, -1.0], "normal": [0, 0, 1]}, "dir": [0, 1, 0], "region": {"abs_x": [null, 10.0]}}},
+  {"id": "F02", "name": "barb A shank OD z=20", "caliper": null, "gated": false, "source": "absent",
+   "method": {"kind": "jaw", "plane": {"origin": [-19.49, 0, 20.0], "normal": [0, 0, 1]}, "region": {"x": [-26.0, -13.0]}}},
+  {"id": "F04", "name": "cup A outer OD z=1 (jaws off the webs)", "caliper": null, "gated": false, "source": "absent",
+   "method": {"kind": "jaw", "plane": {"origin": [-19.49, 0, 1.0], "normal": [0, 0, 1]}, "region": {"x": [-32.0, -7.0], "abs_y": [1.5, null]}}},
+  {"id": "F06", "name": "lug hole ID (+X) z=14", "caliper": null, "gated": false, "source": "absent",
+   "method": {"kind": "bore", "plane": {"origin": [38.53, 0, 14.0], "normal": [0, 0, 1]}, "stat": "fit"}}
+ ]
+}
