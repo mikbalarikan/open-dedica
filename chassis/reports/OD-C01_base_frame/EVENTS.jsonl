@@ -15,3 +15,7 @@
 {"t": "2026-09-30T15:21:59Z", "ev": "note", "detail": {"text": "- -> od_c01_frame_v01", "ref": "JOB.md:active_target"}}
 {"t": "2026-09-30T15:22:00Z", "ev": "state", "detail": {"from": "J1_SPEC", "to": "J2_PLAN", "reason": "spec 1.0 ratified on the standing instruction; C1 picked"}}
 {"t": "2026-09-30T15:27:07Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c01_frame_v01", "brief": "briefs/WP-02_designer.md", "attempt": 1}}
+{"t": "2026-09-30T15:37:06Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c01_frame_v01", "outcome": "SUBMITTED", "report": "01_CAD/DESIGN_PLAN.md"}}
+{"t": "2026-09-30T15:37:33Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "plan accepted: no conflict; the 3MF is an orchestrator step"}}
+{"t": "2026-09-30T15:37:34Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c01_frame_v01", "brief": "briefs/WP-03_designer.md", "attempt": 1}}
+{"t": "2026-09-30T15:37:34Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
