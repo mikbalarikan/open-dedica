@@ -128,7 +128,7 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-C04` | OD-C00 | PRINT | Thermoblock mount (≥10 mm air gap to printed walls) |  |  | 1 | DESIGN | ASA / PC | printed | print | #2 | 🧊 |
 | `OD-C05` | OD-C00 | PRINT | Group head carrier (ties OD-G00 to frame) |  |  | 1 | DESIGN | ASA | printed | print | #3 | ✎ |
 | `OD-C06` | OD-C00 | PRINT | Water tank dock / inlet seat |  |  | 1 | DESIGN | PETG | printed | print | #5 | ✎ |
-| `OD-C07` | OD-C00 | PRINT | Valve & flowmeter mount (OPV reachable without disassembly) |  |  | 1 | DESIGN | PETG | printed | print | #6 | ✎ |
+| `OD-C07` | OD-C00 | PRINT | Valve & flowmeter mount (OPV reachable without disassembly) |  |  | 1 | DESIGN | PETG | printed | print | #6 | 🧊 |
 | `OD-C08` | OD-C00 | PRINT | Electronics bay tray |  |  | 1 | DESIGN | PETG | printed | print | #8 | ✎ |
 | `OD-C09` | OD-C00 | PRINT | Front panel with button bezel |  |  | 1 | DESIGN | ASA | printed | print | #8 | ✎ |
 | `OD-C10` | OD-C00 | PRINT | Top panel (removable — 4 screws) |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
