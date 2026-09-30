@@ -23,4 +23,4 @@ Also noted, not blocking (all LOW): F5 REQ-04's slot window wording overlaps the
 
 ## The Usta's decision
 
-Decision: <A | B | C> · date: <yyyy-mm-dd> · notes: <…>
+Decision: B · date: 2026-09-30 · notes: chosen on the decision card at 16:48 UTC ("Accept as is"); F1–F4 recorded as named exceptions in DESIGN_SPEC §5 and §7

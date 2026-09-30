@@ -5,9 +5,9 @@ code: ODC07
 milestone: M1
 title: "Open Dedica OD-C07 printed valve and flowmeter mount"
 lane: CAD
-state: REVISE
-blocked_on: {question: "reviews/REVISE_PACKET_RV01.md: A another round with spec 1.3 (recess R 14.60, ring root round 0.1), B accept the two gaps (0.297 to the ribs, 0.377 to the cup) as documented deviations, C stop", since: "2026-09-30T16:08:02Z", return_to: J3_BUILD}
-next_action: "the Usta decides on reviews/REVISE_PACKET_RV01.md; then usta_gate revise_decision and the next state"
+state: J5_DELIVER
+blocked_on: null
+next_action: "J5: copy the reviewed STEP/STL and build script to open-dedica chassis/ and open the PR; the OD-G01 thread updates bom.csv, BOM.md, chassis/README and OD-000"
 data_class: PUBLIC
 size: M
 process: [FDM]
@@ -32,6 +32,7 @@ usta_gates:
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.2", date: "2026-09-30"}
+  - {gate: revise_decision, outcome: accept_deviations, date: "2026-09-30"}
 deliverables: [STEP, STL, scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null

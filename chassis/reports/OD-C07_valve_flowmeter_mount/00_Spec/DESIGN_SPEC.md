@@ -153,7 +153,7 @@ the thermoblock (PETG allowed by chassis rule 3).
 | REQ-08 | OPV reachable | no mount material above z 48.1 (`envelope` max z) and none within r 12 of the valve axis above the deck top | Hard | CAD | A-10 | `envelope`, `radial_extent` | A-10 |
 | REQ-09 | Drainage | every pocket that faces up is open to the bottom face or to the plate top: the pin holes and the window are through (REQ-02, REQ-07); the recess drains through the pin holes; the annulus between the OD-H24 rim and the ring drains through three notches 2.0 ± 0.1 wide × 0.5 ± 0.1 high at the ring base at θ 25°, 115°, 225° ± 1° | Hard | part | house | reviewer, from sections | — |
 
-**Named exceptions** (Usta U-18): none.
+**Named exceptions** (Usta U-18): RV01 F1–F4 accepted by the Usta on 2026-09-30 as documented deviations (decision card, option B): the recess edge sits 0.297 from the OD-H24 underside ribs (REQ-02, U-03, D-04c, against ≥ 0.5) and the ring's 0.3 root round 0.377 from the cup's foot (REQ-01, D-04c, against [0.50, 0.70]); both static unloaded gaps above the 0.30 sliding-fit floor (D-04d). The v01 geometry is delivered as reviewed.
 
 ## §6 Assumptions ledger
 
@@ -192,6 +192,7 @@ the thermoblock (PETG allowed by chassis rule 3).
 | 2026-09-30 | INTAKE §4 Q1 (the OD-H24 "connector" is the flowmeter's own Hall-sensor connector, not OD-H23), Q5 and Q6 (tube routes, OD-C01 floor) are chassis-level: carried to OD-C01 as A-14 and A-19 | Oğuz | INTAKE_v01 §4 |
 | 2026-09-30 | spec 1.1 on the designer's J2 stop (DESIGN_PLAN §7 Q1 … Q6): Q1 → P-1, the stem bore becomes a U-slot open to +Y and OD-H22 is assembled along −Y (A-22; C2 and a two-part clamp rejected: one solid, OPV from the top); Q2 → slits 2.40 wide to x 62 ± 11.85, D-01b lowered to 1.5 with the reason in its row; Q3 → P-3 recess R 14.10 × 0.60, pin holes 9.4 long; Q4 → P-4, hook 3 at 320°; Q5 → P-5, three drain notches; Q6 → the insert-bore ceilings are D-03b bridges; J-01 arithmetic corrected to 0.67 %. Ratified on the standing instruction; the Usta confirms or amends at the next opportunity | Oğuz (standing instruction) | usta_gate spec_ratified 1.1 |
 | 2026-09-30 | spec 1.2 on the designer's J3 stop (REPORT v01 §10): the OD-H22 −Y slide moves from 0.5 to 5.0 above the seat, then a 5.0 drop (at 0.5 the gussets cut the deck arms by 15.2 mm³; measured at 5.0: 0 mm³, least gap 0.858; the alternative, gusset slits open to +Y, was rejected: it takes the flange bearing off the −Y web). Geometry unchanged. The sweep (REPORT §4) showed the ring, pin, slot and slit-reach tolerances reaching under the 0.5 clearance at their lower ends: made one-sided. The 4.94 gap catch-to-connector is accepted (A-09). Ratified on the standing instruction | Oğuz (standing instruction) | usta_gate spec_ratified 1.2 |
+| 2026-09-30 | RV01 REVISE decided: option B, accept F1–F4 as documented deviations (§5 named exceptions); the v01 build goes to delivery unchanged. Not taken: another round (recess R 14.60, ring root round 0.1) or stop | the Usta, decision card 16:48 UTC | usta_gate revise_decision accept_deviations |
 
 ## §8 Change log
 
