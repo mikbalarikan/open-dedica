@@ -10,6 +10,8 @@ Written by Oğuz from `reviews/RV01_od_g01_housing_v03.md` · spec 1.3 · build 
 
 Also noted, not blocking: F2 (MEDIUM) one ear top of three touches at the locked pose (0 / 0.090 / 0.021 mm: the scanned ears sit at 120.5/120.5/119°, the lugs at 120°, A-25); F3 (UNKNOWN) no boolean against OD-G10, its STEP is not a sound solid (A-28), the row stands on distance; F4 (MEDIUM) no lug root fillet achieved (sharp roots on the section that carries the brew load); F5 (LOW) the STL is meshed at 0.002 mm, finer than U-07's 0.01, because at 0.01 the mesher's sagitta reads 0.043; F6 (LOW) the insert holes have zero depth margin and open on the flange front; F7 (LOW) the ear-to-stop gap at the locked clock is 0.276 mm, the tightest gap on the lock path.
 
+Correction pending the Usta's ratification (spec 1.4): spec §2's sentence "in the machine, +Z is horizontal and faces the user" is wrong; the Dedica group head stands with its axis vertical and the mouth facing down (the OD-G10 input shows it: its cup opens toward the group and its spouts point the other way). Nothing in the housing's geometry, gates or print orientation depends on it; the carrier OD-C05 and the OD-000 assembly use the vertical, mouth-down pose, and the flange then carries the housing's weight and the brew reaction upward into the carrier.
+
 ## Options
 
 | Option | What happens | Cost and risk |
