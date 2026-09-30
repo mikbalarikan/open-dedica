@@ -68,7 +68,7 @@ def rib(z0, z1):
     pts = [(C["r_in"] * math.cos(th0 + (th1 - th0) * i / n), C["r_in"] * math.sin(th0 + (th1 - th0) * i / n)) for i in range(n + 1)]
     pts = pts + [(-xo, xo), (-xo, C["foot_y0"]), (xo, C["foot_y0"]), (xo, xo)]
     face = Face(Wire(Polyline(*[(x, y, z0) for x, y in pts], close=True)))
-    return extrude(face, amount=z1 - z0)
+    return extrude(face, amount=z1 - z0, dir=(0, 0, 1))
 
 
 probes = {}
@@ -91,6 +91,8 @@ cv = common_volume(sleeve, pump)
 out["sleeve_pump_common_mm3"] = (cv.measured, cv.status, cv.reason)
 sc = clearance(probes["rib1"], sleeve)
 out["rib1_sleeve_clearance"] = (sc.measured, rnd(sc.at))
+out["rib_probe_z"] = {k: (round(probes[k].bounding_box().min.Z, 3), round(probes[k].bounding_box().max.Z, 3)) for k in ("rib1", "rib2")}
+out["rib_sleeve_common_mm3"] = {k: common_volume(probes[k], sleeve).measured for k in ("rib1", "rib2")}
 out["sleeve_env"] = {k: round(r.measured, 3) for k, r in envelope(sleeve).items()}
 
 print(json.dumps(out, indent=1, default=str))
