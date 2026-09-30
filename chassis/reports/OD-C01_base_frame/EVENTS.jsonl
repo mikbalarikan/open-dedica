@@ -1,0 +1,8 @@
+{"t": "2026-09-30T15:13:43Z", "ev": "job_start", "detail": {"job_id": "20260930-od-c01-base-frame", "lane": "CAD", "data_class": "PUBLIC", "code": "ODC01"}}
+{"t": "2026-09-30T15:13:43Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.build"}}
+{"t": "2026-09-30T15:13:43Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.export"}}
+{"t": "2026-09-30T15:13:43Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.tool"}}
+{"t": "2026-09-30T15:13:43Z", "ev": "note", "detail": {"text": "- -> 3", "ref": "JOB.md:caps.fix_cycles"}}
+{"t": "2026-09-30T15:13:43Z", "ev": "note", "detail": {"text": "- -> 0.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T15:13:43Z", "ev": "note", "detail": {"text": "- -> A", "ref": "JOB.md:revision"}}
+{"t": "2026-09-30T15:14:16Z", "ev": "package_sent", "detail": {"role": "intake", "target": "od_c01_frame_v01", "brief": "briefs/WP-01_intake.md", "attempt": 1}}
