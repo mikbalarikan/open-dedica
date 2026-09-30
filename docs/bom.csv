@@ -66,11 +66,11 @@ OD-E58,OD-E00,ELEC,Logic PSU — Path 2,,,1,VENDOR,5 V or 24 V,Mean Well-style,1
 OD-E59,OD-E00,MFG,SSR heat-sink plate,,,1,DESIGN,aluminium,local shop / scrap,—,,proposed
 OD-E60,OD-E00,STD,IEC inlet with fuse (alternative to OD-E06),,,1,VENDOR,,TME / AliExpress,4,,todo
 OD-C00,OD-000,ASM,Chassis & body,,,1,DESIGN,,,,,todo
-OD-C01,OD-C00,PRINT,Base frame / floor plate,,,1,DESIGN,ASA,printed,print,,proposed
+OD-C01,OD-C00,PRINT,Base frame / floor plate,,,1,DESIGN,PETG,printed (Anycubic Kobra Max 3),print,,modeled
 OD-C02,OD-C00,PRINT,Wet/electric bulkhead with drainage path,,,1,DESIGN,ASA,printed,print,,proposed
 OD-C03,OD-C00,PRINT,Pump cradle (sleeve + spring suspension),,,1,DESIGN,PETG,printed,print,#1,modeled
 OD-C04,OD-C00,PRINT,Thermoblock mount (≥10 mm air gap to printed walls),,,1,DESIGN,ASA / PC,printed,print,#2,modeled
-OD-C05,OD-C00,PRINT,Group head carrier (ties OD-G00 to frame),,,1,DESIGN,ASA,printed,print,#3,proposed
+OD-C05,OD-C00,PRINT,Group head carrier (ties OD-G00 to frame),,,1,DESIGN,ASA,printed (Creality K1C),print,#3,proposed
 OD-C06,OD-C00,PRINT,Water tank dock / inlet seat,,,1,DESIGN,PETG,printed,print,#5,proposed
 OD-C07,OD-C00,PRINT,Valve & flowmeter mount (OPV reachable without disassembly),,,1,DESIGN,PETG,printed,print,#6,modeled
 OD-C08,OD-C00,PRINT,Electronics bay tray,,,1,DESIGN,PETG,printed,print,#8,proposed

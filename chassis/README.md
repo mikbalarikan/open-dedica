@@ -35,7 +35,7 @@ revisited when the scan lands.
 | 4 | `OD-C04` thermoblock mount | OD-H11 with its NTC/TCO brackets (OD-H17, H19) | modeled, approved on assumptions (RV01); calipers: 10.10 mm air gap, spacer lengths, bracket holes |
 | 5 | `OD-C07` valve and flowmeter mount | OD-H22, OD-H24 (OD-H21 sits in the water path, not on the mount) | modeled; RV01 REVISE, two seat gaps accepted by the Usta as deviations |
 | 6 | `OD-C06` water tank dock | OD-W03 seat; tank OD-W01/W02 | tank not scanned |
-| 7 | `OD-C01` base frame / floor plate | the footprints of 2–6; drip tray OD-C21/C22 | drip tray not scanned |
+| 7 | `OD-C01` base frame / floor plate | the footprints of 2–6; drip tray OD-C21/C22 | modeled, RV01 passed (PETG, Kobra Max 3); flatness is a bench check; layout assumes the group head vertical, housing rear face 205 mm above the base (awaits the Usta's axis decision) |
 | 8 | `OD-C02` wet/electric bulkhead | OD-C01, the tube runs | — |
 | 9 | `OD-C08` electronics bay tray | OD-E01, OD-E02 (path 1) or OD-E51…E58 (path 2) | the Usta picks the path |
 | 10 | `OD-C09` front panel with button bezel | OD-G01 mouth, OD-E02 buttons, OD-S03 knob (phase 2) | — |
@@ -59,6 +59,16 @@ record; OD-C01 must carry an insert at each.
 | `OD-C03` pump cradle | (±34, −4), (±34, 37) | 4 × M3 (`OD-F02`), 2 × cable tie (`OD-F09`) |
 | `OD-C04` thermoblock mount | (±40, −8), (±40, 26) | 4 × M3 (`OD-F02`); the thermoblock sits on the metal spacers `OD-F07` and `OD-F08` (M3 through their Ø4 bores; screw length set when the spacers are cut) |
 | `OD-C07` valve and flowmeter mount | four Ø3.4 through-holes at (−18, ±21) and (88.5, ±21) in the mount frame; OD-C01 spec 1.1 REQ-10 provides them | 4 × M3 (`OD-F02`) into OD-C01; 2 × M3 insert (`OD-F01`) for OD-H22 |
+
+Insert pattern as built into OD-C01 (OD-C01 frame, x and z in mm):
+
+| Part | x | z |
+|---|---|---|
+| `OD-C05` | ±35 | −40, −60 |
+| `OD-C04` | ±40 | −148, −114 |
+| `OD-C03` | −4, 37 | −239, −171 |
+| `OD-C02` | 65 | −45, −105, −165, −225 |
+| `OD-C07` | −113, −71 | −42, −148.5 |
 
 OD-000 placements handed over by the part jobs (joint frames; the assembly uses them):
 

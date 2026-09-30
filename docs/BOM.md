@@ -122,11 +122,11 @@ DESIGN native design · VENDOR vendor STEP
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `OD-C00` | OD-000 | ASM | **Chassis & body** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
-| `OD-C01` | OD-C00 | PRINT | Base frame / floor plate |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
+| `OD-C01` | OD-C00 | PRINT | Base frame / floor plate |  |  | 1 | DESIGN | PETG | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
 | `OD-C02` | OD-C00 | PRINT | Wet/electric bulkhead with drainage path |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
 | `OD-C03` | OD-C00 | PRINT | Pump cradle (sleeve + spring suspension) |  |  | 1 | DESIGN | PETG | printed | print | #1 | 🧊 |
 | `OD-C04` | OD-C00 | PRINT | Thermoblock mount (≥10 mm air gap to printed walls) |  |  | 1 | DESIGN | ASA / PC | printed | print | #2 | 🧊 |
-| `OD-C05` | OD-C00 | PRINT | Group head carrier (ties OD-G00 to frame) |  |  | 1 | DESIGN | ASA | printed | print | #3 | ✎ |
+| `OD-C05` | OD-C00 | PRINT | Group head carrier (ties OD-G00 to frame) |  |  | 1 | DESIGN | ASA | printed (Creality K1C) | print | #3 | ✎ |
 | `OD-C06` | OD-C00 | PRINT | Water tank dock / inlet seat |  |  | 1 | DESIGN | PETG | printed | print | #5 | ✎ |
 | `OD-C07` | OD-C00 | PRINT | Valve & flowmeter mount (OPV reachable without disassembly) |  |  | 1 | DESIGN | PETG | printed | print | #6 | 🧊 |
 | `OD-C08` | OD-C00 | PRINT | Electronics bay tray |  |  | 1 | DESIGN | PETG | printed | print | #8 | ✎ |
