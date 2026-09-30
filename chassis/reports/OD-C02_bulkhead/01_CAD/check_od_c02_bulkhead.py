@@ -427,7 +427,7 @@ def check(step_path: Path, asm_path: Path | None, stl_path: Path | None, variant
             a = math.radians(ang)
             facts[f"REQ-04.{tag}.roof_ray_{ang:g}"] = _res(rr) | {
                 "design_mm": SPEC["win_apex_above_centre"] / (abs(math.cos(a)) + math.sin(a))}
-        col = _ray(one, org, (1, 0, 0), (0, 1, 0), 270.0, 2.0, "outer")
+        col = _ray(one, org, (1, 0, 0), (0, 1, 0), 270.0, 2.0, "outer", r_max=12.0)
         G.add(f"REQ-04.{tag}.collar_od", Result("collar_od", None if col.measured is None else 2 * col.measured,
                                                  "mm", at=col.at, status=col.status, reason=col.reason),
               "in", (SPEC["collar_od"] - SPEC["win_tol"], SPEC["collar_od"] + SPEC["win_tol"]),

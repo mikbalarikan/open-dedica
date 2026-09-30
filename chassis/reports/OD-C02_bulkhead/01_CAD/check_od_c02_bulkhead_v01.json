@@ -37,7 +37,7 @@
     "brepcheck": true,
     "solids_without_volume": 0,
     "bop_faults": [],
-    "bop_seconds": 0.132,
+    "bop_seconds": 0.144,
     "curve_on_surface_mm": 0.0,
     "curve_on_surface_limit_mm": 0.00030086708057811977,
     "loose_shells": 0,
@@ -2600,145 +2600,226 @@
   },
   {
    "gate": "REQ-04.w1_y150_z-200.diameter",
-   "measured": null,
+   "measured": 14.0,
    "unit": "mm",
    "required": "in [13.9, 14.1]",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(65.0000, 150.0000, -200.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "window_round_diameter",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 116.952176 mm crosses the window's bound at 12 mm at 200\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 40.000000 mm crosses the window's bound at 12 mm at 270\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 69.171555 mm crosses the window's bound at 12 mm at 340\u00b0 and z = 5 mm"
+   "reason": "",
+   "detail": {
+    "from": "three radial_extent rays at 200/270/340 deg, x 65"
+   }
   },
   {
    "gate": "REQ-04.w1_y150_z-200.offset",
-   "measured": null,
+   "measured": 0.0,
    "unit": "mm",
    "required": "<= 0.1",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(65.0000, 150.0000, -200.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "window_round_offset",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 116.952176 mm crosses the window's bound at 12 mm at 200\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 40.000000 mm crosses the window's bound at 12 mm at 270\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 69.171555 mm crosses the window's bound at 12 mm at 340\u00b0 and z = 5 mm"
+   "reason": ""
   },
   {
    "gate": "REQ-04.w1_y150_z-200.apex_above_centre",
-   "measured": null,
+   "measured": 13.999999999999972,
    "unit": "mm",
    "required": "in [13.9, 14.1]",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(65.0000, 150.0000, -186.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "radial_extent",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 14.000000 to 63.000000 mm crosses the window's bound at 30 mm at 90\u00b0 and z = 5 mm",
-   "note": "gable apex: 7.0 above the circle's top = 14.0 above the centre"
+   "reason": "",
+   "note": "gable apex: 7.0 above the circle's top = 14.0 above the centre",
+   "params": {
+    "angle_deg": 90.0,
+    "z": 5.0,
+    "side": "inner",
+    "r_min": 0.0,
+    "ref_lean_deg": 0.0,
+    "axis_origin": [
+     60.0,
+     150.0,
+     -200.0
+    ],
+    "axis_dir": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "ref_dir": [
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   "detail": {
+    "material": [
+     [
+      14.0,
+      63.0
+     ],
+     [
+      84.0,
+      133.0
+     ],
+     [
+      154.0,
+      170.0
+     ]
+    ]
+   }
   },
   {
    "gate": "REQ-04.w1_y150_z-200.collar_od",
-   "measured": null,
+   "measured": 18.0,
    "unit": "mm",
    "required": "in [17.9, 18.1]",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(62.0000, 150.0000, -209.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "collar_od",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 9.000000 mm crosses the window's bound at 7.5 mm at 270\u00b0 and z = 2 mm"
+   "reason": ""
   },
   {
    "gate": "REQ-04.w2_y150_z-130.diameter",
-   "measured": null,
+   "measured": 14.0,
    "unit": "mm",
    "required": "in [13.9, 14.1]",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(65.0000, 150.0000, -130.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "window_round_diameter",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 159.626666 mm crosses the window's bound at 12 mm at 200\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 56.000000 mm crosses the window's bound at 12 mm at 270\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 69.171555 mm crosses the window's bound at 12 mm at 340\u00b0 and z = 5 mm"
+   "reason": "",
+   "detail": {
+    "from": "three radial_extent rays at 200/270/340 deg, x 65"
+   }
   },
   {
    "gate": "REQ-04.w2_y150_z-130.offset",
-   "measured": null,
+   "measured": 0.0,
    "unit": "mm",
    "required": "<= 0.1",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(65.0000, 150.0000, -130.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "window_round_offset",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 159.626666 mm crosses the window's bound at 12 mm at 200\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 56.000000 mm crosses the window's bound at 12 mm at 270\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 69.171555 mm crosses the window's bound at 12 mm at 340\u00b0 and z = 5 mm"
+   "reason": ""
   },
   {
    "gate": "REQ-04.w2_y150_z-130.apex_above_centre",
-   "measured": null,
+   "measured": 13.999999999999991,
    "unit": "mm",
    "required": "in [13.9, 14.1]",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(65.0000, 150.0000, -116.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "radial_extent",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 14.000000 to 63.000000 mm crosses the window's bound at 30 mm at 90\u00b0 and z = 5 mm",
-   "note": "gable apex: 7.0 above the circle's top = 14.0 above the centre"
+   "reason": "",
+   "note": "gable apex: 7.0 above the circle's top = 14.0 above the centre",
+   "params": {
+    "angle_deg": 90.0,
+    "z": 5.0,
+    "side": "inner",
+    "r_min": 0.0,
+    "ref_lean_deg": 0.0,
+    "axis_origin": [
+     60.0,
+     150.0,
+     -130.0
+    ],
+    "axis_dir": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "ref_dir": [
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   "detail": {
+    "material": [
+     [
+      14.0,
+      63.0
+     ],
+     [
+      84.0,
+      100.0
+     ]
+    ]
+   }
   },
   {
    "gate": "REQ-04.w2_y150_z-130.collar_od",
-   "measured": null,
+   "measured": 18.0,
    "unit": "mm",
    "required": "in [17.9, 18.1]",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(62.0000, 150.0000, -139.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "collar_od",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 9.000000 mm crosses the window's bound at 7.5 mm at 270\u00b0 and z = 2 mm"
+   "reason": ""
   },
   {
    "gate": "REQ-04.w3_y150_z-60.diameter",
-   "measured": null,
+   "measured": 14.0,
    "unit": "mm",
    "required": "in [13.9, 14.1]",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(65.0000, 150.0000, -60.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "window_round_diameter",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 159.626666 mm crosses the window's bound at 12 mm at 200\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 56.000000 mm crosses the window's bound at 12 mm at 270\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 69.171555 mm crosses the window's bound at 12 mm at 340\u00b0 and z = 5 mm"
+   "reason": "",
+   "detail": {
+    "from": "three radial_extent rays at 200/270/340 deg, x 65"
+   }
   },
   {
    "gate": "REQ-04.w3_y150_z-60.offset",
-   "measured": null,
+   "measured": 0.0,
    "unit": "mm",
    "required": "<= 0.1",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(65.0000, 150.0000, -60.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "window_round_offset",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 159.626666 mm crosses the window's bound at 12 mm at 200\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 56.000000 mm crosses the window's bound at 12 mm at 270\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 69.171555 mm crosses the window's bound at 12 mm at 340\u00b0 and z = 5 mm"
+   "reason": ""
   },
   {
    "gate": "REQ-04.w3_y150_z-60.apex_above_centre",
@@ -2759,7 +2840,6 @@
     "z": 5.0,
     "side": "inner",
     "r_min": 0.0,
-    "r_max": 30.0,
     "ref_lean_deg": 0.0,
     "axis_origin": [
      60.0,
@@ -2788,45 +2868,48 @@
   },
   {
    "gate": "REQ-04.w3_y150_z-60.collar_od",
-   "measured": null,
+   "measured": 18.0,
    "unit": "mm",
    "required": "in [17.9, 18.1]",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(62.0000, 150.0000, -69.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "collar_od",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 9.000000 mm crosses the window's bound at 7.5 mm at 270\u00b0 and z = 2 mm"
+   "reason": ""
   },
   {
    "gate": "REQ-04.w4_y60_z-40.diameter",
-   "measured": null,
+   "measured": 14.0,
    "unit": "mm",
    "required": "in [13.9, 14.1]",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(65.0000, 60.0000, -40.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "window_round_diameter",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 63.850666 mm crosses the window's bound at 12 mm at 200\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 200.000000 mm crosses the window's bound at 12 mm at 270\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 164.947555 mm crosses the window's bound at 12 mm at 340\u00b0 and z = 5 mm"
+   "reason": "",
+   "detail": {
+    "from": "three radial_extent rays at 200/270/340 deg, x 65"
+   }
   },
   {
    "gate": "REQ-04.w4_y60_z-40.offset",
-   "measured": null,
+   "measured": 0.0,
    "unit": "mm",
    "required": "<= 0.1",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(65.0000, 60.0000, -40.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "window_round_offset",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 63.850666 mm crosses the window's bound at 12 mm at 200\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 200.000000 mm crosses the window's bound at 12 mm at 270\u00b0 and z = 5 mm; Crossing: material from 7.000000 to 164.947555 mm crosses the window's bound at 12 mm at 340\u00b0 and z = 5 mm"
+   "reason": ""
   },
   {
    "gate": "REQ-04.w4_y60_z-40.apex_above_centre",
@@ -2840,22 +2923,22 @@
    "assumes": [
     "A-04"
    ],
-   "reason": "NoMaterial: no material between 0 and 30 mm on the ray at 90\u00b0 and z = 5 mm",
+   "reason": "NoMaterial: no material between 0 and inf mm on the ray at 90\u00b0 and z = 5 mm",
    "note": "gable apex: 7.0 above the circle's top = 14.0 above the centre"
   },
   {
    "gate": "REQ-04.w4_y60_z-40.collar_od",
-   "measured": null,
+   "measured": 18.0,
    "unit": "mm",
    "required": "in [17.9, 18.1]",
-   "margin": null,
-   "at": null,
-   "status": "INCONCLUSIVE",
+   "margin": 0.1,
+   "at": "(62.0000, 60.0000, -49.0000) mm",
+   "status": "PASS_ASSUMED",
    "method": "collar_od",
    "assumes": [
     "A-04"
    ],
-   "reason": "Crossing: material from 7.000000 to 9.000000 mm crosses the window's bound at 7.5 mm at 270\u00b0 and z = 2 mm"
+   "reason": ""
   },
   {
    "gate": "REQ-04.w4.front_end_closed",
@@ -3541,7 +3624,7 @@
     "brepcheck": true,
     "solids_without_volume": 0,
     "bop_faults": [],
-    "bop_seconds": 0.132,
+    "bop_seconds": 0.138,
     "curve_on_surface_mm": 0.0,
     "curve_on_surface_limit_mm": 0.00030086708057811977,
     "loose_shells": 0,
@@ -3552,10 +3635,10 @@
    "gate": "U-04.assembly.solids",
    "measured": 8,
    "unit": "count",
-   "required": "== 7",
-   "margin": -1.0,
+   "required": "== 8",
+   "margin": 0.0,
    "at": null,
-   "status": "FAIL",
+   "status": "PASS",
    "method": "step_roundtrip_solids",
    "assumes": [],
    "reason": "",
@@ -3564,6 +3647,153 @@
     "sha256": "293d8e15c5fd6932036fbf078e749a23f048f7bb03df2b8bd67e5635deeede90",
     "path": "od_c02_assembly_C1_v01.step"
    }
+  },
+  {
+   "gate": "U-04.assembly.faces_delta",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_faces_delta",
+   "assumes": [],
+   "reason": "",
+   "detail": {
+    "built": 935,
+    "reimported": 935
+   }
+  },
+  {
+   "gate": "U-04.assembly.labels",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_labels",
+   "assumes": [],
+   "reason": "",
+   "detail": {
+    "built": [
+     "od_c02_bulkhead",
+     "od_c01_frame",
+     "od_c03_cradle",
+     "od_h01_pump",
+     "od_c04_mount",
+     "od_h11_thermoblock",
+     "od_g01_housing",
+     "od_c05_foot_reference_A02"
+    ],
+    "reimported": [
+     "od_c02_bulkhead",
+     "od_c01_frame",
+     "od_c03_cradle",
+     "od_h01_pump",
+     "od_c04_mount",
+     "od_h11_thermoblock",
+     "od_g01_housing",
+     "od_c05_foot_reference_A02"
+    ]
+   }
+  },
+  {
+   "gate": "U-04.assembly.od_c02_bulkhead.volume_delta",
+   "measured": 4.663888830691576e-07,
+   "unit": "mm3",
+   "required": "in [0.0, 0.0]",
+   "margin": -4.66e-07,
+   "at": null,
+   "status": "PASS",
+   "method": "volume_delta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04.assembly.od_c01_frame.volume_delta",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "in [0.0, 0.0]",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "volume_delta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04.assembly.od_c03_cradle.volume_delta",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "in [0.0, 0.0]",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "volume_delta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04.assembly.od_h01_pump.volume_delta",
+   "measured": 4.307366907596588e-09,
+   "unit": "mm3",
+   "required": "in [0.0, 0.0]",
+   "margin": -4e-09,
+   "at": null,
+   "status": "PASS",
+   "method": "volume_delta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04.assembly.od_c04_mount.volume_delta",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "in [0.0, 0.0]",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "volume_delta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04.assembly.od_h11_thermoblock.volume_delta",
+   "measured": 0.05239051367971115,
+   "unit": "mm3",
+   "required": "in [0, 0] mm3",
+   "margin": null,
+   "at": null,
+   "status": "INCONCLUSIVE",
+   "method": "by the row",
+   "assumes": [],
+   "reason": "",
+   "note": "OD-H11 unsound (brep_valid 0, OD-C04 A-14): its volume changes on the write; INCONCLUSIVE by the U-03 row's note"
+  },
+  {
+   "gate": "U-04.assembly.od_g01_housing.volume_delta",
+   "measured": 5.093170329928398e-10,
+   "unit": "mm3",
+   "required": "in [0.0, 0.0]",
+   "margin": -1e-09,
+   "at": null,
+   "status": "PASS",
+   "method": "volume_delta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04.assembly.od_c05_foot_reference_A02.volume_delta",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "in [0.0, 0.0]",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "volume_delta",
+   "assumes": [],
+   "reason": ""
   },
   {
    "gate": "D-01a",
@@ -3902,7 +4132,7 @@
   }
  ],
  "facts": {
-  "started": "2026-09-30T17:48:29Z",
+  "started": "2026-09-30T17:55:04Z",
   "step_sha256": "4a6e61c341ee0c4a36305339ba76d749b3848a5e8195e36d15dabce78cd0b2a8",
   "envelope": {
    "size_x": 14.0,
@@ -4308,19 +4538,27 @@
    ]
   },
   "REQ-04.w1_y150_z-200.roof_ray_60": {
-   "measured": null,
+   "measured": 10.24871130596426,
    "unit": "mm",
-   "status": "INCONCLUSIVE",
-   "at": null,
-   "reason": "Crossing: material from 10.248711 to 130.000000 mm crosses the window's bound at 30 mm at 60\u00b0 and z = 5 mm",
+   "status": "MEASURED",
+   "at": [
+    65.0,
+    155.124356,
+    -191.124356
+   ],
+   "reason": "",
    "design_mm": 10.248711305964282
   },
   "REQ-04.w1_y150_z-200.roof_ray_120": {
-   "measured": null,
+   "measured": 10.248711305964274,
    "unit": "mm",
-   "status": "INCONCLUSIVE",
-   "at": null,
-   "reason": "Crossing: material from 10.248711 to 176.873339 mm crosses the window's bound at 30 mm at 120\u00b0 and z = 5 mm",
+   "status": "MEASURED",
+   "at": [
+    65.0,
+    144.875644,
+    -191.124356
+   ],
+   "reason": "",
    "design_mm": 10.248711305964283
   },
   "REQ-04.w1_y150_z-200.mouth_x69.5_90": {
@@ -4346,49 +4584,73 @@
    "reason": ""
   },
   "REQ-04.w2_y150_z-130.roof_ray_60": {
-   "measured": null,
+   "measured": 10.248711305964274,
    "unit": "mm",
-   "status": "INCONCLUSIVE",
-   "at": null,
-   "reason": "Crossing: material from 10.248711 to 115.470054 mm crosses the window's bound at 30 mm at 60\u00b0 and z = 5 mm",
+   "status": "MEASURED",
+   "at": [
+    65.0,
+    155.124356,
+    -121.124356
+   ],
+   "reason": "",
    "design_mm": 10.248711305964282
   },
   "REQ-04.w2_y150_z-130.roof_ray_120": {
-   "measured": null,
+   "measured": 10.248711305964274,
    "unit": "mm",
-   "status": "INCONCLUSIVE",
-   "at": null,
-   "reason": "Crossing: material from 10.248711 to 115.470054 mm crosses the window's bound at 30 mm at 120\u00b0 and z = 5 mm",
+   "status": "MEASURED",
+   "at": [
+    65.0,
+    144.875644,
+    -121.124356
+   ],
+   "reason": "",
    "design_mm": 10.248711305964283
   },
   "REQ-04.w2_y150_z-130.mouth_x69.5_90": {
-   "measured": null,
+   "measured": 58.0,
    "unit": "mm",
-   "status": "INCONCLUSIVE",
-   "at": null,
-   "reason": "NoMaterial: no material between 0 and 30 mm on the ray at 90\u00b0 and z = 9.5 mm"
+   "status": "MEASURED",
+   "at": [
+    69.5,
+    150.0,
+    -72.0
+   ],
+   "reason": ""
   },
   "REQ-04.w2_y150_z-130.mouth_x69.5_270": {
-   "measured": null,
+   "measured": 68.0,
    "unit": "mm",
-   "status": "INCONCLUSIVE",
-   "at": null,
-   "reason": "NoMaterial: no material between 0 and 30 mm on the ray at 270\u00b0 and z = 9.5 mm"
+   "status": "MEASURED",
+   "at": [
+    69.5,
+    150.0,
+    -198.0
+   ],
+   "reason": ""
   },
   "REQ-04.w3_y150_z-60.roof_ray_60": {
-   "measured": null,
+   "measured": 10.248711305964274,
    "unit": "mm",
-   "status": "INCONCLUSIVE",
-   "at": null,
-   "reason": "Crossing: material from 10.248711 to 34.641016 mm crosses the window's bound at 30 mm at 60\u00b0 and z = 5 mm",
+   "status": "MEASURED",
+   "at": [
+    65.0,
+    155.124356,
+    -51.124356
+   ],
+   "reason": "",
    "design_mm": 10.248711305964282
   },
   "REQ-04.w3_y150_z-60.roof_ray_120": {
-   "measured": null,
+   "measured": 10.248711305964274,
    "unit": "mm",
-   "status": "INCONCLUSIVE",
-   "at": null,
-   "reason": "Crossing: material from 10.248711 to 34.641016 mm crosses the window's bound at 30 mm at 120\u00b0 and z = 5 mm",
+   "status": "MEASURED",
+   "at": [
+    65.0,
+    144.875644,
+    -51.124356
+   ],
+   "reason": "",
    "design_mm": 10.248711305964283
   },
   "REQ-04.w3_y150_z-60.mouth_x69.5_90": {
@@ -4396,7 +4658,7 @@
    "unit": "mm",
    "status": "INCONCLUSIVE",
    "at": null,
-   "reason": "NoMaterial: no material between 0 and 30 mm on the ray at 90\u00b0 and z = 9.5 mm"
+   "reason": "NoMaterial: no material between 0 and inf mm on the ray at 90\u00b0 and z = 9.5 mm"
   },
   "REQ-04.w3_y150_z-60.mouth_x69.5_270": {
    "measured": 8.0,
@@ -4438,14 +4700,18 @@
    "unit": "mm",
    "status": "INCONCLUSIVE",
    "at": null,
-   "reason": "NoMaterial: no material between 0 and 30 mm on the ray at 90\u00b0 and z = 9.5 mm"
+   "reason": "NoMaterial: no material between 0 and inf mm on the ray at 90\u00b0 and z = 9.5 mm"
   },
   "REQ-04.w4_y60_z-40.mouth_x69.5_270": {
-   "measured": null,
+   "measured": 28.0,
    "unit": "mm",
-   "status": "INCONCLUSIVE",
-   "at": null,
-   "reason": "Crossing: material from 28.000000 to 32.000000 mm crosses the window's bound at 30 mm at 270\u00b0 and z = 9.5 mm"
+   "status": "MEASURED",
+   "at": [
+    69.5,
+    60.0,
+    -68.0
+   ],
+   "reason": ""
   },
   "front_end_faces": [
    {
@@ -4567,7 +4833,7 @@
    "detail": {
     "brepcheck": true,
     "solids_without_volume": 0,
-    "bop_seconds": 6.528,
+    "bop_seconds": 6.571,
     "curve_on_surface_mm": 0.0011602314183984603,
     "curve_on_surface_limit_mm": 0.0005200637320105389,
     "loose_shells": 0,
@@ -5072,6 +5338,6 @@
    "com_y": 105.14218032834118,
    "com_z": -135.35996042683183
   },
-  "finished": "2026-09-30T17:51:13Z"
+  "finished": "2026-09-30T17:57:36Z"
  }
 }
