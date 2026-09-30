@@ -13,7 +13,7 @@ size: M
 process: [FDM]
 gate_sections: [U, D, J, E]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.1"
+spec_version: "1.2"
 workspace: "${OGUZ_JOBS}/20260930-od-c07-valve-flowmeter-mount"
 delivery: "${OGUZ_DELIVERY}/20260930-od-c07-valve-flowmeter-mount"
 artifacts: "${OGUZ_ARTIFACTS}/20260930-od-c07-valve-flowmeter-mount"
@@ -21,7 +21,7 @@ repo_commit: "70826895ab7666f9e5aee3f77ce88f099995f3c1"
 active_target: od_c07_mount_v01
 revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13, A-14, A-15, A-16, A-18, A-19, A-20, A-21, A-22]
-attempts: {build: 1, export: 0, tool: 0}
+attempts: {build: 2, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
 reviews: []
 usta_gates:
@@ -30,6 +30,7 @@ usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-09-30"}
+  - {gate: spec_ratified, outcome: "1.2", date: "2026-09-30"}
 deliverables: [STEP, STL, scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null
