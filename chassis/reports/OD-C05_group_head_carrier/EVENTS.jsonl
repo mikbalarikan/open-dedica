@@ -69,3 +69,14 @@
 {"t": "2026-09-30T17:16:03Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "2.1", "ref": "v02 K-3, K-4, section 9: closed column, plate on the bed; on the standing instruction"}}
 {"t": "2026-09-30T17:16:11Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c05_carrier_v03", "brief": "briefs/WP-06_designer.md", "attempt": 2}}
 {"t": "2026-09-30T17:16:11Z", "ev": "attempt", "detail": {"counter": "build", "n": 2, "cap": 2}}
+{"t": "2026-09-30T17:53:37Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c05_carrier_v03", "outcome": "STOPPED", "report": "01_CAD/REPORT_od_c05_carrier_v03.md"}}
+{"t": "2026-09-30T17:54:01Z", "ev": "note", "detail": {"text": "2.1 -> 2.2", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T17:54:01Z", "ev": "note", "detail": {"text": "od_c05_carrier_v03 -> od_c05_carrier_v04", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T17:54:02Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "2.2", "ref": "v03 K-6, K-7: the roof and the window gable turned the right way for the print; on the standing instruction"}}
+{"t": "2026-09-30T17:54:20Z", "ev": "halt", "detail": {"stage": "J3_BUILD", "reason": "build cap 2 reached at v03: both failures are spec 2.1 drawing errors for the print (roof and window gable upside down), fixed in spec 2.2"}}
+{"t": "2026-09-30T17:54:20Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "BLOCKED-ON-USTA", "reason": "halt: build cap 2 reached at v03: both failures are spec 2.1 drawing errors for the print (roof and window gable upside down), fixed in spec 2.2"}}
+{"t": "2026-09-30T17:54:21Z", "ev": "usta_gate", "detail": {"gate": "halt_decision", "outcome": "another_round", "ref": "on the Usta's standing instruction (proceed on the recommended option, ledger); reported in the thread 2026-09-30; the Usta may overrule"}}
+{"t": "2026-09-30T17:54:21Z", "ev": "attempt", "detail": {"counter": "build", "n": 0, "cap": 2}}
+{"t": "2026-09-30T17:54:22Z", "ev": "state", "detail": {"from": "BLOCKED-ON-USTA", "to": "J3_BUILD", "reason": "another round: v04 to spec 2.2"}}
+{"t": "2026-09-30T17:54:23Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c05_carrier_v04", "brief": "briefs/WP-07_designer.md", "attempt": 1}}
+{"t": "2026-09-30T17:54:23Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
