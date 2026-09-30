@@ -5,7 +5,7 @@ code: ODC04
 milestone: M1
 title: "Open Dedica OD-C04 printed thermoblock mount"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
 next_action: "J2: designer package WP-02 writes the plan for od_c04_mount_v01"
 data_class: PUBLIC
