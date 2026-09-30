@@ -1,0 +1,429 @@
+{
+ "part_shells": 1,
+ "part_free_shells": 0,
+ "part_free_faces": 0,
+ "asm_free_shells": 0,
+ "asm_free_faces": 0,
+ "compare_delivered": {
+  "schema": {
+   "name": "step_schema",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "schema": "AP242"
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "found": "AP242",
+    "sha256": "8d6f60ba1b4c3bcc6da1d40037ffa6ac422c4bf78f0f826553f2ffc1de037034",
+    "path": "od_c03_cradle_C1_v02.step"
+   }
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 1,
+    "sha256": "8d6f60ba1b4c3bcc6da1d40037ffa6ac422c4bf78f0f826553f2ffc1de037034",
+    "path": "od_c03_cradle_C1_v02.step"
+   }
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built_mm3": 25458.506495728096,
+    "reimported_mm3": 25458.506495728096,
+    "sha256": "8d6f60ba1b4c3bcc6da1d40037ffa6ac422c4bf78f0f826553f2ffc1de037034",
+    "path": "od_c03_cradle_C1_v02.step"
+   }
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 54,
+    "reimported": 54
+   }
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": [
+     "od_c03_cradle"
+    ],
+    "reimported": [
+     "od_c03_cradle"
+    ]
+   }
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.045,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.0001034601375835157,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  }
+ },
+ "roundtrip_work": {
+  "schema": {
+   "name": "step_schema",
+   "measured": null,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": null,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": null,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": null,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": null,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": null,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  }
+ },
+ "compare_asm": {
+  "schema": {
+   "name": "step_schema",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "schema": "AP242"
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "found": "AP242",
+    "sha256": "8e1a6ea8ff66acecdd2cffdde41c1d7635541f4b34e9034f55ce6c4efaf43a14",
+    "path": "od_c03_assembly_C1_v02.step"
+   }
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": 4,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 4,
+    "sha256": "8e1a6ea8ff66acecdd2cffdde41c1d7635541f4b34e9034f55ce6c4efaf43a14",
+    "path": "od_c03_assembly_C1_v02.step"
+   }
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built_mm3": 154354.85628847522,
+    "reimported_mm3": 154354.85628847522,
+    "sha256": "8e1a6ea8ff66acecdd2cffdde41c1d7635541f4b34e9034f55ce6c4efaf43a14",
+    "path": "od_c03_assembly_C1_v02.step"
+   }
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 279,
+    "reimported": 279
+   }
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": [
+     "od_c03_cradle",
+     "OD_H01_ulka_ep5_pump",
+     "od_h02_sleeve_assumed_A03"
+    ],
+    "reimported": [
+     "od_c03_cradle",
+     "OD_H01_ulka_ep5_pump",
+     "od_h02_sleeve_assumed_A03"
+    ]
+   }
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.863,
+    "curve_on_surface_mm": 1.8696058386013914e-07,
+    "curve_on_surface_limit_mm": 0.00016238769258354819,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  }
+ },
+ "rt_sha_equals_delivered": false,
+ "ang_limit": 0.10000260434979698,
+ "remesh": {
+  "sha256": "529a0cc2033cddb00ee16715448a8e0e546f08eb05eb6bd1e6c20ce8a3776be4",
+  "detail": {
+   "tolerance_mm": 0.01,
+   "angular_tolerance_rad": 0.1,
+   "triangles": 2540,
+   "max_sagitta_mm": 0.004889517293376808
+  },
+  "sagitta": {
+   "name": "stl_max_sagitta",
+   "measured": 0.004889517293376808,
+   "unit": "mm",
+   "at": [
+    -18.476585595908563,
+    19.198377466669065,
+    1.5
+   ],
+   "params": {
+    "samples_per_triangle": 13
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "triangles": 2540,
+    "samples": 15236,
+    "faces_without_triangles": 0,
+    "unprojected_samples": 0
+   }
+  }
+ },
+ "remesh_angmax": {
+  "sha256": "8f60e33443eb491cccacd6f6b813370fd4b1a7b7c6a88b65ca7508dc9c87b635",
+  "detail": {
+   "tolerance_mm": 0.01,
+   "angular_tolerance_rad": 0.10000260434979698,
+   "triangles": 2540,
+   "max_sagitta_mm": 0.004889517293376808
+  },
+  "sagitta": {
+   "name": "stl_max_sagitta",
+   "measured": 0.004889517293376808,
+   "unit": "mm",
+   "at": [
+    -18.476585595908563,
+    19.198377466669065,
+    1.5
+   ],
+   "params": {
+    "samples_per_triangle": 13
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "triangles": 2540,
+    "samples": 15236,
+    "faces_without_triangles": 0,
+    "unprojected_samples": 0
+   }
+  }
+ },
+ "delivered_stl_sha": "529a0cc2033cddb00ee16715448a8e0e546f08eb05eb6bd1e6c20ce8a3776be4",
+ "delivered_equals_remesh": true,
+ "census": {
+  "triangles": {
+   "name": "mesh_triangles",
+   "measured": 2540,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "degenerate_triangles": 0
+   }
+  },
+  "bodies": {
+   "name": "mesh_bodies",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "naked_edges": {
+   "name": "mesh_naked_edges",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "winding": {
+   "name": "mesh_winding",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "volume": {
+   "name": "mesh_volume",
+   "measured": 25460.189021090337,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  }
+ },
+ "deviation": {
+  "name": "mesh_deviation",
+  "measured": 0.004888881437489981,
+  "unit": "mm",
+  "at": [
+   -16.159054,
+   21.192156,
+   0.0
+  ],
+  "params": {
+   "reference_tolerance_mm": 0.001
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "mesh_to_shape_mm": 0.004865284279626828,
+   "shape_to_mesh_mm": 0.004888881437489981,
+   "samples": 20940,
+   "reference_triangles": 3308
+  }
+ },
+ "min_wall_mesh": {
+  "name": "min_wall_mesh",
+  "measured": 1.999999999999997,
+  "unit": "mm",
+  "at": [
+   -31.9,
+   7.4,
+   33.0
+  ],
+  "params": {
+   "opposition_deg": 25.0,
+   "samples_per_triangle": 4,
+   "max_rays": 1000000
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "triangles": 2540,
+   "rays": 10160,
+   "opposed_hits": 7499,
+   "rays_without_exit": 0,
+   "watertight": true,
+   "vertex_precision_mm": 5.0067901611328125e-06
+  }
+ }
+}

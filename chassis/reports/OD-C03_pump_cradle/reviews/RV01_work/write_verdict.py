@@ -1,0 +1,146 @@
+import json, re, hashlib
+from pathlib import Path
+W = Path("/home/claude/oguz-jobs/20260930-od-c03-pump-cradle")
+S = json.load(open("/home/claude/oguz-atolye/atolye/schemas/verdict.schema.json"))
+files = ["01_CAD/REPORT_od_c03_cradle_v01.md","01_CAD/DESIGN_PLAN.md","01_CAD/check_od_c03_cradle_v01.json","01_CAD/sections_od_c03_cradle_v01.json",
+ "02_STEP_STL/od_c03_assembly_C1_v01.step","02_STEP_STL/od_c03_cradle_C1_v01.step","02_STEP_STL/od_c03_cradle_C1_v01.stl",
+ "03_Sections/od_c03_cradle_v01_assembly_xy_z18p0.png","03_Sections/od_c03_cradle_v01_assembly_yz_x0p0.png","03_Sections/od_c03_cradle_v01_xy_z18p0.png",
+ "03_Sections/od_c03_cradle_v01_xy_z28p0.png","03_Sections/od_c03_cradle_v01_xz_y38p5.png","03_Sections/od_c03_cradle_v01_xz_y7p0.png",
+ "03_Sections/od_c03_cradle_v01_yz_x0p0.png","03_Sections/od_c03_cradle_v01_yz_x31p5.png","03_Sections/od_c03_cradle_v01_yz_x34p0.png",
+ "00_Spec/inputs/OD-H01_ulka_ep5_pump.step"]
+brief = {l.split("`")[1]: l.split("|")[2].strip() for l in open(W/"briefs/WP-04_reviewer.md") if l.startswith("| `")}
+F = []
+for f in files:
+    h = hashlib.sha256((W/f).read_bytes()).hexdigest()
+    F.append({"path": f, "sha256": h, "matches_report": h == brief[f]})
+assert all(x["matches_report"] for x in F)
+
+def g(gate, measured, unit, required, margin, at, status, method, assumes=()):
+    return {"gate": gate, "measured": measured, "unit": unit, "required": required, "margin": margin, "at": at,
+            "status": status, "method": method, "assumes": list(assumes)}
+PA = "PASS_ASSUMED"
+gates = [
+ g("U-01", 1, "count", "solid_count = 1, brep_valid = 1, naked_edges = 0", 0, "whole part: solid_count 1, brep_valid 1 (BOP faults 0), naked_edges 0 of 144 edges", "PASS", "validity"),
+ g("U-02", 80.0, "mm", "80.0 x 40.0 x 52.0 each in [spec - 0.1, spec + 0.1]; position reported apart", 0.1, "size_x 80.000 (size_y 40.000, size_z 52.000, each margin +0.100); position x -40.000..40.000, y 0.000..40.000, z -10.000..42.000, as the spec datum", "PASS", "envelope"),
+ g("U-03", 6.9e-13, "mm", "(a) cradle|OD-H01 clearance >= 2.0 and interference <= 0; cradle|sleeve clearance = 0 and interference <= 0 mm3; (b) no motion variable", -6.9e-13, "cradle|sleeve 6.9e-13 at (-18.844, 18.844, 15.000) on the rib 1 saddle arc edge (r 26.650, theta 135.0), interference 0.0 mm3; cradle|OD-H01 2.300 at (-29.500, 0.000, 33.000) to the -X side plate (-27.200, 0.000, 33.000), interference 0.0 mm3; OD-H01 sound 1/1/0; (b) no motion variable; insertion path along +Y from -60 mm: minimum 2.300, sleeve first touches at the final pose", PA, "clearance, interference", ["A-01","A-03"]),
+ g("U-04", 0.0, "mm3", "named body re-read unchanged, no stray shells, valid after re-import", 0.001, "compare_step of the re-read part with its file: schema AP242 1, solids 1, volume_delta 0.0 mm3, faces_delta 0, labels 1 (od_c03_cradle), valid_after 1; file holds 1 MANIFOLD_SOLID_BREP, 1 CLOSED_SHELL, 0 OPEN_SHELL, 54 ADVANCED_FACE, length unit MM", "PASS", "compare_step"),
+ g("U-05", 48, "count", "2 saddle ribs, 2 post blocks, 4 strap slots, 4 dia 3.4 through-holes, 1 foot plate", 0, "planes 48, cylinders 6 (6 concave: 2 saddle arcs r 26.650, 4 bores dia 3.400), bores 4, other kinds 0; by position: 2 ribs (faces z 15/21/25/31), 2 post inner faces |x| 29.5, 4 through-slots (line probes along X at x +-31.5, z 18/28), 1 foot underside y 40.0", "PASS", "feature_census, bore_census, locate_bore"),
+ g("U-06", 2.0, "mm", ">= 2.0 (min_wall wide, soft)", -3.1e-15, "(-33.318, 6.101, 33.000): -X post end face z 33 to the side of the z 28 slot (z 31); inside the 0.005 band", "PASS", "min_wall_wide"),
+ g("U-07", 0.00489, "mm", "STL at tol 0.01, angular <= 4*acos(1 - 0.01/32.0) = 0.1000026 rad; stl_max_sagitta <= 0.01", 0.00511, "delivered STL is byte-identical to a fresh write_stl of the delivered STEP at 0.01 mm / 0.1 rad (2540 triangles); sagitta 0.00489; mesh_deviation both ways 0.00489 at (-16.159, 21.192, 18.000) on saddle 1; mesh_census 1 body, 0 naked edges, winding 1, volume 25164.19 mm3 vs B-rep 25162.51", "PASS", "write_stl, mesh_sagitta, mesh_deviation, mesh_census"),
+ g("U-08", None, "count", "applies to threaded parts; this target has none", None, None, "NOT_APPLICABLE", "none (N/A by its row)"),
+ g("D-01a", 2.0, "mm", ">= 0.8", 1.2, "(-33.318, 6.101, 33.000) slot end ligament", "PASS", "min_wall"),
+ g("D-01b", 2.0, "mm", ">= 2.0", -3.1e-15, "(-33.318, 6.101, 33.000) slot end ligament, -X post; the same 2.000 at all four slot ends; inside the 0.005 band", "PASS", "min_wall"),
+ g("D-02", 80.0, "mm", "each envelope size <= the Kobra Max 3 build volume, foot down (420 x 420 x 500 per A-10)", 340.0, "size_x 80.0 <= 420 (+340.0); size_z 52.0 <= 420 (+368.0); height size_y 40.0 <= 500 (+460.0)", PA, "envelope", ["A-10"]),
+ g("D-03a", 45.0, "deg", "every downward face >= 45 deg from horizontal, build_dir (0,-1,0)", 0.0, "(-29.500, 5.750, 21.000): the eight slot gable roof planes, 45.000 deg, sampling bound 0.0 (planes only); 0 samples below 45", PA, "overhang_census", ["A-13"]),
+ g("D-03b", 0.0, "mm", "span <= 5", 5.0, "no downward-facing horizontal face off the bed (normal +Y, y < 39.99): largest bridge span 0.0; sections x +-31.5 show every slot roofed by a 45 deg gable to an apex edge at y 2.75", "PASS", "face census by normal and envelope; reviewer sections"),
+ g("D-04a", 3.4, "mm", ">= 3.25", 0.15, "all four holes dia 3.400: (-34.0, 37.0, -4.0), (-34.0, 37.0, 37.0), (34.0, 37.0, -4.0), (34.0, 37.0, 37.0)", "PASS", "locate_bore"),
+ g("D-04c", 2.3, "mm", ">= 0.5 per side to OD-H01 (REQ-03 raises it to 2.0)", 1.8, "(-29.500, 0.000, 33.000) -X post to -X side plate", PA, "clearance", ["A-01"]),
+ g("D-06a", 2.0, "mm", ">= 1.0", 1.0, "(-33.318, 6.101, 33.000) slot end ligament", "PASS", "min_wall"),
+ g("D-07", None, "count", "fit-critical bores: none on this part (the four holes are clearance holes)", None, None, "NOT_APPLICABLE", "none (N/A by its row)"),
+ g("REQ-01", 26.65, "mm", "inner radius, theta 50..130 every 5 deg, z 15.5..20.5 and 25.5..30.5: min and max in [26.60, 26.70]", 0.05, "both windows 850 rays each, 0 unread: min 26.650 at (17.130, 20.415, 15.550), max 26.650 at (-15.286, 21.830, 15.550); same in 25.5..30.5", PA, "radial_profile", ["A-03"]),
+ g("REQ-02", 26.65, "mm", "inner r <= 26.70 at theta 50/130, z 18/28; no material r <= 32.0 at theta 40/140; rib faces z 15.0, 21.0, 25.0, 31.0 +-0.10", 0.05, "inner 26.650 at theta 50 and 130, z 18 and 28 (+0.050); theta 40/140 window r <= 32 reads INCONCLUSIVE 'no material' as the spec expects, first material on the whole ray 38.510 (the post at x +-29.5, +6.510); rib faces 15.000, 21.000, 25.000, 31.000 (+0.100); sector edge at 45.0 (theta 44.75 first material 41.35 = post)", PA, "radial_extent, face envelopes, sections", ["A-06"]),
+ g("REQ-03", 2.3, "mm", "clearance(cradle, OD-H01) >= 2.0 at the identity pose", 0.3, "(-29.500, 0.000, 33.000) on the -X post inner face to (-27.200, 0.000, 33.000) on the -X side plate; +X post 2.650; the input STEP placed by the reviewer at identity reads the same as the assembly's copy (common volume = full 114903.27 mm3)", PA, "clearance", ["A-01","A-03"]),
+ g("REQ-04", 6.9e-13, "mm", "clearance(cradle, sleeve) = 0 with the nearest points on the saddle arcs; interference <= 0 mm3", -6.9e-13, "(-18.844, 18.844, 15.000) r 26.650 theta 135.0 on the saddle 1 arc; rib 2 alone 6.9e-13 at (-18.844, 18.844, 25.000); interference 0.0 mm3", PA, "clearance, interference", ["A-03"]),
+ g("REQ-05", 6.0, "mm", "four through-slots along X, clear >= 6.0 (Z) x 2.5 (Y), centres y 7.0 +-0.5 and z 18.0/28.0 +-0.5, 45 deg gable roofs, ligament >= 2.0", 0.0, "each of the 4 slots (x +-31.5, z 18/28): clear Z 6.000 (+0.000), clear Y 2.500 (+0.000), centre y 7.000, z 18.000/28.000, through 4.0 along X; ligaments 2.000 at the block ends (+0.000), 4.000 between slots, 2.750 above the apex; roofs 45.000 deg", PA, "line probes along X/Y/Z, envelope, overhang_census, min_wall", ["A-07","A-13"]),
+ g("REQ-06", 29.5, "mm", "post inner faces |x| = 29.5 +-0.1, z 13.0..33.0 +-0.1; post clearance to OD-H01 >= 2.0", 0.1, "inner faces x -29.500 and 29.500, z 13.000..33.000 both (+0.100); clearance -X post 2.300 at (-29.5, 0.0, 13.0), +X post 2.650 at (29.5, 0.0, 33.0)", PA, "envelope, clearance", ["A-06"]),
+ g("REQ-07", 3.4, "mm", "four dia 3.4 +-0.1 through-holes along Y at (x +-34.0, z -4.0) and (x +-34.0, z 37.0), offset <= 0.10", 0.1, "all four: dia 3.400, axis (0,1,0), offset 0.000 (+0.100), length 3.0, through 1", PA, "bore_census, locate_bore", ["A-11"]),
+ g("REQ-08", 40.0, "mm", "foot underside y = 40.00 +-0.10 (envelope max_y), 3.0 +-0.1 thick", 0.1, "max_y 40.000; foot top plane y 37.000, thickness 3.000 (+0.100); sections x 0 and x 34", PA, "envelope, face envelope, sections", ["A-11"]),
+ g("REQ-09", None, "bool", "no unacceptable vibration to the chassis with the OEM sleeve fitted; bench gate, INCONCLUSIVE until the first run", None, None, "INCONCLUSIVE", "none (bench)", ["A-03","A-05"]),
+]
+census = [
+ {"feature": "F01 foot plate", "expected": "80.0 x 3.0 x 52.0, x +-40, y 37.0..40.0, z -10..42 (as amended)", "found": "top plane y 37.000, underside y 40.000 (1 face), x -40..40, z -10..42", "status": "PASS"},
+ {"feature": "F02 rib 1 with web", "expected": "z 15.0..21.0, inner arc r 26.65 over theta 45..135, outer ends r 32.0, web faces x +-22.627 to the foot", "found": "faces z 15.000/21.000, cylinder r 26.650 on (0,0,z), arc ends (+-18.844, 18.844), web x +-22.627 from y 22.627 to 37", "status": "PASS"},
+ {"feature": "F03 rib 2 with web", "expected": "z 25.0..31.0, same profile", "found": "faces z 25.000/31.000, cylinder r 26.650, same profile", "status": "PASS"},
+ {"feature": "F04 post blocks x2", "expected": "|x| 29.5..33.5, y 0.0..37.0, z 13.0..33.0", "found": "2 blocks, inner faces |x| 29.500, outer 33.500, top y 0.000, z 13.000..33.000", "status": "PASS"},
+ {"feature": "F05 strap slots x4", "expected": "2 per block, 6.0 x 2.5 clear, centres y 7.0, z 18/28, 45 deg gables, through along X", "found": "4 through-slots, 6.000 x 2.500, floor y 8.250, sides y 5.750..8.250, gable apex y 2.750, 45.000 deg", "status": "PASS"},
+ {"feature": "F06 frame holes x4", "expected": "dia 3.4 through along Y at (+-34.0, z -4.0) and (+-34.0, z 37.0)", "found": "4 bores dia 3.400, axis Y, offset 0.000, through", "status": "PASS"},
+ {"feature": "F07 check assembly", "expected": "od_c03_cradle + OD-H01 + od_h02_sleeve_assumed_A03 at identity", "found": "3 named children at identity; cradle equals the part file (common 25162.51 = full volume), OD-H01 equals the input (common 114903.27 = full), sleeve 2 solids 13993.08 mm3", "status": "PASS"},
+]
+plaus = [
+ {"question": "P1 gravity", "answer": "Yes with the ties: foot down (+Y), saddles under the sleeve, load path saddle-web-foot-4 screws; but the pump's centre of mass (uniform-density model z 7.23; coil centre z 12.85) lies outside the saddle span z 15..31, so it stays seated only under tie tension (F2)", "status": "YES"},
+ {"question": "P2 function chains", "answer": "Tie path exists: slot, up the 2.30/2.65 gap between post and side plate, over the plate corner (r 31.41 at theta 210) and the sleeve top, down the other side; the −Y side at z 15.6..20.4 is coil only (r <= 23.72); the tie bears on the metal plates (F3)", "status": "YES"},
+ {"question": "P3 motion clearance", "answer": "No moving part; the vibrating pump keeps 2.300 (-X post), 2.650 (+X post), 2.788 (ribs to coil); insertion along +Y keeps >= 2.300 from -60 mm to the pose", "status": "YES"},
+ {"question": "P4 human factors", "answer": "A dia 5.5 driver cylinder straight down each hole clears OD-H01 by >= 4.05 mm; screw heads clear the post ends by 1.25 in z; the 6.0 x 2.5 slots and 2.30 gaps pass a 4.8 x 1.4 tie", "status": "YES"},
+ {"question": "P5 absurdity", "answer": "80 x 52 x 40 mm, 31.96 g PETG cradle for a 0.5 kg vibratory pump: in proportion with OEM pump brackets", "status": "YES"},
+ {"question": "P6 floating, embedded, mirrored, upside-down", "answer": "Cradle is one solid, in the spec frame, saddle facing the pump; only the assumed sleeve model is embedded in the coil (1427.17 mm3, an A-03 model limit, F4)", "status": "YES"},
+]
+controls = [
+ {"check": "validity (U-01)", "mutant": "M01 loose 2 x 2 x 2 box beside the part: solid_count 2; M18 part with one face removed: naked_edges 4", "got": "FAIL"},
+ {"check": "envelope (U-02, D-02, REQ-08)", "mutant": "M02 foot grown to z 42.5: size_z 52.5; M03 part moved +0.2 in Y: max_y 40.2", "got": "FAIL"},
+ {"check": "feature_census / bore_census (U-05)", "mutant": "M04 hole (-34, -4) filled: bores 3", "got": "FAIL"},
+ {"check": "locate_bore (REQ-07, D-04a)", "mutant": "M05 hole (-34, -4) moved 0.5 to z -3.5: offset 0.500; M06 same hole dia 3.1: REQ-07 and D-04a FAIL", "got": "FAIL"},
+ {"check": "min_wall / min_wall_wide (D-01a, D-01b, D-06a, U-06)", "mutant": "M07 -X z18 slot cut into its end ligament, 0.6 left: 0.600", "got": "FAIL"},
+ {"check": "overhang_census (D-03a, REQ-05 roofs)", "mutant": "M08 -X z18 slot gable filled to a flat ceiling: 0.0 deg", "got": "FAIL"},
+ {"check": "bridge span from downward faces (D-03b)", "mutant": "M08 flat 6.0 ceiling: span 6.0", "got": "FAIL"},
+ {"check": "clearance >= (REQ-03, D-04c, U-03, REQ-06)", "mutant": "M09 -X post inner face moved in 0.5 to x -29.0: 1.800", "got": "FAIL"},
+ {"check": "interference (REQ-04, U-03)", "mutant": "M10 saddle 1 radius 26.55: 24.51 mm3", "got": "FAIL"},
+ {"check": "clearance = 0 (REQ-04, U-03)", "mutant": "M11 both saddles opened to r 26.75: 0.100", "got": "FAIL"},
+ {"check": "radial_profile (REQ-01)", "mutant": "M10 saddle 1 at 26.55: min 26.550; M11 at 26.75: max 26.750", "got": "FAIL"},
+ {"check": "radial_extent (REQ-02)", "mutant": "M12 rib 1 extended to theta 37.5: window at theta 40 finds material, first material 26.650 < 32; M11: 26.750 at theta 50/130", "got": "FAIL"},
+ {"check": "face envelopes (REQ-02 faces, REQ-06 faces, REQ-08 thickness)", "mutant": "M13 rib 1 face moved to z 21.3: 21.300; M09 post face at 29.0", "got": "FAIL"},
+ {"check": "slot line probes (REQ-05, U-05 slots)", "mutant": "M14 -X z18 slot narrowed to 5.5: clear 5.500; M07 ligament 0.600; M09 slots through 2 of 4", "got": "FAIL"},
+ {"check": "compare_step (U-04)", "mutant": "M15 part compared with a written hole-filled STEP: volume_delta 45.50 mm3, faces_delta 3", "got": "FAIL"},
+ {"check": "mesh_sagitta / mesh_deviation (U-07)", "mutant": "M16 STL of the part at tol 0.1 / 0.5 rad: sagitta 0.0486, deviation 0.0486", "got": "FAIL"},
+ {"check": "mesh_census (U-07, V-05)", "mutant": "M17 delivered STL with one triangle dropped: naked_edges 3", "got": "FAIL"},
+]
+findings = [
+ {"id": "F1", "gate": "REQ-09", "kind": "HARD_GATE_INCONCLUSIVE", "measured": None, "unit": "bool", "required": "no unacceptable vibration to the chassis with the OEM sleeve fitted (bench)", "margin": None, "at": None, "blocks": True, "risk": "UNKNOWN",
+  "risk_basis": "a Hard §5 row that no geometric check can answer; the evidence cannot tell, and F3 shows the ties bear on the metal frame, a path around the rubber sleeve", "fix_direction": "no geometry change clears it: bench-test the first print with the OEM sleeve, or the Usta reclassifies REQ-09 in spec §5 as a post-print gate outside the CAD review"},
+ {"id": "F2", "gate": "P1", "kind": "OBSERVATION", "measured": 7.23, "unit": "mm", "required": "pump centre of mass over the saddle span z 15.0..31.0", "margin": -7.77, "at": "(−0.07, −0.87, 7.23) uniform-density centre of mass of OD-H01; coil centre z 12.85", "blocks": False, "risk": "MEDIUM",
+  "risk_basis": "the pump extends to z -66.45 on the outlet side while both saddles sit at z 15..31; seated only by tie tension (about 3 N static at the z 28 tie), rocking on the rib 1 edge under vibration is plausible", "fix_direction": "spec: add a strapless saddle near z 0..6 (clear of the -Y features, which only constrain the strap path) or move rib 1 toward -Z so the span brackets the centre of mass"},
+ {"id": "F3", "gate": "P2", "kind": "OBSERVATION", "measured": 31.41, "unit": "mm", "required": "tie rides on the sleeve (spec §4 C1)", "margin": None, "at": "side plate corners (-27.2, -16.2) and (26.85, -16.2), r 31.41 at theta 210 over z 15.6..30.4", "blocks": False, "risk": "MEDIUM",
+  "risk_basis": "the tie climbs the outer faces of the side plates in the 2.30/2.65 gaps and crosses their corners before the sleeve, so frame-tie-post is a path that bypasses the rubber; a closed loop through two side slots also has to cross the pump twice", "fix_direction": "spec: route the strap under the saddle (slots in the foot or web) or add a rubber pad where the tie crosses the plate corners; confirm at the REQ-09 bench test"},
+ {"id": "F4", "gate": "REQ-04", "kind": "OBSERVATION", "measured": 6.9e-13, "unit": "mm", "required": "clearance = 0, interference <= 0 against the A-03 sleeve", "margin": -6.9e-13, "at": "(-18.844, 18.844, 15.000)", "blocks": False, "risk": "MEDIUM",
+  "risk_basis": "the equality holds only at r 26.650 exactly (reviewer controls: 26.55 gives 24.51 mm3, 26.75 a 0.100 gap), FDM holds about +-0.1 to 0.2, and the sleeve model overlaps OD-H01 by 1427.17 mm3 as two separate arcs", "fix_direction": "measure OD-H02 (retire A-03) and restate REQ-04 as a banded interference or gap the rubber tolerates"},
+ {"id": "F5", "gate": "REQ-03", "kind": "OBSERVATION", "measured": 2.3, "unit": "mm", "required": ">= 2.0", "margin": 0.3, "at": "(-29.500, 0.000, 33.000) to the -X side plate", "blocks": False, "risk": "MEDIUM",
+  "risk_basis": "margin 0.300 is below the scan p95 deviation 0.448 (A-01, max 2.49), so the real plate may sit inside 2.0", "fix_direction": "calipers on the frame plates (A-01, A-04); if they read wider, move post_x_in outward in the spec"},
+ {"id": "F6", "gate": "D-01b", "kind": "OBSERVATION", "measured": 2.0, "unit": "mm", "required": ">= 2.0 (also U-06 and REQ-05 ligament; REQ-05 clear 6.0 x 2.5; D-03a 45 deg)", "margin": -3.1e-15, "at": "(-33.318, 6.101, 33.000) slot end ligaments, all four", "blocks": False, "risk": "LOW",
+  "risk_basis": "zero margin by the spec's own dimensions; a 2.0 ligament is five 0.4 perimeters and a 2.5 slot passes a 1.4 tie, so function does not hang on the last 0.1", "fix_direction": "spec: 22.0 post block or 5.8-wide slots to give margin; none needed in the build"},
+]
+least = [
+ {"item": "REQ-03 margin 0.300 at the -X post is below the scan p95 0.448 (A-01)", "answer": "Confirmed: 2.300 at (-29.5, 0.0, 13..33) to the -X plate x -27.20, +X 2.650; the insertion path keeps 2.300. Rated F5 MEDIUM; calipers retire it."},
+ {"item": "REQ-04 contact and the sleeve shape rest wholly on A-03; the assumed sleeve overlaps the coil by 1427.2 mm3", "answer": "Confirmed: contact 6.9e-13 on both saddles, interference 0.0; the sleeve model is two arcs sharing 1427.17 mm3 with OD-H01; +-0.10 on the radius gives 24.51 mm3 or 0.100 gap (F4)."},
+ {"item": "Zero-margin rows: slot ligament 2.000, slot clear 6.0 x 2.5, gable roofs 45.000 deg; ties bear on the side plates", "answer": "Confirmed: ligaments 2.000 (min_wall 1.999999999999997), clear 6.000 x 2.500, roofs 45.000 deg, all inside the bands (F6 LOW); the tie path crosses the plate corners at r 31.41 (F3 MEDIUM)."},
+]
+V = {"schema": "oguz-verdict-v1", "review_id": "RV01", "job_id": "20260930-od-c03-pump-cradle", "target": "od_c03_cradle_v01", "spec_version": "1.1",
+ "reviewer": {"runtime": "claude-code", "model": "claude-opus-5-5"}, "verdict": "REVISE",
+ "summary": "All 24 geometric rows measure PASS or PASS_ASSUMED, but Hard bench gate REQ-09 is INCONCLUSIVE and blocks by rule: least margins are REQ-03 2.300 vs 2.0, REQ-04 contact 6.9e-13, ligament 2.000; controls FAIL on all 17 families.",
+ "files": F, "gates": gates, "feature_census": census, "plausibility": plaus, "positive_controls": controls, "findings": findings,
+ "least_sure_answers": least, "assumptions_relied_on": ["A-01","A-03","A-06","A-07","A-10","A-11","A-13"]}
+
+# minimal validator for the schema subset
+def check(node, sch, path="$"):
+    t = sch.get("type"); errs = []
+    if "anyOf" in sch:
+        if not any(not check(node, s, path) for s in sch["anyOf"]): errs.append(f"{path}: anyOf")
+        return errs
+    tm = {"object": dict, "array": list, "string": str, "boolean": bool}
+    if t == "number":
+        if not (isinstance(node, (int, float)) and not isinstance(node, bool)): return [f"{path}: not number"]
+    elif t == "null":
+        if node is not None: return [f"{path}: not null"]
+    elif t:
+        if not isinstance(node, tm[t]): return [f"{path}: not {t}"]
+    if "enum" in sch and node not in sch["enum"]: errs.append(f"{path}: {node!r} not in enum")
+    if "pattern" in sch and not re.search(sch["pattern"], node): errs.append(f"{path}: pattern")
+    if t == "object":
+        for r in sch.get("required", []):
+            if r not in node: errs.append(f"{path}: missing {r}")
+        if sch.get("additionalProperties") is False:
+            for k in node:
+                if k not in sch["properties"]: errs.append(f"{path}: extra {k}")
+        for k, s in sch.get("properties", {}).items():
+            if k in node: errs += check(node[k], s, f"{path}.{k}")
+    if t == "array":
+        for i, x in enumerate(node): errs += check(x, sch["items"], f"{path}[{i}]")
+    return errs
+errs = check(V, S)
+for x in V["gates"]:
+    if x["status"] == "PASS_ASSUMED" and not x["assumes"]: errs.append(x["gate"] + " PASS_ASSUMED without assumes")
+    if x["measured"] is None and x["status"] not in ("INCONCLUSIVE", "NOT_APPLICABLE"): errs.append(x["gate"] + " null measured")
+    if " " in x["unit"]: errs.append("unit")
+print("schema errors:", errs)
+assert not errs
+json.dump(V, open(W/"reviews/RV01_od_c03_cradle_v01.json", "w"), indent=2, ensure_ascii=False)
+json.dump(V, open(W/"reviews/RV01_work/verdict_data.json", "w"), indent=1, ensure_ascii=False)
+print("written", len(gates), "gates")

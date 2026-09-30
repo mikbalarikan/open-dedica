@@ -1,0 +1,257 @@
+{
+ "path": {
+  "dz0.0": 0.0,
+  "dz0.1": 0.09999999999999964,
+  "dz0.5": 0.5,
+  "dz1": 1.0,
+  "dz2": 2.0,
+  "dz5": 5.0,
+  "dz10": 10.0,
+  "dz20": 12.4924943874,
+  "dz40": 14.320000559330314,
+  "dz60": 29.749998588558295,
+  "H_dy0.5": 10.1,
+  "H_dy2": 10.1,
+  "H_dy5": 10.1,
+  "H_dy10": 10.1,
+  "H_dy20": 10.1,
+  "H_dy40": 10.1,
+  "H_dy60": 10.1,
+  "H_dy80": 10.365768951030228
+ },
+ "controls": [
+  {
+   "check": "validity",
+   "mutant": "S1 tip face removed (open shell); and a second copy of the mount beside it",
+   "got": "FAIL",
+   "rows": [
+    [
+     "U-01.naked_edges",
+     2,
+     "== 0",
+     "FAIL"
+    ],
+    [
+     "U-01.solid_count",
+     2,
+     "== 1",
+     "FAIL"
+    ]
+   ]
+  },
+  {
+   "check": "envelope",
+   "mutant": "mount relocated +0.5 in x; foot extended 0.5 in z",
+   "got": "FAIL",
+   "rows": [
+    [
+     "U-02.max_x",
+     50.50000000000003,
+     "in [49.9, 50.1]",
+     "FAIL"
+    ],
+    [
+     "U-02.size_z",
+     50.5,
+     "in [49.9, 50.1]",
+     "FAIL"
+    ]
+   ]
+  },
+  {
+   "check": "clearance (REQ-01) and envelope of the tip face (REQ-03)",
+   "mutant": "S1 standoff 0.20 taller (tip z -9.90)",
+   "got": "FAIL",
+   "rows": [
+    [
+     "REQ-01",
+     9.9,
+     ">= 10.0",
+     "FAIL"
+    ],
+    [
+     "REQ-03.S1.tip_z",
+     -9.9,
+     "in [-10.2, -10.0]",
+     "FAIL"
+    ]
+   ]
+  },
+  {
+   "check": "clearance == 0 (spacer contacts)",
+   "mutant": "S1 spacer 0.10 shorter (10.00, gap at the tip)",
+   "got": "FAIL",
+   "rows": [
+    [
+     "U-03.S1/mount.clearance",
+     0.09999999999999964,
+     "== 0.0",
+     "FAIL"
+    ]
+   ]
+  },
+  {
+   "check": "interference / common_volume (U-03, REQ-07)",
+   "mutant": "S1 spacer 0.50 longer into the S1 standoff; 4 x 8 x 10 boss on the foot reaching y -58 (r 43.9 from the axis)",
+   "got": "FAIL",
+   "rows": [
+    [
+     "U-03.S1/mount.interference",
+     12.959069696058005,
+     "<= 0",
+     "FAIL"
+    ],
+    [
+     "REQ-07",
+     13.57717785639644,
+     "<= 0",
+     "FAIL"
+    ]
+   ]
+  },
+  {
+   "check": "step_roundtrip / compare_step (U-04)",
+   "mutant": "delivered mount compared with a re-written file whose S2 bore is filled",
+   "got": "FAIL",
+   "rows": [
+    [
+     "U-04.volume_delta",
+     86.70795715948043,
+     "<= 0",
+     "FAIL"
+    ],
+    [
+     "U-04.faces_delta",
+     1,
+     "== 0",
+     "FAIL"
+    ]
+   ]
+  },
+  {
+   "check": "feature_census / bore_census / locate_bore (U-05, REQ-02, REQ-06, D-04a)",
+   "mutant": "S2 bore filled; frame hole (40, -8) moved +0.5 in x; S1 bore cut at \u00d83.70",
+   "got": "FAIL",
+   "rows": [
+    [
+     "U-05.bores",
+     5,
+     "== 6",
+     "FAIL"
+    ],
+    [
+     "U-05.bore_census",
+     5,
+     "== 6",
+     "FAIL"
+    ],
+    [
+     "REQ-06.x+40_z-8.offset",
+     0.5,
+     "<= 0.1",
+     "FAIL"
+    ],
+    [
+     "REQ-02.S1.diameter",
+     3.7,
+     "in [3.9, 4.1]",
+     "FAIL"
+    ],
+    [
+     "D-04a.S1",
+     3.7,
+     ">= 3.75",
+     "FAIL"
+    ]
+   ]
+  },
+  {
+   "check": "feature_census torus count (E-06)",
+   "mutant": "S1 root fillet buried under a \u00d814.0 x 1.0 collar",
+   "got": "FAIL",
+   "rows": [
+    [
+     "E-06.torus_faces",
+     1,
+     "== 2",
+     "FAIL"
+    ]
+   ]
+  },
+  {
+   "check": "min_wall / min_wall_wide (D-01a, D-01b, D-06a, U-06)",
+   "mutant": "20 x 20 pocket from the plate back leaving 0.50 of plate",
+   "got": "FAIL",
+   "rows": [
+    [
+     "D-01a",
+     0.5,
+     ">= 0.8",
+     "FAIL"
+    ],
+    [
+     "D-01b",
+     0.5,
+     ">= 2.0",
+     "FAIL"
+    ],
+    [
+     "D-06a",
+     0.5,
+     ">= 1.0",
+     "FAIL"
+    ],
+    [
+     "U-06",
+     0.5,
+     ">= 2.0",
+     "FAIL"
+    ]
+   ]
+  },
+  {
+   "check": "overhang_census (D-03a)",
+   "mutant": "frame hole (40, -8) re-cut round, no teardrop roof",
+   "got": "FAIL",
+   "rows": [
+    [
+     "D-03a",
+     0.0,
+     ">= 45.0",
+     "FAIL"
+    ]
+   ]
+  },
+  {
+   "check": "write_stl / mesh_sagitta / mesh_census / mesh_deviation (U-07)",
+   "mutant": "STL meshed at 0.1 / 0.5 rad; delivered STL with 21 triangles removed; delivered STL shifted 0.05 in x",
+   "got": "FAIL",
+   "rows": [
+    [
+     "U-07.stl_max_sagitta",
+     0.05576298527302642,
+     "<= 0.01",
+     "FAIL"
+    ],
+    [
+     "U-07.naked_edges",
+     29,
+     "== 0",
+     "FAIL"
+    ],
+    [
+     "U-07.mesh_deviation",
+     0.05499290466440745,
+     "<= 0.01",
+     "FAIL"
+    ]
+   ]
+  }
+ ],
+ "boss_radial_min": [
+  null,
+  "INCONCLUSIVE",
+  "100 of 100 rays unread, first at 250\u00b0 and z = 21.000000 mm: no material between 0 and 45 mm on the ray at 250\u00b0 and z = 21 mm",
+  null
+ ]
+}

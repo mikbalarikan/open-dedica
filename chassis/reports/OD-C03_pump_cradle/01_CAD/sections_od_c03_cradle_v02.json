@@ -1,0 +1,101 @@
+{
+ "xy_z0p0": {
+  "file": "03_Sections/od_c03_cradle_v02_xy_z0p0.png",
+  "sha256": "51dc7f09bbf3b3e95a6b6623decb2430445b9504e50ab4a9decb1f602895faa7",
+  "plane": "z = 0.00 mm",
+  "cut_area_mm2": 844.6214107461071,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "xy_z28p0": {
+  "file": "03_Sections/od_c03_cradle_v02_xy_z28p0.png",
+  "sha256": "4364ee45b5b8a12674cf4f0d509e7dd901cde4352e25421d9acff4333d056502",
+  "plane": "z = 28.00 mm",
+  "cut_area_mm2": 1096.6214107461071,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "yz_x0p0": {
+  "file": "03_Sections/od_c03_cradle_v02_yz_x0p0.png",
+  "sha256": "3f1dbbc197ea6daef045738ba8ad42f889c5aa3f93ad38d2eb65a687163d7328",
+  "plane": "x = 0.00 mm",
+  "cut_area_mm2": 280.20000000000005,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "yz_x31p5": {
+  "file": "03_Sections/od_c03_cradle_v02_yz_x31p5.png",
+  "sha256": "1f75434f7b2887c7321dbc50545af88d24e5f705f7e0d5fdc7a233177a588504",
+  "plane": "x = 31.50 mm",
+  "cut_area_mm2": 885.0,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "yz_x34p0": {
+  "file": "03_Sections/od_c03_cradle_v02_yz_x34p0.png",
+  "sha256": "577bc611c4691e5ddcc7118f907404b2a8eee2303356ef7c6fc4dbfbd73e1fd5",
+  "plane": "x = 34.00 mm",
+  "cut_area_mm2": 135.59999999999997,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "xy_z17p0": {
+  "file": "03_Sections/od_c03_cradle_v02_xy_z17p0.png",
+  "sha256": "603139490d9c8a947e45d2f8aeb257b0a6ecad102d47e89d3987367439825df3",
+  "plane": "z = 17.00 mm",
+  "cut_area_mm2": 492.0,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "xz_y7p0": {
+  "file": "03_Sections/od_c03_cradle_v02_xz_y7p0.png",
+  "sha256": "1f44f2bbdb0390b6380bf0f7b29e18f4b0a10364e5ee45ef2899a237491ee3c5",
+  "plane": "y = 7.00 mm",
+  "cut_area_mm2": 72.0,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "xz_y38p5": {
+  "file": "03_Sections/od_c03_cradle_v02_xz_y38p5.png",
+  "sha256": "8ad305e86b536a0132bfac697ec2d0f56694afd3187a5fe40e7332ff48a602cc",
+  "plane": "y = 38.50 mm",
+  "cut_area_mm2": 4123.6831889245,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "assembly_xy_z0p0": {
+  "file": "03_Sections/od_c03_cradle_v02_assembly_xy_z0p0.png",
+  "sha256": "e36596521f8a6c8d0cca5d8bcddc8c58cf6708fc2192c48223fe1fc9379b7b24",
+  "plane": "z = 0.00 mm",
+  "cut_area_mm2": 3249.88755578801,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "assembly_xy_z28p0": {
+  "file": "03_Sections/od_c03_cradle_v02_assembly_xy_z28p0.png",
+  "sha256": "4e58b33781602ce7e7833dbfa77a0f16055c3ba4fd5c22052b318775e65b2083",
+  "plane": "z = 28.00 mm",
+  "cut_area_mm2": 3422.903834056625,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "assembly_yz_x0p0": {
+  "file": "03_Sections/od_c03_cradle_v02_assembly_yz_x0p0.png",
+  "sha256": "86a77ec2317d2f64fdfc5878ebac31b9492b3dd6837bcd53db906ae3348123cf",
+  "plane": "x = 0.00 mm",
+  "cut_area_mm2": 3762.1540858176377,
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ }
+}

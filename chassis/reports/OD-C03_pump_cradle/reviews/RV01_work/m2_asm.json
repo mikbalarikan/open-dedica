@@ -1,0 +1,414 @@
+{
+ "pump_input_validity": {
+  "solid_count": [
+   1,
+   "MEASURED"
+  ],
+  "brep_valid": [
+   1,
+   "MEASURED"
+  ],
+  "naked_edges": [
+   0,
+   "MEASURED"
+  ]
+ },
+ "pump_input_env": {
+  "size_x": 54.05,
+  "size_y": 55.15,
+  "size_z": 121.95,
+  "min_x": -27.2,
+  "min_y": -31.4,
+  "min_z": -66.45,
+  "max_x": 26.85,
+  "max_y": 23.75,
+  "max_z": 55.5
+ },
+ "pump_input_vol": 114903.26906544452,
+ "asm_od_c03_cradle_env": {
+  "size_x": 80.0,
+  "size_y": 40.0,
+  "size_z": 52.0,
+  "min_x": -40.0,
+  "min_y": 0.0,
+  "min_z": -10.0,
+  "max_x": 40.0,
+  "max_y": 40.0,
+  "max_z": 42.0
+ },
+ "asm_od_c03_cradle_vol": 25162.506495728107,
+ "asm_od_c03_cradle_solids": 1,
+ "asm_od_c03_cradle_validity": {
+  "solid_count": [
+   1,
+   "MEASURED"
+  ],
+  "brep_valid": [
+   1,
+   "MEASURED"
+  ],
+  "naked_edges": [
+   0,
+   "MEASURED"
+  ]
+ },
+ "asm_OD_H01_ulka_ep5_pump_env": {
+  "size_x": 54.05,
+  "size_y": 55.15,
+  "size_z": 121.95,
+  "min_x": -27.2,
+  "min_y": -31.4,
+  "min_z": -66.45,
+  "max_x": 26.85,
+  "max_y": 23.75,
+  "max_z": 55.5
+ },
+ "asm_OD_H01_ulka_ep5_pump_vol": 114903.26906544878,
+ "asm_OD_H01_ulka_ep5_pump_solids": 1,
+ "asm_OD_H01_ulka_ep5_pump_validity": {
+  "solid_count": [
+   1,
+   "MEASURED"
+  ],
+  "brep_valid": [
+   1,
+   "MEASURED"
+  ],
+  "naked_edges": [
+   0,
+   "MEASURED"
+  ]
+ },
+ "asm_od_h02_sleeve_assumed_A03_env": {
+  "size_x": 47.0,
+  "size_y": 53.3,
+  "size_z": 38.0,
+  "min_x": -23.5,
+  "min_y": -26.65,
+  "min_z": -6.0,
+  "max_x": 23.5,
+  "max_y": 26.65,
+  "max_z": 32.0
+ },
+ "asm_od_h02_sleeve_assumed_A03_vol": 13993.080720266364,
+ "asm_od_h02_sleeve_assumed_A03_solids": 2,
+ "asm_od_h02_sleeve_assumed_A03_validity": {
+  "solid_count": [
+   2,
+   "MEASURED"
+  ],
+  "brep_valid": [
+   1,
+   "MEASURED"
+  ],
+  "naked_edges": [
+   0,
+   "MEASURED"
+  ]
+ },
+ "part_vol": 25162.506495728107,
+ "part_env": {
+  "size_x": 80.0,
+  "size_y": 40.0,
+  "size_z": 52.0,
+  "min_x": -40.0,
+  "min_y": 0.0,
+  "min_z": -10.0,
+  "max_x": 40.0,
+  "max_y": 40.0,
+  "max_z": 42.0
+ },
+ "cradle_asm_vs_part_common": {
+  "name": "common_volume",
+  "measured": 25162.506495728107,
+  "unit": "mm3",
+  "at": null,
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "solids_a": 1,
+   "solids_b": 1,
+   "pairs_computed": 1,
+   "pairs_skipped_by_bbox": 0,
+   "solids_checked": 2
+  }
+ },
+ "pump_asm_vs_input_common": {
+  "name": "common_volume",
+  "measured": 114903.26906544878,
+  "unit": "mm3",
+  "at": null,
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "solids_a": 1,
+   "solids_b": 1,
+   "pairs_computed": 1,
+   "pairs_skipped_by_bbox": 0,
+   "solids_checked": 2
+  }
+ },
+ "REQ03_part_pumpinput": {
+  "name": "clearance",
+  "measured": 2.3000000000000007,
+  "unit": "mm",
+  "at": [
+   -29.5,
+   0.0,
+   33.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    -27.2,
+    0.0,
+    33.0
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "REQ03_asm": {
+  "name": "clearance",
+  "measured": 2.3000000000000007,
+  "unit": "mm",
+  "at": [
+   -29.5,
+   0.0,
+   33.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    -27.2,
+    0.0,
+    33.0
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "interf_asm": {
+  "cradle|pump": {
+   "name": "interference",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "cradle",
+     "pump"
+    ]
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "solids_a": 1,
+    "solids_b": 1,
+    "pairs_computed": 1,
+    "pairs_skipped_by_bbox": 0,
+    "solids_checked": 2
+   }
+  },
+  "cradle|sleeve": {
+   "name": "interference",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "cradle",
+     "sleeve"
+    ]
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "solids_a": 1,
+    "solids_b": 2,
+    "pairs_computed": 1,
+    "pairs_skipped_by_bbox": 1,
+    "solids_checked": 2
+   }
+  },
+  "pump|sleeve": {
+   "name": "interference",
+   "measured": 1427.1718470076748,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "pump",
+     "sleeve"
+    ]
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "solids_a": 1,
+    "solids_b": 2,
+    "pairs_computed": 2,
+    "pairs_skipped_by_bbox": 0,
+    "solids_checked": 3
+   }
+  }
+ },
+ "interf_part_pumpinput": {
+  "name": "common_volume",
+  "measured": 0.0,
+  "unit": "mm3",
+  "at": null,
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "solids_a": 1,
+   "solids_b": 1,
+   "pairs_computed": 1,
+   "pairs_skipped_by_bbox": 0,
+   "solids_checked": 2
+  }
+ },
+ "REQ04_clear": {
+  "name": "clearance",
+  "measured": 6.908452493474598e-13,
+  "unit": "mm",
+  "at": [
+   -18.844396,
+   18.844396,
+   15.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    -18.844396,
+    18.844396,
+    15.0
+   ],
+   "inside": false,
+   "solid_pairs": 2
+  }
+ },
+ "REQ04_clear_asm": {
+  "name": "clearance",
+  "measured": 6.908452493474598e-13,
+  "unit": "mm",
+  "at": [
+   -18.844396,
+   18.844396,
+   15.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    -18.844396,
+    18.844396,
+    15.0
+   ],
+   "inside": false,
+   "solid_pairs": 2
+  }
+ },
+ "REQ04_interf": {
+  "name": "common_volume",
+  "measured": 0.0,
+  "unit": "mm3",
+  "at": null,
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "solids_a": 1,
+   "solids_b": 2,
+   "pairs_computed": 1,
+   "pairs_skipped_by_bbox": 1,
+   "solids_checked": 2
+  }
+ },
+ "sleeve_solids": [
+  [
+   6996.540360129988,
+   {
+    "size_x": 47.0,
+    "size_y": 23.9906,
+    "size_z": 38.0,
+    "min_x": -23.5,
+    "min_y": -26.65,
+    "min_z": -6.0,
+    "max_x": 23.5,
+    "max_y": -2.6594,
+    "max_z": 32.0
+   }
+  ],
+  [
+   6996.540360136538,
+   {
+    "size_x": 47.0,
+    "size_y": 23.9906,
+    "size_z": 38.0,
+    "min_x": -23.5,
+    "min_y": 2.6594,
+    "min_z": -6.0,
+    "max_x": 23.5,
+    "max_y": 26.65,
+    "max_z": 32.0
+   }
+  ]
+ ],
+ "sleeve_per_solid_clear": [
+  {
+   "name": "clearance",
+   "measured": 6.562964269291557,
+   "unit": "mm",
+   "at": [
+    -29.5,
+    0.0,
+    13.0
+   ],
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "on_b": [
+     -23.5,
+     -2.659417,
+     13.0
+    ],
+    "inside": false,
+    "solid_pairs": 1
+   }
+  },
+  {
+   "name": "clearance",
+   "measured": 6.908452493474598e-13,
+   "unit": "mm",
+   "at": [
+    -18.844396,
+    18.844396,
+    15.0
+   ],
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "on_b": [
+     -18.844396,
+     18.844396,
+     15.0
+    ],
+    "inside": false,
+    "solid_pairs": 1
+   }
+  }
+ ]
+}
