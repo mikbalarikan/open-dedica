@@ -1,0 +1,9 @@
+{"t": "2026-09-30T17:27:35Z", "ev": "job_start", "detail": {"job_id": "20260930-od-c02-bulkhead", "lane": "CAD", "data_class": "PUBLIC", "code": "ODC02"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.build"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.export"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.tool"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> 3", "ref": "JOB.md:caps.fix_cycles"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> 0.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> A", "ref": "JOB.md:revision"}}
+{"t": "2026-09-30T17:28:09Z", "ev": "note", "detail": {"text": "- -> od_c02_bulkhead_v01", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T17:28:10Z", "ev": "package_sent", "detail": {"role": "intake", "target": "od_c02_bulkhead_v01", "brief": "briefs/WP-01_intake.md", "attempt": 1}}

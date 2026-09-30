@@ -1,0 +1,54 @@
+---
+schema: oguz-job-v1
+job_id: "20260930-od-c02-bulkhead"
+code: ODC02
+milestone: M1
+title: "Open Dedica OD-C02 printed wet/electric bulkhead"
+lane: CAD
+state: J0_INTAKE
+blocked_on: null
+next_action: "J0: intake package WP-01 reads the inputs"
+data_class: PUBLIC
+size: M
+process: null
+gate_sections: null
+spec: "00_Spec/DESIGN_SPEC.md"
+spec_version: "0.1"
+workspace: "${OGUZ_JOBS}/20260930-od-c02-bulkhead"
+delivery: "${OGUZ_DELIVERY}/20260930-od-c02-bulkhead"
+artifacts: "${OGUZ_ARTIFACTS}/20260930-od-c02-bulkhead"
+repo_commit: d7ea010502a30dd025c5123992847da1b15f3ee3
+active_target: od_c02_bulkhead_v01
+revision: A
+open_assumptions: []
+attempts: {build: 0, export: 0, tool: 0}
+caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
+reviews: []
+usta_gates: []
+deliverables: null
+physical_outcome: n/a
+client_source_delete_after: null
+---
+
+<!--
+JOB.md is the job's state and its resume point (PLAYBOOK §5). Only
+tools/jobstate.py writes it (D-032), at the end of every orchestrator turn. Keep the
+whole file under 5,000 tokens so it survives compaction whole: no narrative, no
+logs, no measurements (those live in REPORT, VERDICT, and EVENTS.jsonl).
+
+The SessionStart hook prints job_id, code, lane, data_class, state, blocked_on,
+active_target, attempts against caps, next_action, open_assumptions, and the notes
+section below.
+
+Counters: build counts the designer packages sent for the active target (in the RE
+lane, the re-drafter packages for the active feature), a RETURNED submission
+included; export and tool count retries in the current step. Counters reset only
+when a new target or RE feature starts, or when the Usta orders another round.
+Reaching a cap is a halt (PLAYBOOK rule 9). fix_cycles goes into the designer's brief
+and bounds its own fix-and-re-measure loop.
+-->
+
+## Notes for a resuming session
+
+## Close summary
+
