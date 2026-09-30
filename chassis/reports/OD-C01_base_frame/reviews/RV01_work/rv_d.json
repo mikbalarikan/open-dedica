@@ -1,0 +1,145 @@
+{
+ "validity": {
+  "mutant": "plate plus a loose 5 mm cube 10 above it",
+  "got": "FAIL",
+  "measured": 2,
+  "required": "== 1",
+  "margin": -1.0
+ },
+ "envelope": {
+  "mutant": "plate front edge moved +0.5 in z (z max 100.5)",
+  "got": "FAIL",
+  "measured": 405.5,
+  "required": "in [404.9, 405.1]",
+  "margin": -0.4
+ },
+ "feature_census": {
+  "mutant": "insert hole (65, -225) filled (removed)",
+  "got": "FAIL",
+  "measured": 25,
+  "required": "== 26",
+  "margin": -1.0
+ },
+ "bore_census": {
+  "mutant": "same mutant: \u00d84.0 bores counted",
+  "got": "FAIL",
+  "measured": 19,
+  "required": "== 20",
+  "margin": -1.0
+ },
+ "locate_bore offset": {
+  "mutant": "REQ-10 hole (-71, -42) moved +0.5 in x",
+  "got": "FAIL",
+  "measured": 0.5,
+  "required": "<= 0.1",
+  "margin": -0.4
+ },
+ "locate_bore diameter": {
+  "mutant": "feet hole (-110, 90) resized to \u00d83.2",
+  "got": "FAIL",
+  "measured": 3.2,
+  "required": ">= 3.25",
+  "margin": -0.05
+ },
+ "clearance": {
+  "mutant": "OD-H11 placed 7.0 lower (y offset 63 instead of 70)",
+  "got": "FAIL",
+  "measured": 9.4924943874,
+  "required": ">= 10.0",
+  "margin": -0.507505613
+ },
+ "clearance contact": {
+  "mutant": "OD-C04 lifted 0.5 off the plate",
+  "got": "FAIL",
+  "measured": 0.5,
+  "required": "== 0.0",
+  "margin": -0.5
+ },
+ "interference": {
+  "mutant": "OD-C03 lowered 0.5 into the plate",
+  "got": "FAIL",
+  "measured": 2054.8672587712804,
+  "required": "<= 0.0",
+  "margin": -2054.867258771
+ },
+ "overhang_census": {
+  "mutant": "\u00d810 x 3 pocket from the bed face at (0, -270): ceiling at y -3",
+  "got": "FAIL",
+  "measured": 0.0,
+  "required": ">= 45.0",
+  "margin": -45.0
+ },
+ "top face count": {
+  "mutant": "0.5 deep 20 x 20 pocket in the top face at (0, 50)",
+  "got": "FAIL",
+  "measured": 2,
+  "required": "== 1",
+  "margin": -1.0
+ },
+ "radial_extent": {
+  "mutant": "OD-C07 hole moved to x -116.5; ring across = 2 x first stretch end",
+  "got": "FAIL",
+  "measured": 7.0,
+  "required": ">= 8.0",
+  "margin": -1.0
+ },
+ "delivered_ray_180": {
+  "material": [
+   [
+    2.0,
+    7.0
+   ]
+  ],
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "compare_step faces": {
+  "mutant": "file of the hole-removed mutant compared with the plate",
+  "got": "FAIL",
+  "measured": 1,
+  "required": "== 0",
+  "margin": -1.0
+ },
+ "compare_step volume": {
+  "mutant": "same",
+  "got": "FAIL",
+  "measured": 75.39822368626483,
+  "required": "<= 0.0",
+  "margin": -75.398223686
+ },
+ "compare_step labels": {
+  "mutant": "plate written under another name",
+  "got": "FAIL",
+  "measured": 0,
+  "required": "== 1",
+  "margin": -1.0
+ },
+ "mesh_sagitta": {
+  "mutant": "STL at tol 0.1 / 0.5 rad",
+  "got": "FAIL",
+  "measured": 0.04815273327806934,
+  "required": "<= 0.01",
+  "margin": -0.038152733
+ },
+ "mesh_deviation": {
+  "mutant": "the coarse STL against the plate",
+  "got": "FAIL",
+  "measured": 0.048144858637932414,
+  "required": "<= 0.01",
+  "margin": -0.038144859
+ },
+ "mesh_census": {
+  "mutant": "delivered STL with one triangle deleted",
+  "got": "FAIL",
+  "measured": 3,
+  "required": "== 0",
+  "margin": -3.0
+ },
+ "3mf_same_mesh": {
+  "mutant": "3MF with one vertex moved 0.5 in x",
+  "got": "FAIL",
+  "measured": 7030,
+  "required": "== 7068",
+  "margin": -38.0
+ }
+}

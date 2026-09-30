@@ -1,26 +1,75 @@
 {
  "min_wall": {
   "name": "min_wall",
-  "measured": null,
+  "measured": 4.999999999899995,
   "unit": "mm",
-  "at": null,
-  "params": {},
-  "status": "INCONCLUSIVE",
-  "reason": "AssertionError: ",
-  "detail": {}
+  "at": [
+   -115.0,
+   -5.7,
+   -42.0
+  ],
+  "params": {
+   "spacing_mm": 0.7,
+   "opposition_deg": 25.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "rays": 420614,
+   "lost_rays": 0,
+   "face_pairs_measured_exactly": 4,
+   "face_pairs_never_opposed": 0,
+   "face_pairs_failed": 0,
+   "exact_points_without_normal": 0,
+   "solids": 4,
+   "largest_step_mm": 0.69873,
+   "wide": {
+    "opposition_deg": 45.0,
+    "measured": 4.999999999899995,
+    "at": [
+     -115.0,
+     -5.7,
+     -42.0
+    ]
+   },
+   "hit_at": [
+    -120.0,
+    -5.7,
+    -42.0
+   ],
+   "from_face": "cylinder",
+   "to_face": "plane",
+   "found_by": "ray"
+  }
  },
  "min_wall_wide": {
   "name": "min_wall_wide",
-  "measured": null,
+  "measured": 4.999999999899995,
   "unit": "mm",
-  "at": null,
+  "at": [
+   -115.0,
+   -5.7,
+   -42.0
+  ],
   "params": {
    "spacing_mm": 0.7,
    "opposition_deg": 45.0
   },
-  "status": "INCONCLUSIVE",
-  "reason": "min_wall is INCONCLUSIVE: AssertionError: ",
-  "detail": {}
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "gated_mm": 4.999999999899995,
+   "gated_opposition_deg": 25.0,
+   "gated_at": [
+    -115.0,
+    -5.7,
+    -42.0
+   ],
+   "rays": 420614,
+   "solids": 4,
+   "largest_step_mm": 0.69873,
+   "face_pairs_measured_exactly": 4
+  }
  },
- "seconds": 0.00014352798461914062
+ "seconds": 211.49094462394714
 }

@@ -5,9 +5,9 @@ code: ODC01
 milestone: M1
 title: "Open Dedica OD-C01 printed base frame"
 lane: CAD
-state: J4_REVIEW
+state: J5_DELIVER
 blocked_on: null
-next_action: "J3: designer package WP-04 builds od_c01_frame_v02 to spec 1.2 (twenty holes, the housing vertical in the check assembly)"
+next_action: "J5: the Usta confirms the layout (A-01 … A-03, A-17) and the A-## rows; prints the plate on the Kobra Max 3; REQ-09 flatness answers at the first print"
 data_class: PUBLIC
 size: M
 process: [FDM]
@@ -23,7 +23,8 @@ revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13, A-14, A-15, A-16, A-17]
 attempts: {build: 2, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
-reviews: []
+reviews:
+  - {id: RV01, target: od_c01_frame_v02, verdict: APPROVED_ASSUMPTION_CONDITIONAL, blockers: 0, date: "2026-09-30"}
 usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
