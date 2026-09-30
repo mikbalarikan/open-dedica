@@ -5,9 +5,9 @@ code: ODG01
 milestone: M1
 title: "Open Dedica OD-G01 printed group head housing"
 lane: CAD
-state: J4_REVIEW
-blocked_on: null
-next_action: "J4: reviewer package WP-04 writes RV01 for od_g01_housing_v03"
+state: REVISE
+blocked_on: {question: "RV01 REVISE on REQ-12 alone (the OD-T01 bench test); the Usta chooses: A another round (needs raise_cap), B accept the documented deviation, or C stop", since: "2026-09-30T16:04:48Z", return_to: J3_BUILD}
+next_action: "the Usta's revise_decision on REVISE_PACKET_RV01; on B: J5, copy the reviewed v03 files into open-dedica/chassis with scripts and README"
 data_class: PUBLIC
 size: M
 process: [FDM]
@@ -23,7 +23,8 @@ revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13, A-14, A-15, A-16, A-17, A-18, A-19, A-20, A-21, A-22, A-23, A-24, A-25, A-26, A-27, A-28]
 attempts: {build: 2, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
-reviews: []
+reviews:
+  - {id: RV01, target: od_g01_housing_v03, verdict: REVISE, blockers: 1, date: "2026-09-30"}
 usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
