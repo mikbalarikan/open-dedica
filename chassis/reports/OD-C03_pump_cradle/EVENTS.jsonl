@@ -60,3 +60,6 @@
 {"t": "2026-09-30T13:35:42Z", "ev": "note", "detail": {"text": "od_c03_cradle_v01 -> od_c03_cradle_v02", "ref": "JOB.md:active_target"}}
 {"t": "2026-09-30T13:36:34Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c03_cradle_v02", "brief": "briefs/WP-05_designer.md", "attempt": 1}}
 {"t": "2026-09-30T13:36:34Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-09-30T13:52:53Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c03_cradle_v02", "outcome": "SUBMITTED", "report": "01_CAD/REPORT_od_c03_cradle_v02.md"}}
+{"t": "2026-09-30T13:52:54Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "J4_REVIEW"}}
+{"t": "2026-09-30T13:53:19Z", "ev": "package_sent", "detail": {"role": "reviewer", "target": "od_c03_cradle_v02", "brief": "briefs/WP-06_reviewer.md", "attempt": 1}}
