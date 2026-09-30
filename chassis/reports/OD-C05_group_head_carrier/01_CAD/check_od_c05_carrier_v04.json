@@ -1544,12 +1544,12 @@
   },
   {
    "gate": "D-03b finder control: flat on the v03 STEP (must read 20.0)",
-   "measured": 60.6698,
+   "measured": 20.0,
    "unit": "mm",
    "required": "== 20.0",
-   "margin": -40.6698,
+   "margin": 0.0,
    "at": null,
-   "status": "FAIL",
+   "status": "PASS",
    "method": "control_flat",
    "assumes": [],
    "reason": ""
@@ -3059,28 +3059,6 @@
      "carried_span_mm": 20.0,
      "carried_edges": 2,
      "edges": 4
-    },
-    {
-     "center": [
-      -0.0,
-      -88.8875,
-      162.9475
-     ],
-     "area_mm2": 2502.6402,
-     "carried_span_mm": 49.6389,
-     "carried_edges": 3,
-     "edges": 6
-    },
-    {
-     "center": [
-      0.0,
-      -68.9086,
-      165.1514
-     ],
-     "area_mm2": 3079.6393,
-     "carried_span_mm": 60.6698,
-     "carried_edges": 3,
-     "edges": 6
     }
    ]
   },

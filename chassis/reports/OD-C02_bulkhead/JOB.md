@@ -5,7 +5,7 @@ code: ODC02
 milestone: M1
 title: "Open Dedica OD-C02 printed wet/electric bulkhead"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
 next_action: "J3: designer package WP-03 builds od_c02_bulkhead_v02 to spec 1.1"
 data_class: PUBLIC
@@ -13,7 +13,7 @@ size: M
 process: [FDM]
 gate_sections: [U, D, J, E]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.1"
+spec_version: "1.2"
 workspace: "${OGUZ_JOBS}/20260930-od-c02-bulkhead"
 delivery: "${OGUZ_DELIVERY}/20260930-od-c02-bulkhead"
 artifacts: "${OGUZ_ARTIFACTS}/20260930-od-c02-bulkhead"
@@ -28,6 +28,7 @@ usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-09-30"}
+  - {gate: spec_ratified, outcome: "1.2", date: "2026-09-30"}
 deliverables: [STEP, STL, scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null
