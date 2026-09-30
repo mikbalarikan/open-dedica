@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-C04 printed thermoblock mount (20260930-od-c04-thermoblock-mount)
 
-Version 1.2 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
+Version 1.2 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; §5, §6 and every decision of §7 confirmed by the Usta on 2026-09-30, "confirmed go") · data class PUBLIC · size S · lane CAD
 
 ## §1 Intent
 
@@ -140,6 +140,7 @@ water connections; steam and drips possible.
 | 2026-09-30 | REQ-08 (heat) is a part gate answered only by the first run; the review reports it INCONCLUSIVE | Oğuz | §5 |
 | 2026-09-30 | spec 1.2: REQ-08 made Soft before the review, so a bench gate the CAD review cannot answer does not force a REVISE (the OD-C03 RV01 lesson); no geometry changes, build v01 to spec 1.1 stands | Oğuz on the standing instruction; the Usta confirms | §5, §8 |
 | 2026-09-30 | spec 1.1: plan v01 Q1 answered with option (a), a 37.70 spacer at S2 (REQ-01 outranks the 10.0 spacer of A-05); Q2: the measured axis governs r and θ; Q3: tips at −10.10 so the ±0.10 band keeps 10.0 | Oğuz on the standing instruction; the Usta confirms | DESIGN_PLAN v01 §8 |
+| 2026-09-30 | the Usta confirmed every decision taken on the standing instruction (spec ratifications, the concept, the gate classes, the REVISE round) with "confirmed go" in the project thread, after PR #43 merged | the Usta | project thread |
 
 ## §8 Change log
 

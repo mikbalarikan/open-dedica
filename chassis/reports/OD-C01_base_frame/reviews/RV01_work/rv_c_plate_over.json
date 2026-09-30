@@ -1,0 +1,32 @@
+{
+ "overhang": {
+  "name": "overhang_census",
+  "measured": 90.0,
+  "unit": "deg",
+  "at": null,
+  "params": {
+   "build_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "min_deg": 45.0,
+   "spacing_mm": 0.7,
+   "bed_mm": 0.01
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "samples": 429606,
+   "downward_samples": 0,
+   "below_min_deg": 0,
+   "bed_samples": 200283,
+   "bed_height_mm": -6.0,
+   "largest_step_mm": 0.69873,
+   "sampling_bound_deg": 0.0,
+   "seeds_refined": 0,
+   "per_kind_least_deg": {}
+  }
+ },
+ "seconds": 32.76248264312744
+}

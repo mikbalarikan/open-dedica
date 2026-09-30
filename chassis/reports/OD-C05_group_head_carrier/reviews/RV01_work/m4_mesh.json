@@ -1,0 +1,77 @@
+{
+ "census": {
+  "triangles": 4264,
+  "bodies": 1,
+  "naked_edges": 0,
+  "winding": 1,
+  "volume": 108716.92793229008
+ },
+ "deviation": {
+  "name": "mesh_deviation",
+  "measured": 0.004984363810217869,
+  "unit": "mm",
+  "at": [
+   24.654916,
+   -105.860542,
+   -27.44
+  ],
+  "params": {
+   "reference_tolerance_mm": 0.001
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "mesh_to_shape_mm": 0.0049758975911804665,
+   "shape_to_mesh_mm": 0.004984363810217869,
+   "samples": 55786,
+   "reference_triangles": 10744
+  }
+ },
+ "remesh": {
+  "sha": "aee6d05a1573742d131cb949e86b98acceb6fca179dc2cd46394a4918c8fe48a",
+  "triangles": 4264,
+  "sagitta": 0.0049837223672576205,
+  "same_bytes": true
+ },
+ "angular_limit": 0.2309721947249083,
+ "min_wall_mesh": {
+  "name": "min_wall_mesh",
+  "measured": 2.746133154838898,
+  "unit": "mm",
+  "at": [
+   49.25396,
+   46.888361,
+   -28.940001
+  ],
+  "params": {
+   "opposition_deg": 25.0,
+   "samples_per_triangle": 4,
+   "max_rays": 1000000
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "triangles": 4264,
+   "rays": 17056,
+   "opposed_hits": 12869,
+   "rays_without_exit": 0,
+   "watertight": true,
+   "vertex_precision_mm": 2.086162567138672e-05
+  }
+ },
+ "3mf": {
+  "files": [
+   "[Content_Types].xml",
+   "_rels/.rels",
+   "3D/3dmodel.model"
+  ],
+  "unit": "millimeter",
+  "vertices": 2114,
+  "triangles": 4264,
+  "volume": 108716.92754287976,
+  "stl_triangles": 4264,
+  "stl_volume": 108716.92793229024,
+  "same_triangle_set": true,
+  "max_vertex_diff": null
+ }
+}

@@ -1,0 +1,156 @@
+{
+ "params": {
+  "z_contact": -24.94,
+  "plate_t": 5.0,
+  "half_x": 55.0,
+  "y_front": 50.0,
+  "y_rear": -102.0,
+  "hole_d": 3.4,
+  "hole_xy": 44.0,
+  "cb_d": 6.5,
+  "cb_depth": 2.0,
+  "hub_r": 30.0,
+  "hatch_half_x": 40.0,
+  "hatch_y_lo": -96.0,
+  "hatch_y_hi": -64.0,
+  "hatch_r": 4.0,
+  "wall_y_rear": -58.0,
+  "wall_y_front": -52.0,
+  "side_t": 4.0,
+  "rear_t": 4.0,
+  "win_half_x": 10.0,
+  "win_z_lo": 130.0,
+  "win_z_hi": 160.0,
+  "z_floor": 180.06,
+  "foot_t": 4.0,
+  "ridge_y": -80.0,
+  "foot_hole_d": 3.4,
+  "foot_hole_x": 35.0,
+  "foot_hole_y1": -72.0,
+  "foot_hole_y2": -92.0,
+  "foot_cb_d": 6.5,
+  "gusset_x_in": 51.0,
+  "gusset_leg": 40.0,
+  "overrun": 1.0,
+  "stl_tol": 0.01,
+  "stl_ang": 0.2
+ },
+ "derived": {
+  "z_top": -29.94,
+  "z_foot_top": 176.06,
+  "ridge_z": 154.06,
+  "win_apex_z": 120.0
+ },
+ "step": {
+  "path": "od_c05_carrier_C4_v03.step",
+  "sha256": "e60c40952bfb34ee69992b99b81b4ef429735f0b41d7a20087f432492dc61abc"
+ },
+ "assembly": {
+  "path": "od_c05_assembly_C4_v03.step",
+  "sha256": "cd0f36cf91cdb20b39f02793ab3faa88994e9da0ae7923328f4a363bfe3a21fd"
+ },
+ "roundtrip_built_vs_file": {
+  "schema": {
+   "name": "step_schema",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "schema": "AP242"
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "found": "AP242",
+    "sha256": "e60c40952bfb34ee69992b99b81b4ef429735f0b41d7a20087f432492dc61abc",
+    "path": "od_c05_carrier_C4_v03.step"
+   }
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 1,
+    "sha256": "e60c40952bfb34ee69992b99b81b4ef429735f0b41d7a20087f432492dc61abc",
+    "path": "od_c05_carrier_C4_v03.step"
+   }
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": 1.83936208486557e-08,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built_mm3": 414191.03591773234,
+    "reimported_mm3": 414191.03591771395,
+    "sha256": "e60c40952bfb34ee69992b99b81b4ef429735f0b41d7a20087f432492dc61abc",
+    "path": "od_c05_carrier_C4_v03.step"
+   }
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 57,
+    "reimported": 57
+   }
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": [
+     "od_c05_carrier"
+    ],
+    "reimported": [
+     "od_c05_carrier"
+    ]
+   }
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.076,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.0002816096592604735,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  }
+ },
+ "stl": {
+  "path": "od_c05_carrier_C4_v03.stl",
+  "sha256": "952cfa5bdc2c1c869a2da947c7671a1fb8d2d9532c4f3048d0a22e1a1fd13cc9",
+  "tolerance_mm": 0.01,
+  "angular_tolerance_rad": 0.2,
+  "triangles": 5232,
+  "max_sagitta_mm": 0.004994568008596814
+ }
+}

@@ -56,3 +56,5 @@
 {"t": "2026-09-30T14:05:16Z", "ev": "gate_fail", "detail": {"gate": "REQ-08", "target": "od_c04_mount_v01", "status": "INCONCLUSIVE", "measured": null, "unit": "bool", "required": "Soft: holds the thermoblock through a heating cycle without softening (bench)", "by": "reviewer"}}
 {"t": "2026-09-30T14:05:38Z", "ev": "state", "detail": {"from": "J4_REVIEW", "to": "J5_DELIVER"}}
 {"t": "2026-09-30T14:05:39Z", "ev": "note", "detail": {"text": "RV01 APPROVED_ASSUMPTION_CONDITIONAL; deliverables copied to open-dedica chassis/OD-C04_thermoblock_mount.step/.stl and chassis/src/OD-C04_thermoblock_mount/ (build v01 = the reviewed files by SHA-256)"}}
+{"t": "2026-09-30T14:55:25Z", "ev": "usta_gate", "detail": {"gate": "question_answered", "outcome": "confirmed", "ref": "00_Spec/DESIGN_SPEC.md:§7"}}
+{"t": "2026-09-30T14:55:26Z", "ev": "note", "detail": {"text": "the Usta confirmed every decision taken on the standing instruction (spec ratifications, concept C1, gate classes, the REVISE round) with 'confirmed go' in the project thread, 2026-09-30, after PR #43 merged"}}

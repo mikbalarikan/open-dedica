@@ -1,0 +1,71 @@
+{"t": "2026-09-30T15:03:01Z", "ev": "job_start", "detail": {"job_id": "20260930-od-c05-group-head-carrier", "lane": "CAD", "data_class": "PUBLIC", "code": "ODC05"}}
+{"t": "2026-09-30T15:03:01Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.build"}}
+{"t": "2026-09-30T15:03:01Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.export"}}
+{"t": "2026-09-30T15:03:01Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.tool"}}
+{"t": "2026-09-30T15:03:01Z", "ev": "note", "detail": {"text": "- -> 3", "ref": "JOB.md:caps.fix_cycles"}}
+{"t": "2026-09-30T15:03:01Z", "ev": "note", "detail": {"text": "- -> 0.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T15:03:01Z", "ev": "note", "detail": {"text": "- -> A", "ref": "JOB.md:revision"}}
+{"t": "2026-09-30T15:03:59Z", "ev": "package_sent", "detail": {"role": "intake", "target": "od_c05_carrier_v01", "brief": "briefs/WP-01_intake.md", "attempt": 1}}
+{"t": "2026-09-30T15:07:56Z", "ev": "package_done", "detail": {"role": "intake", "target": "od_c05_carrier_v01", "outcome": "DONE", "report": "00_Spec/INTAKE_v01.md"}}
+{"t": "2026-09-30T15:11:48Z", "ev": "note", "detail": {"text": "- -> A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13,A-14", "ref": "JOB.md:open_assumptions"}}
+{"t": "2026-09-30T15:11:48Z", "ev": "note", "detail": {"text": "0.1 -> 1.0", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T15:11:49Z", "ev": "state", "detail": {"from": "J0_INTAKE", "to": "J1_SPEC", "reason": "intake done: INTAKE_v01 with 53 dimension and 24 requirement rows; spec 1.0 drafted"}}
+{"t": "2026-09-30T15:11:50Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.0", "ref": "the Usta's standing instruction and 'go' of 2026-09-30; explicit confirmation pending"}}
+{"t": "2026-09-30T15:11:51Z", "ev": "usta_gate", "detail": {"gate": "concept_picked", "outcome": "C1", "ref": "spec 1.0 section 4"}}
+{"t": "2026-09-30T15:11:52Z", "ev": "note", "detail": {"text": "- -> od_c05_carrier_v01", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T15:11:53Z", "ev": "state", "detail": {"from": "J1_SPEC", "to": "J2_PLAN", "reason": "spec 1.0 ratified on the standing instruction; C1 picked"}}
+{"t": "2026-09-30T15:12:19Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c05_carrier_v01", "brief": "briefs/WP-02_designer.md", "attempt": 1}}
+{"t": "2026-09-30T15:24:32Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c05_carrier_v01", "outcome": "STOPPED", "report": "01_CAD/DESIGN_PLAN.md"}}
+{"t": "2026-09-30T15:25:33Z", "ev": "note", "detail": {"text": "1.0 -> 1.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T15:25:34Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.1", "ref": "the Usta's standing instruction; spec 1.1 resolves plan K-1 and K-2 and takes the OD-C01 layout's axis 175; explicit confirmation pending"}}
+{"t": "2026-09-30T15:25:35Z", "ev": "usta_gate", "detail": {"gate": "exception_signed", "outcome": "D-03a", "ref": "spec 1.1 section 5 named exception, eight horizontal hole crowns; on the standing instruction, the Usta confirms with section 5"}}
+{"t": "2026-09-30T15:25:36Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "plan accepted with K-1 and K-2 resolved in spec 1.1; build od_c05_carrier_v01"}}
+{"t": "2026-09-30T15:27:07Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c05_carrier_v01", "brief": "briefs/WP-03_designer.md", "attempt": 1}}
+{"t": "2026-09-30T15:27:07Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-09-30T15:51:11Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c05_carrier_v01", "outcome": "SUBMITTED", "report": "01_CAD/REPORT_od_c05_carrier_v01.md"}}
+{"t": "2026-09-30T15:51:31Z", "ev": "note", "detail": {"text": "1.1 -> 1.2", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T15:51:32Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.2", "ref": "named exception bridge limit 6.6 = REQ-02 upper tolerance; wording only, on the standing instruction"}}
+{"t": "2026-09-30T15:51:33Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "J4_REVIEW", "reason": "build v01 submitted; the one review RV01"}}
+{"t": "2026-09-30T15:52:12Z", "ev": "package_sent", "detail": {"role": "reviewer", "target": "od_c05_carrier_v01", "brief": "briefs/WP-04_reviewer.md", "attempt": 1}}
+{"t": "2026-09-30T15:52:25Z", "ev": "note", "detail": {"text": "3MF od_c05_carrier_C1_v01.3mf written by the orchestrator from the designer's STL with stl_to_3mf.py: 4264 faces, volume 108716.93 mm3, sha256 f9d795230b0e3269a107513fa79d7507fcec1dda591edbc0e21b5edb90edc15a", "ref": "02_STEP_STL/od_c05_carrier_C1_v01.3mf"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "package_done", "detail": {"role": "reviewer", "target": "od_c05_carrier_v01", "outcome": "REVISE", "review": "RV01"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "U-01", "target": "od_c05_carrier_v01", "measured": 1, "unit": "count", "required": "solid_count = 1, brep_valid = 1, naked_edges = 0", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "U-02", "target": "od_c05_carrier_v01", "measured": 45.0, "unit": "mm", "required": "100.0 x 225.0 x 45.0 each in [spec - 0.1, spec + 0.1]", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "U-03", "target": "od_c05_carrier_v01", "measured": 0.0, "unit": "mm", "required": "(a) carrier|OD-G01 clearance = 0, interference <= 0, holes coaxial with the inserts; carrier|OD-G04 clearance >= 2.0; (b) N/A", "by": "reviewer", "assumes": ["A-01", "A-06"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "U-04", "target": "od_c05_carrier_v01", "measured": 2.3283064365386963e-10, "unit": "mm3", "required": "named body re-read unchanged, no stray shells, valid after re-import", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "U-05", "target": "od_c05_carrier_v01", "measured": 14, "unit": "count", "required": "counts per the plan: 1 wall, 1 foot, 2 gussets, 2 windows, 4 Z holes with 4 counterbores, 4 Y holes", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "U-06", "target": "od_c05_carrier_v01", "measured": 2.749999989747004, "unit": "mm", "required": ">= 2.0 (Soft)", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "U-07", "target": "od_c05_carrier_v01", "measured": 0.004984363810217869, "unit": "mm", "required": "STL at tol 0.01, angular <= 0.2310 rad, stl_max_sagitta <= 0.01; the 3MF carries the same mesh", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "D-01a", "target": "od_c05_carrier_v01", "measured": 2.749999989747004, "unit": "mm", "required": ">= 0.8", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "D-01b", "target": "od_c05_carrier_v01", "measured": 2.749999989747004, "unit": "mm", "required": ">= 2.0", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "D-02", "target": "od_c05_carrier_v01", "measured": 225.0, "unit": "mm", "required": "each envelope size <= the K1C build volume, foot down: 100.0 x 45.0 on the bed, 225.0 tall", "by": "reviewer", "assumes": ["A-08"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "D-03a", "target": "od_c05_carrier_v01", "measured": 44.999999999966576, "unit": "deg", "required": "every downward face >= 45 deg from horizontal, build +Y; the eight hole and counterbore crowns are the named exception", "by": "reviewer", "assumes": ["A-13"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "D-03b", "target": "od_c05_carrier_v01", "measured": 6.5, "unit": "mm", "required": "span <= 5; the hole and counterbore crowns <= 6.6 as the named exception", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "D-04a", "target": "od_c05_carrier_v01", "measured": 3.4, "unit": "mm", "required": "all eight Oe3.4 holes Oe >= 3.25", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "D-06a", "target": "od_c05_carrier_v01", "measured": 2.749999989747004, "unit": "mm", "required": ">= 1.0", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "E-06", "target": "od_c05_carrier_v01", "measured": 2, "unit": "count", "required": "the wall is tied to the foot by the two gussets; no free-standing boss", "by": "reviewer"}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "REQ-01", "target": "od_c05_carrier_v01", "measured": 0.0, "unit": "mm", "required": "four Oe3.4 +- 0.1 through along Z at (+-44.0, +-44.0), offset <= 0.10 from the OD-G01 insert bores", "by": "reviewer", "assumes": ["A-01"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "REQ-02", "target": "od_c05_carrier_v01", "measured": 6.5, "unit": "mm", "required": "four Oe6.5 +- 0.1 counterbores 2.0 +- 0.1 deep from z -29.94, coaxial with REQ-01", "by": "reviewer", "assumes": ["A-09"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "REQ-03", "target": "od_c05_carrier_v01", "measured": -24.939999999999998, "unit": "mm", "required": "front face z = -24.94 +- 0.10; rear face z = -29.94 +- 0.10", "by": "reviewer", "assumes": ["A-01"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "REQ-04", "target": "od_c05_carrier_v01", "measured": 29.999999999999993, "unit": "mm", "required": "no carrier material within r <= 30.0 of the axis over z -29.94 ... -24.94 at every 10 deg", "by": "reviewer", "assumes": ["A-06"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "REQ-05", "target": "od_c05_carrier_v01", "measured": -175.0, "unit": "mm", "required": "foot underside y = -175.00 +- 0.10, 4.0 +- 0.1 thick", "by": "reviewer", "assumes": ["A-03", "A-04"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "REQ-06", "target": "od_c05_carrier_v01", "measured": 0.0, "unit": "mm", "required": "four Oe3.4 +- 0.1 through along Y at (x +-35.0, z -40.0 / -60.0), offset <= 0.10", "by": "reviewer", "assumes": ["A-04"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "REQ-07", "target": "od_c05_carrier_v01", "measured": -69.94000000000001, "unit": "mm", "required": "envelope min_z >= -70.0", "by": "reviewer", "assumes": ["A-05"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_pass", "detail": {"gate": "REQ-08", "target": "od_c05_carrier_v01", "measured": 24.999999999999982, "unit": "mm", "required": "opening containing R 25.0 about (0, -110.0), nothing else missing below y -50; roof at 45 deg", "by": "reviewer", "assumes": ["A-07"]}}
+{"t": "2026-09-30T16:12:35Z", "ev": "gate_fail", "detail": {"gate": "REQ-09", "target": "od_c05_carrier_v01", "status": "INCONCLUSIVE", "measured": null, "unit": "bool", "required": "Soft: no visible flex under the locking torque and the brewing pull (bench)", "by": "reviewer"}}
+{"t": "2026-09-30T16:13:17Z", "ev": "state", "detail": {"from": "J4_REVIEW", "to": "REVISE", "reason": "Is the group head axis vertical with the mouth down (RV01 F1, the Dedica) or horizontal as the OD-G01 spec section 2 says?"}}
+{"t": "2026-09-30T16:13:18Z", "ev": "usta_gate", "detail": {"gate": "revise_decision", "outcome": "another_round", "ref": "reviews/REVISE_PACKET_RV01.md option A, on the standing instruction; the up direction put to the Usta as a decision card 2026-09-30"}}
+{"t": "2026-09-30T16:13:18Z", "ev": "attempt", "detail": {"counter": "build", "n": 0, "cap": 2}}
+{"t": "2026-09-30T16:13:35Z", "ev": "state", "detail": {"from": "REVISE", "to": "J3_BUILD", "reason": "another round to spec 2.0 (vertical axis, concept C4): the designer package replans, then builds v02"}}
+{"t": "2026-09-30T16:17:40Z", "ev": "note", "detail": {"text": "1.2 -> 2.0", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T16:17:40Z", "ev": "note", "detail": {"text": "od_c05_carrier_v01 -> od_c05_carrier_v02", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T16:17:41Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "2.0", "ref": "RV01 F1 round: vertical axis, concept C4; on the standing instruction, the up direction on the Usta's decision card"}}
+{"t": "2026-09-30T16:17:42Z", "ev": "usta_gate", "detail": {"gate": "concept_picked", "outcome": "C4", "ref": "spec 2.0 section 4"}}
+{"t": "2026-09-30T16:18:42Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c05_carrier_v02", "brief": "briefs/WP-05_designer.md", "attempt": 1}}
+{"t": "2026-09-30T16:18:42Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-09-30T17:14:18Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c05_carrier_v02", "outcome": "STOPPED", "report": "01_CAD/REPORT_od_c05_carrier_v02.md"}}
+{"t": "2026-09-30T17:16:02Z", "ev": "note", "detail": {"text": "2.0 -> 2.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T17:16:02Z", "ev": "note", "detail": {"text": "od_c05_carrier_v02 -> od_c05_carrier_v03", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T17:16:03Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "2.1", "ref": "v02 K-3, K-4, section 9: closed column, plate on the bed; on the standing instruction"}}
+{"t": "2026-09-30T17:16:11Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c05_carrier_v03", "brief": "briefs/WP-06_designer.md", "attempt": 2}}
+{"t": "2026-09-30T17:16:11Z", "ev": "attempt", "detail": {"counter": "build", "n": 2, "cap": 2}}

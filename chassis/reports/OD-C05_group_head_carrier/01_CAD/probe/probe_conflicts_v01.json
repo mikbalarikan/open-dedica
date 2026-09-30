@@ -1,0 +1,54 @@
+{
+ "coupon_a_min_wall_nominal": {
+  "measured": 1.9215728752537877,
+  "status": "MEASURED",
+  "at": [
+   47.656854,
+   47.656854,
+   -29.761429
+  ],
+  "reason": "",
+  "wide": {
+   "opposition_deg": 45.0,
+   "measured": 1.9215728752537877,
+   "at": [
+    47.656854,
+    47.656854,
+    -29.761429
+   ]
+  }
+ },
+ "coupon_a_min_wall_cb_high_6.6": {
+  "measured": 1.8715728752536007,
+  "status": "MEASURED",
+  "at": [
+   47.656854,
+   47.656854,
+   -29.761429
+  ],
+  "reason": "",
+  "wide": {
+   "opposition_deg": 45.0,
+   "measured": 1.8715728752536007,
+   "at": [
+    47.656854,
+    47.656854,
+    -29.761429
+   ]
+  }
+ },
+ "coupon_b_overhang_census": {
+  "measured": 0.0,
+  "status": "MEASURED",
+  "at": [
+   0.0,
+   3.25,
+   -29.94
+  ],
+  "reason": "",
+  "per_kind_least_deg": {
+   "cylinder": 0.0
+  },
+  "below_min_deg": 131
+ }
+}

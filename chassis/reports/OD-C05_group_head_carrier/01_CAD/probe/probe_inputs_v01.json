@@ -1,0 +1,1717 @@
+{
+ "g01_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED",
+   "reason": "",
+   "at": null
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED",
+   "reason": "",
+   "at": null
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED",
+   "reason": "",
+   "at": null
+  }
+ },
+ "g01_envelope": {
+  "size_x": 100.0,
+  "size_y": 100.0,
+  "size_z": 28.24,
+  "min_x": -50.0,
+  "min_y": -50.0,
+  "min_z": -24.94,
+  "max_x": 50.0,
+  "max_y": 50.0,
+  "max_z": 3.3
+ },
+ "g01_down_planes": [
+  {
+   "z": -24.94,
+   "area": 9232.6476
+  },
+  {
+   "z": -10.52,
+   "area": 18.7383
+  },
+  {
+   "z": -10.52,
+   "area": 18.7383
+  },
+  {
+   "z": -10.52,
+   "area": 18.7383
+  }
+ ],
+ "g01_rear_face_count": 1,
+ "g01_rear_face": {
+  "z": -24.94,
+  "area": 9232.6476,
+  "bbox": [
+   -50.0,
+   -50.0,
+   50.0,
+   50.0
+  ],
+  "inner_wires": 7
+ },
+ "g01_rear_face_openings": [
+  {
+   "centre": [
+    0.0009,
+    0.0
+   ],
+   "size": [
+    39.997,
+    26.0
+   ],
+   "r_centre": 0.0009,
+   "r_max": 19.9999
+  },
+  {
+   "centre": [
+    10.6414,
+    -15.7766
+   ],
+   "size": [
+    3.8,
+    3.8
+   ],
+   "r_centre": 19.03,
+   "r_max": 20.93
+  },
+  {
+   "centre": [
+    -9.3129,
+    16.5955
+   ],
+   "size": [
+    3.8,
+    3.8
+   ],
+   "r_centre": 19.03,
+   "r_max": 20.9299
+  },
+  {
+   "centre": [
+    -44.0,
+    -44.0
+   ],
+   "size": [
+    4.0,
+    4.0
+   ],
+   "r_centre": 62.2254,
+   "r_max": 64.2254
+  },
+  {
+   "centre": [
+    44.0,
+    -44.0
+   ],
+   "size": [
+    4.0,
+    4.0
+   ],
+   "r_centre": 62.2254,
+   "r_max": 64.2254
+  },
+  {
+   "centre": [
+    -44.0,
+    44.0
+   ],
+   "size": [
+    4.0,
+    4.0
+   ],
+   "r_centre": 62.2254,
+   "r_max": 64.2254
+  },
+  {
+   "centre": [
+    44.0,
+    44.0
+   ],
+   "size": [
+    4.0,
+    4.0
+   ],
+   "r_centre": 62.2254,
+   "r_max": 64.2254
+  }
+ ],
+ "g01_rear_outline_arcs": [
+  {
+   "radius": 8.0,
+   "centre": [
+    -42.0,
+    42.0
+   ]
+  },
+  {
+   "radius": 8.0,
+   "centre": [
+    42.0,
+    42.0
+   ]
+  },
+  {
+   "radius": 8.0,
+   "centre": [
+    42.0,
+    -42.0
+   ]
+  },
+  {
+   "radius": 8.0,
+   "centre": [
+    -42.0,
+    -42.0
+   ]
+  }
+ ],
+ "g01_rear_outline_edges": 8,
+ "g01_bore_count": 15,
+ "g01_bores": [
+  {
+   "d": 4.0,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -44.0,
+    -44.0,
+    -24.94
+   ],
+   "end": [
+    -44.0,
+    -44.0,
+    -19.24
+   ],
+   "len": 5.7,
+   "through": true,
+   "open_ends": [
+    true,
+    true
+   ]
+  },
+  {
+   "d": 4.0,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -44.0,
+    44.0,
+    -24.94
+   ],
+   "end": [
+    -44.0,
+    44.0,
+    -19.24
+   ],
+   "len": 5.7,
+   "through": true,
+   "open_ends": [
+    true,
+    true
+   ]
+  },
+  {
+   "d": 9.0,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -15.4976,
+    0.2705,
+    -24.94
+   ],
+   "end": [
+    -15.4976,
+    0.2705,
+    -19.94
+   ],
+   "len": 5.0,
+   "through": true,
+   "open_ends": [
+    true,
+    true
+   ]
+  },
+  {
+   "d": 3.8,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -9.3129,
+    16.5955,
+    -24.94
+   ],
+   "end": [
+    -9.3129,
+    16.5955,
+    -22.24
+   ],
+   "len": 2.7,
+   "through": true,
+   "open_ends": [
+    true,
+    true
+   ]
+  },
+  {
+   "d": 9.0,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -9.3129,
+    16.5955,
+    -22.24
+   ],
+   "end": [
+    -9.3129,
+    16.5955,
+    -19.94
+   ],
+   "len": 2.3,
+   "through": false,
+   "open_ends": [
+    false,
+    true
+   ]
+  },
+  {
+   "d": 26.0,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    0.0,
+    0.0,
+    -24.94
+   ],
+   "end": [
+    0.0,
+    0.0,
+    -19.94
+   ],
+   "len": 5.0,
+   "through": true,
+   "open_ends": [
+    true,
+    true
+   ]
+  },
+  {
+   "d": 62.6,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    0.0,
+    0.0,
+    -19.94
+   ],
+   "end": [
+    0.0,
+    0.0,
+    -17.7
+   ],
+   "len": 2.24,
+   "through": false,
+   "open_ends": [
+    false,
+    true
+   ]
+  },
+  {
+   "d": 63.4,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    0.0,
+    0.0,
+    -17.7
+   ],
+   "end": [
+    0.0,
+    0.0,
+    -14.1
+   ],
+   "len": 3.6,
+   "through": false,
+   "open_ends": [
+    false,
+    true
+   ]
+  },
+  {
+   "d": 70.2,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    0.0,
+    0.0,
+    -17.3
+   ],
+   "end": [
+    0.0,
+    0.0,
+    -14.1
+   ],
+   "len": 3.2,
+   "through": false,
+   "open_ends": [
+    false,
+    true
+   ]
+  },
+  {
+   "d": 74.2,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    0.0,
+    0.0,
+    -13.3
+   ],
+   "end": [
+    0.0,
+    0.0,
+    3.3
+   ],
+   "len": 16.6,
+   "through": true,
+   "open_ends": [
+    true,
+    true
+   ]
+  },
+  {
+   "d": 3.8,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    10.6414,
+    -15.7766,
+    -24.94
+   ],
+   "end": [
+    10.6414,
+    -15.7766,
+    -22.24
+   ],
+   "len": 2.7,
+   "through": true,
+   "open_ends": [
+    true,
+    true
+   ]
+  },
+  {
+   "d": 9.0,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    10.6414,
+    -15.7766,
+    -22.24
+   ],
+   "end": [
+    10.6414,
+    -15.7766,
+    -19.94
+   ],
+   "len": 2.3,
+   "through": false,
+   "open_ends": [
+    false,
+    true
+   ]
+  },
+  {
+   "d": 9.0,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    15.4994,
+    -0.1353,
+    -24.94
+   ],
+   "end": [
+    15.4994,
+    -0.1353,
+    -19.94
+   ],
+   "len": 5.0,
+   "through": true,
+   "open_ends": [
+    true,
+    true
+   ]
+  },
+  {
+   "d": 4.0,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    44.0,
+    -44.0,
+    -24.94
+   ],
+   "end": [
+    44.0,
+    -44.0,
+    -19.24
+   ],
+   "len": 5.7,
+   "through": true,
+   "open_ends": [
+    true,
+    true
+   ]
+  },
+  {
+   "d": 4.0,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    44.0,
+    44.0,
+    -24.94
+   ],
+   "end": [
+    44.0,
+    44.0,
+    -19.24
+   ],
+   "len": 5.7,
+   "through": true,
+   "open_ends": [
+    true,
+    true
+   ]
+  }
+ ],
+ "g01_insert_bores": {
+  "(44,44)": {
+   "diameter": {
+    "measured": 4.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     44.0,
+     44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      44.0,
+      44.0,
+      -24.94
+     ],
+     "end": [
+      44.0,
+      44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "measured": 0.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     44.0,
+     44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      44.0,
+      44.0,
+      -24.94
+     ],
+     "end": [
+      44.0,
+      44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "measured": 5.700000000000003,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     44.0,
+     44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      44.0,
+      44.0,
+      -24.94
+     ],
+     "end": [
+      44.0,
+      44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     44.0,
+     44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      44.0,
+      44.0,
+      -24.94
+     ],
+     "end": [
+      44.0,
+      44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "(44,-44)": {
+   "diameter": {
+    "measured": 4.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     44.0,
+     -44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      44.0,
+      -44.0,
+      -24.94
+     ],
+     "end": [
+      44.0,
+      -44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "measured": 0.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     44.0,
+     -44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      44.0,
+      -44.0,
+      -24.94
+     ],
+     "end": [
+      44.0,
+      -44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "measured": 5.700000000000003,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     44.0,
+     -44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      44.0,
+      -44.0,
+      -24.94
+     ],
+     "end": [
+      44.0,
+      -44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     44.0,
+     -44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      44.0,
+      -44.0,
+      -24.94
+     ],
+     "end": [
+      44.0,
+      -44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "(-44,44)": {
+   "diameter": {
+    "measured": 4.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     -44.0,
+     44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      -44.0,
+      44.0,
+      -24.94
+     ],
+     "end": [
+      -44.0,
+      44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "measured": 0.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     -44.0,
+     44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      -44.0,
+      44.0,
+      -24.94
+     ],
+     "end": [
+      -44.0,
+      44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "measured": 5.700000000000003,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     -44.0,
+     44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      -44.0,
+      44.0,
+      -24.94
+     ],
+     "end": [
+      -44.0,
+      44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     -44.0,
+     44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      -44.0,
+      44.0,
+      -24.94
+     ],
+     "end": [
+      -44.0,
+      44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "(-44,-44)": {
+   "diameter": {
+    "measured": 4.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     -44.0,
+     -44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      -44.0,
+      -44.0,
+      -24.94
+     ],
+     "end": [
+      -44.0,
+      -44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "measured": 0.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     -44.0,
+     -44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      -44.0,
+      -44.0,
+      -24.94
+     ],
+     "end": [
+      -44.0,
+      -44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "measured": 5.700000000000003,
+    "unit": "mm",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     -44.0,
+     -44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      -44.0,
+      -44.0,
+      -24.94
+     ],
+     "end": [
+      -44.0,
+      -44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED",
+    "reason": "",
+    "at": [
+     -44.0,
+     -44.0,
+     -24.94
+    ],
+    "detail": {
+     "start": [
+      -44.0,
+      -44.0,
+      -24.94
+     ],
+     "end": [
+      -44.0,
+      -44.0,
+      -19.24
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  }
+ },
+ "g01_hub_bore": {
+  "diameter": {
+   "measured": 26.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "reason": "",
+   "at": [
+    0.0,
+    0.0,
+    -24.94
+   ]
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "reason": "",
+   "at": [
+    0.0,
+    0.0,
+    -24.94
+   ]
+  },
+  "length": {
+   "measured": 5.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "reason": "",
+   "at": [
+    0.0,
+    0.0,
+    -24.94
+   ]
+  },
+  "through": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED",
+   "reason": "",
+   "at": [
+    0.0,
+    0.0,
+    -24.94
+   ]
+  }
+ },
+ "g01_feature_census": {
+  "plane_faces": 40,
+  "cylinder_faces": 30,
+  "cone_faces": 0,
+  "sphere_faces": 0,
+  "torus_faces": 7,
+  "bspline_faces": 15,
+  "other_faces": 0,
+  "concave_cylinders": 23,
+  "convex_cylinders": 9,
+  "bores": 15
+ },
+ "g01_volume_behind_rear_face_mm3": 0.0,
+ "g04_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED",
+   "reason": "",
+   "at": null
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED",
+   "reason": "",
+   "at": null
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED",
+   "reason": "",
+   "at": null
+  }
+ },
+ "g04_envelope_own": {
+  "size_x": 65.696337,
+  "size_y": 68.999957,
+  "size_z": 17.21,
+  "min_x": -31.176337,
+  "min_y": -34.479957,
+  "min_z": -16.12,
+  "max_x": 34.52,
+  "max_y": 34.52,
+  "max_z": 1.09
+ },
+ "g04_up_planes_by_area": [
+  {
+   "z": 0.0,
+   "area": 1154.161
+  },
+  {
+   "z": -10.76,
+   "area": 794.769
+  },
+  {
+   "z": 0.0,
+   "area": 161.28
+  },
+  {
+   "z": -7.76,
+   "area": 92.056
+  },
+  {
+   "z": -7.76,
+   "area": 92.056
+  },
+  {
+   "z": -7.76,
+   "area": 92.056
+  }
+ ],
+ "g04_down_planes": [
+  {
+   "z": -16.12,
+   "area": 25.699
+  },
+  {
+   "z": -16.12,
+   "area": 25.699
+  },
+  {
+   "z": -15.12,
+   "area": 5.212
+  },
+  {
+   "z": -15.12,
+   "area": 5.212
+  },
+  {
+   "z": -14.88,
+   "area": 25.699
+  },
+  {
+   "z": -14.88,
+   "area": 25.699
+  },
+  {
+   "z": -13.88,
+   "area": 5.212
+  },
+  {
+   "z": -13.88,
+   "area": 5.212
+  },
+  {
+   "z": -13.37,
+   "area": 7.354
+  },
+  {
+   "z": -13.37,
+   "area": 7.354
+  },
+  {
+   "z": -13.12,
+   "area": 8.573
+  },
+  {
+   "z": -13.12,
+   "area": 8.572
+  },
+  {
+   "z": -13.12,
+   "area": 8.573
+  },
+  {
+   "z": -13.12,
+   "area": 8.573
+  },
+  {
+   "z": -13.12,
+   "area": 8.572
+  },
+  {
+   "z": -13.12,
+   "area": 8.573
+  },
+  {
+   "z": -13.12,
+   "area": 1244.204
+  },
+  {
+   "z": -12.13,
+   "area": 7.354
+  },
+  {
+   "z": -12.13,
+   "area": 7.354
+  },
+  {
+   "z": -10.69,
+   "area": 2.363
+  },
+  {
+   "z": -10.69,
+   "area": 2.363
+  },
+  {
+   "z": -10.69,
+   "area": 1.927
+  },
+  {
+   "z": -10.69,
+   "area": 1.927
+  },
+  {
+   "z": -10.68,
+   "area": 6.112
+  },
+  {
+   "z": -10.68,
+   "area": 6.112
+  },
+  {
+   "z": -10.68,
+   "area": 6.112
+  },
+  {
+   "z": -10.68,
+   "area": 6.112
+  },
+  {
+   "z": -10.68,
+   "area": 6.112
+  },
+  {
+   "z": -10.68,
+   "area": 6.112
+  },
+  {
+   "z": -10.67,
+   "area": 18.414
+  },
+  {
+   "z": -10.67,
+   "area": 17.133
+  },
+  {
+   "z": -10.67,
+   "area": 18.414
+  },
+  {
+   "z": -10.67,
+   "area": 17.133
+  },
+  {
+   "z": -10.45,
+   "area": 28.992
+  },
+  {
+   "z": -9.52,
+   "area": 97.548
+  },
+  {
+   "z": -9.52,
+   "area": 97.548
+  },
+  {
+   "z": -9.52,
+   "area": 97.548
+  },
+  {
+   "z": -5.64,
+   "area": 14.326
+  },
+  {
+   "z": -2.59,
+   "area": 145.737
+  },
+  {
+   "z": -2.59,
+   "area": 54.797
+  },
+  {
+   "z": -2.59,
+   "area": 56.28
+  },
+  {
+   "z": -2.59,
+   "area": 56.28
+  },
+  {
+   "z": -2.59,
+   "area": 56.492
+  },
+  {
+   "z": -2.59,
+   "area": 56.209
+  },
+  {
+   "z": -2.59,
+   "area": 56.28
+  },
+  {
+   "z": -2.59,
+   "area": 56.28
+  },
+  {
+   "z": -2.59,
+   "area": 57.904
+  },
+  {
+   "z": -2.59,
+   "area": 80.551
+  },
+  {
+   "z": -2.59,
+   "area": 26.856
+  },
+  {
+   "z": -2.59,
+   "area": 25.787
+  },
+  {
+   "z": -2.59,
+   "area": 80.551
+  },
+  {
+   "z": -2.59,
+   "area": 33.657
+  },
+  {
+   "z": -2.59,
+   "area": 18.986
+  }
+ ],
+ "g04_outer_radius_at_z-8": 34.244,
+ "g04_placed_envelope": {
+  "size_x": 65.696337,
+  "size_y": 69.014324,
+  "size_z": 17.21,
+  "min_x": -31.176337,
+  "min_y": -34.52,
+  "min_z": -22.94,
+  "max_x": 34.52,
+  "max_y": 34.494324,
+  "max_z": -5.73
+ },
+ "g04_placed_min_z": -22.94,
+ "g04_placed_down_planes": [
+  {
+   "z": -22.94,
+   "centre_r": 15.5,
+   "r_extent": 18.989,
+   "area": 25.699
+  },
+  {
+   "z": -22.94,
+   "centre_r": 15.5,
+   "r_extent": 18.988,
+   "area": 25.699
+  },
+  {
+   "z": -21.94,
+   "centre_r": 15.5,
+   "r_extent": 17.499,
+   "area": 5.212
+  },
+  {
+   "z": -21.94,
+   "centre_r": 15.5,
+   "r_extent": 17.498,
+   "area": 5.212
+  },
+  {
+   "z": -21.7,
+   "centre_r": 19.03,
+   "r_extent": 19.261,
+   "area": 25.699
+  },
+  {
+   "z": -21.7,
+   "centre_r": 19.03,
+   "r_extent": 20.082,
+   "area": 25.699
+  },
+  {
+   "z": -20.7,
+   "centre_r": 19.03,
+   "r_extent": 17.771,
+   "area": 5.212
+  },
+  {
+   "z": -20.7,
+   "centre_r": 19.03,
+   "r_extent": 18.592,
+   "area": 5.212
+  },
+  {
+   "z": -20.19,
+   "centre_r": 15.5,
+   "r_extent": 17.029,
+   "area": 7.354
+  },
+  {
+   "z": -20.19,
+   "centre_r": 15.5,
+   "r_extent": 17.028,
+   "area": 7.354
+  },
+  {
+   "z": -19.94,
+   "centre_r": 17.725,
+   "r_extent": 18.615,
+   "area": 8.573
+  },
+  {
+   "z": -19.94,
+   "centre_r": 17.725,
+   "r_extent": 20.909,
+   "area": 8.572
+  },
+  {
+   "z": -19.94,
+   "centre_r": 17.725,
+   "r_extent": 18.254,
+   "area": 8.573
+  },
+  {
+   "z": -19.94,
+   "centre_r": 17.725,
+   "r_extent": 18.615,
+   "area": 8.573
+  },
+  {
+   "z": -19.94,
+   "centre_r": 17.725,
+   "r_extent": 20.909,
+   "area": 8.572
+  },
+  {
+   "z": -19.94,
+   "centre_r": 17.725,
+   "r_extent": 18.254,
+   "area": 8.573
+  },
+  {
+   "z": -19.94,
+   "centre_r": 0.0,
+   "r_extent": 30.604,
+   "area": 1244.204
+  },
+  {
+   "z": -18.95,
+   "centre_r": 19.03,
+   "r_extent": 17.301,
+   "area": 7.354
+  },
+  {
+   "z": -18.95,
+   "centre_r": 19.03,
+   "r_extent": 18.122,
+   "area": 7.354
+  },
+  {
+   "z": -17.51,
+   "centre_r": 11.026,
+   "r_extent": 12.069,
+   "area": 2.363
+  },
+  {
+   "z": -17.51,
+   "centre_r": 11.026,
+   "r_extent": 12.065,
+   "area": 2.363
+  },
+  {
+   "z": -17.51,
+   "centre_r": 19.79,
+   "r_extent": 20.609,
+   "area": 1.927
+  },
+  {
+   "z": -17.51,
+   "centre_r": 19.79,
+   "r_extent": 20.609,
+   "area": 1.927
+  },
+  {
+   "z": -17.5,
+   "centre_r": 12.286,
+   "r_extent": 13.059,
+   "area": 6.112
+  },
+  {
+   "z": -17.5,
+   "centre_r": 12.286,
+   "r_extent": 14.56,
+   "area": 6.112
+  },
+  {
+   "z": -17.5,
+   "centre_r": 12.286,
+   "r_extent": 12.813,
+   "area": 6.112
+  },
+  {
+   "z": -17.5,
+   "centre_r": 12.286,
+   "r_extent": 13.059,
+   "area": 6.112
+  },
+  {
+   "z": -17.5,
+   "centre_r": 12.286,
+   "r_extent": 14.56,
+   "area": 6.112
+  },
+  {
+   "z": -17.5,
+   "centre_r": 12.286,
+   "r_extent": 12.813,
+   "area": 6.112
+  },
+  {
+   "z": -17.49,
+   "centre_r": 14.892,
+   "r_extent": 16.061,
+   "area": 18.414
+  },
+  {
+   "z": -17.49,
+   "centre_r": 14.82,
+   "r_extent": 16.086,
+   "area": 17.133
+  },
+  {
+   "z": -17.49,
+   "centre_r": 14.892,
+   "r_extent": 16.061,
+   "area": 18.414
+  },
+  {
+   "z": -17.49,
+   "centre_r": 14.825,
+   "r_extent": 16.086,
+   "area": 17.133
+  },
+  {
+   "z": -17.27,
+   "centre_r": 0.0,
+   "r_extent": 8.38,
+   "area": 28.992
+  },
+  {
+   "z": -16.34,
+   "centre_r": 30.736,
+   "r_extent": 33.64,
+   "area": 97.548
+  },
+  {
+   "z": -16.34,
+   "centre_r": 30.736,
+   "r_extent": 33.615,
+   "area": 97.548
+  },
+  {
+   "z": -16.34,
+   "centre_r": 30.736,
+   "r_extent": 33.64,
+   "area": 97.548
+  },
+  {
+   "z": -12.46,
+   "centre_r": 0.0,
+   "r_extent": 2.5,
+   "area": 14.326
+  },
+  {
+   "z": -9.41,
+   "centre_r": 0.0,
+   "r_extent": 7.81,
+   "area": 145.737
+  },
+  {
+   "z": -9.41,
+   "centre_r": 16.049,
+   "r_extent": 20.596,
+   "area": 54.797
+  },
+  {
+   "z": -9.41,
+   "centre_r": 12.154,
+   "r_extent": 14.82,
+   "area": 56.28
+  },
+  {
+   "z": -9.41,
+   "centre_r": 12.154,
+   "r_extent": 14.845,
+   "area": 56.28
+  },
+  {
+   "z": -9.41,
+   "centre_r": 16.038,
+   "r_extent": 20.578,
+   "area": 56.492
+  },
+  {
+   "z": -9.41,
+   "centre_r": 16.04,
+   "r_extent": 20.599,
+   "area": 56.209
+  },
+  {
+   "z": -9.41,
+   "centre_r": 12.154,
+   "r_extent": 14.82,
+   "area": 56.28
+  },
+  {
+   "z": -9.41,
+   "centre_r": 12.154,
+   "r_extent": 14.845,
+   "area": 56.28
+  },
+  {
+   "z": -9.41,
+   "centre_r": 16.028,
+   "r_extent": 20.586,
+   "area": 57.904
+  },
+  {
+   "z": -9.41,
+   "centre_r": 17.724,
+   "r_extent": 20.573,
+   "area": 80.551
+  },
+  {
+   "z": -9.41,
+   "centre_r": 18.325,
+   "r_extent": 20.598,
+   "area": 26.856
+  },
+  {
+   "z": -9.41,
+   "centre_r": 18.33,
+   "r_extent": 17.291,
+   "area": 25.787
+  },
+  {
+   "z": -9.41,
+   "centre_r": 17.724,
+   "r_extent": 20.573,
+   "area": 80.551
+  },
+  {
+   "z": -9.41,
+   "centre_r": 18.286,
+   "r_extent": 20.598,
+   "area": 33.657
+  },
+  {
+   "z": -9.41,
+   "centre_r": 18.353,
+   "r_extent": 17.291,
+   "area": 18.986
+  }
+ ],
+ "g04_below_floor_-19.94": [
+  22.52,
+  509.2768
+ ],
+ "g04_below_rear_-24.94": [
+  null,
+  0.0
+ ],
+ "g04_placed_vs_g01_clearance": {
+  "measured": 0.0,
+  "unit": "mm",
+  "status": "MEASURED",
+  "reason": "",
+  "at": [
+   1.057878,
+   20.884121,
+   -19.94
+  ]
+ },
+ "estimate_g04_to_probe_slab_with_R30_window": {
+  "measured": 5.0000000000000036,
+  "unit": "mm",
+  "status": "MEASURED",
+  "reason": "",
+  "at": [
+   30.433545,
+   3.225549,
+   -19.94
+  ],
+  "on_b": [
+   30.433545,
+   3.225549,
+   -24.94
+  ]
+ },
+ "estimate_g01_to_probe_slab": {
+  "measured": 0.0,
+  "unit": "mm",
+  "status": "MEASURED",
+  "reason": "",
+  "at": [
+   -50.0,
+   -42.0,
+   -24.94
+  ]
+ },
+ "estimate_g01_probe_slab_common_mm3": 0.0
+}

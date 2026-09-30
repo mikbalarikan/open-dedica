@@ -1,0 +1,31 @@
+{
+ "hub_below_floor_bbox": [
+  -10.03,
+  -10.03,
+  -22.55,
+  10.03,
+  10.03,
+  -19.94
+ ],
+ "hub_below_floor_volume": 232.1782,
+ "hub_bottom_face_kinds": [
+  "TORUS"
+ ],
+ "hub_outer_r_at_z-21": [
+  10.03,
+  10.03,
+  36
+ ],
+ "hub_inner_r_at_z-21": [
+  8.38,
+  8.38,
+  36
+ ],
+ "g04_max_r_below_floor_rays": [
+  22.52,
+  [
+   304,
+   -20.0
+  ]
+ ]
+}

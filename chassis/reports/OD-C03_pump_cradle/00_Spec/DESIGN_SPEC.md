@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-C03 printed pump cradle (20260930-od-c03-pump-cradle)
 
-Version 1.2 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
+Version 1.2 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; §5, §6 and every decision of §7 confirmed by the Usta on 2026-09-30, "confirmed go") · data class PUBLIC · size S · lane CAD
 
 ## §1 Intent
 
@@ -136,6 +136,7 @@ frequency under 15 bar load and warms in use; the cradle carries the pump's mass
 | 2026-09-30 | REQ-09 (vibration) is a part gate answered only by the first run; the review reports it INCONCLUSIVE | Oğuz | §5 |
 | 2026-09-30 | RV01 REVISE: another round (option A) on the standing instruction; the one blocking finding was REQ-09's Hard classification, which spec 1.2 corrects; F2 (centre of mass ahead of the saddles) is answered by moving rib 1; F3, F4, F5, F6 stay ledgered (A-07, A-03, A-01, zero-margin rows by design) | Oğuz on the standing instruction; the Usta confirms | REVISE_PACKET_RV01 |
 | 2026-09-30 | spec 1.1: the designer's C-01 (a 6.0 slot in a 6.0 post leaves no ligament) is answered by one 20-wide post block per side; ribs moved past the −Y side features the plan found under the strap path | Oğuz on the standing instruction; the Usta confirms | DESIGN_PLAN v01 §8 |
+| 2026-09-30 | the Usta confirmed every decision taken on the standing instruction (spec ratifications, the concept, the gate classes, the REVISE round) with "confirmed go" in the project thread, after PR #43 merged | the Usta | project thread |
 
 ## §8 Change log
 
