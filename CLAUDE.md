@@ -2,9 +2,13 @@
 
 - This is an open-source hardware repository (CC BY 4.0, data class PUBLIC).
   Read `README.md`, `CONTRIBUTING.md`, and `docs/PART_NUMBERING.md` first.
-- Custom-designed parts (`cad = DESIGN` in `docs/bom.csv`: the group head housing
-  OD-G01 and the chassis OD-C01…C16) are designed with the OGUZ Atölye pipeline in
-  the sibling repository `mikbalarikan/oguz-atolye` (`AGENTS.md`, `atolye/PLAYBOOK.md`).
+- **Goal:** every 3D-printable custom part designed and reviewed (`OD-G01`,
+  `OD-C01`…`OD-C16`, `OD-T01`) and the whole machine delivered as an assembly
+  (`OD-000` STEP, STL/3MF per part, BOM, build guide). The order of work and the
+  definition of done are in `chassis/README.md`.
+- Custom-designed parts (`cad = DESIGN` in `docs/bom.csv`) are designed with the
+  OGUZ Atölye pipeline in the sibling repository `mikbalarikan/oguz-atolye`
+  (`AGENTS.md`, `atolye/PLAYBOOK.md`), one job per part, in that order.
   Reference geometry for them is the scan-rebuilt STEP library in `step/` with its
   reports in `step/reports/`; calipers beat scans on every interface, and every
   scan-derived value is an assumption until the Usta confirms it.
