@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-C01 printed base frame (20260930-od-c01-base-frame)
 
-Version 1.0 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30 and the "confirmed go" / "go" of the same day: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size M · lane CAD
+Version 1.1 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30 and the "confirmed go" / "go" of the same day: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size M · lane CAD
 
 ## §1 Intent
 
@@ -89,9 +89,19 @@ full), a hand pressing the buttons.
   - **Reserved zones** (A-05 … A-08, documented in the plan, not gated): the drip
     tray x ±75, z +10 … +100 on the plate (cup rest top ≤ 36.9 above the plate,
     A-06); the water tank x ±70, z −305 … −250 (A-07); the valve and flowmeter
-    mount x −120 … −70, z −160 … −60 (A-05); the electronics bay x 70 … 120,
+    mount OD-C07 x −117 … −67, z −154 … −35 (A-05); the electronics bay x 70 … 120,
     z −240 … −30 (A-08).
-  - **Insert holes**: sixteen Ø4.0 through-holes along Y (twelve under the three
+  - **OD-C07 valve and flowmeter mount** (A-17, added in 1.1): its frame rotated so
+    that its local x → −Z, local y → −X, local z → +Y (a proper rotation), its
+    origin at (−92, 0, −60), so its bottom face lands on y 0, its flowmeter end
+    faces the front and its valve end the pump; its footprint holes (its
+    (−18, ±21) and (88.5, ±21)) land at (x −113, z −42), (x −71, z −42),
+    (x −113, z −148.5), (x −71, z −148.5); its envelope (119 × 50 × 48 in its frame)
+    occupies x −117 … −67, z −154 … −35, up to y 48; its hose window (its
+    x 40 … 84, y ±25) lies over z −144 … −100, so the drain hole at (−80, −120)
+    sits under it. The pump's −X end (x −66.45, z ≤ −165) stays ≥ 11 behind the
+    mount's rear end (z −154).
+  - **Insert holes**: twenty Ø4.0 through-holes along Y (sixteen under the four
     mounts, four on the bulkhead line) for M3 × 5.7 heat-set inserts driven from the
     top (the 6.0 plate holds the 5.7 insert, A-11). **Feet holes**: four Ø3.4
     through-holes at (x ±110, z +90) and (x ±110, z −295) for the TPU feet OD-C15
@@ -114,7 +124,7 @@ full), a hand pressing the buttons.
 | U-02 | Envelope within spec | 240.0 × 6.0 × 405.0 each in [spec − 0.1, spec + 0.1]; position against the datum reported apart (x ±120.0, y −6.0 … 0.0, z −305.0 … +100.0) | Hard | CAD | house | `envelope` | — |
 | U-03 | Assembly closes | (a) plate|OD-C03 and plate|OD-C04 at the joints of §4: designed contacts, `clearance = 0`, `interference ≤ 0` mm³; each mount's four Ø3.4 holes coaxial with the plate's Ø4.0 holes, offset ≤ 0.10 (`locate_bore` on both solids); plate|OD-H01 ≥ 2.0 and plate|OD-H11 ≥ 10.0 (`clearance`; the OD-H11 boolean is INCONCLUSIVE by OD-C04 A-14 and reported); OD-C03|OD-C04 ≥ 2.0; OD-H11 max z ≤ −85.0 (`envelope` of the placed solid); OD-G01 v02 at the carrier's pose (origin (0, 175, 0)) ≥ 2.0 to everything else; the carrier itself is not built yet (A-01: the plan places its foot outline as a reference box, not a solid). (b) N/A | Hard | CAD | house | `clearance`, `interference`, `locate_bore`, `envelope` | A-01 … A-03 |
 | U-04 | Clean export | named body re-read unchanged, no stray shells, valid after re-import | Hard | CAD | house | `step_roundtrip` | — |
-| U-05 | Every spec feature present | counts per the plan: 1 plate, 16 Ø4.0 through-holes, 4 Ø3.4 through-holes, 2 Ø8.0 through-holes | Hard | CAD | house | `feature_census`, `bore_census`, `locate_bore` | — |
+| U-05 | Every spec feature present | counts per the plan: 1 plate, 20 Ø4.0 through-holes, 4 Ø3.4 through-holes, 2 Ø8.0 through-holes | Hard | CAD | house | `feature_census`, `bore_census`, `locate_bore` | — |
 | U-06 | Soft: thin corners under a round | `min_wall` wide ≥ 2.0 | Soft | part | house | `min_wall` `detail["wide"]` | — |
 | U-07 | Export mesh | STL at tol 0.01, angular a ≤ 4·acos(1 − 0.01/6.0) rad; `stl_max_sagitta ≤ 0.01`; the 3MF carries the same mesh | Hard | CAD | house | `write_stl`, `mesh_sagitta` | — |
 | U-08 | Threads cosmetic | applies to threaded parts; this target has none | Hard | CAD | house | — (N/A by this row) | — |
@@ -125,10 +135,10 @@ full), a hand pressing the buttons.
 | D-03b | Unsupported bridge | span ≤ 5: none | Hard | part | floor | reviewer, from sections | — |
 | D-04a | Clearance hole for a fastener | the four feet holes Ø ≥ 3.25 (designed Ø3.4); the drain holes are not fastener holes | Hard | part | house | `locate_bore` | A-12 |
 | D-05a | Heat-set insert boss | material ≥ 8.0 across around each Ø4.0 hole (the plate itself) | Hard | part | struct | `bore_census`, `radial_extent` | A-11 |
-| D-05b | Heat-set insert hole | the sixteen insert holes Ø 4.0 ± 0.05, depth ≥ 5.7 (through the 6.0 plate) | Hard | part | floor | `bore_census`, `locate_bore` | A-11 |
+| D-05b | Heat-set insert hole | the twenty insert holes Ø 4.0 ± 0.05, depth ≥ 5.7 (through the 6.0 plate) | Hard | part | floor | `bore_census`, `locate_bore` | A-11 |
 | D-06a | Minimum feature | ≥ 1.0 | Hard | part | floor | `min_wall` | — |
 | D-07 | Fit-critical bores | none: insert holes are formed by the insert, the rest are clearance and drain holes | Hard | part | floor | — (N/A by this row) | — |
-| J-05 | Wall around a threaded hole | ≥ 3.0 around each of the sixteen insert holes | Hard | part | struct | `min_wall` | — |
+| J-05 | Wall around a threaded hole | ≥ 3.0 around each of the twenty insert holes | Hard | part | struct | `min_wall` | — |
 | E-06 | Boss support | no bosses on this part | Hard | part | struct | — (N/A by this row) | — |
 | REQ-01 | Carrier inserts | four Ø4.0 ± 0.05 through-holes along Y at (x ±35.0, z −40.0) and (x ±35.0, z −60.0), offset ≤ 0.10 (OD-C05 A-04) | Hard | CAD | A-01 | `locate_bore` | A-01 |
 | REQ-02 | Thermoblock mount inserts | four Ø4.0 ± 0.05 through-holes at (x ±40.0, z −148.0) and (x ±40.0, z −114.0), offset ≤ 0.10, coaxial with OD-C04's holes as placed (U-03) | Hard | CAD | A-02 | `locate_bore` | A-02 |
@@ -138,6 +148,7 @@ full), a hand pressing the buttons.
 | REQ-06 | Drain holes | two Ø8.0 ± 0.1 through-holes at (x −80.0, z −120.0) and (x −80.0, z −230.0), offset ≤ 0.10 | Hard | CAD | A-13 | `locate_bore` | A-13 |
 | REQ-07 | Floor plane | the top face at y = 0.00 ± 0.10 (`envelope` max_y), 6.0 ± 0.1 thick; the whole top face one plane (the mounts' feet seat on it) | Hard | CAD | A-01 … A-03 | `envelope`; reviewer from sections | — |
 | REQ-08 | Thermoblock zone | OD-H11 as placed: `envelope` max_z ≤ −85.0 and `clearance(plate, OD-H11)` ≥ 10.0 (OD-C05 A-05, OD-C04 REQ-01) | Hard | CAD | client (INTAKE X-20, X-30) | `envelope`, `clearance` | A-02 |
+| REQ-10 | Valve mount inserts | four Ø4.0 ± 0.05 through-holes at (x −113.0, z −42.0), (x −71.0, z −42.0), (x −113.0, z −148.5), (x −71.0, z −148.5), offset ≤ 0.10, coaxial with OD-C07's footprint holes as placed by A-17 (checked against the OD-C07 STEP when it delivers; until then against the pattern) | Hard | CAD | A-17 | `locate_bore` | A-17 |
 | REQ-09 | Flatness in service | **Soft.** The printed plate stays flat enough for the three mounts to seat without rocking after printing and in use (PETG warp on a 405 mm plate); not a geometric gate: the review reports it INCONCLUSIVE with a risk rating, and it is answered by the first print | Soft | part | client | — (bench) | A-10, A-14 |
 
 **Named exceptions** (Usta U-18): none.
@@ -150,7 +161,7 @@ full), a hand pressing the buttons.
 | A-02 | OD-C04 joint | identity rotation, origin (0, 70, −140): the thermoblock's axis horizontal at y ≈ 55.9 (its axis at its y −14.13), pipes and terminals up, outlet pins at z −89.21 toward the group head, casting ≥ 16.5 above the plate (OD-C04 A-07, A-10) | the thermoblock fouls the carrier or the tube runs do not reach | OD-C04 spec 1.2 §2, A-07, A-10 (INTAKE X-12 … X-22); this spec (P4) | the Usta's layout confirmation; the tube runs | OPEN |
 | A-03 | OD-C03 joint | rotation local x → +Z, y → −Y, z → +X, origin (0, 40, −205): pump axis along X at y 40 across the back, the terminal block (its −Y) up, the outlet (its −Z) toward −X where the valves sit; its foot 8 mm behind the thermoblock mount's foot | pump hoses do not reach; vibration path | OD-C03 spec 1.2 §2, A-08 (INTAKE X-01 … X-11); this spec | the Usta's layout confirmation; the tube runs | OPEN |
 | A-04 | OD-C02 bulkhead interface | a wall on the plane x = 65 from z −240 to −30 (3 to 5 thick), standing on four M3 inserts at (65, −45), (65, −105), (65, −165), (65, −225); the electric zone is x ≥ 70 | OD-C02 must be designed to it | this spec (design choice; the OD-C03/C04/C05 precedent) | OD-C02 design | OPEN |
-| A-05 | Valve and flowmeter zone | OD-C07 with OD-H21, OD-H22, OD-H24 within x −120 … −70, z −160 … −60, on the pump's outlet side; nothing of the plate is shaped for it yet | the zone is too small or on the wrong side of the tube runs | this spec; WATER_FLOW.md (INTAKE §3) | OD-C07 design | OPEN |
+| A-05 | Valve and flowmeter zone | OD-C07 with OD-H21, OD-H22, OD-H24 within x −117 … −67, z −154 … −35, on the pump's outlet side, placed by A-17 (1.1) | the zone is too small or on the wrong side of the tube runs | this spec; WATER_FLOW.md (INTAKE §3) | OD-C07 design | OPEN |
 | A-06 | Drip tray | the tray OD-C21 with its grid stands on the plate within x ±75, z +10 … +100, its cup rest top ≤ 36.9 above the plate (so the housing's lowest point at y 131.9 keeps the ≥ 95 mm mug rule, INTAKE X-29, X-43); no locating features until the scan | the mug does not fit or the tray hangs over the edge | this spec; issue #9 (INTAKE X-57) | the tray scan (issue #9) | OPEN |
 | A-07 | Water tank zone | OD-W01 with its dock OD-C06 stands within x ±70, z −305 … −250, lifted out upward; the tank seat OD-W03 faces the pump | the tank does not fit; the plate must grow | this spec; BOM OD-W01, OD-C06 (INTAKE §3) | the tank scan; OD-C06 design | OPEN |
 | A-08 | Electronics bay | OD-C08 with either path within x 70 … 120, z −240 … −30 behind the bulkhead, its own tray screwed to bulkhead and plate later | the bay is too small for path 1's OD-E01 (scanned) | this spec; BOM OD-E00 … OD-E60 (INTAKE X-41, X-61) | the Usta picks the path (order-of-work row 9) | OPEN |
@@ -161,6 +172,7 @@ full), a hand pressing the buttons.
 | A-13 | Drainage | two Ø8 drain holes in the wet zone let a leak leave the machine onto the counter under it; the tray zone drains by the tray; no channels on the flat plate (C2 later) | a leak reaches the electronics before a drain | this spec; SOURCING_GUIDE §6 rule 1 (INTAKE X-41) | OD-C02's drainage path | OPEN |
 | A-14 | Print orientation | flat on the bed, bottom face down, no supports, brim against warp | warp lifts the corners (REQ-09) | this spec | first print | OPEN |
 | A-15 | Scan fidelity of the OEM parts | OD-H01 p95 0.448 and OD-H11 p95 0.474 (INTAKE X-08, X-19, §4 gap 13); the mounts' hole patterns are design values, not scan values, so only the placed OEM envelopes carry the scan error | the thermoblock zone or the pump reach is off by the scan error | the mounts' specs | calipers | OPEN |
+| A-17 | OD-C07 joint and footprint | OD-C07 (spec at RV01 REVISE, not yet approved) needs four M3 inserts at its (−18, ±21) and (88.5, ±21) (its A-14, REQ-06), its bottom face on the floor; placed by the joint of §4 (x → −Z, y → −X, z → +Y, origin (−92, 0, −60)): holes at (−113, −42), (−71, −42), (−113, −148.5), (−71, −148.5), web to the plate edge 5.0 | the pattern or the pose changes when OD-C07 is approved; the holes move | OD-C07 spec A-14 (relayed from the "Chassis parts C06 to C11" thread, 2026-09-30); this spec (pose: design choice) | OD-C07's approved build and its delivered STEP | OPEN |
 | A-16 | Footprint and height | 240 × 405 plate; machine height ≈ 260 (plate 6 + axis 175 + housing 43.1 + top panel and clearance) plus feet; the thesis' 0.4 m³ figure (INTAKE X-53) is read as an upper bound the machine is far below | the machine is too big for the Usta's counter | this spec | the Usta's layout confirmation | OPEN |
 
 ## §7 Decisions
@@ -173,6 +185,7 @@ full), a hand pressing the buttons.
 | 2026-09-30 | the group head axis goes to 175 above the floor (OD-C05 spec 1.1) so that a tray up to 36.9 tall fits under the ≥ 95 mm mug rule; OD-C05 spec 1.0's 150 left 11.9 | Oğuz | INTAKE §4 gap 4; A-01 |
 | 2026-09-30 | INTAKE §4 gaps 1, 2, 11, 12 (frames, positions, floor planes, the thermoblock offset) are answered by the joints of §4 as design choices, all A-## rows | Oğuz | §4, A-01 … A-03 |
 | 2026-09-30 | REQ-09 (flatness) is a Soft bench gate answered by the first print (the OD-C03 RV01 lesson) | Oğuz | §5 |
+| 2026-09-30 | OD-C07's footprint (four inserts, 106.5 × 42) goes on the plate now (REQ-10, A-17) rather than as a later round: placed in the valve zone with the flowmeter to the front, the hose window over the drain at (−80, −120), 11 behind-clearance to the pump; the zone grows to x −117 … −67, z −154 … −35 | Oğuz, on the OD-C07 spec A-14 | A-05, A-17 |
 
 ## §8 Change log
 
@@ -180,3 +193,4 @@ full), a hand pressing the buttons.
 |---|---|---|
 | 0.1 | 2026-09-30 | first draft from the three mounts' specs and the OEM reports |
 | 1.0 | 2026-09-30 | INTAKE_v01 cross-references in §6; ratified |
+| 1.1 | 2026-09-30 | OD-C07 joint and four insert holes (§4, U-05, D-05b, J-05, REQ-10, A-05, A-17); twenty insert holes |

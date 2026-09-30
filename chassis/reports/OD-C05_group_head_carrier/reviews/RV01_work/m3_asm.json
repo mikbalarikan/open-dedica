@@ -1,0 +1,299 @@
+{
+ "validity_g01": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "validity_g04": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "env_g04_placed": {
+  "size_x": 65.69633733402601,
+  "size_y": 69.01432416730174,
+  "size_z": 17.210000100000002,
+  "min_x": -31.176337234026004,
+  "min_y": -34.520000100000004,
+  "min_z": -22.94,
+  "max_x": 34.520000100000004,
+  "max_y": 34.494324067301726,
+  "max_z": -5.7299999
+ },
+ "clear_g01": {
+  "name": "clearance",
+  "measured": 0.0,
+  "unit": "mm",
+  "at": [
+   -50.0,
+   -42.0,
+   -24.94
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    -50.0,
+    -42.0,
+    -24.94
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "clear_g04": {
+  "name": "clearance",
+  "measured": 5.0000000000000036,
+  "unit": "mm",
+  "at": [
+   -21.213203,
+   21.213203,
+   -24.94
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    -21.213203,
+    21.213203,
+    -19.94
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "interference": {
+  "carrier|g01": {
+   "name": "interference",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "carrier",
+     "g01"
+    ]
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "solids_a": 1,
+    "solids_b": 1,
+    "pairs_computed": 1,
+    "pairs_skipped_by_bbox": 0,
+    "solids_checked": 2
+   }
+  },
+  "carrier|g04": {
+   "name": "interference",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "carrier",
+     "g04"
+    ]
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "solids_a": 1,
+    "solids_b": 1,
+    "pairs_computed": 0,
+    "pairs_skipped_by_bbox": 1,
+    "solids_checked": 0
+   }
+  },
+  "g01|g04": {
+   "name": "interference",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "g01",
+     "g04"
+    ]
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "solids_a": 1,
+    "solids_b": 1,
+    "pairs_computed": 1,
+    "pairs_skipped_by_bbox": 0,
+    "solids_checked": 2
+   }
+  }
+ },
+ "inserts": [
+  {
+   "corner": [
+    44,
+    44
+   ],
+   "insert_d": 4.0,
+   "insert_len": 5.700000000000003,
+   "insert_start": [
+    44.0,
+    44.0,
+    -24.94
+   ],
+   "insert_end": [
+    44.0,
+    44.0,
+    -19.24
+   ],
+   "insert_offset_nominal": 0.0,
+   "hole_d": 3.4,
+   "axis_offset": 0.0
+  },
+  {
+   "corner": [
+    44,
+    -44
+   ],
+   "insert_d": 4.0,
+   "insert_len": 5.700000000000003,
+   "insert_start": [
+    44.0,
+    -44.0,
+    -24.94
+   ],
+   "insert_end": [
+    44.0,
+    -44.0,
+    -19.24
+   ],
+   "insert_offset_nominal": 0.0,
+   "hole_d": 3.4,
+   "axis_offset": 0.0
+  },
+  {
+   "corner": [
+    -44,
+    44
+   ],
+   "insert_d": 4.0,
+   "insert_len": 5.700000000000003,
+   "insert_start": [
+    -44.0,
+    44.0,
+    -24.94
+   ],
+   "insert_end": [
+    -44.0,
+    44.0,
+    -19.24
+   ],
+   "insert_offset_nominal": 0.0,
+   "hole_d": 3.4,
+   "axis_offset": 0.0
+  },
+  {
+   "corner": [
+    -44,
+    -44
+   ],
+   "insert_d": 4.0,
+   "insert_len": 5.700000000000003,
+   "insert_start": [
+    -44.0,
+    -44.0,
+    -24.94
+   ],
+   "insert_end": [
+    -44.0,
+    -44.0,
+    -19.24
+   ],
+   "insert_offset_nominal": 0.0,
+   "hole_d": 3.4,
+   "axis_offset": 0.0
+  }
+ ],
+ "asm_labels": [
+  "od_c05_carrier",
+  "od_g01_housing",
+  "od_g04_brewing_gasket_support"
+ ],
+ "asm_compare": {
+  "od_c05_carrier": {
+   "vol": 108712.07809021352,
+   "vol_ref": 108712.07809021375,
+   "common": 108712.07809021352,
+   "mismatch": 2.3283064365386963e-10
+  },
+  "od_g01_housing": {
+   "vol": 90216.79165440061,
+   "vol_ref": 90216.79165440112,
+   "common": 0.0,
+   "mismatch": 180433.58330880175
+  },
+  "od_g04_brewing_gasket_support": {
+   "vol": 17086.24424005932,
+   "vol_ref": 17086.24424005699,
+   "common": 17086.244240059317,
+   "mismatch": -2.321030478924513e-09
+  }
+ },
+ "path": [
+  [
+   30,
+   30.0,
+   0.0,
+   0.0
+  ],
+  [
+   20,
+   20.0,
+   0.0,
+   0.0
+  ],
+  [
+   10,
+   10.0,
+   0.0,
+   0.0
+  ],
+  [
+   5,
+   5.0,
+   0.0,
+   0.0
+  ],
+  [
+   2,
+   2.0,
+   0.0,
+   0.0
+  ],
+  [
+   1,
+   1.0,
+   0.0,
+   0.0
+  ],
+  [
+   0.5,
+   0.5,
+   0.0,
+   0.0
+  ],
+  [
+   0.1,
+   0.10000000000000142,
+   0.0,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ ]
+}
