@@ -5,9 +5,9 @@ code: ODC03
 milestone: M1
 title: "Open Dedica OD-C03 printed pump cradle"
 lane: CAD
-state: J4_REVIEW
+state: J5_DELIVER
 blocked_on: null
-next_action: "J2: designer package WP-02 writes the plan for od_c03_cradle_v01"
+next_action: "J5: the Usta confirms the A-## rows with calipers (OD-H02 sleeve, frame plates) and prints the first cradle; the vibration bench gate REQ-09 answers at the first run"
 data_class: PUBLIC
 size: S
 process: [FDM]
@@ -25,6 +25,7 @@ attempts: {build: 1, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
 reviews:
   - {id: RV01, target: od_c03_cradle_v01, verdict: REVISE, blockers: 1, date: "2026-09-30"}
+  - {id: RV02, target: od_c03_cradle_v02, verdict: APPROVED_ASSUMPTION_CONDITIONAL, blockers: 0, date: "2026-09-30"}
 usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}

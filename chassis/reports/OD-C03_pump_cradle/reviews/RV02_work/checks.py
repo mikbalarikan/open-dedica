@@ -49,13 +49,13 @@ def g_overhang(s):
     return [gate("D-03a", oh, ">=", 45.0, band=DEG, assumes=["A-13"])], oh
 
 def bridge_span(s):
-    """Largest flat downward-facing (normal +Y, print along -Y) planar face off the bed: its smaller in-plane size."""
+    """Largest flat downward-facing (normal +Y, print along -Y) planar face off the bed: its larger in-plane size (conservative: a span cannot exceed it)."""
     bed = s.bounding_box().max.Y; spans = []
     for f in s.faces():
         if f.geom_type != GeomType.PLANE: continue
         n = f.normal_at()
         if n.Y > 1 - 1e-9 and abs(f.center().Y - bed) > 0.01:
-            bb = f.bounding_box(); spans.append((min(bb.size.X, bb.size.Z), (round(f.center().X, 3), round(f.center().Y, 3), round(f.center().Z, 3))))
+            bb = f.bounding_box(); spans.append((max(bb.size.X, bb.size.Z), (round(f.center().X, 3), round(f.center().Y, 3), round(f.center().Z, 3))))
     if not spans: return Result("bridge_span", 0.0, "mm", at=None, detail={"flat_ceilings": 0})
     m = max(spans); return Result("bridge_span", m[0], "mm", at=m[1], detail={"flat_ceilings": len(spans)})
 

@@ -7,7 +7,7 @@ title: "Open Dedica OD-C04 printed thermoblock mount"
 lane: CAD
 state: J5_DELIVER
 blocked_on: null
-next_action: "J2: designer package WP-02 writes the plan for od_c04_mount_v01"
+next_action: "J5: the Usta confirms the A-## rows with calipers (thermoblock base face, bracket spacers) and prints the first mount; the heat bench gate REQ-08 answers at the first run"
 data_class: PUBLIC
 size: S
 process: [FDM]

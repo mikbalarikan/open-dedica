@@ -1,0 +1,741 @@
+{
+  "schema": "oguz-verdict-v1",
+  "review_id": "RV02",
+  "job_id": "20260930-od-c03-pump-cradle",
+  "target": "od_c03_cradle_v02",
+  "spec_version": "1.2",
+  "reviewer": {
+    "runtime": "claude-code",
+    "model": "claude-opus-5-5"
+  },
+  "verdict": "APPROVED_ASSUMPTION_CONDITIONAL",
+  "summary": "od_c03_cradle_v02: one valid solid 80.000 x 40.000 x 52.000 mm; every Hard section 5 row PASS or PASS (assumed); REQ-03 2.300 mm at the -X post, REQ-04 saddle contact 6.9e-13 mm with 0.0 mm3 on both ribs, OD-H01 centroid z 7.232 inside the saddle span z -3..31 (RV01 F2 answered); REQ-09 Soft bench INCONCLUSIVE; 24 of 24 positive controls FAIL; no blocking finding.",
+  "files": [
+    {
+      "path": "01_CAD/REPORT_od_c03_cradle_v02.md",
+      "sha256": "3404a729616141242016ad439668c65a1960cbe6f99f2a449e5a903848d93a85",
+      "matches_report": true
+    },
+    {
+      "path": "01_CAD/DESIGN_PLAN.md",
+      "sha256": "7e86466421a4ad81e87dd87bb93215966e3a0b974e33869163b55aaa42bd6540",
+      "matches_report": true
+    },
+    {
+      "path": "01_CAD/check_od_c03_cradle_v02.json",
+      "sha256": "915202548c8c46c3b2f9adc0103ab2a63f915384913fd9fecf131d8b83373921",
+      "matches_report": true
+    },
+    {
+      "path": "01_CAD/sections_od_c03_cradle_v02.json",
+      "sha256": "50193e6b41dfdbea8d7d5c3ddeb9642399d2836d3821802b58ecb37b45e3d007",
+      "matches_report": true
+    },
+    {
+      "path": "02_STEP_STL/od_c03_assembly_C1_v02.step",
+      "sha256": "8e1a6ea8ff66acecdd2cffdde41c1d7635541f4b34e9034f55ce6c4efaf43a14",
+      "matches_report": true
+    },
+    {
+      "path": "02_STEP_STL/od_c03_cradle_C1_v02.step",
+      "sha256": "8d6f60ba1b4c3bcc6da1d40037ffa6ac422c4bf78f0f826553f2ffc1de037034",
+      "matches_report": true
+    },
+    {
+      "path": "02_STEP_STL/od_c03_cradle_C1_v02.stl",
+      "sha256": "529a0cc2033cddb00ee16715448a8e0e546f08eb05eb6bd1e6c20ce8a3776be4",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_assembly_xy_z0p0.png",
+      "sha256": "e36596521f8a6c8d0cca5d8bcddc8c58cf6708fc2192c48223fe1fc9379b7b24",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_assembly_xy_z28p0.png",
+      "sha256": "4e58b33781602ce7e7833dbfa77a0f16055c3ba4fd5c22052b318775e65b2083",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_assembly_yz_x0p0.png",
+      "sha256": "86a77ec2317d2f64fdfc5878ebac31b9492b3dd6837bcd53db906ae3348123cf",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_xy_z0p0.png",
+      "sha256": "51dc7f09bbf3b3e95a6b6623decb2430445b9504e50ab4a9decb1f602895faa7",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_xy_z17p0.png",
+      "sha256": "603139490d9c8a947e45d2f8aeb257b0a6ecad102d47e89d3987367439825df3",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_xy_z28p0.png",
+      "sha256": "4364ee45b5b8a12674cf4f0d509e7dd901cde4352e25421d9acff4333d056502",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_xz_y38p5.png",
+      "sha256": "8ad305e86b536a0132bfac697ec2d0f56694afd3187a5fe40e7332ff48a602cc",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_xz_y7p0.png",
+      "sha256": "1f44f2bbdb0390b6380bf0f7b29e18f4b0a10364e5ee45ef2899a237491ee3c5",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_yz_x0p0.png",
+      "sha256": "3f1dbbc197ea6daef045738ba8ad42f889c5aa3f93ad38d2eb65a687163d7328",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_yz_x31p5.png",
+      "sha256": "1f75434f7b2887c7321dbc50545af88d24e5f705f7e0d5fdc7a233177a588504",
+      "matches_report": true
+    },
+    {
+      "path": "03_Sections/od_c03_cradle_v02_yz_x34p0.png",
+      "sha256": "577bc611c4691e5ddcc7118f907404b2a8eee2303356ef7c6fc4dbfbd73e1fd5",
+      "matches_report": true
+    },
+    {
+      "path": "00_Spec/inputs/OD-H01_ulka_ep5_pump.step",
+      "sha256": "b05302af204c225fbf6bab0476ead4e0b185527d184a055006fd367550c3fb62",
+      "matches_report": true
+    }
+  ],
+  "gates": [
+    {
+      "gate": "U-01",
+      "measured": 1,
+      "unit": "count",
+      "required": "solid_count = 1, brep_valid = 1, naked_edges = 0",
+      "margin": 0.0,
+      "at": "part file: solid_count 1, brep_valid 1, naked_edges 0; assembly: cradle 1/1/0, OD-H01 1/1/0, sleeve 2 solids valid, 0 naked",
+      "status": "PASS",
+      "method": "validity",
+      "assumes": []
+    },
+    {
+      "gate": "U-02",
+      "measured": 80.0,
+      "unit": "mm",
+      "required": "80.0 x 40.0 x 52.0 each in [spec - 0.1, spec + 0.1]; position reported apart",
+      "margin": 0.1,
+      "at": "size 80.000 x 40.000 x 52.000 (all margin +0.100); position x -40.000..40.000, y 0.000..40.000, z -10.000..42.000 (exact)",
+      "status": "PASS",
+      "method": "envelope",
+      "assumes": []
+    },
+    {
+      "gate": "U-03",
+      "measured": 6.908e-13,
+      "unit": "mm",
+      "required": "(a) cradle|OD-H01 clearance >= 2.0 and interference <= 0; cradle|sleeve clearance = 0 and interference <= 0; (b) no motion variable",
+      "margin": -6.908e-13,
+      "at": "governing: cradle|sleeve contact (-18.844, 18.844, -3.000) saddle arc of rib 1 (rib 2 also 6.9e-13), interference 0.0 mm3; cradle|OD-H01 2.300 at (-29.500, 0.000, 33.000) -X post to -X side plate (-27.200, 0.000, 33.000), interference 0.0 mm3; (b) none; insertion path along +Y from 60 mm keeps >= 2.300 and 0.0 mm3",
+      "status": "PASS_ASSUMED",
+      "method": "clearance, interference (tools.core.common_volume)",
+      "assumes": [
+        "A-01",
+        "A-03"
+      ]
+    },
+    {
+      "gate": "U-04",
+      "measured": 0.0,
+      "unit": "mm3",
+      "required": "named body re-read unchanged, no stray shells, valid after re-import (volume_delta <= 0.001)",
+      "margin": 0.001,
+      "at": "part: schema AP242, solids 1, volume_delta 0.0, faces_delta 0, label od_c03_cradle, valid_after 1, 0 free shells/faces; own re-write in RV02_work also 0.0 / 0; assembly: 4 solids, 3 labels unchanged, valid",
+      "status": "PASS",
+      "method": "compare_step, step_roundtrip",
+      "assumes": []
+    },
+    {
+      "gate": "U-05",
+      "measured": 13,
+      "unit": "count",
+      "required": "2 saddle ribs, 2 post blocks, 4 strap slots, 4 d3.4 through-holes, 1 foot plate (plan as amended)",
+      "margin": 0.0,
+      "at": "13 of 13 plan features located; faces plane 48, cylinder 6, concave cylinders 6, convex 0, bores 4, other kinds 0",
+      "status": "PASS",
+      "method": "feature_census, bore_census, locate_bore, face positions",
+      "assumes": []
+    },
+    {
+      "gate": "U-06",
+      "measured": 2.0,
+      "unit": "mm",
+      "required": "Soft: min_wall wide >= 2.0",
+      "margin": -3.1e-15,
+      "at": "(-33.318, 6.101, 33.000) slot ligament to the post block end face",
+      "status": "PASS",
+      "method": "min_wall_wide",
+      "assumes": []
+    },
+    {
+      "gate": "U-07",
+      "measured": 0.00489,
+      "unit": "mm",
+      "required": "STL at tol 0.01, angular <= 4 acos(1 - 0.01/32.0) = 0.1000026 rad; stl_max_sagitta <= 0.01",
+      "margin": 0.00511,
+      "at": "(-18.477, 19.198, 1.500) saddle 1; fresh mesh at 0.01 / 0.1 rad is byte-identical to the delivered STL (2540 triangles); 1 body, 0 naked edges, winding 1; mesh_deviation 0.00489",
+      "status": "PASS",
+      "method": "write_stl, mesh_sagitta, mesh_census, mesh_deviation",
+      "assumes": []
+    },
+    {
+      "gate": "U-08",
+      "measured": null,
+      "unit": "none",
+      "required": "applies to threaded parts; this target has none",
+      "margin": null,
+      "at": null,
+      "status": "NOT_APPLICABLE",
+      "method": "N/A by its row",
+      "assumes": []
+    },
+    {
+      "gate": "D-01a",
+      "measured": 2.0,
+      "unit": "mm",
+      "required": "min_wall >= 0.8",
+      "margin": 1.2,
+      "at": "(-33.318, 6.101, 33.000) slot ligament",
+      "status": "PASS",
+      "method": "min_wall",
+      "assumes": []
+    },
+    {
+      "gate": "D-01b",
+      "measured": 2.0,
+      "unit": "mm",
+      "required": "min_wall >= 2.0",
+      "margin": -3.1e-15,
+      "at": "(-33.318, 6.101, 33.000) slot ligament (all four end ligaments 2.000)",
+      "status": "PASS",
+      "method": "min_wall",
+      "assumes": []
+    },
+    {
+      "gate": "D-02",
+      "measured": 80.0,
+      "unit": "mm",
+      "required": "each envelope size <= Kobra Max 3 volume foot down (420 x 420 x 500 per A-10)",
+      "margin": 340.0,
+      "at": "80.0 (X) <= 420, 52.0 (Z) <= 420, 40.0 (Y, vertical) <= 500",
+      "status": "PASS_ASSUMED",
+      "method": "envelope",
+      "assumes": [
+        "A-10"
+      ]
+    },
+    {
+      "gate": "D-03a",
+      "measured": 45.0,
+      "unit": "deg",
+      "required": "every downward face >= 45 deg from horizontal, build along -Y",
+      "margin": 0.0,
+      "at": "(-29.500, 5.750, 20.000) slot gable roof; only the eight gable faces face down; sampling bound 0.0",
+      "status": "PASS_ASSUMED",
+      "method": "overhang_census(build_dir=(0,-1,0))",
+      "assumes": [
+        "A-13"
+      ]
+    },
+    {
+      "gate": "D-03b",
+      "measured": 0.0,
+      "unit": "mm",
+      "required": "span <= 5",
+      "margin": 5.0,
+      "at": "no flat downward face off the bed; gable apexes are edges (sections x = +-31.5)",
+      "status": "PASS",
+      "method": "planar downward-face census and sections (reviewer)",
+      "assumes": []
+    },
+    {
+      "gate": "D-04a",
+      "measured": 3.4,
+      "unit": "mm",
+      "required": "four frame holes d >= 3.25",
+      "margin": 0.15,
+      "at": "(+-34.0, 37.0..40.0, -4.0) and (+-34.0, 37.0..40.0, 37.0)",
+      "status": "PASS",
+      "method": "bore_census, locate_bore",
+      "assumes": []
+    },
+    {
+      "gate": "D-04c",
+      "measured": 2.3,
+      "unit": "mm",
+      "required": ">= 0.5 per side to OD-H01 (REQ-03 raises to 2.0)",
+      "margin": 1.8,
+      "at": "(-29.500, 0.000, 33.000) -X post to the -X side plate",
+      "status": "PASS_ASSUMED",
+      "method": "clearance",
+      "assumes": [
+        "A-01"
+      ]
+    },
+    {
+      "gate": "D-06a",
+      "measured": 2.0,
+      "unit": "mm",
+      "required": ">= 1.0",
+      "margin": 1.0,
+      "at": "(-33.318, 6.101, 33.000) slot ligament",
+      "status": "PASS",
+      "method": "min_wall",
+      "assumes": []
+    },
+    {
+      "gate": "D-07",
+      "measured": null,
+      "unit": "none",
+      "required": "the four d3.4 holes are clearance holes, not fit bores: none on this part",
+      "margin": null,
+      "at": null,
+      "status": "NOT_APPLICABLE",
+      "method": "N/A by its row",
+      "assumes": []
+    },
+    {
+      "gate": "REQ-01",
+      "measured": 26.65,
+      "unit": "mm",
+      "required": "inner radius theta 50..130 step 5, z -2.5..2.5 and 25.5..30.5: min and max in [26.60, 26.70]",
+      "margin": 0.05,
+      "at": "min 26.650 at (17.130, 20.415, -2.450), max 26.650 at (-15.286, 21.830, -2.450); window 2 identical; 50 levels x 17 angles each, none unread",
+      "status": "PASS_ASSUMED",
+      "method": "radial_profile(side=inner, margin=0, z_step=0.1)",
+      "assumes": [
+        "A-03"
+      ]
+    },
+    {
+      "gate": "REQ-02",
+      "measured": 26.65,
+      "unit": "mm",
+      "required": "z 0 and 28: inner <= 26.70 at theta 50 and 130; no material r <= 32.0 at theta 40 and 140; rib faces z -3, 3, 25, 31 +-0.10",
+      "margin": 0.05,
+      "at": "inner 26.650 at theta 50/130, z 0 and 28; theta 40/140 window: NoMaterial at both levels (expected; control FAILs on a lump at r 30); whole ray at z 28 first material 38.510 (post); material starts at theta 45.5, none at 44; rib faces -3.000, 3.000, 25.000, 31.000 (margin 0.100) from section x = 0",
+      "status": "PASS_ASSUMED",
+      "method": "radial_extent; YZ section at x = 0",
+      "assumes": [
+        "A-06"
+      ]
+    },
+    {
+      "gate": "REQ-03",
+      "measured": 2.3,
+      "unit": "mm",
+      "required": "clearance(cradle, OD-H01) >= 2.0 at the identity pose",
+      "margin": 0.3,
+      "at": "(-29.500, 0.000, 33.000) to (-27.200, 0.000, 33.000) -X side plate; also 2.300 at z 12.0; +X post 2.650; rib 1 and rib 2 2.788 to the coil at (-16.878, 16.868, -3.0 / 25.0); foot 13.250",
+      "status": "PASS_ASSUMED",
+      "method": "clearance (per face)",
+      "assumes": [
+        "A-01",
+        "A-03"
+      ]
+    },
+    {
+      "gate": "REQ-04",
+      "measured": 6.908e-13,
+      "unit": "mm",
+      "required": "clearance(cradle, sleeve) = 0 on the saddle arcs; interference <= 0",
+      "margin": -6.908e-13,
+      "at": "(-18.844, 18.844, -3.000) rib 1 arc; rib 1 and rib 2 each 6.9e-13, interference 0.0 mm3; sleeve outer r = cradle inner r = 26.650 at theta 46, 90, 134",
+      "status": "PASS_ASSUMED",
+      "method": "clearance, interference",
+      "assumes": [
+        "A-03"
+      ]
+    },
+    {
+      "gate": "REQ-05",
+      "measured": 2.0,
+      "unit": "mm",
+      "required": "4 through-slots along X, clear >= 6.0 (Z) x 2.5 (Y), centres y 7.0 +-0.5, z 17.0/28.0 +-0.5, 45 deg gables, ligament >= 2.0",
+      "margin": 0.0,
+      "at": "all four slots (x +-31.5 sections): clear 6.000 x 2.500 (margin 0.000), centre y 7.000, z 17.000 / 28.000 (margin 0.500), roofs 45.000 deg (margin 0.000), through 4.0 (x 29.5..33.5); ligaments 2.000 at block ends (z 12..14, 31..33), 5.000 between slots",
+      "status": "PASS_ASSUMED",
+      "method": "sections at x = +-31.5 and y = 7.0; overhang_census",
+      "assumes": [
+        "A-07",
+        "A-13"
+      ]
+    },
+    {
+      "gate": "REQ-06",
+      "measured": 29.5,
+      "unit": "mm",
+      "required": "post inner faces |x| = 29.5 +-0.1, spanning z 12.0..33.0 +-0.1; clearance post|OD-H01 >= 2.0",
+      "margin": 0.1,
+      "at": "inner faces x -29.500 and 29.500, z 12.000..33.000 (margin 0.100); clearance -X 2.300, +X 2.650",
+      "status": "PASS_ASSUMED",
+      "method": "planar face envelope, clearance",
+      "assumes": [
+        "A-06"
+      ]
+    },
+    {
+      "gate": "REQ-07",
+      "measured": 3.4,
+      "unit": "mm",
+      "required": "four d3.4 +-0.1 through-holes along Y at (x +-34.0, z -4.0) and (x +-34.0, z 37.0), offset <= 0.10",
+      "margin": 0.1,
+      "at": "all four: d 3.400, axis +Y, offset 0.000, length 3.0, through",
+      "status": "PASS_ASSUMED",
+      "method": "bore_census, locate_bore",
+      "assumes": [
+        "A-11"
+      ]
+    },
+    {
+      "gate": "REQ-08",
+      "measured": 40.0,
+      "unit": "mm",
+      "required": "underside y = 40.00 +-0.10 (envelope max_y), 3.0 +-0.1 thick",
+      "margin": 0.1,
+      "at": "max_y 40.000; foot top face y 37.000, thickness 3.000 (margin 0.100)",
+      "status": "PASS_ASSUMED",
+      "method": "envelope; foot top face; section x = 34",
+      "assumes": [
+        "A-11"
+      ]
+    },
+    {
+      "gate": "REQ-09",
+      "measured": null,
+      "unit": "none",
+      "required": "Soft: no unacceptable vibration to the chassis with the OEM sleeve (bench)",
+      "margin": null,
+      "at": "not geometric; answered by the first run",
+      "status": "INCONCLUSIVE",
+      "method": "none (bench gate)",
+      "assumes": [
+        "A-03",
+        "A-05"
+      ]
+    }
+  ],
+  "feature_census": [
+    {
+      "feature": "F01 foot plate x1",
+      "expected": "1 plate x +-40, y 37..40, z -10..42",
+      "found": "top face y 37.000, underside y 40.000, x -40..40, z -10..42",
+      "status": "PASS"
+    },
+    {
+      "feature": "F02 saddle rib 1 with web",
+      "expected": "arc r 26.65 theta 45..135, z -3..3, web x +-22.627 to the foot",
+      "found": "concave cylinder r 26.650 z -3..3, faces z -3.000 / 3.000, web faces x +-22.627",
+      "status": "PASS"
+    },
+    {
+      "feature": "F03 saddle rib 2 with web",
+      "expected": "arc r 26.65 theta 45..135, z 25..31",
+      "found": "concave cylinder r 26.650 z 25..31, faces z 25.000 / 31.000",
+      "status": "PASS"
+    },
+    {
+      "feature": "F04 post blocks x2",
+      "expected": "x +-29.5..+-33.5, y 0..37, z 12..33",
+      "found": "2 blocks, inner faces |x| 29.500, outer 33.500, top y 0.000, z 12.000..33.000",
+      "status": "PASS"
+    },
+    {
+      "feature": "F05 strap slots x4",
+      "expected": "6.0 x 2.5 clear, y 7.0, z 17 / 28, 45 deg gable, through X",
+      "found": "4 slots (2 per block), 6.000 x 2.500, y 7.000, z 17.000 / 28.000, gables 45.000 deg, apex y 2.750, through 4.0",
+      "status": "PASS"
+    },
+    {
+      "feature": "F06 frame holes x4",
+      "expected": "d3.4 through along Y at (+-34, -4) and (+-34, 37)",
+      "found": "4 bores d 3.400, offset 0.000, through, length 3.0",
+      "status": "PASS"
+    },
+    {
+      "feature": "F07 check assembly",
+      "expected": "cradle + OD-H01 + od_h02_sleeve_assumed_A03 at identity",
+      "found": "3 labelled bodies; cradle identical to the part file (common volume = 25458.506 mm3); OD-H01 identical to the input (common volume 114903.269 mm3, centroid equal)",
+      "status": "PASS"
+    },
+    {
+      "feature": "Face tally (plan section 6 as re-tallied)",
+      "expected": "plane 48, cylinder 6 (concave 6), bores 4, no other kinds",
+      "found": "plane 48, cylinder 6, concave 6, convex 0, bores 4, cone/sphere/torus/bspline/other 0",
+      "status": "PASS"
+    }
+  ],
+  "plausibility": [
+    {
+      "question": "P1 gravity",
+      "answer": "Foot on the OD-C01 floor plane y 40 (+Y down); OD-H01 centroid (-0.067, -0.872, 7.232) lies over the saddle span z -3.0..31.0 (10.23 inside rib 1's front face, 23.77 inside rib 2's rear face); load path saddle, web, foot, four M3 screws.",
+      "status": "YES"
+    },
+    {
+      "question": "P2 function chains",
+      "answer": "Tie path connected: slots 6.0 x 2.5 at y 7 on z 17 and 28 pass a 4.8 x 1.4 tie beyond the -Y features (z <= 13.6); the tie drops through the 2.30 / 2.65 post-to-plate gaps and crosses the plate corners at r 31.66 / 31.36 (A-07, F2).",
+      "status": "YES"
+    },
+    {
+      "question": "P3 moving parts",
+      "answer": "No moving part; the vibrating pump keeps 2.300 to the -X post, 2.650 +X, 2.788 to both ribs; lowered along +Y from 60 mm it keeps >= 2.300 and 0.0 mm3, the sleeve touching only at the final pose.",
+      "status": "YES"
+    },
+    {
+      "question": "P4 human factors",
+      "answer": "The pump (x -27.20..26.85) drops between post faces 59.0 apart; the four holes are open from above; the nearest post corner is 4.03 from each rear hole axis, so an M3 head (r 2.75) and a driver shaft clear it.",
+      "status": "YES"
+    },
+    {
+      "question": "P5 absurdity",
+      "answer": "An 80 x 52 x 40 mm, 32.3 g PETG two-saddle cradle for a 0.5 kg vibratory pump on a rubber sleeve is in proportion with OEM pump brackets.",
+      "status": "YES"
+    },
+    {
+      "question": "P6 floating, embedded, mirrored, upside-down",
+      "answer": "One solid standing on its foot, saddle faces toward the pump (-Y), in the spec frame (OD-H01 in the assembly equals the input); the cradle is not embedded in anything. The assumed sleeve solid shares 1427.17 mm3 with OD-H01 (F6), an A-03 model limit outside the cradle.",
+      "status": "YES"
+    }
+  ],
+  "positive_controls": [
+    {
+      "check": "validity (solid_count)",
+      "mutant": "delivered part plus a loose 5 mm cube",
+      "got": "FAIL"
+    },
+    {
+      "check": "validity (naked_edges)",
+      "mutant": "delivered part with its foot end face removed (open shell)",
+      "got": "FAIL"
+    },
+    {
+      "check": "envelope (U-02)",
+      "mutant": "foot extended 0.5 mm in +Z (z to 42.5)",
+      "got": "FAIL"
+    },
+    {
+      "check": "envelope max_y (REQ-08)",
+      "mutant": "foot underside moved 0.3 mm down (y 40.3)",
+      "got": "FAIL"
+    },
+    {
+      "check": "feature_census, bore_census (U-05)",
+      "mutant": "hole (-34, -4) filled",
+      "got": "FAIL"
+    },
+    {
+      "check": "locate_bore offset (REQ-07)",
+      "mutant": "hole (-34, -4) moved 0.5 mm to z -3.5",
+      "got": "FAIL"
+    },
+    {
+      "check": "locate_bore diameter (D-04a, REQ-07)",
+      "mutant": "hole (34, 37) drilled 3.2",
+      "got": "FAIL"
+    },
+    {
+      "check": "min_wall, min_wall_wide (D-01a/b, D-06a, U-06)",
+      "mutant": "-X rear slot widened to z 32.5 (ligament 0.5)",
+      "got": "FAIL"
+    },
+    {
+      "check": "sections: slot ligament (REQ-05)",
+      "mutant": "-X rear slot widened to z 32.5 (ligament 0.5)",
+      "got": "FAIL"
+    },
+    {
+      "check": "overhang_census (D-03a)",
+      "mutant": "+X post: flat-roofed pocket y 12..14, z 15..22 cut through",
+      "got": "FAIL"
+    },
+    {
+      "check": "bridge_span from faces and sections (D-03b)",
+      "mutant": "same pocket: 7.0 mm flat ceiling",
+      "got": "FAIL"
+    },
+    {
+      "check": "sections: slot clear section (REQ-05)",
+      "mutant": "+X front slot floor raised 0.3 (clear 2.2)",
+      "got": "FAIL"
+    },
+    {
+      "check": "sections: rib faces (REQ-02)",
+      "mutant": "rib 1 rear face moved to z 3.2",
+      "got": "FAIL"
+    },
+    {
+      "check": "radial_profile (REQ-01)",
+      "mutant": "both saddles opened to r 26.75",
+      "got": "FAIL"
+    },
+    {
+      "check": "clearance == 0 (REQ-04, U-03 sleeve)",
+      "mutant": "both saddles opened to r 26.75",
+      "got": "FAIL"
+    },
+    {
+      "check": "radial_extent window (REQ-02)",
+      "mutant": "1 mm lump at r 30, theta 40, joined to the web",
+      "got": "FAIL"
+    },
+    {
+      "check": "interference (REQ-04, U-03)",
+      "mutant": "saddle 1 closed to r 26.55 over its arc",
+      "got": "FAIL"
+    },
+    {
+      "check": "clearance (REQ-03, D-04c, U-03)",
+      "mutant": "-X post inner face moved to x -29.0",
+      "got": "FAIL"
+    },
+    {
+      "check": "post faces (REQ-06)",
+      "mutant": "-X post inner face moved to x -29.0",
+      "got": "FAIL"
+    },
+    {
+      "check": "compare_step (U-04)",
+      "mutant": "hole (-34, -4) filled, compared with the delivered STEP",
+      "got": "FAIL"
+    },
+    {
+      "check": "mesh_sagitta (U-07)",
+      "mutant": "STL at tolerance 0.1 / 0.5 rad",
+      "got": "FAIL"
+    },
+    {
+      "check": "mesh_deviation (U-07, V-05)",
+      "mutant": "STL at tolerance 0.1 / 0.5 rad",
+      "got": "FAIL"
+    },
+    {
+      "check": "mesh_census (U-07)",
+      "mutant": "delivered STL with its last triangle removed",
+      "got": "FAIL"
+    },
+    {
+      "check": "mass_properties com (P1)",
+      "mutant": "OD-H01 moved 15 mm toward -Z",
+      "got": "FAIL"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "gate": "REQ-09",
+      "kind": "SOFT_GATE_MISS",
+      "measured": null,
+      "unit": "none",
+      "required": "Soft: no unacceptable vibration to the chassis with the OEM sleeve fitted (bench)",
+      "margin": null,
+      "at": null,
+      "blocks": false,
+      "risk": "UNKNOWN",
+      "risk_basis": "a bench gate no geometric check can answer; the rubber path rests on A-03 and A-05, and the ties also bear on the steel side plates (F2), a path around the sleeve",
+      "fix_direction": "bench-test the first print with the OEM sleeve and ties fitted; add a rubber pad under the tie at the plate corners if it buzzes"
+    },
+    {
+      "id": "F2",
+      "gate": "P2 (RV01 F3, A-07)",
+      "kind": "OBSERVATION",
+      "measured": 31.66,
+      "unit": "mm",
+      "required": "the tie rides on the sleeve (spec section 4 C1)",
+      "margin": null,
+      "at": "side plate corners (-27.20, -16.20) r 31.66 and (26.85, -16.20) r 31.36, over the tie bands z 14.6..19.4 and 25.6..30.4",
+      "blocks": false,
+      "risk": "MEDIUM",
+      "risk_basis": "the modelled sleeve (A-03) stops at |x| 23.5, so between the post slots and the sleeve the tie crosses bare steel plate corners; A-07 assumes the real sleeve covers them; a sheet edge can chafe the tie and carry vibration around the rubber",
+      "fix_direction": "confirm on OD-H02 (scan or calipers); if the plates are bare, route the tie under the saddle or add a pad at the corners"
+    },
+    {
+      "id": "F3",
+      "gate": "REQ-04 (RV01 F4, A-03)",
+      "kind": "OBSERVATION",
+      "measured": 6.908e-13,
+      "unit": "mm",
+      "required": "clearance = 0 on the saddle arcs, interference <= 0",
+      "margin": -6.908e-13,
+      "at": "(-18.844, 18.844, -3.000) rib 1; rib 2 the same",
+      "blocks": false,
+      "risk": "MEDIUM",
+      "risk_basis": "the zero gap holds only at r 26.650 exactly (controls: r 26.75 gives a 0.100 gap, r 26.55 on one arc 26.41 mm3); FDM holds about +-0.1..0.2; the coil under the saddles reads r 23.58..23.86 against the sleeve ID radius 23.65, so a real tube sleeve would stand up to 0.21 proud at theta 135 and 0.07 shy at theta 45",
+      "fix_direction": "retire A-03 with OD-H02 calipers; restate REQ-04 as a banded squeeze the rubber tolerates (for example 0.0..0.3 radial)"
+    },
+    {
+      "id": "F4",
+      "gate": "REQ-03 (RV01 F5, A-01, A-04)",
+      "kind": "OBSERVATION",
+      "measured": 2.3,
+      "unit": "mm",
+      "required": ">= 2.0",
+      "margin": 0.3,
+      "at": "(-29.500, 0.000, 12.0..33.0) -X post inner face to the -X side plate x -27.20",
+      "blocks": false,
+      "risk": "MEDIUM",
+      "risk_basis": "margin 0.300 is below the scan's p95 deviation 0.448 (A-01, max 2.49); the post face runs parallel to the plate over 21 x 37 mm, so a plate 0.3 further out touches along its length",
+      "fix_direction": "calipers on the frame plates (A-01, A-04); if they read wider, move post_x_in outward in the spec"
+    },
+    {
+      "id": "F5",
+      "gate": "D-01b, U-06, REQ-05, D-03a (RV01 F6)",
+      "kind": "OBSERVATION",
+      "measured": 2.0,
+      "unit": "mm",
+      "required": "ligament >= 2.0; slot clear >= 6.0 x 2.5; roofs >= 45 deg",
+      "margin": -3.1e-15,
+      "at": "(-33.318, 6.101, 33.000) and the other three block-end ligaments; all four slots",
+      "blocks": false,
+      "risk": "LOW",
+      "risk_basis": "zero margin by the spec's own dimensions (21.0 block, 6.0 slots at z 17 / 28); a 2.0 ligament is five 0.4 perimeters in a 4.0-deep bar, and a 2.5 clear slot passes a 1.4 tie, so function does not hang on the last 0.1",
+      "fix_direction": "spec: a 22.0 block or 5.8 slots for margin; nothing needed in the build"
+    },
+    {
+      "id": "F6",
+      "gate": "P6 (A-03 sleeve model)",
+      "kind": "OBSERVATION",
+      "measured": 1427.17,
+      "unit": "mm3",
+      "required": "not a section 5 pair (information): the assumed sleeve solid sits on OD-H01 without overlap",
+      "margin": null,
+      "at": "-Y arc 1163.18 mm3 (812.15 at z -6..5.5, 309.32 at z 5.5..13.6, the terminal block, spade tabs and slot box); +Y arc 263.99 mm3 (coil off-axis)",
+      "blocks": false,
+      "risk": "LOW",
+      "risk_basis": "the overlap is between two reference bodies, not the cradle; it shows the A-03 tube cannot be the real sleeve on the -Y side, where the cradle does not touch it; the +Y part is F3",
+      "fix_direction": "model OD-H02 from a scan or calipers when it lands (A-03)"
+    }
+  ],
+  "least_sure_answers": [
+    {
+      "item": "REQ-03 margin 0.300 at the -X post is below the scan p95 0.448 (A-01)",
+      "answer": "Confirmed: 2.300 from the -X post inner face (x -29.500, z 12..33) to the -X side plate x -27.200, +X 2.650; the vertical insertion path keeps 2.300; a control with the post at x -29.0 reads 1.800 and FAILs. Rated F4 MEDIUM."
+    },
+    {
+      "item": "REQ-04 contact and the sleeve shape rest wholly on A-03; rib 1 sits 3.0 inside the assumed sleeve's front end",
+      "answer": "Confirmed: 6.9e-13 on each rib, 0.0 mm3; rib 1's front face z -3.000 is 3.0 inside the sleeve end z -6.0; the coil under the saddles reads r 23.58..23.86 against the sleeve ID 23.65, so the fit is uncertain by about 0.2 either way. Rated F3 MEDIUM."
+    },
+    {
+      "item": "F2 answered with the uniform-density centroid of the scan solid (z 7.23)",
+      "answer": "Confirmed: centroid z 7.232 in both the input and the assembly copy of OD-H01, inside z -3.0..31.0 with 10.23 to the nearer end; a real centroid would have to sit more than 10 mm toward the outlet to leave the span, which a coil and frame spanning z -12.4..37.65 make unlikely. RV01 F2 closed."
+    }
+  ],
+  "assumptions_relied_on": [
+    "A-01",
+    "A-03",
+    "A-06",
+    "A-07",
+    "A-10",
+    "A-11",
+    "A-13"
+  ]
+}
