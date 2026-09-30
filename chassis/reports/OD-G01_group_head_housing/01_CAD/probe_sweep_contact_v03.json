@@ -1,0 +1,122 @@
+[
+ {
+  "case": "lug_inner_r_lo",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_lug_inner_r_lo.step",
+  "locked_rim_z_measured": -11.252303838729858,
+  "within_a14_band": true,
+  "clearance_at_locked": 3.552713678800501e-15,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.19971030900301787,
+  "probe_in_band": true,
+  "at": "(30.770139, -7.105979, -6.452609)"
+ },
+ {
+  "case": "lug_inner_r_hi",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_lug_inner_r_hi.step",
+  "locked_rim_z_measured": -11.24976235628128,
+  "within_a14_band": true,
+  "clearance_at_locked": 8.881784197001252e-16,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.1997146361827531,
+  "probe_in_band": true,
+  "at": "(30.976013, -7.103169, -6.450059)"
+ },
+ {
+  "case": "lug_starts_lo",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_lug_starts_lo.step",
+  "locked_rim_z_measured": -11.24383020401001,
+  "within_a14_band": true,
+  "clearance_at_locked": 8.881784197001252e-16,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.1997137724409129,
+  "probe_in_band": true,
+  "at": "(30.873091, -7.104552, -6.444128)"
+ },
+ {
+  "case": "lug_starts_hi",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_lug_starts_hi.step",
+  "locked_rim_z_measured": -11.258242428302765,
+  "within_a14_band": true,
+  "clearance_at_locked": 8.881784197001252e-16,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.13822963813566266,
+  "probe_in_band": false,
+  "at": "(-6.592051, 30.986566, -10.52)"
+ },
+ {
+  "case": "lug_span_lo",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_lug_span_lo.step",
+  "locked_rim_z_measured": -11.251028716564178,
+  "within_a14_band": true,
+  "clearance_at_locked": 1.9860273225978185e-15,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.1997124662918752,
+  "probe_in_band": true,
+  "at": "(30.873086, -7.104573, -6.451329)"
+ },
+ {
+  "case": "lug_span_hi",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_lug_span_hi.step",
+  "locked_rim_z_measured": -11.251028716564178,
+  "within_a14_band": true,
+  "clearance_at_locked": 1.9860273225978185e-15,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.1997124662918752,
+  "probe_in_band": true,
+  "at": "(30.873086, -7.104573, -6.451329)"
+ },
+ {
+  "case": "stop_end_off_lo",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_stop_end_off_lo.step",
+  "locked_rim_z_measured": -11.251028716564178,
+  "within_a14_band": true,
+  "clearance_at_locked": 1.9860273225978185e-15,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.1997124662918752,
+  "probe_in_band": true,
+  "at": "(30.873086, -7.104573, -6.451329)"
+ },
+ {
+  "case": "stop_end_off_hi",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_stop_end_off_hi.step",
+  "locked_rim_z_measured": -11.251028716564178,
+  "within_a14_band": true,
+  "clearance_at_locked": 1.9860273225978185e-15,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.1997124662918752,
+  "probe_in_band": true,
+  "at": "(30.873086, -7.104573, -6.451329)"
+ },
+ {
+  "case": "stop_bottom_z_lo",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_stop_bottom_z_lo.step",
+  "locked_rim_z_measured": -11.251028716564178,
+  "within_a14_band": true,
+  "clearance_at_locked": 1.9860273225978185e-15,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.1997124662918752,
+  "probe_in_band": true,
+  "at": "(30.873086, -7.104573, -6.451329)"
+ },
+ {
+  "case": "stop_bottom_z_hi",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_stop_bottom_z_hi.step",
+  "locked_rim_z_measured": -11.251028716564178,
+  "within_a14_band": true,
+  "clearance_at_locked": 1.9860273225978185e-15,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.1997124662918752,
+  "probe_in_band": true,
+  "at": "(30.873086, -7.104573, -6.451329)"
+ },
+ {
+  "case": "under_knots_lo",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_under_knots_lo.step",
+  "locked_rim_z_measured": -11.551028788089752,
+  "within_a14_band": false,
+  "clearance_at_locked": 1.2560739669470201e-15,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.19971253771465403,
+  "probe_in_band": true,
+  "at": "(30.873086, -7.104573, -6.751329)"
+ },
+ {
+  "case": "under_knots_hi",
+  "file": "01_CAD/sweep_v02/od_g01_housing_C1_v02_under_knots_hi.step",
+  "locked_rim_z_measured": -10.951028823852539,
+  "within_a14_band": false,
+  "clearance_at_locked": 8.881784197001252e-16,
+  "clearance_at_locked_minus_0.20_along_-Z": 0.1997125734260445,
+  "probe_in_band": true,
+  "at": "(30.873086, -7.104573, -6.151329)"
+ }
+]

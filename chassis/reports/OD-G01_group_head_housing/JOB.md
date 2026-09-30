@@ -5,9 +5,9 @@ code: ODG01
 milestone: M1
 title: "Open Dedica OD-G01 printed group head housing"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
-next_action: "J3 round 2 attempt 2: WP-06 re-measures the unchanged geometry as v03 under spec 1.3; then J4 review"
+next_action: "J4: reviewer package WP-04 writes RV01 for od_g01_housing_v03"
 data_class: PUBLIC
 size: M
 process: [FDM]
