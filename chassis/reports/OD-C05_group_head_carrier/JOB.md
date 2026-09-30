@@ -5,15 +5,15 @@ code: ODC05
 milestone: M1
 title: "Open Dedica OD-C05 printed group head carrier"
 lane: CAD
-state: J2_PLAN
+state: J3_BUILD
 blocked_on: null
-next_action: "J2: designer package WP-02 writes the plan for od_c05_carrier_v01"
+next_action: "J3: designer package WP-03 builds od_c05_carrier_v01 to spec 1.1"
 data_class: PUBLIC
 size: S
 process: [FDM]
 gate_sections: [U, D, E]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.0"
+spec_version: "1.1"
 workspace: "${OGUZ_JOBS}/20260930-od-c05-group-head-carrier"
 delivery: "${OGUZ_DELIVERY}/20260930-od-c05-group-head-carrier"
 artifacts: "${OGUZ_ARTIFACTS}/20260930-od-c05-group-head-carrier"
@@ -21,12 +21,14 @@ repo_commit: d7ea010502a30dd025c5123992847da1b15f3ee3
 active_target: od_c05_carrier_v01
 revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13, A-14]
-attempts: {build: 0, export: 0, tool: 0}
+attempts: {build: 1, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
 reviews: []
 usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
+  - {gate: spec_ratified, outcome: "1.1", date: "2026-09-30"}
+  - {gate: exception_signed, outcome: D-03a, date: "2026-09-30"}
 deliverables: [STEP, STL, "3MF"]
 physical_outcome: n/a
 client_source_delete_after: null
