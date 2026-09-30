@@ -1,0 +1,1607 @@
+{
+ "rows": [
+  {
+   "gate": "U-01",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-01",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "brep_valid",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-01",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "naked_edges",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 80.0,
+   "unit": "mm",
+   "required": "in [79.9, 80.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_x",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 40.0,
+   "unit": "mm",
+   "required": "in [39.9, 40.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_y",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 52.0,
+   "unit": "mm",
+   "required": "in [51.9, 52.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_z",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-08",
+   "measured": 40.0,
+   "unit": "mm",
+   "required": "in [39.9, 40.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_y",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "D-02",
+   "measured": 80.0,
+   "unit": "mm",
+   "required": "<= 420",
+   "margin": 340.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_size_x",
+   "assumes": [
+    "A-10"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "D-02",
+   "measured": 52.0,
+   "unit": "mm",
+   "required": "<= 420",
+   "margin": 368.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_size_z",
+   "assumes": [
+    "A-10"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "D-02",
+   "measured": 40.0,
+   "unit": "mm",
+   "required": "<= 500",
+   "margin": 460.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_size_y",
+   "assumes": [
+    "A-10"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 48,
+   "unit": "count",
+   "required": "plane_faces == 48",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_plane_faces",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 6,
+   "unit": "count",
+   "required": "cylinder_faces == 6",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_cylinder_faces",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 6,
+   "unit": "count",
+   "required": "concave_cylinders == 6",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_concave_cylinders",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0,
+   "unit": "count",
+   "required": "convex_cylinders == 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_convex_cylinders",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 4,
+   "unit": "count",
+   "required": "bores == 4",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_bores",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0,
+   "unit": "count",
+   "required": "cone_faces == 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_cone_faces",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0,
+   "unit": "count",
+   "required": "sphere_faces == 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_sphere_faces",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0,
+   "unit": "count",
+   "required": "torus_faces == 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_torus_faces",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0,
+   "unit": "count",
+   "required": "bspline_faces == 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_bspline_faces",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0,
+   "unit": "count",
+   "required": "other_faces == 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_other_faces",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "in [3.3, 3.5]",
+   "margin": 0.1,
+   "at": "(-34.0000, 37.0000, -4.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(-34.0000, 37.0000, -4.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": "(-34.0000, 37.0000, -4.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_through",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": ">= 3.25",
+   "margin": 0.15,
+   "at": "(-34.0000, 37.0000, -4.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "in [3.3, 3.5]",
+   "margin": 0.1,
+   "at": "(-34.0000, 37.0000, 37.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(-34.0000, 37.0000, 37.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": "(-34.0000, 37.0000, 37.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_through",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": ">= 3.25",
+   "margin": 0.15,
+   "at": "(-34.0000, 37.0000, 37.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "in [3.3, 3.5]",
+   "margin": 0.1,
+   "at": "(34.0000, 37.0000, -4.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(34.0000, 37.0000, -4.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": "(34.0000, 37.0000, -4.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_through",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": ">= 3.25",
+   "margin": 0.15,
+   "at": "(34.0000, 37.0000, -4.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "in [3.3, 3.5]",
+   "margin": 0.1,
+   "at": "(34.0000, 37.0000, 37.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(34.0000, 37.0000, 37.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": "(34.0000, 37.0000, 37.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_through",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": ">= 3.25",
+   "margin": 0.15,
+   "at": "(34.0000, 37.0000, 37.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "D-01a",
+   "measured": 1.999999999999997,
+   "unit": "mm",
+   "required": ">= 0.8",
+   "margin": 1.2,
+   "at": "(-33.3182, 6.1011, 33.0000) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "D-01b",
+   "measured": 1.999999999999997,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": -3.1086244689504383e-15,
+   "at": "(-33.3182, 6.1011, 33.0000) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "D-06a",
+   "measured": 1.999999999999997,
+   "unit": "mm",
+   "required": ">= 1.0",
+   "margin": 1.0,
+   "at": "(-33.3182, 6.1011, 33.0000) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-06",
+   "measured": 1.999999999999997,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": -3.1086244689504383e-15,
+   "at": "(-33.3182, 6.1011, 33.0000) mm",
+   "status": "PASS",
+   "method": "min_wall_wide",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "D-03a",
+   "measured": 45.0,
+   "unit": "deg",
+   "required": ">= 45.0",
+   "margin": 0.0,
+   "at": "(-29.5000, 5.7500, 20.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "overhang_census",
+   "assumes": [
+    "A-13"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "D-03b",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 5.0",
+   "margin": 5.0,
+   "at": null,
+   "status": "PASS",
+   "method": "bridge_span",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 26.649999999999995,
+   "unit": "mm",
+   "required": "in [26.6, 26.7]",
+   "margin": 0.05,
+   "at": "(17.1303, 20.4151, -2.4500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_min",
+   "assumes": [
+    "A-03"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 26.650000000000002,
+   "unit": "mm",
+   "required": "in [26.6, 26.7]",
+   "margin": 0.05,
+   "at": "(-15.2858, 21.8304, -2.4500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_max",
+   "assumes": [
+    "A-03"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 26.649999999999995,
+   "unit": "mm",
+   "required": "in [26.6, 26.7]",
+   "margin": 0.05,
+   "at": "(17.1303, 20.4151, 25.5500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_min",
+   "assumes": [
+    "A-03"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 26.650000000000002,
+   "unit": "mm",
+   "required": "in [26.6, 26.7]",
+   "margin": 0.05,
+   "at": "(-15.2858, 21.8304, 25.5500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_max",
+   "assumes": [
+    "A-03"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 26.649999999999995,
+   "unit": "mm",
+   "required": "<= 26.7",
+   "margin": 0.05,
+   "at": "(17.1303, 20.4151, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 26.65,
+   "unit": "mm",
+   "required": "<= 26.7",
+   "margin": 0.05,
+   "at": "(-17.1303, 20.4151, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": "(40, 0.0)",
+   "status": "PASS_ASSUMED",
+   "method": "no_material_r_le_32",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": "(140, 0.0)",
+   "status": "PASS_ASSUMED",
+   "method": "no_material_r_le_32",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 26.649999999999995,
+   "unit": "mm",
+   "required": "<= 26.7",
+   "margin": 0.05,
+   "at": "(17.1303, 20.4151, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 26.65,
+   "unit": "mm",
+   "required": "<= 26.7",
+   "margin": 0.05,
+   "at": "(-17.1303, 20.4151, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": "(40, 28.0)",
+   "status": "PASS_ASSUMED",
+   "method": "no_material_r_le_32",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": "(140, 28.0)",
+   "status": "PASS_ASSUMED",
+   "method": "no_material_r_le_32",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": -3.0,
+   "unit": "mm",
+   "required": "in [-3.1, -2.9]",
+   "margin": 0.1,
+   "at": "(0.0000, 30.0000, -3.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "rib_face_z",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 3.0,
+   "unit": "mm",
+   "required": "in [2.9, 3.1]",
+   "margin": 0.1,
+   "at": "(0.0000, 30.0000, 3.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "rib_face_z",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 25.0,
+   "unit": "mm",
+   "required": "in [24.9, 25.1]",
+   "margin": 0.1,
+   "at": "(0.0000, 30.0000, 25.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "rib_face_z",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 31.0,
+   "unit": "mm",
+   "required": "in [30.9, 31.1]",
+   "margin": 0.1,
+   "at": "(0.0000, 30.0000, 31.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "rib_face_z",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 6.0,
+   "unit": "mm",
+   "required": ">= 6.0",
+   "margin": 0.0,
+   "at": "(-31.5000, 7.0000, 17.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_clear_z",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": ">= 2.5",
+   "margin": 0.0,
+   "at": "(-31.5000, 7.0000, 17.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_clear_y",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 7.0,
+   "unit": "mm",
+   "required": "in [6.5, 7.5]",
+   "margin": 0.5,
+   "at": "(-31.5000, 7.0000, 17.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_yc",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 17.0,
+   "unit": "mm",
+   "required": "in [16.5, 17.5]",
+   "margin": 0.5,
+   "at": "(-31.5000, 7.0000, 17.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_zc",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 45.00000000000001,
+   "unit": "deg",
+   "required": ">= 45.0",
+   "margin": 7.105427357601002e-15,
+   "at": "(-31.5000, 7.0000, 17.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_roof_deg",
+   "assumes": [
+    "A-07",
+    "A-13"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 6.0,
+   "unit": "mm",
+   "required": ">= 6.0",
+   "margin": 0.0,
+   "at": "(-31.5000, 7.0000, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_clear_z",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": ">= 2.5",
+   "margin": 0.0,
+   "at": "(-31.5000, 7.0000, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_clear_y",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 7.0,
+   "unit": "mm",
+   "required": "in [6.5, 7.5]",
+   "margin": 0.5,
+   "at": "(-31.5000, 7.0000, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_yc",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 28.0,
+   "unit": "mm",
+   "required": "in [27.5, 28.5]",
+   "margin": 0.5,
+   "at": "(-31.5000, 7.0000, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_zc",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 45.0,
+   "unit": "deg",
+   "required": ">= 45.0",
+   "margin": 0.0,
+   "at": "(-31.5000, 7.0000, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_roof_deg",
+   "assumes": [
+    "A-07",
+    "A-13"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 6.0,
+   "unit": "mm",
+   "required": ">= 6.0",
+   "margin": 0.0,
+   "at": "(31.5000, 7.0000, 17.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_clear_z",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": ">= 2.5",
+   "margin": 0.0,
+   "at": "(31.5000, 7.0000, 17.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_clear_y",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 7.0,
+   "unit": "mm",
+   "required": "in [6.5, 7.5]",
+   "margin": 0.5,
+   "at": "(31.5000, 7.0000, 17.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_yc",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 17.0,
+   "unit": "mm",
+   "required": "in [16.5, 17.5]",
+   "margin": 0.5,
+   "at": "(31.5000, 7.0000, 17.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_zc",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 45.00000000000001,
+   "unit": "deg",
+   "required": ">= 45.0",
+   "margin": 7.105427357601002e-15,
+   "at": "(31.5000, 7.0000, 17.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_roof_deg",
+   "assumes": [
+    "A-07",
+    "A-13"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 6.0,
+   "unit": "mm",
+   "required": ">= 6.0",
+   "margin": 0.0,
+   "at": "(31.5000, 7.0000, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_clear_z",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": ">= 2.5",
+   "margin": 0.0,
+   "at": "(31.5000, 7.0000, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_clear_y",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 7.0,
+   "unit": "mm",
+   "required": "in [6.5, 7.5]",
+   "margin": 0.5,
+   "at": "(31.5000, 7.0000, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_yc",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 28.0,
+   "unit": "mm",
+   "required": "in [27.5, 28.5]",
+   "margin": 0.5,
+   "at": "(31.5000, 7.0000, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_zc",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 45.0,
+   "unit": "deg",
+   "required": ">= 45.0",
+   "margin": 0.0,
+   "at": "(31.5000, 7.0000, 28.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_roof_deg",
+   "assumes": [
+    "A-07",
+    "A-13"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.0,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 0.0,
+   "at": "(-31.5000, 7.0000, 13.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_ligament",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 5.0,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 3.0,
+   "at": "(-31.5000, 7.0000, 22.5000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_ligament",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.0,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 0.0,
+   "at": "(-31.5000, 7.0000, 32.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_ligament",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.0,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 0.0,
+   "at": "(31.5000, 7.0000, 13.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_ligament",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 5.0,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 3.0,
+   "at": "(31.5000, 7.0000, 22.5000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_ligament",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.0,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 0.0,
+   "at": "(31.5000, 7.0000, 32.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "slot_ligament",
+   "assumes": [
+    "A-07"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 29.5,
+   "unit": "mm",
+   "required": "in [29.4, 29.6]",
+   "margin": 0.1,
+   "at": "(-29.5000, 18.5000, 22.5000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "post_inner_x",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 12.0,
+   "unit": "mm",
+   "required": "in [11.9, 12.1]",
+   "margin": 0.1,
+   "at": "(-29.5000, 18.5000, 12.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "post_z0",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 33.0,
+   "unit": "mm",
+   "required": "in [32.9, 33.1]",
+   "margin": 0.1,
+   "at": "(-29.5000, 18.5000, 33.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "post_z1",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 29.5,
+   "unit": "mm",
+   "required": "in [29.4, 29.6]",
+   "margin": 0.1,
+   "at": "(29.5000, 18.5000, 22.5000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "post_inner_x",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 12.0,
+   "unit": "mm",
+   "required": "in [11.9, 12.1]",
+   "margin": 0.1,
+   "at": "(29.5000, 18.5000, 12.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "post_z0",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 33.0,
+   "unit": "mm",
+   "required": "in [32.9, 33.1]",
+   "margin": 0.1,
+   "at": "(29.5000, 18.5000, 33.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "post_z1",
+   "assumes": [
+    "A-06"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-08",
+   "measured": 3.0,
+   "unit": "mm",
+   "required": "in [2.9, 3.1]",
+   "margin": 0.1,
+   "at": "(0.0000, 37.0000, 16.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "foot_thickness",
+   "assumes": [
+    "A-11"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 2.3000000000000007,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 0.3,
+   "at": "(-29.5000, 0.0000, 33.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-03"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "D-04c",
+   "measured": 2.3000000000000007,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 1.8,
+   "at": "(-29.5000, 0.0000, 33.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 2.3000000000000007,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 0.3,
+   "at": "(-29.5000, 0.0000, 33.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-03"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 6.908452493474598e-13,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": -6.908452493474598e-13,
+   "at": "(-18.8444, 18.8444, -3.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-03"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-03"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 6.908452493474598e-13,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": -6.908452493474598e-13,
+   "at": "(-18.8444, 18.8444, -3.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-03"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-03"
+   ],
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_schema",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_solids",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.001",
+   "margin": 0.001,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_volume_delta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_faces_delta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_labels",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_valid",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.001",
+   "margin": 0.001,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_volume_delta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_faces_delta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_labels",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_valid",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.004889517293376808,
+   "unit": "mm",
+   "required": "<= 0.01",
+   "margin": 0.005110483,
+   "at": "(-18.4766, 19.1984, 1.5000) mm",
+   "status": "PASS",
+   "method": "stl_max_sagitta",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.1,
+   "unit": "rad",
+   "required": "<= 0.10000260434979698",
+   "margin": 2.604e-06,
+   "at": null,
+   "status": "PASS",
+   "method": "stl_angular_tolerance",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "mesh_bodies",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "mesh_naked_edges",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "mesh_winding",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.004888881437489981,
+   "unit": "mm",
+   "required": "<= 0.01 chordal + 0.001 reference tol (V-05)",
+   "margin": 0.006111119,
+   "at": "(-16.1591, 21.1922, 0.0000) mm",
+   "status": "PASS",
+   "method": "mesh_deviation",
+   "assumes": [],
+   "reason": ""
+  }
+ ],
+ "rib_faces": [
+  -3.0,
+  3.0,
+  25.0,
+  31.0
+ ],
+ "slots": [
+  {
+   "x": -31.5,
+   "clear_z": 6.0,
+   "clear_y": 2.5,
+   "yc": 7.0,
+   "zc": 17.0,
+   "roof_deg": 45.00000000000001,
+   "z0": 14.0,
+   "z1": 20.0,
+   "block": [
+    -10.0,
+    42.0
+   ],
+   "post_block_z": null
+  },
+  {
+   "x": -31.5,
+   "clear_z": 6.0,
+   "clear_y": 2.5,
+   "yc": 7.0,
+   "zc": 28.0,
+   "roof_deg": 45.0,
+   "z0": 25.0,
+   "z1": 31.0,
+   "block": [
+    -10.0,
+    42.0
+   ],
+   "post_block_z": null
+  },
+  {
+   "x": 31.5,
+   "clear_z": 6.0,
+   "clear_y": 2.5,
+   "yc": 7.0,
+   "zc": 17.0,
+   "roof_deg": 45.00000000000001,
+   "z0": 14.0,
+   "z1": 20.0,
+   "block": [
+    -10.0,
+    42.0
+   ],
+   "post_block_z": null
+  },
+  {
+   "x": 31.5,
+   "clear_z": 6.0,
+   "clear_y": 2.5,
+   "yc": 7.0,
+   "zc": 28.0,
+   "roof_deg": 45.0,
+   "z0": 25.0,
+   "z1": 31.0,
+   "block": [
+    -10.0,
+    42.0
+   ],
+   "post_block_z": null
+  }
+ ],
+ "stl_sha": "529a0cc2033cddb00ee16715448a8e0e546f08eb05eb6bd1e6c20ce8a3776be4"
+}

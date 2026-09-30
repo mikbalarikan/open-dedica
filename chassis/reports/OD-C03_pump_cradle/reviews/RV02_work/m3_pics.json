@@ -1,0 +1,62 @@
+[
+ {
+  "file": "rv02_cradle_z0_v02_top.png",
+  "sha256": "a075401d3077413a397109f6c307a0ddbd29e7ed43d74ed68d35849f949c724a",
+  "nothing_clipped": 0,
+  "cut_area": 844.6214107461071
+ },
+ {
+  "file": "rv02_cradle_z17_v02_top.png",
+  "sha256": "33a12c5e79bfcaa6d8b3381cdf0f995ce15f34563e6b6ec09038af254f565b43",
+  "nothing_clipped": 0,
+  "cut_area": 492.0
+ },
+ {
+  "file": "rv02_cradle_z28_v02_top.png",
+  "sha256": "50ed171c59434bbbf0404dfb5635dd0832dcf1afd4ee606064bacfc65fd8c964",
+  "nothing_clipped": 0,
+  "cut_area": 1096.6214107461071
+ },
+ {
+  "file": "rv02_cradle_x31p5_v02_left.png",
+  "sha256": "19b247fc7a16ed7b2a8ff4c0fb771420d10573ea6ec350c3d8d4396d81552f46",
+  "nothing_clipped": 0,
+  "cut_area": 885.0
+ },
+ {
+  "file": "rv02_cradle_x0_v02_left.png",
+  "sha256": "9cb05ef8651c13bc6a09d83cc0f2b1029ac9b2a20a6d979744d324fd3daab936",
+  "nothing_clipped": 0,
+  "cut_area": 280.20000000000005
+ },
+ {
+  "file": "rv02_cradle_y7_v02_front.png",
+  "sha256": "b9933269cc5cce94cfa3706a4788764a19c0f6663c54362c950918c4a0caa21a",
+  "nothing_clipped": 0,
+  "cut_area": 72.0
+ },
+ {
+  "file": "rv02_asm_z0_v02_top.png",
+  "sha256": "c94d35554449a4096613e592bc4c7a9b3d26c89a3679fa338520be6e98009c31",
+  "nothing_clipped": 0,
+  "cut_area": 3249.88755578801
+ },
+ {
+  "file": "rv02_asm_z17_v02_top.png",
+  "sha256": "343b267ca91343bfa785465798a31829df8d201760de5e753f4806cdc6e8e305",
+  "nothing_clipped": 0,
+  "cut_area": 2818.2824233105175
+ },
+ {
+  "file": "rv02_asm_z28_v02_top.png",
+  "sha256": "7c6ed42698007e15722261df0ac92749f6522001df903245d4bf8f4ee425faed",
+  "nothing_clipped": 0,
+  "cut_area": 3422.903834056625
+ },
+ {
+  "file": "rv02_asm_x0_v02_left.png",
+  "sha256": "7cd25044145fd18836f67d8c4ca27d2fc22f375e767fdb302ab8ed6868a4c646",
+  "nothing_clipped": 0,
+  "cut_area": 3762.1540858176377
+ }
+]

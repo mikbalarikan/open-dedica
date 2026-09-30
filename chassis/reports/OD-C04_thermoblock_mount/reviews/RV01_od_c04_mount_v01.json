@@ -1,0 +1,667 @@
+{
+ "schema": "oguz-verdict-v1",
+ "review_id": "RV01",
+ "job_id": "20260930-od-c04-thermoblock-mount",
+ "target": "od_c04_mount_v01",
+ "spec_version": "1.2",
+ "reviewer": {
+  "runtime": "claude-code",
+  "model": "claude-opus-5-5"
+ },
+ "verdict": "APPROVED_ASSUMPTION_CONDITIONAL",
+ "summary": "One valid solid 100.0 x 110.0 x 50.0, every hard gate re-measured PASS or PASS_ASSUMED; REQ-01 10.100 mm (margin 0.100) at the S1 tip; REQ-08 bench INCONCLUSIVE (Soft); no blocking finding; rests on A-01, A-02, A-03, A-04, A-05, A-06, A-09, A-10, A-12, A-14.",
+ "files": [
+  {
+   "path": "01_CAD/REPORT_od_c04_mount_v01.md",
+   "sha256": "52bb0fc7b1a73ebc5ea4a50a17c9b59b04747d55447d03ce5475cdec7300621b",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/DESIGN_PLAN.md",
+   "sha256": "74daa6d136c72db9cb5a96885450c4aaa738b3644beb2a836e596bc812cb87aa",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/check_v01/check_results_v01.json",
+   "sha256": "7857c10cbfa5bc4c4a544e6a6f8789a4d854248d0c3f00fc75777d3d4cb48259",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/check_v01/sections_v01.json",
+   "sha256": "bec9bf1a40472d8ce4672fb4832dbe0e27cd04688927547240e1cf109bfb6089",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/build_record_v01.json",
+   "sha256": "8725dfedd9b26a7d25cc66de980b52e7e00577994e4cad98eb2ef11629a3121c",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/sweep_v01/sweep_summary_v01.json",
+   "sha256": "511c9f73792aca0e9654b6855d437bbf1aef4206931b217aa056da3335196a6a",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c04_mount_C1_v01.step",
+   "sha256": "31904ca8fd3a11f00330639f47978de4f02ccb5965450c0b3c56767eb77fa221",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c04_assembly_C1_v01.step",
+   "sha256": "f301128de7df7c8b6190ea54cefaddbaecbfd090377cf96be15fca0818175e2a",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c04_mount_C1_v01.stl",
+   "sha256": "c579d4159966a522cb84282e97aefcbaec22cbb9ece844241cd0ba8e9e1b13f7",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c04_mount_v01_front_yFoot.png",
+   "sha256": "a2458bcae6da5aca42ee212809d589798a8ee7230eeb8fe45db48605af1a8c54",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c04_mount_v01_left_asm_xS1.png",
+   "sha256": "22616d2b8774b890a7421147c1d471588470ed97e4e20f3a64107a3af5afbf7f",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c04_mount_v01_left_asm_xS2.png",
+   "sha256": "73ae433c317ebd33629ef99e7a64a977f774e26c6ccacfe9533fcf7900e2d7a1",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c04_mount_v01_left_xFrameHoles.png",
+   "sha256": "56488e256c571e6ea6a00b7bb895c073647caa6fe394b5af3baaed8d046efc38",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c04_mount_v01_left_xGusset.png",
+   "sha256": "646d299e0969133bb4aedeb8aa2791f0258c0245ccfdfd075096fa1ec0ace1a6",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c04_mount_v01_left_xS1.png",
+   "sha256": "48457a0eb641e7f3e0655a0fad8401d8ac35fc2db8989fd3d7cd6905b8add91a",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c04_mount_v01_left_xS2.png",
+   "sha256": "7ed90bedac941c6f521bf04a6166cddaf0daf4e326397db4a315bd3644dbbf9d",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c04_mount_v01_top_zStandoffs.png",
+   "sha256": "0d4121a3c428eae55f529b81862af305f15fb1b63ae315efd7e3cad4cc496f24",
+   "matches_report": true
+  },
+  {
+   "path": "00_Spec/inputs/OD-H11_thermoblock.step",
+   "sha256": "e2d186f22cf7a4e235636cccdab24d4cc2a32e25448d41e797b319287d4038ff",
+   "matches_report": true
+  },
+  {
+   "path": "00_Spec/inputs/reports/OD-H11_thermoblock/params.json",
+   "sha256": "46f1b43a54e82c08a96b2463d88622e9d5a5ae71245ccc3440c1d960ba1c5203",
+   "matches_report": true
+  },
+  {
+   "path": "00_Spec/inputs/reports/OD-H11_thermoblock/README.md",
+   "sha256": "61061c517ac0c20dfe1fa86a5e75dbf959eb52d272a843b2c613d77da4dddec0",
+   "matches_report": true
+  }
+ ],
+ "gates": [
+  {
+   "gate": "U-01",
+   "measured": 1,
+   "unit": "bool",
+   "required": "solid_count = 1, brep_valid = 1, naked_edges = 0",
+   "margin": 0.0,
+   "at": "delivered mount STEP: solid_count 1, brep_valid 1, naked_edges 0; same in the assembly STEP (mount and both spacer solids valid; OD-H11 brep_valid 0 is the input, A-14)",
+   "status": "PASS",
+   "method": "validity",
+   "assumes": []
+  },
+  {
+   "gate": "U-02",
+   "measured": 100.0,
+   "unit": "mm",
+   "required": "100.0 x 110.0 x 50.0 each in [spec - 0.1, spec + 0.1]",
+   "margin": 0.1,
+   "at": "size 100.000 x 110.000 x 50.000; position x -50.000 .. 50.000, y -70.000 .. 40.000, z -17.000 .. 33.000 (each margin 0.100)",
+   "status": "PASS",
+   "method": "envelope",
+   "assumes": []
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "(a) mount|OD-H11 clearance >= 10.0; mount|spacer and spacer|OD-H11 clearance = 0, interference <= 0; OD-H11 boolean INCONCLUSIVE by the row (A-14); (b) no motion variable",
+   "margin": 0.0,
+   "at": "spacer contacts S1|mount (-17.62, 20.18, -10.10), S2|mount (27.01, 9.08, -10.10), S1|OD-H11 (-20.540, 18.404, 0.000), S2|OD-H11 (28.51, 9.08, 27.60) all 0.000 mm; mount|OD-H11 10.100 mm; mount|S1, mount|S2, S1|S2 interference 0.000 mm3; OD-H11 pairs INCONCLUSIVE by the row (brep_valid 0), corroborated by a classifier probe with 0 of 6480 points of each spacer inside the casting; (b) N/A by the row",
+   "status": "PASS_ASSUMED",
+   "method": "clearance, interference (common_volume), BRepClass3d probe",
+   "assumes": [
+    "A-01",
+    "A-03",
+    "A-05",
+    "A-14"
+   ]
+  },
+  {
+   "gate": "U-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "named body re-read unchanged, no stray shells, valid after re-import",
+   "margin": 0.0,
+   "at": "delivered file: AP242, unit MM, 1 solid, 1 shell, 36 faces, label od_c04_mount, valid after re-import; reviewer round trip: schema 1, solids 1, volume_delta 0.000 mm3, faces_delta 0, labels 1, valid_after 1",
+   "status": "PASS",
+   "method": "step_roundtrip, compare_step, read_schema, read_length_unit",
+   "assumes": []
+  },
+  {
+   "gate": "U-05",
+   "measured": 6,
+   "unit": "count",
+   "required": "1 plate, 1 foot, 2 gussets, 2 standoffs (D12.0 x 1.90), 2 D4.0 through-bores, 4 D3.4 through-bores",
+   "margin": 0.0,
+   "at": "24 planar, 10 cylindrical (4 convex, 6 concave), 2 toroidal; 6 bores: 2 D4.000 along Z, 4 D3.400 along Y (teardrop, 260 deg span); every plan feature found (section 3)",
+   "status": "PASS",
+   "method": "feature_census, bore_census, locate_bore",
+   "assumes": []
+  },
+  {
+   "gate": "U-06",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "min_wall wide >= 2.0 (Soft)",
+   "margin": 2.0,
+   "at": "(-24.497, 23.675, -10.888) S1 standoff wall, bore D4.0 to D12.0",
+   "status": "PASS",
+   "method": "min_wall_wide",
+   "assumes": []
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.00636,
+   "unit": "mm",
+   "required": "STL at tol 0.01, angular <= 4 acos(1 - 0.01/6.0) rad; stl_max_sagitta <= 0.01",
+   "margin": 0.00364,
+   "at": "delivered STL: mesh_deviation 0.00636 mm (-20.029, 14.182, -11.111); reviewer re-mesh at 0.01 / 0.23097 rad: sagitta 0.00627 mm, 8516 triangles = the delivered STL's 8516; 1 body, 0 naked edges, winding 1, volume 74659.57 against B-rep 74659.46 mm3; min_wall_mesh 3.9956 against B-rep 4.000 - 0.01",
+   "status": "PASS",
+   "method": "write_stl, mesh_sagitta, mesh_census, mesh_deviation, min_wall_mesh",
+   "assumes": []
+  },
+  {
+   "gate": "U-08",
+   "measured": null,
+   "unit": "count",
+   "required": "threads cosmetic; applies to threaded parts; this target has none",
+   "margin": null,
+   "at": null,
+   "status": "NOT_APPLICABLE",
+   "method": "N/A by the row",
+   "assumes": []
+  },
+  {
+   "gate": "D-01a",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "min_wall >= 0.8",
+   "margin": 3.2,
+   "at": "(-24.497, 23.675, -10.888) S1 standoff wall",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": []
+  },
+  {
+   "gate": "D-01b",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "min_wall >= 2.0",
+   "margin": 2.0,
+   "at": "(-24.497, 23.675, -10.888) S1 standoff wall",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": []
+  },
+  {
+   "gate": "D-02",
+   "measured": 110.0,
+   "unit": "mm",
+   "required": "each envelope size <= the K1C build volume (220 x 220 x 250), plate down",
+   "margin": 110.0,
+   "at": "100.0 / 110.0 / 50.0 against 220 / 220 / 250; smallest margin on y",
+   "status": "PASS_ASSUMED",
+   "method": "envelope",
+   "assumes": [
+    "A-09"
+   ]
+  },
+  {
+   "gate": "D-03a",
+   "measured": 50.0,
+   "unit": "deg",
+   "required": "every downward face >= 45 deg from horizontal, build direction +Z",
+   "margin": 5.0,
+   "at": "(-41.302, -66.000, -6.907) teardrop roof of the frame hole (-40, -8); sampling bound 0.009 deg; 0 samples below 45",
+   "status": "PASS_ASSUMED",
+   "method": "overhang_census(build_dir=(0,0,1))",
+   "assumes": [
+    "A-12"
+   ]
+  },
+  {
+   "gate": "D-03b",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "bridge span <= 5",
+   "margin": 5.0,
+   "at": "no downward face under 45 deg (D-03a), so no bridge; reviewer sections x -19.62, 25.01, 40, -46, y -68, z -11, -10.2 show no horizontal ceiling",
+   "status": "PASS",
+   "method": "overhang_census; write_sections",
+   "assumes": []
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "frame holes D >= 3.25; standoff holes D >= 3.75",
+   "margin": 0.15,
+   "at": "four frame holes D3.400 (margin 0.150) at (+-40, -70, -8) and (+-40, -70, 26); two standoff holes D4.000 (margin 0.250) at (-19.62, 20.18) and (25.01, 9.08)",
+   "status": "PASS_ASSUMED",
+   "method": "locate_bore",
+   "assumes": [
+    "A-04"
+   ]
+  },
+  {
+   "gate": "D-06a",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "minimum feature >= 1.0",
+   "margin": 3.0,
+   "at": "(-24.497, 23.675, -10.888) S1 standoff wall",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": []
+  },
+  {
+   "gate": "D-07",
+   "measured": null,
+   "unit": "count",
+   "required": "fit-critical bores: none on this part (N/A by the row)",
+   "margin": null,
+   "at": null,
+   "status": "NOT_APPLICABLE",
+   "method": "N/A by the row",
+   "assumes": []
+  },
+  {
+   "gate": "E-06",
+   "measured": 2,
+   "unit": "count",
+   "required": "each standoff tied into the plate with a root fillet (1.90 high: no gusset)",
+   "margin": 0.0,
+   "at": "torus minor R 1.000, major R 7.000, centres (-19.62, 20.18, -11.00) and (25.01, 9.08, -11.00); standoffs 1.900 high (plate face -12.000 to tip -10.100)",
+   "status": "PASS",
+   "method": "feature_census (torus faces), BRepAdaptor torus radii, envelope",
+   "assumes": []
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 10.1,
+   "unit": "mm",
+   "required": "clearance(mount, OD-H11) >= 10.0 at the identity pose",
+   "margin": 0.1,
+   "at": "(-13.620, 20.180, -10.100) S1 tip rim to (-13.620, 20.180, 0.000) base face; same value against the input OD-H11 STEP",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01"
+   ]
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "two D4.0 +-0.1 through-bores along Z at (-19.62, 20.18) and (25.01, 9.08), offset <= 0.10",
+   "margin": 0.1,
+   "at": "S1 and S2: D4.000, offset 0.000, through, z -17.000 .. -10.100; coaxial with the OD-H11 holes (D3.60 at S1, D3.50 at S2, offset 0.000)",
+   "status": "PASS_ASSUMED",
+   "method": "bore_census, locate_bore",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "both tip faces at z = -10.10 +-0.10; spacer solids clearance = 0 at both ends",
+   "margin": 0.0,
+   "at": "tip faces z -10.100 at both standoffs (margin 0.100); spacers D7.0 x 10.100 and D7.0 x 37.700 with D4.000 through-bores; clearance 0.000 at all four ends",
+   "status": "PASS_ASSUMED",
+   "method": "envelope of the tip faces, clearance",
+   "assumes": [
+    "A-03",
+    "A-05"
+   ]
+  },
+  {
+   "gate": "REQ-04",
+   "measured": -12.0,
+   "unit": "mm",
+   "required": "front face z = -12.00 +-0.10; back face z = -17.00 +-0.10",
+   "margin": 0.1,
+   "at": "front face z -12.000 (planar, 10121.39 mm2); back face z -17.000 (10964.14 mm2)",
+   "status": "PASS",
+   "method": "envelope of the faces; sections",
+   "assumes": []
+  },
+  {
+   "gate": "REQ-05",
+   "measured": -70.0,
+   "unit": "mm",
+   "required": "foot underside y = -70.00 +-0.10, 4.0 +-0.1 thick",
+   "margin": 0.1,
+   "at": "underside y -70.000 (min_y), inside face y -66.000: 4.000 thick",
+   "status": "PASS_ASSUMED",
+   "method": "envelope; sections",
+   "assumes": [
+    "A-10"
+   ]
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "four D3.4 +-0.1 through-holes along Y at (x +-40.0, z -8.0) and (x +-40.0, z 26.0), offset <= 0.10",
+   "margin": 0.1,
+   "at": "all four D3.400, offset 0.000, through (y -70 .. -66)",
+   "status": "PASS_ASSUMED",
+   "method": "bore_census, locate_bore",
+   "assumes": [
+    "A-10"
+   ]
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "no mount material at r <= 45.0 about (-8.330, -14.130) within z 0 .. 47.64",
+   "margin": 0.0,
+   "at": "common volume with the keep-out cylinder 0.000 mm3; clearance to it 6.870 mm at (-8.33, -66.00, 33.00) foot inside face; radial_profile inner r_max 45: 17280 of 17280 rays read no material (expected reading); about the origin 0.000 mm3",
+   "status": "PASS_ASSUMED",
+   "method": "common_volume, clearance, radial_profile",
+   "assumes": [
+    "A-02",
+    "A-06"
+   ]
+  },
+  {
+   "gate": "REQ-08",
+   "measured": null,
+   "unit": "bool",
+   "required": "Soft: holds the thermoblock through a heating cycle without softening (bench)",
+   "margin": null,
+   "at": null,
+   "status": "INCONCLUSIVE",
+   "method": "bench gate, not measurable in CAD",
+   "assumes": [
+    "A-08"
+   ]
+  }
+ ],
+ "feature_census": [
+  {
+   "feature": "F01 rear plate",
+   "expected": "1 plate, 5.0 thick, z -17.0 .. -12.0, x +-50, y -70 .. 40",
+   "found": "planar faces z -12.000 and -17.000, x -50 .. 50, y -70 .. 40; 5.000 thick",
+   "status": "PASS"
+  },
+  {
+   "feature": "F02 plate corners R 5.0",
+   "expected": "2 convex cylinders R 5.0 at the y +40 corners",
+   "found": "2 convex cylinders R 5.0 at x -50 .. -45 and 45 .. 50, y 35 .. 40",
+   "status": "PASS"
+  },
+  {
+   "feature": "F03 foot",
+   "expected": "1 foot 100.0 x 4.0 x 50.0, y -70 .. -66, z -17 .. 33",
+   "found": "planar faces y -70.000 and y -66.000, z -17 .. 33, x -50 .. 50",
+   "status": "PASS"
+  },
+  {
+   "feature": "F04 gussets x2",
+   "expected": "2 gussets 4.0 thick at x 44 .. 48 and -48 .. -44, legs 20 x 20",
+   "found": "2 gussets: side faces x +-44, +-48 (200.0 mm2 each), hypotenuse faces at 45 deg, y -66 .. -46, z -12 .. 8",
+   "status": "PASS"
+  },
+  {
+   "feature": "F05 standoffs x2",
+   "expected": "2 standoffs D12.0 x 1.90, tips z -10.10, at (-19.62, 20.18) and (25.01, 9.08)",
+   "found": "2 tip annuli z -10.100 (100.53 mm2, D12.0 / D4.0), convex cylinders R 6.0; height 1.900",
+   "status": "PASS"
+  },
+  {
+   "feature": "F06 root fillets x2",
+   "expected": "2 root fillets (ladder 1.0 / 0.8 / 0.5)",
+   "found": "2 tori minor R 1.000, major R 7.000, one per standoff",
+   "status": "PASS"
+  },
+  {
+   "feature": "F07 standoff bores D4.0 x2",
+   "expected": "2 D4.0 through-bores along Z",
+   "found": "2 bores D4.000, through, z -17.000 .. -10.100, offset 0.000",
+   "status": "PASS"
+  },
+  {
+   "feature": "F08 frame holes D3.4 x4",
+   "expected": "4 D3.4 teardrop through-holes along Y at (x +-40, z -8 / 26), roofs 50 deg",
+   "found": "4 bores D3.400, 260 deg span, through y -70 .. -66, offset 0.000; 8 roof faces at 50.0 deg, apex +Z",
+   "status": "PASS"
+  }
+ ],
+ "plausibility": [
+  {
+   "question": "P1 gravity",
+   "answer": "Foot underside y -70.000 is the lowest plane with -Y down (A-07); the mount's centre of mass (0.01, -28.54, -8.31) lies over the foot footprint; the thermoblock hangs on two screws in front of the vertical plate with its axis horizontal.",
+   "status": "YES"
+  },
+  {
+   "question": "P2 function chains",
+   "answer": "Screw chain plate bore D4.0 -> spacer bore D4.0 -> OD-H11 hole is coaxial at both points (offset 0.000); pipes and terminals at +Y stay clear (mount at z <= -10.10 behind the base face and y <= -66 below the body); see F4 on the S1 entry lip.",
+   "status": "YES"
+  },
+  {
+   "question": "P3 motion",
+   "answer": "No moving parts (U-03 b).",
+   "status": "NOT_APPLICABLE"
+  },
+  {
+   "question": "P4 grip, reach, insertion",
+   "answer": "Thermoblock screws go in from the plate back along +Z through the bores; the thermoblock with spacers approaches along -Z and first touches at the designed spacer contacts (path clearance equals remaining travel, nothing else touches); foot screws go along -Y, heads 1.25 clear of the plate face at z -8, and the z 26 pair goes in before the thermoblock.",
+   "status": "YES"
+  },
+  {
+   "question": "P5 comparable product",
+   "answer": "An L bracket with a rear plate, two short bosses and metal spacers is a normal heater mount; the 37.7 x D7.0 metal column at S2 is unusual but not absurd.",
+   "status": "YES"
+  },
+  {
+   "question": "P6 floating, embedded, mirrored, upside-down",
+   "answer": "One solid; spacers touch both ends at 0.000 with 0.000 mm3 overlap with the mount and no probe point inside the casting; bores coaxial with the measured OD-H11 holes (not mirrored); teardrop apexes point +Z; foot at -Y.",
+   "status": "YES"
+  }
+ ],
+ "positive_controls": [
+  {
+   "check": "validity (U-01)",
+   "mutant": "S1 tip face removed (open shell): naked_edges 2; mount plus a second copy: solid_count 2",
+   "got": "FAIL"
+  },
+  {
+   "check": "envelope (U-02, D-02)",
+   "mutant": "mount moved +0.5 in x: max_x 50.500; foot extended 0.5 in z: size_z 50.500",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance >= (REQ-01, U-03 a) and envelope of the tip face (REQ-03)",
+   "mutant": "S1 standoff 0.20 taller: clearance 9.900, tip z -9.900",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance = 0 (U-03, REQ-03 spacer contacts)",
+   "mutant": "S1 spacer 0.10 shorter: clearance 0.100",
+   "got": "FAIL"
+  },
+  {
+   "check": "interference / common_volume (U-03, REQ-07)",
+   "mutant": "S1 spacer 0.50 longer into the standoff: 12.96 mm3; 4 x 8 x 10 boss on the foot reaching y -58: 13.58 mm3 in the keep-out",
+   "got": "FAIL"
+  },
+  {
+   "check": "radial_profile per-ray reading (REQ-07)",
+   "mutant": "same boss: 40 of 17280 rays read material crossing r 45 (part: 0)",
+   "got": "FAIL"
+  },
+  {
+   "check": "BRepClass3d spacer-in-casting probe (U-03 corroboration)",
+   "mutant": "S1 spacer 0.50 longer into the base face: 99 of 6480 points inside (part: 0)",
+   "got": "FAIL"
+  },
+  {
+   "check": "compare_step / step_roundtrip (U-04)",
+   "mutant": "mount compared with a re-written file with the S2 bore filled: volume_delta 86.71 mm3, faces_delta 1",
+   "got": "FAIL"
+  },
+  {
+   "check": "feature_census / bore_census / locate_bore (U-05, REQ-02, REQ-06, D-04a)",
+   "mutant": "S2 bore filled: 5 bores; frame hole (40, -8) moved +0.5 in x: offset 0.500; S1 bore cut D3.70: REQ-02 and D-04a fail",
+   "got": "FAIL"
+  },
+  {
+   "check": "feature_census torus count (E-06)",
+   "mutant": "S1 root fillet buried under a D14.0 x 1.0 collar: 1 torus",
+   "got": "FAIL"
+  },
+  {
+   "check": "min_wall / min_wall_wide (D-01a, D-01b, D-06a, U-06)",
+   "mutant": "20 x 20 pocket from the plate back leaving 0.50: 0.500 on both",
+   "got": "FAIL"
+  },
+  {
+   "check": "overhang_census (D-03a)",
+   "mutant": "frame hole (40, -8) re-cut round, no teardrop roof: 0.0 deg",
+   "got": "FAIL"
+  },
+  {
+   "check": "write_stl / mesh_sagitta (U-07)",
+   "mutant": "STL meshed at 0.1 mm / 0.5 rad: sagitta 0.0558",
+   "got": "FAIL"
+  },
+  {
+   "check": "mesh_census (U-07)",
+   "mutant": "delivered STL with 21 triangles removed: 29 naked edges",
+   "got": "FAIL"
+  },
+  {
+   "check": "mesh_deviation (U-07)",
+   "mutant": "delivered STL shifted 0.05 in x: 0.0550",
+   "got": "FAIL"
+  },
+  {
+   "check": "min_wall_mesh (V-05 corroboration)",
+   "mutant": "STL of the 0.50 plate-pocket mutant: 0.500",
+   "got": "FAIL"
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "gate": "REQ-08",
+   "kind": "SOFT_GATE_MISS",
+   "measured": null,
+   "unit": "bool",
+   "required": "Soft: holds the thermoblock through a heating cycle without softening (bench)",
+   "margin": null,
+   "at": "whole mount; hottest printed surfaces the S1 tip 10.10 from the base face and the S2 tip under a 37.70 metal column",
+   "blocks": false,
+   "risk": "MEDIUM",
+   "risk_basis": "Not measurable in CAD (INCONCLUSIVE); ASA softens near 100 C and the mount sits 10.1 mm from a >100 C casting with a metal spacer conducting heat into each standoff tip (A-05, A-08).",
+   "fix_direction": "Answer on the bench at the first heating run (tip temperature and any creep of the standoffs), or name PC per A-08 before printing."
+  },
+  {
+   "id": "F2",
+   "gate": "REQ-01",
+   "kind": "OBSERVATION",
+   "measured": 10.1,
+   "unit": "mm",
+   "required": ">= 10.0",
+   "margin": 0.1,
+   "at": "(-13.620, 20.180, -10.100) S1 tip rim to (-13.620, 20.180, 0.000) OD-H11 base face",
+   "blocks": false,
+   "risk": "MEDIUM",
+   "risk_basis": "The 0.100 margin is about a fifth of the scan's p95 error 0.474 (A-01); clamped, the S1 gap equals the S1 spacer's length, so a spacer cut 0.10 short takes the whole margin, and A-05 states no length tolerance.",
+   "fix_direction": "Retire A-01/A-03 with calipers on the base face and S1 hole before printing, and give the spacer lengths a +0.10/-0 tolerance in A-05; or lower both tips (e.g. to -10.60, spacers 10.60 / 38.20) to hold 10.0 at the scan's p95 error."
+  },
+  {
+   "id": "F3",
+   "gate": "U-03",
+   "kind": "OBSERVATION",
+   "measured": null,
+   "unit": "mm3",
+   "required": "interference <= 0 (mount|OD-H11, spacer|OD-H11)",
+   "margin": null,
+   "at": "OD-H11 pairs; common_volume refused: BOPAlgo_InvalidCurveOnSurface on OD-H11",
+   "blocks": false,
+   "risk": "LOW",
+   "risk_basis": "INCONCLUSIVE by the ratified row (A-14); distance rows read mount|OD-H11 10.100 and spacer ends 0.000 with inside false, and 0 of 6480 classifier points per spacer lie in the casting (control FAILs at 0.5 mm overlap).",
+   "fix_direction": "A sound rebuild of OD-H11 in open-dedica (A-14) lets the boolean run; no mount change."
+  },
+  {
+   "id": "F4",
+   "gate": "P2",
+   "kind": "OBSERVATION",
+   "measured": 1.344,
+   "unit": "mm",
+   "required": "screw path of the assumed D3.5 screw clear to r 1.75 about the S1 axis (A-03, A-04)",
+   "margin": -0.406,
+   "at": "OD-H11 S1 entry, z 0.0 .. 3.0, angles 255 .. 325 deg about (-19.62, 20.18): the base-face lip reaches r 1.344 (at 300 deg); the D3.60 pilot starts at z 3.0",
+   "blocks": false,
+   "risk": "MEDIUM",
+   "risk_basis": "Input geometry, not the mount; the lip is within the scan's error (A-01) and a thread-forming D3.5 screw may cut it, but the scanned D3.60 pilot is itself larger than a D3.5 screw, so the screw and seat choice (A-03, A-04) is not settled by the scan.",
+   "fix_direction": "Measure the S1 hole entry and the OEM screw (A-03, A-04) before choosing the screw; if the lip is real, a stepped spacer or a spigot into the notch (plan R3) seats and guides the screw; no mount change needed."
+  }
+ ],
+ "least_sure_answers": [
+  {
+   "item": "1. REQ-01 at S1 has 0.100 margin against a scan with p95 0.474",
+   "answer": "Confirmed: 10.100 mm at the S1 tip rim, same against the input OD-H11 file; clamped, the gap is the S1 spacer length, so the tip's +-0.10 does not reach REQ-01 but the spacer's cut length does; rated MEDIUM in F2."
+  },
+  {
+   "item": "2. Strength and seating not calculated",
+   "answer": "S1 spacer bears on 32 % of its end annulus (angles 225 .. 350 deg about the S1 axis, about 125 deg), S2 all round (100 %); the base-face lip also narrows the S1 screw entry to r 1.344 (F4); plate-to-foot and gusset edges are sharp (19 sharp concave edges); strength stays a bench question (A-11)."
+  },
+  {
+   "item": "3. Contact rows exact only at nominal",
+   "answer": "True of the model (spacers fixed, tips +-0.10); in the clamped assembly the spacer sets the tip-to-seat distance, the mount moves instead, and tips 0.20 apart tilt the block by about 0.25 deg over the 45.99 mm between the screw axes; no gate is affected at nominal."
+  }
+ ],
+ "assumptions_relied_on": [
+  "A-01",
+  "A-02",
+  "A-03",
+  "A-04",
+  "A-05",
+  "A-06",
+  "A-09",
+  "A-10",
+  "A-12",
+  "A-14"
+ ]
+}

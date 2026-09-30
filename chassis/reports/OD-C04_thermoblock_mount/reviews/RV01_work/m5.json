@@ -1,0 +1,32 @@
+{
+ "part": {
+  "status": "INCONCLUSIVE",
+  "reason0": "17280 of 17280 rays unread, first at 0\u00b0 and z = 0.496250 mm: no material between 0 and 45 mm on the ray at 0\u00b0 and z = 0.49625 mm",
+  "measured": null,
+  "rays": 17280,
+  "unread": 17280,
+  "reasons": {
+   "no material": 17280
+  },
+  "examples": {
+   "no material": "{\"angle_deg\": 0.0, \"z\": 0.49625, \"reason\": \"no material between 0 and 45 mm on the ray at 0\\u00b0 and z = 0.49625 mm\"}"
+  },
+  "points": 0
+ },
+ "boss_mutant": {
+  "status": "INCONCLUSIVE",
+  "reason0": "17280 of 17280 rays unread, first at 0\u00b0 and z = 0.496250 mm: no material between 0 and 45 mm on the ray at 0\u00b0 and z = 0.49625 mm",
+  "measured": null,
+  "rays": 17280,
+  "unread": 17280,
+  "reasons": {
+   "no material": 17240,
+   "crosses": 40
+  },
+  "examples": {
+   "no material": "{\"angle_deg\": 0.0, \"z\": 0.49625, \"reason\": \"no material between 0 and 45 mm on the ray at 0\\u00b0 and z = 0.49625 mm\"}",
+   "crosses": "{\"angle_deg\": 279.0, \"z\": 20.34625, \"reason\": \"material from 44.416845 to 56.566427 mm crosses the window's bound at 45 mm at 279\\u00b0 and z = 20.3463 mm\"}"
+  },
+  "points": 0
+ }
+}
