@@ -5,9 +5,9 @@ code: ODC05
 milestone: M1
 title: "Open Dedica OD-C05 printed group head carrier"
 lane: CAD
-state: J4_REVIEW
+state: J5_DELIVER
 blocked_on: null
-next_action: "J3: designer package WP-07 builds od_c05_carrier_v04 to spec 2.2 (roof and window gable turned up)"
+next_action: "J5: Usta confirms A-01..A-06 and A-14 with calipers, decides the counterbore-floor exception and the undrained foot trough (RV02 F2); REQ-09 answers at the first print"
 data_class: PUBLIC
 size: S
 process: [FDM]
@@ -25,6 +25,7 @@ attempts: {build: 1, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
 reviews:
   - {id: RV01, target: od_c05_carrier_v01, verdict: REVISE, blockers: 1, date: "2026-09-30"}
+  - {id: RV02, target: od_c05_carrier_v04, verdict: APPROVED_ASSUMPTION_CONDITIONAL, blockers: 0, date: "2026-09-30"}
 usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}

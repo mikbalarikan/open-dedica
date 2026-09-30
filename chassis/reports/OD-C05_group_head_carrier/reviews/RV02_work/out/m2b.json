@@ -1,0 +1,130 @@
+{
+ "mp_mine": {
+  "volume": {
+   "name": "mass_volume",
+   "measured": 90216.79165440112,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "mass": {
+   "name": "mass_mass",
+   "measured": 90.21679165440112,
+   "unit": "g",
+   "at": null,
+   "params": {
+    "density_kg_m3": 1000
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_x": {
+   "name": "mass_com_x",
+   "measured": -0.0026110417913036963,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_y": {
+   "name": "mass_com_y",
+   "measured": -0.002028192471266378,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_z": {
+   "name": "mass_com_z",
+   "measured": -15.944374191131725,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  }
+ },
+ "mp_asm": {
+  "volume": {
+   "name": "mass_volume",
+   "measured": 90216.79165440061,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "mass": {
+   "name": "mass_mass",
+   "measured": 90.21679165440061,
+   "unit": "g",
+   "at": null,
+   "params": {
+    "density_kg_m3": 1000
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_x": {
+   "name": "mass_com_x",
+   "measured": -0.0026110417914003924,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_y": {
+   "name": "mass_com_y",
+   "measured": -0.002028192471187708,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_z": {
+   "name": "mass_com_z",
+   "measured": -15.944374191131823,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  }
+ },
+ "common_shift": {
+  "name": "common_volume",
+  "measured": 90119.1947374336,
+  "unit": "mm3",
+  "at": null,
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "solids_a": 1,
+   "solids_b": 1,
+   "pairs_computed": 1,
+   "pairs_skipped_by_bbox": 0,
+   "solids_checked": 2
+  }
+ },
+ "nfaces": [
+  92,
+  92
+ ]
+}

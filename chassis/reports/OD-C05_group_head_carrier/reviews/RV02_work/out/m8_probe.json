@@ -1,0 +1,240 @@
+{
+ "cb(-44,-44)": {
+  "edge_zmin": [
+   -29.94,
+   -47.25,
+   -44.0
+  ],
+  "curve_types": [
+   "GeomAbs_Line",
+   "GeomAbs_Circle",
+   "GeomAbs_Line",
+   "GeomAbs_Circle"
+  ]
+ },
+ "cb(44,-44)": {
+  "edge_zmin": [
+   -29.94,
+   40.75,
+   -44.0
+  ],
+  "curve_types": [
+   "GeomAbs_Line",
+   "GeomAbs_Circle",
+   "GeomAbs_Line",
+   "GeomAbs_Circle"
+  ]
+ },
+ "cb(-44,44)": {
+  "edge_zmin": [
+   -29.94,
+   -47.25,
+   44.0
+  ],
+  "curve_types": [
+   "GeomAbs_Line",
+   "GeomAbs_Circle",
+   "GeomAbs_Line",
+   "GeomAbs_Circle"
+  ]
+ },
+ "cb(44,44)": {
+  "edge_zmin": [
+   -29.94,
+   40.75,
+   44.0
+  ],
+  "curve_types": [
+   "GeomAbs_Line",
+   "GeomAbs_Circle",
+   "GeomAbs_Line",
+   "GeomAbs_Circle"
+  ]
+ },
+ "cb(-35,-92)": {
+  "edge_zmin": [
+   156.8099999999997,
+   -35.0,
+   -95.25000000000031
+  ],
+  "curve_types": [
+   "GeomAbs_Line",
+   "GeomAbs_Circle",
+   "GeomAbs_Line",
+   "GeomAbs_Ellipse"
+  ]
+ },
+ "cb(35,-92)": {
+  "edge_zmin": [
+   156.8099999999997,
+   35.0,
+   -95.25000000000031
+  ],
+  "curve_types": [
+   "GeomAbs_Line",
+   "GeomAbs_Circle",
+   "GeomAbs_Line",
+   "GeomAbs_Ellipse"
+  ]
+ },
+ "cb(-35,-72)": {
+  "edge_zmin": [
+   164.8099999999997,
+   -35.0,
+   -68.74999999999969
+  ],
+  "curve_types": [
+   "GeomAbs_Line",
+   "GeomAbs_Circle",
+   "GeomAbs_Line",
+   "GeomAbs_Ellipse"
+  ]
+ },
+ "cb(35,-72)": {
+  "edge_zmin": [
+   164.8099999999997,
+   35.0,
+   -68.74999999999969
+  ],
+  "curve_types": [
+   "GeomAbs_Line",
+   "GeomAbs_Circle",
+   "GeomAbs_Line",
+   "GeomAbs_Ellipse"
+  ]
+ },
+ "probe_below_rim_(35,-68.76,164.76)": "<TopAbs_State.TopAbs_OUT: 1>",
+ "probe_above_rim_(35,-68.60,165.2)": "<TopAbs_State.TopAbs_IN: 0>",
+ "horizontal_planes": [
+  [
+   -29.94,
+   -1.0,
+   11213.569,
+   [
+    -0.0,
+    -20.602,
+    -29.94
+   ]
+  ],
+  [
+   -24.94,
+   1.0,
+   8036.25,
+   [
+    -0.0,
+    -0.122,
+    -24.94
+   ]
+  ],
+  [
+   180.06,
+   1.0,
+   5463.683,
+   [
+    -0.0,
+    -76.967,
+    180.06
+   ]
+  ],
+  [
+   110.0,
+   1.0,
+   80.0,
+   [
+    0.0,
+    -100.0,
+    110.0
+   ]
+  ],
+  [
+   -27.94,
+   -1.0,
+   24.104,
+   [
+    -44.0,
+    -44.0,
+    -27.94
+   ]
+  ],
+  [
+   -24.94,
+   1.0,
+   1533.735,
+   [
+    -0.0,
+    -74.68,
+    -24.94
+   ]
+  ],
+  [
+   -27.94,
+   -1.0,
+   24.104,
+   [
+    44.0,
+    -44.0,
+    -27.94
+   ]
+  ],
+  [
+   -27.94,
+   -1.0,
+   24.104,
+   [
+    -44.0,
+    44.0,
+    -27.94
+   ]
+  ],
+  [
+   -27.94,
+   -1.0,
+   24.104,
+   [
+    44.0,
+    44.0,
+    -27.94
+   ]
+  ],
+  [
+   176.06,
+   -1.0,
+   24.104,
+   [
+    -35.0,
+    -92.0,
+    176.06
+   ]
+  ],
+  [
+   176.06,
+   -1.0,
+   24.104,
+   [
+    35.0,
+    -92.0,
+    176.06
+   ]
+  ],
+  [
+   176.06,
+   -1.0,
+   24.104,
+   [
+    -35.0,
+    -72.0,
+    176.06
+   ]
+  ],
+  [
+   176.06,
+   -1.0,
+   24.104,
+   [
+    35.0,
+    -72.0,
+    176.06
+   ]
+  ]
+ ]
+}

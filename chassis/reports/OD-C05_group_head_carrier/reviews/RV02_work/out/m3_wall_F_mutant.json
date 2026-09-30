@@ -1,0 +1,75 @@
+{
+ "min_wall": {
+  "name": "min_wall",
+  "measured": 1.499999999999997,
+  "unit": "mm",
+  "at": [
+   55.0,
+   -70.283465,
+   50.107529
+  ],
+  "params": {
+   "spacing_mm": 0.4,
+   "opposition_deg": 25.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "rays": 999790,
+   "lost_rays": 0,
+   "face_pairs_measured_exactly": 8,
+   "face_pairs_never_opposed": 0,
+   "face_pairs_failed": 0,
+   "exact_points_without_normal": 0,
+   "solids": 4,
+   "largest_step_mm": 0.39924,
+   "wide": {
+    "opposition_deg": 45.0,
+    "measured": 1.499999999999997,
+    "at": [
+     55.0,
+     -70.283465,
+     50.107529
+    ]
+   },
+   "hit_at": [
+    53.5,
+    -70.283465,
+    50.107529
+   ],
+   "from_face": "plane",
+   "to_face": "plane",
+   "found_by": "ray"
+  }
+ },
+ "wide": {
+  "name": "min_wall_wide",
+  "measured": 1.499999999999997,
+  "unit": "mm",
+  "at": [
+   55.0,
+   -70.283465,
+   50.107529
+  ],
+  "params": {
+   "spacing_mm": 0.4,
+   "opposition_deg": 45.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "gated_mm": 1.499999999999997,
+   "gated_opposition_deg": 25.0,
+   "gated_at": [
+    55.0,
+    -70.283465,
+    50.107529
+   ],
+   "rays": 999790,
+   "solids": 4,
+   "largest_step_mm": 0.39924,
+   "face_pairs_measured_exactly": 8
+  }
+ },
+ "secs": 290.6221010684967
+}
