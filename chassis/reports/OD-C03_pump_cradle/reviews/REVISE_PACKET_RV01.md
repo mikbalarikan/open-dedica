@@ -22,4 +22,4 @@ Also noted, not blocking: F2 (MEDIUM, the pump's centre of mass at z 7.23 lies a
 
 ## The Usta's decision
 
-Decision: A · date: 2026-09-30 · notes: taken on the Usta's standing instruction of 2026-09-30 (proceed, ledger, ask only where a decision is needed); explicit confirmation pending.
+Decision: A · date: 2026-09-30 · notes: taken on the Usta's standing instruction of 2026-09-30 (proceed, ledger, ask only where a decision is needed); confirmed by the Usta on 2026-09-30 ("confirmed go", project thread).
