@@ -14,9 +14,22 @@ from tools.measure import clearance, radial_profile, envelope
 
 tb = read_step(WS / "00_Spec/inputs/OD-H11_thermoblock.step")
 solid = tb.solids()[0].wrapped
+from OCP.IntCurvesFace import IntCurvesFace_ShapeIntersector
+from OCP.gp import gp_Lin, gp_Dir
+ISX = IntCurvesFace_ShapeIntersector(); ISX.Load(solid, 1e-6)
 def inside(x, y, z):
     c = BRepClass3d_SolidClassifier(solid, gp_Pnt(x, y, z), 1e-6)
-    return c.State() in (TopAbs_IN, TopAbs_ON)
+    return c.State() == TopAbs_IN
+def zruns(x, y, z0=-5.0, z1=55.0):
+    ISX.Perform(gp_Lin(gp_Pnt(x, y, z0), gp_Dir(0, 0, 1)), 0.0, z1 - z0)
+    ws = sorted({round(z0 + ISX.WParameter(i), 4) for i in range(1, ISX.NbPnt() + 1)})
+    pts = [z0] + ws + [z1]
+    iv = []
+    for a, b in zip(pts[:-1], pts[1:]):
+        if b - a > 1e-3 and inside(x, y, (a + b) / 2):
+            if iv and abs(iv[-1][1] - a) < 1e-4: iv[-1][1] = b
+            else: iv.append([a, b])
+    return iv
 
 out = {}
 holes = {"S1": (-19.62, 20.18), "S2": (25.01, 9.08)}
@@ -24,19 +37,8 @@ for name, (hx, hy) in holes.items():
     rows = {}
     for r in (0.0, 1.9, 3.5, 6.0, 10.0, 16.0):
         angs = [0] if r == 0 else range(0, 360, 15)
-        runs = []
-        for a in angs:
-            x, y = hx + r * math.cos(math.radians(a)), hy + r * math.sin(math.radians(a))
-            zs = [round(-2 + 0.1 * i, 2) for i in range(0, 540)]
-            mat = [z for z in zs if inside(x, y, z)]
-            # compress into intervals
-            iv = []
-            for z in mat:
-                if iv and abs(z - iv[-1][1] - 0.1) < 1e-6: iv[-1][1] = z
-                else: iv.append([z, z])
-            runs.append((a, iv))
-        rows[str(r)] = runs
-    out[name + "_material_z_intervals"] = rows
+        rows[str(r)] = [(a, zruns(hx + r * math.cos(math.radians(a)), hy + r * math.sin(math.radians(a)))) for a in angs]
+    out[name + "_material_z_intervals"] = rows; print(name, "axes done", flush=True)
 # nearest OD-H11 material to the spec's standoff columns (Ø12) and spacer (Ø7), spec lengths
 def cyl(d, z0, z1, x, y):
     return Pos(x, y, (z0 + z1) / 2) * Cylinder(d / 2, z1 - z0)
@@ -48,7 +50,7 @@ cases = {"S1_standoff_z-12_-6.8": cyl(12, -12, -6.8, *holes["S1"]),
          "foot_y-70_-66": Pos(0, -68, 8) * Box(100, 4, 50)}
 for k, s in cases.items():
     r = clearance(s, tb)
-    out["clearance_" + k] = {"mm": r.measured, "status": r.status, "at": r.at, "detail": r.detail}
+    out["clearance_" + k] = {"mm": r.measured, "status": r.status, "at": r.at, "detail": r.detail}; print(k, r.measured, r.at, flush=True)
 # pads: outer radius over z 0..47.64 at the pad angles
 for ang in (262.5, 339.0):
     rp = radial_profile(tb, (0, 0, 0), (0, 0, 1), (1, 0, 0), [ang - 10, ang - 5, ang, ang + 5, ang + 10],

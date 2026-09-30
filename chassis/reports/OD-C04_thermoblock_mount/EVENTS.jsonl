@@ -15,3 +15,11 @@
 {"t": "2026-09-30T12:15:51Z", "ev": "state", "detail": {"from": "J0_INTAKE", "to": "J1_SPEC", "reason": "intake done: INTAKE_v01 with 137 rows; spec 1.0 drafted"}}
 {"t": "2026-09-30T12:15:52Z", "ev": "state", "detail": {"from": "J1_SPEC", "to": "J2_PLAN", "reason": "spec 1.0 ratified on the standing instruction; C1 picked"}}
 {"t": "2026-09-30T12:15:53Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c04_mount_v01", "brief": "briefs/WP-02_designer.md", "attempt": 1}}
+{"t": "2026-09-30T13:12:35Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c04_mount_v01", "outcome": "STOPPED", "report": "01_CAD/DESIGN_PLAN.md"}}
+{"t": "2026-09-30T13:12:36Z", "ev": "note", "detail": {"text": "J2 stop: S2 printed standoff 0.411 from the body (REQ-01 vs A-05); STEP body axis at (-8.330,-14.130) not the origin; both holes open toward -Z, S1 seats on the base face z 0; OD-H11 brep_valid 0. Spec 1.1 answers all (tips -10.10, spacers 10.10/37.70). INTAKE_v01 section 1 hashes are 63 characters (truncated); full values in the WP-03 brief", "ref": "01_CAD/DESIGN_PLAN.md"}}
+{"t": "2026-09-30T13:12:37Z", "ev": "note", "detail": {"text": "A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13 -> A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13,A-14", "ref": "JOB.md:open_assumptions"}}
+{"t": "2026-09-30T13:12:38Z", "ev": "note", "detail": {"text": "1.0 -> 1.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T13:12:39Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.1", "ref": "the Usta's standing instruction of 2026-09-30; explicit confirmation pending"}}
+{"t": "2026-09-30T13:12:40Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "plan checked with the spec 1.1 amendments carried in WP-03"}}
+{"t": "2026-09-30T13:12:41Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c04_mount_v01", "brief": "briefs/WP-03_designer.md", "attempt": 1}}
+{"t": "2026-09-30T13:12:41Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
