@@ -90,3 +90,5 @@
 {"t": "2026-09-30T14:13:03Z", "ev": "gate_fail", "detail": {"gate": "REQ-09", "target": "od_c03_cradle_v02", "status": "INCONCLUSIVE", "measured": null, "unit": "none", "required": "Soft: no unacceptable vibration to the chassis with the OEM sleeve (bench)", "by": "reviewer"}}
 {"t": "2026-09-30T14:13:04Z", "ev": "state", "detail": {"from": "J4_REVIEW", "to": "J5_DELIVER"}}
 {"t": "2026-09-30T14:13:05Z", "ev": "note", "detail": {"text": "RV02 APPROVED_ASSUMPTION_CONDITIONAL; deliverables copied to open-dedica chassis/OD-C03_pump_cradle.step/.stl/.3mf and chassis/src/OD-C03_pump_cradle/ (build v02 = the reviewed files by SHA-256)"}}
+{"t": "2026-09-30T14:55:24Z", "ev": "usta_gate", "detail": {"gate": "question_answered", "outcome": "confirmed", "ref": "00_Spec/DESIGN_SPEC.md:§7"}}
+{"t": "2026-09-30T14:55:25Z", "ev": "note", "detail": {"text": "the Usta confirmed every decision taken on the standing instruction (spec ratifications, concept C1, gate classes, the REVISE round) with 'confirmed go' in the project thread, 2026-09-30, after PR #43 merged"}}
