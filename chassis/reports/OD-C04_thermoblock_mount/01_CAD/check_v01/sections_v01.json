@@ -1,0 +1,138 @@
+[
+ {
+  "tag": "xS1",
+  "view": "left",
+  "through": [
+   -19.62,
+   0.0,
+   0.0
+  ],
+  "file": "03_Sections/od_c04_mount_v01_left_xS1.png",
+  "sha256_at_write": "48457a0eb641e7f3e0655a0fad8401d8ac35fc2db8989fd3d7cd6905b8add91a",
+  "plane": "x = -19.62 mm",
+  "cut_area_mm2": 725.6292036732048,
+  "cut_faces": 2,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "xS2",
+  "view": "left",
+  "through": [
+   25.01,
+   0.0,
+   0.0
+  ],
+  "file": "03_Sections/od_c04_mount_v01_left_xS2.png",
+  "sha256_at_write": "7ed90bedac941c6f521bf04a6166cddaf0daf4e326397db4a315bd3644dbbf9d",
+  "plane": "x = 25.01 mm",
+  "cut_area_mm2": 725.6292036732052,
+  "cut_faces": 2,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "xGusset",
+  "view": "left",
+  "through": [
+   46.0,
+   0.0,
+   0.0
+  ],
+  "file": "03_Sections/od_c04_mount_v01_left_xGusset.png",
+  "sha256_at_write": "646d299e0969133bb4aedeb8aa2791f0258c0245ccfdfd075096fa1ec0ace1a6",
+  "plane": "x = 46.00 mm",
+  "cut_area_mm2": 929.494897415605,
+  "cut_faces": 1,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "xFrameHoles",
+  "view": "left",
+  "through": [
+   40.0,
+   0.0,
+   0.0
+  ],
+  "file": "03_Sections/od_c04_mount_v01_left_xFrameHoles.png",
+  "sha256_at_write": "56488e256c571e6ea6a00b7bb895c073647caa6fe394b5af3baaed8d046efc38",
+  "plane": "x = 40.00 mm",
+  "cut_area_mm2": 695.2421559546962,
+  "cut_faces": 3,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "yFoot",
+  "view": "front",
+  "through": [
+   0.0,
+   -68.0,
+   0.0
+  ],
+  "file": "03_Sections/od_c04_mount_v01_front_yFoot.png",
+  "sha256_at_write": "a2458bcae6da5aca42ee212809d589798a8ee7230eeb8fe45db48605af1a8c54",
+  "plane": "y = -68.00 mm",
+  "cut_area_mm2": 4959.994520470986,
+  "cut_faces": 1,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "zStandoffs",
+  "view": "top",
+  "through": [
+   0.0,
+   0.0,
+   -11.0
+  ],
+  "file": "03_Sections/od_c04_mount_v01_top_zStandoffs.png",
+  "sha256_at_write": "0d4121a3c428eae55f529b81862af305f15fb1b63ae315efd7e3cad4cc496f24",
+  "plane": "z = -11.00 mm",
+  "cut_area_mm2": 753.0619298297472,
+  "cut_faces": 3,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "asm_xS1",
+  "view": "left",
+  "through": [
+   -19.62,
+   0.0,
+   0.0
+  ],
+  "file": "03_Sections/od_c04_mount_v01_left_asm_xS1.png",
+  "sha256_at_write": "22616d2b8774b890a7421147c1d471588470ed97e4e20f3a64107a3af5afbf7f",
+  "plane": "x = -19.62 mm",
+  "cut_area_mm2": 3404.8392679512976,
+  "cut_faces": 5,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "asm_xS2",
+  "view": "left",
+  "through": [
+   25.01,
+   0.0,
+   0.0
+  ],
+  "file": "03_Sections/od_c04_mount_v01_left_asm_xS2.png",
+  "sha256_at_write": "73ae433c317ebd33629ef99e7a64a977f774e26c6ccacfe9533fcf7900e2d7a1",
+  "plane": "x = 25.01 mm",
+  "cut_area_mm2": 1953.8866196158492,
+  "cut_faces": 5,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ }
+]

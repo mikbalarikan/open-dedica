@@ -1,0 +1,904 @@
+{
+ "mount_tree": {
+  "type": "Solid",
+  "children": [],
+  "shells": 1,
+  "solids": 1,
+  "faces": 36
+ },
+ "mount_solid_shells": 1,
+ "mount_solid_faces": 36,
+ "roundtrip": {
+  "schema": {
+   "name": "step_schema",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "schema": "AP242"
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "found": "AP242",
+    "sha256": "94c448df911a8ead86b9b512e9536b4af99f8b6322d342ce6152b36d90e45f9e",
+    "path": "rt_mount.step"
+   }
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 1,
+    "sha256": "94c448df911a8ead86b9b512e9536b4af99f8b6322d342ce6152b36d90e45f9e",
+    "path": "rt_mount.step"
+   }
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built_mm3": 74659.46454806624,
+    "reimported_mm3": 74659.46454806624,
+    "sha256": "94c448df911a8ead86b9b512e9536b4af99f8b6322d342ce6152b36d90e45f9e",
+    "path": "rt_mount.step"
+   }
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 36,
+    "reimported": 36
+   }
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": [
+     "od_c04_mount"
+    ],
+    "reimported": [
+     "od_c04_mount"
+    ]
+   }
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.077,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.0001568438717451211,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  }
+ },
+ "asm_labels": [
+  "od_c04_mount",
+  "OD-H11_thermoblock",
+  "spacer_S1_assumed_A05",
+  "spacer_S2_assumed_A05"
+ ],
+ "asm_parts": {
+  "od_c04_mount": {
+   "solids": 1,
+   "volume": 74659.46454806624,
+   "envelope": {
+    "size_x": 100.00000000000003,
+    "size_y": 110.0,
+    "size_z": 50.0,
+    "min_x": -50.0,
+    "min_y": -70.0,
+    "min_z": -17.0,
+    "max_x": 50.00000000000003,
+    "max_y": 40.0,
+    "max_z": 33.0
+   },
+   "validity": {
+    "solid_count": [
+     1,
+     "MEASURED",
+     ""
+    ],
+    "brep_valid": [
+     1,
+     "MEASURED",
+     ""
+    ],
+    "naked_edges": [
+     0,
+     "MEASURED",
+     ""
+    ]
+   }
+  },
+  "OD-H11_thermoblock": {
+   "solids": 1,
+   "volume": 159766.40497098252,
+   "envelope": {
+    "size_x": 86.10919803859278,
+    "size_y": 106.88800793169165,
+    "size_z": 50.79000010000019,
+    "min_x": -43.270176422418,
+    "min_y": -53.50750571260734,
+    "min_z": -1.0000017272294705e-07,
+    "max_x": 42.83902161617478,
+    "max_y": 53.3805022190843,
+    "max_z": 50.79000000000002
+   },
+   "validity": {
+    "solid_count": [
+     1,
+     "MEASURED",
+     ""
+    ],
+    "brep_valid": [
+     0,
+     "MEASURED",
+     ""
+    ],
+    "naked_edges": [
+     0,
+     "MEASURED",
+     ""
+    ]
+   }
+  },
+  "spacer_S1_assumed_A05": {
+   "solids": 1,
+   "volume": 261.77320786037524,
+   "envelope": {
+    "size_x": 7.0,
+    "size_y": 7.0,
+    "size_z": 10.1,
+    "min_x": -23.12,
+    "min_y": 16.68,
+    "min_z": -10.1,
+    "max_x": -16.12,
+    "max_y": 23.68,
+    "max_z": 0.0
+   },
+   "validity": {
+    "solid_count": [
+     1,
+     "MEASURED",
+     ""
+    ],
+    "brep_valid": [
+     1,
+     "MEASURED",
+     ""
+    ],
+    "naked_edges": [
+     0,
+     "MEASURED",
+     ""
+    ]
+   }
+  },
+  "spacer_S2_assumed_A05": {
+   "solids": 1,
+   "volume": 977.1138550827868,
+   "envelope": {
+    "size_x": 7.0,
+    "size_y": 7.0,
+    "size_z": 37.7,
+    "min_x": 21.51,
+    "min_y": 5.58,
+    "min_z": -10.1,
+    "max_x": 28.51,
+    "max_y": 12.58,
+    "max_z": 27.6
+   },
+   "validity": {
+    "solid_count": [
+     1,
+     "MEASURED",
+     ""
+    ],
+    "brep_valid": [
+     1,
+     "MEASURED",
+     ""
+    ],
+    "naked_edges": [
+     0,
+     "MEASURED",
+     ""
+    ]
+   }
+  }
+ },
+ "H_input": {
+  "volume": 159766.4573614962,
+  "envelope": {
+   "size_x": 86.10919803859278,
+   "size_y": 106.88800793169165,
+   "size_z": 50.79000010000018,
+   "min_x": -43.270176422418,
+   "min_y": -53.50750571260734,
+   "min_z": -1.0000017272294705e-07,
+   "max_x": 42.83902161617478,
+   "max_y": 53.3805022190843,
+   "max_z": 50.790000000000006
+  }
+ },
+ "mount_vs_asm_common": {
+  "name": "common_volume",
+  "measured": 74659.46454806624,
+  "unit": "mm3",
+  "at": null,
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "solids_a": 1,
+   "solids_b": 1,
+   "pairs_computed": 1,
+   "pairs_skipped_by_bbox": 0,
+   "solids_checked": 2
+  }
+ },
+ "mount_vs_asm_vol": [
+  74659.46454806624,
+  74659.46454806624
+ ],
+ "S1_bores": [
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -19.62,
+    20.18,
+    -10.1
+   ],
+   "end": [
+    -19.62,
+    20.18,
+    0.0
+   ],
+   "length": 10.1,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  }
+ ],
+ "S2_bores": [
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    25.01,
+    9.08,
+    -10.1
+   ],
+   "end": [
+    25.01,
+    9.08,
+    27.6
+   ],
+   "length": 37.7,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  }
+ ],
+ "clearance": {
+  "mount|H_asm": {
+   "name": "clearance",
+   "measured": 10.1,
+   "unit": "mm",
+   "at": [
+    -13.62,
+    20.18,
+    -10.1
+   ],
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "on_b": [
+     -13.62,
+     20.18,
+     0.0
+    ],
+    "inside": false,
+    "solid_pairs": 1
+   }
+  },
+  "mount_file|H_input": {
+   "name": "clearance",
+   "measured": 10.1,
+   "unit": "mm",
+   "at": [
+    -13.62,
+    20.18,
+    -10.1
+   ],
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "on_b": [
+     -13.62,
+     20.18,
+     0.0
+    ],
+    "inside": false,
+    "solid_pairs": 1
+   }
+  },
+  "S1|mount": {
+   "name": "clearance",
+   "measured": 0.0,
+   "unit": "mm",
+   "at": [
+    -17.62,
+    20.18,
+    -10.1
+   ],
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "on_b": [
+     -17.62,
+     20.18,
+     -10.1
+    ],
+    "inside": false,
+    "solid_pairs": 1
+   }
+  },
+  "S2|mount": {
+   "name": "clearance",
+   "measured": 0.0,
+   "unit": "mm",
+   "at": [
+    27.01,
+    9.08,
+    -10.1
+   ],
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "on_b": [
+     27.01,
+     9.08,
+     -10.1
+    ],
+    "inside": false,
+    "solid_pairs": 1
+   }
+  },
+  "S1|H": {
+   "name": "clearance",
+   "measured": 0.0,
+   "unit": "mm",
+   "at": [
+    -20.539905,
+    18.404113,
+    0.0
+   ],
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "on_b": [
+     -20.539905,
+     18.404113,
+     0.0
+    ],
+    "inside": false,
+    "solid_pairs": 1
+   }
+  },
+  "S2|H": {
+   "name": "clearance",
+   "measured": 0.0,
+   "unit": "mm",
+   "at": [
+    28.51,
+    9.08,
+    27.6
+   ],
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "on_b": [
+     28.51,
+     9.08,
+     27.6
+    ],
+    "inside": false,
+    "solid_pairs": 1
+   }
+  },
+  "S1|S2": {
+   "name": "clearance",
+   "measured": 38.989639050551375,
+   "unit": "mm",
+   "at": [
+    -16.223474,
+    19.335245,
+    -10.1
+   ],
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "on_b": [
+     21.613474,
+     9.924755,
+     -10.1
+    ],
+    "inside": false,
+    "solid_pairs": 1
+   }
+  }
+ },
+ "interference": {
+  "mount|OD-H11": {
+   "name": "interference",
+   "measured": null,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "mount",
+     "OD-H11"
+    ]
+   },
+   "status": "INCONCLUSIVE",
+   "reason": "solid 1 of b: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+   "detail": {}
+  },
+  "mount|S1": {
+   "name": "interference",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "mount",
+     "S1"
+    ]
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "solids_a": 1,
+    "solids_b": 1,
+    "pairs_computed": 1,
+    "pairs_skipped_by_bbox": 0,
+    "solids_checked": 2
+   }
+  },
+  "mount|S2": {
+   "name": "interference",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "mount",
+     "S2"
+    ]
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "solids_a": 1,
+    "solids_b": 1,
+    "pairs_computed": 1,
+    "pairs_skipped_by_bbox": 0,
+    "solids_checked": 2
+   }
+  },
+  "OD-H11|S1": {
+   "name": "interference",
+   "measured": null,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "OD-H11",
+     "S1"
+    ]
+   },
+   "status": "INCONCLUSIVE",
+   "reason": "solid 1 of a: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+   "detail": {}
+  },
+  "OD-H11|S2": {
+   "name": "interference",
+   "measured": null,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "OD-H11",
+     "S2"
+    ]
+   },
+   "status": "INCONCLUSIVE",
+   "reason": "solid 1 of a: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+   "detail": {}
+  },
+  "S1|S2": {
+   "name": "interference",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {
+    "pair": [
+     "S1",
+     "S2"
+    ]
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "solids_a": 1,
+    "solids_b": 1,
+    "pairs_computed": 0,
+    "pairs_skipped_by_bbox": 1,
+    "solids_checked": 0
+   }
+  }
+ },
+ "seat_S1": {
+  "samples": 576,
+  "bearing_fraction": 0.3177083333333333,
+  "angles_with_bearing": [
+   "225",
+   "230",
+   "235",
+   "240",
+   "245",
+   "250",
+   "255",
+   "260",
+   "265",
+   "270",
+   "275",
+   "280",
+   "285",
+   "290",
+   "295",
+   "300",
+   "305",
+   "310",
+   "315",
+   "320",
+   "325",
+   "330",
+   "335",
+   "340",
+   "345",
+   "350"
+  ]
+ },
+ "seat_S2": {
+  "samples": 576,
+  "bearing_fraction": 1.0,
+  "angles_with_bearing": [
+   "0",
+   "5",
+   "10",
+   "15",
+   "20",
+   "25",
+   "30",
+   "35",
+   "40",
+   "45",
+   "50",
+   "55",
+   "60",
+   "65",
+   "70",
+   "75",
+   "80",
+   "85",
+   "90",
+   "95",
+   "100",
+   "105",
+   "110",
+   "115",
+   "120",
+   "125",
+   "130",
+   "135",
+   "140",
+   "145",
+   "150",
+   "155",
+   "160",
+   "165",
+   "170",
+   "175",
+   "180",
+   "185",
+   "190",
+   "195",
+   "200",
+   "205",
+   "210",
+   "215",
+   "220",
+   "225",
+   "230",
+   "235",
+   "240",
+   "245",
+   "250",
+   "255",
+   "260",
+   "265",
+   "270",
+   "275",
+   "280",
+   "285",
+   "290",
+   "295",
+   "300",
+   "305",
+   "310",
+   "315",
+   "320",
+   "325",
+   "330",
+   "335",
+   "340",
+   "345",
+   "350",
+   "355"
+  ]
+ },
+ "S1_body_probe": {
+  "samples": 6480,
+  "inside_casting": 0
+ },
+ "S2_body_probe": {
+  "samples": 6480,
+  "inside_casting": 0
+ },
+ "REQ07_common": {
+  "name": "common_volume",
+  "measured": 0.0,
+  "unit": "mm3",
+  "at": null,
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "solids_a": 1,
+   "solids_b": 1,
+   "pairs_computed": 1,
+   "pairs_skipped_by_bbox": 0,
+   "solids_checked": 2
+  }
+ },
+ "REQ07_clearance": {
+  "name": "clearance",
+  "measured": 6.869999999999997,
+  "unit": "mm",
+  "at": [
+   -8.33,
+   -66.0,
+   33.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    -8.33,
+    -59.13,
+    33.0
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "REQ07_origin_common": {
+  "name": "common_volume",
+  "measured": 0.0,
+  "unit": "mm3",
+  "at": null,
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "solids_a": 1,
+   "solids_b": 1,
+   "pairs_computed": 1,
+   "pairs_skipped_by_bbox": 0,
+   "solids_checked": 2
+  }
+ },
+ "REQ07_radial": {
+  "max": {
+   "measured": null,
+   "status": "INCONCLUSIVE",
+   "reason": "864 of 864 rays unread, first at 0\u00b0 and z = 0.992500 mm: no material between 0 and 45 mm on the ray at 0\u00b0 and z = 0.9925 mm",
+   "unread": 864
+  },
+  "min": {
+   "measured": null,
+   "status": "INCONCLUSIVE",
+   "reason": "864 of 864 rays unread, first at 0\u00b0 and z = 0.992500 mm: no material between 0 and 45 mm on the ray at 0\u00b0 and z = 0.9925 mm",
+   "unread": 864
+  }
+ },
+ "stl_sha": "c579d4159966a522cb84282e97aefcbaec22cbb9ece844241cd0ba8e9e1b13f7",
+ "stl_census": {
+  "triangles": [
+   8516,
+   "MEASURED"
+  ],
+  "bodies": [
+   1,
+   "MEASURED"
+  ],
+  "naked_edges": [
+   0,
+   "MEASURED"
+  ],
+  "winding": [
+   1,
+   "MEASURED"
+  ],
+  "volume": [
+   74659.56681419934,
+   "MEASURED"
+  ]
+ },
+ "stl_deviation": {
+  "name": "mesh_deviation",
+  "measured": 0.006358501737249201,
+  "unit": "mm",
+  "at": [
+   -20.028612,
+   14.181504,
+   -11.11126
+  ],
+  "params": {
+   "reference_tolerance_mm": 0.001
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "mesh_to_shape_mm": 0.006358501737249201,
+   "shape_to_mesh_mm": 0.006148958593022418,
+   "samples": 191824,
+   "reference_triangles": 53304
+  }
+ },
+ "my_stl": {
+  "sha": "0cc3d677816f3d8f2d18cb4ea77f27992382c61e2470e4f93f3f370dcf0456db",
+  "detail": {
+   "tolerance_mm": 0.01,
+   "angular_tolerance_rad": 0.2309721947249083,
+   "triangles": 8516,
+   "max_sagitta_mm": 0.006269949994348233
+  },
+  "sagitta": {
+   "name": "stl_max_sagitta",
+   "measured": 0.006269949994348233,
+   "unit": "mm",
+   "at": [
+    30.090919666786778,
+    4.428463264347441,
+    -11.987463956090913
+   ],
+   "params": {
+    "samples_per_triangle": 13
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "triangles": 8516,
+    "samples": 97266,
+    "faces_without_triangles": 0,
+    "unprojected_samples": 0
+   }
+  }
+ },
+ "stl_minwall": {
+  "name": "min_wall_mesh",
+  "measured": 3.995605223159868,
+  "unit": "mm",
+  "at": [
+   19.742295,
+   6.217521,
+   -10.82
+  ],
+  "params": {
+   "opposition_deg": 25.0,
+   "samples_per_triangle": 4,
+   "max_rays": 1000000
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "triangles": 8516,
+   "rays": 34064,
+   "opposed_hits": 21084,
+   "rays_without_exit": 0,
+   "watertight": true,
+   "vertex_precision_mm": 8.344650268554688e-06
+  }
+ },
+ "stl_bounds": [
+  [
+   -50.0,
+   -70.0,
+   -17.0
+  ],
+  [
+   50.0,
+   40.0,
+   33.0
+  ]
+ ],
+ "stl_volume": 74659.56681419934,
+ "stl_triangles": 8516
+}

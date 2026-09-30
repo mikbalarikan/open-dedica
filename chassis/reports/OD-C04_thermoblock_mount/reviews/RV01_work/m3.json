@@ -1,0 +1,617 @@
+{
+ "planes": [
+  {
+   "normal": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "area": 10121.394,
+   "env": {
+    "size_x": 100.0,
+    "size_y": 106.0,
+    "size_z": 0.0,
+    "min_x": -50.0,
+    "min_y": -66.0,
+    "min_z": -12.0,
+    "max_x": 50.0,
+    "max_y": 40.0,
+    "max_z": -12.0
+   }
+  },
+  {
+   "normal": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "area": 705.0,
+   "env": {
+    "size_x": 0.0,
+    "size_y": 105.0,
+    "size_z": 50.0,
+    "min_x": -50.0,
+    "min_y": -70.0,
+    "min_z": -17.0,
+    "max_x": -50.0,
+    "max_y": 35.0,
+    "max_z": 33.0
+   }
+  },
+  {
+   "normal": [
+    -0.0,
+    1.0,
+    0.0
+   ],
+   "area": 4299.995,
+   "env": {
+    "size_x": 100.0,
+    "size_y": 0.0,
+    "size_z": 45.0,
+    "min_x": -50.0,
+    "min_y": -66.0,
+    "min_z": -12.0,
+    "max_x": 50.0,
+    "max_y": -66.0,
+    "max_z": 33.0
+   }
+  },
+  {
+   "normal": [
+    -1.0,
+    -0.0,
+    -0.0
+   ],
+   "area": 200.0,
+   "env": {
+    "size_x": 0.0,
+    "size_y": 20.0,
+    "size_z": 20.0,
+    "min_x": -48.0,
+    "min_y": -66.0,
+    "min_z": -12.0,
+    "max_x": -48.0,
+    "max_y": -46.0,
+    "max_z": 8.0
+   }
+  },
+  {
+   "normal": [
+    -0.0,
+    1.0,
+    0.0
+   ],
+   "area": 450.0,
+   "env": {
+    "size_x": 90.0,
+    "size_y": 0.0,
+    "size_z": 5.0,
+    "min_x": -45.0,
+    "min_y": 40.0,
+    "min_z": -17.0,
+    "max_x": 45.0,
+    "max_y": 40.0,
+    "max_z": -12.0
+   }
+  },
+  {
+   "normal": [
+    -0.0,
+    0.7071,
+    0.7071
+   ],
+   "area": 113.137,
+   "env": {
+    "size_x": 4.0,
+    "size_y": 20.0,
+    "size_z": 20.0,
+    "min_x": -48.0,
+    "min_y": -66.0,
+    "min_z": -12.0,
+    "max_x": -44.0,
+    "max_y": -46.0,
+    "max_z": 8.0
+   }
+  },
+  {
+   "normal": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "area": 200.0,
+   "env": {
+    "size_x": 0.0,
+    "size_y": 20.0,
+    "size_z": 20.0,
+    "min_x": -44.0,
+    "min_y": -66.0,
+    "min_z": -12.0,
+    "max_x": -44.0,
+    "max_y": -46.0,
+    "max_z": 8.0
+   }
+  },
+  {
+   "normal": [
+    1.0,
+    -0.0,
+    -0.0
+   ],
+   "area": 705.0,
+   "env": {
+    "size_x": 0.0,
+    "size_y": 105.0,
+    "size_z": 50.0,
+    "min_x": 50.0,
+    "min_y": -70.0,
+    "min_z": -17.0,
+    "max_x": 50.0,
+    "max_y": 35.0,
+    "max_z": 33.0
+   }
+  },
+  {
+   "normal": [
+    -1.0,
+    -0.0,
+    -0.0
+   ],
+   "area": 200.0,
+   "env": {
+    "size_x": 0.0,
+    "size_y": 20.0,
+    "size_z": 20.0,
+    "min_x": 44.0,
+    "min_y": -66.0,
+    "min_z": -12.0,
+    "max_x": 44.0,
+    "max_y": -46.0,
+    "max_z": 8.0
+   }
+  },
+  {
+   "normal": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "area": 200.0,
+   "env": {
+    "size_x": 0.0,
+    "size_y": 20.0,
+    "size_z": 20.0,
+    "min_x": 48.0,
+    "min_y": -66.0,
+    "min_z": -12.0,
+    "max_x": 48.0,
+    "max_y": -46.0,
+    "max_z": 8.0
+   }
+  },
+  {
+   "normal": [
+    -0.0,
+    0.7071,
+    0.7071
+   ],
+   "area": 113.137,
+   "env": {
+    "size_x": 4.0,
+    "size_y": 20.0,
+    "size_z": 20.0,
+    "min_x": 44.0,
+    "min_y": -66.0,
+    "min_z": -12.0,
+    "max_x": 48.0,
+    "max_y": -46.0,
+    "max_z": 8.0
+   }
+  },
+  {
+   "normal": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "area": 4959.995,
+   "env": {
+    "size_x": 100.0,
+    "size_y": 0.0,
+    "size_z": 50.0,
+    "min_x": -50.0,
+    "min_y": -70.0,
+    "min_z": -17.0,
+    "max_x": 50.0,
+    "max_y": -70.0,
+    "max_z": 33.0
+   }
+  },
+  {
+   "normal": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "area": 400.0,
+   "env": {
+    "size_x": 100.0,
+    "size_y": 4.0,
+    "size_z": 0.0,
+    "min_x": -50.0,
+    "min_y": -70.0,
+    "min_z": 33.0,
+    "max_x": 50.0,
+    "max_y": -66.0,
+    "max_z": 33.0
+   }
+  },
+  {
+   "normal": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "area": 10964.137,
+   "env": {
+    "size_x": 100.0,
+    "size_y": 110.0,
+    "size_z": 0.0,
+    "min_x": -50.0,
+    "min_y": -70.0,
+    "min_z": -17.0,
+    "max_x": 50.0,
+    "max_y": 40.0,
+    "max_z": -17.0
+   }
+  },
+  {
+   "normal": [
+    0.766,
+    0.0,
+    -0.6428
+   ],
+   "area": 8.104,
+   "env": {
+    "size_x": 1.302276,
+    "size_y": 4.0,
+    "size_z": 1.551992,
+    "min_x": -41.302276,
+    "min_y": -70.0,
+    "min_z": -6.907261,
+    "max_x": -40.0,
+    "max_y": -66.0,
+    "max_z": -5.355269
+   }
+  },
+  {
+   "normal": [
+    -0.766,
+    0.0,
+    -0.6428
+   ],
+   "area": 8.104,
+   "env": {
+    "size_x": 1.302276,
+    "size_y": 4.0,
+    "size_z": 1.551992,
+    "min_x": -40.0,
+    "min_y": -70.0,
+    "min_z": -6.907261,
+    "max_x": -38.697724,
+    "max_y": -66.0,
+    "max_z": -5.355269
+   }
+  },
+  {
+   "normal": [
+    0.766,
+    0.0,
+    -0.6428
+   ],
+   "area": 8.104,
+   "env": {
+    "size_x": 1.302276,
+    "size_y": 4.0,
+    "size_z": 1.551992,
+    "min_x": -41.302276,
+    "min_y": -70.0,
+    "min_z": 27.092739,
+    "max_x": -40.0,
+    "max_y": -66.0,
+    "max_z": 28.644731
+   }
+  },
+  {
+   "normal": [
+    -0.766,
+    0.0,
+    -0.6428
+   ],
+   "area": 8.104,
+   "env": {
+    "size_x": 1.302276,
+    "size_y": 4.0,
+    "size_z": 1.551992,
+    "min_x": -40.0,
+    "min_y": -70.0,
+    "min_z": 27.092739,
+    "max_x": -38.697724,
+    "max_y": -66.0,
+    "max_z": 28.644731
+   }
+  },
+  {
+   "normal": [
+    0.766,
+    0.0,
+    -0.6428
+   ],
+   "area": 8.104,
+   "env": {
+    "size_x": 1.302276,
+    "size_y": 4.0,
+    "size_z": 1.551992,
+    "min_x": 38.697724,
+    "min_y": -70.0,
+    "min_z": -6.907261,
+    "max_x": 40.0,
+    "max_y": -66.0,
+    "max_z": -5.355269
+   }
+  },
+  {
+   "normal": [
+    -0.766,
+    0.0,
+    -0.6428
+   ],
+   "area": 8.104,
+   "env": {
+    "size_x": 1.302276,
+    "size_y": 4.0,
+    "size_z": 1.551992,
+    "min_x": 40.0,
+    "min_y": -70.0,
+    "min_z": -6.907261,
+    "max_x": 41.302276,
+    "max_y": -66.0,
+    "max_z": -5.355269
+   }
+  },
+  {
+   "normal": [
+    0.766,
+    0.0,
+    -0.6428
+   ],
+   "area": 8.104,
+   "env": {
+    "size_x": 1.302276,
+    "size_y": 4.0,
+    "size_z": 1.551992,
+    "min_x": 38.697724,
+    "min_y": -70.0,
+    "min_z": 27.092739,
+    "max_x": 40.0,
+    "max_y": -66.0,
+    "max_z": 28.644731
+   }
+  },
+  {
+   "normal": [
+    -0.766,
+    0.0,
+    -0.6428
+   ],
+   "area": 8.104,
+   "env": {
+    "size_x": 1.302276,
+    "size_y": 4.0,
+    "size_z": 1.551992,
+    "min_x": 40.0,
+    "min_y": -70.0,
+    "min_z": 27.092739,
+    "max_x": 41.302276,
+    "max_y": -66.0,
+    "max_z": 28.644731
+   }
+  },
+  {
+   "normal": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "area": 100.531,
+   "env": {
+    "size_x": 12.0,
+    "size_y": 12.0,
+    "size_z": 0.0,
+    "min_x": 19.01,
+    "min_y": 3.08,
+    "min_z": -10.1,
+    "max_x": 31.01,
+    "max_y": 15.08,
+    "max_z": -10.1
+   }
+  },
+  {
+   "normal": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "area": 100.531,
+   "env": {
+    "size_x": 12.0,
+    "size_y": 12.0,
+    "size_z": 0.0,
+    "min_x": -25.62,
+    "min_y": 14.18,
+    "min_z": -10.1,
+    "max_x": -13.62,
+    "max_y": 26.18,
+    "max_z": -10.1
+   }
+  }
+ ],
+ "tori": [
+  {
+   "major": 7.0,
+   "minor": 1.0,
+   "centre": [
+    25.01,
+    9.08,
+    -11.0
+   ]
+  },
+  {
+   "major": 7.0,
+   "minor": 1.0,
+   "centre": [
+    -19.62,
+    20.18,
+    -11.0
+   ]
+  }
+ ],
+ "sections": {
+  "xS1": [
+   {
+    "file": "/home/claude/oguz-jobs/20260930-od-c04-thermoblock-mount/reviews/RV01_work/sections/xS1/rv01_xS1_v01_left.png",
+    "detail": {
+     "view": "left",
+     "section": "SECTION A-A",
+     "plane": "x = -19.62 mm",
+     "cut_faces": 2,
+     "cut_area_mm2": 725.6292036732048,
+     "visible_edges": 25,
+     "margin_mm": 11.588854655056933
+    },
+    "clipped": 0
+   }
+  ],
+  "xS2": [
+   {
+    "file": "/home/claude/oguz-jobs/20260930-od-c04-thermoblock-mount/reviews/RV01_work/sections/xS2/rv01_xS2_v01_left.png",
+    "detail": {
+     "view": "left",
+     "section": "SECTION A-A",
+     "plane": "x = 25.01 mm",
+     "cut_faces": 2,
+     "cut_area_mm2": 725.6292036732052,
+     "visible_edges": 21,
+     "margin_mm": 11.516258093324403
+    },
+    "clipped": 0
+   }
+  ],
+  "xGusset": [
+   {
+    "file": "/home/claude/oguz-jobs/20260930-od-c04-thermoblock-mount/reviews/RV01_work/sections/xGusset/rv01_xGusset_v01_left.png",
+    "detail": {
+     "view": "left",
+     "section": "SECTION A-A",
+     "plane": "x = -46.00 mm",
+     "cut_faces": 1,
+     "cut_area_mm2": 929.4948974278323,
+     "visible_edges": 21,
+     "margin_mm": 12.028854660537709
+    },
+    "clipped": 0
+   }
+  ],
+  "xFrame": [
+   {
+    "file": "/home/claude/oguz-jobs/20260930-od-c04-thermoblock-mount/reviews/RV01_work/sections/xFrame/rv01_xFrame_v01_left.png",
+    "detail": {
+     "view": "left",
+     "section": "SECTION A-A",
+     "plane": "x = 40.00 mm",
+     "cut_faces": 3,
+     "cut_area_mm2": 695.2421559546962,
+     "visible_edges": 25,
+     "margin_mm": 11.90203170887073
+    },
+    "clipped": 0
+   }
+  ],
+  "zStandoffs": [
+   {
+    "file": "/home/claude/oguz-jobs/20260930-od-c04-thermoblock-mount/reviews/RV01_work/sections/zStandoffs/rv01_zStandoffs_v01_top.png",
+    "detail": {
+     "view": "top",
+     "section": "SECTION A-A",
+     "plane": "z = -11.00 mm",
+     "cut_faces": 3,
+     "cut_area_mm2": 753.0619298297472,
+     "visible_edges": 29,
+     "margin_mm": 12.261183299843715
+    },
+    "clipped": 0
+   }
+  ],
+  "yFoot": [
+   {
+    "file": "/home/claude/oguz-jobs/20260930-od-c04-thermoblock-mount/reviews/RV01_work/sections/yFoot/rv01_yFoot_v01_front.png",
+    "detail": {
+     "view": "front",
+     "section": "SECTION A-A",
+     "plane": "y = -68.00 mm",
+     "cut_faces": 1,
+     "cut_area_mm2": 4959.994520470986,
+     "visible_edges": 16,
+     "margin_mm": 11.388702835454344
+    },
+    "clipped": 0
+   }
+  ],
+  "zTipPlusEps": [
+   {
+    "file": "/home/claude/oguz-jobs/20260930-od-c04-thermoblock-mount/reviews/RV01_work/sections/zTipPlusEps/rv01_zTipPlusEps_v01_top.png",
+    "detail": {
+     "view": "top",
+     "section": "SECTION A-A",
+     "plane": "z = -10.20 mm",
+     "cut_faces": 3,
+     "cut_area_mm2": 746.6619298297469,
+     "visible_edges": 29,
+     "margin_mm": 12.38221031480241
+    },
+    "clipped": 0
+   }
+  ],
+  "asm_xS1": [
+   {
+    "file": "/home/claude/oguz-jobs/20260930-od-c04-thermoblock-mount/reviews/RV01_work/sections/asm_xS1/rv01_asm_xS1_v01_left.png",
+    "detail": {
+     "view": "left",
+     "section": "SECTION A-A",
+     "plane": "x = -19.62 mm",
+     "cut_faces": 5,
+     "cut_area_mm2": 3404.839267951299,
+     "visible_edges": 292,
+     "margin_mm": 12.857190260862044
+    },
+    "clipped": 0
+   }
+  ],
+  "asm_xS2": [
+   {
+    "file": "/home/claude/oguz-jobs/20260930-od-c04-thermoblock-mount/reviews/RV01_work/sections/asm_xS2/rv01_asm_xS2_v01_left.png",
+    "detail": {
+     "view": "left",
+     "section": "SECTION A-A",
+     "plane": "x = 25.01 mm",
+     "cut_faces": 5,
+     "cut_area_mm2": 1953.8866196158492,
+     "visible_edges": 104,
+     "margin_mm": 12.040937709310114
+    },
+    "clipped": 0
+   }
+  ]
+ }
+}
