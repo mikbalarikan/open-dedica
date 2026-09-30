@@ -31,8 +31,8 @@ revisited when the scan lands.
 |---|---|---|---|
 | 1 | `OD-G01` group head housing | OD-G09, OD-G04, OD-G10 | — (in progress: `reports/OD-G01_group_head_housing/`) |
 | 2 | `OD-C05` group head carrier | OD-G01's rear flange, OD-H11 outlet side | OD-G01 |
-| 3 | `OD-C03` pump cradle | OD-H01; sleeve OD-H02 and spring OD-H03 | H02/H03 not scanned (calipers) |
-| 4 | `OD-C04` thermoblock mount | OD-H11 with its NTC/TCO brackets (OD-H17, H19) | brackets not scanned |
+| 3 | `OD-C03` pump cradle | OD-H01; sleeve OD-H02 and spring OD-H03 | modeled, approved on assumptions (RV02); calipers: H02 sleeve OD, side-wall gap, tie path |
+| 4 | `OD-C04` thermoblock mount | OD-H11 with its NTC/TCO brackets (OD-H17, H19) | modeled, approved on assumptions (RV01); calipers: 10.10 mm air gap, spacer lengths, bracket holes |
 | 5 | `OD-C07` valve and flowmeter mount | OD-H21, OD-H22, OD-H24 | — |
 | 6 | `OD-C06` water tank dock | OD-W03 seat; tank OD-W01/W02 | tank not scanned |
 | 7 | `OD-C01` base frame / floor plate | the footprints of 2–6; drip tray OD-C21/C22 | drip tray not scanned |
@@ -47,6 +47,22 @@ revisited when the scan lands.
 
 Machine profiles: Creality K1C (enclosed: ASA, PC) and Anycubic Kobra Max 3 (large
 panels: PETG); build volumes to be read into `oguz-atolye/atolye/machines/`.
+
+## Interfaces to OD-C01
+
+Parts that bolt to the base frame fix it with M3 screws into heat-set inserts
+(`OD-F01`) in `OD-C01`. Coordinates are in each part's own frame, from its job
+record; OD-C01 must carry an insert at each.
+
+| Part | Inserts in OD-C01 (x, z) mm | Hardware |
+|---|---|---|
+| `OD-C03` pump cradle | (±34, −4), (±34, 37) | 4 × M3 (`OD-F02`), 2 × cable tie (`OD-F09`) |
+| `OD-C04` thermoblock mount | (±40, −8), (±40, 26) | 4 × M3 (`OD-F02`); the thermoblock sits on the metal spacers `OD-F07` and `OD-F08` (M3 through their Ø4 bores; screw length set when the spacers are cut) |
+
+"Approved on assumptions" (`APPROVED_ASSUMPTION_CONDITIONAL`) means every gate
+passes on scan-derived values that the Usta has not confirmed with calipers yet;
+the BOM shows such parts as `modeled`, and `validated` still needs the print and
+fit check.
 
 ## Files
 

@@ -124,8 +124,8 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-C00` | OD-000 | ASM | **Chassis & body** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
 | `OD-C01` | OD-C00 | PRINT | Base frame / floor plate |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
 | `OD-C02` | OD-C00 | PRINT | Wet/electric bulkhead with drainage path |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
-| `OD-C03` | OD-C00 | PRINT | Pump cradle (sleeve + spring suspension) |  |  | 1 | DESIGN | PETG | printed | print | #1 | ✎ |
-| `OD-C04` | OD-C00 | PRINT | Thermoblock mount (≥10 mm air gap to printed walls) |  |  | 1 | DESIGN | ASA / PC | printed | print | #2 | ✎ |
+| `OD-C03` | OD-C00 | PRINT | Pump cradle (sleeve + spring suspension) |  |  | 1 | DESIGN | PETG | printed | print | #1 | 🧊 |
+| `OD-C04` | OD-C00 | PRINT | Thermoblock mount (≥10 mm air gap to printed walls) |  |  | 1 | DESIGN | ASA / PC | printed | print | #2 | 🧊 |
 | `OD-C05` | OD-C00 | PRINT | Group head carrier (ties OD-G00 to frame) |  |  | 1 | DESIGN | ASA | printed | print | #3 | ✎ |
 | `OD-C06` | OD-C00 | PRINT | Water tank dock / inlet seat |  |  | 1 | DESIGN | PETG | printed | print | #5 | ✎ |
 | `OD-C07` | OD-C00 | PRINT | Valve & flowmeter mount (OPV reachable without disassembly) |  |  | 1 | DESIGN | PETG | printed | print | #6 | ✎ |
@@ -155,6 +155,9 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-F04` | OD-000 | STD | Food-safe silicone tube 4×2 mm (routing reserve) |  |  | 1 m | ENVELOPE | silicone | AliExpress | 5 |  | ☐ |
 | `OD-F05` | OD-000 | STD | High-temp epoxy (steam port blank) |  |  | 1 | — | 125 °C / 15 bar | hardware store | 8 |  | ☐ |
 | `OD-F06` | OD-000 | STD | 6.3 mm insulated spade terminals + 105 °C wire (own looms) |  |  | 1 set | — |  | TME / AliExpress | 5 |  | ☐ |
+| `OD-F07` | OD-000 | STD | Metal spacer Ø7 × 10.10 mm (Ø4 bore; OD-C04 thermoblock stand-off) |  |  | 1 | — | steel / brass tube cut to length (+0.10/−0) | local shop / scrap | 1 | #2 | ☐ |
+| `OD-F08` | OD-000 | STD | Metal spacer Ø7 × 37.70 mm (Ø4 bore; OD-C04 thermoblock stand-off) |  |  | 1 | — | steel / brass tube cut to length (+0.10/−0) | local shop / scrap | 1 | #2 | ☐ |
+| `OD-F09` | OD-000 | STD | Cable tie 4.8 mm (OD-C03 pump strap) |  |  | 2 | VENDOR | PA66 UV-black | hardware store | 1 | #1 | ☐ |
 
 ## S — Steam system (phase 2)
 
