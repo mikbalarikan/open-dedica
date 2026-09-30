@@ -26,3 +26,15 @@
 {"t": "2026-09-30T09:12:37Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "plan checked with the spec 1.1 amendments carried in WP-03"}}
 {"t": "2026-09-30T09:13:00Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_g01_housing_v01", "brief": "briefs/WP-03_designer.md", "attempt": 1}}
 {"t": "2026-09-30T09:13:00Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-09-30T11:51:34Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_g01_housing_v01", "outcome": "STOPPED", "report": "01_CAD/REPORT_od_g01_housing_v01.md"}}
+{"t": "2026-09-30T11:51:35Z", "ev": "halt", "detail": {"stage": "J3_BUILD", "reason": "D-01a/D-01b/D-06a FAIL 0.13 mm: the spec 1.1 rear counterbore collides with the pair-B screw holes; 34 of 45 rows pass"}}
+{"t": "2026-09-30T11:51:35Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "BLOCKED-ON-USTA", "reason": "halt: D-01a/D-01b/D-06a FAIL 0.13 mm: the spec 1.1 rear counterbore collides with the pair-B screw holes; 34 of 45 rows pass"}}
+{"t": "2026-09-30T11:51:36Z", "ev": "usta_gate", "detail": {"gate": "halt_decision", "outcome": "another_round", "ref": "the Usta's standing instruction of 2026-09-30; spec 1.2 removes the counterbore; explicit confirmation pending"}}
+{"t": "2026-09-30T11:51:36Z", "ev": "attempt", "detail": {"counter": "build", "n": 0, "cap": 2}}
+{"t": "2026-09-30T11:52:58Z", "ev": "state", "detail": {"from": "BLOCKED-ON-USTA", "to": "J3_BUILD", "reason": "halt_decision another_round; spec 1.2 removes the counterbore"}}
+{"t": "2026-09-30T11:52:59Z", "ev": "note", "detail": {"text": "1.1 -> 1.2", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T11:52:59Z", "ev": "note", "detail": {"text": "A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13,A-14,A-15,A-16,A-17,A-18,A-19,A-20,A-21,A-22,A-23,A-24,A-25,A-26,A-27 -> A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13,A-14,A-15,A-16,A-17,A-18,A-19,A-20,A-21,A-22,A-23,A-24,A-25,A-26,A-27,A-28", "ref": "JOB.md:open_assumptions"}}
+{"t": "2026-09-30T11:52:59Z", "ev": "note", "detail": {"text": "od_g01_housing_v01 -> od_g01_housing_v02", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T11:53:00Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.2", "ref": "the Usta's standing instruction of 2026-09-30; explicit confirmation pending"}}
+{"t": "2026-09-30T11:53:01Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_g01_housing_v02", "brief": "briefs/WP-05_designer.md", "attempt": 1}}
+{"t": "2026-09-30T11:53:01Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}

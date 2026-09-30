@@ -1,0 +1,77 @@
+[
+ {
+  "file": "03_Sections/od_g01_housing_v01_front.png",
+  "sha256": "a8c4451a69926ba96f3304ef13b3c6e46aa7e7c40c2fef56816bbadfd0df07e7",
+  "detail": {
+   "view": "front",
+   "section": "SECTION A-A",
+   "plane": "y = -0.00 mm",
+   "cut_faces": 2,
+   "cut_area_mm2": 666.2178289006808,
+   "visible_edges": 120,
+   "margin_mm": 11.737352087519536
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ },
+ {
+  "file": "03_Sections/od_g01_housing_v01_top.png",
+  "sha256": "addfed5d9bd1cbc680567105fe9507cf4c2082c0ced6501795c0513e3a12dfba",
+  "detail": {
+   "view": "top",
+   "section": "SECTION A-A",
+   "plane": "z = -15.87 mm",
+   "cut_faces": 1,
+   "cut_area_mm2": 2301.32866889242,
+   "visible_edges": 74,
+   "margin_mm": 11.702076356329595
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ },
+ {
+  "file": "03_Sections/od_g01_housing_v01_left.png",
+  "sha256": "ed0cf20756146a01f95f940ec8b0c44e86fd8962ee22551a49b683f271492bb6",
+  "detail": {
+   "view": "left",
+   "section": "SECTION A-A",
+   "plane": "x = -0.00 mm",
+   "cut_faces": 2,
+   "cut_area_mm2": 689.4180940186341,
+   "visible_edges": 120,
+   "margin_mm": 11.597678053136917
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ },
+ {
+  "file": "03_Sections/od_g01_housing_stopblock_v01_front.png",
+  "sha256": "0baca9a6f03cf7c15f89885d5877edb518caa34a394a11afdf314d7e5f4df7bb",
+  "detail": {
+   "view": "front",
+   "section": "SECTION A-A",
+   "plane": "y = -0.00 mm",
+   "cut_faces": 2,
+   "cut_area_mm2": 776.0894649559878,
+   "visible_edges": 127,
+   "margin_mm": 13.775711461128179
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ },
+ {
+  "file": "03_Sections/od_g01_housing_insertboss_v01_front.png",
+  "sha256": "c8d9f25cf54f535c1868818b13ad10ae2c9bcd1605e77aac023bd746f904e618",
+  "detail": {
+   "view": "front",
+   "section": "SECTION A-A",
+   "plane": "y = 0.00 mm",
+   "cut_faces": 4,
+   "cut_area_mm2": 861.3732233104824,
+   "visible_edges": 120,
+   "margin_mm": 15.035015960566362
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ }
+]

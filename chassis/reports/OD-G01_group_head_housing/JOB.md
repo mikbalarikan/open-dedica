@@ -7,20 +7,20 @@ title: "Open Dedica OD-G01 printed group head housing"
 lane: CAD
 state: J3_BUILD
 blocked_on: null
-next_action: "J3: designer package WP-03 builds od_g01_housing_v01 against DESIGN_PLAN with the spec 1.1 amendments; then J4 review"
+next_action: "J3 round 2: designer package WP-05 builds od_g01_housing_v02 to spec 1.2; then J4 review"
 data_class: PUBLIC
 size: M
 process: [FDM]
 gate_sections: [U, D, J, E]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.1"
+spec_version: "1.2"
 workspace: "${OGUZ_JOBS}/20260930-od-g01-group-head-housing"
 delivery: "${OGUZ_DELIVERY}/20260930-od-g01-group-head-housing"
 artifacts: "${OGUZ_ARTIFACTS}/20260930-od-g01-group-head-housing"
 repo_commit: e0b3c9471554d989fb8dc8cdc006c93c02a40ac5
-active_target: od_g01_housing_v01
+active_target: od_g01_housing_v02
 revision: A
-open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13, A-14, A-15, A-16, A-17, A-18, A-19, A-20, A-21, A-22, A-23, A-24, A-25, A-26, A-27]
+open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13, A-14, A-15, A-16, A-17, A-18, A-19, A-20, A-21, A-22, A-23, A-24, A-25, A-26, A-27, A-28]
 attempts: {build: 1, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
 reviews: []
@@ -28,6 +28,8 @@ usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-09-30"}
+  - {gate: halt_decision, outcome: another_round, date: "2026-09-30"}
+  - {gate: spec_ratified, outcome: "1.2", date: "2026-09-30"}
 deliverables: [STEP, STL, scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null
