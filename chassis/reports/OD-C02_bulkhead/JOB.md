@@ -5,9 +5,9 @@ code: ODC02
 milestone: M1
 title: "Open Dedica OD-C02 printed wet/electric bulkhead"
 lane: CAD
-state: J4_REVIEW
+state: J5_DELIVER
 blocked_on: null
-next_action: "J3: designer package WP-03 builds od_c02_bulkhead_v02 to spec 1.1"
+next_action: "J5: Usta confirms A-01..A-03 (wall x, base bores, M3x12 length ending on bore floor) with calipers; REQ-09 answers at the first print"
 data_class: PUBLIC
 size: M
 process: [FDM]
@@ -23,7 +23,8 @@ revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13]
 attempts: {build: 2, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
-reviews: []
+reviews:
+  - {id: RV01, target: od_c02_bulkhead_v02, verdict: APPROVED_ASSUMPTION_CONDITIONAL, blockers: 0, date: "2026-09-30"}
 usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}

@@ -1,0 +1,854 @@
+{
+ "asm_labels": [
+  "od_c02_bulkhead",
+  "od_c01_frame",
+  "od_c03_cradle",
+  "od_h01_pump",
+  "od_c04_mount",
+  "od_h11_thermoblock",
+  "od_g01_housing",
+  "od_c05_foot_reference_A02"
+ ],
+ "asm_solids": 8,
+ "asm": [
+  {
+   "label": "od_c02_bulkhead",
+   "vol": 208484.106,
+   "bbox": [
+    59.0,
+    -0.0,
+    -240.0,
+    71.0,
+    215.0,
+    -30.0
+   ],
+   "solids": 1
+  },
+  {
+   "label": "od_c01_frame",
+   "vol": 580355.904,
+   "bbox": [
+    -120.0,
+    -6.0,
+    -305.0,
+    120.0,
+    0.0,
+    100.0
+   ],
+   "solids": 1
+  },
+  {
+   "label": "od_c03_cradle",
+   "vol": 25458.506,
+   "bbox": [
+    -10.0,
+    -0.0,
+    -245.0,
+    42.0,
+    40.0,
+    -165.0
+   ],
+   "solids": 1
+  },
+  {
+   "label": "od_h01_pump",
+   "vol": 114903.269,
+   "bbox": [
+    -66.45,
+    14.301,
+    -232.2,
+    55.5,
+    71.4,
+    -178.15
+   ],
+   "solids": 1
+  },
+  {
+   "label": "od_c04_mount",
+   "vol": 74659.465,
+   "bbox": [
+    -50.0,
+    -0.0,
+    -157.0,
+    50.0,
+    110.0,
+    -107.0
+   ],
+   "solids": 1
+  },
+  {
+   "label": "od_h11_thermoblock",
+   "vol": 159766.405,
+   "bbox": [
+    -43.27,
+    16.483,
+    -140.3,
+    42.839,
+    123.381,
+    -89.21
+   ],
+   "solids": 1
+  },
+  {
+   "label": "od_g01_housing",
+   "vol": 90216.792,
+   "bbox": [
+    -50.224,
+    176.76,
+    -18.224,
+    50.224,
+    205.0,
+    82.224
+   ],
+   "solids": 1
+  },
+  {
+   "label": "od_c05_foot_reference_A02",
+   "vol": 1016400.0,
+   "bbox": [
+    -55.0,
+    -0.0,
+    -70.0,
+    55.0,
+    210.0,
+    -26.0
+   ],
+   "solids": 1
+  }
+ ],
+ "mine": {
+  "od_c01": {
+   "vol": 580355.904,
+   "bbox": [
+    -120.0,
+    -6.0,
+    -305.0,
+    120.0,
+    0.0,
+    100.0
+   ]
+  },
+  "od_c03": {
+   "vol": 25458.506,
+   "bbox": [
+    -10.0,
+    -0.0,
+    -245.0,
+    42.0,
+    40.0,
+    -165.0
+   ]
+  },
+  "od_h01": {
+   "vol": 114903.269,
+   "bbox": [
+    -66.45,
+    14.301,
+    -232.2,
+    55.5,
+    71.4,
+    -178.15
+   ]
+  },
+  "od_c04": {
+   "vol": 74659.465,
+   "bbox": [
+    -50.0,
+    -0.0,
+    -157.0,
+    50.0,
+    110.0,
+    -107.0
+   ]
+  },
+  "od_h11": {
+   "vol": 159766.457,
+   "bbox": [
+    -43.27,
+    16.483,
+    -140.3,
+    42.839,
+    123.381,
+    -89.21
+   ]
+  },
+  "od_g01": {
+   "vol": 90216.792,
+   "bbox": [
+    -50.224,
+    176.76,
+    -18.224,
+    50.224,
+    205.0,
+    82.224
+   ]
+  },
+  "c05_box": {
+   "vol": 1016400.0,
+   "bbox": [
+    -55.0,
+    -0.0,
+    -70.0,
+    55.0,
+    210.0,
+    -26.0
+   ]
+  }
+ },
+ "part": {
+  "vol": 208484.106,
+  "bbox": [
+   59.0,
+   -0.0,
+   -240.0,
+   71.0,
+   215.0,
+   -30.0
+  ]
+ },
+ "valid": {
+  "od_c01": {
+   "solid_count": [
+    1,
+    ""
+   ],
+   "brep_valid": [
+    1,
+    ""
+   ],
+   "naked_edges": [
+    0,
+    ""
+   ]
+  },
+  "od_c03": {
+   "solid_count": [
+    1,
+    ""
+   ],
+   "brep_valid": [
+    1,
+    ""
+   ],
+   "naked_edges": [
+    0,
+    ""
+   ]
+  },
+  "od_h01": {
+   "solid_count": [
+    1,
+    ""
+   ],
+   "brep_valid": [
+    1,
+    ""
+   ],
+   "naked_edges": [
+    0,
+    ""
+   ]
+  },
+  "od_c04": {
+   "solid_count": [
+    1,
+    ""
+   ],
+   "brep_valid": [
+    1,
+    ""
+   ],
+   "naked_edges": [
+    0,
+    ""
+   ]
+  },
+  "od_h11": {
+   "solid_count": [
+    1,
+    ""
+   ],
+   "brep_valid": [
+    0,
+    ""
+   ],
+   "naked_edges": [
+    0,
+    ""
+   ]
+  },
+  "od_g01": {
+   "solid_count": [
+    1,
+    ""
+   ],
+   "brep_valid": [
+    1,
+    ""
+   ],
+   "naked_edges": [
+    0,
+    ""
+   ]
+  },
+  "c05_box": {
+   "solid_count": [
+    1,
+    ""
+   ],
+   "brep_valid": [
+    1,
+    ""
+   ],
+   "naked_edges": [
+    0,
+    ""
+   ]
+  }
+ },
+ "clearance": {
+  "od_c01": {
+   "mm": 0.0,
+   "at": [
+    67.0,
+    0.0,
+    -225.0
+   ],
+   "on_b": [
+    67.0,
+    0.0,
+    -225.0
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_c03": {
+   "mm": 17.0,
+   "at": [
+    59.0,
+    0.0,
+    -240.0
+   ],
+   "on_b": [
+    42.0,
+    0.0,
+    -240.0
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_h01": {
+   "mm": 7.5,
+   "at": [
+    63.0,
+    40.0,
+    -202.4
+   ],
+   "on_b": [
+    55.5,
+    40.0,
+    -202.4
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_c04": {
+   "mm": 9.0,
+   "at": [
+    59.0,
+    0.0,
+    -157.0
+   ],
+   "on_b": [
+    50.0,
+    0.0,
+    -157.0
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_h11": {
+   "mm": 20.160978383825217,
+   "at": [
+    63.0,
+    99.35655,
+    -97.3
+   ],
+   "on_b": [
+    42.839022,
+    99.35655,
+    -97.3
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_g01": {
+   "mm": 18.682723775766473,
+   "at": [
+    59.5,
+    207.0,
+    -30.0
+   ],
+   "on_b": [
+    47.268037,
+    205.0,
+    -16.020614
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c05_box": {
+   "mm": 4.0,
+   "at": [
+    59.0,
+    0.0,
+    -30.0
+   ],
+   "on_b": [
+    55.0,
+    0.0,
+    -30.0
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "interference": {
+  "od_c01": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_c03": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_h01": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_c04": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_h11": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_g01": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c05_box": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "coax": {
+  "-45": {
+   "plate": {
+    "diameter": [
+     4.0,
+     [
+      65.0,
+      -6.0,
+      -45.0
+     ]
+    ],
+    "offset": [
+     0.0,
+     [
+      65.0,
+      -6.0,
+      -45.0
+     ]
+    ],
+    "length": [
+     6.0,
+     [
+      65.0,
+      -6.0,
+      -45.0
+     ]
+    ],
+    "through": [
+     1,
+     [
+      65.0,
+      -6.0,
+      -45.0
+     ]
+    ]
+   },
+   "plate_bore": [
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      -6.0,
+      -45.0
+     ],
+     "end": [
+      65.0,
+      0.0,
+      -45.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    }
+   ],
+   "bulk_axis": [
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      0.0,
+      -45.0
+     ],
+     "end": [
+      65.0,
+      6.0,
+      -45.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      false
+     ],
+     "through": false
+    }
+   ]
+  },
+  "-105": {
+   "plate": {
+    "diameter": [
+     4.0,
+     [
+      65.0,
+      -6.0,
+      -105.0
+     ]
+    ],
+    "offset": [
+     0.0,
+     [
+      65.0,
+      -6.0,
+      -105.0
+     ]
+    ],
+    "length": [
+     6.0,
+     [
+      65.0,
+      -6.0,
+      -105.0
+     ]
+    ],
+    "through": [
+     1,
+     [
+      65.0,
+      -6.0,
+      -105.0
+     ]
+    ]
+   },
+   "plate_bore": [
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      -6.0,
+      -105.0
+     ],
+     "end": [
+      65.0,
+      0.0,
+      -105.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    }
+   ],
+   "bulk_axis": [
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      0.0,
+      -105.0
+     ],
+     "end": [
+      65.0,
+      6.0,
+      -105.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      false
+     ],
+     "through": false
+    }
+   ]
+  },
+  "-165": {
+   "plate": {
+    "diameter": [
+     4.0,
+     [
+      65.0,
+      -6.0,
+      -165.0
+     ]
+    ],
+    "offset": [
+     0.0,
+     [
+      65.0,
+      -6.0,
+      -165.0
+     ]
+    ],
+    "length": [
+     6.0,
+     [
+      65.0,
+      -6.0,
+      -165.0
+     ]
+    ],
+    "through": [
+     1,
+     [
+      65.0,
+      -6.0,
+      -165.0
+     ]
+    ]
+   },
+   "plate_bore": [
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      -6.0,
+      -165.0
+     ],
+     "end": [
+      65.0,
+      0.0,
+      -165.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    }
+   ],
+   "bulk_axis": [
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      0.0,
+      -165.0
+     ],
+     "end": [
+      65.0,
+      6.0,
+      -165.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      false
+     ],
+     "through": false
+    }
+   ]
+  },
+  "-225": {
+   "plate": {
+    "diameter": [
+     4.0,
+     [
+      65.0,
+      -6.0,
+      -225.0
+     ]
+    ],
+    "offset": [
+     0.0,
+     [
+      65.0,
+      -6.0,
+      -225.0
+     ]
+    ],
+    "length": [
+     6.0,
+     [
+      65.0,
+      -6.0,
+      -225.0
+     ]
+    ],
+    "through": [
+     1,
+     [
+      65.0,
+      -6.0,
+      -225.0
+     ]
+    ]
+   },
+   "plate_bore": [
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      -6.0,
+      -225.0
+     ],
+     "end": [
+      65.0,
+      0.0,
+      -225.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    }
+   ],
+   "bulk_axis": [
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      0.0,
+      -225.0
+     ],
+     "end": [
+      65.0,
+      6.0,
+      -225.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      false
+     ],
+     "through": false
+    }
+   ]
+  }
+ }
+}
