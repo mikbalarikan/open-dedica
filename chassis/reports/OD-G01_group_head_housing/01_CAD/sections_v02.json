@@ -1,0 +1,92 @@
+[
+ {
+  "file": "03_Sections/od_g01_housing_v02_front.png",
+  "sha256": "e093e24a22505eec2a31579e039dc3eac4d000efa0505ec25fe4a79fa8de8d43",
+  "detail": {
+   "view": "front",
+   "section": "SECTION A-A",
+   "plane": "y = -0.00 mm",
+   "cut_faces": 2,
+   "cut_area_mm2": 666.2178713707407,
+   "visible_edges": 108,
+   "margin_mm": 11.737352087519536
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ },
+ {
+  "file": "03_Sections/od_g01_housing_v02_top.png",
+  "sha256": "257bfa6f80a0f0fc2ba23abf426116f99e03679532ab92c44b800f31d3d595cc",
+  "detail": {
+   "view": "top",
+   "section": "SECTION A-A",
+   "plane": "z = -15.94 mm",
+   "cut_faces": 1,
+   "cut_area_mm2": 2301.328668892422,
+   "visible_edges": 74,
+   "margin_mm": 11.702076356329595
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ },
+ {
+  "file": "03_Sections/od_g01_housing_v02_left.png",
+  "sha256": "d59834cb90d931630ce625423151969db9d61d5c71e7c9da3b4434b62266a875",
+  "detail": {
+   "view": "left",
+   "section": "SECTION A-A",
+   "plane": "x = -0.00 mm",
+   "cut_faces": 2,
+   "cut_area_mm2": 709.3803447485855,
+   "visible_edges": 107,
+   "margin_mm": 11.597678053136917
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ },
+ {
+  "file": "03_Sections/od_g01_housing_stopblock_v02_front.png",
+  "sha256": "42cbe97b09a9c2a5e9f99e8428c360edb8fd2220a0fcaf048140a6127103c146",
+  "detail": {
+   "view": "front",
+   "section": "SECTION A-A",
+   "plane": "y = -0.00 mm",
+   "cut_faces": 2,
+   "cut_area_mm2": 796.0894655596451,
+   "visible_edges": 108,
+   "margin_mm": 13.7757138776024
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ },
+ {
+  "file": "03_Sections/od_g01_housing_lugunderside_v02_front.png",
+  "sha256": "3c50912bd8b618c0f1a9a45c5a8f48487e8cd2217e77ba2f0646e81e4a35ff55",
+  "detail": {
+   "view": "front",
+   "section": "SECTION A-A",
+   "plane": "y = -0.00 mm",
+   "cut_faces": 2,
+   "cut_area_mm2": 669.0886702674675,
+   "visible_edges": 108,
+   "margin_mm": 13.2291429730807
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ },
+ {
+  "file": "03_Sections/od_g01_housing_insertboss_v02_front.png",
+  "sha256": "b2727c9912264d12197e1a746ba7c64c965f19d827bca0f84efffd708ff32137",
+  "detail": {
+   "view": "front",
+   "section": "SECTION A-A",
+   "plane": "y = 0.00 mm",
+   "cut_faces": 4,
+   "cut_area_mm2": 881.3731990925138,
+   "visible_edges": 107,
+   "margin_mm": 15.035015961252197
+  },
+  "nothing_clipped": 0,
+  "reason": ""
+ }
+]
