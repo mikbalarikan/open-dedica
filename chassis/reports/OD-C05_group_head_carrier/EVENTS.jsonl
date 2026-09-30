@@ -80,3 +80,7 @@
 {"t": "2026-09-30T17:54:22Z", "ev": "state", "detail": {"from": "BLOCKED-ON-USTA", "to": "J3_BUILD", "reason": "another round: v04 to spec 2.2"}}
 {"t": "2026-09-30T17:54:23Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c05_carrier_v04", "brief": "briefs/WP-07_designer.md", "attempt": 1}}
 {"t": "2026-09-30T17:54:23Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-09-30T18:40:46Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c05_carrier_v04", "outcome": "SUBMITTED", "report": "01_CAD/REPORT_od_c05_carrier_v04.md"}}
+{"t": "2026-09-30T18:40:47Z", "ev": "note", "detail": {"text": "3MF od_c05_carrier_C4_v04.3mf written by the orchestrator from the designer's STL: 5232 faces, sha256 7fd7f6a12c0d3920f4c28c761c9f22a2e038b28fab69e49ff0a052096b53b6d7", "ref": "02_STEP_STL/od_c05_carrier_C4_v04.3mf"}}
+{"t": "2026-09-30T18:40:48Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "J4_REVIEW", "reason": "build v04 submitted: every hard row passes; the one review RV02"}}
+{"t": "2026-09-30T18:40:49Z", "ev": "package_sent", "detail": {"role": "reviewer", "target": "od_c05_carrier_v04", "brief": "briefs/WP-08_reviewer.md", "attempt": 1}}

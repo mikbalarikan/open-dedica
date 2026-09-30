@@ -5,7 +5,7 @@ code: ODC05
 milestone: M1
 title: "Open Dedica OD-C05 printed group head carrier"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
 next_action: "J3: designer package WP-07 builds od_c05_carrier_v04 to spec 2.2 (roof and window gable turned up)"
 data_class: PUBLIC
