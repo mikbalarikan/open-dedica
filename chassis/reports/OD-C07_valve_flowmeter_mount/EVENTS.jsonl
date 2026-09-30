@@ -17,3 +17,11 @@
 {"t": "2026-09-30T12:17:29Z", "ev": "usta_gate", "detail": {"gate": "concept_picked", "outcome": "C1", "ref": "spec 1.0 section 4"}}
 {"t": "2026-09-30T12:17:30Z", "ev": "state", "detail": {"from": "J1_SPEC", "to": "J2_PLAN", "reason": "spec 1.0 ratified on the standing instruction; C1 picked"}}
 {"t": "2026-09-30T12:17:31Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c07_mount_v01", "brief": "briefs/WP-02_designer.md", "attempt": 1}}
+{"t": "2026-09-30T12:36:47Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c07_mount_v01", "outcome": "STOPPED", "report": "01_CAD/DESIGN_PLAN.md"}}
+{"t": "2026-09-30T12:36:48Z", "ev": "note", "detail": {"text": "1.0 -> 1.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T12:36:48Z", "ev": "note", "detail": {"text": "A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13,A-14,A-15,A-16,A-18,A-19,A-20,A-21 -> A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13,A-14,A-15,A-16,A-18,A-19,A-20,A-21,A-22", "ref": "JOB.md:open_assumptions"}}
+{"t": "2026-09-30T12:36:49Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.1", "ref": "the Usta's standing instruction of 2026-09-30; explicit confirmation of the 1.1 amendments pending"}}
+{"t": "2026-09-30T12:36:50Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "J2 plan checked: every spec 1.1 feature and gate row has a planned feature and check; the six plan questions are answered in spec 1.1 and carried in WP-03"}}
+{"t": "2026-09-30T12:36:57Z", "ev": "note", "detail": {"text": "J2 plan STOPPED with six measured contradictions (DESIGN_PLAN section 7 Q1-Q6); answered in spec 1.1 section 7: U-slot open to +Y with a -Y assembly path, slits 2.40/11.85 and D-01b 1.5, recess R14.10x0.60, hook 320, three drain notches, insert-bore ceilings under D-03b; J-01 0.67 %", "ref": "01_CAD/DESIGN_PLAN.md section 7; 00_Spec/DESIGN_SPEC.md 1.1"}}
+{"t": "2026-09-30T12:37:39Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c07_mount_v01", "brief": "briefs/WP-03_designer.md", "attempt": 1}}
+{"t": "2026-09-30T12:37:39Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
