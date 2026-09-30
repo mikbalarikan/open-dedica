@@ -5,7 +5,7 @@ code: ODC05
 milestone: M1
 title: "Open Dedica OD-C05 printed group head carrier"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
 next_action: "J3: designer package WP-03 builds od_c05_carrier_v01 to spec 1.1"
 data_class: PUBLIC
@@ -13,7 +13,7 @@ size: S
 process: [FDM]
 gate_sections: [U, D, E]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.1"
+spec_version: "1.2"
 workspace: "${OGUZ_JOBS}/20260930-od-c05-group-head-carrier"
 delivery: "${OGUZ_DELIVERY}/20260930-od-c05-group-head-carrier"
 artifacts: "${OGUZ_ARTIFACTS}/20260930-od-c05-group-head-carrier"
@@ -29,6 +29,7 @@ usta_gates:
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-09-30"}
   - {gate: exception_signed, outcome: D-03a, date: "2026-09-30"}
+  - {gate: spec_ratified, outcome: "1.2", date: "2026-09-30"}
 deliverables: [STEP, STL, "3MF"]
 physical_outcome: n/a
 client_source_delete_after: null

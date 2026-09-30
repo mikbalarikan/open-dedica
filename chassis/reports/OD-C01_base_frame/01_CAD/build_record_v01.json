@@ -1,0 +1,193 @@
+{
+ "params": {
+  "y_top": 0.0,
+  "plate_t": 6.0,
+  "x_half": 120.0,
+  "z_min": -305.0,
+  "z_max": 100.0,
+  "corner_r": 10.0,
+  "insert_d": 4.0,
+  "carrier_xz": [
+   [
+    35.0,
+    -40.0
+   ],
+   [
+    -35.0,
+    -40.0
+   ],
+   [
+    35.0,
+    -60.0
+   ],
+   [
+    -35.0,
+    -60.0
+   ]
+  ],
+  "c04_xz": [
+   [
+    40.0,
+    -148.0
+   ],
+   [
+    -40.0,
+    -148.0
+   ],
+   [
+    40.0,
+    -114.0
+   ],
+   [
+    -40.0,
+    -114.0
+   ]
+  ],
+  "c03_xz": [
+   [
+    -4.0,
+    -239.0
+   ],
+   [
+    -4.0,
+    -171.0
+   ],
+   [
+    37.0,
+    -239.0
+   ],
+   [
+    37.0,
+    -171.0
+   ]
+  ],
+  "bulkhead_xz": [
+   [
+    65.0,
+    -45.0
+   ],
+   [
+    65.0,
+    -105.0
+   ],
+   [
+    65.0,
+    -165.0
+   ],
+   [
+    65.0,
+    -225.0
+   ]
+  ],
+  "foot_d": 3.4,
+  "foot_xz": [
+   [
+    110.0,
+    90.0
+   ],
+   [
+    -110.0,
+    90.0
+   ],
+   [
+    110.0,
+    -295.0
+   ],
+   [
+    -110.0,
+    -295.0
+   ]
+  ],
+  "drain_d": 8.0,
+  "drain_xz": [
+   [
+    -80.0,
+    -120.0
+   ],
+   [
+    -80.0,
+    -230.0
+   ]
+  ],
+  "shift_x": 0.0,
+  "shift_z": 0.0,
+  "hole_overshoot": 1.0,
+  "stl_tol": 0.01,
+  "stl_ang": 0.2,
+  "c05_origin": [
+   0.0,
+   175.0,
+   0.0
+  ],
+  "c04_origin": [
+   0.0,
+   70.0,
+   -140.0
+  ],
+  "c03_origin": [
+   0.0,
+   40.0,
+   -205.0
+  ],
+  "c03_x_dir": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "c03_z_dir": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "c05_box_x_half": 50.0,
+  "c05_box_h": 4.0,
+  "c05_box_z": [
+   -69.94,
+   -24.94
+  ]
+ },
+ "holes": 22,
+ "step": {
+  "path": "02_STEP_STL/od_c01_frame_C1_v01.step",
+  "sha256": "3337d684f655915c0ed5cb0cec33d03a94a5a29b61e9889a20d050851075e07c"
+ },
+ "stl": {
+  "path": "02_STEP_STL/od_c01_frame_C1_v01.stl",
+  "sha256": "2656262ec1f08f778a45386d6eee3699aa90e0a34018b618770231f10eafa21e",
+  "tolerance_mm": 0.01,
+  "angular_tolerance_rad": 0.2,
+  "triangles": 6044,
+  "max_sagitta_mm": 0.0049723151243391,
+  "max_sagitta": 0.0049723151243391
+ },
+ "assembly": {
+  "path": "02_STEP_STL/od_c01_assembly_C1_v01.step",
+  "sha256": "632e52d9ef69175da3e205c40daf9c53c3dc5e4795bcf4933a72323ae51e841c"
+ },
+ "placements": {
+  "od_c03_cradle": {
+   "joint": "RigidJoint joint_c03 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 40, -205), orientation=(0, 90, 180))"
+  },
+  "od_h01_pump": {
+   "joint": "RigidJoint joint_h01 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 40, -205), orientation=(0, 90, 180))"
+  },
+  "od_c04_mount": {
+   "joint": "RigidJoint joint_c04 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 70, -140), orientation=(0, 0, 0))"
+  },
+  "od_h11_thermoblock": {
+   "joint": "RigidJoint joint_h11 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 70, -140), orientation=(0, 0, 0))"
+  },
+  "od_g01_housing": {
+   "joint": "RigidJoint joint_g01 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 175, 0), orientation=(0, 0, 0))"
+  },
+  "od_c05_foot_reference_A01": {
+   "joint": "reference box from spec 4 values (A-01), not a deliverable solid",
+   "location": "x +-50, y 0 .. 4, z -69.94 .. -24.94"
+  }
+ }
+}

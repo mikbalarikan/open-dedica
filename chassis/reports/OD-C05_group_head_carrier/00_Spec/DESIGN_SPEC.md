@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-C05 printed group head carrier (20260930-od-c05-group-head-carrier)
 
-Version 1.1 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30 and the "confirmed go" / "go" of the same day: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
+Version 1.2 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30 and the "confirmed go" / "go" of the same day: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
 
 ## §1 Intent
 
@@ -104,7 +104,7 @@ X-24) is reacted inside the housing between lugs and gasket, not by the carrier.
 | D-01b | Wall, structural | `min_wall ≥ 2.0` (the default; the carrier holds the group head) | Hard | part | struct | `min_wall` | — |
 | D-02 | Bed fit | each envelope size ≤ the K1C build volume, foot down: 100.0 × 45.0 on the bed, 225.0 tall | Hard | part | machine | `envelope` | A-08 |
 | D-03a | Unsupported overhang | every downward face ≥ 45° from horizontal in the print orientation (foot on the bed, build direction +Y): the window gables and the gusset hypotenuses at 45°; nothing supported; the crowns of the eight horizontal Ø3.4 holes and Ø6.5 counterbores along Z are the named exception below, excluded from the census by position and their least angle reported | Hard | part | floor | `overhang_census(build_dir=(0,1,0))`; reviewer from sections | A-13 |
-| D-03b | Unsupported bridge | span ≤ 5 (the counterbores and holes along Z are Ø6.5 and Ø3.4 horizontal bores: their crowns are the only bridges, ≤ 6.5 by construction and accepted as a named exception below) | Hard | part | floor | reviewer, from sections | — |
+| D-03b | Unsupported bridge | span ≤ 5 (the counterbores and holes along Z are Ø6.5 ± 0.1 and Ø3.4 horizontal bores: their crowns are the only bridges, ≤ 6.6 by construction and accepted as a named exception below) | Hard | part | floor | reviewer, from sections | — |
 | D-04a | Clearance hole for a fastener | all eight Ø3.4 holes Ø ≥ 3.25 | Hard | part | house | `locate_bore` | — |
 | D-06a | Minimum feature | ≥ 1.0 | Hard | part | floor | `min_wall` | — |
 | D-07 | Fit-critical bores | the holes are clearance holes, not fit bores: none on this part | Hard | part | floor | — (N/A by this row) | — |
@@ -119,7 +119,7 @@ X-24) is reacted inside the housing between lugs and gasket, not by the carrier.
 | REQ-08 | Lower window | an opening through the wall containing the circle R 25.0 about (0, −110.0) and nothing else of the wall missing below y −50 (`radial_extent` about (0, −110.0, z) over r ≤ 25 reads "no material" at every 10°); roof at 45° | Hard | CAD | A-07 | `radial_extent`; reviewer from sections | A-07 |
 | REQ-09 | Stiffness | **Soft.** The carrier holds the group head without visible flex under the user's locking torque and the brewing pull; not a geometric gate: the review reports it INCONCLUSIVE with a risk rating, and it is answered by the first print | Soft | part | client | — (bench) | A-11 |
 
-**Named exceptions** (Usta U-18): D-03a and D-03b for the crowns of the eight horizontal Ø3.4 holes and Ø6.5 counterbores through the wall (downward faces at 0° and bridges ≤ 6.5 over ≤ 5.0 of depth), the usual FDM practice for small horizontal holes; recorded here for the Usta to confirm with §5 (1.1 extended the exception to D-03a, plan K-2).
+**Named exceptions** (Usta U-18): D-03a and D-03b for the crowns of the eight horizontal Ø3.4 holes and Ø6.5 counterbores through the wall (downward faces at 0° and bridges ≤ 6.6, REQ-02's upper tolerance, over ≤ 5.0 of depth), the usual FDM practice for small horizontal holes; recorded here for the Usta to confirm with §5 (1.1 extended the exception to D-03a, plan K-2).
 
 ## §6 Assumptions ledger
 
@@ -159,4 +159,5 @@ X-24) is reacted inside the housing between lugs and gasket, not by the carrier.
 |---|---|---|
 | 0.1 | 2026-09-30 | first draft from the OD-G01 spec 1.3 and REPORT v02, the OD-G04 and OD-H11 reports |
 | 1.0 | 2026-09-30 | INTAKE_v01 cross-references in §6; ratified |
+| 1.2 | 2026-09-30 | the named exception's bridge limit reads ≤ 6.6 (REQ-02's upper tolerance) instead of ≤ 6.5, found by the build v01 sweep (REPORT §9 item 2); no geometry change |
 | 1.1 | 2026-09-30 | axis 175 (OD-C01 layout): wall y −175 … +50, foot y −175 … −171, gussets to y −131, lower window at (0, −110), envelope 100 × 225 × 45 (§2, §4, U-02, D-02, REQ-05, REQ-08, A-03, A-07, A-08); plan K-1: top corners R 6 about (±44, 44); plan K-2: named exception extended to D-03a (§4, §5) |
