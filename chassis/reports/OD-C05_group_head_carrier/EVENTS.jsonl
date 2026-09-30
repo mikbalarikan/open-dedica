@@ -63,3 +63,9 @@
 {"t": "2026-09-30T16:17:42Z", "ev": "usta_gate", "detail": {"gate": "concept_picked", "outcome": "C4", "ref": "spec 2.0 section 4"}}
 {"t": "2026-09-30T16:18:42Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c05_carrier_v02", "brief": "briefs/WP-05_designer.md", "attempt": 1}}
 {"t": "2026-09-30T16:18:42Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-09-30T17:14:18Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c05_carrier_v02", "outcome": "STOPPED", "report": "01_CAD/REPORT_od_c05_carrier_v02.md"}}
+{"t": "2026-09-30T17:16:02Z", "ev": "note", "detail": {"text": "2.0 -> 2.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T17:16:02Z", "ev": "note", "detail": {"text": "od_c05_carrier_v02 -> od_c05_carrier_v03", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T17:16:03Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "2.1", "ref": "v02 K-3, K-4, section 9: closed column, plate on the bed; on the standing instruction"}}
+{"t": "2026-09-30T17:16:11Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c05_carrier_v03", "brief": "briefs/WP-06_designer.md", "attempt": 2}}
+{"t": "2026-09-30T17:16:11Z", "ev": "attempt", "detail": {"counter": "build", "n": 2, "cap": 2}}

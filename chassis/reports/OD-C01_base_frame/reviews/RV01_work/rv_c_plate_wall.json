@@ -1,0 +1,26 @@
+{
+ "min_wall": {
+  "name": "min_wall",
+  "measured": null,
+  "unit": "mm",
+  "at": null,
+  "params": {},
+  "status": "INCONCLUSIVE",
+  "reason": "AssertionError: ",
+  "detail": {}
+ },
+ "min_wall_wide": {
+  "name": "min_wall_wide",
+  "measured": null,
+  "unit": "mm",
+  "at": null,
+  "params": {
+   "spacing_mm": 0.7,
+   "opposition_deg": 45.0
+  },
+  "status": "INCONCLUSIVE",
+  "reason": "min_wall is INCONCLUSIVE: AssertionError: ",
+  "detail": {}
+ },
+ "seconds": 0.00014352798461914062
+}
