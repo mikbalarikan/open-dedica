@@ -1,0 +1,229 @@
+exactly_one_solid      PASS                               1 count  == 1
+U-01                   PASS                               1 count  solid_count = 1
+U-01                   PASS                               1 bool   brep_valid = 1
+U-01                   PASS                               0 count  naked_edges = 0
+U-02                   PASS                           119.0 mm     size_x 119.0 ± 0.1
+envelope_within_spec   PASS                           119.0 mm     size_x 119.0 ± 0.1
+U-02                   PASS                            50.0 mm     size_y 50.0 ± 0.1
+envelope_within_spec   PASS                            50.0 mm     size_y 50.0 ± 0.1
+U-02                   PASS                            48.0 mm     size_z 48.0 ± 0.1
+envelope_within_spec   PASS                            48.0 mm     size_z 48.0 ± 0.1
+U-02                   PASS                           -25.0 mm     position min_x -25.0 ± 0.1 (reported apart)
+envelope_within_spec   PASS                           -25.0 mm     position min_x -25.0 ± 0.1 (reported apart)
+U-02                   PASS                           -25.0 mm     position min_y -25.0 ± 0.1 (reported apart)
+envelope_within_spec   PASS                           -25.0 mm     position min_y -25.0 ± 0.1 (reported apart)
+U-02                   PASS                             0.0 mm     position min_z 0.0 ± 0.1 (reported apart)
+envelope_within_spec   PASS                             0.0 mm     position min_z 0.0 ± 0.1 (reported apart)
+D-02                   PASS_ASSUMED                   119.0 mm     size_x <= 220.0
+D-02                   PASS_ASSUMED                    50.0 mm     size_y <= 220.0
+D-02                   PASS_ASSUMED                    48.0 mm     size_z <= 250.0
+U-03                   PASS_ASSUMED                     0.0 mm3    interference mount|OD-H24 <= 0
+U-03                   PASS_ASSUMED                     0.0 mm3    interference mount|OD-H22 <= 0
+U-03                   PASS_ASSUMED                     0.0 mm     contact: OD-H24 rim face on the pedestal top, clearance = 0
+U-03                   PASS_ASSUMED                     0.0 mm     contact: OD-H22 flange back face on the deck top, clearance = 0
+U-03                   PASS_ASSUMED                     0.0 mm     contact: hook 70° catch underside on the OD-H24 flange top, clearance = 0
+U-03                   PASS_ASSUMED                     0.0 mm     contact: hook 160° catch underside on the OD-H24 flange top, clearance = 0
+U-03                   PASS_ASSUMED                     0.0 mm     contact: hook 320° catch underside on the OD-H24 flange top, clearance = 0
+U-03                   PASS_ASSUMED     0.49999999999999833 mm     mount (hooks aside) to OD-H24 away from the rim contact >= 0.5
+D-04c                  PASS_ASSUMED     0.49999999999999833 mm     mount (hooks aside) to OD-H24 away from the rim contact >= 0.5
+U-03                   PASS_ASSUMED      0.5029999999999994 mm     mount to OD-H22 below its flange back face >= 0.5
+D-04c                  PASS_ASSUMED      0.5029999999999994 mm     mount to OD-H22 below its flange back face >= 0.5
+D-04c                  PASS_ASSUMED      13.346234984778842 mm     hooks to OD-H24 pipes and connector (outside r 20.5) >= 0.5
+D-04c                  PASS_ASSUMED         4.9390973732692 mm     hooks to OD-H24 above its flange top plane (z > 29.901) >= 0.5
+U-03                   PASS_ASSUMED                     0.0 mm3    (b) OD-H24 lowered along -Z from 25 mm, 9 poses, interference <= 0 (hooks exempt)
+U-03                   PASS_ASSUMED                     0.0 mm3    (b) OD-H22 slid along -Y at +5 (flange back face z 53) from y +45 to 0 (12 poses), then lowered 5 along -Z (7 poses incl. the slide end); interference with the mount <= 0
+U-03                   PASS_ASSUMED                     0.0 mm3    (b) OD-H22 along the same 18 poses: interference with the seated OD-H24 <= 0
+U-04                   PASS                               1 bool   schema AP242
+U-04                   PASS                               1 count  1 solid re-read
+U-04                   PASS          1.7826096154749393e-09 mm3    volume delta 0
+U-04                   PASS                               0 count  faces delta 0
+U-04                   PASS                               1 bool   named body re-read unchanged
+U-04                   PASS                               1 bool   valid after re-import
+REQ-06                 PASS_ASSUMED                     3.4 mm     footprint hole (-18, 21) Ø3.4 ± 0.1
+REQ-06                 PASS_ASSUMED                     0.0 mm     footprint hole (-18, 21) offset <= 0.10
+REQ-06                 PASS_ASSUMED                     4.0 mm     footprint hole (-18, 21) length 4.0 ± 0.1
+REQ-06                 PASS_ASSUMED                       1 bool   footprint hole (-18, 21) through
+D-04a                  PASS                             3.4 mm     footprint hole (-18, 21) Ø >= 3.25
+REQ-06                 PASS_ASSUMED                     3.4 mm     footprint hole (-18, -21) Ø3.4 ± 0.1
+REQ-06                 PASS_ASSUMED                     0.0 mm     footprint hole (-18, -21) offset <= 0.10
+REQ-06                 PASS_ASSUMED                     4.0 mm     footprint hole (-18, -21) length 4.0 ± 0.1
+REQ-06                 PASS_ASSUMED                       1 bool   footprint hole (-18, -21) through
+D-04a                  PASS                             3.4 mm     footprint hole (-18, -21) Ø >= 3.25
+REQ-06                 PASS_ASSUMED                     3.4 mm     footprint hole (88.5, 21) Ø3.4 ± 0.1
+REQ-06                 PASS_ASSUMED                     0.0 mm     footprint hole (88.5, 21) offset <= 0.10
+REQ-06                 PASS_ASSUMED                     4.0 mm     footprint hole (88.5, 21) length 4.0 ± 0.1
+REQ-06                 PASS_ASSUMED                       1 bool   footprint hole (88.5, 21) through
+D-04a                  PASS                             3.4 mm     footprint hole (88.5, 21) Ø >= 3.25
+REQ-06                 PASS_ASSUMED                     3.4 mm     footprint hole (88.5, -21) Ø3.4 ± 0.1
+REQ-06                 PASS_ASSUMED                     0.0 mm     footprint hole (88.5, -21) offset <= 0.10
+REQ-06                 PASS_ASSUMED                     4.0 mm     footprint hole (88.5, -21) length 4.0 ± 0.1
+REQ-06                 PASS_ASSUMED                       1 bool   footprint hole (88.5, -21) through
+D-04a                  PASS                             3.4 mm     footprint hole (88.5, -21) Ø >= 3.25
+REQ-05                 PASS_ASSUMED                     3.4 mm     screw clearance (77.447, 0) Ø3.4 ± 0.1
+REQ-05                 PASS_ASSUMED                     0.0 mm     screw clearance (77.447, 0) offset <= 0.10
+REQ-05                 PASS_ASSUMED                     2.0 mm     screw clearance (77.447, 0) depth 2.0 ± 0.1
+D-04a                  PASS                             3.4 mm     screw clearance (77.447, 0) Ø >= 3.25
+REQ-05                 PASS_ASSUMED                     4.0 mm     insert bore (77.447, 0) Ø4.0 ± 0.05
+REQ-05                 PASS_ASSUMED                     0.0 mm     insert bore (77.447, 0) coaxial offset <= 0.10
+REQ-05                 PASS_ASSUMED       5.700000000000003 mm     insert bore (77.447, 0) depth 5.7 ± 0.1
+D-05b                  PASS_ASSUMED                     4.0 mm     insert bore (77.447, 0) Ø 4.0 ± 0.05
+D-05b                  PASS_ASSUMED       5.700000000000003 mm     insert bore (77.447, 0) depth >= 5.7
+D-05b                  PASS_ASSUMED                       1 bool   insert bore (77.447, 0) opens on the deck underside
+REQ-05                 PASS_ASSUMED                     3.4 mm     screw clearance (46.662, 0) Ø3.4 ± 0.1
+REQ-05                 PASS_ASSUMED                     0.0 mm     screw clearance (46.662, 0) offset <= 0.10
+REQ-05                 PASS_ASSUMED                     2.0 mm     screw clearance (46.662, 0) depth 2.0 ± 0.1
+D-04a                  PASS                             3.4 mm     screw clearance (46.662, 0) Ø >= 3.25
+REQ-05                 PASS_ASSUMED                     4.0 mm     insert bore (46.662, 0) Ø4.0 ± 0.05
+REQ-05                 PASS_ASSUMED                     0.0 mm     insert bore (46.662, 0) coaxial offset <= 0.10
+REQ-05                 PASS_ASSUMED       5.700000000000003 mm     insert bore (46.662, 0) depth 5.7 ± 0.1
+D-05b                  PASS_ASSUMED                     4.0 mm     insert bore (46.662, 0) Ø 4.0 ± 0.05
+D-05b                  PASS_ASSUMED       5.700000000000003 mm     insert bore (46.662, 0) depth >= 5.7
+D-05b                  PASS_ASSUMED                       1 bool   insert bore (46.662, 0) opens on the deck underside
+REQ-02                 PASS_ASSUMED                     4.8 mm     pin 1 Ø4.8 +0.1/-0 (one-sided, spec 1.2)
+REQ-02                 PASS_ASSUMED                     0.0 mm     pin 1 Ø4.8 offset <= 0.10
+REQ-02                 PASS_ASSUMED                     9.4 mm     pin 1 Ø4.8 length 9.4 ± 0.1 (recess floor to bottom face)
+REQ-02                 PASS_ASSUMED                       1 bool   pin 1 Ø4.8 through
+REQ-02                 PASS_ASSUMED     0.49999999999999967 mm     pin 1 Ø4.8: clearance to the OD-H24 pin >= 0.5
+D-04d                  PASS_ASSUMED     0.49999999999999967 mm     pin 1 Ø4.8: printed sliding fit >= 0.30 per side
+REQ-02                 PASS_ASSUMED                     3.8 mm     pin 2 Ø3.8 +0.1/-0 (one-sided, spec 1.2)
+REQ-02                 PASS_ASSUMED                     0.0 mm     pin 2 Ø3.8 offset <= 0.10
+REQ-02                 PASS_ASSUMED                     9.4 mm     pin 2 Ø3.8 length 9.4 ± 0.1 (recess floor to bottom face)
+REQ-02                 PASS_ASSUMED                       1 bool   pin 2 Ø3.8 through
+REQ-02                 PASS_ASSUMED     0.49999999999999833 mm     pin 2 Ø3.8: clearance to the OD-H24 pin >= 0.5
+D-04d                  PASS_ASSUMED     0.49999999999999833 mm     pin 2 Ø3.8: printed sliding fit >= 0.30 per side
+REQ-02                 PASS_ASSUMED      14.099999999999998 mm     recess R 14.10 ± 0.1 (radial_profile inner, z 9.5 ... 9.9) min
+REQ-02                 PASS_ASSUMED      14.149999999999954 mm     recess R 14.10 ± 0.1 (radial_profile inner, z 9.5 ... 9.9) max
+REQ-02                 PASS_ASSUMED                     9.4 mm     recess floor z 9.40 ± 0.05
+REQ-02                 PASS_ASSUMED      0.5161395160225561 mm     recess to the OD-H24 underside ribs and hub (H24 inside r 13.68) >= 0.5
+REQ-01                 PASS_ASSUMED                    10.0 mm     pedestal top z 10.0 ± 0.1
+REQ-01                 PASS_ASSUMED      16.299999999999997 mm     ring inner R (radial_profile inner 0...359°, z 10.5...12.5) min in [16.30, 16.40] (spec 1.2)
+REQ-01                 PASS_ASSUMED                    16.3 mm     ring inner R max in [16.30, 16.40] (spec 1.2)
+REQ-01                 PASS_ASSUMED                    13.0 mm     ring top z 13.0 ± 0.1
+REQ-01                 PASS_ASSUMED      0.5313989773719694 mm     clearance(ring, OD-H24 cup) in [0.50, 0.70]
+D-04d                  PASS_ASSUMED      0.5313989773719694 mm     ring gap >= 0.30 per side
+REQ-03                 PASS_ASSUMED                    70.0 deg    hook 70° centred at 70° ± 1°
+REQ-03                 PASS_ASSUMED                   20.87 mm     hook 70° beam inner face R 20.87 ± 0.1 over z 6...26 (min)
+REQ-03                 PASS_ASSUMED                   20.87 mm     hook 70° beam inner face R 20.87 ± 0.1 over z 6...26 (max)
+REQ-03                 PASS_ASSUMED                    29.9 mm     hook 70° catch underside z 29.9 ± 0.1
+REQ-03                 PASS_ASSUMED      18.869999999999997 mm     hook 70° catch reaches R 18.87 ± 0.1
+REQ-03                 PASS_ASSUMED      45.000000000025445 deg    hook 70° catch top chamfer 45° ± 1° (from horizontal)
+REQ-03                 PASS_ASSUMED                     0.0 mm3    hook 70° catch lands on the flange top outside slots and windows: void under the catch (r 18.87...19.70, 2.65 deep) <= 0
+REQ-03                 PASS_ASSUMED                     0.0 mm     hook 70° catch underside on the flange top, clearance = 0
+J-04                   PASS_ASSUMED                     0.0 mm3    hook 70° undeflected at the engaged pose: interference <= 0
+J-04                   PASS_ASSUMED                     0.0 mm     hook 70° catch underside touches the flange top, clearance = 0
+J-02                   PASS               1.999999999999549 mm     hook 70° beam thickness >= 1.0
+J-01                   PASS_ASSUMED      0.6708307866607529 %      hook 70° ε = 1.5·y·t/(L²·Q) <= 1.5 % (y = 20.37 − catch R, L = plate top to catch underside)
+J-03                   PASS              2.0000000000000018 ratio  hook 70° catch/root thickness ratio reported; binding only if ε within 0.2 % of 1.5 %
+REQ-03                 PASS_ASSUMED                   160.0 deg    hook 160° centred at 160° ± 1°
+REQ-03                 PASS_ASSUMED                   20.87 mm     hook 160° beam inner face R 20.87 ± 0.1 over z 6...26 (min)
+REQ-03                 PASS_ASSUMED                   20.87 mm     hook 160° beam inner face R 20.87 ± 0.1 over z 6...26 (max)
+REQ-03                 PASS_ASSUMED                    29.9 mm     hook 160° catch underside z 29.9 ± 0.1
+REQ-03                 PASS_ASSUMED      18.869999999999997 mm     hook 160° catch reaches R 18.87 ± 0.1
+REQ-03                 PASS_ASSUMED      45.000000000025445 deg    hook 160° catch top chamfer 45° ± 1° (from horizontal)
+REQ-03                 PASS_ASSUMED                     0.0 mm3    hook 160° catch lands on the flange top outside slots and windows: void under the catch (r 18.87...19.70, 2.65 deep) <= 0
+REQ-03                 PASS_ASSUMED                     0.0 mm     hook 160° catch underside on the flange top, clearance = 0
+J-04                   PASS_ASSUMED                     0.0 mm3    hook 160° undeflected at the engaged pose: interference <= 0
+J-04                   PASS_ASSUMED                     0.0 mm     hook 160° catch underside touches the flange top, clearance = 0
+J-02                   PASS              1.9999999999942453 mm     hook 160° beam thickness >= 1.0
+J-01                   PASS_ASSUMED      0.6708307866589739 %      hook 160° ε = 1.5·y·t/(L²·Q) <= 1.5 % (y = 20.37 − catch R, L = plate top to catch underside)
+J-03                   PASS              2.0000000000000018 ratio  hook 160° catch/root thickness ratio reported; binding only if ε within 0.2 % of 1.5 %
+REQ-03                 PASS_ASSUMED                   320.0 deg    hook 320° centred at 320° ± 1°
+REQ-03                 PASS_ASSUMED                   20.87 mm     hook 320° beam inner face R 20.87 ± 0.1 over z 6...26 (min)
+REQ-03                 PASS_ASSUMED                   20.87 mm     hook 320° beam inner face R 20.87 ± 0.1 over z 6...26 (max)
+REQ-03                 PASS_ASSUMED                    29.9 mm     hook 320° catch underside z 29.9 ± 0.1
+REQ-03                 PASS_ASSUMED                   18.87 mm     hook 320° catch reaches R 18.87 ± 0.1
+REQ-03                 PASS_ASSUMED      45.000000000025544 deg    hook 320° catch top chamfer 45° ± 1° (from horizontal)
+REQ-03                 PASS_ASSUMED                     0.0 mm3    hook 320° catch lands on the flange top outside slots and windows: void under the catch (r 18.87...19.70, 2.65 deep) <= 0
+REQ-03                 PASS_ASSUMED                     0.0 mm     hook 320° catch underside on the flange top, clearance = 0
+J-04                   PASS_ASSUMED                     0.0 mm3    hook 320° undeflected at the engaged pose: interference <= 0
+J-04                   PASS_ASSUMED                     0.0 mm     hook 320° catch underside touches the flange top, clearance = 0
+J-02                   PASS              1.9999999999977005 mm     hook 320° beam thickness >= 1.0
+J-01                   PASS_ASSUMED      0.6708307866601313 %      hook 320° ε = 1.5·y·t/(L²·Q) <= 1.5 % (y = 20.37 − catch R, L = plate top to catch underside)
+J-03                   PASS                             2.0 ratio  hook 320° catch/root thickness ratio reported; binding only if ε within 0.2 % of 1.5 %
+REQ-04                 PASS_ASSUMED                    48.0 mm     deck top z 48.0 ± 0.1
+REQ-04                 PASS_ASSUMED                     0.0 mm2    deck top flat under the OD-H22 flange outline: flange area not on the z 48 plane beyond the slot and slits (mm²) <= 0
+REQ-04                 PASS_ASSUMED       7.049999999999958 mm     stem U-slot radial_profile inner about (62, 0), 192°...348° (slit angles aside), z 41...47, min in [7.05, 7.10] (spec 1.2)
+REQ-04                 PASS_ASSUMED       7.049999999999959 mm     stem U-slot radial_profile inner, max in [7.05, 7.10] (spec 1.2)
+REQ-04                 PASS_ASSUMED       7.049999999999997 mm     slot straight wall +X at 7.05 +0.05/-0 from the axis, y 2.5...14, z 41...47 (least)
+REQ-04                 PASS_ASSUMED       7.049999999999997 mm     slot straight wall +X at 7.05 +0.05/-0 from the axis, y 2.5...14, z 41...47 (greatest)
+REQ-04                 PASS_ASSUMED       7.049999999999997 mm     slot straight wall -X at 7.05 +0.05/-0 from the axis, y 2.5...14, z 41...47 (least)
+REQ-04                 PASS_ASSUMED       7.049999999999997 mm     slot straight wall -X at 7.05 +0.05/-0 from the axis, y 2.5...14, z 41...47 (greatest)
+REQ-04                 PASS_ASSUMED      14.099999999999994 mm     stem U-slot 14.1 +0.1/-0 wide (least)
+REQ-04                 PASS_ASSUMED                     0.0 mm3    slot open through the deck's +Y edge: material in the channel x 62 ± 6.9, y 0 ... 16 <= 0
+REQ-04                 PASS_ASSUMED       7.700000000000003 mm     slot through the deck, length 7.7 ± 0.1
+REQ-04                 PASS_ASSUMED                       0 count  no closed stem bore
+REQ-04                 PASS_ASSUMED      11.850000000000453 mm     gusset slit +X reaches 62 ± (11.85 +0.1/-0) at the deck top
+REQ-04                 PASS_ASSUMED                     2.4 mm     gusset slit +X 2.40 ± 0.1 wide (worst)
+REQ-04                 PASS_ASSUMED      11.850000000000444 mm     gusset slit -X reaches 62 ± (11.85 +0.1/-0) at the deck top
+REQ-04                 PASS_ASSUMED                     2.4 mm     gusset slit -X 2.40 ± 0.1 wide (worst)
+REQ-04                 PASS_ASSUMED      0.5029999999999994 mm     clearance(mount, OD-H22) away from the flange contact >= 0.5; nearest points in 'at'
+REQ-07                 PASS_ASSUMED                       2 count  the window splits the plate in two (window through over the full Y width)
+REQ-07                 PASS_ASSUMED                    40.0 mm     plate piece -X ends at x 40.0 (window from 40)
+REQ-07                 PASS_ASSUMED                    84.0 mm     plate piece +X starts at x 84.0 (window to 84)
+REQ-07                 PASS_ASSUMED                    40.0 mm     leg inner face at x 40.0 ± 0.1
+REQ-07                 PASS_ASSUMED                    84.0 mm     leg inner face at x 84.0 ± 0.1
+REQ-08                 PASS_ASSUMED                    48.0 mm     no material above z 48.1
+REQ-08                 PASS_ASSUMED                     0.0 mm3    no material within r 12 of the valve axis above the deck top
+REQ-09                 PASS               24.99999999999948 deg    drain notch 25° at θ 25° ± 1°
+REQ-09                 PASS              1.9999999999995606 mm     drain notch 25° 2.0 ± 0.1 wide
+REQ-09                 PASS                             0.5 mm     drain notch 25° 0.5 ± 0.1 high at the ring base
+D-03b                  PASS_ASSUMED      1.9999999999995606 mm     drain notch 25° ceiling bridge span <= 5
+REQ-09                 PASS                               1 bool   drain notch 25° open through the ring wall (no material r 15...18.2 at mid height)
+REQ-09                 PASS              114.99999999999952 deg    drain notch 115° at θ 115° ± 1°
+REQ-09                 PASS              1.9999999999995604 mm     drain notch 115° 2.0 ± 0.1 wide
+REQ-09                 PASS                             0.5 mm     drain notch 115° 0.5 ± 0.1 high at the ring base
+D-03b                  PASS_ASSUMED      1.9999999999995604 mm     drain notch 115° ceiling bridge span <= 5
+REQ-09                 PASS                               1 bool   drain notch 115° open through the ring wall (no material r 15...18.2 at mid height)
+REQ-09                 PASS              224.99999999999997 deg    drain notch 225° at θ 225° ± 1°
+REQ-09                 PASS              2.0000000000097664 mm     drain notch 225° 2.0 ± 0.1 wide
+REQ-09                 PASS                             0.5 mm     drain notch 225° 0.5 ± 0.1 high at the ring base
+D-03b                  PASS_ASSUMED      2.0000000000097664 mm     drain notch 225° ceiling bridge span <= 5
+REQ-09                 PASS                               1 bool   drain notch 225° open through the ring wall (no material r 15...18.2 at mid height)
+D-01a                  PASS              1.7223748416156628 mm     min_wall >= 0.8
+D-01b                  PASS              1.7223748416156628 mm     min_wall >= 1.5
+D-06a                  PASS              1.7223748416156628 mm     minimum feature >= 1.0
+U-06                   PASS              1.6000000000000014 mm     Soft: min_wall wide (45°) >= 1.5
+D-03a                  PASS_ASSUMED       60.01836063114926 deg    least overhang >= 45° off the named faces (deck underside, 3 catch undersides supported; 2 insert-bore and 3 notch ceilings bridges)
+D-03a                  PASS_ASSUMED                       0 count  no flat downward face other than the named ones
+D-03b                  PASS_ASSUMED                     4.0 mm     insert bore ceiling (77.447, 0): bridge span (bore Ø) <= 5
+D-03b                  PASS_ASSUMED                     4.0 mm     insert bore ceiling (46.662, 0): bridge span (bore Ø) <= 5
+D-05a                  PASS_ASSUMED            16.474808677 mm     insert pad (77.447, 0): material across the bore >= 8.0 (least of 8 diameters × 3 depths)
+J-05                   PASS              3.9218086769999996 mm     insert bore (77.447, 0): wall >= 3.0 over its depth (16 angles × 3 depths)
+D-05a                  PASS_ASSUMED            16.474808677 mm     insert pad (46.662, 0): material across the bore >= 8.0 (least of 8 diameters × 3 depths)
+J-05                   PASS              3.8128086769999996 mm     insert bore (46.662, 0): wall >= 3.0 over its depth (16 angles × 3 depths)
+feature_census         PASS                              12 count  bores = 12 (4 footprint, 2 pin, 2 screw clearance, 2 insert, recess, ring inner)
+U-05                   PASS                               1 count  plate window = 1
+feature_census         PASS                               1 count  plate window = 1
+U-05                   PASS                               4 count  Ø3.4 footprint through-holes = 4
+feature_census         PASS                               4 count  Ø3.4 footprint through-holes = 4
+U-05                   PASS                               1 count  pedestal = 1
+feature_census         PASS                               1 count  pedestal = 1
+U-05                   PASS                               1 count  pedestal recess = 1
+feature_census         PASS                               1 count  pedestal recess = 1
+U-05                   PASS                               1 count  ring wall = 1
+feature_census         PASS                               1 count  ring wall = 1
+U-05                   PASS                               3 count  ring drain notches = 3
+feature_census         PASS                               3 count  ring drain notches = 3
+U-05                   PASS                               2 count  pin clearance through-holes (Ø4.8, Ø3.8) = 2
+feature_census         PASS                               2 count  pin clearance through-holes (Ø4.8, Ø3.8) = 2
+U-05                   PASS                               3 count  hooks = 3
+feature_census         PASS                               3 count  hooks = 3
+U-05                   PASS                               3 count  hooks at the planned angles = 3
+feature_census         PASS                               3 count  hooks at the planned angles = 3
+U-05                   PASS                               2 count  legs = 2
+feature_census         PASS                               2 count  legs = 2
+U-05                   PASS                               1 count  deck = 1
+feature_census         PASS                               1 count  deck = 1
+U-05                   PASS                               1 count  stem U-slot open to +Y (no closed stem bore) = 1
+feature_census         PASS                               1 count  stem U-slot open to +Y (no closed stem bore) = 1
+U-05                   PASS                               2 count  gusset slits = 2
+feature_census         PASS                               2 count  gusset slits = 2
+U-05                   PASS                               2 count  Ø3.4 screw clearance holes = 2
+feature_census         PASS                               2 count  Ø3.4 screw clearance holes = 2
+U-05                   PASS                               2 count  Ø4.0 insert bores = 2
+feature_census         PASS                               2 count  Ø4.0 insert bores = 2
+U-07                   PASS                            0.05 rad    angular a <= 4·acos(1 − 0.01/R_max), R_max 25.88010819142764
+U-07                   PASS           0.0039588308467848774 mm     stl_max_sagitta <= 0.01
+U-07                   PASS                               1 count  delivered STL: one body
+U-07                   PASS                               0 count  delivered STL: naked edges 0
+rows 228, not passed 0, elapsed 278.0 s

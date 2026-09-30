@@ -1,0 +1,55 @@
+{
+ "R_max / face / angular limit rad": [
+  25.87,
+  [
+   "TORUS",
+   15.184
+  ],
+  0.11122201667672209
+ ],
+ "delivered census": {
+  "triangles": 92262,
+  "bodies": 1,
+  "naked_edges": 0,
+  "winding": 1,
+  "volume": 40560.32280203482
+ },
+ "re-mesh 0.01/0.05": {
+  "sha": "41bccd61c1fb0e82a7a8171c85da2128d0c01ca6906f80c03c5ffebf83de3c38",
+  "delivered_sha": "41bccd61c1fb0e82a7a8171c85da2128d0c01ca6906f80c03c5ffebf83de3c38",
+  "same_bytes": true,
+  "checks": {
+   "max_sagitta": [
+    0.0039588308467848774,
+    "MEASURED"
+   ]
+  },
+  "detail": "{'tolerance_mm': 0.01, 'angular_tolerance_rad': 0.05, 'triangles': 92262, 'max_sagitta_mm': 0.0039588308467848774}"
+ },
+ "mesh_sagitta of that triangulation": [
+  0.0039588308467848774,
+  "MEASURED",
+  [
+   -9.341281713523799,
+   13.34955298673005,
+   10.25946890452467
+  ]
+ ],
+ "mesh_deviation delivered STL vs STEP": [
+  0.004800157649649014,
+  "MEASURED",
+  [
+   4.732662,
+   -15.340273,
+   10.004849
+  ],
+  "",
+  113
+ ],
+ "min_wall_mesh": [
+  1.7213965535034086,
+  "MEASURED",
+  "",
+  1.1205673217773438e-05
+ ]
+}
