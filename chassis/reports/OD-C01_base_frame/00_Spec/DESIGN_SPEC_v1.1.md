@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-C01 printed base frame (20260930-od-c01-base-frame)
 
-Version 1.2 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30 and the "confirmed go" / "go" of the same day: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size M · lane CAD
+Version 1.1 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30 and the "confirmed go" / "go" of the same day: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size M · lane CAD
 
 ## §1 Intent
 
@@ -65,16 +65,10 @@ full), a hand pressing the buttons.
   zones (CHOSEN).** One solid. A plate 6.0 thick, y −6.0 … 0, spanning x −120 …
   +120 and z −305 … +100 (corners R 10), printed flat, top face up. The layout in
   this frame (every joint is a translation and a rotation of a mount's own frame):
-  - **OD-C05 carrier and the group head** (A-01, 1.2): the group head axis is
-    vertical, the mouth down (OD-C05 spec 2.0 A-02, RV01 F1). The carrier's frame
-    (the OD-G01 housing frame) maps by the proper rotation local x → X, local
-    y → +Z, local z → −Y, its origin at (0, 180.06, 32.0), so its foot underside
-    (its z +180.06) lands on y 0, the housing's rear face (its z −24.94) lies at
-    y 205.0 and the housing's mouth face (its z +3.30) at y 176.76; the carrier's
-    holes at (x ±35, z −40) and (x ±35, z −60) (unchanged); its foot occupies
-    x ±55, z −70 … −26, its wall z −26 … −20 up to y 210, its plate z −26 … +82 at
-    y 205 … 210; the housing occupies x ±50, z −18 … +82; the portafilter spouts
-    hang to y ≈ 135.2 (OD-C05 spec 2.0 A-03).
+  - **OD-C05 carrier** (A-01): its frame at the identity rotation, its origin at
+    (0, 175, 0), so its foot underside y −175 lands on y 0; its holes at
+    (x ±35, z −40) and (x ±35, z −60); its foot occupies x ±50, z −69.94 … −24.94;
+    the housing's mouth is at z +3.30 and its lowest point at y 131.9.
   - **OD-C04 thermoblock mount** (A-02): its frame at the identity rotation (its
     −Y is down, its +Z toward the group head), its origin at (0, 70, −140), so its
     foot underside y −70 lands on y 0; its holes at (x ±40, z −148) and
@@ -93,8 +87,8 @@ full), a hand pressing the buttons.
     insert holes at (x 65, z −45), (65, −105), (65, −165), (65, −225) for the
     bulkhead's foot; everything at x ≥ 70 behind it is the electric zone.
   - **Reserved zones** (A-05 … A-08, documented in the plan, not gated): the drip
-    tray x ±75, z −15 … +85 on the plate under the mouth at (0, 32) (cup rest top
-    ≤ 36.9 above the plate, A-06; 1.2 moved it back 25 with the housing); the water tank x ±70, z −305 … −250 (A-07); the valve and flowmeter
+    tray x ±75, z +10 … +100 on the plate (cup rest top ≤ 36.9 above the plate,
+    A-06); the water tank x ±70, z −305 … −250 (A-07); the valve and flowmeter
     mount OD-C07 x −117 … −67, z −154 … −35 (A-05); the electronics bay x 70 … 120,
     z −240 … −30 (A-08).
   - **OD-C07 valve and flowmeter mount** (A-17, added in 1.1): its frame rotated so
@@ -128,7 +122,7 @@ full), a hand pressing the buttons.
 |---|---|---|---|---|---|---|---|
 | U-01 | Valid solid per part | `solid_count = 1`, `brep_valid = 1`, `naked_edges = 0` | Hard | CAD | house | `validity` | — |
 | U-02 | Envelope within spec | 240.0 × 6.0 × 405.0 each in [spec − 0.1, spec + 0.1]; position against the datum reported apart (x ±120.0, y −6.0 … 0.0, z −305.0 … +100.0) | Hard | CAD | house | `envelope` | — |
-| U-03 | Assembly closes | (a) plate|OD-C03 and plate|OD-C04 at the joints of §4: designed contacts, `clearance = 0`, `interference ≤ 0` mm³; each mount's four Ø3.4 holes coaxial with the plate's Ø4.0 holes, offset ≤ 0.10 (`locate_bore` on both solids); plate|OD-H01 ≥ 2.0 and plate|OD-H11 ≥ 10.0 (`clearance`; the OD-H11 boolean is INCONCLUSIVE by OD-C04 A-14 and reported); OD-C03|OD-C04 ≥ 2.0; OD-H11 max z ≤ −85.0 (`envelope` of the placed solid); OD-G01 v02 at the carrier's pose (the joint of §4, origin (0, 180.06, 32.0), rotation x → X, y → +Z, z → −Y) ≥ 2.0 to everything else; the carrier itself is not built yet (A-01: the check assembly places its foot outline x ±55, y 0 … 4, z −70 … −26 as a reference box, not a solid). (b) N/A | Hard | CAD | house | `clearance`, `interference`, `locate_bore`, `envelope` | A-01 … A-03 |
+| U-03 | Assembly closes | (a) plate|OD-C03 and plate|OD-C04 at the joints of §4: designed contacts, `clearance = 0`, `interference ≤ 0` mm³; each mount's four Ø3.4 holes coaxial with the plate's Ø4.0 holes, offset ≤ 0.10 (`locate_bore` on both solids); plate|OD-H01 ≥ 2.0 and plate|OD-H11 ≥ 10.0 (`clearance`; the OD-H11 boolean is INCONCLUSIVE by OD-C04 A-14 and reported); OD-C03|OD-C04 ≥ 2.0; OD-H11 max z ≤ −85.0 (`envelope` of the placed solid); OD-G01 v02 at the carrier's pose (origin (0, 175, 0)) ≥ 2.0 to everything else; the carrier itself is not built yet (A-01: the plan places its foot outline as a reference box, not a solid). (b) N/A | Hard | CAD | house | `clearance`, `interference`, `locate_bore`, `envelope` | A-01 … A-03 |
 | U-04 | Clean export | named body re-read unchanged, no stray shells, valid after re-import | Hard | CAD | house | `step_roundtrip` | — |
 | U-05 | Every spec feature present | counts per the plan: 1 plate, 20 Ø4.0 through-holes, 4 Ø3.4 through-holes, 2 Ø8.0 through-holes | Hard | CAD | house | `feature_census`, `bore_census`, `locate_bore` | — |
 | U-06 | Soft: thin corners under a round | `min_wall` wide ≥ 2.0 | Soft | part | house | `min_wall` `detail["wide"]` | — |
@@ -163,12 +157,12 @@ full), a hand pressing the buttons.
 
 | ID | Question | Current assumption | Risk if wrong | Source of the value | Retire by | Status |
 |---|---|---|---|---|---|---|
-| A-01 | OD-C05 carrier joint and height | the carrier's (= housing's) frame mapped by x → X, y → +Z, z → −Y with its origin at (0, 180.06, 32.0): the group head axis vertical, the mouth down (1.2, OD-C05 spec 2.0 A-02, RV01 F1); its foot underside at its z +180.06 on y 0; its holes at (±35, z −40 / −60) as OD-C05 spec §4 (the pattern of spec 1.x kept); the housing's rear face at y 205, the spouts at y ≈ 135.2 (OD-C05 A-03); the carrier is not built yet: the check assembly uses its foot outline box (x ±55, z −70 … −26) and the OD-G01 v02 STEP at the housing's pose | the carrier does not seat or its holes miss; the group head height changes | OD-C05 spec 2.0 §2, A-02 … A-04; this spec | OD-C05's delivered build; the Usta's answer to the up-direction card | OPEN |
+| A-01 | OD-C05 carrier joint and height | the carrier's frame at the identity rotation with its origin at (0, 175, 0): its +Y is up, its +Z the front; its foot underside at its y −175 (spec 1.1 raises the axis from 150 to 175 so a 36.9 mm tray fits under the housing's lowest point, INTAKE X-29 and §4 gap 4); its holes and foot outline as OD-C05 spec §4; the carrier is not built yet: the check assembly uses its foot outline box and the OD-G01 v02 STEP at the housing's pose | the carrier does not seat or its holes miss; the group head height changes | OD-C05 spec 1.0 A-02 … A-04 (INTAKE X-23 … X-33); this spec | OD-C05's delivered build; the Usta's layout confirmation | OPEN |
 | A-02 | OD-C04 joint | identity rotation, origin (0, 70, −140): the thermoblock's axis horizontal at y ≈ 55.9 (its axis at its y −14.13), pipes and terminals up, outlet pins at z −89.21 toward the group head, casting ≥ 16.5 above the plate (OD-C04 A-07, A-10) | the thermoblock fouls the carrier or the tube runs do not reach | OD-C04 spec 1.2 §2, A-07, A-10 (INTAKE X-12 … X-22); this spec (P4) | the Usta's layout confirmation; the tube runs | OPEN |
 | A-03 | OD-C03 joint | rotation local x → +Z, y → −Y, z → +X, origin (0, 40, −205): pump axis along X at y 40 across the back, the terminal block (its −Y) up, the outlet (its −Z) toward −X where the valves sit; its foot 8 mm behind the thermoblock mount's foot | pump hoses do not reach; vibration path | OD-C03 spec 1.2 §2, A-08 (INTAKE X-01 … X-11); this spec | the Usta's layout confirmation; the tube runs | OPEN |
 | A-04 | OD-C02 bulkhead interface | a wall on the plane x = 65 from z −240 to −30 (3 to 5 thick), standing on four M3 inserts at (65, −45), (65, −105), (65, −165), (65, −225); the electric zone is x ≥ 70 | OD-C02 must be designed to it | this spec (design choice; the OD-C03/C04/C05 precedent) | OD-C02 design | OPEN |
 | A-05 | Valve and flowmeter zone | OD-C07 with OD-H21, OD-H22, OD-H24 within x −117 … −67, z −154 … −35, on the pump's outlet side, placed by A-17 (1.1) | the zone is too small or on the wrong side of the tube runs | this spec; WATER_FLOW.md (INTAKE §3) | OD-C07 design | OPEN |
-| A-06 | Drip tray | the tray OD-C21 with its grid stands on the plate within x ±75, z −15 … +85, under the mouth at (0, 32), its cup rest top ≤ 36.9 above the plate (so the portafilter spouts at y ≈ 135.2 keep the ≥ 95 mm mug rule, INTAKE X-29, X-43; OD-C05 A-03); no locating features until the scan | the mug does not fit or the tray hangs over the edge | this spec; issue #9 (INTAKE X-57) | the tray scan (issue #9) | OPEN |
+| A-06 | Drip tray | the tray OD-C21 with its grid stands on the plate within x ±75, z +10 … +100, its cup rest top ≤ 36.9 above the plate (so the housing's lowest point at y 131.9 keeps the ≥ 95 mm mug rule, INTAKE X-29, X-43); no locating features until the scan | the mug does not fit or the tray hangs over the edge | this spec; issue #9 (INTAKE X-57) | the tray scan (issue #9) | OPEN |
 | A-07 | Water tank zone | OD-W01 with its dock OD-C06 stands within x ±70, z −305 … −250, lifted out upward; the tank seat OD-W03 faces the pump | the tank does not fit; the plate must grow | this spec; BOM OD-W01, OD-C06 (INTAKE §3) | the tank scan; OD-C06 design | OPEN |
 | A-08 | Electronics bay | OD-C08 with either path within x 70 … 120, z −240 … −30 behind the bulkhead, its own tray screwed to bulkhead and plate later | the bay is too small for path 1's OD-E01 (scanned) | this spec; BOM OD-E00 … OD-E60 (INTAKE X-41, X-61) | the Usta picks the path (order-of-work row 9) | OPEN |
 | A-09 | Kobra Max 3 build volume | 420 × 420 × 500 (Anycubic specification, not in the machine file); the plate is 240 × 405 flat | plate does not fit: C3 (two halves) | memory of the spec sheet (as OD-C03 A-10) | the Usta reads the printer | OPEN |
@@ -191,7 +185,6 @@ full), a hand pressing the buttons.
 | 2026-09-30 | the group head axis goes to 175 above the floor (OD-C05 spec 1.1) so that a tray up to 36.9 tall fits under the ≥ 95 mm mug rule; OD-C05 spec 1.0's 150 left 11.9 | Oğuz | INTAKE §4 gap 4; A-01 |
 | 2026-09-30 | INTAKE §4 gaps 1, 2, 11, 12 (frames, positions, floor planes, the thermoblock offset) are answered by the joints of §4 as design choices, all A-## rows | Oğuz | §4, A-01 … A-03 |
 | 2026-09-30 | REQ-09 (flatness) is a Soft bench gate answered by the first print (the OD-C03 RV01 lesson) | Oğuz | §5 |
-| 2026-09-30 | the group head axis is vertical with the mouth down (OD-C05 RV01 F1; put to the Usta as a decision card): the housing pose of §4 and A-01 rewritten, the tray zone moved under the mouth; the plate's holes and every other feature stand; the housing's rear face at y 205 from the portafilter spouts (OD-C05 spec 2.0 A-03) | Oğuz, on OD-C05 spec 2.0 | A-01, A-06 |
 | 2026-09-30 | OD-C07's footprint (four inserts, 106.5 × 42) goes on the plate now (REQ-10, A-17) rather than as a later round: placed in the valve zone with the flowmeter to the front, the hose window over the drain at (−80, −120), 11 behind-clearance to the pump; the zone grows to x −117 … −67, z −154 … −35 | Oğuz, on the OD-C07 spec A-14 | A-05, A-17 |
 
 ## §8 Change log
@@ -200,5 +193,4 @@ full), a hand pressing the buttons.
 |---|---|---|
 | 0.1 | 2026-09-30 | first draft from the three mounts' specs and the OEM reports |
 | 1.0 | 2026-09-30 | INTAKE_v01 cross-references in §6; ratified |
-| 1.2 | 2026-09-30 | the group head vertical (OD-C05 spec 2.0): the housing pose in §4, U-03, A-01, A-06, the tray zone z −15 … +85; no change to the plate's features |
 | 1.1 | 2026-09-30 | OD-C07 joint and four insert holes (§4, U-05, D-05b, J-05, REQ-10, A-05, A-17); twenty insert holes |

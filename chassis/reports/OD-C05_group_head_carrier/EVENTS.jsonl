@@ -57,3 +57,9 @@
 {"t": "2026-09-30T16:13:18Z", "ev": "usta_gate", "detail": {"gate": "revise_decision", "outcome": "another_round", "ref": "reviews/REVISE_PACKET_RV01.md option A, on the standing instruction; the up direction put to the Usta as a decision card 2026-09-30"}}
 {"t": "2026-09-30T16:13:18Z", "ev": "attempt", "detail": {"counter": "build", "n": 0, "cap": 2}}
 {"t": "2026-09-30T16:13:35Z", "ev": "state", "detail": {"from": "REVISE", "to": "J3_BUILD", "reason": "another round to spec 2.0 (vertical axis, concept C4): the designer package replans, then builds v02"}}
+{"t": "2026-09-30T16:17:40Z", "ev": "note", "detail": {"text": "1.2 -> 2.0", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T16:17:40Z", "ev": "note", "detail": {"text": "od_c05_carrier_v01 -> od_c05_carrier_v02", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T16:17:41Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "2.0", "ref": "RV01 F1 round: vertical axis, concept C4; on the standing instruction, the up direction on the Usta's decision card"}}
+{"t": "2026-09-30T16:17:42Z", "ev": "usta_gate", "detail": {"gate": "concept_picked", "outcome": "C4", "ref": "spec 2.0 section 4"}}
+{"t": "2026-09-30T16:18:42Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c05_carrier_v02", "brief": "briefs/WP-05_designer.md", "attempt": 1}}
+{"t": "2026-09-30T16:18:42Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
