@@ -5,9 +5,9 @@ code: ODC05
 milestone: M1
 title: "Open Dedica OD-C05 printed group head carrier"
 lane: CAD
-state: REVISE
-blocked_on: {question: "Is the group head axis vertical with the mouth down (RV01 F1, the Dedica) or horizontal as the OD-G01 spec section 2 says?", since: "2026-09-30T16:13:17Z", return_to: J3_BUILD}
-next_action: "J3: designer package WP-03 builds od_c05_carrier_v01 to spec 1.1"
+state: J3_BUILD
+blocked_on: null
+next_action: "spec 2.0 (A-02 vertical axis, concept C4), then designer package WP-05: plan v02 and build od_c05_carrier_v02"
 data_class: PUBLIC
 size: S
 process: [FDM]
