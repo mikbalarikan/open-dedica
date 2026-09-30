@@ -5,7 +5,7 @@ code: ODC03
 milestone: M1
 title: "Open Dedica OD-C03 printed pump cradle"
 lane: CAD
-state: J4_REVIEW
+state: J3_BUILD
 blocked_on: null
 next_action: "J2: designer package WP-02 writes the plan for od_c03_cradle_v01"
 data_class: PUBLIC
@@ -13,21 +13,24 @@ size: S
 process: [FDM]
 gate_sections: [U, D]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.1"
+spec_version: "1.2"
 workspace: "${OGUZ_JOBS}/20260930-od-c03-pump-cradle"
 delivery: "${OGUZ_DELIVERY}/20260930-od-c03-pump-cradle"
 artifacts: "${OGUZ_ARTIFACTS}/20260930-od-c03-pump-cradle"
 repo_commit: "70826895ab7666f9e5aee3f77ce88f099995f3c1"
-active_target: od_c03_cradle_v01
+active_target: od_c03_cradle_v02
 revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13, A-14, A-15]
 attempts: {build: 1, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
-reviews: []
+reviews:
+  - {id: RV01, target: od_c03_cradle_v01, verdict: REVISE, blockers: 1, date: "2026-09-30"}
 usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-09-30"}
+  - {gate: spec_ratified, outcome: "1.2", date: "2026-09-30"}
+  - {gate: revise_decision, outcome: another_round, date: "2026-09-30"}
 deliverables: [STEP, STL, scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null

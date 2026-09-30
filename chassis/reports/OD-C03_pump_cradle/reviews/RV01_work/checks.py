@@ -110,7 +110,9 @@ def run(part, pump, sleeve, *, walls=True, tag=""):
             thr = g is not None and g[0] < -2.0 - 1e-6 and g[1] > 2.0 + 1e-6
             if thr: nslots += 1
             zg = [gap_around(part, (sx, y, zc), (0, 0, 1)) for y in (5.76, 7.0, 8.24)]
-            yg = [gap_around(part, (sx, 7.0, z), (0, 1, 0)) for z in (zc-2.9999, zc+2.9999)]
+            z7 = gap_around(part, (sx, 7.0, zc), (0, 0, 1))
+            yg = [None] if z7 is None or not all(map(math.isfinite, z7)) else \
+                 [gap_around(part, (sx, 7.0, z), (0, 1, 0)) for z in (zc + z7[0] + 1e-4, zc + z7[1] - 1e-4)]
             yc = gap_around(part, (sx, 7.0, zc), (0, 1, 0))
             if None in zg or None in yg or yc is None:
                 for k in ("clear_z", "clear_y", "yc", "zc", "lig"):
@@ -176,14 +178,14 @@ def run(part, pump, sleeve, *, walls=True, tag=""):
         G["REQ-04 on arc"] = gate("REQ-04", R_("nearest_on_saddle_arc", on, "bool", at=cs.at), "==", 1, band=0, assumes=["A-03"])
     # REQ-06 post clearance (inside REQ-03): per post block
     from build123d import Box, Pos
-    for sx, xc in (("-", -31.5), ("+", 31.5)):
-        blk = Pos(xc, 16, 23) * Box(4.2, 40, 20.2)
-        post = Compound(list(part.intersect(blk).solids()))
-        G[f"REQ-06 clr {sx}"] = gate("REQ-06", clearance(post, pump), ">=", 2.0, band=MM, assumes=["A-06"])
+    for sx, xc in (("-", -29.0), ("+", 29.0)):
+        blk = Pos(xc, 17.95, 23) * Box(10.0, 37.9, 22.0)     # |x| 24..34, y -1..36.9, z 12..34: the post block only
+        cut = part.intersect(blk)
+        G[f"REQ-06 clr {sx}"] = gate("REQ-06", clearance(Compound(list(cut.solids())), pump) if cut is not None else R_("clearance", None, "mm"), ">=", 2.0, band=MM, assumes=["A-06"])
     # rib contact per rib: each saddle touches the sleeve
     for zc in (18.0, 28.0):
-        rib = Compound(list(part.intersect(Pos(0, 30, zc) * Box(50, 30, 6.2)).solids()))
-        G[f"REQ-04 rib {zc}"] = gate("REQ-04", clearance(rib, sleeve), "==", 0, band=MM, assumes=["A-03"])
+        cut = part.intersect(Pos(0, 30, zc) * Box(50, 30, 6.2))
+        G[f"REQ-04 rib {zc}"] = gate("REQ-04", clearance(Compound(list(cut.solids())), sleeve) if cut is not None else R_("clearance", None, "mm"), "==", 0, band=MM, assumes=["A-03"])
     # print
     oh = overhang_census(part, build_dir=(0, -1, 0), min_deg=45)
     G["D-03a"] = gate("D-03a", oh, ">=", 45.0, band=DEG, assumes=["A-13"])
@@ -194,7 +196,7 @@ def run(part, pump, sleeve, *, walls=True, tag=""):
         if kind(f) == "plane" and np.allclose(face_normal(f), (0, 1, 0), atol=1e-3):
             e = envelope(f)
             if e["max_y"].measured < 40.0 - 0.01:
-                spans.append(min(e["size_x"].measured, e["size_z"].measured))
+                spans.append(max(e["size_x"].measured, e["size_z"].measured))   # conservative: the longer side
     G["D-03b"] = gate("D-03b", R_("largest_bridge_span", max(spans) if spans else 0.0, "mm"), "<=", 5.0, band=MM)
     if walls:
         mw = min_wall(part)

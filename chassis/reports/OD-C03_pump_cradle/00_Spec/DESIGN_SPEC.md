@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-C03 printed pump cradle (20260930-od-c03-pump-cradle)
 
-Version 1.1 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
+Version 1.2 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
 
 ## §1 Intent
 
@@ -53,18 +53,19 @@ frequency under 15 bar load and warms in use; the cradle carries the pump's mass
   A foot plate 3.0 thick (y 37.0 … 40.0) spanning x −40 … +40, z −10 … 42, with four
   Ø3.4 through-holes along Y at (x ±34.0, z −4.0) and (x ±34.0, z 37.0) for M3
   screws into OD-C01 inserts (A-11). Two saddle ribs 6.0 thick along Z, rib 1 over
-  z 15.0 … 21.0 and rib 2 over z 25.0 … 31.0 (inside the sleeve span A-03 and clear
-  of the terminal block, the spade tabs and the inclined slot box on the −Y side,
-  which reach z 13.6, so a strap over either rib rides on the sleeve), each an arc
+  z −3.0 … 3.0 (under the pump's centre of mass at z 7.2, RV01 F2) and rib 2 over
+  z 25.0 … 31.0 (both inside the sleeve span A-03; the −Y side features, terminal
+  block, spade tabs and slot box, reach z 13.6 and lie opposite the ribs), each an arc
   of inner radius 26.65 (the sleeve OD 53.3 / 2, A-03: a designed contact) and outer
   radius 32.0, spanning θ 45° … 135° (centred on +Y, so it stays clear of the frame's
   two side plates at |x| 23.75 … 27.2, |y| ≤ 16.2, A-04, A-06) and joined to the foot
   by a web below it. On each side of the ribs one post block 4.0 thick along X, inner
   face at |x| = 29.5 (2.3 clear of the −X plate at x −27.2), rising from the foot to
-  y = 0.0 (the axis height), spanning z 13.0 … 33.0 (2.0 beyond each rib face), with
+  y = 0.0 (the axis height), spanning z 12.0 … 33.0, with
   two through-slots along X of clear section 6.0 (Z) × 2.5 (Y) centred at y = 7.0 and
-  z = 18.0 and 28.0 (the rib centre planes) whose tops are roofed at 45° gables for
-  a cable tie (4.8 wide, A-07) that passes over the sleeve. Print orientation: foot
+  z = 17.0 and 28.0 (past the −Y side features at z ≤ 13.6, and the rear one on rib
+  2's centre plane) whose tops are roofed at 45° gables for a cable tie (4.8 wide,
+  A-07) that passes over the sleeve. Print orientation: foot
   on the bed, ribs and posts vertical, the saddle faces up (A-13). Envelope
   80.0 × 40.0 × 52.0 (x ±40.0, y from 0.0 to 40.0, z −10.0 … 42.0).
 - **C2 — full-ring clamp with a bolted cap.** Two printed halves around the sleeve.
@@ -93,15 +94,15 @@ frequency under 15 bar load and warms in use; the cradle carries the pump's mass
 | D-04c | Clearance around a seated component | ≥ 0.5 per side to OD-H01; REQ-03 raises it to 2.0 | Hard | part | house | `clearance` | A-01 |
 | D-06a | Minimum feature | ≥ 1.0 | Hard | part | floor | `min_wall` | — |
 | D-07 | Fit-critical bores | the four Ø3.4 holes are clearance holes, not fit bores: none on this part | Hard | part | floor | — (N/A by this row) | — |
-| REQ-01 | Saddle radius | `radial_profile` inner about the pump axis (origin, +Z, ref +X) over θ 50° … 130° at every 5°, z 15.5 … 20.5 and 25.5 … 30.5: min and max in [26.60, 26.70] | Hard | CAD | A-03 | `radial_profile` | A-03 |
-| REQ-02 | Saddle sector and rib faces | at z = 18.0 and z = 28.0 the inner radius reads ≤ 26.70 at θ 50° and 130° and no material reads within r ≤ 32.0 at θ 40° and 140° (`radial_extent` INCONCLUSIVE "no material" is the expected reading, recorded as such); rib faces at z 15.0, 21.0, 25.0, 31.0 ± 0.10 from sections | Hard | CAD | A-06 | `radial_extent`; reviewer from sections | A-06 |
+| REQ-01 | Saddle radius | `radial_profile` inner about the pump axis (origin, +Z, ref +X) over θ 50° … 130° at every 5°, z −2.5 … 2.5 and 25.5 … 30.5: min and max in [26.60, 26.70] | Hard | CAD | A-03 | `radial_profile` | A-03 |
+| REQ-02 | Saddle sector and rib faces | at z = 0.0 and z = 28.0 the inner radius reads ≤ 26.70 at θ 50° and 130° and no material reads within r ≤ 32.0 at θ 40° and 140° (`radial_extent` INCONCLUSIVE "no material" is the expected reading, recorded as such); rib faces at z −3.0, 3.0, 25.0, 31.0 ± 0.10 from sections | Hard | CAD | A-06 | `radial_extent`; reviewer from sections | A-06 |
 | REQ-03 | Pump clearance | `clearance(cradle, OD-H01)` ≥ 2.0 at the identity pose, the nearest points reported | Hard | CAD | A-01, A-03 | `clearance` | A-01, A-03 |
 | REQ-04 | Sleeve contact | `clearance(cradle, sleeve solid) = 0` with the nearest points on the saddle arcs; `interference ≤ 0` mm³ | Hard | CAD | A-03 | `clearance`, `interference` | A-03 |
-| REQ-05 | Strap slots | four through-slots along X, two per post block, clear section ≥ 6.0 (Z) × 2.5 (Y), centres at y 7.0 ± 0.5 and z 18.0 / 28.0 ± 0.5, gable roofs at 45° (D-03a); the ligament beside each slot ≥ 2.0 (D-01b) | Hard | CAD | A-07 | reviewer, from sections and `envelope` of the slot faces | A-07 |
-| REQ-06 | Post clearance | post block inner faces at |x| = 29.5 ± 0.1, spanning z 13.0 … 33.0 ± 0.1; `clearance` post|OD-H01 ≥ 2.0 (part of REQ-03) | Hard | CAD | A-06 | `envelope`, `clearance` | A-06 |
+| REQ-05 | Strap slots | four through-slots along X, two per post block, clear section ≥ 6.0 (Z) × 2.5 (Y), centres at y 7.0 ± 0.5 and z 17.0 / 28.0 ± 0.5, gable roofs at 45° (D-03a); the ligament beside each slot ≥ 2.0 (D-01b) | Hard | CAD | A-07 | reviewer, from sections and `envelope` of the slot faces | A-07 |
+| REQ-06 | Post clearance | post block inner faces at |x| = 29.5 ± 0.1, spanning z 12.0 … 33.0 ± 0.1; `clearance` post|OD-H01 ≥ 2.0 (part of REQ-03) | Hard | CAD | A-06 | `envelope`, `clearance` | A-06 |
 | REQ-07 | Frame holes | four Ø3.4 ± 0.1 through-holes along Y at (x ±34.0, z −4.0) and (x ±34.0, z 37.0), offset ≤ 0.10 | Hard | CAD | A-11 | `locate_bore` | A-11 |
 | REQ-08 | Foot plane | the foot's underside at y = 40.00 ± 0.10 (`envelope` max_y), 3.0 ± 0.1 thick | Hard | CAD | A-11 | `envelope`; reviewer from sections | A-11 |
-| REQ-09 | Vibration | the printed cradle transmits no unacceptable vibration to the chassis with the OEM sleeve fitted; not a geometric gate: INCONCLUSIVE until the first run | Hard | part | client | — (bench) | A-03, A-05 |
+| REQ-09 | Vibration | **Soft.** The printed cradle transmits no unacceptable vibration to the chassis with the OEM sleeve fitted; not a geometric gate: the review reports it INCONCLUSIVE with a risk rating, and it is answered by the first run (a Hard row here blocked RV01 by rule with nothing a build could change) | Soft | part | client | — (bench) | A-03, A-05 |
 
 **Named exceptions** (Usta U-18): none.
 
@@ -115,7 +116,7 @@ frequency under 15 bar load and warms in use; the cradle carries the pump's mass
 | A-04 | Sheet-metal frame | end plates at z −12.4 and 37.65 and two side plates, at x −27.20 … −24.10 and x 23.75 … 26.85, both y ±16.20 and z −12.17 … 37.42 (measured on the STEP, plan v01 §2a); sheet 3.1 | posts or saddles collide with the frame | INTAKE X-58…X-72 | calipers; the plan's measurement | OPEN |
 | A-05 | Suspension spring OD-H03 | not modelled and not needed by C1: retention is the cable ties on the rubber sleeve; the OEM spring's function (axial location, damping) is reproduced when OD-H03 is measured (C3) | axial creep or rattle in service | INTAKE §4 Q7, X-181 | calipers on OD-H03; the first run (REQ-09) | OPEN |
 | A-06 | Free sector and post positions | saddles over θ 45° … 135° and posts at |x| ≥ 29.5 keep ≥ 2.0 to the frame plates (measured on the spec 1.0 volumes: 2.300 at the −X posts, 2.650 at +X, 2.787 at the ribs; plan v01 §2a) | a collision the check finds: adjust the sector in the plan | derived from A-04 | the plan's measurement | OPEN |
-| A-07 | Retention strap | cable tie 4.8 wide × 1.4 thick, two per cradle (one per rib) over the sleeve through the post slots at z 18.0 and 28.0, past the spade tabs (z ≤ 5.5) and the slot box (z ≤ 13.6) on the −Y side | strap does not pass or does not hold | this spec | the Usta names the strap | OPEN |
+| A-07 | Retention strap | cable tie 4.8 wide × 1.4 thick, two per cradle over the sleeve through the post slots at z 17.0 and 28.0, past the spade tabs (z ≤ 5.5) and the slot box (z ≤ 13.6) on the −Y side; a tie loop crosses the side plates' outer faces (r 31.4 at their corners, RV01 F3), which the real sleeve is assumed to cover (A-03), so the ties bear on rubber, not steel | strap does not pass or does not hold | this spec | the Usta names the strap | OPEN |
 | A-08 | Pump orientation in the machine | axis horizontal; +Y (the side opposite the terminal block) down; terminals up for wiring; the outlet (−Z) toward the 3-way valve | wiring or tube runs awkward; OD-C01 layout | this spec (P4) | the Usta's layout decision for OD-C01 | OPEN |
 | A-09 | Material | PETG, density 1270 kg/m³, printed on the Kobra Max 3 (recorded material PLA) | wrong mass; PETG softens if the pump runs hot | BOM OD-C03 (INTAKE X-160); typical PETG datasheet | the Usta names the filament | OPEN |
 | A-10 | Kobra Max 3 build volume | 420 × 420 × 500 (Anycubic specification, not in the machine file) | part does not fit (it is 80 × 52 × 40) | memory of the spec sheet | the Usta reads the printer | OPEN |
@@ -133,6 +134,7 @@ frequency under 15 bar load and warms in use; the cradle carries the pump's mass
 | 2026-09-30 | spec 1.0 ratified and C1 chosen on the Usta's standing instruction of 2026-09-30; the Usta confirms or amends §5 and §6 at the next opportunity | the Usta (standing instruction), recorded by Oğuz | usta_gate spec_ratified, concept_picked |
 | 2026-09-30 | INTAKE §4 Q1…Q4 (numeric spreads inside the scan's own band) need no answer for the cradle: the cradle keeps 2.0 to the pump, more than the scan's deviation; carried in A-01 | Oğuz | INTAKE_v01 §4 |
 | 2026-09-30 | REQ-09 (vibration) is a part gate answered only by the first run; the review reports it INCONCLUSIVE | Oğuz | §5 |
+| 2026-09-30 | RV01 REVISE: another round (option A) on the standing instruction; the one blocking finding was REQ-09's Hard classification, which spec 1.2 corrects; F2 (centre of mass ahead of the saddles) is answered by moving rib 1; F3, F4, F5, F6 stay ledgered (A-07, A-03, A-01, zero-margin rows by design) | Oğuz on the standing instruction; the Usta confirms | REVISE_PACKET_RV01 |
 | 2026-09-30 | spec 1.1: the designer's C-01 (a 6.0 slot in a 6.0 post leaves no ligament) is answered by one 20-wide post block per side; ribs moved past the −Y side features the plan found under the strap path | Oğuz on the standing instruction; the Usta confirms | DESIGN_PLAN v01 §8 |
 
 ## §8 Change log
@@ -141,4 +143,5 @@ frequency under 15 bar load and warms in use; the cradle carries the pump's mass
 |---|---|---|
 | 0.1 | 2026-09-30 | first draft from the OD-H01 report |
 | 1.0 | 2026-09-30 | INTAKE_v01 cross-references in §6, A-14 and A-15 added; ratified |
+| 1.2 | 2026-09-30 | after RV01 (REVISE on REQ-09 alone, every geometric row PASS): REQ-09 made Soft (a bench gate cannot block a CAD review); rib 1 moved to z −3 … 3 under the pump's centre of mass (F2; REQ-01, REQ-02); post blocks z 12 … 33 with slots at z 17 and 28 (REQ-05, REQ-06); the tie path over the side plates carried in A-07 (F3); ratified on the same standing instruction |
 | 1.1 | 2026-09-30 | after the designer's J2 stop (DESIGN_PLAN v01 §8 C-01, §7): posts widened to one block per side, z 13 … 33, with two slots each (REQ-05, REQ-06); ribs moved to z 15 … 21 and 25 … 31, off the spade tabs and slot box a strap would ride on (REQ-01, REQ-02); foot to z 42 and the rear holes to z 37 (U-02, D-02, REQ-07, A-11); A-03 sleeve cut back from the side plates; A-04 and A-06 carry the measured frame; ratified on the same standing instruction |
