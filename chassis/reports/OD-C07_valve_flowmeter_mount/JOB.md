@@ -7,7 +7,7 @@ title: "Open Dedica OD-C07 printed valve and flowmeter mount"
 lane: CAD
 state: J5_DELIVER
 blocked_on: null
-next_action: "J5: the Usta merges PR #45; then J6 close (physical outcome pending the first print)"
+next_action: "the Usta merges PR #45 (after the OD-G01 branch); then J6 close, physical outcome pending the first print"
 data_class: PUBLIC
 size: M
 process: [FDM]
@@ -33,6 +33,7 @@ usta_gates:
   - {gate: spec_ratified, outcome: "1.1", date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.2", date: "2026-09-30"}
   - {gate: revise_decision, outcome: accept_deviations, date: "2026-09-30"}
+  - {gate: exception_signed, outcome: signed, date: "2026-09-30"}
 deliverables: [STEP, STL, scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null
