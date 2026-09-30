@@ -38,6 +38,7 @@ usta_gates:
   - {gate: spec_ratified, outcome: "2.1", date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "2.2", date: "2026-09-30"}
   - {gate: halt_decision, outcome: another_round, date: "2026-09-30"}
+  - {gate: question_answered, outcome: confirmed, date: "2026-09-30"}
 deliverables: [STEP, STL, "3MF"]
 physical_outcome: n/a
 client_source_delete_after: null
