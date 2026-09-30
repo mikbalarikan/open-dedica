@@ -23,3 +23,6 @@
 {"t": "2026-09-30T13:12:40Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "plan checked with the spec 1.1 amendments carried in WP-03"}}
 {"t": "2026-09-30T13:12:41Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c04_mount_v01", "brief": "briefs/WP-03_designer.md", "attempt": 1}}
 {"t": "2026-09-30T13:12:41Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-09-30T13:37:34Z", "ev": "note", "detail": {"text": "1.1 -> 1.2", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T13:37:35Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.2"}}
+{"t": "2026-09-30T13:37:36Z", "ev": "note", "detail": {"text": "spec 1.2: REQ-08 (heat bench gate) made Soft before the review; no geometry change, build v01 to 1.1 stands"}}

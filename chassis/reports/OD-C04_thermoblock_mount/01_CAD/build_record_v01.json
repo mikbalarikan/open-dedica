@@ -1,0 +1,142 @@
+{
+ "params": {
+  "plate_half_x": 50.0,
+  "plate_y_max": 40.0,
+  "plate_back_z": -17.0,
+  "plate_front_z": -12.0,
+  "plate_corner_r": 5.0,
+  "foot_y_min": -70.0,
+  "foot_t": 4.0,
+  "foot_z_max": 33.0,
+  "gusset_x_center": 46.0,
+  "gusset_t": 4.0,
+  "gusset_leg": 20.0,
+  "standoff_d": 12.0,
+  "s1_x": -19.62,
+  "s1_y": 20.18,
+  "s2_x": 25.01,
+  "s2_y": 9.08,
+  "standoff_shift_x": 0.0,
+  "standoff_shift_y": 0.0,
+  "tip_z": -10.1,
+  "standoff_bore_d": 4.0,
+  "root_fillet_radii": [
+   1.0,
+   0.8,
+   0.5
+  ],
+  "frame_hole_d": 3.4,
+  "frame_hole_x": 40.0,
+  "frame_hole_z_low": -8.0,
+  "frame_hole_z_high": 26.0,
+  "frame_shift_x": 0.0,
+  "frame_shift_z": 0.0,
+  "teardrop_roof_deg": 50.0,
+  "spacer_d": 7.0,
+  "spacer_bore_d": 4.0,
+  "spacer_len_s1": 10.1,
+  "spacer_len_s2": 37.7,
+  "stl_tol": 0.01,
+  "stl_ang": 0.2309721947249083,
+  "cut_overrun": 1.0
+ },
+ "fillet_radius_achieved": 1.0,
+ "fillet_tried": [],
+ "root_edges": 2,
+ "step": {
+  "path": "02_STEP_STL/od_c04_mount_C1_v01.step",
+  "sha256": "31904ca8fd3a11f00330639f47978de4f02ccb5965450c0b3c56767eb77fa221"
+ },
+ "stl": {
+  "path": "02_STEP_STL/od_c04_mount_C1_v01.stl",
+  "sha256": "c579d4159966a522cb84282e97aefcbaec22cbb9ece844241cd0ba8e9e1b13f7",
+  "tolerance_mm": 0.01,
+  "angular_tolerance_rad": 0.2309721947249083,
+  "triangles": 8516,
+  "max_sagitta_mm": 0.006269949994348124
+ },
+ "assembly": {
+  "path": "02_STEP_STL/od_c04_assembly_C1_v01.step",
+  "sha256": "f301128de7df7c8b6190ea54cefaddbaecbfd090377cf96be15fca0818175e2a"
+ },
+ "seats": {
+  "S1": {
+   "axis_xy": [
+    -19.62,
+    20.18
+   ],
+   "bore_diameter": 3.6,
+   "axis_offset_from_spec": 0.0,
+   "bore_start": [
+    -19.62,
+    20.18,
+    3.0
+   ],
+   "bore_end": [
+    -19.62,
+    20.18,
+    8.0
+   ],
+   "open_ends": [
+    false,
+    false
+   ],
+   "probe_top_z": -1.0000001000001728,
+   "probe_gap": 1.0000001000001728,
+   "probe_on_casting": [
+    -20.539905,
+    18.404113,
+    0.0
+   ],
+   "seat_z_probe": 0.0,
+   "seat_z_bore_open_end": null,
+   "seat_z": 0.0
+  },
+  "S2": {
+   "axis_xy": [
+    25.01,
+    9.08
+   ],
+   "bore_diameter": 3.5,
+   "axis_offset_from_spec": 0.0,
+   "bore_start": [
+    25.01,
+    9.08,
+    27.6
+   ],
+   "bore_end": [
+    25.01,
+    9.08,
+    33.2
+   ],
+   "open_ends": [
+    true,
+    false
+   ],
+   "probe_top_z": 27.0,
+   "probe_gap": 0.6000000000000014,
+   "probe_on_casting": [
+    28.51,
+    9.08,
+    27.6
+   ],
+   "seat_z_probe": 27.6,
+   "seat_z_bore_open_end": 27.6,
+   "seat_z": 27.6
+  }
+ },
+ "placements": {
+  "OD-H11_thermoblock": {
+   "joint": "RigidJoint mount_frame -> step_origin",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))"
+  },
+  "spacer_S1_assumed_A05": {
+   "joint": "RigidJoint seat_S# on OD-H11 -> seat_end",
+   "location": "Location: (position=(-19.62, 20.18, -10.1), orientation=(0, 0, 0))"
+  },
+  "spacer_S2_assumed_A05": {
+   "joint": "RigidJoint seat_S# on OD-H11 -> seat_end",
+   "location": "Location: (position=(25.01, 9.08, -10.1), orientation=(0, 0, 0))"
+  }
+ }
+}

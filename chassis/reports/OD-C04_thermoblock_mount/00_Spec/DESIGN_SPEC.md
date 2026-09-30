@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-C04 printed thermoblock mount (20260930-od-c04-thermoblock-mount)
 
-Version 1.1 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
+Version 1.2 · RATIFIED by the Usta on 2026-09-30 (standing instruction of 2026-09-30: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
 
 ## §1 Intent
 
@@ -107,7 +107,7 @@ water connections; steam and drips possible.
 | REQ-05 | Foot plane | the foot's underside at y = −70.00 ± 0.10 (`envelope` min_y), 4.0 ± 0.1 thick | Hard | CAD | A-10 | `envelope`; reviewer from sections | A-10 |
 | REQ-06 | Frame holes | four Ø3.4 ± 0.1 through-holes along Y at (x ±40.0, z −8.0) and (x ±40.0, z 26.0), offset ≤ 0.10 | Hard | CAD | A-10 | `locate_bore` | A-10 |
 | REQ-07 | Bracket keep-out | no mount material at r ≤ 45.0 from the measured body axis (x −8.330, y −14.130) within z 0 … 47.64 (the standoffs end at z −10.10, so nothing is excepted; the pads at θ 262.5° and 339.0°, ear blocks R 39.40 about that axis, take the OEM brackets, A-06) | Hard | CAD | A-06 | `radial_profile(side="inner", r_max=45)` about the measured axis ("no material" on every ray is the expected reading, recorded); reviewer from sections | A-02, A-06 |
-| REQ-08 | Heat | the mount holds the thermoblock through a heating cycle without softening; not a geometric gate: INCONCLUSIVE until the first run | Hard | part | client | — (bench) | A-08 |
+| REQ-08 | Heat | **Soft.** The mount holds the thermoblock through a heating cycle without softening; not a geometric gate: the review reports it INCONCLUSIVE with a risk rating, and it is answered by the first run (a Hard bench row blocks a CAD review by rule with nothing a build could change, OD-C03 RV01) | Soft | part | client | — (bench) | A-08 |
 
 **Named exceptions** (Usta U-18): none.
 
@@ -138,6 +138,7 @@ water connections; steam and drips possible.
 | 2026-09-30 | spec 1.0 ratified and C1 chosen on the Usta's standing instruction of 2026-09-30; the Usta confirms or amends §5 and §6 at the next opportunity | the Usta (standing instruction), recorded by Oğuz | usta_gate spec_ratified, concept_picked |
 | 2026-09-30 | the ≥ 10 mm air gap is REQ-01 with the project as its source; metal spacers carry the screw seats, so no printed surface touches the casting | Oğuz | §4 C1 |
 | 2026-09-30 | REQ-08 (heat) is a part gate answered only by the first run; the review reports it INCONCLUSIVE | Oğuz | §5 |
+| 2026-09-30 | spec 1.2: REQ-08 made Soft before the review, so a bench gate the CAD review cannot answer does not force a REVISE (the OD-C03 RV01 lesson); no geometry changes, build v01 to spec 1.1 stands | Oğuz on the standing instruction; the Usta confirms | §5, §8 |
 | 2026-09-30 | spec 1.1: plan v01 Q1 answered with option (a), a 37.70 spacer at S2 (REQ-01 outranks the 10.0 spacer of A-05); Q2: the measured axis governs r and θ; Q3: tips at −10.10 so the ±0.10 band keeps 10.0 | Oğuz on the standing instruction; the Usta confirms | DESIGN_PLAN v01 §8 |
 
 ## §8 Change log
@@ -147,3 +148,4 @@ water connections; steam and drips possible.
 | 0.1 | 2026-09-30 | first draft from the OD-H11 report |
 | 1.0 | 2026-09-30 | INTAKE_v01 cross-references in §6; ratified |
 | 1.1 | 2026-09-30 | after the designer's J2 stop (DESIGN_PLAN v01 §0, §8): both standoff tips at z −10.10 with spacers 10.10 and 37.70 (§4, REQ-03, A-04, A-05: a printed S2 standoff cannot keep REQ-01); the body axis at (−8.330, −14.130) (§2, A-02, REQ-07); S1 seats on the base face (A-03); OD-H11 unsound for booleans (U-03, A-14); ratified on the same standing instruction |
+| 1.2 | 2026-09-30 | REQ-08 (heat, a bench gate) made Soft: the review reports it INCONCLUSIVE with a risk rating instead of a blocking finding; no other change, the geometry of 1.1 stands; ratified on the same standing instruction |

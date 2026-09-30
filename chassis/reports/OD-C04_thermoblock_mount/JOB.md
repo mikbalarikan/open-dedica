@@ -13,7 +13,7 @@ size: S
 process: [FDM]
 gate_sections: [U, D, E]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.1"
+spec_version: "1.2"
 workspace: "${OGUZ_JOBS}/20260930-od-c04-thermoblock-mount"
 delivery: "${OGUZ_DELIVERY}/20260930-od-c04-thermoblock-mount"
 artifacts: "${OGUZ_ARTIFACTS}/20260930-od-c04-thermoblock-mount"
@@ -28,6 +28,7 @@ usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-09-30"}
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-09-30"}
+  - {gate: spec_ratified, outcome: "1.2", date: "2026-09-30"}
 deliverables: [STEP, STL, scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null
