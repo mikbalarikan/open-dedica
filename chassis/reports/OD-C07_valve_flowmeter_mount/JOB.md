@@ -5,9 +5,9 @@ code: ODC07
 milestone: M1
 title: "Open Dedica OD-C07 printed valve and flowmeter mount"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
-next_action: "J3: designer package WP-03 builds od_c07_mount_v01 (checks, build script, STEP, STL, sections, REPORT); then the orchestrator sends the J4 review package"
+next_action: "J4: reviewer package WP-05 re-measures the exported STEP/STL against spec 1.2 and writes RV01; then the orchestrator records the verdict"
 data_class: PUBLIC
 size: M
 process: [FDM]

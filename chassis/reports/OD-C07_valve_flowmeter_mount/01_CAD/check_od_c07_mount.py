@@ -1,4 +1,4 @@
-"""Gate checks for od_c07_mount (job 20260930-od-c07-valve-flowmeter-mount, concept C1, spec 1.1).
+"""Gate checks for od_c07_mount (job 20260930-od-c07-valve-flowmeter-mount, concept C1, spec 1.2).
 
 Written before build_od_c07_mount.py (PLAYBOOK D3). One predicate per spec §5 gate row,
 plus exactly_one_solid, feature_census and envelope_within_spec. Every predicate reads
@@ -17,6 +17,12 @@ contact annulus r 13.68 ... 16.21, z 9.999 ... 10.5 (mount frame). The hook beam
 OD-H24 flange are the J-04 pair; the hooks are checked against the pipes and the connector
 (OD-H24 outside r 20.5).
 
+Spec 1.2 (package WP-04, no geometry change): U-03(b) moves the OD-H22 slide to 5.0 above
+the seat (flange back face at z 53.0) from y +45 to y 0, then a 5.0 drop along -Z; the path
+is set here (U03B below) and replaces the build Params' h22_* fields, which the build never
+reads. The REQ-01 ring inner R, the REQ-02 pin bores and the REQ-04 slot width / profile /
+straight walls / slit reach are one-sided bands.
+
 Usage (from the repository root, after `source $HOME/oguz.env`):
   uv run tools/run.py python <ws>/01_CAD/check_od_c07_mount.py --step <step> --out <json>
       [--set name=value ...] [--stl <stl>] [--no-mesh]
@@ -28,7 +34,7 @@ import json
 import math
 import sys
 import time
-from dataclasses import asdict
+from dataclasses import asdict, replace
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -49,6 +55,12 @@ from tools.result import INCONCLUSIVE, MEASURED, Result, gate, inconclusive  # n
 import build_od_c07_mount as B  # noqa: E402  (parameters, joints; the geometry is read from the STEP)
 
 MM, DEG, MM3, EXACT = 0.005, 0.001, 0.001, 0.0      # GATES §0 bands
+
+# spec 1.2 §5 U-03(b): OD-H22 slid along -Y at 5.0 above its seat from y +45 to y 0 (>= 5 poses),
+# then lowered 5.0 along -Z onto the deck (>= 3 poses; the slide's last pose is the drop's start)
+U03B = {"h22_lift": 5.0,
+        "h22_slide": (45.0, 35.0, 25.0, 16.0, 14.0, 12.0, 10.0, 8.0, 6.0, 4.0, 2.0, 0.0),
+        "h22_lower": (4.0, 3.0, 2.0, 1.0, 0.5, 0.0)}
 Z = (0, 0, 1)
 X = (1, 0, 0)
 
@@ -132,8 +144,9 @@ class Gates:
 
 
 # ---------------------------------------------------------------- the checks
-def run(step_path: Path, p: "B.Params", stl_path: Path | None, do_mesh: bool) -> dict:
+def run(step_path: Path, p: "B.Params", stl_path: Path | None, do_mesh: bool, tmp_dir: Path | None = None) -> dict:
     t0 = time.time()
+    p = replace(p, **U03B)
     G = Gates()
     mount = read_step(step_path)
     oem = B.place_oem(WS / "00_Spec" / "inputs")
@@ -224,17 +237,43 @@ def run(step_path: Path, p: "B.Params", stl_path: Path | None, do_mesh: bool) ->
     G.add("U-03", worst, "<=", 0, MM3, AS["U-03"], required=f"(b) OD-H24 lowered along -Z from 25 mm, {len(p.h24_path)} poses, interference <= 0 (hooks exempt)")
     G.fact("h24_path", poses)
     worst = None
+    worst24 = None
     poses = []
     path = [(0.0, y, p.h22_lift) for y in p.h22_slide] + [(0.0, 0.0, dz) for dz in p.h22_lower]
-    for (dx, dy, dz) in path:
-        r = common_volume(solid, h22.moved(Location((dx, dy, dz))))
-        poses.append({"dy": dy, "dz": dz, "mm3": r.measured, "status": r.status})
-        if r.status != MEASURED:
-            worst = r
-            break
-        if worst is None or (worst.status == MEASURED and r.measured > worst.measured):
-            worst = Result("interference", r.measured, "mm3", at=f"OD-H22 at y +{dy} mm, z +{dz} mm")
-    G.add("U-03", worst, "<=", 0, MM3, AS["U-03"], required=f"(b) OD-H22 slid along -Y at +0.5 from y +45 to 0, then lowered 0.5; {len(path)} poses, interference <= 0")
+    for k, (dx, dy, dz) in enumerate(path):
+        moved = h22.moved(Location((dx, dy, dz)))
+        r = common_volume(solid, moved)
+        r24 = common_volume(h24, moved)
+        on_slide = k < len(p.h22_slide)
+        cl = clearance(solid, moved) if r.status == MEASURED and r.measured <= MM3 else None
+        poses.append({"dy": dy, "dz": dz, "leg": "slide" if on_slide else "drop", "mm3": r.measured, "status": r.status,
+                      "mm3_vs_od_h24": r24.measured, "clearance_mm": cl.measured if (cl is not None and cl.ok) else None,
+                      "clearance_at": cl.at if (cl is not None and cl.ok) else None,
+                      "clearance_on_b": cl.detail.get("on_b") if (cl is not None and cl.ok) else None})
+        for rr, tag in ((r, "mount"), (r24, "OD-H24")):
+            if rr.status != MEASURED:
+                worst = rr if tag == "mount" else worst
+                worst24 = rr if tag == "OD-H24" else worst24
+                continue
+            cur = worst if tag == "mount" else worst24
+            if cur is None or (cur.status == MEASURED and rr.measured > cur.measured):
+                nr = Result("interference", rr.measured, "mm3", at=f"OD-H22 at y +{dy} mm, z +{dz} mm")
+                if tag == "mount":
+                    worst = nr
+                else:
+                    worst24 = nr
+    n_slide, n_drop = len(p.h22_slide), len(p.h22_lower) + 1
+    G.add("U-03", worst, "<=", 0, MM3, AS["U-03"],
+          required=f"(b) OD-H22 slid along -Y at +{p.h22_lift:g} (flange back face z {p.deck_top_z + p.h22_lift:g}) from y +{p.h22_slide[0]:g} to 0 ({n_slide} poses), then lowered {p.h22_lift:g} along -Z ({n_drop} poses incl. the slide end); interference with the mount <= 0")
+    G.add("U-03", worst24, "<=", 0, MM3, AS["U-03"],
+          required=f"(b) OD-H22 along the same {len(path)} poses: interference with the seated OD-H24 <= 0")
+    slide_cl = [q for q in poses if q["leg"] == "slide"]
+    least = None
+    if slide_cl and all(q["clearance_mm"] is not None for q in slide_cl):
+        least = min(slide_cl, key=lambda q: q["clearance_mm"])
+    G.fact("h22_slide_least_clearance_mm", None if least is None else
+           {"measured": least["clearance_mm"], "pose": {"dy": least["dy"], "dz": least["dz"]}, "at": least["clearance_at"],
+            "on_b": least["clearance_on_b"]})
     G.fact("h22_path", poses)
 
     # ---- U-04 STEP round trip against a rebuild with the same parameters
@@ -301,7 +340,7 @@ def run(step_path: Path, p: "B.Params", stl_path: Path | None, do_mesh: bool) ->
     for (xy, d, tag, pin_r) in pins:
         lb = loc((xy[0], xy[1], 5.0))
         nominal = 4.8 if "4.8" in tag else 3.8
-        g1 = G.add("REQ-02", lb["diameter"], "in", (nominal - 0.1, nominal + 0.1), MM, AS["REQ-02"], required=f"{tag} ± 0.1")
+        g1 = G.add("REQ-02", lb["diameter"], "in", (nominal, nominal + 0.1), MM, AS["REQ-02"], required=f"{tag} +0.1/-0 (one-sided, spec 1.2)")
         g2 = G.add("REQ-02", lb["offset"], "<=", 0.10, MM, AS["REQ-02"], required=f"{tag} offset <= 0.10")
         g3 = G.add("REQ-02", lb["length"], "in", (9.3, 9.5), MM, AS["REQ-02"], required=f"{tag} length 9.4 ± 0.1 (recess floor to bottom face)")
         g4 = G.add("REQ-02", lb["through"], "==", 1, EXACT, AS["REQ-02"], required=f"{tag} through")
@@ -326,8 +365,8 @@ def run(step_path: Path, p: "B.Params", stl_path: Path | None, do_mesh: bool) ->
     G.add("REQ-01", ped["max_z"], "in", (9.9, 10.1), MM, AS["REQ-01"], required="pedestal top z 10.0 ± 0.1")
     rp = radial_profile(solid, (0, 0, 0), Z, X, [float(a) for a in range(0, 360)], (10.5, 12.5), margin=0,
                         z_step=0.1, side="inner", r_min=15.0, r_max=18.6)
-    G.add("REQ-01", rp["min"], "in", (16.25, 16.35), MM, AS["REQ-01"], required="ring inner R (radial_profile inner 0...359°, z 10.5...12.5) min in [16.25, 16.35]")
-    G.add("REQ-01", rp["max"], "in", (16.25, 16.35), MM, AS["REQ-01"], required="ring inner R max in [16.25, 16.35]")
+    G.add("REQ-01", rp["min"], "in", (16.30, 16.40), MM, AS["REQ-01"], required="ring inner R (radial_profile inner 0...359°, z 10.5...12.5) min in [16.30, 16.40] (spec 1.2)")
+    G.add("REQ-01", rp["max"], "in", (16.30, 16.40), MM, AS["REQ-01"], required="ring inner R max in [16.30, 16.40] (spec 1.2)")
     ring = _common(solid, _annulus(16.25, 18.6, p.ped_top_z, p.ring_top_z + 1.0))
     ringenv = envelope(ring)
     G.add("REQ-01", ringenv["max_z"], "in", (12.9, 13.1), MM, AS["REQ-01"], required="ring top z 13.0 ± 0.1")
@@ -415,8 +454,8 @@ def run(step_path: Path, p: "B.Params", stl_path: Path | None, do_mesh: bool) ->
     G.add("REQ-04", flat, "<=", 0.0, EXACT, AS["REQ-04"], required="deck top flat under the OD-H22 flange outline: flange area not on the z 48 plane beyond the slot and slits (mm²) <= 0")
     angs = [float(a) for a in range(192, 349, 2)]
     sp = radial_profile(solid, (vc, 0, 0), Z, X, angs, (41.0, 47.0), margin=0, z_step=0.5, side="inner", r_min=0.0)
-    G.add("REQ-04", sp["min"], "in", (7.00, 7.10), MM, AS["REQ-04"], required="stem U-slot radial_profile inner about (62, 0), 192°...348° (slit angles aside), z 41...47, min in [7.00, 7.10]")
-    G.add("REQ-04", sp["max"], "in", (7.00, 7.10), MM, AS["REQ-04"], required="stem U-slot radial_profile inner, max in [7.00, 7.10]")
+    G.add("REQ-04", sp["min"], "in", (7.05, 7.10), MM, AS["REQ-04"], required="stem U-slot radial_profile inner about (62, 0), 192°...348° (slit angles aside), z 41...47, min in [7.05, 7.10] (spec 1.2)")
+    G.add("REQ-04", sp["max"], "in", (7.05, 7.10), MM, AS["REQ-04"], required="stem U-slot radial_profile inner, max in [7.05, 7.10] (spec 1.2)")
     walls = []
     for yy in (2.5, 6.0, 10.0, 14.0):
         for zz in (41.0, 44.0, 47.0):
@@ -427,16 +466,16 @@ def run(step_path: Path, p: "B.Params", stl_path: Path | None, do_mesh: bool) ->
         rs = [w[3] for w in walls if w[0] == ang]
         bad = [r for r in rs if not r.ok]
         if bad:
-            res = bad[0]
+            lo_r = hi_r = bad[0]
         else:
             lo_r = min(rs, key=lambda r: r.measured)
             hi_r = max(rs, key=lambda r: r.measured)
-            res = lo_r if abs(lo_r.measured - 7.05) > abs(hi_r.measured - 7.05) else hi_r
-        G.add("REQ-04", res, "in", (7.00, 7.10), MM, AS["REQ-04"], required=f"slot straight wall {side} at 7.05 ± 0.05 from the axis, y 2.5...14, z 41...47 (worst)")
+        G.add("REQ-04", lo_r, "in", (7.05, 7.10), MM, AS["REQ-04"], required=f"slot straight wall {side} at 7.05 +0.05/-0 from the axis, y 2.5...14, z 41...47 (least)")
+        G.add("REQ-04", hi_r, "in", (7.05, 7.10), MM, AS["REQ-04"], required=f"slot straight wall {side} at 7.05 +0.05/-0 from the axis, y 2.5...14, z 41...47 (greatest)")
     wsum = None
     if all(w[3].ok for w in walls):
         wsum = min(a[3].measured + b[3].measured for a in walls for b in walls if a[0] == 0.0 and b[0] == 180.0 and a[1] == b[1] and a[2] == b[2])
-    G.add("REQ-04", _r("slot_width", wsum, "mm"), "in", (14.0, 14.2), MM, AS["REQ-04"], required="stem U-slot 14.1 ± 0.1 wide (least)")
+    G.add("REQ-04", _r("slot_width", wsum, "mm"), "in", (14.1, 14.2), MM, AS["REQ-04"], required="stem U-slot 14.1 +0.1/-0 wide (least)")
     open_v = common_volume(_box(vc - 6.9, vc + 6.9, 0.0, p.deck_y + 1.0, p.deck_bot_z + 0.05, p.deck_top_z - 0.05), solid)
     G.add("REQ-04", _rn(open_v, "slot channel material to +Y"), "<=", 0, MM3, AS["REQ-04"], required="slot open through the deck's +Y edge: material in the channel x 62 ± 6.9, y 0 ... 16 <= 0")
     sl = envelope(_common(solid, _box(vc + 7.3, vc + 7.6, 2.0, 3.0, 30.0, 60.0)))
@@ -455,8 +494,8 @@ def run(step_path: Path, p: "B.Params", stl_path: Path | None, do_mesh: bool) ->
         if ra.ok and rb.ok:
             slope = (ra.measured - rb.measured) / 0.99
             reach = ra.measured + slope * 0.01
-        ga = G.add("REQ-04", _r("slit_top_reach", reach, "mm", at_minus_0p01=ra.measured, at_minus_1=rb.measured), "in", (11.75, 11.95), MM, AS["REQ-04"],
-                   required=f"gusset slit {side} reaches 62 ± 11.85 ± 0.1 at the deck top")
+        ga = G.add("REQ-04", _r("slit_top_reach", reach, "mm", at_minus_0p01=ra.measured, at_minus_1=rb.measured), "in", (11.85, 11.95), MM, AS["REQ-04"],
+                   required=f"gusset slit {side} reaches 62 ± (11.85 +0.1/-0) at the deck top")
         w = []
         for dx in (8.5, 9.5, 10.5):
             for zz in (47.0, 47.8):
@@ -583,7 +622,7 @@ def run(step_path: Path, p: "B.Params", stl_path: Path | None, do_mesh: bool) ->
         G.add("U-07", _r("stl_angular_tolerance", p.stl_angular, "rad", limit=limit), "<=", limit if limit else 0.0, EXACT,
               required=f"angular a <= 4·acos(1 − 0.01/R_max), R_max {rmax}")
         if stl_path and stl_path.exists():
-            tmp = HERE / "check_out_v01" / f"_remesh_{step_path.stem}.stl"
+            tmp = (tmp_dir or step_path.parent) / f"_remesh_{step_path.stem}.stl"
             w = write_stl(mount, tmp, tolerance=0.01, angular_tolerance=p.stl_angular)
             G.add("U-07", w.checks["max_sagitta"], "<=", 0.01, MM, required="stl_max_sagitta <= 0.01")
             G.fact("stl_triangles", w.detail.get("triangles"))
@@ -764,10 +803,10 @@ def main():
     step = Path(a.step)
     step = step if step.is_absolute() else WS / step
     stl = None if not a.stl else (Path(a.stl) if Path(a.stl).is_absolute() else WS / a.stl)
-    res = run(step, p, stl, not a.no_mesh)
     out = Path(a.out)
     out = out if out.is_absolute() else WS / out
     out.parent.mkdir(parents=True, exist_ok=True)
+    res = run(step, p, stl, not a.no_mesh, out.parent)
     out.write_text(json.dumps(res, indent=1, default=str))
     fails = [r for r in res["gates"] if r["status"] not in ("PASS", "PASS_ASSUMED")]
     for r in res["gates"]:

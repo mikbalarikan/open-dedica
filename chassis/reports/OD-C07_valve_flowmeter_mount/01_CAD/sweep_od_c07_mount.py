@@ -1,6 +1,9 @@
-"""D7 sweep of od_c07_mount v01: rebuild at the low and high end of every fit-critical parameter
-(DESIGN_PLAN §4 "Fit" rows) into 01_CAD/sweep_v01/<run>/ and run the same check script on each.
-Nominal is the delivered v01 (01_CAD/check_out_v01/check_v01.json)."""
+"""D7 sweep of od_c07_mount (REPORT v02, spec 1.2): rebuild at the low and high end of every
+fit-critical parameter (DESIGN_PLAN §4 "Fit" rows) into 01_CAD/sweep_<TAG>/<run>/ and run the same
+check script on each. Nominal is the delivered STEP (01_CAD/check_out_v02/check_v02.json).
+Spec 1.2 makes ring_ri, pin1_d, pin2_d, slot_w and slit_x_top one-sided (+0.1/-0): their low end is
+the nominal value, so the low run is None (the nominal check stands for it) and only the high end is built.
+The v01 sweep (two-sided bands, spec 1.1) stays on disk in 01_CAD/sweep_v01/."""
 import json
 import os
 import subprocess
@@ -11,12 +14,13 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 WS = HERE.parent
 REPO = Path("/home/claude/oguz-atolye")
+TAG = "v02"
 RUNS = {
     "foot_hole_d": (["foot_hole_d=3.3"], ["foot_hole_d=3.5"]),
     "ped_top_z": (["ped_top_z=9.9"], ["ped_top_z=10.1"]),
-    "ring_ri": (["ring_ri=16.25"], ["ring_ri=16.35"]),
-    "pin1_d": (["pin1_d=4.7"], ["pin1_d=4.9"]),
-    "pin2_d": (["pin2_d=3.7"], ["pin2_d=3.9"]),
+    "ring_ri": (None, ["ring_ri=16.40"]),                    # REQ-01 [16.30, 16.40], spec 1.2
+    "pin1_d": (None, ["pin1_d=4.9"]),                        # REQ-02 Ø4.8 +0.1/-0, spec 1.2
+    "pin2_d": (None, ["pin2_d=3.9"]),                        # REQ-02 Ø3.8 +0.1/-0, spec 1.2
     "hook_ri": (["hook_ri=20.77", "catch_reach=1.9"], ["hook_ri=20.97", "catch_reach=2.1"]),   # catch R held at 18.87
     "hook_t": (["hook_t=1.9"], ["hook_t=2.1"]),
     "catch_under_z": (["catch_under_z=29.8"], ["catch_under_z=30.0"]),
@@ -24,9 +28,9 @@ RUNS = {
     "leg_gap_half": (["leg_gap_half=21.9"], ["leg_gap_half=22.1"]),
     "deck_top_z": (["deck_top_z=47.9"], ["deck_top_z=48.1"]),
     "deck_t": (["deck_t=7.6"], ["deck_t=7.8"]),
-    "slot_w": (["slot_w=14.0"], ["slot_w=14.2"]),
+    "slot_w": (None, ["slot_w=14.2"]),                       # REQ-04 14.1 +0.1/-0, spec 1.2
     "slit_w": (["slit_w=2.3"], ["slit_w=2.5"]),
-    "slit_x_top": (["slit_x_top=11.75"], ["slit_x_top=11.95"]),
+    "slit_x_top": (None, ["slit_x_top=11.95"]),              # REQ-04 11.85 +0.1/-0, spec 1.2
     "screw_dx": (["screw_dx=15.347,-15.438"], ["screw_dx=15.547,-15.238"]),                    # both holes shifted -0.1 / +0.1 in x
     "screw_clear_d": (["screw_clear_d=3.3"], ["screw_clear_d=3.5"]),
     "insert_d": (["insert_d=3.95"], ["insert_d=4.05"]),
@@ -37,7 +41,7 @@ RUNS = {
 
 def one(job):
     name, sets = job
-    d = f"01_CAD/sweep_v01/{name}"
+    d = f"01_CAD/sweep_{TAG}/{name}"
     args = sum((["--set", s] for s in sets), [])
     env = dict(os.environ)
     log = WS / d / "run.log"
@@ -54,7 +58,7 @@ def one(job):
 
 
 if __name__ == "__main__":
-    jobs = [(f"{k}_low", v[0]) for k, v in RUNS.items()] + [(f"{k}_high", v[1]) for k, v in RUNS.items()]
+    jobs = [(f"{k}_low", v[0]) for k, v in RUNS.items() if v[0]] + [(f"{k}_high", v[1]) for k, v in RUNS.items() if v[1]]
     only = sys.argv[1:]
     if only:
         jobs = [j for j in jobs if j[0] in only]
