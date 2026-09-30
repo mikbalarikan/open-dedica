@@ -1,0 +1,75 @@
+{
+ "min_wall": {
+  "name": "min_wall",
+  "measured": 2.75,
+  "unit": "mm",
+  "at": [
+   -44.0,
+   50.0,
+   -29.94
+  ],
+  "params": {
+   "spacing_mm": 0.4,
+   "opposition_deg": 25.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "rays": 997707,
+   "lost_rays": 0,
+   "face_pairs_measured_exactly": 19,
+   "face_pairs_never_opposed": 13,
+   "face_pairs_failed": 0,
+   "exact_points_without_normal": 0,
+   "solids": 4,
+   "largest_step_mm": 0.39924,
+   "wide": {
+    "opposition_deg": 45.0,
+    "measured": 2.75,
+    "at": [
+     -44.0,
+     50.0,
+     -29.94
+    ]
+   },
+   "hit_at": [
+    -44.0,
+    47.25,
+    -29.94
+   ],
+   "from_face": "plane",
+   "to_face": "cylinder",
+   "found_by": "exact"
+  }
+ },
+ "wide": {
+  "name": "min_wall_wide",
+  "measured": 2.75,
+  "unit": "mm",
+  "at": [
+   -44.0,
+   50.0,
+   -29.94
+  ],
+  "params": {
+   "spacing_mm": 0.4,
+   "opposition_deg": 45.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "gated_mm": 2.75,
+   "gated_opposition_deg": 25.0,
+   "gated_at": [
+    -44.0,
+    50.0,
+    -29.94
+   ],
+   "rays": 997707,
+   "solids": 4,
+   "largest_step_mm": 0.39924,
+   "face_pairs_measured_exactly": 19
+  }
+ },
+ "secs": 286.0219974517822
+}

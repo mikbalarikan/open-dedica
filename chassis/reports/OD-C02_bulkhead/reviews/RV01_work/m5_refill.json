@@ -1,0 +1,55 @@
+{
+ "refill_valid": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "faces": 34,
+ "bores": 0,
+ "env": {
+  "size_x": 12.0,
+  "size_y": 215.0,
+  "size_z": 210.0,
+  "min_x": 59.0,
+  "min_y": 0.0,
+  "min_z": -240.0,
+  "max_x": 71.0,
+  "max_y": 215.0,
+  "max_z": -30.0
+ },
+ "overhang_refilled": {
+  "name": "overhang_census",
+  "measured": 45.0,
+  "unit": "deg",
+  "at": [
+   67.0,
+   150.0,
+   -186.0
+  ],
+  "params": {
+   "build_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "min_deg": 45.0,
+   "spacing_mm": 0.7,
+   "bed_mm": 0.01
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "samples": 220036,
+   "downward_samples": 1296,
+   "below_min_deg": 0,
+   "bed_samples": 2549,
+   "bed_height_mm": -240.0,
+   "largest_step_mm": 0.697674,
+   "sampling_bound_deg": 0.0,
+   "seeds_refined": 0,
+   "per_kind_least_deg": {
+    "plane": 45.0
+   }
+  }
+ }
+}

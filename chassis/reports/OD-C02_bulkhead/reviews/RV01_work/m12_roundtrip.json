@@ -1,0 +1,67 @@
+{
+ "compare_file": {
+  "schema": [
+   1,
+   ""
+  ],
+  "solids": [
+   1,
+   ""
+  ],
+  "volume_delta": [
+   0.0,
+   ""
+  ],
+  "faces_delta": [
+   0,
+   ""
+  ],
+  "labels": [
+   1,
+   ""
+  ],
+  "valid_after": [
+   1,
+   ""
+  ]
+ },
+ "roundtrip_mine": {
+  "schema": [
+   null,
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "solids": [
+   null,
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "volume_delta": [
+   null,
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "faces_delta": [
+   null,
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "labels": [
+   null,
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "valid_after": [
+   null,
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ]
+ },
+ "header": {
+  "name": "od_c02_bulkhead_C1_v02.step",
+  "time_stamp": "2026-09-30T00:00:00",
+  "author": [
+   ""
+  ],
+  "organization": [
+   ""
+  ],
+  "preprocessor_version": "Open CASCADE STEP processor 7.9.3",
+  "originating_system": "build123d 0.11.1",
+  "authorization": ""
+ }
+}
