@@ -1,0 +1,98 @@
+{
+ "od_c05_carrier_y0_v02_front.png": {
+  "sha256": "e1ad969bc8178aa7a2cda58c22c9962c1cf7ad5e37a501da1070c1526f4fa4cf",
+  "plane": "front",
+  "through": [
+   0.0,
+   0.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_x0_v02_left.png": {
+  "sha256": "d5273b74d7096089fc0e90c58bfb0a3c365626b57656013ca8a2f4f873b63ffe",
+  "plane": "left",
+  "through": [
+   0.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_x44_v02_left.png": {
+  "sha256": "5516d2c68ee45a35f17fa8e300b12ec1cb209d5fa256f8f3134637c066283abe",
+  "plane": "left",
+  "through": [
+   44.0,
+   0.0,
+   -27.44
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_x53_v02_left.png": {
+  "sha256": "2b2f8e48467bb381692f85a53bb5f06cd7cd41fad6749840e8ae9b08b2903cd9",
+  "plane": "left",
+  "through": [
+   53.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_zm27p44_v02_top.png": {
+  "sha256": "3199702f7f22ee5a4986232e038fd0da2b5c481b1500bb923a7f47b3521a9dc8",
+  "plane": "top",
+  "through": [
+   0.0,
+   -26.0,
+   -27.44
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_z178_v02_top.png": {
+  "sha256": "6c0e2a0406b5d7ba91e0c9b6732fc34c1408094216bbad3dcbfa38b600266133",
+  "plane": "top",
+  "through": [
+   0.0,
+   -80.0,
+   178.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_assembly_y0_v02_front.png": {
+  "sha256": "1dd90de7da02b81bee865695c08343e99dd28e42df5066ef0a50e7052b48ee53",
+  "plane": "front",
+  "through": [
+   0.0,
+   0.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_assembly_x0_v02_left.png": {
+  "sha256": "6e8a34ae5c2fcd2124c57ed4e677ca9fd433a0c8ad198f09b1c511d7a37ad1c8",
+  "plane": "left",
+  "through": [
+   0.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ }
+}

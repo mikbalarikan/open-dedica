@@ -5,7 +5,7 @@ code: ODC01
 milestone: M1
 title: "Open Dedica OD-C01 printed base frame"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
 next_action: "J3: designer package WP-04 builds od_c01_frame_v02 to spec 1.2 (twenty holes, the housing vertical in the check assembly)"
 data_class: PUBLIC
