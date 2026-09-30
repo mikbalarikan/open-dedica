@@ -30,13 +30,13 @@ revisited when the scan lands.
 | # | Part | Designed against | Blocked by |
 |---|---|---|---|
 | 1 | `OD-G01` group head housing | OD-G09, OD-G04, OD-G10 | — (in progress: `reports/OD-G01_group_head_housing/`) |
-| 2 | `OD-C05` group head carrier | OD-G01's rear flange, OD-H11 outlet side | OD-G01 |
+| 2 | `OD-C05` group head carrier | OD-G01's rear flange, OD-H11 outlet side | modeled, RV02 approved on assumptions (ASA, K1C); open: drain for the foot trough, counterbore floors to sign, a ≥ 210 mm driver |
 | 3 | `OD-C03` pump cradle | OD-H01; sleeve OD-H02 and spring OD-H03 | modeled, approved on assumptions (RV02); calipers: H02 sleeve OD, side-wall gap, tie path |
 | 4 | `OD-C04` thermoblock mount | OD-H11 with its NTC/TCO brackets (OD-H17, H19) | modeled, approved on assumptions (RV01); calipers: 10.10 mm air gap, spacer lengths, bracket holes |
 | 5 | `OD-C07` valve and flowmeter mount | OD-H22, OD-H24 (OD-H21 sits in the water path, not on the mount) | modeled; RV01 REVISE, two seat gaps accepted by the Usta as deviations |
 | 6 | `OD-C06` water tank dock | OD-W03 seat; tank OD-W01/W02 | tank not scanned |
 | 7 | `OD-C01` base frame / floor plate | the footprints of 2–6; drip tray OD-C21/C22 | modeled, RV01 passed (PETG, Kobra Max 3); flatness is a bench check; layout assumes the group head vertical, housing rear face 205 mm above the base (awaits the Usta's axis decision) |
-| 8 | `OD-C02` wet/electric bulkhead | OD-C01, the tube runs | — |
+| 8 | `OD-C02` wet/electric bulkhead | OD-C01, the tube runs | modeled, RV01 approved on assumptions (ASA, K1C); M3×12 into the base rail (`OD-F10`) |
 | 9 | `OD-C08` electronics bay tray | OD-E01, OD-E02 (path 1) or OD-E51…E58 (path 2) | the Usta picks the path |
 | 10 | `OD-C09` front panel with button bezel | OD-G01 mouth, OD-E02 buttons, OD-S03 knob (phase 2) | — |
 | 11 | `OD-C10`, `OD-C11` top and back panels | OD-C01, OD-C02 | — |
@@ -69,6 +69,8 @@ Insert pattern as built into OD-C01 (OD-C01 frame, x and z in mm):
 | `OD-C03` | −4, 37 | −239, −171 |
 | `OD-C02` | 65 | −45, −105, −165, −225 |
 | `OD-C07` | −113, −71 | −42, −148.5 |
+
+Frames for OD-000: OD-C01, OD-C02 and OD-C07's footprint use the machine frame (X right, +Y up, +Z front, plate top y = 0); OD-C05 is in the housing frame (x → X, y → +Z, z → −Y, origin (0, 180.06, 32.0)). Check every insert pattern with calipers before the first print.
 
 OD-000 placements handed over by the part jobs (joint frames; the assembly uses them):
 

@@ -66,11 +66,11 @@ OD-E58,OD-E00,ELEC,Logic PSU — Path 2,,,1,VENDOR,5 V or 24 V,Mean Well-style,1
 OD-E59,OD-E00,MFG,SSR heat-sink plate,,,1,DESIGN,aluminium,local shop / scrap,—,,proposed
 OD-E60,OD-E00,STD,IEC inlet with fuse (alternative to OD-E06),,,1,VENDOR,,TME / AliExpress,4,,todo
 OD-C00,OD-000,ASM,Chassis & body,,,1,DESIGN,,,,,todo
-OD-C01,OD-C00,PRINT,Base frame / floor plate,,,1,DESIGN,PETG,printed (Anycubic Kobra Max 3),print,,modeled
-OD-C02,OD-C00,PRINT,Wet/electric bulkhead with drainage path,,,1,DESIGN,ASA,printed,print,,proposed
+OD-C01,OD-C00,PRINT,Base frame / floor plate,,,1,DESIGN,PETG (spec) or ASA — Usta to confirm (A-10),printed (Anycubic Kobra Max 3),print,,modeled
+OD-C02,OD-C00,PRINT,Wet/electric bulkhead with drainage path,,,1,DESIGN,ASA,printed (Creality K1C),print,,modeled
 OD-C03,OD-C00,PRINT,Pump cradle (sleeve + spring suspension),,,1,DESIGN,PETG,printed,print,#1,modeled
 OD-C04,OD-C00,PRINT,Thermoblock mount (≥10 mm air gap to printed walls),,,1,DESIGN,ASA / PC,printed,print,#2,modeled
-OD-C05,OD-C00,PRINT,Group head carrier (ties OD-G00 to frame),,,1,DESIGN,ASA,printed (Creality K1C),print,#3,proposed
+OD-C05,OD-C00,PRINT,Group head carrier (ties OD-G00 to frame),,,1,DESIGN,ASA,printed (Creality K1C),print,#3,modeled
 OD-C06,OD-C00,PRINT,Water tank dock / inlet seat,,,1,DESIGN,PETG,printed,print,#5,proposed
 OD-C07,OD-C00,PRINT,Valve & flowmeter mount (OPV reachable without disassembly),,,1,DESIGN,PETG,printed,print,#6,modeled
 OD-C08,OD-C00,PRINT,Electronics bay tray,,,1,DESIGN,PETG,printed,print,#8,proposed
@@ -88,7 +88,7 @@ OD-C23,OD-C00,OEM,Cup holder,07,6013214801,1,CALIPER,,FixPart / printed,5,#9,tod
 OD-C24,OD-C00,OEM,Cup holder with frame,12,5513226761,1,CALIPER,,FixPart / printed,(with OD-C23),#9,todo
 OD-C25,OD-C00,OEM,Rubber foot pad,34,5313229381,2,CALIPER,rubber,FixPart,4 (set),,todo
 OD-C26,OD-C00,OEM,Rubber foot pad,76,5313274719,2,CALIPER,rubber,FixPart,(set),,todo
-OD-F01,OD-000,STD,M3 heat-set insert,,,~40,VENDOR,brass M3,AliExpress,10 (set),,todo
+OD-F01,OD-000,STD,M3 heat-set insert (Ø4.0 bore × 6; 26 in the chassis),,,~40,VENDOR,brass M3,AliExpress,10 (set),,todo
 OD-F02,OD-000,STD,M3×8 screw,,,~40,VENDOR,ISO 7380 / DIN 912 A2,AliExpress,(set),,todo
 OD-F03,OD-000,STD,Acrylic sheet 3 mm (optional skins),,,per design,—,PMMA,local laser / leftover stock,25,,todo
 OD-F04,OD-000,STD,Food-safe silicone tube 4×2 mm (routing reserve),,,1 m,ENVELOPE,silicone,AliExpress,5,,todo
@@ -97,6 +97,7 @@ OD-F06,OD-000,STD,6.3 mm insulated spade terminals + 105 °C wire (own looms),,,
 OD-F07,OD-000,STD,Metal spacer Ø7 × 10.10 mm (Ø4 bore; OD-C04 thermoblock stand-off),,,1,—,steel / brass tube cut to length (+0.10/−0),local shop / scrap,1,#2,todo
 OD-F08,OD-000,STD,Metal spacer Ø7 × 37.70 mm (Ø4 bore; OD-C04 thermoblock stand-off),,,1,—,steel / brass tube cut to length (+0.10/−0),local shop / scrap,1,#2,todo
 OD-F09,OD-000,STD,Cable tie 4.8 mm (OD-C03 pump strap),,,2,VENDOR,PA66 UV-black,hardware store,1,#1,todo
+OD-F10,OD-000,STD,M3×12 screw (OD-C01 into the OD-C02 base rail; tip ends on the bore floor),,,4,VENDOR,ISO 7380 / DIN 912 A2,AliExpress,(set),,todo
 OD-S00,OD-000,ASM,Steam system (phase 2 — not in v1),,,1,DESIGN,,,,,deferred
 OD-S01,OD-S00,OEM,Steam valve assembly,17,AS00002707,1,SCAN,,FixPart,15,#35,modeled
 OD-S02,OD-S00,OEM,Steam hose assembly (steam wand — scanned together with nozzle OD-S04),10,AS00002705,1,SCAN,,FixPart,12,#36,modeled
