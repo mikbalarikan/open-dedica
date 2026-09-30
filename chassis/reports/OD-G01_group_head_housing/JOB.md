@@ -52,7 +52,7 @@ and bounds its own fix-and-re-measure loop.
 
 ## Notes for a resuming session
 
-Cloud container job (2026-09-30): the record is mirrored to open-dedica/chassis/reports/OD-G01_group_head_housing/ after every stage; recreate the workspace from there (its README). Env: source /home/user/oguz-env.sh before every tools call. Intake attempt 1 died with a session interrupt (see the note event). Usta gates of 2026-09-30 rest on the standing instruction and want explicit confirmation.
+Cloud container job (2026-09-30): the record is mirrored to open-dedica/chassis/reports/OD-G01_group_head_housing/ after every stage; recreate the workspace from there (its README). Env: source the OGUZ env file before every tools call. Intake attempt 1 died with a session interrupt (see the note event). Usta gates of 2026-09-30 rest on the standing instruction and want explicit confirmation.
 
 ## Close summary
 

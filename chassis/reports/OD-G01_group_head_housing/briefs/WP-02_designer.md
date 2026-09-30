@@ -34,10 +34,10 @@ never by bounding boxes.
 ## Environment
 
 Workspace: `${OGUZ_JOBS}/20260930-od-g01-group-head-housing` with
-`OGUZ_WORK=/home/user/oguz-work`, `OGUZ_JOBS=/home/user/oguz-jobs`
-(`source /home/user/oguz-env.sh`). Run any Python through
+`OGUZ_WORK=${OGUZ_WORK}`, `OGUZ_JOBS=${OGUZ_JOBS}`
+(`source the OGUZ env file`). Run any Python through
 `uv run tools/run.py python <script>` from the repository root
-`/home/user/oguz-atolye` (build123d 0.11.1, OCCT 7.9.3 in the tools venv).
+`<repo>` (build123d 0.11.1, OCCT 7.9.3 in the tools venv).
 Templates: `atolye/templates/DESIGN_PLAN.md`. Library index: `library/INDEX.md`
 (at most two cards). Tools documentation: `tools/README.md`.
 

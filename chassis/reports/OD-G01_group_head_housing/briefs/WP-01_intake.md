@@ -33,8 +33,8 @@ STEP files are listed and hashed only (intake rule 6); their geometry is measure
 
 ## Output
 
-00_Spec/INTAKE_v01.md from the template /home/user/oguz-atolye/atolye/templates/INTAKE.md. Every dimension of the three reference parts that touches OD-G01 must appear as its own X-## row: cup bore diameters and heights, lug count, angular positions, radial depth, ramp, lip ring, floor and plate levels, plate thickness, water opening shape, screw boss positions and hole diameters (OD-G09); flange, plate, tabs, bosses, hub tube (OD-G04); ear count, ear swept diameter, ear height, cup rim diameter (OD-G10). Also every requirement in REQUEST.md and the csv (material, process, safety, chassis rules) as X-## rows in section 3. Conflicts between the three reports (for example a boss PCD that differs between OD-G09 and OD-G04) go in section 4 as questions, never resolved.
+00_Spec/INTAKE_v01.md from the template <repo>/atolye/templates/INTAKE.md. Every dimension of the three reference parts that touches OD-G01 must appear as its own X-## row: cup bore diameters and heights, lug count, angular positions, radial depth, ramp, lip ring, floor and plate levels, plate thickness, water opening shape, screw boss positions and hole diameters (OD-G09); flange, plate, tabs, bosses, hub tube (OD-G04); ear count, ear swept diameter, ear height, cup rim diameter (OD-G10). Also every requirement in REQUEST.md and the csv (material, process, safety, chassis rules) as X-## rows in section 3. Conflicts between the three reports (for example a boss PCD that differs between OD-G09 and OD-G04) go in section 4 as questions, never resolved.
 
 ## Environment
 
-Workspace: /home/user/oguz-jobs/20260930-od-g01-group-head-housing (paths in the intake file relative to it). Hash with sha256sum. Do not read anything outside the workspace and the template.
+Workspace: ${OGUZ_JOBS}/20260930-od-g01-group-head-housing (paths in the intake file relative to it). Hash with sha256sum. Do not read anything outside the workspace and the template.
