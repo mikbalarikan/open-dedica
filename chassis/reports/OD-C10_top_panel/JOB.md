@@ -5,7 +5,7 @@ code: ODC10
 milestone: M1
 title: "Open Dedica OD-C10 printed top panel"
 lane: CAD
-state: J4_REVIEW
+state: J5_DELIVER
 blocked_on: null
 next_action: "J0: intake reads and hashes the inputs"
 data_class: PUBLIC
@@ -23,7 +23,8 @@ revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13]
 attempts: {build: 2, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
-reviews: []
+reviews:
+  - {id: RV01, target: od_c10_top_v01, verdict: APPROVED_ASSUMPTION_CONDITIONAL, blockers: 0, date: "2026-10-01"}
 usta_gates:
   - {gate: question_answered, outcome: tank_on_table, date: "2026-10-01"}
   - {gate: spec_ratified, outcome: "1.0", date: "2026-10-01"}

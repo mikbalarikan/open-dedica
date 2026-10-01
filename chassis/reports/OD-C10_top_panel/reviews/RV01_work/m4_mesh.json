@@ -1,0 +1,92 @@
+{
+ "census": {
+  "triangles": [
+   5164,
+   "MEASURED",
+   ""
+  ],
+  "bodies": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "naked_edges": [
+   0,
+   "MEASURED",
+   ""
+  ],
+  "winding": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "volume": [
+   433996.82040115417,
+   "MEASURED",
+   ""
+  ]
+ },
+ "stl_bounds": [
+  [
+   -120.0,
+   210.5,
+   -305.0
+  ],
+  [
+   120.0,
+   250.0,
+   100.0
+  ]
+ ],
+ "stl_volume": 433996.82040115417,
+ "deviation": [
+  0.005055370027887268,
+  [
+   -87.730331,
+   219.727127,
+   -287.451431
+  ],
+  {
+   "mesh_to_shape_mm": 0.005055370027887268,
+   "shape_to_mesh_mm": 0.00499797901398659,
+   "samples": 68638,
+   "reference_triangles": 13240
+  }
+ ],
+ "remesh": {
+  "sha": "214c42173cde8a2153e5f40505a0a6b5c5b00118c11da72aa1b093c84836e231",
+  "same_bytes_as_delivered": false,
+  "detail": {
+   "tolerance_mm": 0.01,
+   "angular_tolerance_rad": 0.17,
+   "triangles": 5164,
+   "max_sagitta_mm": 0.005384670409338475
+  },
+  "sagitta": [
+   0.005384670409338475,
+   "MEASURED"
+  ]
+ },
+ "ang_limit": 0.17890034867493382,
+ "3mf_unit": "millimeter",
+ "3mf_counts": [
+  2576,
+  5164
+ ],
+ "3mf_volume": 433996.8203528369,
+ "3mf_bounds": [
+  [
+   -120.0,
+   210.5,
+   -305.0
+  ],
+  [
+   120.0,
+   250.0,
+   100.0
+  ]
+ ],
+ "3mf_watertight": true,
+ "3mf_same_triangles_as_stl": true,
+ "3mf_max_coord_diff": 0.0
+}
