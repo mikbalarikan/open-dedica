@@ -1,0 +1,41 @@
+{
+ "cord_x95_y30": {
+  "hole_area_mm2": 113.09733552923255,
+  "behind_notch_z-297.9": {
+   "blocked_mm2": 3.917399607416865,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "in_notch_z-298.95": {
+   "blocked_mm2": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "tube_x-100_y30": {
+  "hole_area_mm2": 113.09733552923255,
+  "behind_notch_z-297.9": {
+   "blocked_mm2": 29.454369722058583,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "in_notch_z-298.95": {
+   "blocked_mm2": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "tube_x-84_y30": {
+  "hole_area_mm2": 113.09733552923255,
+  "behind_notch_z-297.9": {
+   "blocked_mm2": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "in_notch_z-298.95": {
+   "blocked_mm2": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ }
+}

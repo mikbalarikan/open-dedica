@@ -25,3 +25,6 @@
 {"t": "2026-10-01T11:47:35Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.1", "ref": "v01 REPORT stop answered on the standing instruction; explicit confirmation pending"}}
 {"t": "2026-10-01T11:47:36Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c11_back_v02", "brief": "briefs/WP-03_designer.md", "attempt": 2}}
 {"t": "2026-10-01T11:47:36Z", "ev": "attempt", "detail": {"counter": "build", "n": 2, "cap": 2}}
+{"t": "2026-10-01T12:03:39Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c11_back_v02", "outcome": "STOPPED", "report": "01_CAD/REPORT_od_c11_back_v02.md"}}
+{"t": "2026-10-01T12:03:40Z", "ev": "halt", "detail": {"stage": "J3_BUILD", "reason": "build cap 2 reached; v02 stopped on spec 1.1 conflicts (U-03a 3.0 clause vs wall foot 2.300; outer gussets block pass-throughs at y30)"}}
+{"t": "2026-10-01T12:03:40Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "BLOCKED-ON-USTA", "reason": "halt: build cap 2 reached; v02 stopped on spec 1.1 conflicts (U-03a 3.0 clause vs wall foot 2.300; outer gussets block pass-throughs at y30)"}}

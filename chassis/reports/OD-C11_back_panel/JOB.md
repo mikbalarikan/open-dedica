@@ -5,8 +5,8 @@ code: ODC11
 milestone: M1
 title: "Open Dedica OD-C11 printed back panel"
 lane: CAD
-state: J3_BUILD
-blocked_on: null
+state: BLOCKED-ON-USTA
+blocked_on: {question: "halt: build cap 2 reached; v02 stopped on spec 1.1 conflicts (U-03a 3.0 clause vs wall foot 2.300; outer gussets block pass-throughs at y30)", since: "2026-10-01T12:03:40Z", return_to: J3_BUILD}
 next_action: "J3: designer builds od_c11_back_v01 (WP-02)"
 data_class: PUBLIC
 size: M
