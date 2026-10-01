@@ -30,6 +30,7 @@ usta_gates:
   - {gate: concept_picked, outcome: C1, date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.2", date: "2026-09-30"}
+  - {gate: question_answered, outcome: confirmed, date: "2026-09-30"}
 deliverables: [STEP, STL, "3MF"]
 physical_outcome: n/a
 client_source_delete_after: null
