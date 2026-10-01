@@ -1,0 +1,74 @@
+{
+ "min_wall": {
+  "name": "min_wall",
+  "measured": 1.7223748416156628,
+  "unit": "mm",
+  "at": [
+   -16.100701,
+   2.519772,
+   10.255498
+  ],
+  "params": {
+   "spacing_mm": 0.4,
+   "opposition_deg": 25.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "rays": 139218,
+   "lost_rays": 0,
+   "face_pairs_measured_exactly": 237,
+   "face_pairs_never_opposed": 56,
+   "face_pairs_failed": 0,
+   "exact_points_without_normal": 0,
+   "solids": 4,
+   "largest_step_mm": 0.39823,
+   "wide": {
+    "opposition_deg": 45.0,
+    "measured": 1.6000000000000014,
+    "at": [
+     -16.679067,
+     8.825284,
+     31.5
+    ]
+   },
+   "hit_at": [
+    -17.783536,
+    2.783137,
+    10.0
+   ],
+   "from_face": "torus",
+   "to_face": "cone",
+   "found_by": "exact"
+  }
+ },
+ "min_wall_wide": {
+  "name": "min_wall_wide",
+  "measured": 1.6000000000000014,
+  "unit": "mm",
+  "at": [
+   -16.679067,
+   8.825284,
+   31.5
+  ],
+  "params": {
+   "spacing_mm": 0.4,
+   "opposition_deg": 45.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "gated_mm": 1.7223748416156628,
+   "gated_opposition_deg": 25.0,
+   "gated_at": [
+    -16.100701,
+    2.519772,
+    10.255498
+   ],
+   "rays": 139218,
+   "solids": 4,
+   "largest_step_mm": 0.39823,
+   "face_pairs_measured_exactly": 237
+  }
+ }
+}

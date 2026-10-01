@@ -1,0 +1,1998 @@
+{
+ "plate_label": "od_c01_frame",
+ "plate_validity": {
+  "solid_count": {
+   "name": "solid_count",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "volume_mm3": 580355.9044321473,
+    "solid_volumes_mm3": [
+     580355.9044321473
+    ]
+   }
+  },
+  "brep_valid": {
+   "name": "brep_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "analyzer": true,
+    "budget_s": 120.0
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.08,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.00047080887869750297,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  },
+  "naked_edges": {
+   "name": "naked_edges",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "edges": 102,
+    "free_edges": 0,
+    "edges_on_3plus_faces": 0,
+    "degenerate_edges": 0
+   }
+  }
+ },
+ "plate_env": {
+  "size_x": 240.0,
+  "size_y": 6.0,
+  "size_z": 405.0,
+  "min_x": -120.0,
+  "min_y": -6.0,
+  "min_z": -305.0,
+  "max_x": 120.0,
+  "max_y": 0.0,
+  "max_z": 100.0
+ },
+ "plate_census": {
+  "plane_faces": 6,
+  "cylinder_faces": 30,
+  "cone_faces": 0,
+  "sphere_faces": 0,
+  "torus_faces": 0,
+  "bspline_faces": 0,
+  "other_faces": 0,
+  "concave_cylinders": 26,
+  "convex_cylinders": 4,
+  "bores": 26
+ },
+ "bores": [
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -113.0,
+    -6.0,
+    -148.5
+   ],
+   "end": [
+    -113.0,
+    0.0,
+    -148.5
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -113.0,
+    -6.0,
+    -42.0
+   ],
+   "end": [
+    -113.0,
+    0.0,
+    -42.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 3.4,
+   "radius": 1.7,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -110.0,
+    -6.0,
+    -295.0
+   ],
+   "end": [
+    -110.0,
+    0.0,
+    -295.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 3.4,
+   "radius": 1.7,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -110.0,
+    -6.0,
+    90.0
+   ],
+   "end": [
+    -110.0,
+    0.0,
+    90.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 8.0,
+   "radius": 4.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -80.0,
+    -6.0,
+    -230.0
+   ],
+   "end": [
+    -80.0,
+    0.0,
+    -230.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 8.0,
+   "radius": 4.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -80.0,
+    -6.0,
+    -120.0
+   ],
+   "end": [
+    -80.0,
+    0.0,
+    -120.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -71.0,
+    -6.0,
+    -148.5
+   ],
+   "end": [
+    -71.0,
+    0.0,
+    -148.5
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -71.0,
+    -6.0,
+    -42.0
+   ],
+   "end": [
+    -71.0,
+    0.0,
+    -42.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -40.0,
+    -6.0,
+    -148.0
+   ],
+   "end": [
+    -40.0,
+    0.0,
+    -148.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -40.0,
+    -6.0,
+    -114.0
+   ],
+   "end": [
+    -40.0,
+    0.0,
+    -114.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -35.0,
+    -6.0,
+    -60.0
+   ],
+   "end": [
+    -35.0,
+    0.0,
+    -60.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -35.0,
+    -6.0,
+    -40.0
+   ],
+   "end": [
+    -35.0,
+    0.0,
+    -40.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -4.0,
+    -6.0,
+    -239.0
+   ],
+   "end": [
+    -4.0,
+    0.0,
+    -239.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -4.0,
+    -6.0,
+    -171.0
+   ],
+   "end": [
+    -4.0,
+    0.0,
+    -171.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    35.0,
+    -6.0,
+    -60.0
+   ],
+   "end": [
+    35.0,
+    0.0,
+    -60.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    35.0,
+    -6.0,
+    -40.0
+   ],
+   "end": [
+    35.0,
+    0.0,
+    -40.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    37.0,
+    -6.0,
+    -239.0
+   ],
+   "end": [
+    37.0,
+    0.0,
+    -239.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    37.0,
+    -6.0,
+    -171.0
+   ],
+   "end": [
+    37.0,
+    0.0,
+    -171.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    40.0,
+    -6.0,
+    -148.0
+   ],
+   "end": [
+    40.0,
+    0.0,
+    -148.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    40.0,
+    -6.0,
+    -114.0
+   ],
+   "end": [
+    40.0,
+    0.0,
+    -114.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    65.0,
+    -6.0,
+    -225.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -225.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    65.0,
+    -6.0,
+    -165.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -165.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    65.0,
+    -6.0,
+    -105.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -105.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    65.0,
+    -6.0,
+    -45.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -45.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 3.4,
+   "radius": 1.7,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    110.0,
+    -6.0,
+    -295.0
+   ],
+   "end": [
+    110.0,
+    0.0,
+    -295.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 3.4,
+   "radius": 1.7,
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    110.0,
+    -6.0,
+    90.0
+   ],
+   "end": [
+    110.0,
+    0.0,
+    90.0
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  }
+ ],
+ "mass": {
+  "volume": 580355.9044321473,
+  "mass": 737.051998628827,
+  "com_x": 0.08860353686379911,
+  "com_y": -2.999999999999999,
+  "com_z": -102.37073236994688
+ },
+ "planar_faces": [
+  {
+   "n": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "ymin": -6.0,
+   "ymax": 0.0,
+   "area": 2310.0
+  },
+  {
+   "n": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "ymin": -6.0,
+   "ymax": -6.0,
+   "area": 96725.98407636464
+  },
+  {
+   "n": [
+    -0.0,
+    1.0,
+    0.0
+   ],
+   "ymin": 0.0,
+   "ymax": 0.0,
+   "area": 96725.98407636464
+  },
+  {
+   "n": [
+    -0.0,
+    -0.0,
+    1.0
+   ],
+   "ymin": -6.0,
+   "ymax": 0.0,
+   "area": 1319.9999997964799
+  },
+  {
+   "n": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "ymin": -6.0,
+   "ymax": 0.0,
+   "area": 1319.9999997964799
+  },
+  {
+   "n": [
+    1.0,
+    -0.0,
+    0.0
+   ],
+   "ymin": -6.0,
+   "ymax": 0.0,
+   "area": 2310.0
+  }
+ ],
+ "located": {
+  "REQ-01@35,-40": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-01@-35,-40": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-01@35,-60": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-01@-35,-60": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-02@40,-148": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-02@-40,-148": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-02@40,-114": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-02@-40,-114": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-03@-4,-239": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-03@-4,-171": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-03@37,-239": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-03@37,-171": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-04@65,-45": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-04@65,-105": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-04@65,-165": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-04@65,-225": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-10@-113,-42": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-10@-71,-42": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-10@-113,-148.5": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-10@-71,-148.5": {
+   "diameter": 4.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-05@110,90": {
+   "diameter": 3.4,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-05@-110,90": {
+   "diameter": 3.4,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-05@110,-295": {
+   "diameter": 3.4,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-05@-110,-295": {
+   "diameter": 3.4,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-06@-80,-120": {
+   "diameter": 8.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  },
+  "REQ-06@-80,-230": {
+   "diameter": 8.0,
+   "offset": 0.0,
+   "length": 6.0,
+   "through": 1
+  }
+ },
+ "asm_labels": [
+  "od_c01_frame",
+  "od_c03_cradle",
+  "od_h01_pump",
+  "od_c04_mount",
+  "od_h11_thermoblock",
+  "od_g01_housing",
+  "od_c05_foot_reference_A01"
+ ],
+ "asm_parts": {
+  "od_c01_frame": {
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   },
+   "validity_reason": {
+    "solid_count": "",
+    "brep_valid": "",
+    "naked_edges": ""
+   },
+   "env": {
+    "size_x": 240.0,
+    "size_y": 6.0,
+    "size_z": 405.0,
+    "min_x": -120.0,
+    "min_y": -6.0,
+    "min_z": -305.0,
+    "max_x": 120.0,
+    "max_y": 0.0,
+    "max_z": 100.0
+   },
+   "vol": 580355.9044321473,
+   "nfaces": 36
+  },
+  "od_c03_cradle": {
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   },
+   "validity_reason": {
+    "solid_count": "",
+    "brep_valid": "",
+    "naked_edges": ""
+   },
+   "env": {
+    "size_x": 52.0,
+    "size_y": 40.0,
+    "size_z": 80.0,
+    "min_x": -10.0,
+    "min_y": -0.0,
+    "min_z": -245.0,
+    "max_x": 42.0,
+    "max_y": 40.0,
+    "max_z": -165.0
+   },
+   "vol": 25458.506495728107,
+   "nfaces": 54
+  },
+  "od_h01_pump": {
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   },
+   "validity_reason": {
+    "solid_count": "",
+    "brep_valid": "",
+    "naked_edges": ""
+   },
+   "env": {
+    "size_x": 121.95,
+    "size_y": 55.15,
+    "size_z": 54.05,
+    "min_x": -66.45,
+    "min_y": 16.25,
+    "min_z": -232.2,
+    "max_x": 55.5,
+    "max_y": 71.4,
+    "max_z": -178.15
+   },
+   "vol": 114903.26906544885,
+   "nfaces": 213
+  },
+  "od_c04_mount": {
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   },
+   "validity_reason": {
+    "solid_count": "",
+    "brep_valid": "",
+    "naked_edges": ""
+   },
+   "env": {
+    "size_x": 100.0,
+    "size_y": 110.0,
+    "size_z": 50.0,
+    "min_x": -50.0,
+    "min_y": 0.0,
+    "min_z": -157.0,
+    "max_x": 50.0,
+    "max_y": 110.0,
+    "max_z": -107.0
+   },
+   "vol": 74659.46454806624,
+   "nfaces": 36
+  },
+  "od_h11_thermoblock": {
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 0,
+    "naked_edges": 0
+   },
+   "validity_reason": {
+    "solid_count": "",
+    "brep_valid": "",
+    "naked_edges": ""
+   },
+   "env": {
+    "size_x": 86.109198,
+    "size_y": 106.888008,
+    "size_z": 50.79,
+    "min_x": -43.270176,
+    "min_y": 16.492494,
+    "min_z": -140.0,
+    "max_x": 42.839022,
+    "max_y": 123.380502,
+    "max_z": -89.21
+   },
+   "vol": 159766.40497098243,
+   "nfaces": 406
+  },
+  "od_g01_housing": {
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   },
+   "validity_reason": {
+    "solid_count": "",
+    "brep_valid": "",
+    "naked_edges": ""
+   },
+   "env": {
+    "size_x": 100.0,
+    "size_y": 28.24,
+    "size_z": 100.0,
+    "min_x": -50.0,
+    "min_y": 176.76,
+    "min_z": -18.0,
+    "max_x": 50.0,
+    "max_y": 205.0,
+    "max_z": 82.0
+   },
+   "vol": 90216.79165440067,
+   "nfaces": 92
+  },
+  "od_c05_foot_reference_A01": {
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   },
+   "validity_reason": {
+    "solid_count": "",
+    "brep_valid": "",
+    "naked_edges": ""
+   },
+   "env": {
+    "size_x": 110.0,
+    "size_y": 4.0,
+    "size_z": 44.0,
+    "min_x": -55.0,
+    "min_y": 0.0,
+    "min_z": -70.0,
+    "max_x": 55.0,
+    "max_y": 4.0,
+    "max_z": -26.0
+   },
+   "vol": 19360.0,
+   "nfaces": 6
+  }
+ },
+ "joint_maps": {
+  "C03": [
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   [
+    1.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "G01": [
+   [
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  ]
+ },
+ "my_placed": {
+  "c03": {
+   "env": {
+    "size_x": 52.0,
+    "size_y": 40.0,
+    "size_z": 80.0,
+    "min_x": -10.0,
+    "min_y": -0.0,
+    "min_z": -245.0,
+    "max_x": 42.0,
+    "max_y": 40.0,
+    "max_z": -165.0
+   },
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   }
+  },
+  "h01": {
+   "env": {
+    "size_x": 121.95,
+    "size_y": 55.15,
+    "size_z": 54.05,
+    "min_x": -66.45,
+    "min_y": 16.25,
+    "min_z": -232.2,
+    "max_x": 55.5,
+    "max_y": 71.4,
+    "max_z": -178.15
+   },
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   }
+  },
+  "c04": {
+   "env": {
+    "size_x": 100.0,
+    "size_y": 110.0,
+    "size_z": 50.0,
+    "min_x": -50.0,
+    "min_y": 0.0,
+    "min_z": -157.0,
+    "max_x": 50.0,
+    "max_y": 110.0,
+    "max_z": -107.0
+   },
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   }
+  },
+  "h11": {
+   "env": {
+    "size_x": 86.109198,
+    "size_y": 106.888008,
+    "size_z": 50.79,
+    "min_x": -43.270176,
+    "min_y": 16.492494,
+    "min_z": -140.0,
+    "max_x": 42.839022,
+    "max_y": 123.380502,
+    "max_z": -89.21
+   },
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 0,
+    "naked_edges": 0
+   }
+  },
+  "g01": {
+   "env": {
+    "size_x": 100.0,
+    "size_y": 28.24,
+    "size_z": 100.0,
+    "min_x": -50.0,
+    "min_y": 176.76,
+    "min_z": -18.0,
+    "max_x": 50.0,
+    "max_y": 205.0,
+    "max_z": 82.0
+   },
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   }
+  },
+  "box": {
+   "env": {
+    "size_x": 110.0,
+    "size_y": 4.0,
+    "size_z": 44.0,
+    "min_x": -55.0,
+    "min_y": 0.0,
+    "min_z": -70.0,
+    "max_x": 55.0,
+    "max_y": 4.0,
+    "max_z": -26.0
+   },
+   "validity": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   }
+  }
+ },
+ "asm_vs_mine": {
+  "c03": [
+   "od_c03_cradle",
+   0.0
+  ],
+  "h01": [
+   "od_h01_pump",
+   0.0
+  ],
+  "c04": [
+   "od_c04_mount",
+   0.0
+  ],
+  "h11": [
+   "od_h11_thermoblock",
+   0.0
+  ],
+  "g01": [
+   "od_g01_housing",
+   0.0
+  ],
+  "box": [
+   "od_c05_foot_reference_A01",
+   0.0
+  ]
+ },
+ "clearance": {
+  "plate|c03": {
+   "d": 0.0,
+   "at": [
+    -2.0,
+    0.0,
+    -171.0
+   ],
+   "on_b": [
+    -2.0,
+    0.0,
+    -171.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "plate|c04": {
+   "d": 0.0,
+   "at": [
+    -38.0,
+    0.0,
+    -114.0
+   ],
+   "on_b": [
+    -38.0,
+    0.0,
+    -114.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "plate|h01": {
+   "d": 16.25,
+   "at": [
+    33.5,
+    0.0,
+    -205.2
+   ],
+   "on_b": [
+    33.5,
+    16.25,
+    -205.2
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "plate|h11": {
+   "d": 16.4924943874,
+   "at": [
+    -9.661184,
+    0.0,
+    -140.0
+   ],
+   "on_b": [
+    -9.661184,
+    16.492494,
+    -140.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c03|c04": {
+   "d": 8.0,
+   "at": [
+    42.0,
+    0.0,
+    -165.0
+   ],
+   "on_b": [
+    42.0,
+    0.0,
+    -157.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "plate|box": {
+   "d": 0.0,
+   "at": [
+    -33.0,
+    0.0,
+    -40.0
+   ],
+   "on_b": [
+    -33.0,
+    0.0,
+    -40.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "g01|plate": {
+   "d": 176.76,
+   "at": [
+    37.1,
+    176.76,
+    32.0
+   ],
+   "on_b": [
+    37.1,
+    0.0,
+    32.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "g01|c03": {
+   "d": 211.05683070278837,
+   "at": [
+    2.537116,
+    176.76,
+    -11.025261
+   ],
+   "on_b": [
+    12.0,
+    40.0,
+    -171.5
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "g01|h01": {
+   "d": 201.11084518014445,
+   "at": [
+    -0.958206,
+    176.76,
+    -11.089347
+   ],
+   "on_b": [
+    -4.766652,
+    71.4,
+    -182.350371
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "g01|c04": {
+   "d": 155.91570671359574,
+   "at": [
+    -0.0,
+    176.76,
+    -11.1
+   ],
+   "on_b": [
+    -0.0,
+    110.0,
+    -152.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "g01|h11": {
+   "d": 110.78011311361298,
+   "at": [
+    7.055332,
+    176.76,
+    -10.518611
+   ],
+   "on_b": [
+    21.458608,
+    109.451533,
+    -97.319241
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "g01|box": {
+   "d": 173.40134832232417,
+   "at": [
+    -0.0,
+    176.76,
+    -11.1
+   ],
+   "on_b": [
+    -0.0,
+    4.0,
+    -26.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "box|c04": {
+   "d": 37.0,
+   "at": [
+    -50.0,
+    0.0,
+    -70.0
+   ],
+   "on_b": [
+    -50.0,
+    0.0,
+    -107.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "box|h11": {
+   "d": 25.613121949876014,
+   "at": [
+    -9.661184,
+    4.0,
+    -70.0
+   ],
+   "on_b": [
+    -9.661184,
+    16.492494,
+    -92.36
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "h01|c04": {
+   "d": 21.150000000000006,
+   "at": [
+    33.15,
+    23.8,
+    -178.15
+   ],
+   "on_b": [
+    33.15,
+    23.8,
+    -157.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "h01|h11": {
+   "d": 38.150000000000006,
+   "at": [
+    -6.75,
+    36.7,
+    -178.15
+   ],
+   "on_b": [
+    -6.75,
+    36.7,
+    -140.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c03|h11": {
+   "d": 28.40857977432206,
+   "at": [
+    -9.661184,
+    3.0,
+    -165.0
+   ],
+   "on_b": [
+    -9.661184,
+    16.492494,
+    -140.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c03|box": {
+   "d": 95.0,
+   "at": [
+    42.0,
+    0.0,
+    -165.0
+   ],
+   "on_b": [
+    42.0,
+    0.0,
+    -70.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "h01|box": {
+   "d": 109.94754431091219,
+   "at": [
+    33.15,
+    23.8,
+    -178.15
+   ],
+   "on_b": [
+    33.15,
+    4.0,
+    -70.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c04|h11": {
+   "d": 10.099999999999994,
+   "at": [
+    -13.62,
+    90.18,
+    -150.1
+   ],
+   "on_b": [
+    -13.62,
+    90.18,
+    -140.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c03|h01": {
+   "d": 2.3000000000000114,
+   "at": [
+    33.0,
+    40.0,
+    -234.5
+   ],
+   "on_b": [
+    33.0,
+    40.0,
+    -232.2
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "interference": {
+  "plate|c03": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "plate|c04": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "plate|h01": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "plate|h11": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "plate|g01": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "plate|box": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c03|c04": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c03|h01": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c03|h11": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c03|g01": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c03|box": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c04|h01": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c04|h11": {
+   "v": null,
+   "status": "INCONCLUSIVE",
+   "reason": "solid 1 of b: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface"
+  },
+  "c04|g01": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "c04|box": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "h01|h11": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "h01|g01": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "h01|box": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "h11|g01": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "h11|box": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "g01|box": {
+   "v": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "coax": {
+  "c03": [
+   {
+    "mount_d": 3.4,
+    "mount_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "mount_mid": [
+     -4.0,
+     1.5,
+     -239.0
+    ],
+    "plate_d": 4.0,
+    "offset": 0.0
+   },
+   {
+    "mount_d": 3.4,
+    "mount_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "mount_mid": [
+     -4.0,
+     1.5,
+     -171.0
+    ],
+    "plate_d": 4.0,
+    "offset": 0.0
+   },
+   {
+    "mount_d": 3.4,
+    "mount_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "mount_mid": [
+     37.0,
+     1.5,
+     -239.0
+    ],
+    "plate_d": 4.0,
+    "offset": 0.0
+   },
+   {
+    "mount_d": 3.4,
+    "mount_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "mount_mid": [
+     37.0,
+     1.5,
+     -171.0
+    ],
+    "plate_d": 4.0,
+    "offset": 0.0
+   }
+  ],
+  "c04": [
+   {
+    "mount_d": 3.4,
+    "mount_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "mount_mid": [
+     -40.0,
+     2.0,
+     -148.0
+    ],
+    "plate_d": 4.0,
+    "offset": 0.0
+   },
+   {
+    "mount_d": 3.4,
+    "mount_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "mount_mid": [
+     -40.0,
+     2.0,
+     -114.0
+    ],
+    "plate_d": 4.0,
+    "offset": 0.0
+   },
+   {
+    "mount_d": 3.4,
+    "mount_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "mount_mid": [
+     40.0,
+     2.0,
+     -148.0
+    ],
+    "plate_d": 4.0,
+    "offset": 0.0
+   },
+   {
+    "mount_d": 3.4,
+    "mount_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "mount_mid": [
+     40.0,
+     2.0,
+     -114.0
+    ],
+    "plate_d": 4.0,
+    "offset": 0.0
+   }
+  ]
+ },
+ "path": {
+  "c03@10": 10.0,
+  "c03@1": 1.0,
+  "c03@0.1": 0.10000000000000142,
+  "c03@0.01": 0.00999999999999801,
+  "c03@0": 0.0,
+  "c04@10": 10.0,
+  "c04@1": 1.0,
+  "c04@0.1": 0.09999999999999432,
+  "c04@0.01": 0.010000000000005116,
+  "c04@0": 0.0,
+  "box@10": 10.0,
+  "box@1": 1.0,
+  "box@0.1": 0.10000000000000009,
+  "box@0.01": 0.009999999999999787,
+  "box@0": 0.0
+ },
+ "g01_down_planes_y": [
+  176.76,
+  180.06,
+  194.16,
+  197.36,
+  197.76,
+  199.3,
+  200.0,
+  202.3
+ ]
+}

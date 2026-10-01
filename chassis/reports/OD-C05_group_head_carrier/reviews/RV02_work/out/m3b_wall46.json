@@ -1,0 +1,45 @@
+{
+ "r": {
+  "name": "min_wall",
+  "measured": 0.031604456511528684,
+  "unit": "mm",
+  "at": [
+   -35.096308,
+   -75.248573,
+   171.340163
+  ],
+  "params": {
+   "spacing_mm": 0.4,
+   "opposition_deg": 46.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "rays": 997707,
+   "lost_rays": 0,
+   "face_pairs_measured_exactly": 8,
+   "face_pairs_never_opposed": 0,
+   "face_pairs_failed": 0,
+   "exact_points_without_normal": 0,
+   "solids": 4,
+   "largest_step_mm": 0.39924,
+   "wide": {
+    "opposition_deg": 46.0,
+    "measured": 0.031604456511528684,
+    "at": [
+     -35.096308,
+     -75.248573,
+     171.340163
+    ]
+   },
+   "hit_at": [
+    -35.097245,
+    -75.280163,
+    171.340163
+   ],
+   "from_face": "cylinder",
+   "to_face": "plane",
+   "found_by": "ray"
+  }
+ }
+}

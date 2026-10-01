@@ -1,0 +1,140 @@
+{
+ "params": {
+  "z_contact": -24.94,
+  "plate_t": 5.0,
+  "half_x": 55.0,
+  "y_front": 50.0,
+  "corner_r": 6.0,
+  "hole_d": 3.4,
+  "hole_xy": 44.0,
+  "cb_d": 6.5,
+  "cb_depth": 2.0,
+  "hub_r": 30.0,
+  "wall_y_rear": -58.0,
+  "wall_y_front": -52.0,
+  "z_floor": 180.06,
+  "foot_t": 4.0,
+  "foot_y_rear": -102.0,
+  "foot_hole_d": 3.4,
+  "foot_hole_x": 35.0,
+  "foot_hole_y1": -72.0,
+  "foot_hole_y2": -92.0,
+  "gusset_x_in": 51.0,
+  "gusset_leg": 40.0,
+  "overrun": 1.0,
+  "stl_tol": 0.01,
+  "stl_ang": 0.2
+ },
+ "step": {
+  "path": "od_c05_carrier_C4_v02.step",
+  "sha256": "2aea239c16edd93100c1dedcdd82daa4fb26c45a85c9419702be87b7063efb71"
+ },
+ "assembly": {
+  "path": "od_c05_assembly_C4_v02.step",
+  "sha256": "a7f792a32b8085d23d93e412f49e1832e72f7842c610378bd5d8c0455ed30eaa"
+ },
+ "roundtrip_built_vs_file": {
+  "schema": {
+   "name": "step_schema",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "schema": "AP242"
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "found": "AP242",
+    "sha256": "2aea239c16edd93100c1dedcdd82daa4fb26c45a85c9419702be87b7063efb71",
+    "path": "od_c05_carrier_C4_v02.step"
+   }
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 1,
+    "sha256": "2aea239c16edd93100c1dedcdd82daa4fb26c45a85c9419702be87b7063efb71",
+    "path": "od_c05_carrier_C4_v02.step"
+   }
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": 4.3655745685100555e-10,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built_mm3": 211160.18586487763,
+    "reimported_mm3": 211160.1858648772,
+    "sha256": "2aea239c16edd93100c1dedcdd82daa4fb26c45a85c9419702be87b7063efb71",
+    "path": "od_c05_carrier_C4_v02.step"
+   }
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 39,
+    "reimported": 39
+   }
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": [
+     "od_c05_carrier"
+    ],
+    "reimported": [
+     "od_c05_carrier"
+    ]
+   }
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.044,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.0002816096592604735,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  }
+ },
+ "stl": {
+  "path": "od_c05_carrier_C4_v02.stl",
+  "sha256": "d9b49b0690cebbd9029f82fca39df29f985fe3d3a70709dfb33662c9933be8ac",
+  "tolerance_mm": 0.01,
+  "angular_tolerance_rad": 0.2,
+  "triangles": 3808,
+  "max_sagitta_mm": 0.004927367310754716
+ }
+}

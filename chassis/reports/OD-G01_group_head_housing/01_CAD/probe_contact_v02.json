@@ -1,0 +1,59 @@
+[
+ {
+  "parameter": "lug_inner_r",
+  "value": 31.58,
+  "note": "REQ-01 low",
+  "first_contact_rim_z": -11.252316,
+  "offset_from_ledger_mm": -0.052316,
+  "clearance_at_locked_minus_0.20": 0.1474821947445058,
+  "at": "(30.77079, -7.10316, -6.452457)"
+ },
+ {
+  "parameter": "lug_inner_r",
+  "value": 31.68,
+  "note": "A-02 nominal",
+  "first_contact_rim_z": -11.251035,
+  "offset_from_ledger_mm": -0.051035,
+  "clearance_at_locked_minus_0.20": 0.14875708192208104,
+  "at": "(30.873716, -7.101833, -6.451183)"
+ },
+ {
+  "parameter": "lug_inner_r",
+  "value": 31.78,
+  "note": "REQ-01 high",
+  "first_contact_rim_z": -11.249768,
+  "offset_from_ledger_mm": -0.049768,
+  "clearance_at_locked_minus_0.20": 0.15002326572992564,
+  "at": "(30.976624, -7.100507, -6.449917)"
+ },
+ {
+  "parameter": "under_knots",
+  "value": [
+   [
+    5.76,
+    -6.554
+   ],
+   [
+    7.0,
+    -6.519
+   ],
+   [
+    41.8,
+    -5.539
+   ],
+   [
+    54.0,
+    -1.099
+   ],
+   [
+    56.0,
+    -0.369
+   ]
+  ],
+  "note": "outside A-05: the whole underside 0.051 higher",
+  "first_contact_rim_z": -11.20004,
+  "offset_from_ledger_mm": -4e-05,
+  "clearance_at_locked_minus_0.20": 0.1996837909984245,
+  "at": "(30.873086, -7.104572, -6.400329)"
+ }
+]

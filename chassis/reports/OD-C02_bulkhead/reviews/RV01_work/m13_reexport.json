@@ -1,0 +1,31 @@
+{
+ "roundtrip_copy": {
+  "schema": [
+   1,
+   ""
+  ],
+  "solids": [
+   1,
+   ""
+  ],
+  "volume_delta": [
+   4.656612873077393e-10,
+   ""
+  ],
+  "faces_delta": [
+   0,
+   ""
+  ],
+  "labels": [
+   1,
+   ""
+  ],
+  "valid_after": [
+   1,
+   ""
+  ]
+ },
+ "analytic_volume": 208484.10633767588,
+ "step_volume": 208484.10633767562,
+ "delta": -2.6193447411060333e-10
+}

@@ -1,0 +1,398 @@
+[
+ {
+  "check": "validity (solid_count)",
+  "mutant": "delivered part plus a loose 5 mm cube",
+  "got": "FAIL",
+  "failing": [
+   [
+    "U-01",
+    "solid_count",
+    2,
+    "== 1"
+   ]
+  ]
+ },
+ {
+  "check": "validity (naked_edges)",
+  "mutant": "delivered part with its foot end face removed (open shell)",
+  "got": "FAIL",
+  "failing": [
+   [
+    "U-01",
+    "solid_count",
+    0,
+    "== 1"
+   ],
+   [
+    "U-01",
+    "naked_edges",
+    4,
+    "== 0"
+   ]
+  ]
+ },
+ {
+  "check": "envelope (U-02)",
+  "mutant": "foot extended 0.5 mm in +Z (z to 42.5)",
+  "got": "FAIL",
+  "failing": [
+   [
+    "U-02",
+    "envelope_size_z",
+    52.5,
+    "in [51.9, 52.1]"
+   ]
+  ]
+ },
+ {
+  "check": "envelope max_y (REQ-08)",
+  "mutant": "foot underside moved 0.3 mm down (y 40.3)",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-08",
+    "envelope_max_y",
+    40.3,
+    "in [39.9, 40.1]"
+   ],
+   [
+    "REQ-08",
+    "foot_thickness",
+    3.299999999999997,
+    "in [2.9, 3.1]"
+   ]
+  ]
+ },
+ {
+  "check": "feature_census, bore_census (U-05)",
+  "mutant": "hole (-34, -4) filled",
+  "got": "FAIL",
+  "failing": [
+   [
+    "U-05",
+    "feature_census_cylinder_faces",
+    5,
+    "cylinder_faces == 6"
+   ],
+   [
+    "U-05",
+    "feature_census_concave_cylinders",
+    5,
+    "concave_cylinders == 6"
+   ],
+   [
+    "U-05",
+    "feature_census_bores",
+    3,
+    "bores == 4"
+   ]
+  ]
+ },
+ {
+  "check": "locate_bore offset (REQ-07)",
+  "mutant": "hole (-34, -4) moved 0.5 mm to z -3.5",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-07",
+    "bore_axis_offset",
+    0.5,
+    "<= 0.1"
+   ]
+  ]
+ },
+ {
+  "check": "locate_bore diameter (D-04a, REQ-07)",
+  "mutant": "hole (34, 37) drilled 3.2",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-07",
+    "bore_diameter",
+    3.2,
+    "in [3.3, 3.5]"
+   ],
+   [
+    "D-04a",
+    "bore_diameter",
+    3.2,
+    ">= 3.25"
+   ]
+  ]
+ },
+ {
+  "check": "min_wall, min_wall_wide (D-01a/b, D-06a, U-06)",
+  "mutant": "-X rear slot widened to z 32.5 (ligament 0.5)",
+  "got": "FAIL",
+  "failing": [
+   [
+    "D-01a",
+    "min_wall",
+    0.49999999999999684,
+    ">= 0.8"
+   ],
+   [
+    "D-01b",
+    "min_wall",
+    0.49999999999999684,
+    ">= 2.0"
+   ],
+   [
+    "D-06a",
+    "min_wall",
+    0.49999999999999684,
+    ">= 1.0"
+   ],
+   [
+    "U-06",
+    "min_wall_wide",
+    0.49999999999999684,
+    ">= 2.0"
+   ]
+  ]
+ },
+ {
+  "check": "sections: slot ligament (REQ-05)",
+  "mutant": "-X rear slot widened to z 32.5 (ligament 0.5)",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-05",
+    "slot_zc",
+    28.75,
+    "in [27.5, 28.5]"
+   ],
+   [
+    "REQ-05",
+    "slot_ligament",
+    0.5,
+    ">= 2.0"
+   ]
+  ]
+ },
+ {
+  "check": "overhang_census (D-03a)",
+  "mutant": "+X post: flat-roofed pocket y 12..14, z 15..22 cut through",
+  "got": "FAIL",
+  "failing": [
+   [
+    "D-03a",
+    "overhang_census",
+    0.0,
+    ">= 45.0"
+   ]
+  ]
+ },
+ {
+  "check": "bridge_span from faces and sections (D-03b)",
+  "mutant": "same pocket: 7.0 mm flat ceiling",
+  "got": "FAIL",
+  "failing": [
+   [
+    "D-03b",
+    "bridge_span",
+    7.0,
+    "<= 5.0"
+   ]
+  ]
+ },
+ {
+  "check": "sections: slot clear section (REQ-05)",
+  "mutant": "+X front slot floor raised 0.3 (clear 2.2)",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-05",
+    "slot_clear_y",
+    2.1999999999999993,
+    ">= 2.5"
+   ]
+  ]
+ },
+ {
+  "check": "sections: rib faces (REQ-02)",
+  "mutant": "rib 1 rear face moved to z 3.2",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-02",
+    "rib_face_z",
+    3.2,
+    "in [2.9, 3.1]"
+   ]
+  ]
+ },
+ {
+  "check": "radial_profile (REQ-01)",
+  "mutant": "both saddles opened to r 26.75",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-01",
+    "radial_profile_min",
+    26.749999999999996,
+    "in [26.6, 26.7]"
+   ],
+   [
+    "REQ-01",
+    "radial_profile_max",
+    26.75,
+    "in [26.6, 26.7]"
+   ],
+   [
+    "REQ-01",
+    "radial_profile_min",
+    26.749999999999996,
+    "in [26.6, 26.7]"
+   ],
+   [
+    "REQ-01",
+    "radial_profile_max",
+    26.75,
+    "in [26.6, 26.7]"
+   ]
+  ]
+ },
+ {
+  "check": "clearance == 0 (REQ-04, U-03 sleeve)",
+  "mutant": "both saddles opened to r 26.75",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-04",
+    "clearance",
+    0.09999999999999762,
+    "== 0.0"
+   ]
+  ]
+ },
+ {
+  "check": "radial_extent window (REQ-02)",
+  "mutant": "1 mm lump at r 30, theta 40, joined to the web",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-02",
+    "no_material_r_le_32",
+    0,
+    "== 1"
+   ]
+  ]
+ },
+ {
+  "check": "interference (REQ-04, U-03)",
+  "mutant": "saddle 1 closed to r 26.55 over its arc",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-04",
+    "interference",
+    26.414945066735346,
+    "<= 0.0"
+   ]
+  ]
+ },
+ {
+  "check": "clearance (REQ-03, D-04c, U-03)",
+  "mutant": "-X post inner face moved to x -29.0",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-03",
+    "clearance",
+    1.8000000000000007,
+    ">= 2.0"
+   ]
+  ]
+ },
+ {
+  "check": "post faces (REQ-06)",
+  "mutant": "-X post inner face moved to x -29.0",
+  "got": "FAIL",
+  "failing": [
+   [
+    "REQ-06",
+    "post_inner_x",
+    29.0,
+    "in [29.4, 29.6]"
+   ]
+  ]
+ },
+ {
+  "check": "compare_step (U-04)",
+  "mutant": "hole (-34, -4) filled, compared with the delivered STEP",
+  "got": "FAIL",
+  "failing": [
+   [
+    "U-04",
+    "step_roundtrip_volume_delta",
+    27.237608306593756,
+    "<= 0.001"
+   ],
+   [
+    "U-04",
+    "step_roundtrip_faces_delta",
+    1,
+    "== 0"
+   ],
+   [
+    "U-04",
+    "step_roundtrip_labels",
+    0,
+    "== 1"
+   ]
+  ]
+ },
+ {
+  "check": "mesh_sagitta (U-07)",
+  "mutant": "STL at tolerance 0.1 / 0.5 rad",
+  "got": "FAIL",
+  "failing": [
+   [
+    "U-07",
+    "stl_max_sagitta",
+    0.04862147994926786,
+    "<= 0.01"
+   ]
+  ]
+ },
+ {
+  "check": "mesh_deviation (U-07, V-05)",
+  "mutant": "STL at tolerance 0.1 / 0.5 rad",
+  "got": "FAIL",
+  "failing": [
+   [
+    "U-07",
+    "mesh_deviation",
+    0.048617985819715014,
+    "<= 0.011"
+   ]
+  ]
+ },
+ {
+  "check": "mesh_census (U-07)",
+  "mutant": "delivered STL with its last triangle removed",
+  "got": "FAIL",
+  "failing": [
+   [
+    "U-07",
+    "mesh_naked_edges",
+    3,
+    "== 0"
+   ]
+  ]
+ },
+ {
+  "check": "mass_properties com (P1)",
+  "mutant": "OD-H01 moved 15 mm toward -Z",
+  "got": "FAIL",
+  "failing": [
+   [
+    "P1",
+    "mass_com_z",
+    -7.768451750482712,
+    "in [-3.0, 31.0]"
+   ]
+  ]
+ }
+]

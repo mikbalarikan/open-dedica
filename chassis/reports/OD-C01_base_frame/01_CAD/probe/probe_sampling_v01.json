@@ -1,0 +1,63 @@
+{
+ "min_wall": {
+  "measured": 6.0,
+  "status": "MEASURED",
+  "reason": "",
+  "seconds": 49.7,
+  "params": {
+   "spacing_mm": 0.7,
+   "opposition_deg": 25.0
+  },
+  "detail_keys": [
+   "exact_points_without_normal",
+   "face_pairs_failed",
+   "face_pairs_measured_exactly",
+   "face_pairs_never_opposed",
+   "found_by",
+   "from_face",
+   "hit_at",
+   "largest_step_mm",
+   "lost_rays",
+   "rays",
+   "solids",
+   "to_face",
+   "wide"
+  ],
+  "wide": {
+   "opposition_deg": 45.0,
+   "measured": 6.0,
+   "at": [
+    -111.976744,
+    -6.0,
+    -304.650862
+   ]
+  }
+ },
+ "overhang_census": {
+  "measured": 90.0,
+  "status": "MEASURED",
+  "reason": "",
+  "seconds": 15.4,
+  "params": {
+   "build_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "min_deg": 45.0,
+   "spacing_mm": 0.7,
+   "bed_mm": 0.01
+  },
+  "detail_keys": [
+   "bed_height_mm",
+   "bed_samples",
+   "below_min_deg",
+   "downward_samples",
+   "largest_step_mm",
+   "per_kind_least_deg",
+   "samples",
+   "sampling_bound_deg",
+   "seeds_refined"
+  ]
+ }
+}

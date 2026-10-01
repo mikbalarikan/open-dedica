@@ -1,0 +1,174 @@
+{
+ "plate_type": [
+  "Solid",
+  "od_c01_frame",
+  0,
+  true
+ ],
+ "plate_validity_detail": {
+  "brepcheck": true,
+  "solids_without_volume": 0,
+  "bop_faults": [],
+  "bop_seconds": 0.072,
+  "curve_on_surface_mm": 0.0,
+  "curve_on_surface_limit_mm": 0.00047080887869750297,
+  "loose_shells": 0,
+  "loose_faces": 0
+ },
+ "rt_plate": {
+  "schema": [
+   1,
+   "MEASURED",
+   "",
+   null,
+   null
+  ],
+  "solids": [
+   1,
+   "MEASURED",
+   "",
+   null,
+   null
+  ],
+  "volume_delta": [
+   0.0,
+   "MEASURED",
+   "",
+   580355.9044321473,
+   580355.9044321473
+  ],
+  "faces_delta": [
+   0,
+   "MEASURED",
+   "",
+   null,
+   null
+  ],
+  "labels": [
+   1,
+   "MEASURED",
+   "",
+   null,
+   null
+  ],
+  "valid_after": [
+   1,
+   "MEASURED",
+   "",
+   null,
+   null
+  ]
+ },
+ "rt_plate_vs_delivered_vol": 0.0,
+ "asm_type": [
+  "Compound",
+  "od_c01_assembly",
+  true,
+  [
+   [
+    "Solid",
+    "od_c01_frame",
+    true
+   ],
+   [
+    "Solid",
+    "od_c03_cradle",
+    true
+   ],
+   [
+    "Solid",
+    "od_h01_pump",
+    true
+   ],
+   [
+    "Solid",
+    "od_c04_mount",
+    true
+   ],
+   [
+    "Solid",
+    "od_h11_thermoblock",
+    true
+   ],
+   [
+    "Solid",
+    "od_g01_housing",
+    true
+   ],
+   [
+    "Solid",
+    "od_c05_foot_reference_A01",
+    true
+   ]
+  ]
+ ],
+ "rt_asm": {
+  "schema": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "solids": [
+   7,
+   "MEASURED",
+   ""
+  ],
+  "volume_delta": [
+   3.725290298461914e-09,
+   "MEASURED",
+   ""
+  ],
+  "faces_delta": [
+   0,
+   "MEASURED",
+   ""
+  ],
+  "labels": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "valid_after": [
+   0,
+   "MEASURED",
+   ""
+  ]
+ },
+ "rt_asm_per_part": {
+  "od_c01_frame": [
+   0.0,
+   0,
+   1
+  ],
+  "od_c03_cradle": [
+   0.0,
+   0,
+   1
+  ],
+  "od_h01_pump": [
+   -1.6007106751203537e-10,
+   0,
+   1
+  ],
+  "od_c04_mount": [
+   0.0,
+   0,
+   1
+  ],
+  "od_h11_thermoblock": [
+   2.939486876130104e-09,
+   0,
+   0
+  ],
+  "od_g01_housing": [
+   0.0,
+   0,
+   1
+  ],
+  "od_c05_foot_reference_A01": [
+   0.0,
+   0,
+   1
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+[
+ {
+  "option": "as_specified",
+  "changes": {},
+  "file": "01_CAD/sweep_v01/od_g01_housing_C1_v01_tradeoff_as_specified.step",
+  "validity": {
+   "solid_count": 1,
+   "brep_valid": 1,
+   "naked_edges": 0
+  },
+  "min_wall_mm": 0.12999999999779743,
+  "at": "(9.578974, -14.201414, -24.94)",
+  "reason": "",
+  "D-01a": "FAIL",
+  "D-01b": "FAIL"
+ },
+ {
+  "option": "opt1_counterbore_32p2_deep_1p70",
+  "changes": {
+   "counterbore_d": 32.2,
+   "counterbore_depth": 1.7
+  },
+  "file": "01_CAD/sweep_v01/od_g01_housing_C1_v01_tradeoff_opt1_counterbore_32p2_deep_1p70.step",
+  "validity": {
+   "solid_count": 1,
+   "brep_valid": 1,
+   "naked_edges": 0
+  },
+  "min_wall_mm": 1.0,
+  "at": "(-10.455606, 12.242969, -22.24)",
+  "reason": "",
+  "D-01a": "PASS",
+  "D-01b": "PASS"
+ },
+ {
+  "option": "opt2_no_counterbore",
+  "changes": {
+   "counterbore_d": 26.0,
+   "counterbore_depth": 0.0
+  },
+  "file": "01_CAD/sweep_v01/od_g01_housing_C1_v01_tradeoff_opt2_no_counterbore.step",
+  "validity": {
+   "solid_count": 1,
+   "brep_valid": 1,
+   "naked_edges": 0
+  },
+  "min_wall_mm": 1.5299999999977973,
+  "at": "(7.269508, -10.777488, -19.94)",
+  "reason": "",
+  "D-01a": "PASS",
+  "D-01b": "PASS"
+ },
+ {
+  "option": "opt3_slab_6p50_counterbore_32p2",
+  "changes": {
+   "plate_t": 6.5,
+   "counterbore_d": 32.2
+  },
+  "file": "01_CAD/sweep_v01/od_g01_housing_C1_v01_tradeoff_opt3_slab_6p50_counterbore_32p2.step",
+  "validity": {
+   "solid_count": 1,
+   "brep_valid": 1,
+   "naked_edges": 0
+  },
+  "min_wall_mm": 0.7999999999999972,
+  "at": "(-42.0, -44.0, -19.94)",
+  "reason": "",
+  "D-01a": "PASS",
+  "D-01b": "FAIL"
+ }
+]

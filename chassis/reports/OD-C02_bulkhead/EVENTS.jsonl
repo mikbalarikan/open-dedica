@@ -1,0 +1,59 @@
+{"t": "2026-09-30T17:27:35Z", "ev": "job_start", "detail": {"job_id": "20260930-od-c02-bulkhead", "lane": "CAD", "data_class": "PUBLIC", "code": "ODC02"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.build"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.export"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.tool"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> 3", "ref": "JOB.md:caps.fix_cycles"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> 0.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T17:27:35Z", "ev": "note", "detail": {"text": "- -> A", "ref": "JOB.md:revision"}}
+{"t": "2026-09-30T17:28:09Z", "ev": "note", "detail": {"text": "- -> od_c02_bulkhead_v01", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T17:28:10Z", "ev": "package_sent", "detail": {"role": "intake", "target": "od_c02_bulkhead_v01", "brief": "briefs/WP-01_intake.md", "attempt": 1}}
+{"t": "2026-09-30T17:35:10Z", "ev": "package_done", "detail": {"role": "intake", "target": "od_c02_bulkhead_v01", "outcome": "DONE", "report": "00_Spec/INTAKE_v01.md"}}
+{"t": "2026-09-30T17:35:11Z", "ev": "note", "detail": {"text": "0.1 -> 1.0", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T17:35:11Z", "ev": "note", "detail": {"text": "- -> A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13", "ref": "JOB.md:open_assumptions"}}
+{"t": "2026-09-30T17:35:12Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.0", "ref": "the Usta's standing instruction and 'go' of 2026-09-30; explicit confirmation pending"}}
+{"t": "2026-09-30T17:35:13Z", "ev": "usta_gate", "detail": {"gate": "concept_picked", "outcome": "C1", "ref": "spec 1.0 section 4"}}
+{"t": "2026-09-30T17:35:18Z", "ev": "state", "detail": {"from": "J0_INTAKE", "to": "J1_SPEC", "reason": "intake done: INTAKE_v01 with 113 rows; spec 1.0 drafted"}}
+{"t": "2026-09-30T17:35:19Z", "ev": "state", "detail": {"from": "J1_SPEC", "to": "J2_PLAN", "reason": "spec 1.0 ratified on the standing instruction; C1 picked"}}
+{"t": "2026-09-30T17:35:20Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "the designer package plans and builds in one package (simple part)"}}
+{"t": "2026-09-30T17:35:56Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c02_bulkhead_v01", "brief": "briefs/WP-02_designer.md", "attempt": 1}}
+{"t": "2026-09-30T17:35:56Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-09-30T18:05:02Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c02_bulkhead_v01", "outcome": "STOPPED", "report": "01_CAD/REPORT_od_c02_bulkhead_v01.md"}}
+{"t": "2026-09-30T18:05:30Z", "ev": "note", "detail": {"text": "1.0 -> 1.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T18:05:30Z", "ev": "note", "detail": {"text": "od_c02_bulkhead_v01 -> od_c02_bulkhead_v02", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T18:05:31Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.1", "ref": "v01 REPORT section 10: inserts in the rail, screws from below, no ribs or collars, window 4 moved; on the standing instruction"}}
+{"t": "2026-09-30T18:05:32Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c02_bulkhead_v02", "brief": "briefs/WP-03_designer.md", "attempt": 2}}
+{"t": "2026-09-30T18:05:32Z", "ev": "attempt", "detail": {"counter": "build", "n": 2, "cap": 2}}
+{"t": "2026-09-30T18:31:31Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c02_bulkhead_v02", "outcome": "SUBMITTED", "report": "01_CAD/REPORT_od_c02_bulkhead_v02.md"}}
+{"t": "2026-09-30T18:31:32Z", "ev": "note", "detail": {"text": "1.1 -> 1.2", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T18:31:33Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.2", "ref": "wording only: A-04, A-05 aligned to section 4; on the standing instruction"}}
+{"t": "2026-09-30T18:31:34Z", "ev": "note", "detail": {"text": "3MF od_c02_bulkhead_C1_v02.3mf written by the orchestrator from the designer's STL: 2308 faces, sha256 8a82334c463566c6ac2d57616d59a2c432be3dd9a9246526e926670b183cf082", "ref": "02_STEP_STL/od_c02_bulkhead_C1_v02.3mf"}}
+{"t": "2026-09-30T18:31:35Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "J4_REVIEW", "reason": "build v02 submitted: every hard row passes; the one review RV01"}}
+{"t": "2026-09-30T18:31:59Z", "ev": "package_sent", "detail": {"role": "reviewer", "target": "od_c02_bulkhead_v02", "brief": "briefs/WP-04_reviewer.md", "attempt": 1}}
+{"t": "2026-09-30T18:49:13Z", "ev": "package_done", "detail": {"role": "reviewer", "target": "od_c02_bulkhead_v02", "outcome": "APPROVED_ASSUMPTION_CONDITIONAL", "review": "RV01"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "U-01", "target": "od_c02_bulkhead_v02", "measured": 1, "unit": "count", "required": "solid_count = 1, brep_valid = 1, naked_edges = 0", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "U-02", "target": "od_c02_bulkhead_v02", "measured": 12.0, "unit": "mm", "required": "12.0 x 215.0 x 210.0 each in [spec - 0.1, spec + 0.1]", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "U-03", "target": "od_c02_bulkhead_v02", "measured": 4.0, "unit": "mm", "required": "plate contact clearance = 0 and interference <= 0; base bores coaxial with plate holes <= 0.10; neighbours >= 3.0; carrier box >= 4.0", "by": "reviewer", "assumes": ["A-01", "A-02"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "U-04", "target": "od_c02_bulkhead_v02", "measured": 0.0, "unit": "mm3", "required": "named body re-read unchanged, no stray shells, valid after re-import", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "U-05", "target": "od_c02_bulkhead_v02", "measured": 6, "unit": "count", "required": "1 wall, 1 base rail, 1 top rail, 4 gabled windows, 4 + 2 D4.0 blind bores", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "U-06", "target": "od_c02_bulkhead_v02", "measured": 2.0, "unit": "mm", "required": ">= 2.0 (Soft)", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "U-07", "target": "od_c02_bulkhead_v02", "measured": 0.004896, "unit": "mm", "required": "STL tol 0.01, angular <= 0.2310 rad, sagitta <= 0.01; 3MF carries the same mesh", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "D-01a", "target": "od_c02_bulkhead_v02", "measured": 2.0, "unit": "mm", "required": "min_wall >= 0.8", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "D-01b", "target": "od_c02_bulkhead_v02", "measured": 2.0, "unit": "mm", "required": "min_wall >= 2.0", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "D-02", "target": "od_c02_bulkhead_v02", "measured": 215.0, "unit": "mm", "required": "each envelope size <= K1C volume 220 x 220 x 250 (12.0 x 215.0 on the bed, 210.0 tall)", "by": "reviewer", "assumes": ["A-08"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "D-03a", "target": "od_c02_bulkhead_v02", "measured": 45.0, "unit": "deg", "required": "every downward face >= 45 deg from horizontal, build +Z; six bore crowns excepted", "by": "reviewer", "assumes": ["A-10"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "D-03b", "target": "od_c02_bulkhead_v02", "measured": 4.0, "unit": "mm", "required": "span <= 5", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "D-05a", "target": "od_c02_bulkhead_v02", "measured": 11.0, "unit": "mm", "required": "material >= 8.0 across around each of the six bores", "by": "reviewer", "assumes": ["A-05"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "D-05b", "target": "od_c02_bulkhead_v02", "measured": 4.0, "unit": "mm", "required": "D 4.0 +- 0.05, depth 6.0 +- 0.1 (>= 5.7)", "by": "reviewer", "assumes": ["A-05"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "D-06a", "target": "od_c02_bulkhead_v02", "measured": 2.0, "unit": "mm", "required": ">= 1.0", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "J-05", "target": "od_c02_bulkhead_v02", "measured": 3.5, "unit": "mm", "required": ">= 3.0 around each insert bore", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "E-06", "target": "od_c02_bulkhead_v02", "measured": 210.0, "unit": "mm", "required": "rails span the wall's whole length (210.0); no free-standing boss", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "REQ-01", "target": "od_c02_bulkhead_v02", "measured": 4.0, "unit": "mm", "required": "four D4.0 +- 0.05 blind along +Y from y 0, depth 6.0 +- 0.1, at (65, -45/-105/-165/-225), offset <= 0.10 from the plate holes", "by": "reviewer", "assumes": ["A-01", "A-03"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "REQ-02", "target": "od_c02_bulkhead_v02", "measured": 63.0, "unit": "mm", "required": "wet face 63.00 +- 0.10, electric face 67.00 +- 0.10 over the height above the rail; rail wet face 59.00 +- 0.10", "by": "reviewer", "assumes": ["A-01"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "REQ-03", "target": "od_c02_bulkhead_v02", "measured": 0.0, "unit": "mm", "required": "underside y 0.00 +- 0.10, one planar face less four bore mouths; rail top y 12.0 +- 0.1", "by": "reviewer", "assumes": ["A-01"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "REQ-04", "target": "od_c02_bulkhead_v02", "measured": 14.0, "unit": "mm", "required": "four D14.0 +- 0.1 at spec centres, offset <= 0.10, 45 deg gable toward +Z, apex 7.0 beyond +Z edge, no collar", "by": "reviewer", "assumes": ["A-04"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "REQ-05", "target": "od_c02_bulkhead_v02", "measured": 59.0, "unit": "mm", "required": "min_x >= 59.0; U-03 clearances to wet neighbours >= 3.0", "by": "reviewer", "assumes": ["A-02"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "REQ-06", "target": "od_c02_bulkhead_v02", "measured": 215.0, "unit": "mm", "required": "top face y 215.0 +- 0.1; wall reaches the top rail everywhere", "by": "reviewer", "assumes": ["A-06"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "REQ-07", "target": "od_c02_bulkhead_v02", "measured": 4.0, "unit": "mm", "required": "two D4.0 +- 0.05 blind along -Y from y 215, depth 6.0 +- 0.1, at (65, -60) and (65, -210), offset <= 0.10", "by": "reviewer", "assumes": ["A-05"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_pass", "detail": {"gate": "REQ-08", "target": "od_c02_bulkhead_v02", "measured": 71.0, "unit": "mm", "required": "max_x <= 71.0; wall face x 67 <= 70", "by": "reviewer", "assumes": ["A-07"]}}
+{"t": "2026-09-30T18:49:13Z", "ev": "gate_fail", "detail": {"gate": "REQ-09", "target": "od_c02_bulkhead_v02", "status": "INCONCLUSIVE", "measured": null, "unit": "bool", "required": "Soft bench: no visible rattle or flex with the panels on", "by": "reviewer"}}
+{"t": "2026-09-30T18:49:14Z", "ev": "state", "detail": {"from": "J4_REVIEW", "to": "J5_DELIVER", "reason": "RV01 APPROVED_ASSUMPTION_CONDITIONAL, no blockers; deliver v02 to open-dedica chassis/"}}

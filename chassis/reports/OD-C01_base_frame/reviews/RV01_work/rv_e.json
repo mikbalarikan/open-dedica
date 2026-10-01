@@ -1,0 +1,20 @@
+{
+ "mutant": "OD-C07 hole (-113, -42) moved to x -117.5: web 0.5 to the edge",
+ "min_wall": [
+  0.49999999989999505,
+  "MEASURED",
+  [
+   -119.5,
+   -0.3,
+   -42.0
+  ],
+  ""
+ ],
+ "D-01a": "FAIL",
+ "J-05": "FAIL",
+ "U-06": "FAIL",
+ "wide": [
+  0.49999999989999505,
+  "MEASURED"
+ ]
+}

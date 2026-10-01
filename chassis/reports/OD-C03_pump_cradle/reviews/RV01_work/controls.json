@@ -1,0 +1,7518 @@
+{
+ "M01 loose box beside the part (2 solids)": {
+  "U-01 solid_count": [
+   "FAIL",
+   2,
+   -1.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "FAIL",
+   92.0,
+   -11.9
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   92.0,
+   328.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "PASS_ASSUMED",
+   40.0,
+   0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "FAIL",
+   54,
+   -6.0
+  ],
+  "U-05 cylinder": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "REQ-05 roof": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "D-03b": [
+   "PASS",
+   2.0,
+   3.0
+  ],
+  "D-01a": [
+   "PASS",
+   1.999999999999997,
+   1.2
+  ],
+  "D-01b": [
+   "PASS",
+   1.999999999999997,
+   -3.1086244689504383e-15
+  ],
+  "D-06a": [
+   "PASS",
+   1.999999999999997,
+   1.0
+  ],
+  "U-06": [
+   "PASS",
+   1.999999999999997,
+   -3.1086244689504383e-15
+  ]
+ },
+ "M02 foot grown to z 42.5": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "FAIL",
+   52.5,
+   -0.4
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.5,
+   367.5
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "PASS_ASSUMED",
+   40.0,
+   0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "PASS",
+   48,
+   0.0
+  ],
+  "U-05 cylinder": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "REQ-05 roof": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M03 part moved +0.2 in Y": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "FAIL",
+   40.2,
+   -0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "PASS",
+   48,
+   0.0
+  ],
+  "U-05 cylinder": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "FAIL",
+   0.0,
+   -2.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "FAIL",
+   0.0,
+   -1.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "FAIL",
+   5.6200000000000045,
+   -0.38
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.500099999999975,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   7.199950000000001,
+   0.30005
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "FAIL",
+   5.6200000000000045,
+   -0.38
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.500099999999975,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   7.199950000000001,
+   0.30005
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "FAIL",
+   5.6200000000000045,
+   -0.38
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.500099999999975,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   7.199950000000001,
+   0.30005
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "FAIL",
+   5.6200000000000045,
+   -0.38
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.500099999999975,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   7.199950000000001,
+   0.30005
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "FAIL",
+   26.80289881108918,
+   -0.102898811
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "FAIL",
+   26.849999999999998,
+   -0.15
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "FAIL",
+   26.80289881108918,
+   -0.102898811
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "FAIL",
+   26.849999999999998,
+   -0.15
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "FAIL",
+   26.80289881108918,
+   -0.102898811
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "FAIL",
+   26.802898811089182,
+   -0.102898811
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "FAIL",
+   26.80289881108918,
+   -0.102898811
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "FAIL",
+   26.802898811089182,
+   -0.102898811
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "FAIL",
+   0.14179460744228972,
+   -0.141794607
+  ],
+  "U-03 sleeve clr": [
+   "FAIL",
+   0.14179460744228972,
+   -0.141794607
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "FAIL",
+   0.0,
+   -1.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "FAIL",
+   0.14179460744228972,
+   -0.141794607
+  ],
+  "REQ-04 rib 28.0": [
+   "FAIL",
+   0.14179460744228972,
+   -0.141794607
+  ],
+  "D-03a": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "REQ-05 roof": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M04 hole (-34,-4) filled": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "FAIL",
+   41.0,
+   -0.9
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   41.0,
+   459.0
+  ],
+  "REQ-08 max_y": [
+   "FAIL",
+   41.0,
+   -0.9
+  ],
+  "REQ-08 thickness": [
+   "FAIL",
+   4.0,
+   -0.9
+  ],
+  "U-05 plane": [
+   "FAIL",
+   50,
+   -2.0
+  ],
+  "U-05 cylinder": [
+   "FAIL",
+   7,
+   -1.0
+  ],
+  "U-05 concave": [
+   "FAIL",
+   5,
+   -1.0
+  ],
+  "U-05 bores": [
+   "FAIL",
+   3,
+   -1.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "FAIL",
+   41.0,
+   -40.9
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "REQ-05 roof": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M05 hole (-34,-4) moved 0.5 to z -3.5": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "FAIL",
+   41.0,
+   -0.9
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   41.0,
+   459.0
+  ],
+  "REQ-08 max_y": [
+   "FAIL",
+   41.0,
+   -0.9
+  ],
+  "REQ-08 thickness": [
+   "FAIL",
+   4.0,
+   -0.9
+  ],
+  "U-05 plane": [
+   "FAIL",
+   50,
+   -2.0
+  ],
+  "U-05 cylinder": [
+   "FAIL",
+   8,
+   -2.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "FAIL",
+   0.5,
+   -0.4
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "REQ-05 roof": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M06 hole (-34,-4) resized to 3.1": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "FAIL",
+   41.0,
+   -0.9
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   41.0,
+   459.0
+  ],
+  "REQ-08 max_y": [
+   "FAIL",
+   41.0,
+   -0.9
+  ],
+  "REQ-08 thickness": [
+   "FAIL",
+   4.0,
+   -0.9
+  ],
+  "U-05 plane": [
+   "FAIL",
+   50,
+   -2.0
+  ],
+  "U-05 cylinder": [
+   "FAIL",
+   8,
+   -2.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "FAIL",
+   3.1,
+   -0.2
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "FAIL",
+   3.1,
+   -0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "REQ-05 roof": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M07 -X z18 slot cut into its end ligament, 0.6 left": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "PASS_ASSUMED",
+   40.0,
+   0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "FAIL",
+   49,
+   -1.0
+  ],
+  "U-05 cylinder": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   7.400000000000006,
+   1.4
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5,
+   0.0
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   7.0,
+   0.5
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "FAIL",
+   17.299999999999997,
+   -0.2
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "FAIL",
+   0.5999999999999943,
+   -1.4
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "FAIL",
+   0.5999999999999943,
+   -1.4
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "REQ-05 roof": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "D-03b": [
+   "PASS",
+   4.0,
+   1.0
+  ],
+  "D-01a": [
+   "FAIL",
+   0.6000000000000014,
+   -0.2
+  ],
+  "D-01b": [
+   "FAIL",
+   0.6000000000000014,
+   -1.4
+  ],
+  "D-06a": [
+   "FAIL",
+   0.6000000000000014,
+   -0.4
+  ],
+  "U-06": [
+   "FAIL",
+   0.6000000000000014,
+   -1.4
+  ]
+ },
+ "M08 -X z18 slot gable filled: flat 6.0 ceiling": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "PASS_ASSUMED",
+   40.0,
+   0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "FAIL",
+   47,
+   -1.0
+  ],
+  "U-05 cylinder": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "INCONCLUSIVE",
+   null,
+   null
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "INCONCLUSIVE",
+   null,
+   null
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "INCONCLUSIVE",
+   null,
+   null
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "INCONCLUSIVE",
+   null,
+   null
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "INCONCLUSIVE",
+   null,
+   null
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "REQ-05 roof": [
+   "FAIL",
+   0.0,
+   -45.0
+  ],
+  "D-03b": [
+   "FAIL",
+   6.0,
+   -1.0
+  ]
+ },
+ "M09 -X post inner face moved in 0.5 (x -29.0)": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "PASS_ASSUMED",
+   40.0,
+   0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "FAIL",
+   50,
+   -2.0
+  ],
+  "U-05 cylinder": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x -": [
+   "FAIL",
+   29.0,
+   -0.4
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "FAIL",
+   0.0,
+   -1.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "FAIL",
+   0.0,
+   -1.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "FAIL",
+   2.0,
+   -2.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   37.85681139063609,
+   5.856811391
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   37.85681139063609,
+   5.856811391
+  ],
+  "REQ-03": [
+   "FAIL",
+   1.8000000000000007,
+   -0.2
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   1.8000000000000007,
+   1.3
+  ],
+  "U-03 pump clr": [
+   "FAIL",
+   1.8000000000000007,
+   -0.2
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "FAIL",
+   1.8000000000000007,
+   -0.2
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "REQ-05 roof": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M10 saddle 1 radius 26.55 (0.10 into the sleeve)": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "PASS_ASSUMED",
+   40.0,
+   0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "FAIL",
+   50,
+   -2.0
+  ],
+  "U-05 cylinder": [
+   "FAIL",
+   8,
+   -2.0
+  ],
+  "U-05 concave": [
+   "FAIL",
+   8,
+   -2.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "FAIL",
+   26.549999999999997,
+   -0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "FAIL",
+   26.55,
+   -0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.55,
+   0.15
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.55,
+   0.15
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 interf": [
+   "FAIL",
+   24.512800278368044,
+   -24.512800278
+  ],
+  "U-03 sleeve interf": [
+   "FAIL",
+   24.512800278368044,
+   -24.512800278
+  ],
+  "REQ-04 on arc": [
+   "FAIL",
+   0.0,
+   -1.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "REQ-05 roof": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M11 both saddles opened to r 26.75 (0.10 gap)": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "PASS_ASSUMED",
+   40.0,
+   0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "PASS",
+   48,
+   0.0
+  ],
+  "U-05 cylinder": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "FAIL",
+   26.749999999999996,
+   -0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "FAIL",
+   26.75,
+   -0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "FAIL",
+   26.749999999999996,
+   -0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "FAIL",
+   26.75,
+   -0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "FAIL",
+   26.75,
+   -0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "FAIL",
+   26.75,
+   -0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "FAIL",
+   26.75,
+   -0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "FAIL",
+   26.75,
+   -0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "FAIL",
+   0.09999999999999869,
+   -0.1
+  ],
+  "U-03 sleeve clr": [
+   "FAIL",
+   0.09999999999999869,
+   -0.1
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "FAIL",
+   0.0,
+   -1.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "FAIL",
+   0.09999999999999869,
+   -0.1
+  ],
+  "REQ-04 rib 28.0": [
+   "FAIL",
+   0.09999999999999873,
+   -0.1
+  ],
+  "D-03a": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "REQ-05 roof": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M12 rib 1 extended to theta 38 (material at 40 deg, r<32)": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "PASS_ASSUMED",
+   40.0,
+   0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "PASS",
+   48,
+   0.0
+  ],
+  "U-05 cylinder": [
+   "FAIL",
+   7,
+   -1.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "FAIL",
+   1.0,
+   -1.0
+  ],
+  "REQ-02 face 15.0": [
+   "FAIL",
+   25.0,
+   -9.9
+  ],
+  "REQ-02 face 21.0": [
+   "FAIL",
+   31.0,
+   -9.9
+  ],
+  "REQ-02 face 25.0": [
+   "INCONCLUSIVE",
+   null,
+   null
+  ],
+  "REQ-02 face 31.0": [
+   "INCONCLUSIVE",
+   null,
+   null
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "FAIL",
+   0.0,
+   -1.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "FAIL",
+   26.64999999999999,
+   -5.35
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "FAIL",
+   1.6057598262391086,
+   -0.394240174
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   1.6057598262391086,
+   1.105759826
+  ],
+  "U-03 pump clr": [
+   "FAIL",
+   1.6057598262391086,
+   -0.394240174
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.215847711495048,
+   0.215847711
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "INCONCLUSIVE",
+   null,
+   null
+  ],
+  "REQ-05 roof": [
+   "INCONCLUSIVE",
+   null,
+   null
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M13 rib 1 face moved to z 21.3": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "PASS_ASSUMED",
+   40.0,
+   0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "PASS",
+   48,
+   0.0
+  ],
+  "U-05 cylinder": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "FAIL",
+   21.3,
+   -0.2
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "REQ-05 roof": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M14 -X z18 slot narrowed to 5.5": {
+  "U-01 solid_count": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 brep_valid": [
+   "PASS",
+   1,
+   0.0
+  ],
+  "U-01 naked_edges": [
+   "PASS",
+   0,
+   0.0
+  ],
+  "U-02 size_x": [
+   "PASS",
+   80.0,
+   0.1
+  ],
+  "U-02 size_y": [
+   "PASS",
+   40.0,
+   0.1
+  ],
+  "U-02 size_z": [
+   "PASS",
+   52.0,
+   0.1
+  ],
+  "D-02 size_x": [
+   "PASS_ASSUMED",
+   80.0,
+   340.0
+  ],
+  "D-02 size_z": [
+   "PASS_ASSUMED",
+   52.0,
+   368.0
+  ],
+  "D-02 size_y": [
+   "PASS_ASSUMED",
+   40.0,
+   460.0
+  ],
+  "REQ-08 max_y": [
+   "PASS_ASSUMED",
+   40.0,
+   0.1
+  ],
+  "REQ-08 thickness": [
+   "PASS_ASSUMED",
+   3.0,
+   0.1
+  ],
+  "U-05 plane": [
+   "FAIL",
+   49,
+   -1.0
+  ],
+  "U-05 cylinder": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 concave": [
+   "PASS",
+   6,
+   0.0
+  ],
+  "U-05 bores": [
+   "PASS",
+   4,
+   0.0
+  ],
+  "REQ-07 d -34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d -34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off -34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr -34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a -34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,-4.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,-4.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,-4.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,-4.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "REQ-07 d 34.0,37.0": [
+   "PASS_ASSUMED",
+   3.4,
+   0.1
+  ],
+  "REQ-07 off 34.0,37.0": [
+   "PASS_ASSUMED",
+   0.0,
+   0.1
+  ],
+  "REQ-07 thr 34.0,37.0": [
+   "PASS_ASSUMED",
+   1,
+   0.0
+  ],
+  "D-04a 34.0,37.0": [
+   "PASS",
+   3.4,
+   0.15
+  ],
+  "U-05 saddle arcs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "U-05 post blocks": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-06 x -": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 -": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 -": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "REQ-06 x +": [
+   "PASS_ASSUMED",
+   29.5,
+   0.1
+  ],
+  "REQ-06 z0 +": [
+   "PASS_ASSUMED",
+   13.0,
+   0.1
+  ],
+  "REQ-06 z1 +": [
+   "PASS_ASSUMED",
+   33.0,
+   0.1
+  ],
+  "U-05 foot": [
+   "PASS",
+   1.0,
+   0.0
+  ],
+  "REQ-05 clear_z -31.5,18.0": [
+   "FAIL",
+   5.5,
+   -0.5
+  ],
+  "REQ-05 clear_y -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,18.0": [
+   "PASS_ASSUMED",
+   17.75,
+   0.25
+  ],
+  "REQ-05 through -31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc -31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc -31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through -31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop -31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,18.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,18.0": [
+   "PASS_ASSUMED",
+   18.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,18.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "REQ-05 clear_z 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.0,
+   0.0
+  ],
+  "REQ-05 clear_y 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.5001000000000033,
+   0.0001
+  ],
+  "REQ-05 yc 31.5,28.0": [
+   "PASS_ASSUMED",
+   6.999949999999998,
+   0.49995
+  ],
+  "REQ-05 zc 31.5,28.0": [
+   "PASS_ASSUMED",
+   28.0,
+   0.5
+  ],
+  "REQ-05 through 31.5,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-05 lig 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.0,
+   0.0
+  ],
+  "REQ-05 ligtop 31.5,28.0": [
+   "PASS_ASSUMED",
+   2.75,
+   0.75
+  ],
+  "U-05 slots": [
+   "PASS",
+   4.0,
+   0.0
+  ],
+  "U-05 ribs": [
+   "PASS",
+   2.0,
+   0.0
+  ],
+  "REQ-02 face 15.0": [
+   "PASS_ASSUMED",
+   15.0,
+   0.1
+  ],
+  "REQ-02 face 21.0": [
+   "PASS_ASSUMED",
+   21.0,
+   0.1
+  ],
+  "REQ-02 face 25.0": [
+   "PASS_ASSUMED",
+   25.0,
+   0.1
+  ],
+  "REQ-02 face 31.0": [
+   "PASS_ASSUMED",
+   31.0,
+   0.1
+  ],
+  "REQ-01 min (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (15.5, 20.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-01 min (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-01 max (25.5, 30.5)": [
+   "PASS_ASSUMED",
+   26.650000000000002,
+   0.05
+  ],
+  "REQ-02 in 50.0,18.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,18.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,18.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,18.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,18.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-02 in 50.0,28.0": [
+   "PASS_ASSUMED",
+   26.649999999999995,
+   0.05
+  ],
+  "REQ-02 in 130.0,28.0": [
+   "PASS_ASSUMED",
+   26.65,
+   0.05
+  ],
+  "REQ-02 window 40.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 40.0,28.0": [
+   "PASS_ASSUMED",
+   38.509515035302215,
+   6.509515035
+  ],
+  "REQ-02 window 140.0,28.0": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-02 nomat 140.0,28.0": [
+   "PASS_ASSUMED",
+   38.50951503530222,
+   6.509515035
+  ],
+  "REQ-03": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "D-04c": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   1.8
+  ],
+  "U-03 pump clr": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "U-03 pump interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "U-03 sleeve clr": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "U-03 sleeve interf": [
+   "PASS_ASSUMED",
+   0.0,
+   0.0
+  ],
+  "REQ-04 on arc": [
+   "PASS_ASSUMED",
+   1.0,
+   0.0
+  ],
+  "REQ-06 clr -": [
+   "PASS_ASSUMED",
+   2.3000000000000007,
+   0.3
+  ],
+  "REQ-06 clr +": [
+   "PASS_ASSUMED",
+   2.6499999999999986,
+   0.65
+  ],
+  "REQ-04 rib 18.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "REQ-04 rib 28.0": [
+   "PASS_ASSUMED",
+   6.908452493474598e-13,
+   -6.908452493474598e-13
+  ],
+  "D-03a": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "REQ-05 roof": [
+   "PASS_ASSUMED",
+   45.0,
+   0.0
+  ],
+  "D-03b": [
+   "PASS",
+   0.0,
+   5.0
+  ]
+ },
+ "M15": [
+  [
+   "FAIL",
+   45.50298507417028
+  ],
+  [
+   "FAIL",
+   3
+  ]
+ ],
+ "M16": [
+  [
+   "FAIL",
+   0.04862147994926786
+  ],
+  [
+   "FAIL",
+   0.048617985819715014
+  ]
+ ],
+ "M17": [
+  "FAIL",
+  3
+ ],
+ "M18": {
+  "solid_count": [
+   0,
+   "MEASURED"
+  ],
+  "brep_valid": [
+   1,
+   "MEASURED"
+  ],
+  "naked_edges": [
+   4,
+   "MEASURED"
+  ]
+ }
+}

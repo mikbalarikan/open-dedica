@@ -1,0 +1,60 @@
+{"t": "2026-09-30T12:03:56Z", "ev": "job_start", "detail": {"job_id": "20260930-od-c04-thermoblock-mount", "lane": "CAD", "data_class": "PUBLIC", "code": "ODC04"}}
+{"t": "2026-09-30T12:03:56Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.build"}}
+{"t": "2026-09-30T12:03:56Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.export"}}
+{"t": "2026-09-30T12:03:56Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.tool"}}
+{"t": "2026-09-30T12:03:56Z", "ev": "note", "detail": {"text": "- -> 3", "ref": "JOB.md:caps.fix_cycles"}}
+{"t": "2026-09-30T12:03:56Z", "ev": "note", "detail": {"text": "- -> 0.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T12:03:56Z", "ev": "note", "detail": {"text": "- -> A", "ref": "JOB.md:revision"}}
+{"t": "2026-09-30T12:04:59Z", "ev": "package_sent", "detail": {"role": "intake", "target": "od_c04_mount_v01", "brief": "briefs/WP-01_intake.md", "attempt": 1}}
+{"t": "2026-09-30T12:13:01Z", "ev": "package_done", "detail": {"role": "intake", "target": "od_c04_mount_v01", "outcome": "DONE", "report": "00_Spec/INTAKE_v01.md"}}
+{"t": "2026-09-30T12:15:46Z", "ev": "note", "detail": {"text": "- -> A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13", "ref": "JOB.md:open_assumptions"}}
+{"t": "2026-09-30T12:15:47Z", "ev": "note", "detail": {"text": "0.1 -> 1.0", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T12:15:48Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.0", "ref": "the Usta's standing instruction of 2026-09-30; explicit confirmation pending"}}
+{"t": "2026-09-30T12:15:49Z", "ev": "usta_gate", "detail": {"gate": "concept_picked", "outcome": "C1", "ref": "spec 1.0 section 4"}}
+{"t": "2026-09-30T12:15:50Z", "ev": "note", "detail": {"text": "- -> od_c04_mount_v01", "ref": "JOB.md:active_target"}}
+{"t": "2026-09-30T12:15:51Z", "ev": "state", "detail": {"from": "J0_INTAKE", "to": "J1_SPEC", "reason": "intake done: INTAKE_v01 with 137 rows; spec 1.0 drafted"}}
+{"t": "2026-09-30T12:15:52Z", "ev": "state", "detail": {"from": "J1_SPEC", "to": "J2_PLAN", "reason": "spec 1.0 ratified on the standing instruction; C1 picked"}}
+{"t": "2026-09-30T12:15:53Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c04_mount_v01", "brief": "briefs/WP-02_designer.md", "attempt": 1}}
+{"t": "2026-09-30T13:12:35Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c04_mount_v01", "outcome": "STOPPED", "report": "01_CAD/DESIGN_PLAN.md"}}
+{"t": "2026-09-30T13:12:36Z", "ev": "note", "detail": {"text": "J2 stop: S2 printed standoff 0.411 from the body (REQ-01 vs A-05); STEP body axis at (-8.330,-14.130) not the origin; both holes open toward -Z, S1 seats on the base face z 0; OD-H11 brep_valid 0. Spec 1.1 answers all (tips -10.10, spacers 10.10/37.70). INTAKE_v01 section 1 hashes are 63 characters (truncated); full values in the WP-03 brief", "ref": "01_CAD/DESIGN_PLAN.md"}}
+{"t": "2026-09-30T13:12:37Z", "ev": "note", "detail": {"text": "A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13 -> A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13,A-14", "ref": "JOB.md:open_assumptions"}}
+{"t": "2026-09-30T13:12:38Z", "ev": "note", "detail": {"text": "1.0 -> 1.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T13:12:39Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.1", "ref": "the Usta's standing instruction of 2026-09-30; explicit confirmation pending"}}
+{"t": "2026-09-30T13:12:40Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "plan checked with the spec 1.1 amendments carried in WP-03"}}
+{"t": "2026-09-30T13:12:41Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c04_mount_v01", "brief": "briefs/WP-03_designer.md", "attempt": 1}}
+{"t": "2026-09-30T13:12:41Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-09-30T13:37:34Z", "ev": "note", "detail": {"text": "1.1 -> 1.2", "ref": "JOB.md:spec_version"}}
+{"t": "2026-09-30T13:37:35Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.2"}}
+{"t": "2026-09-30T13:37:36Z", "ev": "note", "detail": {"text": "spec 1.2: REQ-08 (heat bench gate) made Soft before the review; no geometry change, build v01 to 1.1 stands"}}
+{"t": "2026-09-30T13:42:27Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c04_mount_v01", "outcome": "SUBMITTED", "report": "01_CAD/REPORT_od_c04_mount_v01.md"}}
+{"t": "2026-09-30T13:42:28Z", "ev": "note", "detail": {"text": "build v01 to spec 1.1; spec 1.2 changed only REQ-08 (Hard->Soft), no geometry: the review reads it against 1.2"}}
+{"t": "2026-09-30T13:42:29Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "J4_REVIEW"}}
+{"t": "2026-09-30T13:43:01Z", "ev": "package_sent", "detail": {"role": "reviewer", "target": "od_c04_mount_v01", "brief": "briefs/WP-04_reviewer.md", "attempt": 1}}
+{"t": "2026-09-30T14:05:16Z", "ev": "package_done", "detail": {"role": "reviewer", "target": "od_c04_mount_v01", "outcome": "APPROVED_ASSUMPTION_CONDITIONAL", "review": "RV01"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "U-01", "target": "od_c04_mount_v01", "measured": 1, "unit": "bool", "required": "solid_count = 1, brep_valid = 1, naked_edges = 0", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "U-02", "target": "od_c04_mount_v01", "measured": 100.0, "unit": "mm", "required": "100.0 x 110.0 x 50.0 each in [spec - 0.1, spec + 0.1]", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "U-03", "target": "od_c04_mount_v01", "measured": 0.0, "unit": "mm", "required": "(a) mount|OD-H11 clearance >= 10.0; mount|spacer and spacer|OD-H11 clearance = 0, interference <= 0; OD-H11 boolean INCONCLUSIVE by the row (A-14); (b) no motion variable", "by": "reviewer", "assumes": ["A-01", "A-03", "A-05", "A-14"]}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "U-04", "target": "od_c04_mount_v01", "measured": 0.0, "unit": "mm3", "required": "named body re-read unchanged, no stray shells, valid after re-import", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "U-05", "target": "od_c04_mount_v01", "measured": 6, "unit": "count", "required": "1 plate, 1 foot, 2 gussets, 2 standoffs (D12.0 x 1.90), 2 D4.0 through-bores, 4 D3.4 through-bores", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "U-06", "target": "od_c04_mount_v01", "measured": 4.0, "unit": "mm", "required": "min_wall wide >= 2.0 (Soft)", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "U-07", "target": "od_c04_mount_v01", "measured": 0.00636, "unit": "mm", "required": "STL at tol 0.01, angular <= 4 acos(1 - 0.01/6.0) rad; stl_max_sagitta <= 0.01", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "D-01a", "target": "od_c04_mount_v01", "measured": 4.0, "unit": "mm", "required": "min_wall >= 0.8", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "D-01b", "target": "od_c04_mount_v01", "measured": 4.0, "unit": "mm", "required": "min_wall >= 2.0", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "D-02", "target": "od_c04_mount_v01", "measured": 110.0, "unit": "mm", "required": "each envelope size <= the K1C build volume (220 x 220 x 250), plate down", "by": "reviewer", "assumes": ["A-09"]}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "D-03a", "target": "od_c04_mount_v01", "measured": 50.0, "unit": "deg", "required": "every downward face >= 45 deg from horizontal, build direction +Z", "by": "reviewer", "assumes": ["A-12"]}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "D-03b", "target": "od_c04_mount_v01", "measured": 0.0, "unit": "mm", "required": "bridge span <= 5", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "D-04a", "target": "od_c04_mount_v01", "measured": 3.4, "unit": "mm", "required": "frame holes D >= 3.25; standoff holes D >= 3.75", "by": "reviewer", "assumes": ["A-04"]}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "D-06a", "target": "od_c04_mount_v01", "measured": 4.0, "unit": "mm", "required": "minimum feature >= 1.0", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "E-06", "target": "od_c04_mount_v01", "measured": 2, "unit": "count", "required": "each standoff tied into the plate with a root fillet (1.90 high: no gusset)", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "REQ-01", "target": "od_c04_mount_v01", "measured": 10.1, "unit": "mm", "required": "clearance(mount, OD-H11) >= 10.0 at the identity pose", "by": "reviewer", "assumes": ["A-01"]}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "REQ-02", "target": "od_c04_mount_v01", "measured": 4.0, "unit": "mm", "required": "two D4.0 +-0.1 through-bores along Z at (-19.62, 20.18) and (25.01, 9.08), offset <= 0.10", "by": "reviewer", "assumes": ["A-03"]}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "REQ-03", "target": "od_c04_mount_v01", "measured": 0.0, "unit": "mm", "required": "both tip faces at z = -10.10 +-0.10; spacer solids clearance = 0 at both ends", "by": "reviewer", "assumes": ["A-03", "A-05"]}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "REQ-04", "target": "od_c04_mount_v01", "measured": -12.0, "unit": "mm", "required": "front face z = -12.00 +-0.10; back face z = -17.00 +-0.10", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "REQ-05", "target": "od_c04_mount_v01", "measured": -70.0, "unit": "mm", "required": "foot underside y = -70.00 +-0.10, 4.0 +-0.1 thick", "by": "reviewer", "assumes": ["A-10"]}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "REQ-06", "target": "od_c04_mount_v01", "measured": 3.4, "unit": "mm", "required": "four D3.4 +-0.1 through-holes along Y at (x +-40.0, z -8.0) and (x +-40.0, z 26.0), offset <= 0.10", "by": "reviewer", "assumes": ["A-10"]}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_pass", "detail": {"gate": "REQ-07", "target": "od_c04_mount_v01", "measured": 0.0, "unit": "mm3", "required": "no mount material at r <= 45.0 about (-8.330, -14.130) within z 0 .. 47.64", "by": "reviewer", "assumes": ["A-02", "A-06"]}}
+{"t": "2026-09-30T14:05:16Z", "ev": "gate_fail", "detail": {"gate": "REQ-08", "target": "od_c04_mount_v01", "status": "INCONCLUSIVE", "measured": null, "unit": "bool", "required": "Soft: holds the thermoblock through a heating cycle without softening (bench)", "by": "reviewer"}}
+{"t": "2026-09-30T14:05:38Z", "ev": "state", "detail": {"from": "J4_REVIEW", "to": "J5_DELIVER"}}
+{"t": "2026-09-30T14:05:39Z", "ev": "note", "detail": {"text": "RV01 APPROVED_ASSUMPTION_CONDITIONAL; deliverables copied to open-dedica chassis/OD-C04_thermoblock_mount.step/.stl and chassis/src/OD-C04_thermoblock_mount/ (build v01 = the reviewed files by SHA-256)"}}
+{"t": "2026-09-30T14:55:25Z", "ev": "usta_gate", "detail": {"gate": "question_answered", "outcome": "confirmed", "ref": "00_Spec/DESIGN_SPEC.md:§7"}}
+{"t": "2026-09-30T14:55:26Z", "ev": "note", "detail": {"text": "the Usta confirmed every decision taken on the standing instruction (spec ratifications, concept C1, gate classes, the REVISE round) with 'confirmed go' in the project thread, 2026-09-30, after PR #43 merged"}}
