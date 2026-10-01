@@ -1,0 +1,188 @@
+{
+ "params": {
+  "x_half": 120.0,
+  "z_min": -305.0,
+  "z_max": 100.0,
+  "corner_r": 10.0,
+  "y_top": 250.0,
+  "skin_t": 3.0,
+  "skirt_t": 3.0,
+  "skirt_bottom_y": 215.0,
+  "col_d": 12.0,
+  "bulkhead_cols": [
+   [
+    65.0,
+    -60.0
+   ],
+   [
+    65.0,
+    -210.0
+   ]
+  ],
+  "rear_cols": [
+   [
+    90.0,
+    -293.0
+   ],
+   [
+    -90.0,
+    -293.0
+   ]
+  ],
+  "col_bottom_y": 215.0,
+  "hole_d": 3.4,
+  "cbore_d": 6.5,
+  "cbore_floor_y": 218.0,
+  "pad_d": 10.0,
+  "pads": [
+   [
+    48.0,
+    30.0
+   ],
+   [
+    -48.0,
+    30.0
+   ]
+  ],
+  "pad_bottom_y": 210.5,
+  "rib_t": 3.0,
+  "rib_reach": 20.0,
+  "rib_root_y": 222.0,
+  "rear_rib_bottom_y": 216.0,
+  "rear_rib_dx": 4.0,
+  "rear_rib_into_skirt": 1.0,
+  "overshoot": 1.0,
+  "col_dx": 0.0,
+  "col_dz": 0.0,
+  "stl_tol": 0.01,
+  "stl_ang": 0.17,
+  "c05_origin": [
+   0.0,
+   180.06,
+   32.0
+  ],
+  "c05_x_dir": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "c05_z_dir": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "c07_origin": [
+   -92.0,
+   0.0,
+   -60.0
+  ],
+  "c07_x_dir": [
+   0.0,
+   0.0,
+   -1.0
+  ],
+  "c07_z_dir": [
+   0.0,
+   1.0,
+   0.0
+  ]
+ },
+ "solids": 1,
+ "faces": 81,
+ "step": {
+  "path": "02_STEP_STL/od_c10_top_C1_v01.step",
+  "sha256": "0f85c4d7f7208b56aadf77888d17e9f0e9e8ab6e9937aaadb6e076b7239ab89f"
+ },
+ "stl": {
+  "path": "02_STEP_STL/od_c10_top_C1_v01.stl",
+  "sha256": "2e3f1c736115fe1b6efca9110229357fca8c840fe8786f4b0ccced3e39d93bc9",
+  "tolerance_mm": 0.01,
+  "angular_tolerance_rad": 0.17,
+  "triangles": 5164,
+  "max_sagitta_mm": 0.005384670399172438,
+  "tolerance": 0.01,
+  "angular_tolerance": 0.17,
+  "max_sagitta": 0.005384670399172438
+ },
+ "assembly": {
+  "path": "02_STEP_STL/od_c10_assembly_C1_v01.step",
+  "sha256": "d5881320038a66454cfb9d8a2b89aba4ca38c4cc69cd9182cad4eb6a9ef3c9d9"
+ },
+ "placements": {
+  "od_c01_frame": {
+   "joint": "RigidJoint joint_plate on the lid (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))",
+   "placed_envelope": {
+    "size_x": 240.0,
+    "size_y": 6.0,
+    "size_z": 405.0,
+    "min_x": -120.0,
+    "min_y": -6.0,
+    "min_z": -305.0,
+    "max_x": 120.0,
+    "max_y": 0.0,
+    "max_z": 100.0
+   }
+  },
+  "od_c02_bulkhead": {
+   "joint": "RigidJoint joint_c02 on the lid (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))",
+   "placed_envelope": {
+    "size_x": 12.0,
+    "size_y": 215.0,
+    "size_z": 210.0,
+    "min_x": 59.0,
+    "min_y": 0.0,
+    "min_z": -240.0,
+    "max_x": 71.0,
+    "max_y": 215.0,
+    "max_z": -30.0
+   }
+  },
+  "od_c05_carrier": {
+   "joint": "RigidJoint joint_c05 on the lid (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 180.06, 32), orientation=(90, 0, 0))",
+   "placed_envelope": {
+    "size_x": 110.0,
+    "size_y": 210.0,
+    "size_z": 152.0,
+    "min_x": -55.0,
+    "min_y": 0.0,
+    "min_z": -70.0,
+    "max_x": 55.0,
+    "max_y": 210.0,
+    "max_z": 82.0
+   }
+  },
+  "od_c07_valve_mount": {
+   "joint": "RigidJoint joint_c07 on the lid (machine frame) -> own_frame",
+   "location": "Location: (position=(-92, 0, -60), orientation=(-90, 0, 90))",
+   "placed_envelope": {
+    "size_x": 50.0,
+    "size_y": 48.0,
+    "size_z": 119.0,
+    "min_x": -117.0,
+    "min_y": 0.0,
+    "min_z": -154.0,
+    "max_x": -67.0,
+    "max_y": 48.0,
+    "max_z": -35.0
+   }
+  },
+  "od_c11_back": {
+   "joint": "RigidJoint joint_c11 on the lid (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))",
+   "placed_envelope": {
+    "size_x": 232.0,
+    "size_y": 215.0,
+    "size_z": 25.0,
+    "min_x": -116.0,
+    "min_y": 0.0,
+    "min_z": -302.0,
+    "max_x": 116.0,
+    "max_y": 215.0,
+    "max_z": -277.0
+   }
+  }
+ }
+}

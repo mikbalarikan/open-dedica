@@ -5,7 +5,7 @@ code: ODC08
 milestone: M1
 title: "Open Dedica OD-C08 printed electronics bay tray"
 lane: CAD
-state: J2_PLAN
+state: J3_BUILD
 blocked_on: null
 next_action: "J0: intake reads and hashes the inputs"
 data_class: PUBLIC
@@ -21,7 +21,7 @@ repo_commit: "10929db1408d89144bd4af9cad971440427933d0"
 active_target: od_c08_tray_v01
 revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13]
-attempts: {build: 0, export: 0, tool: 0}
+attempts: {build: 1, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
 reviews: []
 usta_gates:

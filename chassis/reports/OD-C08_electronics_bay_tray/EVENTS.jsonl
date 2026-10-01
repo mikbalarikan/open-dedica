@@ -15,3 +15,6 @@
 {"t": "2026-10-01T11:14:41Z", "ev": "usta_gate", "detail": {"gate": "concept_picked", "outcome": "C1", "ref": "spec 1.0 section 4"}}
 {"t": "2026-10-01T11:14:46Z", "ev": "state", "detail": {"from": "J0_INTAKE", "to": "J1_SPEC", "reason": "intake done: INTAKE_v01; spec 1.0 drafted"}}
 {"t": "2026-10-01T11:14:47Z", "ev": "state", "detail": {"from": "J1_SPEC", "to": "J2_PLAN", "reason": "spec 1.0 ratified on the standing instruction (usta_gate events above, recorded a moment before the J1 entry); C1 picked"}}
+{"t": "2026-10-01T12:45:44Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "the designer package plans and builds in one package (simple part); OD-C10 and OD-C11 wait on the Usta, so builds stay sequential"}}
+{"t": "2026-10-01T12:45:45Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c08_tray_v01", "brief": "briefs/WP-02_designer.md", "attempt": 1}}
+{"t": "2026-10-01T12:45:45Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}

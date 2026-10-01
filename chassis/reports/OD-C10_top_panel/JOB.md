@@ -5,8 +5,8 @@ code: ODC10
 milestone: M1
 title: "Open Dedica OD-C10 printed top panel"
 lane: CAD
-state: J3_BUILD
-blocked_on: null
+state: BLOCKED-ON-USTA
+blocked_on: {question: "v01 stopped on U-03 (a): the rear skirt rests on OD-C11's wall top in two 5.907 mm2 patches at the R10 corners; accept them as designed contact and review v01 as built, or relieve the corners in a second build", since: "2026-10-01T12:45:25Z", return_to: J3_BUILD}
 next_action: "J0: intake reads and hashes the inputs"
 data_class: PUBLIC
 size: M
