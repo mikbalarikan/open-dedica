@@ -1,0 +1,12 @@
+body_d_low [0, 0, 0] 0
+body_d_high [0, 0, 0] 0
+height_low [0, 0, 0] 0
+height_high [0, 0, 0] 0
+lid_t_low [0, 0, 0] 0
+lid_t_high [0, 0, 0] 0
+lid_hole_d_low [0, 0, 0] 0
+lid_hole_d_high [0, 0, 0] 0
+af560_s532 [0, 0, 0] 0
+af560_s550 [0, 0, 0] 0
+af565_s532 [0, 0, 0] 16
+af565_s550 [0, 0, 0] 0

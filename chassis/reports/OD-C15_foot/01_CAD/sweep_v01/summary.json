@@ -1,0 +1,1915 @@
+{
+ "body_d_low": {
+  "overrides": {
+   "body_d": 17.9
+  },
+  "nut_s": 5.5,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    0.0,
+    "size_x",
+    17.9
+   ],
+   "envelope_within_spec": [
+    0.0,
+    "size_x",
+    17.9
+   ],
+   "D-02": [
+    202.1,
+    "size_x vs bed",
+    17.9
+   ],
+   "U-04": [
+    -8.86757334228605e-11,
+    "volume_delta",
+    8.86757334228605e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.15,
+    "lid hole diameter",
+    3.4
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole through",
+    1
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    0.0,
+    "outer diameter (max over 36 angles, z 1.5-8.5)",
+    17.9
+   ],
+   "REQ-03": [
+    -5.426770144367765e-13,
+    "across flats, normals 30/210 deg",
+    5.599999999999457
+   ],
+   "D-01a": [
+    1.7,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-01b": [
+    0.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-06a": [
+    1.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "U-06": [
+    0.5,
+    "min_wall wide (45 deg) [Soft]",
+    2.5
+   ],
+   "J-05": [
+    1.193355737,
+    "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+    4.193355736807546
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899521
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -8.776623872108757e-11,
+    "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+    8.776623872108757e-11
+   ],
+   "REQ-05": [
+    0.149999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    1.0499999660799482
+   ],
+   "REQ-06": [
+    0.1,
+    "pose 1: counter face y",
+    -16.000000000000597
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.8,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.2999999999997267
+   ]
+  }
+ },
+ "body_d_high": {
+  "overrides": {
+   "body_d": 18.1
+  },
+  "nut_s": 5.5,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    0.0,
+    "size_x",
+    18.1
+   ],
+   "envelope_within_spec": [
+    0.0,
+    "size_x",
+    18.1
+   ],
+   "D-02": [
+    201.9,
+    "size_x vs bed",
+    18.1
+   ],
+   "U-04": [
+    -9.094947017729282e-11,
+    "volume_delta",
+    9.094947017729282e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.15,
+    "lid hole diameter",
+    3.4
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole through",
+    1
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    0.0,
+    "outer diameter (max over 36 angles, z 1.5-8.5)",
+    18.1
+   ],
+   "REQ-03": [
+    -5.426770144367765e-13,
+    "across flats, normals 30/210 deg",
+    5.599999999999457
+   ],
+   "D-01a": [
+    1.7,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-01b": [
+    0.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-06a": [
+    1.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "U-06": [
+    0.5,
+    "min_wall wide (45 deg) [Soft]",
+    2.5
+   ],
+   "J-05": [
+    1.293355737,
+    "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+    4.2933557368075475
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899521
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -9.00399754755199e-11,
+    "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+    9.00399754755199e-11
+   ],
+   "REQ-05": [
+    0.049999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9499999660801901
+   ],
+   "REQ-06": [
+    0.1,
+    "pose 1: counter face y",
+    -16.000000000000597
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.8,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.2999999999997267
+   ]
+  }
+ },
+ "height_low": {
+  "overrides": {
+   "height": 9.9
+  },
+  "nut_s": 5.5,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    5.950795411990839e-13,
+    "size_z",
+    9.900000000000595
+   ],
+   "envelope_within_spec": [
+    5.950795411990839e-13,
+    "size_z",
+    9.900000000000595
+   ],
+   "D-02": [
+    202.0,
+    "size_x vs bed",
+    18.0
+   ],
+   "U-04": [
+    -8.913048077374697e-11,
+    "volume_delta",
+    8.913048077374697e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.15,
+    "lid hole diameter",
+    3.4
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole through",
+    1
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    5.950795411990839e-13,
+    "height",
+    9.900000000000595
+   ],
+   "REQ-03": [
+    -5.426770144367765e-13,
+    "across flats, normals 30/210 deg",
+    5.599999999999457
+   ],
+   "D-01a": [
+    1.7,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-01b": [
+    0.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-06a": [
+    1.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "U-06": [
+    0.5,
+    "min_wall wide (45 deg) [Soft]",
+    2.5
+   ],
+   "J-05": [
+    1.243355737,
+    "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+    4.2433557368075485
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899523
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -8.86757334228605e-11,
+    "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+    8.86757334228605e-11
+   ],
+   "REQ-05": [
+    0.099999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9999999660799972
+   ],
+   "REQ-06": [
+    5.950795411990839e-13,
+    "pose 1: counter face y",
+    -15.900000000000595
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.8,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.299999999999727
+   ]
+  }
+ },
+ "height_high": {
+  "overrides": {
+   "height": 10.1
+  },
+  "nut_s": 5.5,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    -5.968558980384842e-13,
+    "size_z",
+    10.100000000000597
+   ],
+   "envelope_within_spec": [
+    -5.968558980384842e-13,
+    "size_z",
+    10.100000000000597
+   ],
+   "D-02": [
+    202.0,
+    "size_x vs bed",
+    18.0
+   ],
+   "U-04": [
+    -9.140421752817929e-11,
+    "volume_delta",
+    9.140421752817929e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.15,
+    "lid hole diameter",
+    3.4
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole through",
+    1
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    -5.968558980384842e-13,
+    "height",
+    10.100000000000597
+   ],
+   "REQ-03": [
+    -5.426770144367765e-13,
+    "across flats, normals 30/210 deg",
+    5.599999999999457
+   ],
+   "D-01a": [
+    1.7,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-01b": [
+    0.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-06a": [
+    1.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "U-06": [
+    0.5,
+    "min_wall wide (45 deg) [Soft]",
+    2.5
+   ],
+   "J-05": [
+    1.243355737,
+    "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+    4.243355736807546
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899523
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -9.049472282640636e-11,
+    "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+    9.049472282640636e-11
+   ],
+   "REQ-05": [
+    0.099999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9999999660799972
+   ],
+   "REQ-06": [
+    -5.933031843596837e-13,
+    "pose 1: counter face y",
+    -16.100000000000595
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.8,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.299999999999727
+   ]
+  }
+ },
+ "lid_t_low": {
+  "overrides": {
+   "lid_t": 2.4
+  },
+  "nut_s": 5.5,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "envelope_within_spec": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "D-02": [
+    202.0,
+    "size_x vs bed",
+    18.0
+   ],
+   "U-04": [
+    -9.049472282640636e-11,
+    "volume_delta",
+    9.049472282640636e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.15,
+    "lid hole diameter",
+    3.4
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole end z (seat)",
+    2.4
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    0.1,
+    "outer diameter (max over 36 angles, z 1.5-8.5)",
+    18.0
+   ],
+   "REQ-03": [
+    -5.426770144367765e-13,
+    "across flats, normals 30/210 deg",
+    5.599999999999457
+   ],
+   "D-01a": [
+    1.6,
+    "min_wall whole foot",
+    2.4
+   ],
+   "D-01b": [
+    0.4,
+    "min_wall whole foot",
+    2.4
+   ],
+   "D-06a": [
+    1.4,
+    "min_wall whole foot",
+    2.4
+   ],
+   "U-06": [
+    0.4,
+    "min_wall wide (45 deg) [Soft]",
+    2.4
+   ],
+   "J-05": [
+    1.243355737,
+    "radial material at the 6 hex corners, z 2.400-10 (corroboration)",
+    4.2433557368075485
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899523
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -8.913048077374697e-11,
+    "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+    8.913048077374697e-11
+   ],
+   "REQ-05": [
+    0.099999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9999999660799972
+   ],
+   "REQ-06": [
+    0.1,
+    "pose 1: counter face y",
+    -16.000000000000597
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.8,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.299999999999727
+   ]
+  }
+ },
+ "lid_t_high": {
+  "overrides": {
+   "lid_t": 2.6
+  },
+  "nut_s": 5.5,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "envelope_within_spec": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "D-02": [
+    202.0,
+    "size_x vs bed",
+    18.0
+   ],
+   "U-04": [
+    -9.00399754755199e-11,
+    "volume_delta",
+    9.00399754755199e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.15,
+    "lid hole diameter",
+    3.4
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole end z (seat)",
+    2.6
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    0.1,
+    "outer diameter (max over 36 angles, z 1.5-8.5)",
+    18.0
+   ],
+   "REQ-03": [
+    -5.426770144367765e-13,
+    "across flats, normals 30/210 deg",
+    5.599999999999457
+   ],
+   "D-01a": [
+    1.8,
+    "min_wall whole foot",
+    2.6
+   ],
+   "D-01b": [
+    0.6,
+    "min_wall whole foot",
+    2.6
+   ],
+   "D-06a": [
+    1.6,
+    "min_wall whole foot",
+    2.6
+   ],
+   "U-06": [
+    0.6,
+    "min_wall wide (45 deg) [Soft]",
+    2.6
+   ],
+   "J-05": [
+    1.243355737,
+    "radial material at the 6 hex corners, z 2.600-10 (corroboration)",
+    4.2433557368075485
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899523
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -8.958522812463343e-11,
+    "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+    8.958522812463343e-11
+   ],
+   "REQ-05": [
+    0.099999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9999999660799972
+   ],
+   "REQ-06": [
+    0.1,
+    "pose 1: counter face y",
+    -16.000000000000597
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.8,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.299999999999727
+   ]
+  }
+ },
+ "lid_hole_d_low": {
+  "overrides": {
+   "lid_hole_d": 3.3
+  },
+  "nut_s": 5.5,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "envelope_within_spec": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "D-02": [
+    202.0,
+    "size_x vs bed",
+    18.0
+   ],
+   "U-04": [
+    -9.00399754755199e-11,
+    "volume_delta",
+    9.00399754755199e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.05,
+    "lid hole diameter",
+    3.3
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole diameter",
+    3.3
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    0.1,
+    "outer diameter (max over 36 angles, z 1.5-8.5)",
+    18.0
+   ],
+   "REQ-03": [
+    -5.426770144367765e-13,
+    "across flats, normals 30/210 deg",
+    5.599999999999457
+   ],
+   "D-01a": [
+    1.7,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-01b": [
+    0.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-06a": [
+    1.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "U-06": [
+    0.5,
+    "min_wall wide (45 deg) [Soft]",
+    2.5
+   ],
+   "J-05": [
+    1.243355737,
+    "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+    4.2433557368075485
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899523
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -8.913048077374697e-11,
+    "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+    8.913048077374697e-11
+   ],
+   "REQ-05": [
+    0.099999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9999999660799972
+   ],
+   "REQ-06": [
+    0.1,
+    "pose 1: counter face y",
+    -16.000000000000597
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.8,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.2999999999997267
+   ]
+  }
+ },
+ "lid_hole_d_high": {
+  "overrides": {
+   "lid_hole_d": 3.5
+  },
+  "nut_s": 5.5,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "envelope_within_spec": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "D-02": [
+    202.0,
+    "size_x vs bed",
+    18.0
+   ],
+   "U-04": [
+    -9.00399754755199e-11,
+    "volume_delta",
+    9.00399754755199e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.25,
+    "lid hole diameter",
+    3.5
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole diameter",
+    3.5
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    0.1,
+    "outer diameter (max over 36 angles, z 1.5-8.5)",
+    18.0
+   ],
+   "REQ-03": [
+    -5.426770144367765e-13,
+    "across flats, normals 30/210 deg",
+    5.599999999999457
+   ],
+   "D-01a": [
+    1.7,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-01b": [
+    0.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-06a": [
+    1.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "U-06": [
+    0.5,
+    "min_wall wide (45 deg) [Soft]",
+    2.5
+   ],
+   "J-05": [
+    1.243355737,
+    "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+    4.2433557368075485
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899523
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -8.86757334228605e-11,
+    "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+    8.86757334228605e-11
+   ],
+   "REQ-05": [
+    0.099999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9999999660799972
+   ],
+   "REQ-06": [
+    0.1,
+    "pose 1: counter face y",
+    -16.000000000000597
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.8,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.2999999999997267
+   ]
+  }
+ },
+ "af560_s532": {
+  "overrides": {
+   "pocket_af": 5.6
+  },
+  "nut_s": 5.32,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "envelope_within_spec": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "D-02": [
+    202.0,
+    "size_x vs bed",
+    18.0
+   ],
+   "U-04": [
+    -8.958522812463343e-11,
+    "volume_delta",
+    8.958522812463343e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.15,
+    "lid hole diameter",
+    3.4
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole through",
+    1
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    0.1,
+    "outer diameter (max over 36 angles, z 1.5-8.5)",
+    18.0
+   ],
+   "REQ-03": [
+    -5.426770144367765e-13,
+    "across flats, normals 30/210 deg",
+    5.599999999999457
+   ],
+   "D-01a": [
+    1.7,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-01b": [
+    0.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-06a": [
+    1.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "U-06": [
+    0.5,
+    "min_wall wide (45 deg) [Soft]",
+    2.5
+   ],
+   "J-05": [
+    1.243355737,
+    "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+    4.2433557368075485
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899523
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -8.913048077374697e-11,
+    "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+    8.913048077374697e-11
+   ],
+   "REQ-05": [
+    0.099999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9999999660799972
+   ],
+   "REQ-06": [
+    0.1,
+    "pose 1: counter face y",
+    -16.000000000000597
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.8,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.2999999999997267
+   ]
+  }
+ },
+ "af560_s550": {
+  "overrides": {
+   "pocket_af": 5.6
+  },
+  "nut_s": 5.5,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "envelope_within_spec": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "D-02": [
+    202.0,
+    "size_x vs bed",
+    18.0
+   ],
+   "U-04": [
+    -8.958522812463343e-11,
+    "volume_delta",
+    8.958522812463343e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.15,
+    "lid hole diameter",
+    3.4
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole through",
+    1
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    0.1,
+    "outer diameter (max over 36 angles, z 1.5-8.5)",
+    18.0
+   ],
+   "REQ-03": [
+    -5.426770144367765e-13,
+    "across flats, normals 30/210 deg",
+    5.599999999999457
+   ],
+   "D-01a": [
+    1.7,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-01b": [
+    0.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-06a": [
+    1.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "U-06": [
+    0.5,
+    "min_wall wide (45 deg) [Soft]",
+    2.5
+   ],
+   "J-05": [
+    1.243355737,
+    "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+    4.2433557368075485
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899523
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -8.913048077374697e-11,
+    "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+    8.913048077374697e-11
+   ],
+   "REQ-05": [
+    0.099999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9999999660799972
+   ],
+   "REQ-06": [
+    0.1,
+    "pose 1: counter face y",
+    -16.000000000000597
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.8,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.2999999999997267
+   ]
+  }
+ },
+ "af565_s532": {
+  "overrides": {
+   "pocket_af": 5.65
+  },
+  "nut_s": 5.32,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [
+   [
+    "REQ-03",
+    "pose 1: nut envelope to flat at 90 deg (per side)",
+    0.16500000000000004,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 1: nut envelope to flat at 270 deg (per side)",
+    0.16500000000000092,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 1: nut envelope to flat at 150 deg (per side)",
+    0.1650000000006373,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 1: nut envelope to flat at 330 deg (per side)",
+    0.1650000000006373,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 2: nut envelope to flat at 90 deg (per side)",
+    0.16500000000000004,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 2: nut envelope to flat at 270 deg (per side)",
+    0.16500000000000092,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 2: nut envelope to flat at 150 deg (per side)",
+    0.1650000000006373,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 2: nut envelope to flat at 330 deg (per side)",
+    0.1650000000006373,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 3: nut envelope to flat at 90 deg (per side)",
+    0.16500000000000004,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 3: nut envelope to flat at 270 deg (per side)",
+    0.16500000000000092,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 3: nut envelope to flat at 150 deg (per side)",
+    0.1650000000006373,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 3: nut envelope to flat at 330 deg (per side)",
+    0.1650000000006373,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 4: nut envelope to flat at 90 deg (per side)",
+    0.16500000000000004,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 4: nut envelope to flat at 270 deg (per side)",
+    0.16500000000000092,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 4: nut envelope to flat at 150 deg (per side)",
+    0.1650000000006373,
+    "FAIL",
+    ""
+   ],
+   [
+    "REQ-03",
+    "pose 4: nut envelope to flat at 330 deg (per side)",
+    0.1650000000006373,
+    "FAIL",
+    ""
+   ]
+  ],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "envelope_within_spec": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "D-02": [
+    202.0,
+    "size_x vs bed",
+    18.0
+   ],
+   "U-04": [
+    -7.776179700158536e-11,
+    "volume_delta",
+    7.776179700158536e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.15,
+    "lid hole diameter",
+    3.4
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole through",
+    1
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    0.1,
+    "outer diameter (max over 36 angles, z 1.5-8.5)",
+    18.0
+   ],
+   "REQ-03": [
+    -0.005,
+    "pose 1: nut envelope to flat at 90 deg (per side)",
+    0.16500000000000004
+   ],
+   "D-01a": [
+    1.7,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-01b": [
+    0.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-06a": [
+    1.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "U-06": [
+    0.5,
+    "min_wall wide (45 deg) [Soft]",
+    2.5
+   ],
+   "J-05": [
+    1.214488223,
+    "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+    4.214488223348983
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899523
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -8.958522812463343e-11,
+    "(a) pose 3: foot placed by the spec joint (volume not shared with the expected pose)",
+    8.958522812463343e-11
+   ],
+   "REQ-05": [
+    0.099999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9999999660799972
+   ],
+   "REQ-06": [
+    0.1,
+    "pose 1: counter face y",
+    -16.000000000000167
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.825,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.324999999999307
+   ]
+  }
+ },
+ "af565_s550": {
+  "overrides": {
+   "pocket_af": 5.65
+  },
+  "nut_s": 5.5,
+  "rc": [
+   0,
+   0,
+   0
+  ],
+  "one_solid": true,
+  "fails": [],
+  "worst": {
+   "exactly_one_solid": [
+    0.0,
+    "foot part file",
+    1
+   ],
+   "U-01": [
+    0.0,
+    "solid_count",
+    1
+   ],
+   "U-02": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "envelope_within_spec": [
+    0.1,
+    "size_x",
+    18.0
+   ],
+   "D-02": [
+    202.0,
+    "size_x vs bed",
+    18.0
+   ],
+   "U-04": [
+    -7.776179700158536e-11,
+    "volume_delta",
+    7.776179700158536e-11
+   ],
+   "U-05": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "feature_census": [
+    0.0,
+    "plane_faces",
+    15
+   ],
+   "J-06": [
+    0.0,
+    "bores in the part (one plain lid hole)",
+    1
+   ],
+   "D-04a": [
+    0.15,
+    "lid hole diameter",
+    3.4
+   ],
+   "REQ-02": [
+    0.0,
+    "lid hole through",
+    1
+   ],
+   "REQ-01": [
+    0.0,
+    "planes facing -Z",
+    1
+   ],
+   "REQ-04": [
+    0.1,
+    "outer diameter (max over 36 angles, z 1.5-8.5)",
+    18.0
+   ],
+   "REQ-03": [
+    -1.247890679678676e-12,
+    "across flats, normals 150/330 deg",
+    5.650000000001248
+   ],
+   "D-01a": [
+    1.7,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-01b": [
+    0.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "D-06a": [
+    1.5,
+    "min_wall whole foot",
+    2.5
+   ],
+   "U-06": [
+    0.5,
+    "min_wall wide (45 deg) [Soft]",
+    2.5
+   ],
+   "J-05": [
+    1.214488223,
+    "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+    4.214488223348983
+   ],
+   "D-03a": [
+    14.886266849,
+    "least overhang angle from horizontal",
+    59.88626684899523
+   ],
+   "D-03b": [
+    5.0,
+    "widest bridge",
+    0.0
+   ],
+   "U-07": [
+    0.0,
+    "STL tolerance",
+    0.01
+   ],
+   "U-03": [
+    -8.958522812463343e-11,
+    "(a) pose 3: foot placed by the spec joint (volume not shared with the expected pose)",
+    8.958522812463343e-11
+   ],
+   "REQ-05": [
+    0.099999966,
+    "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+    0.9999999660799972
+   ],
+   "REQ-06": [
+    0.1,
+    "pose 1: counter face y",
+    -16.000000000000167
+   ],
+   "REQ-07": [
+    0.1,
+    "pose 1: screw tip z in the foot frame",
+    6.0
+   ],
+   "D-04c": [
+    0.825,
+    "pose 1: foot above the seat to the screw shank below the seat",
+    1.324999999999307
+   ]
+  }
+ }
+}

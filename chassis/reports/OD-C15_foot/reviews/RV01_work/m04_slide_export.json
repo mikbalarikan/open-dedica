@@ -1,0 +1,413 @@
+{
+ "foot565_valid": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "U03b_slide": {
+  "af5.60_s5.32": {
+   "n_poses": 33,
+   "max_mm3": 0.0,
+   "inconclusive": 0,
+   "per_side_at_seat": {
+    "m": 0.14,
+    "at": [
+     3.071503,
+     0.0,
+     2.5
+    ],
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "af5.60_s5.5": {
+   "n_poses": 33,
+   "max_mm3": 0.0,
+   "inconclusive": 0,
+   "per_side_at_seat": {
+    "m": 0.05,
+    "at": [
+     3.175426,
+     0.0,
+     2.5
+    ],
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "af5.65_s5.32": {
+   "n_poses": 33,
+   "max_mm3": 0.0,
+   "inconclusive": 0,
+   "per_side_at_seat": {
+    "m": 0.165,
+    "at": [
+     3.071503,
+     0.0,
+     2.5
+    ],
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "af5.65_s5.5": {
+   "n_poses": 33,
+   "max_mm3": 0.0,
+   "inconclusive": 0,
+   "per_side_at_seat": {
+    "m": 0.075,
+    "at": [
+     3.175426,
+     0.0,
+     2.5
+    ],
+    "st": "MEASURED",
+    "why": ""
+   }
+  }
+ },
+ "U03b_worst_mm3": 0.0,
+ "REQ03_nut_to_flats_nominal": {
+  "m": 0.05,
+  "at": [
+   3.175426,
+   0.0,
+   2.5
+  ],
+  "st": "MEASURED",
+  "why": ""
+ },
+ "REQ03_nut_s5.32_to_flats": {
+  "m": 0.14,
+  "at": [
+   3.071503,
+   0.0,
+   2.5
+  ],
+  "st": "MEASURED",
+  "why": ""
+ },
+ "REQ07_screw_env_foot": {
+  "size_x": 5.7,
+  "size_y": 5.7,
+  "size_z": 13.65,
+  "min_x": -2.85,
+  "min_y": -2.85,
+  "min_z": -7.65,
+  "max_x": 2.85,
+  "max_y": 2.85,
+  "max_z": 6.0
+ },
+ "asm_labels": [
+  "plate",
+  "foot_1",
+  "foot_2",
+  "foot_3",
+  "foot_4",
+  "screw_1",
+  "screw_2",
+  "screw_3",
+  "screw_4",
+  "nut_1",
+  "nut_2",
+  "nut_3",
+  "nut_4"
+ ],
+ "designer_assembly": {
+  "plate": {
+   "solids": 1,
+   "vol": 580355.9044,
+   "env": {
+    "min_x": -120.0,
+    "min_y": -6.0,
+    "min_z": -305.0,
+    "max_x": 120.0,
+    "max_y": 0.0,
+    "max_z": 100.0
+   },
+   "sym_diff_vs_input": 0.0
+  },
+  "foot_1": {
+   "solids": 1,
+   "vol": 2284.4508,
+   "env": {
+    "min_x": 101.0,
+    "min_y": -16.0,
+    "min_z": 81.0,
+    "max_x": 119.0,
+    "max_y": -6.0,
+    "max_z": 99.0
+   },
+   "sym_diff_vs_mine": -0.0,
+   "matches_pose": 1
+  },
+  "foot_2": {
+   "solids": 1,
+   "vol": 2284.4508,
+   "env": {
+    "min_x": -119.0,
+    "min_y": -16.0,
+    "min_z": 81.0,
+    "max_x": -101.0,
+    "max_y": -6.0,
+    "max_z": 99.0
+   },
+   "sym_diff_vs_mine": -0.0,
+   "matches_pose": 2
+  },
+  "foot_3": {
+   "solids": 1,
+   "vol": 2284.4508,
+   "env": {
+    "min_x": 101.0,
+    "min_y": -16.0,
+    "min_z": -304.0,
+    "max_x": 119.0,
+    "max_y": -6.0,
+    "max_z": -286.0
+   },
+   "sym_diff_vs_mine": -0.0,
+   "matches_pose": 3
+  },
+  "foot_4": {
+   "solids": 1,
+   "vol": 2284.4508,
+   "env": {
+    "min_x": -119.0,
+    "min_y": -16.0,
+    "min_z": -304.0,
+    "max_x": -101.0,
+    "max_y": -6.0,
+    "max_z": -286.0
+   },
+   "sym_diff_vs_mine": -0.0,
+   "matches_pose": 4
+  },
+  "screw_1": {
+   "solids": 1,
+   "vol": 126.927,
+   "env": {
+    "min_x": 107.15,
+    "min_y": -12.0,
+    "min_z": 87.15,
+    "max_x": 112.85,
+    "max_y": 1.65,
+    "max_z": 92.85
+   },
+   "sym_diff_vs_mine": 0.0,
+   "matches_pose": 1
+  },
+  "screw_2": {
+   "solids": 1,
+   "vol": 126.927,
+   "env": {
+    "min_x": -112.85,
+    "min_y": -12.0,
+    "min_z": 87.15,
+    "max_x": -107.15,
+    "max_y": 1.65,
+    "max_z": 92.85
+   },
+   "sym_diff_vs_mine": 0.0,
+   "matches_pose": 2
+  },
+  "screw_3": {
+   "solids": 1,
+   "vol": 126.927,
+   "env": {
+    "min_x": 107.15,
+    "min_y": -12.0,
+    "min_z": -297.85,
+    "max_x": 112.85,
+    "max_y": 1.65,
+    "max_z": -292.15
+   },
+   "sym_diff_vs_mine": 0.0,
+   "matches_pose": 3
+  },
+  "screw_4": {
+   "solids": 1,
+   "vol": 126.927,
+   "env": {
+    "min_x": -112.85,
+    "min_y": -12.0,
+    "min_z": -297.85,
+    "max_x": -107.15,
+    "max_y": 1.65,
+    "max_z": -292.15
+   },
+   "sym_diff_vs_mine": 0.0,
+   "matches_pose": 4
+  },
+  "nut_1": {
+   "solids": 1,
+   "vol": 45.9088,
+   "env": {
+    "min_x": 106.8246,
+    "min_y": -10.9,
+    "min_z": 87.25,
+    "max_x": 113.1754,
+    "max_y": -8.5,
+    "max_z": 92.75
+   },
+   "sym_diff_vs_mine": 0.0,
+   "matches_pose": 1
+  },
+  "nut_2": {
+   "solids": 1,
+   "vol": 45.9088,
+   "env": {
+    "min_x": -113.1754,
+    "min_y": -10.9,
+    "min_z": 87.25,
+    "max_x": -106.8246,
+    "max_y": -8.5,
+    "max_z": 92.75
+   },
+   "sym_diff_vs_mine": 0.0,
+   "matches_pose": 2
+  },
+  "nut_3": {
+   "solids": 1,
+   "vol": 45.9088,
+   "env": {
+    "min_x": 106.8246,
+    "min_y": -10.9,
+    "min_z": -297.75,
+    "max_x": 113.1754,
+    "max_y": -8.5,
+    "max_z": -292.25
+   },
+   "sym_diff_vs_mine": 0.0,
+   "matches_pose": 3
+  },
+  "nut_4": {
+   "solids": 1,
+   "vol": 45.9088,
+   "env": {
+    "min_x": -113.1754,
+    "min_y": -10.9,
+    "min_z": -297.75,
+    "max_x": -106.8246,
+    "max_y": -8.5,
+    "max_z": -292.25
+   },
+   "sym_diff_vs_mine": 0.0,
+   "matches_pose": 4
+  }
+ },
+ "U04_file": {
+  "schema": "AP242",
+  "labels": [
+   "od_c15_foot"
+  ],
+  "solids": 1,
+  "shells": 1
+ },
+ "U04_roundtrip": {
+  "schema": {
+   "m": null,
+   "at": null,
+   "st": "INCONCLUSIVE",
+   "why": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  },
+  "solids": {
+   "m": null,
+   "at": null,
+   "st": "INCONCLUSIVE",
+   "why": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  },
+  "volume_delta": {
+   "m": null,
+   "at": null,
+   "st": "INCONCLUSIVE",
+   "why": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  },
+  "faces_delta": {
+   "m": null,
+   "at": null,
+   "st": "INCONCLUSIVE",
+   "why": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  },
+  "labels": {
+   "m": null,
+   "at": null,
+   "st": "INCONCLUSIVE",
+   "why": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  },
+  "valid_after": {
+   "m": null,
+   "at": null,
+   "st": "INCONCLUSIVE",
+   "why": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  }
+ },
+ "U07_mesh_census": {
+  "triangles": {
+   "m": 1194,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "bodies": {
+   "m": 1,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "naked_edges": {
+   "m": 0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "winding": {
+   "m": 1,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "volume": {
+   "m": 2282.616186,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  }
+ },
+ "U07_mesh_deviation": {
+  "m": 0.006586,
+  "at": [
+   -5.022837,
+   6.84561,
+   9.5
+  ],
+  "st": "MEASURED",
+  "why": ""
+ },
+ "U07_angular_limit": 0.18857927210940517,
+ "U07_own_remesh": {
+  "sha256": "b03b1160b86f2c9a97e9c4f2d3ea2d601632c0f0460654395586d664bf8e5a07",
+  "triangles": 1194,
+  "sagitta": {
+   "m": 0.006606,
+   "at": [
+    8.481325423593015,
+    0.39797633052274334,
+    9.500000000000112
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "delivered_sha256": "cc66c8c8961c9becda42111b1d3c0246c81940d4fc9fb98fe94036c4d8e4f20c"
+ },
+ "U07_min_wall_mesh": {
+  "m": 2.5,
+  "at": [
+   -1.32641,
+   -1.476848,
+   2.5
+  ],
+  "st": "MEASURED",
+  "why": ""
+ }
+}

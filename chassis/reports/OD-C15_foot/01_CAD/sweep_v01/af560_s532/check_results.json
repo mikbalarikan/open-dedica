@@ -1,0 +1,3136 @@
+{
+ "foot": "/home/claude/oguz-env/jobs/20261001-od-c15-feet/01_CAD/sweep_v01/af560_s532/od_c15_foot_C1_v01.step",
+ "assembly": "/home/claude/oguz-env/jobs/20261001-od-c15-feet/01_CAD/sweep_v01/af560_s532/od_c15_assembly_C1_v01.step",
+ "nut_s": 5.32,
+ "rows": [
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "foot part file",
+   "reason": ""
+  },
+  {
+   "gate": "U-01",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "solid_count",
+   "reason": ""
+  },
+  {
+   "gate": "U-01",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "brep_valid",
+   "assumes": [],
+   "item": "brep_valid",
+   "reason": ""
+  },
+  {
+   "gate": "U-01",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "naked_edges",
+   "assumes": [],
+   "item": "naked_edges",
+   "reason": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 18.0,
+   "unit": "mm",
+   "required": "in [17.9, 18.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_x",
+   "assumes": [],
+   "item": "size_x",
+   "reason": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": 18.0,
+   "unit": "mm",
+   "required": "in [17.9, 18.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_x",
+   "assumes": [],
+   "item": "size_x",
+   "reason": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 18.0,
+   "unit": "mm",
+   "required": "in [17.9, 18.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_y",
+   "assumes": [],
+   "item": "size_y",
+   "reason": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": 18.0,
+   "unit": "mm",
+   "required": "in [17.9, 18.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_y",
+   "assumes": [],
+   "item": "size_y",
+   "reason": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 10.000000000000595,
+   "unit": "mm",
+   "required": "in [9.9, 10.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_z",
+   "assumes": [],
+   "item": "size_z",
+   "reason": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": 10.000000000000595,
+   "unit": "mm",
+   "required": "in [9.9, 10.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_z",
+   "assumes": [],
+   "item": "size_z",
+   "reason": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": -9.0,
+   "unit": "mm",
+   "required": "in [-9.1, -8.9]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_x",
+   "assumes": [],
+   "item": "position min_x",
+   "reason": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": -9.0,
+   "unit": "mm",
+   "required": "in [-9.1, -8.9]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_x",
+   "assumes": [],
+   "item": "position min_x",
+   "reason": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": -9.0,
+   "unit": "mm",
+   "required": "in [-9.1, -8.9]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_y",
+   "assumes": [],
+   "item": "position min_y",
+   "reason": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": -9.0,
+   "unit": "mm",
+   "required": "in [-9.1, -8.9]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_y",
+   "assumes": [],
+   "item": "position min_y",
+   "reason": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "in [-0.1, 0.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_z",
+   "assumes": [],
+   "item": "position min_z",
+   "reason": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "in [-0.1, 0.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_z",
+   "assumes": [],
+   "item": "position min_z",
+   "reason": ""
+  },
+  {
+   "gate": "D-02",
+   "measured": 18.0,
+   "unit": "mm",
+   "required": "<= 220.0",
+   "margin": 202.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_size_x",
+   "assumes": [
+    "A-08"
+   ],
+   "item": "size_x vs bed",
+   "reason": ""
+  },
+  {
+   "gate": "D-02",
+   "measured": 18.0,
+   "unit": "mm",
+   "required": "<= 220.0",
+   "margin": 202.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_size_y",
+   "assumes": [
+    "A-08"
+   ],
+   "item": "size_y vs bed",
+   "reason": ""
+  },
+  {
+   "gate": "D-02",
+   "measured": 10.000000000000595,
+   "unit": "mm",
+   "required": "<= 250.0",
+   "margin": 240.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_size_z",
+   "assumes": [
+    "A-08"
+   ],
+   "item": "size_z vs bed",
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_schema",
+   "assumes": [],
+   "item": "schema AP242",
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_solids",
+   "assumes": [],
+   "item": "solids (no stray shells)",
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 8.958522812463343e-11,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": -8.958522812463343e-11,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_volume_delta",
+   "assumes": [],
+   "item": "volume_delta",
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_faces_delta",
+   "assumes": [],
+   "item": "faces_delta",
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_labels",
+   "assumes": [],
+   "item": "labels unchanged",
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_valid",
+   "assumes": [],
+   "item": "valid_after",
+   "reason": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_label_is_part_name",
+   "assumes": [],
+   "item": "label reads 'od_c15_foot'",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 15,
+   "unit": "count",
+   "required": "== 15",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_plane_faces",
+   "assumes": [],
+   "item": "plane_faces",
+   "reason": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 15,
+   "unit": "count",
+   "required": "== 15",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_plane_faces",
+   "assumes": [],
+   "item": "plane_faces",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 2,
+   "unit": "count",
+   "required": "== 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_cylinder_faces",
+   "assumes": [],
+   "item": "cylinder_faces",
+   "reason": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 2,
+   "unit": "count",
+   "required": "== 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_cylinder_faces",
+   "assumes": [],
+   "item": "cylinder_faces",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 2,
+   "unit": "count",
+   "required": "== 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_cone_faces",
+   "assumes": [],
+   "item": "cone_faces",
+   "reason": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 2,
+   "unit": "count",
+   "required": "== 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_cone_faces",
+   "assumes": [],
+   "item": "cone_faces",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_sphere_faces",
+   "assumes": [],
+   "item": "sphere_faces",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_torus_faces",
+   "assumes": [],
+   "item": "torus_faces",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_bspline_faces",
+   "assumes": [],
+   "item": "bspline_faces",
+   "reason": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_bspline_faces",
+   "assumes": [],
+   "item": "bspline_faces",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_other_faces",
+   "assumes": [],
+   "item": "other_faces",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_concave_cylinders",
+   "assumes": [],
+   "item": "concave_cylinders",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_convex_cylinders",
+   "assumes": [],
+   "item": "convex_cylinders",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_bores",
+   "assumes": [],
+   "item": "bores",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "planes_top",
+   "assumes": [],
+   "item": "top annulus (normal -Z)",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "planes_counter",
+   "assumes": [],
+   "item": "counter annulus (normal +Z)",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "planes_nut",
+   "assumes": [],
+   "item": "nut seat (normal +Z, z<5)",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 6,
+   "unit": "count",
+   "required": "== 6",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "planes_hex",
+   "assumes": [],
+   "item": "hex flats (vertical planes)",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 6,
+   "unit": "count",
+   "required": "== 6",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "planes_mouth",
+   "assumes": [],
+   "item": "mouth chamfer planes (45 deg, inside r 5)",
+   "reason": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(0.0000, 0.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "bore_axis_offset",
+   "assumes": [],
+   "item": "lid bore located on the Z axis (offset)",
+   "reason": ""
+  },
+  {
+   "gate": "J-06",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "bore_census",
+   "assumes": [],
+   "item": "bores in the part (one plain lid hole)",
+   "reason": ""
+  },
+  {
+   "gate": "J-06",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_bspline_faces",
+   "assumes": [],
+   "item": "helical / freeform faces",
+   "reason": ""
+  },
+  {
+   "gate": "U-08",
+   "item": "N/A by its row",
+   "measured": null,
+   "unit": "",
+   "required": "no threads in this part (the nut takes the thread); bspline faces 0, one plain bore",
+   "margin": null,
+   "at": null,
+   "status": "N/A",
+   "method": "-",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "D-07",
+   "item": "N/A by its row",
+   "measured": null,
+   "unit": "",
+   "required": "no reamed fit bores (the nut pocket is REQ-03)",
+   "margin": null,
+   "at": null,
+   "status": "N/A",
+   "method": "-",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": ">= 3.25",
+   "margin": 0.15,
+   "at": "(0.0000, 0.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "item": "lid hole diameter",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "in [3.3, 3.5]",
+   "margin": 0.1,
+   "at": "(0.0000, 0.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "item": "lid hole diameter",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "in [-0.1, 0.1]",
+   "margin": 0.1,
+   "at": "(0.0000, 0.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "lid_bore_low_z",
+   "assumes": [],
+   "item": "lid hole start z",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": "in [2.4, 2.6]",
+   "margin": 0.1,
+   "at": "(0.0000, 0.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "lid_bore_high_z",
+   "assumes": [],
+   "item": "lid hole end z (seat)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": "(0.0000, 0.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "bore_through",
+   "assumes": [],
+   "item": "lid hole through",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(0.0000, 0.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_to_outer_axis_offset",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "coaxial with the outer cylinder (offset)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "top_planes",
+   "assumes": [],
+   "item": "planes facing -Z",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "in [-0.1, 0.1]",
+   "margin": 0.1,
+   "at": "(-0.0000, 0.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "top_plane_z",
+   "assumes": [],
+   "item": "top plane z",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "top_plane_z_range",
+   "assumes": [],
+   "item": "top plane is flat (z range)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 17.419999999999476,
+   "unit": "mm",
+   "required": "\u00d817.42, in [17.12, 17.72]",
+   "margin": 0.3,
+   "at": null,
+   "status": "PASS",
+   "method": "top_annulus_outer_d",
+   "assumes": [],
+   "item": "annulus outer diameter (to 17.42; REQ-04 tolerances composed)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "in [3.3, 3.5]",
+   "margin": 0.1,
+   "at": "(0.0000, 0.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "item": "annulus inner diameter = lid hole",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 18.0,
+   "unit": "mm",
+   "required": "in [17.9, 18.1]",
+   "margin": 0.1,
+   "at": "(9.0000, 0.0000, 1.7500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "outer_d_max",
+   "assumes": [
+    "A-05"
+   ],
+   "item": "outer diameter (max over 36 angles, z 1.5-8.5)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 17.999999999999996,
+   "unit": "mm",
+   "required": "in [17.9, 18.1]",
+   "margin": 0.1,
+   "at": "(8.8633, 1.5628, 1.7500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "outer_d_min",
+   "assumes": [
+    "A-05"
+   ],
+   "item": "outer diameter (min)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 10.000000000000595,
+   "unit": "mm",
+   "required": "in [9.9, 10.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_size_z",
+   "assumes": [
+    "A-04"
+   ],
+   "item": "height",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.499999999999998,
+   "unit": "mm",
+   "required": "in [0.4, 0.6]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "top_chamfer_axial_leg",
+   "assumes": [],
+   "item": "top chamfer axial leg",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.2900000000002585,
+   "unit": "mm",
+   "required": "in [0.18999999999999997, 0.39]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "top_chamfer_radial_leg",
+   "assumes": [],
+   "item": "top chamfer radial leg",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 1.0000000000005904,
+   "unit": "mm",
+   "required": "in [0.9, 1.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "counter_chamfer_axial_leg",
+   "assumes": [],
+   "item": "counter chamfer axial leg",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.9999999999996962,
+   "unit": "mm",
+   "required": "in [0.9, 1.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "counter_chamfer_radial_leg",
+   "assumes": [],
+   "item": "counter chamfer radial leg",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 5.6,
+   "unit": "mm",
+   "required": "in [5.6, 5.65]",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "across_flats_90",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "across flats, normals 90/270 deg",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 5.599999999999457,
+   "unit": "mm",
+   "required": "in [5.6, 5.65]",
+   "margin": -5.426770144367765e-13,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "across_flats_30",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "across flats, normals 30/210 deg",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 5.600000000000792,
+   "unit": "mm",
+   "required": "in [5.6, 5.65]",
+   "margin": 7.922551503725117e-13,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "across_flats_150",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "across flats, normals 150/330 deg",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.0,
+   "unit": "deg",
+   "required": "<= 1.0",
+   "margin": 1.0,
+   "at": null,
+   "status": "PASS",
+   "method": "flat_rotation_abs",
+   "assumes": [],
+   "item": "flats parallel to X (|rotation|)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "pocket_centre_offset",
+   "assumes": [],
+   "item": "pocket centred on the axis",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": "in [2.4, 2.6]",
+   "margin": 0.1,
+   "at": "(0.0000, -0.0000, 2.5000) mm",
+   "status": "PASS",
+   "method": "seat_plane_z",
+   "assumes": [],
+   "item": "seat z (plane)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": "in [2.4, 2.6]",
+   "margin": 0.1,
+   "at": "(0.0000, 0.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "lid_bore_high_z",
+   "assumes": [],
+   "item": "seat z (lid bore end)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 3.299000000000596,
+   "unit": "mm",
+   "required": "material only outside the pocket at z 9.999 (r >= 2.8)",
+   "margin": 0.499,
+   "at": "(0.0000, 3.2990, 9.9990) mm",
+   "status": "PASS",
+   "method": "radial_extent",
+   "assumes": [],
+   "item": "pocket open at the counter face (void on the axis at z 9.999; inner radius > 0)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.5000000000005951,
+   "unit": "mm",
+   "required": "in [0.4, 0.6]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "mouth_chamfer_axial_leg",
+   "assumes": [],
+   "item": "entry chamfer axial leg",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.5000000000005951,
+   "unit": "mm",
+   "required": "in [0.4, 0.6]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "mouth_chamfer_radial_leg",
+   "assumes": [],
+   "item": "entry chamfer radial leg (on a flat)",
+   "reason": ""
+  },
+  {
+   "gate": "D-01a",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": ">= 0.8",
+   "margin": 1.7,
+   "at": "(-3.0535, -0.0000, 2.5000) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "item": "min_wall whole foot",
+   "reason": ""
+  },
+  {
+   "gate": "D-01b",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 0.5,
+   "at": "(-3.0535, -0.0000, 2.5000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "min_wall",
+   "assumes": [
+    "A-03"
+   ],
+   "item": "min_wall whole foot",
+   "reason": ""
+  },
+  {
+   "gate": "D-06a",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": ">= 1.0",
+   "margin": 1.5,
+   "at": "(-3.0535, -0.0000, 2.5000) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "item": "min_wall whole foot",
+   "reason": ""
+  },
+  {
+   "gate": "U-06",
+   "measured": 2.5,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 0.5,
+   "at": "(-3.0535, -0.0000, 2.5000) mm",
+   "status": "PASS",
+   "method": "min_wall_wide",
+   "assumes": [],
+   "item": "min_wall wide (45 deg) [Soft]",
+   "reason": ""
+  },
+  {
+   "gate": "J-05",
+   "measured": 5.911420158317166,
+   "unit": "mm",
+   "required": ">= 3.0",
+   "margin": 2.911420158,
+   "at": "(-8.9653, 0.7899, 2.6806) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "item": "min_wall ring z 2.500-10 around the pocket",
+   "reason": ""
+  },
+  {
+   "gate": "J-05",
+   "measured": 4.2433557368075485,
+   "unit": "mm",
+   "required": ">= 3.0",
+   "margin": 1.243355737,
+   "at": null,
+   "status": "PASS",
+   "method": "radial_wall_at_corners",
+   "assumes": [],
+   "item": "radial material at the 6 hex corners, z 2.500-10 (corroboration)",
+   "reason": ""
+  },
+  {
+   "gate": "D-03a",
+   "measured": 59.88626684899523,
+   "unit": "deg",
+   "required": ">= 45.0",
+   "margin": 14.886266849,
+   "at": "(8.7583, 0.0000, 0.0833) mm",
+   "status": "PASS",
+   "method": "overhang_census",
+   "assumes": [],
+   "item": "least overhang angle from horizontal",
+   "reason": ""
+  },
+  {
+   "gate": "D-03b",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 5.0",
+   "margin": 5.0,
+   "at": null,
+   "status": "PASS",
+   "method": "flat_ceiling_spans",
+   "assumes": [],
+   "item": "widest bridge",
+   "reason": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.01,
+   "unit": "mm",
+   "required": "<= 0.01",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "stl_tolerance",
+   "assumes": [],
+   "item": "STL tolerance",
+   "reason": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.18,
+   "unit": "rad",
+   "required": "<= 0.18857927210940517",
+   "margin": 0.008579272,
+   "at": null,
+   "status": "PASS",
+   "method": "stl_angular",
+   "assumes": [],
+   "item": "STL angular tolerance (rad, limit 4 acos(1-0.01/9))",
+   "reason": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.006606090211783451,
+   "unit": "mm",
+   "required": "<= 0.01",
+   "margin": 0.00339391,
+   "at": "(8.4813, 0.3980, 9.5000) mm",
+   "status": "PASS",
+   "method": "stl_max_sagitta",
+   "assumes": [],
+   "item": "stl_max_sagitta (re-imported STEP meshed at the same settings)",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 0,
+   "unit": "count",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "assembly_parts_missing",
+   "assumes": [],
+   "item": "assembly parts found by label",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly plate",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly foot_1",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly foot_2",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly foot_3",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly foot_4",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly screw_1",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly screw_2",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly screw_3",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly screw_4",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly nut_1",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly nut_2",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly nut_3",
+   "reason": ""
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "item": "assembly nut_4",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 8.913048077374697e-11,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": -8.913048077374697e-11,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "pose_volume_shortfall",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "(a) pose 1: foot placed by the spec joint (volume not shared with the expected pose)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(110.0000, -6.0000, 90.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "(assembly) pose 1: plate hole axis offset from the spec pose (foot coaxial with its hole)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(111.7000, -6.0000, 90.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 1: contact foot_1 top face on plate underside (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 1: engaged area foot_1 top face on plate underside [corroboration, not gated]",
+   "measured": null,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(111.7, -6.0, 90.0)",
+   "status": "INFO_INCONCLUSIVE",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": "the area changes with the depth (229.413639 mm\u00b2 at 0.01 mm, 229.334259 at 0.005): a face within the depth along the push that does not touch, a push that slides the contact, or a line or point contact"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(111.5358, -8.5000, 92.6600) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 1: contact nut_1 top face on foot_1 seat (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 1: engaged area nut_1 top face on foot_1 seat [corroboration, not gated]",
+   "measured": 15.431394619191565,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(111.535752, -8.5, 92.66)",
+   "status": "INFO",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(112.8500, 0.0000, 90.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 1: contact screw_1 head on plate top (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 1: engaged area screw_1 head on plate top [corroboration, not gated]",
+   "measured": 16.438383559909106,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(112.85, 0.0, 90.0)",
+   "status": "INFO",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 1: interference foot|plate",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 1: interference foot|nut",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 1: interference foot|screw",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 1: interference plate|nut",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 1: interference plate|screw",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "(b) pose 1: nut slide mouth -> seat, 8 poses (worst interference)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "edge_x",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 1: foot to plate X edge",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "edge_z",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 1: foot to plate Z edge",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 0.9999999660799972,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.099999966,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "corner_arc_margin",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 1: foot to plate corner arc (R plate - R foot, outward quadrant)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": -16.000000000000597,
+   "unit": "mm",
+   "required": "in [-16.1, -15.9]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_y",
+   "assumes": [
+    "A-01",
+    "A-04"
+   ],
+   "item": "pose 1: counter face y",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 6.0,
+   "unit": "mm",
+   "required": "in [5.9, 6.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_z",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 1: screw tip z in the foot frame",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 1.0999999999999988,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.6,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "tip_past_nut",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 1: tip past the nut's lower face",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 4.000000000000595,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 2.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "tip_above_counter",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 1: tip above the counter face",
+   "reason": ""
+  },
+  {
+   "gate": "D-04c",
+   "measured": 1.2999999999997267,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.8,
+   "at": "(0.0000, 2.8000, 2.5000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 1: foot above the seat to the screw shank below the seat",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999999924,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 1: nut envelope to flat at 90 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000000012,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 1: nut envelope to flat at 270 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999989976,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 1: nut envelope to flat at 30 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999989976,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 1: nut envelope to flat at 210 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000040913,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 1: nut envelope to flat at 150 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000040913,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 1: nut envelope to flat at 330 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999974105,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": "(-3.1927, -0.0700, 4.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 1: nut envelope to the pocket walls (least, above the seat)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 8.913048077374697e-11,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": -8.913048077374697e-11,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "pose_volume_shortfall",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "(a) pose 2: foot placed by the spec joint (volume not shared with the expected pose)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(-110.0000, -6.0000, 90.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "(assembly) pose 2: plate hole axis offset from the spec pose (foot coaxial with its hole)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(-108.3000, -6.0000, 90.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 2: contact foot_2 top face on plate underside (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 2: engaged area foot_2 top face on plate underside [corroboration, not gated]",
+   "measured": null,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(-108.3, -6.0, 90.0)",
+   "status": "INFO_INCONCLUSIVE",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": "the area changes with the depth (229.413639 mm\u00b2 at 0.01 mm, 229.334259 at 0.005): a face within the depth along the push that does not touch, a push that slides the contact, or a line or point contact"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(-108.4642, -8.5000, 92.6600) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 2: contact nut_2 top face on foot_2 seat (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 2: engaged area nut_2 top face on foot_2 seat [corroboration, not gated]",
+   "measured": 15.431394619191574,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(-108.464248, -8.5, 92.66)",
+   "status": "INFO",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(-107.1500, 0.0000, 90.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 2: contact screw_2 head on plate top (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 2: engaged area screw_2 head on plate top [corroboration, not gated]",
+   "measured": 16.438383559909102,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(-107.15, 0.0, 90.0)",
+   "status": "INFO",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 2: interference foot|plate",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 2: interference foot|nut",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 2: interference foot|screw",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 2: interference plate|nut",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 2: interference plate|screw",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "(b) pose 2: nut slide mouth -> seat, 8 poses (worst interference)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "edge_x",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 2: foot to plate X edge",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "edge_z",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 2: foot to plate Z edge",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 0.9999999998999982,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "corner_arc_margin",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 2: foot to plate corner arc (R plate - R foot, outward quadrant)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": -16.000000000000597,
+   "unit": "mm",
+   "required": "in [-16.1, -15.9]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_y",
+   "assumes": [
+    "A-01",
+    "A-04"
+   ],
+   "item": "pose 2: counter face y",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 6.0,
+   "unit": "mm",
+   "required": "in [5.9, 6.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_z",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 2: screw tip z in the foot frame",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 1.0999999999999988,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.6,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "tip_past_nut",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 2: tip past the nut's lower face",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 4.000000000000595,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 2.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "tip_above_counter",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 2: tip above the counter face",
+   "reason": ""
+  },
+  {
+   "gate": "D-04c",
+   "measured": 1.2999999999997267,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.8,
+   "at": "(0.0000, 2.8000, 2.5000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 2: foot above the seat to the screw shank below the seat",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999999924,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 2: nut envelope to flat at 90 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000000012,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 2: nut envelope to flat at 270 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999989976,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 2: nut envelope to flat at 30 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999989976,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 2: nut envelope to flat at 210 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000040913,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 2: nut envelope to flat at 150 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000040913,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 2: nut envelope to flat at 330 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999974105,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": "(-3.1927, -0.0700, 4.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 2: nut envelope to the pocket walls (least, above the seat)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 8.86757334228605e-11,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": -8.86757334228605e-11,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "pose_volume_shortfall",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "(a) pose 3: foot placed by the spec joint (volume not shared with the expected pose)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(110.0000, -6.0000, -295.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "(assembly) pose 3: plate hole axis offset from the spec pose (foot coaxial with its hole)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(111.7000, -6.0000, -295.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 3: contact foot_3 top face on plate underside (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 3: engaged area foot_3 top face on plate underside [corroboration, not gated]",
+   "measured": null,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(111.7, -6.0, -295.0)",
+   "status": "INFO_INCONCLUSIVE",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": "the area changes with the depth (229.413639 mm\u00b2 at 0.01 mm, 229.334259 at 0.005): a face within the depth along the push that does not touch, a push that slides the contact, or a line or point contact"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(111.5358, -8.5000, -292.3400) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 3: contact nut_3 top face on foot_3 seat (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 3: engaged area nut_3 top face on foot_3 seat [corroboration, not gated]",
+   "measured": 15.431394619192542,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(111.535752, -8.5, -292.34)",
+   "status": "INFO",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(112.8500, 0.0000, -295.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 3: contact screw_3 head on plate top (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 3: engaged area screw_3 head on plate top [corroboration, not gated]",
+   "measured": 16.438383559909138,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(112.85, 0.0, -295.0)",
+   "status": "INFO",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 3: interference foot|plate",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 3: interference foot|nut",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 3: interference foot|screw",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 3: interference plate|nut",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 3: interference plate|screw",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "(b) pose 3: nut slide mouth -> seat, 8 poses (worst interference)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "edge_x",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 3: foot to plate X edge",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "edge_z",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 3: foot to plate Z edge",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 0.9999999660799972,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.099999966,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "corner_arc_margin",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 3: foot to plate corner arc (R plate - R foot, outward quadrant)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": -16.000000000000597,
+   "unit": "mm",
+   "required": "in [-16.1, -15.9]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_y",
+   "assumes": [
+    "A-01",
+    "A-04"
+   ],
+   "item": "pose 3: counter face y",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 6.0,
+   "unit": "mm",
+   "required": "in [5.9, 6.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_z",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 3: screw tip z in the foot frame",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 1.0999999999999988,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.6,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "tip_past_nut",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 3: tip past the nut's lower face",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 4.000000000000595,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 2.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "tip_above_counter",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 3: tip above the counter face",
+   "reason": ""
+  },
+  {
+   "gate": "D-04c",
+   "measured": 1.2999999999997267,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.8,
+   "at": "(0.0000, 2.8000, 2.5000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 3: foot above the seat to the screw shank below the seat",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999999924,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 3: nut envelope to flat at 90 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000000012,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 3: nut envelope to flat at 270 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999989976,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 3: nut envelope to flat at 30 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999989976,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 3: nut envelope to flat at 210 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000040913,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 3: nut envelope to flat at 150 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000040913,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 3: nut envelope to flat at 330 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999974105,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": "(-3.1927, -0.0700, 4.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 3: nut envelope to the pocket walls (least, above the seat)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 8.86757334228605e-11,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": -8.86757334228605e-11,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "pose_volume_shortfall",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "(a) pose 4: foot placed by the spec joint (volume not shared with the expected pose)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(-110.0000, -6.0000, -295.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "(assembly) pose 4: plate hole axis offset from the spec pose (foot coaxial with its hole)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(-108.3000, -6.0000, -295.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 4: contact foot_4 top face on plate underside (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 4: engaged area foot_4 top face on plate underside [corroboration, not gated]",
+   "measured": null,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(-108.3, -6.0, -295.0)",
+   "status": "INFO_INCONCLUSIVE",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": "the area changes with the depth (229.413639 mm\u00b2 at 0.01 mm, 229.334259 at 0.005): a face within the depth along the push that does not touch, a push that slides the contact, or a line or point contact"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(-108.4642, -8.5000, -292.3400) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 4: contact nut_4 top face on foot_4 seat (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 4: engaged area nut_4 top face on foot_4 seat [corroboration, not gated]",
+   "measured": 15.43139461919254,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(-108.464248, -8.5, -292.34)",
+   "status": "INFO",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(-107.1500, 0.0000, -295.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 4: contact screw_4 head on plate top (clearance)",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "item": "(a) pose 4: engaged area screw_4 head on plate top [corroboration, not gated]",
+   "measured": 16.438383559909138,
+   "unit": "mm2",
+   "required": "-",
+   "margin": null,
+   "at": "(-107.15, 0.0, -295.0)",
+   "status": "INFO",
+   "method": "engaged_area",
+   "assumes": [],
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 4: interference foot|plate",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 4: interference foot|nut",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 4: interference foot|screw",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 4: interference plate|nut",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-01",
+    "A-02"
+   ],
+   "item": "(a) pose 4: interference plate|screw",
+   "reason": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "(b) pose 4: nut slide mouth -> seat, 8 poses (worst interference)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "edge_x",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 4: foot to plate X edge",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "edge_z",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 4: foot to plate Z edge",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 0.9999999998999982,
+   "unit": "mm",
+   "required": ">= 0.9",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "corner_arc_margin",
+   "assumes": [
+    "A-01"
+   ],
+   "item": "pose 4: foot to plate corner arc (R plate - R foot, outward quadrant)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": -16.000000000000597,
+   "unit": "mm",
+   "required": "in [-16.1, -15.9]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_y",
+   "assumes": [
+    "A-01",
+    "A-04"
+   ],
+   "item": "pose 4: counter face y",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 6.0,
+   "unit": "mm",
+   "required": "in [5.9, 6.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_z",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 4: screw tip z in the foot frame",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 1.0999999999999988,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.6,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "tip_past_nut",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 4: tip past the nut's lower face",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 4.000000000000595,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 2.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "tip_above_counter",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 4: tip above the counter face",
+   "reason": ""
+  },
+  {
+   "gate": "D-04c",
+   "measured": 1.2999999999997267,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.8,
+   "at": "(0.0000, 2.8000, 2.5000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02"
+   ],
+   "item": "pose 4: foot above the seat to the screw shank below the seat",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999999924,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 4: nut envelope to flat at 90 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000000012,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 4: nut envelope to flat at 270 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999989976,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 4: nut envelope to flat at 30 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999989976,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 4: nut envelope to flat at 210 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000040913,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 4: nut envelope to flat at 150 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.14000000000040913,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "nut_to_flat",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 4: nut envelope to flat at 330 deg (per side)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.13999999999974105,
+   "unit": "mm",
+   "required": "in [0.05, 0.16]",
+   "margin": 0.02,
+   "at": "(-3.1927, -0.0700, 4.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06"
+   ],
+   "item": "pose 4: nut envelope to the pocket walls (least, above the seat)",
+   "reason": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 109.9113964631362,
+   "unit": "mm",
+   "required": ">= 0.0",
+   "margin": 109.911396463,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "com_inside_feet_margin",
+   "assumes": [
+    "A-01",
+    "A-04"
+   ],
+   "item": "plate centre of mass inside the four foot axes (least margin)",
+   "reason": ""
+  }
+ ]
+}

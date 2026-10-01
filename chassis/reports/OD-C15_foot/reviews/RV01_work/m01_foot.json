@@ -1,0 +1,376 @@
+{
+ "schema": "AP242",
+ "unit": "MM",
+ "labels": [
+  "od_c15_foot"
+ ],
+ "validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "envelope": {
+  "size_x": 18.0,
+  "size_y": 18.0,
+  "size_z": 10.000000000000595,
+  "min_x": -9.0,
+  "min_y": -9.0,
+  "min_z": 0.0,
+  "max_x": 9.0,
+  "max_y": 9.0,
+  "max_z": 10.000000000000595
+ },
+ "feature_census": {
+  "plane_faces": 15,
+  "cylinder_faces": 2,
+  "cone_faces": 2,
+  "sphere_faces": 0,
+  "torus_faces": 0,
+  "bspline_faces": 0,
+  "other_faces": 0,
+  "concave_cylinders": 1,
+  "convex_cylinders": 1,
+  "bores": 1
+ },
+ "bore_census": {
+  "n": 1,
+  "bores": [
+   {
+    "solid": 0,
+    "diameter": 3.4,
+    "radius": 1.7,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "end": [
+     0.0,
+     0.0,
+     2.5
+    ],
+    "length": 2.5,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     true
+    ],
+    "through": true
+   }
+  ]
+ },
+ "locate_bore": {
+  "diameter": {
+   "measured": 3.4,
+   "unit": "mm",
+   "at": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "at": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "length": {
+   "measured": 2.5,
+   "unit": "mm",
+   "at": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "through": {
+   "measured": 1,
+   "unit": "bool",
+   "at": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "locate_bore_detail": {
+  "start": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "end": [
+   0.0,
+   0.0,
+   2.5
+  ],
+  "span_deg": 360.0,
+  "open_ends": [
+   true,
+   true
+  ]
+ },
+ "faces": [
+  {
+   "kind": "plane",
+   "area": 163.3379,
+   "c": [
+    -0.0,
+    -0.0,
+    10.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 2.4903,
+   "c": [
+    0.0,
+    3.0568,
+    9.7568
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 2.4903,
+   "c": [
+    -2.6473,
+    1.5284,
+    9.7568
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 2.4903,
+   "c": [
+    2.6473,
+    1.5284,
+    9.7568
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 2.4903,
+   "c": [
+    -2.6473,
+    -1.5284,
+    9.7568
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 2.4903,
+   "c": [
+    2.6473,
+    -1.5284,
+    9.7568
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 2.4903,
+   "c": [
+    -0.0,
+    -3.0568,
+    9.7568
+   ]
+  },
+  {
+   "kind": "cone",
+   "area": 75.529,
+   "c": [
+    0.0,
+    -0.0,
+    9.4902
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 22.6321,
+   "c": [
+    -0.0,
+    2.8,
+    6.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 22.6321,
+   "c": [
+    -2.4249,
+    1.4,
+    6.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 22.6321,
+   "c": [
+    2.4249,
+    1.4,
+    6.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 22.6321,
+   "c": [
+    -2.4249,
+    -1.4,
+    6.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 22.6321,
+   "c": [
+    2.4249,
+    -1.4,
+    6.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 22.6321,
+   "c": [
+    0.0,
+    -2.8,
+    6.0
+   ]
+  },
+  {
+   "kind": "cylinder",
+   "area": 480.6637,
+   "c": [
+    -0.0,
+    -0.0,
+    4.75
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 18.0794,
+   "c": [
+    0.0,
+    -0.0,
+    2.5
+   ]
+  },
+  {
+   "kind": "cone",
+   "area": 32.1593,
+   "c": [
+    0.0,
+    0.0,
+    0.2514
+   ]
+  },
+  {
+   "kind": "cylinder",
+   "area": 26.7035,
+   "c": [
+    -0.0,
+    -0.0,
+    1.25
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 229.2549,
+   "c": [
+    -0.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "min_wall": {
+  "measured": 2.5,
+  "unit": "mm",
+  "at": [
+   -3.053541,
+   -0.0,
+   2.5
+  ],
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "min_wall_wide": {
+  "opposition_deg": 45.0,
+  "measured": 2.5,
+  "at": [
+   -3.053541,
+   -0.0,
+   2.5
+  ]
+ },
+ "overhang": {
+  "measured": 59.88626684899523,
+  "unit": "deg",
+  "at": [
+   8.758333,
+   0.0,
+   0.083333
+  ],
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "overhang_detail": {
+  "per_kind_least_deg": {
+   "cone": 59.886267
+  },
+  "below_min_deg": 0,
+  "sampling_bound_deg": 0.005191,
+  "bed_samples": 1106
+ },
+ "flat_ceiling": {
+  "measured": 0.0,
+  "unit": "mm",
+  "at": null,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "mass": {
+  "volume": 2284.450778730444,
+  "mass": 2.7641854422638374,
+  "com_x": -1.929035236046171e-13,
+  "com_y": -6.823333498375654e-15,
+  "com_z": 4.8733658094426815
+ }
+}

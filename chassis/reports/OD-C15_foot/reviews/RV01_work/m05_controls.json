@@ -1,0 +1,321 @@
+{
+ "U04_roundtrip": {
+  "schema": {
+   "m": 1,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "solids": {
+   "m": 1,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "volume_delta": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "faces_delta": {
+   "m": 0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "labels": {
+   "m": 1,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "valid_after": {
+   "m": 1,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  }
+ },
+ "U04_compare_delivered": {
+  "schema": {
+   "m": 1,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "solids": {
+   "m": 1,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "volume_delta": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "faces_delta": {
+   "m": 0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "labels": {
+   "m": 1,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "valid_after": {
+   "m": 1,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  }
+ },
+ "stl_vertex_max_dist_delivered_to_own": 0.0,
+ "controls": [
+  [
+   "validity (U-01)",
+   "one face (counter annulus) removed: open shell",
+   {
+    "gate": "U-01",
+    "measured": 7,
+    "status": "FAIL",
+    "margin": -7.0
+   }
+  ],
+  [
+   "envelope (U-02, D-02 size, REQ-04 height, REQ-06, REQ-07)",
+   "foot scaled x1.02 (18.36 x 18.36 x 10.2)",
+   {
+    "gate": "U-02",
+    "measured": 18.36,
+    "status": "FAIL",
+    "margin": -0.26
+   }
+  ],
+  [
+   "radial_profile (REQ-04 diameter, REQ-05 arc)",
+   "foot scaled x1.02, outer R 9.18",
+   {
+    "gate": "REQ-04",
+    "measured": 9.18,
+    "status": "FAIL",
+    "margin": -0.13
+   }
+  ],
+  [
+   "radial_extent (REQ-03 across flats)",
+   "foot scaled x1.02, af 5.712",
+   {
+    "gate": "REQ-03",
+    "measured": 5.712000000000001,
+    "status": "FAIL",
+    "margin": -0.062
+   }
+  ],
+  [
+   "radial_profile on the plate arc (REQ-05)",
+   "scaled foot x1.02 at pose 1",
+   {
+    "gate": "REQ-05",
+    "measured": 0.8199999660799069,
+    "status": "FAIL",
+    "margin": -0.080000034
+   }
+  ],
+  [
+   "radial_extent (REQ-03 flat rotation)",
+   "foot rotated 2 deg about its axis",
+   {
+    "gate": "REQ-03",
+    "measured": 2.0,
+    "status": "FAIL",
+    "margin": -1.0
+   }
+  ],
+  [
+   "feature_census (U-05, REQ-01)",
+   "lid hole filled (remove)",
+   {
+    "gate": "U-05",
+    "measured": 0,
+    "status": "FAIL",
+    "margin": -1.0
+   }
+  ],
+  [
+   "bore_census (J-06, U-05)",
+   "lid hole filled (remove)",
+   {
+    "gate": "J-06",
+    "measured": 0,
+    "status": "FAIL",
+    "margin": -1.0
+   }
+  ],
+  [
+   "locate_bore offset (REQ-02)",
+   "lid hole moved 0.5 mm in x",
+   {
+    "gate": "REQ-02",
+    "measured": 0.5,
+    "status": "FAIL",
+    "margin": -0.4
+   }
+  ],
+  [
+   "locate_bore diameter (D-04a, REQ-02)",
+   "lid hole resized to 3.2",
+   {
+    "gate": "D-04a",
+    "measured": 3.2,
+    "status": "FAIL",
+    "margin": -0.05
+   }
+  ],
+  [
+   "min_wall (D-01a, D-01b, D-06a)",
+   "annular groove 1.8 deep in the top face: lid 0.7",
+   {
+    "gate": "D-01a",
+    "measured": 0.7,
+    "status": "FAIL",
+    "margin": -0.1
+   }
+  ],
+  [
+   "min_wall wide (U-06)",
+   "same mutant",
+   {
+    "gate": "U-06",
+    "measured": 0.7,
+    "status": "FAIL",
+    "margin": -1.3
+   }
+  ],
+  [
+   "min_wall on the ring (J-05)",
+   "pocket opened to af 12.6 (degrade): ring wall ~1.7",
+   {
+    "gate": "J-05",
+    "measured": 2.0102301412175096,
+    "status": "FAIL",
+    "margin": -0.989769859
+   }
+  ],
+  [
+   "overhang_census (D-03a)",
+   "tunnel 6 wide x 1 high across the bed face",
+   {
+    "gate": "D-03a",
+    "measured": 0.0,
+    "status": "FAIL",
+    "margin": -45.0
+   }
+  ],
+  [
+   "flat_ceiling_spans (D-03b)",
+   "same tunnel: flat ceiling 6 wide",
+   {
+    "gate": "D-03b",
+    "measured": 12.08171616076296,
+    "status": "FAIL",
+    "margin": -7.081716161
+   }
+  ],
+  [
+   "clearance contact (U-03 a)",
+   "foot 1 relocated 0.5 mm off the plate underside",
+   {
+    "gate": "U-03",
+    "measured": 0.5,
+    "status": "FAIL",
+    "margin": -0.5
+   }
+  ],
+  [
+   "clearance (D-04c)",
+   "rib 0.9 deep on a flat in the pocket (degrade)",
+   {
+    "gate": "D-04c",
+    "measured": 0.40000000000000013,
+    "status": "FAIL",
+    "margin": -0.1
+   }
+  ],
+  [
+   "interference (U-03 a)",
+   "foot 1 relocated 0.5 mm into the plate",
+   {
+    "gate": "U-03",
+    "measured": 118.63915733000506,
+    "status": "FAIL",
+    "margin": -118.63915733
+   }
+  ],
+  [
+   "interference slide (U-03 b)",
+   "nut envelope s 5.7 slid to z 6.0 in the delivered pocket",
+   {
+    "gate": "U-03",
+    "measured": 2.3486608950640546,
+    "status": "FAIL",
+    "margin": -2.348660895
+   }
+  ],
+  [
+   "mass_properties (REQ-06 COM inside feet)",
+   "plate relocated +300 in Z",
+   {
+    "gate": "REQ-06",
+    "measured": -107.6292676300531,
+    "status": "FAIL",
+    "margin": -107.62926763
+   }
+  ],
+  [
+   "compare_step (U-04)",
+   "delivered file compared with the hole-filled mutant",
+   {
+    "gate": "U-04",
+    "measured": 22.698006922192235,
+    "status": "FAIL",
+    "margin": -22.698006922
+   }
+  ],
+  [
+   "stl_max_sagitta (U-07)",
+   "re-mesh at 0.1 mm / 0.5 rad (degrade)",
+   {
+    "gate": "U-07",
+    "measured": 0.04930294168554168,
+    "status": "FAIL",
+    "margin": -0.039302942
+   }
+  ],
+  [
+   "mesh_census (U-07 one closed shell)",
+   "delivered STL with its last triangle removed",
+   {
+    "gate": "U-07",
+    "measured": 3,
+    "status": "FAIL",
+    "margin": -3.0
+   }
+  ],
+  [
+   "mesh_deviation (U-07)",
+   "delivered STL shifted 0.05 mm in x",
+   {
+    "gate": "U-07",
+    "measured": 0.054564823784746246,
+    "status": "FAIL",
+    "margin": -0.044564824
+   }
+  ]
+ ]
+}

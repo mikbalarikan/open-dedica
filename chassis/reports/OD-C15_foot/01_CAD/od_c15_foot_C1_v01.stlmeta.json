@@ -1,0 +1,6 @@
+{
+ "tolerance_mm": 0.01,
+ "angular_tolerance_rad": 0.18,
+ "triangles": 1194,
+ "max_sagitta_mm": 0.006606090211564385
+}

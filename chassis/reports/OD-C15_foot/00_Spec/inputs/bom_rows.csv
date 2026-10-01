@@ -1,0 +1,8 @@
+part_no,parent,type,name,ref,oem_code,qty,cad,material_spec,source,price_eur,issue,status
+OD-C01,OD-C00,PRINT,Base frame / floor plate,,,1,DESIGN,PETG (spec) or ASA — Usta to confirm (A-10),printed (Anycubic Kobra Max 3),print,,modeled
+OD-C15,OD-C00,PRINT,Foot (alternative to OD-C25/526),,,4,DESIGN,TPU,printed,print,,proposed
+OD-C25,OD-C00,OEM,Rubber foot pad,34,5313229381,2,CALIPER,rubber,FixPart,4 (set),,todo
+OD-C26,OD-C00,OEM,Rubber foot pad,76,5313274719,2,CALIPER,rubber,FixPart,(set),,todo
+OD-F01,OD-000,STD,M3 heat-set insert (Ø4.0 bore × 6; 26 in the chassis),,,~40,VENDOR,brass M3,AliExpress,10 (set),,todo
+OD-F02,OD-000,STD,M3×8 screw,,,~40,VENDOR,ISO 7380 / DIN 912 A2,AliExpress,(set),,todo
+OD-F10,OD-000,STD,M3×12 screw (OD-C01 into the OD-C02 base rail; tip ends on the bore floor),,,4,VENDOR,ISO 7380 / DIN 912 A2,AliExpress,(set),,todo
