@@ -1,0 +1,145 @@
+{
+ "params": {
+  "wall_x_half": 116.0,
+  "wall_z_out": -302.0,
+  "wall_z_in": -299.0,
+  "y_bottom": 0.0,
+  "y_top": 215.0,
+  "flange_x": [
+   72.0,
+   114.0
+  ],
+  "flange_t": 4.0,
+  "flange_z1": -283.0,
+  "gusset_t": 4.0,
+  "gusset_leg_wall": 30.0,
+  "gusset_x0": [
+   72.0,
+   110.0
+  ],
+  "ledge_x_half": 114.0,
+  "ledge_y0": 211.0,
+  "ledge_z1": -287.0,
+  "boss_x": [
+   84.0,
+   96.0
+  ],
+  "boss_y0": 203.0,
+  "flange_hole_d": 3.4,
+  "flange_hole_xz": [
+   [
+    81.0,
+    -290.0
+   ],
+   [
+    100.0,
+    -290.0
+   ],
+   [
+    -81.0,
+    -290.0
+   ],
+   [
+    -100.0,
+    -290.0
+   ]
+  ],
+  "insert_d": 4.0,
+  "insert_depth": 6.0,
+  "insert_xz": [
+   [
+    90.0,
+    -293.0
+   ],
+   [
+    -90.0,
+    -293.0
+   ]
+  ],
+  "pass_d": 12.0,
+  "pass_xy": [
+   [
+    95.0,
+    30.0
+   ],
+   [
+    -100.0,
+    30.0
+   ],
+   [
+    -84.0,
+    30.0
+   ]
+  ],
+  "vent_w": 4.0,
+  "vent_y": [
+   100.0,
+   180.0
+  ],
+  "vent_x": [
+   78.0,
+   86.0,
+   94.0,
+   102.0,
+   110.0
+  ],
+  "overshoot": 1.0,
+  "flange_hole_dx": 0.0,
+  "stl_tol": 0.01,
+  "stl_ang": 0.2,
+  "c03_origin": [
+   0.0,
+   40.0,
+   -205.0
+  ],
+  "c03_x_dir": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "c03_z_dir": [
+   1.0,
+   0.0,
+   0.0
+  ]
+ },
+ "solids": 1,
+ "faces": 65,
+ "step": {
+  "path": "02_STEP_STL/od_c11_back_C1_v01.step",
+  "sha256": "c9f06a48aa93293b08d0aaa4a0af0f62acdba36ff3aada3e86b169c9dad70f75"
+ },
+ "stl": {
+  "path": "02_STEP_STL/od_c11_back_C1_v01.stl",
+  "sha256": "5be03f3a87de47318730cc1e578c303960dcad8736d47b48a31fac5b86a51e58",
+  "tolerance_mm": 0.01,
+  "angular_tolerance_rad": 0.2,
+  "triangles": 3920,
+  "max_sagitta_mm": 0.0049932039325174616,
+  "tolerance": 0.01,
+  "angular_tolerance": 0.2,
+  "max_sagitta": 0.0049932039325174616
+ },
+ "assembly": {
+  "path": "02_STEP_STL/od_c11_assembly_C1_v01.step",
+  "sha256": "31d348eeca439c0c30929d3e220df9472c3e38f1fe8e8d6fc3153b7831377e3b"
+ },
+ "placements": {
+  "od_c01_frame": {
+   "joint": "RigidJoint joint_plate on the panel (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))"
+  },
+  "od_c02_bulkhead": {
+   "joint": "RigidJoint joint_c02 on the panel (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))"
+  },
+  "od_c03_cradle": {
+   "joint": "RigidJoint joint_c03 on the panel (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 40, -205), orientation=(0, 90, 180))"
+  },
+  "od_h01_pump": {
+   "joint": "RigidJoint joint_h01 on the panel (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 40, -205), orientation=(0, 90, 180))"
+  }
+ }
+}

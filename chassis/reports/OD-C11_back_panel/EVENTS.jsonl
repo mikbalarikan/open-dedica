@@ -18,3 +18,10 @@
 {"t": "2026-10-01T11:15:26Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "the designer package plans and builds in one package (simple part)"}}
 {"t": "2026-10-01T11:15:27Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c11_back_v01", "brief": "briefs/WP-02_designer.md", "attempt": 1}}
 {"t": "2026-10-01T11:15:27Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-10-01T11:47:32Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c11_back_v01", "outcome": "STOPPED", "report": "01_CAD/REPORT_od_c11_back_v01.md"}}
+{"t": "2026-10-01T11:47:33Z", "ev": "note", "detail": {"text": "J3 build v01 STOPPED on U-03(a): spec 1.0 flanges covered the OD-C01 feet holes (18.158 mm2); the ledge also covered every flange screw (a straight driver blocked). Spec 1.1: flanges x +-(72..104) z -299..-277, screws (+-81, -282), (+-95, -282). Every other gate passes.", "ref": "01_CAD/REPORT_od_c11_back_v01.md"}}
+{"t": "2026-10-01T11:47:34Z", "ev": "note", "detail": {"text": "1.0 -> 1.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-10-01T11:47:34Z", "ev": "note", "detail": {"text": "od_c11_back_v01 -> od_c11_back_v02", "ref": "JOB.md:active_target"}}
+{"t": "2026-10-01T11:47:35Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.1", "ref": "v01 REPORT stop answered on the standing instruction; explicit confirmation pending"}}
+{"t": "2026-10-01T11:47:36Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c11_back_v02", "brief": "briefs/WP-03_designer.md", "attempt": 2}}
+{"t": "2026-10-01T11:47:36Z", "ev": "attempt", "detail": {"counter": "build", "n": 2, "cap": 2}}
