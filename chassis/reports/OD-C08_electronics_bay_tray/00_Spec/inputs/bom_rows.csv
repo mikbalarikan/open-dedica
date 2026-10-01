@@ -1,0 +1,23 @@
+part_no,parent,type,name,ref,oem_code,qty,cad,material_spec,source,price_eur,issue,status
+OD-E00,OD-000,ASM,Electronics (choose Path 1 OEM or Path 2 open controller),,,1,DESIGN,,,,#8,todo
+OD-E01,OD-E00,OEM,Power PCB 230 V — Path 1,59,AS00002829,1,SCAN,,AliExpress 4001101696035 / eBay,35–45,#33,modeled
+OD-E02,OD-E00,OEM,Control board assembly (front buttons) — Path 1,15,7313285189,1,SCAN,,FixPart / eBay,15–25,#34,modeled
+OD-E03,OD-E00,OEM,Microswitch,16,5113210421,1,CALIPER,,FixPart,4,#8,todo
+OD-E04,OD-E00,OEM,On/off push button,28,5913216331,1,CALIPER,,FixPart,3,,todo
+OD-E05,OD-E00,OEM,Unipolar switch 16 A 250 V,29,5128109300,1,CALIPER,,FixPart,4,,todo
+OD-E06,OD-E00,OEM,Power supply cord with plug (region-specific; AU code shown),53,5013276449,1,ENVELOPE,,FixPart / generic,8,,todo
+OD-E07,OD-E00,OEM,6-pole wiring,56,5013211961,1,ENVELOPE,,FixPart,10 (set),,todo
+OD-E08,OD-E00,OEM,Wiring with connectors,57,5032509200,1,ENVELOPE,,FixPart,(set),,todo
+OD-E09,OD-E00,OEM,Wiring,58,5013276049,1,ENVELOPE,,FixPart,(set),,todo
+OD-C01,OD-C00,PRINT,Base frame / floor plate,,,1,DESIGN,PETG (spec) or ASA — Usta to confirm (A-10),printed (Anycubic Kobra Max 3),print,,modeled
+OD-C02,OD-C00,PRINT,Wet/electric bulkhead with drainage path,,,1,DESIGN,ASA,printed (Creality K1C),print,,modeled
+OD-C08,OD-C00,PRINT,Electronics bay tray,,,1,DESIGN,PETG,printed,print,#8,proposed
+OD-C09,OD-C00,PRINT,Front panel with button bezel,,,1,DESIGN,ASA,printed,print,#8,proposed
+OD-C10,OD-C00,PRINT,Top panel (removable — 4 screws),,,1,DESIGN,ASA,printed,print,,proposed
+OD-C11,OD-C00,PRINT,Back panel (removable — 4 screws),,,1,DESIGN,ASA,printed,print,,proposed
+OD-C13,OD-C00,PRINT,Right side panel,,,1,DESIGN,ASA / PETG or 3 mm acrylic,printed,print,,proposed
+OD-C14,OD-C00,PRINT,Cable strain relief / grommet,,,2,DESIGN,TPU,printed,print,,proposed
+OD-F01,OD-000,STD,M3 heat-set insert (Ø4.0 bore × 6; 26 in the chassis),,,~40,VENDOR,brass M3,AliExpress,10 (set),,todo
+OD-F02,OD-000,STD,M3×8 screw,,,~40,VENDOR,ISO 7380 / DIN 912 A2,AliExpress,(set),,todo
+OD-F06,OD-000,STD,6.3 mm insulated spade terminals + 105 °C wire (own looms),,,1 set,—,,TME / AliExpress,5,,todo
+OD-F10,OD-000,STD,M3×12 screw (OD-C01 into the OD-C02 base rail; tip ends on the bore floor),,,4,VENDOR,ISO 7380 / DIN 912 A2,AliExpress,(set),,todo

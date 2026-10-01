@@ -1,0 +1,17 @@
+{"t": "2026-10-01T11:04:11Z", "ev": "job_start", "detail": {"job_id": "20261001-od-c08-electronics-bay-tray", "lane": "CAD", "data_class": "PUBLIC", "code": "ODC08"}}
+{"t": "2026-10-01T11:04:11Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.build"}}
+{"t": "2026-10-01T11:04:11Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.export"}}
+{"t": "2026-10-01T11:04:11Z", "ev": "note", "detail": {"text": "- -> 2", "ref": "JOB.md:caps.tool"}}
+{"t": "2026-10-01T11:04:11Z", "ev": "note", "detail": {"text": "- -> 3", "ref": "JOB.md:caps.fix_cycles"}}
+{"t": "2026-10-01T11:04:11Z", "ev": "note", "detail": {"text": "- -> 0.1", "ref": "JOB.md:spec_version"}}
+{"t": "2026-10-01T11:04:11Z", "ev": "note", "detail": {"text": "- -> A", "ref": "JOB.md:revision"}}
+{"t": "2026-10-01T11:06:10Z", "ev": "note", "detail": {"text": "- -> od_c08_tray_v01", "ref": "JOB.md:active_target"}}
+{"t": "2026-10-01T11:06:11Z", "ev": "package_sent", "detail": {"role": "intake", "target": "od_c08_tray_v01", "brief": "briefs/WP-01_intake.md", "attempt": 1}}
+{"t": "2026-10-01T11:10:09Z", "ev": "package_done", "detail": {"role": "intake", "target": "od_c08_tray_v01", "outcome": "DONE", "report": "00_Spec/INTAKE_v01.md"}}
+{"t": "2026-10-01T11:14:38Z", "ev": "usta_gate", "detail": {"gate": "question_answered", "outcome": "path_1", "ref": "project thread 2026-10-01 10:58Z: 'c08 i will use original pcb for this stage' (chassis/README row 9)"}}
+{"t": "2026-10-01T11:14:39Z", "ev": "note", "detail": {"text": "0.1 -> 1.0", "ref": "JOB.md:spec_version"}}
+{"t": "2026-10-01T11:14:39Z", "ev": "note", "detail": {"text": "- -> A-01,A-02,A-03,A-04,A-05,A-06,A-07,A-08,A-09,A-10,A-11,A-12,A-13", "ref": "JOB.md:open_assumptions"}}
+{"t": "2026-10-01T11:14:40Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.0", "ref": "the Usta's standing instruction of 2026-09-30 and 'what can start now please initiate it' of 2026-10-01; explicit confirmation pending"}}
+{"t": "2026-10-01T11:14:41Z", "ev": "usta_gate", "detail": {"gate": "concept_picked", "outcome": "C1", "ref": "spec 1.0 section 4"}}
+{"t": "2026-10-01T11:14:46Z", "ev": "state", "detail": {"from": "J0_INTAKE", "to": "J1_SPEC", "reason": "intake done: INTAKE_v01; spec 1.0 drafted"}}
+{"t": "2026-10-01T11:14:47Z", "ev": "state", "detail": {"from": "J1_SPEC", "to": "J2_PLAN", "reason": "spec 1.0 ratified on the standing instruction (usta_gate events above, recorded a moment before the J1 entry); C1 picked"}}
