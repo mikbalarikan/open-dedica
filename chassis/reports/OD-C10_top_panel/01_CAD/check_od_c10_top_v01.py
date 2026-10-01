@@ -1,9 +1,9 @@
-"""Checks for od_c10_top v01 (job 20261001-od-c10-top-panel, concept C1, spec 1.2; check version v01b).
+"""Checks for od_c10_top v01 (job 20261001-od-c10-top-panel, concept C1, spec 1.1).
 
 Written before the build (PLAYBOOK D3), from 01_CAD/DESIGN_PLAN.md section 6. Every
 predicate measures the re-imported STEP files with tools.core / tools.measure and
 compares through tools.result.gate with the GATES.md section 0 band of the result's
-unit. Thresholds come from DESIGN_SPEC.md 1.2 section 5 only (the SPEC table cites the
+unit. Thresholds come from DESIGN_SPEC.md 1.1 section 5 only (the SPEC table cites the
 row of each value). Any exception or missing value gives INCONCLUSIVE.
 
 Usage (from the repository root, in the tools venv):
@@ -12,7 +12,7 @@ Usage (from the repository root, in the tools venv):
         --asm 02_STEP_STL/od_c10_assembly_C1_v01.step \
         --stl 02_STEP_STL/od_c10_top_C1_v01.stl \
         --record 01_CAD/build_record_v01.json \
-        --out 01_CAD/check_od_c10_top_v01b.json [--variant '{...}'] [--quick]
+        --out 01_CAD/check_od_c10_top_v01.json [--variant '{...}'] [--quick]
 Relative paths are taken from the job workspace (the folder above 01_CAD).
 """
 from __future__ import annotations
@@ -41,7 +41,7 @@ from tools.measure import (bore_census, clearance, envelope, feature_census, fla
 from tools.result import INCONCLUSIVE, Result, gate, inconclusive  # noqa: E402
 
 # ---------------------------------------------------------------------------
-# Section 5 thresholds (spec 1.2) and the GATES.md section 0 bands. Nothing below
+# Section 5 thresholds (spec 1.1) and the GATES.md section 0 bands. Nothing below
 # this table carries a threshold.
 # ---------------------------------------------------------------------------
 BAND = {"mm": 0.005, "deg": 0.001, "mm3": 0.001, "rad": 0.00002}   # every other unit: 0
@@ -60,9 +60,6 @@ SPEC = {
     # U-03 (a)
     "contact": 0.0, "interference": 0.0, "pad_gap": 0.50, "pad_gap_tol": 0.05, "c07_gap": 3.0, "c01_gap": 3.0,
     "away_gap": 0.5, "coax_max": 0.10,
-    # U-03 (a) 1.2: the designed contact region on OD-C11 (spec 4 geometry: the rear skirt's inner face z -302,
-    # the R 10 corner arcs' tangent points at |x| 110, z -295); region_pad is the exclusion's stated 0.05 margin
-    "line_z": -302.0, "corner_arc_x": 110.0, "corner_arc_z": -295.0, "region_pad": 0.05,
     # U-03 (b): from +40.0 above the seat, steps <= 2.0
     "lower_from": 40.0, "lower_step": 2.0,
     # REQ-01
@@ -691,37 +688,19 @@ def check(step_path: Path, asm_path: Path | None, stl_path: Path | None, record_
             away02 = _cut(lid, colx)
             G.add("U-03.c02.clearance_away", _safe(clearance, "clearance", "mm", away02, crop["c02"]), ">=",
                   SPEC["away_gap"], assumes=ASSUMES["U-03"], note="the lid less the four column volumes (r 6.05)")
-            # OD-C11 (spec 1.2 U-03 (a)): the designed contact is the rear skirt's bottom inner edge on the wall's
-            # top outer edge along x +-116 (line) AND the rear skirt's bottom face over its R 10 corner arcs at
-            # x +-110 .. +-116 (two patches on the wall top): clearance = 0, interference <= 0 there; >= 0.5 away
-            # from that whole contact region and from the column bottoms.
-            G.add("U-03.c11.clearance_contact", _safe(clearance, "clearance", "mm", lid, crop["c11"]), "==",
-                  SPEC["contact"], assumes=ASSUMES["U-03"], note="the lid as a whole touches OD-C11 (designed contact)")
+            # OD-C11: the rear skirt's line contact, and away from it and the column bottoms
+            G.add("U-03.c11.clearance_line_contact", _safe(clearance, "clearance", "mm", lid, crop["c11"]), "==",
+                  SPEC["contact"], assumes=ASSUMES["U-03"])
             G.add("U-03.c11.interference", _safe(common_volume, "common_volume", "mm3", lid, crop["c11"]), "<=",
                   SPEC["interference"], assumes=ASSUMES["U-03"])
-            # the contact region removed: the rear skirt behind z -301.95 (the line) and the rear skirt's two R 10
-            # corner arcs (|x| >= 109.95, z <= -294.95: the arcs' tangent points are at |x| 110 and z -295, spec 4)
-            cx_, cz_ = SPEC["corner_arc_x"] - SPEC["region_pad"], SPEC["corner_arc_z"] + SPEC["region_pad"]
-            corner_boxes = [_box(cx_, 121.0, 214.0, 251.0, -306.0, cz_), _box(-121.0, -cx_, 214.0, 251.0, -306.0, cz_)]
-            line_box = _box(-121.0, 121.0, 214.0, 251.0, -306.0, SPEC["line_z"] + SPEC["region_pad"])
-            away11 = _cut(lid, colx + [line_box] + corner_boxes)
+            away11 = _cut(lid, colx + [_box(-121.0, 121.0, 214.0, 251.0, -306.0, -301.95)])
             G.add("U-03.c11.clearance_away", _safe(clearance, "clearance", "mm", away11, crop["c11"]), ">=",
                   SPEC["away_gap"], assumes=ASSUMES["U-03"],
-                  note="the lid less the column volumes (r 6.05), the rear skirt behind z -301.95 (line contact) and "
-                       "the rear skirt's R 10 corner arcs (|x| >= 109.95, z <= -294.95: the corner-patch contact)")
-            # v01's narrower exclusion kept as a fact (it fails by construction at the corner patches)
-            away11_v01 = _cut(lid, colx + [line_box])
-            facts["U-03.c11.clearance_away_line_only_v01_region"] = _res(
-                _safe(clearance, "clearance", "mm", away11_v01, crop["c11"]))
-            for side, cb in (("x+", corner_boxes[0]), ("x-", corner_boxes[1])):
-                cpiece = _one(lid & cb)
-                G.add(f"U-03.c11.corner_{side}.clearance", _safe(clearance, "clearance", "mm", cpiece, crop["c11"]),
-                      "==", SPEC["contact"], assumes=ASSUMES["U-03"],
-                      note="the rear skirt's corner arc on OD-C11's wall top (designed contact, spec 1.2)")
-                G.add(f"U-03.c11.corner_{side}.interference", _safe(common_volume, "common_volume", "mm3", cpiece,
-                                                                    crop["c11"]),
-                      "<=", SPEC["interference"], assumes=ASSUMES["U-03"])
-            # the contact faces between the lid's bottom faces at y 215 and OD-C11's top faces at y 215
+                  note="the lid less the column volumes and the rear skirt behind z -301.95 (the named line contact)")
+            away11c = _cut(lid, colx + [_box(-121.0, 121.0, 214.0, 251.0, -306.0, -295.0)])
+            facts["U-03.c11.clearance_without_rear_skirt_and_corner_arcs"] = _res(
+                _safe(clearance, "clearance", "mm", away11c, crop["c11"]))
+            # the contact faces between the lid's bottom faces at y 215 and OD-C11's top face at y 215
             try:
                 l_b = [f["face"] for f in _planar(lid, (0, -1, 0)) if abs(-f["at"] - 215.0) < 1e-4]
                 c_t = [f["face"] for f in _planar(crop["c11"], (0, 1, 0)) if abs(f["at"] - 215.0) < 1e-4]
@@ -733,30 +712,15 @@ def check(step_path: Path, asm_path: Path | None, stl_path: Path | None, record_
                             bb = pf.bounding_box()
                             patches.append({"area_mm2": pf.area, "x": [bb.min.X, bb.max.X], "z": [bb.min.Z, bb.max.Z]})
                 facts["U-03.c11.contact_patches"] = patches
-
-                def _in_corner(pt):
-                    return (abs(pt["x"][0]) >= cx_ and abs(pt["x"][1]) >= cx_ and pt["x"][0] * pt["x"][1] > 0
-                            and pt["z"][1] <= cz_)
-
-                def _in_seat(pt):
-                    return any(pt["x"][0] >= x - 6.05 and pt["x"][1] <= x + 6.05 and pt["z"][0] >= z - 6.05
-                               and pt["z"][1] <= z + 6.05 for x, z in SPEC["rear_cols"])
-                corner_p = [pt for pt in patches if _in_corner(pt)]
-                other_p = [pt for pt in patches if not _in_corner(pt) and not _in_seat(pt)]
-                facts["U-03.c11.corner_contact_area_mm2"] = {
-                    side: (sum(pt["area_mm2"] for pt in corner_p if pt["x"][0] * sgn > 0)
-                           if any(pt["x"][0] * sgn > 0 for pt in corner_p) else None)
-                    for side, sgn in (("x+", 1.0), ("x-", -1.0))}
-                facts["U-03.c11.corner_contact_note"] = ("area over which the skirt's bottom face rests on OD-C11's "
-                                                         "wall top (face intersection at y 215); reported only, the "
-                                                         "spec gives no limit (1.2: about 5.9 mm2 each)")
-                G.add("U-03.c11.contact_area_outside_designed_regions",
-                      Result("contact_area_outside", sum(pt["area_mm2"] for pt in other_p), "mm2",
-                             at=[[pt["x"], pt["z"]] for pt in other_p]), "<=", 0.0, assumes=ASSUMES["U-03"],
-                      note="every y 215 contact patch must lie in a column seat (r 6.05) or a corner region")
+                skirt_patch = [p for p in patches if p["z"][0] < -301.0]
+                G.add("U-03.c11.skirt_contact_area_off_the_line",
+                      Result("skirt_contact_area", sum(p["area_mm2"] for p in skirt_patch), "mm2",
+                             at=[[p["x"], p["z"]] for p in skirt_patch]), "<=", 0.0, assumes=ASSUMES["U-03"],
+                      note="a line contact has no area: area over which the skirt's bottom face lies on OD-C11's top "
+                           "face (face intersection at y 215)")
             except Exception as exc:  # noqa: BLE001
-                G.add("U-03.c11.contact_area_outside_designed_regions",
-                      inconclusive("contact_area_outside", "mm2", f"{type(exc).__name__}: {exc}"), "<=", 0.0)
+                G.add("U-03.c11.skirt_contact_area_off_the_line",
+                      inconclusive("skirt_contact_area", "mm2", f"{type(exc).__name__}: {exc}"), "<=", 0.0)
             # U-03 (b): lowered along -Y from +40.0 in steps of 2.0
             steps = int(round(SPEC["lower_from"] / SPEC["lower_step"]))
             path_rows = []

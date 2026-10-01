@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-C11 printed back panel (20261001-od-c11-back-panel)
 
-Version 1.2 · RATIFIED by the Usta on 2026-10-01 (decision card 13:06Z: a third build on spec 1.2; 1.1 ratified on standing instruction of 2026-09-30 and the "what can start now please initiate it" of 2026-10-01: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size M · lane CAD
+Version 1.1 · RATIFIED by the Usta on 2026-10-01 (standing instruction of 2026-09-30 and the "what can start now please initiate it" of 2026-10-01: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size M · lane CAD
 
 ## §1 Intent
 
@@ -74,10 +74,7 @@ the top panel's two rear screws, a hand pulling the panel off, the cord's pull
     the ledge covered every screw, v01 REPORT); the screw heads Ø5.7 keep ≥ 2.1
     from the gussets. Two **gussets** per flange, 4.0 thick, at its ends
     (x ±72.0 … ±76.0 and x ±100.0 … ±104.0): right triangles in the YZ plane
-    with a 16.0 leg along the flange's top and a leg up the wall of 30.0 for the
-    inner gussets (top y 34) and 18.0 for the outer gussets (top y 22, 2.0 below
-    the pass-throughs at y 24; 1.2: the 30.0 outer leg blocked the tube hole at
-    (−100, 30) and the cord hole at (95, 30), v02 REPORT) (E-06).
+    with a 16.0 leg along the flange's top and a 30.0 leg up the wall (E-06).
   - **Top ledge** 4.0 thick, y 211.0 … 215.0, z −299.0 … −287.0 (12 deep), along
     x −114.0 … +114.0, its top face flush with the wall's top at y 215.0; two
     **insert bosses** below it, blocks x ±(84.0 … 96.0), y 203.0 … 211.0,
@@ -114,7 +111,7 @@ the top panel's two rear screws, a hand pulling the panel off, the cord's pull
 |---|---|---|---|---|---|---|---|
 | U-01 | Valid solid per part | `solid_count = 1`, `brep_valid = 1`, `naked_edges = 0` | Hard | CAD | house | `validity` | — |
 | U-02 | Envelope within spec | 232.0 × 215.0 × 25.0 each in [spec − 0.1, spec + 0.1]; position against the datum reported apart (x ±116.0, y 0 … 215.0, z −302.0 … −277.0) | Hard | CAD | house | `envelope` | — |
-| U-03 | Assembly closes | (a) at the identity: the wall's and the flanges' undersides on OD-C01's top face are the designed contact, `clearance = 0`, `interference ≤ 0` mm³; the panel's underside lies wholly over plate material (its footprint inside the plate's outline, ≥ 0.5 from the edge and the corner arcs; the flanges ≥ 3.0 and the wall's foot ≥ 2.0 from the edge of every existing OD-C01 hole (1.2: the wall foot stands 2.300 from the feet holes' rims by §4's geometry, v02 REPORT)); the four flange holes ≥ 6.0 centre to centre from every existing OD-C01 hole (the feet holes at (±110, −295)); panel to OD-C03 and OD-H01 (as OD-C01 A-03 places them) ≥ 20.0; panel to OD-C02 ≥ 20.0. (b) the panel lowered along −Y from +40.0 above its seat in steps ≤ 2.0: `interference ≤ 0` with every reference solid at every step | Hard | CAD | house | `clearance`, `interference`, `envelope` | A-01, A-02, A-07 |
+| U-03 | Assembly closes | (a) at the identity: the wall's and the flanges' undersides on OD-C01's top face are the designed contact, `clearance = 0`, `interference ≤ 0` mm³; the panel's underside lies wholly over plate material (its footprint inside the plate's outline, ≥ 0.5 from the edge and the corner arcs, and ≥ 3.0 from the edge of every existing OD-C01 hole); the four flange holes ≥ 6.0 centre to centre from every existing OD-C01 hole (the feet holes at (±110, −295)); panel to OD-C03 and OD-H01 (as OD-C01 A-03 places them) ≥ 20.0; panel to OD-C02 ≥ 20.0. (b) the panel lowered along −Y from +40.0 above its seat in steps ≤ 2.0: `interference ≤ 0` with every reference solid at every step | Hard | CAD | house | `clearance`, `interference`, `envelope` | A-01, A-02, A-07 |
 | U-04 | Clean export | named body re-read unchanged, no stray shells, valid after re-import | Hard | CAD | house | `step_roundtrip` | — |
 | U-05 | Every spec feature present | counts per the plan: 1 wall, 2 floor flanges, 4 gussets, 1 top ledge, 2 insert bosses, 4 Ø3.4 flange holes, 2 Ø4.0 blind bores, 3 Ø12.0 pass-throughs, 5 vent slots | Hard | CAD | house | `feature_census`, `bore_census`, `locate_bore` | — |
 | U-06 | Soft: thin corners under a round | `min_wall` wide ≥ 2.0 | Soft | part | house | `min_wall` `detail["wide"]` | — |
@@ -173,7 +170,6 @@ the top panel's two rear screws, a hand pulling the panel off, the cord's pull
 | 2026-10-01 | INTAKE §4 gaps 1 … 13 are answered by §4 as design choices, all A-## rows | Oğuz | INTAKE_v01 §4 |
 | 2026-10-01 | REQ-09 (stiffness) is a Soft bench gate answered by the first print | Oğuz | §5 |
 | 2026-10-01 | v01 REPORT stop: spec 1.0's flanges (to x ±114) covered OD-C01's feet holes at (±110, −295), and the top ledge covered every flange screw at z −290; 1.1 ends the flanges at x ±104, deepens them to z −277 and moves the screws to (±81, −282) and (±95, −282), 5 in front of the ledge; REQ-05's box starts 0.2 in front of the wall | Oğuz (on the standing instruction) | 01_CAD/REPORT_od_c11_back_v01.md; A-01 |
-| 2026-10-01 | v02 REPORT stop at the build cap: the outer gussets (wall leg 30) blocked two pass-throughs and the wall's foot stands 2.300 from the feet holes' rims against U-03's 3.0; 1.2 shortens the outer gussets' wall leg to 18 and sets the wall foot's distance at ≥ 2.0; the Usta orders a third build on 1.2 (decision card 13:06Z) | the Usta | usta_gate halt_decision raise_cap; 01_CAD/REPORT_od_c11_back_v02.md |
 
 ## §8 Change log
 
@@ -181,5 +177,4 @@ the top panel's two rear screws, a hand pulling the panel off, the cord's pull
 |---|---|---|
 | 0.1 | 2026-10-01 | first draft from the OD-C01, OD-C02 and OD-C03 specs and the OD-W03 report |
 | 1.0 | 2026-10-01 | INTAKE_v01 cross-references in §6; ratified |
-| 1.2 | 2026-10-01 | v02 stop: outer gussets' wall leg 18.0 (top y 22) so they clear the pass-throughs; U-03 (a) hole-edge distance ≥ 3.0 for the flanges and ≥ 2.0 for the wall's foot (§4, U-03); spec 1.1 kept as `DESIGN_SPEC_v1.1.md` |
 | 1.1 | 2026-10-01 | v01 stop: flanges x ±(72 … 104), z −299 … −277; flange screws at (±81, −282), (±95, −282); outer gussets at x ±(100 … 104); envelope 232 × 215 × 25 (§4, U-02, U-03, D-02, REQ-01, REQ-05, REQ-08, A-01); spec 1.0 kept as `DESIGN_SPEC_v1.0.md` |

@@ -1,0 +1,200 @@
+U-01.solid_count                                     PASS          1                      == 1                     0.0          
+U-01.brep_valid                                      PASS          1                      == 1                     0.0          
+U-01.naked_edges                                     PASS          0                      == 0                     0.0          
+exactly_one_solid                                    PASS          1                      == 1                     0.0          
+U-02.size_x                                          PASS          39.0                   in [38.9, 39.1]          0.1          
+envelope_within_spec.size_x                          PASS          39.0                   in [38.9, 39.1]          0.1          
+U-02.size_y                                          PASS          92.0                   in [91.9, 92.1]          0.1          
+envelope_within_spec.size_y                          PASS          92.0                   in [91.9, 92.1]          0.1          
+U-02.size_z                                          PASS          160.0                  in [159.9, 160.1]        0.1          
+envelope_within_spec.size_z                          PASS          160.0                  in [159.9, 160.1]        0.1          
+envelope_within_spec.position.min_x                  PASS          73.0                   in [72.9, 73.1]          0.1          
+envelope_within_spec.position.max_x                  PASS          112.0                  in [111.9, 112.1]        0.1          
+envelope_within_spec.position.min_y                  PASS          0.0                    in [-0.1, 0.1]           0.1          
+envelope_within_spec.position.max_y                  PASS          92.0                   in [91.9, 92.1]          0.1          
+envelope_within_spec.position.min_z                  PASS          -230.0                 in [-230.1, -229.9]      0.1          
+envelope_within_spec.position.max_z                  PASS          -70.0                  in [-70.1, -69.9]        0.1          
+D-02.size_y                                          PASS_ASSUMED  92.0                   <= 220.0                 128.0        
+D-02.size_z                                          PASS_ASSUMED  160.0                  <= 220.0                 60.0         
+D-02.size_x                                          PASS_ASSUMED  39.0                   <= 250.0                 211.0        
+REQ-03.min_x                                         PASS_ASSUMED  73.0                   >= 73.0                  0.0          
+REQ-03.front_z                                       PASS_ASSUMED  -70.0                  in [-70.1, -69.9]        0.1          
+U-05.plane_faces                                     PASS          42                     == 42                    0.0          
+feature_census.plane_faces                           PASS          42                     == 42                    0.0          
+U-05.cylinder_faces                                  PASS          12                     == 12                    0.0          
+feature_census.cylinder_faces                        PASS          12                     == 12                    0.0          
+U-05.concave_cylinders                               PASS          6                      == 6                     0.0          
+feature_census.concave_cylinders                     PASS          6                      == 6                     0.0          
+U-05.convex_cylinders                                PASS          6                      == 6                     0.0          
+feature_census.convex_cylinders                      PASS          6                      == 6                     0.0          
+U-05.cone_faces                                      PASS          0                      == 0                     0.0          
+feature_census.cone_faces                            PASS          0                      == 0                     0.0          
+U-05.sphere_faces                                    PASS          0                      == 0                     0.0          
+feature_census.sphere_faces                          PASS          0                      == 0                     0.0          
+U-05.torus_faces                                     PASS          0                      == 0                     0.0          
+feature_census.torus_faces                           PASS          0                      == 0                     0.0          
+U-05.bspline_faces                                   PASS          0                      == 0                     0.0          
+feature_census.bspline_faces                         PASS          0                      == 0                     0.0          
+U-05.other_faces                                     PASS          0                      == 0                     0.0          
+feature_census.other_faces                           PASS          0                      == 0                     0.0          
+U-05.bores                                           PASS          6                      == 6                     0.0          
+feature_census.bores                                 PASS          6                      == 6                     0.0          
+U-05.bores_x_blind                                   PASS          2                      == 2                     0.0          
+U-05.bores_y_through                                 PASS          4                      == 4                     0.0          
+U-05.pins                                            PASS          2                      == 2                     0.0          
+U-05.standoffs_d10                                   PASS          2                      == 2                     0.0          
+U-05.standoffs_d6                                    PASS          2                      == 2                     0.0          
+U-05.gussets                                         PASS          4                      == 4                     0.0          
+E-06.gussets                                         PASS          4                      == 4                     0.0          
+U-05.slot_faces                                      PASS          16                     == 16                    0.0          
+U-05.slots                                           PASS          4                      == 4                     0.0          
+E-11.slots                                           PASS_ASSUMED  4                      == 4                     0.0          
+REQ-01.x88_z-222.diameter                            PASS_ASSUMED  3.4                    in [3.3, 3.5]            0.1          
+REQ-01.x88_z-222.offset                              PASS_ASSUMED  0.0                    <= 0.1                   0.1          
+REQ-01.x88_z-222.length                              PASS_ASSUMED  4.0                    in [3.9, 4.1]            0.1          
+REQ-01.x88_z-222.through                             PASS_ASSUMED  1                      == 1                     0.0          
+D-04a.x88_z-222.diameter                             PASS          3.4                    >= 3.25                  0.15         
+REQ-01.x106_z-222.diameter                           PASS_ASSUMED  3.4                    in [3.3, 3.5]            0.1          
+REQ-01.x106_z-222.offset                             PASS_ASSUMED  0.0                    <= 0.1                   0.1          
+REQ-01.x106_z-222.length                             PASS_ASSUMED  4.0                    in [3.9, 4.1]            0.1          
+REQ-01.x106_z-222.through                            PASS_ASSUMED  1                      == 1                     0.0          
+D-04a.x106_z-222.diameter                            PASS          3.4                    >= 3.25                  0.15         
+REQ-01.x88_z-78.diameter                             PASS_ASSUMED  3.4                    in [3.3, 3.5]            0.1          
+REQ-01.x88_z-78.offset                               PASS_ASSUMED  0.0                    <= 0.1                   0.1          
+REQ-01.x88_z-78.length                               PASS_ASSUMED  4.0                    in [3.9, 4.1]            0.1          
+REQ-01.x88_z-78.through                              PASS_ASSUMED  1                      == 1                     0.0          
+D-04a.x88_z-78.diameter                              PASS          3.4                    >= 3.25                  0.15         
+REQ-01.x106_z-78.diameter                            PASS_ASSUMED  3.4                    in [3.3, 3.5]            0.1          
+REQ-01.x106_z-78.offset                              PASS_ASSUMED  0.0                    <= 0.1                   0.1          
+REQ-01.x106_z-78.length                              PASS_ASSUMED  4.0                    in [3.9, 4.1]            0.1          
+REQ-01.x106_z-78.through                             PASS_ASSUMED  1                      == 1                     0.0          
+D-04a.x106_z-78.diameter                             PASS          3.4                    >= 3.25                  0.15         
+REQ-01.underside_faces                               PASS_ASSUMED  1                      == 1                     0.0          
+REQ-01.underside_y                                   PASS_ASSUMED  -0.0                   in [-0.1, 0.1]           0.1          
+REQ-02.seat_faces                                    PASS_ASSUMED  4                      == 4                     0.0          
+REQ-02.seat_1.x                                      PASS_ASSUMED  82.438                 in [82.39, 82.49]        0.048        
+REQ-02.seat_2.x                                      PASS_ASSUMED  82.438                 in [82.39, 82.49]        0.048        
+REQ-02.seat_3.x                                      PASS_ASSUMED  82.438                 in [82.39, 82.49]        0.048        
+REQ-02.seat_4.x                                      PASS_ASSUMED  82.438                 in [82.39, 82.49]        0.048        
+REQ-02.seats_coplanar                                PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+REQ-02.insert_y80_z-100.diameter                     PASS_ASSUMED  4.0                    in [3.95, 4.05]          0.05         
+REQ-02.insert_y80_z-100.depth                        PASS_ASSUMED  6.0                    in [5.9, 6.1]            0.1          
+D-05b.insert_y80_z-100.diameter                      PASS_ASSUMED  4.0                    in [3.95, 4.05]          0.05         
+D-05b.insert_y80_z-100.depth                         PASS_ASSUMED  6.0                    in [5.9, 6.1]            0.1          
+D-05b.insert_y80_z-100.depth_min                     PASS_ASSUMED  6.0                    >= 5.7                   0.3          
+D-05b.insert_y80_z-100.blind                         PASS_ASSUMED  0                      == 0                     0.0          
+REQ-02.insert_y80_z-100.offset                       PASS_ASSUMED  0.0                    <= 0.1                   0.1          
+REQ-02.insert_y80_z-100.mouth_x                      PASS_ASSUMED  82.438                 in [82.39, 82.49]        0.048        
+D-05a.insert_y80_z-100.across_0_180                  PASS_ASSUMED  10.0                   >= 8.0                   2.0          
+D-05a.insert_y80_z-100.across_90_270                 PASS_ASSUMED  10.0                   >= 8.0                   2.0          
+J-05.insert_y80_z-100.ray_0                          PASS          3.0                    >= 3.0                   0.0          
+J-05.insert_y80_z-100.ray_90                         PASS          3.0                    >= 3.0                   0.0          
+J-05.insert_y80_z-100.ray_180                        PASS          3.0                    >= 3.0                   0.0          
+J-05.insert_y80_z-100.ray_270                        PASS          3.0                    >= 3.0                   0.0          
+REQ-02.insert_y27.99_z-100.01.diameter               PASS_ASSUMED  4.0                    in [3.95, 4.05]          0.05         
+REQ-02.insert_y27.99_z-100.01.depth                  PASS_ASSUMED  6.0                    in [5.9, 6.1]            0.1          
+D-05b.insert_y27.99_z-100.01.diameter                PASS_ASSUMED  4.0                    in [3.95, 4.05]          0.05         
+D-05b.insert_y27.99_z-100.01.depth                   PASS_ASSUMED  6.0                    in [5.9, 6.1]            0.1          
+D-05b.insert_y27.99_z-100.01.depth_min               PASS_ASSUMED  6.0                    >= 5.7                   0.3          
+D-05b.insert_y27.99_z-100.01.blind                   PASS_ASSUMED  0                      == 0                     0.0          
+REQ-02.insert_y27.99_z-100.01.offset                 PASS_ASSUMED  0.0                    <= 0.1                   0.1          
+REQ-02.insert_y27.99_z-100.01.mouth_x                PASS_ASSUMED  82.438                 in [82.39, 82.49]        0.048        
+D-05a.insert_y27.99_z-100.01.across_0_180            PASS_ASSUMED  10.0                   >= 8.0                   2.0          
+D-05a.insert_y27.99_z-100.01.across_90_270           PASS_ASSUMED  10.0                   >= 8.0                   2.0          
+J-05.insert_y27.99_z-100.01.ray_0                    PASS          3.0                    >= 3.0                   0.0          
+J-05.insert_y27.99_z-100.01.ray_90                   PASS          3.0                    >= 3.0                   0.0          
+J-05.insert_y27.99_z-100.01.ray_180                  PASS          3.0                    >= 3.0                   0.0          
+J-05.insert_y27.99_z-100.01.ray_270                  PASS          3.0                    >= 3.0                   0.0          
+REQ-02.pin_y81.98_z-157.52.diameter                  PASS_ASSUMED  1.8                    in [1.75, 1.85]          0.05         
+REQ-02.pin_y81.98_z-157.52.length                    PASS_ASSUMED  2.5                    in [2.4, 2.6]            0.1          
+REQ-02.pin_y81.98_z-157.52.offset                    PASS_ASSUMED  0.0                    <= 0.1                   0.1          
+REQ-02.pin_y30.99_z-157.51.diameter                  PASS_ASSUMED  1.8                    in [1.75, 1.85]          0.05         
+REQ-02.pin_y30.99_z-157.51.length                    PASS_ASSUMED  2.5                    in [2.4, 2.6]            0.1          
+REQ-02.pin_y30.99_z-157.51.offset                    PASS_ASSUMED  0.0                    <= 0.1                   0.1          
+D-01a                                                PASS          1.7999999999982679     >= 0.8                   1.0          
+D-06a                                                PASS          1.7999999999982679     >= 1.0                   0.8          
+D-01b                                                PASS          1.999999999999997      >= 2.0                   -3.1086244689504383e-15 
+U-06(Soft)                                           PASS          1.999999999999997      >= 2.0                   -3.1086244689504383e-15 
+D-03a                                                PASS_ASSUMED  90.0                   >= 45.0                  45.0         
+D-03b.flat_ceilings                                  PASS_ASSUMED  0.0                    <= 5.0                   5.0          
+D-03b.horizontal_holes                               PASS_ASSUMED  3.4                    <= 5.0                   1.6          
+U-03.plate.clearance                                 PASS_ASSUMED  0.0                    == 0.0                   0.0          
+U-03.plate.interference                              PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+U-03.board.interference                              PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+U-03.seat_y27.99_z-100.01.clearance                  PASS_ASSUMED  0.0                    == 0.0                   0.0          
+U-03.seat_y80.00_z-100.00.clearance                  PASS_ASSUMED  0.0                    == 0.0                   0.0          
+U-03.seat_y30.99_z-157.51.clearance                  PASS_ASSUMED  0.0                    == 0.0                   0.0          
+U-03.seat_y81.98_z-157.52.clearance                  PASS_ASSUMED  0.0                    == 0.0                   0.0          
+U-03.pin_y81.98_z-157.52.clearance                   PASS_ASSUMED  0.3388768943743703     >= 0.3                   0.038876894  
+D-04d.pin_y81.98_z-157.52.clearance                  PASS_ASSUMED  0.3388768943743703     >= 0.3                   0.038876894  
+U-03.pin_y30.99_z-157.51.clearance                   PASS_ASSUMED  0.3277639320224975     >= 0.3                   0.027763932  
+D-04d.pin_y30.99_z-157.51.clearance                  PASS_ASSUMED  0.3277639320224975     >= 0.3                   0.027763932  
+U-03.rest.clearance                                  PASS_ASSUMED  6.438000000000002      >= 0.5                   5.938        
+D-04c.rest.clearance                                 PASS_ASSUMED  6.438000000000002      >= 0.5                   5.938        
+E-01.rest.clearance                                  PASS_ASSUMED  6.438000000000002      >= 0.5                   5.938        
+U-03.c02.tray_clearance                              PASS_ASSUMED  2.0                    >= 1.5                   0.5          
+U-03.c02.board_clearance                             PASS_ASSUMED  15.438000000000002     >= 10.0                  5.438        
+U-03.board_zone.min_x                                PASS_ASSUMED  82.438                 >= 70.0                  12.438       
+U-03.board_zone.max_x                                PASS_ASSUMED  109.262                <= 117.0                 7.738        
+U-03.board_zone.min_z                                PASS_ASSUMED  -195.002               >= -240.0                44.998       
+U-03.board_zone.max_z                                PASS_ASSUMED  -94.838                <= -30.0                 64.838       
+U-03.board_zone.min_y                                PASS_ASSUMED  24.0                   >= 10.0                  14.0         
+U-03.plate_under_x88_z-222.missing_volume            PASS_ASSUMED  -1.4210854715202004e-14 <= 0.0                   1.4210854715202004e-14 
+REQ-01.plate_under_x88_z-222.missing_volume          PASS_ASSUMED  -1.4210854715202004e-14 <= 0.0                   1.4210854715202004e-14 
+U-03.plate_under_x88_z-222.hole_gap                  PASS_ASSUMED  19.494827009486404     >= 6.0                   13.494827009 
+REQ-01.plate_under_x88_z-222.hole_gap                PASS_ASSUMED  19.494827009486404     >= 6.0                   13.494827009 
+U-03.plate_under_x88_z-222.edge_gap                  PASS_ASSUMED  30.3                   >= 8.0                   22.3         
+REQ-01.plate_under_x88_z-222.edge_gap                PASS_ASSUMED  30.3                   >= 8.0                   22.3         
+U-03.plate_under_x106_z-222.missing_volume           PASS_ASSUMED  -1.4210854715202004e-14 <= 0.0                   1.4210854715202004e-14 
+REQ-01.plate_under_x106_z-222.missing_volume         PASS_ASSUMED  -1.4210854715202004e-14 <= 0.0                   1.4210854715202004e-14 
+U-03.plate_under_x106_z-222.hole_gap                 PASS_ASSUMED  37.40960958218893      >= 6.0                   31.409609582 
+REQ-01.plate_under_x106_z-222.hole_gap               PASS_ASSUMED  37.40960958218893      >= 6.0                   31.409609582 
+U-03.plate_under_x106_z-222.edge_gap                 PASS_ASSUMED  12.3                   >= 8.0                   4.3          
+REQ-01.plate_under_x106_z-222.edge_gap               PASS_ASSUMED  12.3                   >= 8.0                   4.3          
+U-03.plate_under_x88_z-78.missing_volume             PASS_ASSUMED  7.105427357601002e-15  <= 0.0                   -7.105427357601002e-15 
+REQ-01.plate_under_x88_z-78.missing_volume           PASS_ASSUMED  7.105427357601002e-15  <= 0.0                   -7.105427357601002e-15 
+U-03.plate_under_x88_z-78.hole_gap                   PASS_ASSUMED  31.7682957019364       >= 6.0                   25.768295702 
+REQ-01.plate_under_x88_z-78.hole_gap                 PASS_ASSUMED  31.7682957019364       >= 6.0                   25.768295702 
+U-03.plate_under_x88_z-78.edge_gap                   PASS_ASSUMED  30.3                   >= 8.0                   22.3         
+REQ-01.plate_under_x88_z-78.edge_gap                 PASS_ASSUMED  30.3                   >= 8.0                   22.3         
+U-03.plate_under_x106_z-78.missing_volume            PASS_ASSUMED  7.105427357601002e-15  <= 0.0                   -7.105427357601002e-15 
+REQ-01.plate_under_x106_z-78.missing_volume          PASS_ASSUMED  7.105427357601002e-15  <= 0.0                   -7.105427357601002e-15 
+U-03.plate_under_x106_z-78.hole_gap                  PASS_ASSUMED  45.39175083453431      >= 6.0                   39.391750835 
+REQ-01.plate_under_x106_z-78.hole_gap                PASS_ASSUMED  45.39175083453431      >= 6.0                   39.391750835 
+U-03.plate_under_x106_z-78.edge_gap                  PASS_ASSUMED  12.3                   >= 8.0                   4.3          
+REQ-01.plate_under_x106_z-78.edge_gap                PASS_ASSUMED  12.3                   >= 8.0                   4.3          
+E-05.H1.offset                                       PASS_ASSUMED  0.003162277660169997   <= 0.1                   0.096837722  
+E-05.H2.offset                                       PASS_ASSUMED  0.003162277660168874   <= 0.1                   0.096837722  
+E-05.H5.offset                                       PASS_ASSUMED  0.004123105625623561   <= 0.1                   0.095876894  
+E-05.H6.offset                                       PASS_ASSUMED  0.0022360679775041115  <= 0.1                   0.097763932  
+REQ-04.x88_z-222.tray                                PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+REQ-04.x88_z-222.board                               PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+REQ-04.x106_z-222.tray                               PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+REQ-04.x106_z-222.board                              PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+REQ-04.x88_z-78.tray                                 PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+REQ-04.x88_z-78.board                                PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+REQ-04.x106_z-78.tray                                PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+REQ-04.x106_z-78.board                               PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+REQ-05.box                                           PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+E-11.open_plus_x                                     PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+U-03(b).interference_max                             PASS_ASSUMED  0.0                    <= 0.0                   0.0          
+U-04.part.solids                                     PASS          1                      == 1                     0.0          
+U-04.part.volume_delta                               PASS          1.0186340659856796e-10 in [0.0, 0.0]            -1.0186340659856796e-10 
+U-04.part.faces_delta                                PASS          0                      == 0                     0.0          
+U-04.part.labels                                     PASS          1                      == 1                     0.0          
+U-04.part.valid_after                                PASS          1                      == 1                     0.0          
+U-04.assembly.solids                                 PASS          4                      == 4                     0.0          
+U-04.assembly.faces_delta                            PASS          0                      == 0                     0.0          
+U-04.assembly.labels                                 PASS          1                      == 1                     0.0          
+U-04.assembly.valid_after                            PASS          1                      == 1                     0.0          
+U-07.mesh.bodies                                     PASS          1                      == 1                     0.0          
+U-07.mesh.naked_edges                                PASS          0                      == 0                     0.0          
+U-07.mesh.winding                                    PASS          1                      == 1                     0.0          
+U-07.tolerance                                       PASS          0.01                   <= 0.01                  0.0          
+U-07.angular_tolerance                               PASS          0.2                    <= 0.25302439550057354   0.053024396  
+U-07.build_sagitta                                   PASS          0.004893867400154526   <= 0.01                  0.005106133  
+U-07.max_sagitta                                     PASS          0.004893867400154526   <= 0.01                  0.005106133  
+U-08                                                 N/A           None                   N/A                      None         
+D-07                                                 N/A           None                   N/A                      None         
+REQ-06(Soft)                                         INCONCLUSIVE  None                   bench                    None         
+{"envelope": 0.8, "census": 1.0, "features": 1.0, "walls": 35.3, "print": 41.0, "tray_board_common_s": 5.2, "assembly_a": 63.3, "path": 162.1, "roundtrip": 172.8}

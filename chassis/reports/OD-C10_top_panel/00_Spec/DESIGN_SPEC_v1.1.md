@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-C10 printed top panel (20261001-od-c10-top-panel)
 
-Version 1.2 · RATIFIED by the Usta on 2026-10-01 (standing instruction of 2026-09-30 and the "what can start now please initiate it" of 2026-10-01: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size M · lane CAD
+Version 1.1 · RATIFIED by the Usta on 2026-10-01 (standing instruction of 2026-09-30 and the "what can start now please initiate it" of 2026-10-01: design every printable part with the pipeline, ask only where a decision is needed, ledger the open questions and proceed; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size M · lane CAD
 
 ## §1 Intent
 
@@ -95,7 +95,7 @@ and hands on top. Loads: its own weight, a hand pressing on it, a cup.
 |---|---|---|---|---|---|---|---|
 | U-01 | Valid solid per part | `solid_count = 1`, `brep_valid = 1`, `naked_edges = 0` | Hard | CAD | house | `validity` | — |
 | U-02 | Envelope within spec | 240.0 × 39.5 × 405.0 each in [spec − 0.1, spec + 0.1]; position against the datum reported apart (x ±120.0, y 210.5 … 250.0, z −305.0 … +100.0) | Hard | CAD | house | `envelope` | — |
-| U-03 | Assembly closes | (a) at the identity: the two bulkhead columns' bottoms on OD-C02's top-rail face and the two rear columns' bottoms on OD-C11's ledge are the designed contacts, `clearance = 0`, `interference ≤ 0` mm³; each column's Ø3.4 hole coaxial with the insert bore under it, offset ≤ 0.10 (`locate_bore` on both solids); panel to OD-C05 = 0.50 ± 0.05 (the pads) and nowhere less; panel to OD-C07 ≥ 3.0; panel to OD-C01 ≥ 3.0; panel to OD-C02 and OD-C11 away from the column bottoms ≥ 0.5, except the rear skirt's bottom inner edge (y 215, z −302), which meets the top outer edge of OD-C11's wall along x ±116 as a designed line contact, and the rear skirt's bottom face over its R 10 corner arcs at x ±110 … ±116, which rests on OD-C11's wall top (two patches, ≈ 5.9 mm² each): `clearance = 0`, `interference ≤ 0` (1.1: the skirt z −305 … −302 and the wall z −302 … −299 share that edge by §4's geometry; 1.2: the corner patches, v01 REPORT §10, accepted by the Usta). (b) the panel lowered along −Y from +40.0 above its seat to the seat in steps ≤ 2.0: `interference ≤ 0` with every reference solid at every step | Hard | CAD | house | `clearance`, `interference`, `locate_bore` | A-01, A-02, A-03 |
+| U-03 | Assembly closes | (a) at the identity: the two bulkhead columns' bottoms on OD-C02's top-rail face and the two rear columns' bottoms on OD-C11's ledge are the designed contacts, `clearance = 0`, `interference ≤ 0` mm³; each column's Ø3.4 hole coaxial with the insert bore under it, offset ≤ 0.10 (`locate_bore` on both solids); panel to OD-C05 = 0.50 ± 0.05 (the pads) and nowhere less; panel to OD-C07 ≥ 3.0; panel to OD-C01 ≥ 3.0; panel to OD-C02 and OD-C11 away from the column bottoms ≥ 0.5, except the rear skirt's bottom inner edge (y 215, z −302), which meets the top outer edge of OD-C11's wall along x ±116 as a designed line contact: `clearance = 0`, `interference ≤ 0` (1.1: the skirt z −305 … −302 and the wall z −302 … −299 share that edge by §4's geometry). (b) the panel lowered along −Y from +40.0 above its seat to the seat in steps ≤ 2.0: `interference ≤ 0` with every reference solid at every step | Hard | CAD | house | `clearance`, `interference`, `locate_bore` | A-01, A-02, A-03 |
 | U-04 | Clean export | named body re-read unchanged, no stray shells, valid after re-import | Hard | CAD | house | `step_roundtrip` | — |
 | U-05 | Every spec feature present | counts per the plan: 1 skin, 1 perimeter skirt, 4 columns each with a Ø3.4 through-hole and a Ø6.5 counterbore, 2 rest pads, the column ribs (E-06) | Hard | CAD | house | `feature_census`, `bore_census`, `locate_bore` | — |
 | U-06 | Soft: thin corners under a round | `min_wall` wide ≥ 2.0 | Soft | part | house | `min_wall` `detail["wide"]` | — |
@@ -152,7 +152,6 @@ and hands on top. Loads: its own weight, a hand pressing on it, a cup.
 | 2026-10-01 | INTAKE §4 gap 10 (OD-C01 §2's "axis the line (x 0, y 175) along Z") is that spec's text from before the group head stood vertical (OD-C01 spec 1.2 §4 A-01 governs: axis vertical at (x 0, z 32), mouth at y 176.76); no effect on this panel | Oğuz | OD-C01 spec 1.2 §7 |
 | 2026-10-01 | REQ-08 (stiffness) is a Soft bench gate answered by the first print | Oğuz | §5 |
 | 2026-10-01 | 1.1 before the first build: OD-C11's wall top meets the rear skirt along a line, which U-03's 0.5 rule would have failed by construction; recorded as a designed contact; OD-C11's build v02 STEP is the reference | Oğuz (on the standing instruction) | OD-C11 REPORT v02 |
-| 2026-10-01 | v01 REPORT stop on U-03 (a): the lid's rear skirt also rests on OD-C11's wall top at its two R 10 corners (two 5.907 mm² patches, interference 0); the Usta accepts them as designed contact, v01 goes to review as built | the Usta (decision card, 13:06Z) | 01_CAD/REPORT_od_c10_top_v01.md §10; usta_gate question_answered |
 
 ## §8 Change log
 
@@ -160,5 +159,4 @@ and hands on top. Loads: its own weight, a hand pressing on it, a cup.
 |---|---|---|
 | 0.1 | 2026-10-01 | first draft from the OD-C01, OD-C02, OD-C05 and OD-C07 specs |
 | 1.0 | 2026-10-01 | INTAKE_v01 cross-references in §6; ratified |
-| 1.2 | 2026-10-01 | after build v01: U-03 (a)'s designed contact includes the rear skirt's corner patches on OD-C11's wall top, accepted by the Usta (U-03); no geometry change; spec 1.1 kept as `DESIGN_SPEC_v1.1.md` |
 | 1.1 | 2026-10-01 | before build v01: the reference for OD-C11 is its build v02 STEP; U-03 (a) names the rear skirt's line contact with OD-C11's wall top (§1 table, U-03, A-02); spec 1.0 kept as `DESIGN_SPEC_v1.0.md` |

@@ -18,3 +18,6 @@
 {"t": "2026-10-01T12:45:44Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "the designer package plans and builds in one package (simple part); OD-C10 and OD-C11 wait on the Usta, so builds stay sequential"}}
 {"t": "2026-10-01T12:45:45Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c08_tray_v01", "brief": "briefs/WP-02_designer.md", "attempt": 1}}
 {"t": "2026-10-01T12:45:45Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-10-01T13:16:28Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c08_tray_v01", "outcome": "SUBMITTED", "report": "01_CAD/REPORT_od_c08_tray_v01.md"}}
+{"t": "2026-10-01T13:16:29Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "J4_REVIEW", "reason": "v01 submitted, every Hard gate at nominal"}}
+{"t": "2026-10-01T13:17:22Z", "ev": "package_sent", "detail": {"role": "reviewer", "target": "od_c08_tray_v01", "brief": "briefs/WP-03_reviewer.md", "attempt": 1}}

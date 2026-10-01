@@ -5,30 +5,32 @@ code: ODC11
 milestone: M1
 title: "Open Dedica OD-C11 printed back panel"
 lane: CAD
-state: BLOCKED-ON-USTA
-blocked_on: {question: "halt: build cap 2 reached; v02 stopped on spec 1.1 conflicts (U-03a 3.0 clause vs wall foot 2.300; outer gussets block pass-throughs at y30)", since: "2026-10-01T12:03:40Z", return_to: J3_BUILD}
+state: J3_BUILD
+blocked_on: null
 next_action: "J3: designer builds od_c11_back_v01 (WP-02)"
 data_class: PUBLIC
 size: M
 process: [FDM]
 gate_sections: [U, D, J, E]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.1"
+spec_version: "1.2"
 workspace: "${OGUZ_JOBS}/20261001-od-c11-back-panel"
 delivery: "${OGUZ_DELIVERY}/20261001-od-c11-back-panel"
 artifacts: "${OGUZ_ARTIFACTS}/20261001-od-c11-back-panel"
 repo_commit: "10929db1408d89144bd4af9cad971440427933d0"
-active_target: od_c11_back_v02
+active_target: od_c11_back_v03
 revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13]
-attempts: {build: 2, export: 0, tool: 0}
-caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
+attempts: {build: 3, export: 0, tool: 0}
+caps: {build: 3, export: 2, tool: 2, fix_cycles: 3}
 reviews: []
 usta_gates:
   - {gate: question_answered, outcome: tank_on_table, date: "2026-10-01"}
   - {gate: spec_ratified, outcome: "1.0", date: "2026-10-01"}
   - {gate: concept_picked, outcome: C1, date: "2026-10-01"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-10-01"}
+  - {gate: halt_decision, outcome: raise_cap, date: "2026-10-01"}
+  - {gate: spec_ratified, outcome: "1.2", date: "2026-10-01"}
 deliverables: [STEP, STL, "3MF", scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null

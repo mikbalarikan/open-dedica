@@ -5,15 +5,15 @@ code: ODC10
 milestone: M1
 title: "Open Dedica OD-C10 printed top panel"
 lane: CAD
-state: BLOCKED-ON-USTA
-blocked_on: {question: "v01 stopped on U-03 (a): the rear skirt rests on OD-C11's wall top in two 5.907 mm2 patches at the R10 corners; accept them as designed contact and review v01 as built, or relieve the corners in a second build", since: "2026-10-01T12:45:25Z", return_to: J3_BUILD}
+state: J3_BUILD
+blocked_on: null
 next_action: "J0: intake reads and hashes the inputs"
 data_class: PUBLIC
 size: M
 process: [FDM]
 gate_sections: [U, D, J, E]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.1"
+spec_version: "1.2"
 workspace: "${OGUZ_JOBS}/20261001-od-c10-top-panel"
 delivery: "${OGUZ_DELIVERY}/20261001-od-c10-top-panel"
 artifacts: "${OGUZ_ARTIFACTS}/20261001-od-c10-top-panel"
@@ -21,7 +21,7 @@ repo_commit: "10929db1408d89144bd4af9cad971440427933d0"
 active_target: od_c10_top_v01
 revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13]
-attempts: {build: 1, export: 0, tool: 0}
+attempts: {build: 2, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
 reviews: []
 usta_gates:
@@ -29,6 +29,8 @@ usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-10-01"}
   - {gate: concept_picked, outcome: C1, date: "2026-10-01"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-10-01"}
+  - {gate: question_answered, outcome: accept_corner_contact, date: "2026-10-01"}
+  - {gate: spec_ratified, outcome: "1.2", date: "2026-10-01"}
 deliverables: [STEP, STL, "3MF", scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null

@@ -25,3 +25,9 @@
 {"t": "2026-10-01T12:06:05Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
 {"t": "2026-10-01T12:45:22Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c10_top_v01", "outcome": "STOPPED", "report": "01_CAD/REPORT_od_c10_top_v01.md"}}
 {"t": "2026-10-01T12:45:25Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "BLOCKED-ON-USTA", "reason": "v01 stopped on U-03 (a): the rear skirt rests on OD-C11's wall top in two 5.907 mm2 patches at the R10 corners; accept them as designed contact and review v01 as built, or relieve the corners in a second build"}}
+{"t": "2026-10-01T13:06:18Z", "ev": "usta_gate", "detail": {"gate": "question_answered", "outcome": "accept_corner_contact", "ref": "decision card 2026-10-01 13:06Z: the rear skirt's corner patches on OD-C11 are designed contact"}}
+{"t": "2026-10-01T13:06:19Z", "ev": "note", "detail": {"text": "1.1 -> 1.2", "ref": "JOB.md:spec_version"}}
+{"t": "2026-10-01T13:06:20Z", "ev": "usta_gate", "detail": {"gate": "spec_ratified", "outcome": "1.2", "ref": "U-03 (a) wording on the Usta's answer; no geometry change"}}
+{"t": "2026-10-01T13:06:25Z", "ev": "state", "detail": {"from": "BLOCKED-ON-USTA", "to": "J3_BUILD", "reason": "the Usta answered: corner contact accepted (spec 1.2)"}}
+{"t": "2026-10-01T13:07:17Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c10_top_v01", "brief": "briefs/WP-03_designer.md", "attempt": 2}}
+{"t": "2026-10-01T13:07:17Z", "ev": "attempt", "detail": {"counter": "build", "n": 2, "cap": 2}}
