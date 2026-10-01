@@ -1,0 +1,104 @@
+{
+ "delivered": {
+  "boss +90 to wall and ledge": {
+   "regions": 3,
+   "feature": 2,
+   "wall": 2,
+   "other": 2,
+   "tied": true
+  },
+  "boss -90 to wall and ledge": {
+   "regions": 1,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  },
+  "inner gusset +X to wall and flange": {
+   "regions": 1,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  },
+  "inner gusset -X to wall and flange": {
+   "regions": 1,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  },
+  "outer gusset +X to wall and flange": {
+   "regions": 2,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  },
+  "outer gusset -X to wall and flange": {
+   "regions": 2,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  },
+  "ledge to wall": {
+   "regions": 1,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  }
+ },
+ "mutant_boss90_detached": {
+  "boss +90 to wall and ledge": {
+   "regions": 4,
+   "feature": 3,
+   "wall": 2,
+   "other": 2,
+   "tied": false
+  },
+  "boss -90 to wall and ledge": {
+   "regions": 1,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  },
+  "inner gusset +X to wall and flange": {
+   "regions": 1,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  },
+  "inner gusset -X to wall and flange": {
+   "regions": 1,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  },
+  "outer gusset +X to wall and flange": {
+   "regions": 2,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  },
+  "outer gusset -X to wall and flange": {
+   "regions": 2,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  },
+  "ledge to wall": {
+   "regions": 1,
+   "feature": 0,
+   "wall": 0,
+   "other": 0,
+   "tied": true
+  }
+ }
+}

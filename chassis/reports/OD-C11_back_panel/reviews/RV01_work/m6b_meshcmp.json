@@ -1,0 +1,30 @@
+{
+ "stl_vs_3mf": {
+  "tris": [
+   3928,
+   3928
+  ],
+  "verts": [
+   1942,
+   1942
+  ],
+  "max_vertex_gap": 1.0000000031595846e-05,
+  "tri_sets_equal": true,
+  "only_a": 0,
+  "only_b": 0
+ },
+ "stl_vs_remesh": {
+  "tris": [
+   3928,
+   3928
+  ],
+  "verts": [
+   1942,
+   1942
+  ],
+  "max_vertex_gap": 0.0,
+  "tri_sets_equal": false,
+  "only_a": 12,
+  "only_b": 12
+ }
+}

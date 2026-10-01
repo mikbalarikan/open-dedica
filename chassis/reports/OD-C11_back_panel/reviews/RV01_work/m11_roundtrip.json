@@ -1,0 +1,111 @@
+{
+ "part": {
+  "schema": "AP242",
+  "unit": "MM",
+  "labels": [
+   "od_c11_back"
+  ],
+  "solids": 1,
+  "validity": {
+   "solid_count": 1,
+   "brep_valid": 1,
+   "naked_edges": 0
+  },
+  "roundtrip": {
+   "schema": [
+    null,
+    "INCONCLUSIVE"
+   ],
+   "solids": [
+    null,
+    "INCONCLUSIVE"
+   ],
+   "volume_delta": [
+    null,
+    "INCONCLUSIVE"
+   ],
+   "faces_delta": [
+    null,
+    "INCONCLUSIVE"
+   ],
+   "labels": [
+    null,
+    "INCONCLUSIVE"
+   ],
+   "valid_after": [
+    null,
+    "INCONCLUSIVE"
+   ]
+  }
+ },
+ "assembly": {
+  "schema": "AP242",
+  "unit": "MM",
+  "labels": [
+   "od_c11_back",
+   "od_c01_frame",
+   "od_c02_bulkhead",
+   "od_c03_cradle",
+   "od_h01_pump"
+  ],
+  "solids": 5,
+  "validity": {
+   "solid_count": 5,
+   "brep_valid": 1,
+   "naked_edges": 0
+  },
+  "children": {
+   "od_c11_back": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   },
+   "od_c01_frame": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   },
+   "od_c02_bulkhead": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   },
+   "od_c03_cradle": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   },
+   "od_h01_pump": {
+    "solid_count": 1,
+    "brep_valid": 1,
+    "naked_edges": 0
+   }
+  },
+  "roundtrip": {
+   "schema": [
+    null,
+    "INCONCLUSIVE"
+   ],
+   "solids": [
+    null,
+    "INCONCLUSIVE"
+   ],
+   "volume_delta": [
+    null,
+    "INCONCLUSIVE"
+   ],
+   "faces_delta": [
+    null,
+    "INCONCLUSIVE"
+   ],
+   "labels": [
+    null,
+    "INCONCLUSIVE"
+   ],
+   "valid_after": [
+    null,
+    "INCONCLUSIVE"
+   ]
+  }
+ }
+}
