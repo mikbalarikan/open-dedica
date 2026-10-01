@@ -1,0 +1,234 @@
+[
+ {
+  "check": "validity (U-01)",
+  "mutant": "front face removed: open shell",
+  "got": "FAIL",
+  "measured": 6,
+  "required": "== 0",
+  "margin": -6.0
+ },
+ {
+  "check": "validity solid_count (U-01)",
+  "mutant": "front face removed: open shell",
+  "got": "FAIL",
+  "measured": 0,
+  "required": "== 1",
+  "margin": -1.0
+ },
+ {
+  "check": "envelope (U-02 size_z)",
+  "mutant": "foot rear edge moved to z -71.0",
+  "got": "FAIL",
+  "measured": 46.06,
+  "required": "in [44.9, 45.1]",
+  "margin": -0.96
+ },
+ {
+  "check": "envelope (REQ-07 min_z)",
+  "mutant": "foot rear edge moved to z -71.0",
+  "got": "FAIL",
+  "measured": -71.0,
+  "required": ">= -70.0",
+  "margin": -1.0
+ },
+ {
+  "check": "envelope (D-02 height)",
+  "mutant": "wall top raised to y 80 (255 tall)",
+  "got": "FAIL",
+  "measured": 255.0,
+  "required": "<= 250.0",
+  "margin": -5.0
+ },
+ {
+  "check": "compare_step (U-04 volume_delta)",
+  "mutant": "file compared with a shape whose (+44,+44) hole moved 0.5 in x",
+  "got": "FAIL",
+  "measured": 168.72708784298447,
+  "required": "<= 0.0",
+  "margin": -168.727087843
+ },
+ {
+  "check": "feature_census (U-05 bores)",
+  "mutant": "counterbore at (+44,-44) filled",
+  "got": "FAIL",
+  "measured": 13,
+  "required": "== 14",
+  "margin": -1.0
+ },
+ {
+  "check": "bore_census+locate_bore (REQ-02 dia)",
+  "mutant": "counterbore at (+44,-44) filled",
+  "got": "FAIL",
+  "measured": 3.4,
+  "required": "in [6.4, 6.6]",
+  "margin": -3.0
+ },
+ {
+  "check": "locate_bore (REQ-01 offset)",
+  "mutant": "hole (+44,+44) moved 0.5 in x",
+  "got": "FAIL",
+  "measured": 0.5,
+  "required": "<= 0.1",
+  "margin": -0.4
+ },
+ {
+  "check": "locate_bore (D-04a dia)",
+  "mutant": "foot hole (+35, z -40) resized to 3.2",
+  "got": "FAIL",
+  "measured": 3.2,
+  "required": ">= 3.25",
+  "margin": -0.05
+ },
+ {
+  "check": "min_wall (D-01a)",
+  "mutant": "counterbore (+44,+44) enlarged to 10.6: web 0.7",
+  "got": "FAIL",
+  "measured": 0.6999999897470028,
+  "required": ">= 0.8",
+  "margin": -0.10000001
+ },
+ {
+  "check": "min_wall wide (U-06)",
+  "mutant": "counterbore (+44,+44) enlarged to 10.6: web 0.7",
+  "got": "FAIL",
+  "measured": 0.6999999897470028,
+  "required": ">= 2.0",
+  "margin": -1.30000001
+ },
+ {
+  "check": "overhang_census (D-03a)",
+  "mutant": "plain \u00d86 hole along Z at (0,-40), no gable",
+  "got": "FAIL",
+  "measured": 0.0,
+  "required": ">= 45.0",
+  "margin": -45.0
+ },
+ {
+  "check": "analytic face angle (D-03a)",
+  "mutant": "plain \u00d86 hole along Z at (0,-40), no gable",
+  "got": "FAIL",
+  "measured": 8.537736462515939e-07,
+  "required": ">= 45.0",
+  "margin": -44.999999146
+ },
+ {
+  "check": "bridge span (D-03b)",
+  "mutant": "plain \u00d86 hole along Z at (0,-40), no gable",
+  "got": "FAIL",
+  "measured": 6.0,
+  "required": "<= 5.0",
+  "margin": -1.0
+ },
+ {
+  "check": "analytic face angle (D-03a)",
+  "mutant": "R6 teardrop at (0,-40), gable 44.0 deg, arc tangent",
+  "got": "FAIL",
+  "measured": 44.00000000000001,
+  "required": ">= 45.0",
+  "margin": -1.0
+ },
+ {
+  "check": "overhang_census (D-03a)",
+  "mutant": "R6 teardrop at (0,-40), gable 44.0 deg, arc tangent",
+  "got": "FAIL",
+  "measured": 44.00000000000001,
+  "required": ">= 45.0",
+  "margin": -1.0
+ },
+ {
+  "note": "nominal analytic",
+  "least": 44.999999999966576,
+  "at": [
+   17.677669529653375,
+   -92.322330470326,
+   -27.44
+  ],
+  "plugged_census": [
+   null,
+   "INCONCLUSIVE",
+   "the least, 45.0000\u00b0, lies within its sampling bound (0.0090\u00b0) above min_deg; a finer spacing settles it",
+   0
+  ],
+  "teardrop45": 44.999999999966576
+ },
+ {
+  "check": "radial_extent (REQ-04)",
+  "mutant": "4 x 5 bar from the hub window edge to r 26 at theta 0",
+  "got": "INCONCLUSIVE",
+  "measured": null,
+  "required": ">= 30.0",
+  "margin": null
+ },
+ {
+  "check": "radial_extent (REQ-08)",
+  "mutant": "4 x 5 bar from the lower window edge to r 21 at theta 270",
+  "got": "INCONCLUSIVE",
+  "measured": null,
+  "required": ">= 25.0",
+  "margin": null
+ },
+ {
+  "check": "interference (U-03 carrier|OD-G01)",
+  "mutant": "carrier moved +3.1 along Z",
+  "got": "FAIL",
+  "measured": 21301.839675979314,
+  "required": "<= 0.0",
+  "margin": -21301.839675979
+ },
+ {
+  "check": "clearance (U-03 carrier|OD-G04)",
+  "mutant": "carrier moved +3.1 along Z",
+  "got": "FAIL",
+  "measured": 1.9000000000000021,
+  "required": ">= 2.0",
+  "margin": -0.1
+ },
+ {
+  "check": "clearance (U-03 contact == 0)",
+  "mutant": "carrier moved -0.5 along Z (gap to the housing)",
+  "got": "FAIL",
+  "measured": 0.5,
+  "required": "== 0.0",
+  "margin": -0.5
+ },
+ {
+  "check": "gusset volume (E-06)",
+  "mutant": "both gussets removed",
+  "got": "FAIL",
+  "measured": 0.0,
+  "required": ">= 3199.999",
+  "margin": -3199.999
+ },
+ {
+  "check": "mesh_sagitta (U-07)",
+  "mutant": "STL meshed at tol 0.1 / 0.5 rad",
+  "got": "FAIL",
+  "measured": 0.049525205905305986,
+  "required": "<= 0.01",
+  "margin": -0.039525206
+ },
+ {
+  "check": "mesh_deviation (V-05)",
+  "mutant": "STL meshed at tol 0.1 / 0.5 rad",
+  "got": "FAIL",
+  "measured": 0.049524468572655016,
+  "required": "<= 0.01",
+  "margin": -0.039524469
+ },
+ {
+  "check": "mesh_census (U-07 closed shell)",
+  "mutant": "delivered STL with its last triangle dropped",
+  "got": "FAIL",
+  "measured": 3,
+  "required": "== 0",
+  "margin": -3.0
+ },
+ {
+  "check": "3MF/STL triangle comparison (U-07)",
+  "mutant": "coarse STL (tol 0.1) compared with the delivered 3MF",
+  "got": "FAIL",
+  "measured": 1708,
+  "required": "== 4264",
+  "margin": -2556.0
+ }
+]

@@ -1,0 +1,122 @@
+{
+ "od_c05_carrier_y0_v04_front.png": {
+  "sha256": "f5552864272d7f34b61fcac837579274d104e2f7e442c121a7a7ed230c64bf17",
+  "plane": "front",
+  "through": [
+   0.0,
+   0.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_ym80_v04_front.png": {
+  "sha256": "e3740700304349f4be0dfbcf20a62f885135b188a48ed7841a10141d54c9dd58",
+  "plane": "front",
+  "through": [
+   0.0,
+   -80.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_x0_v04_left.png": {
+  "sha256": "903fe49d7fc2203c6a4651494e820b246d74eb28f6b7c338a762873bdcc7c3a1",
+  "plane": "left",
+  "through": [
+   0.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_x35_v04_left.png": {
+  "sha256": "30678270d27ed691fb8ee5e9dd15310a625c41d7d2a8ed9acd6dd7f98d8c46f0",
+  "plane": "left",
+  "through": [
+   35.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_x53_v04_left.png": {
+  "sha256": "b488b7150c4393ae341f980278b5888c24c35aa20101b8b85afa7f8f47c309f7",
+  "plane": "left",
+  "through": [
+   53.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_ym100_v04_front.png": {
+  "sha256": "1b78bca5d37f8e5081c08b7a94eedc719cb26883f5e90c56b3de28ea4ffea8a8",
+  "plane": "front",
+  "through": [
+   0.0,
+   -100.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_zm27p44_v04_top.png": {
+  "sha256": "1fcc9436a60d3f14205e980d7ed5d025fbe3c0d77c0667050f0c9d809ee66b3c",
+  "plane": "top",
+  "through": [
+   0.0,
+   -26.0,
+   -27.44
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_z165_v04_top.png": {
+  "sha256": "06837f88f50a34f09375c73c3f864eacd4daf25eaa6341a378e27e9a0f7bd4d5",
+  "plane": "top",
+  "through": [
+   0.0,
+   -26.0,
+   165.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_assembly_y0_v04_front.png": {
+  "sha256": "eb9f08ce9cc6b29882e96be22ff353afa8bcf6bb8cf4f6f996a5c9272beaa535",
+  "plane": "front",
+  "through": [
+   0.0,
+   0.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_assembly_x0_v04_left.png": {
+  "sha256": "475e12a2a6a556d925960dd2cf7041f5d7ed3e4545aebcb649c511acc443b058",
+  "plane": "left",
+  "through": [
+   0.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ }
+}

@@ -1,0 +1,701 @@
+{
+ "schema": "oguz-verdict-v1",
+ "review_id": "RV01",
+ "job_id": "20260930-od-c05-group-head-carrier",
+ "target": "od_c05_carrier_v01",
+ "spec_version": "1.2",
+ "reviewer": {
+  "runtime": "claude-code",
+  "model": "claude-opus-5-5"
+ },
+ "verdict": "REVISE",
+ "summary": "Every section 5 gate re-measured PASS or PASS_ASSUMED (D-03a settled analytically at 45.000 deg, REQ-09 Soft INCONCLUSIVE); REVISE on plausibility P1/P5: the spec frame mounts the group head with its axis horizontal, which no espresso group head uses.",
+ "files": [
+  {
+   "path": "02_STEP_STL/od_c05_carrier_C1_v01.step",
+   "sha256": "3555600be58771b0efba7b2f2b5a48439bb442db58d5b5eb92fdd6a6fe410362",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c05_assembly_C1_v01.step",
+   "sha256": "b6fdbea9466703e81d63938840ce82853cddcac9c4f537d7e5d721f55817e1c3",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c05_carrier_C1_v01.stl",
+   "sha256": "aee6d05a1573742d131cb949e86b98acceb6fca179dc2cd46394a4918c8fe48a",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c05_carrier_C1_v01.3mf",
+   "sha256": "f9d795230b0e3269a107513fa79d7507fcec1dda591edbc0e21b5edb90edc15a",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/REPORT_od_c05_carrier_v01.md",
+   "sha256": "6f730d02d7f9fa1fcee9826332e42473b2408e2a86c1b1e7f5a544362a305356",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/DESIGN_PLAN.md",
+   "sha256": "41b80f841cb6ee700fe5dc7590b8b1db5403458e469af64b5673cf5f0232eced",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/check_od_c05_carrier_v01.json",
+   "sha256": "1c57b36c81835e0774266f800d9c3d333f0e66638e2d4bbcbf7ca2105866e03d",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/build_od_c05_carrier_v01.json",
+   "sha256": "d3457f40ea3fcf9a7d10e3ae7f1ca808c85d1f6dabbeb4a2917994211bd75102",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/sections_od_c05_carrier_v01.json",
+   "sha256": "298b88918bd3cc23b4e1d8a25083b5d7591753fa30ca7d2a21fcd9f9d2c7f8bc",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/sweep_v01/SHA256SUMS_v01.txt",
+   "sha256": "2cbc6e99df38bb23293aa1e11ff4d629748c4a97060ac7eea4453f29fb1805ca",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c05_assembly_x0_v01_left.png",
+   "sha256": "45c952415736c7a6bdad835d995b0f4f21af525050efb8a02efac15f14e57ecf",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c05_carrier_x0_v01_left.png",
+   "sha256": "ff005505cf4bffe0b1fe8002cbaea64f9961c2a69184a484a0d6a1e25b9a13dd",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c05_carrier_x35_v01_left.png",
+   "sha256": "edf5390642a14c4dd97241fd525ae097c3ad1305768cdb093727a3c0eab477c8",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c05_carrier_x44_v01_left.png",
+   "sha256": "7972feb30a6f1a93646deca2bfe23305cc489a611111c9b6e3650f34375062d7",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c05_carrier_x48_v01_left.png",
+   "sha256": "7d95e4c21d402ead81af662b28df7eea4e04ca042f7f0061b88683c8584e762c",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c05_carrier_y44_v01_front.png",
+   "sha256": "400b0fbacba5c85ebc25ca1aecfeaa2fa5ee024be96bbc49e77ea8eb8fefdbfe",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c05_carrier_ym110_v01_front.png",
+   "sha256": "537c6d019dd9ff66a5758ad7a169dd3a47c903e395f3bf67883901129cd82dec",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c05_carrier_zm27p44_v01_top.png",
+   "sha256": "49e475ca672c694dab36d477b1545de225eb4103a352b13575cf50d62f827d83",
+   "matches_report": true
+  },
+  {
+   "path": "00_Spec/inputs/OD-G01_housing_C1_v02.step",
+   "sha256": "f8865cd194bbd655a93944637923b4f5aa155487df5cf9777c368d0cd4407b02",
+   "matches_report": true
+  },
+  {
+   "path": "00_Spec/inputs/OD-G04_brewing_gasket_support.step",
+   "sha256": "19b4a140c76f2e1ccd92304cb1944a1cb7affcba4d0c7960488cfb26098d6ad2",
+   "matches_report": true
+  }
+ ],
+ "gates": [
+  {
+   "gate": "U-01",
+   "measured": 1,
+   "unit": "count",
+   "required": "solid_count = 1, brep_valid = 1, naked_edges = 0",
+   "margin": 0,
+   "at": "whole part; brep_valid 1, naked_edges 0; no shell or face outside the solid",
+   "status": "PASS",
+   "method": "validity",
+   "assumes": []
+  },
+  {
+   "gate": "U-02",
+   "measured": 45.0,
+   "unit": "mm",
+   "required": "100.0 x 225.0 x 45.0 each in [spec - 0.1, spec + 0.1]",
+   "margin": 0.1,
+   "at": "size_x 100.000, size_y 225.000, size_z 45.000 (each margin +0.100); position x -50.000 ... 50.000, y -175.000 ... 50.000, z -69.940 ... -24.940",
+   "status": "PASS",
+   "method": "envelope",
+   "assumes": []
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "(a) carrier|OD-G01 clearance = 0, interference <= 0, holes coaxial with the inserts; carrier|OD-G04 clearance >= 2.0; (b) N/A",
+   "margin": 0.0,
+   "at": "carrier|OD-G01 contact clearance 0.000 at (-50.0, -42.0, -24.94), interference 0.000 mm3; hole-to-insert axis offsets 0.000 at all four (+-44, +-44) (margin +0.100); carrier|OD-G04 clearance 5.000 (margin +3.000) between (-21.2132, 21.2132, -24.94) on the carrier and (-21.2132, 21.2132, -19.94) on OD-G04, interference 0.000 mm3; assembly path: housing offered along -Z from 30 mm to the seat, interference 0 at every step; delivered assembly STEP matches my own placement",
+   "status": "PASS_ASSUMED",
+   "method": "clearance, interference, bore_census + locate_bore on both solids",
+   "assumes": [
+    "A-01",
+    "A-06"
+   ]
+  },
+  {
+   "gate": "U-04",
+   "measured": 2.3283064365386963e-10,
+   "unit": "mm3",
+   "required": "named body re-read unchanged, no stray shells, valid after re-import",
+   "margin": 0.0,
+   "at": "label od_c05_carrier, AP242, 1 solid, 0 loose shells or faces; step_roundtrip of the re-read solid: volume_delta 2.3e-10 mm3 (inside the 0.001 band), faces_delta 0, valid_after 1",
+   "status": "PASS",
+   "method": "read_step, step_roundtrip",
+   "assumes": []
+  },
+  {
+   "gate": "U-05",
+   "measured": 14,
+   "unit": "count",
+   "required": "counts per the plan: 1 wall, 1 foot, 2 gussets, 2 windows, 4 Z holes with 4 counterbores, 4 Y holes",
+   "margin": 0,
+   "at": "20 planar, 16 cylindrical (14 concave, 2 convex R 6.000), 14 bores; every hole located (section 3)",
+   "status": "PASS",
+   "method": "feature_census, bore_census, locate_bore",
+   "assumes": []
+  },
+  {
+   "gate": "U-06",
+   "measured": 2.749999989747004,
+   "unit": "mm",
+   "required": ">= 2.0 (Soft)",
+   "margin": 0.75,
+   "at": "(50.000, 44.006, -28.361), web between the (+44, +44) counterbore and the side face x 50",
+   "status": "PASS",
+   "method": "min_wall detail[\"wide\"]",
+   "assumes": []
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.004984363810217869,
+   "unit": "mm",
+   "required": "STL at tol 0.01, angular <= 0.2310 rad, stl_max_sagitta <= 0.01; the 3MF carries the same mesh",
+   "margin": 0.005015636189782131,
+   "at": "mesh_deviation 0.00498 at (24.655, -105.861, -27.44), lower window arc; re-meshed from the STEP at 0.01 / 0.20 rad: byte-identical STL (sagitta 0.00498, 4264 triangles); one closed shell, winding 1, volume 108716.928 mm3 (B-rep 108712.078); 3MF: 4264 triangles, same triangle set, volume 108716.928 mm3, unit millimeter",
+   "status": "PASS",
+   "method": "write_stl, mesh_sagitta, mesh_census, mesh_deviation, 3MF parse",
+   "assumes": []
+  },
+  {
+   "gate": "U-08",
+   "measured": null,
+   "unit": "count",
+   "required": "applies to threaded parts; this target has none",
+   "margin": null,
+   "at": null,
+   "status": "NOT_APPLICABLE",
+   "method": "N/A by its row",
+   "assumes": []
+  },
+  {
+   "gate": "D-01a",
+   "measured": 2.749999989747004,
+   "unit": "mm",
+   "required": ">= 0.8",
+   "margin": 1.95,
+   "at": "(50.000, 44.006, -28.361), counterbore web",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": []
+  },
+  {
+   "gate": "D-01b",
+   "measured": 2.749999989747004,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 0.75,
+   "at": "(50.000, 44.006, -28.361), counterbore web; STL corroboration min_wall_mesh 2.746 >= 2.750 - 0.010",
+   "status": "PASS",
+   "method": "min_wall, min_wall_mesh",
+   "assumes": []
+  },
+  {
+   "gate": "D-02",
+   "measured": 225.0,
+   "unit": "mm",
+   "required": "each envelope size <= the K1C build volume, foot down: 100.0 x 45.0 on the bed, 225.0 tall",
+   "margin": 25.0,
+   "at": "height 225.0 <= 250 (margin 25); bed 100.0 x 45.0 <= 220 x 220 (margins 120, 175)",
+   "status": "PASS_ASSUMED",
+   "method": "envelope",
+   "assumes": [
+    "A-08"
+   ]
+  },
+  {
+   "gate": "D-03a",
+   "measured": 44.999999999966576,
+   "unit": "deg",
+   "required": "every downward face >= 45 deg from horizontal, build +Y; the eight hole and counterbore crowns are the named exception",
+   "margin": -3.3424e-11,
+   "at": "least outside the exception at (17.6777, -92.3223, z), the lower window arc at its tangent line with the gable (hub window arc the same at (21.2132, 21.2132)); gables 45.000000 deg; the 8 faces under 45 deg are exactly the 4 R 1.7 and 4 R 3.25 crowns along Z at (+-44, +-44), least 0.0 deg inside the exception; overhang_census reads INCONCLUSIVE at 45.0000 (bound 0.009) with 0 samples under 45",
+   "status": "PASS_ASSUMED",
+   "method": "analytic face angle per B-rep face (plane normal; cylinder normal at its u bounds and interior extremum); plane sections z -27.44 and -28.94; overhang_census(build_dir=(0,1,0)) on the part with the eight crowns plugged",
+   "assumes": [
+    "A-13"
+   ]
+  },
+  {
+   "gate": "D-03b",
+   "measured": 6.5,
+   "unit": "mm",
+   "required": "span <= 5; the hole and counterbore crowns <= 6.6 as the named exception",
+   "margin": 0.1,
+   "at": "widest crown the four Oe6.500 counterbores at (+-44, +-44, -29.94 ... -27.94), 2.0 deep; Oe3.400 crowns 3.0 deep; outside the exception no downward face under 45 deg, so no bridge (0 mm, margin +5)",
+   "status": "PASS",
+   "method": "bridge span from the analytic downward-face list and sections z -27.44, -28.94, x 0",
+   "assumes": []
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "all eight Oe3.4 holes Oe >= 3.25",
+   "margin": 0.15,
+   "at": "all eight holes 3.400: Z holes at (+-44, +-44), Y holes at (+-35, z -40 / -60)",
+   "status": "PASS",
+   "method": "locate_bore",
+   "assumes": []
+  },
+  {
+   "gate": "D-06a",
+   "measured": 2.749999989747004,
+   "unit": "mm",
+   "required": ">= 1.0",
+   "margin": 1.75,
+   "at": "(50.000, 44.006, -28.361)",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": []
+  },
+  {
+   "gate": "D-07",
+   "measured": null,
+   "unit": "count",
+   "required": "the holes are clearance holes, not fit bores: none on this part",
+   "margin": null,
+   "at": null,
+   "status": "NOT_APPLICABLE",
+   "method": "N/A by its row",
+   "assumes": []
+  },
+  {
+   "gate": "E-06",
+   "measured": 2,
+   "unit": "count",
+   "required": "the wall is tied to the foot by the two gussets; no free-standing boss",
+   "margin": 0,
+   "at": "gusset material 3200.000 mm3 in each 4 x 40 x 40 triangle box at x +-46 ... +-50 (full right triangle, legs 40), fused into the one solid; no boss on the part",
+   "status": "PASS",
+   "method": "common_volume against the gusset boxes; section x 0 and x +-48",
+   "assumes": []
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "four Oe3.4 +- 0.1 through along Z at (+-44.0, +-44.0), offset <= 0.10 from the OD-G01 insert bores",
+   "margin": 0.1,
+   "at": "all four: Oe3.400 through, 3.000 long, axis offset 0.000 from nominal and 0.000 from the OD-G01 Oe4.000 x 5.700 insert bores (z -24.94 ... -19.24)",
+   "status": "PASS_ASSUMED",
+   "method": "bore_census + locate_bore on both solids",
+   "assumes": [
+    "A-01"
+   ]
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 6.5,
+   "unit": "mm",
+   "required": "four Oe6.5 +- 0.1 counterbores 2.0 +- 0.1 deep from z -29.94, coaxial with REQ-01",
+   "margin": 0.1,
+   "at": "all four: Oe6.500, 2.000 deep, open at z -29.940, closed by the step at -27.940, coaxial 0.000",
+   "status": "PASS_ASSUMED",
+   "method": "bore_census, locate_bore; section z -28.94",
+   "assumes": [
+    "A-09"
+   ]
+  },
+  {
+   "gate": "REQ-03",
+   "measured": -24.939999999999998,
+   "unit": "mm",
+   "required": "front face z = -24.94 +- 0.10; rear face z = -29.94 +- 0.10",
+   "margin": 0.1,
+   "at": "front = envelope max_z -24.940; rear = counterbore open ends z -29.940 at all four; hole 3.000 + counterbore 2.000 = 5.000",
+   "status": "PASS_ASSUMED",
+   "method": "envelope, locate_bore",
+   "assumes": [
+    "A-01"
+   ]
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 29.999999999999993,
+   "unit": "mm",
+   "required": "no carrier material within r <= 30.0 of the axis over z -29.94 ... -24.94 at every 10 deg",
+   "margin": -7.1e-15,
+   "at": "innermost material on the whole ray, 36 angles x 5 depths (z -29.9, -29.5, -27.44, -25.4, -24.98): least 30.000 at theta 10, z -29.9; theta 90 first material 42.426 (gable apex); bounded r <= 30 rays: 180 of 180 'no material'",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-06"
+   ]
+  },
+  {
+   "gate": "REQ-05",
+   "measured": -175.0,
+   "unit": "mm",
+   "required": "foot underside y = -175.00 +- 0.10, 4.0 +- 0.1 thick",
+   "margin": 0.1,
+   "at": "envelope min_y -175.000; foot 4.000 thick (each Y hole 4.000 long, y -175 ... -171)",
+   "status": "PASS_ASSUMED",
+   "method": "envelope, locate_bore",
+   "assumes": [
+    "A-03",
+    "A-04"
+   ]
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "four Oe3.4 +- 0.1 through along Y at (x +-35.0, z -40.0 / -60.0), offset <= 0.10",
+   "margin": 0.1,
+   "at": "all four Oe3.400, through, offset 0.000",
+   "status": "PASS_ASSUMED",
+   "method": "bore_census + locate_bore",
+   "assumes": [
+    "A-04"
+   ]
+  },
+  {
+   "gate": "REQ-07",
+   "measured": -69.94000000000001,
+   "unit": "mm",
+   "required": "envelope min_z >= -70.0",
+   "margin": 0.06,
+   "at": "foot rear edge z -69.940",
+   "status": "PASS_ASSUMED",
+   "method": "envelope",
+   "assumes": [
+    "A-05"
+   ]
+  },
+  {
+   "gate": "REQ-08",
+   "measured": 24.999999999999982,
+   "unit": "mm",
+   "required": "opening containing R 25.0 about (0, -110.0), nothing else missing below y -50; roof at 45 deg",
+   "margin": -1.8e-14,
+   "at": "innermost material about (0, -110) on the whole ray, 36 angles x 5 depths: least 25.000; theta 90 apex 35.355; sections z -27.44 / -28.94: below y -50 the only inner loop is this window",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent; sections",
+   "assumes": [
+    "A-07"
+   ]
+  },
+  {
+   "gate": "REQ-09",
+   "measured": null,
+   "unit": "bool",
+   "required": "Soft: no visible flex under the locking torque and the brewing pull (bench)",
+   "margin": null,
+   "at": null,
+   "status": "INCONCLUSIVE",
+   "method": "bench (first print); reviewer estimate only",
+   "assumes": [
+    "A-11"
+   ]
+  }
+ ],
+ "feature_census": [
+  {
+   "feature": "F01 wall with R 6 top corners about (+-44, 44)",
+   "expected": "1 wall z -29.94 ... -24.94, x +-50, y -175 ... 50; 2 convex cylinders R 6 about (+-44, 44)",
+   "found": "front face z -24.940, rear z -29.940; 2 convex R 6.000 arcs centred (+-44.0, 44.0) from (+-50, 44) to (+-44, 50) in section z -27.44",
+   "status": "PASS"
+  },
+  {
+   "feature": "F02 foot",
+   "expected": "1 plate y -175 ... -171, x +-50, z -69.94 ... -24.94",
+   "found": "envelope min_y -175.000, min_z -69.940; Y holes 4.000 long",
+   "status": "PASS"
+  },
+  {
+   "feature": "F03 gussets x2",
+   "expected": "2 right triangles 4 thick at x +-46 ... +-50, legs 40",
+   "found": "3200.000 mm3 in each triangle box (= 4 x 40 x 40 / 2)",
+   "status": "PASS"
+  },
+  {
+   "feature": "F04 hub window",
+   "expected": "R 30.0 about (0, 0), 270 deg arc, 45 deg gable to apex y 42.43",
+   "found": "bore Oe60.000, 270 deg, through; gable lines (21.2132, 21.2132) -> (0, 42.4264) at 45.000000 deg, tangent to the arc",
+   "status": "PASS"
+  },
+  {
+   "feature": "F05 lower window",
+   "expected": "R 25.0 about (0, -110.0), 45 deg gable to apex y -74.64",
+   "found": "bore Oe50.000 about (0, -110), 270 deg, through; gable lines (17.6777, -92.3223) -> (0, -74.6447) at 45.000000 deg, tangent",
+   "status": "PASS"
+  },
+  {
+   "feature": "F06 Z holes x4",
+   "expected": "4 x Oe3.4 through along Z at (+-44, +-44)",
+   "found": "4 x Oe3.400, 3.000 long, through, offset 0.000",
+   "status": "PASS"
+  },
+  {
+   "feature": "F07 counterbores x4",
+   "expected": "4 x Oe6.5 x 2.0 from z -29.94",
+   "found": "4 x Oe6.500, 2.000 deep, open at -29.940, offset 0.000",
+   "status": "PASS"
+  },
+  {
+   "feature": "F08 Y holes x4",
+   "expected": "4 x Oe3.4 through along Y at (+-35, z -40 / -60)",
+   "found": "4 x Oe3.400, 4.000 long, through, offset 0.000",
+   "status": "PASS"
+  },
+  {
+   "feature": "F09 census totals",
+   "expected": "20 planar, 16 cylindrical (14 concave, 2 convex), 14 bores, 1 solid",
+   "found": "20 / 16 / 14 / 2 / 14, 1 solid, no other face kind",
+   "status": "PASS"
+  }
+ ],
+ "plausibility": [
+  {
+   "question": "P1 gravity",
+   "answer": "NO: the spec frame (+Y up, +Z horizontal toward the user) puts the group head axis horizontal, so the portafilter mouth faces the user sideways; an espresso group head needs its axis vertical with the mouth down (grounds held in the basket, water down through the puck into a mug below). The carrier itself stands correctly on its foot, but it mounts the product the way it is not used (F1)",
+   "status": "NO"
+  },
+  {
+   "question": "P2 function chains",
+   "answer": "YES: the hub window (r >= 30.000) lies behind the housing's Oe26 hub opening and its r <= 20.93 openings; OD-G04 5.000 clear; the lower window R 25 is open for TUBE 7 and a hand; screws run from behind into the four inserts, coaxial 0.000",
+   "status": "YES"
+  },
+  {
+   "question": "P3 moving parts",
+   "answer": "YES: the carrier has no motion; nothing of it lies in front of z -24.94, where the portafilter turns; the housing seats along -Z with interference 0 at every step from 30 mm to the seat",
+   "status": "YES"
+  },
+  {
+   "question": "P4 grip, reach, insertion",
+   "answer": "YES: the four housing screws go in along +Z from behind through Oe6.5 counterbores, with 55 mm of free space to the z -85 thermoblock zone for a key; foot screws go in along -Y from above the foot",
+   "status": "YES"
+  },
+  {
+   "question": "P5 absurdity",
+   "answer": "NO: next to the De'Longhi Dedica the project copies, a group head mounted on its side with a horizontal portafilter is absurd; same cause as P1 (F1)",
+   "status": "NO"
+  },
+  {
+   "question": "P6 floating, embedded, mirrored, upside-down",
+   "answer": "YES: one solid, interference 0 with both neighbours, counterbores on the rear face away from the housing, gables pointing up in the print direction; the 90 deg turn of the whole layout is reported under P1",
+   "status": "YES"
+  }
+ ],
+ "positive_controls": [
+  {
+   "check": "validity (U-01)",
+   "mutant": "front face removed: open shell",
+   "got": "FAIL"
+  },
+  {
+   "check": "envelope (U-02, REQ-07, D-02)",
+   "mutant": "foot rear edge moved to z -71.0 (size_z 46.06, min_z -71.0); wall raised to 255 tall",
+   "got": "FAIL"
+  },
+  {
+   "check": "compare_step / step_roundtrip (U-04)",
+   "mutant": "the delivered file compared with a shape whose (+44, +44) hole moved 0.5 in x: volume_delta 168.7 mm3",
+   "got": "FAIL"
+  },
+  {
+   "check": "feature_census (U-05)",
+   "mutant": "counterbore at (+44, -44) filled: 13 bores",
+   "got": "FAIL"
+  },
+  {
+   "check": "bore_census + locate_bore (U-05, REQ-01, REQ-02, REQ-06, D-04a)",
+   "mutant": "hole (+44, +44) moved 0.5 in x (offset 0.5); counterbore (+44, -44) filled (Oe3.4 found); foot hole resized to 3.2",
+   "got": "FAIL"
+  },
+  {
+   "check": "min_wall incl. detail wide (D-01a, D-01b, D-06a, U-06)",
+   "mutant": "counterbore (+44, +44) enlarged to Oe10.6: web 0.700",
+   "got": "FAIL"
+  },
+  {
+   "check": "analytic face angle (D-03a)",
+   "mutant": "R 6 teardrop at (0, -40) with a 44.0 deg tangent gable: 44.000; plain Oe6 hole: 0.000",
+   "got": "FAIL"
+  },
+  {
+   "check": "overhang_census (D-03a corroboration)",
+   "mutant": "same 44.0 deg teardrop, eight crowns plugged: 44.000",
+   "got": "FAIL"
+  },
+  {
+   "check": "bridge span from sections (D-03b)",
+   "mutant": "plain Oe6 hole along Z at (0, -40): span 6.0 > 5",
+   "got": "FAIL"
+  },
+  {
+   "check": "radial_extent whole ray, innermost (REQ-04, REQ-08)",
+   "mutant": "4 x 5 bars into the hub window to r 26 and into the lower window to r 21: 26.0 and 21.0",
+   "got": "FAIL"
+  },
+  {
+   "check": "radial_extent bounded r_max window (plan's REQ-04 / REQ-08 reading)",
+   "mutant": "same bar mutant: 'crossing the bound', same INCONCLUSIVE as the nominal 'no material' (not used for the gates)",
+   "got": "INCONCLUSIVE"
+  },
+  {
+   "check": "interference (U-03)",
+   "mutant": "carrier moved +3.1 along Z: 21301.8 mm3 with OD-G01",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance (U-03)",
+   "mutant": "carrier moved +3.1 along Z: 1.900 to OD-G04; moved -0.5: contact 0.500 != 0",
+   "got": "FAIL"
+  },
+  {
+   "check": "gusset volume via common_volume (E-06)",
+   "mutant": "both gussets removed: 0 mm3",
+   "got": "FAIL"
+  },
+  {
+   "check": "mesh_sagitta / mesh_deviation (U-07)",
+   "mutant": "STL meshed at 0.1 mm / 0.5 rad: 0.0495",
+   "got": "FAIL"
+  },
+  {
+   "check": "mesh_census (U-07)",
+   "mutant": "delivered STL with one triangle dropped: 3 naked edges",
+   "got": "FAIL"
+  },
+  {
+   "check": "3MF / STL triangle comparison (U-07)",
+   "mutant": "coarse STL (1708 triangles) against the 3MF's 4264",
+   "got": "FAIL"
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "gate": "P1",
+   "kind": "PLAUSIBILITY_NO",
+   "measured": null,
+   "unit": "bool",
+   "required": "the product mounted the way it is used: group head axis vertical, mouth (+Z) down",
+   "margin": null,
+   "at": "spec 1.2 section 2 frame and A-02: +Y up, +Z (group head axis, toward the mouth) horizontal toward the user; also P5",
+   "blocks": true,
+   "risk": "HIGH",
+   "risk_basis": "with the group head axis horizontal the portafilter basket stands on its side: dry grounds fall out on insertion and the brew leaves sideways, not into the mug under it; the carrier is built exactly to this frame, so the part fits the spec and not the machine",
+   "fix_direction": "the Usta settles the machine up direction first (A-02: -Z up, mouth down, as in the Dedica, would put the thermoblock above the housing along -Z); then re-concept the carrier for a vertical axis (e.g. the flange hung under a horizontal plate or bracket, windows for the hub tube above) and re-derive A-03 mug height from the portafilter spouts, not the housing side"
+  },
+  {
+   "id": "F2",
+   "gate": "REQ-09",
+   "kind": "OBSERVATION",
+   "measured": null,
+   "unit": "bool",
+   "required": "Soft: no visible flex under the locking torque and the brewing pull",
+   "margin": null,
+   "at": "wall y -131 ... +44 between the gusset tops and the housing screws",
+   "blocks": false,
+   "risk": "MEDIUM",
+   "risk_basis": "Soft bench gate, INCONCLUSIVE; hand estimate only: a 50 N sideways handle force about 45 mm in front of the wall twists the open 5 mm wall about Y with J about 2000-4000 mm4 over about 130 mm: several degrees at G about 0.75 GPa (ASA), so visible flex is plausible; in-plane locking torque about Z is stiff",
+   "fix_direction": "print and bench it (REQ-09); if it flexes, close the section (side flanges or ribs along the wall edges up to the housing screws, or a thicker wall), which is a spec change"
+  },
+  {
+   "id": "F3",
+   "gate": "D-03a",
+   "kind": "OBSERVATION",
+   "measured": 44.999999999966576,
+   "unit": "deg",
+   "required": ">= 45",
+   "margin": -3.3424e-11,
+   "at": "(17.6777, -92.3223, z) and (21.2132, 21.2132, z), window arcs at their gable tangent lines",
+   "blocks": false,
+   "risk": "LOW",
+   "risk_basis": "overhang_census cannot close a curved face tangent at exactly 45 deg (INCONCLUSIVE by design); the row was settled by the analytic angle of the cylinder at the tangent line (45.000000 deg, controls FAIL at 44 deg); printing is unaffected, the window roofs are true 45 deg",
+   "fix_direction": "tool: let overhang_census evaluate analytic cylinders exactly at their boundary edges, so a tangent 45 deg arc reads PASS without a reviewer method"
+  },
+  {
+   "id": "F4",
+   "gate": "REQ-04",
+   "kind": "OBSERVATION",
+   "measured": 29.999999999999993,
+   "unit": "mm",
+   "required": "no material within r <= 30.0",
+   "margin": -7.1e-15,
+   "at": "hub and lower windows",
+   "blocks": false,
+   "risk": "LOW",
+   "risk_basis": "the plan's reading (bounded r <= 30 rays, 'no material' INCONCLUSIVE taken as the expected reading) cannot fail: a bar into the window reads 'crossing the bound', also INCONCLUSIVE; the review gated REQ-04 and REQ-08 on the innermost radius over the whole ray instead, which FAILs on the same bar",
+   "fix_direction": "check scripts: gate REQ-04 / REQ-08 on the innermost material radius over the whole ray (>= 30.0, >= 25.0)"
+  },
+  {
+   "id": "F5",
+   "gate": "U-02",
+   "kind": "OBSERVATION",
+   "measured": 0.83,
+   "unit": "mm",
+   "required": "none (spec 1.1 K-1 accepted this)",
+   "margin": null,
+   "at": "top corners along the diagonal, (48.24, 48.24) carrier against (47.66, 47.66) housing",
+   "blocks": false,
+   "risk": "LOW",
+   "risk_basis": "the carrier's R 6 corners about (+-44, 44) stand 0.83 outside the housing's R 8 corners about (+-42, 42): a visible step only, no fit or function depends on it",
+   "fix_direction": "none needed; the Usta may confirm the look"
+  }
+ ],
+ "least_sure_answers": [
+  {
+   "item": "1 D-03a stays INCONCLUSIVE",
+   "answer": "Settled: the analytic angle of both window arcs at their tangent lines reads 44.99999999997 deg (inside the 0.001 deg band) and the arc tangents in section z -27.44 are parallel to the 45.000000 deg gables; controls FAIL at 44 deg. D-03a PASS (assumed: A-13). The tool limitation stands (F3)."
+  },
+  {
+   "item": "2 D-03b at the REQ-02 tolerance (Oe6.6 rung)",
+   "answer": "Spec 1.2 now reads <= 6.6; the delivered crowns are Oe6.500 (margin +0.100) and the Oe6.6 rung would sit on the limit (margin 0). Nothing else bridges: no downward face under 45 deg outside the eight crowns."
+  },
+  {
+   "item": "3 the face-exclusion helper, and printing",
+   "answer": "Confirmed by my own method: the analytic face list finds exactly eight faces under 45 deg off the bed, the 4 R 1.7 and 4 R 3.25 cylinders along Z at (+-44, +-44), and overhang_census on the part with those eight crowns plugged (a closed solid) reads the same INCONCLUSIVE 45.0000 with 0 samples under 45. Printing: warping of the 225 tall, 5 thick wall and flex under load remain for the first print (REQ-09, F2)."
+  }
+ ],
+ "assumptions_relied_on": [
+  "A-01",
+  "A-03",
+  "A-04",
+  "A-05",
+  "A-06",
+  "A-07",
+  "A-08",
+  "A-09",
+  "A-13"
+ ]
+}

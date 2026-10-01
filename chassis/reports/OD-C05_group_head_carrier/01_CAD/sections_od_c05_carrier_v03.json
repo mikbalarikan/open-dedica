@@ -1,0 +1,110 @@
+{
+ "od_c05_carrier_y0_v03_front.png": {
+  "sha256": "45b138f530192de08f58a74c7a301364032d9e34c934cbe967afe975c8e49a59",
+  "plane": "front",
+  "through": [
+   0.0,
+   0.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_ym80_v03_front.png": {
+  "sha256": "45d50166499bd87a6a8ad7f84f29c7fdab136981b6f22f54d806c677a9c5abc0",
+  "plane": "front",
+  "through": [
+   0.0,
+   -80.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_x0_v03_left.png": {
+  "sha256": "4d82d0bea354fa1709d08f109849957d20788b48a42ccee0417f765a7395e115",
+  "plane": "left",
+  "through": [
+   0.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_x35_v03_left.png": {
+  "sha256": "519c85d9bc425b72652fdcfbb7851b8a0fdd02df44132f48b9ce3c1ea4445a74",
+  "plane": "left",
+  "through": [
+   35.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_x53_v03_left.png": {
+  "sha256": "855c8a16718ba1430a8c1a446eb7ed8410f5b964424a9c7db0dd032084ae4bea",
+  "plane": "left",
+  "through": [
+   53.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_zm27p44_v03_top.png": {
+  "sha256": "af74a5e968bdd53be40cb097994dc06682af5a853c783a1d886ea6e42b79f636",
+  "plane": "top",
+  "through": [
+   0.0,
+   -26.0,
+   -27.44
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_carrier_z165_v03_top.png": {
+  "sha256": "0b62bb8b8875965b9aef8a99fa3111926fa00f7a9be3447e52251e7decc357e6",
+  "plane": "top",
+  "through": [
+   0.0,
+   -26.0,
+   165.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_assembly_y0_v03_front.png": {
+  "sha256": "732b7ad434971f6afd2f767d448cb9578eb2407dca59231fd0ed7453ba919cb5",
+  "plane": "front",
+  "through": [
+   0.0,
+   0.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ "od_c05_assembly_x0_v03_left.png": {
+  "sha256": "e23ed10697d3ccf8a407a9a51babd288b77d1d88da10f215b2db3f94a01970ff",
+  "plane": "left",
+  "through": [
+   0.0,
+   -26.0,
+   75.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ }
+}

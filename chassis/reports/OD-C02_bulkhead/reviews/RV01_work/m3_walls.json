@@ -1,0 +1,113 @@
+{
+ "min_wall": {
+  "name": "min_wall",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   63.0,
+   207.0,
+   -60.0
+  ],
+  "params": {
+   "spacing_mm": 0.7,
+   "opposition_deg": 25.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "rays": 211386,
+   "lost_rays": 0,
+   "face_pairs_measured_exactly": 3,
+   "face_pairs_never_opposed": 4,
+   "face_pairs_failed": 0,
+   "exact_points_without_normal": 0,
+   "solids": 4,
+   "largest_step_mm": 0.697674,
+   "wide": {
+    "opposition_deg": 45.0,
+    "measured": 2.0,
+    "at": [
+     63.0,
+     207.0,
+     -60.0
+    ]
+   },
+   "hit_at": [
+    63.0,
+    209.0,
+    -60.0
+   ],
+   "from_face": "plane",
+   "to_face": "plane",
+   "found_by": "exact"
+  }
+ },
+ "t_mw": 28.425641775131226,
+ "min_wall_wide": {
+  "name": "min_wall_wide",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   63.0,
+   207.0,
+   -60.0
+  ],
+  "params": {
+   "spacing_mm": 0.7,
+   "opposition_deg": 45.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "gated_mm": 2.0,
+   "gated_opposition_deg": 25.0,
+   "gated_at": [
+    63.0,
+    207.0,
+    -60.0
+   ],
+   "rays": 211386,
+   "solids": 4,
+   "largest_step_mm": 0.697674,
+   "face_pairs_measured_exactly": 3
+  }
+ },
+ "t_mww": 28.12840986251831,
+ "overhang_whole": {
+  "name": "overhang_census",
+  "measured": 0.0,
+  "unit": "deg",
+  "at": [
+   65.0,
+   0.0,
+   -223.0
+  ],
+  "params": {
+   "build_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "min_deg": 45.0,
+   "spacing_mm": 0.7,
+   "bed_mm": 0.01
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "samples": 221626,
+   "downward_samples": 2016,
+   "below_min_deg": 360,
+   "bed_samples": 2549,
+   "bed_height_mm": -240.0,
+   "largest_step_mm": 0.697674,
+   "sampling_bound_deg": 0.005591,
+   "seeds_refined": 24,
+   "per_kind_least_deg": {
+    "cylinder": 0.0,
+    "plane": 45.0
+   }
+  }
+ },
+ "t_oh": 8.48615026473999
+}

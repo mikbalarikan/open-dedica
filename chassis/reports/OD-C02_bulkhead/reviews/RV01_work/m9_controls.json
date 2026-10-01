@@ -1,0 +1,149 @@
+{
+ "validity.solid_count": {
+  "mutant": "part + a loose 5 mm cube",
+  "status": "FAIL",
+  "measured": 2,
+  "required": "== 1",
+  "at": null
+ },
+ "validity.naked_edges": {
+  "mutant": "the front end face z -30 removed (open shell)",
+  "status": "FAIL",
+  "measured": 12,
+  "required": "== 0",
+  "at": null
+ },
+ "envelope": {
+  "mutant": "base rail wet face moved from x 59.0 to 58.5",
+  "status": "FAIL",
+  "measured": 58.5,
+  "required": ">= 59.0",
+  "at": null
+ },
+ "envelope.size": {
+  "mutant": "same mutant, size_x",
+  "status": "FAIL",
+  "measured": 12.5,
+  "required": "in [11.9, 12.1]",
+  "at": null
+ },
+ "feature_census": {
+  "mutant": "base bore z -225 filled (removed)",
+  "status": "FAIL",
+  "measured": 5,
+  "required": "== 6",
+  "at": null
+ },
+ "locate_bore.offset": {
+  "mutant": "base bore z -165 moved 0.5 mm to x 65.5",
+  "status": "FAIL",
+  "measured": 0.5,
+  "required": "<= 0.1",
+  "at": "(65.5000, 0.0000, -165.0000) mm"
+ },
+ "locate_bore.diameter": {
+  "mutant": "base bore z -105 opened to 4.2",
+  "status": "FAIL",
+  "measured": 4.2,
+  "required": "in [3.95, 4.05]",
+  "at": "(65.0000, 0.0000, -105.0000) mm"
+ },
+ "locate_bore.depth": {
+  "mutant": "base bore z -45 deepened to 6.5",
+  "status": "FAIL",
+  "measured": 6.5,
+  "required": "in [5.9, 6.1]",
+  "at": "(65.0000, 0.0000, -45.0000) mm"
+ },
+ "min_wall": {
+  "mutant": "wet-face pocket 20 x 20 leaves the wall 0.6 thick",
+  "status": "FAIL",
+  "measured": 0.5999999999999911,
+  "required": ">= 0.8",
+  "at": "(67.0000, 109.8482, -109.8837) mm"
+ },
+ "min_wall_wide": {
+  "mutant": "same mutant, 45 deg reading",
+  "status": "FAIL",
+  "measured": 0.5999999999999911,
+  "required": ">= 2.0",
+  "at": "(67.0000, 109.8482, -109.8837) mm"
+ },
+ "overhang_census": {
+  "mutant": "window 1 cut square to z -186 (flat roof, gable removed)",
+  "status": "FAIL",
+  "measured": 0.0,
+  "required": ">= 45.0",
+  "at": "(63.0000, 143.0000, -186.0000) mm"
+ },
+ "radial_extent.window": {
+  "mutant": "window 1 round part opened to 15.0",
+  "status": "FAIL",
+  "measured": 14.999999999999943,
+  "required": "in [13.9, 14.1]",
+  "at": "(65.0000, 150.0000, -207.5000) mm"
+ },
+ "radial_extent.J-05": {
+  "mutant": "top rail narrowed to x 62 ... 68",
+  "status": "FAIL",
+  "measured": 1.0,
+  "required": ">= 3.0",
+  "at": "(68.0000, 212.0000, -60.0000) mm"
+ },
+ "clearance": {
+  "mutant": "bulkhead moved 5 mm toward -X",
+  "status": "FAIL",
+  "measured": 2.5,
+  "required": ">= 3.0",
+  "at": "(58.0000, 40.0000, -202.4000) mm"
+ },
+ "common_volume": {
+  "mutant": "bulkhead moved 10 mm toward -X (into the pump)",
+  "status": "FAIL",
+  "measured": 53.956530664300736,
+  "required": "<= 0.0",
+  "at": null
+ },
+ "clearance.contact": {
+  "mutant": "bulkhead lifted 0.5 off the plate",
+  "status": "FAIL",
+  "measured": 0.5,
+  "required": "== 0.0",
+  "at": "(67.0000, 0.5000, -225.0000) mm"
+ },
+ "locate_bore.coax": {
+  "mutant": "bulkhead moved 0.5 along +Z: plate hole read at the bore axis",
+  "status": "FAIL",
+  "measured": 0.5,
+  "required": "<= 0.1",
+  "at": "(65.0000, -6.0000, -45.0000) mm"
+ },
+ "mesh_deviation": {
+  "mutant": "STL meshed at 0.2 mm / 0.8 rad",
+  "status": "FAIL",
+  "measured": 0.08618241713593645,
+  "required": "<= 0.01",
+  "at": "(65.0000, 64.9497, -59.9497) mm"
+ },
+ "mesh_census": {
+  "mutant": "STL with one triangle dropped",
+  "status": "FAIL",
+  "measured": 3,
+  "required": "== 0",
+  "at": null
+ },
+ "compare_step": {
+  "mutant": "the exported part against a re-export with a wall pocket",
+  "status": "FAIL",
+  "measured": 1359.9999999995343,
+  "required": "<= 0.0",
+  "at": null
+ },
+ "face_rays": {
+  "mutant": "a 0.5 boss on the wet face at (62.5, 55, -100)",
+  "status": "FAIL",
+  "measured": 62.5,
+  "required": "in [62.9, 63.1]",
+  "at": "(62.5000, 55.0000, -100.0000) mm"
+ }
+}

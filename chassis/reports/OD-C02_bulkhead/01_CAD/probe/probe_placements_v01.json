@@ -1,0 +1,903 @@
+{
+ "plate_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED"
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED"
+  }
+ },
+ "plate_envelope": {
+  "size_x": 240.0,
+  "size_y": 6.0,
+  "size_z": 405.0,
+  "min_x": -120.0,
+  "min_y": -6.0,
+  "min_z": -305.0,
+  "max_x": 120.0,
+  "max_y": 0.0,
+  "max_z": 100.0
+ },
+ "plate_top_face": {
+  "y": 0.0,
+  "faces": 1,
+  "area_mm2": 96725.984
+ },
+ "plate_bulkhead_inserts": {
+  "(65,-45)": {
+   "diameter": {
+    "measured": 4.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -45.0
+    ]
+   },
+   "offset": {
+    "measured": 0.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -45.0
+    ]
+   },
+   "length": {
+    "measured": 6.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -45.0
+    ]
+   },
+   "through": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -45.0
+    ]
+   }
+  },
+  "(65,-105)": {
+   "diameter": {
+    "measured": 4.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -105.0
+    ]
+   },
+   "offset": {
+    "measured": 0.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -105.0
+    ]
+   },
+   "length": {
+    "measured": 6.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -105.0
+    ]
+   },
+   "through": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -105.0
+    ]
+   }
+  },
+  "(65,-165)": {
+   "diameter": {
+    "measured": 4.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -165.0
+    ]
+   },
+   "offset": {
+    "measured": 0.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -165.0
+    ]
+   },
+   "length": {
+    "measured": 6.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -165.0
+    ]
+   },
+   "through": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -165.0
+    ]
+   }
+  },
+  "(65,-225)": {
+   "diameter": {
+    "measured": 4.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -225.0
+    ]
+   },
+   "offset": {
+    "measured": 0.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -225.0
+    ]
+   },
+   "length": {
+    "measured": 6.0,
+    "unit": "mm",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -225.0
+    ]
+   },
+   "through": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED",
+    "at": [
+     65.0,
+     -6.0,
+     -225.0
+    ]
+   }
+  }
+ },
+ "od_c03": {
+  "envelope": {
+   "size_x": 52.0,
+   "size_y": 40.0,
+   "size_z": 80.0,
+   "min_x": -10.0,
+   "min_y": -0.0,
+   "min_z": -245.0,
+   "max_x": 42.0,
+   "max_y": 40.0,
+   "max_z": -165.0
+  },
+  "validity": {
+   "solid_count": {
+    "measured": 1,
+    "unit": "count",
+    "status": "MEASURED"
+   },
+   "brep_valid": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED"
+   },
+   "naked_edges": {
+    "measured": 0,
+    "unit": "count",
+    "status": "MEASURED"
+   }
+  },
+  "to_bulkhead_envelope": {
+   "measured": 17.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    42.0,
+    0.0,
+    -165.0
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    0.0,
+    -165.0
+   ]
+  },
+  "to_plane_x59": {
+   "measured": 17.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    42.0,
+    0.0,
+    -165.0
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    0.0,
+    -165.0
+   ]
+  },
+  "to_plane_x61": {
+   "measured": 19.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    42.0,
+    0.0,
+    -165.0
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    61.0,
+    0.0,
+    -165.0
+   ]
+  },
+  "to_collar_y150_z-200_box": {
+   "measured": 105.153459,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    33.0,
+    40.0,
+    -175.5
+   ]
+  },
+  "to_collar_y150_z-130_box": {
+   "measured": 109.73263,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    33.0,
+    40.0,
+    -171.5
+   ]
+  },
+  "to_collar_y150_z-60_box": {
+   "measured": 146.598943,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    33.0,
+    40.0,
+    -171.5
+   ]
+  },
+  "to_collar_y60_z-40_box": {
+   "measured": 126.139803,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    33.0,
+    40.0,
+    -171.5
+   ]
+  },
+  "max_x_in_z_band_-240_-30": 42.0
+ },
+ "od_h01": {
+  "envelope": {
+   "size_x": 121.95,
+   "size_y": 55.15,
+   "size_z": 54.05,
+   "min_x": -66.45,
+   "min_y": 16.25,
+   "min_z": -232.2,
+   "max_x": 55.5,
+   "max_y": 71.4,
+   "max_z": -178.15
+  },
+  "validity": {
+   "solid_count": {
+    "measured": 1,
+    "unit": "count",
+    "status": "MEASURED"
+   },
+   "brep_valid": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED"
+   },
+   "naked_edges": {
+    "measured": 0,
+    "unit": "count",
+    "status": "MEASURED"
+   }
+  },
+  "to_bulkhead_envelope": {
+   "measured": 3.5,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    55.5,
+    40.0,
+    -202.4
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    40.0,
+    -202.4
+   ]
+  },
+  "to_plane_x59": {
+   "measured": 3.5,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    55.5,
+    40.0,
+    -202.4
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    40.0,
+    -202.4
+   ]
+  },
+  "to_plane_x61": {
+   "measured": 5.5,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    55.5,
+    40.0,
+    -202.4
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    61.0,
+    40.0,
+    -202.4
+   ]
+  },
+  "to_collar_y150_z-200_box": {
+   "measured": 82.130334,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    33.830806,
+    63.493699,
+    -205.2
+   ]
+  },
+  "to_collar_y150_z-130_box": {
+   "measured": 97.088797,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    35.570437,
+    56.2,
+    -178.856389
+   ]
+  },
+  "to_collar_y150_z-60_box": {
+   "measured": 140.89046,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    34.221039,
+    56.2,
+    -178.279316
+   ]
+  },
+  "to_collar_y60_z-40_box": {
+   "measured": 132.020859,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    34.067992,
+    51.0,
+    -178.244629
+   ]
+  },
+  "max_x_in_z_band_-240_-30": 55.5
+ },
+ "od_c04": {
+  "envelope": {
+   "size_x": 100.0,
+   "size_y": 110.0,
+   "size_z": 50.0,
+   "min_x": -50.0,
+   "min_y": 0.0,
+   "min_z": -157.0,
+   "max_x": 50.0,
+   "max_y": 110.0,
+   "max_z": -107.0
+  },
+  "validity": {
+   "solid_count": {
+    "measured": 1,
+    "unit": "count",
+    "status": "MEASURED"
+   },
+   "brep_valid": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED"
+   },
+   "naked_edges": {
+    "measured": 0,
+    "unit": "count",
+    "status": "MEASURED"
+   }
+  },
+  "to_bulkhead_envelope": {
+   "measured": 9.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    50.0,
+    0.0,
+    -157.0
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    0.0,
+    -157.0
+   ]
+  },
+  "to_plane_x59": {
+   "measured": 9.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    50.0,
+    0.0,
+    -157.0
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    0.0,
+    -157.0
+   ]
+  },
+  "to_plane_x61": {
+   "measured": 11.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    50.0,
+    0.0,
+    -157.0
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    61.0,
+    0.0,
+    -157.0
+   ]
+  },
+  "to_collar_y150_z-200_box": {
+   "measured": 43.726945,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    47.030692,
+    109.569058,
+    -157.0
+   ]
+  },
+  "to_collar_y150_z-130_box": {
+   "measured": 36.770174,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    47.030692,
+    109.569058,
+    -152.0
+   ]
+  },
+  "to_collar_y150_z-60_box": {
+   "measured": 89.844564,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    47.030692,
+    109.569058,
+    -152.0
+   ]
+  },
+  "to_collar_y60_z-40_box": {
+   "measured": 75.458598,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    50.0,
+    4.0,
+    -107.0
+   ]
+  },
+  "max_x_in_z_band_-240_-30": 50.0
+ },
+ "od_h11": {
+  "envelope": {
+   "size_x": 86.1092,
+   "size_y": 106.888,
+   "size_z": 50.79,
+   "min_x": -43.2702,
+   "min_y": 16.4925,
+   "min_z": -140.0,
+   "max_x": 42.839,
+   "max_y": 123.3805,
+   "max_z": -89.21
+  },
+  "validity": {
+   "solid_count": {
+    "measured": 1,
+    "unit": "count",
+    "status": "MEASURED"
+   },
+   "brep_valid": {
+    "measured": 0,
+    "unit": "bool",
+    "status": "MEASURED"
+   },
+   "naked_edges": {
+    "measured": 0,
+    "unit": "count",
+    "status": "MEASURED"
+   }
+  },
+  "to_bulkhead_envelope": {
+   "measured": 16.160978,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    42.839022,
+    99.35655,
+    -97.3
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    99.35655,
+    -97.3
+   ]
+  },
+  "to_plane_x59": {
+   "measured": 16.160978,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    42.839022,
+    99.35655,
+    -97.3
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    99.35655,
+    -97.3
+   ]
+  },
+  "to_plane_x61": {
+   "measured": 18.160978,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    42.839022,
+    99.35655,
+    -97.3
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    61.0,
+    99.35655,
+    -97.3
+   ]
+  },
+  "to_collar_y150_z-200_box": {
+   "measured": 77.234431,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    11.791671,
+    111.890061,
+    -132.074003
+   ]
+  },
+  "to_collar_y150_z-130_box": {
+   "measured": 47.737958,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    41.112861,
+    100.020482,
+    -99.713871
+   ]
+  },
+  "to_collar_y150_z-60_box": {
+   "measured": 52.384289,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    40.872156,
+    100.113064,
+    -94.831029
+   ]
+  },
+  "to_collar_y60_z-40_box": {
+   "measured": 50.152763,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    37.1,
+    77.0,
+    -92.36
+   ]
+  },
+  "max_x_in_z_band_-240_-30": 40.5057
+ },
+ "od_g01": {
+  "envelope": {
+   "size_x": 100.0,
+   "size_y": 28.24,
+   "size_z": 100.0,
+   "min_x": -50.0,
+   "min_y": 176.76,
+   "min_z": -18.0,
+   "max_x": 50.0,
+   "max_y": 205.0,
+   "max_z": 82.0
+  },
+  "validity": {
+   "solid_count": {
+    "measured": 1,
+    "unit": "count",
+    "status": "MEASURED"
+   },
+   "brep_valid": {
+    "measured": 1,
+    "unit": "bool",
+    "status": "MEASURED"
+   },
+   "naked_edges": {
+    "measured": 0,
+    "unit": "count",
+    "status": "MEASURED"
+   }
+  },
+  "to_bulkhead_envelope": {
+   "measured": 18.24881,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    47.181187,
+    205.0,
+    -16.095515
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    205.0,
+    -30.0
+   ]
+  },
+  "to_plane_x59": {
+   "measured": 18.24881,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    47.181187,
+    205.0,
+    -16.095515
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    205.0,
+    -30.0
+   ]
+  },
+  "to_plane_x61": {
+   "measured": 19.586228,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    47.509996,
+    205.0,
+    -15.799995
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    61.0,
+    205.0,
+    -30.0
+   ]
+  },
+  "to_collar_y150_z-200_box": {
+   "measured": 171.992591,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    42.868401,
+    200.0,
+    -17.952728
+   ]
+  },
+  "to_collar_y150_z-130_box": {
+   "measured": 105.973859,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    43.437742,
+    200.0,
+    -17.869746
+   ]
+  },
+  "to_collar_y150_z-60_box": {
+   "measured": 50.895859,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    46.416149,
+    199.3,
+    -16.548046
+   ]
+  },
+  "to_collar_y60_z-40_box": {
+   "measured": 116.350374,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    30.227528,
+    176.76,
+    1.276938
+   ]
+  },
+  "max_x_in_z_band_-240_-30": null
+ },
+ "od_c05_foot_box": {
+  "envelope": {
+   "size_x": 110.0,
+   "size_y": 210.0,
+   "size_z": 44.0,
+   "min_x": -55.0,
+   "min_y": 0.0,
+   "min_z": -70.0,
+   "max_x": 55.0,
+   "max_y": 210.0,
+   "max_z": -26.0
+  },
+  "to_bulkhead_envelope": {
+   "measured": 4.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    55.0,
+    0.0,
+    -70.0
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    0.0,
+    -70.0
+   ]
+  },
+  "to_plane_x59": {
+   "measured": 4.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    55.0,
+    0.0,
+    -70.0
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    59.0,
+    0.0,
+    -70.0
+   ]
+  },
+  "to_plane_x61": {
+   "measured": 6.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    55.0,
+    0.0,
+    -70.0
+   ],
+   "on_neighbour": null,
+   "on_target": [
+    61.0,
+    0.0,
+    -70.0
+   ]
+  },
+  "to_collar_y150_z-200_box": {
+   "measured": 114.157786,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    55.0,
+    141.0,
+    -70.0
+   ]
+  },
+  "to_collar_y150_z-130_box": {
+   "measured": 44.407207,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    55.0,
+    141.0,
+    -70.0
+   ]
+  },
+  "to_collar_y150_z-60_box": {
+   "measured": 6.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    55.0,
+    141.0,
+    -44.0
+   ]
+  },
+  "to_collar_y60_z-40_box": {
+   "measured": 6.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    55.0,
+    51.0,
+    -30.0
+   ]
+  },
+  "max_x_in_z_band_-240_-30": 55.0
+ },
+ "note": "collar boxes: x 61..63, y +-9, z -9 .. +16 about each window centre (clipped at z -30), a bounding estimate of the round collar with its gable; OD-H11 is unsound (brep_valid 0)"
+}

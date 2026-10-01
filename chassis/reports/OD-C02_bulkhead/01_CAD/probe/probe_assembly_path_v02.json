@@ -1,0 +1,78 @@
+{
+ "swept_box": {
+  "x": [
+   59.0,
+   71.0
+  ],
+  "y": [
+   0.0,
+   400.0
+  ],
+  "z": [
+   -240.0,
+   -30.0
+  ]
+ },
+ "clearance_mm": {
+  "od_c03_cradle": {
+   "measured": 17.0,
+   "at": [
+    59.0,
+    0.0,
+    -240.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_h01_pump": {
+   "measured": 3.5,
+   "at": [
+    59.0,
+    40.0,
+    -202.4
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_c04_mount": {
+   "measured": 9.0,
+   "at": [
+    59.0,
+    0.0,
+    -157.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_h11_thermoblock": {
+   "measured": 16.160978383825217,
+   "at": [
+    59.0,
+    99.35655,
+    -97.3
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_g01_housing": {
+   "measured": 18.248809501848964,
+   "at": [
+    59.0,
+    205.0,
+    -30.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "od_c05_foot_reference_A02": {
+   "measured": 4.0,
+   "at": [
+    59.0,
+    0.0,
+    -30.0
+   ],
+   "status": "MEASURED",
+   "reason": ""
+  }
+ }
+}

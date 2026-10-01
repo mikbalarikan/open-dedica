@@ -1,0 +1,277 @@
+{
+ "rt_plate": {
+  "schema": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   null
+  ],
+  "solids": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   null
+  ],
+  "volume_delta": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   null
+  ],
+  "faces_delta": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   null
+  ],
+  "labels": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   null
+  ],
+  "valid_after": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   null
+  ]
+ },
+ "plate_labels": [
+  "od_c01_frame"
+ ],
+ "asm_labels": [
+  "od_c01_frame",
+  "od_c03_cradle",
+  "od_h01_pump",
+  "od_c04_mount",
+  "od_h11_thermoblock",
+  "od_g01_housing",
+  "od_c05_foot_reference_A01"
+ ],
+ "rt_asm": {
+  "schema": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "solids": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "volume_delta": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "faces_delta": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "labels": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "valid_after": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ]
+ },
+ "rt_asm_note": "rewrite refused; per-part rows compare delivered with itself",
+ "rt_asm_per_part": {
+  "od_c01_frame": {
+   "vol_delivered": 580355.9044321473,
+   "vol_rewritten": 580355.9044321473,
+   "faces": [
+    36,
+    36
+   ]
+  },
+  "od_c03_cradle": {
+   "vol_delivered": 25458.506495728107,
+   "vol_rewritten": 25458.506495728107,
+   "faces": [
+    54,
+    54
+   ]
+  },
+  "od_h01_pump": {
+   "vol_delivered": 114903.26906544885,
+   "vol_rewritten": 114903.26906544885,
+   "faces": [
+    213,
+    213
+   ]
+  },
+  "od_c04_mount": {
+   "vol_delivered": 74659.46454806624,
+   "vol_rewritten": 74659.46454806624,
+   "faces": [
+    36,
+    36
+   ]
+  },
+  "od_h11_thermoblock": {
+   "vol_delivered": 159766.40497098243,
+   "vol_rewritten": 159766.40497098243,
+   "faces": [
+    406,
+    406
+   ]
+  },
+  "od_g01_housing": {
+   "vol_delivered": 90216.79165440067,
+   "vol_rewritten": 90216.79165440067,
+   "faces": [
+    92,
+    92
+   ]
+  },
+  "od_c05_foot_reference_A01": {
+   "vol_delivered": 19360.0,
+   "vol_rewritten": 19360.0,
+   "faces": [
+    6,
+    6
+   ]
+  }
+ },
+ "h11_input_vol": 159766.4573614961,
+ "h11_asm_vol": 159766.40497098243,
+ "h11_input_faces": 406,
+ "h11_asm_faces": 406,
+ "h11_vertex_sets_equal_1e-5": true,
+ "h11_nvert": [
+  734,
+  734
+ ],
+ "rt_h11_input_by_reviewer": {
+  "schema": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly,"
+  ],
+  "solids": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly,"
+  ],
+  "volume_delta": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly,"
+  ],
+  "faces_delta": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly,"
+  ],
+  "labels": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly,"
+  ],
+  "valid_after": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly,"
+  ]
+ },
+ "stl_census": {
+  "triangles": [
+   7068,
+   "MEASURED"
+  ],
+  "bodies": [
+   1,
+   "MEASURED"
+  ],
+  "naked_edges": [
+   0,
+   "MEASURED"
+  ],
+  "winding": [
+   1,
+   "MEASURED"
+  ],
+  "volume": [
+   580358.5238851098,
+   "MEASURED"
+  ]
+ },
+ "stl_header": "STL Exported by Open CASCADE Technology [dev.opencascade.org]",
+ "stl_ntri_header": 7068,
+ "stl_bbox": [
+  [
+   -120.0,
+   -6.0,
+   -305.0
+  ],
+  [
+   120.0,
+   0.0,
+   100.0
+  ]
+ ],
+ "reexport": {
+  "sha": "0fac3791d9fd76fdb807bc0d4cf7ddd7a072b1634428ad874afe63c5d990ab20",
+  "same_bytes_as_delivered": false,
+  "detail": {
+   "tolerance_mm": 0.01,
+   "angular_tolerance_rad": 0.2,
+   "triangles": 7068,
+   "max_sagitta_mm": 0.0049723151243391
+  },
+  "sagitta": [
+   0.0049723151243391,
+   "MEASURED"
+  ]
+ },
+ "mesh_sagitta_after": [
+  0.0049723151243391,
+  "MEASURED",
+  7068
+ ],
+ "ang_limit": 0.2309721947249083,
+ "mesh_deviation_delivered": [
+  0.004974966756443494,
+  "MEASURED",
+  "",
+  "(-77.664212, -3.0, -226.752833)"
+ ],
+ "3mf_names": [
+  "[Content_Types].xml",
+  "_rels/.rels",
+  "3D/3dmodel.model"
+ ],
+ "3mf_unit": [
+  "millimeter"
+ ],
+ "3mf_counts": [
+  3484,
+  7068
+ ],
+ "3mf_bbox": [
+  [
+   -120.0,
+   -6.0,
+   -305.0
+  ],
+  [
+   120.0,
+   0.0,
+   100.0
+  ]
+ ],
+ "3mf_transform": [],
+ "3mf_volume": 580358.5238699085,
+ "3mf_vs_stl": {
+  "stl_unique": 7068,
+  "3mf_unique": 7068,
+  "common": 7068
+ }
+}

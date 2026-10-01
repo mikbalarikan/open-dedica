@@ -1,0 +1,170 @@
+{
+ "params": {
+  "wall_x0": 63.0,
+  "wall_x1": 67.0,
+  "y_bottom": 0.0,
+  "y_top": 215.0,
+  "z_min": -240.0,
+  "z_max": -30.0,
+  "brail_x0": 59.0,
+  "brail_x1": 70.0,
+  "brail_h": 12.0,
+  "trail_x0": 62.0,
+  "trail_x1": 73.0,
+  "trail_y0": 207.0,
+  "rib_t": 4.0,
+  "rib_x1": 72.0,
+  "rib_z": [
+   -70.0,
+   -200.0
+  ],
+  "collar_h": 2.0,
+  "collar_w": 2.0,
+  "win_d": 14.0,
+  "win_centres": [
+   [
+    150.0,
+    -200.0
+   ],
+   [
+    150.0,
+    -130.0
+   ],
+   [
+    150.0,
+    -60.0
+   ],
+   [
+    60.0,
+    -40.0
+   ]
+  ],
+  "win_gable_deg": 45.0,
+  "win_apex_rise": 7.0,
+  "win_cut_x": [
+   60.0,
+   68.0
+  ],
+  "hole_d": 3.4,
+  "hole_x": 65.0,
+  "hole_z": [
+   -45.0,
+   -105.0,
+   -165.0,
+   -225.0
+  ],
+  "cbore_d": 6.5,
+  "cbore_depth": 8.0,
+  "insert_d": 4.0,
+  "insert_depth": 6.0,
+  "insert_xz": [
+   [
+    67.5,
+    -60.0
+   ],
+   [
+    67.5,
+    -210.0
+   ]
+  ],
+  "overshoot": 1.0,
+  "shift_x": 0.0,
+  "shift_z": 0.0,
+  "stl_tol": 0.01,
+  "stl_ang": 0.2,
+  "c03_origin": [
+   0.0,
+   40.0,
+   -205.0
+  ],
+  "c03_x_dir": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "c03_z_dir": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "c04_origin": [
+   0.0,
+   70.0,
+   -140.0
+  ],
+  "g01_origin": [
+   0.0,
+   180.06,
+   32.0
+  ],
+  "g01_x_dir": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "g01_z_dir": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "c05_box_x_half": 55.0,
+  "c05_box_y": [
+   0.0,
+   210.0
+  ],
+  "c05_box_z": [
+   -70.0,
+   -26.0
+  ]
+ },
+ "solids": 1,
+ "step": {
+  "path": "02_STEP_STL/od_c02_bulkhead_C1_v01.step",
+  "sha256": "4a6e61c341ee0c4a36305339ba76d749b3848a5e8195e36d15dabce78cd0b2a8"
+ },
+ "stl": {
+  "path": "02_STEP_STL/od_c02_bulkhead_C1_v01.stl",
+  "sha256": "eef22a334120b267b552fb465a4ae94eff46770dbc3edfaf06666c7a15cab96e",
+  "tolerance_mm": 0.01,
+  "angular_tolerance_rad": 0.2,
+  "triangles": 4264,
+  "max_sagitta_mm": 0.004968065917093083,
+  "tolerance": 0.01,
+  "angular_tolerance": 0.2,
+  "max_sagitta": 0.004968065917093083
+ },
+ "assembly": {
+  "path": "02_STEP_STL/od_c02_assembly_C1_v01.step",
+  "sha256": "293d8e15c5fd6932036fbf078e749a23f048f7bb03df2b8bd67e5635deeede90"
+ },
+ "placements": {
+  "od_c01_frame": {
+   "joint": "RigidJoint joint_plate on the bulkhead (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))"
+  },
+  "od_c03_cradle": {
+   "joint": "RigidJoint joint_c03 on the bulkhead (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 40, -205), orientation=(0, 90, 180))"
+  },
+  "od_h01_pump": {
+   "joint": "RigidJoint joint_h01 on the bulkhead (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 40, -205), orientation=(0, 90, 180))"
+  },
+  "od_c04_mount": {
+   "joint": "RigidJoint joint_c04 on the bulkhead (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 70, -140), orientation=(0, 0, 0))"
+  },
+  "od_h11_thermoblock": {
+   "joint": "RigidJoint joint_h11 on the bulkhead (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 70, -140), orientation=(0, 0, 0))"
+  },
+  "od_g01_housing": {
+   "joint": "RigidJoint joint_g01 on the bulkhead (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 180.06, 32), orientation=(90, 0, 0))"
+  },
+  "od_c05_foot_reference_A02": {
+   "joint": "reference box from the brief's values (A-02), not a deliverable",
+   "location": "x +-55, y 0 .. 210, z -70 .. -26"
+  }
+ }
+}
