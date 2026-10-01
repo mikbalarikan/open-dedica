@@ -1,0 +1,15 @@
+{
+ "body_d": 18.0,
+ "height": 9.9,
+ "top_chamfer_axial": 0.5,
+ "top_chamfer_radial": 0.29,
+ "counter_chamfer": 1.0,
+ "lid_t": 2.5,
+ "lid_hole_d": 3.4,
+ "pocket_af": 5.6,
+ "pocket_rot_deg": 0.0,
+ "mouth_chamfer": 0.5,
+ "overshoot": 1.0,
+ "label": "od_c15_foot",
+ "timestamp": "2026-10-01T12:00:00"
+}

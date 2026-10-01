@@ -1,0 +1,958 @@
+{
+ "plate_validity": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "plate_env": {
+  "size_x": 240.0,
+  "size_y": 6.0,
+  "size_z": 405.0,
+  "min_x": -120.0,
+  "min_y": -6.0,
+  "min_z": -305.0,
+  "max_x": 120.0,
+  "max_y": 0.0,
+  "max_z": 100.0
+ },
+ "plate_holes": [
+  {
+   "X": 110,
+   "Z": 90,
+   "d": 3.4,
+   "offset": 0.0,
+   "through": 1,
+   "start": [
+    110.0,
+    -6.0,
+    90.0
+   ],
+   "end": [
+    110.0,
+    0.0,
+    90.0
+   ]
+  },
+  {
+   "X": -110,
+   "Z": 90,
+   "d": 3.4,
+   "offset": 0.0,
+   "through": 1,
+   "start": [
+    -110.0,
+    -6.0,
+    90.0
+   ],
+   "end": [
+    -110.0,
+    0.0,
+    90.0
+   ]
+  },
+  {
+   "X": 110,
+   "Z": -295,
+   "d": 3.4,
+   "offset": 0.0,
+   "through": 1,
+   "start": [
+    110.0,
+    -6.0,
+    -295.0
+   ],
+   "end": [
+    110.0,
+    0.0,
+    -295.0
+   ]
+  },
+  {
+   "X": -110,
+   "Z": -295,
+   "d": 3.4,
+   "offset": 0.0,
+   "through": 1,
+   "start": [
+    -110.0,
+    -6.0,
+    -295.0
+   ],
+   "end": [
+    -110.0,
+    0.0,
+    -295.0
+   ]
+  }
+ ],
+ "plate_com": [
+  0.08860353686379911,
+  -2.999999999999999,
+  -102.37073236994688
+ ],
+ "joint_check_(1,2,3)->": [
+  111.0,
+  -9.0,
+  92.0
+ ],
+ "poses": {
+  "1": {
+   "foot_env": {
+    "size_x": 18.0,
+    "size_y": 10.0,
+    "size_z": 18.0,
+    "min_x": 101.0,
+    "min_y": -16.0,
+    "min_z": 81.0,
+    "max_x": 119.0,
+    "max_y": -6.0,
+    "max_z": 99.0
+   },
+   "screw_env": {
+    "size_x": 5.7,
+    "size_y": 13.65,
+    "size_z": 5.7,
+    "min_x": 107.15,
+    "min_y": -12.0,
+    "min_z": 87.15,
+    "max_x": 112.85,
+    "max_y": 1.65,
+    "max_z": 92.85
+   },
+   "nut_env": {
+    "size_x": 6.350853,
+    "size_y": 2.4,
+    "size_z": 5.5,
+    "min_x": 106.824574,
+    "min_y": -10.9,
+    "min_z": 87.25,
+    "max_x": 113.175426,
+    "max_y": -8.5,
+    "max_z": 92.75
+   },
+   "c_foot_plate": {
+    "m": 0.0,
+    "at": [
+     111.7,
+     -6.0,
+     90.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "c_nut_foot": {
+    "m": 0.0,
+    "at": [
+     111.587713,
+     -8.5,
+     92.75
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "c_screw_plate": {
+    "m": 0.0,
+    "at": [
+     112.85,
+     0.0,
+     90.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "interf": {
+    "foot|plate": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "foot|nut": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "foot|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "plate|nut": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "plate|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "nut|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "ea_foot_on_plate": {
+    "m": null,
+    "at": [
+     111.7,
+     -6.0,
+     90.0
+    ],
+    "st": "INCONCLUSIVE",
+    "why": "the area changes with the depth (229.334259 mm\u00b2 at 0.005 mm, 229.294575 at 0.0025): a face within the depth along the push that does not touch, a push that slides the contact, or a line or point contact"
+   },
+   "ea_nut_on_foot": {
+    "m": 17.118066,
+    "at": [
+     111.587713,
+     -8.5,
+     92.75
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "ea_head_on_plate": {
+    "m": 16.438384,
+    "at": [
+     112.85,
+     0.0,
+     90.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "foot_bore_offset_from_hole_axis": {
+    "m": 0.0,
+    "at": [
+     110.0,
+     -8.5,
+     90.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "foot_bore_start_end": [
+    [
+     110.0,
+     -8.5,
+     90.0
+    ],
+    [
+     110.0,
+     -6.0,
+     90.0
+    ]
+   ],
+   "plate_corner_outer_r": {
+    "max": {
+     "m": 10.0,
+     "at": [
+      120.0,
+      -5.0,
+      89.999825
+     ],
+     "st": "MEASURED",
+     "why": ""
+    },
+    "min": {
+     "m": 10.0,
+     "at": [
+      120.0,
+      -5.0,
+      90.000175
+     ],
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "foot_outer_r_about_hole": {
+    "max": {
+     "m": 9.0,
+     "at": [
+      119.0,
+      -7.061111,
+      90.0
+     ],
+     "st": "MEASURED",
+     "why": ""
+    },
+    "min": {
+     "m": 9.0,
+     "at": [
+      118.86327,
+      -7.061111,
+      91.562834
+     ],
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "plate_env": {
+    "size_x": 240.0,
+    "size_y": 6.0,
+    "size_z": 405.0,
+    "min_x": -120.0,
+    "min_y": -6.0,
+    "min_z": -305.0,
+    "max_x": 120.0,
+    "max_y": 0.0,
+    "max_z": 100.0
+   },
+   "REQ05_x_edge": 1.0,
+   "REQ05_z_edge": 1.0,
+   "REQ05_arc": 1.0
+  },
+  "2": {
+   "foot_env": {
+    "size_x": 18.0,
+    "size_y": 10.0,
+    "size_z": 18.0,
+    "min_x": -119.0,
+    "min_y": -16.0,
+    "min_z": 81.0,
+    "max_x": -101.0,
+    "max_y": -6.0,
+    "max_z": 99.0
+   },
+   "screw_env": {
+    "size_x": 5.7,
+    "size_y": 13.65,
+    "size_z": 5.7,
+    "min_x": -112.85,
+    "min_y": -12.0,
+    "min_z": 87.15,
+    "max_x": -107.15,
+    "max_y": 1.65,
+    "max_z": 92.85
+   },
+   "nut_env": {
+    "size_x": 6.350853,
+    "size_y": 2.4,
+    "size_z": 5.5,
+    "min_x": -113.175426,
+    "min_y": -10.9,
+    "min_z": 87.25,
+    "max_x": -106.824574,
+    "max_y": -8.5,
+    "max_z": 92.75
+   },
+   "c_foot_plate": {
+    "m": 0.0,
+    "at": [
+     -108.3,
+     -6.0,
+     90.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "c_nut_foot": {
+    "m": 0.0,
+    "at": [
+     -108.412287,
+     -8.5,
+     92.75
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "c_screw_plate": {
+    "m": 0.0,
+    "at": [
+     -107.15,
+     0.0,
+     90.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "interf": {
+    "foot|plate": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "foot|nut": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "foot|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "plate|nut": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "plate|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "nut|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "ea_foot_on_plate": {
+    "m": null,
+    "at": [
+     -108.3,
+     -6.0,
+     90.0
+    ],
+    "st": "INCONCLUSIVE",
+    "why": "the area changes with the depth (229.334259 mm\u00b2 at 0.005 mm, 229.294575 at 0.0025): a face within the depth along the push that does not touch, a push that slides the contact, or a line or point contact"
+   },
+   "ea_nut_on_foot": {
+    "m": 17.118066,
+    "at": [
+     -108.412287,
+     -8.5,
+     92.75
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "ea_head_on_plate": {
+    "m": 16.438384,
+    "at": [
+     -107.15,
+     0.0,
+     90.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "foot_bore_offset_from_hole_axis": {
+    "m": 0.0,
+    "at": [
+     -110.0,
+     -8.5,
+     90.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "foot_bore_start_end": [
+    [
+     -110.0,
+     -8.5,
+     90.0
+    ],
+    [
+     -110.0,
+     -6.0,
+     90.0
+    ]
+   ],
+   "plate_corner_outer_r": {
+    "max": {
+     "m": 10.0,
+     "at": [
+      -119.961947,
+      -5.0,
+      90.871557
+     ],
+     "st": "MEASURED",
+     "why": ""
+    },
+    "min": {
+     "m": 10.0,
+     "at": [
+      -120.0,
+      -5.0,
+      90.0
+     ],
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "foot_outer_r_about_hole": {
+    "max": {
+     "m": 9.0,
+     "at": [
+      -101.0,
+      -7.061111,
+      90.0
+     ],
+     "st": "MEASURED",
+     "why": ""
+    },
+    "min": {
+     "m": 9.0,
+     "at": [
+      -101.13673,
+      -7.061111,
+      91.562834
+     ],
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "plate_env": {
+    "size_x": 240.0,
+    "size_y": 6.0,
+    "size_z": 405.0,
+    "min_x": -120.0,
+    "min_y": -6.0,
+    "min_z": -305.0,
+    "max_x": 120.0,
+    "max_y": 0.0,
+    "max_z": 100.0
+   },
+   "REQ05_x_edge": 1.0,
+   "REQ05_z_edge": 1.0,
+   "REQ05_arc": 1.0
+  },
+  "3": {
+   "foot_env": {
+    "size_x": 18.0,
+    "size_y": 10.0,
+    "size_z": 18.0,
+    "min_x": 101.0,
+    "min_y": -16.0,
+    "min_z": -304.0,
+    "max_x": 119.0,
+    "max_y": -6.0,
+    "max_z": -286.0
+   },
+   "screw_env": {
+    "size_x": 5.7,
+    "size_y": 13.65,
+    "size_z": 5.7,
+    "min_x": 107.15,
+    "min_y": -12.0,
+    "min_z": -297.85,
+    "max_x": 112.85,
+    "max_y": 1.65,
+    "max_z": -292.15
+   },
+   "nut_env": {
+    "size_x": 6.350853,
+    "size_y": 2.4,
+    "size_z": 5.5,
+    "min_x": 106.824574,
+    "min_y": -10.9,
+    "min_z": -297.75,
+    "max_x": 113.175426,
+    "max_y": -8.5,
+    "max_z": -292.25
+   },
+   "c_foot_plate": {
+    "m": 0.0,
+    "at": [
+     111.7,
+     -6.0,
+     -295.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "c_nut_foot": {
+    "m": 0.0,
+    "at": [
+     111.587713,
+     -8.5,
+     -292.25
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "c_screw_plate": {
+    "m": 0.0,
+    "at": [
+     112.85,
+     0.0,
+     -295.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "interf": {
+    "foot|plate": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "foot|nut": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "foot|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "plate|nut": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "plate|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "nut|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "ea_foot_on_plate": {
+    "m": null,
+    "at": [
+     111.7,
+     -6.0,
+     -295.0
+    ],
+    "st": "INCONCLUSIVE",
+    "why": "the area changes with the depth (229.334259 mm\u00b2 at 0.005 mm, 229.294575 at 0.0025): a face within the depth along the push that does not touch, a push that slides the contact, or a line or point contact"
+   },
+   "ea_nut_on_foot": {
+    "m": 17.118066,
+    "at": [
+     111.587713,
+     -8.5,
+     -292.25
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "ea_head_on_plate": {
+    "m": 16.438384,
+    "at": [
+     112.85,
+     0.0,
+     -295.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "foot_bore_offset_from_hole_axis": {
+    "m": 0.0,
+    "at": [
+     110.0,
+     -8.5,
+     -295.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "foot_bore_start_end": [
+    [
+     110.0,
+     -8.5,
+     -295.0
+    ],
+    [
+     110.0,
+     -6.0,
+     -295.0
+    ]
+   ],
+   "plate_corner_outer_r": {
+    "max": {
+     "m": 10.0,
+     "at": [
+      120.0,
+      -5.0,
+      -294.999825
+     ],
+     "st": "MEASURED",
+     "why": ""
+    },
+    "min": {
+     "m": 10.0,
+     "at": [
+      120.0,
+      -5.0,
+      -295.000175
+     ],
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "foot_outer_r_about_hole": {
+    "max": {
+     "m": 9.0,
+     "at": [
+      119.0,
+      -7.061111,
+      -295.0
+     ],
+     "st": "MEASURED",
+     "why": ""
+    },
+    "min": {
+     "m": 9.0,
+     "at": [
+      118.86327,
+      -7.061111,
+      -293.437166
+     ],
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "plate_env": {
+    "size_x": 240.0,
+    "size_y": 6.0,
+    "size_z": 405.0,
+    "min_x": -120.0,
+    "min_y": -6.0,
+    "min_z": -305.0,
+    "max_x": 120.0,
+    "max_y": 0.0,
+    "max_z": 100.0
+   },
+   "REQ05_x_edge": 1.0,
+   "REQ05_z_edge": 1.0,
+   "REQ05_arc": 1.0
+  },
+  "4": {
+   "foot_env": {
+    "size_x": 18.0,
+    "size_y": 10.0,
+    "size_z": 18.0,
+    "min_x": -119.0,
+    "min_y": -16.0,
+    "min_z": -304.0,
+    "max_x": -101.0,
+    "max_y": -6.0,
+    "max_z": -286.0
+   },
+   "screw_env": {
+    "size_x": 5.7,
+    "size_y": 13.65,
+    "size_z": 5.7,
+    "min_x": -112.85,
+    "min_y": -12.0,
+    "min_z": -297.85,
+    "max_x": -107.15,
+    "max_y": 1.65,
+    "max_z": -292.15
+   },
+   "nut_env": {
+    "size_x": 6.350853,
+    "size_y": 2.4,
+    "size_z": 5.5,
+    "min_x": -113.175426,
+    "min_y": -10.9,
+    "min_z": -297.75,
+    "max_x": -106.824574,
+    "max_y": -8.5,
+    "max_z": -292.25
+   },
+   "c_foot_plate": {
+    "m": 0.0,
+    "at": [
+     -108.3,
+     -6.0,
+     -295.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "c_nut_foot": {
+    "m": 0.0,
+    "at": [
+     -108.412287,
+     -8.5,
+     -292.25
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "c_screw_plate": {
+    "m": 0.0,
+    "at": [
+     -107.15,
+     0.0,
+     -295.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "interf": {
+    "foot|plate": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "foot|nut": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "foot|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "plate|nut": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "plate|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    },
+    "nut|screw": {
+     "m": 0.0,
+     "at": null,
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "ea_foot_on_plate": {
+    "m": null,
+    "at": [
+     -108.3,
+     -6.0,
+     -295.0
+    ],
+    "st": "INCONCLUSIVE",
+    "why": "the area changes with the depth (229.334259 mm\u00b2 at 0.005 mm, 229.294575 at 0.0025): a face within the depth along the push that does not touch, a push that slides the contact, or a line or point contact"
+   },
+   "ea_nut_on_foot": {
+    "m": 17.118066,
+    "at": [
+     -108.412287,
+     -8.5,
+     -292.25
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "ea_head_on_plate": {
+    "m": 16.438384,
+    "at": [
+     -107.15,
+     0.0,
+     -295.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "foot_bore_offset_from_hole_axis": {
+    "m": 0.0,
+    "at": [
+     -110.0,
+     -8.5,
+     -295.0
+    ],
+    "st": "MEASURED",
+    "why": ""
+   },
+   "foot_bore_start_end": [
+    [
+     -110.0,
+     -8.5,
+     -295.0
+    ],
+    [
+     -110.0,
+     -6.0,
+     -295.0
+    ]
+   ],
+   "plate_corner_outer_r": {
+    "max": {
+     "m": 10.0,
+     "at": [
+      -110.0,
+      -5.0,
+      -305.0
+     ],
+     "st": "MEASURED",
+     "why": ""
+    },
+    "min": {
+     "m": 10.0,
+     "at": [
+      -120.0,
+      -5.0,
+      -295.0
+     ],
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "foot_outer_r_about_hole": {
+    "max": {
+     "m": 9.0,
+     "at": [
+      -101.0,
+      -7.061111,
+      -295.0
+     ],
+     "st": "MEASURED",
+     "why": ""
+    },
+    "min": {
+     "m": 9.0,
+     "at": [
+      -101.13673,
+      -7.061111,
+      -293.437166
+     ],
+     "st": "MEASURED",
+     "why": ""
+    }
+   },
+   "plate_env": {
+    "size_x": 240.0,
+    "size_y": 6.0,
+    "size_z": 405.0,
+    "min_x": -120.0,
+    "min_y": -6.0,
+    "min_z": -305.0,
+    "max_x": 120.0,
+    "max_y": 0.0,
+    "max_z": 100.0
+   },
+   "REQ05_x_edge": 1.0,
+   "REQ05_z_edge": 1.0,
+   "REQ05_arc": 1.0
+  }
+ },
+ "REQ06_com_margins": {
+  "x+": 109.9113964631362,
+  "x-": 110.0886035368638,
+  "z+": 192.3707323699469,
+  "z-": 192.6292676300531
+ }
+}

@@ -1,0 +1,122 @@
+[
+ {
+  "file": "od_c15_foot_v01_front.png",
+  "sha256": "fbf888202a8f4c282c5c9e2d5f80a8b80776b99947d418038ea57ebd4dc6e184",
+  "nothing_clipped": {
+   "name": "nothing_clipped",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {
+    "band_px": 67,
+    "ink_below": 200
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "png": "/home/claude/oguz-env/jobs/20261001-od-c15-feet/03_Sections/od_c15_foot_v01_front.png",
+    "drawn_pixels": 18501,
+    "size_px": [
+     1600,
+     508
+    ]
+   }
+  }
+ },
+ {
+  "file": "od_c15_foot_v01_left.png",
+  "sha256": "385a31c5822e531a26ff159b6d8de22cb78cd5a77eea941809e1fb164f0163de",
+  "nothing_clipped": {
+   "name": "nothing_clipped",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {
+    "band_px": 68,
+    "ink_below": 200
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "png": "/home/claude/oguz-env/jobs/20261001-od-c15-feet/03_Sections/od_c15_foot_v01_left.png",
+    "drawn_pixels": 20821,
+    "size_px": [
+     1600,
+     518
+    ]
+   }
+  }
+ },
+ {
+  "file": "od_c15_foot_v01_top.png",
+  "sha256": "4e47ba6451f0f09d7920e855b1268f933b6d912bdc5b79b7b5fd2935d4d22d0e",
+  "nothing_clipped": {
+   "name": "nothing_clipped",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {
+    "band_px": 68,
+    "ink_below": 200
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "png": "/home/claude/oguz-env/jobs/20261001-od-c15-feet/03_Sections/od_c15_foot_v01_top.png",
+    "drawn_pixels": 21535,
+    "size_px": [
+     1600,
+     629
+    ]
+   }
+  }
+ },
+ {
+  "file": "od_c15_assembly_pose1_v01_left.png",
+  "sha256": "6e5e5dcd5fe15409742a47cd5a478779b40d9328ec0eb5eff339473ae1eb9701",
+  "nothing_clipped": {
+   "name": "nothing_clipped",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {
+    "band_px": 60,
+    "ink_below": 200
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "png": "/home/claude/oguz-env/jobs/20261001-od-c15-feet/03_Sections/od_c15_assembly_pose1_v01_left.png",
+    "drawn_pixels": 20470,
+    "size_px": [
+     1600,
+     662
+    ]
+   }
+  }
+ },
+ {
+  "file": "od_c15_assembly_pose1_v01_top.png",
+  "sha256": "920a82e982264c5a66700c47e799dbd0f076500d631f28c908748ceb9f1f36b4",
+  "nothing_clipped": {
+   "name": "nothing_clipped",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {
+    "band_px": 61,
+    "ink_below": 200
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "png": "/home/claude/oguz-env/jobs/20261001-od-c15-feet/03_Sections/od_c15_assembly_pose1_v01_top.png",
+    "drawn_pixels": 21266,
+    "size_px": [
+     1600,
+     532
+    ]
+   }
+  }
+ }
+]
