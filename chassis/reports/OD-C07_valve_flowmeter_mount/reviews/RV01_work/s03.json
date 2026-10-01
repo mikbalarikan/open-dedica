@@ -1,0 +1,401 @@
+{
+ "int_mount_h24": 0.0,
+ "int_mount_h22": 0.0,
+ "int_h22_h24": 0.0,
+ "cl_mount_h24": {
+  "name": "clearance",
+  "measured": 0.0,
+  "unit": "mm",
+  "at": [
+   3.960538,
+   18.449689,
+   29.9
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    3.960538,
+    18.449689,
+    29.9
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_mount_h22": {
+  "name": "clearance",
+  "measured": 0.0,
+  "unit": "mm",
+  "at": [
+   69.05,
+   1.2,
+   48.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    69.05,
+    1.2,
+    48.0
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_mount_h24away": {
+  "name": "clearance",
+  "measured": 0.0,
+  "unit": "mm",
+  "at": [
+   8.825284,
+   16.679067,
+   29.9
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    8.825284,
+    16.679067,
+    29.9
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_mount_h22below": {
+  "name": "clearance",
+  "measured": 0.5029999999999994,
+  "unit": "mm",
+  "at": [
+   55.052878,
+   -1.2,
+   43.766
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    55.548538,
+    -1.114383,
+    43.766
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_ring(r>=16)": {
+  "name": "clearance",
+  "measured": 0.3772796699336176,
+  "unit": "mm",
+  "at": [
+   -10.584483,
+   -11.998697,
+   10.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    -10.392639,
+    -11.78122,
+    10.24133
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_recess(r<=14.3,z<=10)": {
+  "name": "clearance",
+  "measured": 0.2969848480982894,
+  "unit": "mm",
+  "at": [
+   0.761266,
+   -14.169565,
+   9.89
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    0.75,
+    -13.959867,
+    10.1
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_pedestal-inner(r<13.5,z<=9.41)": {
+  "name": "clearance",
+  "measured": 0.499999999999998,
+  "unit": "mm",
+  "at": [
+   2.585,
+   0.093,
+   9.4
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    2.085,
+    0.093,
+    9.4
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_hooks(r>=18.5,z>=4)": {
+  "name": "clearance",
+  "measured": 0.0,
+  "unit": "mm",
+  "at": [
+   15.982453,
+   -10.031853,
+   29.9
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    15.982453,
+    -10.031853,
+    29.9
+   ],
+   "inside": false,
+   "solid_pairs": 4
+  }
+ },
+ "cl_recess_ribs": {
+  "name": "clearance",
+  "measured": 0.2969848480982894,
+  "unit": "mm",
+  "at": [
+   0.761266,
+   -14.169565,
+   9.89
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    0.75,
+    -13.959867,
+    10.1
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_mount_ribs": {
+  "name": "clearance",
+  "measured": 0.2969848480982894,
+  "unit": "mm",
+  "at": [
+   0.761266,
+   -14.169565,
+   9.89
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    0.75,
+    -13.959867,
+    10.1
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_recess_ribs_full": {
+  "name": "clearance",
+  "measured": 0.10606601717786893,
+  "unit": "mm",
+  "at": [
+   14.275,
+   0.0,
+   9.975
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    14.2,
+    -0.0,
+    10.05
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_ring_cup": {
+  "name": "clearance",
+  "measured": 0.3772796699336176,
+  "unit": "mm",
+  "at": [
+   -10.584483,
+   -11.998697,
+   10.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    -10.392639,
+    -11.78122,
+    10.24133
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_ringwall_cup": {
+  "name": "clearance",
+  "measured": 0.5313989773719693,
+  "unit": "mm",
+  "at": [
+   16.3,
+   -0.0,
+   13.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    15.768702,
+    0.0,
+    13.01036
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_ring_cup_z0.3": {
+  "name": "clearance",
+  "measured": 0.41320844920595173,
+  "unit": "mm",
+  "at": [
+   -10.584483,
+   -11.998697,
+   10.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    -10.396509,
+    -11.785607,
+    10.3
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_ring_cup_z0.5": {
+  "name": "clearance",
+  "measured": 0.5313989773719691,
+  "unit": "mm",
+  "at": [
+   16.3,
+   -0.0,
+   13.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    15.768702,
+    0.0,
+    13.01036
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_ring_cup_z1.0": {
+  "name": "clearance",
+  "measured": 0.5313989773719693,
+  "unit": "mm",
+  "at": [
+   16.3,
+   -0.0,
+   13.0
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    15.768702,
+    0.0,
+    13.01036
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_deck_h22below": {
+  "name": "clearance",
+  "measured": 0.5029999999999994,
+  "unit": "mm",
+  "at": [
+   55.052878,
+   -1.2,
+   43.766
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    55.548538,
+    -1.114383,
+    43.766
+   ],
+   "inside": false,
+   "solid_pairs": 1
+  }
+ },
+ "cl_legsplate_h22": {
+  "name": "clearance",
+  "measured": 8.150186113264217,
+  "unit": "mm",
+  "at": [
+   84.0,
+   0.0,
+   40.29
+  ],
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "on_b": [
+    81.610636,
+    0.0,
+    48.082077
+   ],
+   "inside": false,
+   "solid_pairs": 2
+  }
+ }
+}

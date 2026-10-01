@@ -1,0 +1,4075 @@
+{
+ "step": "02_STEP_STL/od_c07_mount_C1_v01.step",
+ "step_sha256": "55c1c3616383608b85c711deb84b170c908d38a9baf5c6a727d19d73f68a583c",
+ "check_sha256": "cab718d3a0dba0e59d0b118c9cb2aa289fa1d3f20bab31ddb2a592b32227a495",
+ "build_sha256": "8a45119c6543c50e1d16090ec4e62ebf729e1f06121805fa8efb018ab4424f21",
+ "params": {
+  "plate_x0": -25.0,
+  "plate_x1": 94.0,
+  "plate_y": 25.0,
+  "plate_t": 4.0,
+  "window_x0": 40.0,
+  "window_x1": 84.0,
+  "foot_x": [
+   -18.0,
+   88.5
+  ],
+  "foot_y": 21.0,
+  "foot_hole_d": 3.4,
+  "ped_r": 18.0,
+  "ped_top_z": 10.0,
+  "recess_r": 14.1,
+  "recess_depth": 0.6,
+  "recess_chamfer": 0.2,
+  "ring_ri": 16.3,
+  "ring_ro": 18.3,
+  "ring_top_z": 13.0,
+  "ring_lip_rise": 0.52,
+  "notch_theta": [
+   25.0,
+   115.0,
+   225.0
+  ],
+  "notch_w": 2.0,
+  "notch_h": 0.5,
+  "pin1_xy": [
+   0.185,
+   0.093
+  ],
+  "pin1_d": 4.8,
+  "pin2_xy": [
+   -11.78,
+   0.14
+  ],
+  "pin2_d": 3.8,
+  "hook_theta": [
+   70.0,
+   160.0,
+   320.0
+  ],
+  "hook_ri": 20.87,
+  "hook_t": 2.0,
+  "hook_w": 6.0,
+  "catch_under_z": 29.9,
+  "catch_reach": 2.0,
+  "catch_land": 1.6,
+  "lead_in_deg": 45.0,
+  "valve_x": 62.0,
+  "leg_gap_half": 22.0,
+  "leg_t": 4.0,
+  "deck_y": 15.0,
+  "deck_top_z": 48.0,
+  "deck_t": 7.7,
+  "slot_w": 14.1,
+  "slit_w": 2.4,
+  "slit_x_top": 11.85,
+  "slit_angle": 43.42,
+  "screw_dx": [
+   15.447,
+   -15.338
+  ],
+  "screw_clear_d": 3.4,
+  "screw_clear_depth": 2.0,
+  "insert_d": 4.0,
+  "insert_depth": 5.7,
+  "fillet_leg": [
+   3.0,
+   2.0,
+   1.0
+  ],
+  "fillet_ped": [
+   1.0,
+   0.5
+  ],
+  "fillet_hook": [
+   1.5,
+   1.0,
+   0.5
+  ],
+  "fillet_ring": [
+   0.3,
+   0.2,
+   0.1
+  ],
+  "ring_gap_min": 0.5,
+  "over": 1.0,
+  "h24_path": [
+   25.0,
+   20.0,
+   15.0,
+   10.0,
+   5.0,
+   2.0,
+   1.0,
+   0.5,
+   0.0
+  ],
+  "h22_slide": [
+   45.0,
+   35.0,
+   25.0,
+   16.0,
+   12.0,
+   8.0,
+   4.0,
+   2.0,
+   0.0
+  ],
+  "h22_lift": 0.5,
+  "h22_lower": [
+   0.25,
+   0.0
+  ],
+  "expected_bores": 12,
+  "stl_tol": 0.01,
+  "stl_angular": 0.05
+ },
+ "gates": [
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-01",
+   "measured": 1,
+   "unit": "count",
+   "required": "solid_count = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "solid_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-01",
+   "measured": 1,
+   "unit": "bool",
+   "required": "brep_valid = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "brep_valid",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-01",
+   "measured": 0,
+   "unit": "count",
+   "required": "naked_edges = 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "naked_edges",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 119.0,
+   "unit": "mm",
+   "required": "size_x 119.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_x",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": 119.0,
+   "unit": "mm",
+   "required": "size_x 119.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_x",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 50.0,
+   "unit": "mm",
+   "required": "size_y 50.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_y",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": 50.0,
+   "unit": "mm",
+   "required": "size_y 50.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_y",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 48.0,
+   "unit": "mm",
+   "required": "size_z 48.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_z",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": 48.0,
+   "unit": "mm",
+   "required": "size_z 48.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_size_z",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": -25.0,
+   "unit": "mm",
+   "required": "position min_x -25.0 \u00b1 0.1 (reported apart)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_x",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": -25.0,
+   "unit": "mm",
+   "required": "position min_x -25.0 \u00b1 0.1 (reported apart)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_x",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": -25.0,
+   "unit": "mm",
+   "required": "position min_y -25.0 \u00b1 0.1 (reported apart)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_y",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": -25.0,
+   "unit": "mm",
+   "required": "position min_y -25.0 \u00b1 0.1 (reported apart)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_y",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-02",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "position min_z 0.0 \u00b1 0.1 (reported apart)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_z",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "position min_z 0.0 \u00b1 0.1 (reported apart)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "envelope_min_z",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "D-02",
+   "measured": 119.0,
+   "unit": "mm",
+   "required": "size_x <= 220.0",
+   "margin": 101.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_size_x",
+   "assumes": [
+    "A-12"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-02",
+   "measured": 50.0,
+   "unit": "mm",
+   "required": "size_y <= 220.0",
+   "margin": 170.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_size_y",
+   "assumes": [
+    "A-12"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-02",
+   "measured": 48.0,
+   "unit": "mm",
+   "required": "size_z <= 250.0",
+   "margin": 202.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_size_z",
+   "assumes": [
+    "A-12"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "interference mount|OD-H24 <= 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference mount|OD-H24 (delivered pose)",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "interference mount|OD-H22 <= 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference mount|OD-H22 (delivered pose)",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "contact: OD-H24 rim face on the pedestal top, clearance = 0",
+   "margin": 0.0,
+   "at": "(14.3000, 0.0000, 10.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "contact: OD-H22 flange back face on the deck top, clearance = 0",
+   "margin": 0.0,
+   "at": "(69.0500, 1.2000, 48.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "contact: hook 70\u00b0 catch underside on the OD-H24 flange top, clearance = 0",
+   "margin": 0.0,
+   "at": "(8.8253, 16.6791, 29.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "contact: hook 160\u00b0 catch underside on the OD-H24 flange top, clearance = 0",
+   "margin": 0.0,
+   "at": "(-16.6791, 8.8253, 29.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "contact: hook 320\u00b0 catch underside on the OD-H24 flange top, clearance = 0",
+   "margin": 0.0,
+   "at": "(15.9825, -10.0319, 29.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.49999999999999833,
+   "unit": "mm",
+   "required": "mount (hooks aside) to OD-H24 away from the rim contact >= 0.5",
+   "margin": -1.6653345369377348e-15,
+   "at": "(2.5850, 0.0930, 9.4000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04c",
+   "measured": 0.49999999999999833,
+   "unit": "mm",
+   "required": "mount (hooks aside) to OD-H24 away from the rim contact >= 0.5",
+   "margin": -1.6653345369377348e-15,
+   "at": "(2.5850, 0.0930, 9.4000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.5029999999999994,
+   "unit": "mm",
+   "required": "mount to OD-H22 below its flange back face >= 0.5",
+   "margin": 0.003,
+   "at": "(55.0529, -1.2000, 43.7660) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04c",
+   "measured": 0.5029999999999994,
+   "unit": "mm",
+   "required": "mount to OD-H22 below its flange back face >= 0.5",
+   "margin": 0.003,
+   "at": "(55.0529, -1.2000, 43.7660) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04c",
+   "measured": 13.346234984778842,
+   "unit": "mm",
+   "required": "hooks to OD-H24 pipes and connector (outside r 20.5) >= 0.5",
+   "margin": 12.846234985,
+   "at": "(12.6548, -13.9976, 29.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04c",
+   "measured": 4.9390973732692,
+   "unit": "mm",
+   "required": "hooks to OD-H24 above its flange top plane (z > 29.901) >= 0.5",
+   "margin": 4.439097373,
+   "at": "(15.9825, -10.0319, 31.5000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "(b) OD-H24 lowered along -Z from 25 mm, 9 poses, interference <= 0 (hooks exempt)",
+   "margin": 0.0,
+   "at": "OD-H24 raised 25.0 mm",
+   "status": "PASS_ASSUMED",
+   "method": "interference",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-03",
+   "measured": 15.197061308786118,
+   "unit": "mm3",
+   "required": "(b) OD-H22 slid along -Y at +0.5 from y +45 to 0, then lowered 0.5; 11 poses, interference <= 0",
+   "margin": -15.197061309,
+   "at": "OD-H22 at y +4.0 mm, z +0.5 mm",
+   "status": "FAIL",
+   "method": "interference",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "schema AP242",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_schema",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "count",
+   "required": "1 solid re-read",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_solids",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1.7826096154749393e-09,
+   "unit": "mm3",
+   "required": "volume delta 0",
+   "margin": -2e-09,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_volume_delta",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 0,
+   "unit": "count",
+   "required": "faces delta 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_faces_delta",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "named body re-read unchanged",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_labels",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "valid after re-import",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "step_roundtrip_valid",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "footprint hole (-18, 21) \u00d83.4 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(-18.0000, 21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "footprint hole (-18, 21) offset <= 0.10",
+   "margin": 0.1,
+   "at": "(-18.0000, 21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "footprint hole (-18, 21) length 4.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(-18.0000, 21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 1,
+   "unit": "bool",
+   "required": "footprint hole (-18, 21) through",
+   "margin": 0.0,
+   "at": "(-18.0000, 21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_through",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "footprint hole (-18, 21) \u00d8 >= 3.25",
+   "margin": 0.15,
+   "at": "(-18.0000, 21.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "footprint hole (-18, -21) \u00d83.4 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(-18.0000, -21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "footprint hole (-18, -21) offset <= 0.10",
+   "margin": 0.1,
+   "at": "(-18.0000, -21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "footprint hole (-18, -21) length 4.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(-18.0000, -21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 1,
+   "unit": "bool",
+   "required": "footprint hole (-18, -21) through",
+   "margin": 0.0,
+   "at": "(-18.0000, -21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_through",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "footprint hole (-18, -21) \u00d8 >= 3.25",
+   "margin": 0.15,
+   "at": "(-18.0000, -21.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "footprint hole (88.5, 21) \u00d83.4 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(88.5000, 21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "footprint hole (88.5, 21) offset <= 0.10",
+   "margin": 0.1,
+   "at": "(88.5000, 21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "footprint hole (88.5, 21) length 4.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(88.5000, 21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 1,
+   "unit": "bool",
+   "required": "footprint hole (88.5, 21) through",
+   "margin": 0.0,
+   "at": "(88.5000, 21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_through",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "footprint hole (88.5, 21) \u00d8 >= 3.25",
+   "margin": 0.15,
+   "at": "(88.5000, 21.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "footprint hole (88.5, -21) \u00d83.4 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(88.5000, -21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "footprint hole (88.5, -21) offset <= 0.10",
+   "margin": 0.1,
+   "at": "(88.5000, -21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "footprint hole (88.5, -21) length 4.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(88.5000, -21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 1,
+   "unit": "bool",
+   "required": "footprint hole (88.5, -21) through",
+   "margin": 0.0,
+   "at": "(88.5000, -21.0000, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_through",
+   "assumes": [
+    "A-14"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "footprint hole (88.5, -21) \u00d8 >= 3.25",
+   "margin": 0.15,
+   "at": "(88.5000, -21.0000, 0.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "screw clearance (77.447, 0) \u00d83.4 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(77.4470, 0.0000, 46.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "screw clearance (77.447, 0) offset <= 0.10",
+   "margin": 0.1,
+   "at": "(77.4470, 0.0000, 46.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.0,
+   "unit": "mm",
+   "required": "screw clearance (77.447, 0) depth 2.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(77.4470, 0.0000, 46.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "screw clearance (77.447, 0) \u00d8 >= 3.25",
+   "margin": 0.15,
+   "at": "(77.4470, 0.0000, 46.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "insert bore (77.447, 0) \u00d84.0 \u00b1 0.05",
+   "margin": 0.05,
+   "at": "(77.4470, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "insert bore (77.447, 0) coaxial offset <= 0.10",
+   "margin": 0.1,
+   "at": "(77.4470, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 5.700000000000003,
+   "unit": "mm",
+   "required": "insert bore (77.447, 0) depth 5.7 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(77.4470, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-05b",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "insert bore (77.447, 0) \u00d8 4.0 \u00b1 0.05",
+   "margin": 0.05,
+   "at": "(77.4470, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-13"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-05b",
+   "measured": 5.700000000000003,
+   "unit": "mm",
+   "required": "insert bore (77.447, 0) depth >= 5.7",
+   "margin": 2.6645352591003757e-15,
+   "at": "(77.4470, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-13"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-05b",
+   "measured": 1,
+   "unit": "bool",
+   "required": "insert bore (77.447, 0) opens on the deck underside",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "insert_bore_open_on_underside",
+   "assumes": [
+    "A-13"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "screw clearance (46.662, 0) \u00d83.4 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(46.6620, 0.0000, 46.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "screw clearance (46.662, 0) offset <= 0.10",
+   "margin": 0.1,
+   "at": "(46.6620, 0.0000, 46.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.0,
+   "unit": "mm",
+   "required": "screw clearance (46.662, 0) depth 2.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(46.6620, 0.0000, 46.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "screw clearance (46.662, 0) \u00d8 >= 3.25",
+   "margin": 0.15,
+   "at": "(46.6620, 0.0000, 46.0000) mm",
+   "status": "PASS",
+   "method": "bore_diameter",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "insert bore (46.662, 0) \u00d84.0 \u00b1 0.05",
+   "margin": 0.05,
+   "at": "(46.6620, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "insert bore (46.662, 0) coaxial offset <= 0.10",
+   "margin": 0.1,
+   "at": "(46.6620, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 5.700000000000003,
+   "unit": "mm",
+   "required": "insert bore (46.662, 0) depth 5.7 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(46.6620, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-02",
+    "A-13",
+    "A-18"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-05b",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "insert bore (46.662, 0) \u00d8 4.0 \u00b1 0.05",
+   "margin": 0.05,
+   "at": "(46.6620, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-13"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-05b",
+   "measured": 5.700000000000003,
+   "unit": "mm",
+   "required": "insert bore (46.662, 0) depth >= 5.7",
+   "margin": 2.6645352591003757e-15,
+   "at": "(46.6620, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-13"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-05b",
+   "measured": 1,
+   "unit": "bool",
+   "required": "insert bore (46.662, 0) opens on the deck underside",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "insert_bore_open_on_underside",
+   "assumes": [
+    "A-13"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 4.8,
+   "unit": "mm",
+   "required": "pin 1 \u00d84.8 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(0.1850, 0.0930, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "pin 1 \u00d84.8 offset <= 0.10",
+   "margin": 0.1,
+   "at": "(0.1850, 0.0930, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 9.4,
+   "unit": "mm",
+   "required": "pin 1 \u00d84.8 length 9.4 \u00b1 0.1 (recess floor to bottom face)",
+   "margin": 0.1,
+   "at": "(0.1850, 0.0930, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 1,
+   "unit": "bool",
+   "required": "pin 1 \u00d84.8 through",
+   "margin": 0.0,
+   "at": "(0.1850, 0.0930, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_through",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.49999999999999967,
+   "unit": "mm",
+   "required": "pin 1 \u00d84.8: clearance to the OD-H24 pin >= 0.5",
+   "margin": -3.3306690738754696e-16,
+   "at": "(2.5850, 0.0930, 9.4000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04d",
+   "measured": 0.49999999999999967,
+   "unit": "mm",
+   "required": "pin 1 \u00d84.8: printed sliding fit >= 0.30 per side",
+   "margin": 0.2,
+   "at": "(2.5850, 0.0930, 9.4000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 3.8,
+   "unit": "mm",
+   "required": "pin 2 \u00d83.8 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(-11.7800, 0.1400, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "pin 2 \u00d83.8 offset <= 0.10",
+   "margin": 0.1,
+   "at": "(-11.7800, 0.1400, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_axis_offset",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 9.4,
+   "unit": "mm",
+   "required": "pin 2 \u00d83.8 length 9.4 \u00b1 0.1 (recess floor to bottom face)",
+   "margin": 0.1,
+   "at": "(-11.7800, 0.1400, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_length",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 1,
+   "unit": "bool",
+   "required": "pin 2 \u00d83.8 through",
+   "margin": 0.0,
+   "at": "(-11.7800, 0.1400, 0.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_through",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.49999999999999833,
+   "unit": "mm",
+   "required": "pin 2 \u00d83.8: clearance to the OD-H24 pin >= 0.5",
+   "margin": -1.6653345369377348e-15,
+   "at": "(-9.8800, 0.1400, 9.4000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04d",
+   "measured": 0.49999999999999833,
+   "unit": "mm",
+   "required": "pin 2 \u00d83.8: printed sliding fit >= 0.30 per side",
+   "margin": 0.2,
+   "at": "(-9.8800, 0.1400, 9.4000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 14.099999999999998,
+   "unit": "mm",
+   "required": "recess R 14.10 \u00b1 0.1 (radial_profile inner, z 9.5 ... 9.9) min",
+   "margin": 0.1,
+   "at": "(13.8858, 2.4484, 9.5500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_min",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 14.149999999999954,
+   "unit": "mm",
+   "required": "recess R 14.10 \u00b1 0.1 (radial_profile inner, z 9.5 ... 9.9) max",
+   "margin": 0.05,
+   "at": "(14.1500, 0.0000, 9.8500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_max",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 9.4,
+   "unit": "mm",
+   "required": "recess floor z 9.40 \u00b1 0.05",
+   "margin": 0.05,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_z",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 0.5161395160225561,
+   "unit": "mm",
+   "required": "recess to the OD-H24 underside ribs and hub (H24 inside r 13.68) >= 0.5",
+   "margin": 0.016139516,
+   "at": "(14.1000, 0.0000, 9.8000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 10.0,
+   "unit": "mm",
+   "required": "pedestal top z 10.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_z",
+   "assumes": [
+    "A-06"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 16.299999999999997,
+   "unit": "mm",
+   "required": "ring inner R (radial_profile inner 0...359\u00b0, z 10.5...12.5) min in [16.25, 16.35]",
+   "margin": 0.05,
+   "at": "(16.2603, 1.1370, 10.5500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_min",
+   "assumes": [
+    "A-06"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 16.3,
+   "unit": "mm",
+   "required": "ring inner R max in [16.25, 16.35]",
+   "margin": 0.05,
+   "at": "(16.3000, 0.0000, 10.5500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_max",
+   "assumes": [
+    "A-06"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 13.0,
+   "unit": "mm",
+   "required": "ring top z 13.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_z",
+   "assumes": [
+    "A-06"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 0.5313989773719694,
+   "unit": "mm",
+   "required": "clearance(ring, OD-H24 cup) in [0.50, 0.70]",
+   "margin": 0.031398977,
+   "at": "(16.3000, -0.0000, 13.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-04d",
+   "measured": 0.5313989773719694,
+   "unit": "mm",
+   "required": "ring gap >= 0.30 per side",
+   "margin": 0.231398977,
+   "at": "(16.3000, -0.0000, 13.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06",
+    "A-07"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 70.0,
+   "unit": "deg",
+   "required": "hook 70\u00b0 centred at 70\u00b0 \u00b1 1\u00b0",
+   "margin": 1.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "hook_centre_angle",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 20.87,
+   "unit": "mm",
+   "required": "hook 70\u00b0 beam inner face R 20.87 \u00b1 0.1 over z 6...26 (min)",
+   "margin": 0.1,
+   "at": "(9.4372, 18.6144, 6.2500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_min",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 20.87,
+   "unit": "mm",
+   "required": "hook 70\u00b0 beam inner face R 20.87 \u00b1 0.1 over z 6...26 (max)",
+   "margin": 0.1,
+   "at": "(9.4372, 18.6144, 6.2500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_max",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 29.9,
+   "unit": "mm",
+   "required": "hook 70\u00b0 catch underside z 29.9 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_z",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 18.869999999999997,
+   "unit": "mm",
+   "required": "hook 70\u00b0 catch reaches R 18.87 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(6.4539, 17.7320, 30.4000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 45.000000000025445,
+   "unit": "deg",
+   "required": "hook 70\u00b0 catch top chamfer 45\u00b0 \u00b1 1\u00b0 (from horizontal)",
+   "margin": 1.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "lead_in_angle",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "hook 70\u00b0 catch lands on the flange top outside slots and windows: void under the catch (r 18.87...19.70, 2.65 deep) <= 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "void_under_catch",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "hook 70\u00b0 catch underside on the flange top, clearance = 0",
+   "margin": 0.0,
+   "at": "(8.8253, 16.6791, 29.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "hook 70\u00b0 undeflected at the engaged pose: interference <= 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference hook 70\u00b0|OD-H24",
+   "assumes": [
+    "A-06",
+    "A-08"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-04",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "hook 70\u00b0 catch underside touches the flange top, clearance = 0",
+   "margin": 0.0,
+   "at": "(8.8253, 16.6791, 29.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06",
+    "A-08"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-02",
+   "measured": 1.999999999999549,
+   "unit": "mm",
+   "required": "hook 70\u00b0 beam thickness >= 1.0",
+   "margin": 1.0,
+   "at": "(9.7607, 18.4469, 26.0000) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "J-01",
+   "measured": 0.6708307866607529,
+   "unit": "%",
+   "required": "hook 70\u00b0 \u03b5 = 1.5\u00b7y\u00b7t/(L\u00b2\u00b7Q) <= 1.5 % (y = 20.37 \u2212 catch R, L = plate top to catch underside)",
+   "margin": 0.829169213,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "snap_root_strain",
+   "assumes": [
+    "A-15"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-03",
+   "measured": 2.0000000000000018,
+   "unit": "ratio",
+   "required": "hook 70\u00b0 catch/root thickness ratio reported; binding only if \u03b5 within 0.2 % of 1.5 %",
+   "margin": 1.5,
+   "at": null,
+   "status": "PASS",
+   "method": "catch_to_root_thickness_ratio",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 160.0,
+   "unit": "deg",
+   "required": "hook 160\u00b0 centred at 160\u00b0 \u00b1 1\u00b0",
+   "margin": 1.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "hook_centre_angle",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 20.87,
+   "unit": "mm",
+   "required": "hook 160\u00b0 beam inner face R 20.87 \u00b1 0.1 over z 6...26 (min)",
+   "margin": 0.1,
+   "at": "(-18.6144, 9.4372, 6.2500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_min",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 20.87,
+   "unit": "mm",
+   "required": "hook 160\u00b0 beam inner face R 20.87 \u00b1 0.1 over z 6...26 (max)",
+   "margin": 0.1,
+   "at": "(-18.6144, 9.4372, 6.2500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_max",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 29.9,
+   "unit": "mm",
+   "required": "hook 160\u00b0 catch underside z 29.9 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_z",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 18.869999999999997,
+   "unit": "mm",
+   "required": "hook 160\u00b0 catch reaches R 18.87 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(-17.7320, 6.4539, 30.4000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 45.000000000025445,
+   "unit": "deg",
+   "required": "hook 160\u00b0 catch top chamfer 45\u00b0 \u00b1 1\u00b0 (from horizontal)",
+   "margin": 1.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "lead_in_angle",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "hook 160\u00b0 catch lands on the flange top outside slots and windows: void under the catch (r 18.87...19.70, 2.65 deep) <= 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "void_under_catch",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "hook 160\u00b0 catch underside on the flange top, clearance = 0",
+   "margin": 0.0,
+   "at": "(-16.6791, 8.8253, 29.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "hook 160\u00b0 undeflected at the engaged pose: interference <= 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference hook 160\u00b0|OD-H24",
+   "assumes": [
+    "A-06",
+    "A-08"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-04",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "hook 160\u00b0 catch underside touches the flange top, clearance = 0",
+   "margin": 0.0,
+   "at": "(-16.6791, 8.8253, 29.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06",
+    "A-08"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-02",
+   "measured": 1.9999999999942453,
+   "unit": "mm",
+   "required": "hook 160\u00b0 beam thickness >= 1.0",
+   "margin": 1.0,
+   "at": "(-18.4469, 9.7607, 26.0000) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "J-01",
+   "measured": 0.6708307866589739,
+   "unit": "%",
+   "required": "hook 160\u00b0 \u03b5 = 1.5\u00b7y\u00b7t/(L\u00b2\u00b7Q) <= 1.5 % (y = 20.37 \u2212 catch R, L = plate top to catch underside)",
+   "margin": 0.829169213,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "snap_root_strain",
+   "assumes": [
+    "A-15"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-03",
+   "measured": 2.0000000000000018,
+   "unit": "ratio",
+   "required": "hook 160\u00b0 catch/root thickness ratio reported; binding only if \u03b5 within 0.2 % of 1.5 %",
+   "margin": 1.5,
+   "at": null,
+   "status": "PASS",
+   "method": "catch_to_root_thickness_ratio",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 320.0,
+   "unit": "deg",
+   "required": "hook 320\u00b0 centred at 320\u00b0 \u00b1 1\u00b0",
+   "margin": 1.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "hook_centre_angle",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 20.87,
+   "unit": "mm",
+   "required": "hook 320\u00b0 beam inner face R 20.87 \u00b1 0.1 over z 6...26 (min)",
+   "margin": 0.1,
+   "at": "(14.2641, -15.2346, 6.2500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_min",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 20.87,
+   "unit": "mm",
+   "required": "hook 320\u00b0 beam inner face R 20.87 \u00b1 0.1 over z 6...26 (max)",
+   "margin": 0.1,
+   "at": "(14.2641, -15.2346, 6.2500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_max",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 29.9,
+   "unit": "mm",
+   "required": "hook 320\u00b0 catch underside z 29.9 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_z",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 18.87,
+   "unit": "mm",
+   "required": "hook 320\u00b0 catch reaches R 18.87 \u00b1 0.1",
+   "margin": 0.1,
+   "at": "(14.4553, -12.1294, 30.4000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 45.000000000025544,
+   "unit": "deg",
+   "required": "hook 320\u00b0 catch top chamfer 45\u00b0 \u00b1 1\u00b0 (from horizontal)",
+   "margin": 1.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "lead_in_angle",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "hook 320\u00b0 catch lands on the flange top outside slots and windows: void under the catch (r 18.87...19.70, 2.65 deep) <= 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "void_under_catch",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "hook 320\u00b0 catch underside on the flange top, clearance = 0",
+   "margin": 0.0,
+   "at": "(15.9825, -10.0319, 29.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06",
+    "A-08",
+    "A-09"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "hook 320\u00b0 undeflected at the engaged pose: interference <= 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "interference hook 320\u00b0|OD-H24",
+   "assumes": [
+    "A-06",
+    "A-08"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-04",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "hook 320\u00b0 catch underside touches the flange top, clearance = 0",
+   "margin": 0.0,
+   "at": "(15.9825, -10.0319, 29.9000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-06",
+    "A-08"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-02",
+   "measured": 1.9999999999977005,
+   "unit": "mm",
+   "required": "hook 320\u00b0 beam thickness >= 1.0",
+   "margin": 1.0,
+   "at": "(13.9960, -15.4812, 26.0000) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "J-01",
+   "measured": 0.6708307866601313,
+   "unit": "%",
+   "required": "hook 320\u00b0 \u03b5 = 1.5\u00b7y\u00b7t/(L\u00b2\u00b7Q) <= 1.5 % (y = 20.37 \u2212 catch R, L = plate top to catch underside)",
+   "margin": 0.829169213,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "snap_root_strain",
+   "assumes": [
+    "A-15"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-03",
+   "measured": 2.0,
+   "unit": "ratio",
+   "required": "hook 320\u00b0 catch/root thickness ratio reported; binding only if \u03b5 within 0.2 % of 1.5 %",
+   "margin": 1.5,
+   "at": null,
+   "status": "PASS",
+   "method": "catch_to_root_thickness_ratio",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 48.0,
+   "unit": "mm",
+   "required": "deck top z 48.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_z",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm2",
+   "required": "deck top flat under the OD-H22 flange outline: flange area not on the z 48 plane beyond the slot and slits (mm\u00b2) <= 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "flange_area_off_the_deck_plane",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 7.049999999999958,
+   "unit": "mm",
+   "required": "stem U-slot radial_profile inner about (62, 0), 192\u00b0...348\u00b0 (slit angles aside), z 41...47, min in [7.00, 7.10]",
+   "margin": 0.05,
+   "at": "(55.1594, -1.7055, 41.2500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_min",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 7.049999999999959,
+   "unit": "mm",
+   "required": "stem U-slot radial_profile inner, max in [7.00, 7.10]",
+   "margin": 0.05,
+   "at": "(55.1041, -1.4658, 41.2500) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile_max",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 7.049999999999997,
+   "unit": "mm",
+   "required": "slot straight wall +X at 7.05 \u00b1 0.05 from the axis, y 2.5...14, z 41...47 (worst)",
+   "margin": 0.05,
+   "at": "(69.0500, 2.5000, 41.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 7.049999999999997,
+   "unit": "mm",
+   "required": "slot straight wall -X at 7.05 \u00b1 0.05 from the axis, y 2.5...14, z 41...47 (worst)",
+   "margin": 0.05,
+   "at": "(54.9500, 2.5000, 41.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 14.099999999999994,
+   "unit": "mm",
+   "required": "stem U-slot 14.1 \u00b1 0.1 wide (least)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "slot_width",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "slot open through the deck's +Y edge: material in the channel x 62 \u00b1 6.9, y 0 ... 16 <= 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "slot channel material to +Y",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 7.700000000000003,
+   "unit": "mm",
+   "required": "slot through the deck, length 7.7 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "slot_length",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0,
+   "unit": "count",
+   "required": "no closed stem bore",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "closed_stem_bores",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 11.850000000000453,
+   "unit": "mm",
+   "required": "gusset slit +X reaches 62 \u00b1 11.85 \u00b1 0.1 at the deck top",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "slit_top_reach",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 2.4,
+   "unit": "mm",
+   "required": "gusset slit +X 2.40 \u00b1 0.1 wide (worst)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "slit_width",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 11.850000000000444,
+   "unit": "mm",
+   "required": "gusset slit -X reaches 62 \u00b1 11.85 \u00b1 0.1 at the deck top",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "slit_top_reach",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 2.4,
+   "unit": "mm",
+   "required": "gusset slit -X 2.40 \u00b1 0.1 wide (worst)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "slit_width",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.5029999999999994,
+   "unit": "mm",
+   "required": "clearance(mount, OD-H22) away from the flange contact >= 0.5; nearest points in 'at'",
+   "margin": 0.003,
+   "at": "(55.0529, -1.2000, 43.7660) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-03"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 2,
+   "unit": "count",
+   "required": "the window splits the plate in two (window through over the full Y width)",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "plate_pieces",
+   "assumes": [
+    "A-04",
+    "A-19"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 40.0,
+   "unit": "mm",
+   "required": "plate piece -X ends at x 40.0 (window from 40)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_x",
+   "assumes": [
+    "A-04",
+    "A-19"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 84.0,
+   "unit": "mm",
+   "required": "plate piece +X starts at x 84.0 (window to 84)",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_x",
+   "assumes": [
+    "A-04",
+    "A-19"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 40.0,
+   "unit": "mm",
+   "required": "leg inner face at x 40.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "leg_inner_face_x",
+   "assumes": [
+    "A-04",
+    "A-19"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 84.0,
+   "unit": "mm",
+   "required": "leg inner face at x 84.0 \u00b1 0.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "leg_inner_face_x",
+   "assumes": [
+    "A-04",
+    "A-19"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-08",
+   "measured": 48.0,
+   "unit": "mm",
+   "required": "no material above z 48.1",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_z",
+   "assumes": [
+    "A-10"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-08",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "no material within r 12 of the valve axis above the deck top",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "material within r 12 of the valve axis above the deck top",
+   "assumes": [
+    "A-10"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 24.99999999999948,
+   "unit": "deg",
+   "required": "drain notch 25\u00b0 at \u03b8 25\u00b0 \u00b1 1\u00b0",
+   "margin": 1.0,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_angle",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 1.9999999999995606,
+   "unit": "mm",
+   "required": "drain notch 25\u00b0 2.0 \u00b1 0.1 wide",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_width",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 0.5,
+   "unit": "mm",
+   "required": "drain notch 25\u00b0 0.5 \u00b1 0.1 high at the ring base",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_height",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "D-03b",
+   "measured": 1.9999999999995606,
+   "unit": "mm",
+   "required": "drain notch 25\u00b0 ceiling bridge span <= 5",
+   "margin": 3.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "notch_ceiling_span",
+   "assumes": [
+    "A-16"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 1,
+   "unit": "bool",
+   "required": "drain notch 25\u00b0 open through the ring wall (no material r 15...18.2 at mid height)",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_through",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 114.99999999999952,
+   "unit": "deg",
+   "required": "drain notch 115\u00b0 at \u03b8 115\u00b0 \u00b1 1\u00b0",
+   "margin": 1.0,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_angle",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 1.9999999999995604,
+   "unit": "mm",
+   "required": "drain notch 115\u00b0 2.0 \u00b1 0.1 wide",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_width",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 0.5,
+   "unit": "mm",
+   "required": "drain notch 115\u00b0 0.5 \u00b1 0.1 high at the ring base",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_height",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "D-03b",
+   "measured": 1.9999999999995604,
+   "unit": "mm",
+   "required": "drain notch 115\u00b0 ceiling bridge span <= 5",
+   "margin": 3.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "notch_ceiling_span",
+   "assumes": [
+    "A-16"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 1,
+   "unit": "bool",
+   "required": "drain notch 115\u00b0 open through the ring wall (no material r 15...18.2 at mid height)",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_through",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 224.99999999999997,
+   "unit": "deg",
+   "required": "drain notch 225\u00b0 at \u03b8 225\u00b0 \u00b1 1\u00b0",
+   "margin": 1.0,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_angle",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 2.0000000000097664,
+   "unit": "mm",
+   "required": "drain notch 225\u00b0 2.0 \u00b1 0.1 wide",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_width",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 0.5,
+   "unit": "mm",
+   "required": "drain notch 225\u00b0 0.5 \u00b1 0.1 high at the ring base",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_height",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "D-03b",
+   "measured": 2.0000000000097664,
+   "unit": "mm",
+   "required": "drain notch 225\u00b0 ceiling bridge span <= 5",
+   "margin": 3.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "notch_ceiling_span",
+   "assumes": [
+    "A-16"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "REQ-09",
+   "measured": 1,
+   "unit": "bool",
+   "required": "drain notch 225\u00b0 open through the ring wall (no material r 15...18.2 at mid height)",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "notch_through",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "D-01a",
+   "measured": 1.7223748416156628,
+   "unit": "mm",
+   "required": "min_wall >= 0.8",
+   "margin": 0.922374842,
+   "at": "(-16.1007, 2.5198, 10.2555) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "D-01b",
+   "measured": 1.7223748416156628,
+   "unit": "mm",
+   "required": "min_wall >= 1.5",
+   "margin": 0.222374842,
+   "at": "(-16.1007, 2.5198, 10.2555) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "D-06a",
+   "measured": 1.7223748416156628,
+   "unit": "mm",
+   "required": "minimum feature >= 1.0",
+   "margin": 0.722374842,
+   "at": "(-16.1007, 2.5198, 10.2555) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-06",
+   "measured": 1.6000000000000014,
+   "unit": "mm",
+   "required": "Soft: min_wall wide (45\u00b0) >= 1.5",
+   "margin": 0.1,
+   "at": "(-16.6791, 8.8253, 31.5000) mm",
+   "status": "PASS",
+   "method": "min_wall_wide",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "D-03a",
+   "measured": 60.01836063114926,
+   "unit": "deg",
+   "required": "least overhang >= 45\u00b0 off the named faces (deck underside, 3 catch undersides supported; 2 insert-bore and 3 notch ceilings bridges)",
+   "margin": 15.018360631,
+   "at": "(-11.8654, -13.5994, 10.0833) mm",
+   "status": "PASS_ASSUMED",
+   "method": "overhang_census",
+   "assumes": [
+    "A-16"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-03a",
+   "measured": 0,
+   "unit": "count",
+   "required": "no flat downward face other than the named ones",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "unnamed_flat_ceilings",
+   "assumes": [
+    "A-16"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-03b",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "insert bore ceiling (77.447, 0): bridge span (bore \u00d8) <= 5",
+   "margin": 1.0,
+   "at": "(77.4470, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-16"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-03b",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "insert bore ceiling (46.662, 0): bridge span (bore \u00d8) <= 5",
+   "margin": 1.0,
+   "at": "(46.6620, 0.0000, 40.3000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "bore_diameter",
+   "assumes": [
+    "A-16"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "D-05a",
+   "measured": 16.474808677,
+   "unit": "mm",
+   "required": "insert pad (77.447, 0): material across the bore >= 8.0 (least of 8 diameters \u00d7 3 depths)",
+   "margin": 8.474808677,
+   "at": "angle 0.0\u00b0, z 45.80",
+   "status": "PASS_ASSUMED",
+   "method": "insert_boss_across",
+   "assumes": [
+    "A-13"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-05",
+   "measured": 3.9218086769999996,
+   "unit": "mm",
+   "required": "insert bore (77.447, 0): wall >= 3.0 over its depth (16 angles \u00d7 3 depths)",
+   "margin": 0.921808677,
+   "at": "angle 180.0\u00b0, z 45.80",
+   "status": "PASS",
+   "method": "insert_wall",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "D-05a",
+   "measured": 16.474808677,
+   "unit": "mm",
+   "required": "insert pad (46.662, 0): material across the bore >= 8.0 (least of 8 diameters \u00d7 3 depths)",
+   "margin": 8.474808677,
+   "at": "angle 0.0\u00b0, z 45.80",
+   "status": "PASS_ASSUMED",
+   "method": "insert_boss_across",
+   "assumes": [
+    "A-13"
+   ],
+   "note": ""
+  },
+  {
+   "gate": "J-05",
+   "measured": 3.8128086769999996,
+   "unit": "mm",
+   "required": "insert bore (46.662, 0): wall >= 3.0 over its depth (16 angles \u00d7 3 depths)",
+   "margin": 0.812808677,
+   "at": "angle 0.0\u00b0, z 45.80",
+   "status": "PASS",
+   "method": "insert_wall",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 12,
+   "unit": "count",
+   "required": "bores = 12 (4 footprint, 2 pin, 2 screw clearance, 2 insert, recess, ring inner)",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_census_bores",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "plate window = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 1,
+   "unit": "count",
+   "required": "plate window = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 4,
+   "unit": "count",
+   "required": "\u00d83.4 footprint through-holes = 4",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 4,
+   "unit": "count",
+   "required": "\u00d83.4 footprint through-holes = 4",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "pedestal = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 1,
+   "unit": "count",
+   "required": "pedestal = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "pedestal recess = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 1,
+   "unit": "count",
+   "required": "pedestal recess = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "ring wall = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 1,
+   "unit": "count",
+   "required": "ring wall = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 3,
+   "unit": "count",
+   "required": "ring drain notches = 3",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 3,
+   "unit": "count",
+   "required": "ring drain notches = 3",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 2,
+   "unit": "count",
+   "required": "pin clearance through-holes (\u00d84.8, \u00d83.8) = 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 2,
+   "unit": "count",
+   "required": "pin clearance through-holes (\u00d84.8, \u00d83.8) = 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 3,
+   "unit": "count",
+   "required": "hooks = 3",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 3,
+   "unit": "count",
+   "required": "hooks = 3",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 3,
+   "unit": "count",
+   "required": "hooks at the planned angles = 3",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 3,
+   "unit": "count",
+   "required": "hooks at the planned angles = 3",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 2,
+   "unit": "count",
+   "required": "legs = 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 2,
+   "unit": "count",
+   "required": "legs = 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "deck = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 1,
+   "unit": "count",
+   "required": "deck = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 1,
+   "unit": "count",
+   "required": "stem U-slot open to +Y (no closed stem bore) = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 1,
+   "unit": "count",
+   "required": "stem U-slot open to +Y (no closed stem bore) = 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 2,
+   "unit": "count",
+   "required": "gusset slits = 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 2,
+   "unit": "count",
+   "required": "gusset slits = 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 2,
+   "unit": "count",
+   "required": "\u00d83.4 screw clearance holes = 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 2,
+   "unit": "count",
+   "required": "\u00d83.4 screw clearance holes = 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-05",
+   "measured": 2,
+   "unit": "count",
+   "required": "\u00d84.0 insert bores = 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "feature_census",
+   "measured": 2,
+   "unit": "count",
+   "required": "\u00d84.0 insert bores = 2",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "feature_count",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.05,
+   "unit": "rad",
+   "required": "angular a <= 4\u00b7acos(1 \u2212 0.01/R_max), R_max 25.88010819142764",
+   "margin": 0.061200293,
+   "at": null,
+   "status": "PASS",
+   "method": "stl_angular_tolerance",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.0039588308467848774,
+   "unit": "mm",
+   "required": "stl_max_sagitta <= 0.01",
+   "margin": 0.006041169,
+   "at": "(-9.3413, 13.3496, 10.2595) mm",
+   "status": "PASS",
+   "method": "stl_max_sagitta",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 1,
+   "unit": "count",
+   "required": "delivered STL: one body",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "mesh_bodies",
+   "assumes": [],
+   "note": ""
+  },
+  {
+   "gate": "U-07",
+   "measured": 0,
+   "unit": "count",
+   "required": "delivered STL: naked edges 0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "mesh_naked_edges",
+   "assumes": [],
+   "note": ""
+  }
+ ],
+ "facts": {
+  "placement": {
+   "OD-H24": {
+    "rim_face_area_mm2": 105.96,
+    "axis_origin": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "placed_location": [
+     0.0,
+     0.0,
+     10.0
+    ]
+   },
+   "OD-H22": {
+    "flange_face_area_mm2": 277.907,
+    "axis_origin": [
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "ear_holes_x": [
+     -15.338,
+     15.447
+    ],
+    "ear_axis_deg": 0.0,
+    "placed_location": [
+     62.0,
+     0.0,
+     48.0
+    ]
+   }
+  },
+  "hooks_to_pipes_connector_mm": {
+   "measured": 13.346234984778842,
+   "at": [
+    12.654771,
+    -13.997631,
+    29.9
+   ],
+   "on_b": [
+    0.986485,
+    -20.476251,
+    29.875889
+   ],
+   "A-09 target": ">= 5"
+  },
+  "hook_70_to_pipes_connector_mm": {
+   "measured": 37.97321363393034,
+   "at": [
+    8.825284,
+    16.679067,
+    29.9
+   ],
+   "on_b": [
+    0.986483,
+    -20.476251,
+    29.877124
+   ]
+  },
+  "hook_160_to_pipes_connector_mm": {
+   "measured": 21.04060782354549,
+   "at": [
+    -20.405141,
+    4.380309,
+    17.285979
+   ],
+   "on_b": [
+    -13.444542,
+    -15.475603,
+    17.285979
+   ]
+  },
+  "hook_320_to_pipes_connector_mm": {
+   "measured": 13.346234984778842,
+   "at": [
+    12.654771,
+    -13.997631,
+    29.9
+   ],
+   "on_b": [
+    0.986485,
+    -20.476251,
+    29.875889
+   ]
+  },
+  "h24_path": [
+   {
+    "dz": 25.0,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dz": 20.0,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dz": 15.0,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dz": 10.0,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dz": 5.0,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dz": 2.0,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dz": 1.0,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dz": 0.5,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dz": 0.0,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   }
+  ],
+  "h22_path": [
+   {
+    "dy": 45.0,
+    "dz": 0.5,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dy": 35.0,
+    "dz": 0.5,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dy": 25.0,
+    "dz": 0.5,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dy": 16.0,
+    "dz": 0.5,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dy": 12.0,
+    "dz": 0.5,
+    "mm3": 15.197061308786108,
+    "status": "MEASURED"
+   },
+   {
+    "dy": 8.0,
+    "dz": 0.5,
+    "mm3": 15.197061308786115,
+    "status": "MEASURED"
+   },
+   {
+    "dy": 4.0,
+    "dz": 0.5,
+    "mm3": 15.197061308786118,
+    "status": "MEASURED"
+   },
+   {
+    "dy": 2.0,
+    "dz": 0.5,
+    "mm3": 15.197061308786116,
+    "status": "MEASURED"
+   },
+   {
+    "dy": 0.0,
+    "dz": 0.5,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dy": 0.0,
+    "dz": 0.25,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   },
+   {
+    "dy": 0.0,
+    "dz": 0.0,
+    "mm3": 0.0,
+    "status": "MEASURED"
+   }
+  ],
+  "bores": [
+   {
+    "solid": 0,
+    "diameter": 3.4,
+    "radius": 1.7,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     -18.0,
+     -21.0,
+     0.0
+    ],
+    "end": [
+     -18.0,
+     -21.0,
+     4.0
+    ],
+    "length": 4.0,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     true
+    ],
+    "through": true
+   },
+   {
+    "solid": 0,
+    "diameter": 3.4,
+    "radius": 1.7,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     -18.0,
+     21.0,
+     0.0
+    ],
+    "end": [
+     -18.0,
+     21.0,
+     4.0
+    ],
+    "length": 4.0,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     true
+    ],
+    "through": true
+   },
+   {
+    "solid": 0,
+    "diameter": 3.8,
+    "radius": 1.9,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     -11.78,
+     0.14,
+     0.0
+    ],
+    "end": [
+     -11.78,
+     0.14,
+     9.4
+    ],
+    "length": 9.4,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     true
+    ],
+    "through": true
+   },
+   {
+    "solid": 0,
+    "diameter": 28.2,
+    "radius": 14.1,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     0.0,
+     0.0,
+     9.4
+    ],
+    "end": [
+     0.0,
+     0.0,
+     9.8
+    ],
+    "length": 0.40000000000000036,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     false,
+     true
+    ],
+    "through": false
+   },
+   {
+    "solid": 0,
+    "diameter": 32.6,
+    "radius": 16.3,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     0.0,
+     0.0,
+     10.3
+    ],
+    "end": [
+     0.0,
+     0.0,
+     13.0
+    ],
+    "length": 2.6999999999999993,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     false,
+     true
+    ],
+    "through": false
+   },
+   {
+    "solid": 0,
+    "diameter": 4.8,
+    "radius": 2.4,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     0.185,
+     0.093,
+     0.0
+    ],
+    "end": [
+     0.185,
+     0.093,
+     9.4
+    ],
+    "length": 9.4,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     true
+    ],
+    "through": true
+   },
+   {
+    "solid": 0,
+    "diameter": 4.0,
+    "radius": 2.0,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     46.662,
+     0.0,
+     40.3
+    ],
+    "end": [
+     46.662,
+     0.0,
+     46.0
+    ],
+    "length": 5.700000000000003,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     false
+    ],
+    "through": false
+   },
+   {
+    "solid": 0,
+    "diameter": 3.4,
+    "radius": 1.7,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     46.662,
+     0.0,
+     46.0
+    ],
+    "end": [
+     46.662,
+     0.0,
+     48.0
+    ],
+    "length": 2.0,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     true
+    ],
+    "through": true
+   },
+   {
+    "solid": 0,
+    "diameter": 4.0,
+    "radius": 2.0,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     77.447,
+     0.0,
+     40.3
+    ],
+    "end": [
+     77.447,
+     0.0,
+     46.0
+    ],
+    "length": 5.700000000000003,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     false
+    ],
+    "through": false
+   },
+   {
+    "solid": 0,
+    "diameter": 3.4,
+    "radius": 1.7,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     77.447,
+     0.0,
+     46.0
+    ],
+    "end": [
+     77.447,
+     0.0,
+     48.0
+    ],
+    "length": 2.0,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     true
+    ],
+    "through": true
+   },
+   {
+    "solid": 0,
+    "diameter": 3.4,
+    "radius": 1.7,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     88.5,
+     -21.0,
+     0.0
+    ],
+    "end": [
+     88.5,
+     -21.0,
+     4.0
+    ],
+    "length": 4.0,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     true
+    ],
+    "through": true
+   },
+   {
+    "solid": 0,
+    "diameter": 3.4,
+    "radius": 1.7,
+    "axis_dir": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "start": [
+     88.5,
+     21.0,
+     0.0
+    ],
+    "end": [
+     88.5,
+     21.0,
+     4.0
+    ],
+    "length": 4.0,
+    "span_deg": 360.0,
+    "faces": 1,
+    "fitted": false,
+    "open_ends": [
+     true,
+     true
+    ],
+    "through": true
+   }
+  ],
+  "screw_clearance_77.447_top_z": 48.0,
+  "screw_clearance_46.662_top_z": 48.0,
+  "recess_to_ribs": {
+   "measured": 0.5161395160225561,
+   "at": [
+    14.1,
+    0.0,
+    9.8
+   ],
+   "on_b": [
+    13.68,
+    -0.0,
+    10.1
+   ]
+  },
+  "hook 70\u00b0_beam_to_flange_mm": {
+   "measured": 0.510041143737989,
+   "at": [
+    4.380309,
+    20.405141,
+    29.3
+   ],
+   "on_b": [
+    4.273258,
+    19.906461,
+    29.3
+   ]
+  },
+  "hook 160\u00b0_beam_to_flange_mm": {
+   "measured": 0.5100411437379889,
+   "at": [
+    -20.405141,
+    4.380309,
+    29.3
+   ],
+   "on_b": [
+    -19.906461,
+    4.273258,
+    29.3
+   ]
+  },
+  "hook 320\u00b0_beam_to_flange_mm": {
+   "measured": 0.5100411437344726,
+   "at": [
+    17.676407,
+    -11.095113,
+    29.3
+   ],
+   "on_b": [
+    17.244414,
+    -10.82396,
+    29.3
+   ]
+  },
+  "h22_nearest": {
+   "measured": 0.5029999999999994,
+   "at": [
+    55.052878,
+    -1.2,
+    43.766
+   ],
+   "on_b": [
+    55.548538,
+    -1.114383,
+    43.766
+   ]
+  },
+  "deck_wedge_width_at_top_mm": {
+   "+X": {
+    "width": 1.8980567310000005,
+    "material": [
+     [
+      11.848943269,
+      13.747
+     ],
+     [
+      17.147,
+      26.0
+     ]
+    ]
+   },
+   "-X": {
+    "width": 1.7890567310000005,
+    "material": [
+     [
+      11.848943269,
+      13.638
+     ],
+     [
+      17.038,
+      26.0
+     ]
+    ]
+   }
+  },
+  "plate_pieces": {
+   "a": {
+    "size_x": 65.0,
+    "size_y": 50.0,
+    "size_z": 3.9980000000000007,
+    "min_x": -25.0,
+    "min_y": -25.0,
+    "min_z": 0.0009999999999998899,
+    "max_x": 40.0,
+    "max_y": 25.0,
+    "max_z": 3.9990000000000006
+   },
+   "b": {
+    "size_x": 10.0,
+    "size_y": 50.0,
+    "size_z": 3.9980000000000007,
+    "min_x": 84.0,
+    "min_y": -25.0,
+    "min_z": 0.0009999999999998899,
+    "max_x": 94.0,
+    "max_y": 25.0,
+    "max_z": 3.9990000000000006
+   }
+  },
+  "notch_ceiling_angles": [
+   24.99999999999948,
+   114.99999999999952,
+   224.99999999999997
+  ],
+  "downward_flat_faces": [
+   {
+    "z": 10.5,
+    "area_mm2": 3.979,
+    "centre": [
+     15.665,
+     7.305
+    ]
+   },
+   {
+    "z": 10.5,
+    "area_mm2": 3.979,
+    "centre": [
+     -12.222,
+     -12.222
+    ]
+   },
+   {
+    "z": 10.5,
+    "area_mm2": 3.979,
+    "centre": [
+     -7.305,
+     15.665
+    ]
+   },
+   {
+    "z": 40.3,
+    "area_mm2": 1005.295,
+    "centre": [
+     61.999,
+     -1.346
+    ]
+   },
+   {
+    "z": 29.9,
+    "area_mm2": 10.937,
+    "centre": [
+     15.186,
+     -12.743
+    ]
+   },
+   {
+    "z": 29.9,
+    "area_mm2": 10.937,
+    "centre": [
+     -18.629,
+     6.78
+    ]
+   },
+   {
+    "z": 29.9,
+    "area_mm2": 10.937,
+    "centre": [
+     6.78,
+     18.629
+    ]
+   },
+   {
+    "z": 46.0,
+    "area_mm2": 3.487,
+    "centre": [
+     46.662,
+     -0.0
+    ]
+   },
+   {
+    "z": 46.0,
+    "area_mm2": 3.487,
+    "centre": [
+     77.447,
+     -0.0
+    ]
+   }
+  ],
+  "overhang_slabs": [
+   {
+    "slab": [
+     0.0,
+     10.5
+    ],
+    "status": "MEASURED",
+    "least_deg": 60.01836063114926,
+    "at": [
+     -11.865427,
+     -13.599438,
+     10.083333
+    ],
+    "reason": "",
+    "bound": 0.009964
+   },
+   {
+    "slab": [
+     10.5,
+     29.9
+    ],
+    "status": "MEASURED",
+    "least_deg": 60.01836063114926,
+    "at": [
+     18.217331,
+     1.71711,
+     10.516667
+    ],
+    "reason": "",
+    "bound": 0.009326
+   },
+   {
+    "slab": [
+     29.9,
+     40.3
+    ],
+    "status": "MEASURED",
+    "least_deg": 90.0,
+    "at": null,
+    "reason": "",
+    "bound": 0.0
+   },
+   {
+    "slab": [
+     40.3,
+     46.0
+    ],
+    "status": "MEASURED",
+    "least_deg": 90.0,
+    "at": null,
+    "reason": "",
+    "bound": 0.0
+   },
+   {
+    "slab": [
+     46.0,
+     49.0
+    ],
+    "status": "MEASURED",
+    "least_deg": 90.0,
+    "at": null,
+    "reason": "",
+    "bound": 0.0
+   }
+  ],
+  "feature_census": {
+   "plane_faces": 53,
+   "cylinder_faces": 30,
+   "cone_faces": 5,
+   "sphere_faces": 0,
+   "torus_faces": 10,
+   "bspline_faces": 0,
+   "other_faces": 0,
+   "concave_cylinders": 25,
+   "convex_cylinders": 5,
+   "bores": 12
+  },
+  "stl_R_max_mm": 25.88010819142764,
+  "stl_triangles": 92262,
+  "stl_remesh_matches_delivered": true,
+  "stl_mesh_census": {
+   "triangles": 92262,
+   "bodies": 1,
+   "naked_edges": 0,
+   "winding": 1,
+   "volume": 40560.32280203482
+  },
+  "elapsed_s": 244.0
+ }
+}

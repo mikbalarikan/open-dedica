@@ -1,0 +1,12 @@
+[
+ {
+  "check": "mesh_deviation",
+  "mutant": "STL re-meshed at 0.2 mm / 0.5 rad",
+  "got": "FAIL"
+ },
+ {
+  "check": "min_wall_mesh",
+  "mutant": "STL of the thinned-ring mutant",
+  "got": "FAIL"
+ }
+]

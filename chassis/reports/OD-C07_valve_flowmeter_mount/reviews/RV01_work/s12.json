@@ -1,0 +1,146 @@
+{
+ "control brep_valid on the inside-out part": [
+  "FAIL",
+  0,
+  ""
+ ],
+ "control_brep_valid": {
+  "check": "validity.brep_valid",
+  "mutant": "exported part turned inside out (reversed solid)",
+  "got": "FAIL"
+ },
+ "rim face on the pedestal top: clearance / interference": [
+  0.0,
+  [
+   14.4,
+   -0.0,
+   10.0
+  ],
+  0.0
+ ],
+ "flange back face on the deck top: clearance": [
+  0.0,
+  [
+   50.15,
+   1.2,
+   48.0
+  ]
+ ],
+ "pedestal outer R at z 7": null,
+ "leg y extent at x=38.0, z 20": [
+  15.0,
+  15.0
+ ],
+ "leg y extent at x=86.0, z 20": [
+  15.0,
+  15.0
+ ],
+ "deck y extent at x 50, z 44": [
+  15.0,
+  15.0
+ ],
+ "ring|cup from z_H24 0.25 (end of rim round)": [
+  0.3816756675018056,
+  [
+   -11.998697,
+   -10.584483,
+   10.0
+  ],
+  [
+   -11.782418,
+   -10.393696,
+   10.25
+  ]
+ ],
+ "ring|cup from z_H24 0.30 (A-06 formula r 15.716)": [
+  0.41320844920595173,
+  [
+   -10.584483,
+   -11.998697,
+   10.0
+  ],
+  [
+   -10.396509,
+   -11.785607,
+   10.3
+  ]
+ ],
+ "ring|cup from z_H24 0.50": [
+  0.5313989773719691,
+  [
+   16.3,
+   -0.0,
+   13.0
+  ],
+  [
+   15.768702,
+   0.0,
+   13.01036
+  ]
+ ],
+ "recess | ribs&hub inside r 13.68": [
+  0.5161,
+  [
+   14.1,
+   0.0,
+   9.8
+  ],
+  [
+   13.68,
+   0.0,
+   10.1
+  ]
+ ],
+ "recess | ribs&hub inside r 13.8": [
+  0.4243,
+  [
+   14.1,
+   0.0,
+   9.8
+  ],
+  [
+   13.8,
+   0.0,
+   10.1
+  ]
+ ],
+ "recess | ribs&hub inside r 13.9": [
+  0.3536,
+  [
+   -14.13452,
+   -0.661691,
+   9.85
+  ],
+  [
+   -13.884794,
+   -0.65,
+   10.1
+  ]
+ ],
+ "recess | ribs&hub inside r 13.98": [
+  0.297,
+  [
+   0.761266,
+   -14.169565,
+   9.89
+  ],
+  [
+   0.75,
+   -13.959867,
+   10.1
+  ]
+ ],
+ "recess | ribs&hub inside r 14.056": [
+  0.2432,
+  [
+   14.228,
+   0.0,
+   9.928
+  ],
+  [
+   14.056,
+   -0.0,
+   10.1
+  ]
+ ]
+}

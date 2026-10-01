@@ -1,0 +1,15 @@
+part_no,parent,type,name,ref,oem_code,qty,cad,material_spec,source,price_eur,issue,status
+OD-H21,OD-H00,OEM,Anti-drip valve,39,7313260161,1,SCAN,,FixPart / 4delonghi,5,#41,modeled
+OD-H22,OD-H00,OEM,3-way valve,43,AS00004266,1,SCAN,,4delonghi `valve BARM30E`,5,#6,modeled
+OD-H24,OD-H00,OEM,Flowmeter,45,5213225251,1,SCAN,,FixPart / 4delonghi,10–15,#7,modeled
+OD-H25,OD-H00,OEM,Flowmeter–pump tube,37,AS00005774,1,ENVELOPE,,FixPart,4,,todo
+OD-W11,OD-W00,OEM,Tube L270 (tank → flowmeter),31,5313219841,1,ENVELOPE,silicone,4delonghi,4,,todo
+OD-C00,OD-000,ASM,Chassis & body,,,1,DESIGN,,,,,todo
+OD-C01,OD-C00,PRINT,Base frame / floor plate,,,1,DESIGN,ASA,printed,print,,proposed
+OD-C07,OD-C00,PRINT,Valve & flowmeter mount (OPV reachable without disassembly),,,1,DESIGN,PETG,printed,print,#6,proposed
+OD-F01,OD-000,STD,M3 heat-set insert,,,~40,VENDOR,brass M3,AliExpress,10 (set),,todo
+OD-F02,OD-000,STD,M3×8 screw,,,~40,VENDOR,ISO 7380 / DIN 912 A2,AliExpress,(set),,todo
+OD-F03,OD-000,STD,Acrylic sheet 3 mm (optional skins),,,per design,—,PMMA,local laser / leftover stock,25,,todo
+OD-F04,OD-000,STD,Food-safe silicone tube 4×2 mm (routing reserve),,,1 m,ENVELOPE,silicone,AliExpress,5,,todo
+OD-F05,OD-000,STD,High-temp epoxy (steam port blank),,,1,—,125 °C / 15 bar,hardware store,8,,todo
+OD-F06,OD-000,STD,6.3 mm insulated spade terminals + 105 °C wire (own looms),,,1 set,—,,TME / AliExpress,5,,todo
