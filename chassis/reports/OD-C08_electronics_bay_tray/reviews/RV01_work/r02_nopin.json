@@ -1,0 +1,29 @@
+{
+ "rows": [
+  {
+   "gate": "D-01b",
+   "measured": 1.999999999999997,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": -3.1086244689504383e-15,
+   "at": "(75.7500, 92.0000, -113.4783) mm",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": [],
+   "note": "tray less the two pins"
+  },
+  {
+   "gate": "U-06",
+   "measured": 1.999999999999997,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": -3.1086244689504383e-15,
+   "at": "(75.7500, 92.0000, -113.4783) mm",
+   "status": "PASS",
+   "method": "min_wall_wide",
+   "assumes": [],
+   "note": "tray less the two pins, wide"
+  }
+ ],
+ "extra": {}
+}

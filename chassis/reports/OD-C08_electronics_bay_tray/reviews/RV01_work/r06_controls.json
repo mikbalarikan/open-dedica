@@ -1,0 +1,177 @@
+[
+ {
+  "check": "validity (U-01)",
+  "mutant": "degrade: tray shell with one face removed",
+  "got": "FAIL",
+  "measured": 1,
+  "required": "== 0"
+ },
+ {
+  "check": "envelope (U-02, REQ-03, D-02)",
+  "mutant": "resize: wall top raised 0.5 to y 92.5",
+  "got": "FAIL",
+  "measured": 92.5,
+  "required": "in [91.9, 92.1]"
+ },
+ {
+  "check": "feature_census (U-05)",
+  "mutant": "remove: tie slot z -176 filled",
+  "got": "FAIL",
+  "measured": 38,
+  "required": "== 42"
+ },
+ {
+  "check": "bore_census/locate_bore (REQ-01, D-04a, D-05b, REQ-02)",
+  "mutant": "relocate: flange hole x88 z-222 moved 0.5 in +X",
+  "got": "FAIL",
+  "measured": 0.5,
+  "required": "<= 0.1"
+ },
+ {
+  "check": "min_wall (D-01a/b, D-06a)",
+  "mutant": "resize: web above the tie slots thinned 2.0 -> 1.5",
+  "got": "FAIL",
+  "measured": 1.499999999999997,
+  "required": ">= 2.0"
+ },
+ {
+  "check": "min_wall_wide (U-06)",
+  "mutant": "resize: web above the tie slots thinned 2.0 -> 1.5",
+  "got": "FAIL",
+  "measured": 1.499999999999997,
+  "required": ">= 2.0"
+ },
+ {
+  "check": "overhang_census (D-03a)",
+  "mutant": "degrade: 20x20 cap on a 4x4 stem off the wall, ceiling facing the bed",
+  "got": "FAIL",
+  "measured": 0.0,
+  "required": ">= 45.0"
+ },
+ {
+  "check": "flat_ceiling_spans (D-03b)",
+  "mutant": "degrade: same cap (unsupported ceiling)",
+  "got": "FAIL",
+  "measured": 22.62741699796951,
+  "required": "<= 5.0"
+ },
+ {
+  "check": "radial_extent (D-05a)",
+  "mutant": "resize: H1 insert boss \u00d810 -> \u00d87.8",
+  "got": "FAIL",
+  "measured": 7.799999999997911,
+  "required": ">= 8.0"
+ },
+ {
+  "check": "radial_extent (J-05)",
+  "mutant": "resize: H1 insert boss \u00d810 -> \u00d87.8",
+  "got": "FAIL",
+  "measured": 1.8999999999989554,
+  "required": ">= 3.0"
+ },
+ {
+  "check": "clearance (D-04d, U-03, E-01, D-04c)",
+  "mutant": "relocate: H6 pin moved 0.10 in +Z",
+  "got": "FAIL",
+  "measured": 0.22898019996058358,
+  "required": ">= 0.3"
+ },
+ {
+  "check": "clearance == 0 (U-03 seat contact)",
+  "mutant": "resize: H1 seat lowered 0.05",
+  "got": "FAIL",
+  "measured": 0.04999999999999716,
+  "required": "== 0.0"
+ },
+ {
+  "check": "common_volume (U-03 interference)",
+  "mutant": "resize: H1 seat raised 0.06",
+  "got": "PASS",
+  "measured": 0.0,
+  "required": "<= 0.0"
+ },
+ {
+  "check": "seat-face reading (REQ-02)",
+  "mutant": "resize: H1 seat raised 0.06",
+  "got": "FAIL",
+  "measured": 82.498,
+  "required": "in [82.39, 82.49]"
+ },
+ {
+  "check": "common_volume path (U-03 b)",
+  "mutant": "relocate: H5 pin moved 0.5 in +Y",
+  "got": "FAIL",
+  "measured": 0.28583597331181265,
+  "required": "<= 0.0"
+ },
+ {
+  "check": "common_volume (REQ-04)",
+  "mutant": "degrade: 2x2 rib across the x88 z-78 driver path",
+  "got": "FAIL",
+  "measured": 23.305783639848272,
+  "required": "<= 0.0"
+ },
+ {
+  "check": "common_volume (REQ-05, E-11)",
+  "mutant": "degrade: rib reaching x 86 inside the faston box",
+  "got": "FAIL",
+  "measured": 3.999999999999999,
+  "required": "<= 0.0"
+ },
+ {
+  "check": "sections (E-06)",
+  "mutant": "remove: gusset z -88..-85",
+  "got": "FAIL",
+  "measured": 3,
+  "required": "== 4"
+ },
+ {
+  "check": "sections (E-11)",
+  "mutant": "remove: tie slot z -176 filled",
+  "got": "FAIL",
+  "measured": 3,
+  "required": "== 4"
+ },
+ {
+  "check": "compare_step (U-04)",
+  "mutant": "resize: wall top raised 0.5, compared with the delivered file",
+  "got": "FAIL",
+  "measured": 239.99999999998545,
+  "required": "<= 0.0"
+ },
+ {
+  "check": "mesh_census (U-07)",
+  "mutant": "degrade: delivered STL with one triangle removed",
+  "got": "FAIL",
+  "measured": 3,
+  "required": "== 0"
+ },
+ {
+  "check": "mesh_deviation (U-07)",
+  "mutant": "degrade: STL meshed at 0.1 mm / 0.5 rad",
+  "got": "FAIL",
+  "measured": 0.03645578831772846,
+  "required": "<= 0.01"
+ },
+ {
+  "check": "mesh_sagitta (U-07)",
+  "mutant": "degrade: STL meshed at 0.1 mm / 0.5 rad",
+  "got": "FAIL",
+  "measured": 0.03645562950974977,
+  "required": "<= 0.01"
+ },
+ {
+  "check": "3MF-vs-STL surface comparison (U-07)",
+  "mutant": "relocate: one 3MF vertex moved 0.05",
+  "got": "FAIL",
+  "measured": 0.016480254177281228,
+  "required": "<= 0.0001"
+ },
+ {
+  "check": "min_wall_mesh (corroboration)",
+  "mutant": "resize: STL of the web-1.5 mutant (pins removed)",
+  "got": "FAIL",
+  "measured": 1.499999999999997,
+  "required": ">= 1.99"
+ }
+]

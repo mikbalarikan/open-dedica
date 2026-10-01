@@ -1,0 +1,1198 @@
+{
+ "REQ02_plusX_y50": {
+  "name": "radial_extent",
+  "measured": 116.0,
+  "unit": "mm",
+  "at": [
+   116.0,
+   50.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 0.0,
+   "z": 0.0,
+   "side": "outer",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    0.0,
+    50.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     0.0,
+     116.0
+    ]
+   ]
+  }
+ },
+ "REQ02_minusX_y50": {
+  "name": "radial_extent",
+  "measured": 116.0,
+  "unit": "mm",
+  "at": [
+   -116.0,
+   50.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 180.0,
+   "z": 0.0,
+   "side": "outer",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    0.0,
+    50.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     0.0,
+     116.0
+    ]
+   ]
+  }
+ },
+ "REQ02_plusX_y200": {
+  "name": "radial_extent",
+  "measured": 116.0,
+  "unit": "mm",
+  "at": [
+   116.0,
+   200.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 0.0,
+   "z": 0.0,
+   "side": "outer",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    0.0,
+    200.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     0.0,
+     116.0
+    ]
+   ]
+  }
+ },
+ "REQ02_minusX_y200": {
+  "name": "radial_extent",
+  "measured": 116.0,
+  "unit": "mm",
+  "at": [
+   -116.0,
+   200.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 180.0,
+   "z": 0.0,
+   "side": "outer",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    0.0,
+    200.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     0.0,
+     116.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x78_a0": {
+  "name": "radial_extent",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   80.0,
+   140.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 0.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    78.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     2.0,
+     6.0
+    ],
+    [
+     10.0,
+     14.0
+    ],
+    [
+     18.0,
+     22.0
+    ],
+    [
+     26.0,
+     30.0
+    ],
+    [
+     34.0,
+     38.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x78_a90": {
+  "name": "radial_extent",
+  "measured": 39.99999999999818,
+  "unit": "mm",
+  "at": [
+   78.0,
+   180.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 90.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    78.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     40.0,
+     75.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x78_a180": {
+  "name": "radial_extent",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   76.0,
+   140.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 180.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    78.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     2.0,
+     194.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x78_a270": {
+  "name": "radial_extent",
+  "measured": 40.0,
+  "unit": "mm",
+  "at": [
+   78.0,
+   100.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 270.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    78.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     40.0,
+     140.0
+    ]
+   ]
+  }
+ },
+ "REQ06_thru_x78": {
+  "name": "radial_extent",
+  "measured": null,
+  "unit": "mm",
+  "at": null,
+  "params": {},
+  "status": "INCONCLUSIVE",
+  "reason": "NoMaterial: no material between 0 and inf mm on the ray at 0\u00b0 and z = 0 mm",
+  "detail": {}
+ },
+ "REQ06_x86_a0": {
+  "name": "radial_extent",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   88.0,
+   140.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 0.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    86.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     2.0,
+     6.0
+    ],
+    [
+     10.0,
+     14.0
+    ],
+    [
+     18.0,
+     22.0
+    ],
+    [
+     26.0,
+     30.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x86_a90": {
+  "name": "radial_extent",
+  "measured": 40.0,
+  "unit": "mm",
+  "at": [
+   86.0,
+   180.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 90.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    86.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     40.0,
+     75.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x86_a180": {
+  "name": "radial_extent",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   84.0,
+   140.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 180.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    86.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     2.0,
+     6.0
+    ],
+    [
+     10.0,
+     202.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x86_a270": {
+  "name": "radial_extent",
+  "measured": 40.0,
+  "unit": "mm",
+  "at": [
+   86.0,
+   100.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 270.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    86.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     40.0,
+     140.0
+    ]
+   ]
+  }
+ },
+ "REQ06_thru_x86": {
+  "name": "radial_extent",
+  "measured": null,
+  "unit": "mm",
+  "at": null,
+  "params": {},
+  "status": "INCONCLUSIVE",
+  "reason": "NoMaterial: no material between 0 and inf mm on the ray at 0\u00b0 and z = 0 mm",
+  "detail": {}
+ },
+ "REQ06_x94_a0": {
+  "name": "radial_extent",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   96.0,
+   140.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 0.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    94.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     2.0,
+     6.0
+    ],
+    [
+     10.0,
+     14.0
+    ],
+    [
+     18.0,
+     22.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x94_a90": {
+  "name": "radial_extent",
+  "measured": 40.0,
+  "unit": "mm",
+  "at": [
+   94.0,
+   180.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 90.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    94.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     40.0,
+     75.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x94_a180": {
+  "name": "radial_extent",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   92.0,
+   140.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 180.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    94.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     2.0,
+     6.0
+    ],
+    [
+     10.0,
+     14.0
+    ],
+    [
+     18.0,
+     210.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x94_a270": {
+  "name": "radial_extent",
+  "measured": 40.0,
+  "unit": "mm",
+  "at": [
+   94.0,
+   100.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 270.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    94.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     40.0,
+     104.083920217
+    ],
+    [
+     115.916079783,
+     140.0
+    ]
+   ]
+  }
+ },
+ "REQ06_thru_x94": {
+  "name": "radial_extent",
+  "measured": null,
+  "unit": "mm",
+  "at": null,
+  "params": {},
+  "status": "INCONCLUSIVE",
+  "reason": "NoMaterial: no material between 0 and inf mm on the ray at 0\u00b0 and z = 0 mm",
+  "detail": {}
+ },
+ "REQ06_x102_a0": {
+  "name": "radial_extent",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   104.0,
+   140.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 0.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    102.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     2.0,
+     6.0
+    ],
+    [
+     10.0,
+     14.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x102_a90": {
+  "name": "radial_extent",
+  "measured": 40.0,
+  "unit": "mm",
+  "at": [
+   102.0,
+   180.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 90.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    102.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     40.0,
+     75.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x102_a180": {
+  "name": "radial_extent",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   100.0,
+   140.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 180.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    102.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     2.0,
+     6.0
+    ],
+    [
+     10.0,
+     14.0
+    ],
+    [
+     18.0,
+     22.0
+    ],
+    [
+     26.0,
+     218.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x102_a270": {
+  "name": "radial_extent",
+  "measured": 40.0,
+  "unit": "mm",
+  "at": [
+   102.0,
+   100.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 270.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    102.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     40.0,
+     140.0
+    ]
+   ]
+  }
+ },
+ "REQ06_thru_x102": {
+  "name": "radial_extent",
+  "measured": null,
+  "unit": "mm",
+  "at": null,
+  "params": {},
+  "status": "INCONCLUSIVE",
+  "reason": "NoMaterial: no material between 0 and inf mm on the ray at 0\u00b0 and z = 0 mm",
+  "detail": {}
+ },
+ "REQ06_x110_a0": {
+  "name": "radial_extent",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   112.0,
+   140.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 0.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    110.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     2.0,
+     6.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x110_a90": {
+  "name": "radial_extent",
+  "measured": 40.0,
+  "unit": "mm",
+  "at": [
+   110.0,
+   180.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 90.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    110.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     40.0,
+     75.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x110_a180": {
+  "name": "radial_extent",
+  "measured": 2.0,
+  "unit": "mm",
+  "at": [
+   108.0,
+   140.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 180.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    110.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     2.0,
+     6.0
+    ],
+    [
+     10.0,
+     14.0
+    ],
+    [
+     18.0,
+     22.0
+    ],
+    [
+     26.0,
+     30.0
+    ],
+    [
+     34.0,
+     226.0
+    ]
+   ]
+  }
+ },
+ "REQ06_x110_a270": {
+  "name": "radial_extent",
+  "measured": 40.0,
+  "unit": "mm",
+  "at": [
+   110.0,
+   100.0,
+   -300.5
+  ],
+  "params": {
+   "angle_deg": 270.0,
+   "z": 0.0,
+   "side": "inner",
+   "r_min": 0.0,
+   "r_max": null,
+   "ref_lean_deg": 0.0,
+   "axis_origin": [
+    110.0,
+    140.0,
+    -300.5
+   ],
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ref_dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "material": [
+    [
+     40.0,
+     140.0
+    ]
+   ]
+  }
+ },
+ "REQ06_thru_x110": {
+  "name": "radial_extent",
+  "measured": null,
+  "unit": "mm",
+  "at": null,
+  "params": {},
+  "status": "INCONCLUSIVE",
+  "reason": "NoMaterial: no material between 0 and inf mm on the ray at 0\u00b0 and z = 0 mm",
+  "detail": {}
+ },
+ "PASS_thru_95": {
+  "name": "radial_extent",
+  "measured": null,
+  "unit": "mm",
+  "at": null,
+  "params": {},
+  "status": "INCONCLUSIVE",
+  "reason": "NoMaterial: no material between 0 and inf mm on the ray at 0\u00b0 and z = 0 mm",
+  "detail": {}
+ },
+ "PASS_thru_-100": {
+  "name": "radial_extent",
+  "measured": null,
+  "unit": "mm",
+  "at": null,
+  "params": {},
+  "status": "INCONCLUSIVE",
+  "reason": "NoMaterial: no material between 0 and inf mm on the ray at 0\u00b0 and z = 0 mm",
+  "detail": {}
+ },
+ "PASS_thru_-84": {
+  "name": "radial_extent",
+  "measured": null,
+  "unit": "mm",
+  "at": null,
+  "params": {},
+  "status": "INCONCLUSIVE",
+  "reason": "NoMaterial: no material between 0 and inf mm on the ray at 0\u00b0 and z = 0 mm",
+  "detail": {}
+ }
+}

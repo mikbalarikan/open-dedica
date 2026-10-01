@@ -1,0 +1,1 @@
+{"refill_valid": {"solid_count": 1, "brep_valid": 1, "naked_edges": 0}, "D-03a_refilled": ["PASS", 90.0, ">= 45.0", null], "D-03b_refilled": ["PASS", 0.0, "<= 5.0", null], "t": 27.129995346069336}

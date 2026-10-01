@@ -1,0 +1,1007 @@
+{
+ "c01_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED"
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED"
+  }
+ },
+ "c01_envelope": {
+  "size_x": 240.0,
+  "size_y": 6.0,
+  "size_z": 405.0,
+  "min_x": -120.0,
+  "min_y": -6.0,
+  "min_z": -305.0,
+  "max_x": 120.0,
+  "max_y": 0.0,
+  "max_z": 100.0
+ },
+ "c01_top_faces": [
+  {
+   "at": 0.0,
+   "area": 96725.984,
+   "min": [
+    -120.0,
+    0.0,
+    -305.0
+   ],
+   "max": [
+    120.0,
+    0.0,
+    100.0
+   ]
+  }
+ ],
+ "c01_vertical_cylinders_r_gt5": [
+  {
+   "r": 10.0,
+   "axis": [
+    -110.0,
+    -6.0,
+    90.0
+   ],
+   "xz_box": [
+    -120.0,
+    -110.0,
+    90.0,
+    100.0
+   ]
+  },
+  {
+   "r": 10.0,
+   "axis": [
+    -110.0,
+    -6.0,
+    -295.0
+   ],
+   "xz_box": [
+    -120.0,
+    -110.0,
+    -305.0,
+    -295.0
+   ]
+  },
+  {
+   "r": 10.0,
+   "axis": [
+    110.0,
+    -6.0,
+    90.0
+   ],
+   "xz_box": [
+    110.0,
+    120.0,
+    90.0,
+    100.0
+   ]
+  },
+  {
+   "r": 10.0,
+   "axis": [
+    110.0,
+    -6.0,
+    -295.0
+   ],
+   "xz_box": [
+    110.0,
+    120.0,
+    -305.0,
+    -295.0
+   ]
+  }
+ ],
+ "c02_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED"
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED"
+  }
+ },
+ "c02_envelope": {
+  "size_x": 12.0,
+  "size_y": 215.0,
+  "size_z": 210.0,
+  "min_x": 59.0,
+  "min_y": 0.0,
+  "min_z": -240.0,
+  "max_x": 71.0,
+  "max_y": 215.0,
+  "max_z": -30.0
+ },
+ "c02_up_faces_top3": [
+  {
+   "at": 215.0,
+   "area": 2284.867,
+   "min": [
+    59.5,
+    215.0,
+    -240.0
+   ],
+   "max": [
+    70.5,
+    215.0,
+    -30.0
+   ]
+  },
+  {
+   "at": 209.0,
+   "area": 12.566,
+   "min": [
+    63.0,
+    209.0,
+    -212.0
+   ],
+   "max": [
+    67.0,
+    209.0,
+    -208.0
+   ]
+  },
+  {
+   "at": 209.0,
+   "area": 12.566,
+   "min": [
+    63.0,
+    209.0,
+    -62.0
+   ],
+   "max": [
+    67.0,
+    209.0,
+    -58.0
+   ]
+  }
+ ],
+ "c02_bores_top": [
+  {
+   "d": 4.0,
+   "start": [
+    65.0,
+    209.0,
+    -210.0
+   ],
+   "end": [
+    65.0,
+    215.0,
+    -210.0
+   ],
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": false
+  },
+  {
+   "d": 4.0,
+   "start": [
+    65.0,
+    209.0,
+    -60.0
+   ],
+   "end": [
+    65.0,
+    215.0,
+    -60.0
+   ],
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": false
+  }
+ ],
+ "c02_insert_(65,-60)": {
+  "diameter": {
+   "measured": 4.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "length": {
+   "measured": 6.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "through": {
+   "measured": 0,
+   "unit": "bool",
+   "status": "MEASURED"
+  }
+ },
+ "c02_insert_(65,-210)": {
+  "diameter": {
+   "measured": 4.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "length": {
+   "measured": 6.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "through": {
+   "measured": 0,
+   "unit": "bool",
+   "status": "MEASURED"
+  }
+ },
+ "c11_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED"
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED"
+  }
+ },
+ "c11_envelope": {
+  "size_x": 232.0,
+  "size_y": 215.0,
+  "size_z": 25.0,
+  "min_x": -116.0,
+  "min_y": 0.0,
+  "min_z": -302.0,
+  "max_x": 116.0,
+  "max_y": 215.0,
+  "max_z": -277.0
+ },
+ "c11_up_faces_top2": [
+  {
+   "at": 215.0,
+   "area": 3406.867,
+   "min": [
+    -116.0,
+    215.0,
+    -302.0
+   ],
+   "max": [
+    116.0,
+    215.0,
+    -287.0
+   ]
+  },
+  {
+   "at": 209.0,
+   "area": 12.566,
+   "min": [
+    -92.0,
+    209.0,
+    -295.0
+   ],
+   "max": [
+    -88.0,
+    209.0,
+    -291.0
+   ]
+  }
+ ],
+ "c11_back_faces": [
+  {
+   "at": 302.0,
+   "area": 47957.876,
+   "min": [
+    -116.0,
+    0.0,
+    -302.0
+   ],
+   "max": [
+    116.0,
+    215.0,
+    -302.0
+   ]
+  }
+ ],
+ "c11_bores_top": [
+  {
+   "d": 4.0,
+   "start": [
+    -90.0,
+    209.0,
+    -293.0
+   ],
+   "end": [
+    -90.0,
+    215.0,
+    -293.0
+   ],
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": false
+  },
+  {
+   "d": 4.0,
+   "start": [
+    90.0,
+    209.0,
+    -293.0
+   ],
+   "end": [
+    90.0,
+    215.0,
+    -293.0
+   ],
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": false
+  }
+ ],
+ "c11_insert_(90,-293)": {
+  "diameter": {
+   "measured": 4.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "length": {
+   "measured": 6.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "through": {
+   "measured": 0,
+   "unit": "bool",
+   "status": "MEASURED"
+  }
+ },
+ "c11_insert_(-90,-293)": {
+  "diameter": {
+   "measured": 4.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "length": {
+   "measured": 6.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "through": {
+   "measured": 0,
+   "unit": "bool",
+   "status": "MEASURED"
+  }
+ },
+ "c05_local_envelope": {
+  "size_x": 110.0,
+  "size_y": 152.0,
+  "size_z": 210.0,
+  "min_x": -55.0,
+  "min_y": -102.0,
+  "min_z": -29.94,
+  "max_x": 55.0,
+  "max_y": 50.0,
+  "max_z": 180.06
+ },
+ "c05_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED"
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED"
+  }
+ },
+ "c05_axes": {
+  "x": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "y": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "z": [
+   0.0,
+   -1.0,
+   0.0
+  ]
+ },
+ "c05_envelope": {
+  "size_x": 110.0,
+  "size_y": 210.0,
+  "size_z": 152.0,
+  "min_x": -55.0,
+  "min_y": 0.0,
+  "min_z": -70.0,
+  "max_x": 55.0,
+  "max_y": 210.0,
+  "max_z": 82.0
+ },
+ "c05_up_faces_top4": [
+  {
+   "at": 210.0,
+   "area": 11213.569,
+   "min": [
+    -55.0,
+    210.0,
+    -70.0
+   ],
+   "max": [
+    55.0,
+    210.0,
+    82.0
+   ]
+  },
+  {
+   "at": 208.0,
+   "area": 24.104,
+   "min": [
+    -47.25,
+    208.0,
+    -15.25
+   ],
+   "max": [
+    -40.75,
+    208.0,
+    -8.75
+   ]
+  },
+  {
+   "at": 208.0,
+   "area": 24.104,
+   "min": [
+    40.75,
+    208.0,
+    -15.25
+   ],
+   "max": [
+    47.25,
+    208.0,
+    -8.75
+   ]
+  },
+  {
+   "at": 208.0,
+   "area": 24.104,
+   "min": [
+    -47.25,
+    208.0,
+    72.75
+   ],
+   "max": [
+    -40.75,
+    208.0,
+    79.25
+   ]
+  }
+ ],
+ "c05_bores_vertical": [
+  {
+   "d": 3.4,
+   "start": [
+    -44.0,
+    205.0,
+    -12.0
+   ],
+   "end": [
+    -44.0,
+    208.0,
+    -12.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": true
+  },
+  {
+   "d": 3.4,
+   "start": [
+    -44.0,
+    205.0,
+    76.0
+   ],
+   "end": [
+    -44.0,
+    208.0,
+    76.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": true
+  },
+  {
+   "d": 6.5,
+   "start": [
+    -44.0,
+    208.0,
+    -12.0
+   ],
+   "end": [
+    -44.0,
+    210.0,
+    -12.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": false
+  },
+  {
+   "d": 6.5,
+   "start": [
+    -44.0,
+    208.0,
+    76.0
+   ],
+   "end": [
+    -44.0,
+    210.0,
+    76.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": false
+  },
+  {
+   "d": 3.4,
+   "start": [
+    -35.0,
+    0.0,
+    -60.0
+   ],
+   "end": [
+    -35.0,
+    4.0,
+    -60.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": true
+  },
+  {
+   "d": 3.4,
+   "start": [
+    -35.0,
+    0.0,
+    -40.0
+   ],
+   "end": [
+    -35.0,
+    4.0,
+    -40.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": true
+  },
+  {
+   "d": 6.5,
+   "start": [
+    -35.0,
+    4.0,
+    -60.0
+   ],
+   "end": [
+    -35.0,
+    23.25,
+    -60.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": false
+  },
+  {
+   "d": 6.5,
+   "start": [
+    -35.0,
+    4.0,
+    -40.0
+   ],
+   "end": [
+    -35.0,
+    15.3276,
+    -40.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": false
+  },
+  {
+   "d": 60.0,
+   "start": [
+    0.0,
+    205.0,
+    32.0
+   ],
+   "end": [
+    0.0,
+    210.0,
+    32.0
+   ],
+   "dir": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "through": true
+  },
+  {
+   "d": 3.4,
+   "start": [
+    35.0,
+    0.0,
+    -60.0
+   ],
+   "end": [
+    35.0,
+    4.0,
+    -60.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": true
+  },
+  {
+   "d": 3.4,
+   "start": [
+    35.0,
+    0.0,
+    -40.0
+   ],
+   "end": [
+    35.0,
+    4.0,
+    -40.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": true
+  },
+  {
+   "d": 6.5,
+   "start": [
+    35.0,
+    4.0,
+    -60.0
+   ],
+   "end": [
+    35.0,
+    23.25,
+    -60.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": false
+  },
+  {
+   "d": 6.5,
+   "start": [
+    35.0,
+    4.0,
+    -40.0
+   ],
+   "end": [
+    35.0,
+    15.3276,
+    -40.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": false
+  },
+  {
+   "d": 3.4,
+   "start": [
+    44.0,
+    205.0,
+    -12.0
+   ],
+   "end": [
+    44.0,
+    208.0,
+    -12.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": true
+  },
+  {
+   "d": 3.4,
+   "start": [
+    44.0,
+    205.0,
+    76.0
+   ],
+   "end": [
+    44.0,
+    208.0,
+    76.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": true
+  },
+  {
+   "d": 6.5,
+   "start": [
+    44.0,
+    208.0,
+    -12.0
+   ],
+   "end": [
+    44.0,
+    210.0,
+    -12.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": false
+  },
+  {
+   "d": 6.5,
+   "start": [
+    44.0,
+    208.0,
+    76.0
+   ],
+   "end": [
+    44.0,
+    210.0,
+    76.0
+   ],
+   "dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "through": false
+  }
+ ],
+ "c05_cbore_(44,-12)": {
+  "diameter": {
+   "measured": 3.4,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "length": {
+   "measured": 3.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "through": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  }
+ },
+ "c05_cbore_(-44,-12)": {
+  "diameter": {
+   "measured": 3.4,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "length": {
+   "measured": 3.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "through": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  }
+ },
+ "c05_cbore_(44,76)": {
+  "diameter": {
+   "measured": 3.4,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "length": {
+   "measured": 3.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "through": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  }
+ },
+ "c05_cbore_(-44,76)": {
+  "diameter": {
+   "measured": 3.4,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "length": {
+   "measured": 3.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "through": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  }
+ },
+ "c05_hub_window": {
+  "diameter": {
+   "measured": 60.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "length": {
+   "measured": 5.0,
+   "unit": "mm",
+   "status": "MEASURED"
+  },
+  "through": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  }
+ },
+ "c07_local_envelope": {
+  "size_x": 119.0,
+  "size_y": 50.0,
+  "size_z": 48.0,
+  "min_x": -25.0,
+  "min_y": -25.0,
+  "min_z": 0.0,
+  "max_x": 94.0,
+  "max_y": 25.0,
+  "max_z": 48.0
+ },
+ "c07_solids": 1,
+ "c07_axes": {
+  "x": [
+   0.0,
+   0.0,
+   -1.0
+  ],
+  "y": [
+   -1.0,
+   0.0,
+   0.0
+  ],
+  "z": [
+   0.0,
+   1.0,
+   0.0
+  ]
+ },
+ "c07_envelope": {
+  "size_x": 50.0,
+  "size_y": 48.0,
+  "size_z": 119.0,
+  "min_x": -117.0,
+  "min_y": 0.0,
+  "min_z": -154.0,
+  "max_x": -67.0,
+  "max_y": 48.0,
+  "max_z": -35.0
+ }
+}

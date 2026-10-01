@@ -1,0 +1,12 @@
+{
+ "through_ray": {
+  "mutant": "vent slot at x 110 filled",
+  "measured": 0,
+  "status": "FAIL"
+ },
+ "mesh_deviation": {
+  "mutant": "re-mesh at 0.1 mm, 0.5 rad",
+  "measured": 0.0437469482421875,
+  "status": "FAIL"
+ }
+}

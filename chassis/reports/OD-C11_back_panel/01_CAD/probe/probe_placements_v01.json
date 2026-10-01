@@ -1,0 +1,979 @@
+{
+ "plate_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED"
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED"
+  }
+ },
+ "plate_envelope": {
+  "size_x": 240.0,
+  "size_y": 6.0,
+  "size_z": 405.0,
+  "min_x": -120.0,
+  "min_y": -6.0,
+  "min_z": -305.0,
+  "max_x": 120.0,
+  "max_y": 0.0,
+  "max_z": 100.0
+ },
+ "plate_top_face": {
+  "y": 0.0,
+  "faces": 1,
+  "area_mm2": 96725.984
+ },
+ "plate_rear_faces": [
+  {
+   "z": -305.0,
+   "x_min": -110.0,
+   "x_max": 110.0
+  }
+ ],
+ "plate_side_faces": [
+  {
+   "x": -120.0,
+   "z_min": -295.0,
+   "z_max": 90.0
+  },
+  {
+   "x": 120.0,
+   "z_min": -295.0,
+   "z_max": 90.0
+  }
+ ],
+ "plate_cylinders_near_rear": [
+  {
+   "radius": 10.0,
+   "axis_origin": [
+    -110.0,
+    -6.0,
+    -295.0
+   ],
+   "axis_dir": [
+    -0.0,
+    -1.0,
+    -0.0
+   ],
+   "bbox_min": [
+    -120.0,
+    -6.0,
+    -305.0
+   ],
+   "bbox_max": [
+    -110.0,
+    0.0,
+    -295.0
+   ]
+  },
+  {
+   "radius": 10.0,
+   "axis_origin": [
+    110.0,
+    -6.0,
+    -295.0
+   ],
+   "axis_dir": [
+    -0.0,
+    -1.0,
+    -0.0
+   ],
+   "bbox_min": [
+    110.0,
+    -6.0,
+    -305.0
+   ],
+   "bbox_max": [
+    120.0,
+    0.0,
+    -295.0
+   ]
+  },
+  {
+   "radius": 1.7,
+   "axis_origin": [
+    -110.0,
+    -7.0,
+    -295.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox_min": [
+    -111.7,
+    -6.0,
+    -296.7
+   ],
+   "bbox_max": [
+    -108.3,
+    0.0,
+    -293.3
+   ]
+  },
+  {
+   "radius": 1.7,
+   "axis_origin": [
+    110.0,
+    -7.0,
+    -295.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox_min": [
+    108.3,
+    -6.0,
+    -296.7
+   ],
+   "bbox_max": [
+    111.7,
+    0.0,
+    -293.3
+   ]
+  }
+ ],
+ "plate_rear_edge_at_x116": -303.0004,
+ "plate_rear_edge_at_x-116": -303.0004,
+ "plate_rear_edge_at_x114": -304.1654,
+ "plate_rear_edge_at_x-114": -304.1654,
+ "plate_bore_census_count": 26,
+ "plate_bores": [
+  {
+   "diameter": 4.0,
+   "start": [
+    -113.0,
+    -6.0,
+    -148.5
+   ],
+   "end": [
+    -113.0,
+    0.0,
+    -148.5
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    -113.0,
+    -6.0,
+    -42.0
+   ],
+   "end": [
+    -113.0,
+    0.0,
+    -42.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 3.4,
+   "start": [
+    -110.0,
+    -6.0,
+    -295.0
+   ],
+   "end": [
+    -110.0,
+    0.0,
+    -295.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 3.4,
+   "start": [
+    -110.0,
+    -6.0,
+    90.0
+   ],
+   "end": [
+    -110.0,
+    0.0,
+    90.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 8.0,
+   "start": [
+    -80.0,
+    -6.0,
+    -230.0
+   ],
+   "end": [
+    -80.0,
+    0.0,
+    -230.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 8.0,
+   "start": [
+    -80.0,
+    -6.0,
+    -120.0
+   ],
+   "end": [
+    -80.0,
+    0.0,
+    -120.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    -71.0,
+    -6.0,
+    -148.5
+   ],
+   "end": [
+    -71.0,
+    0.0,
+    -148.5
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    -71.0,
+    -6.0,
+    -42.0
+   ],
+   "end": [
+    -71.0,
+    0.0,
+    -42.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    -40.0,
+    -6.0,
+    -148.0
+   ],
+   "end": [
+    -40.0,
+    0.0,
+    -148.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    -40.0,
+    -6.0,
+    -114.0
+   ],
+   "end": [
+    -40.0,
+    0.0,
+    -114.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    -35.0,
+    -6.0,
+    -60.0
+   ],
+   "end": [
+    -35.0,
+    0.0,
+    -60.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    -35.0,
+    -6.0,
+    -40.0
+   ],
+   "end": [
+    -35.0,
+    0.0,
+    -40.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    -4.0,
+    -6.0,
+    -239.0
+   ],
+   "end": [
+    -4.0,
+    0.0,
+    -239.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    -4.0,
+    -6.0,
+    -171.0
+   ],
+   "end": [
+    -4.0,
+    0.0,
+    -171.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    35.0,
+    -6.0,
+    -60.0
+   ],
+   "end": [
+    35.0,
+    0.0,
+    -60.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    35.0,
+    -6.0,
+    -40.0
+   ],
+   "end": [
+    35.0,
+    0.0,
+    -40.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    37.0,
+    -6.0,
+    -239.0
+   ],
+   "end": [
+    37.0,
+    0.0,
+    -239.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    37.0,
+    -6.0,
+    -171.0
+   ],
+   "end": [
+    37.0,
+    0.0,
+    -171.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    40.0,
+    -6.0,
+    -148.0
+   ],
+   "end": [
+    40.0,
+    0.0,
+    -148.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    40.0,
+    -6.0,
+    -114.0
+   ],
+   "end": [
+    40.0,
+    0.0,
+    -114.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    65.0,
+    -6.0,
+    -225.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -225.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    65.0,
+    -6.0,
+    -165.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -165.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    65.0,
+    -6.0,
+    -105.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -105.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 4.0,
+   "start": [
+    65.0,
+    -6.0,
+    -45.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -45.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 3.4,
+   "start": [
+    110.0,
+    -6.0,
+    -295.0
+   ],
+   "end": [
+    110.0,
+    0.0,
+    -295.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  },
+  {
+   "diameter": 3.4,
+   "start": [
+    110.0,
+    -6.0,
+    90.0
+   ],
+   "end": [
+    110.0,
+    0.0,
+    90.0
+   ],
+   "axis_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "through": true
+  }
+ ],
+ "plate_feet_hole_(110,-295)": {
+  "diameter": {
+   "measured": 3.4,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    110.0,
+    -6.0,
+    -295.0
+   ]
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    110.0,
+    -6.0,
+    -295.0
+   ]
+  },
+  "length": {
+   "measured": 6.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    110.0,
+    -6.0,
+    -295.0
+   ]
+  },
+  "through": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED",
+   "at": [
+    110.0,
+    -6.0,
+    -295.0
+   ]
+  }
+ },
+ "plate_feet_hole_(-110,-295)": {
+  "diameter": {
+   "measured": 3.4,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    -110.0,
+    -6.0,
+    -295.0
+   ]
+  },
+  "offset": {
+   "measured": 0.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    -110.0,
+    -6.0,
+    -295.0
+   ]
+  },
+  "length": {
+   "measured": 6.0,
+   "unit": "mm",
+   "status": "MEASURED",
+   "at": [
+    -110.0,
+    -6.0,
+    -295.0
+   ]
+  },
+  "through": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED",
+   "at": [
+    -110.0,
+    -6.0,
+    -295.0
+   ]
+  }
+ },
+ "new_insert_positions": {
+  "(81,-290)": {
+   "nearest_hole_centre_mm": 29.4279,
+   "nearest_hole": [
+    110.0,
+    -295.0,
+    3.4
+   ]
+  },
+  "(100,-290)": {
+   "nearest_hole_centre_mm": 11.1803,
+   "nearest_hole": [
+    110.0,
+    -295.0,
+    3.4
+   ]
+  },
+  "(-81,-290)": {
+   "nearest_hole_centre_mm": 29.4279,
+   "nearest_hole": [
+    -110.0,
+    -295.0,
+    3.4
+   ]
+  },
+  "(-100,-290)": {
+   "nearest_hole_centre_mm": 11.1803,
+   "nearest_hole": [
+    -110.0,
+    -295.0,
+    3.4
+   ]
+  }
+ },
+ "c02_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED"
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED"
+  }
+ },
+ "c02_envelope": {
+  "size_x": 12.0,
+  "size_y": 215.0,
+  "size_z": 210.0,
+  "min_x": 59.0,
+  "min_y": 0.0,
+  "min_z": -240.0,
+  "max_x": 71.0,
+  "max_y": 215.0,
+  "max_z": -30.0
+ },
+ "c03_location_matrix_rows": [
+  [
+   -0.0,
+   40.0,
+   -205.0
+  ],
+  [
+   -0.0,
+   90.0,
+   180.0
+  ]
+ ],
+ "c03_local_envelope": {
+  "size_x": 80.0,
+  "size_y": 40.0,
+  "size_z": 52.0,
+  "min_x": -40.0,
+  "min_y": 0.0,
+  "min_z": -10.0,
+  "max_x": 40.0,
+  "max_y": 40.0,
+  "max_z": 42.0
+ },
+ "h01_local_envelope": {
+  "size_x": 54.05,
+  "size_y": 55.15,
+  "size_z": 121.95,
+  "min_x": -27.2,
+  "min_y": -31.4,
+  "min_z": -66.45,
+  "max_x": 26.85,
+  "max_y": 23.75,
+  "max_z": 55.5
+ },
+ "c03_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED"
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED"
+  }
+ },
+ "h01_validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "status": "MEASURED"
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "status": "MEASURED"
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "status": "MEASURED"
+  }
+ },
+ "c03_placed_envelope": {
+  "size_x": 52.0,
+  "size_y": 40.0,
+  "size_z": 80.0,
+  "min_x": -10.0,
+  "min_y": -0.0,
+  "min_z": -245.0,
+  "max_x": 42.0,
+  "max_y": 40.0,
+  "max_z": -165.0
+ },
+ "h01_placed_envelope": {
+  "size_x": 121.95,
+  "size_y": 55.15,
+  "size_z": 54.05,
+  "min_x": -66.45,
+  "min_y": 16.25,
+  "min_z": -232.2,
+  "max_x": 55.5,
+  "max_y": 71.4,
+  "max_z": -178.15
+ },
+ "c03_local_x_maps_to": [
+  0.0,
+  0.0,
+  1.0
+ ],
+ "c03_local_y_maps_to": [
+  0.0,
+  -1.0,
+  0.0
+ ],
+ "c03_local_z_maps_to": [
+  1.0,
+  0.0,
+  0.0
+ ],
+ "c03_foot_underside_y": 0.0,
+ "c03_to_plane_z-283": {
+  "measured": 37.9995,
+  "unit": "mm",
+  "status": "MEASURED",
+  "at": [
+   -10.0,
+   0.0,
+   -245.0
+  ],
+  "on_part": null,
+  "on_plane": [
+   -10.0,
+   0.0,
+   -282.9995
+  ]
+ },
+ "c03_to_plate": {
+  "measured": 0.0,
+  "unit": "mm",
+  "status": "MEASURED",
+  "at": [
+   -10.0,
+   0.0,
+   -245.0
+  ]
+ },
+ "h01_to_plane_z-283": {
+  "measured": 50.7995,
+  "unit": "mm",
+  "status": "MEASURED",
+  "at": [
+   -7.9,
+   23.8,
+   -232.2
+  ],
+  "on_part": null,
+  "on_plane": [
+   -7.9,
+   23.8,
+   -282.9995
+  ]
+ },
+ "h01_to_plate": {
+  "measured": 16.25,
+  "unit": "mm",
+  "status": "MEASURED",
+  "at": [
+   33.5,
+   16.25,
+   -205.2
+  ]
+ },
+ "c02_to_plane_z-283": {
+  "measured": 42.9995,
+  "unit": "mm",
+  "status": "MEASURED",
+  "at": [
+   71.0,
+   0.0,
+   -240.0
+  ],
+  "on_part": null,
+  "on_plane": [
+   71.0,
+   0.0,
+   -282.9995
+  ]
+ },
+ "c02_to_plate": {
+  "measured": 0.0,
+  "unit": "mm",
+  "status": "MEASURED",
+  "at": [
+   67.0,
+   0.0,
+   -225.0
+  ]
+ }
+}

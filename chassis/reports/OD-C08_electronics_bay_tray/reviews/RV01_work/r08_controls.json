@@ -1,0 +1,26 @@
+[
+ {
+  "check": "common_volume whole tray vs OD-E01 (U-03, D-04c)",
+  "mutant": "resize: H1 standoff rebuilt 0.06 taller",
+  "got": "FAIL",
+  "measured": 3.64798328219913
+ },
+ {
+  "check": "common_volume whole tray vs OD-E01 (U-03, D-04c)",
+  "mutant": "relocate: tray moved 0.06 in +X",
+  "got": "FAIL",
+  "measured": 9.953236719781321
+ },
+ {
+  "check": "interference by decomposition (envelope of the tray less pins in the board footprint vs the board's solder face; U-03, D-04c)",
+  "mutant": "resize: H1 standoff rebuilt 0.06 taller",
+  "got": "FAIL",
+  "measured": 0.060000000000002274
+ },
+ {
+  "check": "clearance along the path (U-03 b)",
+  "mutant": "relocate: H5 pin moved 0.5 in +Y",
+  "got": "FAIL",
+  "measured": 0.0
+ }
+]

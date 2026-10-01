@@ -1,0 +1,66 @@
+{
+ "roundtrip": {
+  "schema": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "solids": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "volume_delta": [
+   0.0,
+   "MEASURED",
+   ""
+  ],
+  "faces_delta": [
+   0,
+   "MEASURED",
+   ""
+  ],
+  "labels": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "valid_after": [
+   1,
+   "MEASURED",
+   ""
+  ]
+ },
+ "vs_delivered": {
+  "schema": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "solids": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "volume_delta": [
+   0.0,
+   "MEASURED",
+   ""
+  ],
+  "faces_delta": [
+   0,
+   "MEASURED",
+   ""
+  ],
+  "labels": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "valid_after": [
+   1,
+   "MEASURED",
+   ""
+  ]
+ }
+}

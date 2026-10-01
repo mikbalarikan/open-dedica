@@ -1,0 +1,7 @@
+min_wall 3.0 MEASURED (116.0, 0.0, -299.0) 
+min_wall_wide 3.0 MEASURED (76.0, 34.0, -302.0) 
+overhang_whole 0.0 MEASURED (-95.0, 0.0, -280.3) 
+refilled {'solid_count': 1, 'brep_valid': 1, 'naked_edges': 0} 57
+overhang_refilled 90.0 MEASURED None 
+flat_ceiling_spans 0.0 MEASURED None 
+seconds 88.6

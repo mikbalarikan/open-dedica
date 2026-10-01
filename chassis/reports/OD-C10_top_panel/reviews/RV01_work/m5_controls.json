@@ -1,0 +1,130 @@
+{
+ "validity": [
+  "lid + loose 10 mm cube above the skin",
+  [
+   "FAIL",
+   2,
+   "== 1"
+  ]
+ ],
+ "envelope": [
+  "+x skirt bulged 1.0 out (x 121) over z -20..20",
+  [
+   "FAIL",
+   241.0,
+   "in [239.9, 240.1]"
+  ]
+ ],
+ "bore_relocate": [
+  "\u00d83.4 hole at (65,-60) moved +0.5 in x",
+  [
+   "FAIL",
+   0.5,
+   "<= 0.1"
+  ]
+ ],
+ "feature_census_remove": [
+  "\u00d83.4 hole at (90,-293) filled",
+  [
+   "FAIL",
+   7,
+   "== 8"
+  ]
+ ],
+ "feature_census_remove_pad": [
+  "pad (48,30) removed",
+  [
+   "PASS",
+   10,
+   "== 10"
+  ]
+ ],
+ "radial_extent": [
+  "+x skirt thinned 0.5 from inside at z 0",
+  [
+   "FAIL",
+   2.5,
+   "in [2.9, 3.1]"
+  ]
+ ],
+ "clearance_pads": [
+  "lid lowered 0.2",
+  [
+   "FAIL",
+   0.30000000000001137,
+   "in [0.45, 0.55]"
+  ]
+ ],
+ "common_volume_seat": [
+  "lid lowered 0.2",
+  [
+   "FAIL",
+   38.922444882351314,
+   "<= 0.0"
+  ]
+ ],
+ "clearance_away": [
+  "rear rib (x 92.5..95.5) bottom lowered 1.0 onto OD-C11's ledge",
+  [
+   "FAIL",
+   0.0,
+   ">= 0.5"
+  ]
+ ],
+ "engaged_area": [
+  "same mutant: contact area outside seats and corners",
+  [
+   "FAIL",
+   5.085782107294477,
+   "<= 0.0"
+  ]
+ ],
+ "descent": [
+  "pad (48,30) extended 1.0 down",
+  [
+   "FAIL",
+   39.26990816987242,
+   "<= 0.0"
+  ]
+ ],
+ "req06": [
+  "10x10x7 boss under the skin over the hub",
+  [
+   "FAIL",
+   699.9999999999999,
+   "<= 0.0"
+  ]
+ ],
+ "compare_step": [
+  "1 mm pocket in the top face vs the delivered STEP",
+  [
+   "FAIL",
+   99.99999990139622,
+   "<= 0.0"
+  ]
+ ],
+ "mesh_census": [
+  "delivered STL less 20 triangles",
+  [
+   "FAIL",
+   24,
+   "== 0"
+  ]
+ ],
+ "mesh_deviation": [
+  "delivered STL shifted 0.5 in x",
+  [
+   "FAIL",
+   0.5049934087760637,
+   "<= 0.01"
+  ]
+ ],
+ "mesh_sagitta": [
+  "lid meshed at 0.1 / 0.5 rad",
+  [
+   "FAIL",
+   0.07144300152616695,
+   "<= 0.01"
+  ]
+ ]
+}

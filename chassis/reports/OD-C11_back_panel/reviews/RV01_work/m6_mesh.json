@@ -1,0 +1,127 @@
+{
+ "census": {
+  "triangles": {
+   "name": "mesh_triangles",
+   "measured": 3928,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "degenerate_triangles": 0
+   }
+  },
+  "bodies": {
+   "name": "mesh_bodies",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "naked_edges": {
+   "name": "mesh_naked_edges",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "winding": {
+   "name": "mesh_winding",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "volume": {
+   "name": "mesh_volume",
+   "measured": 165531.48748348697,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  }
+ },
+ "deviation": {
+  "name": "mesh_deviation",
+  "measured": 0.00499315173352398,
+  "unit": "mm",
+  "at": [
+   -103.349462,
+   25.021938,
+   -300.5
+  ],
+  "params": {
+   "reference_tolerance_mm": 0.001
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "mesh_to_shape_mm": 0.004989210450689295,
+   "shape_to_mesh_mm": 0.00499315173352398,
+   "samples": 48631,
+   "reference_triangles": 9188
+  }
+ },
+ "brep_volume": 165529.56472934762,
+ "stl_bbox": [
+  [
+   -116.0,
+   0.0,
+   -302.0
+  ],
+  [
+   116.0,
+   215.0,
+   -277.0
+  ]
+ ],
+ "stl_volume": 165531.48748348697,
+ "stl_tris": 3928,
+ "remesh": {
+  "triangles": 3928,
+  "sagitta": 0.0049932039325174616,
+  "sha256": "491410ce9144a7a0964ca137910395e5b0b4787e4163c4d77fd5a8ad2df3dc89"
+ },
+ "remesh_same_triangles_as_delivered": false,
+ "remesh_sha_equals_delivered": false,
+ "angular_limit": 0.2309721947249083,
+ "3mf_names": [
+  "[Content_Types].xml",
+  "_rels/.rels",
+  "3D/3dmodel.model"
+ ],
+ "3mf_unit": "millimeter",
+ "3mf_transforms": [],
+ "3mf": {
+  "triangles": 3928,
+  "vertices": 1942,
+  "volume": 165531.48747918874,
+  "watertight": true,
+  "bbox": [
+   [
+    -116.0,
+    0.0,
+    -302.0
+   ],
+   [
+    116.0,
+    215.0,
+    -277.0
+   ]
+  ]
+ },
+ "3mf_same_vertices_as_stl": true,
+ "3mf_same_triangles_as_stl": false
+}
