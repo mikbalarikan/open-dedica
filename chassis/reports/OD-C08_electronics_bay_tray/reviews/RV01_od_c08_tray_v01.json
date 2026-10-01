@@ -1,0 +1,901 @@
+{
+ "schema": "oguz-verdict-v1",
+ "review_id": "RV01",
+ "job_id": "20261001-od-c08-electronics-bay-tray",
+ "target": "od_c08_tray_v01",
+ "spec_version": "1.0",
+ "reviewer": {
+  "runtime": "claude-code",
+  "model": "claude-opus-5-5"
+ },
+ "verdict": "APPROVED_ASSUMPTION_CONDITIONAL",
+ "summary": "Every Hard gate re-measured PASS or PASS_ASSUMED on the exported STEP, STL and 3MF; U-06 Soft misses at the Ø1.8 pins (1.8 vs 2.0); REQ-06 bench gate INCONCLUSIVE; D-01b and J-05 sit exactly at their limits; passes rest on A-01, A-02, A-03, A-06, A-07, A-08, A-09, A-11.",
+ "files": [
+  {
+   "path": "01_CAD/DESIGN_PLAN.md",
+   "sha256": "08cce6b90703d0d0ed6b62e0feddab77f624b354940881f46850d45c7261ae31",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/REPORT_od_c08_tray_v01.md",
+   "sha256": "7e73a0d3bb2d03f52ffc3fb42a51d7cb8fcf3ae5715feac378510aab77fc1b86",
+   "matches_report": false
+  },
+  {
+   "path": "01_CAD/check_od_c08_tray_v01.json",
+   "sha256": "da444cc036634ea24054fd722d287573ea26bac7d0e6f017f72220c0b620e948",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/build_record_v01.json",
+   "sha256": "8d22e681e824e45c355c244679e40590dc5e36d5c09bc1d845139848610fde0a",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/sections_v01.json",
+   "sha256": "309152fa51687e8cb051bb8a840f7c0c01f0a2fe984676249b9b753800fa9131",
+   "matches_report": true
+  },
+  {
+   "path": "01_CAD/probe/probe_inputs.json",
+   "sha256": "7fe1a3f885bfaf224d456ae218addcf5cd431ab627e57a5dfa88fd299f8688eb",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c08_tray_C1_v01.step",
+   "sha256": "63686c46a32753fdd8bcd669a9a89bcb5ffc853a0c15f7777048caca446cda91",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c08_assembly_C1_v01.step",
+   "sha256": "21e6f254048e2239216b63e493d764510f7e002180ba0498bf91406c56ecc9aa",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c08_tray_C1_v01.stl",
+   "sha256": "2ac2db7f63d8ffc91c9d0e3af809a9964152b68826eba5e76eb237d36c22df49",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c08_tray_C1_v01.3mf",
+   "sha256": "24ac0b1122c6a5ee18293ef45d9dab17485d05515f3b034c7658fe5de802d945",
+   "matches_report": false
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_front_asm_y80_board_H1_H5.png",
+   "sha256": "996fd9d4516e9b6391123a22f4c36d3392ce12b469a6dc005aa07e2d8f1e0c7e",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_front_y2_flange.png",
+   "sha256": "69064a409d082daa490977cc3b47c2b14bccdf6013e4c5d54512355dbc93a162",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_front_y80_H1_H5.png",
+   "sha256": "c124b9824d3e7fd860f9dd9a58c29e2c174c23d5d77723deadc398966d72eb65",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_front_y88_slots.png",
+   "sha256": "21be331cd7d3f2d1e67a8b8f45753e8a6b858adc35918a35604a78bcc654e14a",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_left_x74.5_wall.png",
+   "sha256": "938e82334fc516d77bbabf4ec542c1600bef598486982dafd1b6d79b5b6d742c",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_left_x79.4_standoffs.png",
+   "sha256": "8e42662377d3ae8f3ac12a832bac1e4944a42a1492c32e53c12e3290d1b6c9dd",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_left_x83.5_pins.png",
+   "sha256": "2ac719bf7346a7ffacd956665fe81b00c016cac25d085ea82be1e73ee9f28bfb",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_top_asm_z-100_board_H1_H2.png",
+   "sha256": "4659069f7949a636389f7d5b3f2e43ed3004f3a92d609160ba0b25035257f4e5",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_top_asm_z-157.5_board_pins.png",
+   "sha256": "717a12a29c878423261e43a050a429dfd04de8abaef2fb1badb632ea7d5da7cc",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_top_asm_z-222_screw_path.png",
+   "sha256": "548f6f5712e012d3781b1a9e2d1c9c83a3667f9cb8e34733469ff405561d3c42",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_top_z-100_H1_H2_inserts.png",
+   "sha256": "20cbcd2153a170545f1de4f2085ee04e3b7014bfaeeb6ed70174438c2c7cedae",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_top_z-157.5_H5_H6_pins.png",
+   "sha256": "6382c2eac986e610923cc35051ee2b58640baec50d25ff3951d3e2055563b390",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_top_z-168_tie_slot.png",
+   "sha256": "35837c7db250dc05aa90c995cabed425ad244eed0d06e129a5ec08649684c060",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_top_z-222_rear_holes.png",
+   "sha256": "9bdd66c0d58ea9762fe1e4f49557f8c4e7078761b89e156a4986682a3673b360",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_top_z-78_front_holes.png",
+   "sha256": "cd04361ebe0c1996483b7043af58981a8c864a1503aaf008255c75be176591ba",
+   "matches_report": true
+  },
+  {
+   "path": "03_Sections/od_c08_tray_v01_top_z-86.5_gusset.png",
+   "sha256": "96fa67317ccca30d1a0196c23823493e18c85d0fd84d54a435bee6583a281294",
+   "matches_report": true
+  }
+ ],
+ "gates": [
+  {
+   "gate": "U-01",
+   "measured": 1,
+   "unit": "count",
+   "required": "solid_count = 1, brep_valid = 1, naked_edges = 0",
+   "margin": 0,
+   "at": "tray STEP re-imported: 1 solid, brep_valid 1, naked_edges 0; each of the 4 assembly parts one valid solid",
+   "status": "PASS",
+   "method": "validity",
+   "assumes": []
+  },
+  {
+   "gate": "U-02",
+   "measured": 39.0,
+   "unit": "mm",
+   "required": "39.0 x 92.0 x 160.0 each in [spec - 0.1, spec + 0.1]; position x 73.0..112.0, y 0..92.0, z -230.0..-70.0",
+   "margin": 0.1,
+   "at": "sizes 39.000 x 92.000 x 160.000; position x 73.000..112.000, y 0.000..92.000, z -230.000..-70.000 (each margin 0.1)",
+   "status": "PASS",
+   "method": "envelope",
+   "assumes": []
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "(a) contacts clearance = 0 and interference <= 0; pins >= 0.30; rest of board >= 0.5; tray-C02 >= 1.5; E01-C02 >= 10.0; E01 in x 70..117, z -240..-30, y >= 10; (b) path interference <= 0",
+   "margin": 0.0,
+   "at": "seat contact: tray less pins reaches x 82.4380 = board solder face x 82.4380 (overlap depth 0.000, four seats clearance 0); flange on plate clearance 0 at (73, 0, -230), interference 0; pins 0.3389 (H5) / 0.3278 (H6) at (82.438, 30.185, -157.108); rest 1.000 (wall/flange/gussets 6.438); tray-C02 2.000; E01-C02 15.438; E01 x 82.438..109.262, z -195.002..-94.838, y 24.000; path dx 5.0..0.25 clearance >= 0.250 (20 poses), 21 poses common_volume 0; plate material under the four holes complete (A-01)",
+   "status": "PASS_ASSUMED",
+   "method": "clearance, common_volume, envelope; decomposition (envelope of tray less pins in the board footprint vs board min x)",
+   "assumes": [
+    "A-01",
+    "A-02",
+    "A-03",
+    "A-06"
+   ]
+  },
+  {
+   "gate": "U-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "named body re-read unchanged, no stray shells, valid after re-import",
+   "margin": 0.0,
+   "at": "AP242, unit MM, label od_c08_tray, 1 MANIFOLD_SOLID_BREP / 1 CLOSED_SHELL, no open shells; re-write/re-read volume delta 0, faces delta 0, labels 1; assembly 4 named parts, each identical to its input (common volume = own volume)",
+   "status": "PASS",
+   "method": "compare_step, step_roundtrip, read_schema, read_length_unit",
+   "assumes": []
+  },
+  {
+   "gate": "U-05",
+   "measured": 42,
+   "unit": "count",
+   "required": "1 wall, 1 flange, 4 gussets, 4 standoffs (2 with Ø4.0 blind bore, 2 with Ø1.8 pin), 4 Ø3.4 flange holes, 4 tie slots; plan: 42 planes, 12 cylinders (6 convex, 6 concave), 6 bores",
+   "margin": 0,
+   "at": "42 planes, 12 cylinders (6 convex, 6 concave), 0 other; 6 bores (2 blind along X, 4 through along Y); 4 gusset hypotenuses; 4 standoffs; 2 pins; 4 slots (section x 74.5)",
+   "status": "PASS",
+   "method": "feature_census, bore_census, locate_bore, sections",
+   "assumes": []
+  },
+  {
+   "gate": "U-06",
+   "measured": 1.8,
+   "unit": "mm",
+   "required": "min_wall wide >= 2.0 (Soft)",
+   "margin": -0.2,
+   "at": "(82.688, 31.519, -158.238) the Ø1.8 H6 locating pin; the tray less its two pins reads 2.000 at (75.75, 92.0, -113.478)",
+   "status": "FAIL",
+   "method": "min_wall_wide (spacing 0.7)",
+   "assumes": []
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.004895,
+   "unit": "mm",
+   "required": "STL tol 0.01, angular <= 4 acos(1 - 0.01/R_max) = 0.2530 rad; stl_max_sagitta <= 0.01; 3MF carries the same mesh",
+   "margin": 0.005105,
+   "at": "delivered STL to B-rep both ways 0.00489 at (82.438, 30.980, -104.018); fresh 0.01/0.2 rad re-mesh sagitta 0.00489, surfaces coincide with the STL (1.8e-8); 3244 triangles, 1 body, 0 naked edges, consistent winding, 70594.55 mm3; 3MF: 1 object, mm, 3244 triangles, same triangles as the STL (8e-7), watertight",
+   "status": "PASS",
+   "method": "mesh_census, mesh_deviation, write_stl/mesh_sagitta, min_wall_mesh",
+   "assumes": []
+  },
+  {
+   "gate": "U-08",
+   "measured": null,
+   "unit": "count",
+   "required": "applies to threaded parts; this target has none",
+   "margin": null,
+   "at": null,
+   "status": "NOT_APPLICABLE",
+   "method": "N/A by the spec row (no threads on this part)",
+   "assumes": []
+  },
+  {
+   "gate": "D-01a",
+   "measured": 1.8,
+   "unit": "mm",
+   "required": "min_wall >= 0.8",
+   "margin": 1.0,
+   "at": "(82.688, 31.519, -158.238) Ø1.8 pin",
+   "status": "PASS",
+   "method": "min_wall (spacing 0.7)",
+   "assumes": []
+  },
+  {
+   "gate": "D-01b",
+   "measured": 2.0,
+   "unit": "mm",
+   "required": "min_wall >= 2.0 except the two pins and the 0.44 floor under each insert bore",
+   "margin": 0.0,
+   "at": "(75.75, 92.0, -113.478) the 2.0 web above the tie slots (y 90..92), tray less its two pins",
+   "status": "PASS",
+   "method": "min_wall (spacing 0.7)",
+   "assumes": []
+  },
+  {
+   "gate": "D-02",
+   "measured": 160.0,
+   "unit": "mm",
+   "required": "each envelope size <= K1C build volume: 92.0 x 160.0 on the bed, 39.0 tall (220 x 220 x 250, A-09)",
+   "margin": 60.0,
+   "at": "bed 92.0 x 160.0, height 39.0",
+   "status": "PASS_ASSUMED",
+   "method": "envelope",
+   "assumes": [
+    "A-09"
+   ]
+  },
+  {
+   "gate": "D-03a",
+   "measured": 90.0,
+   "unit": "deg",
+   "required": "every downward face >= 45 deg in the print (build +X); the four flange-hole crowns the named exception",
+   "margin": 45.0,
+   "at": "four flange holes refilled by position: nothing downward off the bed; whole part least 0.0 deg only on the four hole crowns, e.g. (89.7, 0.0, -78.0) (named exception)",
+   "status": "PASS_ASSUMED",
+   "method": "overhang_census(build_dir=(1,0,0), spacing 0.7)",
+   "assumes": [
+    "A-08"
+   ]
+  },
+  {
+   "gate": "D-03b",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "span <= 5",
+   "margin": 1.6,
+   "at": "the four Ø3.4 horizontal flange-hole crowns at (88/106, 0..4, -222/-78); flat ceilings 0",
+   "status": "PASS_ASSUMED",
+   "method": "flat_ceiling_spans(build_dir=(1,0,0)), bore_census, sections",
+   "assumes": [
+    "A-08"
+   ]
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "four flange holes Ø >= 3.25",
+   "margin": 0.15,
+   "at": "all four Ø3.400 at (88/106, 0, -222/-78)",
+   "status": "PASS",
+   "method": "bore_census, locate_bore",
+   "assumes": []
+  },
+  {
+   "gate": "D-04c",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.5 per side tray to OD-E01 away from the designed contacts",
+   "margin": 0.5,
+   "at": "(81.438, 32.990, -100.010) tray less pins and the top 1.0 of each standoff; wall/flange/gussets 6.438 at (76.0, 24.0, -94.838); interference 0 (seat contact only, decomposition)",
+   "status": "PASS_ASSUMED",
+   "method": "clearance; decomposition",
+   "assumes": [
+    "A-02"
+   ]
+  },
+  {
+   "gate": "D-04d",
+   "measured": 0.3278,
+   "unit": "mm",
+   "required": "each pin in its board hole >= 0.30 per side",
+   "margin": 0.0278,
+   "at": "H6 pin (82.438, 30.185, -157.108); H5 0.3389",
+   "status": "PASS_ASSUMED",
+   "method": "clearance (pin to OD-E01)",
+   "assumes": [
+    "A-02"
+   ]
+  },
+  {
+   "gate": "D-05a",
+   "measured": 10.0,
+   "unit": "mm",
+   "required": "material >= 8.0 across around each Ø4.0 insert bore",
+   "margin": 2.0,
+   "at": "both bores, 12 diameters x 3 depths each, least 10.000 at (76.938, 85.0, -100.0)",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent",
+   "assumes": [
+    "A-07"
+   ]
+  },
+  {
+   "gate": "D-05b",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "Ø 4.0 ± 0.05, depth 6.0 ± 0.1 (>= 5.7), blind",
+   "margin": 0.05,
+   "at": "both bores Ø4.000, depth 6.000 (x 76.438..82.438), floor closed, at (76.438, 80.0, -100.0) and (76.438, 27.99, -100.01)",
+   "status": "PASS_ASSUMED",
+   "method": "bore_census, locate_bore",
+   "assumes": [
+    "A-07"
+   ]
+  },
+  {
+   "gate": "D-06a",
+   "measured": 1.8,
+   "unit": "mm",
+   "required": ">= 1.0 (the pins Ø1.8)",
+   "margin": 0.8,
+   "at": "both pins Ø1.800 (exact cylinders); min_wall 1.800",
+   "status": "PASS",
+   "method": "min_wall, cylinder axes",
+   "assumes": []
+  },
+  {
+   "gate": "D-07",
+   "measured": null,
+   "unit": "count",
+   "required": "none: the insert bores are formed by the insert, the flange holes are clearance holes",
+   "margin": null,
+   "at": null,
+   "status": "NOT_APPLICABLE",
+   "method": "N/A by the spec row (no fit-critical bores on this part)",
+   "assumes": []
+  },
+  {
+   "gate": "J-05",
+   "measured": 3.0,
+   "unit": "mm",
+   "required": ">= 3.0 around each insert bore",
+   "margin": 0.0,
+   "at": "both bores, 24 rays x 3 depths each, least 3.000 at (76.938, 85.0, -100.0)",
+   "status": "PASS",
+   "method": "radial_extent",
+   "assumes": []
+  },
+  {
+   "gate": "E-01",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": "= D-04c",
+   "margin": 0.5,
+   "at": "as D-04c",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02"
+   ]
+  },
+  {
+   "gate": "E-05",
+   "measured": 0.0041,
+   "unit": "mm",
+   "required": "insert bores coaxial with H1/H2, pins with H5/H6, offset <= 0.10",
+   "margin": 0.0959,
+   "at": "H5 at (82.438, 81.976, -157.519); H1 0.0032, H2 0.0032, H6 0.0022",
+   "status": "PASS_ASSUMED",
+   "method": "bore_census/locate_bore on both solids, cylinder axes",
+   "assumes": [
+    "A-02",
+    "A-03"
+   ]
+  },
+  {
+   "gate": "E-06",
+   "measured": 4,
+   "unit": "count",
+   "required": "every standoff grows from the wall; flange tied to the wall by four gussets",
+   "margin": 0,
+   "at": "4 standoffs start at x 76.000 and section in one face with wall and flange; 4 gussets 20 x 20 x 3 at z -230..-227, -212..-209, -88..-85, -73..-70, each one face with wall and flange (section area 620)",
+   "status": "PASS",
+   "method": "sections, cylinder faces",
+   "assumes": []
+  },
+  {
+   "gate": "E-11",
+   "measured": 4,
+   "unit": "count",
+   "required": "two tie-slot pairs above the board; tray open on +X, ±Z and above",
+   "margin": 0,
+   "at": "4 slots 2.0 (z) x 4.0 (y) through the wall at y 86..90, z -177..-175, -169..-167, -123..-121, -115..-113, 2.131 above the board top; boxes on +X, front, rear and above hold 0 mm3 of tray",
+   "status": "PASS_ASSUMED",
+   "method": "sections, common_volume",
+   "assumes": [
+    "A-11"
+   ]
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "four Ø3.4 ± 0.1 through-holes along Y at (88,-222), (106,-222), (88,-78), (106,-78), offset <= 0.10, 4.0 ± 0.1 long; underside one plane at y 0.00 ± 0.10",
+   "margin": 0.1,
+   "at": "all four Ø3.400, offset 0.000, 4.000 long, through; underside one plane y 0.000 (6203.68 mm2); OD-C01 material complete under each hole (Ø10 x 6 column), nearest plate edge or void 12.0 from the Ø4 insert hole",
+   "status": "PASS_ASSUMED",
+   "method": "bore_census, locate_bore, faces, common_volume",
+   "assumes": [
+    "A-01"
+   ]
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 82.438,
+   "unit": "mm",
+   "required": "standoff tops x 82.44 ± 0.05 (coplanar); bores Ø4.0 at H1/H2; pins Ø1.8 ± 0.05, 2.5 ± 0.1 at H5/H6; offsets <= 0.10",
+   "margin": 0.048,
+   "at": "four seat faces x 82.4380 (spread 0); bores Ø4.000 offset 0.000; pins Ø1.800, 2.500 long (x 82.438..84.938), offset 0.000",
+   "status": "PASS_ASSUMED",
+   "method": "faces, bore_census, locate_bore, cylinder axes",
+   "assumes": [
+    "A-02",
+    "A-03"
+   ]
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 73.0,
+   "unit": "mm",
+   "required": "nothing at x < 73.0; front end z -70.0 ± 0.1",
+   "margin": 0.0,
+   "at": "min x 73.000; max z -70.000",
+   "status": "PASS_ASSUMED",
+   "method": "envelope",
+   "assumes": [
+    "A-06"
+   ]
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "four Ø8 x 116 cylinders (y 4..120) on the hole axes: interference with tray and board = 0",
+   "margin": 0.0,
+   "at": "all four 0 with tray and board; board clearance to the cylinders >= 13.307 (x88 z-78)",
+   "status": "PASS_ASSUMED",
+   "method": "common_volume, clearance",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "box x 85..117, y 4..92, z -195..-95 with the tray = 0",
+   "margin": 0.0,
+   "at": "box empty",
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "REQ-06",
+   "measured": null,
+   "unit": "bool",
+   "required": "Soft: board does not flex visibly under a faston push at z -188 (bench)",
+   "margin": null,
+   "at": "farthest tab z -188, 30.5 beyond the H6 pin standoff",
+   "status": "INCONCLUSIVE",
+   "method": "bench gate, not geometric",
+   "assumes": [
+    "A-04",
+    "A-12"
+   ]
+  },
+  {
+   "gate": "exactly_one_solid",
+   "measured": 1,
+   "unit": "count",
+   "required": "solid_count = 1",
+   "margin": 0,
+   "at": null,
+   "status": "PASS",
+   "method": "validity",
+   "assumes": []
+  },
+  {
+   "gate": "feature_census",
+   "measured": 42,
+   "unit": "count",
+   "required": "plan §3 counts: 42 planes, 12 cylinders (6 convex, 6 concave), 0 cones/spheres/tori/B-splines/other, 6 bores",
+   "margin": 0,
+   "at": "every count equal to the plan",
+   "status": "PASS",
+   "method": "feature_census",
+   "assumes": []
+  },
+  {
+   "gate": "envelope_within_spec",
+   "measured": 39.0,
+   "unit": "mm",
+   "required": "39.0 x 92.0 x 160.0 each ± 0.1, position apart",
+   "margin": 0.1,
+   "at": "as U-02",
+   "status": "PASS",
+   "method": "envelope",
+   "assumes": []
+  }
+ ],
+ "feature_census": [
+  {
+   "feature": "F01 wall + floor flange",
+   "expected": "L section x 73..112 x y 0..4 and x 73..76 x y 0..92, z -230..-70",
+   "found": "section area 420.000 at z -150 / -120; envelope 39 x 92 x 160",
+   "status": "PASS"
+  },
+  {
+   "feature": "F02 gussets x4",
+   "expected": "20 x 20 triangles, 3.0 thick at z -230..-227, -212..-209, -88..-85, -73..-70",
+   "found": "4 hypotenuse faces x 76..96, y 4..24 at exactly those z ranges; sections 620.000",
+   "status": "PASS"
+  },
+  {
+   "feature": "F03 insert standoffs x2 Ø10",
+   "expected": "r 5.0 along +X, x 76.0..82.438 at H1, H2",
+   "found": "2 cylinders r 5.000, x 76.000..82.438, axes (80.00, -100.00), (27.99, -100.01)",
+   "status": "PASS"
+  },
+  {
+   "feature": "F04 pin standoffs x2 Ø6",
+   "expected": "r 3.0 along +X, x 76.0..82.438 at H5, H6",
+   "found": "2 cylinders r 3.000, x 76.000..82.438, axes (81.98, -157.52), (30.99, -157.51)",
+   "status": "PASS"
+  },
+  {
+   "feature": "F05 locating pins x2 Ø1.8 x 2.5",
+   "expected": "r 0.9, x 82.438..84.938",
+   "found": "2 cylinders r 0.900, x 82.438..84.938, coaxial with F04",
+   "status": "PASS"
+  },
+  {
+   "feature": "F06 insert bores x2 Ø4.0 x 6.0 blind",
+   "expected": "2 blind bores along X",
+   "found": "2 bores Ø4.000, 6.000 deep, x 76.438..82.438, floor closed",
+   "status": "PASS"
+  },
+  {
+   "feature": "F07 flange holes x4 Ø3.4",
+   "expected": "4 through bores along Y",
+   "found": "4 bores Ø3.400, y 0..4, through, at (88/106, -222/-78)",
+   "status": "PASS"
+  },
+  {
+   "feature": "F08 tie slots x4 2.0 x 4.0",
+   "expected": "4 slots through the wall along X at y 86..90, centres z -176, -168, -122, -114",
+   "found": "4 holes in sections x 73.2 / 74.5 / 75.8, each y 86..90 x z 2.0 at those centres",
+   "status": "PASS"
+  }
+ ],
+ "plausibility": [
+  {
+   "question": "P1 gravity",
+   "answer": "Flange lies on the plate top (clearance 0, interference 0) and takes four screws; the 0.1 kg board sits on four standoffs off a gusseted wall; in the print the tray lies on its wall face with everything rising as prisms.",
+   "status": "YES"
+  },
+  {
+   "question": "P2 function chains",
+   "answer": "Screw path: Ø3.4 hole over complete plate material (inserts still to be added, A-01); board: seat at its solder face, insert bores coaxial with H1/H2 within 0.004; wires: four tie slots 2.13 above the board top; faston box on +X empty.",
+   "status": "YES"
+  },
+  {
+   "question": "P3 motion clearance",
+   "answer": "No moving parts in service; the board's mounting path along -X from +5.0 keeps clearance >= 0.25 in 20 poses and meets the seats at 0; pins enter H5/H6 with 0.33 per side.",
+   "status": "YES"
+  },
+  {
+   "question": "P4 grip, reach, insertion",
+   "answer": "Driver cylinders Ø8 to y 120 on all four screw axes clear the tray and the board (board >= 13.3 away); board goes on along -X over two pins, then two screws from the component side.",
+   "status": "YES"
+  },
+  {
+   "question": "P5 absurdity",
+   "answer": "A 3 mm PETG wall with 6.4 mm standoffs and a 4 mm screwed flange, 90 g, is an ordinary on-edge PCB bracket; only the Ø1.8 pins are slender, and they only locate.",
+   "status": "YES"
+  },
+  {
+   "question": "P6 floating, embedded, mirrored, upside-down",
+   "answer": "One solid; standoffs share one section face with the wall; the board placed by the reviewer from the input STEP at the spec joint (proper rotation) equals the assembly's board; solder face toward the bulkhead at x 82.438, heatsink to +X at 109.262; flange underside at y 0.",
+   "status": "YES"
+  }
+ ],
+ "positive_controls": [
+  {
+   "check": "validity (U-01)",
+   "mutant": "degrade: tray shell with one face removed",
+   "got": "FAIL"
+  },
+  {
+   "check": "envelope (U-02, REQ-03, D-02)",
+   "mutant": "resize: wall top raised 0.5 to y 92.5",
+   "got": "FAIL"
+  },
+  {
+   "check": "feature_census (U-05)",
+   "mutant": "remove: tie slot z -176 filled",
+   "got": "FAIL"
+  },
+  {
+   "check": "bore_census/locate_bore (REQ-01, D-04a, D-05b, REQ-02)",
+   "mutant": "relocate: flange hole x88 z-222 moved 0.5 in +X",
+   "got": "FAIL"
+  },
+  {
+   "check": "min_wall (D-01a/b, D-06a)",
+   "mutant": "resize: web above the tie slots thinned 2.0 -> 1.5",
+   "got": "FAIL"
+  },
+  {
+   "check": "min_wall_wide (U-06)",
+   "mutant": "resize: web above the tie slots thinned 2.0 -> 1.5",
+   "got": "FAIL"
+  },
+  {
+   "check": "overhang_census (D-03a)",
+   "mutant": "degrade: 20x20 cap on a 4x4 stem off the wall, ceiling facing the bed",
+   "got": "FAIL"
+  },
+  {
+   "check": "flat_ceiling_spans (D-03b)",
+   "mutant": "degrade: same cap (unsupported ceiling)",
+   "got": "FAIL"
+  },
+  {
+   "check": "radial_extent (D-05a)",
+   "mutant": "resize: H1 insert boss Ø10 -> Ø7.8",
+   "got": "FAIL"
+  },
+  {
+   "check": "radial_extent (J-05)",
+   "mutant": "resize: H1 insert boss Ø10 -> Ø7.8",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance (D-04d, U-03, E-01, D-04c)",
+   "mutant": "relocate: H6 pin moved 0.10 in +Z",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance == 0 (U-03 seat contact)",
+   "mutant": "resize: H1 seat lowered 0.05",
+   "got": "FAIL"
+  },
+  {
+   "check": "common_volume whole tray vs OD-E01 (blind-spot record; no gate rests on it alone)",
+   "mutant": "resize: H1 seat raised 0.06 by fusing a Ø10/Ø4 disc onto the seat face (fused topology)",
+   "got": "PASS"
+  },
+  {
+   "check": "seat-face reading (REQ-02)",
+   "mutant": "resize: H1 seat raised 0.06",
+   "got": "FAIL"
+  },
+  {
+   "check": "common_volume path (U-03 b)",
+   "mutant": "relocate: H5 pin moved 0.5 in +Y",
+   "got": "FAIL"
+  },
+  {
+   "check": "common_volume (REQ-04)",
+   "mutant": "degrade: 2x2 rib across the x88 z-78 driver path",
+   "got": "FAIL"
+  },
+  {
+   "check": "common_volume (REQ-05, E-11)",
+   "mutant": "degrade: rib reaching x 86 inside the faston box",
+   "got": "FAIL"
+  },
+  {
+   "check": "sections (E-06)",
+   "mutant": "remove: gusset z -88..-85",
+   "got": "FAIL"
+  },
+  {
+   "check": "sections (E-11)",
+   "mutant": "remove: tie slot z -176 filled",
+   "got": "FAIL"
+  },
+  {
+   "check": "compare_step (U-04)",
+   "mutant": "resize: wall top raised 0.5, compared with the delivered file",
+   "got": "FAIL"
+  },
+  {
+   "check": "mesh_census (U-07)",
+   "mutant": "degrade: delivered STL with one triangle removed",
+   "got": "FAIL"
+  },
+  {
+   "check": "mesh_deviation (U-07)",
+   "mutant": "degrade: STL meshed at 0.1 mm / 0.5 rad",
+   "got": "FAIL"
+  },
+  {
+   "check": "mesh_sagitta (U-07)",
+   "mutant": "degrade: STL meshed at 0.1 mm / 0.5 rad",
+   "got": "FAIL"
+  },
+  {
+   "check": "3MF-vs-STL surface comparison (U-07)",
+   "mutant": "relocate: one 3MF vertex moved 0.05",
+   "got": "FAIL"
+  },
+  {
+   "check": "min_wall_mesh (corroboration)",
+   "mutant": "resize: STL of the web-1.5 mutant (pins removed)",
+   "got": "FAIL"
+  },
+  {
+   "check": "common_volume whole tray vs OD-E01 (U-03, D-04c)",
+   "mutant": "resize: H1 standoff rebuilt 0.06 taller",
+   "got": "FAIL"
+  },
+  {
+   "check": "common_volume whole tray vs OD-E01 (U-03, D-04c)",
+   "mutant": "relocate: tray moved 0.06 in +X",
+   "got": "FAIL"
+  },
+  {
+   "check": "interference by decomposition (envelope of the tray less pins in the board footprint vs the board's solder face; U-03, D-04c)",
+   "mutant": "resize: H1 standoff rebuilt 0.06 taller",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance along the path (U-03 b)",
+   "mutant": "relocate: H5 pin moved 0.5 in +Y",
+   "got": "FAIL"
+  },
+  {
+   "check": "common_volume whole tray vs OD-C01 (U-03 plate interference)",
+   "mutant": "relocate: tray sunk 0.05 into the plate",
+   "got": "FAIL"
+  },
+  {
+   "check": "common_volume on the flange region vs OD-C01 (U-03 plate interference)",
+   "mutant": "relocate: tray sunk 0.05 into the plate",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance (U-03 tray to OD-C02)",
+   "mutant": "relocate: tray moved 2.5 in -X",
+   "got": "FAIL"
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "gate": "U-06",
+   "kind": "SOFT_GATE_MISS",
+   "measured": 1.8,
+   "unit": "mm",
+   "required": "min_wall wide >= 2.0 (Soft)",
+   "margin": -0.2,
+   "at": "(82.688, 31.519, -158.238) Ø1.8 H6 pin; same at H5",
+   "blocks": false,
+   "risk": "LOW",
+   "risk_basis": "the reading is the locating pins' own Ø1.8, gated and passing under D-06a; the part has no rounds and the tray less its pins reads 2.000; the spec names the pin exception under D-01b only, not U-06",
+   "fix_direction": "the Usta names the two pins as a U-06 exception (as under D-01b), or the pins grow to Ø2.0, which takes D-04d to 0.23/0.24 per side"
+  },
+  {
+   "id": "F2",
+   "gate": "REQ-06",
+   "kind": "SOFT_GATE_MISS",
+   "measured": null,
+   "unit": "bool",
+   "required": "board does not flex visibly under a faston push at the farthest tab (bench)",
+   "margin": null,
+   "at": "faston row y ~29.5, z -136..-188; farthest tab z -188 is 30.5 beyond the H6 pin standoff (z -157.51), the push toward -X",
+   "blocks": false,
+   "risk": "MEDIUM",
+   "risk_basis": "INCONCLUSIVE by its row; the 1.56 board is held by two pins and two screws, and the six tabs between z -136 and -188 sit up to 30.5 past the nearest standoff with 6.44 of air behind them, so a 6.3 mm faston push bends that overhang; A-04, A-12",
+   "fix_direction": "bench-test at first assembly; if it flexes, add a plain rest pad (no pin) on the wall under the tab row near z -185, y 30, clear of solder-side mains tracks (A-05)"
+  },
+  {
+   "id": "F3",
+   "gate": "D-05b",
+   "kind": "OBSERVATION",
+   "measured": 6.0,
+   "unit": "mm",
+   "required": "M3 x 8 screw tip short of the bore floor (A-04)",
+   "margin": -0.438,
+   "at": "insert bores H1/H2, floor x 76.438",
+   "blocks": false,
+   "risk": "MEDIUM",
+   "risk_basis": "an M3 x 8 through the 1.562 board reaches x 76.0 with no washer, 0.438 past the 6.0 bore floor, so it bottoms before clamping the board; it fits only with the >= 0.44 washer A-04 assumes",
+   "fix_direction": "state the washer thickness (>= 0.5) in A-04, or use M3 x 6, or deepen the bores to >= 6.5 by a spec change to D-05b"
+  },
+  {
+   "id": "F4",
+   "gate": "D-04d",
+   "kind": "OBSERVATION",
+   "measured": 0.3278,
+   "unit": "mm",
+   "required": ">= 0.30 per side with E-05 allowing 0.10 of offset",
+   "margin": 0.0278,
+   "at": "H6 pin (82.438, 30.185, -157.108)",
+   "blocks": false,
+   "risk": "LOW",
+   "risk_basis": "reviewer control: a 0.10 pin shift reads 0.229 (D-04d FAIL) while E-05 still passes, so the two rows cannot both use their allowance; the pin still enters its hole with up to about 0.33 of combined error, and the hole positions are scan values (A-02)",
+   "fix_direction": "the Usta reconciles D-04d and E-05 (for example E-05 <= 0.03 for the pins, or D-04d >= 0.20), and calipers retire A-02 on H5/H6"
+  },
+  {
+   "id": "F5",
+   "gate": "U-03",
+   "kind": "OBSERVATION",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "common_volume reports a real overlap or INCONCLUSIVE",
+   "margin": null,
+   "at": "H1 seat, mutant with a 0.06 (also 0.5) disc fused onto the seat face",
+   "blocks": false,
+   "risk": "LOW",
+   "risk_basis": "tool finding, not a part deviation: tools.core.common_volume returned a MEASURED 0 for tray x OD-E01 on that fused mutant (the disc alone reads 3.65 mm3; the standoff rebuilt 0.06 taller reads 3.65); the delivered rows rest on the decomposition and clearance checks, whose controls FAIL",
+   "fix_direction": "tools maintainers: make common_volume fail closed when the boolean result has no solids while the operands' boxes overlap past contact, and add this case to the mutation manifest"
+  }
+ ],
+ "least_sure_answers": [
+  {
+   "item": "1. D-04d against E-05 (pins 0.339 / 0.328 per side; a 0.10 offset gives 0.23)",
+   "answer": "Confirmed: 0.3389 (H5) and 0.3278 (H6), margins 0.039 and 0.028; my H6-pin +0.10 z mutant reads 0.229 (FAIL) while E-05 would pass, so D-04d allows about 0.03 of position error. The pins still enter with up to about 0.33 of combined error; finding F4 (LOW), A-02 calipers needed."
+  },
+  {
+   "item": "2. The seat at x 82.438, an exact contact on a scanned flat solder face; solder-side screw heads not modelled",
+   "answer": "Four seat faces at x 82.4380, spread 0, equal to the board's lowest x 82.4380; tray less pins reaches exactly that plane (overlap 0), clearance 0 on all four seats. The board model carries the heatsink screw holes at (y 46.6, z -148.1) and (72.1, -148.2), 10.6 and 15.3 from the nearest standoff edge; their heads clear the wall only if under 6.44 tall (A-05 says under 6): open, not measurable here."
+  },
+  {
+   "item": "3. Two walls exactly at their limits: the 2.0 web above the tie slots (D-01b) and the 3.0 boss wall (J-05; 2.975 at Ø4.05)",
+   "answer": "Both re-measured at their limits: web 2.000 at (75.75, 92.0, -113.478) (margin 0, inside the 0.005 band) and boss wall 3.000 on all 72 rays per bore. Both PASS as built; neither has a build tolerance. FDM tends to print small vertical holes undersize, so a Ø4.05 bore is the less likely direction."
+  }
+ ],
+ "assumptions_relied_on": [
+  "A-01",
+  "A-02",
+  "A-03",
+  "A-06",
+  "A-07",
+  "A-08",
+  "A-09",
+  "A-11"
+ ]
+}
