@@ -127,16 +127,16 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-C03` | OD-C00 | PRINT | Pump cradle (sleeve + spring suspension) |  |  | 1 | DESIGN | PETG | printed | print | #1 | 🧊 |
 | `OD-C04` | OD-C00 | PRINT | Thermoblock mount (≥10 mm air gap to printed walls) |  |  | 1 | DESIGN | ASA / PC | printed | print | #2 | 🧊 |
 | `OD-C05` | OD-C00 | PRINT | Group head carrier (ties OD-G00 to frame) |  |  | 1 | DESIGN | ASA | printed (Creality K1C) | print | #3 | 🧊 |
-| `OD-C06` | OD-C00 | PRINT | Water tank dock / inlet seat |  |  | 1 | DESIGN | PETG | printed | print | #5 | ✎ |
+| `OD-C06` | OD-C00 | PRINT | Water tank dock / inlet seat (deferred: the tank stands on the table; tubes leave through OD-C11) |  |  | 1 | DESIGN | PETG | printed | print | #5 | ⏸ |
 | `OD-C07` | OD-C00 | PRINT | Valve & flowmeter mount (OPV reachable without disassembly) |  |  | 1 | DESIGN | PETG | printed | print | #6 | 🧊 |
-| `OD-C08` | OD-C00 | PRINT | Electronics bay tray |  |  | 1 | DESIGN | PETG | printed | print | #8 | ✎ |
+| `OD-C08` | OD-C00 | PRINT | Electronics bay tray (holds the OEM power PCB OD-E01 on edge) |  |  | 1 | DESIGN | PETG | printed (Creality K1C) | print | #8 | 🧊 |
 | `OD-C09` | OD-C00 | PRINT | Front panel with button bezel |  |  | 1 | DESIGN | ASA | printed | print | #8 | ✎ |
-| `OD-C10` | OD-C00 | PRINT | Top panel (removable — 4 screws) |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
-| `OD-C11` | OD-C00 | PRINT | Back panel (removable — 4 screws) |  |  | 1 | DESIGN | ASA | printed | print |  | ✎ |
+| `OD-C10` | OD-C00 | PRINT | Top panel (removable — 4 screws) |  |  | 1 | DESIGN | PETG (A-10; BOM said ASA) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
+| `OD-C11` | OD-C00 | PRINT | Back panel (removable — 4 screws; cord and two tube pass-throughs; vents) |  |  | 1 | DESIGN | PETG (A-10; BOM said ASA) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
 | `OD-C12` | OD-C00 | PRINT | Left side panel |  |  | 1 | DESIGN | ASA / PETG or 3 mm acrylic | printed | print |  | ✎ |
 | `OD-C13` | OD-C00 | PRINT | Right side panel |  |  | 1 | DESIGN | ASA / PETG or 3 mm acrylic | printed | print |  | ✎ |
 | `OD-C14` | OD-C00 | PRINT | Cable strain relief / grommet |  |  | 2 | DESIGN | TPU | printed | print |  | ✎ |
-| `OD-C15` | OD-C00 | PRINT | Foot (alternative to OD-C25/526) |  |  | 4 | DESIGN | TPU | printed | print |  | ✎ |
+| `OD-C15` | OD-C00 | PRINT | Foot (TPU, Ø18 × 10, captive M3 nut; alternative to OD-C25/C26) |  |  | 4 | DESIGN | TPU 95A (A-03) | printed (Creality K1C) | print |  | 🧊 |
 | `OD-C16` | OD-C00 | PRINT | Corner bracket for acrylic skins (optional) |  |  | 16 | DESIGN | ASA / PETG | printed | print |  | ✎ |
 | `OD-C21` | OD-C00 | OEM | Drip tray (or printed replacement) | 09 | 5313249971 | 1 | SCAN |  | FixPart / printed | 8–12 | #9 | ☐ |
 | `OD-C22` | OD-C21 | OEM | Float | 08 | 5313249981 | 1 | SCAN |  | FixPart | (with OD-C21) | #9 | ☐ |
@@ -149,16 +149,18 @@ DESIGN native design · VENDOR vendor STEP
 
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| `OD-F01` | OD-000 | STD | M3 heat-set insert (Ø4.0 bore × 6; 26 in the chassis) |  |  | ~40 | VENDOR | brass M3 | AliExpress | 10 (set) |  | ☐ |
-| `OD-F02` | OD-000 | STD | M3×8 screw |  |  | ~40 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
+| `OD-F01` | OD-000 | STD | M3 heat-set insert (Ø4.0 bore × 6; 38 in the chassis) |  |  | ~50 | VENDOR | brass M3 | AliExpress | 10 (set) |  | ☐ |
+| `OD-F02` | OD-000 | STD | M3×8 screw |  |  | ~50 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
 | `OD-F03` | OD-000 | STD | Acrylic sheet 3 mm (optional skins) |  |  | per design | — | PMMA | local laser / leftover stock | 25 |  | ☐ |
 | `OD-F04` | OD-000 | STD | Food-safe silicone tube 4×2 mm (routing reserve) |  |  | 1 m | ENVELOPE | silicone | AliExpress | 5 |  | ☐ |
 | `OD-F05` | OD-000 | STD | High-temp epoxy (steam port blank) |  |  | 1 | — | 125 °C / 15 bar | hardware store | 8 |  | ☐ |
 | `OD-F06` | OD-000 | STD | 6.3 mm insulated spade terminals + 105 °C wire (own looms) |  |  | 1 set | — |  | TME / AliExpress | 5 |  | ☐ |
 | `OD-F07` | OD-000 | STD | Metal spacer Ø7 × 10.10 mm (Ø4 bore; OD-C04 thermoblock stand-off) |  |  | 1 | — | steel / brass tube cut to length (+0.10/−0) | local shop / scrap | 1 | #2 | ☐ |
 | `OD-F08` | OD-000 | STD | Metal spacer Ø7 × 37.70 mm (Ø4 bore; OD-C04 thermoblock stand-off) |  |  | 1 | — | steel / brass tube cut to length (+0.10/−0) | local shop / scrap | 1 | #2 | ☐ |
-| `OD-F09` | OD-000 | STD | Cable tie 4.8 mm (OD-C03 pump strap) |  |  | 2 | VENDOR | PA66 UV-black | hardware store | 1 | #1 | ☐ |
-| `OD-F10` | OD-000 | STD | M3×12 screw (OD-C01 into the OD-C02 base rail; tip ends on the bore floor) |  |  | 4 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
+| `OD-F09` | OD-000 | STD | Cable tie 4.8 mm (OD-C03 pump strap; OD-C08 loom slots 2 × 4) |  |  | 4 | VENDOR | PA66 UV-black | hardware store | 1 | #1 | ☐ |
+| `OD-F10` | OD-000 | STD | M3×12 screw (OD-C01 into the OD-C02 base rail; tip ends on the bore floor; and the four OD-C15 feet from the plate top) |  |  | 8 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
+| `OD-F11` | OD-000 | STD | M3×6 screw (OD-E01 board holes H1/H2 into the OD-C08 standoffs; M3×8 only with a ≥ 0.5 washer) |  |  | 2 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) | #8 | ☐ |
+| `OD-F12` | OD-000 | STD | M3 hex nut (captive in the OD-C15 feet; nylon-insert ISO 10511 needs M3×16) |  |  | 4 | VENDOR | ISO 4032 A2 | AliExpress | (set) |  | ☐ |
 
 ## S — Steam system (phase 2)
 
