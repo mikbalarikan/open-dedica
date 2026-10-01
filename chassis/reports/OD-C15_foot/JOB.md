@@ -5,9 +5,9 @@ code: ODC15
 milestone: M1
 title: "Open Dedica OD-C15 printed TPU feet"
 lane: CAD
-state: J5_DELIVER
+state: J6_CLOSE
 blocked_on: null
-next_action: "the Usta reviews and merges the OD-C15 PR; then J6 close, physical outcome pending the first printed foot"
+next_action: "J6: PHYSICAL_OUTCOME after the first printed foot (A-06 nut grip, A-07 creep, A-03 TPU grade); lessons"
 data_class: PUBLIC
 size: S
 process: [FDM]
@@ -30,8 +30,9 @@ usta_gates:
   - {gate: concept_picked, outcome: C1, date: "2026-10-01"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-10-01"}
   - {gate: spec_ratified, outcome: "1.2", date: "2026-10-01"}
+  - {gate: question_answered, outcome: merge_approved, date: "2026-10-01"}
 deliverables: [STEP, STL, "3MF", scripts, REPORT]
-physical_outcome: n/a
+physical_outcome: pending
 client_source_delete_after: null
 ---
 
