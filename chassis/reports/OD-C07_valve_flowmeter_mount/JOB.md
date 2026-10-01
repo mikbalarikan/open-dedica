@@ -5,7 +5,7 @@ code: ODC07
 milestone: M1
 title: "Open Dedica OD-C07 printed valve and flowmeter mount"
 lane: CAD
-state: J5_DELIVER
+state: J6_CLOSE
 blocked_on: null
 next_action: "J6: PHYSICAL_OUTCOME.md after the first print; lessons; the OD-G01 thread carries the BOM, README row 5, progress board and OD-000 placement"
 data_class: PUBLIC
