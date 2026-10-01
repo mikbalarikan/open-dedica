@@ -7,7 +7,7 @@ title: "Open Dedica OD-C07 printed valve and flowmeter mount"
 lane: CAD
 state: J5_DELIVER
 blocked_on: null
-next_action: "the Usta merges PR #45 (after the OD-G01 branch); then J6 close, physical outcome pending the first print"
+next_action: "J6: PHYSICAL_OUTCOME.md after the first print; lessons; the OD-G01 thread carries the BOM, README row 5, progress board and OD-000 placement"
 data_class: PUBLIC
 size: M
 process: [FDM]
