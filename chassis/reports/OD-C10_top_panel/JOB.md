@@ -5,7 +5,7 @@ code: ODC10
 milestone: M1
 title: "Open Dedica OD-C10 printed top panel"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
 next_action: "J0: intake reads and hashes the inputs"
 data_class: PUBLIC

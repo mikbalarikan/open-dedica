@@ -37,7 +37,7 @@
     "brepcheck": true,
     "solids_without_volume": 0,
     "bop_faults": [],
-    "bop_seconds": 0.105,
+    "bop_seconds": 0.174,
     "curve_on_surface_mm": 0.0,
     "curve_on_surface_limit_mm": 0.00047242486204030377,
     "loose_shells": 0,
@@ -4815,7 +4815,7 @@
     "brepcheck": true,
     "solids_without_volume": 0,
     "bop_faults": [],
-    "bop_seconds": 0.13,
+    "bop_seconds": 0.173,
     "curve_on_surface_mm": 0.0,
     "curve_on_surface_limit_mm": 0.00047242486204030377,
     "loose_shells": 0,
@@ -4920,7 +4920,7 @@
     "brepcheck": true,
     "solids_without_volume": 0,
     "bop_faults": [],
-    "bop_seconds": 0.943,
+    "bop_seconds": 1.223,
     "curve_on_surface_mm": 1.7249545096970778e-07,
     "curve_on_surface_limit_mm": 0.0005358740527030583,
     "loose_shells": 0,
@@ -5382,7 +5382,7 @@
   }
  ],
  "facts": {
-  "started": "2026-10-01T13:09:25Z",
+  "started": "2026-10-01T13:21:41Z",
   "step_sha256": "0f85c4d7f7208b56aadf77888d17e9f0e9e8ab6e9937aaadb6e076b7239ab89f",
   "envelope": {
    "size_x": 240.0,
@@ -7097,6 +7097,6 @@
    "com_y": 242.77013839955654,
    "com_z": -105.21208599121985
   },
-  "finished": "2026-10-01T13:13:21Z"
+  "finished": "2026-10-01T13:26:20Z"
  }
 }

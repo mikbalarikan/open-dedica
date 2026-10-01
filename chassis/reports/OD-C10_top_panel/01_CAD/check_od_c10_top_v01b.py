@@ -738,9 +738,10 @@ def check(step_path: Path, asm_path: Path | None, stl_path: Path | None, record_
                     return (abs(pt["x"][0]) >= cx_ and abs(pt["x"][1]) >= cx_ and pt["x"][0] * pt["x"][1] > 0
                             and pt["z"][1] <= cz_)
 
-                def _in_seat(pt):
-                    return any(pt["x"][0] >= x - 6.05 and pt["x"][1] <= x + 6.05 and pt["z"][0] >= z - 6.05
-                               and pt["z"][1] <= z + 6.05 for x, z in SPEC["rear_cols"])
+                def _in_seat(pt):   # the column volumes (r 6.05) about the measured column axes
+                    return any(pt["x"][0] >= ax_[0] - 6.05 and pt["x"][1] <= ax_[0] + 6.05
+                               and pt["z"][0] >= ax_[1] - 6.05 and pt["z"][1] <= ax_[1] + 6.05
+                               for ax_ in (col_axis[(x, z)] for x, z in SPEC["rear_cols"]))
                 corner_p = [pt for pt in patches if _in_corner(pt)]
                 other_p = [pt for pt in patches if not _in_corner(pt) and not _in_seat(pt)]
                 facts["U-03.c11.corner_contact_area_mm2"] = {

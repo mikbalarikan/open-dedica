@@ -1,0 +1,841 @@
+{
+ "rows": [
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(73.0000, 0.0000, -230.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "flange to OD-C01 clearance (designed contact)"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "tray/OD-C01 interference"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "tray/OD-E01 interference"
+  },
+  {
+   "gate": "D-04c",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-02"
+   ],
+   "note": "tray/OD-E01 interference"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(82.4380, 80.0010, -102.0250) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "seat y80.0 z-100.0 on solder face"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(82.4380, 32.9900, -100.0100) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "seat y27.99 z-100.01 on solder face"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(82.4380, 81.9760, -158.7620) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "seat y81.98 z-157.52 on solder face"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": 0.0,
+   "at": "(82.4380, 33.9900, -157.5100) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "seat y30.99 z-157.51 on solder face"
+  },
+  {
+   "gate": "D-04d",
+   "measured": 0.3388768943743703,
+   "unit": "mm",
+   "required": ">= 0.3",
+   "margin": 0.038876894,
+   "at": "(82.4380, 82.8531, -157.7383) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02"
+   ],
+   "note": "pin y81.98 z-157.52 to OD-E01 (hole wall)"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.3388768943743703,
+   "unit": "mm",
+   "required": ">= 0.3",
+   "margin": 0.038876894,
+   "at": "(82.4380, 82.8531, -157.7383) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "pin y81.98 z-157.52"
+  },
+  {
+   "gate": "D-04d",
+   "measured": 0.3277639320224975,
+   "unit": "mm",
+   "required": ">= 0.3",
+   "margin": 0.027763932,
+   "at": "(82.4380, 30.1850, -157.1075) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02"
+   ],
+   "note": "pin y30.99 z-157.51 to OD-E01 (hole wall)"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.3277639320224975,
+   "unit": "mm",
+   "required": ">= 0.3",
+   "margin": 0.027763932,
+   "at": "(82.4380, 30.1850, -157.1075) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "pin y30.99 z-157.51"
+  },
+  {
+   "gate": "D-04c",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.5,
+   "at": "(81.4380, 32.9900, -100.0100) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02"
+   ],
+   "note": "tray less pins and top 1.0 of standoffs to OD-E01 (reads the 1.0 standoff step)"
+  },
+  {
+   "gate": "E-01",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.5,
+   "at": "(81.4380, 32.9900, -100.0100) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02"
+   ],
+   "note": "= D-04c; wall/flange/gussets alone 6.4380 at (76.0, 24.0, -94.838)"
+  },
+  {
+   "gate": "U-03",
+   "measured": 1.0,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": 0.5,
+   "at": "(81.4380, 32.9900, -100.0100) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "everything else of the board from the tray"
+  },
+  {
+   "gate": "U-03",
+   "measured": 2.0,
+   "unit": "mm",
+   "required": ">= 1.5",
+   "margin": 0.5,
+   "at": "(73.0000, 0.0000, -230.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "tray to OD-C02"
+  },
+  {
+   "gate": "U-03",
+   "measured": 15.438000000000002,
+   "unit": "mm",
+   "required": ">= 10.0",
+   "margin": 5.438,
+   "at": "(82.4380, 24.0000, -94.8380) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "OD-E01 to OD-C02"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "tray/OD-C02 interference"
+  },
+  {
+   "gate": "U-03",
+   "measured": 82.438,
+   "unit": "mm",
+   "required": ">= 70.0",
+   "margin": 12.438,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_x",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "board zone min_x"
+  },
+  {
+   "gate": "U-03",
+   "measured": 109.262,
+   "unit": "mm",
+   "required": "<= 117.0",
+   "margin": 7.738,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_x",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "board zone max_x"
+  },
+  {
+   "gate": "U-03",
+   "measured": -195.002,
+   "unit": "mm",
+   "required": ">= -240.0",
+   "margin": 44.998,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_z",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "board zone min_z"
+  },
+  {
+   "gate": "U-03",
+   "measured": -94.838,
+   "unit": "mm",
+   "required": "<= -30.0",
+   "margin": 64.838,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_max_z",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "board zone max_z"
+  },
+  {
+   "gate": "U-03",
+   "measured": 24.0,
+   "unit": "mm",
+   "required": ">= 10.0",
+   "margin": 14.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope_min_y",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "board zone min_y"
+  },
+  {
+   "gate": "E-05",
+   "measured": 0.003162277660169997,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.096837722,
+   "at": "(82.4380, 80.0010, -100.0030) mm",
+   "status": "PASS_ASSUMED",
+   "method": "axis_offset",
+   "assumes": [
+    "A-02",
+    "A-03"
+   ],
+   "note": "H1 board hole d4.044 vs tray axis"
+  },
+  {
+   "gate": "E-05",
+   "measured": 0.003162277660168874,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.096837722,
+   "at": "(82.4380, 27.9910, -100.0130) mm",
+   "status": "PASS_ASSUMED",
+   "method": "axis_offset",
+   "assumes": [
+    "A-02",
+    "A-03"
+   ],
+   "note": "H2 board hole d4.012 vs tray axis"
+  },
+  {
+   "gate": "E-05",
+   "measured": 0.004123105625623561,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.095876894,
+   "at": "(82.4380, 81.9760, -157.5190) mm",
+   "status": "PASS_ASSUMED",
+   "method": "axis_offset",
+   "assumes": [
+    "A-02",
+    "A-03"
+   ],
+   "note": "H5 board hole d2.486 vs tray axis"
+  },
+  {
+   "gate": "E-05",
+   "measured": 0.002236067977504111,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.097763932,
+   "at": "(82.4380, 30.9920, -157.5110) mm",
+   "status": "PASS_ASSUMED",
+   "method": "axis_offset",
+   "assumes": [
+    "A-02",
+    "A-03"
+   ],
+   "note": "H6 board hole d2.460 vs tray axis"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "dx 5.0..0 step 0.25",
+   "status": "PASS_ASSUMED",
+   "method": "path_interference_max",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "U-03 (b) path, 21 poses"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "driver x88 z-222 vs tray (clearance 0.000 at (89.7, 4.0, -222.0))"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "driver x88 z-222 vs board"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "driver x106 z-222 vs tray (clearance 0.000 at (107.7, 4.0, -222.0))"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "driver x106 z-222 vs board"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "driver x88 z-78 vs tray (clearance 0.000 at (89.7, 4.0, -78.0))"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "driver x88 z-78 vs board"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "driver x106 z-78 vs tray (clearance 0.000 at (107.7, 4.0, -78.0))"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "driver x106 z-78 vs board"
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "box x85..117 y4..92 z-195..-95 vs tray"
+  },
+  {
+   "gate": "E-11",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-11"
+   ],
+   "note": "open +X (x 85..117, full height over board span)"
+  },
+  {
+   "gate": "E-11",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-11"
+   ],
+   "note": "open front z -95..-60 above gussets y 25..120"
+  },
+  {
+   "gate": "E-11",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-11"
+   ],
+   "note": "open rear z -240..-195 above gussets y 25..120"
+  },
+  {
+   "gate": "E-11",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "common_volume",
+   "assumes": [
+    "A-11"
+   ],
+   "note": "open above y 86..120 at x>76"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "(88.0000, -3.0000, -222.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "plate_missing",
+   "assumes": [
+    "A-01"
+   ],
+   "note": "plate under hole x88 z-222: \u00d810x6 column, missing material"
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "(88.0000, -3.0000, -222.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "plate_missing",
+   "assumes": [
+    "A-01"
+   ],
+   "note": "plate under hole x88 z-222"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "(106.0000, -3.0000, -222.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "plate_missing",
+   "assumes": [
+    "A-01"
+   ],
+   "note": "plate under hole x106 z-222: \u00d810x6 column, missing material"
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "(106.0000, -3.0000, -222.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "plate_missing",
+   "assumes": [
+    "A-01"
+   ],
+   "note": "plate under hole x106 z-222"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "(88.0000, -3.0000, -78.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "plate_missing",
+   "assumes": [
+    "A-01"
+   ],
+   "note": "plate under hole x88 z-78: \u00d810x6 column, missing material"
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "(88.0000, -3.0000, -78.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "plate_missing",
+   "assumes": [
+    "A-01"
+   ],
+   "note": "plate under hole x88 z-78"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "(106.0000, -3.0000, -78.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "plate_missing",
+   "assumes": [
+    "A-01"
+   ],
+   "note": "plate under hole x106 z-78: \u00d810x6 column, missing material"
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "(106.0000, -3.0000, -78.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "plate_missing",
+   "assumes": [
+    "A-01"
+   ],
+   "note": "plate under hole x106 z-78"
+  }
+ ],
+ "extra": {
+  "path": [
+   [
+    5.0,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    4.75,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    4.5,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    4.25,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    4.0,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    3.75,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    3.5,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    3.25,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    3.0,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    2.75,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    2.5,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    2.25,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    2.0,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    1.75,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    1.5,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    1.25,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    1.0,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    0.75,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    0.5,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    0.25,
+    0.0,
+    "MEASURED"
+   ],
+   [
+    0.0,
+    0.0,
+    "MEASURED"
+   ]
+  ]
+ }
+}

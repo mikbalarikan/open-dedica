@@ -1,0 +1,290 @@
+{
+ "rows": [
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "tray less pins in the board footprint: max x 82.4380 vs board min x 82.4380",
+   "status": "PASS_ASSUMED",
+   "method": "overlap_depth",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "tray/OD-E01 interference by decomposition: tray less pins reaches x 82.4380 = board's solder face (contact, no overlap); pins clear by 0.3278 > 0"
+  },
+  {
+   "gate": "D-04c",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "tray less pins in the board footprint: max x 82.4380 vs board min x 82.4380",
+   "status": "PASS_ASSUMED",
+   "method": "overlap_depth",
+   "assumes": [
+    "A-02"
+   ],
+   "note": "tray/OD-E01 interference by decomposition (seat contact only)"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.25,
+   "unit": "mm",
+   "required": ">= 0.001",
+   "margin": 0.249,
+   "at": "dx 0.25 at (82.438, 32.99, -100.01)",
+   "status": "PASS_ASSUMED",
+   "method": "path_min_clearance",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "U-03 (b): board slid along -X from +5.0, 20 poses at 0.25 steps, clearance > 0 at every pose (no overlap), seat met at dx 0"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 23.29270972256143,
+   "unit": "mm",
+   "required": ">= 0.0",
+   "margin": 23.292709723,
+   "at": "(84.0000, 24.0000, -195.0020) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "board to driver cylinder x88 z-222 (clearance corroboration)"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 25.94117633063078,
+   "unit": "mm",
+   "required": ">= 0.0",
+   "margin": 25.941176331,
+   "at": "(97.4064, 56.9783, -193.3186) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "board to driver cylinder x106 z-222 (clearance corroboration)"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 13.306595390197343,
+   "unit": "mm",
+   "required": ">= 0.0",
+   "margin": 13.30659539,
+   "at": "(84.0000, 24.0000, -94.8380) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "board to driver cylinder x88 z-78 (clearance corroboration)"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 16.721250565542622,
+   "unit": "mm",
+   "required": ">= 0.0",
+   "margin": 16.721250566,
+   "at": "(95.7350, 50.0000, -96.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-03"
+   ],
+   "note": "board to driver cylinder x106 z-78 (clearance corroboration)"
+  }
+ ],
+ "extra": {
+  "path": [
+   [
+    5.0,
+    2.521394295848002,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    4.75,
+    2.2737478301550595,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    4.5,
+    2.026679351830191,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    4.25,
+    1.780429497378327,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    4.0,
+    1.5353921958688088,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    3.75,
+    1.2922574028168081,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    3.5,
+    1.0523446180481193,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    3.25,
+    0.8184920250893359,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    3.0,
+    0.597853824220304,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    2.75,
+    0.4122246901082492,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    2.5,
+    0.3277639320224975,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    2.25,
+    0.32776393202248477,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    2.0,
+    0.32776393202248477,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    1.75,
+    0.32776393202249193,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    1.5,
+    0.3277639320224848,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    1.25,
+    0.3277639320224914,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    1.0,
+    0.327763932022493,
+    [
+     84.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    0.75,
+    0.32776393202248627,
+    [
+     83.188,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    0.5,
+    0.3277639320224889,
+    [
+     82.938,
+     30.185016,
+     -157.107508
+    ]
+   ],
+   [
+    0.25,
+    0.25,
+    [
+     82.438,
+     32.99,
+     -100.01
+    ]
+   ]
+  ]
+ }
+}

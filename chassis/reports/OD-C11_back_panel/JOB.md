@@ -5,7 +5,7 @@ code: ODC11
 milestone: M1
 title: "Open Dedica OD-C11 printed back panel"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
 next_action: "J3: designer builds od_c11_back_v01 (WP-02)"
 data_class: PUBLIC

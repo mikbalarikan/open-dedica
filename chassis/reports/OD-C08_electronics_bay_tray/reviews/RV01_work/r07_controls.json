@@ -1,0 +1,32 @@
+[
+ {
+  "check": "common_volume on regions (U-03, D-04c interference)",
+  "mutant": "resize: H1 seat raised 0.06",
+  "got": "PASS",
+  "measured": 0.0
+ },
+ {
+  "check": "common_volume on regions along the path (U-03 b)",
+  "mutant": "resize: H1 seat raised 0.06 (meets the board in the last 0.06 of travel)",
+  "got": "PASS",
+  "measured": 0.0
+ },
+ {
+  "check": "common_volume whole tray vs OD-C01 (U-03 plate interference)",
+  "mutant": "relocate: tray sunk 0.05 into the plate",
+  "got": "FAIL",
+  "measured": 310.18415944622154
+ },
+ {
+  "check": "common_volume on the flange region vs OD-C01 (U-03 plate interference)",
+  "mutant": "relocate: tray sunk 0.05 into the plate",
+  "got": "FAIL",
+  "measured": 310.1841594462215
+ },
+ {
+  "check": "clearance (U-03 tray to OD-C02)",
+  "mutant": "relocate: tray moved 2.5 in -X",
+  "got": "FAIL",
+  "measured": 0.0
+ }
+]
