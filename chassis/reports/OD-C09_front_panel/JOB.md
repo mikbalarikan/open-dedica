@@ -5,15 +5,15 @@ code: ODC09
 milestone: M1
 title: "Open Dedica OD-C09 printed front panel with button bezel"
 lane: CAD
-state: J2_PLAN
+state: J3_BUILD
 blocked_on: null
-next_action: "J2: check the plan from WP-02 against spec 1.0, then send the J3 package"
+next_action: "J3: await WP-03's REPORT, then send the J4 review"
 data_class: PUBLIC
 size: M
 process: [FDM]
 gate_sections: [U, D, J, E]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.0"
+spec_version: "1.1"
 workspace: "${OGUZ_JOBS}/20261002-od-c09-front-panel"
 delivery: "${OGUZ_DELIVERY}/20261002-od-c09-front-panel"
 artifacts: "${OGUZ_ARTIFACTS}/20261002-od-c09-front-panel"
@@ -21,12 +21,13 @@ repo_commit: "10929db1408d89144bd4af9cad971440427933d0"
 active_target: od_c09_front_v01
 revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12, A-13, A-14]
-attempts: {build: 0, export: 0, tool: 0}
+attempts: {build: 1, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
 reviews: []
 usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-10-02"}
   - {gate: concept_picked, outcome: C1, date: "2026-10-02"}
+  - {gate: spec_ratified, outcome: "1.1", date: "2026-10-02"}
 deliverables: [STEP, STL, "3MF", scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null

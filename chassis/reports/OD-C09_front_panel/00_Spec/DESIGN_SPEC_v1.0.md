@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-C09 printed front panel with button bezel (20261002-od-c09-front-panel)
 
-Version 1.1 · RATIFIED by the Usta on 2026-10-02 (standing instruction "Usta'ya yalnız karar gereken yerde sor; açık soruları A-## satırı olarak ledger'a yaz ve ilerle" and the message of 2026-10-02 22:58 UTC; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size M · lane CAD
+Version 1.0 · RATIFIED by the Usta on 2026-10-02 (standing instruction "Usta'ya yalnız karar gereken yerde sor; açık soruları A-## satırı olarak ledger'a yaz ve ilerle" and the message of 2026-10-02 22:58 UTC; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size M · lane CAD
 
 ## §1 Intent
 
@@ -50,7 +50,7 @@ front), the plate's top face y = 0. The panel's outer (front) face is the plane
 z = +97.0, its inner face z = +94.0. **OD-E02 pose**: board x → −Y, board y → −X,
 board z → −Z, its origin at (−99.0, 140.0, 69.35): the button row vertical on the
 left pillar, 1 cup (B1) at the top, 2 cups (B2) at y 140, steam (B3) at the
-bottom; the middle cap's top at z ≈ 98.6, about 1.6 proud of the front face. **OD-G10
+bottom; the middle cap's top at z 98.5, 1.5 proud of the front face. **OD-G10
 poses**: the locked pose of `od_g01_assembly_C1_v03.step` placed with the
 housing; "rotated by φ" turns it about the housing's axis (machine x 0, z 32,
 along Y), φ > 0 turning the handle toward +X. Every artifact of this job uses
@@ -110,17 +110,13 @@ panel, the top panel's weight on its front edge.
     that, the plan says so and sizes it.
   - **Board bosses**, two, Ø11.0, axes along Z through the board's two screw
     holes as posed in §2 (expected near (−91.1, 153.2) and (−91.0, 127.3)),
-    from the wall's inner face z +94.0 back to z +85.485, the board's flat beside
-    each screw hole (measured in the plan; the hole itself sits in a Ø6.7 pocket
-    whose floor is at z +81.2 / +81.8, and the surface is flat on the hole's −X
-    side only), where the boss's end face seats (a designed contact). Each boss
-    carries a relief around the neighbouring cap collar (B1 for the upper boss,
-    B3 for the lower) at the collar's radius + 0.5, so the board clears it by
-    ≥ 0.5 (E-01); ≥ 3.0 of boss stays around the insert bore (J-05). Each has a
-    Ø4.0 × 6.0 blind bore from its end face for an M3 insert; the board is held
-    by two M3 × 18 ISO 4762 (DIN 912) socket head screws driven from its back
-    through its own two holes into the inserts (grip 13.22 from the pocket floor
-    at z +72.27 to the boss end, 4.78 into the insert, A-03).
+    from the wall's inner face z +94.0 back to the board's front surface around
+    each hole, where the boss's end face seats (a designed contact; the end
+    levels near z +81.2 and +81.8 are measured in the plan from the posed
+    OD-E02). Each has a Ø4.0 × 6.0 blind bore from its end face for an M3
+    insert; the board is held by two M3 screws driven from its back through its
+    own two holes into the inserts (screw length from the plan, A-03). If the
+    board's surface around a hole is not flat to Ø11, the plan says so.
   - **Steam knob place** (phase 2, A-13): a cylinder Ø32 along Z about
     (x +95.5, y 140.0) on the right pillar is kept free of ribs and bosses
     behind the wall; no hole in this revision.
@@ -151,7 +147,7 @@ panel, the top panel's weight on its front edge.
 | U-02 | Envelope within spec | 232.0 × 215.0 × 25.0 each in [spec − 0.1, spec + 0.1]; position against the datum reported apart (x ±116.0, y 0 … 215.0, z +72.0 … +97.0) | Hard | CAD | house | `envelope` | — |
 | U-03 | Assembly closes | (a) at the identity with every reference solid placed by §2: designed contacts `clearance = 0`: the wall's and flanges' undersides on OD-C01's top face; the two boss end faces on OD-E02; OD-C10's front skirt on the wall's top edge. Every pair `interference ≤ 0` mm³. The panel's footprint inside the plate's outline, ≥ 0.5 from its edge and corner arcs; the flanges ≥ 3.0 and the wall's foot ≥ 2.0 from the edge of every existing OD-C01 hole; the four flange holes ≥ 6.0 centre to centre from every existing OD-C01 hole; panel to OD-C05, to the OD-G01 housing and to OD-G04 ≥ 2.0; the OD-C15 keep-outs (Ø8 × 2.0 cylinders on the plate top at (±110, +90), y 0 … 2.0) `interference ≤ 0`. (b) the panel lowered along −Y from +40.0 above its seat in steps ≤ 2.0, OD-C10 and OD-E02 absent: `interference ≤ 0` with OD-C01, OD-C05 and the OD-G01 assembly at every step | Hard | CAD | house | `clearance`, `interference`, `envelope` | A-01, A-02, A-05, A-07 |
 | U-04 | Clean export | named body re-read unchanged, no stray shells, valid after re-import | Hard | CAD | house | `step_roundtrip` | — |
-| U-05 | Every spec feature present | counts per the plan: 1 wall with 1 brew opening, 5 return ribs, 2 floor flanges, 4 gussets, 4 Ø3.4 flange holes, 3 button holes, 2 bosses Ø11.0 (each with 1 collar relief) with 2 Ø4.0 blind bores | Hard | CAD | house | `feature_census`, `bore_census`, `locate_bore` | — |
+| U-05 | Every spec feature present | counts per the plan: 1 wall with 1 brew opening, 5 return ribs, 2 floor flanges, 4 gussets, 4 Ø3.4 flange holes, 3 button holes, 2 bosses Ø11.0 with 2 Ø4.0 blind bores | Hard | CAD | house | `feature_census`, `bore_census`, `locate_bore` | — |
 | U-06 | Soft: thin corners under a round | `min_wall` wide ≥ 2.0 | Soft | part | house | `min_wall` `detail["wide"]` | — |
 | U-07 | Export mesh | STL at tol 0.01, angular a ≤ 4·acos(1 − 0.01/R_max) rad; `stl_max_sagitta ≤ 0.01`; the 3MF carries the same mesh (written at J5) | Hard | CAD | house | `write_stl`, `stl_max_sagitta` | — |
 | U-08 | Threads cosmetic | applies to threaded parts; this target has none | Hard | CAD | house | — (N/A by this row) | — |
@@ -166,14 +162,14 @@ panel, the top panel's weight on its front edge.
 | D-06a | Minimum feature | ≥ 1.0 | Hard | part | floor | `min_wall` | — |
 | D-07 | Fit-critical bores | none: the insert bores are formed by the insert, the rest are clearance holes | Hard | part | floor | — (N/A by this row) | — |
 | J-05 | Wall around a threaded hole | ≥ 3.0 around each insert bore (the Ø11 boss: 3.5) | Hard | part | struct | `min_wall` | — |
-| E-01 | Component keep-out | panel to the posed OD-E02 ≥ 0.5 everywhere except the two boss end faces (the designed contacts of U-03): each cap in its hole, the board's housing behind the wall, the ribs | Hard | part | house | `clearance`: the panel without its bosses to the board; each boss's part ≥ 0.5 in front of its end face to the board (reads ≤ 0.5 by construction; the same at 2.0 is the reported side gap) | A-03 |
+| E-01 | Component keep-out | panel to the posed OD-E02 ≥ 0.5 everywhere except the two boss end faces (the designed contacts of U-03): each cap in its hole, the board's housing behind the wall, the ribs | Hard | part | house | `clearance` (the plan names how the contact faces are excluded) | A-03 |
 | E-05 | Mounting-hole alignment | each boss bore coaxial with its board screw hole as posed, offset ≤ 0.10 | Hard | CAD | house | `locate_bore` against the posed OD-E02's holes | A-03 |
 | E-06 | Boss support | each board boss stands on the wall and is tied into it; each flange tied to the wall by two gussets | Hard | part | struct | reviewer, from sections | — |
 | REQ-01 | Floor inserts | four Ø3.4 ± 0.1 through-holes along Y at (x ±85.0, z +77.0) and (x ±95.0, z +77.0), offset ≤ 0.10, 4.0 ± 0.1 long; the underside one plane at y 0.00 ± 0.10 | Hard | CAD | A-01 | `locate_bore`, `envelope` | A-01 |
 | REQ-02 | Wall plane and footprint | the outer face at z +97.00 ± 0.10 and the inner face at z +94.00 ± 0.10 over the wall's height (sections at y 100 and y 200); x ±116.0 ± 0.1; the top face at y 215.00 ± 0.10 | Hard | CAD | A-02 | `envelope`; reviewer from sections | A-02 |
 | REQ-03 | Brew opening | the opening's outline as §4 (tray slot x ±75.0, y 0 … 50.0; window x −57.5 … +75.0, y 0 … 188.0), each edge ± 0.1, from sections at z +95.5 | Hard | CAD | A-05, A-06 | reviewer from sections; `interference` of the two boxes (each shrunk 0.2 per side, z +93.8 … +97.2) with the panel = 0 | A-05, A-06 |
-| REQ-04 | Buttons | with OD-E02 posed by §2: B2's foremost point at z ≥ +97.5 (0.5 proud of the front face; measured +98.57 in the plan); B1's and B3's sloped tops (the OEM fascia's steps) at z ≥ +95.0, recessed ≤ 2.0 behind the front face in their Ø15 holes, pressed with a fingertip (measured +95.33 / +95.35); each button hole coaxial with its cap's axis at z +95.5, offset ≤ 0.25 | Hard | CAD | client (BOM: button bezel) | `envelope` of each cap region of the posed OD-E02; `locate_bore` | A-03, A-04 |
-| REQ-05 | Portafilter travel | OD-G10 (a) at its locked pose rotated by φ from −55° to +10° in steps ≤ 5°: `clearance` to the panel ≥ 2.0 and to the posed OD-E02 ≥ 2.0; (b) rotated by φ = −50°, lowered 15.0 along −Y and moved along +Z from its axis at z +32 to z +182 in steps ≤ 5.0: `interference ≤ 0` with the panel and with OD-E02 at every step. OD-G10 and OD-E02 are not sound solids (`brep_valid` 0): every `interference` with either, here and in U-03, is read as `clearance > 0` with `detail["inside"] == False` (OD-G01 A-28) | Hard | CAD | client (the portafilter goes in and out) | `clearance`, `interference` (OD-G10, OD-E02: `clearance` fallback) | A-05 |
+| REQ-04 | Buttons | with OD-E02 posed by §2: each cap's foremost point at z ≥ +97.5 (0.5 proud of the front face; B2 designed at +98.5); each button hole coaxial with its cap's axis at z +95.5, offset ≤ 0.25 | Hard | CAD | client (BOM: button bezel) | `envelope` of each cap region of the posed OD-E02; `locate_bore` | A-03, A-04 |
+| REQ-05 | Portafilter travel | OD-G10 (a) at its locked pose rotated by φ from −55° to +10° in steps ≤ 5°: `clearance` to the panel ≥ 2.0 and to the posed OD-E02 ≥ 2.0; (b) rotated by φ = −50°, lowered 15.0 along −Y and moved along +Z from its axis at z +32 to z +182 in steps ≤ 5.0: `interference ≤ 0` with the panel and with OD-E02 at every step | Hard | CAD | client (the portafilter goes in and out) | `clearance`, `interference` | A-05 |
 | REQ-06 | Driver access | each flange hole's axis clear of the panel from y 4.0 up to y 260.0 within r 3.0, and each OD-C15 screw axis at (±110, +90) clear of the panel from y 2.0 to y 260.0 within r 3.0 (a straight driver from above with the top panel off and the board out) | Hard | CAD | client (serviceability) | `interference` of six Ø6 cylinders with the panel = 0 | A-14 |
 | REQ-07 | Keep-outs | no panel material at z < +72.0 (`envelope` min_z); none in the tray slot's box x ±74.8, y 0 … 49.8, z −15 … +120 (the tray slides out along +Z); none in the steam knob's place (Ø32 along Z about (+95.5, 140.0), z +60 … +93.8) | Hard | CAD | A-06, A-13 | `envelope`; `interference` of the boxes with the panel = 0 | A-06, A-13 |
 | REQ-08 | Stiffness | **Soft.** The panel does not flex visibly under a button press or drum with the pump on, with the top panel on and the side panels absent; not a geometric gate: the review reports it INCONCLUSIVE with a risk rating, answered by the first print | Soft | part | client | — (bench) | A-12 |
@@ -188,8 +184,8 @@ OD-C02 and OD-C11; recorded here for the Usta to confirm with §5.
 |---|---|---|---|---|---|---|
 | A-01 | What the panel fastens to | four M3 × 8 screws from above through the floor flanges into four **new** M3 inserts in the OD-C01 plate at (±85, +77) and (±95, +77): an OD-C01 spec change handed over with OD-C08's and OD-C11's eight, or Ø4.0 holes drilled into a printed plate; the feet holes at (±110, +90) are 19.8 away | the plate has no holes there | this spec (the OD-C11 pattern, mirrored) | OD-C01's next revision | OPEN |
 | A-02 | Plate edge and corners | the delivered plate: front edge z +100, corners R 10 about (±110, +90) (at x ±116 the edge lies at z +98.0); the wall at z +94 … +97 stands 3 inside the front edge and 4 inside the side edges, leaving the strip for the side panels | the side panels need the strip differently | OD-C01 spec 1.2; OD-C11 A-02 mirrored | OD-C12/C13 designs | OPEN |
-| A-03 | OD-E02 geometry and fixing | the scan-rebuilt STEP is the board (scan only, no calipers: units and scale assumed; caps p95 ≈ 0.24); it is held by two M3 × 18 ISO 4762 screws from its back through its own Ø3.5 holes into inserts in two bosses whose end faces seat on its flat beside each hole (z +85.485, flat on the −X side only, so each boss bears on part of its face); the OEM held it with its own screws, which may be self-tapping | the board's holes or front surface are not where the scan puts them; the screws do not fit the holes | `OD-E02_REPORT.md` | calipers on the board; the first fit | OPEN |
-| A-04 | Button layout | the three buttons in a vertical column on the left pillar, 1 cup at the top, steam at the bottom; B2 ≈ 1.6 proud of the front face, B1 and B3 (sloped tops, the OEM fascia's steps) ≈ 1.7 recessed in their Ø15 holes | the user wants another order, the buttons on the right, or the side buttons flush (a later revision moves the board forward with a thinner wall at the bezel) | this spec (design choice, §4 C2, C3) | the Usta | OPEN |
+| A-03 | OD-E02 geometry and fixing | the scan-rebuilt STEP is the board (scan only, no calipers: units and scale assumed; caps p95 ≈ 0.24); it is held by two M3 screws from its back through its own Ø3.5 holes into inserts in two bosses whose end faces seat on its front surface; the OEM held it with its own screws, which may be self-tapping | the board's holes or front surface are not where the scan puts them; the screws do not fit the holes | `OD-E02_REPORT.md` | calipers on the board; the first fit | OPEN |
+| A-04 | Button layout | the three buttons in a vertical column on the left pillar, 1 cup at the top, steam at the bottom, the middle cap 1.5 proud of the front face; the caps of B1 and B3 are tilted ≈ 20° in the scan and stand proud by more | the user wants another order or the buttons on the right | this spec (design choice, §4 C2, C3) | the Usta | OPEN |
 | A-05 | Portafilter pose and travel | OD-G10 locks as `od_g01_assembly_C1_v03.step` places it, the handle turned ≈ 28° toward +X from +Z; it is carried in turned φ = −50° (the bayonet's gaps are 66° wide and the ears lie under the lugs when locked), lowered 15 below its locked height; gasket wear turns the lock up to +10° further | the handle hits the window's edge on the way in or when the gasket is worn | `od_g01_assembly_C1_v03.step`; OD-G01 spec 1.3 §4 (lugs) | the first locked portafilter | OPEN |
 | A-06 | Drip tray | the tray OD-C21 stands within x ±75, z −15 … +85 on the plate, its cup rest top ≤ 36.9 (OD-C01 A-06), and slides out to the front through the tray slot (x ±75, y 0 … 50) | the tray is wider or taller than the slot | OD-C01 spec 1.2 A-06 | the tray scan (issue #9) | OPEN |
 | A-07 | Top panel joint | OD-C10's front skirt (z +97 … +100, bottom y 215) stands on the wall's top edge along the line z +97, as its rear skirt on OD-C11 (accepted by the Usta for OD-C10); no screws at the front (OD-C10 has none there) | the lid rattles at the front | OD-C10 spec 1.2 | the first assembly | OPEN |
@@ -207,13 +203,11 @@ OD-C02 and OD-C11; recorded here for the Usta to confirm with §5.
 |---|---|---|---|
 | 2026-10-02 | OD-G01 accepted with its documented deviation; side panels printed; everything printed in PLA for now | the Usta (message 22:58 UTC) | REQUEST.md |
 | 2026-10-02 | job opened at PUBLIC; C1 proposed | Oğuz | job_start |
-| 2026-10-02 | spec 1.1 on the designer's J2 questions: Q1 → REQ-04 keeps B2 ≥ 0.5 proud and lets B1/B3 sit ≤ 2.0 recessed in their holes (moving the board forward would put it into the wall, the least wall-to-board gap being 1.14); Q2 → both boss ends at the measured flat z +85.485; Q3 → M3 × 18 ISO 4762 (4.78 into the insert; ISO 7380 M3 × 16 gave only 2.78); Q4 → Ø11 bosses with a collar relief at collar radius + 0.5; Q5, Q7 → the plan's derivations accepted; Q6 → the `clearance` fallback for OD-G10 and OD-E02. Ratified on the standing instruction | Oğuz (standing instruction) | usta_gate spec_ratified 1.1 |
 | 2026-10-02 | spec 1.0 ratified and C1 chosen on the Usta's standing instruction and the message of 2026-10-02 22:58 UTC; INTAKE_v01 §4 questions answered by §4 and §6 as design choices, all A-## rows; the Usta confirms or amends §5 and §6 at the next opportunity | the Usta (standing instruction), recorded by Oğuz | usta_gate spec_ratified, concept_picked |
 
 ## §8 Change log
 
 | Version | Date | Change |
 |---|---|---|
-| 1.1 | 2026-10-02 | after the J2 plan (DESIGN_PLAN §7): REQ-04 per cap; boss ends at z +85.485 with collar reliefs; M3 × 18 ISO 4762 board screws; E-01 method; `clearance` fallback for OD-G10 and OD-E02 in REQ-05; spec 1.0 kept as `DESIGN_SPEC_v1.0.md` |
 | 1.0 | 2026-10-02 | INTAKE_v01 read; ratified |
 | 0.1 | 2026-10-02 | first draft from the OD-C01, OD-C05, OD-C10, OD-C11 specs, the OD-G01 v03 assembly and the OD-E02 report |

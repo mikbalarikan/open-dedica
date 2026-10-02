@@ -5,28 +5,29 @@ code: ODT01
 milestone: M1
 title: "Open Dedica OD-T01 group head bench pressure-test rig"
 lane: CAD
-state: J2_PLAN
+state: J3_BUILD
 blocked_on: null
-next_action: "J2: check the plan from WP-02 against spec 1.0, then send the J3 package"
+next_action: "J3: await WP-03's REPORT, then send the J4 review"
 data_class: PUBLIC
 size: S
 process: [FDM]
 gate_sections: [U, D, J]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.0"
+spec_version: "1.1"
 workspace: "${OGUZ_JOBS}/20261002-od-t01-pressure-test-rig"
 delivery: "${OGUZ_DELIVERY}/20261002-od-t01-pressure-test-rig"
 artifacts: "${OGUZ_ARTIFACTS}/20261002-od-t01-pressure-test-rig"
 repo_commit: "10929db1408d89144bd4af9cad971440427933d0"
 active_target: od_t01_rig_v01
 revision: A
-open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11]
-attempts: {build: 0, export: 0, tool: 0}
+open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12]
+attempts: {build: 1, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
 reviews: []
 usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-10-02"}
   - {gate: concept_picked, outcome: C1, date: "2026-10-02"}
+  - {gate: spec_ratified, outcome: "1.1", date: "2026-10-02"}
 deliverables: [STEP, STL, "3MF", scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null

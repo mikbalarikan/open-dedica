@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-T01 group head bench pressure-test rig (20261002-od-t01-pressure-test-rig)
 
-Version 1.1 · RATIFIED by the Usta on 2026-10-02 (standing instruction "Usta'ya yalnız karar gereken yerde sor; açık soruları A-## satırı olarak ledger'a yaz ve ilerle" and the message of 2026-10-02 22:58 UTC; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
+Version 1.0 · RATIFIED by the Usta on 2026-10-02 (standing instruction "Usta'ya yalnız karar gereken yerde sor; açık soruları A-## satırı olarak ledger'a yaz ve ilerle" and the message of 2026-10-02 22:58 UTC; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
 
 ## §1 Intent
 
@@ -48,7 +48,7 @@ plate's underside) and its mouth's front face at y 106.76; this is OD-C05's pose
 in the machine with the axis moved to (x 0, z 0) and the plate underside to
 y 135. OD-G04 and OD-G10 go with the housing. **OD-G10 poses**: "rotated by φ"
 turns the locked portafilter about the housing's axis, φ > 0 turning the handle
-toward +X; locked, its handle points ≈ 34° from +Z toward +X (measured, plan D1). Every artifact of
+toward +X; locked, its handle points ≈ 28° from +Z toward +X. Every artifact of
 this job uses these frames.
 
 ## §3 Process, material, environment
@@ -71,21 +71,18 @@ plate through four screws.
     y 135.0 is the plane of the housing's rear face (a designed contact). Through
     it along Y: four Ø3.4 holes at (x ±44.0, z ±44.0), coaxial with the
     housing's insert bores, each with a Ø6.5 counterbore from the top face
-    y 150.0 down to y 138.0 (12.0 deep) with a 45.1° teardrop roof toward +Z
-    (apex 4.61 from its axis), so an M3 × 8 driven from above bears
+    y 150.0 down to y 138.0 (12.0 deep) with a 45° teardrop roof toward +Z
+    (apex 4.60 from its axis), so an M3 × 8 driven from above bears
     on 3.0 of plate and reaches 5.0 into the 5.7 insert, as on OD-C05; a **hub
-    window** R 30.0 about the axis (OD-C05's), with a 45.1° teardrop roof toward
-    +Z (apex on the axis at z +42.51) so it prints without a bridge.
+    window** R 30.0 about the axis (OD-C05's), with a 45° teardrop roof toward
+    +Z (apex on the axis at z +42.43) so it prints without a bridge.
   - **Two walls** 15.0 thick, x ±(75.0 … 90.0), from the base's top y 10.0 up to
-    the plate y 135.0, over z −60 … +40 only: the walls stop 20 short of the
-    plate's and the base's front edge (z +60), so the handle, which swings past
-    x ±75 near the front, keeps its distance (1.1, plan Q1). The portafilter's
-    body (r ≤ 36) and ears pass between them; its handle leaves the frame at the
-    open front.
+    the plate y 135.0, the full depth z −60 … +60. The portafilter's body (r ≤ 36)
+    and ears pass between them; its handle leaves the frame at the open front.
   - **Base** 10.0 thick, y 0 … 10.0, x −120.0 … +120.0, the full depth: the
     bench foot and the floor under the portafilter (a catch tray or a cup stands
     on it). Four **bench holes** Ø4.5 through it along Y at (x ±105.0,
-    z ±40.0), each with a 45.1° teardrop roof toward +Z (apex 3.19 from its axis), outside the walls, for M4 or 4 mm wood screws into the bench (or
+    z ±40.0), each with a 45° teardrop roof toward +Z (apex 3.18 from its axis), outside the walls, for M4 or 4 mm wood screws into the bench (or
     a clamp on each wing).
   - **Corner fillets**: the four inside corners of the frame (plate to wall,
     wall to base) carry a 45° chamfer 10.0 × 10.0 along Z, as part of the
@@ -98,7 +95,7 @@ plate through four screws.
     build direction +Z: the profile is a vertical prism; the four Ø3.4 holes, the
     Ø6.5 counterbores, the four Ø4.5 bench holes and the hub window run along
     Y, horizontal in the print: the hub window, the counterbores and the bench
-    holes print their roofs as 45.1° teardrops; the crowns of the four Ø3.4 holes
+    holes print their roofs as 45° teardrops; the crowns of the four Ø3.4 holes
     are the named exception. The counterbore floors
     are vertical faces in the print. Envelope 240.0 × 150.0 × 120.0 (x ±120,
     y 0 … 150, z ±60); on the bed 240 × 150, 120 tall.
@@ -123,14 +120,14 @@ plate through four screws.
 | U-02 | Envelope within spec | 240.0 × 150.0 × 120.0 each in [spec − 0.1, spec + 0.1]; position against the datum reported apart (x ±120, y 0 … 150, z ±60) | Hard | CAD | house | `envelope` | — |
 | U-03 | Assembly closes | (a) at the housing pose of §2: designed contact `clearance = 0` between the plate's underside and the housing's rear face; every pair `interference ≤ 0` mm³; rig to the housing elsewhere, to OD-G04 and to OD-G10 (locked) ≥ 2.0. (b) the housing set (housing + OD-G04 + OD-G10) moved along −Y from its seat by 0 … 30 in steps ≤ 2.0 (offered up from below): `interference ≤ 0` with the rig at every step | Hard | CAD | house | `clearance`, `interference` | A-01 |
 | U-04 | Clean export | named body re-read unchanged, no stray shells, valid after re-import | Hard | CAD | house | `step_roundtrip` | — |
-| U-05 | Every spec feature present | counts per the plan: 1 plate, 2 walls (z −60 … +40), 1 base, 4 corner chamfers, 4 Ø3.4 holes with 4 Ø6.5 counterbores (teardrop), 1 hub window (R 30 + teardrop), 4 Ø4.5 bench holes (teardrop) | Hard | CAD | house | `feature_census`, `bore_census`, `locate_bore` | — |
+| U-05 | Every spec feature present | counts per the plan: 1 plate, 2 walls, 1 base, 4 corner chamfers, 4 Ø3.4 holes with 4 Ø6.5 counterbores (teardrop), 1 hub window (R 30 + teardrop), 4 Ø4.5 bench holes (teardrop) | Hard | CAD | house | `feature_census`, `bore_census`, `locate_bore` | — |
 | U-06 | Soft: thin corners under a round | `min_wall` wide ≥ 2.0 | Soft | part | house | `min_wall` `detail["wide"]` | — |
 | U-07 | Export mesh | STL at tol 0.01, angular a ≤ 4·acos(1 − 0.01/R_max) rad; `stl_max_sagitta ≤ 0.01`; the 3MF carries the same mesh (written at J5) | Hard | CAD | house | `write_stl`, `stl_max_sagitta` | — |
 | U-08 | Threads cosmetic | applies to threaded parts; this target has none | Hard | CAD | house | — (N/A by this row) | — |
 | D-01a | Wall, process floor | `min_wall ≥ 0.8` at a 0.4 nozzle | Hard | part | floor | `min_wall` | — |
 | D-01b | Wall, structural | `min_wall ≥ 2.0` (the webs between the counterbores and the hub window, and around the bench holes, included) | Hard | part | struct | `min_wall` | A-08 |
 | D-02 | Bed fit | each envelope size ≤ the Kobra Max 3 build volume, lying on the rear face: 240.0 × 150.0 on the bed, 120.0 tall | Hard | part | machine | `envelope` | A-09 |
-| D-03a | Unsupported overhang | every downward face ≥ 45° from horizontal in the print orientation (rear face on the bed, build direction +Z): the teardrop roofs of the hub window, the counterbores and the bench holes at 45.1°; the crowns of the four Ø3.4 holes are the named exception below, excluded by position, their least angle reported | Hard | part | floor | `overhang_census(build_dir=(0,0,1))` | A-10 |
+| D-03a | Unsupported overhang | every downward face ≥ 45° from horizontal in the print orientation (rear face on the bed, build direction +Z): the teardrop roofs of the hub window, the counterbores and the bench holes at 45° (a census at exactly 45° may read INCONCLUSIVE: the plan may set the roofs at 46°); the crowns of the four Ø3.4 holes are the named exception below, excluded by position, their least angle reported | Hard | part | floor | `overhang_census(build_dir=(0,0,1))` | A-10 |
 | D-03b | Unsupported bridge | span ≤ 5: the four Ø3.4 crowns bridge ≤ 3.4; nothing else bridges | Hard | part | floor | reviewer, from sections | A-10 |
 | D-04a | Clearance hole for a fastener | the four housing screw holes Ø ≥ 3.25 (designed 3.4); the four bench holes Ø ≥ 4.25 (designed 4.5) | Hard | part | house | `bore_census`, `locate_bore` | — |
 | D-06a | Minimum feature | ≥ 1.0 | Hard | part | floor | `min_wall` | — |
@@ -138,8 +135,8 @@ plate through four screws.
 | J-05 | Wall around a threaded hole | applies to threaded holes in this part; it has none (the inserts are in OD-G01) | Hard | part | struct | — (N/A by this row) | — |
 | REQ-01 | Housing screws | four Ø3.4 ± 0.1 holes along Y at (x ±44.0, z ±44.0), offset ≤ 0.10 from the housing's insert bores as posed, through the plate; Ø6.5 ± 0.1 counterbores from y 150.0 to y 138.00 ± 0.10, leaving 3.0 ± 0.1 of plate under each head | Hard | CAD | client (OD-C05's interface) | `locate_bore`, `bore_census` | A-01 |
 | REQ-02 | Seat | the plate's underside one plane at y 135.00 ± 0.10 over the housing's square (x ±50, z ±50), the housing's rear face on it | Hard | CAD | client | `envelope`; `clearance` = 0 (U-03) | A-01 |
-| REQ-03 | Hub window | R 30.0 ± 0.1 about the axis through the plate, its teardrop roof at 45.1° ± 1° toward +Z with the apex at z +42.51 ± 0.1; OD-G04's hub tube ≥ 2.0 from the rig; the two pair-B screw axes (r 19.03) ≥ 10.97 from the window's face, so a head up to Ø17.9 clears by ≥ 2.0 (A-12) | Hard | CAD | client (OD-C05 A-06) | `bore_census`; reviewer from sections; `clearance` | A-05 |
-| REQ-04 | Portafilter travel | OD-G10 (a) at its locked pose rotated by φ from −60° to +15° in steps ≤ 5°: `clearance` to the rig ≥ 5.0; (b) rotated by φ = −50°, lowered 15.0 along −Y and moved along +Z from z 0 to z +200 in steps ≤ 5.0: `interference ≤ 0` with the rig at every step. OD-G10 is not a sound solid (`brep_valid` 0, as OD-G01 A-28): every `interference` with it here and in U-03 is read as `clearance > 0` with `detail["inside"] == False` | Hard | CAD | client (the portafilter goes in and out) | `clearance`, `interference` (OD-G10: `clearance` fallback) | A-07 |
+| REQ-03 | Hub window | R 30.0 ± 0.1 about the axis through the plate, its teardrop roof at 45° ± 1° toward +Z with the apex at z +42.43 ± 0.1; OD-G04's hub tube and the two pair-B screw heads ≥ 2.0 from the rig | Hard | CAD | client (OD-C05 A-06) | `bore_census`; reviewer from sections; `clearance` | A-05 |
+| REQ-04 | Portafilter travel | OD-G10 (a) at its locked pose rotated by φ from −60° to +15° in steps ≤ 5°: `clearance` to the rig ≥ 5.0; (b) rotated by φ = −50°, lowered 15.0 along −Y and moved along +Z from z 0 to z +200 in steps ≤ 5.0: `interference ≤ 0` with the rig at every step | Hard | CAD | client (the portafilter goes in and out) | `clearance`, `interference` | A-07 |
 | REQ-05 | Headroom | the locked OD-G10's lowest point ≥ 50.0 above the base's top face (y 10) | Hard | CAD | client (catch the water, see a leak) | `envelope` of the placed OD-G10 | A-07 |
 | REQ-06 | Bench fixing | four Ø4.5 ± 0.1 holes along Y through the base at (x ±105.0, z ±40.0), offset ≤ 0.10, each axis clear of the rig from y 10 to y 300 within r 4.0 (a driver from above) | Hard | CAD | client | `locate_bore`; `interference` of four Ø8 cylinders with the rig = 0 | A-11 |
 | REQ-07 | Screw access | each housing screw's axis clear of the rig above the plate (y 150 … 300) within r 3.0 | Hard | CAD | client | `interference` of four Ø6 cylinders with the rig = 0 | — |
@@ -164,7 +161,6 @@ the Usta to confirm with §5.
 | A-08 | Material | PLA, 1240 kg/m³ (the Usta, 2026-10-02); cold water only, so PLA's heat limit does not apply | the rig creeps under a long hold | the Usta's message | the first test | OPEN |
 | A-09 | Kobra Max 3 build volume | 420 × 420 × 500 (Anycubic specification, not in the machine file), as OD-C11 A-09; the rig is 240 × 150 on the bed, 120 tall (too big for the K1C's 220) | does not fit | OD-C11 A-09 | the Usta reads the printer | OPEN |
 | A-10 | Print orientation | lying on its rear face (z −60), build direction +Z, no supports; the layers lie in XY planes, along the plate's bending stress | the long thin profile warps; a brim is needed | this spec | first print | OPEN |
-| A-12 | Pair-B screw heads | the OEM screws through OD-G01's pair-B holes have heads ≤ Ø17.9 (no size in any input; an M3 or M3.5 head is ≈ Ø6 … 7) | a bigger head or a tool needs the window larger | this spec (plan Q2) | the screws in hand | OPEN |
 | A-11 | Bench fixing | four M4 or 4 mm wood screws through the base's wings into the bench, or two clamps on the wings; the locking torque (≈ 7.5 N·m) and the test load stay inside the rig | the bench cannot take screws: clamps only | this spec | the Usta's bench | OPEN |
 
 ## §7 Decisions
@@ -173,13 +169,11 @@ the Usta to confirm with §5.
 |---|---|---|---|
 | 2026-10-02 | OD-G01 accepted with its documented deviation (REQ-12 left to this bench test); everything printed in PLA for now | the Usta (message 22:58 UTC) | REQUEST.md |
 | 2026-10-02 | job opened at PUBLIC; C1 proposed | Oğuz | job_start |
-| 2026-10-02 | spec 1.1 on the designer's J2 questions: Q1 → the walls stop at z +40 (a relief of the front 20, option (b) in its simplest form; the plate and base keep z ±60 for the seat and the screws); Q2 → the axis-distance check, head size ledgered as A-12; Q3 → every teardrop at 45.1°, apexes as §4; Q4 → the locked handle at ≈ 34° in §2; Q5 → the `clearance` fallback for OD-G10 accepted (OD-G01 A-28). Ratified on the standing instruction | Oğuz (standing instruction) | usta_gate spec_ratified 1.1 |
 | 2026-10-02 | spec 1.0 ratified and C1 chosen on the Usta's standing instruction and the message of 2026-10-02 22:58 UTC; INTAKE_v01 §4 questions answered by §4 and §6 as design choices, all A-## rows; the Usta confirms or amends §5 and §6 at the next opportunity | the Usta (standing instruction), recorded by Oğuz | usta_gate spec_ratified, concept_picked |
 
 ## §8 Change log
 
 | Version | Date | Change |
 |---|---|---|
-| 1.1 | 2026-10-02 | after the J2 plan (DESIGN_PLAN §7): walls z −60 … +40 (REQ-04a was 0.0 at φ +15° on 1.0); teardrops 45.1°; A-12; OD-G10 `clearance` fallback in REQ-04; handle ≈ 34°; spec 1.0 kept as `DESIGN_SPEC_v1.0.md` |
 | 1.0 | 2026-10-02 | INTAKE_v01 read; ratified |
 | 0.1 | 2026-10-02 | first draft from the OD-G01 v03 records, the OD-C05 spec and INTAKE_v01 |
