@@ -29,7 +29,7 @@ revisited when the scan lands.
 
 | # | Part | Designed against | Blocked by |
 |---|---|---|---|
-| 1 | `OD-G01` group head housing | OD-G09, OD-G04, OD-G10 | — (in progress: `reports/OD-G01_group_head_housing/`) |
+| 1 | `OD-G01` group head housing | OD-G09, OD-G04, OD-G10 | modeled, RV01 REVISE on REQ-12 alone (brew-load strength, answered only by the OD-T01 bench test), accepted by the Usta as a documented deviation (2026-10-02); every geometric row passes |
 | 2 | `OD-C05` group head carrier | OD-G01's rear flange, OD-H11 outlet side | modeled, RV02 approved on assumptions (ASA, K1C); open: drain for the foot trough, counterbore floors to sign, a ≥ 210 mm driver |
 | 3 | `OD-C03` pump cradle | OD-H01; sleeve OD-H02 and spring OD-H03 | modeled, approved on assumptions (RV02); calipers: H02 sleeve OD, side-wall gap, tie path |
 | 4 | `OD-C04` thermoblock mount | OD-H11 with its NTC/TCO brackets (OD-H17, H19) | modeled, approved on assumptions (RV01); calipers: 10.10 mm air gap, spacer lengths, bracket holes |
@@ -40,10 +40,16 @@ revisited when the scan lands.
 | 9 | `OD-C08` electronics bay tray | OD-E01, OD-E02 (path 1) or OD-E51…E58 (path 2) | modeled, RV01 approved on assumptions (PETG, K1C); path 1, the OEM PCB OD-E01 on edge; OD-E02 (front buttons) belongs to OD-C09 |
 | 10 | `OD-C09` front panel with button bezel | OD-G01 mouth, OD-E02 buttons, OD-S03 knob (phase 2) | — |
 | 11 | `OD-C10`, `OD-C11` top and back panels | OD-C01, OD-C02 | modeled, both RV01 approved on assumptions (PETG, Kobra Max 3); OD-C11 took three builds (spec faults in 1.0 and 1.1, recorded) |
-| 12 | `OD-C12`, `OD-C13` side panels; `OD-C16` corner brackets | OD-C01 | acrylic option is the Usta's call |
+| 12 | `OD-C12`, `OD-C13` side panels; `OD-C16` corner brackets | OD-C01 | printed, not acrylic (the Usta, 2026-10-02) |
 | 13 | `OD-C14` cable grommets, `OD-C15` feet (TPU) | OD-C01, OD-E06 cord | `OD-C15` modeled, RV01 approved on assumptions (TPU 95A, K1C): Ø18 × 10 puck, M3×12 from the top into a captive M3 nut; `OD-C14` open |
 | 14 | `OD-T01` group head pressure-test rig | OD-G01, OD-G10 | — |
 | 15 | `OD-C00` … `OD-000` assemblies | everything above plus the `step/` library | all parts |
+
+**Material for now:** the Usta set PLA for every printed part (2026-10-02); the BOM
+keeps each part's service material next to it. PLA softens near 60 °C, so PLA
+prints of `OD-G01`, `OD-C04` and `OD-C05` (next to the thermoblock and the group
+head) are dry fit checks only: never run hot water or pressure through them, and
+run the OD-T01 bench test on an ASA housing.
 
 Machine profiles: Creality K1C (enclosed: ASA, PC) and Anycubic Kobra Max 3 (large
 panels: PETG); build volumes to be read into `oguz-atolye/atolye/machines/`.

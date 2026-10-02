@@ -61,7 +61,7 @@ DESIGN native design · VENDOR vendor STEP
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `OD-G00` | OD-000 | ASM | **Group head** |  |  | 1 | DESIGN |  |  |  | #3 | ☐ |
-| `OD-G01` | OD-G00 | PRINT | Group head housing (open-source replacement for the molded OEM housing) |  |  | 1 | DESIGN | ABS/ASA | printed — thesis Appendix 2 as starting point | print | #3 | ☐ |
+| `OD-G01` | OD-G00 | PRINT | Group head housing (open-source replacement for the molded OEM housing; strength untested until OD-T01) |  |  | 1 | DESIGN | PLA for now (fit-check prints only — hot zone; service ASA) | printed (Creality K1C) | print | #3 | 🧊 |
 | `OD-G02` | OD-G00 | OEM | Brewing gasket | 46 | 537177 | 1 (+1 spare) | CALIPER | silicone | 4delonghi | 3 | #3 | ☐ |
 | `OD-G03` | OD-G00 | OEM | Closure gasket | 47 | 5313221481 | 1 (+1 spare) | CALIPER |  | FixPart | 3 | #3 | ☐ |
 | `OD-G04` | OD-G00 | OEM | Brewing gasket support | 48 | AS00005377 | 1 | SCAN |  | 4delonghi | 3 | #3 | 🧊 |
@@ -122,22 +122,22 @@ DESIGN native design · VENDOR vendor STEP
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `OD-C00` | OD-000 | ASM | **Chassis & body** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
-| `OD-C01` | OD-C00 | PRINT | Base frame / floor plate |  |  | 1 | DESIGN | PETG (spec) or ASA — Usta to confirm (A-10) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
-| `OD-C02` | OD-C00 | PRINT | Wet/electric bulkhead with drainage path |  |  | 1 | DESIGN | ASA | printed (Creality K1C) | print |  | 🧊 |
-| `OD-C03` | OD-C00 | PRINT | Pump cradle (sleeve + spring suspension) |  |  | 1 | DESIGN | PETG | printed | print | #1 | 🧊 |
-| `OD-C04` | OD-C00 | PRINT | Thermoblock mount (≥10 mm air gap to printed walls) |  |  | 1 | DESIGN | ASA / PC | printed | print | #2 | 🧊 |
-| `OD-C05` | OD-C00 | PRINT | Group head carrier (ties OD-G00 to frame) |  |  | 1 | DESIGN | ASA | printed (Creality K1C) | print | #3 | 🧊 |
-| `OD-C06` | OD-C00 | PRINT | Water tank dock / inlet seat (deferred: the tank stands on the table; tubes leave through OD-C11) |  |  | 1 | DESIGN | PETG | printed | print | #5 | ⏸ |
-| `OD-C07` | OD-C00 | PRINT | Valve & flowmeter mount (OPV reachable without disassembly) |  |  | 1 | DESIGN | PETG | printed | print | #6 | 🧊 |
-| `OD-C08` | OD-C00 | PRINT | Electronics bay tray (holds the OEM power PCB OD-E01 on edge) |  |  | 1 | DESIGN | PETG | printed (Creality K1C) | print | #8 | 🧊 |
-| `OD-C09` | OD-C00 | PRINT | Front panel with button bezel |  |  | 1 | DESIGN | ASA | printed | print | #8 | ✎ |
-| `OD-C10` | OD-C00 | PRINT | Top panel (removable — 4 screws) |  |  | 1 | DESIGN | PETG (A-10; BOM said ASA) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
-| `OD-C11` | OD-C00 | PRINT | Back panel (removable — 4 screws; cord and two tube pass-throughs; vents) |  |  | 1 | DESIGN | PETG (A-10; BOM said ASA) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
-| `OD-C12` | OD-C00 | PRINT | Left side panel |  |  | 1 | DESIGN | ASA / PETG or 3 mm acrylic | printed | print |  | ✎ |
-| `OD-C13` | OD-C00 | PRINT | Right side panel |  |  | 1 | DESIGN | ASA / PETG or 3 mm acrylic | printed | print |  | ✎ |
-| `OD-C14` | OD-C00 | PRINT | Cable strain relief / grommet |  |  | 2 | DESIGN | TPU | printed | print |  | ✎ |
-| `OD-C15` | OD-C00 | PRINT | Foot (TPU, Ø18 × 10, captive M3 nut; alternative to OD-C25/C26) |  |  | 4 | DESIGN | TPU 95A (A-03) | printed (Creality K1C) | print |  | 🧊 |
-| `OD-C16` | OD-C00 | PRINT | Corner bracket for acrylic skins (optional) |  |  | 16 | DESIGN | ASA / PETG | printed | print |  | ✎ |
+| `OD-C01` | OD-C00 | PRINT | Base frame / floor plate |  |  | 1 | DESIGN | PLA for now (service PETG or ASA: A-10) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
+| `OD-C02` | OD-C00 | PRINT | Wet/electric bulkhead with drainage path |  |  | 1 | DESIGN | PLA for now (service ASA) | printed (Creality K1C) | print |  | 🧊 |
+| `OD-C03` | OD-C00 | PRINT | Pump cradle (sleeve + spring suspension) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed | print | #1 | 🧊 |
+| `OD-C04` | OD-C00 | PRINT | Thermoblock mount (≥10 mm air gap to printed walls) |  |  | 1 | DESIGN | PLA for now (fit-check prints only — hot zone; service ASA / PC) | printed | print | #2 | 🧊 |
+| `OD-C05` | OD-C00 | PRINT | Group head carrier (ties OD-G00 to frame) |  |  | 1 | DESIGN | PLA for now (fit-check prints only — hot zone; service ASA) | printed (Creality K1C) | print | #3 | 🧊 |
+| `OD-C06` | OD-C00 | PRINT | Water tank dock / inlet seat (deferred: the tank stands on the table; tubes leave through OD-C11) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed | print | #5 | ⏸ |
+| `OD-C07` | OD-C00 | PRINT | Valve & flowmeter mount (OPV reachable without disassembly) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed | print | #6 | 🧊 |
+| `OD-C08` | OD-C00 | PRINT | Electronics bay tray (holds the OEM power PCB OD-E01 on edge) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed (Creality K1C) | print | #8 | 🧊 |
+| `OD-C09` | OD-C00 | PRINT | Front panel with button bezel |  |  | 1 | DESIGN | PLA for now (service ASA) | printed | print | #8 | ✎ |
+| `OD-C10` | OD-C00 | PRINT | Top panel (removable — 4 screws) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
+| `OD-C11` | OD-C00 | PRINT | Back panel (removable — 4 screws; cord and two tube pass-throughs; vents) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
+| `OD-C12` | OD-C00 | PRINT | Left side panel |  |  | 1 | DESIGN | PLA for now (service ASA / PETG; printed not acrylic: the Usta 2026-10-02) | printed | print |  | ✎ |
+| `OD-C13` | OD-C00 | PRINT | Right side panel |  |  | 1 | DESIGN | PLA for now (service ASA / PETG; printed not acrylic: the Usta 2026-10-02) | printed | print |  | ✎ |
+| `OD-C14` | OD-C00 | PRINT | Cable strain relief / grommet |  |  | 2 | DESIGN | PLA for now (service TPU) | printed | print |  | ✎ |
+| `OD-C15` | OD-C00 | PRINT | Foot (TPU, Ø18 × 10, captive M3 nut; alternative to OD-C25/C26) |  |  | 4 | DESIGN | PLA for now (service TPU 95A: A-03) | printed (Creality K1C) | print |  | 🧊 |
+| `OD-C16` | OD-C00 | PRINT | Corner bracket for acrylic skins (optional) |  |  | 16 | DESIGN | PLA for now (service ASA / PETG) | printed | print |  | ✎ |
 | `OD-C21` | OD-C00 | OEM | Drip tray (or printed replacement) | 09 | 5313249971 | 1 | SCAN |  | FixPart / printed | 8–12 | #9 | ☐ |
 | `OD-C22` | OD-C21 | OEM | Float | 08 | 5313249981 | 1 | SCAN |  | FixPart | (with OD-C21) | #9 | ☐ |
 | `OD-C23` | OD-C00 | OEM | Cup holder | 07 | 6013214801 | 1 | CALIPER |  | FixPart / printed | 5 | #9 | ☐ |
