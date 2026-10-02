@@ -24,4 +24,4 @@ Correction pending the Usta's ratification (spec 1.4): spec §2's sentence "in t
 
 ## The Usta's decision
 
-Decision: pending · date: — · notes: the orchestrator does not decide in the Usta's place (PLAYBOOK rule 4, D-012); the standing instruction of 2026-09-30 covers building the part, not accepting a review deviation.
+Decision: **B, accept documented deviations** · date: 2026-10-02 · notes: the Usta answered "accept" on the project timeline; recorded as `usta_gate revise_decision accept_deviations` in EVENTS.jsonl. The Usta also set PLA for all prints for now (2026-10-02): a PLA housing is a dry fit check only (see the part README).
