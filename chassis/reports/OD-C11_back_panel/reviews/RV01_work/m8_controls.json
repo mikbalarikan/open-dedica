@@ -1,0 +1,173 @@
+{
+ "validity (solid_count)": {
+  "mutant": "a loose 5 mm cube 18 mm in front of the outer face",
+  "gate": "U-01",
+  "measured": 2,
+  "required": "== 1",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "envelope": {
+  "mutant": "wall's +X end extended 0.5 mm (x 116 -> 116.5)",
+  "gate": "U-02",
+  "measured": 232.5,
+  "required": "in [231.9, 232.1]",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "feature_census": {
+  "mutant": "vent slot at x 110 filled (removed)",
+  "gate": "U-05",
+  "measured": 17,
+  "required": "== 19",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "bore_census": {
+  "mutant": "flange hole at (-81, -282) filled (removed)",
+  "gate": "U-05",
+  "measured": 8,
+  "required": "== 9",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "locate_bore": {
+  "mutant": "flange hole (81, -282) moved 0.5 mm along +X",
+  "gate": "REQ-01",
+  "measured": 0.5,
+  "required": "<= 0.1",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "radial_extent": {
+  "mutant": "+X side of the boss at x 90 cut back 1.5 mm (bore wall 4.0 -> 2.5)",
+  "gate": "J-05",
+  "measured": 2.5,
+  "required": ">= 3.0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "min_wall": {
+  "mutant": "20 x 20 pocket 1.5 deep cut into the outer face at (0, 60): wall 1.5",
+  "gate": "D-01b",
+  "measured": 1.5,
+  "required": ">= 2.0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "min_wall_wide": {
+  "mutant": "same pocket mutant",
+  "gate": "U-06",
+  "measured": 1.5,
+  "required": ">= 2.0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "overhang_census": {
+  "mutant": "pocket mutant (20 x 20 flat ceiling at z -300.5), exception holes refilled",
+  "gate": "D-03a",
+  "measured": 0.0,
+  "required": ">= 45.0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "flat_ceiling_spans": {
+  "mutant": "pocket mutant (20 x 20 flat ceiling at z -300.5)",
+  "gate": "D-03b",
+  "measured": 19.700249960949687,
+  "required": "<= 5.0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "common_volume (interference)": {
+  "mutant": "5 mm cube fused to the wall's inner face at (0, 50) in the tank zone",
+  "gate": "REQ-05",
+  "measured": 119.99999999999885,
+  "required": "<= 0.0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "common_volume (lowering path)": {
+  "mutant": "tab x 60..70, y 100..105 reaching z -235 into OD-C02's space",
+  "gate": "U-03",
+  "measured": 99.99999999999997,
+  "required": "<= 0.0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "common_volume (driver)": {
+  "mutant": "rib 6 x 2 x 10 at y 151 over the screw axis (95, -282)",
+  "gate": "REQ-08",
+  "measured": 56.548667764616326,
+  "required": "<= 0.0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "clearance": {
+  "mutant": "whole panel moved 18 mm toward the front (+Z)",
+  "gate": "U-03",
+  "measured": 19.026297590440446,
+  "required": ">= 20.0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "footprint rim distance (job code)": {
+  "mutant": "flange's +X end extended 3 mm (x 104 -> 107) toward the feet hole (110, -295)",
+  "gate": "U-03",
+  "measured": 1.2999999999999972,
+  "required": ">= 3.0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "compare_step (round trip)": {
+  "mutant": "the +0.5 mm envelope mutant compared with the delivered STEP",
+  "gate": "U-04",
+  "measured": 322.4999999999709,
+  "required": "in [0.0, 0.0]",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "mesh_census": {
+  "mutant": "delivered STL with two triangles removed",
+  "gate": "U-07",
+  "measured": 4,
+  "required": "== 0",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "mesh_sagitta": {
+  "mutant": "re-mesh at tolerance 0.1 mm, 0.5 rad",
+  "gate": "U-07",
+  "measured": 0.04374675541169389,
+  "required": "<= 0.01",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ },
+ "section regions (E-06 tie)": {
+  "mutant": "boss at x 90 cut free of the wall (0.5 gap at z -299) and of the ledge (0.5 gap at y 211)",
+  "gate": "E-06",
+  "measured": 0,
+  "required": "== 1",
+  "status": "FAIL",
+  "got": "FAIL",
+  "reason": ""
+ }
+}

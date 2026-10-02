@@ -1,0 +1,36 @@
+{
+ "refill_valid": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "D-03a_refilled": [
+  "PASS",
+  90.0,
+  ">= 45.0",
+  null
+ ],
+ "oh_detail": {
+  "samples": 617842,
+  "downward_samples": 0,
+  "below_min_deg": 0,
+  "bed_samples": 201080,
+  "bed_height_mm": -250.0,
+  "largest_step_mm": 0.698774,
+  "sampling_bound_deg": 0.0,
+  "seeds_refined": 0,
+  "per_kind_least_deg": {}
+ },
+ "D-03b_refilled": [
+  "PASS",
+  0.0,
+  "<= 5.0",
+  null
+ ],
+ "fs_detail": {
+  "ceilings": [],
+  "bed_faces": 1,
+  "sampling_bound_mm": 0.0
+ },
+ "t": 27.129995346069336
+}

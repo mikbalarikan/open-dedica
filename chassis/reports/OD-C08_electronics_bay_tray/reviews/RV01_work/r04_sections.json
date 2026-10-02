@@ -1,0 +1,71 @@
+{
+ "rows": [
+  {
+   "gate": "E-11",
+   "measured": 4,
+   "unit": "count",
+   "required": "== 4",
+   "margin": 0.0,
+   "at": "section x 74.5",
+   "status": "PASS_ASSUMED",
+   "method": "tie_slots",
+   "assumes": [
+    "A-11"
+   ],
+   "note": "slots through the wall: [(86.0, 90.0, -177.0, -175.0), (86.0, 90.0, -169.0, -167.0), (86.0, 90.0, -123.0, -121.0), (86.0, 90.0, -115.0, -113.0)]"
+  },
+  {
+   "gate": "E-11",
+   "measured": 2.1310000000000002,
+   "unit": "mm",
+   "required": ">= 0.0",
+   "margin": 2.131,
+   "at": "slot y min vs board top 83.869",
+   "status": "PASS_ASSUMED",
+   "method": "slot_bottom_above_board",
+   "assumes": [
+    "A-11"
+   ],
+   "note": "slots above the board's top edge"
+  },
+  {
+   "gate": "E-06",
+   "measured": 4,
+   "unit": "count",
+   "required": "== 4",
+   "margin": 0.0,
+   "at": "sections z -228.5/-210.5/-86.5/-71.5",
+   "status": "PASS",
+   "method": "gussets_tied",
+   "assumes": [],
+   "note": "each a 20x20 triangle joined to wall and flange in one section face"
+  },
+  {
+   "gate": "E-06",
+   "measured": 4,
+   "unit": "count",
+   "required": "== 4",
+   "margin": 0.0,
+   "at": "sections z through each standoff axis",
+   "status": "PASS",
+   "method": "standoffs_on_wall",
+   "assumes": [],
+   "note": "standoff, wall and flange in one section face"
+  },
+  {
+   "gate": "D-03b",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "<= 5.0",
+   "margin": 1.6,
+   "at": "flange hole crowns (88/106, 2, -222/-78)",
+   "status": "PASS_ASSUMED",
+   "method": "widest_bridge",
+   "assumes": [
+    "A-08"
+   ],
+   "note": "flat_ceiling_spans 0 (r01); the four \u00d83.4 horizontal holes bridge 3.4 (bore_census)"
+  }
+ ],
+ "extra": {}
+}

@@ -1,0 +1,179 @@
+{
+ "part": {
+  "schema": "AP242",
+  "unit": "MM",
+  "labels": [
+   "od_c10_top"
+  ],
+  "solids": 1,
+  "free_shells": 0,
+  "free_faces": 0
+ },
+ "part_vs_delivered": {
+  "schema": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "solids": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "volume_delta": [
+   0.0,
+   "MEASURED",
+   ""
+  ],
+  "faces_delta": [
+   0,
+   "MEASURED",
+   ""
+  ],
+  "labels": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "valid_after": [
+   1,
+   "MEASURED",
+   ""
+  ]
+ },
+ "part_roundtrip": {
+  "schema": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "solids": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "volume_delta": [
+   6.984919309616089e-10,
+   "MEASURED",
+   ""
+  ],
+  "faces_delta": [
+   0,
+   "MEASURED",
+   ""
+  ],
+  "labels": [
+   1,
+   "MEASURED",
+   ""
+  ],
+  "valid_after": [
+   1,
+   "MEASURED",
+   ""
+  ]
+ },
+ "asm": {
+  "schema": "AP242",
+  "unit": "MM",
+  "labels": [
+   "od_c10_top",
+   "od_c01_frame",
+   "od_c02_bulkhead",
+   "od_c05_carrier",
+   "od_c07_valve_mount",
+   "od_c11_back"
+  ],
+  "nodes": [
+   "od_c10_assembly",
+   "od_c10_top",
+   "od_c01_frame",
+   "od_c02_bulkhead",
+   "od_c05_carrier",
+   "od_c07_valve_mount",
+   "od_c11_back"
+  ],
+  "solids": 6,
+  "free_shells": 0,
+  "valid": {
+   "solid_count": 6,
+   "brep_valid": 1,
+   "naked_edges": 0
+  }
+ },
+ "asm_roundtrip": {},
+ "c05_cbores": [
+  [
+   3.4,
+   [
+    -44.0,
+    205.0,
+    -12.0
+   ]
+  ],
+  [
+   3.4,
+   [
+    -44.0,
+    205.0,
+    76.0
+   ]
+  ],
+  [
+   6.5,
+   [
+    -44.0,
+    208.0,
+    -12.0
+   ]
+  ],
+  [
+   6.5,
+   [
+    -44.0,
+    208.0,
+    76.0
+   ]
+  ],
+  [
+   60.0,
+   [
+    0.0,
+    205.0,
+    32.0
+   ]
+  ],
+  [
+   3.4,
+   [
+    44.0,
+    205.0,
+    -12.0
+   ]
+  ],
+  [
+   3.4,
+   [
+    44.0,
+    205.0,
+    76.0
+   ]
+  ],
+  [
+   6.5,
+   [
+    44.0,
+    208.0,
+    -12.0
+   ]
+  ],
+  [
+   6.5,
+   [
+    44.0,
+    208.0,
+    76.0
+   ]
+  ]
+ ]
+}

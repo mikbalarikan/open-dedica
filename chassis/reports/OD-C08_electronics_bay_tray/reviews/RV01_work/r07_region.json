@@ -1,0 +1,67 @@
+{
+ "rows": [
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "tray at x >= 82.0: 5 pieces",
+   "status": "PASS_ASSUMED",
+   "method": "common_volume_region",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "tray/OD-E01 interference, on the tray's pieces at x >= 82.0 (4 seat slices + 2 pins), each against the board"
+  },
+  {
+   "gate": "D-04c",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "tray at x >= 82.0: 5 pieces",
+   "status": "PASS_ASSUMED",
+   "method": "common_volume_region",
+   "assumes": [
+    "A-02"
+   ],
+   "note": "tray/OD-E01 interference (region method)"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "dx 5.0..0 step 0.25, tray x >= 82.0",
+   "status": "PASS_ASSUMED",
+   "method": "path_region",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "U-03 (b) path on the region (21 poses)"
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": "tray at y <= 1",
+   "status": "PASS_ASSUMED",
+   "method": "common_volume_region",
+   "assumes": [
+    "A-02",
+    "A-03",
+    "A-06"
+   ],
+   "note": "tray/OD-C01 interference, flange region y <= 1 (region method)"
+  }
+ ],
+ "extra": {}
+}
