@@ -22,3 +22,4 @@
 {"t": "2026-10-02T23:24:17Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_side_panels_v01", "brief": "briefs/WP-03_designer.md", "attempt": 1}}
 {"t": "2026-10-02T23:24:17Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
 {"t": "2026-10-02T23:28:24Z", "ev": "note", "detail": {"text": "WP-03 package lost to a container restart before it returned; 01_CAD, 02_STEP_STL and 03_Sections hold no build output; the same brief is re-run as the same attempt (nothing of it was received)", "ref": "briefs/WP-03_designer.md"}}
+{"t": "2026-10-02T23:56:52Z", "ev": "note", "detail": {"text": "WP-03 second run stopped by a container restart mid-package: scripts, the three part exports, the assembly, results_v01 and the sweep exist; one of the sections; no REPORT. The same package is resumed from these files as the same attempt", "ref": "briefs/WP-03_designer.md"}}
