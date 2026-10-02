@@ -5,7 +5,7 @@ code: ODC14
 milestone: M1
 title: "Open Dedica OD-C14 printed cord grommet"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
 next_action: "J0: intake WP-01"
 data_class: PUBLIC
@@ -13,7 +13,7 @@ size: S
 process: [FDM]
 gate_sections: [U, D, J, E]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.1"
+spec_version: "1.2"
 workspace: "${OGUZ_JOBS}/20261002-od-c14-cord-grommet"
 delivery: "${OGUZ_DELIVERY}/20261002-od-c14-cord-grommet"
 artifacts: "${OGUZ_ARTIFACTS}/20261002-od-c14-cord-grommet"
@@ -28,6 +28,7 @@ usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-10-02"}
   - {gate: concept_picked, outcome: C1, date: "2026-10-02"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-10-02"}
+  - {gate: spec_ratified, outcome: "1.2", date: "2026-10-02"}
 deliverables: [STEP, STL, "3MF", scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null
