@@ -53,5 +53,7 @@ and bounds its own fix-and-re-measure loop.
 
 ## Notes for a resuming session
 
+Cloud container job (2026-10-02): the record is mirrored to open-dedica/chassis/reports/ (OD-C14_cord_grommet, OD-C12_C13_C16_side_panels) after every stage; recreate the workspace from there (its README). Env: source an env file setting the four OGUZ_* variables before every tools call. Specs rest on the Usta's answer of 2026-10-02 22:58 UTC (printed panels, PLA for now, cord 7 mm) and the standing instruction; explicit confirmation of §5/§6 pending. Shared files (bom.csv, BOM.md, progress board, chassis/README.md, OD-000, OD-C01 inserts, HANDOVER) belong to the OD-G01 thread; notes in the project folder chassis-C12-C16/integration_notes.md. The container restarted twice; a lost package is re-run as the same attempt with a note event.
+
 ## Close summary
 
