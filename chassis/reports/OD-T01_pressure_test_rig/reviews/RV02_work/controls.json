@@ -1,0 +1,156 @@
+[
+ {
+  "check": "validity (solid_count)",
+  "mutant": "rig plus a copy relocated 300 in X",
+  "measured": 2,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "validity (naked_edges)",
+  "mutant": "rig shell with one face removed",
+  "measured": 6,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "envelope (U-02, D-02)",
+  "mutant": "base resized +1.0 at +X",
+  "measured": 241.0,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "feature_census / bore_census (U-05)",
+  "mutant": "3.4 hole at (44, 44) removed (plugged)",
+  "measured": 12,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "locate_bore offset (REQ-01)",
+  "mutant": "3.4 hole at (44, 44) relocated +0.5 in X",
+  "measured": 0.5,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "locate_bore diameter (D-04a, REQ-01)",
+  "mutant": "3.4 hole at (44, 44) resized to 3.2",
+  "measured": 3.2,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "min_wall (D-01a, D-01b, D-06a)",
+  "mutant": "counterbore (-44, -44) deepened to y 135.6: 0.6 under the head",
+  "measured": 0.6000000000000195,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "min_wall_wide (U-06)",
+  "mutant": "same deepened counterbore",
+  "measured": 0.6000000000000195,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "overhang_census (D-03a)",
+  "mutant": "plugged copy with a 10-wide flat-roofed slot through the plate, x 55..65, z 0..5",
+  "measured": 0.0,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "flat_ceiling_spans (D-03b)",
+  "mutant": "same slot",
+  "measured": 10.000399840127871,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "clearance (REQ-04 sweep)",
+  "mutant": "block x 62..75, y 80..100, z 25..40 on the +X wall's inner front, phi -60..+15",
+  "measured": 2.6546701107320776,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "clearance (REQ-03 pair-B)",
+  "mutant": "window filled and re-cut at R 29.5 (no teardrop)",
+  "measured": 10.469999978489067,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "clearance (U-03 seat contact)",
+  "mutant": "housing relocated 0.2 down",
+  "measured": 0.19999999999998863,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "interference / common_volume (U-03, REQ-06, REQ-07)",
+  "mutant": "housing relocated 0.5 up into the plate",
+  "measured": 3436.3225566713036,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "interference / common_volume (REQ-07 probe)",
+  "mutant": "boss r 4 on the (44, 44) screw axis above the plate",
+  "measured": 141.37166941154067,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "compare_step (U-04)",
+  "mutant": "deepened counterbore shape compared with the delivered STEP",
+  "measured": 106.05702639301307,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "stl_max_sagitta (U-07)",
+  "mutant": "rig re-meshed at 0.1 mm / 0.5 rad",
+  "measured": 0.0494518825606099,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "mesh_census (U-07, V-05)",
+  "mutant": "delivered STL with its last triangle removed",
+  "measured": 3,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "mesh_deviation (U-07)",
+  "mutant": "coarse STL (0.1 mm) against the delivered B-rep",
+  "measured": 0.04945182800292969,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "min_wall_mesh (D-01b corroboration)",
+  "mutant": "STL of the deepened counterbore mutant",
+  "measured": 0.6000061035156218,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "underside grid classifier (REQ-02)",
+  "mutant": "1.5-deep pocket x 45..49, z -20..-10 in the underside",
+  "measured": 40,
+  "status": "FAIL",
+  "got": "FAIL"
+ },
+ {
+  "check": "radial_extent apex (REQ-03)",
+  "mutant": "rig relocated +0.5 in Z",
+  "measured": 43.000649191971,
+  "status": "FAIL",
+  "got": "FAIL"
+ }
+]

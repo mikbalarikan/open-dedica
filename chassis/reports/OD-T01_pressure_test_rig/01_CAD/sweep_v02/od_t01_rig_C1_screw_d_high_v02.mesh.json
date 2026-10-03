@@ -1,0 +1,9 @@
+{
+ "tolerance_mm": 0.01,
+ "angular_tolerance_rad": 0.1,
+ "triangles": 5752,
+ "max_sagitta_mm": 0.0049966441054580864,
+ "stl": "od_t01_rig_C1_screw_d_high_v02.stl",
+ "sha256": "368077c449ea3ca19d92054d8b2476de7d9b0a5b127d15bb570e493651ae7175",
+ "meshed_from": "od_t01_rig_C1_screw_d_high_v02.step"
+}

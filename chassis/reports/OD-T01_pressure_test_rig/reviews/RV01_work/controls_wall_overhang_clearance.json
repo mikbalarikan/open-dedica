@@ -1,0 +1,56 @@
+{
+ "min_wall_D01b": {
+  "mutant": "counterbore (-44,-44) deepened: 0.6 of plate under the head",
+  "status": "FAIL",
+  "measured": 0.5999999999999911,
+  "required": ">= 2.0",
+  "margin": -1.4
+ },
+ "min_wall_D01a": {
+  "mutant": "same",
+  "status": "FAIL",
+  "measured": 0.5999999999999911,
+  "required": ">= 0.8",
+  "margin": -0.2
+ },
+ "min_wall_wide_U06": {
+  "mutant": "same",
+  "status": "FAIL",
+  "measured": 0.5999999999999911,
+  "required": ">= 2.0",
+  "margin": -1.4
+ },
+ "cbore_mutant_start": [
+  -44.0,
+  135.6,
+  -44.0
+ ],
+ "overhang_census": {
+  "mutant": "crown-filled census copy with a 10-wide flat-roofed slot cut at z 45..50",
+  "status": "FAIL",
+  "measured": 0.0,
+  "required": ">= 45.0",
+  "margin": -45.0
+ },
+ "flat_ceiling_spans": {
+  "mutant": "same slot (10 wide ceiling)",
+  "status": "INCONCLUSIVE",
+  "measured": null,
+  "required": "<= 5.0",
+  "margin": null
+ },
+ "clearance_REQ04a": {
+  "mutant": "block x 62..75, y 80..100, z 25..40 on the +X wall's inner front",
+  "status": "FAIL",
+  "measured": 2.6546701107320776,
+  "required": ">= 5.0",
+  "margin": -2.345329889
+ },
+ "clearance_pairB": {
+  "mutant": "rig relocated (+0.35, 0, -0.35): window face 0.5 nearer the pair-B axis",
+  "status": "PASS",
+  "measured": 11.455640139958833,
+  "required": ">= 10.87",
+  "margin": 0.58564014
+ }
+}

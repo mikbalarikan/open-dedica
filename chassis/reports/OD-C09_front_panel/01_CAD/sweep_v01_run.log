@@ -1,0 +1,33 @@
+nominal True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+win_x_left_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+opening_x_right_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+win_top_y_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+slot_x_left_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+slot_top_y_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+flange_hole_d_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+flange_hole_x_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+flange_hole_z_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+insert_bore_d_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+insert_bore_depth_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+button_hole_d_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+boss_end_z_low True True {'U-03': 'FAIL', 'E-01': 'FAIL', 'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+boss_d_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+wall_z_low True True {'U-03': 'FAIL', 'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+wall_top_y_low True True {'U-03': 'FAIL', 'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+wall_x_half_low True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+win_x_left_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+opening_x_right_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+win_top_y_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+slot_x_left_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+slot_top_y_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+flange_hole_d_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+flange_hole_x_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+flange_hole_z_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+insert_bore_d_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+insert_bore_depth_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+button_hole_d_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+boss_end_z_high True True {'U-03': 'FAIL', 'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+boss_d_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+wall_z_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+wall_top_y_high True True {'U-03': 'FAIL', 'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}
+wall_x_half_high True True {'U-07': 'INCONCLUSIVE', 'REQ-08': 'INCONCLUSIVE'}

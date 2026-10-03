@@ -1,0 +1,112 @@
+{
+ "validity_solid_count": {
+  "mutant": "rig plus a relocated copy (2 solids)",
+  "status": "FAIL",
+  "measured": 2,
+  "required": "== 1",
+  "margin": -1.0
+ },
+ "validity_naked_edges": {
+  "mutant": "rig with one face removed (open shell)",
+  "status": "FAIL",
+  "measured": 6,
+  "required": "== 0",
+  "margin": -6.0
+ },
+ "envelope_size_x": {
+  "mutant": "base resized +1.0 at +X",
+  "status": "FAIL",
+  "measured": 241.0,
+  "required": "in [239.9, 240.1]",
+  "margin": -0.9
+ },
+ "feature_census_bores": {
+  "mutant": "\u00d83.4 hole at (44,44) removed",
+  "status": "FAIL",
+  "measured": 12,
+  "required": "== 13",
+  "margin": -1.0
+ },
+ "feature_census_cyl": {
+  "mutant": "\u00d83.4 hole at (44,44) removed",
+  "status": "FAIL",
+  "measured": 12,
+  "required": "== 13",
+  "margin": -1.0
+ },
+ "locate_bore_offset": {
+  "mutant": "\u00d83.4 hole at (44,44) relocated +0.5 in X",
+  "status": "FAIL",
+  "measured": 0.5,
+  "required": "<= 0.1",
+  "margin": -0.4
+ },
+ "bore_diameter": {
+  "mutant": "\u00d83.4 hole at (44,44) resized to \u00d83.2",
+  "status": "FAIL",
+  "measured": 3.2,
+  "required": ">= 3.25",
+  "margin": -0.05
+ },
+ "interference_U03": {
+  "mutant": "housing relocated 0.5 up into the plate",
+  "status": "FAIL",
+  "measured": 3436.3225566713036,
+  "required": "<= 0.0",
+  "margin": -3436.322556671
+ },
+ "interference_REQ07": {
+  "mutant": "a boss added above the plate on the (44,44) screw axis",
+  "status": "FAIL",
+  "measured": 282.7433388230813,
+  "required": "<= 0.0",
+  "margin": -282.743338823
+ },
+ "clearance_contact": {
+  "mutant": "housing relocated 0.2 down (gap at the seat)",
+  "status": "FAIL",
+  "measured": 0.19999999999998863,
+  "required": "== 0.0",
+  "margin": -0.2
+ },
+ "compare_step_volume": {
+  "mutant": "delivered shape compared with a re-export whose counterbore is deepened",
+  "status": "FAIL",
+  "measured": 57.849287123186514,
+  "required": "<= 0.0",
+  "margin": -57.849287123
+ },
+ "compare_step_faces": {
+  "mutant": "same",
+  "status": "FAIL",
+  "measured": 1,
+  "required": "== 0",
+  "margin": -1.0
+ },
+ "mesh_sagitta": {
+  "mutant": "rig re-meshed at chordal 0.1, angular 0.5",
+  "status": "FAIL",
+  "measured": 0.0494518825606099,
+  "required": "<= 0.01",
+  "margin": -0.039451883
+ },
+ "mesh_census_naked": {
+  "mutant": "delivered STL with its last triangle removed",
+  "status": "FAIL",
+  "measured": 3,
+  "required": "== 0",
+  "margin": -3.0
+ },
+ "REQ02_grid_mutant": {
+  "mutant": "0.5-deep pocket x 45..49, z -20..-10 in the underside",
+  "not_material_above": 55,
+  "status": "FAIL"
+ },
+ "apex_plane_method": {
+  "mutant": "rig relocated +0.5 in Z",
+  "status": "FAIL",
+  "measured": 43.00064919197299,
+  "required": "in [42.36, 42.66]",
+  "margin": -0.340649192
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "validity": {
+  "status": "FAIL",
+  "measured": 2,
+  "res_status": "MEASURED"
+ },
+ "envelope_minz": {
+  "status": "FAIL",
+  "measured": 71.5,
+  "res_status": "MEASURED"
+ },
+ "envelope_sizez": {
+  "status": "FAIL",
+  "measured": 25.5,
+  "res_status": "MEASURED"
+ },
+ "compare_step_volume": {
+  "status": "FAIL",
+  "measured": 530.1437602931983,
+  "res_status": "MEASURED"
+ },
+ "compare_step_faces": {
+  "status": "FAIL",
+  "measured": 1,
+  "res_status": "MEASURED"
+ },
+ "census_bores_removed": {
+  "status": "FAIL",
+  "measured": 8,
+  "res_status": "MEASURED"
+ },
+ "locate_bore_relocated": {
+  "status": "FAIL",
+  "measured": 0.5,
+  "res_status": "MEASURED"
+ },
+ "bore_diameter_resized": {
+  "status": "FAIL",
+  "measured": 3.2,
+  "res_status": "MEASURED"
+ },
+ "clearance_contact": {
+  "status": "FAIL",
+  "measured": 0.5,
+  "res_status": "MEASURED"
+ },
+ "clearance_E01_boss": {
+  "status": "FAIL",
+  "measured": 0.0,
+  "res_status": "MEASURED"
+ },
+ "clearance_REQ05a": {
+  "status": "FAIL",
+  "measured": 0.23268597348966,
+  "res_status": "MEASURED"
+ },
+ "fallback_REQ05b": {
+  "clearance": 49.25446955418843,
+  "inside": false,
+  "status": "PASS"
+ },
+ "fallback_REQ05b_base": {
+  "clearance": 50.62247347502451,
+  "inside": false
+ },
+ "interference_tray": {
+  "status": "FAIL",
+  "measured": 146.99999999999977,
+  "res_status": "MEASURED"
+ },
+ "radial_J05": {
+  "min_minus_bore": 2.449995774042694,
+  "status": "FAIL"
+ },
+ "radial_REQ02": {
+  "status": "FAIL",
+  "measured": 96.5,
+  "res_status": "MEASURED"
+ },
+ "overhang_ledge": {
+  "status": "FAIL",
+  "measured": 0.0,
+  "res_status": "MEASURED"
+ },
+ "bridge_ledge": {
+  "status": "FAIL",
+  "measured": 16.000399840127873,
+  "res_status": "MEASURED"
+ },
+ "mesh_census_drop1": {
+  "status": "FAIL",
+  "measured": 3,
+  "res_status": "MEASURED"
+ },
+ "mesh_deviation_moved": {
+  "status": "FAIL",
+  "measured": 0.1044561971642208,
+  "res_status": "MEASURED"
+ },
+ "sagitta_coarse": {
+  "status": "FAIL",
+  "measured": 0.060482854602771086,
+  "res_status": "MEASURED"
+ },
+ "roundtrip_work": {
+  "schema": [
+   1,
+   "MEASURED"
+  ],
+  "solids": [
+   1,
+   "MEASURED"
+  ],
+  "volume_delta": [
+   5.529727786779404e-10,
+   "MEASURED"
+  ],
+  "faces_delta": [
+   0,
+   "MEASURED"
+  ],
+  "labels": [
+   1,
+   "MEASURED"
+  ],
+  "valid_after": [
+   1,
+   "MEASURED"
+  ]
+ }
+}

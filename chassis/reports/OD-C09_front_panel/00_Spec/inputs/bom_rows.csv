@@ -1,0 +1,20 @@
+part_no,parent,type,name,ref,oem_code,qty,cad,material_spec,source,price_eur,issue,status
+OD-G00,OD-000,ASM,Group head,,,1,DESIGN,,,,#3,todo
+OD-G01,OD-G00,PRINT,Group head housing (open-source replacement for the molded OEM housing),,,1,DESIGN,ABS/ASA,printed — thesis Appendix 2 as starting point,print,#3,todo
+OD-G10,OD-G00,OEM,Portafilter 51 mm (filter holder assembly),06,AS00002706,1,SCAN,,OEM / AliExpress `51mm bottomless portafilter Dedica`,20–30,#39,modeled
+OD-E02,OD-E00,OEM,Control board assembly (front buttons) — Path 1,15,7313285189,1,SCAN,,FixPart / eBay,15–25,#34,modeled
+OD-C01,OD-C00,PRINT,Base frame / floor plate,,,1,DESIGN,PETG (spec) or ASA — Usta to confirm (A-10),printed (Anycubic Kobra Max 3),print,,modeled
+OD-C05,OD-C00,PRINT,Group head carrier (ties OD-G00 to frame),,,1,DESIGN,ASA,printed (Creality K1C),print,#3,modeled
+OD-C09,OD-C00,PRINT,Front panel with button bezel,,,1,DESIGN,ASA,printed,print,#8,proposed
+OD-C10,OD-C00,PRINT,Top panel (removable — 4 screws),,,1,DESIGN,ASA,printed,print,,proposed
+OD-C11,OD-C00,PRINT,Back panel (removable — 4 screws),,,1,DESIGN,ASA,printed,print,,proposed
+OD-C12,OD-C00,PRINT,Left side panel,,,1,DESIGN,ASA / PETG or 3 mm acrylic,printed,print,,proposed
+OD-C13,OD-C00,PRINT,Right side panel,,,1,DESIGN,ASA / PETG or 3 mm acrylic,printed,print,,proposed
+OD-C16,OD-C00,PRINT,Corner bracket for acrylic skins (optional),,,16,DESIGN,ASA / PETG,printed,print,,proposed
+OD-C21,OD-C00,OEM,Drip tray (or printed replacement),09,5313249971,1,SCAN,,FixPart / printed,8–12,#9,todo
+OD-C22,OD-C21,OEM,Float,08,5313249981,1,SCAN,,FixPart,(with OD-C21),#9,todo
+OD-F01,OD-000,STD,M3 heat-set insert (Ø4.0 bore × 6; 26 in the chassis),,,~40,VENDOR,brass M3,AliExpress,10 (set),,todo
+OD-F02,OD-000,STD,M3×8 screw,,,~40,VENDOR,ISO 7380 / DIN 912 A2,AliExpress,(set),,todo
+OD-S01,OD-S00,OEM,Steam valve assembly,17,AS00002707,1,SCAN,,FixPart,15,#35,modeled
+OD-S02,OD-S00,OEM,Steam hose assembly (steam wand — scanned together with nozzle OD-S04),10,AS00002705,1,SCAN,,FixPart,12,#36,modeled
+OD-S03,OD-S00,OEM,Steam knob,13,7313285479,1,SCAN,,FixPart,6,#31,modeled

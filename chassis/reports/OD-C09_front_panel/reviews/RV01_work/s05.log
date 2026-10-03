@@ -1,0 +1,8 @@
+oh raw {'measured': 0.0, 'status': 'MEASURED', 'reason': '', 'at': (-95.0, 4.0, 75.3), 'detail': {'below_min_deg': 264, 'bed_samples': 95999, 'largest_step_mm': 0.498925, 'sampling_bound_deg': 0.00947, 'per_kind_least_deg': {'cylinder': 0.0}}}
+oh plug {'measured': 90.0, 'status': 'MEASURED', 'reason': '', 'at': None, 'detail': {'below_min_deg': 0, 'bed_samples': 95999, 'largest_step_mm': 0.498925, 'sampling_bound_deg': 0.0, 'per_kind_least_deg': {}}}
+bridge plug {'measured': 0.0, 'status': 'MEASURED', 'reason': '', 'at': None, 'detail': {'ceilings': []}}
+bridge raw {'measured': 0.0, 'status': 'MEASURED', 'reason': '', 'at': None, 'detail': {'ceilings': []}}
+L {'min': 5.049995774042694, 'at': (-92.277205, 158.134889, 85.61), 'status': 'MEASURED', 'reason': '', 'detail_min': {'largest_step_mm': 0.25, 'on_face': [], 'unread': [], 'angle_deg': 104.0, 'z': 0.125}, 'n_points': 4320} (10.549995774042694, 104.0, 0.125)
+R {'min': 5.287912379328468, 'at': (-92.098119, 122.079141, 85.61), 'status': 'MEASURED', 'reason': '', 'detail_min': {'largest_step_mm': 0.25, 'on_face': [], 'unread': [], 'angle_deg': 258.0, 'z': 0.125}, 'n_points': 4320} (10.787912379328468, 78.0, 0.125)
+mw {'measured': 2.999999999999997, 'status': 'MEASURED', 'reason': '', 'at': (-115.775629, 0.224426, 97.0), 'detail': {'largest_step_mm': 0.448852, 'wide': {'opposition_deg': 45.0, 'measured': 2.999999999999997, 'at': (-115.775629, 0.224426, 97.0)}}}
+mww {'measured': 2.999999999999997, 'status': 'MEASURED', 'reason': '', 'at': (-115.775629, 0.224426, 97.0), 'detail': {'gated_mm': 2.999999999999997, 'largest_step_mm': 0.448852}}
