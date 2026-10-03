@@ -1,13 +1,14 @@
-"""Build od_t01_rig, concept C1 (job 20261002-od-t01-pressure-test-rig), spec 1.1.
+"""Build od_t01_rig v02, concept C1 (job 20261002-od-t01-pressure-test-rig), spec 1.3.
 
 A closed frame printed on its side: top plate, two walls (z −60 … +40), base, four
 10 × 10 inside chamfers, four Ø3.4 holes under Ø6.5 counterbores (teardrop roofs),
 a R30 hub window (teardrop roof), four Ø4.5 bench holes (teardrop roofs). Rig frame
 of spec §2: X right, +Y up, +Z toward the user, bench top y 0, housing axis x 0, z 0.
-build123d Algebra mode; every number is in PARAMS (sources in DESIGN_PLAN §4).
+build123d Algebra mode; every number is in PARAMS (sources in DESIGN_PLAN §4, as amended
+by spec 1.3: plate 25 thick, y 135 … 160; counterbore floor y 140, 5.0 under the head).
 
 Usage (repo root, tools venv):
-    uv run tools/run.py python <ws>/01_CAD/build_od_t01_rig.py [--out-dir DIR] [--tag v01]
+    uv run tools/run.py python <ws>/01_CAD/build_od_t01_rig_v02.py [--out-dir DIR] [--tag v02]
         [--set name=value ...] [--no-assembly] [--no-stl]
 """
 from __future__ import annotations
@@ -22,7 +23,7 @@ from build123d import Box, Circle, Compound, Plane, Polygon, Pos, extrude
 
 WS = Path(__file__).resolve().parent.parent
 INPUTS = WS / "00_Spec" / "inputs"
-TIMESTAMP = "2026-10-02T00:00:00"
+TIMESTAMP = "2026-10-03T00:00:00"
 
 
 @dataclass(frozen=True)
@@ -36,7 +37,7 @@ class Params:
     wall_x_in: float = 75.0
     wall_x_out: float = 90.0
     plate_y0: float = 135.0          # underside, the housing's rear-face plane
-    plate_y1: float = 150.0
+    plate_y1: float = 160.0          # spec 1.3: plate 25 thick
     plate_x: float = 90.0
     corner_chamfer: float = 10.0     # 45° 10 × 10 in the four inside corners
     # housing screws (REQ-01)
@@ -44,7 +45,7 @@ class Params:
     screw_z: float = 44.0
     screw_d: float = 3.4
     cbore_d: float = 6.5
-    cbore_floor_y: float = 138.0
+    cbore_floor_y: float = 140.0     # spec 1.3: 5.0 of plate under the head
     # hub window (REQ-03)
     window_r: float = 30.0
     # every teardrop roof (spec 1.1 Q3)
@@ -117,7 +118,7 @@ def main():
 
     ap = argparse.ArgumentParser()
     ap.add_argument("--out-dir", default=str(WS / "02_STEP_STL"))
-    ap.add_argument("--tag", default="v01")
+    ap.add_argument("--tag", default="v02")
     ap.add_argument("--name", default="od_t01_rig_C1")
     ap.add_argument("--set", nargs="*", default=[])
     ap.add_argument("--no-assembly", action="store_true")
@@ -150,7 +151,7 @@ def main():
     if not a.no_assembly:
         # F07 the check assembly: a fresh rig (a part in an assembly cannot be written on its own)
         from importlib import util
-        spec = util.spec_from_file_location("check", Path(__file__).with_name("check_od_t01_rig.py"))
+        spec = util.spec_from_file_location("check", Path(__file__).with_name("check_od_t01_rig_v02.py"))
         chk = util.module_from_spec(spec)
         spec.loader.exec_module(chk)
         housing, g04, g10 = chk.identify(read_step(INPUTS / "od_g01_assembly_C1_v03.step"))

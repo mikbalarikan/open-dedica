@@ -27,6 +27,10 @@ Repository inputs are not copied here; the job reads them under these names in
 - `chassis/OD-C05_group_head_carrier.step`; `step/OD-G04_brewing_gasket_support.step`, `step/OD-G10_portafilter.step` (same names)
 - `chassis/reports/OD-G01_group_head_housing/00_Spec/DESIGN_SPEC.md` as `OD-G01_DESIGN_SPEC.md`, its `reviews/RV01_od_g01_housing_v03.md` as `OD-G01_RV01.md` and `reviews/REVISE_PACKET_RV01.md` as `OD-G01_REVISE_PACKET_RV01.md`; OD-C05's spec as `OD-C05_DESIGN_SPEC.md`; `chassis/README.md` as `CHASSIS_README.md`
 
+## Status (2026-10-03)
+
+J5_DELIVER. Build v01 (15 mm plate) RV01 approved on assumptions with F1: the plate's factor through the hub window was ≈ 1.5. The Usta chose a 25 mm plate: spec 1.3, build v02 (attempt 2 of 2), RV02 `APPROVED_ASSUMPTION_CONDITIONAL` (F1 MEDIUM: screw-head bearing ≈ 47 MPa and infill, answered in the test procedure). v02 is delivered; J6 waits on the merge and the bench test.
+
 ## Resume
 
 1. Clone both repositories side by side (`oguz-atolye` and `open-dedica`), on the

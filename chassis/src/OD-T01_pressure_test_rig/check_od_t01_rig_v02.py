@@ -1,12 +1,12 @@
-"""Gate checks for od_t01_rig, concept C1 (job 20261002-od-t01-pressure-test-rig).
+"""Gate checks for od_t01_rig v02, concept C1 (job 20261002-od-t01-pressure-test-rig), spec 1.3.
 
 Written before the build (PLAYBOOK D3). Every predicate re-imports the exported
 STEP and measures it with tools.measure / tools.core; limits come from
-00_Spec/DESIGN_SPEC.md 1.1 §5 only, bands from GATES.md §0 (mm 0.005, deg 0.001,
+00_Spec/DESIGN_SPEC.md 1.3 §5 only, bands from GATES.md §0 (mm 0.005, deg 0.001,
 mm3 0.001, counts 0). A measurement that raises or returns nothing is INCONCLUSIVE.
 
 Usage (from the repo root, in the tools venv):
-    uv run tools/run.py python <ws>/01_CAD/check_od_t01_rig.py --step <step> [--stl <stl>]
+    uv run tools/run.py python <ws>/01_CAD/check_od_t01_rig_v02.py --step <step> [--stl <stl>]
         [--params <params.json>] [--out <gates.json>]
 The params JSON is the one the build writes (01_CAD/ for the delivery); it is used
 for U-04 only (the shape is rebuilt from it and compared with the file). The mesh
@@ -43,10 +43,10 @@ ASSEMBLY_IN = INPUTS / "od_g01_assembly_C1_v03.step"
 # ---- bands, GATES.md §0 ----------------------------------------------------------------
 B_MM, B_DEG, B_MM3, B_N = 0.005, 0.001, 0.001, 0
 
-# ---- spec 1.1 §2 / §4 / §5 values (the contract; nothing here comes from the build) ----
+# ---- spec 1.3 §2 / §4 / §5 values (the contract; nothing here comes from the build) ----
 SPEC = {
-    "env_size": (240.0, 150.0, 120.0), "env_tol": 0.1,
-    "env_pos": {"min_x": -120.0, "max_x": 120.0, "min_y": 0.0, "max_y": 150.0,
+    "env_size": (240.0, 160.0, 120.0), "env_tol": 0.1,
+    "env_pos": {"min_x": -120.0, "max_x": 120.0, "min_y": 0.0, "max_y": 160.0,
                 "min_z": -60.0, "max_z": 60.0},
     "housing_pose_y": 110.06,                    # §2: housing origin at (0, 110.06, 0)
     "seat_y": 135.0, "seat_tol": 0.10,            # REQ-02
@@ -54,22 +54,24 @@ SPEC = {
     "offer_up": (0.0, 30.0, 2.0),                 # U-03b: dy 0 … 30, step ≤ 2.0
     "screw_xz": [(44.0, 44.0), (44.0, -44.0), (-44.0, 44.0), (-44.0, -44.0)],
     "screw_d": (3.4, 0.1), "screw_d_min": 3.25,   # REQ-01, D-04a
-    "cbore_d": (6.5, 0.1), "cbore_top_y": 150.0, "cbore_floor_y": (138.0, 0.10),
-    "under_head": (3.0, 0.1), "offset_max": 0.10,
-    "window_r": (30.0, 0.1), "roof_deg": (45.1, 1.0), "window_apex_z": (42.51, 0.1),
-    "pairb_axis_min": 10.97, "pairb_head_d": 17.9,   # REQ-03, A-12
+    "cbore_d": (6.5, 0.1), "cbore_top_y": 160.0, "cbore_floor_y": (140.0, 0.10),
+    "under_head": (5.0, 0.1), "offset_max": 0.10,
+    "window_r": (30.0, 0.1), "roof_deg": (45.1, 1.0), "window_apex_z": (42.51, 0.16),
+    "pairb_axis_min": 10.87, "pairb_head_d": 17.7,   # REQ-03, A-12
     "phi_a": (-60.0, 15.0, 5.0), "clear_a": 5.0,     # REQ-04a
     "phi_b": -50.0, "drop_b": 15.0, "dz_b": (0.0, 200.0, 5.0),   # REQ-04b
     "headroom": 50.0,                                 # REQ-05
     "bench_xz": [(105.0, 40.0), (105.0, -40.0), (-105.0, 40.0), (-105.0, -40.0)],
     "bench_d": (4.5, 0.1), "bench_d_min": 4.25,       # REQ-06, D-04a
     "bench_probe": (8.0, 10.0, 300.0),                # REQ-06: Ø8, y 10 … 300
-    "screw_probe": (6.0, 150.0, 300.0),               # REQ-07: Ø6, y 150 … 300
+    "screw_probe": (6.0, 160.0, 300.0),               # REQ-07: Ø6, y 160 … 300
     "build_volume": (420.0, 420.0, 500.0),            # D-02, A-09 (bed X, bed Y, height Z)
     "wall_floor": 0.8, "wall_struct": 2.0, "min_feature": 1.0, "wide_soft": 2.0,
     "overhang_min": 45.0, "bridge_max": 5.0, "crown_bridge_max": 3.4,
     "stl_tol": 0.01,
-    # U-05, the plan's features as amended by spec 1.1 (walls z −60 … +40)
+    # REQ-08 / A-02 hand numbers of §4, reported against the measured section at x 0 (not a gate)
+    "hand_M_Nmm": 47.4e3, "hand_Z_mm3": 4948.0, "hand_sigma_MPa": 9.6, "pla_MPa": 40.0,
+    # U-05, the plan's features as amended by spec 1.1 (walls z −60 … +40); spec 1.3 changes no count
     "census": {"planar_faces": 41, "cylinder_faces": 13, "other_faces": 0,
                "concave_cylinders": 13, "convex_cylinders": 0, "bores": 13,
                "bores_by_d": {3.4: 4, 6.5: 4, 60.0: 1, 4.5: 4}, "chamfer_planes": 4,
@@ -296,7 +298,7 @@ def u04_roundtrip(c):
         return [row("U-04", gate("U-04", inconclusive("step_roundtrip", "bool", "no build params given"),
                                  "==", 1, band=B_N))]
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    import build_od_t01_rig as b
+    import build_od_t01_rig_v02 as b
     shape = b.build(b.Params(**c.params))
     cs = compare_step(shape, c.step)
     out = [row("U-04", gate("U-04", cs["schema"], "==", 1, band=B_N), "schema AP242"),
@@ -419,16 +421,22 @@ def d02_bed(c):
     return out
 
 
-def fill_crowns(rig):
+def screw_holes_measured(rig, seat_y):
+    """The four Ø3.4 holes as measured: (axis x, axis z, y0, y1, radius) of each."""
+    out = []
+    census = bore_census(rig)
+    for (x, z) in SPEC["screw_xz"]:
+        loc = locate_bore(census, (x, seat_y + 1.5, z), (0, 1, 0))
+        st, en = loc["diameter"].detail["start"], loc["diameter"].detail["end"]
+        out.append((st[0], st[2], min(st[1], en[1]), max(st[1], en[1]), loc["diameter"].measured / 2))
+    return out
+
+
+def fill_crowns(rig, holes):
     """Census copy for D-03a: the four Ø3.4 holes filled (Ø3.6, from the plate underside to
     the counterbore floor, both measured), so their crowns, the named exception, drop out."""
     filled = rig
-    for (x, z) in SPEC["screw_xz"]:
-        loc = locate_bore(bore_census(rig), (x, 136.5, z), (0, 1, 0))
-        st, en = loc["diameter"].detail["start"], loc["diameter"].detail["end"]
-        y0, y1 = min(st[1], en[1]), max(st[1], en[1])
-        ax = loc["diameter"].detail
-        cx, cz = st[0], st[2]
+    for (cx, cz, y0, y1, _r) in holes:
         filled = filled + probe_cyl(cx, cz, 3.6, y0, y1)
     return filled
 
@@ -436,7 +444,8 @@ def fill_crowns(rig):
 @guarded
 def d03a_overhang(c):
     out = []
-    filled = fill_crowns(c.rig)
+    holes_m = screw_holes_measured(c.rig, c.seat_y)
+    filled = fill_crowns(c.rig, holes_m)
     n = solid_count(filled)
     out.append(row("D-03a", gate("D-03a", n, "==", 1, band=B_N), "census copy is one solid"))
     oc = overhang_census(filled, BUILD_DIR, min_deg=SPEC["overhang_min"])
@@ -448,8 +457,10 @@ def d03a_overhang(c):
     near = None
     if raw.ok and at is not None:
         p = np.array(at, float)
-        near = min(math.hypot(p[0] - x, p[2] - z) for x, z in SPEC["screw_xz"])
-        inside = near <= 1.75 and 134.99 <= p[1] <= 138.01
+        # located against the measured hole axes and ends (v01 used the nominal ones, REPORT v01 §4 note 1)
+        hit = [(math.hypot(p[0] - cx, p[2] - cz), y0, y1, r) for (cx, cz, y0, y1, r) in holes_m]
+        near, y0, y1, r = min(hit)
+        inside = near <= r + B_MM and y0 - B_MM <= p[1] <= y1 + B_MM
     else:
         inside = False
     exc = res("crown_exception_located", int(inside), "bool", at=at)
@@ -498,7 +509,7 @@ def holes(c):
                                       assumes=["A-01"]), f"Ø3.4 {tag} opens at the plate underside"))
         out.append(row("REQ-01", gate("REQ-01", h["through"], "==", 1, band=B_N, assumes=["A-01"]),
                        f"Ø3.4 {tag} through into the counterbore"))
-        cb = locate_bore(c.census, (ip[0], 144.0, ip[2]), (0, 1, 0))
+        cb = locate_bore(c.census, (ip[0], (SPEC["cbore_top_y"] + SPEC["cbore_floor_y"][0]) / 2, ip[2]), (0, 1, 0))
         out.append(row("REQ-01", gate("REQ-01", cb["diameter"], "in",
                                       (SPEC["cbore_d"][0] - SPEC["cbore_d"][1], SPEC["cbore_d"][0] + SPEC["cbore_d"][1]),
                                       band=B_MM, assumes=["A-01"]), f"Ø6.5 counterbore {tag}"))
@@ -549,7 +560,7 @@ def req02_seat(c):
 @guarded
 def req03_window(c):
     out = []
-    w = locate_bore(c.census, (0.0, 142.5, 0.0), (0, 1, 0))
+    w = locate_bore(c.census, (0.0, (c.seat_y + c.env["max_y"]) / 2, 0.0), (0, 1, 0))
     r0, rt = SPEC["window_r"]
     out.append(row("REQ-03", gate("REQ-03", w["diameter"], "in", (2 * (r0 - rt), 2 * (r0 + rt)), band=B_MM,
                                   assumes=["A-05"]), "window diameter (R 30.0 ± 0.1)"))
@@ -557,7 +568,8 @@ def req03_window(c):
                    "window on the axis"))
     out.append(row("REQ-03", gate("REQ-03", w["through"], "==", 1, band=B_N, assumes=["A-05"]), "window through the plate"))
     flanks = [f for f in planar_faces(c.rig) if abs(face_normal(f)[1]) < 1e-9 and face_normal(f)[2] < -0.1
-              and abs(f.center().X) < r0 + 1 and 0 < f.center().Z < 45 and 134 < f.center().Y < 151]
+              and abs(f.center().X) < r0 + 1 and 0 < f.center().Z < 45
+              and c.seat_y - 1 < f.center().Y < c.env["max_y"] + 1]
     out.append(row("REQ-03", gate("REQ-03", res("window_flanks", len(flanks), "count"), "==", 2, band=B_N,
                                   assumes=["A-05"]), "two roof flanks"))
     a0, at = SPEC["roof_deg"]
@@ -567,11 +579,12 @@ def req03_window(c):
         out.append(row("REQ-03", gate("REQ-03", res("roof_deg", ang, "deg", at=tuple(f.center())), "in",
                                       (a0 - at, a0 + at), band=B_DEG, assumes=["A-05"]),
                        f"roof flank x {f.center().X:+.1f} angle from horizontal"))
-    apex = radial_extent(c.rig, (0.0, 142.5, 0.0), (0, 1, 0), (0, 0, 1), 0.0, 0.0, side="inner",
+    ymid = (c.seat_y + c.env["max_y"]) / 2
+    apex = radial_extent(c.rig, (0.0, ymid, 0.0), (0, 1, 0), (0, 0, 1), 0.0, 0.0, side="inner",
                          r_min=0.0, r_max=None)
     z0, zt = SPEC["window_apex_z"]
     out.append(row("REQ-03", gate("REQ-03", apex, "in", (z0 - zt, z0 + zt), band=B_MM, assumes=["A-05"]),
-                   "roof apex z (radial_extent along +Z at y 142.5)"))
+                   f"roof apex z (radial_extent along +Z at y {ymid:.2f})"))
     g4 = clearance(c.rig, c.g04)
     out.append(row("REQ-03", gate("REQ-03", g4, ">=", SPEC["clear_min"], band=B_MM, assumes=["A-05"]),
                    "OD-G04 (hub tube included) to the rig"))
@@ -582,7 +595,7 @@ def req03_window(c):
                                   assumes=["A-12"]), "pair-B screw axes found on the posed housing"))
     for bo in pairb:
         x, z = bo["start"][0], bo["start"][2]
-        probe = probe_cyl(x, z, 0.002, c.seat_y, 150.0)
+        probe = probe_cyl(x, z, 0.002, c.seat_y, c.env["max_y"])
         d = clearance(c.rig, probe)
         dist = res("pairb_axis_to_window", d.measured + 0.001, "mm", at=d.at) if d.ok else d
         out.append(row("REQ-03", gate("REQ-03", dist, ">=", SPEC["pairb_axis_min"], band=B_MM, assumes=["A-12"]),
@@ -643,8 +656,58 @@ def probes(c):
     for (x, z) in SPEC["screw_xz"]:
         r = interference({"rig": c.rig, "probe": probe_cyl(x, z, d, y0, y1)})["rig|probe"]
         out.append(row("REQ-07", gate("REQ-07", r, "<=", 0.0, band=B_MM3),
-                       f"Ø6 probe y 150 … 300 at ({x:+.0f}, {z:+.0f})"))
+                       f"Ø6 probe y {y0:g} … {y1:g} at ({x:+.0f}, {z:+.0f})"))
     return out
+
+
+@guarded
+def req08_section(c):
+    """REQ-08 is Soft and not geometric. Report §4's hand numbers against the plate's
+    section measured on the re-imported STEP at the plane x 0 (through the hub window):
+    area, centroid, second moment about the Z-parallel axis through the centroid, the
+    section modulus Z = I / c_max, and σ = M / Z with §4's M. Reported, never gated."""
+    from build123d import Box
+    from OCP.BRepAlgoAPI import BRepAlgoAPI_Section
+    from OCP.BRepBuilderAPI import BRepBuilderAPI_MakeFace
+    from OCP.BRepGProp import BRepGProp
+    from OCP.GProp import GProp_GProps
+    from OCP.gp import gp_Dir, gp_Pln
+    ytop = c.env["max_y"]
+    plate = c.rig & Pos(0, (c.seat_y + ytop) / 2, 0) * Box(400, ytop - c.seat_y, 400)
+    pln = gp_Pln(gp_Pnt(0, 0, 0), gp_Dir(1, 0, 0))
+    big = BRepBuilderAPI_MakeFace(pln, -500, 500, -500, 500).Face()
+    from OCP.BRepAlgoAPI import BRepAlgoAPI_Common
+    com = BRepAlgoAPI_Common(plate.wrapped, big)
+    com.Build()
+    if not com.IsDone():
+        raise RuntimeError("section at x 0 failed")
+    props = GProp_GProps()
+    BRepGProp.SurfaceProperties_s(com.Shape(), props)
+    area = props.Mass()
+    if not area > 0:
+        raise RuntimeError("empty section at x 0")
+    cg = props.CentreOfMass()
+    mat = props.MatrixOfInertia()        # about the centroid; element (y, y) is ∫(x² + z²), (z, z) ∫(x² + y²)
+    # on the plane x 0: I about the Z-parallel axis through the centroid = ∫ (y − yc)² dA = Izz (x ≡ 0)
+    i_z = mat.Value(3, 3)
+    from OCP.Bnd import Bnd_Box
+    from OCP.BRepBndLib import BRepBndLib
+    bb = Bnd_Box()
+    BRepBndLib.Add_s(com.Shape(), bb)
+    _x0, ymin, zmin, _x1, ymax, zmax = bb.Get()
+    cmax = max(ymax - cg.Y(), cg.Y() - ymin)
+    zmod = i_z / cmax
+    sigma = SPEC["hand_M_Nmm"] / zmod
+    rows = []
+    for name, val, unit, hand in (("section_area", area, "mm2", None), ("section_centroid_y", cg.Y(), "mm", None),
+                                  ("section_I", i_z, "mm4", None), ("section_modulus_Z", zmod, "mm3", SPEC["hand_Z_mm3"]),
+                                  ("sigma_at_M", sigma, "MPa", SPEC["hand_sigma_MPa"]),
+                                  ("factor_vs_PLA", SPEC["pla_MPa"] / sigma, "-", None)):
+        rows.append({"gate": "REQ-08", "measured": round(val, 4), "unit": unit, "required": "reported (Soft, bench)",
+                     "margin": None, "at": "plane x 0, plate y %.2f … %.2f" % (ymin, ymax), "status": "REPORTED",
+                     "method": "section x 0 (BRepGProp)", "assumes": ["A-02"],
+                     "note": f"{name}" + (f"; §4 hand value {hand:g}" if hand is not None else "")})
+    return rows
 
 
 def not_applicable(c):
@@ -655,13 +718,14 @@ def not_applicable(c):
                      "status": "N/A", "method": "-", "assumes": [], "note": why})
     rows.append({"gate": "REQ-08", "measured": None, "unit": "", "required": "Soft, bench", "margin": None,
                  "at": None, "status": INCONCLUSIVE, "method": "-", "assumes": ["A-02"],
-                 "note": "not geometric; §4 hand calculation σ ≈ 10.5 MPa vs ≈ 40 MPa; answered by the first test"})
+                 "note": "not geometric; §4 hand calculation (spec 1.3) σ ≈ 9.6 MPa vs ≈ 40 MPa, factor ≈ 4.2; "
+                         "measured section at x 0 in the REQ-08 section rows; answered by the first test"})
     return rows
 
 
 PREDICATES = [exactly_one_solid, u01_validity, u02_envelope, u03a_close, u03b_offer_up, u04_roundtrip,
               u05_census, walls_and_features, u07_mesh, d02_bed, d03a_overhang, d03b_bridge, holes,
-              req02_seat, req03_window, req04_travel, req05_headroom, probes]
+              req02_seat, req03_window, req04_travel, req05_headroom, probes, req08_section]
 
 
 def summarise(rows):

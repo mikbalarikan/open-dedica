@@ -1,0 +1,319 @@
+{
+ "schema": "AP242",
+ "header": {
+  "name": "od_c09_front_C1_v01.step",
+  "time_stamp": "2026-10-02T00:00:00",
+  "author": [
+   ""
+  ],
+  "organization": [
+   ""
+  ],
+  "preprocessor_version": "Open CASCADE STEP processor 7.9.3",
+  "originating_system": "build123d 0.11.1",
+  "authorization": ""
+ },
+ "labels": [
+  "od_c09_front"
+ ],
+ "compare_step": {
+  "schema": [
+   1,
+   "MEASURED"
+  ],
+  "solids": [
+   1,
+   "MEASURED"
+  ],
+  "volume_delta": [
+   0.0,
+   "MEASURED"
+  ],
+  "faces_delta": [
+   0,
+   "MEASURED"
+  ],
+  "labels": [
+   1,
+   "MEASURED"
+  ],
+  "valid_after": [
+   1,
+   "MEASURED"
+  ]
+ },
+ "roundtrip_work": {
+  "schema": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "solids": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "volume_delta": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "faces_delta": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "labels": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "valid_after": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ]
+ },
+ "mesh_census": {
+  "triangles": 3932,
+  "bodies": 1,
+  "naked_edges": 0,
+  "winding": 1,
+  "volume": 95755.61585986563
+ },
+ "mesh_deviation": [
+  0.00489124625230688,
+  "MEASURED",
+  [
+   -86.986873,
+   168.392046,
+   95.5
+  ]
+ ],
+ "fresh_write": {
+  "triangles": 3932
+ },
+ "fresh_sagitta": [
+  0.004889284577454498,
+  "MEASURED"
+ ],
+ "sha_fresh": "086c7c7e4f1c98472b1800dfce3bf73e83ef240311986df454bd2e1a7c740498",
+ "sha_delivered": "086c7c7e4f1c98472b1800dfce3bf73e83ef240311986df454bd2e1a7c740498",
+ "stl_bytes_equal": true,
+ "stl_bytes_equal_after80": true,
+ "min_wall_mesh": [
+  2.9999999999999827,
+  "MEASURED",
+  "",
+  2.562999725341797e-05
+ ],
+ "mesh_volume": 95755.61585986563,
+ "brep_volume": 95755.13706331661,
+ "cyl_radii": [
+  1.7,
+  2.0,
+  5.5,
+  7.5,
+  8.5898,
+  8.6907
+ ],
+ "probes": {
+  "wall_left": "IN",
+  "wall_right": "IN",
+  "top_bar": "IN",
+  "opening_slot": "OUT",
+  "opening_window": "OUT",
+  "opening_slot_left": "OUT",
+  "opening_win_right": "OUT",
+  "R1": "IN",
+  "R2": "IN",
+  "R3": "IN",
+  "R4": "IN",
+  "R5": "IN",
+  "R1_end_out": "OUT",
+  "R1_back_out": "OUT",
+  "flange_L": "IN",
+  "flange_R": "IN",
+  "flange_L_out": "OUT",
+  "gus_Lin": "IN",
+  "gus_Lout": "IN",
+  "gus_Rin": "IN",
+  "gus_Rout": "IN",
+  "gus_Lin_above_hyp": "OUT",
+  "gus_Rout_above_hyp": "OUT",
+  "slot_free_under_R": "OUT",
+  "knob_place": "OUT",
+  "bossL": "IN",
+  "bossR": "IN",
+  "boreL": "OUT",
+  "boreR": "OUT",
+  "boreL_floor_above": "IN",
+  "behind_boss": "OUT"
+ },
+ "arcs": [
+  [
+   8.6907,
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    -93.7309,
+    113.5432,
+    85.485
+   ],
+   [
+    -93.7309,
+    113.5432,
+    88.9569
+   ],
+   15.763799
+  ],
+  [
+   8.5898,
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    -94.172,
+    166.5131,
+    85.485
+   ],
+   [
+    -94.172,
+    166.5131,
+    88.9569
+   ],
+   23.125652
+  ]
+ ],
+ "caps_more": {
+  "B1": {
+   "88.6": [
+    -94.2498,
+    166.5132,
+    118.349,
+    0.002
+   ],
+   "88.8": [
+    -94.2498,
+    166.5132,
+    118.349,
+    0.002
+   ],
+   "89.0": [
+    -94.2498,
+    166.5132,
+    118.349,
+    0.002
+   ],
+   "89.5": [
+    -94.2498,
+    166.5132,
+    118.349,
+    0.002
+   ],
+   "90.0": [
+    -94.2498,
+    166.5132,
+    118.349,
+    0.002
+   ],
+   "90.5": [
+    -94.2498,
+    166.5132,
+    118.349,
+    0.002
+   ]
+  },
+  "B3": {
+   "88.6": [
+    -93.7672,
+    113.4264,
+    119.332,
+    0.002
+   ],
+   "88.8": [
+    -93.7672,
+    113.4264,
+    119.332,
+    0.002
+   ],
+   "89.0": [
+    -93.7672,
+    113.4264,
+    119.332,
+    0.002
+   ],
+   "89.5": [
+    -93.7672,
+    113.4264,
+    119.332,
+    0.002
+   ],
+   "90.0": [
+    -93.7672,
+    113.4264,
+    119.332,
+    0.002
+   ],
+   "90.5": [
+    -93.7672,
+    113.4264,
+    119.332,
+    0.002
+   ]
+  },
+  "B2": {
+   "88.6": [
+    -98.9287,
+    139.9898,
+    126.274,
+    0.108
+   ],
+   "88.8": [
+    -98.9305,
+    139.9872,
+    126.274,
+    0.1049
+   ],
+   "89.0": [
+    -98.9323,
+    139.9847,
+    126.274,
+    0.1018
+   ],
+   "89.5": [
+    -98.9368,
+    139.9783,
+    126.274,
+    0.0939
+   ],
+   "90.0": [
+    -98.9413,
+    139.9719,
+    126.274,
+    0.0861
+   ],
+   "90.5": [
+    -98.9458,
+    139.9655,
+    126.274,
+    0.0783
+   ]
+  }
+ },
+ "healed_G10": {
+  "brep_valid": 0,
+  "vol_before": 137692.41769751193,
+  "vol_after": 137692.41769751193
+ },
+ "healed_E02": {
+  "brep_valid": 0,
+  "vol_before": 36865.17164462174,
+  "vol_after": 36865.17164462174
+ }
+}

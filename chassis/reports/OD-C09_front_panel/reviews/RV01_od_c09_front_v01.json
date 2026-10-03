@@ -1,0 +1,716 @@
+{
+ "schema": "oguz-verdict-v1",
+ "review_id": "RV01",
+ "job_id": "20261002-od-c09-front-panel",
+ "target": "od_c09_front_v01",
+ "spec_version": "1.1",
+ "reviewer": {
+  "runtime": "claude-code",
+  "model": "claude-opus-5-5"
+ },
+ "verdict": "APPROVED_ASSUMPTION_CONDITIONAL",
+ "summary": "One valid solid 232.0 x 215.0 x 25.0 mm; every hard gate passes on re-measurement, least margins E-01 0.500 and contacts at zero by design, J-05 3.049, REQ-05 2.511 at phi +10; REQ-08 bench INCONCLUSIVE (Soft); 12 open assumptions.",
+ "files": [
+  {
+   "path": "02_STEP_STL/od_c09_front_C1_v01.step",
+   "sha256": "0d688d24b7954e959291b171fa6e464dd30834e3f737eb73b696dfc992148ab5",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c09_front_C1_v01.stl",
+   "sha256": "086c7c7e4f1c98472b1800dfce3bf73e83ef240311986df454bd2e1a7c740498",
+   "matches_report": true
+  },
+  {
+   "path": "02_STEP_STL/od_c09_assembly_C1_v01.step",
+   "sha256": "e451a3854cb1dd22d29c9ba8871367f3be17341e9e3c06fecdffc3701406984c",
+   "matches_report": true
+  }
+ ],
+ "gates": [
+  {
+   "gate": "U-01",
+   "measured": 1,
+   "unit": "count",
+   "required": "solid_count = 1, brep_valid = 1, naked_edges = 0",
+   "margin": 0,
+   "at": null,
+   "status": "PASS",
+   "method": "validity",
+   "assumes": []
+  },
+  {
+   "gate": "U-02",
+   "measured": 232.0,
+   "unit": "mm",
+   "required": "232.0 x 215.0 x 25.0 each in [spec - 0.1, spec + 0.1]",
+   "margin": 0.1,
+   "at": "size 232.000 x 215.000 x 25.000; position x -116.000..116.000, y 0.000..215.000, z 72.000..97.000",
+   "status": "PASS",
+   "method": "envelope",
+   "assumes": []
+  },
+  {
+   "gate": "U-03",
+   "measured": 0.0001,
+   "unit": "mm",
+   "required": "designed contacts clearance = 0; every pair interference <= 0; footprint >= 0.5; flanges >= 3.0 and wall foot >= 2.0 from OD-C01 holes; flange holes >= 6.0 c-c; panel to OD-C05/housing/OD-G04 >= 2.0; OD-C15 keep-outs <= 0; (b) lowering <= 0 at every step",
+   "margin": -0.0001,
+   "at": "boss end contact (-93.217, 122.219, 85.485); wall foot and flanges 0.0000; OD-C10 0.0000 at (110, 215, 97); sound pairs 0.000 mm3; fallback pairs > 0 not inside (OD-G10-housing 3.6e-15, F4); footprint 0.780 at (-116, 0, 97); holes 4.300 / 2.300 / 19.849; brew 12.000 / 8.776 / 18.053; OD-C15 0.000 mm3; (b) 21 steps 0.000 mm3, OD-G10 >= 14.021",
+   "status": "PASS_ASSUMED",
+   "method": "clearance, interference (common_volume), bore_census, envelope",
+   "assumes": [
+    "A-01",
+    "A-02",
+    "A-03",
+    "A-05",
+    "A-07"
+   ]
+  },
+  {
+   "gate": "U-04",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "named body re-read unchanged, no stray shells, valid after re-import",
+   "margin": 0.0,
+   "at": "delivered STEP: AP242, 1 solid, label od_c09_front, valid; fresh write and re-read: volume delta 5.5e-10 mm3, faces delta 0",
+   "status": "PASS",
+   "method": "compare_step, step_roundtrip",
+   "assumes": []
+  },
+  {
+   "gate": "U-05",
+   "measured": 9,
+   "unit": "count",
+   "required": "plan counts: 1 wall with 1 opening, 5 ribs, 2 flanges, 4 gussets, 4 x 3.4 flange holes, 3 button holes, 2 bosses 11.0 with 1 relief each, 2 x 4.0 blind bores",
+   "margin": 0,
+   "at": "9 bores, 2 convex r 5.5, 2 relief arcs r 8.590 / 8.691, rib/flange/gusset probes IN",
+   "status": "PASS",
+   "method": "feature_census, bore_census, locate_bore, point classification",
+   "assumes": []
+  },
+  {
+   "gate": "U-06",
+   "measured": 3.0,
+   "unit": "mm",
+   "required": ">= 2.0 (Soft)",
+   "margin": 1.0,
+   "at": "(-115.776, 0.224, 97.0)",
+   "status": "PASS",
+   "method": "min_wall_wide",
+   "assumes": []
+  },
+  {
+   "gate": "U-07",
+   "measured": 0.00489,
+   "unit": "mm",
+   "required": "STL at tol 0.01, angular <= 4*acos(1 - 0.01/R_max); stl_max_sagitta <= 0.01",
+   "margin": 0.00511,
+   "at": "(-86.987, 168.392, 95.5); 0.15 rad <= 0.1919; fresh mesh byte-identical; one closed shell",
+   "status": "PASS",
+   "method": "write_stl, mesh_sagitta, mesh_census, mesh_deviation",
+   "assumes": []
+  },
+  {
+   "gate": "U-08",
+   "measured": null,
+   "unit": "count",
+   "required": "applies to threaded parts; this target has none",
+   "margin": null,
+   "at": null,
+   "status": "NOT_APPLICABLE",
+   "method": "-",
+   "assumes": []
+  },
+  {
+   "gate": "D-01a",
+   "measured": 3.0,
+   "unit": "mm",
+   "required": ">= 0.8",
+   "margin": 2.2,
+   "at": "(-115.776, 0.224, 97.0)",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": []
+  },
+  {
+   "gate": "D-01b",
+   "measured": 3.0,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 1.0,
+   "at": "(-115.776, 0.224, 97.0)",
+   "status": "PASS_ASSUMED",
+   "method": "min_wall",
+   "assumes": [
+    "A-11"
+   ]
+  },
+  {
+   "gate": "D-02",
+   "measured": 232.0,
+   "unit": "mm",
+   "required": "<= Kobra Max 3 build volume 420 x 420 x 500, 232.0 x 215.0 on the bed, 25.0 tall",
+   "margin": 188.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "method": "envelope",
+   "assumes": [
+    "A-10"
+   ]
+  },
+  {
+   "gate": "D-03a",
+   "measured": 90.0,
+   "unit": "deg",
+   "required": ">= 45 from horizontal, build_dir (0,0,-1), flange-hole crowns excluded",
+   "margin": 45.0,
+   "at": "crowns 0.0 deg at (-95.0, 4.0, 75.3), named exception",
+   "status": "PASS_ASSUMED",
+   "method": "overhang_census(build_dir=(0,0,-1))",
+   "assumes": [
+    "A-09"
+   ]
+  },
+  {
+   "gate": "D-03b",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "<= 5",
+   "margin": 1.6,
+   "at": "(+-85 / +-95, 0..4, 77)",
+   "status": "PASS_ASSUMED",
+   "method": "sections; flat_ceiling_spans",
+   "assumes": [
+    "A-09"
+   ]
+  },
+  {
+   "gate": "D-04a",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": ">= 3.25",
+   "margin": 0.15,
+   "at": "(+-85 / +-95, 0, 77)",
+   "status": "PASS",
+   "method": "bore_census, locate_bore",
+   "assumes": []
+  },
+  {
+   "gate": "D-05a",
+   "measured": 10.55,
+   "unit": "mm",
+   "required": ">= 8.0",
+   "margin": 2.55,
+   "at": "upper boss 104/284 deg, 0.125 from the end; lower 10.788",
+   "status": "PASS_ASSUMED",
+   "method": "radial_profile, bore_census",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "D-05b",
+   "measured": 4.0,
+   "unit": "mm",
+   "required": "4.0 +- 0.05, depth 6.0 +- 0.1 (>= 5.7)",
+   "margin": 0.05,
+   "at": "(-91.056, 153.235) and (-90.999, 127.252), depth 6.000, blind",
+   "status": "PASS_ASSUMED",
+   "method": "bore_census, locate_bore",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "D-06a",
+   "measured": 3.0,
+   "unit": "mm",
+   "required": ">= 1.0",
+   "margin": 2.0,
+   "at": "(-115.776, 0.224, 97.0)",
+   "status": "PASS",
+   "method": "min_wall",
+   "assumes": []
+  },
+  {
+   "gate": "D-07",
+   "measured": null,
+   "unit": "count",
+   "required": "none: the insert bores are formed by the insert",
+   "margin": null,
+   "at": null,
+   "status": "NOT_APPLICABLE",
+   "method": "-",
+   "assumes": []
+  },
+  {
+   "gate": "J-05",
+   "measured": 3.049,
+   "unit": "mm",
+   "required": ">= 3.0",
+   "margin": 0.049,
+   "at": "(-92.208, 158.151, 85.535) upper boss at the B1 relief; lower 3.287",
+   "status": "PASS",
+   "method": "radial_profile; min_wall corroborates",
+   "assumes": []
+  },
+  {
+   "gate": "E-01",
+   "measured": 0.5,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": -4e-13,
+   "at": "(-90.573, 158.714, 85.985) upper boss; panel without bosses 1.136 at (-94.678, 146.037, 94.0)",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "E-05",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.10",
+   "margin": 0.1,
+   "at": "board holes (-91.0555, 153.2349) and (-90.9987, 127.2515)",
+   "status": "PASS_ASSUMED",
+   "method": "bore_census, locate_bore",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "E-06",
+   "measured": 6,
+   "unit": "count",
+   "required": "each board boss on and tied into the wall; each flange tied by two gussets",
+   "margin": 0,
+   "at": "sections rv_xm91, rv_y153, rv_y127, rv_x80, rv_x102, rv_xm78, rv_z89",
+   "status": "PASS",
+   "method": "reviewer, from sections (write_sections)",
+   "assumes": []
+  },
+  {
+   "gate": "REQ-01",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "3.4 +- 0.1 at (+-85, 77), (+-95, 77), offset <= 0.10, 4.0 +- 0.1 long; underside y 0.00 +- 0.10",
+   "margin": 0.1,
+   "at": "offset 0.000, length 4.000, through; underside y 0.000",
+   "status": "PASS_ASSUMED",
+   "method": "locate_bore, envelope",
+   "assumes": [
+    "A-01"
+   ]
+  },
+  {
+   "gate": "REQ-02",
+   "measured": 97.0,
+   "unit": "mm",
+   "required": "outer z 97.00 +- 0.10, inner 94.00 +- 0.10, x +-116.0 +- 0.1, top y 215.00 +- 0.10",
+   "margin": 0.1,
+   "at": "probes at (+-100, 100), (+-100, 200), (0, 200), (+-110, 30): 97.000 / 94.000",
+   "status": "PASS_ASSUMED",
+   "method": "radial_extent, envelope",
+   "assumes": [
+    "A-02"
+   ]
+  },
+  {
+   "gate": "REQ-03",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "outline per spec 4 each edge +- 0.1 at z 95.5; shrunk boxes interference = 0",
+   "margin": 0.0,
+   "at": "edges exact: slot +-75.000 / 50.000, window -57.500 / 75.000 / 188.000",
+   "status": "PASS_ASSUMED",
+   "method": "section, interference (common_volume)",
+   "assumes": [
+    "A-05",
+    "A-06"
+   ]
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 0.002,
+   "unit": "mm",
+   "required": "B2 foremost >= 97.5; B1, B3 tops >= 95.0 (<= 2.0 recessed); hole to cap axis at z 95.5 <= 0.25",
+   "margin": 0.248,
+   "at": "B1 offset 0.002; B2 98.565 (+1.065), B1 95.333 (+0.333), B3 95.345; B2 0.000, B3 0.002",
+   "status": "PASS_ASSUMED",
+   "method": "clearance, section centroids, bore_census",
+   "assumes": [
+    "A-03",
+    "A-04"
+   ]
+  },
+  {
+   "gate": "REQ-05",
+   "measured": 2.511,
+   "unit": "mm",
+   "required": "(a) phi -55..+10, clearance >= 2.0 to panel and OD-E02; (b) phi -50, lowered 15, carried z 32 -> 182: clearance > 0, not inside",
+   "margin": 0.511,
+   "at": "(75.0, 160.297, 97.0) at phi +10; (b) least 11.689; OD-E02 >= 28.669",
+   "status": "PASS_ASSUMED",
+   "method": "clearance (fallback)",
+   "assumes": [
+    "A-05"
+   ]
+  },
+  {
+   "gate": "REQ-06",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "six 6 mm cylinders interference with the panel = 0",
+   "margin": 0.0,
+   "at": "flange-hole axes y 4..260, OD-C15 axes y 2..260",
+   "status": "PASS_ASSUMED",
+   "method": "interference (common_volume)",
+   "assumes": [
+    "A-14"
+   ]
+  },
+  {
+   "gate": "REQ-07",
+   "measured": 72.0,
+   "unit": "mm",
+   "required": "min z >= 72.0; tray box and knob place interference = 0",
+   "margin": 0.0,
+   "at": "flange ends z 72.0; tray 0.000 mm3, knob 0.000 mm3",
+   "status": "PASS_ASSUMED",
+   "method": "envelope, common_volume",
+   "assumes": [
+    "A-06",
+    "A-13"
+   ]
+  },
+  {
+   "gate": "REQ-08",
+   "measured": null,
+   "unit": "count",
+   "required": "Soft: no visible flex under a button press or pump drum (bench)",
+   "margin": null,
+   "at": null,
+   "status": "INCONCLUSIVE",
+   "method": "bench, first print",
+   "assumes": [
+    "A-12"
+   ]
+  }
+ ],
+ "feature_census": [
+  {
+   "feature": "F01 wall",
+   "expected": "3.0 thick, x +-116, y 0..215, z 94..97",
+   "found": "probes IN; faces 94.000 / 97.000; 232 x 215",
+   "status": "PASS"
+  },
+  {
+   "feature": "F02 brew opening",
+   "expected": "slot union window, square corners",
+   "found": "U outline, 10 edges at spec values; probes OUT",
+   "status": "PASS"
+  },
+  {
+   "feature": "F03 return ribs R1..R5",
+   "expected": "5 ribs 3.0 thick, z 84..94",
+   "found": "5 of 5 probes IN; OUT past R1 end and behind",
+   "status": "PASS"
+  },
+  {
+   "feature": "F04 floor flanges x2",
+   "expected": "y 0..4, z 72..94",
+   "found": "2 of 2 probes IN; OUT at y 4.1",
+   "status": "PASS"
+  },
+  {
+   "feature": "F05 gussets x4",
+   "expected": "right triangles y 4..34, z 78..94",
+   "found": "4 of 4 probes IN; OUT above hypotenuse",
+   "status": "PASS"
+  },
+  {
+   "feature": "F06 flange holes x4",
+   "expected": "3.4 through along Y at (+-85, 77), (+-95, 77)",
+   "found": "4 bores 3.400, length 4.000, through, offset 0.000",
+   "status": "PASS"
+  },
+  {
+   "feature": "F07 board bosses x2",
+   "expected": "11.0 on the board-hole axes, z 85.485..94",
+   "found": "2 convex cylinders r 5.500",
+   "status": "PASS"
+  },
+  {
+   "feature": "F08 collar reliefs x2",
+   "expected": "radius collar + 0.5",
+   "found": "2 concave arcs r 8.590 / 8.691, z 85.485..88.957",
+   "status": "PASS"
+  },
+  {
+   "feature": "F09 insert bores x2",
+   "expected": "4.0 x 6.0 blind",
+   "found": "2 bores 4.000 x 6.000, blind",
+   "status": "PASS"
+  },
+  {
+   "feature": "F10 button holes x3",
+   "expected": "15.0 through on the cap axes",
+   "found": "3 bores 15.000 through on the measured axes",
+   "status": "PASS"
+  },
+  {
+   "feature": "F11 steam-knob place",
+   "expected": "kept free",
+   "found": "cylinder 32 interference 0.000 mm3",
+   "status": "PASS"
+  },
+  {
+   "feature": "F12 keep-outs",
+   "expected": "nothing at z < 72, nothing in the tray box",
+   "found": "min z 72.000; tray box 0.000 mm3",
+   "status": "PASS"
+  },
+  {
+   "feature": "F13 top edge",
+   "expected": "top face y 215",
+   "found": "max y 215.000; OD-C10 contact 0.0000",
+   "status": "PASS"
+  }
+ ],
+ "plausibility": [
+  {
+   "question": "P1 gravity",
+   "answer": "Wall foot and flanges on the plate (0.0000), four M3 screws from above; lid skirt on the top edge.",
+   "status": "YES"
+  },
+  {
+   "question": "P2 function chains",
+   "answer": "Caps in their holes on axis (<= 0.002); board on two bosses, insert bores coaxial with its holes (0.0000).",
+   "status": "YES"
+  },
+  {
+   "question": "P3 moving parts",
+   "answer": "Portafilter swing >= 2.511, carry >= 11.689; tray slot 0.200 to the tray box.",
+   "status": "YES"
+  },
+  {
+   "question": "P4 human factors",
+   "answer": "B2 1.565 proud, B1/B3 1.66 deep in 15 mm holes, finger-reachable; flange screws driven straight down, clear.",
+   "status": "YES"
+  },
+  {
+   "question": "P5 absurdity",
+   "answer": "A flat fascia with a brew opening, tray slot and button column, as on single-group machines.",
+   "status": "YES"
+  },
+  {
+   "question": "P6 floating, embedded, mirrored, upside-down",
+   "answer": "One solid; ribs, bosses, gussets behind z 94; front face z 97; flanges to the rear; caps out through the holes.",
+   "status": "YES"
+  }
+ ],
+ "positive_controls": [
+  {
+   "check": "validity",
+   "mutant": "panel plus a separate 10 mm box",
+   "got": "FAIL"
+  },
+  {
+   "check": "envelope",
+   "mutant": "0.5 nub behind the left flange to z 71.5",
+   "got": "FAIL"
+  },
+  {
+   "check": "compare_step",
+   "mutant": "B2 hole filled, compared with the delivered STEP",
+   "got": "FAIL"
+  },
+  {
+   "check": "feature_census / bore_census",
+   "mutant": "B2 hole filled (8 bores)",
+   "got": "FAIL"
+  },
+  {
+   "check": "locate_bore offset",
+   "mutant": "flange hole (-85, 77) moved 0.5 along X",
+   "got": "FAIL"
+  },
+  {
+   "check": "locate_bore diameter",
+   "mutant": "flange hole (-85, 77) recut at 3.2",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance (contacts)",
+   "mutant": "panel raised 0.5 off the plate",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance (E-01)",
+   "mutant": "upper boss grown to 12.4",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance (REQ-05 a)",
+   "mutant": "window right edge moved 3.0 left",
+   "got": "FAIL"
+  },
+  {
+   "check": "clearance fallback (REQ-05 b, unsound OD-G10)",
+   "mutant": "window top lowered to y 170 over x -30..30, carried poses z 77..117",
+   "got": "FAIL"
+  },
+  {
+   "check": "interference / common_volume",
+   "mutant": "rib R2 thickened 0.5 into the tray slot",
+   "got": "FAIL"
+  },
+  {
+   "check": "radial_profile",
+   "mutant": "upper insert bore enlarged to 5.2",
+   "got": "FAIL"
+  },
+  {
+   "check": "radial_extent",
+   "mutant": "2.5 deep pocket in the top bar inner face at (0, 200)",
+   "got": "FAIL"
+  },
+  {
+   "check": "overhang_census",
+   "mutant": "8 x 10 x 2 ledge off rib R2 at z 84..86",
+   "got": "FAIL"
+  },
+  {
+   "check": "flat_ceiling_spans",
+   "mutant": "the same ledge",
+   "got": "FAIL"
+  },
+  {
+   "check": "min_wall",
+   "mutant": "top bar thinned to 0.5 at (0, 200)",
+   "got": "FAIL"
+  },
+  {
+   "check": "mesh_census",
+   "mutant": "delivered STL with one triangle dropped",
+   "got": "FAIL"
+  },
+  {
+   "check": "mesh_deviation",
+   "mutant": "delivered STL against the part moved 0.1 along X",
+   "got": "FAIL"
+  },
+  {
+   "check": "write_stl / sagitta",
+   "mutant": "part meshed at 0.1 mm / 0.5 rad",
+   "got": "FAIL"
+  }
+ ],
+ "findings": [
+  {
+   "id": "F1",
+   "gate": "REQ-08",
+   "kind": "SOFT_GATE_MISS",
+   "measured": null,
+   "unit": "",
+   "required": "no visible flex under a button press or pump drum (bench, Soft)",
+   "margin": null,
+   "at": "left pillar button column; top bar y 188..215",
+   "blocks": false,
+   "risk": "MEDIUM",
+   "risk_basis": "a 232 x 215 x 3 PLA plate with free side edges until OD-C12/C13 exist and a top edge only resting under the lid; geometry cannot tell (A-12)",
+   "fix_direction": "press each button and run the pump on the first print; if it flexes, tie the side edges or add a rib behind the left pillar"
+  },
+  {
+   "id": "F2",
+   "gate": "REQ-05",
+   "kind": "OBSERVATION",
+   "measured": 2.511,
+   "unit": "mm",
+   "required": ">= 2.0 at phi +10",
+   "margin": 0.511,
+   "at": "window right edge (75.0, 160.3, 97.0); 0.796 at +11 deg, touch at +12 deg",
+   "blocks": false,
+   "risk": "MEDIUM",
+   "risk_basis": "the gap closes about 1.7 mm per degree past +5 deg; a lock worn beyond about +11.5 deg (A-05 allows +10) puts the handle on the edge before the lock completes",
+   "fix_direction": "confirm the wear angle on the first locked portafilter (A-05); if more is needed, move the window right edge toward +X within the steam-knob place"
+  },
+  {
+   "id": "F3",
+   "gate": "J-05",
+   "kind": "OBSERVATION",
+   "measured": 3.049,
+   "unit": "mm",
+   "required": ">= 3.0",
+   "margin": 0.049,
+   "at": "upper boss at the B1 collar relief (-92.208, 158.151, 85.535)",
+   "blocks": false,
+   "risk": "LOW",
+   "risk_basis": "the thin web runs only z 85.485..88.957 (3.47 of the 6.0 bore) over a narrow arc; a 4.05 bore still leaves 3.024",
+   "fix_direction": "accept; if the web splits on insertion, insert cooler or slower"
+  },
+  {
+   "id": "F4",
+   "gate": "U-03",
+   "kind": "OBSERVATION",
+   "measured": 3.6e-15,
+   "unit": "mm",
+   "required": "clearance > 0, not inside (fallback)",
+   "margin": null,
+   "at": "OD-G10 to housing (30.876, 186.511, 24.906), reference pair",
+   "blocks": false,
+   "risk": "LOW",
+   "risk_basis": "a touch between two delivered parts that the fallback cannot tell from a shallow overlap; a ShapeFix copy of OD-G10 is still unsound; the panel is not in the pair",
+   "fix_direction": "the OD-G01 thread re-exports a sound OD-G10 so the pair can be read as a volume"
+  },
+  {
+   "id": "F5",
+   "gate": "E-05",
+   "kind": "OBSERVATION",
+   "measured": 3.286,
+   "unit": "mm",
+   "required": "spec names two board screw holes",
+   "margin": null,
+   "at": "third OD-E02 through bore along Z at (-66.236, 140.218), z 50.41..52.99",
+   "blocks": false,
+   "risk": "LOW",
+   "risk_basis": "presses act at x -94..-99, 3..8 from the boss axes; the board's far end (x -61.5) overhangs about 30 mm and carries no button",
+   "fix_direction": "when the board is calipered (A-03), check whether the OEM fixed it there; a third boss on that axis would stand about 0.2 from rib R3"
+  }
+ ],
+ "least_sure_answers": [
+  {
+   "item": "Zero-margin rows that hold only as designed contacts",
+   "answer": "Confirmed at nominal: boss ends 0.0001 to the scanned flat, no overlap; reliefs 0.5000 (E-01); J-05 3.049; OD-C15 keep-outs and OD-C10 skirt touch at 0. Pass by construction, no margin."
+  },
+  {
+   "item": "The clearance > 0 fallback passes OD-G10 to housing on 3.6e-15",
+   "answer": "Confirmed 3.55e-15, not inside; ShapeFix leaves OD-G10 unsound so no volume reading (F4); the panel's own fallback pairs read >= 11.689 and contact + 0.001."
+  },
+  {
+   "item": "REQ-05 (a) at phi +10",
+   "answer": "Confirmed: 2.511 at +10, 0.796 at +11, touch at +12 (F2)."
+  },
+  {
+   "item": "REPORT section 4 sweep (rated, not re-run)",
+   "answer": "Only the zero-gap rows fail at +-0.1: boss end, top edge, wall z against the OD-C15 keep-outs, each LOW (screws close a 0.1 gap; lid lifts or drops 0.1; 0.24 mm3 at undesigned feet). REQ-05 0.435, J-05 3.025 and D-04a 3.300 keep their gates."
+  }
+ ],
+ "assumptions_relied_on": [
+  "A-01",
+  "A-02",
+  "A-03",
+  "A-04",
+  "A-05",
+  "A-06",
+  "A-07",
+  "A-09",
+  "A-10",
+  "A-11",
+  "A-13",
+  "A-14"
+ ]
+}

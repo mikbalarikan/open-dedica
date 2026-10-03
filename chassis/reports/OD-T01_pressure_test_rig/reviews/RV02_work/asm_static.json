@@ -1,0 +1,528 @@
+{
+ "ident": {
+  "order(housing,g04,g10)": [
+   0,
+   1,
+   2
+  ],
+  "info": [
+   [
+    0,
+    {
+     "size_x": 100.0000002,
+     "size_y": 100.000000196103,
+     "size_z": 28.2400002,
+     "min_x": -50.0000001,
+     "min_y": -50.0000001,
+     "min_z": -24.940000100000002,
+     "max_x": 50.0000001,
+     "max_y": 50.000000096103,
+     "max_z": 3.3000000999999997
+    },
+    90216.79165440061
+   ],
+   [
+    1,
+    {
+     "size_x": 65.69633733402601,
+     "size_y": 69.01432416730162,
+     "size_z": 17.210000100000002,
+     "min_x": -31.176337234026004,
+     "min_y": -34.52000010000001,
+     "min_z": -22.94,
+     "max_x": 34.52000010000001,
+     "max_y": 34.494324067301605,
+     "max_z": -5.7299999
+    },
+    17086.24424005932
+   ],
+   [
+    2,
+    {
+     "size_x": 122.61139686911112,
+     "size_y": 185.10841696299917,
+     "size_z": 59.01547692002236,
+     "min_x": -30.571398039913003,
+     "min_y": -35.02501323083901,
+     "min_z": -11.251028816562359,
+     "max_x": 92.03999882919811,
+     "max_y": 150.08340373216015,
+     "max_z": 47.76444810346
+    },
+    137692.41767993575
+   ]
+  ]
+ },
+ "pose_axes": {
+  "x": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "y": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "z": [
+   0.0,
+   -1.0,
+   0.0
+  ]
+ },
+ "validity": {
+  "housing": {
+   "solid_count": 1,
+   "brep_valid": 1,
+   "naked_edges": 0
+  },
+  "g04": {
+   "solid_count": 1,
+   "brep_valid": 1,
+   "naked_edges": 0
+  },
+  "g10": {
+   "solid_count": 1,
+   "brep_valid": 0,
+   "naked_edges": 0
+  }
+ },
+ "env": {
+  "housing": {
+   "size_x": 100.0,
+   "size_y": 28.24,
+   "size_z": 100.0,
+   "min_x": -50.0,
+   "min_y": 106.76,
+   "min_z": -50.0,
+   "max_x": 50.0,
+   "max_y": 135.0,
+   "max_z": 50.0
+  },
+  "g04": {
+   "size_x": 65.6963,
+   "size_y": 17.21,
+   "size_z": 69.0143,
+   "min_x": -31.1763,
+   "min_y": 115.79,
+   "min_z": -34.52,
+   "max_x": 34.52,
+   "max_y": 133.0,
+   "max_z": 34.4943
+  },
+  "g10": {
+   "size_x": 122.6114,
+   "size_y": 59.0155,
+   "size_z": 185.1084,
+   "min_x": -30.5714,
+   "min_y": 62.2956,
+   "min_z": -35.025,
+   "max_x": 92.04,
+   "max_y": 121.311,
+   "max_z": 150.0834
+  }
+ },
+ "U03a": {
+  "seat_clearance": {
+   "mm": 0.0,
+   "at": [
+    21.250195,
+    135.0,
+    21.176147
+   ],
+   "on_b": [
+    21.250195,
+    135.0,
+    21.176147
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "int_housing": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "int_g04": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "int_g10": {
+   "mm3": null,
+   "status": "INCONCLUSIVE",
+   "reason": "solid 1 of b: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface"
+  },
+  "cl_g04": {
+   "mm": 5.0,
+   "at": [
+    -21.250195,
+    135.0,
+    21.176147
+   ],
+   "on_b": [
+    -21.250195,
+    130.0,
+    21.176147
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "cl_g10": {
+   "mm": 13.688971283439997,
+   "at": [
+    21.250195,
+    135.0,
+    21.176147
+   ],
+   "on_b": [
+    21.250195,
+    121.311029,
+    21.176147
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "cl_housing_elsewhere_below_134.9": {
+   "mm": 15.099999999999966,
+   "at": [
+    65.1,
+    134.9,
+    40.0
+   ],
+   "on_b": [
+    50.0,
+    134.9,
+    40.0
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "cl_housing_plate_only": {
+   "mm": 0.0,
+   "at": [
+    21.250195,
+    135.0,
+    21.176147
+   ],
+   "on_b": [
+    21.250195,
+    135.0,
+    21.176147
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "REQ01_inserts": [
+  {
+   "insert": [
+    -44.0,
+    129.3,
+    -44.0
+   ],
+   "insert_end": [
+    -44.0,
+    135.0,
+    -44.0
+   ],
+   "dia": 4.0,
+   "axis_offset": 0.0,
+   "hole_dia": 3.4,
+   "hole_start": [
+    -44.0,
+    135.0,
+    -44.0
+   ],
+   "hole_end": [
+    -44.0,
+    140.0,
+    -44.0
+   ]
+  },
+  {
+   "insert": [
+    -44.0,
+    129.3,
+    44.0
+   ],
+   "insert_end": [
+    -44.0,
+    135.0,
+    44.0
+   ],
+   "dia": 4.0,
+   "axis_offset": 0.0,
+   "hole_dia": 3.4,
+   "hole_start": [
+    -44.0,
+    135.0,
+    44.0
+   ],
+   "hole_end": [
+    -44.0,
+    140.0,
+    44.0
+   ]
+  },
+  {
+   "insert": [
+    44.0,
+    129.3,
+    -44.0
+   ],
+   "insert_end": [
+    44.0,
+    135.0,
+    -44.0
+   ],
+   "dia": 4.0,
+   "axis_offset": 0.0,
+   "hole_dia": 3.4,
+   "hole_start": [
+    44.0,
+    135.0,
+    -44.0
+   ],
+   "hole_end": [
+    44.0,
+    140.0,
+    -44.0
+   ]
+  },
+  {
+   "insert": [
+    44.0,
+    129.3,
+    44.0
+   ],
+   "insert_end": [
+    44.0,
+    135.0,
+    44.0
+   ],
+   "dia": 4.0,
+   "axis_offset": 0.0,
+   "hole_dia": 3.4,
+   "hole_start": [
+    44.0,
+    135.0,
+    44.0
+   ],
+   "hole_end": [
+    44.0,
+    140.0,
+    44.0
+   ]
+  }
+ ],
+ "pairB_bores": [
+  {
+   "solid": 0,
+   "diameter": 3.8,
+   "radius": 1.9,
+   "axis_dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "start": [
+    -9.312948,
+    132.3,
+    16.595478
+   ],
+   "end": [
+    -9.312948,
+    135.0,
+    16.595478
+   ],
+   "length": 2.6999999999999886,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 3.8,
+   "radius": 1.9,
+   "axis_dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "start": [
+    10.641441,
+    132.3,
+    -15.776585
+   ],
+   "end": [
+    10.641441,
+    135.0,
+    -15.776585
+   ],
+   "length": 2.6999999999999886,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  }
+ ],
+ "REQ03_pairB": [
+  {
+   "axis": [
+    -9.312948,
+    16.595478
+   ],
+   "r": 19.029999750372777,
+   "to_rig": {
+    "mm": 11.688991802922565,
+    "at": [
+     -17.592727,
+     135.0,
+     24.846405
+    ],
+    "on_b": [
+     -9.312948,
+     135.0,
+     16.595478
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "reason": ""
+   }
+  },
+  {
+   "axis": [
+    10.641441,
+    -15.776585
+   ],
+   "r": 19.03000002151093,
+   "to_rig": {
+    "mm": 10.969999978489064,
+    "at": [
+     16.775787,
+     135.0,
+     -24.871127
+    ],
+    "on_b": [
+     10.641441,
+     135.0,
+     -15.776585
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "reason": ""
+   }
+  }
+ ],
+ "REQ03_window": {
+  "diameter": 60.0,
+  "offset": 0.0,
+  "length": 25.0,
+  "through": 1
+ },
+ "REQ03_apex_radial": [
+  {
+   "y": 135.5,
+   "inner_r_along_+Z": null,
+   "status": "INCONCLUSIVE",
+   "reason": "Crossing: material from 42.500649 to 60.000000 mm crosses the window's bound at 59 mm at 0\u00b0 and z = 0 mm"
+  },
+  {
+   "y": 147.5,
+   "inner_r_along_+Z": null,
+   "status": "INCONCLUSIVE",
+   "reason": "Crossing: material from 42.500649 to 60.000000 mm crosses the window's bound at 59 mm at 0\u00b0 and z = 0 mm"
+  },
+  {
+   "y": 159.5,
+   "inner_r_along_+Z": null,
+   "status": "INCONCLUSIVE",
+   "reason": "Crossing: material from 42.500649 to 60.000000 mm crosses the window's bound at 59 mm at 0\u00b0 and z = 0 mm"
+  }
+ ],
+ "REQ02_grid": {
+  "points": 5712,
+  "bad": 0
+ },
+ "REQ05": {
+  "g10_min_y": 62.2956,
+  "headroom": 52.2956
+ },
+ "REQ06": {
+  "(-105,-40)": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "(-105,40)": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "(105,-40)": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "(105,40)": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "REQ07": {
+  "(-44,-44)": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "(-44,44)": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "(44,-44)": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "(44,44)": {
+   "mm3": 0.0,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "REQ07_cl": {
+  "(44,44)": {
+   "mm": 0.25,
+   "at": [
+    46.302104,
+    160.0,
+    46.294083
+   ],
+   "on_b": [
+    46.12502,
+    160.0,
+    46.117615
+   ],
+   "inside": false,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ }
+}

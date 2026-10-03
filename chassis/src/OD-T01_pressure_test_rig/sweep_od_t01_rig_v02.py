@@ -1,9 +1,9 @@
-"""D7 robustness sweep of od_t01_rig: rebuild at low and high of every fit-critical
+"""D7 robustness sweep of od_t01_rig v02 (spec 1.3): rebuild at low and high of every fit-critical
 parameter (DESIGN_PLAN §4), export into 01_CAD/sweep_<tag>/, and run every predicate
-of check_od_t01_rig.py on each export (the motion checks U-03b and REQ-04 included).
+of check_od_t01_rig_v02.py on each export (the motion checks U-03b and REQ-04 included).
 Nominal is the delivered 02_STEP_STL export, checked by the same script.
 
-Usage (repo root): uv run tools/run.py python <ws>/01_CAD/sweep_od_t01_rig.py [--tag v01] [--jobs 4]
+Usage (repo root): uv run tools/run.py python <ws>/01_CAD/sweep_od_t01_rig.py [--tag v02] [--jobs 4]
 """
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ D = 0.1 / math.sqrt(2.0)          # a 0.10 radial offset of the screw holes, spl
 SWEEP = {  # parameter: (low overrides, high overrides)
     "screw_d": ({"screw_d": 3.3}, {"screw_d": 3.5}),
     "cbore_d": ({"cbore_d": 6.4}, {"cbore_d": 6.6}),
-    "cbore_floor_y": ({"cbore_floor_y": 137.9}, {"cbore_floor_y": 138.1}),
+    "cbore_floor_y": ({"cbore_floor_y": 139.9}, {"cbore_floor_y": 140.1}),
     "screw_xz_radial": ({"screw_x": 44.0 - D, "screw_z": 44.0 - D}, {"screw_x": 44.0 + D, "screw_z": 44.0 + D}),
     "window_r": ({"window_r": 29.9}, {"window_r": 30.1}),
     "theta_roof": ({"theta_roof": 45.05}, {"theta_roof": 45.14}),
@@ -36,18 +36,18 @@ def one(tag, param, side, over):
     out = HERE / f"sweep_{tag}"
     name = f"od_t01_rig_C1_{param}_{side}"
     sets = [f"{k}={v!r}" for k, v in over.items()]
-    b = subprocess.run([sys.executable, str(HERE / "build_od_t01_rig.py"), "--out-dir", str(out), "--tag", tag,
+    b = subprocess.run([sys.executable, str(HERE / "build_od_t01_rig_v02.py"), "--out-dir", str(out), "--tag", tag,
                         "--name", name, "--no-assembly", "--meta-dir", str(out), "--set", *sets], capture_output=True, text=True)
     if b.returncode != 0:
         return {"parameter": param, "side": side, "over": over, "built": False, "error": b.stderr[-2000:]}
     step = out / f"{name}_{tag}.step"
     gates = out / f"{name}_{tag}.gates.json"
-    # every predicate of check_od_t01_rig.py, split into groups run side by side, rows merged
+    # every predicate of check_od_t01_rig_v02.py, split into groups run side by side, rows merged
     sys.path.insert(0, str(HERE))
-    import check_od_t01_rig as chk
+    import check_od_t01_rig_v02 as chk
     names = [f.__name__ for f in chk.PREDICATES]
     groups = [["u03b_offer_up"], ["req04_travel"], [n for n in names if n not in ("u03b_offer_up", "req04_travel")]]
-    base = [sys.executable, str(HERE / "check_od_t01_rig.py"), "--step", str(step), "--stl",
+    base = [sys.executable, str(HERE / "check_od_t01_rig_v02.py"), "--step", str(step), "--stl",
             str(out / f"{name}_{tag}.stl"), "--params", str(out / f"{name}_{tag}.params.json"),
             "--mesh-meta", str(out / f"{name}_{tag}.mesh.json")]
     parts = [out / f"{name}_{tag}.gates.g{i}.json" for i in range(len(groups))]
@@ -72,7 +72,7 @@ def one(tag, param, side, over):
 
 def summarise(tag):
     """Per run: the status per gate and the worst signed margin of each gate (from the
-    rows check_od_t01_rig.py wrote); written to sweep_<tag>/sweep_summary.json."""
+    rows check_od_t01_rig_v02.py wrote); written to sweep_<tag>/sweep_summary.json."""
     folder = HERE / f"sweep_{tag}"
     index = json.loads((folder / "sweep_index.json").read_text())
     out = []
@@ -104,7 +104,7 @@ def summarise(tag):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--tag", default="v01")
+    ap.add_argument("--tag", default="v02")
     ap.add_argument("--jobs", type=int, default=4)
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--summarise", action="store_true")

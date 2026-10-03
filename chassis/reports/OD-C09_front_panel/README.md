@@ -29,6 +29,10 @@ Repository inputs are not copied here; the job reads them under these names in
 - `step/OD-E02_control_board.step`, `step/OD-S03_steam_knob.step` (same names); `step/reports/OD-E02_control_board/deliver/README.md` as `OD-E02_REPORT.md`, `step/reports/OD-S03_steam_knob/README.md` as `OD-S03_REPORT.md`
 - the `00_Spec/DESIGN_SPEC.md` of OD-C01, OD-C05, OD-C10, OD-C11, OD-C15 and OD-G01 as `OD-Cnn_DESIGN_SPEC.md` / `OD-G01_DESIGN_SPEC.md`; `chassis/README.md` as `CHASSIS_README.md`
 
+## Status (2026-10-03)
+
+J5_DELIVER. Build v01 (spec 1.1) RV01 `APPROVED_ASSUMPTION_CONDITIONAL`, no blocking finding (F1 stiffness on the bench, F2 the handle's lock angle past +11°, F3–F5 low). v01 is delivered; J6 waits on the merge and the first print.
+
 ## Resume
 
 1. Clone both repositories side by side (`oguz-atolye` and `open-dedica`), on the

@@ -1,8 +1,8 @@
-"""D6 screening sections of od_t01_rig v01 (and the check assembly where named), from
+"""D6 screening sections of od_t01_rig v02 (and the check assembly where named), from
 the exported STEP files. Planes: z 0 and z +44 (with the housing set), x +44, y 5,
-y 142.5. Pictures go to 03_Sections/od_t01_rig_v01_<plane>.png.
+y 147.5 (mid-plate, spec 1.3). Pictures go to 03_Sections/od_t01_rig_v02_<plane>.png.
 
-Usage (repo root, tools venv): uv run tools/run.py python <ws>/01_CAD/sections_od_t01_rig.py [--tag v01]
+Usage (repo root, tools venv): uv run tools/run.py python <ws>/01_CAD/sections_od_t01_rig.py [--tag v02]
 """
 from __future__ import annotations
 
@@ -22,13 +22,14 @@ PLANES = [  # (plane name, view whose plane is cut, a point on the plane, with t
     ("z44_assembly", "top", (0.0, 75.0, 44.0), True),
     ("x44", "left", (44.0, 75.0, 0.0), False),
     ("y5", "front", (0.0, 5.0, 0.0), False),
-    ("y142", "front", (0.0, 142.5, 0.0), False),
+    ("y147", "front", (0.0, 147.5, 0.0), False),
+    ("x0", "left", (0.0, 75.0, 0.0), False),
 ]
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--tag", default="v01")
+    ap.add_argument("--tag", default="v02")
     a = ap.parse_args()
     version = int(a.tag.lstrip("v"))
     rig = read_step(WS / "02_STEP_STL" / f"od_t01_rig_C1_{a.tag}.step")
