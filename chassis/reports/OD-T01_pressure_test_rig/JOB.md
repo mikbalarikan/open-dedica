@@ -5,23 +5,23 @@ code: ODT01
 milestone: M1
 title: "Open Dedica OD-T01 group head bench pressure-test rig"
 lane: CAD
-state: J5_DELIVER
+state: J3_BUILD
 blocked_on: null
-next_action: "J5: v01 in open-dedica PR; the Usta decides F1 (v02 25 mm plate recommended, reopens at J1_SPEC after delivery); J6 after merge and first print"
+next_action: "J3: build v02 to spec 1.3 (25 mm plate, the Usta 2026-10-03); then RV02 and replace v01 in the open-dedica branch"
 data_class: PUBLIC
 size: S
 process: [FDM]
 gate_sections: [U, D, J]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.2"
+spec_version: "1.3"
 workspace: "${OGUZ_JOBS}/20261002-od-t01-pressure-test-rig"
 delivery: "${OGUZ_DELIVERY}/20261002-od-t01-pressure-test-rig"
 artifacts: "${OGUZ_ARTIFACTS}/20261002-od-t01-pressure-test-rig"
 repo_commit: "10929db1408d89144bd4af9cad971440427933d0"
-active_target: od_t01_rig_v01
+active_target: od_t01_rig_v02
 revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12]
-attempts: {build: 1, export: 0, tool: 0}
+attempts: {build: 2, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
 reviews:
   - {id: RV01, target: od_t01_rig_v01, verdict: APPROVED_ASSUMPTION_CONDITIONAL, blockers: 0, date: "2026-10-03"}
@@ -30,6 +30,8 @@ usta_gates:
   - {gate: concept_picked, outcome: C1, date: "2026-10-02"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-10-02"}
   - {gate: spec_ratified, outcome: "1.2", date: "2026-10-03"}
+  - {gate: question_answered, outcome: v02_25mm_plate, date: "2026-10-03"}
+  - {gate: spec_ratified, outcome: "1.3", date: "2026-10-03"}
 deliverables: [STEP, STL, "3MF", scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null
