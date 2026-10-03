@@ -1,0 +1,728 @@
+{
+ "gates": [
+  {
+   "gate": "exactly_one_solid",
+   "item": "solid_count",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "U-01",
+   "item": "solid_count",
+   "measured": 1,
+   "unit": "count",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "U-02",
+   "item": "size_x",
+   "measured": 232.0,
+   "unit": "mm",
+   "required": "in [231.9, 232.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "envelope_within_spec",
+   "item": "size_x",
+   "measured": 232.0,
+   "unit": "mm",
+   "required": "in [231.9, 232.1]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "D-02",
+   "item": "size_x",
+   "measured": 232.0,
+   "unit": "mm",
+   "required": "<= 420.0",
+   "margin": 188.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-10"
+   ]
+  },
+  {
+   "gate": "REQ-02",
+   "item": "x_min",
+   "measured": -116.0,
+   "unit": "mm",
+   "required": "in [-116.1, -115.9]",
+   "margin": 0.1,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-02"
+   ]
+  },
+  {
+   "gate": "REQ-07",
+   "item": "min_z",
+   "measured": 72.0,
+   "unit": "mm",
+   "required": ">= 72.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-06",
+    "A-13"
+   ]
+  },
+  {
+   "gate": "U-04",
+   "item": "volume_delta",
+   "measured": 1.877197064459324e-09,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": -2e-09,
+   "at": null,
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "U-05",
+   "item": "bores_total",
+   "measured": 9,
+   "unit": "count",
+   "required": "== 9",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "feature_census",
+   "item": "bores_total",
+   "measured": 9,
+   "unit": "count",
+   "required": "== 9",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "REQ-01",
+   "item": "hole(-95,77)_through",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": "(-95.0000, 0.0000, 77.0000) mm",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-01"
+   ]
+  },
+  {
+   "gate": "D-04a",
+   "item": "hole(-95,77)_diameter",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": ">= 3.25",
+   "margin": 0.15,
+   "at": "(-95.0000, 0.0000, 77.0000) mm",
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "D-03b",
+   "item": "hole(-95,77)_bridge_span",
+   "measured": 3.4,
+   "unit": "mm",
+   "required": "<= 5.0",
+   "margin": 1.6,
+   "at": "(-95.0000, 0.0000, 77.0000) mm",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-09"
+   ]
+  },
+  {
+   "gate": "D-05b",
+   "item": "upper_blind",
+   "measured": 0,
+   "unit": "bool",
+   "required": "== 0",
+   "margin": 0.0,
+   "at": "(-91.0555, 153.2349, 85.4850) mm",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "E-05",
+   "item": "upper_axis_offset",
+   "measured": 0.0,
+   "unit": "mm",
+   "required": "<= 0.1",
+   "margin": 0.1,
+   "at": "(-91.0555, 153.2349, 85.4850) mm",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "D-05a",
+   "item": "upper_across",
+   "measured": 10.773695531264249,
+   "unit": "mm",
+   "required": ">= 8.0",
+   "margin": 2.773695531,
+   "at": "angle 90 deg, 1.5 mm from the boss end",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "J-05",
+   "item": "upper_wall",
+   "measured": 3.049995774042694,
+   "unit": "mm",
+   "required": ">= 3.0",
+   "margin": 0.049995774,
+   "at": "(-92.2772, 158.1349, 85.5850) mm",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "REQ-04",
+   "item": "B2_hole_offset",
+   "measured": 4.5744165156941245e-05,
+   "unit": "mm",
+   "required": "<= 0.25",
+   "margin": 0.249954256,
+   "at": "(-98.9908, 139.9014, 94.0000) mm",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-03",
+    "A-04"
+   ]
+  },
+  {
+   "gate": "U-03",
+   "item": "a_contact_boss_upper_on_E02",
+   "measured": 0.00010000000000331966,
+   "unit": "mm",
+   "required": "== 0.0",
+   "margin": -0.0001,
+   "at": "(-93.9253, 157.9268, 85.4850) mm",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "E-01",
+   "item": "boss_lower_from_end+0.5",
+   "measured": 0.4999999999921697,
+   "unit": "mm",
+   "required": ">= 0.5",
+   "margin": -7.830291970378767e-12,
+   "at": "(-90.8794, 121.7528, 85.9850) mm",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-03"
+   ]
+  },
+  {
+   "gate": "REQ-03",
+   "item": "panel|slot_box",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-05",
+    "A-06"
+   ]
+  },
+  {
+   "gate": "REQ-05",
+   "item": "b_carry_G10_vs_panel",
+   "measured": 1,
+   "unit": "bool",
+   "required": "clearance > 0 and inside == False at every step",
+   "margin": 0.0,
+   "at": "(10.7103, 188.0000, 95.2843) mm",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-05"
+   ]
+  },
+  {
+   "gate": "REQ-06",
+   "item": "panel|driver_flange(-95,77)",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-14"
+   ]
+  },
+  {
+   "gate": "E-06",
+   "item": "self_check_ties",
+   "measured": 6,
+   "unit": "count",
+   "required": "== 6",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "D-01a",
+   "item": "min_wall",
+   "measured": 2.999999999999997,
+   "unit": "mm",
+   "required": ">= 0.8",
+   "margin": 2.2,
+   "at": "(-115.7756, 0.2244, 97.0000) mm",
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "D-06a",
+   "item": "min_wall",
+   "measured": 2.999999999999997,
+   "unit": "mm",
+   "required": ">= 1.0",
+   "margin": 2.0,
+   "at": "(-115.7756, 0.2244, 97.0000) mm",
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "D-01b",
+   "item": "min_wall",
+   "measured": 2.999999999999997,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 1.0,
+   "at": "(-115.7756, 0.2244, 97.0000) mm",
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-11"
+   ]
+  },
+  {
+   "gate": "U-06",
+   "item": "min_wall_wide",
+   "measured": 2.999999999999997,
+   "unit": "mm",
+   "required": ">= 2.0",
+   "margin": 1.0,
+   "at": "(-115.7756, 0.2244, 97.0000) mm",
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "D-03a",
+   "item": "least_downward_angle_excluding_flange_hole_crowns",
+   "measured": 90.0,
+   "unit": "deg",
+   "required": ">= 45.0",
+   "margin": 45.0,
+   "at": null,
+   "status": "PASS_ASSUMED",
+   "assumes": [
+    "A-09"
+   ]
+  },
+  {
+   "gate": "U-07",
+   "item": "stl_tolerance",
+   "measured": 0.01,
+   "unit": "mm",
+   "required": "<= 0.01",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "assumes": []
+  },
+  {
+   "gate": "U-08",
+   "item": "threads",
+   "measured": null,
+   "unit": "",
+   "required": "",
+   "margin": null,
+   "at": null,
+   "status": "N/A",
+   "assumes": []
+  },
+  {
+   "gate": "D-07",
+   "item": "fit_critical_bores",
+   "measured": null,
+   "unit": "",
+   "required": "",
+   "margin": null,
+   "at": null,
+   "status": "N/A",
+   "assumes": []
+  },
+  {
+   "gate": "REQ-08",
+   "item": "stiffness",
+   "measured": null,
+   "unit": "",
+   "required": "",
+   "margin": null,
+   "at": null,
+   "status": "INCONCLUSIVE",
+   "assumes": [
+    "A-12"
+   ]
+  }
+ ],
+ "sweep": [
+  {
+   "run": "boss_d_high",
+   "params": {
+    "boss_d": 11.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "boss_d_low",
+   "params": {
+    "boss_d": 10.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "boss_end_z_high",
+   "params": {
+    "boss_end_z": 85.585
+   },
+   "built_one_solid": true,
+   "not_pass": {
+    "U-03": "FAIL"
+   }
+  },
+  {
+   "run": "boss_end_z_low",
+   "params": {
+    "boss_end_z": 85.385
+   },
+   "built_one_solid": true,
+   "not_pass": {
+    "U-03": "FAIL",
+    "E-01": "FAIL"
+   }
+  },
+  {
+   "run": "button_hole_d_high",
+   "params": {
+    "button_hole_d": 15.2
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "button_hole_d_low",
+   "params": {
+    "button_hole_d": 14.8
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_d_high",
+   "params": {
+    "flange_hole_d": 3.5
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_d_low",
+   "params": {
+    "flange_hole_d": 3.3
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_x_high",
+   "params": {
+    "flange_hole_x": [
+     -94.9,
+     -84.9,
+     85.1,
+     95.1
+    ]
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_x_low",
+   "params": {
+    "flange_hole_x": [
+     -95.1,
+     -85.1,
+     84.9,
+     94.9
+    ]
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_z_high",
+   "params": {
+    "flange_hole_z": 77.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_z_low",
+   "params": {
+    "flange_hole_z": 76.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "insert_bore_d_high",
+   "params": {
+    "insert_bore_d": 4.05
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "insert_bore_d_low",
+   "params": {
+    "insert_bore_d": 3.95
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "insert_bore_depth_high",
+   "params": {
+    "insert_bore_depth": 6.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "insert_bore_depth_low",
+   "params": {
+    "insert_bore_depth": 5.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "nominal",
+   "params": {},
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "opening_x_right_high",
+   "params": {
+    "opening_x_right": 75.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "opening_x_right_low",
+   "params": {
+    "opening_x_right": 74.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "slot_top_y_high",
+   "params": {
+    "slot_top_y": 50.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "slot_top_y_low",
+   "params": {
+    "slot_top_y": 49.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "slot_x_left_high",
+   "params": {
+    "slot_x_left": -74.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "slot_x_left_low",
+   "params": {
+    "slot_x_left": -75.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "wall_top_y_high",
+   "params": {
+    "wall_top_y": 215.1
+   },
+   "built_one_solid": true,
+   "not_pass": {
+    "U-03": "FAIL"
+   }
+  },
+  {
+   "run": "wall_top_y_low",
+   "params": {
+    "wall_top_y": 214.9
+   },
+   "built_one_solid": true,
+   "not_pass": {
+    "U-03": "FAIL"
+   }
+  },
+  {
+   "run": "wall_x_half_high",
+   "params": {
+    "wall_x_half": 116.05
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "wall_x_half_low",
+   "params": {
+    "wall_x_half": 115.95
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "wall_z_high",
+   "params": {
+    "wall_z_in": 94.1,
+    "wall_z_out": 97.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "wall_z_low",
+   "params": {
+    "wall_z_in": 93.9,
+    "wall_z_out": 96.9
+   },
+   "built_one_solid": true,
+   "not_pass": {
+    "U-03": "FAIL"
+   }
+  },
+  {
+   "run": "win_top_y_high",
+   "params": {
+    "win_top_y": 188.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "win_top_y_low",
+   "params": {
+    "win_top_y": 187.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "win_x_left_high",
+   "params": {
+    "win_x_left": -57.4
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "win_x_left_low",
+   "params": {
+    "win_x_left": -57.6
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  }
+ ],
+ "summary": {
+  "exactly_one_solid": "PASS",
+  "U-01": "PASS",
+  "U-02": "PASS",
+  "envelope_within_spec": "PASS",
+  "D-02": "PASS_ASSUMED",
+  "REQ-02": "PASS_ASSUMED",
+  "REQ-07": "PASS_ASSUMED",
+  "U-04": "PASS",
+  "U-05": "PASS",
+  "feature_census": "PASS",
+  "REQ-01": "PASS_ASSUMED",
+  "D-04a": "PASS",
+  "D-03b": "PASS_ASSUMED",
+  "D-05b": "PASS_ASSUMED",
+  "E-05": "PASS_ASSUMED",
+  "D-05a": "PASS_ASSUMED",
+  "J-05": "PASS_ASSUMED",
+  "REQ-04": "PASS_ASSUMED",
+  "U-03": "PASS_ASSUMED",
+  "E-01": "PASS_ASSUMED",
+  "REQ-03": "PASS_ASSUMED",
+  "REQ-05": "PASS_ASSUMED",
+  "REQ-06": "PASS_ASSUMED",
+  "E-06": "PASS",
+  "D-01a": "PASS",
+  "D-06a": "PASS",
+  "D-01b": "PASS_ASSUMED",
+  "U-06": "PASS",
+  "D-03a": "PASS_ASSUMED",
+  "U-07": "PASS",
+  "U-08": "N/A",
+  "D-07": "N/A",
+  "REQ-08": "INCONCLUSIVE"
+ }
+}

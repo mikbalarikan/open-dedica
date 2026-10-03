@@ -1,0 +1,101 @@
+{
+ "od_c13_right_C1_v01": {
+  "header_delivered": "STL Exported by Open CASCADE Technology [dev.opencascade.org]",
+  "header_fresh": "STL Exported by Open CASCADE Technology [dev.opencascade.org]",
+  "same_vertex_multiset": true,
+  "same_triangle_order": false,
+  "normals_equal": true,
+  "mesh_bbox": [
+   [
+    110.0,
+    0.0,
+    -295.0
+   ],
+   [
+    120.0,
+    218.81051635742188,
+    90.0
+   ]
+  ],
+  "brep_bbox": [
+   [
+    110.0,
+    0.0,
+    -295.0
+   ],
+   [
+    120.0,
+    218.8105117766526,
+    90.0
+   ]
+  ],
+  "bbox_delta": 4.580769285666975e-06,
+  "brep_volume": 277970.1751657259
+ },
+ "od_c12_left_C1_v01": {
+  "header_delivered": "STL Exported by Open CASCADE Technology [dev.opencascade.org]",
+  "header_fresh": "STL Exported by Open CASCADE Technology [dev.opencascade.org]",
+  "same_vertex_multiset": false,
+  "same_triangle_order": false,
+  "normals_equal": false,
+  "mesh_bbox": [
+   [
+    -120.0,
+    0.0,
+    -295.0
+   ],
+   [
+    -110.0,
+    218.81051635742188,
+    90.0
+   ]
+  ],
+  "brep_bbox": [
+   [
+    -120.0,
+    0.0,
+    -295.0
+   ],
+   [
+    -110.0,
+    218.8105117766526,
+    90.0
+   ]
+  ],
+  "bbox_delta": 4.580769285666975e-06,
+  "brep_volume": 271485.6751657191
+ },
+ "od_c16_bracket_C1_v01": {
+  "header_delivered": "STL Exported by Open CASCADE Technology [dev.opencascade.org]",
+  "header_fresh": "STL Exported by Open CASCADE Technology [dev.opencascade.org]",
+  "same_vertex_multiset": true,
+  "same_triangle_order": false,
+  "normals_equal": false,
+  "mesh_bbox": [
+   [
+    -19.0,
+    -3.771988327169333e-16,
+    -8.0
+   ],
+   [
+    4.3976735658559556e-16,
+    16.0,
+    8.0
+   ]
+  ],
+  "brep_bbox": [
+   [
+    -19.0,
+    -3.774758283725e-16,
+    -8.0
+   ],
+   [
+    4.4408920985e-16,
+    16.0,
+    8.0
+   ]
+  ],
+  "bbox_delta": 4.321853264404443e-18,
+  "brep_volume": 4329.984226761167
+ }
+}

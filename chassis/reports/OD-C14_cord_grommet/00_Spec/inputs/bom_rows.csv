@@ -1,0 +1,11 @@
+part_no,parent,type,name,ref,oem_code,qty,cad,material_spec,source,price_eur,issue,status
+OD-E06,OD-E00,OEM,Power supply cord with plug (region-specific; AU code shown),53,5013276449,1,ENVELOPE,,FixPart / generic,8,,todo
+OD-C12,OD-C00,PRINT,Left side panel,,,1,DESIGN,ASA / PETG or 3 mm acrylic,printed,print,,proposed
+OD-C13,OD-C00,PRINT,Right side panel,,,1,DESIGN,ASA / PETG or 3 mm acrylic,printed,print,,proposed
+OD-C14,OD-C00,PRINT,Cable strain relief / grommet,,,2,DESIGN,TPU,printed,print,,proposed
+OD-C15,OD-C00,PRINT,"Foot (TPU, Ø18 × 10, captive M3 nut; alternative to OD-C25/C26)",,,4,DESIGN,TPU 95A (A-03),printed (Creality K1C),print,,modeled
+OD-C16,OD-C00,PRINT,Corner bracket for acrylic skins (optional),,,16,DESIGN,ASA / PETG,printed,print,,proposed
+OD-F01,OD-000,STD,M3 heat-set insert (Ø4.0 bore × 6; 38 in the chassis),,,~50,VENDOR,brass M3,AliExpress,10 (set),,todo
+OD-F02,OD-000,STD,M3×8 screw,,,~50,VENDOR,ISO 7380 / DIN 912 A2,AliExpress,(set),,todo
+OD-F03,OD-000,STD,Acrylic sheet 3 mm (optional skins),,,per design,—,PMMA,local laser / leftover stock,25,,todo
+OD-F09,OD-000,STD,Cable tie 4.8 mm (OD-C03 pump strap; OD-C08 loom slots 2 × 4),,,4,VENDOR,PA66 UV-black,hardware store,1,#1,todo

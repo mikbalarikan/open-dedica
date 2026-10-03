@@ -1,0 +1,3844 @@
+[
+ {
+  "parameter": "screw_d",
+  "side": "low",
+  "over": {
+   "screw_d": 3.3
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.7e-08,
+    "measured": 6.728805601596832e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.2,
+    "measured": 3.3,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.05,
+    "measured": 3.3,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 3.3,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44)"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "screw_d",
+  "side": "high",
+  "over": {
+   "screw_d": 3.5
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.8e-08,
+    "measured": 6.798654794692993e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.0,
+    "measured": 3.5,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.25,
+    "measured": 3.5,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 3.5,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44)"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "cbore_d",
+  "side": "low",
+  "over": {
+   "cbore_d": 6.4
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -7.6e-08,
+    "measured": 7.613562047481537e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "cbore_d",
+  "side": "high",
+  "over": {
+   "cbore_d": 6.6
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.2e-08,
+    "measured": 6.170012056827545e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "cbore_floor_y",
+  "side": "low",
+  "over": {
+   "cbore_floor_y": 139.9
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.8e-08,
+    "measured": 6.845220923423767e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.1,
+    "measured": 4.900000000000002,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 2.9,
+    "measured": 4.900000000000002,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 3.9,
+    "measured": 4.900000000000002,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 2.9,
+    "measured": 4.900000000000002,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "cbore_floor_y",
+  "side": "high",
+  "over": {
+   "cbore_floor_y": 140.1
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.8e-08,
+    "measured": 6.845220923423767e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.3,
+    "measured": 5.099999999999991,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.1,
+    "measured": 5.099999999999991,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.1,
+    "measured": 5.099999999999991,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.1,
+    "measured": 5.099999999999991,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "screw_xz_radial",
+  "side": "low",
+  "over": {
+   "screw_x": 43.92928932188134,
+   "screw_z": 43.92928932188134
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.8e-08,
+    "measured": 6.845220923423767e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": -4.55e-07,
+    "measured": 0.10000045520896797,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) axis offset from the posed insert bore (\u00d84.00)"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "screw_xz_radial",
+  "side": "high",
+  "over": {
+   "screw_x": 44.07071067811866,
+   "screw_z": 44.07071067811866
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -5.4e-08,
+    "measured": 5.448237061500549e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": -4.55e-07,
+    "measured": 0.10000045520896797,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) axis offset from the posed insert bore (\u00d84.00)"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "window_r",
+  "side": "low",
+  "over": {
+   "window_r": 29.9
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.7e-08,
+    "measured": 6.705522537231445e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": -2.2e-08,
+    "measured": 10.869999978489066,
+    "status": "PASS_ASSUMED",
+    "note": "pair-B axis (x +10.64, z -15.78, r 19.03) to the window face"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "window_r",
+  "side": "high",
+  "over": {
+   "window_r": 30.1
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.8e-08,
+    "measured": 6.845220923423767e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 60.2,
+    "status": "PASS_ASSUMED",
+    "note": "window diameter (R 30.0 \u00b1 0.1)"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "theta_roof",
+  "side": "low",
+  "over": {
+   "theta_roof": 45.05
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -5.2e-08,
+    "measured": 5.192123353481293e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "theta_roof",
+  "side": "high",
+  "over": {
+   "theta_roof": 45.14
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.2e-08,
+    "measured": 6.170012056827545e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "bench_d",
+  "side": "low",
+  "over": {
+   "bench_d": 4.4
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -7.3e-08,
+    "measured": 7.28759914636612e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 4.4,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40)"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "bench_d",
+  "side": "high",
+  "over": {
+   "bench_d": 4.6
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.7e-08,
+    "measured": 6.705522537231445e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 4.6,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40)"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "plate_y0",
+  "side": "low",
+  "over": {
+   "plate_y0": 134.9
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 134.9000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.9e-08,
+    "measured": 6.868503987789154e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.3,
+    "measured": 5.099999999999991,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.1,
+    "measured": 5.099999999999991,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.1,
+    "measured": 5.099999999999991,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.1,
+    "measured": 5.099999999999991,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.195551897,
+    "measured": 52.19555189654001,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.196 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "plate_y0",
+  "side": "high",
+  "over": {
+   "plate_y0": 135.1
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.1000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.8e-08,
+    "measured": 6.775371730327606e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.1,
+    "measured": 4.900000000000002,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 2.9,
+    "measured": 4.900000000000002,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 3.9,
+    "measured": 4.900000000000002,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 2.9,
+    "measured": 4.900000000000002,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.395551897,
+    "measured": 52.39555189654,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.396 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "wall_x_in",
+  "side": "low",
+  "over": {
+   "wall_x_in": 74.9
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.7e-08,
+    "measured": 6.705522537231445e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "wall_x_in",
+  "side": "high",
+  "over": {
+   "wall_x_in": 75.1
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size_x"
+   },
+   "envelope_within_spec": {
+    "margin": 0.1,
+    "measured": 240.0,
+    "status": "PASS",
+    "note": "size size_x"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.7e-08,
+    "measured": 6.728805601596832e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "depth_z1",
+  "side": "low",
+  "over": {
+   "depth_z1": 59.9
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.0,
+    "measured": 119.9,
+    "status": "PASS",
+    "note": "size_z"
+   },
+   "envelope_within_spec": {
+    "margin": 0.0,
+    "measured": 119.9,
+    "status": "PASS",
+    "note": "size size_z"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.8e-08,
+    "measured": 6.752088665962219e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ },
+ {
+  "parameter": "depth_z1",
+  "side": "high",
+  "over": {
+   "depth_z1": 60.1
+  },
+  "built": true,
+  "summary": {
+   "U-03b": "PASS",
+   "REQ-04": "PASS_ASSUMED",
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "U-03a": "PASS",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "D-01a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "D-06a": "PASS",
+   "U-06": "PASS",
+   "U-07": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "D-03a": "PASS_ASSUMED",
+   "D-03b": "PASS",
+   "D-04a": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-07": "PASS",
+   "REQ-08": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "J-05": "N/A"
+  },
+  "worst": {
+   "U-03b": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "worst rig|housing at dy -0"
+   },
+   "REQ-04": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "\u03c6 > 0 turns the handle toward +X"
+   },
+   "exactly_one_solid": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "solid_count"
+   },
+   "U-02": {
+    "margin": 0.0,
+    "measured": 120.1,
+    "status": "PASS",
+    "note": "size_z"
+   },
+   "envelope_within_spec": {
+    "margin": 0.0,
+    "measured": 120.1,
+    "status": "PASS",
+    "note": "size size_z"
+   },
+   "U-03a": {
+    "margin": -1e-07,
+    "measured": 135.0000001,
+    "status": "PASS",
+    "note": "posed housing reaches no higher than the measured plate underside"
+   },
+   "U-04": {
+    "margin": -6.8e-08,
+    "measured": 6.798654794692993e-08,
+    "status": "PASS",
+    "note": "volume delta"
+   },
+   "U-05": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "feature_census": {
+    "margin": 0.0,
+    "measured": 41,
+    "status": "PASS",
+    "note": "planar_faces"
+   },
+   "D-01a": {
+    "margin": 4.2,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "D-01b": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS_ASSUMED",
+    "note": ""
+   },
+   "D-06a": {
+    "margin": 4.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": ""
+   },
+   "U-06": {
+    "margin": 3.0,
+    "measured": 4.9999999999999964,
+    "status": "PASS",
+    "note": "Soft"
+   },
+   "U-07": {
+    "margin": 0.0,
+    "measured": 0.01,
+    "status": "PASS",
+    "note": "chordal tolerance"
+   },
+   "D-02": {
+    "margin": 180.0,
+    "measured": 240.0,
+    "status": "PASS_ASSUMED",
+    "note": "bed X"
+   },
+   "D-03a": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS",
+    "note": "census copy is one solid"
+   },
+   "D-03b": {
+    "margin": 0.1,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "crown chord = the measured \u00d83.4 hole diameter (\u2264 3.4 designed, \u2264 5 limit)"
+   },
+   "D-04a": {
+    "margin": 0.15,
+    "measured": 3.4,
+    "status": "PASS",
+    "note": "screw hole (+44, +44)"
+   },
+   "REQ-01": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d83.4 (+44, +44) through into the counterbore"
+   },
+   "REQ-06": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "\u00d84.5 (+105, +40) through"
+   },
+   "REQ-02": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "one underside plane"
+   },
+   "REQ-03": {
+    "margin": 0.0,
+    "measured": 1,
+    "status": "PASS_ASSUMED",
+    "note": "window through the plate"
+   },
+   "REQ-05": {
+    "margin": 2.295551897,
+    "measured": 52.295551896540005,
+    "status": "PASS_ASSUMED",
+    "note": "OD-G10 lowest y 62.296 \u2212 base top y 10.000"
+   },
+   "REQ-07": {
+    "margin": 0.0,
+    "measured": 0.0,
+    "status": "PASS",
+    "note": "\u00d86 probe y 160 \u2026 300 at (+44, +44)"
+   }
+  },
+  "not_pass": {}
+ }
+]

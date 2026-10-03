@@ -1,0 +1,136 @@
+od_c12_left      exactly_one_solid            PASS                     1 count == 1                     margin   +0.0000  
+od_c12_left      U-01 solid_count             PASS                     1 count == 1                     margin   +0.0000  
+od_c12_left      U-01 brep_valid              PASS                     1 bool  == 1                     margin   +0.0000  
+od_c12_left      U-01 naked_edges             PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      U-02 size_x                  PASS               10.0000 mm    in [9.9, 10.1]           margin   +0.1000  
+od_c12_left      U-02 size_y                  PASS              218.8105 mm    in [218.71, 218.91]      margin   +0.0995  
+od_c12_left      U-02 size_z                  PASS              385.0000 mm    in [384.9, 385.1]        margin   +0.1000  
+od_c12_left      envelope_within_spec size_x  PASS               10.0000 mm    in [9.9, 10.1]           margin   +0.1000  
+od_c12_left      envelope_within_spec size_y  PASS              218.8105 mm    in [218.71, 218.91]      margin   +0.0995  
+od_c12_left      envelope_within_spec size_z  PASS              385.0000 mm    in [384.9, 385.1]        margin   +0.1000  
+od_c12_left      U-02 position min_x          PASS             -120.0000 mm    in [-120.1, -119.9]      margin   +0.1000  position, reported apart from size (L-12)
+od_c12_left      U-02 position max_x          PASS             -110.0000 mm    in [-110.1, -109.9]      margin   +0.1000  position, reported apart from size (L-12)
+od_c12_left      U-02 position min_y          PASS                0.0000 mm    in [-0.1, 0.1]           margin   +0.1000  position, reported apart from size (L-12)
+od_c12_left      U-02 position max_y          PASS              218.8105 mm    in [218.71, 218.91]      margin   +0.0995  position, reported apart from size (L-12)
+od_c12_left      U-02 position min_z          PASS             -295.0000 mm    in [-295.1, -294.9]      margin   +0.1000  position, reported apart from size (L-12)
+od_c12_left      U-02 position max_z          PASS               90.0000 mm    in [89.9, 90.1]          margin   +0.1000  position, reported apart from size (L-12)
+od_c12_left      D-02 bed length (z)          PASS_ASSUMED      385.0000 mm    <= 420.0                 margin  +35.0000  lying on its outer face: 385 x 218.81 on the bed
+od_c12_left      D-02 bed width (y)           PASS_ASSUMED      218.8105 mm    <= 420.0                 margin +201.1895  
+od_c12_left      D-02 height (x)              PASS_ASSUMED       10.0000 mm    <= 500.0                 margin +490.0000  
+od_c12_left      U-04 schema                  PASS                     1 bool  == 1                     margin   +0.0000  
+od_c12_left      U-04 solids                  PASS                     1 count == 1                     margin   +0.0000  
+od_c12_left      U-04 volume_delta            PASS                0.0000 mm3   <= 0.0                   margin   -0.0000  
+od_c12_left      U-04 faces_delta             PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      U-04 labels                  PASS                     1 bool  == 1                     margin   +0.0000  ['od_c12_left']
+od_c12_left      U-04 valid_after             PASS                     1 bool  == 1                     margin   +0.0000  
+od_c12_left      U-05 plane_faces             PASS                    15 count == 15                    margin   +0.0000  
+od_c12_left      feature_census plane_faces   PASS                    15 count == 15                    margin   +0.0000  
+od_c12_left      U-05 cylinder_faces          PASS                     3 count == 3                     margin   +0.0000  
+od_c12_left      feature_census cylinder_faces PASS                     3 count == 3                     margin   +0.0000  
+od_c12_left      U-05 cone_faces              PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      feature_census cone_faces    PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      U-05 sphere_faces            PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      feature_census sphere_faces  PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      U-05 torus_faces             PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      feature_census torus_faces   PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      U-05 bspline_faces           PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      feature_census bspline_faces PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      U-05 other_faces             PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      feature_census other_faces   PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      U-05 concave_cylinders       PASS                     3 count == 3                     margin   +0.0000  
+od_c12_left      feature_census concave_cylinders PASS                     3 count == 3                     margin   +0.0000  
+od_c12_left      U-05 convex_cylinders        PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      feature_census convex_cylinders PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      U-05 bores                   PASS                     3 count == 3                     margin   +0.0000  
+od_c12_left      feature_census bores         PASS                     3 count == 3                     margin   +0.0000  
+od_c12_left      U-05 bores along X           PASS                3.0000 count == 3                     margin   +0.0000  
+od_c12_left      D-01a                        PASS                2.1000 mm    >= 0.8                   margin   +1.3000  
+od_c12_left      D-01b                        PASS                2.1000 mm    >= 2.0                   margin   +0.1000  
+od_c12_left      D-06a                        PASS                2.1000 mm    >= 1.0                   margin   +1.1000  
+od_c12_left      U-06 (Soft)                  PASS                2.1000 mm    >= 2.0                   margin   +0.1000  
+od_c12_left      D-03a                        PASS               60.0000 deg   >= 45.0                  margin  +15.0000  build_dir (1, 0, 0); per kind {'plane': 60.0}
+od_c12_left      REQ-02 slope (overhang_census) PASS               60.0000 deg   in [59.0, 61.0]          margin   +1.0000  the lip's sloped face is the only downward face
+od_c12_left      D-03b (corroboration; reviewer from sections) PASS                0.0000 mm    <= 5.0                   margin   +5.0000  
+od_c12_left      REQ-03 hole z-262 diameter   PASS                3.4000 mm    in [3.3, 3.5]            margin   +0.1000  
+od_c12_left      REQ-03 hole z-262 offset     PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_c12_left      REQ-03 hole z-262 through    PASS                     1 bool  == 1                     margin   +0.0000  
+od_c12_left      D-04a hole z-262             PASS                3.4000 mm    >= 3.25                  margin   +0.1500  
+od_c12_left      REQ-03 hole z-15 diameter    PASS                3.4000 mm    in [3.3, 3.5]            margin   +0.1000  
+od_c12_left      REQ-03 hole z-15 offset      PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_c12_left      REQ-03 hole z-15 through     PASS                     1 bool  == 1                     margin   +0.0000  
+od_c12_left      D-04a hole z-15              PASS                3.4000 mm    >= 3.25                  margin   +0.1500  
+od_c12_left      REQ-03 hole z+62 diameter    PASS                3.4000 mm    in [3.3, 3.5]            margin   +0.1000  
+od_c12_left      REQ-03 hole z+62 offset      PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_c12_left      REQ-03 hole z+62 through     PASS                     1 bool  == 1                     margin   +0.0000  
+od_c12_left      D-04a hole z+62              PASS                3.4000 mm    >= 3.25                  margin   +0.1500  
+od_c12_left      REQ-01 outer face count      PASS                1.0000 count == 1                     margin   +0.0000  
+od_c12_left      REQ-01 outer face x          PASS             -120.0000 mm    in [-120.1, -119.9]      margin   +0.1000  
+od_c12_left      REQ-01 outer face z min      PASS             -295.0000 mm    in [-295.1, -294.9]      margin   +0.1000  
+od_c12_left      REQ-01 outer face z max      PASS               90.0000 mm    in [89.9, 90.1]          margin   +0.1000  
+od_c12_left      REQ-01 section y50 z-294 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y50 z-294 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y50 z-200 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y50 z-200 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y50 z+0 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y50 z+0 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y50 z+50 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y50 z+50 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y50 z+89 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y50 z+89 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z-294 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z-294 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z-200 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z-200 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z-100 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z-100 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z-60 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z-60 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z+0 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z+0 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z+50 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z+50 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z+89 outer PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 section y200 z+89 inner PASS              117.0000 mm    in [116.9, 117.1]        margin   +0.1000  
+od_c12_left      REQ-01 underside planes      PASS                1.0000 count == 1                     margin   +0.0000  
+od_c12_left      REQ-01 underside y           PASS                0.0000 mm    in [-0.05, 0.05]         margin   +0.0500  
+od_c12_left      REQ-01 top face count        PASS                1.0000 count == 1                     margin   +0.0000  
+od_c12_left      REQ-01 top face y            PASS              215.0000 mm    in [214.95, 215.05]      margin   +0.0500  
+od_c12_left      REQ-01 top face inner x      PASS              116.6000 mm    in [116.5, 116.69999999999999] margin   +0.1000  
+od_c12_left      REQ-01 top face outer x      PASS              120.0000 mm    in [119.9, 120.1]        margin   +0.1000  
+od_c12_left      REQ-01 rear end face count   PASS                1.0000 count == 1                     margin   +0.0000  
+od_c12_left      REQ-01 rear end z            PASS             -295.0000 mm    in [-295.1, -294.9]      margin   +0.1000  
+od_c12_left      REQ-01 rear end square (rectangle 1/0) PASS                1.0000 bool  == 1                     margin   +0.0000  
+od_c12_left      REQ-01 front end face count  PASS                1.0000 count == 1                     margin   +0.0000  
+od_c12_left      REQ-01 front end z           PASS               90.0000 mm    in [89.9, 90.1]          margin   +0.1000  
+od_c12_left      REQ-01 front end square (rectangle 1/0) PASS                1.0000 bool  == 1                     margin   +0.0000  
+od_c12_left      REQ-01 footprint outside plate PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_c12_left      REQ-02 sloped faces          PASS                1.0000 count == 1                     margin   +0.0000  
+od_c12_left      REQ-02 slope from panel plane PASS               60.0000 deg   in [59.0, 61.0]          margin   +1.0000  
+od_c12_left      REQ-02 lip inner x (vertices 1, 3) PASS              110.0000 mm    in [109.9, 110.1]        margin   +0.1000  
+od_c12_left      REQ-02 lip outer x (vertex 2) PASS              116.6000 mm    in [116.5, 116.69999999999999] margin   +0.1000  
+od_c12_left      REQ-02 lip base y (vertices 1, 2) PASS              215.0000 mm    in [214.9, 215.1]        margin   +0.1000  
+od_c12_left      REQ-02 lip apex y (vertex 3) PASS              218.8105 mm    in [218.71, 218.91]      margin   +0.0995  
+od_c12_left      REQ-02 lip z0                PASS             -280.0000 mm    in [-280.1, -279.9]      margin   +0.1000  
+od_c12_left      REQ-02 lip z1                PASS               80.0000 mm    in [79.9, 80.1]          margin   +0.1000  
+od_c12_left      REQ-02 apex x (vertex 3)     PASS              110.0000 mm    in [109.9, 110.1]        margin   +0.1000  
+od_c12_left      REQ-02 lip to OD-C10         PASS_ASSUMED        0.4000 mm    in [0.35000000000000003, 0.45] margin   +0.0500  
+od_c12_left      D-04d lip to OD-C10 skirt    PASS_ASSUMED        0.4000 mm    >= 0.3                   margin   +0.1000  
+od_c12_left      REQ-02 lid material in x +-(109.5..117) over the lip's zone PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_c12_left      U-07 stl_max_sagitta         PASS                0.0050 mm    <= 0.01                  margin   +0.0050  tol 0.01 mm, angular 0.434074 rad, 552 triangles
+od_c12_left      U-07 angular tolerance       PASS                0.4341 rad   <= 0.4340738745346826    margin   +0.0000  
+od_c12_left      U-07 delivered STL triangles = fresh mesh PASS                   552 count == 552                   margin   +0.0000  
+od_c12_left      U-07 delivered STL bodies    PASS                     1 count == 1                     margin   +0.0000  
+od_c12_left      U-07 delivered STL naked edges PASS                     0 count == 0                     margin   +0.0000  
+od_c12_left      U-08                         N/A                   None                                margin      None  no threads (row's own N/A)
+od_c12_left      D-07                         N/A                   None                                margin      None  no fit-critical bores (row's own N/A)
+od_c12_left      E-06                         PASS                     1 count one solid; lip tied into rail, rail into wall (reviewer from sections) margin      None  designer reading of 03_Sections; the reviewer decides
+od_c12_left      REQ-08 (Soft, bench)         INCONCLUSIVE          None       no visible flex or drumming (first print) margin      None  not geometric; risk MEDIUM (A-13)
+od_c12_left      REQ-04 relief floor faces    PASS                1.0000 count == 1                     margin   +0.0000  
+od_c12_left      REQ-04 relief floor x        PASS_ASSUMED     -117.9000 mm    in [-117.95, -117.85000000000001] margin   +0.0500  
+od_c12_left      REQ-04 relief y0             PASS                0.0000 mm    in [-0.1, 0.1]           margin   +0.1000  
+od_c12_left      REQ-04 relief y1             PASS               55.0000 mm    in [54.9, 55.1]          margin   +0.1000  
+od_c12_left      REQ-04 relief z0             PASS             -160.0000 mm    in [-160.1, -159.9]      margin   +0.1000  
+od_c12_left      REQ-04 relief z1             PASS              -29.0000 mm    in [-29.1, -28.9]        margin   +0.1000  
+od_c12_left      REQ-04 wall at the relief (info for D-01b) PASS                2.1000 mm    >= 2.0                   margin   +0.1000  
+od_c12_left      REQ-04 clearance OD-C12 to OD-C07 PASS_ASSUMED        0.9000 mm    >= 0.5                   margin   +0.4000  
+WORST INCONCLUSIVE

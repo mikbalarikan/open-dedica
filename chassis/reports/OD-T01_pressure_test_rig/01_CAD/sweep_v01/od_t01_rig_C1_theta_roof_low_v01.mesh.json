@@ -1,0 +1,9 @@
+{
+ "tolerance_mm": 0.01,
+ "angular_tolerance_rad": 0.1,
+ "triangles": 5756,
+ "max_sagitta_mm": 0.004923718182608185,
+ "stl": "od_t01_rig_C1_theta_roof_low_v01.stl",
+ "sha256": "9043cf36a4ba10ba17a5a122c4f9b572e8972d91d0534bcc142418d5e7523b87",
+ "meshed_from": "od_t01_rig_C1_theta_roof_low_v01.step"
+}

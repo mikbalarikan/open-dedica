@@ -1,0 +1,194 @@
+[
+ {
+  "check": "validity (solid_count)",
+  "mutant": "bracket with a second solid beside it",
+  "got": "FAIL",
+  "measured": 2,
+  "required": "== 1",
+  "status": "FAIL"
+ },
+ {
+  "check": "envelope",
+  "mutant": "OD-C13 wall lengthened 0.5 at z +90",
+  "got": "FAIL",
+  "measured": 385.5,
+  "required": "in [384.9, 385.1]",
+  "status": "FAIL"
+ },
+ {
+  "check": "step_roundtrip/compare_step",
+  "mutant": "bracket insert bore 0.5 deeper vs the delivered file",
+  "got": "FAIL",
+  "measured": 6.283185307176609,
+  "required": "<= 0.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "feature_census (bores)",
+  "mutant": "OD-C13 middle hole filled",
+  "got": "FAIL",
+  "measured": 2,
+  "required": "== 3",
+  "status": "FAIL"
+ },
+ {
+  "check": "locate_bore (offset)",
+  "mutant": "OD-C13 middle hole moved 0.5 in z",
+  "got": "FAIL",
+  "measured": 0.5,
+  "required": "<= 0.1",
+  "status": "FAIL"
+ },
+ {
+  "check": "bore_census/locate_bore (diameter)",
+  "mutant": "bracket plate hole resized to 3.2",
+  "got": "FAIL",
+  "measured": 3.2,
+  "required": ">= 3.25",
+  "status": "FAIL"
+ },
+ {
+  "check": "coaxiality (locate_bore x2)",
+  "mutant": "OD-C13 middle hole moved 0.5 vs placed bracket R2",
+  "got": "FAIL",
+  "measured": 0.5,
+  "required": "<= 0.2",
+  "status": "FAIL"
+ },
+ {
+  "check": "min_wall",
+  "mutant": "OD-C12 relief floor moved to -118.5 (wall 1.5)",
+  "got": "FAIL",
+  "measured": 1.499999999999997,
+  "required": ">= 2.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "J-05 exact face distance",
+  "mutant": "bracket insert bore 7.0 deep (web to counterbore 2.25)",
+  "got": "FAIL",
+  "measured": 2.25,
+  "required": ">= 3.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "overhang_census",
+  "mutant": "OD-C13 block x110..113 hung under the rail (print -X)",
+  "got": "FAIL",
+  "measured": 0.0,
+  "required": ">= 45.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "flat_ceiling_spans",
+  "mutant": "same block: its x 113 face a 10 deep ceiling",
+  "got": "FAIL",
+  "measured": 19.79999999999997,
+  "required": "<= 5.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "overhang_census (bracket, exception filled)",
+  "mutant": "bracket with a 3 x 4 ledge off its outer face",
+  "got": "FAIL",
+  "measured": 0.0,
+  "required": ">= 45.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "clearance (lip, D-04d)",
+  "mutant": "OD-C13 relocated +0.2 in x",
+  "got": "FAIL",
+  "measured": 0.20000000001000728,
+  "required": ">= 0.3",
+  "status": "FAIL"
+ },
+ {
+  "check": "clearance (designed contact)",
+  "mutant": "OD-C13 relocated +0.2 in x vs bracket R2",
+  "got": "FAIL",
+  "measured": 0.20000000000000284,
+  "required": "== 0.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "clearance (other pairs)",
+  "mutant": "OD-C12 relocated 0.5 inward vs OD-C07",
+  "got": "FAIL",
+  "measured": 0.4000000000000057,
+  "required": ">= 0.5",
+  "status": "FAIL"
+ },
+ {
+  "check": "interference/common_volume",
+  "mutant": "bracket R2 relocated 0.5 down into OD-C01",
+  "got": "FAIL",
+  "measured": 147.4603986155626,
+  "required": "<= 0.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "assembly path stepper",
+  "mutant": "lid lowered over OD-C13 relocated +0.5 in x",
+  "got": "FAIL",
+  "measured": 1.0392304843337503,
+  "required": "<= 0.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "interference (REQ-07 access)",
+  "mutant": "bracket R2 with a 2 tall boss over its screw",
+  "got": "FAIL",
+  "measured": 56.548667764616255,
+  "required": "<= 0.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "radial_profile",
+  "mutant": "bracket top lowered to y 13",
+  "got": "FAIL",
+  "measured": 6.0,
+  "required": ">= 8.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "section wedge reading",
+  "mutant": "OD-C13 lip with a bump raising its top at z -100",
+  "got": "FAIL",
+  "measured": 78.6900675259799,
+  "required": "in [59.0, 61.0]",
+  "status": "FAIL"
+ },
+ {
+  "check": "mesh_deviation",
+  "mutant": "bracket STL at tol 0.1, 1.0 rad",
+  "got": "FAIL",
+  "measured": 0.049399240006129295,
+  "required": "<= 0.01",
+  "status": "FAIL"
+ },
+ {
+  "check": "mesh_census (naked edges)",
+  "mutant": "delivered bracket STL with one triangle removed",
+  "got": "FAIL",
+  "measured": 3,
+  "required": "== 0",
+  "status": "FAIL"
+ },
+ {
+  "check": "REQ-06 distance arithmetic",
+  "mutant": "insert position moved to (114, -15)",
+  "got": "FAIL",
+  "measured": 6.0,
+  "required": ">= 8.0",
+  "status": "FAIL"
+ },
+ {
+  "check": "E-06 one solid (validity + section)",
+  "mutant": "OD-C13 lip lifted 0.5 off the rail",
+  "got": "FAIL",
+  "measured": 2,
+  "required": "== 1",
+  "status": "FAIL"
+ }
+]

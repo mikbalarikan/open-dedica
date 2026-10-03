@@ -1,0 +1,197 @@
+[
+ {
+  "png": "od_c13_right_v01_top.png",
+  "sha256": "5c24e60dbe490ef3ac99eb708a5d318178852a590fa9672210a540818bd0517f",
+  "view": "top",
+  "through": [
+   115.0,
+   100.0,
+   -100.0
+  ],
+  "shows": "wall, rail and lip wedge (E-06, REQ-02)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c13_right_v01_front.png",
+  "sha256": "449fda210a8c7c8be9d672ae2cfbaef98d494ebcdae66ea3e76da9daf648026a",
+  "view": "front",
+  "through": [
+   118.0,
+   50.0,
+   -100.0
+  ],
+  "shows": "wall at y 50 (REQ-01)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c13_right_v01_left.png",
+  "sha256": "d3d8b0bdfcced044b36584bfa3f32719c096f7481c7b9f0de0aa727cb6aa5df0",
+  "view": "left",
+  "through": [
+   118.5,
+   100.0,
+   -100.0
+  ],
+  "shows": "wall mid-plane with the three holes",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c13_right_y200_v01_front.png",
+  "sha256": "c679b2d18e51aeb9cef2005a3d01546134658d45feeb2af53afa21ccbc1ed597",
+  "view": "front",
+  "through": [
+   118.0,
+   200.0,
+   -100.0
+  ],
+  "shows": "wall at y 200 (REQ-01)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c13_right_z-262_v01_top.png",
+  "sha256": "3224bd3a8a074008be636fc38110cdef4b876f0f1579e2b6b69dcb8dd57c21d5",
+  "view": "top",
+  "through": [
+   118.0,
+   10.0,
+   -262.0
+  ],
+  "shows": "through the rear hole (REQ-03)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c12_left_v01_top.png",
+  "sha256": "1e381136a060b0ba10a12868494b1fe9c233afdab42124bc9d60a449851ece02",
+  "view": "top",
+  "through": [
+   -115.0,
+   100.0,
+   -100.0
+  ],
+  "shows": "relief, wall, rail and lip (REQ-04, E-06)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c12_left_v01_front.png",
+  "sha256": "94ea164c4472e4f7fc1661659fdb0486d91799362e3915cee7cd92c76d33956e",
+  "view": "front",
+  "through": [
+   -118.0,
+   30.0,
+   -100.0
+  ],
+  "shows": "wall at y 30 through the relief (REQ-04)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c12_left_v01_left.png",
+  "sha256": "f528e1122567b109ab82f831caf5227837d8deb95ab11b84dc64e9e73745fa49",
+  "view": "left",
+  "through": [
+   -118.5,
+   100.0,
+   -100.0
+  ],
+  "shows": "wall mid-plane: relief edge and holes",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c12_left_y200_v01_front.png",
+  "sha256": "c2c268e5c8db00436c1ba7fa170a6a64a300231f575af921edc34cae959c4138",
+  "view": "front",
+  "through": [
+   -118.0,
+   200.0,
+   -100.0
+  ],
+  "shows": "wall at y 200 (REQ-01)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c12_left_z-15_v01_top.png",
+  "sha256": "91569b9f02dab8831aca4fca0f393be3fce5904ef04d57a4876bb7e78f79f369",
+  "view": "top",
+  "through": [
+   -118.0,
+   10.0,
+   -15.0
+  ],
+  "shows": "through the middle hole (REQ-03)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c16_bracket_v01_top.png",
+  "sha256": "57755b9b21108056a69f5efbf5026a8cf7ff4d4da33b5af605bddf30c1ca3f9c",
+  "view": "top",
+  "through": [
+   -9.5,
+   8.0,
+   0.0
+  ],
+  "shows": "counterbore, hole and insert bore (REQ-05, J-05, D-03b)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c16_bracket_v01_front.png",
+  "sha256": "48631aa47639915be66225c8f5ccaaec878c66f11f9450f480d675ac0b3238c5",
+  "view": "front",
+  "through": [
+   -9.5,
+   10.0,
+   0.0
+  ],
+  "shows": "across the insert bore axis (D-05a)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_c16_bracket_v01_left.png",
+  "sha256": "ed25b09cd2d0ba6d016d22e9b227c4bb5e990f70465b1411b0457f10f35ae762",
+  "view": "left",
+  "through": [
+   -3.0,
+   8.0,
+   0.0
+  ],
+  "shows": "across the insert bore: its crown (D-03b)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_side_assembly_z-15_v01_top.png",
+  "sha256": "70d51c9841ced6522ef61c05eda9477441edd7e023eb155dd19f959ad14bdbc7",
+  "view": "top",
+  "through": [
+   0.0,
+   100.0,
+   -15.0
+  ],
+  "shows": "machine at z -15: brackets, panels, lips, lid (U-03)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ },
+ {
+  "png": "od_side_assembly_z-262_v01_top.png",
+  "sha256": "260f41a3008f50d7e60765780ae4b070171fffd08235f6de42a23a090890c2a0",
+  "view": "top",
+  "through": [
+   0.0,
+   100.0,
+   -262.0
+  ],
+  "shows": "machine at z -262: rear brackets (U-03)",
+  "nothing_clipped": 0,
+  "status": "MEASURED"
+ }
+]

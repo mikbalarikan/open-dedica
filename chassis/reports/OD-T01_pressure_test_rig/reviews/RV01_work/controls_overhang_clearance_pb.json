@@ -1,0 +1,23 @@
+{
+ "overhang_census": {
+  "mutant": "crown-filled census copy with a 10-wide flat-roofed slot through the plate at x 55..65, z 0..5",
+  "status": "FAIL",
+  "measured": 0.0,
+  "required": ">= 45.0",
+  "margin": -45.0
+ },
+ "flat_ceiling_spans": {
+  "mutant": "same slot (10 wide ceiling)",
+  "status": "FAIL",
+  "measured": 10.000399840127871,
+  "required": "<= 5.0",
+  "margin": -5.00039984
+ },
+ "clearance_pairB": {
+  "mutant": "rig relocated (-0.35, 0, +0.35): window face 0.49 nearer the pair-B axis",
+  "status": "FAIL",
+  "measured": 10.483890781748887,
+  "required": ">= 10.87",
+  "margin": -0.386109218
+ }
+}

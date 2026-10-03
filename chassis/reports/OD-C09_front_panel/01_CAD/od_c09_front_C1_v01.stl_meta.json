@@ -1,0 +1,7 @@
+{
+ "tolerance_mm": 0.01,
+ "angular_tolerance_rad": 0.15,
+ "triangles": 3932,
+ "max_sagitta_mm": 0.004889284577454498,
+ "sha256": "086c7c7e4f1c98472b1800dfce3bf73e83ef240311986df454bd2e1a7c740498"
+}

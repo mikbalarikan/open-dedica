@@ -1,0 +1,27 @@
+{
+ "file": "od_side_assembly_C1_v01.step",
+ "sha256": "aee5a94315143eb416bbe9111e5ef4a8e32e828ee70c522d6e015ac9fd7a58b7",
+ "children": [
+  "OD-C01",
+  "OD-C02",
+  "OD-C05",
+  "OD-C07",
+  "OD-C08",
+  "OD-C10",
+  "OD-C11",
+  "OD-C15-RF",
+  "OD-C15-LF",
+  "OD-C15-RR",
+  "OD-C15-LR",
+  "od_c13_right",
+  "od_c12_left",
+  "od_c16_bracket_R1",
+  "od_c16_bracket_L1",
+  "od_c16_bracket_R2",
+  "od_c16_bracket_L2",
+  "od_c16_bracket_R3",
+  "od_c16_bracket_L3"
+ ],
+ "solids_written": 19,
+ "solids_read_back": 19
+}

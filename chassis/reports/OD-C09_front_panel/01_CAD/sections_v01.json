@@ -1,0 +1,254 @@
+[
+ {
+  "plane": "z95p5",
+  "file": "od_c09_front_v01_z95p5.png",
+  "sha256": "17413ea95fe15aa055589abad29f8f8074e16e38b65aac6f7170eeca2ecb3ee0",
+  "view": "top",
+  "through": [
+   0.0,
+   100.0,
+   95.5
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 23564.856239706725
+ },
+ {
+  "plane": "z89p0",
+  "file": "od_c09_front_v01_z89p0.png",
+  "sha256": "bd370989425d7f06a73714abce98df7cfec521b6278d94265276ad9fee57a500",
+  "view": "top",
+  "through": [
+   0.0,
+   100.0,
+   89.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 2216.4336143089895
+ },
+ {
+  "plane": "y100",
+  "file": "od_c09_front_v01_y100.png",
+  "sha256": "089ec0abb06502e8ce92c855b93b0442788956e7192fc616c3a278950670ab0c",
+  "view": "front",
+  "through": [
+   0.0,
+   100.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 358.5
+ },
+ {
+  "plane": "y200",
+  "file": "od_c09_front_v01_y200.png",
+  "sha256": "32f0a3323f0fa49db494130ec7ba4c543b1c898ca022472cc42d065241d51cc1",
+  "view": "front",
+  "through": [
+   0.0,
+   200.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 696.0
+ },
+ {
+  "plane": "y2p0",
+  "file": "od_c09_front_v01_y2p0.png",
+  "sha256": "9d2dd54a80250f96e7a84b76fe6becc3bcbd8583d2018371e6dc8ef44d93623f",
+  "view": "front",
+  "through": [
+   0.0,
+   2.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 1461.6831889245018
+ },
+ {
+  "plane": "y153p2",
+  "file": "od_c09_front_v01_y153p2.png",
+  "sha256": "4111ce82f779703582da9005e0812ce462f584d665f0fbbb29abfbe4b434a14b",
+  "view": "front",
+  "through": [
+   0.0,
+   153.2349,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 428.16499999999996
+ },
+ {
+  "plane": "y153p2_with_E02",
+  "file": "od_c09_front_v01_y153p2_with_E02.png",
+  "sha256": "c5c7e7dc95f9ead12f5be78970dd67ba891cf91454c23000274e4666b65869a4",
+  "view": "front",
+  "through": [
+   0.0,
+   153.2349,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 873.3411687389566
+ },
+ {
+  "plane": "y127p3",
+  "file": "od_c09_front_v01_y127p3.png",
+  "sha256": "15405c29594a5fe4b1902e93afeb4766d500d91ba2e86ffcfef48232f38f759e",
+  "view": "front",
+  "through": [
+   0.0,
+   127.2515,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 428.165
+ },
+ {
+  "plane": "y127p3_with_E02",
+  "file": "od_c09_front_v01_y127p3_with_E02.png",
+  "sha256": "5ce90602d626bff4581952fb6fba3994f5302e38de2b88a552530f677f3af17d",
+  "view": "front",
+  "through": [
+   0.0,
+   127.2515,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 848.2563324743164
+ },
+ {
+  "plane": "x-95",
+  "file": "od_c09_front_v01_x-95.png",
+  "sha256": "e884afe651cc525ac0a28b5939a914283120005a4548cf8815f50d9419109f0f",
+  "view": "left",
+  "through": [
+   -95.0,
+   100.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 721.677706477139
+ },
+ {
+  "plane": "x-85",
+  "file": "od_c09_front_v01_x-85.png",
+  "sha256": "085961e5dbb540c3895566d63c8321f04fb845827ddd479d0a6267a8cbc8247f",
+  "view": "left",
+  "through": [
+   -85.0,
+   100.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 719.4000000000001
+ },
+ {
+  "plane": "x85",
+  "file": "od_c09_front_v01_x85.png",
+  "sha256": "07e36cec980e4c6b0fab52a2c4ec429faf6773758aeacdb5f5a22f2f304d1f11",
+  "view": "left",
+  "through": [
+   85.0,
+   100.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 719.4000000000001
+ },
+ {
+  "plane": "x95",
+  "file": "od_c09_front_v01_x95.png",
+  "sha256": "25bd03f9216f357007a990a2625ca1a10da09672c5181b728c040e3e9d442b79",
+  "view": "left",
+  "through": [
+   95.0,
+   100.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 719.4000000000001
+ },
+ {
+  "plane": "x-78",
+  "file": "od_c09_front_v01_x-78.png",
+  "sha256": "b9e0be69524a99fa8d3e9fa96820d541c70d462d082abe437ba94859c165d633",
+  "view": "left",
+  "through": [
+   -78.0,
+   100.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 1256.7500000000057
+ },
+ {
+  "plane": "x102",
+  "file": "od_c09_front_v01_x102.png",
+  "sha256": "366c2e0296e5fa39d710eafe054e1af61e887d6ee8ed76201a21f9cce64501e4",
+  "view": "left",
+  "through": [
+   102.0,
+   100.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 973.0000000000322
+ },
+ {
+  "plane": "x-91",
+  "file": "od_c09_front_v01_x-91.png",
+  "sha256": "1c4b54e4172da903d23ad1fbea810c00761d5be9c12d3251ebeecfe94367d236",
+  "view": "left",
+  "through": [
+   -91.03,
+   140.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 788.8524966588707
+ },
+ {
+  "plane": "x-91_with_E02",
+  "file": "od_c09_front_v01_x-91_with_E02.png",
+  "sha256": "511893a6f4c33787baf23ed4c749e9c9a213c3cfa8c9f9d1dfcea9a871b0f509",
+  "view": "left",
+  "through": [
+   -91.03,
+   140.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 1998.2801063794077
+ },
+ {
+  "plane": "x36",
+  "file": "od_c09_front_v01_x36.png",
+  "sha256": "b873a31f64e19a6f8af2f7f230f7b59910cf1335657c7c28238270ac4683b34b",
+  "view": "left",
+  "through": [
+   36.0,
+   100.0,
+   90.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "cut_area_mm2": 111.0
+ }
+]

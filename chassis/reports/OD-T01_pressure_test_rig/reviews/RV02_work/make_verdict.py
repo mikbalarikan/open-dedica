@@ -1,0 +1,83 @@
+import json, hashlib
+from pathlib import Path
+W = Path("/root/oguz-jobs/20261002-od-t01-pressure-test-rig")
+def sha(p): return hashlib.sha256((W / p).read_bytes()).hexdigest()
+files = ["02_STEP_STL/od_t01_rig_C1_v02.step", "02_STEP_STL/od_t01_rig_C1_v02.stl", "02_STEP_STL/od_t01_assembly_C1_v02.step",
+         "01_CAD/REPORT_od_t01_rig_v02.md", "01_CAD/DESIGN_PLAN.md", "00_Spec/DESIGN_SPEC.md",
+         "00_Spec/inputs/od_g01_assembly_C1_v03.step", "00_Spec/inputs/od_g01_housing_C1_v03.step",
+         "reviews/RV01_od_t01_rig_v01.md",
+         "03_Sections/od_t01_rig_v02_z0_assembly.png", "03_Sections/od_t01_rig_v02_z44_assembly.png",
+         "03_Sections/od_t01_rig_v02_x44.png", "03_Sections/od_t01_rig_v02_x0.png",
+         "03_Sections/od_t01_rig_v02_y5.png", "03_Sections/od_t01_rig_v02_y147.png"]
+F = [{"path": p, "sha256": sha(p), "matches_report": True} for p in files]
+def g(gate, measured, unit, required, margin, at, status, method, assumes=()):
+    return {"gate": gate, "measured": measured, "unit": unit, "required": required, "margin": margin, "at": at,
+            "status": status, "method": method, "assumes": list(assumes)}
+G = [
+ g("U-01", 1, "bool", "solid_count = 1, brep_valid = 1, naked_edges = 0", 0, "solid_count 1, brep_valid 1 (BRepCheck, volume, BOPAlgo: no faults), naked_edges 0; label od_t01_rig; AP242, mm", "PASS", "validity"),
+ g("U-02", 240.0, "mm", "240.0 x 160.0 x 120.0 each in [spec - 0.1, spec + 0.1]; position reported apart", 0.1, "size 240.000 x 160.000 x 120.000 (each margin +0.100); position x -120.000..120.000, y 0.000..160.000, z -60.000..60.000, on the datum", "PASS", "envelope"),
+ g("U-03", 0.0, "mm", "(a) seat clearance = 0; interference <= 0 every pair; rig to housing elsewhere, OD-G04, OD-G10 >= 2.0; (b) dy 0..-30 steps <= 2.0: interference <= 0", 0.0, "(a) seat clearance 0.000 at (21.25, 135.00, 21.18), plate underside / housing rear face; interference rig|housing 0.000 mm3, rig|OD-G04 0.000 mm3; rig below y 134.9 to housing 15.100 at (65.1, 134.9, 40.0) chamfer root (+13.1); rig to OD-G04 5.000 at (-21.25, 135.0, 21.18) over the pair-A boss (+3.000); rig to OD-G10 13.689, not inside (+11.689; common_volume INCONCLUSIVE on OD-G10, brep_valid 0, read by the spec's clearance fallback); (b) 31 poses dy 0..-30 every 1.0: interference rig|housing and rig|OD-G04 0.000 mm3 at every pose, OD-G10 least 13.689 at dy 0, never inside", "PASS_ASSUMED", "clearance, interference (common_volume); OD-G10 clearance fallback per REQ-04", ["A-01"]),
+ g("U-04", 2.3e-10, "mm3", "named body re-read unchanged, no stray shells, valid after re-import", -2.3e-10, "delivered STEP read: 1 solid, label od_t01_rig, AP242, valid; compare_step against the delivered file: volume delta 0.000, faces delta 0; reviewer re-export of the read solid: volume delta 2.3e-10 mm3 (inside the 0.001 band), faces delta 0 (54), labels equal, valid after", "PASS", "compare_step, step_roundtrip"),
+ g("U-05", 13, "count", "plan counts: 1 plate, 2 walls (z -60..+40), 1 base, 4 corner chamfers, 4 x 3.4 holes + 4 x 6.5 counterbores (teardrop), 1 hub window (R 30 + teardrop), 4 x 4.5 bench holes (teardrop)", 0, "13 bores (4 x 3.400 360 deg, 4 x 6.500, 1 x 60.000, 4 x 4.500, each teardrop bore 269.8 deg + 2 flanks); faces 41 planar + 13 concave cylinders, 0 other; 4 chamfer planes 10 x 10; wall inner faces x +-75 at z -60..40; see feature census", "PASS", "feature_census, bore_census, locate_bore"),
+ g("U-06", 5.0, "mm", ">= 2.0 (Soft)", 3.0, "(-45.10, 135.00, -47.04) plate under the (-44, -44) counterbore", "PASS", "min_wall_wide"),
+ g("U-07", 0.004997, "mm", "STL at tol 0.01, angular <= 4 acos(1 - 0.01/30) = 0.1033 rad; stl_max_sagitta <= 0.01", 0.005003, "reviewer re-mesh of the STEP at 0.01 mm / 0.10 rad is byte-identical to the delivered STL (SHA 183e58f0...), so the STL is the D5 export from a cleared triangulation at the REPORT's tolerance; sagitta 0.0050 at (-21.63, 141.25, 20.78); 5752 triangles; mesh_census 1 body, 0 naked edges, winding consistent, volume +12.8 mm3 vs B-rep; mesh_deviation 0.0050; min_wall_mesh 5.000; 3MF at J5", "PASS", "write_stl, stl_max_sagitta, mesh_census, mesh_deviation, min_wall_mesh"),
+ g("U-08", None, "mm", "applies to threaded parts; this target has none", None, None, "NOT_APPLICABLE", "N/A by the spec row"),
+ g("D-01a", 5.0, "mm", ">= 0.8", 4.2, "(-45.10, 135.00, -47.04) plate under a counterbore", "PASS", "min_wall"),
+ g("D-01b", 5.0, "mm", ">= 2.0 (webs between counterbores and window, and around bench holes, included)", 3.0, "(-45.10, 135.00, -47.04) plate under a counterbore; mesh corroboration min_wall_mesh 5.000", "PASS_ASSUMED", "min_wall", ["A-08"]),
+ g("D-02", 240.0, "mm", "each size <= Kobra Max 3 volume 420 x 420 x 500, lying on the rear face: 240 x 160 on the bed, 120 tall", 180.0, "bed 240.000 x 160.000 (margins +180, +260), height 120.000 (+380)", "PASS_ASSUMED", "envelope", ["A-09"]),
+ g("D-03a", 45.1, "deg", ">= 45 (build +Z); crowns of the four 3.4 holes excepted by position", 0.1, "least 45.100 at (21.25, 135.00, 21.18) window teardrop flank, on the reviewer's copy with the four 3.4 holes plugged (r 1.8, y 135..140); sampling bound 0.009 deg, 0 samples below 45; per kind cylinder 45.1, plane 45.1. Unplugged: least 0.0 at (-44.0, 135.0, -42.3) on a 3.4 crown; the 312 samples below 45 all vanish with the plugs", "PASS_ASSUMED", "overhang_census(build_dir=(0,0,1))", ["A-10"]),
+ g("D-03b", 3.4, "mm", "span <= 5: the four 3.4 crowns bridge <= 3.4; nothing else bridges", 0.0, "flat_ceiling_spans 0.000 (no flat ceiling anywhere); crowns are 3.400 bores (360 deg) along Y, 5.0 long, y 135..140, seen in reviewer sections y 137.5 and x 44; margin +1.600 against 5", "PASS_ASSUMED", "flat_ceiling_spans, bore_census, reviewer sections", ["A-10"]),
+ g("D-04a", 3.4, "mm", "housing screw holes >= 3.25; bench holes >= 4.25", 0.15, "4 x 3.400 at (+-44, 135..140, +-44); 4 x 4.500 at (+-105, 0..10, +-40) (+0.250)", "PASS", "bore_census, locate_bore"),
+ g("D-06a", 5.0, "mm", ">= 1.0", 4.0, "(-45.10, 135.00, -47.04)", "PASS", "min_wall"),
+ g("D-07", None, "mm", "none: clearance holes only", None, None, "NOT_APPLICABLE", "N/A by the spec row"),
+ g("J-05", None, "mm", "applies to threaded holes in this part; it has none", None, None, "NOT_APPLICABLE", "N/A by the spec row"),
+ g("REQ-01", 5.0, "mm", "4 x 3.4 +- 0.1 at (+-44, +-44), offset <= 0.10 from the posed insert bores, through; 6.5 +- 0.1 counterbores y 160.0 to y 140.00 +- 0.10; 5.0 +- 0.1 of plate under each head", 0.1, "plate under each head 5.000 (floor y 140.000 - underside 135.000); hole axes 0.000 off the posed insert-bore axes (4.000, y 129.3..135.0); 4 x 3.400 open both ends y 135.000..140.000; 4 x 6.500 y 140.000..160.000, floor closed; every sub-margin +0.100", "PASS_ASSUMED", "locate_bore, bore_census", ["A-01"]),
+ g("REQ-02", 135.0, "mm", "underside one plane at y 135.00 +- 0.10 over x +-50, z +-50; housing rear face on it", 0.1, "one -Y planar face at y 135.000 (x +-90, z +-60); 5712 grid points over x, z +-50 off the window and holes: material at y 135.002 and air at y 134.998 at every one; seat clearance 0.000 (U-03)", "PASS_ASSUMED", "envelope, BRep classifier grid, clearance", ["A-01"]),
+ g("REQ-03", 10.97, "mm", "R 30.0 +- 0.1; roof 45.1 +- 1 deg toward +Z, apex z +42.51 +- 0.16; OD-G04 hub tube >= 2.0; pair-B axes >= 10.87 from the window face", 0.1, "pair-B axis (10.64, -15.78) to window face 10.970 at (16.78, 135.0, -24.87) (+0.100); other pair-B axis (-9.31, 16.60) 11.689; window 60.000 offset 0.000, through y 135..160 (R margin +0.100); flanks 45.100 deg (+1.000); apex z 42.5006 by radial_extent at y 135.5, 147.5, 159.5 (+0.1506); OD-G04 to rig 5.000 (+3.000)", "PASS_ASSUMED", "bore_census, locate_bore, flank-plane normals, radial_extent, clearance, reviewer sections", ["A-05", "A-12"]),
+ g("REQ-04", 11.755, "mm", "(a) phi -60..+15 deg, steps <= 5: clearance >= 5.0; (b) phi -50, dy -15, dz 0..200, steps <= 5.0: interference <= 0, read as clearance > 0 with inside False", 6.755, "(a) 76 poses every 1 deg: least 11.755 at phi +15 at (75.0, 90.4, 40.0), +X wall front end, never inside; phi > 0 turns the handle to +X (max_x 67.7 / 92.0 / 114.6 at -10 / 0 / +10); (b) 81 poses every 2.5: least 28.689 at dz 50, never inside; lift phi -50, dy -15..0 (16 poses): least 13.689; joint grid phi -60..+15 x dy -15..0 (176 poses): least 11.755, never inside", "PASS_ASSUMED", "clearance (OD-G10 fallback)", ["A-07"]),
+ g("REQ-05", 52.296, "mm", ">= 50.0 above the base top y 10", 2.296, "OD-G10 locked lowest point y 62.296 (reviewer pose)", "PASS_ASSUMED", "envelope", ["A-07"]),
+ g("REQ-06", 0.0, "mm3", "4 x 4.5 +- 0.1 at (+-105, +-40), offset <= 0.10, through; four 8 cylinders y 10..300 interference = 0", 0.0, "probes common volume 0.000 mm3 each; 4 x 4.500 offset 0.000, through y 0..10 (+0.100)", "PASS_ASSUMED", "locate_bore, common_volume", ["A-11"]),
+ g("REQ-07", 0.0, "mm3", "four 6 cylinders y 160..300 on the screw axes: interference = 0", 0.0, "common volume 0.000 mm3 each; least clearance 0.250 to the counterbore teardrop rim at (46.30, 160.0, 46.29)", "PASS", "common_volume, clearance"),
+ g("REQ-08", None, "mm", "Soft: holds 3.06 kN on four screws with no visible yield or crack at the test pressure (bench)", None, "not geometric; window section at x 0 measured Z 4948.1 mm3, sigma 9.59 MPa, factor 4.17; see F1", "INCONCLUSIVE", "bench test; A-02 hand calculation re-checked on the measured section", ["A-02"]),
+]
+FC = [
+ {"feature": "F01 frame profile (plate, 2 walls, base, 4 chamfers)", "expected": "plate y 135..160 x +-90 (spec 1.3); walls x +-(75..90) z -60..+40; base y 0..10 x +-120; 4 chamfer planes 10 x 10 at 45 deg", "found": "plate y 135.000..160.000 x +-90; walls x +-(75..90), end faces at z 40.000; base y 0..10 x +-120; 4 chamfer planes 10 x 10 at 45 deg; 41 planar faces", "status": "PASS"},
+ {"feature": "F02 hub window R 30 + teardrop", "expected": "1 bore 60.0 along Y through the plate, 2 flanks 45.1 deg, apex z 42.51", "found": "60.000, y 135..160, through, 269.8 deg; flanks 45.100 deg; apex z 42.5006", "status": "PASS"},
+ {"feature": "F03 4 x 6.5 counterbore + teardrop", "expected": "4 bores 6.5, y 140.00..160 (spec 1.3), floor closed, 8 flanks, apex 4.61", "found": "4 x 6.500 at (+-44, +-44), y 140.000..160.000, floor closed; 8 flanks 45.100 deg; apex 4.604 from the axis", "status": "PASS"},
+ {"feature": "F04 4 x 3.4 hole (no teardrop)", "expected": "4 bores 3.4 360 deg, y 135..140", "found": "4 x 3.400, 360 deg, y 135.000..140.000, open into the counterbore", "status": "PASS"},
+ {"feature": "F05 4 x 4.5 bench hole + teardrop", "expected": "4 bores 4.5 through the base at (+-105, +-40), 8 flanks, apex 3.19", "found": "4 x 4.500, y 0..10 through; 8 flanks 45.100 deg; apex 3.188", "status": "PASS"},
+ {"feature": "F06 name and export", "expected": "body od_t01_rig, AP242 STEP, STL 0.01 mm / 0.10 rad", "found": "label od_t01_rig, AP242, mm; STL byte-identical to the reviewer re-mesh at 0.01 / 0.10", "status": "PASS"},
+ {"feature": "F07 check assembly", "expected": "rig + housing + OD-G04 + OD-G10 at the spec 2 pose", "found": "file present, hash matches the brief; not used for any gate (the reviewer posed the set from the v03 input)", "status": "PASS"},
+]
+PL = [
+ {"question": "P1 gravity", "answer": "Base 240 x 120 on the bench at y 0, centre of mass (0, 85.8, -3.6) inside the footprint; the housing hangs under the plate on four screws and the brew load pulls it into them, as on OD-C05 (section z 0).", "status": "YES"},
+ {"question": "P2 function chains", "answer": "Screw heads on 5.0 of plate, axes 0.000 off the inserts; hub reached through the R 30 window from above; load path plate - walls - base - bench holes is a closed ring (sections z 0, z 44, x 0).", "status": "YES"},
+ {"question": "P3 moving parts", "answer": "OD-G10 turns phi -60..+15 with >= 11.755, goes in at phi -50 along +Z with >= 28.689, lifts with >= 13.689, and every phi x dy pose in between keeps >= 11.755; the housing set offers up 30 with no interference.", "status": "YES"},
+ {"question": "P4 grip, reach, insertion", "answer": "Screw axes clear to y 300 (6 probes) down 20-deep counterbores, bench-screw axes clear to y 300 (8 probes); the handle leaves at the open front where the walls stop at z +40; 52.3 under the portafilter for a tray.", "status": "YES"},
+ {"question": "P5 absurdity", "answer": "A 240 x 160 x 120 PLA frame of 1.42 kg holding a 100 x 100 group head reads as an ordinary bench test fixture.", "status": "YES"},
+ {"question": "P6 floating, embedded, mirrored, upside-down", "answer": "Seat clearance 0.000 with 0.000 mm3 interference; the pose is a proper rotation (x->X, y->+Z, z->-Y, checked); teardrops point +Z, the build direction (section y 147.5); handle on +X at about 34 deg as in v03.", "status": "YES"},
+]
+C = json.loads((W / "reviews/RV02_work/controls.json").read_text())
+PC = [{"check": c["check"], "mutant": f"{c['mutant']}: {c['measured']:.4g}" if isinstance(c["measured"], (int, float)) else c["mutant"], "got": c["got"]} for c in C]
+PC.append({"check": "flank-plane normals (REQ-03 roof angle)", "mutant": "rig rotated 2 deg about Y: flanks 47.1 / 43.1 deg", "got": "FAIL"})
+FI = [
+ {"id": "F1", "gate": "REQ-08", "kind": "SOFT_GATE_MISS", "measured": None, "unit": "mm",
+  "required": "Soft: holds 3.06 kN on four screws with no visible yield or crack at 15 bar (bench)", "margin": None,
+  "at": "plate window section at x 0 (y 135..160) and the four counterbore floors at y 140",
+  "blocks": False, "risk": "MEDIUM",
+  "risk_basis": "RV01 F1 is closed for bending and pull-through: measured window section Z 4948.1 mm3 gives sigma 9.59 MPa, a factor 4.17 against an unsourced 40 MPa, and pull-through tau 8.5 MPa on 5.0 of plate; but spec 4 does not check head bearing: 765 N per screw on the ISO 7380 head annulus (5.7 on a 3.4 hole, 16.4 mm2) is about 47 MPa, near printed PLA's compressive yield, so the heads may embed or creep during a 5 min hold at 15 bar; the 4.2 factor also presumes solid infill, which no spec row states.",
+  "fix_direction": "Add the head bearing check to A-02 and the test procedure: specify 100 % infill (or many perimeters) round the counterbores, or put a steel washer under each head (Ø7 needs the counterbore opened to about Ø7.5), and record head sink and gauge drop at each pressure step."},
+]
+LS = [
+ {"item": "1. REQ-03 pair-B at R 29.9 has zero margin", "answer": "Confirmed by construction: nominal 10.970 (+0.100); R 29.9 gives 10.870, exactly the threshold. The window prints as a horizontal hole, which FDM tends to make undersize, so a printed window below R 29.9 is plausible; the need behind it (a head <= 17.7 clears by 2.0, A-12) has about 7.5 of room for ordinary M3/M3.5 heads. No deviation of the delivered part."},
+ {"item": "2. D-03a margin 0.1 deg and the crown exception by position", "answer": "Independent route: four plugs r 1.8 y 135..140 on the measured hole axes, census re-run: least 45.100 deg at the window flank, 0 samples below 45; the 312 sub-45 samples of the unplugged part are all on the crowns. Sections y 137.5 and x 44 show only the 3.4 crowns. The 20-deep counterbore teardrop roofs read 45.100 deg. PASS (assumed: A-10)."},
+ {"item": "3. REQ-08 rests on the hand moment and unsourced PLA strength; OD-G10 rows are the clearance fallback", "answer": "Measured section Z 4948.1 mm3, sigma 9.59 MPa, factor 4.17, as spec 4; head bearing about 47 MPa is not in the hand calculation (F1, MEDIUM). OD-G10 brep_valid 0 confirmed; common_volume reads it INCONCLUSIVE; every OD-G10 row used clearance > 0 with inside False over 380 poses, never inside, least 11.755."},
+]
+V = {"schema": "oguz-verdict-v1", "review_id": "RV02", "job_id": "20261002-od-t01-pressure-test-rig", "target": "od_t01_rig_v02",
+     "spec_version": "1.3", "reviewer": {"runtime": "claude-code", "model": "claude-opus-5-5"},
+     "verdict": "APPROVED_ASSUMPTION_CONDITIONAL",
+     "summary": "One valid 240 x 160 x 120 solid; every hard row of spec 1.3 re-measured and met (least margins REQ-03 pair-B +0.100, D-03a +0.100 deg, REQ-01 +0.100 with 5.000 under each head, REQ-04 +6.755); RV01 F1 and F2 closed; REQ-08 INCONCLUSIVE, rated MEDIUM for head bearing (about 47 MPa) the hand calculation omits.",
+     "files": F, "gates": G, "feature_census": FC, "plausibility": PL, "positive_controls": PC, "findings": FI,
+     "least_sure_answers": LS, "assumptions_relied_on": ["A-01", "A-05", "A-07", "A-08", "A-09", "A-10", "A-11", "A-12"]}
+(W / "reviews/RV02_od_t01_rig_v02.json").write_text(json.dumps(V, indent=1, ensure_ascii=False) + "\n")
+print("written", len(G), len(PC))
