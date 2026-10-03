@@ -1,0 +1,28 @@
+{
+ "flange_d": 20.0,
+ "flange_t": 2.0,
+ "neck_d": 11.3,
+ "neck_len": 3.2,
+ "groove_d": 10.3,
+ "groove_w": 5.1,
+ "flank_deg": 60.0,
+ "collar_d": 11.3,
+ "collar_top": 11.0,
+ "bore_d": 7.0,
+ "chamfer_in": 0.5,
+ "chamfer_out_axial": 0.5,
+ "chamfer_out_radial": 0.29,
+ "split_y": 0.4,
+ "stl_tol": 0.01,
+ "stl_ang": 0.1,
+ "tie_w": 4.8,
+ "tie_band": 1.3,
+ "head_x": 5.0,
+ "head_y": 6.0,
+ "head_z": 5.0,
+ "cord_d": 7.0,
+ "cord_z": [
+  -330.0,
+  -260.0
+ ]
+}

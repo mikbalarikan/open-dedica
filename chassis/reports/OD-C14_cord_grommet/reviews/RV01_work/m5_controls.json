@@ -1,0 +1,104 @@
+[
+ {
+  "check": "validity (naked_edges)",
+  "mutant": "collar-top face removed (open shell)",
+  "got": "FAIL",
+  "measured": 4
+ },
+ {
+  "check": "envelope",
+  "mutant": "flange resized \u00d820.0 -> \u00d821.2",
+  "got": "FAIL",
+  "measured": 21.184900282984586
+ },
+ {
+  "check": "feature_census",
+  "mutant": "tie groove filled to \u00d811.3 (groove floor, flank removed)",
+  "got": "FAIL",
+  "measured": 4
+ },
+ {
+  "check": "bore_census",
+  "mutant": "\u00d83 through-hole drilled in the flange at (95, 37.5)",
+  "got": "FAIL",
+  "measured": 1
+ },
+ {
+  "check": "radial_profile (inner)",
+  "mutant": "bore radius 3.50 -> 3.60",
+  "got": "FAIL",
+  "measured": 3.599999999999879
+ },
+ {
+  "check": "radial_extent (squeeze)",
+  "mutant": "bore r 3.60: squeeze of the closed pose",
+  "got": "FAIL",
+  "measured": 0.30000000000012106
+ },
+ {
+  "check": "min_wall",
+  "mutant": "groove floor thinned to 1.40 (\u00d89.8)",
+  "got": "FAIL",
+  "measured": 1.3999999999994557
+ },
+ {
+  "check": "min_wall_wide",
+  "mutant": "same mutant, 45\u00b0 reading",
+  "got": "FAIL",
+  "measured": 1.3999999999994557
+ },
+ {
+  "check": "overhang_census",
+  "mutant": "collar top ledge to \u00d815 (flat underside)",
+  "got": "FAIL",
+  "measured": 0.0
+ },
+ {
+  "check": "flat_ceiling_spans",
+  "mutant": "11 mm bridge on two posts above the flange",
+  "got": "FAIL",
+  "measured": 9.000399840127873
+ },
+ {
+  "check": "clearance",
+  "mutant": "half moved 0.5 along +X (neck into the hole wall)",
+  "got": "FAIL",
+  "measured": 0.0
+ },
+ {
+  "check": "clearance (contact =0)",
+  "mutant": "half moved 0.5 along -Z off the wall",
+  "got": "FAIL",
+  "measured": 0.34999999999977044
+ },
+ {
+  "check": "interference",
+  "mutant": "half moved 0.5 along +X",
+  "got": "FAIL",
+  "measured": 1.1943187581536325
+ },
+ {
+  "check": "mesh_sagitta (write_stl)",
+  "mutant": "STL written at 0.1 mm / 0.5 rad",
+  "got": "FAIL",
+  "measured": 0.04573276951312472
+ },
+ {
+  "check": "mesh_deviation",
+  "mutant": "same coarse STL against the B-rep",
+  "got": "FAIL",
+  "measured": 0.04572572225704824
+ },
+ {
+  "check": "mesh_census",
+  "mutant": "delivered STL with its last 10 triangles removed",
+  "got": "FAIL",
+  "measured": 12
+ },
+ {
+  "check": "compare_step",
+  "mutant": "bore r 3.60 compared with the delivered file",
+  "got": "FAIL",
+  "measured": 12.562841744723187
+ }
+]

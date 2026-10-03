@@ -1,0 +1,36 @@
+{
+ "step": "od_c12_left_C1_v01_relief_floor_x_hi.step",
+ "stl": "od_c12_left_C1_v01_relief_floor_x_hi.stl",
+ "roundtrip": {
+  "schema": [
+   1,
+   "MEASURED"
+  ],
+  "solids": [
+   1,
+   "MEASURED"
+  ],
+  "volume_delta": [
+   2.3224856704473495e-08,
+   "MEASURED"
+  ],
+  "faces_delta": [
+   0,
+   "MEASURED"
+  ],
+  "labels": [
+   1,
+   "MEASURED"
+  ],
+  "valid_after": [
+   1,
+   "MEASURED"
+  ]
+ },
+ "stl_tolerance_mm": 0.01,
+ "stl_angular_rad": 0.4340738745346826,
+ "r_max": 1.7,
+ "triangles": 552,
+ "max_sagitta_mm": 0.004988137987723112,
+ "volume_mm3": 271125.4251657423
+}
