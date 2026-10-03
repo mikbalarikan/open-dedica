@@ -133,11 +133,11 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-C09` | OD-C00 | PRINT | Front panel with button bezel |  |  | 1 | DESIGN | PLA for now (service ASA) | printed | print | #8 | ✎ |
 | `OD-C10` | OD-C00 | PRINT | Top panel (removable — 4 screws) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
 | `OD-C11` | OD-C00 | PRINT | Back panel (removable — 4 screws; cord and two tube pass-throughs; vents) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
-| `OD-C12` | OD-C00 | PRINT | Left side panel |  |  | 1 | DESIGN | PLA for now (service ASA / PETG; printed not acrylic: the Usta 2026-10-02) | printed | print |  | ✎ |
-| `OD-C13` | OD-C00 | PRINT | Right side panel |  |  | 1 | DESIGN | PLA for now (service ASA / PETG; printed not acrylic: the Usta 2026-10-02) | printed | print |  | ✎ |
-| `OD-C14` | OD-C00 | PRINT | Cable strain relief / grommet |  |  | 2 | DESIGN | PLA for now (service TPU) | printed | print |  | ✎ |
+| `OD-C12` | OD-C00 | PRINT | Left side panel (printed, 3.0 wall, lid lip, relief over OD-C07) |  |  | 1 | DESIGN | PLA for now (service ASA / PETG; no geometry change) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
+| `OD-C13` | OD-C00 | PRINT | Right side panel (printed, 3.0 wall, lid lip) |  |  | 1 | DESIGN | PLA for now (service ASA / PETG; no geometry change) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
+| `OD-C14` | OD-C00 | PRINT | Cord grommet, split half (two per grommet, closed by a cable tie) |  |  | 2 | DESIGN | PLA for now (service TPU) | printed (Creality K1C) | print |  | 🧊 |
 | `OD-C15` | OD-C00 | PRINT | Foot (TPU, Ø18 × 10, captive M3 nut; alternative to OD-C25/C26) |  |  | 4 | DESIGN | PLA for now (service TPU 95A: A-03) | printed (Creality K1C) | print |  | 🧊 |
-| `OD-C16` | OD-C00 | PRINT | Corner bracket for acrylic skins (optional) |  |  | 16 | DESIGN | PLA for now (service ASA / PETG) | printed | print |  | ✎ |
+| `OD-C16` | OD-C00 | PRINT | Side panel corner bracket (3 per side) |  |  | 6 | DESIGN | PLA for now (service ASA / PETG) | printed (Creality K1C) | print |  | 🧊 |
 | `OD-C21` | OD-C00 | OEM | Drip tray (or printed replacement) | 09 | 5313249971 | 1 | SCAN |  | FixPart / printed | 8–12 | #9 | ☐ |
 | `OD-C22` | OD-C21 | OEM | Float | 08 | 5313249981 | 1 | SCAN |  | FixPart | (with OD-C21) | #9 | ☐ |
 | `OD-C23` | OD-C00 | OEM | Cup holder | 07 | 6013214801 | 1 | CALIPER |  | FixPart / printed | 5 | #9 | ☐ |
@@ -149,15 +149,15 @@ DESIGN native design · VENDOR vendor STEP
 
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| `OD-F01` | OD-000 | STD | M3 heat-set insert (Ø4.0 bore × 6; 38 in the chassis) |  |  | ~50 | VENDOR | brass M3 | AliExpress | 10 (set) |  | ☐ |
-| `OD-F02` | OD-000 | STD | M3×8 screw |  |  | ~50 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
-| `OD-F03` | OD-000 | STD | Acrylic sheet 3 mm (optional skins) |  |  | per design | — | PMMA | local laser / leftover stock | 25 |  | ☐ |
+| `OD-F01` | OD-000 | STD | M3 heat-set insert (Ø4.0 bore × 6; 50 in the chassis) |  |  | ~60 | VENDOR | brass M3 | AliExpress | 10 (set) |  | ☐ |
+| `OD-F02` | OD-000 | STD | M3×8 screw |  |  | ~60 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
+| `OD-F03` | OD-000 | STD | Acrylic sheet 3 mm (optional skins; not used: the side panels are printed) |  |  | per design | — | PMMA | local laser / leftover stock | 25 |  | ⏸ |
 | `OD-F04` | OD-000 | STD | Food-safe silicone tube 4×2 mm (routing reserve) |  |  | 1 m | ENVELOPE | silicone | AliExpress | 5 |  | ☐ |
 | `OD-F05` | OD-000 | STD | High-temp epoxy (steam port blank) |  |  | 1 | — | 125 °C / 15 bar | hardware store | 8 |  | ☐ |
 | `OD-F06` | OD-000 | STD | 6.3 mm insulated spade terminals + 105 °C wire (own looms) |  |  | 1 set | — |  | TME / AliExpress | 5 |  | ☐ |
 | `OD-F07` | OD-000 | STD | Metal spacer Ø7 × 10.10 mm (Ø4 bore; OD-C04 thermoblock stand-off) |  |  | 1 | — | steel / brass tube cut to length (+0.10/−0) | local shop / scrap | 1 | #2 | ☐ |
 | `OD-F08` | OD-000 | STD | Metal spacer Ø7 × 37.70 mm (Ø4 bore; OD-C04 thermoblock stand-off) |  |  | 1 | — | steel / brass tube cut to length (+0.10/−0) | local shop / scrap | 1 | #2 | ☐ |
-| `OD-F09` | OD-000 | STD | Cable tie 4.8 mm (OD-C03 pump strap; OD-C08 loom slots 2 × 4) |  |  | 4 | VENDOR | PA66 UV-black | hardware store | 1 | #1 | ☐ |
+| `OD-F09` | OD-000 | STD | Cable tie 4.8 mm (OD-C03 pump strap; OD-C08 loom slots 2 × 4; OD-C14 grommet) |  |  | 5 | VENDOR | PA66 UV-black | hardware store | 1 | #1 | ☐ |
 | `OD-F10` | OD-000 | STD | M3×12 screw (OD-C01 into the OD-C02 base rail; tip ends on the bore floor; and the four OD-C15 feet from the plate top) |  |  | 8 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
 | `OD-F11` | OD-000 | STD | M3×6 screw (OD-E01 board holes H1/H2 into the OD-C08 standoffs; M3×8 only with a ≥ 0.5 washer) |  |  | 2 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) | #8 | ☐ |
 | `OD-F12` | OD-000 | STD | M3 hex nut (captive in the OD-C15 feet; nylon-insert ISO 10511 needs M3×16) |  |  | 4 | VENDOR | ISO 4032 A2 | AliExpress | (set) |  | ☐ |
