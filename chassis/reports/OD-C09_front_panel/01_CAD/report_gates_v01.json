@@ -403,7 +403,293 @@
    ]
   }
  ],
- "sweep": [],
+ "sweep": [
+  {
+   "run": "boss_d_high",
+   "params": {
+    "boss_d": 11.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "boss_d_low",
+   "params": {
+    "boss_d": 10.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "boss_end_z_high",
+   "params": {
+    "boss_end_z": 85.585
+   },
+   "built_one_solid": true,
+   "not_pass": {
+    "U-03": "FAIL"
+   }
+  },
+  {
+   "run": "boss_end_z_low",
+   "params": {
+    "boss_end_z": 85.385
+   },
+   "built_one_solid": true,
+   "not_pass": {
+    "U-03": "FAIL",
+    "E-01": "FAIL"
+   }
+  },
+  {
+   "run": "button_hole_d_high",
+   "params": {
+    "button_hole_d": 15.2
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "button_hole_d_low",
+   "params": {
+    "button_hole_d": 14.8
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_d_high",
+   "params": {
+    "flange_hole_d": 3.5
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_d_low",
+   "params": {
+    "flange_hole_d": 3.3
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_x_high",
+   "params": {
+    "flange_hole_x": [
+     -94.9,
+     -84.9,
+     85.1,
+     95.1
+    ]
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_x_low",
+   "params": {
+    "flange_hole_x": [
+     -95.1,
+     -85.1,
+     84.9,
+     94.9
+    ]
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_z_high",
+   "params": {
+    "flange_hole_z": 77.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "flange_hole_z_low",
+   "params": {
+    "flange_hole_z": 76.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "insert_bore_d_high",
+   "params": {
+    "insert_bore_d": 4.05
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "insert_bore_d_low",
+   "params": {
+    "insert_bore_d": 3.95
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "insert_bore_depth_high",
+   "params": {
+    "insert_bore_depth": 6.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "insert_bore_depth_low",
+   "params": {
+    "insert_bore_depth": 5.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "nominal",
+   "params": {},
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "opening_x_right_high",
+   "params": {
+    "opening_x_right": 75.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "opening_x_right_low",
+   "params": {
+    "opening_x_right": 74.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "slot_top_y_high",
+   "params": {
+    "slot_top_y": 50.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "slot_top_y_low",
+   "params": {
+    "slot_top_y": 49.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "slot_x_left_high",
+   "params": {
+    "slot_x_left": -74.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "slot_x_left_low",
+   "params": {
+    "slot_x_left": -75.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "wall_top_y_high",
+   "params": {
+    "wall_top_y": 215.1
+   },
+   "built_one_solid": true,
+   "not_pass": {
+    "U-03": "FAIL"
+   }
+  },
+  {
+   "run": "wall_top_y_low",
+   "params": {
+    "wall_top_y": 214.9
+   },
+   "built_one_solid": true,
+   "not_pass": {
+    "U-03": "FAIL"
+   }
+  },
+  {
+   "run": "wall_x_half_high",
+   "params": {
+    "wall_x_half": 116.05
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "wall_x_half_low",
+   "params": {
+    "wall_x_half": 115.95
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "wall_z_high",
+   "params": {
+    "wall_z_in": 94.1,
+    "wall_z_out": 97.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "wall_z_low",
+   "params": {
+    "wall_z_in": 93.9,
+    "wall_z_out": 96.9
+   },
+   "built_one_solid": true,
+   "not_pass": {
+    "U-03": "FAIL"
+   }
+  },
+  {
+   "run": "win_top_y_high",
+   "params": {
+    "win_top_y": 188.1
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "win_top_y_low",
+   "params": {
+    "win_top_y": 187.9
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "win_x_left_high",
+   "params": {
+    "win_x_left": -57.4
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  },
+  {
+   "run": "win_x_left_low",
+   "params": {
+    "win_x_left": -57.6
+   },
+   "built_one_solid": true,
+   "not_pass": {}
+  }
+ ],
  "summary": {
   "exactly_one_solid": "PASS",
   "U-01": "PASS",

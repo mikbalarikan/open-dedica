@@ -211,8 +211,70 @@
 
 | Run | Overrides | Built, one solid | Gates not PASS / PASS_ASSUMED | Worst margin per gate (least of the run) |
 |---|---|---|---|---|
+| boss_d_high | {"boss_d": 11.1} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| boss_d_low | {"boss_d": 10.9} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| boss_end_z_high | {"boss_end_z": 85.585} | yes | U-03 FAIL | -0.1001 (U-03 a_contact_boss_upper_on_E02) |
+| boss_end_z_low | {"boss_end_z": 85.385} | yes | U-03 FAIL, E-01 FAIL | -1 (U-03 a_interference_panel|E02) |
+| button_hole_d_high | {"button_hole_d": 15.2} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| button_hole_d_low | {"button_hole_d": 14.8} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| flange_hole_d_high | {"flange_hole_d": 3.5} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| flange_hole_d_low | {"flange_hole_d": 3.3} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| flange_hole_x_high | {"flange_hole_x": [-94.9, -84.9, 85.1, 95.1]} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| flange_hole_x_low | {"flange_hole_x": [-95.1, -85.1, 84.9, 94.9]} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| flange_hole_z_high | {"flange_hole_z": 77.1} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| flange_hole_z_low | {"flange_hole_z": 76.9} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| insert_bore_d_high | {"insert_bore_d": 4.05} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| insert_bore_d_low | {"insert_bore_d": 3.95} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| insert_bore_depth_high | {"insert_bore_depth": 6.1} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| insert_bore_depth_low | {"insert_bore_depth": 5.9} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| nominal | {} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| opening_x_right_high | {"opening_x_right": 75.1} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| opening_x_right_low | {"opening_x_right": 74.9} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| slot_top_y_high | {"slot_top_y": 50.1} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| slot_top_y_low | {"slot_top_y": 49.9} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| slot_x_left_high | {"slot_x_left": -74.9} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| slot_x_left_low | {"slot_x_left": -75.1} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| wall_top_y_high | {"wall_top_y": 215.1} | yes | U-03 FAIL | -1.1813 (U-03 a_interference_panel|C10) |
+| wall_top_y_low | {"wall_top_y": 214.9} | yes | U-03 FAIL | -0.1 (U-03 a_contact_C10_skirt_on_wall_top) |
+| wall_x_half_high | {"wall_x_half": 116.05} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| wall_x_half_low | {"wall_x_half": 115.95} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| wall_z_high | {"wall_z_in": 94.1, "wall_z_out": 97.1} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| wall_z_low | {"wall_z_in": 93.9, "wall_z_out": 96.9} | yes | U-03 FAIL | -0.2376 (U-03 a_panel|C15_keepout(-110,90)) |
+| win_top_y_high | {"win_top_y": 188.1} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| win_top_y_low | {"win_top_y": 187.9} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| win_x_left_high | {"win_x_left": -57.4} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
+| win_x_left_low | {"win_x_left": -57.6} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
 
 ## Sweep worst margin per gate
 
 | Gate | Worst margin over the sweep | Run | Item | Measured |
 |---|---|---|---|---|
+| D-01a | 2.2 | boss_d_high | min_wall | 3 |
+| D-01b | 1 | boss_d_high | min_wall | 3 |
+| D-02 | 187.9 | wall_x_half_high | size_x | 232.1 |
+| D-03a | 45 | boss_d_high | least_downward_angle_excluding_flange_hole_crowns | 90 |
+| D-03b | 1.5 | flange_hole_d_high | hole(-95,77)_bridge_span | 3.5 |
+| D-04a | 0.05 | flange_hole_d_low | hole(-95,77)_diameter | 3.3 |
+| D-05a | 2.7237 | boss_d_low | upper_across | 10.7237 |
+| D-05b | 0 | boss_d_high | upper_blind | 0 |
+| D-06a | 2 | boss_d_high | min_wall | 3 |
+| E-01 | -0.0999 | boss_end_z_low | boss_upper_from_end+0.5 | 0.4001 |
+| E-05 | 0.1 | boss_d_high | upper_axis_offset | 0 |
+| E-06 | 0 | boss_d_high | self_check_ties | 6 |
+| J-05 | 0.025 | insert_bore_d_high | upper_wall | 3.025 |
+| REQ-01 | 0 | boss_d_high | hole(-95,77)_through | 1 |
+| REQ-02 | 0 | wall_top_y_high | top_y | 215.1 |
+| REQ-03 | 0 | boss_d_high | panel|slot_box | 0 |
+| REQ-04 | 0.25 | boss_d_high | B2_hole_offset | 0 |
+| REQ-05 | 0 | boss_d_high | b_carry_G10_vs_panel | 1 |
+| REQ-06 | 0 | boss_d_high | panel|driver_flange(-95,77) | 0 |
+| REQ-07 | 0 | boss_d_high | min_z | 72 |
+| U-01 | 0 | boss_d_high | solid_count | 1 |
+| U-02 | 0 | wall_top_y_high | size_y | 215.1 |
+| U-03 | -1.1813 | wall_top_y_high | a_interference_panel|C10 | 1.1813 |
+| U-04 | -0 | win_top_y_low | volume_delta | 0 |
+| U-05 | 0 | boss_d_high | bores_total | 9 |
+| U-06 | 1 | boss_d_high | min_wall_wide | 3 |
+| envelope_within_spec | 0 | wall_top_y_high | size_y | 215.1 |
+| exactly_one_solid | 0 | boss_d_high | solid_count | 1 |
+| feature_census | 0 | boss_d_high | bores_total | 9 |

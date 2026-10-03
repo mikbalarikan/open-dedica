@@ -1,0 +1,80 @@
+[
+ {
+  "plane": "z0_assembly",
+  "file": "od_t01_rig_v02_z0_assembly.png",
+  "view": "top",
+  "through": [
+   0.0,
+   75.0,
+   0.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "plane": "z44_assembly",
+  "file": "od_t01_rig_v02_z44_assembly.png",
+  "view": "top",
+  "through": [
+   0.0,
+   75.0,
+   44.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "plane": "x44",
+  "file": "od_t01_rig_v02_x44.png",
+  "view": "left",
+  "through": [
+   44.0,
+   75.0,
+   0.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "plane": "y5",
+  "file": "od_t01_rig_v02_y5.png",
+  "view": "front",
+  "through": [
+   0.0,
+   5.0,
+   0.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "plane": "y147",
+  "file": "od_t01_rig_v02_y147.png",
+  "view": "front",
+  "through": [
+   0.0,
+   147.5,
+   0.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "plane": "x0",
+  "file": "od_t01_rig_v02_x0.png",
+  "view": "left",
+  "through": [
+   0.0,
+   75.0,
+   0.0
+  ],
+  "nothing_clipped": 0,
+  "status": "MEASURED",
+  "reason": ""
+ }
+]

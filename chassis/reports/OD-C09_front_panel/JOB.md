@@ -5,9 +5,9 @@ code: ODC09
 milestone: M1
 title: "Open Dedica OD-C09 printed front panel with button bezel"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
-next_action: "J3: await WP-03's REPORT, then send the J4 review"
+next_action: "J4: await RV01 (WP-04); APPROVED -> J5 delivery into open-dedica, REVISE -> packet to the Usta"
 data_class: PUBLIC
 size: M
 process: [FDM]

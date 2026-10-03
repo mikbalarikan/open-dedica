@@ -22,3 +22,6 @@
 {"t": "2026-10-02T23:44:26Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c09_front_v01", "brief": "briefs/WP-03_designer.md", "attempt": 1}}
 {"t": "2026-10-02T23:44:26Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
 {"t": "2026-10-03T00:00:39Z", "ev": "note", "detail": {"text": "container restart interrupted the J3 designer package (WP-03, attempt 1) before it returned; partial files in 01_CAD/02_STEP_STL/03_Sections inspected; the same package resumes under the same attempt", "ref": "briefs/WP-03_designer.md"}}
+{"t": "2026-10-03T04:18:34Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c09_front_v01", "outcome": "SUBMITTED", "report": "01_CAD/REPORT_od_c09_front_v01.md"}}
+{"t": "2026-10-03T04:19:16Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "J4_REVIEW", "reason": "build v01 submitted (REPORT placed by the orchestrator after a hook blocked the write)"}}
+{"t": "2026-10-03T04:19:17Z", "ev": "package_sent", "detail": {"role": "reviewer", "target": "od_c09_front_v01", "brief": "briefs/WP-04_reviewer.md", "attempt": 1}}
