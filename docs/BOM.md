@@ -130,7 +130,7 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-C06` | OD-C00 | PRINT | Water tank dock / inlet seat (deferred: the tank stands on the table; tubes leave through OD-C11) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed | print | #5 | ⏸ |
 | `OD-C07` | OD-C00 | PRINT | Valve & flowmeter mount (OPV reachable without disassembly) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed | print | #6 | 🧊 |
 | `OD-C08` | OD-C00 | PRINT | Electronics bay tray (holds the OEM power PCB OD-E01 on edge) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed (Creality K1C) | print | #8 | 🧊 |
-| `OD-C09` | OD-C00 | PRINT | Front panel with button bezel |  |  | 1 | DESIGN | PLA for now (service ASA) | printed | print | #8 | ✎ |
+| `OD-C09` | OD-C00 | PRINT | Front panel with button bezel (3.0 wall, brew opening, OD-E02 on two bosses) |  |  | 1 | DESIGN | PLA for now (service ASA; ≈ 9 from the warm group head) | printed (Anycubic Kobra Max 3) | print | #8 | 🧊 |
 | `OD-C10` | OD-C00 | PRINT | Top panel (removable — 4 screws) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
 | `OD-C11` | OD-C00 | PRINT | Back panel (removable — 4 screws; cord and two tube pass-throughs; vents) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
 | `OD-C12` | OD-C00 | PRINT | Left side panel (printed, 3.0 wall, lid lip, relief over OD-C07) |  |  | 1 | DESIGN | PLA for now (service ASA / PETG; no geometry change) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
@@ -149,8 +149,8 @@ DESIGN native design · VENDOR vendor STEP
 
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| `OD-F01` | OD-000 | STD | M3 heat-set insert (Ø4.0 bore × 6; 50 in the chassis) |  |  | ~60 | VENDOR | brass M3 | AliExpress | 10 (set) |  | ☐ |
-| `OD-F02` | OD-000 | STD | M3×8 screw |  |  | ~60 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
+| `OD-F01` | OD-000 | STD | M3 heat-set insert (Ø4.0 bore × 6; 54 in the chassis; 2 more in the OD-C09 bosses) |  |  | ~70 | VENDOR | brass M3 | AliExpress | 10 (set) |  | ☐ |
+| `OD-F02` | OD-000 | STD | M3×8 screw |  |  | ~65 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
 | `OD-F03` | OD-000 | STD | Acrylic sheet 3 mm (optional skins; not used: the side panels are printed) |  |  | per design | — | PMMA | local laser / leftover stock | 25 |  | ⏸ |
 | `OD-F04` | OD-000 | STD | Food-safe silicone tube 4×2 mm (routing reserve) |  |  | 1 m | ENVELOPE | silicone | AliExpress | 5 |  | ☐ |
 | `OD-F05` | OD-000 | STD | High-temp epoxy (steam port blank) |  |  | 1 | — | 125 °C / 15 bar | hardware store | 8 |  | ☐ |
@@ -161,6 +161,8 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-F10` | OD-000 | STD | M3×12 screw (OD-C01 into the OD-C02 base rail; tip ends on the bore floor; and the four OD-C15 feet from the plate top) |  |  | 8 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
 | `OD-F11` | OD-000 | STD | M3×6 screw (OD-E01 board holes H1/H2 into the OD-C08 standoffs; M3×8 only with a ≥ 0.5 washer) |  |  | 2 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) | #8 | ☐ |
 | `OD-F12` | OD-000 | STD | M3 hex nut (captive in the OD-C15 feet; nylon-insert ISO 10511 needs M3×16) |  |  | 4 | VENDOR | ISO 4032 A2 | AliExpress | (set) |  | ☐ |
+| `OD-F13` | OD-000 | STD | M3×18 screw (OD-E02 board into the OD-C09 bosses from the board's back) |  |  | 2 | VENDOR | ISO 4762 / DIN 912 A2 | AliExpress | (set) | #8 | ☐ |
+| `OD-F14` | OD-000 | STD | M3×10 screw (OD-T01 plate into the OD-G01 housing inserts; bench fixture only) |  |  | 4 | VENDOR | ISO 7380 A2 | AliExpress | (set) | #3 | ☐ |
 
 ## S — Steam system (phase 2)
 
@@ -189,7 +191,7 @@ DESIGN native design · VENDOR vendor STEP
 
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| `OD-T01` |  | FIX | Group head bench pressure-test rig (M1 close-out) |  |  | 1 | DESIGN |  | printed + fittings | — | #3 | ✎ |
+| `OD-T01` |  | FIX | Group head bench pressure-test rig (M1 close-out; 25 mm plate; procedure in chassis/OD-T01_TEST_PROCEDURE.md) |  |  | 1 | DESIGN | PLA (100 % infill; cold water only) | printed (Anycubic Kobra Max 3) + fittings (see the test procedure) | — | #3 | 🧊 |
 
 ## Budget summary (230 V, no donor)
 
