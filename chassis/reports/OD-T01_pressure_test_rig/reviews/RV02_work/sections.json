@@ -1,0 +1,121 @@
+{
+ "sections": [
+  {
+   "file": "rv02_asm_z0_v02_top.png",
+   "through": [
+    0,
+    100,
+    0
+   ],
+   "clipped": 0,
+   "detail": "{'view': 'top', 'section': 'SECTION A-A', 'plane': 'z = 0.00 mm', 'cut_faces': 10, 'cut_area_mm2': 11562.322717244782, 'visible_edges': 402, 'margin_mm': 20.289051829680567}"
+  },
+  {
+   "file": "rv02_asm_z44_v02_top.png",
+   "through": [
+    0,
+    100,
+    44
+   ],
+   "clipped": 0,
+   "detail": "{'view': 'top', 'section': 'SECTION A-A', 'plane': 'z = 44.00 mm', 'cut_faces': 8, 'cut_area_mm2': 7729.208940594401, 'visible_edges': 216, 'margin_mm': 19.12278633623577}"
+  },
+  {
+   "file": "rv02_asm_x0_v02_left.png",
+   "through": [
+    0,
+    100,
+    0
+   ],
+   "clipped": 0,
+   "detail": "{'view': 'left', 'section': 'SECTION A-A', 'plane': 'x = 0.00 mm', 'cut_faces': 11, 'cut_area_mm2': 4569.040838719321, 'visible_edges': 443, 'margin_mm': 20.355110052912288}"
+  },
+  {
+   "file": "rv02_rig_x44_v02_left.png",
+   "through": [
+    44,
+    80,
+    0
+   ],
+   "clipped": 0,
+   "detail": "{'view': 'left', 'section': 'SECTION A-A', 'plane': 'x = 44.00 mm', 'cut_faces': 4, 'cut_area_mm2': 3851.8305201680596, 'visible_edges': 46, 'margin_mm': 14.557767364134047}"
+  },
+  {
+   "file": "rv02_rig_y147p5_v02_front.png",
+   "through": [
+    0,
+    147.5,
+    0
+   ],
+   "clipped": 0,
+   "detail": "{'view': 'front', 'section': 'SECTION A-A', 'plane': 'y = 147.50 mm', 'cut_faces': 1, 'cut_area_mm2': 18435.975451225368, 'visible_edges': 19, 'margin_mm': 16.716249162759546}"
+  },
+  {
+   "file": "rv02_rig_y137p5_v02_front.png",
+   "through": [
+    0,
+    137.5,
+    0
+   ],
+   "clipped": 0,
+   "detail": "{'view': 'front', 'section': 'SECTION A-A', 'plane': 'y = 137.50 mm', 'cut_faces': 1, 'cut_area_mm2': 18541.53185552339, 'visible_edges': 11, 'margin_mm': 16.716249162759546}"
+  },
+  {
+   "file": "rv02_rig_y5_v02_front.png",
+   "through": [
+    0,
+    5,
+    0
+   ],
+   "clipped": 0,
+   "detail": "{'view': 'front', 'section': 'SECTION A-A', 'plane': 'y = 5.00 mm', 'cut_faces': 1, 'cut_area_mm2': 28732.00159499494, 'visible_edges': 16, 'margin_mm': 18.613315472203617}"
+  },
+  {
+   "file": "rv02_rig_z50_v02_top.png",
+   "through": [
+    0,
+    80,
+    50
+   ],
+   "clipped": 0,
+   "detail": "{'view': 'top', 'section': 'SECTION A-A', 'plane': 'z = 50.00 mm', 'cut_faces': 2, 'cut_area_mm2': 6900.0, 'visible_edges': 16, 'margin_mm': 18.778566644340252}"
+  }
+ ],
+ "REQ08": {
+  "area_mm2": 1187.5464921819798,
+  "centroid_y": 147.5,
+  "I_mm4": 61851.379802719566,
+  "Z_mm3": 4948.110384217565,
+  "sigma_MPa": 9.585477347328824,
+  "factor_vs_40": 4.172979451163876,
+  "pullthrough_tau_MPa": 8.544107481012185,
+  "shear_area_mm2": 89.535390525
+ },
+ "apex": [
+  {
+   "y": 135.5,
+   "r": 42.500649191971,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  {
+   "y": 147.5,
+   "r": 42.500649191971,
+   "status": "MEASURED",
+   "reason": ""
+  },
+  {
+   "y": 159.5,
+   "r": 42.500649191971,
+   "status": "MEASURED",
+   "reason": ""
+  }
+ ],
+ "mass": {
+  "volume": 1143747.1842521753,
+  "mass": 1418.246508472697,
+  "com_x": -4.121020296383682e-12,
+  "com_y": 85.79634637375011,
+  "com_z": -3.5945481436299005
+ }
+}

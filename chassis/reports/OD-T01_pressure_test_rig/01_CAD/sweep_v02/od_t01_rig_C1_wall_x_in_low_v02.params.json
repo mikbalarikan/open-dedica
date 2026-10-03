@@ -1,0 +1,28 @@
+{
+ "params": {
+  "depth_z0": -60.0,
+  "depth_z1": 60.0,
+  "wall_z1": 40.0,
+  "base_x": 120.0,
+  "base_t": 10.0,
+  "wall_x_in": 74.9,
+  "wall_x_out": 90.0,
+  "plate_y0": 135.0,
+  "plate_y1": 160.0,
+  "plate_x": 90.0,
+  "corner_chamfer": 10.0,
+  "screw_x": 44.0,
+  "screw_z": 44.0,
+  "screw_d": 3.4,
+  "cbore_d": 6.5,
+  "cbore_floor_y": 140.0,
+  "window_r": 30.0,
+  "theta_roof": 45.1,
+  "bench_x": 105.0,
+  "bench_z": 40.0,
+  "bench_d": 4.5,
+  "overrun": 1.0
+ },
+ "step": "od_t01_rig_C1_wall_x_in_low_v02.step",
+ "step_sha256": "541ba06e6e0c92a365f35f4be2127654aeb5bfd2d489b5bba3261d06c478d833"
+}

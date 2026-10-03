@@ -1,0 +1,40 @@
+screw_d low od_t01_rig_C1_screw_d_low_v02.gates.json
+screw_d high od_t01_rig_C1_screw_d_high_v02.gates.json
+cbore_d low od_t01_rig_C1_cbore_d_low_v02.gates.json
+cbore_d high od_t01_rig_C1_cbore_d_high_v02.gates.json
+cbore_floor_y low od_t01_rig_C1_cbore_floor_y_low_v02.gates.json
+cbore_floor_y high od_t01_rig_C1_cbore_floor_y_high_v02.gates.json
+screw_xz_radial low od_t01_rig_C1_screw_xz_radial_low_v02.gates.json
+screw_xz_radial high od_t01_rig_C1_screw_xz_radial_high_v02.gates.json
+window_r low od_t01_rig_C1_window_r_low_v02.gates.json
+window_r high od_t01_rig_C1_window_r_high_v02.gates.json
+theta_roof low od_t01_rig_C1_theta_roof_low_v02.gates.json
+theta_roof high od_t01_rig_C1_theta_roof_high_v02.gates.json
+bench_d low od_t01_rig_C1_bench_d_low_v02.gates.json
+bench_d high od_t01_rig_C1_bench_d_high_v02.gates.json
+plate_y0 low od_t01_rig_C1_plate_y0_low_v02.gates.json
+plate_y0 high od_t01_rig_C1_plate_y0_high_v02.gates.json
+wall_x_in low od_t01_rig_C1_wall_x_in_low_v02.gates.json
+wall_x_in high od_t01_rig_C1_wall_x_in_high_v02.gates.json
+depth_z1 low od_t01_rig_C1_depth_z1_low_v02.gates.json
+depth_z1 high od_t01_rig_C1_depth_z1_high_v02.gates.json
+screw_d low {'screw_d': 3.3} built True not pass: {} 
+screw_d high {'screw_d': 3.5} built True not pass: {} 
+cbore_d low {'cbore_d': 6.4} built True not pass: {} 
+cbore_d high {'cbore_d': 6.6} built True not pass: {} 
+cbore_floor_y low {'cbore_floor_y': 139.9} built True not pass: {} 
+cbore_floor_y high {'cbore_floor_y': 140.1} built True not pass: {} 
+screw_xz_radial low {'screw_x': 43.92928932188134, 'screw_z': 43.92928932188134} built True not pass: {} 
+screw_xz_radial high {'screw_x': 44.07071067811866, 'screw_z': 44.07071067811866} built True not pass: {} 
+window_r low {'window_r': 29.9} built True not pass: {} 
+window_r high {'window_r': 30.1} built True not pass: {} 
+theta_roof low {'theta_roof': 45.05} built True not pass: {} 
+theta_roof high {'theta_roof': 45.14} built True not pass: {} 
+bench_d low {'bench_d': 4.4} built True not pass: {} 
+bench_d high {'bench_d': 4.6} built True not pass: {} 
+plate_y0 low {'plate_y0': 134.9} built True not pass: {} 
+plate_y0 high {'plate_y0': 135.1} built True not pass: {} 
+wall_x_in low {'wall_x_in': 74.9} built True not pass: {} 
+wall_x_in high {'wall_x_in': 75.1} built True not pass: {} 
+depth_z1 low {'depth_z1': 59.9} built True not pass: {} 
+depth_z1 high {'depth_z1': 60.1} built True not pass: {} 

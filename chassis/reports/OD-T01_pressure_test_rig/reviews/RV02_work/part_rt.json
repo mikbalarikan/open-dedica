@@ -1,0 +1,194 @@
+{
+ "direct": {
+  "schema": {
+   "name": "step_schema",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "schema": "AP242"
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "found": "AP242",
+    "sha256": "18c9de8f013cb7ce84eba3ce104ab6fb01fc84f79f8524140cfadb9d3feaf810",
+    "path": "od_t01_rig_C1_v02.step"
+   }
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 1,
+    "sha256": "18c9de8f013cb7ce84eba3ce104ab6fb01fc84f79f8524140cfadb9d3feaf810",
+    "path": "od_t01_rig_C1_v02.step"
+   }
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built_mm3": 1143747.1842521753,
+    "reimported_mm3": 1143747.1842521753,
+    "sha256": "18c9de8f013cb7ce84eba3ce104ab6fb01fc84f79f8524140cfadb9d3feaf810",
+    "path": "od_t01_rig_C1_v02.step"
+   }
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 54,
+    "reimported": 54
+   }
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": [
+     "od_t01_rig"
+    ],
+    "reimported": [
+     "od_t01_rig"
+    ]
+   }
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.037,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.00031240998736916205,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  }
+ },
+ "rt": {
+  "schema": {
+   "name": "step_schema",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "schema": "AP242"
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "found": "AP242",
+    "sha256": "7256e30bc38cc6f3b6e2e640659da82169cc49749b3125bb7f172fbbd3a1b922",
+    "path": "rt_v02.step"
+   }
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 1,
+    "sha256": "7256e30bc38cc6f3b6e2e640659da82169cc49749b3125bb7f172fbbd3a1b922",
+    "path": "rt_v02.step"
+   }
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": 2.3283064365386963e-10,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built_mm3": 1143747.1842521753,
+    "reimported_mm3": 1143747.1842521755,
+    "sha256": "7256e30bc38cc6f3b6e2e640659da82169cc49749b3125bb7f172fbbd3a1b922",
+    "path": "rt_v02.step"
+   }
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 54,
+    "reimported": 54
+   }
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": [
+     "od_t01_rig"
+    ],
+    "reimported": [
+     "od_t01_rig"
+    ]
+   }
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.037,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.00031240998736916205,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  }
+ }
+}

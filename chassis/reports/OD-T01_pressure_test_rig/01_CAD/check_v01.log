@@ -1,0 +1,199 @@
+exactly_one_solid    PASS          1                      == 1                          
+U-01                 PASS          1                      == 1                         solid_count 
+U-01                 PASS          1                      == 1                         brep_valid 
+U-01                 PASS          0                      == 0                         naked_edges 
+U-02                 PASS          240.0                  in [239.9, 240.1]            size_x 
+envelope_within_spec PASS          240.0                  in [239.9, 240.1]            size size_x 
+U-02                 PASS          150.0                  in [149.9, 150.1]            size_y 
+envelope_within_spec PASS          150.0                  in [149.9, 150.1]            size size_y 
+U-02                 PASS          120.0                  in [119.9, 120.1]            size_z 
+envelope_within_spec PASS          120.0                  in [119.9, 120.1]            size size_z 
+envelope_within_spec PASS          -120.0                 in [-120.1, -119.9]          position min_x (reported apart) 
+envelope_within_spec PASS          120.0                  in [119.9, 120.1]            position max_x (reported apart) 
+envelope_within_spec PASS          -8.881784197001e-16    in [-0.1, 0.1]               position min_y (reported apart) 
+envelope_within_spec PASS          150.0                  in [149.9, 150.1]            position max_y (reported apart) 
+envelope_within_spec PASS          -60.0                  in [-60.1, -59.9]            position min_z (reported apart) 
+envelope_within_spec PASS          60.0                   in [59.9, 60.1]              position max_z (reported apart) 
+U-03a                PASS          0.0                    == 0.0                       designed contact rig|housing, nearest point y 135.0 
+U-03a                PASS          135.0000001            <= 135.0                     posed housing reaches no higher than the measured plate underside 
+U-03a                PASS          0.0                    <= 0.0                       interference rig|housing 
+U-03a                PASS          0.0                    <= 0.0                       interference rig|g04 
+U-03a                PASS          15.009999999999962     >= 2.0                       rig below y 135 (walls, chamfers, base) to housing 
+U-03a                PASS          5.0                    >= 2.0                       clearance rig|g04 
+U-03a                PASS          13.688971283439997     >= 2.0                       clearance rig|g10 
+U-03a                PASS          0                      == 0                         OD-G10 fallback: not inside 
+U-03b                PASS          0.0                    <= 0.0                       worst rig|housing at dy -0 
+U-03b                PASS          13.688971283439997     > 0 (read beyond the 0.005 band) worst rig|g10 clearance (fallback, > 0 and not inside) at dy -0 
+U-04                 PASS          1                      == 1                         schema AP242 
+U-04                 PASS          1                      == 1                         solids 
+U-04                 PASS          6.472691893577576e-08  <= 0.0                       volume delta 
+U-04                 PASS          0                      == 0                         faces delta 
+U-04                 PASS          1                      == 1                         labels ['od_t01_rig'] 
+U-04                 PASS          1                      == 1                         valid after re-import 
+U-04                 PASS          1                      == 1                         body named od_t01_rig 
+U-04                 PASS          0                      == 0                         stray shells 
+U-05                 PASS          41                     == 41                        planar_faces 
+feature_census       PASS          41                     == 41                        planar_faces 
+U-05                 PASS          13                     == 13                        cylinder_faces 
+feature_census       PASS          13                     == 13                        cylinder_faces 
+U-05                 PASS          13                     == 13                        concave_cylinders 
+feature_census       PASS          13                     == 13                        concave_cylinders 
+U-05                 PASS          0                      == 0                         convex_cylinders 
+feature_census       PASS          0                      == 0                         convex_cylinders 
+U-05                 PASS          13                     == 13                        bores 
+feature_census       PASS          13                     == 13                        bores 
+U-05                 PASS          0                      == 0                         other face kinds 
+feature_census       PASS          0                      == 0                         other face kinds 
+U-05                 PASS          4                      == 4                         bores along Y of Ø3.4 
+feature_census       PASS          4                      == 4                         bores Ø3.4 
+U-05                 PASS          4                      == 4                         bores along Y of Ø6.5 
+feature_census       PASS          4                      == 4                         bores Ø6.5 
+U-05                 PASS          1                      == 1                         bores along Y of Ø60 
+feature_census       PASS          1                      == 1                         bores Ø60 
+U-05                 PASS          4                      == 4                         bores along Y of Ø4.5 
+feature_census       PASS          4                      == 4                         bores Ø4.5 
+U-05                 PASS          4                      == 4                         45° corner chamfer planes 
+feature_census       PASS          4                      == 4                         corner chamfers 
+U-05                 PASS          2                      == 2                         wall inner faces 
+feature_census       PASS          2                      == 2                         walls 
+U-05                 PASS          40.0                   in [39.9, 40.1]              wall x -75.0 ends at z +40 
+U-05                 PASS          -60.0                  in [-60.1, -59.9]            wall x -75.0 starts at z -60 
+U-05                 PASS          40.0                   in [39.9, 40.1]              wall x +75.0 ends at z +40 
+U-05                 PASS          -60.0                  in [-60.1, -59.9]            wall x +75.0 starts at z -60 
+D-01a                PASS          2.999999999999997      >= 0.8                        
+D-01b                PASS_ASSUMED  2.999999999999997      >= 2.0                        
+D-06a                PASS          2.999999999999997      >= 1.0                        
+U-06                 PASS          2.999999999999997      >= 2.0                       Soft 
+U-07                 PASS          0.01                   <= 0.01                      chordal tolerance 
+U-07                 PASS          0.1                    <= 0.1032824249905986        angular tolerance, limit 4·acos(1 - 0.01/30.000) 
+U-07                 PASS          0.0049966441054580864  <= 0.01                      stl_max_sagitta (re-meshed from the STEP: 5752 triangles; delivered STL 5752) 
+U-07                 PASS          1                      == 1                         delivered STL bodies (corroboration) 
+U-07                 PASS          0                      == 0                         delivered STL naked_edges (corroboration) 
+U-07                 PASS          1                      == 1                         delivered STL winding (corroboration) 
+D-02                 PASS_ASSUMED  240.0                  <= 420.0                     bed X 
+D-02                 PASS_ASSUMED  150.0                  <= 420.0                     bed Y 
+D-02                 PASS_ASSUMED  120.0                  <= 500.0                     height (build +Z) 
+D-03a                PASS          1                      == 1                         census copy is one solid 
+D-03a                PASS_ASSUMED  45.100000000006105     >= 45.0                      least downward angle, Ø3.4 crowns excluded by position; per kind {'cylinder': 45.1, 'plane': 45.1} 
+D-03a                PASS          1                      == 1                         exception: unfilled least 0.0 deg at (-44.0, 135.0, -42.3), 1.7 mm off a screw axis 
+D-03a                REPORTED      0.0                    reported (named exception)   least angle at the Ø3.4 crowns, the named exception 
+D-03b                PASS          0.0                    <= 5.0                       flat_ceiling_spans corroboration; reviewer row from sections 
+D-03b                PASS          3.4                    <= 3.5                       crown chord = the measured Ø3.4 hole diameter (≤ 3.4 designed, ≤ 5 limit) 
+D-04a                PASS          3.4                    >= 3.25                      screw hole (+44, +44) 
+REQ-01               PASS_ASSUMED  3.4                    in [3.3, 3.5]                Ø3.4 (+44, +44) 
+REQ-01               PASS_ASSUMED  0.0                    <= 0.1                       Ø3.4 (+44, +44) axis offset from the posed insert bore (Ø4.00) 
+REQ-01               PASS_ASSUMED  135.0                  in [134.995, 135.005]        Ø3.4 (+44, +44) opens at the plate underside 
+REQ-01               PASS_ASSUMED  1                      == 1                         Ø3.4 (+44, +44) through into the counterbore 
+REQ-01               PASS_ASSUMED  6.5                    in [6.4, 6.6]                Ø6.5 counterbore (+44, +44) 
+REQ-01               PASS_ASSUMED  0.0                    <= 0.1                       counterbore (+44, +44) coaxial with the posed insert bore 
+REQ-01               PASS_ASSUMED  150.0                  in [149.9, 150.1]            counterbore (+44, +44) from the top face 
+REQ-01               PASS_ASSUMED  138.0                  in [137.9, 138.1]            counterbore (+44, +44) floor 
+REQ-01               PASS_ASSUMED  3.0                    in [2.9, 3.1]                plate under the head (+44, +44) (floor − measured underside) 
+D-04a                PASS          3.4                    >= 3.25                      screw hole (+44, -44) 
+REQ-01               PASS_ASSUMED  3.4                    in [3.3, 3.5]                Ø3.4 (+44, -44) 
+REQ-01               PASS_ASSUMED  0.0                    <= 0.1                       Ø3.4 (+44, -44) axis offset from the posed insert bore (Ø4.00) 
+REQ-01               PASS_ASSUMED  135.0                  in [134.995, 135.005]        Ø3.4 (+44, -44) opens at the plate underside 
+REQ-01               PASS_ASSUMED  1                      == 1                         Ø3.4 (+44, -44) through into the counterbore 
+REQ-01               PASS_ASSUMED  6.5                    in [6.4, 6.6]                Ø6.5 counterbore (+44, -44) 
+REQ-01               PASS_ASSUMED  0.0                    <= 0.1                       counterbore (+44, -44) coaxial with the posed insert bore 
+REQ-01               PASS_ASSUMED  150.0                  in [149.9, 150.1]            counterbore (+44, -44) from the top face 
+REQ-01               PASS_ASSUMED  138.0                  in [137.9, 138.1]            counterbore (+44, -44) floor 
+REQ-01               PASS_ASSUMED  3.0                    in [2.9, 3.1]                plate under the head (+44, -44) (floor − measured underside) 
+D-04a                PASS          3.4                    >= 3.25                      screw hole (-44, +44) 
+REQ-01               PASS_ASSUMED  3.4                    in [3.3, 3.5]                Ø3.4 (-44, +44) 
+REQ-01               PASS_ASSUMED  0.0                    <= 0.1                       Ø3.4 (-44, +44) axis offset from the posed insert bore (Ø4.00) 
+REQ-01               PASS_ASSUMED  135.0                  in [134.995, 135.005]        Ø3.4 (-44, +44) opens at the plate underside 
+REQ-01               PASS_ASSUMED  1                      == 1                         Ø3.4 (-44, +44) through into the counterbore 
+REQ-01               PASS_ASSUMED  6.5                    in [6.4, 6.6]                Ø6.5 counterbore (-44, +44) 
+REQ-01               PASS_ASSUMED  0.0                    <= 0.1                       counterbore (-44, +44) coaxial with the posed insert bore 
+REQ-01               PASS_ASSUMED  150.0                  in [149.9, 150.1]            counterbore (-44, +44) from the top face 
+REQ-01               PASS_ASSUMED  138.0                  in [137.9, 138.1]            counterbore (-44, +44) floor 
+REQ-01               PASS_ASSUMED  3.0                    in [2.9, 3.1]                plate under the head (-44, +44) (floor − measured underside) 
+D-04a                PASS          3.4                    >= 3.25                      screw hole (-44, -44) 
+REQ-01               PASS_ASSUMED  3.4                    in [3.3, 3.5]                Ø3.4 (-44, -44) 
+REQ-01               PASS_ASSUMED  0.0                    <= 0.1                       Ø3.4 (-44, -44) axis offset from the posed insert bore (Ø4.00) 
+REQ-01               PASS_ASSUMED  135.0                  in [134.995, 135.005]        Ø3.4 (-44, -44) opens at the plate underside 
+REQ-01               PASS_ASSUMED  1                      == 1                         Ø3.4 (-44, -44) through into the counterbore 
+REQ-01               PASS_ASSUMED  6.5                    in [6.4, 6.6]                Ø6.5 counterbore (-44, -44) 
+REQ-01               PASS_ASSUMED  0.0                    <= 0.1                       counterbore (-44, -44) coaxial with the posed insert bore 
+REQ-01               PASS_ASSUMED  150.0                  in [149.9, 150.1]            counterbore (-44, -44) from the top face 
+REQ-01               PASS_ASSUMED  138.0                  in [137.9, 138.1]            counterbore (-44, -44) floor 
+REQ-01               PASS_ASSUMED  3.0                    in [2.9, 3.1]                plate under the head (-44, -44) (floor − measured underside) 
+D-04a                PASS          4.5                    >= 4.25                      bench hole (+105, +40) 
+REQ-06               PASS_ASSUMED  4.5                    in [4.4, 4.6]                Ø4.5 (+105, +40) 
+REQ-06               PASS_ASSUMED  0.0                    <= 0.1                       Ø4.5 (+105, +40) axis offset 
+REQ-06               PASS_ASSUMED  1                      == 1                         Ø4.5 (+105, +40) through 
+D-04a                PASS          4.5                    >= 4.25                      bench hole (+105, -40) 
+REQ-06               PASS_ASSUMED  4.5                    in [4.4, 4.6]                Ø4.5 (+105, -40) 
+REQ-06               PASS_ASSUMED  0.0                    <= 0.1                       Ø4.5 (+105, -40) axis offset 
+REQ-06               PASS_ASSUMED  1                      == 1                         Ø4.5 (+105, -40) through 
+D-04a                PASS          4.5                    >= 4.25                      bench hole (-105, +40) 
+REQ-06               PASS_ASSUMED  4.5                    in [4.4, 4.6]                Ø4.5 (-105, +40) 
+REQ-06               PASS_ASSUMED  0.0                    <= 0.1                       Ø4.5 (-105, +40) axis offset 
+REQ-06               PASS_ASSUMED  1                      == 1                         Ø4.5 (-105, +40) through 
+D-04a                PASS          4.5                    >= 4.25                      bench hole (-105, -40) 
+REQ-06               PASS_ASSUMED  4.5                    in [4.4, 4.6]                Ø4.5 (-105, -40) 
+REQ-06               PASS_ASSUMED  0.0                    <= 0.1                       Ø4.5 (-105, -40) axis offset 
+REQ-06               PASS_ASSUMED  1                      == 1                         Ø4.5 (-105, -40) through 
+REQ-02               PASS_ASSUMED  1                      == 1                         one underside plane 
+REQ-02               PASS_ASSUMED  135.0                  in [134.9, 135.1]            underside y 
+REQ-02               PASS_ASSUMED  0.0                    <= 0.0                       the housing square's corners and edge midpoints (x ±50, z ±50) lie on that face 
+REQ-03               PASS_ASSUMED  60.0                   in [59.8, 60.2]              window diameter (R 30.0 ± 0.1) 
+REQ-03               PASS_ASSUMED  0.0                    <= 0.1                       window on the axis 
+REQ-03               PASS_ASSUMED  1                      == 1                         window through the plate 
+REQ-03               PASS_ASSUMED  2                      == 2                         two roof flanks 
+REQ-03               PASS_ASSUMED  45.100000000006105     in [44.1, 46.1]              roof flank x +10.6 angle from horizontal 
+REQ-03               PASS_ASSUMED  45.100000000006105     in [44.1, 46.1]              roof flank x -10.6 angle from horizontal 
+REQ-03               PASS_ASSUMED  42.500649191971        in [42.41, 42.61]            roof apex z (radial_extent along +Z at y 142.5) 
+REQ-03               PASS_ASSUMED  5.0                    >= 2.0                       OD-G04 (hub tube included) to the rig 
+REQ-03               PASS_ASSUMED  2                      == 2                         pair-B screw axes found on the posed housing 
+REQ-03               PASS_ASSUMED  11.688991802917053     >= 10.97                     pair-B axis (x -9.31, z +16.60, r 19.03) to the window face 
+REQ-03               PASS_ASSUMED  10.969999978489067     >= 10.97                     pair-B axis (x +10.64, z -15.78, r 19.03) to the window face 
+REQ-04               PASS_ASSUMED  11.75457297479454      >= 5.0                       (a) least clearance over φ -60 … +15 step 5, at φ +15 
+REQ-04               PASS          1                      == 1                         φ > 0 turns the handle toward +X 
+REQ-04               PASS_ASSUMED  28.688971283439983     > 0, not inside (fallback for interference <= 0) (b) least clearance over dz 0 … 200 step 5 at φ -50, dy -15: at dz 50 
+REQ-05               PASS_ASSUMED  52.295551896540005     >= 50.0                      OD-G10 lowest y 62.296 − base top y 10.000 
+REQ-06               PASS_ASSUMED  0.0                    <= 0.0                       Ø8 driver probe y 10 … 300 at (+105, +40) 
+REQ-06               PASS_ASSUMED  0.0                    <= 0.0                       Ø8 driver probe y 10 … 300 at (+105, -40) 
+REQ-06               PASS_ASSUMED  0.0                    <= 0.0                       Ø8 driver probe y 10 … 300 at (-105, +40) 
+REQ-06               PASS_ASSUMED  0.0                    <= 0.0                       Ø8 driver probe y 10 … 300 at (-105, -40) 
+REQ-07               PASS          0.0                    <= 0.0                       Ø6 probe y 150 … 300 at (+44, +44) 
+REQ-07               PASS          0.0                    <= 0.0                       Ø6 probe y 150 … 300 at (+44, -44) 
+REQ-07               PASS          0.0                    <= 0.0                       Ø6 probe y 150 … 300 at (-44, +44) 
+REQ-07               PASS          0.0                    <= 0.0                       Ø6 probe y 150 … 300 at (-44, -44) 
+U-08                 N/A           None                   N/A                          no threads (row N/A) 
+D-07                 N/A           None                   N/A                          clearance holes only (row N/A) 
+J-05                 N/A           None                   N/A                          no threaded holes in this part (row N/A) 
+REQ-08               INCONCLUSIVE  None                   Soft, bench                  not geometric; §4 hand calculation σ ≈ 10.5 MPa vs ≈ 40 MPa; answered by the first test 
+{
+"exactly_one_solid": "PASS",
+"U-01": "PASS",
+"U-02": "PASS",
+"envelope_within_spec": "PASS",
+"U-03a": "PASS",
+"U-03b": "PASS",
+"U-04": "PASS",
+"U-05": "PASS",
+"feature_census": "PASS",
+"D-01a": "PASS",
+"D-01b": "PASS_ASSUMED",
+"D-06a": "PASS",
+"U-06": "PASS",
+"U-07": "PASS",
+"D-02": "PASS_ASSUMED",
+"D-03a": "PASS_ASSUMED",
+"D-03b": "PASS",
+"D-04a": "PASS",
+"REQ-01": "PASS_ASSUMED",
+"REQ-06": "PASS_ASSUMED",
+"REQ-02": "PASS_ASSUMED",
+"REQ-03": "PASS_ASSUMED",
+"REQ-04": "PASS_ASSUMED",
+"REQ-05": "PASS_ASSUMED",
+"REQ-07": "PASS",
+"U-08": "N/A",
+"D-07": "N/A",
+"J-05": "N/A",
+"REQ-08": "INCONCLUSIVE"
+}
+timing {'exactly_one_solid': 0.0, 'u01_validity': 1.2, 'u02_envelope': 0.0, 'u03a_close': 12.7, 'u03b_offer_up': 163.4, 'u04_roundtrip': 0.4, 'u05_census': 0.1, 'walls_and_features': 86.6, 'u07_mesh': 0.2, 'd02_bed': 0.0, 'd03a_overhang': 31.4, 'd03b_bridge': 0.5, 'holes': 0.7, 'req02_seat': 0.0, 'req03_window': 1.4, 'req04_travel': 182.2, 'req05_headroom': 0.4, 'probes': 0.5} total 483.6

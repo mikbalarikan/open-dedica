@@ -1,0 +1,33 @@
+{
+ "nominal": [
+  45.100000000006105,
+  45.100000000006105
+ ],
+ "nominal_gate": {
+  "gate": "REQ-03",
+  "measured": 45.100000000006105,
+  "unit": "deg",
+  "required": "in [44.1, 46.1]",
+  "margin": 1.0,
+  "at": null,
+  "status": "PASS",
+  "method": "flank_angle",
+  "assumes": []
+ },
+ "mutant_rot2deg_about_Y": [
+  47.1000000000061,
+  43.100000000006105
+ ],
+ "mutant_gate": {
+  "gate": "REQ-03",
+  "measured": 47.1000000000061,
+  "unit": "deg",
+  "required": "in [44.1, 46.1]",
+  "margin": -1.0,
+  "at": null,
+  "status": "FAIL",
+  "method": "flank_angle",
+  "assumes": []
+ },
+ "apex_from_R": 42.500649191975285
+}
