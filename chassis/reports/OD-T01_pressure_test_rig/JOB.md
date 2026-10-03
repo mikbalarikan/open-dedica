@@ -5,9 +5,9 @@ code: ODT01
 milestone: M1
 title: "Open Dedica OD-T01 group head bench pressure-test rig"
 lane: CAD
-state: J4_REVIEW
+state: J5_DELIVER
 blocked_on: null
-next_action: "J4: await RV01; APPROVED -> J5 delivery into open-dedica, REVISE -> packet to the Usta"
+next_action: "J5: v01 in open-dedica PR; the Usta decides F1 (v02 25 mm plate recommended, reopens at J1_SPEC after delivery); J6 after merge and first print"
 data_class: PUBLIC
 size: S
 process: [FDM]
@@ -23,7 +23,8 @@ revision: A
 open_assumptions: [A-01, A-02, A-03, A-04, A-05, A-06, A-07, A-08, A-09, A-10, A-11, A-12]
 attempts: {build: 1, export: 0, tool: 0}
 caps: {build: 2, export: 2, tool: 2, fix_cycles: 3}
-reviews: []
+reviews:
+  - {id: RV01, target: od_t01_rig_v01, verdict: APPROVED_ASSUMPTION_CONDITIONAL, blockers: 0, date: "2026-10-03"}
 usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-10-02"}
   - {gate: concept_picked, outcome: C1, date: "2026-10-02"}
