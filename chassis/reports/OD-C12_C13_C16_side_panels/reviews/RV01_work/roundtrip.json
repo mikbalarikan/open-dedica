@@ -1,0 +1,656 @@
+{
+ "od_c13_right_C1_v01": {
+  "labels_in_file": [
+   "od_c13_right"
+  ],
+  "schema_in_file": "AP242",
+  "unit_in_file": "MM",
+  "header": {
+   "name": "od_c13_right_C1_v01.step",
+   "time_stamp": "2026-10-02T00:00:00",
+   "author": [
+    ""
+   ],
+   "organization": [
+    ""
+   ],
+   "preprocessor_version": "Open CASCADE STEP processor 7.9.3",
+   "originating_system": "build123d 0.11.1",
+   "authorization": ""
+  },
+  "roundtrip": {
+   "schema": {
+    "name": "step_schema",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {
+     "schema": "AP242"
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "found": "AP242",
+     "sha256": "df8fb0c4065da4d8ac033b9b3b624f1391fb7566695aa0082383f7df07edbd6a",
+     "path": "rt_od_c13_right_C1_v01.step"
+    }
+   },
+   "solids": {
+    "name": "step_roundtrip_solids",
+    "measured": 1,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 1,
+     "sha256": "df8fb0c4065da4d8ac033b9b3b624f1391fb7566695aa0082383f7df07edbd6a",
+     "path": "rt_od_c13_right_C1_v01.step"
+    }
+   },
+   "volume_delta": {
+    "name": "step_roundtrip_volume_delta",
+    "measured": 0.0,
+    "unit": "mm3",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built_mm3": 277970.1751657259,
+     "reimported_mm3": 277970.1751657259,
+     "sha256": "df8fb0c4065da4d8ac033b9b3b624f1391fb7566695aa0082383f7df07edbd6a",
+     "path": "rt_od_c13_right_C1_v01.step"
+    }
+   },
+   "faces_delta": {
+    "name": "step_roundtrip_faces_delta",
+    "measured": 0,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 14,
+     "reimported": 14
+    }
+   },
+   "labels": {
+    "name": "step_roundtrip_labels",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": [
+      "od_c13_right"
+     ],
+     "reimported": [
+      "od_c13_right"
+     ]
+    }
+   },
+   "valid_after": {
+    "name": "step_roundtrip_valid",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "brepcheck": true,
+     "solids_without_volume": 0,
+     "bop_faults": [],
+     "bop_seconds": 0.016,
+     "curve_on_surface_mm": 0.0,
+     "curve_on_surface_limit_mm": 0.0004429481237227277,
+     "loose_shells": 0,
+     "loose_faces": 0
+    }
+   }
+  },
+  "compare_delivered": {
+   "schema": {
+    "name": "step_schema",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {
+     "schema": "AP242"
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "found": "AP242",
+     "sha256": "bb029af485a12941c364302b8a2f98c5b9c2436f73aea68e66bb8ed69be11a71",
+     "path": "od_c13_right_C1_v01.step"
+    }
+   },
+   "solids": {
+    "name": "step_roundtrip_solids",
+    "measured": 1,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 1,
+     "sha256": "bb029af485a12941c364302b8a2f98c5b9c2436f73aea68e66bb8ed69be11a71",
+     "path": "od_c13_right_C1_v01.step"
+    }
+   },
+   "volume_delta": {
+    "name": "step_roundtrip_volume_delta",
+    "measured": 0.0,
+    "unit": "mm3",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built_mm3": 277970.1751657259,
+     "reimported_mm3": 277970.1751657259,
+     "sha256": "bb029af485a12941c364302b8a2f98c5b9c2436f73aea68e66bb8ed69be11a71",
+     "path": "od_c13_right_C1_v01.step"
+    }
+   },
+   "faces_delta": {
+    "name": "step_roundtrip_faces_delta",
+    "measured": 0,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 14,
+     "reimported": 14
+    }
+   },
+   "labels": {
+    "name": "step_roundtrip_labels",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": [
+      "od_c13_right"
+     ],
+     "reimported": [
+      "od_c13_right"
+     ]
+    }
+   },
+   "valid_after": {
+    "name": "step_roundtrip_valid",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "brepcheck": true,
+     "solids_without_volume": 0,
+     "bop_faults": [],
+     "bop_seconds": 0.014,
+     "curve_on_surface_mm": 0.0,
+     "curve_on_surface_limit_mm": 0.0004429481237227277,
+     "loose_shells": 0,
+     "loose_faces": 0
+    }
+   }
+  },
+  "stl_header_delivered": "STL Exported by Open CASCADE Technology [dev.opencascade.org]",
+  "stl_body_equal_fresh": false,
+  "stl_sizes": [
+   26884,
+   26884
+  ]
+ },
+ "od_c12_left_C1_v01": {
+  "labels_in_file": [
+   "od_c12_left"
+  ],
+  "schema_in_file": "AP242",
+  "unit_in_file": "MM",
+  "header": {
+   "name": "od_c12_left_C1_v01.step",
+   "time_stamp": "2026-10-02T00:00:00",
+   "author": [
+    ""
+   ],
+   "organization": [
+    ""
+   ],
+   "preprocessor_version": "Open CASCADE STEP processor 7.9.3",
+   "originating_system": "build123d 0.11.1",
+   "authorization": ""
+  },
+  "roundtrip": {
+   "schema": {
+    "name": "step_schema",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {
+     "schema": "AP242"
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "found": "AP242",
+     "sha256": "6745bed3c4e1d842fd837d0b15edcf2819f1e39bb13bfe48542efb0d98594648",
+     "path": "rt_od_c12_left_C1_v01.step"
+    }
+   },
+   "solids": {
+    "name": "step_roundtrip_solids",
+    "measured": 1,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 1,
+     "sha256": "6745bed3c4e1d842fd837d0b15edcf2819f1e39bb13bfe48542efb0d98594648",
+     "path": "rt_od_c12_left_C1_v01.step"
+    }
+   },
+   "volume_delta": {
+    "name": "step_roundtrip_volume_delta",
+    "measured": 5.820766091346741e-11,
+    "unit": "mm3",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built_mm3": 271485.6751657191,
+     "reimported_mm3": 271485.67516571906,
+     "sha256": "6745bed3c4e1d842fd837d0b15edcf2819f1e39bb13bfe48542efb0d98594648",
+     "path": "rt_od_c12_left_C1_v01.step"
+    }
+   },
+   "faces_delta": {
+    "name": "step_roundtrip_faces_delta",
+    "measured": 0,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 18,
+     "reimported": 18
+    }
+   },
+   "labels": {
+    "name": "step_roundtrip_labels",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": [
+      "od_c12_left"
+     ],
+     "reimported": [
+      "od_c12_left"
+     ]
+    }
+   },
+   "valid_after": {
+    "name": "step_roundtrip_valid",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "brepcheck": true,
+     "solids_without_volume": 0,
+     "bop_faults": [],
+     "bop_seconds": 0.018,
+     "curve_on_surface_mm": 0.0,
+     "curve_on_surface_limit_mm": 0.0004429481237227277,
+     "loose_shells": 0,
+     "loose_faces": 0
+    }
+   }
+  },
+  "compare_delivered": {
+   "schema": {
+    "name": "step_schema",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {
+     "schema": "AP242"
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "found": "AP242",
+     "sha256": "972343ab6af3684acf9000208761baa390e489cabe30d238c62ffa36e62f8408",
+     "path": "od_c12_left_C1_v01.step"
+    }
+   },
+   "solids": {
+    "name": "step_roundtrip_solids",
+    "measured": 1,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 1,
+     "sha256": "972343ab6af3684acf9000208761baa390e489cabe30d238c62ffa36e62f8408",
+     "path": "od_c12_left_C1_v01.step"
+    }
+   },
+   "volume_delta": {
+    "name": "step_roundtrip_volume_delta",
+    "measured": 0.0,
+    "unit": "mm3",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built_mm3": 271485.6751657191,
+     "reimported_mm3": 271485.6751657191,
+     "sha256": "972343ab6af3684acf9000208761baa390e489cabe30d238c62ffa36e62f8408",
+     "path": "od_c12_left_C1_v01.step"
+    }
+   },
+   "faces_delta": {
+    "name": "step_roundtrip_faces_delta",
+    "measured": 0,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 18,
+     "reimported": 18
+    }
+   },
+   "labels": {
+    "name": "step_roundtrip_labels",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": [
+      "od_c12_left"
+     ],
+     "reimported": [
+      "od_c12_left"
+     ]
+    }
+   },
+   "valid_after": {
+    "name": "step_roundtrip_valid",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "brepcheck": true,
+     "solids_without_volume": 0,
+     "bop_faults": [],
+     "bop_seconds": 0.023,
+     "curve_on_surface_mm": 0.0,
+     "curve_on_surface_limit_mm": 0.0004429481237227277,
+     "loose_shells": 0,
+     "loose_faces": 0
+    }
+   }
+  },
+  "stl_header_delivered": "STL Exported by Open CASCADE Technology [dev.opencascade.org]",
+  "stl_body_equal_fresh": false,
+  "stl_sizes": [
+   27684,
+   27684
+  ]
+ },
+ "od_c16_bracket_C1_v01": {
+  "labels_in_file": [
+   "od_c16_bracket"
+  ],
+  "schema_in_file": "AP242",
+  "unit_in_file": "MM",
+  "header": {
+   "name": "od_c16_bracket_C1_v01.step",
+   "time_stamp": "2026-10-02T00:00:00",
+   "author": [
+    ""
+   ],
+   "organization": [
+    ""
+   ],
+   "preprocessor_version": "Open CASCADE STEP processor 7.9.3",
+   "originating_system": "build123d 0.11.1",
+   "authorization": ""
+  },
+  "roundtrip": {
+   "schema": {
+    "name": "step_schema",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {
+     "schema": "AP242"
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "found": "AP242",
+     "sha256": "82d6d72f3111096a413eef2610e378480857ef5855a3396efdad6181441d5d79",
+     "path": "rt_od_c16_bracket_C1_v01.step"
+    }
+   },
+   "solids": {
+    "name": "step_roundtrip_solids",
+    "measured": 1,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 1,
+     "sha256": "82d6d72f3111096a413eef2610e378480857ef5855a3396efdad6181441d5d79",
+     "path": "rt_od_c16_bracket_C1_v01.step"
+    }
+   },
+   "volume_delta": {
+    "name": "step_roundtrip_volume_delta",
+    "measured": 4.547473508864641e-12,
+    "unit": "mm3",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built_mm3": 4329.984226761167,
+     "reimported_mm3": 4329.984226761171,
+     "sha256": "82d6d72f3111096a413eef2610e378480857ef5855a3396efdad6181441d5d79",
+     "path": "rt_od_c16_bracket_C1_v01.step"
+    }
+   },
+   "faces_delta": {
+    "name": "step_roundtrip_faces_delta",
+    "measured": 0,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 11,
+     "reimported": 11
+    }
+   },
+   "labels": {
+    "name": "step_roundtrip_labels",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": [
+      "od_c16_bracket"
+     ],
+     "reimported": [
+      "od_c16_bracket"
+     ]
+    }
+   },
+   "valid_after": {
+    "name": "step_roundtrip_valid",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "brepcheck": true,
+     "solids_without_volume": 0,
+     "bop_faults": [],
+     "bop_seconds": 0.008,
+     "curve_on_surface_mm": 0.0,
+     "curve_on_surface_limit_mm": 0.0001,
+     "loose_shells": 0,
+     "loose_faces": 0
+    }
+   }
+  },
+  "compare_delivered": {
+   "schema": {
+    "name": "step_schema",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {
+     "schema": "AP242"
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "found": "AP242",
+     "sha256": "39faff6ce71326fc8d562d8c3daa42cd938fdf24f4dbe0933d82e9cae569c9fc",
+     "path": "od_c16_bracket_C1_v01.step"
+    }
+   },
+   "solids": {
+    "name": "step_roundtrip_solids",
+    "measured": 1,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 1,
+     "sha256": "39faff6ce71326fc8d562d8c3daa42cd938fdf24f4dbe0933d82e9cae569c9fc",
+     "path": "od_c16_bracket_C1_v01.step"
+    }
+   },
+   "volume_delta": {
+    "name": "step_roundtrip_volume_delta",
+    "measured": 0.0,
+    "unit": "mm3",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built_mm3": 4329.984226761167,
+     "reimported_mm3": 4329.984226761167,
+     "sha256": "39faff6ce71326fc8d562d8c3daa42cd938fdf24f4dbe0933d82e9cae569c9fc",
+     "path": "od_c16_bracket_C1_v01.step"
+    }
+   },
+   "faces_delta": {
+    "name": "step_roundtrip_faces_delta",
+    "measured": 0,
+    "unit": "count",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": 11,
+     "reimported": 11
+    }
+   },
+   "labels": {
+    "name": "step_roundtrip_labels",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "built": [
+      "od_c16_bracket"
+     ],
+     "reimported": [
+      "od_c16_bracket"
+     ]
+    }
+   },
+   "valid_after": {
+    "name": "step_roundtrip_valid",
+    "measured": 1,
+    "unit": "bool",
+    "at": null,
+    "params": {},
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "brepcheck": true,
+     "solids_without_volume": 0,
+     "bop_faults": [],
+     "bop_seconds": 0.009,
+     "curve_on_surface_mm": 0.0,
+     "curve_on_surface_limit_mm": 0.0001,
+     "loose_shells": 0,
+     "loose_faces": 0
+    }
+   }
+  },
+  "stl_header_delivered": "STL Exported by Open CASCADE Technology [dev.opencascade.org]",
+  "stl_body_equal_fresh": false,
+  "stl_sizes": [
+   29484,
+   29484
+  ]
+ }
+}

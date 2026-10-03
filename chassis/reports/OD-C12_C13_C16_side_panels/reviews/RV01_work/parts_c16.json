@@ -1,0 +1,897 @@
+{
+ "step_sha": "39faff6ce71326fc8d562d8c3daa42cd938fdf24f4dbe0933d82e9cae569c9fc",
+ "stl_sha": "0519dcb42e099fdc6433cc371989b0806ac74bd2e77aa7c43d3891c5ac6f19d5",
+ "labels": [
+  "od_c16_bracket"
+ ],
+ "validity": {
+  "solid_count": {
+   "name": "solid_count",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "volume_mm3": 4329.984226761167,
+    "solid_volumes_mm3": [
+     4329.984226761167
+    ]
+   }
+  },
+  "brep_valid": {
+   "name": "brep_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "analyzer": true,
+    "budget_s": 120.0
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.026,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.0001,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  },
+  "naked_edges": {
+   "name": "naked_edges",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "edges": 21,
+    "free_edges": 0,
+    "edges_on_3plus_faces": 0,
+    "degenerate_edges": 0
+   }
+  }
+ },
+ "envelope": {
+  "size_x": {
+   "name": "envelope_size_x",
+   "measured": 19.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "size_y": {
+   "name": "envelope_size_y",
+   "measured": 16.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "size_z": {
+   "name": "envelope_size_z",
+   "measured": 16.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "min_x": {
+   "name": "envelope_min_x",
+   "measured": -19.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "min_y": {
+   "name": "envelope_min_y",
+   "measured": -3.774758283725e-16,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "min_z": {
+   "name": "envelope_min_z",
+   "measured": -8.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "max_x": {
+   "name": "envelope_max_x",
+   "measured": 4.4408920985e-16,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "max_y": {
+   "name": "envelope_max_y",
+   "measured": 16.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "max_z": {
+   "name": "envelope_max_z",
+   "measured": 8.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  }
+ },
+ "roundtrip": {
+  "schema": {
+   "name": "step_schema",
+   "measured": null,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": null,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": null,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": null,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": null,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": null,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  }
+ },
+ "feature_census": {
+  "plane_faces": {
+   "name": "feature_census_plane_faces",
+   "measured": 8,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "cylinder_faces": {
+   "name": "feature_census_cylinder_faces",
+   "measured": 3,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "cone_faces": {
+   "name": "feature_census_cone_faces",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "sphere_faces": {
+   "name": "feature_census_sphere_faces",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "torus_faces": {
+   "name": "feature_census_torus_faces",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "bspline_faces": {
+   "name": "feature_census_bspline_faces",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "other_faces": {
+   "name": "feature_census_other_faces",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "concave_cylinders": {
+   "name": "feature_census_concave_cylinders",
+   "measured": 3,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "convex_cylinders": {
+   "name": "feature_census_convex_cylinders",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "bores": {
+   "name": "feature_census_bores",
+   "measured": 3,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "bores": [
+     {
+      "solid": 0,
+      "diameter": 3.4,
+      "radius": 1.7,
+      "axis_dir": [
+       -0.0,
+       1.0,
+       -0.0
+      ],
+      "start": [
+       -12.5,
+       0.0,
+       0.0
+      ],
+      "end": [
+       -12.5,
+       3.0,
+       0.0
+      ],
+      "length": 3.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 6.5,
+      "radius": 3.25,
+      "axis_dir": [
+       -0.0,
+       1.0,
+       -0.0
+      ],
+      "start": [
+       -12.5,
+       3.0,
+       0.0
+      ],
+      "end": [
+       -12.5,
+       16.0,
+       -0.0
+      ],
+      "length": 13.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       false,
+       true
+      ],
+      "through": false
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "start": [
+       -6.0,
+       10.0,
+       -0.0
+      ],
+      "end": [
+       0.0,
+       10.0,
+       0.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       false,
+       true
+      ],
+      "through": false
+     }
+    ]
+   }
+  }
+ },
+ "bore_census": {
+  "name": "bore_census",
+  "measured": 3,
+  "unit": "count",
+  "at": null,
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "bores": [
+    {
+     "solid": 0,
+     "diameter": 3.4,
+     "radius": 1.7,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      -12.5,
+      0.0,
+      0.0
+     ],
+     "end": [
+      -12.5,
+      3.0,
+      0.0
+     ],
+     "length": 3.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 6.5,
+     "radius": 3.25,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      -12.5,
+      3.0,
+      0.0
+     ],
+     "end": [
+      -12.5,
+      16.0,
+      -0.0
+     ],
+     "length": 13.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      false,
+      true
+     ],
+     "through": false
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "start": [
+      -6.0,
+      10.0,
+      -0.0
+     ],
+     "end": [
+      0.0,
+      10.0,
+      0.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      false,
+      true
+     ],
+     "through": false
+    }
+   ],
+   "concave_arcs": 0
+  }
+ },
+ "faces": [
+  {
+   "kind": "plane",
+   "area": 256.0,
+   "bb": [
+    -19.0,
+    0.0,
+    -8.0,
+    -19.0,
+    16.0,
+    8.0
+   ],
+   "normal": [
+    -1.0,
+    -0.0,
+    0.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 294.9208,
+   "bb": [
+    -19.0,
+    -0.0,
+    -8.0,
+    0.0,
+    0.0,
+    8.0
+   ],
+   "normal": [
+    0.0,
+    -1.0,
+    -0.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 304.0,
+   "bb": [
+    -19.0,
+    0.0,
+    8.0,
+    0.0,
+    16.0,
+    8.0
+   ],
+   "normal": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 270.8169,
+   "bb": [
+    -19.0,
+    16.0,
+    -8.0,
+    0.0,
+    16.0,
+    8.0
+   ],
+   "normal": [
+    -0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 304.0,
+   "bb": [
+    -19.0,
+    0.0,
+    -8.0,
+    0.0,
+    16.0,
+    -8.0
+   ],
+   "normal": [
+    -0.0,
+    -0.0,
+    -1.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 243.4336,
+   "bb": [
+    -0.0,
+    0.0,
+    -8.0,
+    0.0,
+    16.0,
+    8.0
+   ],
+   "normal": [
+    1.0,
+    0.0,
+    -0.0
+   ]
+  },
+  {
+   "kind": "cylinder",
+   "area": 32.0442,
+   "bb": [
+    -14.2,
+    -0.0,
+    -1.7,
+    -10.8,
+    3.0,
+    1.7
+   ],
+   "radius": 1.7
+  },
+  {
+   "kind": "cylinder",
+   "area": 265.4646,
+   "bb": [
+    -15.75,
+    3.0,
+    -3.25,
+    -9.25,
+    16.0,
+    3.25
+   ],
+   "radius": 3.25
+  },
+  {
+   "kind": "cylinder",
+   "area": 75.3982,
+   "bb": [
+    -6.0,
+    8.0,
+    -2.0,
+    0.0,
+    12.0,
+    2.0
+   ],
+   "radius": 2.0
+  },
+  {
+   "kind": "plane",
+   "area": 24.1039,
+   "bb": [
+    -15.75,
+    3.0,
+    -3.25,
+    -9.25,
+    3.0,
+    3.25
+   ],
+   "normal": [
+    -0.0,
+    1.0,
+    -0.0
+   ]
+  },
+  {
+   "kind": "plane",
+   "area": 12.5664,
+   "bb": [
+    -6.0,
+    8.0,
+    -2.0,
+    -6.0,
+    12.0,
+    2.0
+   ],
+   "normal": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "r_max": 3.25,
+ "ang_limit": 0.31386632987537666,
+ "overhang": {
+  "name": "overhang_census",
+  "measured": 0.0,
+  "unit": "deg",
+  "at": [
+   -6.0,
+   12.0,
+   0.0
+  ],
+  "params": {
+   "build_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "min_deg": 45.0,
+   "spacing_mm": 0.5,
+   "bed_mm": 0.01
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "samples": 10079,
+   "downward_samples": 210,
+   "below_min_deg": 105,
+   "bed_samples": 1396,
+   "bed_height_mm": 0.0,
+   "largest_step_mm": 0.487179,
+   "sampling_bound_deg": 0.008208,
+   "seeds_refined": 4,
+   "per_kind_least_deg": {
+    "cylinder": 0.0
+   }
+  }
+ },
+ "flat_ceiling": {
+  "name": "flat_ceiling_spans",
+  "measured": 0.0,
+  "unit": "mm",
+  "at": null,
+  "params": {
+   "build_dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "max_span": 5.0,
+   "spacing_mm": 0.5,
+   "flat_deg": 10.0,
+   "min_support_mm": 0.8,
+   "bed_mm": 0.01
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "ceilings": [],
+   "bed_faces": 1,
+   "sampling_bound_mm": 0.0
+  }
+ },
+ "min_wall": {
+  "name": "min_wall",
+  "measured": 2.999999999999999,
+  "unit": "mm",
+  "at": [
+   -13.402778,
+   3.0,
+   -3.069444
+  ],
+  "params": {
+   "spacing_mm": 0.4,
+   "opposition_deg": 25.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "rays": 13894,
+   "lost_rays": 0,
+   "face_pairs_measured_exactly": 3,
+   "face_pairs_never_opposed": 0,
+   "face_pairs_failed": 0,
+   "exact_points_without_normal": 0,
+   "solids": 4,
+   "largest_step_mm": 0.390244,
+   "wide": {
+    "opposition_deg": 45.0,
+    "measured": 2.999999999999999,
+    "at": [
+     -13.402778,
+     3.0,
+     -3.069444
+    ]
+   },
+   "hit_at": [
+    -13.402778,
+    0.0,
+    -3.069444
+   ],
+   "from_face": "plane",
+   "to_face": "plane",
+   "found_by": "ray"
+  }
+ },
+ "mesh_census": {
+  "triangles": {
+   "name": "mesh_triangles",
+   "measured": 588,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "degenerate_triangles": 0
+   }
+  },
+  "bodies": {
+   "name": "mesh_bodies",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "naked_edges": {
+   "name": "mesh_naked_edges",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "winding": {
+   "name": "mesh_winding",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "volume": {
+   "name": "mesh_volume",
+   "measured": 4331.208549235491,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  }
+ },
+ "mesh_deviation": {
+  "name": "mesh_deviation",
+  "measured": 0.004987907409667258,
+  "unit": "mm",
+  "at": [
+   -14.2,
+   1.5,
+   -0.0
+  ],
+  "params": {
+   "reference_tolerance_mm": 0.001
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "mesh_to_shape_mm": 0.004986451010935091,
+   "shape_to_mesh_mm": 0.004987907409667258,
+   "samples": 9065,
+   "reference_triangles": 1820
+  }
+ },
+ "fresh_stl": {
+  "sha": "30410a3f189a536d548ad0f50ff0d0fc326f0801a5e7b23724e55a19283dd661",
+  "detail": {
+   "tolerance_mm": 0.01,
+   "angular_tolerance_rad": 0.31386632987537666,
+   "triangles": 588,
+   "max_sagitta_mm": 0.004988137987642872
+  },
+  "sagitta": {
+   "name": "stl_max_sagitta",
+   "measured": 0.004988137987642872,
+   "unit": "mm",
+   "at": [
+    -10.809961639786705,
+    0.75,
+    0.12975189158604472
+   ],
+   "params": {
+    "samples_per_triangle": 13
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "triangles": 588,
+    "samples": 3718,
+    "faces_without_triangles": 0,
+    "unprojected_samples": 0
+   }
+  },
+  "same_bytes_as_delivered": false
+ },
+ "seconds": 5.438905239105225
+}
