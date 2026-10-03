@@ -63,3 +63,6 @@
 {"t": "2026-10-03T02:54:03Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "build v02 to spec 1.3 (attempt 2 of 2)"}}
 {"t": "2026-10-03T02:54:26Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_t01_rig_v02", "brief": "briefs/WP-05_designer.md", "attempt": 2}}
 {"t": "2026-10-03T02:54:26Z", "ev": "attempt", "detail": {"counter": "build", "n": 2, "cap": 2}}
+{"t": "2026-10-03T04:25:50Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_t01_rig_v02", "outcome": "SUBMITTED", "report": "01_CAD/REPORT_od_t01_rig_v02.md"}}
+{"t": "2026-10-03T04:25:51Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "J4_REVIEW", "reason": "build v02 submitted (REPORT placed by the orchestrator after a hook blocked the write)"}}
+{"t": "2026-10-03T04:25:52Z", "ev": "package_sent", "detail": {"role": "reviewer", "target": "od_t01_rig_v02", "brief": "briefs/WP-06_reviewer.md", "attempt": 1}}

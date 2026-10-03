@@ -1,0 +1,514 @@
+{
+ "n_solids": 1,
+ "labels": [
+  "od_c09_front"
+ ],
+ "validity": {
+  "solid_count": {
+   "name": "solid_count",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "volume_mm3": 95755.13706331661,
+    "solid_volumes_mm3": [
+     95755.13706331661
+    ]
+   }
+  },
+  "brep_valid": {
+   "name": "brep_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.034,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.00031729166422835627,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  },
+  "naked_edges": {
+   "name": "naked_edges",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "edges": 141,
+    "free_edges": 0,
+    "edges_on_3plus_faces": 0,
+    "degenerate_edges": 0
+   }
+  }
+ },
+ "envelope": {
+  "size_x": {
+   "name": "envelope_size_x",
+   "measured": 232.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "size_y": {
+   "name": "envelope_size_y",
+   "measured": 215.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "size_z": {
+   "name": "envelope_size_z",
+   "measured": 25.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "min_x": {
+   "name": "envelope_min_x",
+   "measured": -116.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "min_y": {
+   "name": "envelope_min_y",
+   "measured": -3.774758283725e-16,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "min_z": {
+   "name": "envelope_min_z",
+   "measured": 72.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "max_x": {
+   "name": "envelope_max_x",
+   "measured": 116.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "max_y": {
+   "name": "envelope_max_y",
+   "measured": 215.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "max_z": {
+   "name": "envelope_max_z",
+   "measured": 97.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  }
+ },
+ "volume": 95755.13706331661,
+ "feature_census": {
+  "plane_faces": 40,
+  "cylinder_faces": 13,
+  "cone_faces": 0,
+  "sphere_faces": 0,
+  "torus_faces": 0,
+  "bspline_faces": 0,
+  "other_faces": 0,
+  "concave_cylinders": 11,
+  "convex_cylinders": 2,
+  "bores": 9
+ },
+ "bores": [
+  {
+   "solid": 0,
+   "diameter": 15.0,
+   "radius": 7.5,
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -98.9908,
+    139.9014,
+    94.0
+   ],
+   "end": [
+    -98.9908,
+    139.9014,
+    97.0
+   ],
+   "length": 3.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 3.4,
+   "radius": 1.7,
+   "axis_dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "start": [
+    -95.0,
+    0.0,
+    77.0
+   ],
+   "end": [
+    -95.0,
+    4.0,
+    77.0
+   ],
+   "length": 4.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 15.0,
+   "radius": 7.5,
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -94.2478,
+    166.5135,
+    94.0
+   ],
+   "end": [
+    -94.2478,
+    166.5135,
+    97.0
+   ],
+   "length": 3.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 15.0,
+   "radius": 7.5,
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -93.7652,
+    113.4263,
+    94.0
+   ],
+   "end": [
+    -93.7652,
+    113.4263,
+    97.0
+   ],
+   "length": 3.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -91.0555,
+    153.2349,
+    85.485
+   ],
+   "end": [
+    -91.0555,
+    153.2349,
+    91.485
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    false
+   ],
+   "through": false
+  },
+  {
+   "solid": 0,
+   "diameter": 4.0,
+   "radius": 2.0,
+   "axis_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "start": [
+    -90.9987,
+    127.2515,
+    85.485
+   ],
+   "end": [
+    -90.9987,
+    127.2515,
+    91.485
+   ],
+   "length": 6.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    false
+   ],
+   "through": false
+  },
+  {
+   "solid": 0,
+   "diameter": 3.4,
+   "radius": 1.7,
+   "axis_dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "start": [
+    -85.0,
+    0.0,
+    77.0
+   ],
+   "end": [
+    -85.0,
+    4.0,
+    77.0
+   ],
+   "length": 4.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 3.4,
+   "radius": 1.7,
+   "axis_dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "start": [
+    85.0,
+    0.0,
+    77.0
+   ],
+   "end": [
+    85.0,
+    4.0,
+    77.0
+   ],
+   "length": 4.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  },
+  {
+   "solid": 0,
+   "diameter": 3.4,
+   "radius": 1.7,
+   "axis_dir": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "start": [
+    95.0,
+    0.0,
+    77.0
+   ],
+   "end": [
+    95.0,
+    4.0,
+    77.0
+   ],
+   "length": 4.0,
+   "span_deg": 360.0,
+   "faces": 1,
+   "fitted": false,
+   "open_ends": [
+    true,
+    true
+   ],
+   "through": true
+  }
+ ],
+ "concave_arcs": 2,
+ "ident": {
+  "housing_vol": 90216.79165440061,
+  "housing_alone_vol": 90216.79165440112,
+  "g10_vol": 137692.41767993575,
+  "g04_vol": 17086.24424005932,
+  "g10_maxz": 182.08340373216015,
+  "n": 3,
+  "e02_solids": 1
+ },
+ "bb_C01": [
+  -120.0,
+  -6.0,
+  -305.0,
+  120.0,
+  0.0,
+  100.0
+ ],
+ "valid_C01": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "bb_C10": [
+  -120.0,
+  210.5,
+  -305.0,
+  120.0,
+  250.0,
+  100.0
+ ],
+ "valid_C10": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "bb_C05": [
+  -55.0,
+  0.0,
+  -70.0,
+  55.0,
+  210.0,
+  82.0
+ ],
+ "valid_C05": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "bb_HOUS": [
+  -50.0,
+  176.76,
+  -18.0,
+  50.0,
+  205.0,
+  82.0
+ ],
+ "valid_HOUS": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "bb_G04": [
+  -31.176,
+  185.79,
+  -2.52,
+  34.52,
+  203.0,
+  66.494
+ ],
+ "valid_G04": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "bb_G10": [
+  -30.571,
+  132.296,
+  -3.025,
+  92.04,
+  191.311,
+  182.083
+ ],
+ "valid_G10": {
+  "solid_count": 1,
+  "brep_valid": 0,
+  "naked_edges": 0
+ },
+ "bb_E02": [
+  -115.173,
+  101.84,
+  50.399,
+  -61.526,
+  178.629,
+  98.565
+ ],
+ "valid_E02": {
+  "solid_count": 1,
+  "brep_valid": 0,
+  "naked_edges": 0
+ }
+}

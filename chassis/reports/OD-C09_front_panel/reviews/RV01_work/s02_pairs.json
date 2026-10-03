@@ -1,0 +1,452 @@
+{
+ "PANEL|C01": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 0.0,
+  "inside": false,
+  "at": [
+   -104.0,
+   0.0,
+   94.0
+  ],
+  "on_b": [
+   -104.0,
+   0.0,
+   94.0
+  ]
+ },
+ "PANEL|C05": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 12.0,
+  "inside": false,
+  "at": [
+   -55.0,
+   210.0,
+   94.0
+  ],
+  "on_b": [
+   -55.0,
+   210.0,
+   82.0
+  ]
+ },
+ "PANEL|HOUS": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 8.775676612090953,
+  "inside": false,
+  "at": [
+   -44.0,
+   191.0,
+   84.0
+  ],
+  "on_b": [
+   -44.0,
+   199.3,
+   81.15
+  ]
+ },
+ "PANEL|G04": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 18.053113401772727,
+  "inside": false,
+  "at": [
+   -1.330185,
+   191.0,
+   84.0
+  ],
+  "on_b": [
+   -1.330185,
+   195.309772,
+   66.468863
+  ]
+ },
+ "PANEL|G10": {
+  "mode": "clearance_fallback",
+  "clearance": 14.020627966807199,
+  "inside": false,
+  "at": [
+   37.048401,
+   188.0,
+   97.0
+  ],
+  "on_b": [
+   37.048401,
+   173.980815,
+   97.201169
+  ]
+ },
+ "PANEL|C10": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 0.0,
+  "inside": false,
+  "at": [
+   110.0,
+   215.0,
+   97.0
+  ],
+  "on_b": [
+   110.0,
+   215.0,
+   97.0
+  ]
+ },
+ "PANEL|E02": {
+  "mode": "clearance_fallback",
+  "clearance": 0.00010000000000331966,
+  "inside": false,
+  "at": [
+   -93.216999,
+   122.218693,
+   85.485
+  ],
+  "on_b": [
+   -93.216999,
+   122.218693,
+   85.4849
+  ]
+ },
+ "C01|C05": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 0.0,
+  "inside": false,
+  "at": [
+   -33.0,
+   0.0,
+   -40.0
+  ],
+  "on_b": [
+   -33.0,
+   0.0,
+   -40.0
+  ]
+ },
+ "C01|HOUS": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 176.76,
+  "inside": false,
+  "at": [
+   37.1,
+   0.0,
+   32.0
+  ],
+  "on_b": [
+   37.1,
+   176.76,
+   32.0
+  ]
+ },
+ "C01|G04": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 185.79000000000002,
+  "inside": false,
+  "at": [
+   20.783593,
+   0.0,
+   34.202783
+  ],
+  "on_b": [
+   20.783593,
+   185.79,
+   34.202783
+  ]
+ },
+ "C01|G10": {
+  "mode": "clearance_fallback",
+  "clearance": 132.29555189654002,
+  "inside": false,
+  "at": [
+   18.485643,
+   0.0,
+   33.400686
+  ],
+  "on_b": [
+   18.485643,
+   132.295552,
+   33.400686
+  ]
+ },
+ "C01|C10": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 210.5,
+  "inside": false,
+  "at": [
+   -43.0,
+   0.0,
+   30.0
+  ],
+  "on_b": [
+   -43.0,
+   210.5,
+   30.0
+  ]
+ },
+ "C01|E02": {
+  "mode": "clearance_fallback",
+  "clearance": 101.84,
+  "inside": false,
+  "at": [
+   -85.8827,
+   0.0,
+   75.2476
+  ],
+  "on_b": [
+   -85.8827,
+   101.84,
+   75.2476
+  ]
+ },
+ "C05|HOUS": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 0.0,
+  "inside": false,
+  "at": [
+   -42.0,
+   205.0,
+   82.0
+  ],
+  "on_b": [
+   -42.0,
+   205.0,
+   82.0
+  ]
+ },
+ "C05|G04": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 4.999999999999972,
+  "inside": false,
+  "at": [
+   30.0,
+   205.0,
+   32.0
+  ],
+  "on_b": [
+   30.0,
+   200.0,
+   32.0
+  ]
+ },
+ "C05|G10": {
+  "mode": "clearance_fallback",
+  "clearance": 13.68897128343994,
+  "inside": false,
+  "at": [
+   30.0,
+   205.0,
+   32.0
+  ],
+  "on_b": [
+   30.0,
+   191.311029,
+   32.0
+  ]
+ },
+ "C05|C10": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 0.5,
+  "inside": false,
+  "at": [
+   -43.0,
+   210.0,
+   30.0
+  ],
+  "on_b": [
+   -43.0,
+   210.5,
+   30.0
+  ]
+ },
+ "C05|E02": {
+  "mode": "clearance_fallback",
+  "clearance": 39.07076291086069,
+  "inside": false,
+  "at": [
+   -55.0,
+   205.0,
+   75.2476
+  ],
+  "on_b": [
+   -82.226734,
+   176.978053,
+   75.2476
+  ]
+ },
+ "HOUS|G04": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 0.0,
+  "inside": false,
+  "at": [
+   13.058599,
+   200.0,
+   38.452218
+  ],
+  "on_b": [
+   13.058599,
+   200.0,
+   38.452218
+  ]
+ },
+ "HOUS|G10": {
+  "mode": "clearance_fallback",
+  "clearance": 3.552713678800501e-15,
+  "inside": false,
+  "at": [
+   30.875555,
+   186.510755,
+   24.906163
+  ],
+  "on_b": [
+   30.875555,
+   186.510755,
+   24.906163
+  ]
+ },
+ "HOUS|C10": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 5.5,
+  "inside": false,
+  "at": [
+   -43.0,
+   205.0,
+   30.0
+  ],
+  "on_b": [
+   -43.0,
+   210.5,
+   30.0
+  ]
+ },
+ "HOUS|E02": {
+  "mode": "clearance_fallback",
+  "clearance": 30.41715861714527,
+  "inside": false,
+  "at": [
+   -41.103186,
+   176.76,
+   44.966808
+  ],
+  "on_b": [
+   -61.574257,
+   155.209293,
+   51.42481
+  ]
+ },
+ "G04|G10": {
+  "mode": "clearance_fallback",
+  "clearance": 0.4782376405766065,
+  "inside": false,
+  "at": [
+   5.867527,
+   187.444244,
+   9.812737
+  ],
+  "on_b": [
+   5.989796,
+   187.444244,
+   9.350394
+  ]
+ },
+ "G04|C10": {
+  "common_mm3": 0.0,
+  "status": "MEASURED",
+  "reason": "",
+  "clearance": 16.20825306570767,
+  "inside": false,
+  "at": [
+   -30.725946,
+   199.931797,
+   30.719752
+  ],
+  "on_b": [
+   -43.004335,
+   210.5,
+   30.208153
+  ]
+ },
+ "G04|E02": {
+  "mode": "clearance_fallback",
+  "clearance": 50.477751448003296,
+  "inside": false,
+  "at": [
+   -30.521461,
+   194.81552,
+   47.357371
+  ],
+  "on_b": [
+   -61.531049,
+   155.220216,
+   51.672556
+  ]
+ },
+ "G10|C10": {
+  "mode": "clearance_fallback",
+  "clearance": 20.45236541674967,
+  "inside": false,
+  "at": [
+   35.933561,
+   191.311029,
+   30.502768
+  ],
+  "on_b": [
+   43.004335,
+   210.5,
+   30.208153
+  ]
+ },
+ "G10|E02": {
+  "mode": "clearance_fallback",
+  "clearance": 35.56382476534063,
+  "inside": false,
+  "at": [
+   -27.698504,
+   156.80289,
+   40.712245
+  ],
+  "on_b": [
+   -61.589543,
+   155.207017,
+   51.37228
+  ]
+ },
+ "C10|E02": {
+  "mode": "clearance_fallback",
+  "clearance": 39.54344637309796,
+  "inside": false,
+  "at": [
+   -117.0,
+   215.0,
+   75.2476
+  ],
+  "on_b": [
+   -102.609869,
+   178.167836,
+   75.2476
+  ]
+ }
+}

@@ -5,9 +5,9 @@ code: ODT01
 milestone: M1
 title: "Open Dedica OD-T01 group head bench pressure-test rig"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
-next_action: "J3: build v02 to spec 1.3 (25 mm plate, the Usta 2026-10-03); then RV02 and replace v01 in the open-dedica branch"
+next_action: "J4: await RV02 (WP-06) on v02; APPROVED -> replace v01 in the open-dedica branch (STEP, STL, 3MF, scripts, test procedure)"
 data_class: PUBLIC
 size: S
 process: [FDM]

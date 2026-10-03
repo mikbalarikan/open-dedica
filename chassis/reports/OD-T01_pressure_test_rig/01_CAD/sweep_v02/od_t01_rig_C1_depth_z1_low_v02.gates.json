@@ -1,7 +1,71 @@
 {
- "step": "/root/oguz-jobs/20261002-od-t01-pressure-test-rig/01_CAD/sweep_v02/od_t01_rig_C1_depth_z1_high_v02.step",
+ "step": "/root/oguz-jobs/20261002-od-t01-pressure-test-rig/01_CAD/sweep_v02/od_t01_rig_C1_depth_z1_low_v02.step",
  "seat_y": 135.0,
  "rows": [
+  {
+   "gate": "U-03b",
+   "measured": 0.0,
+   "unit": "mm3",
+   "required": "<= 0.0",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "interference",
+   "assumes": [],
+   "note": "worst rig|housing at dy -0"
+  },
+  {
+   "gate": "U-03b",
+   "measured": 13.688971283439997,
+   "unit": "mm",
+   "required": "> 0 (read beyond the 0.005 band)",
+   "margin": 13.678971283,
+   "at": "(21.2502, 135.0000, 21.1761) mm",
+   "status": "PASS",
+   "method": "clearance",
+   "assumes": [],
+   "note": "worst rig|g10 clearance (fallback, > 0 and not inside) at dy -0"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 11.75457297479454,
+   "unit": "mm",
+   "required": ">= 5.0",
+   "margin": 6.754572975,
+   "at": "(75.0000, 90.4000, 40.0000) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-07"
+   ],
+   "note": "(a) least clearance over \u03c6 -60 \u2026 +15 step 5, at \u03c6 +15"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 1,
+   "unit": "bool",
+   "required": "== 1",
+   "margin": 0.0,
+   "at": null,
+   "status": "PASS",
+   "method": "phi_sign",
+   "assumes": [],
+   "note": "\u03c6 > 0 turns the handle toward +X"
+  },
+  {
+   "gate": "REQ-04",
+   "measured": 28.688971283439983,
+   "unit": "mm",
+   "required": "> 0, not inside (fallback for interference <= 0)",
+   "margin": 28.678971283,
+   "at": "(29.4379, 135.0000, 56.9371) mm",
+   "status": "PASS_ASSUMED",
+   "method": "clearance",
+   "assumes": [
+    "A-07"
+   ],
+   "note": "(b) least clearance over dz 0 \u2026 200 step 5 at \u03c6 -50, dy -15: at dz 50"
+  },
   {
    "gate": "exactly_one_solid",
    "measured": 1,
@@ -99,7 +163,7 @@
   },
   {
    "gate": "U-02",
-   "measured": 120.1,
+   "measured": 119.9,
    "unit": "mm",
    "required": "in [119.9, 120.1]",
    "margin": 0.0,
@@ -111,7 +175,7 @@
   },
   {
    "gate": "envelope_within_spec",
-   "measured": 120.1,
+   "measured": 119.9,
    "unit": "mm",
    "required": "in [119.9, 120.1]",
    "margin": 0.0,
@@ -183,10 +247,10 @@
   },
   {
    "gate": "envelope_within_spec",
-   "measured": 60.1,
+   "measured": 59.900000000000006,
    "unit": "mm",
    "required": "in [59.9, 60.1]",
-   "margin": 0.0,
+   "margin": 7.105427357601002e-15,
    "at": null,
    "status": "PASS",
    "method": "envelope_max_z",
@@ -315,7 +379,7 @@
   },
   {
    "gate": "U-04",
-   "measured": 6.798654794692993e-08,
+   "measured": 6.752088665962219e-08,
    "unit": "mm3",
    "required": "<= 0.0",
    "margin": -6.8e-08,
@@ -727,7 +791,7 @@
    "unit": "mm",
    "required": ">= 0.8",
    "margin": 4.2,
-   "at": "(-44.7007, 135.0000, -47.0753) mm",
+   "at": "(-45.0998, 135.0000, -47.0540) mm",
    "status": "PASS",
    "method": "min_wall",
    "assumes": []
@@ -738,7 +802,7 @@
    "unit": "mm",
    "required": ">= 2.0",
    "margin": 3.0,
-   "at": "(-44.7007, 135.0000, -47.0753) mm",
+   "at": "(-45.0998, 135.0000, -47.0540) mm",
    "status": "PASS_ASSUMED",
    "method": "min_wall",
    "assumes": [
@@ -751,7 +815,7 @@
    "unit": "mm",
    "required": ">= 1.0",
    "margin": 4.0,
-   "at": "(-44.7007, 135.0000, -47.0753) mm",
+   "at": "(-45.0998, 135.0000, -47.0540) mm",
    "status": "PASS",
    "method": "min_wall",
    "assumes": []
@@ -762,7 +826,7 @@
    "unit": "mm",
    "required": ">= 2.0",
    "margin": 3.0,
-   "at": "(-44.7007, 135.0000, -47.0753) mm",
+   "at": "(-45.0998, 135.0000, -47.0540) mm",
    "status": "PASS",
    "method": "min_wall_wide",
    "assumes": [],
@@ -870,10 +934,10 @@
   },
   {
    "gate": "D-02",
-   "measured": 120.1,
+   "measured": 119.9,
    "unit": "mm",
    "required": "<= 500.0",
-   "margin": 379.9,
+   "margin": 380.1,
    "at": null,
    "status": "PASS_ASSUMED",
    "method": "size_z",
@@ -2040,7 +2104,7 @@
   },
   {
    "gate": "REQ-08",
-   "measured": 1189.9838,
+   "measured": 1184.9838,
    "unit": "mm2",
    "required": "reported (Soft, bench)",
    "margin": null,
@@ -2068,7 +2132,7 @@
   },
   {
    "gate": "REQ-08",
-   "measured": 61978.3214,
+   "measured": 61717.9047,
    "unit": "mm4",
    "required": "reported (Soft, bench)",
    "margin": null,
@@ -2082,7 +2146,7 @@
   },
   {
    "gate": "REQ-08",
-   "measured": 4958.2656,
+   "measured": 4937.4323,
    "unit": "mm3",
    "required": "reported (Soft, bench)",
    "margin": null,
@@ -2096,7 +2160,7 @@
   },
   {
    "gate": "REQ-08",
-   "measured": 9.5598,
+   "measured": 9.6001,
    "unit": "MPa",
    "required": "reported (Soft, bench)",
    "margin": null,
@@ -2110,7 +2174,7 @@
   },
   {
    "gate": "REQ-08",
-   "measured": 4.1842,
+   "measured": 4.1666,
    "unit": "-",
    "required": "reported (Soft, bench)",
    "margin": null,
@@ -2174,6 +2238,8 @@
   }
  ],
  "summary": {
+  "U-03b": "PASS",
+  "REQ-04": "PASS_ASSUMED",
   "exactly_one_solid": "PASS",
   "U-01": "PASS",
   "U-02": "PASS",
@@ -2203,23 +2269,45 @@
   "J-05": "N/A"
  },
  "timing_s": {
+  "u03b_offer_up": 228.9,
+  "req04_travel": 238.9,
   "exactly_one_solid": 0.0,
-  "u01_validity": 1.1,
+  "u01_validity": 0.8,
   "u02_envelope": 0.0,
-  "u03a_close": 20.7,
-  "u04_roundtrip": 0.8,
-  "u05_census": 0.2,
-  "walls_and_features": 128.1,
-  "u07_mesh": 0.2,
+  "u03a_close": 20.0,
+  "u04_roundtrip": 0.4,
+  "u05_census": 0.1,
+  "walls_and_features": 130.0,
+  "u07_mesh": 0.3,
   "d02_bed": 0.0,
-  "d03a_overhang": 40.5,
-  "d03b_bridge": 0.7,
-  "holes": 0.8,
+  "d03a_overhang": 43.5,
+  "d03b_bridge": 0.9,
+  "holes": 1.2,
   "req02_seat": 0.0,
-  "req03_window": 1.6,
-  "req05_headroom": 0.6,
-  "probes": 0.6,
-  "req08_section": 0.1
+  "req03_window": 2.0,
+  "req05_headroom": 0.8,
+  "probes": 0.8,
+  "req08_section": 0.0
  },
- "total_s": 198.3
+ "predicates": [
+  "exactly_one_solid",
+  "u01_validity",
+  "u02_envelope",
+  "u03a_close",
+  "u03b_offer_up",
+  "u04_roundtrip",
+  "u05_census",
+  "walls_and_features",
+  "u07_mesh",
+  "d02_bed",
+  "d03a_overhang",
+  "d03b_bridge",
+  "holes",
+  "req02_seat",
+  "req03_window",
+  "req04_travel",
+  "req05_headroom",
+  "probes",
+  "req08_section"
+ ]
 }
