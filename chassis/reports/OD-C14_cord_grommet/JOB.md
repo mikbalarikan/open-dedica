@@ -7,7 +7,7 @@ title: "Open Dedica OD-C14 printed cord grommet"
 lane: CAD
 state: J5_DELIVER
 blocked_on: null
-next_action: "J5: the Usta merges the PR; then J6 with PHYSICAL_OUTCOME pending the first fitting (REQ-05 grip, A-03 PLA, A-05 squeeze)"
+next_action: "The Usta merges open-dedica PR #51; then J6 close with PHYSICAL_OUTCOME pending the first prints"
 data_class: PUBLIC
 size: S
 process: [FDM]
