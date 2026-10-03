@@ -21,3 +21,4 @@
 {"t": "2026-10-02T23:44:25Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "J2 plan checked: every spec 1.1 feature and gate row has a planned feature and check; Q1-Q7 answered in spec 1.1 and carried in WP-03"}}
 {"t": "2026-10-02T23:44:26Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c09_front_v01", "brief": "briefs/WP-03_designer.md", "attempt": 1}}
 {"t": "2026-10-02T23:44:26Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-10-03T00:00:39Z", "ev": "note", "detail": {"text": "container restart interrupted the J3 designer package (WP-03, attempt 1) before it returned; partial files in 01_CAD/02_STEP_STL/03_Sections inspected; the same package resumes under the same attempt", "ref": "briefs/WP-03_designer.md"}}

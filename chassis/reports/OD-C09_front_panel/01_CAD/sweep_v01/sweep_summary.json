@@ -1,0 +1,43 @@
+{
+ "nominal": {
+  "run": "nominal",
+  "overrides": {},
+  "built": true,
+  "checked": true,
+  "summary": {
+   "exactly_one_solid": "PASS",
+   "U-01": "PASS",
+   "U-02": "PASS",
+   "envelope_within_spec": "PASS",
+   "D-02": "PASS_ASSUMED",
+   "REQ-02": "PASS_ASSUMED",
+   "REQ-07": "PASS_ASSUMED",
+   "U-04": "PASS",
+   "U-05": "PASS",
+   "feature_census": "PASS",
+   "REQ-01": "PASS_ASSUMED",
+   "D-04a": "PASS",
+   "D-03b": "PASS_ASSUMED",
+   "D-05b": "PASS_ASSUMED",
+   "E-05": "PASS_ASSUMED",
+   "D-05a": "PASS_ASSUMED",
+   "J-05": "PASS_ASSUMED",
+   "REQ-04": "PASS_ASSUMED",
+   "U-03": "PASS_ASSUMED",
+   "E-01": "PASS_ASSUMED",
+   "REQ-03": "PASS_ASSUMED",
+   "REQ-05": "PASS_ASSUMED",
+   "REQ-06": "PASS_ASSUMED",
+   "E-06": "PASS",
+   "D-01a": "PASS",
+   "D-06a": "PASS",
+   "D-01b": "PASS_ASSUMED",
+   "U-06": "PASS",
+   "D-03a": "PASS_ASSUMED",
+   "U-07": "INCONCLUSIVE",
+   "U-08": "N/A",
+   "D-07": "N/A",
+   "REQ-08": "INCONCLUSIVE"
+  }
+ }
+}

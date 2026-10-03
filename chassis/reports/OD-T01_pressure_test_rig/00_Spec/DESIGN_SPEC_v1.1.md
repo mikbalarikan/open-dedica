@@ -1,6 +1,6 @@
 # DESIGN_SPEC — OD-T01 group head bench pressure-test rig (20261002-od-t01-pressure-test-rig)
 
-Version 1.2 · RATIFIED by the Usta on 2026-10-02 (standing instruction "Usta'ya yalnız karar gereken yerde sor; açık soruları A-## satırı olarak ledger'a yaz ve ilerle" and the message of 2026-10-02 22:58 UTC; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
+Version 1.1 · RATIFIED by the Usta on 2026-10-02 (standing instruction "Usta'ya yalnız karar gereken yerde sor; açık soruları A-## satırı olarak ledger'a yaz ve ilerle" and the message of 2026-10-02 22:58 UTC; explicit confirmation of §5 and §6 pending, see §7) · data class PUBLIC · size S · lane CAD
 
 ## §1 Intent
 
@@ -138,7 +138,7 @@ plate through four screws.
 | J-05 | Wall around a threaded hole | applies to threaded holes in this part; it has none (the inserts are in OD-G01) | Hard | part | struct | — (N/A by this row) | — |
 | REQ-01 | Housing screws | four Ø3.4 ± 0.1 holes along Y at (x ±44.0, z ±44.0), offset ≤ 0.10 from the housing's insert bores as posed, through the plate; Ø6.5 ± 0.1 counterbores from y 150.0 to y 138.00 ± 0.10, leaving 3.0 ± 0.1 of plate under each head | Hard | CAD | client (OD-C05's interface) | `locate_bore`, `bore_census` | A-01 |
 | REQ-02 | Seat | the plate's underside one plane at y 135.00 ± 0.10 over the housing's square (x ±50, z ±50), the housing's rear face on it | Hard | CAD | client | `envelope`; `clearance` = 0 (U-03) | A-01 |
-| REQ-03 | Hub window | R 30.0 ± 0.1 about the axis through the plate, its teardrop roof at 45.1° ± 1° toward +Z with the apex at z +42.51 ± 0.15 (the apex is R / cos 45.1°, so R's ± 0.1 moves it ± 0.14); OD-G04's hub tube ≥ 2.0 from the rig; the two pair-B screw axes (r 19.03) ≥ 10.87 from the window's face (R 29.9 − 19.03), so a head up to Ø17.7 clears by ≥ 2.0 at R's low limit (A-12) | Hard | CAD | client (OD-C05 A-06) | `bore_census`; reviewer from sections; `clearance` | A-05 |
+| REQ-03 | Hub window | R 30.0 ± 0.1 about the axis through the plate, its teardrop roof at 45.1° ± 1° toward +Z with the apex at z +42.51 ± 0.1; OD-G04's hub tube ≥ 2.0 from the rig; the two pair-B screw axes (r 19.03) ≥ 10.97 from the window's face, so a head up to Ø17.9 clears by ≥ 2.0 (A-12) | Hard | CAD | client (OD-C05 A-06) | `bore_census`; reviewer from sections; `clearance` | A-05 |
 | REQ-04 | Portafilter travel | OD-G10 (a) at its locked pose rotated by φ from −60° to +15° in steps ≤ 5°: `clearance` to the rig ≥ 5.0; (b) rotated by φ = −50°, lowered 15.0 along −Y and moved along +Z from z 0 to z +200 in steps ≤ 5.0: `interference ≤ 0` with the rig at every step. OD-G10 is not a sound solid (`brep_valid` 0, as OD-G01 A-28): every `interference` with it here and in U-03 is read as `clearance > 0` with `detail["inside"] == False` | Hard | CAD | client (the portafilter goes in and out) | `clearance`, `interference` (OD-G10: `clearance` fallback) | A-07 |
 | REQ-05 | Headroom | the locked OD-G10's lowest point ≥ 50.0 above the base's top face (y 10) | Hard | CAD | client (catch the water, see a leak) | `envelope` of the placed OD-G10 | A-07 |
 | REQ-06 | Bench fixing | four Ø4.5 ± 0.1 holes along Y through the base at (x ±105.0, z ±40.0), offset ≤ 0.10, each axis clear of the rig from y 10 to y 300 within r 4.0 (a driver from above) | Hard | CAD | client | `locate_bore`; `interference` of four Ø8 cylinders with the rig = 0 | A-11 |
@@ -164,7 +164,7 @@ the Usta to confirm with §5.
 | A-08 | Material | PLA, 1240 kg/m³ (the Usta, 2026-10-02); cold water only, so PLA's heat limit does not apply | the rig creeps under a long hold | the Usta's message | the first test | OPEN |
 | A-09 | Kobra Max 3 build volume | 420 × 420 × 500 (Anycubic specification, not in the machine file), as OD-C11 A-09; the rig is 240 × 150 on the bed, 120 tall (too big for the K1C's 220) | does not fit | OD-C11 A-09 | the Usta reads the printer | OPEN |
 | A-10 | Print orientation | lying on its rear face (z −60), build direction +Z, no supports; the layers lie in XY planes, along the plate's bending stress | the long thin profile warps; a brim is needed | this spec | first print | OPEN |
-| A-12 | Pair-B screw heads | the OEM screws through OD-G01's pair-B holes have heads ≤ Ø17.7 (no size in any input; an M3 or M3.5 head is ≈ Ø6 … 7) | a bigger head or a tool needs the window larger | this spec (plan Q2) | the screws in hand | OPEN |
+| A-12 | Pair-B screw heads | the OEM screws through OD-G01's pair-B holes have heads ≤ Ø17.9 (no size in any input; an M3 or M3.5 head is ≈ Ø6 … 7) | a bigger head or a tool needs the window larger | this spec (plan Q2) | the screws in hand | OPEN |
 | A-11 | Bench fixing | four M4 or 4 mm wood screws through the base's wings into the bench, or two clamps on the wings; the locking torque (≈ 7.5 N·m) and the test load stay inside the rig | the bench cannot take screws: clamps only | this spec | the Usta's bench | OPEN |
 
 ## §7 Decisions
@@ -173,7 +173,6 @@ the Usta to confirm with §5.
 |---|---|---|---|
 | 2026-10-02 | OD-G01 accepted with its documented deviation (REQ-12 left to this bench test); everything printed in PLA for now | the Usta (message 22:58 UTC) | REQUEST.md |
 | 2026-10-02 | job opened at PUBLIC; C1 proposed | Oğuz | job_start |
-| 2026-10-03 | spec 1.2: REQ-03's apex band and pair-B threshold did not stack with R 30.0 ± 0.1 (REPORT v01 §4 note 2, §9.1); apex band ± 0.15, pair-B axes ≥ 10.87 with the A-12 head bound Ø17.7; no geometry change. Ratified on the standing instruction | Oğuz (standing instruction) | usta_gate spec_ratified 1.2 |
 | 2026-10-02 | spec 1.1 on the designer's J2 questions: Q1 → the walls stop at z +40 (a relief of the front 20, option (b) in its simplest form; the plate and base keep z ±60 for the seat and the screws); Q2 → the axis-distance check, head size ledgered as A-12; Q3 → every teardrop at 45.1°, apexes as §4; Q4 → the locked handle at ≈ 34° in §2; Q5 → the `clearance` fallback for OD-G10 accepted (OD-G01 A-28). Ratified on the standing instruction | Oğuz (standing instruction) | usta_gate spec_ratified 1.1 |
 | 2026-10-02 | spec 1.0 ratified and C1 chosen on the Usta's standing instruction and the message of 2026-10-02 22:58 UTC; INTAKE_v01 §4 questions answered by §4 and §6 as design choices, all A-## rows; the Usta confirms or amends §5 and §6 at the next opportunity | the Usta (standing instruction), recorded by Oğuz | usta_gate spec_ratified, concept_picked |
 
@@ -181,7 +180,6 @@ the Usta to confirm with §5.
 
 | Version | Date | Change |
 |---|---|---|
-| 1.2 | 2026-10-03 | after the J3 build (REPORT v01 §4, §9.1): REQ-03 tolerances made to stack (apex ± 0.15, pair-B ≥ 10.87, A-12 ≤ Ø17.7); no geometry change; spec 1.1 kept as `DESIGN_SPEC_v1.1.md` |
 | 1.1 | 2026-10-02 | after the J2 plan (DESIGN_PLAN §7): walls z −60 … +40 (REQ-04a was 0.0 at φ +15° on 1.0); teardrops 45.1°; A-12; OD-G10 `clearance` fallback in REQ-04; handle ≈ 34°; spec 1.0 kept as `DESIGN_SPEC_v1.0.md` |
 | 1.0 | 2026-10-02 | INTAKE_v01 read; ratified |
 | 0.1 | 2026-10-02 | first draft from the OD-G01 v03 records, the OD-C05 spec and INTAKE_v01 |

@@ -1,0 +1,28 @@
+{
+ "params": {
+  "depth_z0": -60.0,
+  "depth_z1": 60.0,
+  "wall_z1": 40.0,
+  "base_x": 120.0,
+  "base_t": 10.0,
+  "wall_x_in": 75.0,
+  "wall_x_out": 90.0,
+  "plate_y0": 135.0,
+  "plate_y1": 150.0,
+  "plate_x": 90.0,
+  "corner_chamfer": 10.0,
+  "screw_x": 44.0,
+  "screw_z": 44.0,
+  "screw_d": 3.4,
+  "cbore_d": 6.5,
+  "cbore_floor_y": 138.0,
+  "window_r": 30.0,
+  "theta_roof": 45.14,
+  "bench_x": 105.0,
+  "bench_z": 40.0,
+  "bench_d": 4.5,
+  "overrun": 1.0
+ },
+ "step": "od_t01_rig_C1_theta_roof_high_v01.step",
+ "step_sha256": "bd63176abb6cba95c96e5c83636046cf1184e8aa27d3222ad7f31b66f4409ba5"
+}

@@ -5,15 +5,15 @@ code: ODT01
 milestone: M1
 title: "Open Dedica OD-T01 group head bench pressure-test rig"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
-next_action: "J3: await WP-03's REPORT, then send the J4 review"
+next_action: "J4: await RV01; APPROVED -> J5 delivery into open-dedica, REVISE -> packet to the Usta"
 data_class: PUBLIC
 size: S
 process: [FDM]
 gate_sections: [U, D, J]
 spec: "00_Spec/DESIGN_SPEC.md"
-spec_version: "1.1"
+spec_version: "1.2"
 workspace: "${OGUZ_JOBS}/20261002-od-t01-pressure-test-rig"
 delivery: "${OGUZ_DELIVERY}/20261002-od-t01-pressure-test-rig"
 artifacts: "${OGUZ_ARTIFACTS}/20261002-od-t01-pressure-test-rig"
@@ -28,6 +28,7 @@ usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-10-02"}
   - {gate: concept_picked, outcome: C1, date: "2026-10-02"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-10-02"}
+  - {gate: spec_ratified, outcome: "1.2", date: "2026-10-03"}
 deliverables: [STEP, STL, "3MF", scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null

@@ -1,0 +1,9 @@
+{
+ "tolerance_mm": 0.01,
+ "angular_tolerance_rad": 0.1,
+ "triangles": 5752,
+ "max_sagitta_mm": 0.0049966441054580864,
+ "stl": "od_t01_rig_C1_bench_d_high_v01.stl",
+ "sha256": "67188c8cab6cf6ce6b9ab83c8a41e1baa392ffd6aa8c6f277d61840344deaecd",
+ "meshed_from": "od_t01_rig_C1_bench_d_high_v01.step"
+}
