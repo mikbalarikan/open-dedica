@@ -1,0 +1,274 @@
+[
+ {
+  "tag": "z-100_H1_H2_inserts",
+  "view": "top",
+  "through": [
+   90.0,
+   50.0,
+   -100.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_top_z-100_H1_H2_inserts.png",
+  "sha256_at_write": "20cbcd2153a170545f1de4f2085ee04e3b7014bfaeeb6ed70174438c2c7cedae",
+  "plane": "z = -100.00 mm",
+  "cut_area_mm2": 500.7601712417463,
+  "cut_faces": 1,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "z-157.5_H5_H6_pins",
+  "view": "top",
+  "through": [
+   90.0,
+   50.0,
+   -157.515
+  ],
+  "file": "03_Sections/od_c08_tray_v01_top_z-157.5_H5_H6_pins.png",
+  "sha256_at_write": "6382c2eac986e610923cc35051ee2b58640baec50d25ff3951d3e2055563b390",
+  "plane": "z = -157.51 mm",
+  "cut_area_mm2": 506.255753809965,
+  "cut_faces": 1,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "z-222_rear_holes",
+  "view": "top",
+  "through": [
+   90.0,
+   50.0,
+   -222.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_top_z-222_rear_holes.png",
+  "sha256_at_write": "9bdd66c0d58ea9762fe1e4f49557f8c4e7078761b89e156a4986682a3673b360",
+  "plane": "z = -222.00 mm",
+  "cut_area_mm2": 392.79999999999995,
+  "cut_faces": 3,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "z-78_front_holes",
+  "view": "top",
+  "through": [
+   90.0,
+   50.0,
+   -78.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_top_z-78_front_holes.png",
+  "sha256_at_write": "cd04361ebe0c1996483b7043af58981a8c864a1503aaf008255c75be176591ba",
+  "plane": "z = -78.00 mm",
+  "cut_area_mm2": 392.79999999999995,
+  "cut_faces": 3,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "z-86.5_gusset",
+  "view": "top",
+  "through": [
+   90.0,
+   50.0,
+   -86.5
+  ],
+  "file": "03_Sections/od_c08_tray_v01_top_z-86.5_gusset.png",
+  "sha256_at_write": "96fa67317ccca30d1a0196c23823493e18c85d0fd84d54a435bee6583a281294",
+  "plane": "z = -86.50 mm",
+  "cut_area_mm2": 620.0,
+  "cut_faces": 1,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "z-168_tie_slot",
+  "view": "top",
+  "through": [
+   90.0,
+   50.0,
+   -168.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_top_z-168_tie_slot.png",
+  "sha256_at_write": "35837c7db250dc05aa90c995cabed425ad244eed0d06e129a5ec08649684c060",
+  "plane": "z = -168.00 mm",
+  "cut_area_mm2": 408.0,
+  "cut_faces": 2,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "x74.5_wall",
+  "view": "left",
+  "through": [
+   74.5,
+   50.0,
+   -150.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_left_x74.5_wall.png",
+  "sha256_at_write": "938e82334fc516d77bbabf4ec542c1600bef598486982dafd1b6d79b5b6d742c",
+  "plane": "x = 74.50 mm",
+  "cut_area_mm2": 14687.999999999998,
+  "cut_faces": 1,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "x79.4_standoffs",
+  "view": "left",
+  "through": [
+   79.4,
+   50.0,
+   -150.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_left_x79.4_standoffs.png",
+  "sha256_at_write": "8e42662377d3ae8f3ac12a832bac1e4944a42a1492c32e53c12e3290d1b6c9dd",
+  "plane": "x = 79.40 mm",
+  "cut_area_mm2": 1027.695559215387,
+  "cut_faces": 5,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "x83.5_pins",
+  "view": "left",
+  "through": [
+   83.5,
+   50.0,
+   -150.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_left_x83.5_pins.png",
+  "sha256_at_write": "2ac719bf7346a7ffacd956665fe81b00c016cac25d085ea82be1e73ee9f28bfb",
+  "plane": "x = 83.50 mm",
+  "cut_area_mm2": 795.0893800988146,
+  "cut_faces": 3,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "y2_flange",
+  "view": "front",
+  "through": [
+   90.0,
+   2.0,
+   -150.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_front_y2_flange.png",
+  "sha256_at_write": "69064a409d082daa490977cc3b47c2b14bccdf6013e4c5d54512355dbc93a162",
+  "plane": "y = 2.00 mm",
+  "cut_area_mm2": 6203.6831889244995,
+  "cut_faces": 1,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "y88_slots",
+  "view": "front",
+  "through": [
+   90.0,
+   88.0,
+   -150.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_front_y88_slots.png",
+  "sha256_at_write": "21be331cd7d3f2d1e67a8b8f45753e8a6b858adc35918a35604a78bcc654e14a",
+  "plane": "y = 88.00 mm",
+  "cut_area_mm2": 456.0,
+  "cut_faces": 5,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "y80_H1_H5",
+  "view": "front",
+  "through": [
+   90.0,
+   80.0,
+   -150.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_front_y80_H1_H5.png",
+  "sha256_at_write": "c124b9824d3e7fd860f9dd9a58c29e2c174c23d5d77723deadc398966d72eb65",
+  "plane": "y = 80.00 mm",
+  "cut_area_mm2": 549.3998875519803,
+  "cut_faces": 1,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "asm_z-100_board_H1_H2",
+  "view": "top",
+  "through": [
+   90.0,
+   50.0,
+   -100.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_top_asm_z-100_board_H1_H2.png",
+  "sha256_at_write": "4659069f7949a636389f7d5b3f2e43ed3004f3a92d609160ba0b25035257f4e5",
+  "plane": "z = -100.00 mm",
+  "cut_area_mm2": 3088.7352107892716,
+  "cut_faces": 7,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "asm_z-157.5_board_pins",
+  "view": "top",
+  "through": [
+   90.0,
+   50.0,
+   -157.515
+  ],
+  "file": "03_Sections/od_c08_tray_v01_top_asm_z-157.5_board_pins.png",
+  "sha256_at_write": "717a12a29c878423261e43a050a429dfd04de8abaef2fb1badb632ea7d5da7cc",
+  "plane": "z = -157.51 mm",
+  "cut_area_mm2": 3044.0455202343646,
+  "cut_faces": 6,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "asm_y80_board_H1_H5",
+  "view": "front",
+  "through": [
+   90.0,
+   80.0,
+   -150.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_front_asm_y80_board_H1_H5.png",
+  "sha256_at_write": "996fd9d4516e9b6391123a22f4c36d3392ce12b469a6dc005aa07e2d8f1e0c7e",
+  "plane": "y = 80.00 mm",
+  "cut_area_mm2": 1639.4835165423042,
+  "cut_faces": 5,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ },
+ {
+  "tag": "asm_z-222_screw_path",
+  "view": "top",
+  "through": [
+   90.0,
+   50.0,
+   -222.0
+  ],
+  "file": "03_Sections/od_c08_tray_v01_top_asm_z-222_screw_path.png",
+  "sha256_at_write": "548f6f5712e012d3781b1a9e2d1c9c83a3667f9cb8e34733469ff405561d3c42",
+  "plane": "z = -222.00 mm",
+  "cut_area_mm2": 2844.7999999994,
+  "cut_faces": 5,
+  "nothing_clipped": 0,
+  "nothing_clipped_status": "MEASURED",
+  "reason": ""
+ }
+]

@@ -1,0 +1,562 @@
+{
+ "nominal_export": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "flange_hole_d_hi": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "flange_hole_d_lo": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "flange_hole_dx_hi": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "flange_hole_dx_lo": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "insert_d_hi": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "insert_d_lo": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "insert_depth_hi": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "insert_depth_lo": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "nominal": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "pass_d_hi": {
+  "x-100.0_y30.0": {
+   "diameter": 12.1,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 1.9499999999999993,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.1,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 1.9500000000000028,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.1,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.383981132056601,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "pass_d_lo": {
+  "x-100.0_y30.0": {
+   "diameter": 11.9,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0500000000000007,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 11.9,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.049999999999997,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 11.9,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.483981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "wall_z_hi": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -298.9,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -298.9
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -298.9,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -298.9
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -298.9,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -298.9
+   ]
+  }
+ },
+ "wall_z_lo": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.1,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.1
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.1,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.1
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.1,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.1
+   ]
+  }
+ },
+ "y_top_hi": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ },
+ "y_top_lo": {
+  "x-100.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -100.0,
+    22.0,
+    -299.0
+   ]
+  },
+  "x-84.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 2.0,
+   "at": [
+    -76.0,
+    30.0,
+    -299.0
+   ]
+  },
+  "x95.0_y30.0": {
+   "diameter": 12.0,
+   "z_inner_end": -299.0,
+   "common_mm3": 0.0,
+   "clearance_mm": 3.433981132056604,
+   "at": [
+    100.0,
+    22.0,
+    -299.0
+   ]
+  }
+ }
+}

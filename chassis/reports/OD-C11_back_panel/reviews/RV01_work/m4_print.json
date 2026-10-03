@@ -1,0 +1,169 @@
+{
+ "min_wall": {
+  "name": "min_wall",
+  "measured": 3.0,
+  "unit": "mm",
+  "at": [
+   116.0,
+   0.0,
+   -299.0
+  ],
+  "params": {
+   "spacing_mm": 0.7,
+   "opposition_deg": 25.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "rays": 237649,
+   "lost_rays": 0,
+   "face_pairs_measured_exactly": 10,
+   "face_pairs_never_opposed": 29,
+   "face_pairs_failed": 0,
+   "exact_points_without_normal": 0,
+   "solids": 4,
+   "largest_step_mm": 0.697248,
+   "wide": {
+    "opposition_deg": 45.0,
+    "measured": 3.0,
+    "at": [
+     76.0,
+     34.0,
+     -302.0
+    ]
+   },
+   "hit_at": [
+    116.0,
+    0.0,
+    -302.0
+   ],
+   "from_face": "plane",
+   "to_face": "plane",
+   "found_by": "exact"
+  }
+ },
+ "min_wall_wide": {
+  "name": "min_wall_wide",
+  "measured": 3.0,
+  "unit": "mm",
+  "at": [
+   76.0,
+   34.0,
+   -302.0
+  ],
+  "params": {
+   "spacing_mm": 0.7,
+   "opposition_deg": 45.0
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "gated_mm": 3.0,
+   "gated_opposition_deg": 25.0,
+   "gated_at": [
+    116.0,
+    0.0,
+    -299.0
+   ],
+   "rays": 237649,
+   "solids": 4,
+   "largest_step_mm": 0.697248,
+   "face_pairs_measured_exactly": 10
+  }
+ },
+ "overhang_whole": {
+  "name": "overhang_census",
+  "measured": 0.0,
+  "unit": "deg",
+  "at": [
+   -95.0,
+   0.0,
+   -280.3
+  ],
+  "params": {
+   "build_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "min_deg": 45.0,
+   "spacing_mm": 0.7,
+   "bed_mm": 0.01
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "samples": 248684,
+   "downward_samples": 564,
+   "below_min_deg": 264,
+   "bed_samples": 100410,
+   "bed_height_mm": -302.0,
+   "largest_step_mm": 0.697248,
+   "sampling_bound_deg": 0.006256,
+   "seeds_refined": 24,
+   "per_kind_least_deg": {
+    "cylinder": 0.0
+   }
+  }
+ },
+ "refilled_validity": {
+  "solid_count": 1,
+  "brep_valid": 1,
+  "naked_edges": 0
+ },
+ "refilled_faces": 57,
+ "overhang_refilled": {
+  "name": "overhang_census",
+  "measured": 90.0,
+  "unit": "deg",
+  "at": null,
+  "params": {
+   "build_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "min_deg": 45.0,
+   "spacing_mm": 0.7,
+   "bed_mm": 0.01
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "samples": 247630,
+   "downward_samples": 0,
+   "below_min_deg": 0,
+   "bed_samples": 100410,
+   "bed_height_mm": -302.0,
+   "largest_step_mm": 0.697248,
+   "sampling_bound_deg": 0.0,
+   "seeds_refined": 0,
+   "per_kind_least_deg": {}
+  }
+ },
+ "flat_ceiling_spans": {
+  "name": "flat_ceiling_spans",
+  "measured": 0.0,
+  "unit": "mm",
+  "at": null,
+  "params": {
+   "build_dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "max_span": 5.0,
+   "spacing_mm": 0.7,
+   "flat_deg": 10.0,
+   "min_support_mm": 0.8,
+   "bed_mm": 0.01
+  },
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "ceilings": [],
+   "bed_faces": 1,
+   "sampling_bound_mm": 0.0
+  }
+ }
+}

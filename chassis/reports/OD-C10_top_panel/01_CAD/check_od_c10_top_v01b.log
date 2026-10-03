@@ -1,0 +1,246 @@
+U-01.solid_count                                     PASS          1                      == 1                         0.0          
+U-01.brep_valid                                      PASS          1                      == 1                         0.0          
+U-01.naked_edges                                     PASS          0                      == 0                         0.0          
+exactly_one_solid                                    PASS          1                      == 1                         0.0          
+U-02.size_x                                          PASS          240.0                  in [239.9, 240.1]            0.1          
+envelope_within_spec.size_x                          PASS          240.0                  in [239.9, 240.1]            0.1          
+U-02.size_y                                          PASS          39.5                   in [39.4, 39.6]              0.1          
+envelope_within_spec.size_y                          PASS          39.5                   in [39.4, 39.6]              0.1          
+U-02.size_z                                          PASS          405.0                  in [404.9, 405.1]            0.1          
+envelope_within_spec.size_z                          PASS          405.0                  in [404.9, 405.1]            0.1          
+envelope_within_spec.position.min_x                  PASS          -120.0                 in [-120.1, -119.9]          0.1          
+envelope_within_spec.position.max_x                  PASS          120.0                  in [119.9, 120.1]            0.1          
+envelope_within_spec.position.min_y                  PASS          210.5                  in [210.4, 210.6]            0.1          
+envelope_within_spec.position.max_y                  PASS          250.0                  in [249.9, 250.1]            0.1          
+envelope_within_spec.position.min_z                  PASS          -305.0                 in [-305.1, -304.9]          0.1          
+envelope_within_spec.position.max_z                  PASS          100.0                  in [99.9, 100.1]             0.1          
+D-02.size_x                                          PASS_ASSUMED  240.0                  <= 420.0                     180.0        
+D-02.size_z                                          PASS_ASSUMED  405.0                  <= 420.0                     15.0         
+D-02.size_y                                          PASS_ASSUMED  39.5                   <= 500.0                     460.5        
+REQ-01.max_y                                         PASS_ASSUMED  250.0                  in [249.9, 250.1]            0.1          
+REQ-02.min_x                                         PASS_ASSUMED  -120.0                 in [-120.1, -119.9]          0.1          
+REQ-02.max_x                                         PASS_ASSUMED  120.0                  in [119.9, 120.1]            0.1          
+REQ-02.min_z                                         PASS_ASSUMED  -305.0                 in [-305.1, -304.9]          0.1          
+REQ-02.max_z                                         PASS_ASSUMED  100.0                  in [99.9, 100.1]             0.1          
+REQ-01.top_faces                                     PASS_ASSUMED  1                      == 1                         0.0          
+REQ-01.top_face_y                                    PASS_ASSUMED  250.0                  in [249.9, 250.1]            0.1          
+REQ-01.skin_t.x0_z-150                               PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-01.skin_t.x-100_z-100                            PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-01.skin_t.x100_z0                                PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-01.skin_t.x0_z0                                  PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-01.skin_t.x-80_z80                               PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.corner_r.x110_z-295.a15                       PASS_ASSUMED  9.999999967235793      in [9.9, 10.1]               0.099999967  
+REQ-02.corner_r.x110_z-295.a45                       PASS_ASSUMED  9.999999976014935      in [9.9, 10.1]               0.099999976  
+REQ-02.corner_r.x110_z-295.a75                       PASS_ASSUMED  9.999999991220857      in [9.9, 10.1]               0.099999991  
+REQ-02.skirt_t.corner_x110_z-295                     PASS_ASSUMED  2.999999981381878      in [2.9, 3.1]                0.099999981  
+REQ-02.corner_r.x110_z90.a285                        PASS_ASSUMED  9.999999991220857      in [9.9, 10.1]               0.099999991  
+REQ-02.corner_r.x110_z90.a315                        PASS_ASSUMED  9.999999976014935      in [9.9, 10.1]               0.099999976  
+REQ-02.corner_r.x110_z90.a345                        PASS_ASSUMED  9.999999967235793      in [9.9, 10.1]               0.099999967  
+REQ-02.skirt_t.corner_x110_z90                       PASS_ASSUMED  2.999999981381878      in [2.9, 3.1]                0.099999981  
+REQ-02.corner_r.x-110_z-295.a105                     PASS_ASSUMED  10.0                   in [9.9, 10.1]               0.1          
+REQ-02.corner_r.x-110_z-295.a135                     PASS_ASSUMED  10.0                   in [9.9, 10.1]               0.1          
+REQ-02.corner_r.x-110_z-295.a165                     PASS_ASSUMED  10.0                   in [9.9, 10.1]               0.1          
+REQ-02.skirt_t.corner_x-110_z-295                    PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.corner_r.x-110_z90.a195                       PASS_ASSUMED  10.0                   in [9.9, 10.1]               0.1          
+REQ-02.corner_r.x-110_z90.a225                       PASS_ASSUMED  10.0                   in [9.9, 10.1]               0.1          
+REQ-02.corner_r.x-110_z90.a255                       PASS_ASSUMED  10.0                   in [9.9, 10.1]               0.1          
+REQ-02.skirt_t.corner_x-110_z90                      PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.+x.at0_-150                           PASS_ASSUMED  2.9999999999899956     in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.+x.at0_0                              PASS_ASSUMED  2.9999999999899956     in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.+x.at0_60                             PASS_ASSUMED  2.9999999999899956     in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.-x.at0_-150                           PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.-x.at0_0                              PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.-x.at0_60                             PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.-z.at-40_0                            PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.-z.at0_0                              PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.-z.at40_0                             PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.+z.at-40_0                            PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.+z.at0_0                              PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+REQ-02.skirt_t.+z.at40_0                             PASS_ASSUMED  3.0                    in [2.9, 3.1]                0.1          
+U-05.skirt_bottom_faces                              PASS          1                      == 1                         0.0          
+REQ-02.skirt_bottom_y                                PASS_ASSUMED  215.0                  in [214.9, 215.1]            0.1          
+U-05.plane_faces                                     PASS          59                     == 59                        0.0          
+feature_census.plane_faces                           PASS          59                     == 59                        0.0          
+U-05.cylinder_faces                                  PASS          22                     == 22                        0.0          
+feature_census.cylinder_faces                        PASS          22                     == 22                        0.0          
+U-05.concave_cylinders                               PASS          12                     == 12                        0.0          
+feature_census.concave_cylinders                     PASS          12                     == 12                        0.0          
+U-05.convex_cylinders                                PASS          10                     == 10                        0.0          
+feature_census.convex_cylinders                      PASS          10                     == 10                        0.0          
+U-05.cone_faces                                      PASS          0                      == 0                         0.0          
+feature_census.cone_faces                            PASS          0                      == 0                         0.0          
+U-05.sphere_faces                                    PASS          0                      == 0                         0.0          
+feature_census.sphere_faces                          PASS          0                      == 0                         0.0          
+U-05.torus_faces                                     PASS          0                      == 0                         0.0          
+feature_census.torus_faces                           PASS          0                      == 0                         0.0          
+U-05.bspline_faces                                   PASS          0                      == 0                         0.0          
+feature_census.bspline_faces                         PASS          0                      == 0                         0.0          
+U-05.other_faces                                     PASS          0                      == 0                         0.0          
+feature_census.other_faces                           PASS          0                      == 0                         0.0          
+U-05.bores                                           PASS          8                      == 8                         0.0          
+feature_census.bores                                 PASS          8                      == 8                         0.0          
+U-05.bores_d34_y_through                             PASS          4                      == 4                         0.0          
+U-05.bores_d65_y_blind                               PASS          4                      == 4                         0.0          
+U-05.column_cylinders                                PASS          4                      == 4                         0.0          
+feature_census.column_cylinders                      PASS          4                      == 4                         0.0          
+U-05.pad_cylinders                                   PASS          2                      == 2                         0.0          
+feature_census.pad_cylinders                         PASS          2                      == 2                         0.0          
+U-05.bulk_rib_sides                                  PASS          8                      == 8                         0.0          
+feature_census.bulk_rib_sides                        PASS          8                      == 8                         0.0          
+U-05.bulk_rib_hyp                                    PASS          4                      == 4                         0.0          
+feature_census.bulk_rib_hyp                          PASS          4                      == 4                         0.0          
+U-05.rear_rib_sides                                  PASS          16                     == 16                        0.0          
+feature_census.rear_rib_sides                        PASS          16                     == 16                        0.0          
+U-05.rear_rib_bottoms                                PASS          4                      == 4                         0.0          
+feature_census.rear_rib_bottoms                      PASS          4                      == 4                         0.0          
+U-05.rear_rib_hyp                                    PASS          4                      == 4                         0.0          
+feature_census.rear_rib_hyp                          PASS          4                      == 4                         0.0          
+U-05.skin_under_faces                                PASS          3                      == 3                         0.0          
+feature_census.skin_under_faces                      PASS          3                      == 3                         0.0          
+REQ-03.x65_z-60.column_offset                        PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-03.x65_z-60.column_d_face                        PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-03.x65_z-60.column_d_x                           PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-03.x65_z-60.column_d_z                           PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-03.x65_z-60.column_bottom_y                      PASS_ASSUMED  215.0                  in [214.95, 215.05]          0.05         
+REQ-03.x65_z-60.hole_d                               PASS_ASSUMED  3.4                    in [3.3, 3.5]                0.1          
+REQ-03.x65_z-60.hole_offset                          PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-03.x65_z-60.hole_through                         PASS_ASSUMED  1                      == 1                         0.0          
+D-04a.x65_z-60.hole_d                                PASS          3.4                    >= 3.25                      0.15         
+REQ-03.x65_z-60.cbore_d                              PASS_ASSUMED  6.5                    in [6.4, 6.6]                0.1          
+REQ-03.x65_z-60.cbore_offset                         PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-07.x65_z-60.cbore_d                              PASS          6.5                    in [6.4, 6.6]                0.1          
+REQ-03.x65_z-60.cbore_floor_y                        PASS_ASSUMED  218.0                  in [217.9, 218.1]            0.1          
+REQ-07.x65_z-60.cbore_mouth_y                        PASS          250.0                  in [249.9, 250.1]            0.1          
+REQ-07.x65_z-60.driver_path_interference             PASS          0.0                    <= 0.0                       0.0          
+REQ-03.x65_z-210.column_offset                       PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-03.x65_z-210.column_d_face                       PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-03.x65_z-210.column_d_x                          PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-03.x65_z-210.column_d_z                          PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-03.x65_z-210.column_bottom_y                     PASS_ASSUMED  215.0                  in [214.95, 215.05]          0.05         
+REQ-03.x65_z-210.hole_d                              PASS_ASSUMED  3.4                    in [3.3, 3.5]                0.1          
+REQ-03.x65_z-210.hole_offset                         PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-03.x65_z-210.hole_through                        PASS_ASSUMED  1                      == 1                         0.0          
+D-04a.x65_z-210.hole_d                               PASS          3.4                    >= 3.25                      0.15         
+REQ-03.x65_z-210.cbore_d                             PASS_ASSUMED  6.5                    in [6.4, 6.6]                0.1          
+REQ-03.x65_z-210.cbore_offset                        PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-07.x65_z-210.cbore_d                             PASS          6.5                    in [6.4, 6.6]                0.1          
+REQ-03.x65_z-210.cbore_floor_y                       PASS_ASSUMED  218.0                  in [217.9, 218.1]            0.1          
+REQ-07.x65_z-210.cbore_mouth_y                       PASS          250.0                  in [249.9, 250.1]            0.1          
+REQ-07.x65_z-210.driver_path_interference            PASS          0.0                    <= 0.0                       0.0          
+REQ-04.x90_z-293.column_offset                       PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-04.x90_z-293.column_d_face                       PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-04.x90_z-293.column_d_x                          PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-04.x90_z-293.column_d_z                          PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-04.x90_z-293.column_bottom_y                     PASS_ASSUMED  215.0                  in [214.95, 215.05]          0.05         
+REQ-04.x90_z-293.hole_d                              PASS_ASSUMED  3.4                    in [3.3, 3.5]                0.1          
+REQ-04.x90_z-293.hole_offset                         PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-04.x90_z-293.hole_through                        PASS_ASSUMED  1                      == 1                         0.0          
+D-04a.x90_z-293.hole_d                               PASS          3.4                    >= 3.25                      0.15         
+REQ-04.x90_z-293.cbore_d                             PASS_ASSUMED  6.5                    in [6.4, 6.6]                0.1          
+REQ-04.x90_z-293.cbore_offset                        PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-07.x90_z-293.cbore_d                             PASS          6.5                    in [6.4, 6.6]                0.1          
+REQ-04.x90_z-293.cbore_floor_y                       PASS_ASSUMED  218.0                  in [217.9, 218.1]            0.1          
+REQ-07.x90_z-293.cbore_mouth_y                       PASS          250.0                  in [249.9, 250.1]            0.1          
+REQ-07.x90_z-293.driver_path_interference            PASS          0.0                    <= 0.0                       0.0          
+REQ-04.x-90_z-293.column_offset                      PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-04.x-90_z-293.column_d_face                      PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-04.x-90_z-293.column_d_x                         PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-04.x-90_z-293.column_d_z                         PASS_ASSUMED  12.0                   in [11.9, 12.1]              0.1          
+REQ-04.x-90_z-293.column_bottom_y                    PASS_ASSUMED  215.0                  in [214.95, 215.05]          0.05         
+REQ-04.x-90_z-293.hole_d                             PASS_ASSUMED  3.4                    in [3.3, 3.5]                0.1          
+REQ-04.x-90_z-293.hole_offset                        PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-04.x-90_z-293.hole_through                       PASS_ASSUMED  1                      == 1                         0.0          
+D-04a.x-90_z-293.hole_d                              PASS          3.4                    >= 3.25                      0.15         
+REQ-04.x-90_z-293.cbore_d                            PASS_ASSUMED  6.5                    in [6.4, 6.6]                0.1          
+REQ-04.x-90_z-293.cbore_offset                       PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-07.x-90_z-293.cbore_d                            PASS          6.5                    in [6.4, 6.6]                0.1          
+REQ-04.x-90_z-293.cbore_floor_y                      PASS_ASSUMED  218.0                  in [217.9, 218.1]            0.1          
+REQ-07.x-90_z-293.cbore_mouth_y                      PASS          250.0                  in [249.9, 250.1]            0.1          
+REQ-07.x-90_z-293.driver_path_interference           PASS          0.0                    <= 0.0                       0.0          
+REQ-05.x48_z30.pad_offset                            PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-05.x48_z30.pad_d_x                               PASS_ASSUMED  10.0                   in [9.9, 10.1]               0.1          
+REQ-05.x48_z30.pad_d_z                               PASS_ASSUMED  10.0                   in [9.9, 10.1]               0.1          
+REQ-05.x48_z30.pad_bottom_y                          PASS_ASSUMED  210.5                  in [210.45, 210.55]          0.05         
+REQ-05.x-48_z30.pad_offset                           PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-05.x-48_z30.pad_d_x                              PASS_ASSUMED  10.0                   in [9.9, 10.1]               0.1          
+REQ-05.x-48_z30.pad_d_z                              PASS_ASSUMED  10.0                   in [9.9, 10.1]               0.1          
+REQ-05.x-48_z30.pad_bottom_y                         PASS_ASSUMED  210.5                  in [210.45, 210.55]          0.05         
+REQ-06.headroom_interference                         PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+D-03b.flat_ceiling_span                              PASS_ASSUMED  3.1385840240914478     <= 5.0                       1.861415976  
+U-03.seat.x65_z-60.c02.clearance                     PASS_ASSUMED  0.0                    == 0.0                       0.0          
+U-03.seat.x65_z-60.c02.interference                  PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03.coaxial.x65_z-60                                PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-03.x65_z-60.coaxial_with_insert                  PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+U-03.seat.x65_z-210.c02.clearance                    PASS_ASSUMED  0.0                    == 0.0                       0.0          
+U-03.seat.x65_z-210.c02.interference                 PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03.coaxial.x65_z-210                               PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-03.x65_z-210.coaxial_with_insert                 PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+U-03.seat.x90_z-293.c11.clearance                    PASS_ASSUMED  0.0                    == 0.0                       0.0          
+U-03.seat.x90_z-293.c11.interference                 PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03.coaxial.x90_z-293                               PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-04.x90_z-293.coaxial_with_insert                 PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+U-03.seat.x-90_z-293.c11.clearance                   PASS_ASSUMED  0.0                    == 0.0                       0.0          
+U-03.seat.x-90_z-293.c11.interference                PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03.coaxial.x-90_z-293                              PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+REQ-04.x-90_z-293.coaxial_with_insert                PASS_ASSUMED  0.0                    <= 0.1                       0.1          
+U-03.c05.clearance                                   PASS_ASSUMED  0.5                    in [0.45, 0.55]              0.05         
+U-03.c05.clearance_without_pads                      PASS_ASSUMED  6.4031242374328485     >= 0.5                       5.903124237  
+U-03.c05.interference                                PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+REQ-05.x48_z30.clearance_to_c05                      PASS_ASSUMED  0.5                    in [0.45, 0.55]              0.05         
+REQ-05.x-48_z30.clearance_to_c05                     PASS_ASSUMED  0.5                    in [0.45, 0.55]              0.05         
+REQ-05.x48_z30.hub_r                                 PASS_ASSUMED  43.041648597857254     >= 40.0                      3.041648598  
+REQ-05.x48_z30.to_counterbores                       PASS_ASSUMED  33.940046219457976     >= 20.0                      13.940046219 
+REQ-05.x-48_z30.hub_r                                PASS_ASSUMED  43.041648597857254     >= 40.0                      3.041648598  
+REQ-05.x-48_z30.to_counterbores                      PASS_ASSUMED  33.940046219457976     >= 20.0                      13.940046219 
+U-03.c07.clearance                                   PASS_ASSUMED  167.29913329123374     >= 3.0                       164.299133291 
+U-03.plate.clearance                                 PASS_ASSUMED  210.5                  >= 3.0                       207.5        
+U-03.c02.clearance_away                              PASS_ASSUMED  14.330925825473228     >= 0.5                       13.830925825 
+U-03.c11.clearance_contact                           PASS_ASSUMED  0.0                    == 0.0                       0.0          
+U-03.c11.interference                                PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03.c11.clearance_away                              PASS_ASSUMED  1.0                    >= 0.5                       0.5          
+U-03.c11.corner_x+.clearance                         PASS_ASSUMED  0.0                    == 0.0                       0.0          
+U-03.c11.corner_x+.interference                      PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03.c11.corner_x-.clearance                         PASS_ASSUMED  0.0                    == 0.0                       0.0          
+U-03.c11.corner_x-.interference                      PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03.c11.contact_area_outside_designed_regions       PASS_ASSUMED  0                      <= 0.0                       0.0          
+U-03(b).plate.worst_interference                     PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03(b).c02.worst_interference                       PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03(b).c05.worst_interference                       PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03(b).c07.worst_interference                       PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-03(b).c11.worst_interference                       PASS_ASSUMED  0.0                    <= 0.0                       0.0          
+U-04.part.schema                                     PASS          1                      == 1                         0.0          
+U-04.part.solids                                     PASS          1                      == 1                         0.0          
+U-04.part.volume_delta                               PASS          1.0972144082188606e-07 in [0.0, 0.0]                -1.1e-07     
+U-04.part.faces_delta                                PASS          0                      == 0                         0.0          
+U-04.part.labels                                     PASS          1                      == 1                         0.0          
+U-04.part.valid_after                                PASS          1                      == 1                         0.0          
+U-04.assembly.schema                                 PASS          1                      == 1                         0.0          
+U-04.assembly.solids                                 PASS          6                      == 6                         0.0          
+U-04.assembly.faces_delta                            PASS          0                      == 0                         0.0          
+U-04.assembly.labels                                 PASS          1                      == 1                         0.0          
+U-04.assembly.valid_after                            PASS          1                      == 1                         0.0          
+U-04.assembly.od_c10_top.volume_delta                PASS          1.0972144082188606e-07 in [0.0, 0.0]                -1.1e-07     
+U-04.assembly.od_c01_frame.volume_delta              PASS          0.0                    in [0.0, 0.0]                0.0          
+U-04.assembly.od_c02_bulkhead.volume_delta           PASS          4.656612873077393e-10  in [0.0, 0.0]                -4.656612873077393e-10 
+U-04.assembly.od_c05_carrier.volume_delta            PASS          1.3387762010097504e-09 in [0.0, 0.0]                -1e-09       
+U-04.assembly.od_c07_valve_mount.volume_delta        PASS          1.1641532182693481e-09 in [0.0, 0.0]                -1e-09       
+U-04.assembly.od_c11_back.volume_delta               PASS          2.3283064365386963e-10 in [0.0, 0.0]                -2.3283064365386963e-10 
+D-01a                                                PASS          2.7499999999774873     >= 0.8                       1.95         
+D-01b                                                PASS          2.7499999999774873     >= 2.0                       0.75         
+D-06a                                                PASS          2.7499999999774873     >= 1.0                       1.75         
+U-06(Soft)                                           PASS          2.7499999999774873     >= 2.0                       0.75         
+D-03a                                                PASS_ASSUMED  90.0                   >= 45.0                      45.0         
+U-07.mesh.bodies                                     PASS          1                      == 1                         0.0          
+U-07.mesh.naked_edges                                PASS          0                      == 0                         0.0          
+U-07.mesh.winding                                    PASS          1                      == 1                         0.0          
+U-07.angular_tolerance                               PASS          0.17                   <= 0.17890034867493382       0.008900349  
+U-07.tolerance                                       PASS          0.01                   <= 0.01                      0.0          
+U-07.max_sagitta                                     PASS          0.005384670409338475   <= 0.01                      0.00461533   
+U-07.max_sagitta_delivered                           PASS          0.005384670399172438   <= 0.01                      0.00461533   
+U-08                                                 N/A           None                   N/A                          None         
+D-05a                                                N/A           None                   N/A                          None         
+D-05b                                                N/A           None                   N/A                          None         
+D-07                                                 N/A           None                   N/A                          None         
+J-05                                                 N/A           None                   N/A                          None         
+E-06                                                 INCONCLUSIVE  None                   reviewer                     None         
+REQ-08(Soft)                                         INCONCLUSIVE  None                   bench                        None         

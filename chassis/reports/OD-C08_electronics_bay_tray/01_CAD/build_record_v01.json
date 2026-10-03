@@ -1,0 +1,129 @@
+{
+ "params": {
+  "wall_x0": 73.0,
+  "wall_x1": 76.0,
+  "wall_y1": 92.0,
+  "flange_x1": 112.0,
+  "flange_t": 4.0,
+  "z_min": -230.0,
+  "z_max": -70.0,
+  "gusset_t": 3.0,
+  "gusset_leg": 20.0,
+  "gusset_z0": [
+   -230.0,
+   -212.0,
+   -88.0,
+   -73.0
+  ],
+  "seat_x": 82.438,
+  "insert_boss_d": 10.0,
+  "bore_d": 4.0,
+  "bore_depth": 6.0,
+  "insert_yz": [
+   [
+    80.0,
+    -100.0
+   ],
+   [
+    27.99,
+    -100.01
+   ]
+  ],
+  "pin_boss_d": 6.0,
+  "pin_d": 1.8,
+  "pin_len": 2.5,
+  "pin_yz": [
+   [
+    81.98,
+    -157.52
+   ],
+   [
+    30.99,
+    -157.51
+   ]
+  ],
+  "hole_d": 3.4,
+  "hole_xz": [
+   [
+    88.0,
+    -222.0
+   ],
+   [
+    106.0,
+    -222.0
+   ],
+   [
+    88.0,
+    -78.0
+   ],
+   [
+    106.0,
+    -78.0
+   ]
+  ],
+  "slot_w_z": 2.0,
+  "slot_h_y": 4.0,
+  "slot_y0": 86.0,
+  "slot_zc": [
+   -176.0,
+   -168.0,
+   -122.0,
+   -114.0
+  ],
+  "overshoot": 1.0,
+  "shift_y": 0.0,
+  "shift_z": 0.0,
+  "stl_tol": 0.01,
+  "stl_ang": 0.2,
+  "board_origin": [
+   84.0,
+   80.0,
+   -100.0
+  ],
+  "board_x_dir": [
+   0.0,
+   0.0,
+   -1.0
+  ],
+  "board_z_dir": [
+   1.0,
+   0.0,
+   0.0
+  ]
+ },
+ "solids": 1,
+ "volume_mm3": 70595.99875683186,
+ "step": {
+  "path": "02_STEP_STL/od_c08_tray_C1_v01.step",
+  "sha256": "63686c46a32753fdd8bcd669a9a89bcb5ffc853a0c15f7777048caca446cda91"
+ },
+ "stl": {
+  "path": "02_STEP_STL/od_c08_tray_C1_v01.stl",
+  "sha256": "2ac2db7f63d8ffc91c9d0e3af809a9964152b68826eba5e76eb237d36c22df49",
+  "tolerance_mm": 0.01,
+  "angular_tolerance_rad": 0.2,
+  "triangles": 3244,
+  "max_sagitta_mm": 0.004893867400154526,
+  "tolerance": 0.01,
+  "angular_tolerance": 0.2,
+  "max_sagitta": 0.004893867400154526
+ },
+ "assembly": {
+  "path": "02_STEP_STL/od_c08_assembly_C1_v01.step",
+  "sha256": "21e6f254048e2239216b63e493d764510f7e002180ba0498bf91406c56ecc9aa"
+ },
+ "placements": {
+  "od_e01_power_pcb": {
+   "joint": "RigidJoint joint_board on the tray (machine frame) -> own_frame",
+   "location": "Location: (position=(84, 80, -100), orientation=(0, 90, 0))"
+  },
+  "od_c01_frame": {
+   "joint": "RigidJoint joint_plate on the tray (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))"
+  },
+  "od_c02_bulkhead": {
+   "joint": "RigidJoint joint_c02 on the tray (machine frame) -> own_frame",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))"
+  }
+ }
+}

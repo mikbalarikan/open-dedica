@@ -1,0 +1,230 @@
+{
+ "col65m60": [
+  [
+   "rv01_col65m60_v01_front.png",
+   {
+    "view": "front",
+    "section": "SECTION A-A",
+    "plane": "y = 230.00 mm",
+    "cut_faces": 5,
+    "cut_area_mm2": 4385.588446734051,
+    "visible_edges": 96,
+    "margin_mm": 29.639919624916278
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ],
+  [
+   "rv01_col65m60_v01_top.png",
+   {
+    "view": "top",
+    "section": "SECTION A-A",
+    "plane": "z = -60.00 mm",
+    "cut_faces": 2,
+    "cut_area_mm2": 1322.7999999981641,
+    "visible_edges": 55,
+    "margin_mm": 19.5240187541862
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ],
+  [
+   "rv01_col65m60_v01_left.png",
+   {
+    "view": "left",
+    "section": "SECTION A-A",
+    "plane": "x = 65.00 mm",
+    "cut_faces": 3,
+    "cut_area_mm2": 1738.6,
+    "visible_edges": 61,
+    "margin_mm": 28.602960482250506
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ]
+ ],
+ "col90m293": [
+  [
+   "rv01_col90m293_v01_front.png",
+   {
+    "view": "front",
+    "section": "SECTION A-A",
+    "plane": "y = 230.00 mm",
+    "cut_faces": 5,
+    "cut_area_mm2": 4385.588446734053,
+    "visible_edges": 96,
+    "margin_mm": 30.111198928332218
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ],
+  [
+   "rv01_col90m293_v01_top.png",
+   {
+    "view": "top",
+    "section": "SECTION A-A",
+    "plane": "z = -293.00 mm",
+    "cut_faces": 3,
+    "cut_area_mm2": 1243.59999999938,
+    "visible_edges": 49,
+    "margin_mm": 20.08257200267917
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ],
+  [
+   "rv01_col90m293_v01_left.png",
+   {
+    "view": "left",
+    "section": "SECTION A-A",
+    "plane": "x = 90.00 mm",
+    "cut_faces": 2,
+    "cut_area_mm2": 1572.7999999999997,
+    "visible_edges": 36,
+    "margin_mm": 29.074239785666446
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ]
+ ],
+ "rearrib94": [
+  [
+   "rv01_rearrib94_v01_left.png",
+   {
+    "view": "left",
+    "section": "SECTION A-A",
+    "plane": "x = 94.00 mm",
+    "cut_faces": 1,
+    "cut_area_mm2": 2020.4442719104327,
+    "visible_edges": 19,
+    "margin_mm": 28.371841929002013
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ]
+ ],
+ "pads": [
+  [
+   "rv01_pads_v01_top.png",
+   {
+    "view": "top",
+    "section": "SECTION A-A",
+    "plane": "z = 30.00 mm",
+    "cut_faces": 1,
+    "cut_area_mm2": 1641.9999999993793,
+    "visible_edges": 53,
+    "margin_mm": 18.2440187541862
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ],
+  [
+   "rv01_pads_v01_left.png",
+   {
+    "view": "left",
+    "section": "SECTION A-A",
+    "plane": "x = 48.00 mm",
+    "cut_faces": 1,
+    "cut_area_mm2": 1794.4999999999545,
+    "visible_edges": 51,
+    "margin_mm": 26.710247823174818
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ]
+ ],
+ "cbore_floor": [
+  [
+   "rv01_cbore_floor_v01_front.png",
+   {
+    "view": "front",
+    "section": "SECTION A-A",
+    "plane": "y = 217.50 mm",
+    "cut_faces": 5,
+    "cut_area_mm2": 4419.716506843335,
+    "visible_edges": 66,
+    "margin_mm": 30.105773610180847
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ]
+ ],
+ "skirt_corner": [
+  [
+   "rv01_skirt_corner_v01_left.png",
+   {
+    "view": "left",
+    "section": "SECTION A-A",
+    "plane": "x = 113.00 mm",
+    "cut_faces": 1,
+    "cut_area_mm2": 1417.9858999740154,
+    "visible_edges": 13,
+    "margin_mm": 29.727968104320205
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ],
+  [
+   "rv01_skirt_corner_v01_top.png",
+   {
+    "view": "top",
+    "section": "SECTION A-A",
+    "plane": "z = -300.50 mm",
+    "cut_faces": 1,
+    "cut_area_mm2": 1339.4871279418082,
+    "visible_edges": 29,
+    "margin_mm": 20.027378540312714
+   },
+   {
+    "nothing_clipped": [
+     0,
+     "MEASURED"
+    ]
+   }
+  ]
+ ]
+}
