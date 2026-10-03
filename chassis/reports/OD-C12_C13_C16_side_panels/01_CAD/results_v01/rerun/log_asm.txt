@@ -1,0 +1,206 @@
+[   10.9s] U-03a static
+[   11.0s] U-03a lip
+[   11.1s] U-03a coax/REQ-05
+[   12.1s] REQ-06
+[   12.7s] REQ-07
+[   27.5s] U-03b
+od_side_assembly assembly labels match the placements PASS                1.0000 bool  == 1                     margin   +0.0000  
+od_side_assembly assembly solids = placed part files (max centre / volume delta) PASS                0.0000 mm    <= 0.0                   margin   -0.0000  
+od_side_assembly assembly: one solid per label PASS                0.0000 count == 0                     margin   +0.0000  
+od_side_assembly assembly solid count         PASS               19.0000 count == 19                    margin   +0.0000  
+od_side_assembly U-03a contact od_c13_right|OD-C01 clearance PASS_ASSUMED        0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c13_right|OD-C01 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c13_right|OD-C02 clearance PASS               39.5000 mm    >= 0.5                   margin  +39.0000  
+od_side_assembly U-03a od_c13_right|OD-C05 clearance PASS               55.0000 mm    >= 0.5                   margin  +54.5000  
+od_side_assembly U-03a od_c13_right|OD-C07 clearance PASS_ASSUMED      184.0000 mm    >= 0.5                   margin +183.5000  
+od_side_assembly U-03a od_c13_right|OD-C08 clearance PASS_ASSUMED        5.0000 mm    >= 0.5                   margin   +4.5000  
+od_side_assembly U-03a contact od_c13_right|OD-C10 clearance PASS_ASSUMED        0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c13_right|OD-C10 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c13_right|OD-C11 clearance PASS_ASSUMED        3.0000 mm    >= 0.5                   margin   +2.5000  
+od_side_assembly U-03a od_c13_right|OD-C15-RF clearance PASS                6.0000 mm    >= 0.5                   margin   +5.5000  
+od_side_assembly U-03a od_c13_right|OD-C15-LF clearance PASS              218.0969 mm    >= 0.5                   margin +217.5969  
+od_side_assembly U-03a od_c13_right|OD-C15-RR clearance PASS                6.0000 mm    >= 0.5                   margin   +5.5000  
+od_side_assembly U-03a od_c13_right|OD-C15-LR clearance PASS              218.0969 mm    >= 0.5                   margin +217.5969  
+od_side_assembly U-03a od_c13_right|od_c12_left clearance PASS              220.0000 mm    >= 0.5                   margin +219.5000  
+od_side_assembly U-03a contact od_c13_right|od_c16_bracket_R1 clearance PASS                0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c13_right|od_c16_bracket_R1 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c13_right|od_c16_bracket_L1 clearance PASS              215.0000 mm    >= 0.5                   margin +214.5000  
+od_side_assembly U-03a contact od_c13_right|od_c16_bracket_R2 clearance PASS                0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c13_right|od_c16_bracket_R2 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c13_right|od_c16_bracket_L2 clearance PASS              215.0000 mm    >= 0.5                   margin +214.5000  
+od_side_assembly U-03a contact od_c13_right|od_c16_bracket_R3 clearance PASS                0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c13_right|od_c16_bracket_R3 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c13_right|od_c16_bracket_L3 clearance PASS              215.0000 mm    >= 0.5                   margin +214.5000  
+od_side_assembly U-03a contact od_c12_left|OD-C01 clearance PASS_ASSUMED        0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c12_left|OD-C01 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c12_left|OD-C02 clearance PASS              169.5000 mm    >= 0.5                   margin +169.0000  
+od_side_assembly U-03a od_c12_left|OD-C05 clearance PASS               55.0000 mm    >= 0.5                   margin  +54.5000  
+od_side_assembly U-03a od_c12_left|OD-C07 clearance PASS_ASSUMED        0.9000 mm    >= 0.5                   margin   +0.4000  
+od_side_assembly U-03a od_c12_left|OD-C08 clearance PASS_ASSUMED      190.0000 mm    >= 0.5                   margin +189.5000  
+od_side_assembly U-03a contact od_c12_left|OD-C10 clearance PASS_ASSUMED        0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c12_left|OD-C10 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c12_left|OD-C11 clearance PASS_ASSUMED        3.0000 mm    >= 0.5                   margin   +2.5000  
+od_side_assembly U-03a od_c12_left|OD-C15-RF clearance PASS              218.0969 mm    >= 0.5                   margin +217.5969  
+od_side_assembly U-03a od_c12_left|OD-C15-LF clearance PASS                6.0000 mm    >= 0.5                   margin   +5.5000  
+od_side_assembly U-03a od_c12_left|OD-C15-RR clearance PASS              218.0969 mm    >= 0.5                   margin +217.5969  
+od_side_assembly U-03a od_c12_left|OD-C15-LR clearance PASS                6.0000 mm    >= 0.5                   margin   +5.5000  
+od_side_assembly U-03a od_c12_left|od_c16_bracket_R1 clearance PASS              215.0000 mm    >= 0.5                   margin +214.5000  
+od_side_assembly U-03a contact od_c12_left|od_c16_bracket_L1 clearance PASS                0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c12_left|od_c16_bracket_L1 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c12_left|od_c16_bracket_R2 clearance PASS              215.0000 mm    >= 0.5                   margin +214.5000  
+od_side_assembly U-03a contact od_c12_left|od_c16_bracket_L2 clearance PASS                0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c12_left|od_c16_bracket_L2 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c12_left|od_c16_bracket_R3 clearance PASS              215.0000 mm    >= 0.5                   margin +214.5000  
+od_side_assembly U-03a contact od_c12_left|od_c16_bracket_L3 clearance PASS                0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c12_left|od_c16_bracket_L3 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c16_bracket_R1|OD-C01 clearance PASS_ASSUMED        0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c16_bracket_R1|OD-C01 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c16_bracket_R1|OD-C02 clearance PASS               30.4138 mm    >= 0.5                   margin  +29.9138  
+od_side_assembly U-03a od_c16_bracket_R1|OD-C05 clearance PASS              188.9577 mm    >= 0.5                   margin +188.4577  
+od_side_assembly U-03a od_c16_bracket_R1|OD-C07 clearance PASS_ASSUMED      192.9378 mm    >= 0.5                   margin +192.4378  
+od_side_assembly U-03a od_c16_bracket_R1|OD-C08 clearance PASS_ASSUMED       24.0000 mm    >= 0.5                   margin  +23.5000  
+od_side_assembly U-03a od_c16_bracket_R1|OD-C10 clearance PASS              199.0000 mm    >= 0.5                   margin +198.5000  
+od_side_assembly U-03a od_c16_bracket_R1|OD-C11 clearance PASS_ASSUMED        7.0000 mm    >= 0.5                   margin   +6.5000  
+od_side_assembly U-03a od_c16_bracket_R1|OD-C15-RF clearance PASS              335.0631 mm    >= 0.5                   margin +334.5631  
+od_side_assembly U-03a od_c16_bracket_R1|OD-C15-LF clearance PASS              393.0488 mm    >= 0.5                   margin +392.5488  
+od_side_assembly U-03a od_c16_bracket_R1|OD-C15-RR clearance PASS               17.2699 mm    >= 0.5                   margin  +16.7699  
+od_side_assembly U-03a od_c16_bracket_R1|OD-C15-LR clearance PASS              200.6024 mm    >= 0.5                   margin +200.1024  
+od_side_assembly U-03a od_c16_bracket_R1|od_c16_bracket_L1 clearance PASS              196.0000 mm    >= 0.5                   margin +195.5000  
+od_side_assembly U-03a od_c16_bracket_R1|od_c16_bracket_R2 clearance PASS              231.0000 mm    >= 0.5                   margin +230.5000  
+od_side_assembly U-03a od_c16_bracket_R1|od_c16_bracket_L2 clearance PASS              302.9472 mm    >= 0.5                   margin +302.4472  
+od_side_assembly U-03a od_c16_bracket_R1|od_c16_bracket_R3 clearance PASS              308.0000 mm    >= 0.5                   margin +307.5000  
+od_side_assembly U-03a od_c16_bracket_R1|od_c16_bracket_L3 clearance PASS              365.0753 mm    >= 0.5                   margin +364.5753  
+od_side_assembly U-03a contact od_c16_bracket_L1|OD-C01 clearance PASS_ASSUMED        0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c16_bracket_L1|OD-C01 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c16_bracket_L1|OD-C02 clearance PASS              157.6230 mm    >= 0.5                   margin +157.1230  
+od_side_assembly U-03a od_c16_bracket_L1|OD-C05 clearance PASS              188.9577 mm    >= 0.5                   margin +188.4577  
+od_side_assembly U-03a od_c16_bracket_L1|OD-C07 clearance PASS_ASSUMED      100.0000 mm    >= 0.5                   margin  +99.5000  
+od_side_assembly U-03a od_c16_bracket_L1|OD-C08 clearance PASS_ASSUMED      172.6760 mm    >= 0.5                   margin +172.1760  
+od_side_assembly U-03a od_c16_bracket_L1|OD-C10 clearance PASS              199.0000 mm    >= 0.5                   margin +198.5000  
+od_side_assembly U-03a od_c16_bracket_L1|OD-C11 clearance PASS_ASSUMED        7.0000 mm    >= 0.5                   margin   +6.5000  
+od_side_assembly U-03a od_c16_bracket_L1|OD-C15-RF clearance PASS              393.0488 mm    >= 0.5                   margin +392.5488  
+od_side_assembly U-03a od_c16_bracket_L1|OD-C15-LF clearance PASS              335.0631 mm    >= 0.5                   margin +334.5631  
+od_side_assembly U-03a od_c16_bracket_L1|OD-C15-RR clearance PASS              200.6024 mm    >= 0.5                   margin +200.1024  
+od_side_assembly U-03a od_c16_bracket_L1|OD-C15-LR clearance PASS               17.2699 mm    >= 0.5                   margin  +16.7699  
+od_side_assembly U-03a od_c16_bracket_L1|od_c16_bracket_R2 clearance PASS              302.9472 mm    >= 0.5                   margin +302.4472  
+od_side_assembly U-03a od_c16_bracket_L1|od_c16_bracket_L2 clearance PASS              231.0000 mm    >= 0.5                   margin +230.5000  
+od_side_assembly U-03a od_c16_bracket_L1|od_c16_bracket_R3 clearance PASS              365.0753 mm    >= 0.5                   margin +364.5753  
+od_side_assembly U-03a od_c16_bracket_L1|od_c16_bracket_L3 clearance PASS              308.0000 mm    >= 0.5                   margin +307.5000  
+od_side_assembly U-03a contact od_c16_bracket_R2|OD-C01 clearance PASS_ASSUMED        0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c16_bracket_R2|OD-C01 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c16_bracket_R2|OD-C02 clearance PASS               27.8927 mm    >= 0.5                   margin  +27.3927  
+od_side_assembly U-03a od_c16_bracket_R2|OD-C05 clearance PASS               43.0000 mm    >= 0.5                   margin  +42.5000  
+od_side_assembly U-03a od_c16_bracket_R2|OD-C07 clearance PASS_ASSUMED      165.4358 mm    >= 0.5                   margin +164.9358  
+od_side_assembly U-03a od_c16_bracket_R2|OD-C08 clearance PASS_ASSUMED       47.0000 mm    >= 0.5                   margin  +46.5000  
+od_side_assembly U-03a od_c16_bracket_R2|OD-C10 clearance PASS              199.0000 mm    >= 0.5                   margin +198.5000  
+od_side_assembly U-03a od_c16_bracket_R2|OD-C11 clearance PASS_ASSUMED      254.0000 mm    >= 0.5                   margin +253.5000  
+od_side_assembly U-03a od_c16_bracket_R2|OD-C15-RF clearance PASS               88.2397 mm    >= 0.5                   margin  +87.7397  
+od_side_assembly U-03a od_c16_bracket_R2|OD-C15-LF clearance PASS              220.6018 mm    >= 0.5                   margin +220.1018  
+od_side_assembly U-03a od_c16_bracket_R2|OD-C15-RR clearance PASS              263.0803 mm    >= 0.5                   margin +262.5803  
+od_side_assembly U-03a od_c16_bracket_R2|OD-C15-LR clearance PASS              333.4783 mm    >= 0.5                   margin +332.9783  
+od_side_assembly U-03a od_c16_bracket_R2|od_c16_bracket_L2 clearance PASS              196.0000 mm    >= 0.5                   margin +195.5000  
+od_side_assembly U-03a od_c16_bracket_R2|od_c16_bracket_R3 clearance PASS               61.0000 mm    >= 0.5                   margin  +60.5000  
+od_side_assembly U-03a od_c16_bracket_R2|od_c16_bracket_L3 clearance PASS              205.2730 mm    >= 0.5                   margin +204.7730  
+od_side_assembly U-03a contact od_c16_bracket_L2|OD-C01 clearance PASS_ASSUMED        0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c16_bracket_L2|OD-C01 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c16_bracket_L2|OD-C02 clearance PASS              157.1560 mm    >= 0.5                   margin +156.6560  
+od_side_assembly U-03a od_c16_bracket_L2|OD-C05 clearance PASS               43.0000 mm    >= 0.5                   margin  +42.5000  
+od_side_assembly U-03a od_c16_bracket_L2|OD-C07 clearance PASS_ASSUMED       12.0000 mm    >= 0.5                   margin  +11.5000  
+od_side_assembly U-03a od_c16_bracket_L2|OD-C08 clearance PASS_ASSUMED      177.3415 mm    >= 0.5                   margin +176.8415  
+od_side_assembly U-03a od_c16_bracket_L2|OD-C10 clearance PASS              199.0000 mm    >= 0.5                   margin +198.5000  
+od_side_assembly U-03a od_c16_bracket_L2|OD-C11 clearance PASS_ASSUMED      254.0000 mm    >= 0.5                   margin +253.5000  
+od_side_assembly U-03a od_c16_bracket_L2|OD-C15-RF clearance PASS              220.6018 mm    >= 0.5                   margin +220.1018  
+od_side_assembly U-03a od_c16_bracket_L2|OD-C15-LF clearance PASS               88.2397 mm    >= 0.5                   margin  +87.7397  
+od_side_assembly U-03a od_c16_bracket_L2|OD-C15-RR clearance PASS              333.4783 mm    >= 0.5                   margin +332.9783  
+od_side_assembly U-03a od_c16_bracket_L2|OD-C15-LR clearance PASS              263.0803 mm    >= 0.5                   margin +262.5803  
+od_side_assembly U-03a od_c16_bracket_L2|od_c16_bracket_R3 clearance PASS              205.2730 mm    >= 0.5                   margin +204.7730  
+od_side_assembly U-03a od_c16_bracket_L2|od_c16_bracket_L3 clearance PASS               61.0000 mm    >= 0.5                   margin  +60.5000  
+od_side_assembly U-03a contact od_c16_bracket_R3|OD-C01 clearance PASS_ASSUMED        0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c16_bracket_R3|OD-C01 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c16_bracket_R3|OD-C02 clearance PASS               88.2326 mm    >= 0.5                   margin  +87.7326  
+od_side_assembly U-03a od_c16_bracket_R3|OD-C05 clearance PASS               85.5862 mm    >= 0.5                   margin  +85.0862  
+od_side_assembly U-03a od_c16_bracket_R3|OD-C07 clearance PASS_ASSUMED      187.4727 mm    >= 0.5                   margin +186.9727  
+od_side_assembly U-03a od_c16_bracket_R3|OD-C08 clearance PASS_ASSUMED      124.0000 mm    >= 0.5                   margin +123.5000  
+od_side_assembly U-03a od_c16_bracket_R3|OD-C10 clearance PASS              199.0000 mm    >= 0.5                   margin +198.5000  
+od_side_assembly U-03a od_c16_bracket_R3|OD-C11 clearance PASS_ASSUMED      331.0000 mm    >= 0.5                   margin +330.5000  
+od_side_assembly U-03a od_c16_bracket_R3|OD-C15-RF clearance PASS               12.7765 mm    >= 0.5                   margin  +12.2765  
+od_side_assembly U-03a od_c16_bracket_R3|OD-C15-LF clearance PASS              200.0649 mm    >= 0.5                   margin +199.5649  
+od_side_assembly U-03a od_c16_bracket_R3|OD-C15-RR clearance PASS              340.0621 mm    >= 0.5                   margin +339.5621  
+od_side_assembly U-03a od_c16_bracket_R3|OD-C15-LR clearance PASS              397.3351 mm    >= 0.5                   margin +396.8351  
+od_side_assembly U-03a od_c16_bracket_R3|od_c16_bracket_L3 clearance PASS              196.0000 mm    >= 0.5                   margin +195.5000  
+od_side_assembly U-03a contact od_c16_bracket_L3|OD-C01 clearance PASS_ASSUMED        0.0000 mm    == 0.0                   margin   +0.0000  
+od_side_assembly U-03a contact od_c16_bracket_L3|OD-C01 interference PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03a od_c16_bracket_L3|OD-C02 clearance PASS              178.0590 mm    >= 0.5                   margin +177.5590  
+od_side_assembly U-03a od_c16_bracket_L3|OD-C05 clearance PASS               85.5862 mm    >= 0.5                   margin  +85.0862  
+od_side_assembly U-03a od_c16_bracket_L3|OD-C07 clearance PASS_ASSUMED       89.0000 mm    >= 0.5                   margin  +88.5000  
+od_side_assembly U-03a od_c16_bracket_L3|OD-C08 clearance PASS_ASSUMED      211.2274 mm    >= 0.5                   margin +210.7274  
+od_side_assembly U-03a od_c16_bracket_L3|OD-C10 clearance PASS              199.0000 mm    >= 0.5                   margin +198.5000  
+od_side_assembly U-03a od_c16_bracket_L3|OD-C11 clearance PASS_ASSUMED      331.0000 mm    >= 0.5                   margin +330.5000  
+od_side_assembly U-03a od_c16_bracket_L3|OD-C15-RF clearance PASS              200.0649 mm    >= 0.5                   margin +199.5649  
+od_side_assembly U-03a od_c16_bracket_L3|OD-C15-LF clearance PASS               12.7765 mm    >= 0.5                   margin  +12.2765  
+od_side_assembly U-03a od_c16_bracket_L3|OD-C15-RR clearance PASS              397.3351 mm    >= 0.5                   margin +396.8351  
+od_side_assembly U-03a od_c16_bracket_L3|OD-C15-LR clearance PASS              340.0621 mm    >= 0.5                   margin +339.5621  
+od_side_assembly U-03a lip od_c13_right|OD-C10 gap PASS_ASSUMED        0.4000 mm    in [0.35, 0.45]          margin   +0.0500  
+od_side_assembly U-03a lip od_c12_left|OD-C10 gap PASS_ASSUMED        0.4000 mm    in [0.35, 0.45]          margin   +0.0500  
+od_side_assembly U-03a coaxial od_c16_bracket_R1 insert bore | od_c13_right hole PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly REQ-05 plate hole od_c16_bracket_R1 at (+104.5, -262) PASS_ASSUMED        0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly U-03a coaxial od_c16_bracket_L1 insert bore | od_c12_left hole PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly REQ-05 plate hole od_c16_bracket_L1 at (-104.5, -262) PASS_ASSUMED        0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly U-03a coaxial od_c16_bracket_R2 insert bore | od_c13_right hole PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly REQ-05 plate hole od_c16_bracket_R2 at (+104.5, -15) PASS_ASSUMED        0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly U-03a coaxial od_c16_bracket_L2 insert bore | od_c12_left hole PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly REQ-05 plate hole od_c16_bracket_L2 at (-104.5, -15) PASS_ASSUMED        0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly U-03a coaxial od_c16_bracket_R3 insert bore | od_c13_right hole PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly REQ-05 plate hole od_c16_bracket_R3 at (+104.5, +62) PASS_ASSUMED        0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly U-03a coaxial od_c16_bracket_L3 insert bore | od_c12_left hole PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly REQ-05 plate hole od_c16_bracket_L3 at (-104.5, +62) PASS_ASSUMED        0.0000 mm    <= 0.1                   margin   +0.1000  
+od_side_assembly REQ-06 (+104.5,-262) to plate edge PASS_ASSUMED       15.5000 mm    >= 8.0                   margin   +7.5000  
+od_side_assembly REQ-06 (+104.5,-262) to nearest OD-C01 hole PASS_ASSUMED       33.4552 mm    >= 6.0                   margin  +27.4552  
+od_side_assembly REQ-06 (+104.5,-262) to nearest handed-over insert PASS_ASSUMED       22.1416 mm    >= 6.0                   margin  +16.1416  
+od_side_assembly REQ-06 (+104.5,-262) plate solid in a D8 disc (missing volume) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-06 (+104.5,-15) to plate edge PASS_ASSUMED       15.5000 mm    >= 8.0                   margin   +7.5000  
+od_side_assembly REQ-06 (+104.5,-15) to nearest OD-C01 hole PASS_ASSUMED       49.6009 mm    >= 6.0                   margin  +43.6009  
+od_side_assembly REQ-06 (+104.5,-15) to nearest handed-over insert PASS_ASSUMED       63.0179 mm    >= 6.0                   margin  +57.0179  
+od_side_assembly REQ-06 (+104.5,-15) plate solid in a D8 disc (missing volume) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-06 (+104.5,+62) to plate edge PASS_ASSUMED       15.5000 mm    >= 8.0                   margin   +7.5000  
+od_side_assembly REQ-06 (+104.5,+62) to nearest OD-C01 hole PASS_ASSUMED       28.5351 mm    >= 6.0                   margin  +22.5351  
+od_side_assembly REQ-06 (+104.5,+62) to nearest handed-over insert PASS_ASSUMED      140.0080 mm    >= 6.0                   margin +134.0080  
+od_side_assembly REQ-06 (+104.5,+62) plate solid in a D8 disc (missing volume) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-06 (-104.5,-262) to plate edge PASS_ASSUMED       15.5000 mm    >= 8.0                   margin   +7.5000  
+od_side_assembly REQ-06 (-104.5,-262) to nearest OD-C01 hole PASS_ASSUMED       33.4552 mm    >= 6.0                   margin  +27.4552  
+od_side_assembly REQ-06 (-104.5,-262) to nearest handed-over insert PASS_ASSUMED       22.1416 mm    >= 6.0                   margin  +16.1416  
+od_side_assembly REQ-06 (-104.5,-262) plate solid in a D8 disc (missing volume) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-06 (-104.5,-15) to plate edge PASS_ASSUMED       15.5000 mm    >= 8.0                   margin   +7.5000  
+od_side_assembly REQ-06 (-104.5,-15) to nearest OD-C01 hole PASS_ASSUMED       28.3064 mm    >= 6.0                   margin  +22.3064  
+od_side_assembly REQ-06 (-104.5,-15) to nearest handed-over insert PASS_ASSUMED      202.5469 mm    >= 6.0                   margin +196.5469  
+od_side_assembly REQ-06 (-104.5,-15) plate solid in a D8 disc (missing volume) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-06 (-104.5,+62) to plate edge PASS_ASSUMED       15.5000 mm    >= 8.0                   margin   +7.5000  
+od_side_assembly REQ-06 (-104.5,+62) to nearest OD-C01 hole PASS_ASSUMED       28.5351 mm    >= 6.0                   margin  +22.5351  
+od_side_assembly REQ-06 (-104.5,+62) to nearest handed-over insert PASS_ASSUMED      238.0257 mm    >= 6.0                   margin +232.0257  
+od_side_assembly REQ-06 (-104.5,+62) plate solid in a D8 disc (missing volume) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 keep-out D8x2 at foot (+110,+90) PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 keep-out D8x2 at foot (-110,+90) PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 keep-out D8x2 at foot (+110,-295) PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 keep-out D8x2 at foot (-110,-295) PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 driver access od_c16_bracket_R1 (r4, y16..215) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 panel screw access od_c16_bracket_R1 (r4, 20 outside) PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 driver access od_c16_bracket_L1 (r4, y16..215) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 panel screw access od_c16_bracket_L1 (r4, 20 outside) PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 driver access od_c16_bracket_R2 (r4, y16..215) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 panel screw access od_c16_bracket_R2 (r4, 20 outside) PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 driver access od_c16_bracket_L2 (r4, y16..215) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 panel screw access od_c16_bracket_L2 (r4, 20 outside) PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 driver access od_c16_bracket_R3 (r4, y16..215) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 panel screw access od_c16_bracket_R3 (r4, 20 outside) PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 driver access od_c16_bracket_L3 (r4, y16..215) PASS_ASSUMED        0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly REQ-07 panel screw access od_c16_bracket_L3 (r4, 20 outside) PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  
+od_side_assembly U-03b path bracket od_c16_bracket_R1 down from +20 PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  worst 0.000000 mm3 first at offset 20.0 vs OD-C01; 11 poses x 16 solids; 1 solid pairs computed by boolean, the rest apart by bounding box
+od_side_assembly U-03b path bracket od_c16_bracket_L1 down from +20 PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  worst 0.000000 mm3 first at offset 20.0 vs OD-C01; 11 poses x 16 solids; 1 solid pairs computed by boolean, the rest apart by bounding box
+od_side_assembly U-03b path bracket od_c16_bracket_R2 down from +20 PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  worst 0.000000 mm3 first at offset 20.0 vs OD-C01; 11 poses x 16 solids; 1 solid pairs computed by boolean, the rest apart by bounding box
+od_side_assembly U-03b path bracket od_c16_bracket_L2 down from +20 PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  worst 0.000000 mm3 first at offset 20.0 vs OD-C01; 11 poses x 16 solids; 1 solid pairs computed by boolean, the rest apart by bounding box
+od_side_assembly U-03b path bracket od_c16_bracket_R3 down from +20 PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  worst 0.000000 mm3 first at offset 20.0 vs OD-C01; 11 poses x 16 solids; 1 solid pairs computed by boolean, the rest apart by bounding box
+od_side_assembly U-03b path bracket od_c16_bracket_L3 down from +20 PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  worst 0.000000 mm3 first at offset 20.0 vs OD-C01; 11 poses x 16 solids; 1 solid pairs computed by boolean, the rest apart by bounding box
+od_side_assembly U-03b path panel od_c13_right inward from 20 outside PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  worst 0.000000 mm3 first at offset 20.0 vs OD-C01; 11 poses x 17 solids; 24 solid pairs computed by boolean, the rest apart by bounding box
+od_side_assembly U-03b path panel od_c12_left inward from 20 outside PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  worst 0.000000 mm3 first at offset 20.0 vs OD-C01; 11 poses x 17 solids; 26 solid pairs computed by boolean, the rest apart by bounding box
+od_side_assembly U-03b path OD-C10 down from +40 PASS                0.0000 mm3   <= 0.0                   margin   +0.0000  worst 0.000000 mm3 first at offset 40.0 vs OD-C01; 21 poses x 18 solids; 16 solid pairs computed by boolean, the rest apart by bounding box
+WORST PASS_ASSUMED

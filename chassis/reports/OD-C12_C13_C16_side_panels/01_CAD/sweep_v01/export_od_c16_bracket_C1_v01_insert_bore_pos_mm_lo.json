@@ -1,0 +1,36 @@
+{
+ "step": "od_c16_bracket_C1_v01_insert_bore_pos_mm_lo.step",
+ "stl": "od_c16_bracket_C1_v01_insert_bore_pos_mm_lo.stl",
+ "roundtrip": {
+  "schema": [
+   1,
+   "MEASURED"
+  ],
+  "solids": [
+   1,
+   "MEASURED"
+  ],
+  "volume_delta": [
+   8.185452315956354e-12,
+   "MEASURED"
+  ],
+  "faces_delta": [
+   0,
+   "MEASURED"
+  ],
+  "labels": [
+   1,
+   "MEASURED"
+  ],
+  "valid_after": [
+   1,
+   "MEASURED"
+  ]
+ },
+ "stl_tolerance_mm": 0.01,
+ "stl_angular_rad": 0.31386632987537666,
+ "r_max": 3.25,
+ "triangles": 588,
+ "max_sagitta_mm": 0.004988137987642872,
+ "volume_mm3": 4329.984226761173
+}
