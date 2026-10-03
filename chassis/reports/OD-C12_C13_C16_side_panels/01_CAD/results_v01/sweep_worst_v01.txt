@@ -1,0 +1,75 @@
+od_c12_left     D-01a                  margin +1.2500 measured 2.049999999999994 mm [D-01a] at relief_floor_x hi PASS
+od_c12_left     D-01b                  margin +0.0500 measured 2.049999999999994 mm [D-01b] at relief_floor_x hi PASS
+od_c12_left     D-02                   margin +35.0000 measured 385.0 mm [D-02 bed length (z)] at lip_outer_x lo PASS_ASSUMED
+od_c12_left     D-03a                  margin +15.0000 measured 59.99999999998744 deg [D-03a] at lip_outer_x lo PASS
+od_c12_left     D-03b                  margin +5.0000 measured 0.0 mm [D-03b (corroboration; reviewer from sections)] at lip_outer_x lo PASS
+od_c12_left     D-04a                  margin +0.0500 measured 3.3 mm [D-04a hole z-262] at panel_hole_d lo PASS
+od_c12_left     D-04d                  margin +0.0500 measured 0.34999999989999253 mm [D-04d lip to OD-C10 skirt] at lip_outer_x hi PASS_ASSUMED
+od_c12_left     D-06a                  margin +1.0500 measured 2.049999999999994 mm [D-06a] at relief_floor_x hi PASS
+od_c12_left     REQ-01                 margin +0.0000 measured 1.0 count [REQ-01 outer face count] at lip_outer_x lo PASS
+od_c12_left     REQ-02                 margin -0.0000 measured 0.34999999989999253 mm [REQ-02 lip to OD-C10] at lip_outer_x hi PASS_ASSUMED
+od_c12_left     REQ-03                 margin -0.0000 measured 0.10000045520897549 mm [REQ-03 hole z-262 offset] at panel_hole_pos_mm lo PASS
+od_c12_left     REQ-04                 margin -0.0000 measured -117.85 mm [REQ-04 relief floor x] at relief_floor_x lo PASS_ASSUMED
+od_c12_left     U-01                   margin +0.0000 measured 1 count [U-01 solid_count] at lip_outer_x lo PASS
+od_c12_left     U-02                   margin +0.0706 measured 218.83937929011222 mm [U-02 size_y] at lip_outer_x hi PASS
+od_c12_left     U-04                   margin -0.0000 measured 2.7008354663848877e-08 mm3 [U-04 volume_delta] at lip_outer_x lo PASS
+od_c12_left     U-05                   margin +0.0000 measured 15 count [U-05 plane_faces] at lip_outer_x lo PASS
+od_c12_left     U-06                   margin +0.0500 measured 2.049999999999994 mm [U-06 (Soft)] at relief_floor_x hi PASS
+od_c12_left     U-07                   margin +0.0000 measured 0.4340738745346826 rad [U-07 angular tolerance] at lip_outer_x lo PASS
+od_c12_left     envelope_within_spec   margin +0.0706 measured 218.83937929011222 mm [envelope_within_spec size_y] at lip_outer_x hi PASS
+od_c12_left     exactly_one_solid      margin +0.0000 measured 1 count [exactly_one_solid] at lip_outer_x lo PASS
+od_c12_left     feature_census         margin +0.0000 measured 15 count [feature_census plane_faces] at lip_outer_x lo PASS
+od_c13_right    D-01a                  margin +2.2000 measured 2.999999999999997 mm [D-01a] at lip_outer_x lo PASS
+od_c13_right    D-01b                  margin +1.0000 measured 2.999999999999997 mm [D-01b] at lip_outer_x lo PASS
+od_c13_right    D-02                   margin +35.0000 measured 385.0 mm [D-02 bed length (z)] at lip_outer_x lo PASS_ASSUMED
+od_c13_right    D-03a                  margin +15.0000 measured 59.99999999998744 deg [D-03a] at lip_outer_x lo PASS
+od_c13_right    D-03b                  margin +5.0000 measured 0.0 mm [D-03b (corroboration; reviewer from sections)] at lip_outer_x lo PASS
+od_c13_right    D-04a                  margin +0.0500 measured 3.3 mm [D-04a hole z-262] at panel_hole_d lo PASS
+od_c13_right    D-04d                  margin +0.0500 measured 0.35000000000999876 mm [D-04d lip to OD-C10 skirt] at lip_outer_x hi PASS_ASSUMED
+od_c13_right    D-06a                  margin +2.0000 measured 2.999999999999997 mm [D-06a] at lip_outer_x lo PASS
+od_c13_right    REQ-01                 margin +0.0000 measured 1.0 count [REQ-01 outer face count] at lip_outer_x lo PASS
+od_c13_right    REQ-02                 margin -0.0000 measured 0.4500000000100073 mm [REQ-02 lip to OD-C10] at lip_outer_x lo PASS_ASSUMED
+od_c13_right    REQ-03                 margin -0.0000 measured 0.10000045520897549 mm [REQ-03 hole z-262 offset] at panel_hole_pos_mm lo PASS
+od_c13_right    U-01                   margin +0.0000 measured 1 count [U-01 solid_count] at lip_outer_x lo PASS
+od_c13_right    U-02                   margin +0.0706 measured 218.83937929011222 mm [U-02 size_y] at lip_outer_x hi PASS
+od_c13_right    U-04                   margin -0.0000 measured 1.9208528101444244e-08 mm3 [U-04 volume_delta] at lip_outer_x lo PASS
+od_c13_right    U-05                   margin +0.0000 measured 11 count [U-05 plane_faces] at lip_outer_x lo PASS
+od_c13_right    U-06                   margin +1.0000 measured 2.999999999999997 mm [U-06 (Soft)] at lip_outer_x lo PASS
+od_c13_right    U-07                   margin +0.0000 measured 0.4340738745346826 rad [U-07 angular tolerance] at lip_outer_x lo PASS
+od_c13_right    envelope_within_spec   margin +0.0706 measured 218.83937929011222 mm [envelope_within_spec size_y] at lip_outer_x hi PASS
+od_c13_right    exactly_one_solid      margin +0.0000 measured 1 count [exactly_one_solid] at lip_outer_x lo PASS
+od_c13_right    feature_census         margin +0.0000 measured 11 count [feature_census plane_faces] at lip_outer_x lo PASS
+od_c16_bracket  D-01a                  margin +2.1000 measured 2.899999999999999 mm [D-01a] at cbore_floor_y lo PASS
+od_c16_bracket  D-01b                  margin +0.9000 measured 2.899999999999999 mm [D-01b] at cbore_floor_y lo PASS
+od_c16_bracket  D-02                   margin +201.0000 measured 19.0 mm [D-02 size_x] at br_hole_d lo PASS_ASSUMED
+od_c16_bracket  D-03a                  margin +0.0000 measured 1.0 count [D-03a cylinders not along Y = the insert bore only] at br_hole_d lo PASS
+od_c16_bracket  D-03b                  margin +0.9500 measured 4.05 mm [D-03b insert-bore crown bridge (its diameter; reviewer from sections)] at insert_bore_d hi PASS_ASSUMED
+od_c16_bracket  D-04a                  margin +0.0500 measured 3.3 mm [D-04a hole diameter] at br_hole_d lo PASS
+od_c16_bracket  D-05a                  margin +3.8586 measured 11.858578000000001 mm [D-05a material across the insert bore] at insert_bore_pos_mm hi PASS_ASSUMED
+od_c16_bracket  D-05b                  margin +0.0000 measured 0 bool [D-05b insert bore blind (through = 0)] at br_hole_d lo PASS
+od_c16_bracket  D-06a                  margin +1.9000 measured 2.899999999999999 mm [D-06a] at cbore_floor_y lo PASS
+od_c16_bracket  J-05                   margin +0.1500 measured 3.1500000000000004 mm [J-05 axial web, insert-bore floor to counterbore] at insert_bore_depth hi PASS
+od_c16_bracket  REQ-05                 margin -0.0000 measured 0.10000045520896343 mm [REQ-05 hole offset] at br_hole_pos_mm lo PASS
+od_c16_bracket  U-01                   margin +0.0000 measured 1 count [U-01 solid_count] at br_hole_d lo PASS
+od_c16_bracket  U-02                   margin +0.1000 measured 19.0 mm [U-02 size_x] at br_hole_d lo PASS
+od_c16_bracket  U-04                   margin -0.0000 measured 8.185452315956354e-12 mm3 [U-04 volume_delta] at cbore_d lo PASS
+od_c16_bracket  U-05                   margin +0.0000 measured 8 count [U-05 plane_faces] at br_hole_d lo PASS
+od_c16_bracket  U-06                   margin +0.9000 measured 2.899999999999999 mm [U-06 (Soft)] at cbore_floor_y lo PASS
+od_c16_bracket  U-07                   margin +0.0000 measured 0.31386632987537666 rad [U-07 angular tolerance] at br_hole_d lo PASS
+od_c16_bracket  envelope_within_spec   margin +0.1000 measured 19.0 mm [envelope_within_spec size_x] at br_hole_d lo PASS
+od_c16_bracket  exactly_one_solid      margin +0.0000 measured 1 count [exactly_one_solid] at br_hole_d lo PASS
+od_c16_bracket  feature_census         margin +0.0000 measured 8 count [feature_census plane_faces] at br_hole_d lo PASS
+ASM bracket br_hole_pos_mm lo worst (-4.55e-07, 0.10000045520896544, 'REQ-05 plate hole od_c16_bracket_L2 at (-104.5, -15)', 'PASS_ASSUMED')
+ASM bracket br_hole_pos_mm hi worst (-4.55e-07, 0.10000045520896544, 'REQ-05 plate hole od_c16_bracket_L2 at (-104.5, -15)', 'PASS_ASSUMED')
+ASM bracket br_hole_pos_pm lo worst (-4.55e-07, 0.10000045520896544, 'REQ-05 plate hole od_c16_bracket_L2 at (-104.5, -15)', 'PASS_ASSUMED')
+ASM bracket br_hole_pos_pm hi worst (-4.55e-07, 0.10000045520896544, 'REQ-05 plate hole od_c16_bracket_L2 at (-104.5, -15)', 'PASS_ASSUMED')
+ASM bracket insert_bore_pos_mm lo worst (-4.55e-07, 0.10000045520896293, 'U-03a coaxial od_c16_bracket_L2 insert bore | od_c12_left hole', 'PASS')
+ASM bracket insert_bore_pos_mm hi worst (-4.55e-07, 0.10000045520896293, 'U-03a coaxial od_c16_bracket_L2 insert bore | od_c12_left hole', 'PASS')
+ASM bracket insert_bore_pos_pm lo worst (-4.55e-07, 0.10000045520896293, 'U-03a coaxial od_c16_bracket_L2 insert bore | od_c12_left hole', 'PASS')
+ASM bracket insert_bore_pos_pm hi worst (-4.55e-07, 0.10000045520896293, 'U-03a coaxial od_c16_bracket_L2 insert bore | od_c12_left hole', 'PASS')
+ASM panels panel_hole_pos_mm lo worst (-4.55e-07, 0.10000045520896293, 'U-03a coaxial od_c16_bracket_L2 insert bore | od_c12_left hole', 'PASS')
+ASM panels panel_hole_pos_mm hi worst (-4.55e-07, 0.10000045520896293, 'U-03a coaxial od_c16_bracket_L2 insert bore | od_c12_left hole', 'PASS')
+ASM panels panel_hole_pos_pm lo worst (-4.55e-07, 0.10000045520896293, 'U-03a coaxial od_c16_bracket_L2 insert bore | od_c12_left hole', 'PASS')
+ASM panels panel_hole_pos_pm hi worst (-4.55e-07, 0.10000045520896293, 'U-03a coaxial od_c16_bracket_L2 insert bore | od_c12_left hole', 'PASS')
+ASM STACK panel hole +0.10 with insert bore -0.10 (opposite) worst (-0.10000091, 0.20000091041792586, 'U-03a coaxial od_c16_bracket_R2 insert bore | od_c13_right hole', 'FAIL')
+ASM lip_outer_x hi (116.65): assembly path worst (0.0, 0.0, 'U-03b path OD-C10 down from +40', 'PASS')
