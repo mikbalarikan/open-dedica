@@ -564,9 +564,12 @@ def run(step_path: Path, stl_path: Path | None, params_override: dict | None, se
         c01_holes = [b for b in c01_census.detail.get("bores", []) if along(b, 1)]
         if holes:
             hc = Compound(holes)
-            rows.add("U-03", "a_flange_L_to_C01_holes", clearance(clip(P, box(-110, -70, 0, 4.0, 60, 94)), hc), ">=",
+            # the flanges alone: stop 0.4 short of the wall's inner face at its low limit (REQ-02), so the
+            # wall's foot (its own rule, >= 2.0) is never read as flange when the wall plane moves
+            flange_top_z = W["wall_in_z"][0] - 0.4
+            rows.add("U-03", "a_flange_L_to_C01_holes", clearance(clip(P, box(-110, -70, 0, 4.0, 60, flange_top_z)), hc), ">=",
                      W["flange_to_hole_min"], BAND_MM, ("A-01",))
-            rows.add("U-03", "a_flange_R_to_C01_holes", clearance(clip(P, box(70, 110, 0, 4.0, 60, 94)), hc), ">=",
+            rows.add("U-03", "a_flange_R_to_C01_holes", clearance(clip(P, box(70, 110, 0, 4.0, 60, flange_top_z)), hc), ">=",
                      W["flange_to_hole_min"], BAND_MM, ("A-01",))
             rows.add("U-03", "a_wall_foot_to_C01_holes", clearance(wall_foot, hc), ">=", W["foot_to_hole_min"], BAND_MM, ("A-02",))
         else:

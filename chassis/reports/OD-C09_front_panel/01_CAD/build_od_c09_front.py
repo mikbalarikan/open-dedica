@@ -31,11 +31,13 @@ class Params:
     wall_z_out: float = 97.0
     wall_top_y: float = 215.0
     floor_y: float = 0.0
-    # brew opening (spec 4 C1; REQ-03): tray slot and portafilter window
-    slot_x_half: float = 75.0
+    # brew opening (spec 4 C1; REQ-03): tray slot and portafilter window. The tray slot's and the
+    # window's right edges are one plane in the spec (the right pillar x +75 ... +116 over the full
+    # height), so they are one parameter; two would let a sweep open a sliver under rib R2.
+    slot_x_left: float = -75.0
+    opening_x_right: float = 75.0
     slot_top_y: float = 50.0
     win_x_left: float = -57.5
-    win_x_right: float = 75.0
     win_top_y: float = 188.0
     cut_overrun: float = 1.0          # tool overrun past the faces it cuts through (derivation: clean booleans)
     # return ribs (spec 4 C1)
@@ -99,16 +101,16 @@ def build(p: Params) -> Solid:
     # F01 wall
     wall_blank = box(-p.wall_x_half, p.wall_x_half, p.floor_y, p.wall_top_y, p.wall_z_in, p.wall_z_out)
     # F02 brew opening: tray slot union portafilter window, open at the plate
-    tray_slot = box(-p.slot_x_half, p.slot_x_half, p.floor_y - o, p.slot_top_y, p.wall_z_in - o, p.wall_z_out + o)
-    pf_window = box(p.win_x_left, p.win_x_right, p.floor_y - o, p.win_top_y, p.wall_z_in - o, p.wall_z_out + o)
+    tray_slot = box(p.slot_x_left, p.opening_x_right, p.floor_y - o, p.slot_top_y, p.wall_z_in - o, p.wall_z_out + o)
+    pf_window = box(p.win_x_left, p.opening_x_right, p.floor_y - o, p.win_top_y, p.wall_z_in - o, p.wall_z_out + o)
     wall = wall_blank - tray_slot - pf_window
     # F03 return ribs on the inner face along the opening's edges
     rib_y_top = p.win_top_y + p.rib_t
-    r1 = box(p.win_x_left - p.rib_t, p.win_x_right + p.rib_t, p.win_top_y, rib_y_top, p.rib_z_back, p.wall_z_in)
-    r2 = box(p.win_x_right, p.win_x_right + p.rib_t, p.floor_y, rib_y_top, p.rib_z_back, p.wall_z_in)
+    r1 = box(p.win_x_left - p.rib_t, p.opening_x_right + p.rib_t, p.win_top_y, rib_y_top, p.rib_z_back, p.wall_z_in)
+    r2 = box(p.opening_x_right, p.opening_x_right + p.rib_t, p.floor_y, rib_y_top, p.rib_z_back, p.wall_z_in)
     r3 = box(p.win_x_left - p.rib_t, p.win_x_left, p.slot_top_y, rib_y_top, p.rib_z_back, p.wall_z_in)
-    r4 = box(-p.slot_x_half - p.rib_t, -p.slot_x_half, p.floor_y, p.slot_top_y + p.rib_t, p.rib_z_back, p.wall_z_in)
-    r5 = box(-p.slot_x_half - p.rib_t, p.win_x_left, p.slot_top_y, p.slot_top_y + p.rib_t, p.rib_z_back, p.wall_z_in)
+    r4 = box(p.slot_x_left - p.rib_t, p.slot_x_left, p.floor_y, p.slot_top_y + p.rib_t, p.rib_z_back, p.wall_z_in)
+    r5 = box(p.slot_x_left - p.rib_t, p.win_x_left, p.slot_top_y, p.slot_top_y + p.rib_t, p.rib_z_back, p.wall_z_in)
     ribs = r1 + r2 + r3 + r4 + r5
     # F04 floor flanges
     flange_l = box(-p.flange_x_out, -p.flange_x_in, p.floor_y, p.floor_y + p.flange_t, p.flange_z_back, p.wall_z_in)

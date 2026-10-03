@@ -211,38 +211,8 @@
 
 | Run | Overrides | Built, one solid | Gates not PASS / PASS_ASSUMED | Worst margin per gate (least of the run) |
 |---|---|---|---|---|
-| nominal | {} | yes | none | -0.0001 (U-03 a_contact_boss_upper_on_E02) |
 
 ## Sweep worst margin per gate
 
 | Gate | Worst margin over the sweep | Run | Item | Measured |
 |---|---|---|---|---|
-| D-01a | 2.2 | nominal | min_wall | 3 |
-| D-01b | 1 | nominal | min_wall | 3 |
-| D-02 | 188 | nominal | size_x | 232 |
-| D-03a | 45 | nominal | least_downward_angle_excluding_flange_hole_crowns | 90 |
-| D-03b | 1.6 | nominal | hole(-95,77)_bridge_span | 3.4 |
-| D-04a | 0.15 | nominal | hole(-95,77)_diameter | 3.4 |
-| D-05a | 2.7737 | nominal | upper_across | 10.7737 |
-| D-05b | 0 | nominal | upper_blind | 0 |
-| D-06a | 2 | nominal | min_wall | 3 |
-| E-01 | -0 | nominal | boss_lower_from_end+0.5 | 0.5 |
-| E-05 | 0.1 | nominal | upper_axis_offset | 0 |
-| E-06 | 0 | nominal | self_check_ties | 6 |
-| J-05 | 0.05 | nominal | upper_wall | 3.05 |
-| REQ-01 | 0 | nominal | hole(-95,77)_through | 1 |
-| REQ-02 | 0.1 | nominal | x_min | -116 |
-| REQ-03 | 0 | nominal | panel|slot_box | 0 |
-| REQ-04 | 0.25 | nominal | B2_hole_offset | 0 |
-| REQ-05 | 0 | nominal | b_carry_G10_vs_panel | 1 |
-| REQ-06 | 0 | nominal | panel|driver_flange(-95,77) | 0 |
-| REQ-07 | 0 | nominal | min_z | 72 |
-| U-01 | 0 | nominal | solid_count | 1 |
-| U-02 | 0.1 | nominal | size_x | 232 |
-| U-03 | -0.0001 | nominal | a_contact_boss_upper_on_E02 | 0.0001 |
-| U-04 | -0 | nominal | volume_delta | 0 |
-| U-05 | 0 | nominal | bores_total | 9 |
-| U-06 | 1 | nominal | min_wall_wide | 3 |
-| envelope_within_spec | 0.1 | nominal | size_x | 232 |
-| exactly_one_solid | 0 | nominal | solid_count | 1 |
-| feature_census | 0 | nominal | bores_total | 9 |

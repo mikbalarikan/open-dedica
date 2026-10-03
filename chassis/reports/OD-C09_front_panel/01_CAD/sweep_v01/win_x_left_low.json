@@ -1,6 +1,8 @@
 {
- "step": "od_c09_front_C1_v01_nominal.step",
- "params": {},
+ "step": "od_c09_front_C1_v01_win_x_left_low.step",
+ "params": {
+  "win_x_left": -57.6
+ },
  "stages": [
   "assembly",
   "motion",
@@ -1623,7 +1625,7 @@
    "unit": "mm",
    "required": "== 0.0",
    "margin": 0.0,
-   "at": "(-116.0000, 0.0000, 97.0000) mm",
+   "at": "(75.0000, 0.0000, 94.0000) mm",
    "status": "PASS_ASSUMED",
    "method": "clearance",
    "assumes": [
@@ -2229,7 +2231,7 @@
    "unit": "mm",
    "required": ">= 2.0",
    "margin": 0.3,
-   "at": "(-110.0000, 0.0000, 94.0000) mm",
+   "at": "(110.0000, 0.0000, 94.0000) mm",
    "status": "PASS_ASSUMED",
    "method": "clearance",
    "assumes": [
@@ -2686,10 +2688,10 @@
   },
   {
    "gate": "REQ-03",
-   "measured": -57.5,
+   "measured": -57.599999999999994,
    "unit": "mm",
    "required": "in [-57.6, -57.4]",
-   "margin": 0.1,
+   "margin": 7.105427357601002e-15,
    "at": null,
    "status": "PASS_ASSUMED",
    "method": "edge_x",
@@ -3276,7 +3278,7 @@
     "motion",
     "process"
    ],
-   "volume": 95755.13706331661
+   "volume": 95713.73706331663
   }
  ],
  "timeline": [
@@ -3302,47 +3304,47 @@
   ],
   [
    "bores",
-   29.4
+   29.6
   ],
   [
    "caps",
-   30.7
+   30.9
   ],
   [
    "contacts",
-   31.3
+   31.5
   ],
   [
    "interference",
-   43.7
+   43.9
   ],
   [
    "footprint",
-   45.3
+   45.5
   ],
   [
    "lowering",
-   128.0
+   128.3
   ],
   [
    "E-01",
-   129.7
+   130.0
   ],
   [
    "REQ-02/03",
-   129.8
+   130.1
   ],
   [
    "REQ-05a",
-   175.1
+   175.5
   ],
   [
    "REQ-05b",
-   275.6
+   276.3
   ],
   [
    "REQ-06/07",
-   276.0
+   276.7
   ],
   [
    "min_wall 0.4 refused",
@@ -3350,15 +3352,15 @@
   ],
   [
    "min_wall",
-   300.5
+   300.9
   ],
   [
    "overhang",
-   313.2
+   313.8
   ],
   [
    "stl",
-   313.2
+   313.8
   ]
  ]
 }

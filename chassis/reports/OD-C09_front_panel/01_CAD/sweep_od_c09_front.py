@@ -23,7 +23,7 @@ from build_od_c09_front import Params  # noqa: E402
 
 P0 = Params()
 # (run name, overrides): the plan's section 6 sweep list
-D_HOLE, D_POS, D_BORE, D_DEPTH, D_BUTTON = 0.1, 0.1, 0.05, 0.1, 0.2
+D_HOLE, D_POS, D_BORE, D_DEPTH, D_BUTTON, D_HALF = 0.1, 0.1, 0.05, 0.1, 0.2, 0.05
 
 
 def shifted_x(xs, d):
@@ -36,9 +36,9 @@ for sign, tag in ((-1, "low"), (1, "high")):
     s = float(sign)
     RUNS.update({
         f"win_x_left_{tag}": {"win_x_left": P0.win_x_left + s * D_POS},
-        f"win_x_right_{tag}": {"win_x_right": P0.win_x_right + s * D_POS},
+        f"opening_x_right_{tag}": {"opening_x_right": P0.opening_x_right + s * D_POS},
         f"win_top_y_{tag}": {"win_top_y": P0.win_top_y + s * D_POS},
-        f"slot_x_half_{tag}": {"slot_x_half": P0.slot_x_half + s * D_POS},
+        f"slot_x_left_{tag}": {"slot_x_left": P0.slot_x_left + s * D_POS},
         f"slot_top_y_{tag}": {"slot_top_y": P0.slot_top_y + s * D_POS},
         f"flange_hole_d_{tag}": {"flange_hole_d": P0.flange_hole_d + s * D_HOLE},
         f"flange_hole_x_{tag}": {"flange_hole_x": shifted_x(P0.flange_hole_x, s * D_POS)},
@@ -50,7 +50,8 @@ for sign, tag in ((-1, "low"), (1, "high")):
         f"boss_d_{tag}": {"boss_d": P0.boss_d + s * D_POS},
         f"wall_z_{tag}": {"wall_z_in": P0.wall_z_in + s * D_POS, "wall_z_out": P0.wall_z_out + s * D_POS},
         f"wall_top_y_{tag}": {"wall_top_y": P0.wall_top_y + s * D_POS},
-        f"wall_x_half_{tag}": {"wall_x_half": P0.wall_x_half + s * D_POS},
+        # each end +-0.05: the U-02 size band (+-0.1 on 232.0) binds before REQ-02's +-0.1 per end
+        f"wall_x_half_{tag}": {"wall_x_half": P0.wall_x_half + s * D_HALF},
     })
 
 

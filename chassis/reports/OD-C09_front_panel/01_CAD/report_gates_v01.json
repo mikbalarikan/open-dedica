@@ -403,14 +403,7 @@
    ]
   }
  ],
- "sweep": [
-  {
-   "run": "nominal",
-   "params": {},
-   "built_one_solid": true,
-   "not_pass": {}
-  }
- ],
+ "sweep": [],
  "summary": {
   "exactly_one_solid": "PASS",
   "U-01": "PASS",
