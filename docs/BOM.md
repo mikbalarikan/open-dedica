@@ -123,7 +123,7 @@ DESIGN native design · VENDOR vendor STEP
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `OD-C00` | OD-000 | ASM | **Chassis & body** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
 | `OD-C01` | OD-C00 | PRINT | Base frame / floor plate |  |  | 1 | DESIGN | PLA for now (service PETG or ASA: A-10) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
-| `OD-C02` | OD-C00 | PRINT | Wet/electric bulkhead with drainage path |  |  | 1 | DESIGN | PLA for now (service ASA) | printed (Creality K1C) | print |  | 🧊 |
+| `OD-C02` | OD-C00 | PRINT | Wet/electric bulkhead with drainage path |  |  | 1 | DESIGN | PLA for now (fit-check prints only — 13 from the thermoblock; service ASA) | printed (Creality K1C) | print |  | 🧊 |
 | `OD-C03` | OD-C00 | PRINT | Pump cradle (sleeve + spring suspension) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed | print | #1 | 🧊 |
 | `OD-C04` | OD-C00 | PRINT | Thermoblock mount (≥10 mm air gap to printed walls) |  |  | 1 | DESIGN | PLA for now (fit-check prints only — hot zone; service ASA / PC) | printed | print | #2 | 🧊 |
 | `OD-C05` | OD-C00 | PRINT | Group head carrier (ties OD-G00 to frame) |  |  | 1 | DESIGN | PLA for now (fit-check prints only — hot zone; service ASA) | printed (Creality K1C) | print | #3 | 🧊 |
@@ -149,7 +149,7 @@ DESIGN native design · VENDOR vendor STEP
 
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| `OD-F01` | OD-000 | STD | M3 heat-set insert (Ø4.0 bore × 6; 54 in the chassis; 2 more in the OD-C09 bosses) |  |  | ~70 | VENDOR | brass M3 | AliExpress | 10 (set) |  | ☐ |
+| `OD-F01` | OD-000 | STD | M3 heat-set insert (Ø4.0 bore × 6; 58 in the chassis: 34 in OD-C01 rev B; BUILD_GUIDE §5) |  |  | ~70 | VENDOR | brass M3 | AliExpress | 10 (set) |  | ☐ |
 | `OD-F02` | OD-000 | STD | M3×8 screw |  |  | ~65 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
 | `OD-F03` | OD-000 | STD | Acrylic sheet 3 mm (optional skins; not used: the side panels are printed) |  |  | per design | — | PMMA | local laser / leftover stock | 25 |  | ⏸ |
 | `OD-F04` | OD-000 | STD | Food-safe silicone tube 4×2 mm (routing reserve) |  |  | 1 m | ENVELOPE | silicone | AliExpress | 5 |  | ☐ |
@@ -157,12 +157,14 @@ DESIGN native design · VENDOR vendor STEP
 | `OD-F06` | OD-000 | STD | 6.3 mm insulated spade terminals + 105 °C wire (own looms) |  |  | 1 set | — |  | TME / AliExpress | 5 |  | ☐ |
 | `OD-F07` | OD-000 | STD | Metal spacer Ø7 × 10.10 mm (Ø4 bore; OD-C04 thermoblock stand-off) |  |  | 1 | — | steel / brass tube cut to length (+0.10/−0) | local shop / scrap | 1 | #2 | ☐ |
 | `OD-F08` | OD-000 | STD | Metal spacer Ø7 × 37.70 mm (Ø4 bore; OD-C04 thermoblock stand-off) |  |  | 1 | — | steel / brass tube cut to length (+0.10/−0) | local shop / scrap | 1 | #2 | ☐ |
-| `OD-F09` | OD-000 | STD | Cable tie 4.8 mm (OD-C03 pump strap; OD-C08 loom slots 2 × 4; OD-C14 grommet) |  |  | 5 | VENDOR | PA66 UV-black | hardware store | 1 | #1 | ☐ |
+| `OD-F09` | OD-000 | STD | Cable tie 4.8 mm (OD-C03 pump strap; OD-C14 grommet) |  |  | 3 | VENDOR | PA66 UV-black | hardware store | 1 | #1 | ☐ |
 | `OD-F10` | OD-000 | STD | M3×12 screw (OD-C01 into the OD-C02 base rail; tip ends on the bore floor; and the four OD-C15 feet from the plate top) |  |  | 8 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) |  | ☐ |
 | `OD-F11` | OD-000 | STD | M3×6 screw (OD-E01 board holes H1/H2 into the OD-C08 standoffs; M3×8 only with a ≥ 0.5 washer) |  |  | 2 | VENDOR | ISO 7380 / DIN 912 A2 | AliExpress | (set) | #8 | ☐ |
 | `OD-F12` | OD-000 | STD | M3 hex nut (captive in the OD-C15 feet; nylon-insert ISO 10511 needs M3×16) |  |  | 4 | VENDOR | ISO 4032 A2 | AliExpress | (set) |  | ☐ |
 | `OD-F13` | OD-000 | STD | M3×18 screw (OD-E02 board into the OD-C09 bosses from the board's back) |  |  | 2 | VENDOR | ISO 4762 / DIN 912 A2 | AliExpress | (set) | #8 | ☐ |
 | `OD-F14` | OD-000 | STD | M3×10 screw (OD-T01 plate into the OD-G01 housing inserts; bench fixture only) |  |  | 4 | VENDOR | ISO 7380 A2 | AliExpress | (set) | #3 | ☐ |
+| `OD-F15` | OD-000 | STD | Cable tie 2.5 mm (OD-C08 loom slots 2.0 × 4.0; a 4.8 mm tie does not pass) |  |  | 2 | VENDOR | PA66 | hardware store | 1 | #8 | ☐ |
+| `OD-F16` | OD-000 | STD | Self-tapping screw Ø3.5 (OD-C04 into the thermoblock: S1 ≈ 22, S2 ≈ 50 long; OD-C04 A-04, measure the OEM screws) |  |  | 2 | VENDOR | steel A2 | from the donor / hardware store | 1 | #2 | ☐ |
 
 ## S — Steam system (phase 2)
 

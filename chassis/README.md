@@ -47,8 +47,8 @@ revisited when the scan lands.
 
 **Material for now:** the Usta set PLA for every printed part (2026-10-02); the BOM
 keeps each part's service material next to it. PLA softens near 60 °C, so PLA
-prints of `OD-G01`, `OD-C04` and `OD-C05` (next to the thermoblock and the group
-head) are dry fit checks only: never run hot water or pressure through them, and
+prints of `OD-G01`, `OD-C02`, `OD-C04` and `OD-C05` (next to the thermoblock and the
+group head; OD-C02 stands 13 from the casting) are dry fit checks only: never run hot water or pressure through them, and
 run the OD-T01 bench test on an ASA housing.
 
 Machine profiles: Creality K1C (enclosed: ASA, PC) and Anycubic Kobra Max 3 (large
@@ -63,7 +63,7 @@ record; OD-C01 must carry an insert at each.
 | Part | Inserts in OD-C01 (x, z) mm | Hardware |
 |---|---|---|
 | `OD-C03` pump cradle | (±34, −4), (±34, 37) | 4 × M3 (`OD-F02`), 2 × cable tie (`OD-F09`) |
-| `OD-C04` thermoblock mount | (±40, −8), (±40, 26) | 4 × M3 (`OD-F02`); the thermoblock sits on the metal spacers `OD-F07` and `OD-F08` (M3 through their Ø4 bores; screw length set when the spacers are cut) |
+| `OD-C04` thermoblock mount | (±40, −8), (±40, 26) | 4 × M3 (`OD-F02`); the thermoblock sits on the metal spacers `OD-F07` and `OD-F08` (a Ø3.5 self-tapping screw (`OD-F16`) through each Ø4 bore into the thermoblock, S1 ≈ 22 and S2 ≈ 50 long (OD-C04 A-04)) |
 | `OD-C07` valve and flowmeter mount | four Ø3.4 through-holes at (−18, ±21) and (88.5, ±21) in the mount frame; OD-C01 spec 1.1 REQ-10 provides them | 4 × M3 (`OD-F02`) into OD-C01; 2 × M3 insert (`OD-F01`) for OD-H22 |
 | `OD-C08` electronics bay tray | flange (88, −222), (106, −222), (88, −78), (106, −78) | 4 × M3×8 (`OD-F02`); 2 × M3×6 (`OD-F11`) for the board into 2 inserts in the tray's standoffs |
 | `OD-C11` back panel | flanges (±81, −282), (±95, −282) | 4 × M3×8 (`OD-F02`); 2 inserts in its ledge take OD-C10's rear screws |
