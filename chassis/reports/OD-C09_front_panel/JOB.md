@@ -5,9 +5,9 @@ code: ODC09
 milestone: M1
 title: "Open Dedica OD-C09 printed front panel with button bezel"
 lane: CAD
-state: J5_DELIVER
+state: J6_CLOSE
 blocked_on: null
-next_action: "J5: the Usta merges the open-dedica PR; then J6 close with PHYSICAL_OUTCOME pending the first print (REQ-08 stiffness, A-04 button feel, A-05 lock angle)"
+next_action: "J6: PHYSICAL_OUTCOME pending the first print (REQ-08 stiffness, A-04 button feel, A-05 lock angle, A-01 the four OD-C01 inserts)"
 data_class: PUBLIC
 size: M
 process: [FDM]
@@ -29,6 +29,7 @@ usta_gates:
   - {gate: spec_ratified, outcome: "1.0", date: "2026-10-02"}
   - {gate: concept_picked, outcome: C1, date: "2026-10-02"}
   - {gate: spec_ratified, outcome: "1.1", date: "2026-10-02"}
+  - {gate: question_answered, outcome: merge_approved, date: "2026-10-05"}
 deliverables: [STEP, STL, "3MF", scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null
