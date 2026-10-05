@@ -29,7 +29,7 @@ Repository inputs are not copied here; the job reads them under these names in
 
 ## Status (2026-10-03)
 
-J5_DELIVER. Build v01 (15 mm plate) RV01 approved on assumptions with F1: the plate's factor through the hub window was ≈ 1.5. The Usta chose a 25 mm plate: spec 1.3, build v02 (attempt 2 of 2), RV02 `APPROVED_ASSUMPTION_CONDITIONAL` (F1 MEDIUM: screw-head bearing ≈ 47 MPa and infill, answered in the test procedure). v02 is delivered; J6 waits on the merge and the bench test.
+J6_CLOSE (PR #52 merged 2026-10-05). Build v01 (15 mm plate) RV01 approved on assumptions with F1: the plate's factor through the hub window was ≈ 1.5. The Usta chose a 25 mm plate: spec 1.3, build v02 (attempt 2 of 2), RV02 `APPROVED_ASSUMPTION_CONDITIONAL` (F1 MEDIUM: screw-head bearing ≈ 47 MPa and infill, answered in the test procedure). J6 waits on the bench test.
 
 ## Resume
 
