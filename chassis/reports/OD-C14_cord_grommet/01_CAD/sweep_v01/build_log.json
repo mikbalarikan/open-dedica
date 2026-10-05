@@ -1,0 +1,317 @@
+{
+ "nominal": {
+  "half_step": [
+   "01_CAD/sweep_v01/nominal/od_c14_grommet_half.step",
+   "b3f009684812720d80f51951c46a3898f779ae4800e71337a7cfd58b6f6e90f4"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/nominal/od_c14_grommet_half.stl",
+   "645a8dde3b824729be2fe225589561b529c879c2bf9fbb5b10d927f102eafaa8",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.0058439908956511005
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/nominal/od_c14_assembly.step",
+   "57e4d2c095dc1c7cbeb47f2bffbace38a0e14eaa88533143fe6f6b02913543b4"
+  ],
+  "volume_mm3": 538.5545040742611
+ },
+ "neck_d_low": {
+  "half_step": [
+   "01_CAD/sweep_v01/neck_d_low/od_c14_grommet_half.step",
+   "63628955aaf61d8b8e3e08b42e542a61266c2f1eb63a240b724488dfa87624f8"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/neck_d_low/od_c14_grommet_half.stl",
+   "40c5c8d0607fd250c2314c38fa0cd50c2ceab936922ed4a637e8d9d5410bd90e",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.0058439908956511005
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/neck_d_low/od_c14_assembly.step",
+   "a6f559b4f69c4f216f7d01fff420b6a8ec05b7f0b68aa188eb4192857ce185df"
+  ],
+  "volume_mm3": 537.2016996099424
+ },
+ "neck_d_high": {
+  "half_step": [
+   "01_CAD/sweep_v01/neck_d_high/od_c14_grommet_half.step",
+   "4d95289371a9130fd25832f657e8935eb85b41b55a2e5469b40f172e22347f0e"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/neck_d_high/od_c14_grommet_half.stl",
+   "fb7dce450f93512105fcb53e87772959b0614e9a3a429c162b22155e9d85321a",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1662,
+    "max_sagitta_mm": 0.0058439908956511005
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/neck_d_high/od_c14_assembly.step",
+   "d347abc04eb0213d81215b7ac1a3f2735ce6fc4b95a1d391c74f257a07842589"
+  ],
+  "volume_mm3": 539.9135921991622
+ },
+ "neck_len_low": {
+  "half_step": [
+   "01_CAD/sweep_v01/neck_len_low/od_c14_grommet_half.step",
+   "269cf717eb8e6dba233dd422cf64a1c44c3c151953800b24e2dabc6b9570b8ee"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/neck_len_low/od_c14_grommet_half.stl",
+   "fcf5074fb69d839e77ecc97e7d5dcc6f5292b2b72ccbf242a84a20a90ce75e05",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.005843990895628201
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/neck_len_low/od_c14_assembly.step",
+   "6f3922e761cf35b94fe14d7be8a8ba74be0f64c98018b16f8148387df0a0d0ec"
+  ],
+  "volume_mm3": 538.5545040742611
+ },
+ "neck_len_high": {
+  "half_step": [
+   "01_CAD/sweep_v01/neck_len_high/od_c14_grommet_half.step",
+   "2f13e6959fdc23b45d5f9de2aedd9a65747b0928498fa6bb72190c27816fe007"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/neck_len_high/od_c14_grommet_half.stl",
+   "fb0b3eb5e6bab3c0f83b27603065b4202bd23252d204365d392ad74fcc10d02f",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.005843990895628201
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/neck_len_high/od_c14_assembly.step",
+   "b92c45918841734bae58496d2b7762212834f8fe7549d34732713f5bdd7e1693"
+  ],
+  "volume_mm3": 538.5545040742611
+ },
+ "groove_d_low": {
+  "half_step": [
+   "01_CAD/sweep_v01/groove_d_low/od_c14_grommet_half.step",
+   "44c163e83fd784432c7da345f52ee86a13b583fc4ea16ae849bd9684445fe0e2"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/groove_d_low/od_c14_grommet_half.stl",
+   "a54b5a203ed1877ef246e71ad1de5f177bd1f41b65aa1a4fa041ecd33055a7d7",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.005830463138948203
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/groove_d_low/od_c14_assembly.step",
+   "0eb52c19cbaca447ddbd5cc76ce7d541d1f2d23e06c2a1e0b43021c9aca5cdc0"
+  ],
+  "volume_mm3": 536.202150664607
+ },
+ "groove_d_high": {
+  "half_step": [
+   "01_CAD/sweep_v01/groove_d_high/od_c14_grommet_half.step",
+   "0151b963b46bf4634a55329d58202d2e5c22fc207cfa9432e653f40e35ad5c1d"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/groove_d_high/od_c14_grommet_half.stl",
+   "08f2eeb9d7c072520cc1577efd36bb2387f8f3c71f4a09d31a7dc08460dcade9",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.005857518652318839
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/groove_d_high/od_c14_assembly.step",
+   "ce03978f433943e246e3a62d44ad54920e59e29bdd1e18fce5362069263379e6"
+  ],
+  "volume_mm3": 540.9004210792104
+ },
+ "groove_w_low": {
+  "half_step": [
+   "01_CAD/sweep_v01/groove_w_low/od_c14_grommet_half.step",
+   "2cd557ce80fe6b09579b1726554a286a3eec2efa13d6752ec6b209b49556977b"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/groove_w_low/od_c14_grommet_half.stl",
+   "fbc9bf39135c4ccc6f048e4d6f62c7ea1574276fb0e3fd75d4c23fedf3d1d542",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.005843990895628201
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/groove_w_low/od_c14_assembly.step",
+   "56edfc945d753283470043fcad9a3fc5ff1c8916d94194e1378aef3da1c01e19"
+  ],
+  "volume_mm3": 539.3626973410999
+ },
+ "groove_w_high": {
+  "half_step": [
+   "01_CAD/sweep_v01/groove_w_high/od_c14_grommet_half.step",
+   "4350882f6289d64d06da89851699e82f7f1e597a20048fcaddce2bed72604fb3"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/groove_w_high/od_c14_grommet_half.stl",
+   "252063d7d543a955946edd296479a98dfe8acb46434d442d1b363e2a9d064a10",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.005843990895628201
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/groove_w_high/od_c14_assembly.step",
+   "3d6c37a8a235439458f6926e1cfddf65df8e4d1c3fb8d5f11999990ff6d4dd9f"
+  ],
+  "volume_mm3": 537.7463108074221
+ },
+ "collar_d_low": {
+  "half_step": [
+   "01_CAD/sweep_v01/collar_d_low/od_c14_grommet_half.step",
+   "242798ce41314d46ad7a99283acbd07d7d9c2bca37046465d9d9698480244908"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/collar_d_low/od_c14_grommet_half.stl",
+   "3200dd0a188ea8b546493523e965a8d3ec8de816971064c1af5ebd541327e8fd",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.0058280115487109214
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/collar_d_low/od_c14_assembly.step",
+   "34d61abe15a7cbc81a12e7a2c19964c7be9502354d14f208db87328bf568d86d"
+  ],
+  "volume_mm3": 537.8123181441458
+ },
+ "collar_d_high": {
+  "half_step": [
+   "01_CAD/sweep_v01/collar_d_high/od_c14_grommet_half.step",
+   "50e104f156ba235222185ef9837a1bcab3a99e6508781fd7359d9514f436555a"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/collar_d_high/od_c14_grommet_half.stl",
+   "f4663b541f60f9a3cbf22fb924ab11ca558d00c5c3dc3a8426bb615f569c3869",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1664,
+    "max_sagitta_mm": 0.0054880687904790264
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/collar_d_high/od_c14_assembly.step",
+   "ddfd71163319833f61d99141050a18c5728c1e2efa945176efd85116f465fb61"
+  ],
+  "volume_mm3": 539.2817467265572
+ },
+ "bore_d_low": {
+  "half_step": [
+   "01_CAD/sweep_v01/bore_d_low/od_c14_grommet_half.step",
+   "b036b59d7a3c014f232e21558e03ef8581f8e65db5312191fa5cfdcbc3c25850"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/bore_d_low/od_c14_grommet_half.stl",
+   "0fc83b9a42d0ea5b635e8ed8cd3f225c80777d3abbe168ddfca86b46069042ee",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.0058439908956511005
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/bore_d_low/od_c14_assembly.step",
+   "f18f76a668e5fa44bddeec05cb20704d8dfdddd76ff74342097c0e407c7a5aa2"
+  ],
+  "volume_mm3": 545.1604534861423
+ },
+ "bore_d_high": {
+  "half_step": [
+   "01_CAD/sweep_v01/bore_d_high/od_c14_grommet_half.step",
+   "6a48b99310e921568b6e8a34787e20844820a2a7d63ff918a842c5b4bffaae9a"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/bore_d_high/od_c14_grommet_half.stl",
+   "344d1ea4183ec938969393f667738b8a571a0403d6197e02f97167cfca7291cd",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.0058439908956511005
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/bore_d_high/od_c14_assembly.step",
+   "4cd81bb9e95774bcafba9ab815f74dc21efcafd48d59761819eadbcdd47ed0c3"
+  ],
+  "volume_mm3": 531.8464205370824
+ },
+ "split_y_low": {
+  "half_step": [
+   "01_CAD/sweep_v01/split_y_low/od_c14_grommet_half.step",
+   "155ccfd4bf5acba10a7a796ad8739ff5d3f3a457a85d0110eacdfa0d003fe7d3"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/split_y_low/od_c14_grommet_half.stl",
+   "8022d567911ddf6e80992b0e0da106b3f36b86463d6194039936e613d53791f2",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1670,
+    "max_sagitta_mm": 0.0054990329015264724
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/split_y_low/od_c14_assembly.step",
+   "dad18f801a7b335b4145c3e074f4cb410d7e835c921eb42a37fe71c3756ed920"
+  ],
+  "volume_mm3": 539.9044000508331
+ },
+ "split_y_high": {
+  "half_step": [
+   "01_CAD/sweep_v01/split_y_high/od_c14_grommet_half.step",
+   "4d5d5bc6e0a0bdd4b5d3ce17e238372ed7afc70bf575374e7ead37e7e3406b09"
+  ],
+  "stl": [
+   "01_CAD/sweep_v01/split_y_high/od_c14_grommet_half.stl",
+   "ddd1c3c5b403e66295abc55578025fcd88f3921189876ac5ed627ff19f197b61",
+   {
+    "tolerance_mm": 0.01,
+    "angular_tolerance_rad": 0.1,
+    "triangles": 1658,
+    "max_sagitta_mm": 0.005816373065028644
+   }
+  ],
+  "asm_step": [
+   "01_CAD/sweep_v01/split_y_high/od_c14_assembly.step",
+   "5e690909bf519b73d65da2c92dad63f952364afe3035d7d3faaf64f1766cff8e"
+  ],
+  "volume_mm3": 537.2041363328317
+ }
+}

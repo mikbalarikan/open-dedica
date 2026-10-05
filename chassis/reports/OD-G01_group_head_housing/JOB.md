@@ -5,9 +5,9 @@ code: ODG01
 milestone: M1
 title: "Open Dedica OD-G01 printed group head housing"
 lane: CAD
-state: REVISE
-blocked_on: {question: "RV01 REVISE on REQ-12 alone (the OD-T01 bench test); the Usta chooses: A another round (needs raise_cap), B accept the documented deviation, or C stop", since: "2026-09-30T16:04:48Z", return_to: J3_BUILD}
-next_action: "the Usta's revise_decision on REVISE_PACKET_RV01; on B: J5, copy the reviewed v03 files into open-dedica/chassis with scripts and README"
+state: J5_DELIVER
+blocked_on: null
+next_action: "J6: record PHYSICAL_OUTCOME after the first print and the OD-T01 bench pressure test (REQ-12); spec 1.4 (vertical mouth-down sentence) awaits the Usta's ratification"
 data_class: PUBLIC
 size: M
 process: [FDM]
@@ -32,6 +32,7 @@ usta_gates:
   - {gate: halt_decision, outcome: another_round, date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.2", date: "2026-09-30"}
   - {gate: spec_ratified, outcome: "1.3", date: "2026-09-30"}
+  - {gate: revise_decision, outcome: accept_deviations, date: "2026-10-02"}
 deliverables: [STEP, STL, scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null

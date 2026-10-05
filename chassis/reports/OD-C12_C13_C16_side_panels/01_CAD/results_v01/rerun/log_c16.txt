@@ -1,0 +1,86 @@
+od_c16_bracket   exactly_one_solid            PASS                     1 count == 1                     margin   +0.0000  
+od_c16_bracket   U-01 solid_count             PASS                     1 count == 1                     margin   +0.0000  
+od_c16_bracket   U-01 brep_valid              PASS                     1 bool  == 1                     margin   +0.0000  
+od_c16_bracket   U-01 naked_edges             PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   U-02 size_x                  PASS               19.0000 mm    in [18.9, 19.1]          margin   +0.1000  
+od_c16_bracket   U-02 size_y                  PASS               16.0000 mm    in [15.9, 16.1]          margin   +0.1000  
+od_c16_bracket   U-02 size_z                  PASS               16.0000 mm    in [15.9, 16.1]          margin   +0.1000  
+od_c16_bracket   envelope_within_spec size_x  PASS               19.0000 mm    in [18.9, 19.1]          margin   +0.1000  
+od_c16_bracket   envelope_within_spec size_y  PASS               16.0000 mm    in [15.9, 16.1]          margin   +0.1000  
+od_c16_bracket   envelope_within_spec size_z  PASS               16.0000 mm    in [15.9, 16.1]          margin   +0.1000  
+od_c16_bracket   REQ-05 block size_x          PASS               19.0000 mm    in [18.9, 19.1]          margin   +0.1000  
+od_c16_bracket   REQ-05 block size_y          PASS               16.0000 mm    in [15.9, 16.1]          margin   +0.1000  
+od_c16_bracket   REQ-05 block size_z          PASS               16.0000 mm    in [15.9, 16.1]          margin   +0.1000  
+od_c16_bracket   U-02 position min_x          PASS              -19.0000 mm    in [-19.1, -18.9]        margin   +0.1000  position, reported apart from size (L-12)
+od_c16_bracket   U-02 position max_x          PASS                0.0000 mm    in [-0.1, 0.1]           margin   +0.1000  position, reported apart from size (L-12)
+od_c16_bracket   U-02 position min_y          PASS               -0.0000 mm    in [-0.1, 0.1]           margin   +0.1000  position, reported apart from size (L-12)
+od_c16_bracket   U-02 position max_y          PASS               16.0000 mm    in [15.9, 16.1]          margin   +0.1000  position, reported apart from size (L-12)
+od_c16_bracket   U-02 position min_z          PASS               -8.0000 mm    in [-8.1, -7.9]          margin   +0.1000  position, reported apart from size (L-12)
+od_c16_bracket   U-02 position max_z          PASS                8.0000 mm    in [7.9, 8.1]            margin   +0.1000  position, reported apart from size (L-12)
+od_c16_bracket   D-02 size_x                  PASS_ASSUMED       19.0000 mm    <= 220.0                 margin +201.0000  
+od_c16_bracket   D-02 size_y                  PASS_ASSUMED       16.0000 mm    <= 220.0                 margin +204.0000  
+od_c16_bracket   D-02 size_z                  PASS_ASSUMED       16.0000 mm    <= 250.0                 margin +234.0000  
+od_c16_bracket   U-04 schema                  PASS                     1 bool  == 1                     margin   +0.0000  
+od_c16_bracket   U-04 solids                  PASS                     1 count == 1                     margin   +0.0000  
+od_c16_bracket   U-04 volume_delta            PASS                0.0000 mm3   <= 0.0                   margin   -0.0000  
+od_c16_bracket   U-04 faces_delta             PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   U-04 labels                  PASS                     1 bool  == 1                     margin   +0.0000  ['od_c16_bracket']
+od_c16_bracket   U-04 valid_after             PASS                     1 bool  == 1                     margin   +0.0000  
+od_c16_bracket   U-05 plane_faces             PASS                     8 count == 8                     margin   +0.0000  
+od_c16_bracket   feature_census plane_faces   PASS                     8 count == 8                     margin   +0.0000  
+od_c16_bracket   U-05 cylinder_faces          PASS                     3 count == 3                     margin   +0.0000  
+od_c16_bracket   feature_census cylinder_faces PASS                     3 count == 3                     margin   +0.0000  
+od_c16_bracket   U-05 cone_faces              PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   feature_census cone_faces    PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   U-05 sphere_faces            PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   feature_census sphere_faces  PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   U-05 torus_faces             PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   feature_census torus_faces   PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   U-05 bspline_faces           PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   feature_census bspline_faces PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   U-05 other_faces             PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   feature_census other_faces   PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   U-05 concave_cylinders       PASS                     3 count == 3                     margin   +0.0000  
+od_c16_bracket   feature_census concave_cylinders PASS                     3 count == 3                     margin   +0.0000  
+od_c16_bracket   U-05 convex_cylinders        PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   feature_census convex_cylinders PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   U-05 bores                   PASS                     3 count == 3                     margin   +0.0000  
+od_c16_bracket   feature_census bores         PASS                     3 count == 3                     margin   +0.0000  
+od_c16_bracket   D-01a                        PASS                3.0000 mm    >= 0.8                   margin   +2.2000  
+od_c16_bracket   D-01b                        PASS                3.0000 mm    >= 2.0                   margin   +1.0000  
+od_c16_bracket   D-06a                        PASS                3.0000 mm    >= 1.0                   margin   +2.0000  
+od_c16_bracket   U-06 (Soft)                  PASS                3.0000 mm    >= 2.0                   margin   +1.0000  
+od_c16_bracket   REQ-05 hole diameter         PASS                3.4000 mm    in [3.3, 3.5]            margin   +0.1000  
+od_c16_bracket   REQ-05 hole offset           PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_c16_bracket   REQ-05 hole through          PASS                     1 bool  == 1                     margin   +0.0000  
+od_c16_bracket   D-04a hole diameter          PASS                3.4000 mm    >= 3.25                  margin   +0.1500  
+od_c16_bracket   REQ-05 counterbore diameter  PASS                6.5000 mm    in [6.4, 6.6]            margin   +0.1000  
+od_c16_bracket   REQ-05 counterbore floor y   PASS                3.0000 mm    in [2.9, 3.1]            margin   +0.1000  
+od_c16_bracket   REQ-05 counterbore opens at y 16 PASS               16.0000 mm    in [15.9, 16.1]          margin   +0.1000  
+od_c16_bracket   REQ-05 counterbore floor closed (1 = closed) PASS                1.0000 bool  == 1                     margin   +0.0000  
+od_c16_bracket   REQ-05 counterbore offset    PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_c16_bracket   D-05b insert bore diameter   PASS_ASSUMED        4.0000 mm    in [3.95, 4.05]          margin   +0.0500  
+od_c16_bracket   D-05b insert bore depth      PASS_ASSUMED        6.0000 mm    in [5.9, 6.1]            margin   +0.1000  
+od_c16_bracket   D-05b insert bore depth >= insert PASS_ASSUMED        6.0000 mm    >= 5.7                   margin   +0.3000  
+od_c16_bracket   D-05b insert bore blind (through = 0) PASS                     0 bool  == 0                     margin   +0.0000  
+od_c16_bracket   REQ-05 insert bore offset    PASS                0.0000 mm    <= 0.1                   margin   +0.1000  
+od_c16_bracket   REQ-05 insert bore opens at x 0 PASS                0.0000 mm    in [-0.1, 0.1]           margin   +0.1000  
+od_c16_bracket   REQ-05 insert bore mouth open (1/0) PASS                1.0000 bool  == 1                     margin   +0.0000  
+od_c16_bracket   D-05a material across the insert bore PASS_ASSUMED       12.0000 mm    >= 8.0                   margin   +4.0000  
+od_c16_bracket   J-05 radial wall around the insert bore PASS                4.0000 mm    >= 3.0                   margin   +1.0000  
+od_c16_bracket   J-05 axial web, insert-bore floor to counterbore PASS                3.2500 mm    >= 3.0                   margin   +0.2500  
+od_c16_bracket   D-03a planes (every face but the insert bore) PASS               90.0000 deg   >= 45.0                  margin  +45.0000  
+od_c16_bracket   D-03a cylinders not along Y = the insert bore only PASS                1.0000 count == 1                     margin   +0.0000  every other cylinder is vertical in the print and cannot face down
+od_c16_bracket   D-03a exception: insert-bore crown least angle INFO                0.0000 deg                            margin      None  named exception (spec 5, Usta U-18); at (-6.0, 12.0, 0.0); per kind {'cylinder': 0.0}
+od_c16_bracket   D-03b flat ceilings (corroboration) PASS                0.0000 mm    <= 5.0                   margin   +5.0000  
+od_c16_bracket   D-03b insert-bore crown bridge (its diameter; reviewer from sections) PASS_ASSUMED        4.0000 mm    <= 5.0                   margin   +1.0000  
+od_c16_bracket   U-07 stl_max_sagitta         PASS                0.0050 mm    <= 0.01                  margin   +0.0050  tol 0.01 mm, angular 0.313866 rad, 588 triangles
+od_c16_bracket   U-07 angular tolerance       PASS                0.3139 rad   <= 0.31386632987537666   margin   +0.0000  
+od_c16_bracket   U-07 delivered STL triangles = fresh mesh PASS                   588 count == 588                   margin   +0.0000  
+od_c16_bracket   U-07 delivered STL bodies    PASS                     1 count == 1                     margin   +0.0000  
+od_c16_bracket   U-07 delivered STL naked edges PASS                     0 count == 0                     margin   +0.0000  
+od_c16_bracket   U-08                         N/A                   None                                margin      None  no threads (row's own N/A)
+od_c16_bracket   D-07                         N/A                   None                                margin      None  no fit-critical bores (row's own N/A)
+od_c16_bracket   E-06                         PASS                     1 count the bracket is one solid block (reviewer from sections) margin      None  designer reading of 03_Sections; the reviewer decides
+od_c16_bracket   J-05 global min_wall (beside, never instead) INFO                3.0000 mm                             margin      None  at (-13.402778, 3.0, -3.069444)
+WORST PASS_ASSUMED

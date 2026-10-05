@@ -1,0 +1,100 @@
+{
+ "flange": {
+  "max": 10.0,
+  "min": 10.0,
+  "max_at": [
+   104.848078,
+   31.736482,
+   -303.3
+  ],
+  "min_at": [
+   104.848078,
+   31.736482,
+   -303.3
+  ],
+  "status": [
+   "MEASURED",
+   "MEASURED"
+  ],
+  "reason": ""
+ },
+ "neck": {
+  "max": 5.650000000000052,
+  "min": 5.650000000000051,
+  "max_at": [
+   100.309263,
+   31.932414,
+   -301.9
+  ],
+  "min_at": [
+   100.564164,
+   30.981112,
+   -301.9
+  ],
+  "status": [
+   "MEASURED",
+   "MEASURED"
+  ],
+  "reason": ""
+ },
+ "groove": {
+  "max": 5.149999999999915,
+  "min": 5.149999999999915,
+  "max_at": [
+   100.07176,
+   30.894288,
+   -298.7
+  ],
+  "min_at": [
+   100.07176,
+   30.894288,
+   -298.7
+  ],
+  "status": [
+   "MEASURED",
+   "MEASURED"
+  ],
+  "reason": ""
+ },
+ "collar": {
+  "max": 5.650000000000052,
+  "min": 5.650000000000051,
+  "max_at": [
+   100.309263,
+   31.932414,
+   -292.635941
+  ],
+  "min_at": [
+   100.564164,
+   30.981112,
+   -292.635941
+  ],
+  "status": [
+   "MEASURED",
+   "MEASURED"
+  ],
+  "reason": ""
+ },
+ "bore": {
+  "max": null,
+  "min": null,
+  "max_at": null,
+  "min_at": null,
+  "status": [
+   "INCONCLUSIVE",
+   "INCONCLUSIVE"
+  ],
+  "reason": "34 of 2023 rays unread, first at 10\u00b0 and z = -302.000000 mm: the ray runs along a face between 5.650000 and 10.000000 mm; either side: the ray runs along a face between 5.650000 and 10.000000 mm; the ray runs along a face between 5.650000 and 10.000000 mm"
+ },
+ "flank_deg": 60.00000000008288,
+ "flank_z": [
+  -293.6000000000016,
+  -292.7339745962143
+ ],
+ "inner_-303.999": 3.7894200000004084,
+ "inner_-303.75": 3.6449999999991727,
+ "inner_-303.5001": 3.500057999999528,
+ "inner_-291.4999": 3.500100000002266,
+ "inner_-291.25": 3.7500000000038805,
+ "inner_-291.001": 3.9990000000043873
+}

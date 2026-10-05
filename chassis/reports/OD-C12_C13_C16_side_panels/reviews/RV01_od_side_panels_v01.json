@@ -1,0 +1,683 @@
+{
+  "schema": "oguz-verdict-v1",
+  "review_id": "RV01",
+  "job_id": "20261002-od-c12-c13-c16-side-panels",
+  "target": "od_side_panels_v01",
+  "spec_version": "1.2",
+  "reviewer": {
+    "runtime": "claude-code",
+    "model": "claude-opus-5-5"
+  },
+  "verdict": "APPROVED_ASSUMPTION_CONDITIONAL",
+  "summary": "Three valid single solids (OD-C13, OD-C12, OD-C16) re-measured from the exported STEP: every Hard row PASS or PASS_ASSUMED; lip gap 0.400, least other clearance 0.900 (OD-C12 to OD-C07), coaxiality 0.000, assembly path 0.000 mm3; REQ-08 Soft INCONCLUSIVE (bench); no blocking finding.",
+  "files": [
+    {
+      "path": "02_STEP_STL/od_c13_right_C1_v01.step",
+      "sha256": "bb029af485a12941c364302b8a2f98c5b9c2436f73aea68e66bb8ed69be11a71",
+      "matches_report": true
+    },
+    {
+      "path": "02_STEP_STL/od_c13_right_C1_v01.stl",
+      "sha256": "50beff9b3ddbc572d9020309e4c5e758830331a360c52d55ae1ca117d0dccf88",
+      "matches_report": true
+    },
+    {
+      "path": "02_STEP_STL/od_c12_left_C1_v01.step",
+      "sha256": "972343ab6af3684acf9000208761baa390e489cabe30d238c62ffa36e62f8408",
+      "matches_report": true
+    },
+    {
+      "path": "02_STEP_STL/od_c12_left_C1_v01.stl",
+      "sha256": "872489a1afefcb39e725b3339595770184b17368deab05e7e9f1eaca66ee5d55",
+      "matches_report": true
+    },
+    {
+      "path": "02_STEP_STL/od_c16_bracket_C1_v01.step",
+      "sha256": "39faff6ce71326fc8d562d8c3daa42cd938fdf24f4dbe0933d82e9cae569c9fc",
+      "matches_report": true
+    },
+    {
+      "path": "02_STEP_STL/od_c16_bracket_C1_v01.stl",
+      "sha256": "0519dcb42e099fdc6433cc371989b0806ac74bd2e77aa7c43d3891c5ac6f19d5",
+      "matches_report": true
+    }
+  ],
+  "gates": [
+    {
+      "gate": "U-01",
+      "measured": 1,
+      "unit": "bool",
+      "required": "solid_count = 1, brep_valid = 1, naked_edges = 0, each part file",
+      "margin": 0,
+      "at": "OD-C13, OD-C12, OD-C16 files each: 1 solid, brep_valid 1, naked edges 0",
+      "status": "PASS",
+      "method": "validity",
+      "assumes": []
+    },
+    {
+      "gate": "U-02",
+      "measured": 218.8105,
+      "unit": "mm",
+      "required": "each size in [spec - 0.1, spec + 0.1]",
+      "margin": 0.0995,
+      "at": "OD-C13 and OD-C12 size_y 218.8105 (spec 218.81); OD-C13 10.000 x 218.8105 x 385.000 at x 110..120, y 0..218.8105, z -295..+90; OD-C12 the same at x -120..-110; OD-C16 19.000 x 16.000 x 16.000 at x -19..0, y 0..16, z -8..+8 (margin 0.100)",
+      "status": "PASS",
+      "method": "envelope",
+      "assumes": []
+    },
+    {
+      "gate": "U-03",
+      "measured": 0.4,
+      "unit": "mm",
+      "required": "(a) designed contacts clearance = 0, interference <= 0; lip to OD-C10 0.40 +- 0.05; other pairs clearance >= 0.5; coaxiality <= 0.20; (b) path interference <= 0 mm3",
+      "margin": 0.05,
+      "at": "governing: lip to OD-C10 skirt 0.4000 at (+-116.6, 215.0, -280.0) both panels; 16 designed contacts clearance 0.000 and interference 0.000 mm3; 100 other pairs least 0.900 (OD-C12 to OD-C07, margin +0.400), then 3.000 (panels to OD-C11), 5.000 (OD-C13 to OD-C08); 116 pairs interference 0.000 mm3; six insert-bore to panel-hole axis offsets 0.000 (<= 0.20, margin +0.200); (b) six brackets down from +20, two panels in from 20 outside, OD-C10 down from +40, steps 1.0: 0.000 mm3 at every step",
+      "status": "PASS_ASSUMED",
+      "method": "clearance, interference (common_volume), locate_bore; own path stepper",
+      "assumes": [
+        "A-01",
+        "A-02",
+        "A-03",
+        "A-04",
+        "A-05"
+      ]
+    },
+    {
+      "gate": "U-04",
+      "measured": 5.82e-11,
+      "unit": "mm3",
+      "required": "named body re-read unchanged, no stray shells, valid after re-import",
+      "margin": -5.82e-11,
+      "at": "each part file: AP242, unit MM, label kept (od_c13_right, od_c12_left, od_c16_bracket), 1 solid, faces delta 0, valid after; volume delta <= 5.8e-11 mm3 (band 0.001)",
+      "status": "PASS",
+      "method": "step_roundtrip, compare_step",
+      "assumes": []
+    },
+    {
+      "gate": "U-05",
+      "measured": 3,
+      "unit": "count",
+      "required": "per spec 1.2 and the plan as amended: OD-C13 11 planes / 3 concave cylinders / 3 bores; OD-C12 15 / 3 / 3; OD-C16 8 / 3 / 3",
+      "margin": 0,
+      "at": "OD-C13 11/3/3, OD-C12 15/3/3, OD-C16 8/3/3; every plan feature located (section 3)",
+      "status": "PASS",
+      "method": "feature_census, bore_census, locate_bore",
+      "assumes": []
+    },
+    {
+      "gate": "U-06",
+      "measured": 2.1,
+      "unit": "mm",
+      "required": ">= 2.0 (min_wall wide, 45 deg)",
+      "margin": 0.1,
+      "at": "OD-C12 wall at the relief (-120.0, 54.6, -29.5); OD-C13 3.000, OD-C16 3.000",
+      "status": "PASS",
+      "method": "min_wall detail wide (spacing 0.6 panels, 0.4 bracket)",
+      "assumes": []
+    },
+    {
+      "gate": "U-07",
+      "measured": 0.004993,
+      "unit": "mm",
+      "required": "STL tol 0.01, angular <= 4 acos(1 - 0.01/R_max); stl_max_sagitta <= 0.01",
+      "margin": 0.005007,
+      "at": "delivered STLs: deviation 0.004993 (both panels, R_max 1.7, angular limit 0.434074 rad), 0.004988 (bracket, R_max 3.25, limit 0.313866 rad); one closed shell, winding 1, volume > 0; triangle counts 536 / 552 / 588 equal to a fresh mesh at those settings",
+      "status": "PASS",
+      "method": "mesh_deviation, mesh_census, write_stl (fresh, for comparison)",
+      "assumes": []
+    },
+    {
+      "gate": "U-08",
+      "measured": null,
+      "unit": "count",
+      "required": "applies to threaded parts; these targets have none",
+      "margin": null,
+      "at": "no threads modelled on any part",
+      "status": "NOT_APPLICABLE",
+      "method": "N/A by its row",
+      "assumes": []
+    },
+    {
+      "gate": "D-01a",
+      "measured": 2.1,
+      "unit": "mm",
+      "required": ">= 0.8",
+      "margin": 1.3,
+      "at": "OD-C12 relief wall (-120.0, 54.6, -29.5); OD-C13 3.000; OD-C16 3.000 (counterbore floor)",
+      "status": "PASS",
+      "method": "min_wall",
+      "assumes": []
+    },
+    {
+      "gate": "D-01b",
+      "measured": 2.1,
+      "unit": "mm",
+      "required": ">= 2.0",
+      "margin": 0.1,
+      "at": "OD-C12 relief wall (-120.0, 54.6, -29.5); OD-C13 3.000 (wall); OD-C16 3.000 at (-13.40, 3.0, -3.07), counterbore floor",
+      "status": "PASS",
+      "method": "min_wall",
+      "assumes": []
+    },
+    {
+      "gate": "D-02",
+      "measured": 385.0,
+      "unit": "mm",
+      "required": "panels <= Kobra Max 3 (A-09: 420 x 420 x 500) lying on the outer face; bracket <= K1C (A-10: 220 x 220 x 250)",
+      "margin": 35.0,
+      "at": "panels 385.0 x 218.81 on the bed, 10.0 tall; bracket 19 x 16 x 16 (margin 201.0)",
+      "status": "PASS_ASSUMED",
+      "method": "envelope",
+      "assumes": [
+        "A-09",
+        "A-10"
+      ]
+    },
+    {
+      "gate": "D-03a",
+      "measured": 60.0,
+      "unit": "deg",
+      "required": ">= 45 from horizontal in the sec. 4 print orientation; bracket insert-bore crown excluded (named exception)",
+      "margin": 15.0,
+      "at": "OD-C13 build -X and OD-C12 build +X: least 60.000 on the lip slope (116.6, 215.0, 80.0); OD-C16 build +Y outside the exception 90.000 (nothing downward); exception: crown 0.000 at (-6.0, 12.0, 0.0)",
+      "status": "PASS_ASSUMED",
+      "method": "overhang_census (spacing 0.6 panels, 0.5 bracket)",
+      "assumes": [
+        "A-11"
+      ]
+    },
+    {
+      "gate": "D-03b",
+      "measured": 4.0,
+      "unit": "mm",
+      "required": "span <= 5",
+      "margin": 1.0,
+      "at": "OD-C16 insert-bore crown Ø4.000 at (-3, 12, 0), from own sections x -3 and z 0.3; flat ceilings 0.000 on all three parts",
+      "status": "PASS_ASSUMED",
+      "method": "own sections; flat_ceiling_spans corroborates",
+      "assumes": [
+        "A-11"
+      ]
+    },
+    {
+      "gate": "D-04a",
+      "measured": 3.4,
+      "unit": "mm",
+      "required": ">= 3.25",
+      "margin": 0.15,
+      "at": "six panel holes Ø3.400 along X at (+-118.5, 10, -262/-15/+62); bracket hole Ø3.400 along Y at (-12.5, 1.5, 0)",
+      "status": "PASS",
+      "method": "bore_census, locate_bore",
+      "assumes": []
+    },
+    {
+      "gate": "D-04d",
+      "measured": 0.4,
+      "unit": "mm",
+      "required": ">= 0.30 per side",
+      "margin": 0.1,
+      "at": "lip toe (+-116.6, 215.0) to OD-C10 skirt inner face x +-117.0, both panels",
+      "status": "PASS_ASSUMED",
+      "method": "clearance",
+      "assumes": [
+        "A-02",
+        "A-14"
+      ]
+    },
+    {
+      "gate": "D-05a",
+      "measured": 12.0,
+      "unit": "mm",
+      "required": ">= 8.0 across around the insert bore",
+      "margin": 4.0,
+      "at": "least outer radius 6.000 toward the top face (y 16) about the bore axis (0, 10, 0) along -X, 24 angles x 24 levels over x 0..-6",
+      "status": "PASS_ASSUMED",
+      "method": "radial_profile, bore_census",
+      "assumes": [
+        "A-12"
+      ]
+    },
+    {
+      "gate": "D-05b",
+      "measured": 4.0,
+      "unit": "mm",
+      "required": "Ø4.0 +- 0.05, depth 6.0 +- 0.1 (>= 5.7)",
+      "margin": 0.05,
+      "at": "insert bore Ø4.000, length 6.000, open at x 0, closed (flat floor) at x -6.0, axis (y 10, z 0)",
+      "status": "PASS_ASSUMED",
+      "method": "bore_census, locate_bore",
+      "assumes": [
+        "A-12"
+      ]
+    },
+    {
+      "gate": "D-06a",
+      "measured": 2.1,
+      "unit": "mm",
+      "required": ">= 1.0",
+      "margin": 1.1,
+      "at": "least wall OD-C12 relief 2.100; lip wedge apex edge read from sections (finding F2)",
+      "status": "PASS",
+      "method": "min_wall; own sections",
+      "assumes": []
+    },
+    {
+      "gate": "D-07",
+      "measured": null,
+      "unit": "count",
+      "required": "none: the insert bore is formed by the insert, the rest are clearance holes",
+      "margin": null,
+      "at": "no fit-critical bore on these parts",
+      "status": "NOT_APPLICABLE",
+      "method": "N/A by its row",
+      "assumes": []
+    },
+    {
+      "gate": "J-05",
+      "measured": 3.25,
+      "unit": "mm",
+      "required": ">= 3.0 around the bracket's insert bore",
+      "margin": 0.25,
+      "at": "web from the bore floor (x -6) to the counterbore wall (x -9.25), exact face distance; to top face 4.000, sides 6.000, underside 8.000; global min_wall 3.000 (counterbore floor, not around this bore)",
+      "status": "PASS",
+      "method": "exact face-to-face distance (BRepExtrema) from the bore faces; min_wall beside it",
+      "assumes": []
+    },
+    {
+      "gate": "E-06",
+      "measured": 1,
+      "unit": "count",
+      "required": "bracket one solid block; lip tied into rail, rail into wall",
+      "margin": 0,
+      "at": "each part one solid; sections z -100 and z +60 (both panels) one closed region through wall, rail and lip; bracket section z 0.3 one region",
+      "status": "PASS",
+      "method": "validity, own sections",
+      "assumes": []
+    },
+    {
+      "gate": "REQ-01",
+      "measured": 215.0,
+      "unit": "mm",
+      "required": "outer x +-120.00 +- 0.10, inner +-117.00 +- 0.10; underside y 0.00 +- 0.05; top y 215.00 +- 0.05 over x +-(116.6..120); ends z -295.00 / +90.00 +- 0.10; footprint over plate",
+      "margin": 0.05,
+      "at": "sections y 50 and y 200: outer 120.000, inner 117.000 over z -295..+90 (OD-C12 inner face at the relief left to REQ-04); one underside plane y 0.000; one top face y 215.000 over x 116.6..120; ends -295.000 / +90.000; footprint prism 6930.0 / 6222.6 mm3 all inside OD-C01",
+      "status": "PASS_ASSUMED",
+      "method": "envelope of faces, own sections, common_volume",
+      "assumes": [
+        "A-01"
+      ]
+    },
+    {
+      "gate": "REQ-02",
+      "measured": 0.4,
+      "unit": "mm",
+      "required": "wedge (+-110, 215), (+-116.6, 215), (+-110, 218.81) +- 0.1; slope 60 +- 1 deg; z -280..+80 +- 0.1; clearance to OD-C10 0.40 +- 0.05",
+      "margin": 0.05,
+      "at": "sections z -100 and +60, both panels: vertices (+-110.000, 215.000), (+-116.600, 215.000), (+-110.000, 218.8105); slope 60.0001 deg from the panel plane; z -280.000..+80.000; gap 0.4000",
+      "status": "PASS_ASSUMED",
+      "method": "own sections, envelope, clearance",
+      "assumes": [
+        "A-02",
+        "A-14"
+      ]
+    },
+    {
+      "gate": "REQ-03",
+      "measured": 0.0,
+      "unit": "mm",
+      "required": "three Ø3.4 +- 0.1 through along X at (y 10, z -262/-15/+62), offset <= 0.10",
+      "margin": 0.1,
+      "at": "both panels: Ø3.400, offset 0.000, through, length 3.0",
+      "status": "PASS_ASSUMED",
+      "method": "bore_census, locate_bore",
+      "assumes": [
+        "A-07"
+      ]
+    },
+    {
+      "gate": "REQ-04",
+      "measured": -117.9,
+      "unit": "mm",
+      "required": "inner face x -117.90 +- 0.05 over y 0..55, z -160..-29 (+- 0.1); clearance(OD-C12, OD-C07) >= 0.5",
+      "margin": 0.05,
+      "at": "relief floor one plane x -117.900, y 0.000..55.000, z -160.000..-29.000; clearance to OD-C07 0.900 (margin +0.400)",
+      "status": "PASS_ASSUMED",
+      "method": "envelope of the floor face, own sections, clearance",
+      "assumes": [
+        "A-04"
+      ]
+    },
+    {
+      "gate": "REQ-05",
+      "measured": 3.0,
+      "unit": "mm",
+      "required": "block 19 x 16 x 16; Ø3.4 through along Y at (-12.5, 0) offset <= 0.10; Ø6.5 +- 0.1 counterbore floor y 3.00 +- 0.10; Ø4.0 bore along -X at (y 10, z 0) offset <= 0.10; plate holes at (+-104.5, z_c) +- 0.10",
+      "margin": 0.1,
+      "at": "counterbore Ø6.500 floor y 3.000; hole Ø3.400 offset 0.000 through; insert bore offset 0.000; six placed plate holes at (+-104.5, z_c) offset 0.000",
+      "status": "PASS_ASSUMED",
+      "method": "bore_census, locate_bore, envelope",
+      "assumes": [
+        "A-01",
+        "A-07"
+      ]
+    },
+    {
+      "gate": "REQ-06",
+      "measured": 15.5,
+      "unit": "mm",
+      "required": ">= 8.0 to the plate edge; >= 6.0 to every OD-C01 hole and handed-over insert; plate solid in a Ø8 circle",
+      "margin": 7.5,
+      "at": "all six (+-104.5, z_c): edge 15.500; nearest OD-C01 bore 28.306 ((-113, -42) Ø4.0); nearest handed-over insert 22.142 ((+-95, -282)); Ø8 x 6 disc 301.593 of 301.593 mm3 in OD-C01",
+      "status": "PASS_ASSUMED",
+      "method": "bore_census of OD-C01, own distance arithmetic, common_volume",
+      "assumes": [
+        "A-01"
+      ]
+    },
+    {
+      "gate": "REQ-07",
+      "measured": 0.0,
+      "unit": "mm3",
+      "required": "interference = 0 of the foot keep-outs, the driver-access and the panel-screw access cylinders",
+      "margin": 0.0,
+      "at": "4 keep-outs x 8 new parts, 6 driver cylinders (r 4, y 16..215) x 16 solids, 6 panel-screw cylinders (r 4, 20 outside) x 19 solids: all 0.000 mm3",
+      "status": "PASS_ASSUMED",
+      "method": "common_volume",
+      "assumes": [
+        "A-05"
+      ]
+    },
+    {
+      "gate": "REQ-08",
+      "measured": null,
+      "unit": "count",
+      "required": "Soft: no visible flex or drumming with the lid on; a hand on a side does not shift the lid (bench)",
+      "margin": null,
+      "at": "not geometric; answered by the first print (finding F1)",
+      "status": "INCONCLUSIVE",
+      "method": "bench (none in CAD)",
+      "assumes": [
+        "A-13"
+      ]
+    }
+  ],
+  "feature_census": [
+    {
+      "feature": "OD-C13 F01-F02 wall with 2 square end faces",
+      "expected": "faces x 117 and x 120 over y 0..215, z -295..+90; ends z -295 and z +90",
+      "found": "found: one inner face x 117.000, one outer x 120.000, underside y 0, ends z -295.000 and +90.000",
+      "status": "PASS"
+    },
+    {
+      "feature": "OD-C13 F03 top rail",
+      "expected": "x 110..117, y 205..215, z -280..+80",
+      "found": "underside y 205.000 over x 110..117, z -280..+80; ends at z -280.000 / +80.000",
+      "status": "PASS"
+    },
+    {
+      "feature": "OD-C13 F04 lip wedge (one 60 deg face)",
+      "expected": "triangle (110, 215), (116.6, 215), (110, 218.81), z -280..+80",
+      "found": "one sloped plane, normal (0.5, 0.866, 0), x 110..116.6, y 215..218.8105; 60.0001 deg",
+      "status": "PASS"
+    },
+    {
+      "feature": "OD-C13 F05 merged faces",
+      "expected": "11 planes, 3 cylinders",
+      "found": "11 planes, 3 concave cylinders, 0 other",
+      "status": "PASS"
+    },
+    {
+      "feature": "OD-C13 F06 holes x3",
+      "expected": "Ø3.4 through along X at (y 10, z -262/-15/+62)",
+      "found": "3 bores Ø3.400 x 117..120, through, offset 0.000",
+      "status": "PASS"
+    },
+    {
+      "feature": "OD-C12 F11-F12 mirrored panel",
+      "expected": "mirror of OD-C13 at x -120..-110",
+      "found": "same faces mirrored; slope normal (-0.5, 0.866, 0); 3 bores Ø3.400 through",
+      "status": "PASS"
+    },
+    {
+      "feature": "OD-C12 F13 relief",
+      "expected": "floor x -117.9, y 0..55, z -160..-29, 4 faces",
+      "found": "floor plane x -117.900, y 0..55, z -160..-29; faces y 55, z -160, z -29; 15 planes",
+      "status": "PASS"
+    },
+    {
+      "feature": "OD-C16 F21 block",
+      "expected": "x -19..0, y 0..16, z -8..+8",
+      "found": "19.000 x 16.000 x 16.000 at that position; 8 planes, 3 cylinders",
+      "status": "PASS"
+    },
+    {
+      "feature": "OD-C16 F22 plate-screw hole",
+      "expected": "Ø3.4 through along Y at (x -12.5, z 0)",
+      "found": "Ø3.400 y 0..3, through, offset 0.000",
+      "status": "PASS"
+    },
+    {
+      "feature": "OD-C16 F23 counterbore",
+      "expected": "Ø6.5 from y 16 to floor y 3",
+      "found": "Ø6.500 y 3..16, open at y 16, closed at y 3.000",
+      "status": "PASS"
+    },
+    {
+      "feature": "OD-C16 F24 insert bore",
+      "expected": "Ø4.0 x 6.0 blind along -X from x 0 at (y 10, z 0)",
+      "found": "Ø4.000 x -6..0, open at x 0, flat floor x -6.000, offset 0.000",
+      "status": "PASS"
+    }
+  ],
+  "plausibility": [
+    {
+      "question": "P1 gravity",
+      "answer": "Panels stand on the plate top and the brackets on the plate (clearance 0.000, interference 0.000); the lid's side skirts rest on the panel tops at y 215; nothing hangs on a screw alone.",
+      "status": "YES"
+    },
+    {
+      "question": "P2 function chains",
+      "answer": "No air, liquid, drive or cable passes through the new parts; the panels close the sides 5.000 from the electronics tray and 3.000 from OD-C11, whose vents stay the bay's exhaust.",
+      "status": "YES"
+    },
+    {
+      "question": "P3 moving parts",
+      "answer": "No moving parts; every assembly path (brackets down, panels in, lid down) reads 0.000 mm3 at every 1.0 step.",
+      "status": "YES"
+    },
+    {
+      "question": "P4 grip, reach, insertion",
+      "answer": "Bracket screws driven from above along a clear r 4 axis (panels and lid off); panel screws from outside along X with 20 clear; panels offered inward onto the brackets; lid lowered last; the order of spec sec. 4 is the only one that fits.",
+      "status": "YES"
+    },
+    {
+      "question": "P5 nothing absurd",
+      "answer": "A 3 mm printed side wall with a top rail and a 60 deg locating lip on three corner brackets is ordinary printed-enclosure practice; the proud button heads and the rear-corner slit are ledgered (A-07, A-03).",
+      "status": "YES"
+    },
+    {
+      "question": "P6 floating, embedded, mirrored, upside-down",
+      "answer": "Every designed contact reads 0.000 with no interference; the left panel is a true mirror with its relief on the inner face over OD-C07; the lips point up inside the skirts; the left brackets face their insert bores at x -117.",
+      "status": "YES"
+    }
+  ],
+  "positive_controls": [
+    {
+      "check": "validity (solid_count)",
+      "mutant": "bracket with a second solid beside it",
+      "got": "FAIL"
+    },
+    {
+      "check": "envelope",
+      "mutant": "OD-C13 wall lengthened 0.5 at z +90",
+      "got": "FAIL"
+    },
+    {
+      "check": "step_roundtrip/compare_step",
+      "mutant": "bracket insert bore 0.5 deeper vs the delivered file",
+      "got": "FAIL"
+    },
+    {
+      "check": "feature_census (bores)",
+      "mutant": "OD-C13 middle hole filled",
+      "got": "FAIL"
+    },
+    {
+      "check": "locate_bore (offset)",
+      "mutant": "OD-C13 middle hole moved 0.5 in z",
+      "got": "FAIL"
+    },
+    {
+      "check": "bore_census/locate_bore (diameter)",
+      "mutant": "bracket plate hole resized to 3.2",
+      "got": "FAIL"
+    },
+    {
+      "check": "coaxiality (locate_bore x2)",
+      "mutant": "OD-C13 middle hole moved 0.5 vs placed bracket R2",
+      "got": "FAIL"
+    },
+    {
+      "check": "min_wall",
+      "mutant": "OD-C12 relief floor moved to -118.5 (wall 1.5)",
+      "got": "FAIL"
+    },
+    {
+      "check": "J-05 exact face distance",
+      "mutant": "bracket insert bore 7.0 deep (web to counterbore 2.25)",
+      "got": "FAIL"
+    },
+    {
+      "check": "overhang_census",
+      "mutant": "OD-C13 block x110..113 hung under the rail (print -X)",
+      "got": "FAIL"
+    },
+    {
+      "check": "flat_ceiling_spans",
+      "mutant": "same block: its x 113 face a 10 deep ceiling",
+      "got": "FAIL"
+    },
+    {
+      "check": "overhang_census (bracket, exception filled)",
+      "mutant": "bracket with a 3 x 4 ledge off its outer face",
+      "got": "FAIL"
+    },
+    {
+      "check": "clearance (lip, D-04d)",
+      "mutant": "OD-C13 relocated +0.2 in x",
+      "got": "FAIL"
+    },
+    {
+      "check": "clearance (designed contact)",
+      "mutant": "OD-C13 relocated +0.2 in x vs bracket R2",
+      "got": "FAIL"
+    },
+    {
+      "check": "clearance (other pairs)",
+      "mutant": "OD-C12 relocated 0.5 inward vs OD-C07",
+      "got": "FAIL"
+    },
+    {
+      "check": "interference/common_volume",
+      "mutant": "bracket R2 relocated 0.5 down into OD-C01",
+      "got": "FAIL"
+    },
+    {
+      "check": "assembly path stepper",
+      "mutant": "lid lowered over OD-C13 relocated +0.5 in x",
+      "got": "FAIL"
+    },
+    {
+      "check": "interference (REQ-07 access)",
+      "mutant": "bracket R2 with a 2 tall boss over its screw",
+      "got": "FAIL"
+    },
+    {
+      "check": "radial_profile",
+      "mutant": "bracket top lowered to y 13",
+      "got": "FAIL"
+    },
+    {
+      "check": "section wedge reading",
+      "mutant": "OD-C13 lip with a bump raising its top at z -100",
+      "got": "FAIL"
+    },
+    {
+      "check": "mesh_deviation",
+      "mutant": "bracket STL at tol 0.1, 1.0 rad",
+      "got": "FAIL"
+    },
+    {
+      "check": "mesh_census (naked edges)",
+      "mutant": "delivered bracket STL with one triangle removed",
+      "got": "FAIL"
+    },
+    {
+      "check": "REQ-06 distance arithmetic",
+      "mutant": "insert position moved to (114, -15)",
+      "got": "FAIL"
+    },
+    {
+      "check": "E-06 one solid (validity + section)",
+      "mutant": "OD-C13 lip lifted 0.5 off the rail",
+      "got": "FAIL"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "gate": "REQ-08",
+      "kind": "SOFT_GATE_MISS",
+      "measured": null,
+      "unit": "count",
+      "required": "Soft: no visible flex or drumming with the lid on; a hand on a side does not shift the lid",
+      "margin": null,
+      "at": "both panels, the free wall between brackets (z -262 to -15, 247 mm) under the lid",
+      "blocks": false,
+      "risk": "MEDIUM",
+      "risk_basis": "a 3.0 PLA plate 385 x 215, held at three points along its foot and along its top only by the 0.40-gap lip in the skirt, may drum or bow between brackets; no calculation exists (A-13)",
+      "fix_direction": "answer on the first print with a hand-load and tap test; if it drums, add a fourth bracket or a stiffening rib on the inner face clear of OD-C07 and OD-C08"
+    },
+    {
+      "id": "F2",
+      "gate": "D-06a",
+      "kind": "OBSERVATION",
+      "measured": 60.0,
+      "unit": "deg",
+      "required": "minimum feature >= 1.0 (min_wall); the lip wedge as spec sec. 4 defines it",
+      "margin": null,
+      "at": "lip apex edge (+-110.000, 218.8105) over z -280..+80, both panels",
+      "blocks": false,
+      "risk": "LOW",
+      "risk_basis": "the spec's wedge ends in a 60 deg convex edge that min_wall cannot read (flank normals 120 deg apart); material normal to the slope is under 1.0 only within 1.155 of the edge; in the flat print the edge lies in the top layer and every layer of the lip is wider than the one below, and it carries no load (the skirt bears on y 215)",
+      "fix_direction": "none needed for function; if a crisp edge is unwanted, a 0.5 flat or round on the apex in a later spec revision"
+    }
+  ],
+  "least_sure_answers": [
+    {
+      "item": "9.1 coaxiality tolerance stack",
+      "answer": "Under spec 1.2 (offset <= 0.20) the stack cannot fail: with REQ-03 and REQ-05 each <= 0.10, two parallel axes are at most 0.20 apart, so the opposed extreme sits at zero margin and passes within the band; as built all six axis offsets measure 0.000 and the plate holes 0.000 from (+-104.5, z_c). No finding."
+    },
+    {
+      "item": "9.2 lip gap",
+      "answer": "Measured 0.4000 on both panels from the wedge to OD-C10 as delivered (skirt inner faces at x +-117.000); lowering OD-C10 from +40 in 1.0 steps over panels and brackets reads 0.000 mm3 at every step; a +0.5 relocated panel makes the same stepper fail (1.04 mm3). The physical lid still rests on A-02 and A-14."
+    },
+    {
+      "item": "9.3 lip apex not reached by min_wall",
+      "answer": "Read from my own sections at z -100 and z +60 on both panels: apex (+-110.000, 218.8105), toe (+-116.600, 215.000), slope 60.0001 deg from the panel plane (60 +- 1), included angle 60 deg; min_wall at 0.6 spacing reads 3.000 / 2.100 elsewhere and does not see the edge by design (flanks 120 deg apart). Rated as F2, LOW, non-blocking."
+    }
+  ],
+  "assumptions_relied_on": [
+    "A-01",
+    "A-02",
+    "A-03",
+    "A-04",
+    "A-05",
+    "A-07",
+    "A-09",
+    "A-10",
+    "A-11",
+    "A-12",
+    "A-14"
+  ]
+}

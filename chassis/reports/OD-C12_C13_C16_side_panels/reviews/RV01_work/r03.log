@@ -1,0 +1,38 @@
+contact OD-C13 OD-C01 0.0 MEASURED 0.0 MEASURED
+contact OD-C12 OD-C01 0.0 MEASURED 0.0 MEASURED
+contact OD-C13 OD-C10 0.0 MEASURED 0.0 MEASURED
+contact OD-C12 OD-C10 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_R1 OD-C01 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_R1 OD-C13 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_R2 OD-C01 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_R2 OD-C13 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_R3 OD-C01 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_R3 OD-C13 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_L1 OD-C01 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_L1 OD-C12 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_L2 OD-C01 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_L2 OD-C12 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_L3 OD-C01 0.0 MEASURED 0.0 MEASURED
+contact OD-C16_L3 OD-C12 0.0 MEASURED 0.0 MEASURED
+/root/oguz-jobs/20261002-od-c12-c13-c16-side-panels/reviews/RV01_work/r03_assembly.py:44: DeprecationWarning: to_tuple is deprecated and will be removed in a future version.  Use 'tuple(Vector)' instead.
+  out["lip"][p] = {"clearance": c, "lip_bbox": [lip.bounding_box().min.to_tuple(), lip.bounding_box().max.to_tuple()],
+lip OD-C13 0.4000000000100101 (116.6, 215.0, -280.0) [(110.0, 215.0, -280.0), (116.6, 218.8105117766526, 80.0)] 4526.887990663166
+lip OD-C12 0.3999999999000039 (-116.6, 215.0, -280.0) [(-116.6, 215.0, -280.0), (-110.0, 218.8105117766526, 80.0)] 4526.887990661115
+others least [(0.9000000000000057, 'OD-C07|OD-C12'), (3.0, 'OD-C11|OD-C12'), (3.0, 'OD-C11|OD-C13'), (5.0, 'OD-C08|OD-C13'), (6.0, 'OD-C12|OD-C15_2'), (6.0, 'OD-C12|OD-C15_4'), (6.0, 'OD-C13|OD-C15_1'), (6.0, 'OD-C13|OD-C15_3')] n 100 []
+interference all pairs 116 nonzero/inconclusive {}
+coax OD-C16_R1 0.0 4.0 0.0 3.4 0.0 plate hole 3.4 0.0 1
+coax OD-C16_R2 0.0 4.0 0.0 3.4 0.0 plate hole 3.4 0.0 1
+coax OD-C16_R3 0.0 4.0 0.0 3.4 0.0 plate hole 3.4 0.0 1
+coax OD-C16_L1 0.0 4.0 0.0 3.4 0.0 plate hole 3.4 0.0 1
+coax OD-C16_L2 0.0 4.0 0.0 3.4 0.0 plate hole 3.4 0.0 1
+coax OD-C16_L3 0.0 4.0 0.0 3.4 0.0 plate hole 3.4 0.0 1
+req06 104.5 -262.0 15.5 (33.455193916640205, 3.4) (np.float64(110.0), np.float64(-6.0), np.float64(-295.0)) [22.142, 209.0] 301.59289474461997 301.593
+req06 104.5 -15.0 15.5 (49.60090724976712, 4.0) (np.float64(65.0), np.float64(-6.0), np.float64(-45.0)) [63.018, 77.0] 301.5928947446202 301.593
+req06 104.5 62.0 15.5 (28.53506614676055, 3.4) (np.float64(110.0), np.float64(-6.0), np.float64(90.0)) [140.008, 77.0] 301.59289474462014 301.593
+req06 -104.5 -262.0 15.5 (33.455193916640205, 3.4) (np.float64(-110.0), np.float64(-6.0), np.float64(-295.0)) [22.142, 209.0] 301.59289474461997 301.593
+req06 -104.5 -15.0 15.5 (28.30635970943632, 4.0) (np.float64(-113.0), np.float64(-6.0), np.float64(-42.0)) [202.547, 77.0] 301.5928947446202 301.593
+req06 -104.5 62.0 15.5 (28.53506614676055, 3.4) (np.float64(-110.0), np.float64(-6.0), np.float64(90.0)) [238.026, 77.0] 301.59289474462014 301.593
+req07 keepout 32 (0.0, 'keepout(110,90)|OD-C16_R3') []
+req07 driver 96 (0.0, 'driver(104.5,62.0)|OD-C16_R3') []
+req07 panel_screw 114 (0.0, 'panelscrew(120+20,62.0)|OD-C16_R3') []
+seconds 15.3

@@ -1,0 +1,55 @@
+lap validity 1.2
+lap envelope 1.2
+lap roundtrip 1.8
+lap refs 24.7
+lap census 25.0
+lap bores 46.4
+lap caps 48.0
+lap contacts 48.7
+lap interference 68.7
+lap footprint 71.1
+lap lowering 201.4
+lap E-01 203.7
+lap REQ-02/03 203.9
+lap REQ-05a 273.2
+lap REQ-05b 429.8
+lap REQ-06/07 430.6
+lap min_wall 468.9
+lap overhang 489.3
+lap stl 489.3
+exactly_one_solid            PASS
+U-01                         PASS
+U-02                         PASS
+envelope_within_spec         PASS
+D-02                         PASS_ASSUMED
+REQ-02                       PASS_ASSUMED
+REQ-07                       PASS_ASSUMED
+U-04                         PASS
+U-05                         PASS
+feature_census               PASS
+REQ-01                       PASS_ASSUMED
+D-04a                        PASS
+D-03b                        PASS_ASSUMED
+D-05b                        PASS_ASSUMED
+E-05                         PASS_ASSUMED
+D-05a                        PASS_ASSUMED
+J-05                         PASS_ASSUMED
+REQ-04                       PASS_ASSUMED
+U-03                         PASS_ASSUMED
+E-01                         PASS_ASSUMED
+REQ-03                       PASS_ASSUMED
+REQ-05                       PASS_ASSUMED
+REQ-06                       PASS_ASSUMED
+E-06                         PASS
+D-01a                        PASS
+D-06a                        PASS
+D-01b                        PASS_ASSUMED
+U-06                         PASS
+D-03a                        PASS_ASSUMED
+U-07                         INCONCLUSIVE
+U-08                         N/A
+D-07                         N/A
+REQ-08                       INCONCLUSIVE
+   INCONCLUSIVE U-07 stl None  no STL given
+   INCONCLUSIVE REQ-08 stiffness None  Soft, bench: answered by the first print (A-12)
+timeline [('validity', 1.2), ('envelope', 1.2), ('roundtrip', 1.8), ('refs', 24.7), ('census', 25.0), ('bores', 46.4), ('caps', 48.0), ('contacts', 48.7), ('interference', 68.7), ('footprint', 71.1), ('lowering', 201.4), ('E-01', 203.7), ('REQ-02/03', 203.9), ('REQ-05a', 273.2), ('REQ-05b', 429.8), ('REQ-06/07', 430.6), ('min_wall 0.4 refused', 'Undersampled: a 232 x 215 mm face needs 313159 samples at 0.4 mm, more than 250000; a spacing of 0.45 mm fits'), ('min_wall', 468.9), ('overhang', 489.3), ('stl', 489.3)]

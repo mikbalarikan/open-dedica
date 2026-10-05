@@ -1,0 +1,3010 @@
+{
+ "labels": [
+  "od_t01_rig"
+ ],
+ "schema": "AP242",
+ "validity": {
+  "solid_count": {
+   "name": "solid_count",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "volume_mm3": 959176.3169313229,
+    "solid_volumes_mm3": [
+     959176.3169313229
+    ]
+   }
+  },
+  "brep_valid": {
+   "name": "brep_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "analyzer": true,
+    "budget_s": 120.0
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.042,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.000307408523310594,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  },
+  "naked_edges": {
+   "name": "naked_edges",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "edges": 147,
+    "free_edges": 0,
+    "edges_on_3plus_faces": 0,
+    "degenerate_edges": 0
+   }
+  }
+ },
+ "envelope": {
+  "size_x": {
+   "name": "envelope_size_x",
+   "measured": 240.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "size_y": {
+   "name": "envelope_size_y",
+   "measured": 150.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "size_z": {
+   "name": "envelope_size_z",
+   "measured": 120.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "min_x": {
+   "name": "envelope_min_x",
+   "measured": -120.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "min_y": {
+   "name": "envelope_min_y",
+   "measured": -8.881784197001e-16,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "min_z": {
+   "name": "envelope_min_z",
+   "measured": -60.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "max_x": {
+   "name": "envelope_max_x",
+   "measured": 120.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "max_y": {
+   "name": "envelope_max_y",
+   "measured": 150.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "max_z": {
+   "name": "envelope_max_z",
+   "measured": 60.0,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  }
+ },
+ "stray_shells": 0,
+ "stray_faces": 0,
+ "feature_census": {
+  "plane_faces": {
+   "name": "feature_census_plane_faces",
+   "measured": 41,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "cylinder_faces": {
+   "name": "feature_census_cylinder_faces",
+   "measured": 13,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "cone_faces": {
+   "name": "feature_census_cone_faces",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "sphere_faces": {
+   "name": "feature_census_sphere_faces",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "torus_faces": {
+   "name": "feature_census_torus_faces",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "bspline_faces": {
+   "name": "feature_census_bspline_faces",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "other_faces": {
+   "name": "feature_census_other_faces",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "concave_cylinders": {
+   "name": "feature_census_concave_cylinders",
+   "measured": 13,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "convex_cylinders": {
+   "name": "feature_census_convex_cylinders",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": ""
+  },
+  "bores": {
+   "name": "feature_census_bores",
+   "measured": 13,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": ""
+  }
+ },
+ "bore_census": {
+  "name": "bore_census",
+  "measured": 13,
+  "unit": "count",
+  "at": null,
+  "params": {},
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "bores": [
+    {
+     "solid": 0,
+     "diameter": 4.5,
+     "radius": 2.25,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      -105.0,
+      0.0,
+      -40.0
+     ],
+     "end": [
+      -105.0,
+      10.0,
+      -40.0
+     ],
+     "length": 10.0,
+     "span_deg": 269.8,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.5,
+     "radius": 2.25,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      -105.0,
+      0.0,
+      40.0
+     ],
+     "end": [
+      -105.0,
+      10.0,
+      40.0
+     ],
+     "length": 10.0,
+     "span_deg": 269.8,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 3.4,
+     "radius": 1.7,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      -44.0,
+      135.0,
+      -44.0
+     ],
+     "end": [
+      -44.0,
+      138.0,
+      -44.0
+     ],
+     "length": 3.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 3.4,
+     "radius": 1.7,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      -44.0,
+      135.0,
+      44.0
+     ],
+     "end": [
+      -44.0,
+      138.0,
+      44.0
+     ],
+     "length": 3.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 6.5,
+     "radius": 3.25,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      -44.0,
+      138.0,
+      -44.0
+     ],
+     "end": [
+      -44.0,
+      150.0,
+      -44.0
+     ],
+     "length": 12.0,
+     "span_deg": 269.8,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      false,
+      true
+     ],
+     "through": false
+    },
+    {
+     "solid": 0,
+     "diameter": 6.5,
+     "radius": 3.25,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      -44.0,
+      138.0,
+      44.0
+     ],
+     "end": [
+      -44.0,
+      150.0,
+      44.0
+     ],
+     "length": 12.0,
+     "span_deg": 269.8,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      false,
+      true
+     ],
+     "through": false
+    },
+    {
+     "solid": 0,
+     "diameter": 60.0,
+     "radius": 30.0,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      0.0,
+      135.0,
+      0.0
+     ],
+     "end": [
+      0.0,
+      150.0,
+      0.0
+     ],
+     "length": 15.0,
+     "span_deg": 269.8,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 3.4,
+     "radius": 1.7,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      44.0,
+      135.0,
+      -44.0
+     ],
+     "end": [
+      44.0,
+      138.0,
+      -44.0
+     ],
+     "length": 3.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 3.4,
+     "radius": 1.7,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      44.0,
+      135.0,
+      44.0
+     ],
+     "end": [
+      44.0,
+      138.0,
+      44.0
+     ],
+     "length": 3.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 6.5,
+     "radius": 3.25,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      44.0,
+      138.0,
+      -44.0
+     ],
+     "end": [
+      44.0,
+      150.0,
+      -44.0
+     ],
+     "length": 12.0,
+     "span_deg": 269.8,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      false,
+      true
+     ],
+     "through": false
+    },
+    {
+     "solid": 0,
+     "diameter": 6.5,
+     "radius": 3.25,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      44.0,
+      138.0,
+      44.0
+     ],
+     "end": [
+      44.0,
+      150.0,
+      44.0
+     ],
+     "length": 12.0,
+     "span_deg": 269.8,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      false,
+      true
+     ],
+     "through": false
+    },
+    {
+     "solid": 0,
+     "diameter": 4.5,
+     "radius": 2.25,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      105.0,
+      0.0,
+      -40.0
+     ],
+     "end": [
+      105.0,
+      10.0,
+      -40.0
+     ],
+     "length": 10.0,
+     "span_deg": 269.8,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.5,
+     "radius": 2.25,
+     "axis_dir": [
+      -0.0,
+      1.0,
+      -0.0
+     ],
+     "start": [
+      105.0,
+      0.0,
+      40.0
+     ],
+     "end": [
+      105.0,
+      10.0,
+      40.0
+     ],
+     "length": 10.0,
+     "span_deg": 269.8,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    }
+   ],
+   "concave_arcs": 0
+  }
+ },
+ "locate": {
+  "screw_11": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 3.4,
+    "unit": "mm",
+    "at": [
+     44.0,
+     135.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      136.5,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      135.0,
+      44.0
+     ],
+     "end": [
+      44.0,
+      138.0,
+      44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     44.0,
+     135.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      136.5,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      135.0,
+      44.0
+     ],
+     "end": [
+      44.0,
+      138.0,
+      44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 3.0,
+    "unit": "mm",
+    "at": [
+     44.0,
+     135.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      136.5,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      135.0,
+      44.0
+     ],
+     "end": [
+      44.0,
+      138.0,
+      44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 1,
+    "unit": "bool",
+    "at": [
+     44.0,
+     135.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      136.5,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      135.0,
+      44.0
+     ],
+     "end": [
+      44.0,
+      138.0,
+      44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "screw_1-1": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 3.4,
+    "unit": "mm",
+    "at": [
+     44.0,
+     135.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      136.5,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      135.0,
+      -44.0
+     ],
+     "end": [
+      44.0,
+      138.0,
+      -44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     44.0,
+     135.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      136.5,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      135.0,
+      -44.0
+     ],
+     "end": [
+      44.0,
+      138.0,
+      -44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 3.0,
+    "unit": "mm",
+    "at": [
+     44.0,
+     135.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      136.5,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      135.0,
+      -44.0
+     ],
+     "end": [
+      44.0,
+      138.0,
+      -44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 1,
+    "unit": "bool",
+    "at": [
+     44.0,
+     135.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      136.5,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      135.0,
+      -44.0
+     ],
+     "end": [
+      44.0,
+      138.0,
+      -44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "screw_-11": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 3.4,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     135.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      136.5,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      135.0,
+      44.0
+     ],
+     "end": [
+      -44.0,
+      138.0,
+      44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     135.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      136.5,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      135.0,
+      44.0
+     ],
+     "end": [
+      -44.0,
+      138.0,
+      44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 3.0,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     135.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      136.5,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      135.0,
+      44.0
+     ],
+     "end": [
+      -44.0,
+      138.0,
+      44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 1,
+    "unit": "bool",
+    "at": [
+     -44.0,
+     135.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      136.5,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      135.0,
+      44.0
+     ],
+     "end": [
+      -44.0,
+      138.0,
+      44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "screw_-1-1": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 3.4,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     135.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      136.5,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      135.0,
+      -44.0
+     ],
+     "end": [
+      -44.0,
+      138.0,
+      -44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     135.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      136.5,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      135.0,
+      -44.0
+     ],
+     "end": [
+      -44.0,
+      138.0,
+      -44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 3.0,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     135.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      136.5,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      135.0,
+      -44.0
+     ],
+     "end": [
+      -44.0,
+      138.0,
+      -44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 1,
+    "unit": "bool",
+    "at": [
+     -44.0,
+     135.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      136.5,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      135.0,
+      -44.0
+     ],
+     "end": [
+      -44.0,
+      138.0,
+      -44.0
+     ],
+     "span_deg": 360.0,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "cbore_11": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 6.5,
+    "unit": "mm",
+    "at": [
+     44.0,
+     138.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      144.0,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      138.0,
+      44.0
+     ],
+     "end": [
+      44.0,
+      150.0,
+      44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     44.0,
+     138.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      144.0,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      138.0,
+      44.0
+     ],
+     "end": [
+      44.0,
+      150.0,
+      44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 12.0,
+    "unit": "mm",
+    "at": [
+     44.0,
+     138.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      144.0,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      138.0,
+      44.0
+     ],
+     "end": [
+      44.0,
+      150.0,
+      44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 0,
+    "unit": "bool",
+    "at": [
+     44.0,
+     138.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      144.0,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      138.0,
+      44.0
+     ],
+     "end": [
+      44.0,
+      150.0,
+      44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   }
+  },
+  "cbore_1-1": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 6.5,
+    "unit": "mm",
+    "at": [
+     44.0,
+     138.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      144.0,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      138.0,
+      -44.0
+     ],
+     "end": [
+      44.0,
+      150.0,
+      -44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     44.0,
+     138.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      144.0,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      138.0,
+      -44.0
+     ],
+     "end": [
+      44.0,
+      150.0,
+      -44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 12.0,
+    "unit": "mm",
+    "at": [
+     44.0,
+     138.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      144.0,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      138.0,
+      -44.0
+     ],
+     "end": [
+      44.0,
+      150.0,
+      -44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 0,
+    "unit": "bool",
+    "at": [
+     44.0,
+     138.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      44.0,
+      144.0,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      44.0,
+      138.0,
+      -44.0
+     ],
+     "end": [
+      44.0,
+      150.0,
+      -44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   }
+  },
+  "cbore_-11": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 6.5,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     138.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      144.0,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      138.0,
+      44.0
+     ],
+     "end": [
+      -44.0,
+      150.0,
+      44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     138.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      144.0,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      138.0,
+      44.0
+     ],
+     "end": [
+      -44.0,
+      150.0,
+      44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 12.0,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     138.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      144.0,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      138.0,
+      44.0
+     ],
+     "end": [
+      -44.0,
+      150.0,
+      44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 0,
+    "unit": "bool",
+    "at": [
+     -44.0,
+     138.0,
+     44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      144.0,
+      44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      138.0,
+      44.0
+     ],
+     "end": [
+      -44.0,
+      150.0,
+      44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   }
+  },
+  "cbore_-1-1": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 6.5,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     138.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      144.0,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      138.0,
+      -44.0
+     ],
+     "end": [
+      -44.0,
+      150.0,
+      -44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     138.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      144.0,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      138.0,
+      -44.0
+     ],
+     "end": [
+      -44.0,
+      150.0,
+      -44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 12.0,
+    "unit": "mm",
+    "at": [
+     -44.0,
+     138.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      144.0,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      138.0,
+      -44.0
+     ],
+     "end": [
+      -44.0,
+      150.0,
+      -44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 0,
+    "unit": "bool",
+    "at": [
+     -44.0,
+     138.0,
+     -44.0
+    ],
+    "params": {
+     "near": [
+      -44.0,
+      144.0,
+      -44.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -44.0,
+      138.0,
+      -44.0
+     ],
+     "end": [
+      -44.0,
+      150.0,
+      -44.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      false,
+      true
+     ]
+    }
+   }
+  },
+  "window": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 60.0,
+    "unit": "mm",
+    "at": [
+     0.0,
+     135.0,
+     0.0
+    ],
+    "params": {
+     "near": [
+      0.0,
+      142.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      0.0,
+      135.0,
+      0.0
+     ],
+     "end": [
+      0.0,
+      150.0,
+      0.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     0.0,
+     135.0,
+     0.0
+    ],
+    "params": {
+     "near": [
+      0.0,
+      142.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      0.0,
+      135.0,
+      0.0
+     ],
+     "end": [
+      0.0,
+      150.0,
+      0.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 15.0,
+    "unit": "mm",
+    "at": [
+     0.0,
+     135.0,
+     0.0
+    ],
+    "params": {
+     "near": [
+      0.0,
+      142.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      0.0,
+      135.0,
+      0.0
+     ],
+     "end": [
+      0.0,
+      150.0,
+      0.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 1,
+    "unit": "bool",
+    "at": [
+     0.0,
+     135.0,
+     0.0
+    ],
+    "params": {
+     "near": [
+      0.0,
+      142.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      0.0,
+      135.0,
+      0.0
+     ],
+     "end": [
+      0.0,
+      150.0,
+      0.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "bench_11": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 4.5,
+    "unit": "mm",
+    "at": [
+     105.0,
+     0.0,
+     40.0
+    ],
+    "params": {
+     "near": [
+      105.0,
+      5.0,
+      40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      105.0,
+      0.0,
+      40.0
+     ],
+     "end": [
+      105.0,
+      10.0,
+      40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     105.0,
+     0.0,
+     40.0
+    ],
+    "params": {
+     "near": [
+      105.0,
+      5.0,
+      40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      105.0,
+      0.0,
+      40.0
+     ],
+     "end": [
+      105.0,
+      10.0,
+      40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 10.0,
+    "unit": "mm",
+    "at": [
+     105.0,
+     0.0,
+     40.0
+    ],
+    "params": {
+     "near": [
+      105.0,
+      5.0,
+      40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      105.0,
+      0.0,
+      40.0
+     ],
+     "end": [
+      105.0,
+      10.0,
+      40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 1,
+    "unit": "bool",
+    "at": [
+     105.0,
+     0.0,
+     40.0
+    ],
+    "params": {
+     "near": [
+      105.0,
+      5.0,
+      40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      105.0,
+      0.0,
+      40.0
+     ],
+     "end": [
+      105.0,
+      10.0,
+      40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "bench_1-1": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 4.5,
+    "unit": "mm",
+    "at": [
+     105.0,
+     0.0,
+     -40.0
+    ],
+    "params": {
+     "near": [
+      105.0,
+      5.0,
+      -40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      105.0,
+      0.0,
+      -40.0
+     ],
+     "end": [
+      105.0,
+      10.0,
+      -40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     105.0,
+     0.0,
+     -40.0
+    ],
+    "params": {
+     "near": [
+      105.0,
+      5.0,
+      -40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      105.0,
+      0.0,
+      -40.0
+     ],
+     "end": [
+      105.0,
+      10.0,
+      -40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 10.0,
+    "unit": "mm",
+    "at": [
+     105.0,
+     0.0,
+     -40.0
+    ],
+    "params": {
+     "near": [
+      105.0,
+      5.0,
+      -40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      105.0,
+      0.0,
+      -40.0
+     ],
+     "end": [
+      105.0,
+      10.0,
+      -40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 1,
+    "unit": "bool",
+    "at": [
+     105.0,
+     0.0,
+     -40.0
+    ],
+    "params": {
+     "near": [
+      105.0,
+      5.0,
+      -40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      105.0,
+      0.0,
+      -40.0
+     ],
+     "end": [
+      105.0,
+      10.0,
+      -40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "bench_-11": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 4.5,
+    "unit": "mm",
+    "at": [
+     -105.0,
+     0.0,
+     40.0
+    ],
+    "params": {
+     "near": [
+      -105.0,
+      5.0,
+      40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -105.0,
+      0.0,
+      40.0
+     ],
+     "end": [
+      -105.0,
+      10.0,
+      40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     -105.0,
+     0.0,
+     40.0
+    ],
+    "params": {
+     "near": [
+      -105.0,
+      5.0,
+      40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -105.0,
+      0.0,
+      40.0
+     ],
+     "end": [
+      -105.0,
+      10.0,
+      40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 10.0,
+    "unit": "mm",
+    "at": [
+     -105.0,
+     0.0,
+     40.0
+    ],
+    "params": {
+     "near": [
+      -105.0,
+      5.0,
+      40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -105.0,
+      0.0,
+      40.0
+     ],
+     "end": [
+      -105.0,
+      10.0,
+      40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 1,
+    "unit": "bool",
+    "at": [
+     -105.0,
+     0.0,
+     40.0
+    ],
+    "params": {
+     "near": [
+      -105.0,
+      5.0,
+      40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -105.0,
+      0.0,
+      40.0
+     ],
+     "end": [
+      -105.0,
+      10.0,
+      40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  },
+  "bench_-1-1": {
+   "diameter": {
+    "name": "bore_diameter",
+    "measured": 4.5,
+    "unit": "mm",
+    "at": [
+     -105.0,
+     0.0,
+     -40.0
+    ],
+    "params": {
+     "near": [
+      -105.0,
+      5.0,
+      -40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -105.0,
+      0.0,
+      -40.0
+     ],
+     "end": [
+      -105.0,
+      10.0,
+      -40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "offset": {
+    "name": "bore_axis_offset",
+    "measured": 0.0,
+    "unit": "mm",
+    "at": [
+     -105.0,
+     0.0,
+     -40.0
+    ],
+    "params": {
+     "near": [
+      -105.0,
+      5.0,
+      -40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -105.0,
+      0.0,
+      -40.0
+     ],
+     "end": [
+      -105.0,
+      10.0,
+      -40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "length": {
+    "name": "bore_length",
+    "measured": 10.0,
+    "unit": "mm",
+    "at": [
+     -105.0,
+     0.0,
+     -40.0
+    ],
+    "params": {
+     "near": [
+      -105.0,
+      5.0,
+      -40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -105.0,
+      0.0,
+      -40.0
+     ],
+     "end": [
+      -105.0,
+      10.0,
+      -40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   },
+   "through": {
+    "name": "bore_through",
+    "measured": 1,
+    "unit": "bool",
+    "at": [
+     -105.0,
+     0.0,
+     -40.0
+    ],
+    "params": {
+     "near": [
+      -105.0,
+      5.0,
+      -40.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "status": "MEASURED",
+    "reason": "",
+    "detail": {
+     "start": [
+      -105.0,
+      0.0,
+      -40.0
+     ],
+     "end": [
+      -105.0,
+      10.0,
+      -40.0
+     ],
+     "span_deg": 269.8,
+     "open_ends": [
+      true,
+      true
+     ]
+    }
+   }
+  }
+ },
+ "mass": {
+  "volume": {
+   "name": "mass_volume",
+   "measured": 959176.3169313229,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "mass": {
+   "name": "mass_mass",
+   "measured": 1189.3786329948402,
+   "unit": "g",
+   "at": null,
+   "params": {
+    "density_kg_m3": 1240
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_x": {
+   "name": "mass_com_x",
+   "measured": -4.779015807249435e-12,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_y": {
+   "name": "mass_com_y",
+   "measured": 72.48325644312608,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_z": {
+   "name": "mass_com_z",
+   "measured": -4.219032363958463,
+   "unit": "mm",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  }
+ },
+ "compare_delivered": {
+  "schema": {
+   "name": "step_schema",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {
+    "schema": "AP242"
+   },
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "found": "AP242",
+    "sha256": "cc6b1c721fd34f74232c4cee504c95c0852573fa351411ca12a02c27904c9f5c",
+    "path": "od_t01_rig_C1_v01.step"
+   }
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 1,
+    "sha256": "cc6b1c721fd34f74232c4cee504c95c0852573fa351411ca12a02c27904c9f5c",
+    "path": "od_t01_rig_C1_v01.step"
+   }
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built_mm3": 959176.3169313229,
+    "reimported_mm3": 959176.3169313229,
+    "sha256": "cc6b1c721fd34f74232c4cee504c95c0852573fa351411ca12a02c27904c9f5c",
+    "path": "od_t01_rig_C1_v01.step"
+   }
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 54,
+    "reimported": 54
+   }
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": [
+     "od_t01_rig"
+    ],
+    "reimported": [
+     "od_t01_rig"
+    ]
+   }
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.039,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.000307408523310594,
+    "loose_shells": 0,
+    "loose_faces": 0
+   }
+  }
+ },
+ "roundtrip": {
+  "schema": {
+   "name": "step_schema",
+   "measured": null,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "solids": {
+   "name": "step_roundtrip_solids",
+   "measured": null,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "volume_delta": {
+   "name": "step_roundtrip_volume_delta",
+   "measured": null,
+   "unit": "mm3",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "faces_delta": {
+   "name": "step_roundtrip_faces_delta",
+   "measured": null,
+   "unit": "count",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "labels": {
+   "name": "step_roundtrip_labels",
+   "measured": null,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  },
+  "valid_after": {
+   "name": "step_roundtrip_valid",
+   "measured": null,
+   "unit": "bool",
+   "at": null,
+   "params": {},
+   "status": "INCONCLUSIVE",
+   "reason": "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file",
+   "detail": {}
+  }
+ },
+ "seconds": 1.023139476776123
+}

@@ -1,0 +1,9 @@
+{
+ "tolerance_mm": 0.01,
+ "angular_tolerance_rad": 0.1,
+ "triangles": 5752,
+ "max_sagitta_mm": 0.0049966441054580864,
+ "stl": "od_t01_rig_C1_wall_x_in_low_v01.stl",
+ "sha256": "5a4ec952e770e5423dcb9189399cca1a28926a2f8e5082f46bf1684c46bd8638",
+ "meshed_from": "od_t01_rig_C1_wall_x_in_low_v01.step"
+}

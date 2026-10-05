@@ -1,0 +1,171 @@
+{
+ "min_wall": {
+  "measured": 4.9999999999999964,
+  "unit": "mm",
+  "at": [
+   -45.099778,
+   135.0,
+   -47.043189
+  ],
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "largest_step_mm": 0.399334,
+   "wide": {
+    "opposition_deg": 45.0,
+    "measured": 4.9999999999999964,
+    "at": [
+     -45.099778,
+     135.0,
+     -47.043189
+    ]
+   }
+  }
+ },
+ "min_wall_wide": {
+  "measured": 4.9999999999999964,
+  "unit": "mm",
+  "at": [
+   -45.099778,
+   135.0,
+   -47.043189
+  ],
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "gated_mm": 4.9999999999999964,
+   "largest_step_mm": 0.399334
+  }
+ },
+ "overhang_raw": {
+  "measured": 0.0,
+  "unit": "deg",
+  "at": [
+   -44.0,
+   135.0,
+   -42.3
+  ],
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "below_min_deg": 312,
+   "bed_samples": 44454,
+   "largest_step_mm": 0.49896,
+   "sampling_bound_deg": 0.009574,
+   "per_kind_least_deg": {
+    "cylinder": 0.0,
+    "plane": 45.1
+   }
+  }
+ },
+ "overhang_plugged": {
+  "measured": 45.100000000006105,
+  "unit": "deg",
+  "at": [
+   21.250195,
+   135.0,
+   21.176147
+  ],
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "below_min_deg": 0,
+   "bed_samples": 44454,
+   "largest_step_mm": 0.49896,
+   "sampling_bound_deg": 0.009329,
+   "per_kind_least_deg": {
+    "cylinder": 45.1,
+    "plane": 45.1
+   }
+  }
+ },
+ "bridge": {
+  "measured": 0.0,
+  "unit": "mm",
+  "at": null,
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "ceilings": []
+  }
+ },
+ "roundtrip": {
+  "schema": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "solids": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "volume_delta": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "faces_delta": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "labels": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ],
+  "valid_after": [
+   null,
+   "INCONCLUSIVE",
+   "ValueError: this part sits in an assembly (it has a parent), and OCCT cannot transfer it on its own: write the assembly, or build the part again for its own file"
+  ]
+ },
+ "remesh": "Written(path=PosixPath('/root/oguz-jobs/20261002-od-t01-pressure-test-rig/reviews/RV02_work/remesh_v02.stl'), sha256='183e58f0eda9287450d79d1a15aa3a4dabcf694449a6b82ae3a9ef9f24bfbd3f', format='STL', size_bytes=287684, detail={'tolerance_mm': 0.01, 'angular_tolerance_rad': 0.1, 'triangles': 5752, 'max_sagitta_mm': 0.0049966441054580864}, checks={'max_sagitta': Result(name='stl_max_sagitta', measured=0.0049966441054580864, unit='mm', at=(-21.62952862819994, 141.25, 20.781330988221235), params={'samples_per_triangle': 13}, status='MEASURED', reason='', detail={'triangles': 5752, 'samples': 36218, 'faces_without_triangles': 0, 'unprojected_samples': 0})})",
+ "sagitta": {
+  "measured": 0.0049966441054580864,
+  "unit": "mm",
+  "at": [
+   -21.62952862819994,
+   141.25,
+   20.781330988221235
+  ],
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {}
+ },
+ "stl_sha_delivered": "183e58f0eda9287450d79d1a15aa3a4dabcf694449a6b82ae3a9ef9f24bfbd3f",
+ "stl_sha_remesh": "183e58f0eda9287450d79d1a15aa3a4dabcf694449a6b82ae3a9ef9f24bfbd3f",
+ "mesh_census": {
+  "triangles": 5752,
+  "bodies": 1,
+  "naked_edges": 0,
+  "winding": 1,
+  "volume": 1143760.0332467787
+ },
+ "mesh_deviation": {
+  "measured": 0.00499725341796875,
+  "unit": "mm",
+  "at": [
+   0.0,
+   147.5,
+   -30.0
+  ],
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {}
+ },
+ "min_wall_mesh": {
+  "measured": 4.9999999999999964,
+  "unit": "mm",
+  "at": [
+   -44.22288,
+   135.0,
+   47.904633
+  ],
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {}
+ },
+ "angular_limit": 0.1032824249905986
+}
