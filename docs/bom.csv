@@ -66,7 +66,7 @@ OD-E58,OD-E00,ELEC,Logic PSU — Path 2,,,1,VENDOR,5 V or 24 V,Mean Well-style,1
 OD-E59,OD-E00,MFG,SSR heat-sink plate,,,1,DESIGN,aluminium,local shop / scrap,—,,proposed
 OD-E60,OD-E00,STD,IEC inlet with fuse (alternative to OD-E06),,,1,VENDOR,,TME / AliExpress,4,,todo
 OD-C00,OD-000,ASM,Chassis & body,,,1,DESIGN,,,,,todo
-OD-C01,OD-C00,PRINT,Base frame / floor plate,,,1,DESIGN,PLA for now (service PETG or ASA: A-10),printed (Anycubic Kobra Max 3),print,,modeled
+OD-C01,OD-C00,PRINT,"Base frame / floor plate (revision B, 38 Ø4.0 insert holes)",,,1,DESIGN,PLA for now (service PETG or ASA: A-10),printed (Anycubic Kobra Max 3),print,,modeled
 OD-C02,OD-C00,PRINT,Wet/electric bulkhead with drainage path,,,1,DESIGN,PLA for now (fit-check prints only — 13 from the thermoblock; service ASA),printed (Creality K1C),print,,modeled
 OD-C03,OD-C00,PRINT,Pump cradle (sleeve + spring suspension),,,1,DESIGN,PLA for now (service PETG),printed,print,#1,modeled
 OD-C04,OD-C00,PRINT,Thermoblock mount (≥10 mm air gap to printed walls),,,1,DESIGN,PLA for now (fit-check prints only — hot zone; service ASA / PC),printed,print,#2,modeled

@@ -1,0 +1,772 @@
+{
+ "REQ-01": {
+  "nominal_d": 4.0,
+  "rows": [
+   {
+    "at": [
+     -35,
+     -40
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     35,
+     -40
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -35,
+     -60
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     35,
+     -60
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "REQ-02": {
+  "nominal_d": 4.0,
+  "rows": [
+   {
+    "at": [
+     -40,
+     -148
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     40,
+     -148
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -40,
+     -114
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     40,
+     -114
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "REQ-03": {
+  "nominal_d": 4.0,
+  "rows": [
+   {
+    "at": [
+     -4,
+     -239
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -4,
+     -171
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     37,
+     -239
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     37,
+     -171
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "REQ-04": {
+  "nominal_d": 4.0,
+  "rows": [
+   {
+    "at": [
+     65,
+     -45
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     65,
+     -105
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     65,
+     -165
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     65,
+     -225
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "REQ-05": {
+  "nominal_d": 3.4,
+  "rows": [
+   {
+    "at": [
+     -110,
+     90
+    ],
+    "dia": 3.4,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     110,
+     90
+    ],
+    "dia": 3.4,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -110,
+     -295
+    ],
+    "dia": 3.4,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     110,
+     -295
+    ],
+    "dia": 3.4,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "REQ-06": {
+  "nominal_d": 8.0,
+  "rows": [
+   {
+    "at": [
+     -80,
+     -120
+    ],
+    "dia": 8.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -80,
+     -230
+    ],
+    "dia": 8.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "REQ-10": {
+  "nominal_d": 4.0,
+  "rows": [
+   {
+    "at": [
+     -113,
+     -42
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -71,
+     -42
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -113,
+     -148.5
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -71,
+     -148.5
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "REQ-11": {
+  "nominal_d": 4.0,
+  "rows": [
+   {
+    "at": [
+     88,
+     -222
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     106,
+     -222
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     88,
+     -78
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     106,
+     -78
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "REQ-12": {
+  "nominal_d": 4.0,
+  "rows": [
+   {
+    "at": [
+     -81,
+     -282
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     81,
+     -282
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -95,
+     -282
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     95,
+     -282
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "REQ-13": {
+  "nominal_d": 4.0,
+  "rows": [
+   {
+    "at": [
+     -104.5,
+     -262
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     104.5,
+     -262
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -104.5,
+     -15
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     104.5,
+     -15
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -104.5,
+     62
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     104.5,
+     62
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "REQ-14": {
+  "nominal_d": 4.0,
+  "rows": [
+   {
+    "at": [
+     -85,
+     77
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     85,
+     77
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     -95,
+     77
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   },
+   {
+    "at": [
+     95,
+     77
+    ],
+    "dia": 4.0,
+    "off": 0.0,
+    "length": 6.0,
+    "through": 1,
+    "status": "MEASURED"
+   }
+  ],
+  "worst_dia_dev": 0.0,
+  "worst_off": 0.0,
+  "min_len": 6.0,
+  "all_through": true
+ },
+ "new_hole_c2c": {
+  "88,-222": {
+   "dist": 18.0,
+   "to": [
+    106.0,
+    -222.0,
+    4.0
+   ],
+   "wall": 14.0
+  },
+  "106,-222": {
+   "dist": 18.0,
+   "to": [
+    88.0,
+    -222.0,
+    4.0
+   ],
+   "wall": 14.0
+  },
+  "88,-78": {
+   "dist": 18.0,
+   "to": [
+    106.0,
+    -78.0,
+    4.0
+   ],
+   "wall": 14.0
+  },
+  "106,-78": {
+   "dist": 18.0,
+   "to": [
+    88.0,
+    -78.0,
+    4.0
+   ],
+   "wall": 14.0
+  },
+  "-81,-282": {
+   "dist": 14.0,
+   "to": [
+    -95.0,
+    -282.0,
+    4.0
+   ],
+   "wall": 10.0
+  },
+  "81,-282": {
+   "dist": 14.0,
+   "to": [
+    95.0,
+    -282.0,
+    4.0
+   ],
+   "wall": 10.0
+  },
+  "-95,-282": {
+   "dist": 14.0,
+   "to": [
+    -81.0,
+    -282.0,
+    4.0
+   ],
+   "wall": 10.0
+  },
+  "95,-282": {
+   "dist": 14.0,
+   "to": [
+    81.0,
+    -282.0,
+    4.0
+   ],
+   "wall": 10.0
+  },
+  "-104.5,-262": {
+   "dist": 22.14159,
+   "to": [
+    -95.0,
+    -282.0,
+    4.0
+   ],
+   "wall": 18.14159
+  },
+  "104.5,-262": {
+   "dist": 22.14159,
+   "to": [
+    95.0,
+    -282.0,
+    4.0
+   ],
+   "wall": 18.14159
+  },
+  "-104.5,-15": {
+   "dist": 28.30636,
+   "to": [
+    -113.0,
+    -42.0,
+    4.0
+   ],
+   "wall": 24.30636
+  },
+  "104.5,-15": {
+   "dist": 49.600907,
+   "to": [
+    65.0,
+    -45.0,
+    4.0
+   ],
+   "wall": 45.600907
+  },
+  "-104.5,62": {
+   "dist": 17.755281,
+   "to": [
+    -95.0,
+    77.0,
+    4.0
+   ],
+   "wall": 13.755281
+  },
+  "104.5,62": {
+   "dist": 17.755281,
+   "to": [
+    95.0,
+    77.0,
+    4.0
+   ],
+   "wall": 13.755281
+  },
+  "-85,77": {
+   "dist": 10.0,
+   "to": [
+    -95.0,
+    77.0,
+    4.0
+   ],
+   "wall": 6.0
+  },
+  "85,77": {
+   "dist": 10.0,
+   "to": [
+    95.0,
+    77.0,
+    4.0
+   ],
+   "wall": 6.0
+  },
+  "-95,77": {
+   "dist": 10.0,
+   "to": [
+    -85.0,
+    77.0,
+    4.0
+   ],
+   "wall": 6.0
+  },
+  "95,77": {
+   "dist": 10.0,
+   "to": [
+    85.0,
+    77.0,
+    4.0
+   ],
+   "wall": 6.0
+  }
+ },
+ "least_c2c": 10.0,
+ "least_wall_between_holes": 6.0,
+ "new_hole_outline": {
+  "88,-222": 32,
+  "106,-222": 14,
+  "88,-78": 32,
+  "106,-78": 14,
+  "-81,-282": 21.780497,
+  "81,-282": 21.780497,
+  "-95,-282": 9.849433,
+  "95,-282": 9.849433,
+  "-104.5,-262": 15.5,
+  "104.5,-262": 15.5,
+  "-104.5,-15": 15.5,
+  "104.5,-15": 15.5,
+  "-104.5,62": 15.5,
+  "104.5,62": 15.5,
+  "-85,77": 18.178006,
+  "85,77": 18.178006,
+  "-95,77": 9.849433,
+  "95,77": 9.849433
+ },
+ "least_outline": 9.849433
+}

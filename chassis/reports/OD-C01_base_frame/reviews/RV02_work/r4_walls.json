@@ -1,0 +1,136 @@
+{
+ "min_wall": {
+  "measured": 4.999999999899995,
+  "unit": "mm",
+  "at": [
+   -115.0,
+   -5.7,
+   -42.0
+  ],
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "rays": 423094,
+   "lost_rays": 0,
+   "face_pairs_measured_exactly": 4,
+   "face_pairs_never_opposed": 0,
+   "face_pairs_failed": 0,
+   "exact_points_without_normal": 0,
+   "solids": 4,
+   "largest_step_mm": 0.69873,
+   "wide": {
+    "opposition_deg": 45.0,
+    "measured": 4.999999999899995,
+    "at": [
+     -115.0,
+     -5.7,
+     -42.0
+    ]
+   },
+   "hit_at": [
+    -120.0,
+    -5.7,
+    -42.0
+   ],
+   "from_face": "cylinder",
+   "to_face": "plane",
+   "found_by": "ray"
+  }
+ },
+ "min_wall_wide": {
+  "measured": 4.999999999899995,
+  "unit": "mm",
+  "at": [
+   -115.0,
+   -5.7,
+   -42.0
+  ],
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "gated_mm": 4.999999999899995,
+   "gated_opposition_deg": 25.0,
+   "gated_at": [
+    -115.0,
+    -5.7,
+    -42.0
+   ],
+   "rays": 423094,
+   "solids": 4,
+   "largest_step_mm": 0.69873,
+   "face_pairs_measured_exactly": 4
+  }
+ },
+ "overhang": {
+  "measured": 90.0,
+  "unit": "deg",
+  "at": null,
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "samples": 433202,
+   "downward_samples": 0,
+   "below_min_deg": 0,
+   "bed_samples": 199813,
+   "bed_height_mm": -6.0,
+   "largest_step_mm": 0.69873,
+   "sampling_bound_deg": 0.0,
+   "seeds_refined": 0,
+   "per_kind_least_deg": {}
+  }
+ },
+ "bridge": {
+  "measured": 0.0,
+  "unit": "mm",
+  "at": null,
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "ceilings": [],
+   "bed_faces": 1,
+   "sampling_bound_mm": 0.0
+  }
+ },
+ "mass": {
+  "volume": {
+   "measured": 578998.7364057965,
+   "unit": "mm3",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "mass": {
+   "measured": 717.9584331431876,
+   "unit": "g",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_x": {
+   "measured": 0.03828518703994346,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_y": {
+   "measured": -3.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  },
+  "com_z": {
+   "measured": -102.36977825890824,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {}
+  }
+ }
+}

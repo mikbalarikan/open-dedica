@@ -35,7 +35,7 @@ revisited when the scan lands.
 | 4 | `OD-C04` thermoblock mount | OD-H11 with its NTC/TCO brackets (OD-H17, H19) | modeled, approved on assumptions (RV01); calipers: 10.10 mm air gap, spacer lengths, bracket holes |
 | 5 | `OD-C07` valve and flowmeter mount | OD-H22, OD-H24 (OD-H21 sits in the water path, not on the mount) | modeled; RV01 REVISE, two seat gaps accepted by the Usta as deviations |
 | 6 | `OD-C06` water tank dock | OD-W03 seat; tank OD-W01/W02 | deferred: the tank stands on the table (the Usta, 2026-10-01); its tubes and the mains cord leave through OD-C11's three Ø12 pass-throughs at y 30 |
-| 7 | `OD-C01` base frame / floor plate | the footprints of 2–6; drip tray OD-C21/C22 | modeled, RV01 passed (PETG, Kobra Max 3); flatness is a bench check; layout assumes the group head vertical, housing rear face 205 mm above the base (awaits the Usta's axis decision); OD-C01 A-12 (feet screwed from below) is superseded by OD-C15 A-02 (screw from above, captive nut); the 18 inserts for OD-C08, OD-C11, OD-C16 and OD-C09 below are not in the plate STEP yet (revision B, spec 1.3, drafted) |
+| 7 | `OD-C01` base frame / floor plate | the footprints of 2–6; drip tray OD-C21/C22 | modeled, revision B: RV02 approved on assumptions (PLA for now, Kobra Max 3), 38 insert holes; flatness is a bench check; layout assumes the group head vertical, housing rear face 205 mm above the base (awaits the Usta's axis decision); OD-C01 A-12 (feet screwed from below) is superseded by OD-C15 A-02 (screw from above, captive nut); revision B (spec 1.3, build v03, RV02 approved on assumptions) adds the 18 holes for OD-C08, OD-C11, OD-C16 and OD-C09 |
 | 8 | `OD-C02` wet/electric bulkhead | OD-C01, the tube runs | modeled, RV01 approved on assumptions (ASA, K1C); M3×12 into the base rail (`OD-F10`) |
 | 9 | `OD-C08` electronics bay tray | OD-E01, OD-E02 (path 1) or OD-E51…E58 (path 2) | modeled, RV01 approved on assumptions (PETG, K1C); path 1, the OEM PCB OD-E01 on edge; OD-E02 (front buttons) belongs to OD-C09 |
 | 10 | `OD-C09` front panel with button bezel | OD-G01 mouth, OD-E02 buttons, OD-S03 knob (phase 2) | modeled, RV01 approved on assumptions (PLA, Kobra Max 3): 3.0 fascia at z +94 … +97 with return ribs round the brew opening, two floor flanges into four OD-C01 inserts, OD-E02 on two Ø11 bosses (buttons in a column on the left pillar); the locked portafilter swings φ −55 … +10 with ≥ 2.5 to the window edge; the phase-2 steam knob place stays free |
@@ -81,12 +81,12 @@ Insert pattern as built into OD-C01 (OD-C01 frame, x and z in mm):
 | `OD-C03` | −4, 37 | −239, −171 |
 | `OD-C02` | 65 | −45, −105, −165, −225 |
 | `OD-C07` | −113, −71 | −42, −148.5 |
-| `OD-C08` (new, not in the plate STEP yet) | 88, 106 | −222, −78 |
-| `OD-C11` (new, not in the plate STEP yet) | ±81, ±95 | −282 |
-| `OD-C16` (new, not in the plate STEP yet) | ±104.5 | −262, −15, +62 |
-| `OD-C09` (new, not in the plate STEP yet) | ±85, ±95 | +77 |
+| `OD-C08` | 88, 106 | −222, −78 |
+| `OD-C11` | ±81, ±95 | −282 |
+| `OD-C16` | ±104.5 | −262, −15, +62 |
+| `OD-C09` | ±85, ±95 | +77 |
 
-The eighteen new inserts sit from the plate's top face (axis −Y), each ≥ 6 from every existing hole and ≥ 8 from the edge (checked by the C08 and C11 reviewers). The plate is 6 thick, so a 6 deep bore reaches the underside: an OD-C01 revision decides through vs. blind (a boss below, or a 5.0 bore with a shorter insert).
+Revision B's eighteen holes are Ø4.0 through the 6.0 plate like the other twenty, inserts driven from the top (OD-C01 spec 1.3, A-11); RV02 measured each ≥ 10.0 centre to centre from every other hole and ≥ 10.0 from the plate's outline. The four holes at x 65 stay empty: OD-C02's M3×12 pass through them from below into the bulkhead's rail.
 
 Frames for OD-000: OD-C01, OD-C02, OD-C08, OD-C10, OD-C11 and OD-C07's footprint use the machine frame (X right, +Y up, +Z front, plate top y = 0); OD-C05 is in the housing frame (x → X, y → +Z, z → −Y, origin (0, 180.06, 32.0)). Check every insert pattern with calipers before the first print.
 

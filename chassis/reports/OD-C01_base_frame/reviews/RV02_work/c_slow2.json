@@ -1,0 +1,18 @@
+{
+ "overhang_census (D-03a)": [
+  {
+   "mutant": "degrade: a 10 x 2 mm pocket milled into the bed face at z -160, leaving a flat ceiling 2 mm above the bed",
+   "got": "least 0.0 deg at (-5.0, -4.0, -190.0) (MEASURED)",
+   "required": ">= 45 deg",
+   "got_word": "FAIL"
+  }
+ ],
+ "flat_ceiling_spans (D-03b)": [
+  {
+   "mutant": "degrade: the same 10 x 2 mm pocket in the bed face at z -160",
+   "got": "span 10.5 mm at (-0.25, -4.0, -170.95) (MEASURED)",
+   "required": "<= 5 mm",
+   "got_word": "FAIL"
+  }
+ ]
+}

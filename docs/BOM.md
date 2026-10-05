@@ -122,7 +122,7 @@ DESIGN native design · VENDOR vendor STEP
 | Part No | Parent | Type | Name | Ref# | OEM code | Qty | CAD | Material / spec | Source | ~€ | Issue | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `OD-C00` | OD-000 | ASM | **Chassis & body** |  |  | 1 | DESIGN |  |  |  |  | ☐ |
-| `OD-C01` | OD-C00 | PRINT | Base frame / floor plate |  |  | 1 | DESIGN | PLA for now (service PETG or ASA: A-10) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
+| `OD-C01` | OD-C00 | PRINT | Base frame / floor plate (revision B, 38 Ø4.0 insert holes) |  |  | 1 | DESIGN | PLA for now (service PETG or ASA: A-10) | printed (Anycubic Kobra Max 3) | print |  | 🧊 |
 | `OD-C02` | OD-C00 | PRINT | Wet/electric bulkhead with drainage path |  |  | 1 | DESIGN | PLA for now (fit-check prints only — 13 from the thermoblock; service ASA) | printed (Creality K1C) | print |  | 🧊 |
 | `OD-C03` | OD-C00 | PRINT | Pump cradle (sleeve + spring suspension) |  |  | 1 | DESIGN | PLA for now (service PETG) | printed | print | #1 | 🧊 |
 | `OD-C04` | OD-C00 | PRINT | Thermoblock mount (≥10 mm air gap to printed walls) |  |  | 1 | DESIGN | PLA for now (fit-check prints only — hot zone; service ASA / PC) | printed | print | #2 | 🧊 |

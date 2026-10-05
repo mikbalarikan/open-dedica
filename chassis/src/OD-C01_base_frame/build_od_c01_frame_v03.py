@@ -1,8 +1,12 @@
-"""Build od_c01_frame v02, concept C1 (job 20260930-od-c01-base-frame, spec 1.2).
+"""Build od_c01_frame v03, concept C1 (job 20260930-od-c01-base-frame, spec 1.3).
 
-v02 (brief WP-04) against v01: four more insert holes for the OD-C07 valve and
-flowmeter mount (REQ-10, A-17); OD-G01 v02 placed at the vertical group head pose
-(spec 1.2 section 4, A-01); the carrier foot reference box x +-55, z -70 .. -26.
+v03 (brief WP-06, revision B) against v02: eighteen more Dia 4.0 insert
+through-holes along Y, driven from the top as the other twenty (A-11), for the
+OD-C08 tray (REQ-11, A-18), the OD-C11 back panel (REQ-12, A-18), the six OD-C16
+side-panel brackets (REQ-13, A-19) and the OD-C09 front panel (REQ-14, A-20):
+thirty-eight insert holes in all. The check assembly also carries OD-C07 (A-17,
+now delivered), OD-C08, OD-C09, OD-C11 at the identity and the six OD-C16
+brackets at the poses of A-19. No other feature changes.
 
 build123d 0.11.1, Algebra mode. One parameter structure at the top, named
 intermediates, geometric selectors only. The frame is the spec section 2 machine
@@ -10,8 +14,8 @@ frame: X to the user's right, +Y up, +Z toward the user; y = 0 is the plate's to
 face (the floor plane), x = 0 the group head axis' vertical plane.
 
 Usage (from the repository root, in the tools venv):
-    uv run tools/run.py python <ws>/01_CAD/build_od_c01_frame_v02.py \
-        [--variant '{"plate_t": 5.9}'] [--out-dir 02_STEP_STL] [--tag v02] [--no-stl]
+    uv run tools/run.py python <ws>/01_CAD/build_od_c01_frame_v03.py \
+        [--variant '{"plate_t": 5.9}'] [--out-dir 02_STEP_STL] [--tag v03] [--no-stl]
 Relative paths are taken from the job workspace (the folder above 01_CAD).
 """
 from __future__ import annotations
@@ -49,6 +53,12 @@ class Params:
     c03_xz: tuple = ((-4.0, -239.0), (-4.0, -171.0), (37.0, -239.0), (37.0, -171.0))
     bulkhead_xz: tuple = ((65.0, -45.0), (65.0, -105.0), (65.0, -165.0), (65.0, -225.0))
     valve_xz: tuple = ((-113.0, -42.0), (-71.0, -42.0), (-113.0, -148.5), (-71.0, -148.5))  # OD-C07, A-17
+    # F05c-F05f insert holes added in v03 (spec 1.3 section 4, REQ-11 .. REQ-14, A-18 .. A-20)
+    tray_xz: tuple = ((88.0, -222.0), (106.0, -222.0), (88.0, -78.0), (106.0, -78.0))        # OD-C08, A-18
+    back_xz: tuple = ((81.0, -282.0), (-81.0, -282.0), (95.0, -282.0), (-95.0, -282.0))      # OD-C11, A-18
+    bracket_xz: tuple = ((104.5, -262.0), (-104.5, -262.0), (104.5, -15.0), (-104.5, -15.0),
+                         (104.5, 62.0), (-104.5, 62.0))                                      # OD-C16, A-19
+    front_xz: tuple = ((85.0, 77.0), (-85.0, 77.0), (95.0, 77.0), (-95.0, 77.0))             # OD-C09, A-20
     # F06 feet holes (spec 4 C1, REQ-05, A-12)
     foot_d: float = 3.4
     foot_xz: tuple = ((110.0, 90.0), (-110.0, 90.0), (110.0, -295.0), (-110.0, -295.0))
@@ -73,6 +83,17 @@ class Params:
     c03_origin: tuple = (0.0, 40.0, -205.0)
     c03_x_dir: tuple = (0.0, 0.0, 1.0)      # local x -> +Z
     c03_z_dir: tuple = (1.0, 0.0, 0.0)      # local z -> +X (so local y -> -Y)
+    # OD-C07 at the A-17 joint (spec section 4): local x -> -Z, y -> -X, z -> +Y (proper), origin (-92, 0, -60)
+    c07_origin: tuple = (-92.0, 0.0, -60.0)
+    c07_x_dir: tuple = (0.0, 0.0, -1.0)     # local x -> -Z
+    c07_z_dir: tuple = (0.0, 1.0, 0.0)      # local z -> +Y (so local y -> -X)
+    # OD-C08, OD-C09, OD-C11 modelled in this frame, placed at the identity (A-18, A-20)
+    identity_origin: tuple = (0.0, 0.0, 0.0)
+    # OD-C16 brackets (A-19): right side translated (+x_bracket, 0, z_c); left side turned 180 deg
+    # about Y, then (-x_bracket, 0, z_c)
+    c16_x: float = 117.0
+    c16_zc: tuple = (-262.0, -15.0, 62.0)
+    c16_left_turn_deg: float = 180.0
     # OD-C05 foot outline reference box (A-01, spec 1.2 section 4; brief WP-04): x +-55, y 0 .. 4, z -70 .. -26
     c05_box_x_half: float = 55.0
     c05_box_h: float = 4.0
@@ -85,6 +106,8 @@ def hole_table(p: Params) -> list:
     for feat, d, pts in (("F02_carrier", p.insert_d, p.carrier_xz), ("F03_c04", p.insert_d, p.c04_xz),
                          ("F04_c03", p.insert_d, p.c03_xz), ("F05_bulkhead", p.insert_d, p.bulkhead_xz),
                          ("F05b_valve", p.insert_d, p.valve_xz),
+                         ("F05c_tray", p.insert_d, p.tray_xz), ("F05d_back", p.insert_d, p.back_xz),
+                         ("F05e_bracket", p.insert_d, p.bracket_xz), ("F05f_front", p.insert_d, p.front_xz),
                          ("F06_feet", p.foot_d, p.foot_xz), ("F07_drain", p.drain_d, p.drain_xz)):
         rows += [(feat, d, x + p.shift_x, z + p.shift_z) for x, z in pts]
     return rows
@@ -121,18 +144,42 @@ def g01_location(p: Params) -> Location:
     return Location(Plane(origin=p.g01_origin, x_dir=p.g01_x_dir, z_dir=p.g01_z_dir))
 
 
+def c07_location(p: Params) -> Location:
+    return Location(Plane(origin=p.c07_origin, x_dir=p.c07_x_dir, z_dir=p.c07_z_dir))
+
+
+def c16_locations(p: Params) -> dict:
+    """The six OD-C16 poses of A-19, keyed by side and z_c."""
+    out = {}
+    for zc in p.c16_zc:
+        out[f"c16_r_z{int(zc)}"] = Location((p.c16_x, 0.0, zc))
+        out[f"c16_l_z{int(zc)}"] = Location((-p.c16_x, 0.0, zc)) * Location((0.0, 0.0, 0.0),
+                                                                           (0.0, p.c16_left_turn_deg, 0.0))
+    return out
+
+
 def build_assembly(p: Params) -> dict:
-    """Plate + OD-C03 + OD-H01 + OD-C04 + OD-H11 + OD-G01 v02 + the OD-C05 foot
-    reference box, each placed by a RigidJoint on the plate at its spec 4 joint
-    connected to the component's own frame origin (its STEP frame)."""
+    """Plate + OD-C03 + OD-H01 + OD-C04 + OD-H11 + OD-G01 v02 + OD-C07 + OD-C08 +
+    OD-C09 + OD-C11 + six OD-C16 brackets + the OD-C05 foot reference box, each
+    placed by a RigidJoint on the plate at its spec 4 joint connected to the
+    component's own frame origin (its STEP frame)."""
     plate = build_plate(p)
+    identity = Location(p.identity_origin)
     joints = {"c03": c03_location(p), "h01": c03_location(p), "c04": Location(p.c04_origin),
-              "h11": Location(p.c04_origin), "g01": g01_location(p)}
+              "h11": Location(p.c04_origin), "g01": g01_location(p), "c07": c07_location(p),
+              "c08": identity, "c09": identity, "c11": identity}
     files = {"c03": ("OD-C03_pump_cradle.step", "od_c03_cradle"),
              "h01": ("OD-H01_ulka_ep5_pump.step", "od_h01_pump"),
              "c04": ("OD-C04_thermoblock_mount.step", "od_c04_mount"),
              "h11": ("OD-H11_thermoblock.step", "od_h11_thermoblock"),
-             "g01": ("OD-G01_housing_C1_v02.step", "od_g01_housing")}
+             "g01": ("OD-G01_housing_C1_v02.step", "od_g01_housing"),
+             "c07": ("OD-C07_valve_flowmeter_mount.step", "od_c07_valve_mount"),
+             "c08": ("OD-C08_electronics_bay_tray.step", "od_c08_tray"),
+             "c09": ("OD-C09_front_panel.step", "od_c09_front_panel"),
+             "c11": ("OD-C11_back_panel.step", "od_c11_back_panel")}
+    for key, loc in c16_locations(p).items():
+        joints[key] = loc
+        files[key] = ("OD-C16_corner_bracket.step", f"od_{key}_bracket")
     parts = {}
     placements = {}
     for key, (fname, label) in files.items():
@@ -152,8 +199,8 @@ def build_assembly(p: Params) -> dict:
     box.label = "od_c05_foot_reference_A01"
     placements[box.label] = {"joint": "reference box from spec 4 values (A-01), not a deliverable solid",
                              "location": f"x +-{p.c05_box_x_half:g}, y 0 .. {p.c05_box_h:g}, z {z0:g} .. {z1:g}"}
-    assembly = Compound(children=[plate, parts["c03"], parts["h01"], parts["c04"], parts["h11"], parts["g01"], box],
-                        label="od_c01_assembly")
+    order = ["c03", "h01", "c04", "h11", "g01", "c07", "c08", "c09", "c11"] + list(c16_locations(p))
+    assembly = Compound(children=[plate] + [parts[k] for k in order] + [box], label="od_c01_assembly")
     return {"assembly": assembly, "placements": placements}
 
 
@@ -161,9 +208,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--variant", default="{}")
     ap.add_argument("--out-dir", default="02_STEP_STL")
-    ap.add_argument("--tag", default="v02")
+    ap.add_argument("--tag", default="v03")
     ap.add_argument("--no-stl", action="store_true")
-    ap.add_argument("--record", default="01_CAD/build_record_v02.json")
+    ap.add_argument("--record", default="01_CAD/build_record_v03.json")
     a = ap.parse_args()
     p = Params(**json.loads(a.variant))
     out = Path(a.out_dir)

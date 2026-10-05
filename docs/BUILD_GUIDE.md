@@ -41,13 +41,9 @@ Read this before you print anything.
   OEM parts it touches and compare them with the open assumptions in its spec §6 (see
   [§8](#8-open-items)). If a measurement disagrees, stop and report it on the part's
   issue. Do not file the print to fit.
-- **The base plate `OD-C01` is being revised to revision B** (spec 1.3, ratified
-  2026-10-05). Revision B has **38 Ø4.0 insert holes**: the 20 of build v02 plus 18 new
-  ones for `OD-C08`, `OD-C11`, `OD-C16` and `OD-C09`. The `chassis/OD-C01_base_frame.step`
-  delivered from build v02 has only the 20 holes. **Until the revised plate STEP lands
-  on main, only print the plate after you have checked that the file has 38 Ø4.0 insert
-  holes** (plus 4 Ø3.4 feet holes and 2 Ø8 drain holes). Whether the 18 new holes go
-  through the 6 mm plate or are blind is still a decision for revision B.
+- **The base plate `OD-C01` is revision B** (spec 1.3, build v03, RV02 approved on
+  assumptions): 38 Ø4.0 holes through the 6 mm plate (the 20 of revision A plus 18 for
+  `OD-C08`, `OD-C11`, `OD-C16` and `OD-C09`), 4 Ø3.4 feet holes and 2 Ø8 drain holes.
 - The steam system (`OD-S00`) is phase 2 and is not in this build. The water tank dock
   `OD-C06` is deferred, so the tank stands on the table behind the machine.
 - The top assembly `OD-000` (STEP) is being built. When it lands in `chassis/`, use it
@@ -187,7 +183,7 @@ material, and use generous walls around the insert holes.
 | Part | Name | Qty | Printer | Orientation | Supports | Notes | Service material (BOM) |
 |---|---|---|---|---|---|---|---|
 | `OD-G01` | Group head housing | 1 (+1 ASA) | K1C | mouth up, rear face on the bed | under the three lugs and three stop blocks only | PLA = dry fit only. Print the ASA housing for `OD-T01` and the machine. Lug roots are sharp, no fillet (RV01 F4) | ASA |
-| `OD-C01` | Base plate | 1 | Kobra Max 3 | flat, bottom face on the bed | none | brim against warp (A-14); 240 × 405 × 6. **Check for 38 insert holes first** (§1) | PETG or ASA |
+| `OD-C01` | Base plate | 1 | Kobra Max 3 | flat, bottom face on the bed | none | brim against warp (A-14); 240 × 405 × 6. Revision B: 38 Ø4.0 holes | PETG or ASA |
 | `OD-C02` | Wet/electric bulkhead | 1 | K1C | standing on its rear end (z −240), 215 × 14 footprint, 210 tall | none | the four Ø14 windows have 45° gable roofs | ASA |
 | `OD-C03` | Pump cradle | 1 | Kobra Max 3 (spec) | foot on the bed, saddles up | none | tie slots have 45° roofs | PETG |
 | `OD-C04` | Thermoblock mount | 1 | K1C | plate back face on the bed, foot standing up | none | PLA = dry fit only | ASA / PC |
@@ -661,8 +657,8 @@ lists.
 
 **`OD-C01` base plate**
 
-- Revision B (38 holes) must land on main. The 18 new holes still need a through-or-blind
-  decision.
+- Revision B: the OD-C07 holes leave a 5.0 web to the plate edge, now in PLA (RV02 F5);
+  the back panel takes the rear 25 of the tank zone (RV02 F2).
 - The machine layout (group head vertical, housing rear face 205 above the plate, pump
   and thermoblock poses) awaits the Usta's confirmation (A-01…A-03, A-16).
 - Drip tray zone (A-06; tray scan, issue #9), drainage (A-13), flatness (REQ-09).

@@ -1,4 +1,4 @@
-"""Checks for od_c01_frame v02 (job 20260930-od-c01-base-frame, concept C1, spec 1.2).
+"""Checks for od_c01_frame v03 (job 20260930-od-c01-base-frame, concept C1, spec 1.3).
 
 Written before the build (PLAYBOOK D3). Every predicate measures the re-imported
 STEP files with tools.core / tools.measure and compares through tools.result.gate
@@ -6,16 +6,20 @@ with the GATES.md section 0 band. Thresholds come from DESIGN_SPEC.md 1.2 sectio
 only (the SPEC table below cites the row of each value). Any exception or missing
 value gives INCONCLUSIVE.
 
-v02 (brief WP-04): twenty insert holes (REQ-10, the OD-C07 pattern, A-17); the
-OD-G01 v02 housing at the vertical pose of spec 1.2 section 4 (A-01), read back;
-the carrier foot box x +-55, z -70 .. -26; reserved zones and hole webs reported.
+v03 (brief WP-06, revision B, spec 1.3): thirty-eight insert holes, the eighteen
+new ones gated by REQ-11 .. REQ-14 (hole diameter, position, through, depth, the
+nearest centre-to-centre distance and the distance to the plate's outline); the
+check assembly adds OD-C07 (A-17, now delivered), OD-C08, OD-C09, OD-C11 at the
+identity and the six OD-C16 brackets (A-19), each with its designed contact, its
+interference with the plate and the coaxiality of every plate-facing Dia 3.4 hole
+with the plate's Dia 4.0 hole (offset <= 0.20, U-03 1.3); PLA 1240 kg/m3 (A-10).
 
 Usage (from the repository root, in the tools venv):
-    uv run tools/run.py python <ws>/01_CAD/check_od_c01_frame_v02.py \
-        --step 02_STEP_STL/od_c01_frame_C1_v02.step \
-        --asm 02_STEP_STL/od_c01_assembly_C1_v02.step \
-        --stl 02_STEP_STL/od_c01_frame_C1_v02.stl \
-        --out 01_CAD/check_od_c01_frame_v02.json [--variant '{"plate_t": 5.9}'] [--light]
+    uv run tools/run.py python <ws>/01_CAD/check_od_c01_frame_v03.py \
+        --step 02_STEP_STL/od_c01_frame_C1_v03.step \
+        --asm 02_STEP_STL/od_c01_assembly_C1_v03.step \
+        --stl 02_STEP_STL/od_c01_frame_C1_v03.stl \
+        --out 01_CAD/check_od_c01_frame_v03.json [--variant '{"plate_t": 5.9}'] [--light]
 Relative paths are taken from the job workspace (the folder above 01_CAD).
 """
 from __future__ import annotations
@@ -62,17 +66,29 @@ SPEC = {
     "bridge_span": 5.0,
     # U-07: STL tol 0.01, angular <= 4*acos(1 - 0.01/6.0), sagitta <= 0.01
     "stl_tol": 0.01, "stl_ang_max": 4.0 * math.acos(1.0 - 0.01 / 6.0),
-    # REQ-01 .. REQ-04, REQ-10, D-05b: Dia 4.0 +- 0.05, depth >= 5.7, offset <= 0.10
+    # REQ-01 .. REQ-04, REQ-10 .. REQ-14, D-05b: Dia 4.0 +- 0.05, depth >= 5.7, offset <= 0.10
     "insert_d": 4.0, "insert_tol": 0.05, "insert_depth": 5.7, "offset_max": 0.10,
+    # U-03 (1.3): a new part's hole against the plate's hole, the sum of the two 0.10 position bands
+    "offset_max_pair": 0.20,
+    # REQ-11, REQ-13, REQ-14 (and the WP-06 amendment for REQ-12): hole spacing
+    "cc_min": 6.0, "edge_min": 8.0,
     "inserts": {
         "REQ-01": [(35.0, -40.0), (-35.0, -40.0), (35.0, -60.0), (-35.0, -60.0)],
         "REQ-02": [(40.0, -148.0), (-40.0, -148.0), (40.0, -114.0), (-40.0, -114.0)],
         "REQ-03": [(-4.0, -239.0), (-4.0, -171.0), (37.0, -239.0), (37.0, -171.0)],
         "REQ-04": [(65.0, -45.0), (65.0, -105.0), (65.0, -165.0), (65.0, -225.0)],
         "REQ-10": [(-113.0, -42.0), (-71.0, -42.0), (-113.0, -148.5), (-71.0, -148.5)],
+        "REQ-11": [(88.0, -222.0), (106.0, -222.0), (88.0, -78.0), (106.0, -78.0)],
+        "REQ-12": [(81.0, -282.0), (-81.0, -282.0), (95.0, -282.0), (-95.0, -282.0)],
+        "REQ-13": [(104.5, -262.0), (-104.5, -262.0), (104.5, -15.0), (-104.5, -15.0),
+                   (104.5, 62.0), (-104.5, 62.0)],
+        "REQ-14": [(85.0, 77.0), (-85.0, 77.0), (95.0, 77.0), (-95.0, 77.0)],
     },
     "req_assumes": {"REQ-01": ("A-01", "A-11"), "REQ-02": ("A-02", "A-11"), "REQ-03": ("A-03", "A-11"),
-                    "REQ-04": ("A-04", "A-11"), "REQ-10": ("A-17", "A-11")},
+                    "REQ-04": ("A-04", "A-11"), "REQ-10": ("A-17", "A-11"), "REQ-11": ("A-18", "A-11"),
+                    "REQ-12": ("A-18", "A-11"), "REQ-13": ("A-19", "A-11"), "REQ-14": ("A-20", "A-11")},
+    # the four rows whose spec text carries the spacing clauses (REQ-12's >= 6.0 from the WP-06 amendment)
+    "spacing_rows": ("REQ-11", "REQ-12", "REQ-13", "REQ-14"),
     # REQ-05, D-04a (A-12): Dia 3.4 +- 0.1, >= 3.25
     "feet": [(110.0, 90.0), (-110.0, 90.0), (110.0, -295.0), (-110.0, -295.0)],
     "foot_d": 3.4, "foot_tol": 0.1, "foot_min": 3.25,
@@ -85,21 +101,48 @@ SPEC = {
     # U-03 (a), REQ-08
     "contact": 0.0, "h01_gap": 2.0, "h11_gap": 10.0, "mount_gap": 2.0, "h11_max_z": -85.0, "g01_gap": 2.0,
     "interference": 0.0,
-    # U-05 census (plan section 3 as amended by WP-04): 6 planar, 30 cylindrical (26 concave, 4 convex), 26 bores
-    "census": {"plane_faces": 6, "cylinder_faces": 30, "concave_cylinders": 26, "convex_cylinders": 4,
-               "bores": 26},
-    "bore_groups": {4.0: 20, 3.4: 4, 8.0: 2},
-    # A-10 (reported only)
-    "density": 1270.0,
+    # U-05 census (plan section 3 as amended by WP-06): 6 planar, 48 cylindrical (44 concave, 4 convex),
+    # 44 bores = 38 Dia 4.0 + 4 Dia 3.4 + 2 Dia 8.0
+    "census": {"plane_faces": 6, "cylinder_faces": 48, "concave_cylinders": 44, "convex_cylinders": 4,
+               "bores": 44},
+    "bore_groups": {4.0: 38, 3.4: 4, 8.0: 2},
+    # A-10 (reported only): PLA, spec 1.3 section 3
+    "density": 1240.0,
 }
 # a derivation of the plan (section 3), reported beside the measured area, not gated
-# 20 x 2.0^2 + 4 x 1.7^2 + 2 x 4.0^2 = 123.56 (WP-04: rederived for 26 holes)
-TOP_AREA_DERIVED = 97200.0 - (400.0 - 100.0 * math.pi) - 123.56 * math.pi
+# 38 x 2.0^2 + 4 x 1.7^2 + 2 x 4.0^2 = 195.56 (WP-06: rederived for 44 holes)
+TOP_AREA_DERIVED = 97200.0 - (400.0 - 100.0 * math.pi) - 195.56 * math.pi
 WALL_SPACING = 0.7          # plan section 4: the tool's 0.63 mm floor for the 405 x 240 face, rounded up
 PATH_LIFTS = (10.0, 1.0, 0.1, 0.0)
 PLATE = "od_c01_frame"
 LABELS = {"c03": "od_c03_cradle", "h01": "od_h01_pump", "c04": "od_c04_mount", "h11": "od_h11_thermoblock",
-          "g01": "od_g01_housing", "box": "od_c05_foot_reference_A01"}
+          "g01": "od_g01_housing", "box": "od_c05_foot_reference_A01",
+          "c07": "od_c07_valve_mount", "c08": "od_c08_tray", "c09": "od_c09_front_panel",
+          "c11": "od_c11_back_panel",
+          "c16_r_z-262": "od_c16_r_z-262_bracket", "c16_l_z-262": "od_c16_l_z-262_bracket",
+          "c16_r_z-15": "od_c16_r_z-15_bracket", "c16_l_z-15": "od_c16_l_z-15_bracket",
+          "c16_r_z62": "od_c16_r_z62_bracket", "c16_l_z62": "od_c16_l_z62_bracket"}
+# the parts spec 1.3 adds to U-03, with the gate row that names their plate holes, the hole positions
+# each part is screwed down by, and the ledger row the pose rests on
+NEW_PARTS = {
+    "c07": ("REQ-10", "A-17"), "c08": ("REQ-11", "A-18"), "c11": ("REQ-12", "A-18"),
+    "c09": ("REQ-14", "A-20"),
+    "c16_r_z-262": ("REQ-13", "A-19"), "c16_l_z-262": ("REQ-13", "A-19"),
+    "c16_r_z-15": ("REQ-13", "A-19"), "c16_l_z-15": ("REQ-13", "A-19"),
+    "c16_r_z62": ("REQ-13", "A-19"), "c16_l_z62": ("REQ-13", "A-19"),
+}
+# which of the gate row's holes each placed part is fastened through (its own Dia 3.4 holes)
+NEW_PART_HOLES = {
+    "c07": [(-113.0, -42.0), (-71.0, -42.0), (-113.0, -148.5), (-71.0, -148.5)],
+    "c08": [(88.0, -222.0), (106.0, -222.0), (88.0, -78.0), (106.0, -78.0)],
+    "c11": [(81.0, -282.0), (-81.0, -282.0), (95.0, -282.0), (-95.0, -282.0)],
+    "c09": [(85.0, 77.0), (-85.0, 77.0), (95.0, 77.0), (-95.0, 77.0)],
+    "c16_r_z-262": [(104.5, -262.0)], "c16_l_z-262": [(-104.5, -262.0)],
+    "c16_r_z-15": [(104.5, -15.0)], "c16_l_z-15": [(-104.5, -15.0)],
+    "c16_r_z62": [(104.5, 62.0)], "c16_l_z62": [(-104.5, 62.0)],
+}
+PART_HOLE_D = 3.4          # every plate-facing hole of the new parts (their specs, measured and gated below)
+PART_HOLE_Y = 1.0          # a point inside every new part's plate-facing hole (spans y 0 .. 3.0 or 0 .. 4.0)
 # OD-G01 v02 read-back expected by spec 1.2 section 4 (the joint U-03 cites): rear face y 205.0,
 # mouth face y 176.76, x +-50, z -18 .. +82
 G01_POSE = {"max_y": 205.0, "min_x": -50.0, "max_x": 50.0, "min_z": -18.0, "max_z": 82.0}
@@ -112,7 +155,9 @@ ZONES = {"tray": ((-75.0, 75.0), (0.0, 36.9), (-15.0, 85.0)),
          "electronics": ((70.0, 120.0), (0.0, 400.0), (-240.0, -30.0))}
 INPUTS = {"c03": "OD-C03_pump_cradle.step", "h01": "OD-H01_ulka_ep5_pump.step",
           "c04": "OD-C04_thermoblock_mount.step", "h11": "OD-H11_thermoblock.step",
-          "g01": "OD-G01_housing_C1_v02.step"}
+          "g01": "OD-G01_housing_C1_v02.step", "c07": "OD-C07_valve_flowmeter_mount.step",
+          "c08": "OD-C08_electronics_bay_tray.step", "c09": "OD-C09_front_panel.step",
+          "c11": "OD-C11_back_panel.step", "c16": "OD-C16_corner_bracket.step"}
 
 
 def _safe(fn, name, unit, *args, **kwargs):
@@ -202,6 +247,92 @@ def _hole_rows(G, census, gid, pts, d0, tol, *, assumes, mid_y, depth_min=None, 
             G.add(f"{dmin_gate}.{tag}", loc["diameter"], ">=", dmin, assumes=dmin_assumes)
 
 
+def _census_dia(census: Result, d0: float, tol: float = 0.3) -> Result:
+    """The same bore census with only the bores within `tol` of diameter d0, so that
+    locate_bore cannot pick a coaxial bore of another diameter (the OD-C16 bracket's
+    Dia 6.5 counterbore sits on its Dia 3.4 hole's axis)."""
+    if census.status != MEASURED:
+        return census
+    bores = [b for b in census.detail.get("bores", []) if abs(b["diameter"] - d0) < tol]
+    if not bores:
+        return inconclusive(census.name, "count", f"no bore within {tol} of diameter {d0}")
+    return Result(census.name, len(bores), "count",
+                  detail={**census.detail, "bores": bores,
+                          "filter": f"diameter within {tol} of {d0}"})
+
+
+def _outline_faces(plate, bores) -> dict:
+    """The plate's outer boundary faces, selected by geometry: planar faces whose
+    normal is horizontal (the four straight edges) and cylindrical faces whose axis
+    is not a bore axis (the four R corner arcs)."""
+    axes = [(b["start"][0], b["start"][2]) for b in bores]
+    sides, arcs = [], []
+    for f in plate.faces():
+        if f.geom_type == GeomType.PLANE and abs(f.normal_at().Y) < 1e-6:
+            sides.append(f)
+        elif f.geom_type == GeomType.CYLINDER:
+            e = envelope(f)
+            cx = 0.5 * (e["min_x"].measured + e["max_x"].measured)
+            cz = 0.5 * (e["min_z"].measured + e["max_z"].measured)
+            if not any(math.hypot(cx - ax, cz - az) < 0.05 for ax, az in axes):
+                arcs.append(f)
+    return {"sides": sides, "arcs": arcs}
+
+
+def _spacing_rows(G, plate, bores, facts):
+    """REQ-11 .. REQ-14 spacing: for every new insert hole, the nearest centre-to-centre
+    distance to any other hole (from the measured bore axes) and the distance from its
+    axis to the plate's outline, the R corner arcs included (clearance from a vertex on
+    the axis to each outline face)."""
+    from build123d import Vertex
+    outline = _outline_faces(plate, bores)
+    facts["outline_faces"] = {"straight_sides": len(outline["sides"]), "corner_arcs": len(outline["arcs"])}
+    axes = [(round(b["start"][0], 6), round(b["start"][2], 6), round(b["diameter"], 4)) for b in bores]
+    mid_y = -0.5 * SPEC["thick"]
+    report = {}
+    for gid in SPEC["spacing_rows"]:
+        for x, z in SPEC["inserts"][gid]:
+            tag = f"x{x:+g}_z{z:+g}"
+            # this hole is the measured axis nearest its nominal position (its own offset is gated by
+            # the REQ row); every other axis is a neighbour, so a built-in shift cannot read as one
+            if not axes or not (outline["sides"] or outline["arcs"]):
+                cc = inconclusive("hole_centre_distance", "mm", "no bore axis or no outline face read")
+                ed = inconclusive("hole_to_outline", "mm", "no outline face read")
+            else:
+                i_own = min(range(len(axes)), key=lambda i: math.hypot(axes[i][0] - x, axes[i][1] - z))
+                own = axes[i_own]
+                others = axes[:i_own] + axes[i_own + 1:]
+                near = min(others, key=lambda a: math.hypot(a[0] - own[0], a[1] - own[1]))
+                cc = Result("hole_centre_distance", math.hypot(near[0] - own[0], near[1] - own[1]), "mm",
+                            at=(own[0], mid_y, own[1]),
+                            detail={"this_hole_xz": (own[0], own[1]), "nearest_hole_xz": (near[0], near[1]),
+                                    "nearest_hole_diameter": near[2],
+                                    "method": "bore_census axis start points (x, z)"})
+                v = Vertex(own[0], mid_y, own[1])
+                best = None
+                for kind in ("sides", "arcs"):
+                    for f in outline[kind]:
+                        r = _safe(clearance, "clearance", "mm", v, f)
+                        if r.status == MEASURED and (best is None or r.measured < best[0]):
+                            best = (r.measured, kind, r.at)
+                ed = Result("hole_to_outline", best[0], "mm", at=(own[0], mid_y, own[1]),
+                            detail={"this_hole_xz": (own[0], own[1]), "nearest_outline_feature": best[1],
+                                    "nearest_point": best[2],
+                                    "method": "clearance from a vertex on the measured hole axis to each "
+                                              "outline face"}) \
+                    if best else inconclusive("hole_to_outline", "mm", "no outline distance read")
+            asm = SPEC["req_assumes"][gid]
+            G.add(f"{gid}.{tag}.centre_distance", cc, ">=", SPEC["cc_min"], assumes=asm,
+                  note="nearest centre to centre to any other hole")
+            G.add(f"{gid}.{tag}.to_outline", ed, ">=", SPEC["edge_min"], assumes=asm,
+                  note="axis to the plate's outline, the R corner arcs included")
+            report[f"{gid}.{tag}"] = {"centre_distance_mm": cc.measured, "to_outline_mm": ed.measured,
+                                      "this_hole_xz": (cc.detail or {}).get("this_hole_xz"),
+                                      "nearest": (cc.detail or {}).get("nearest_hole_xz"),
+                                      "outline_feature": (ed.detail or {}).get("nearest_outline_feature")}
+    facts["new_hole_spacing"] = report
+
+
 def _nearest_angle(x, z, others):
     """Angle (deg, right hand about +Y from +X) toward the nearest other hole centre."""
     best = min(others, key=lambda o: math.hypot(o[0] - x, o[1] - z))
@@ -252,13 +383,14 @@ def _insert_rings(G, plate, facts):
         wall = Result("insert_ring_wall", least_wall, "mm", at=where,
                       detail={"rays": rays, "method": "least (first stretch end - hole wall radius)"})
     G.add("D-05a", across, ">=", SPEC["boss_across"], assumes=("A-11",))
-    G.add("J-05.ring", wall, ">=", SPEC["wall_insert"], note="located reading around the 20 insert holes")
+    G.add("J-05.ring", wall, ">=", SPEC["wall_insert"],
+          note="located reading around the thirty-eight insert holes")
 
 
 def run(step_path: Path, asm_path: Path, stl_path: Path | None, params_override: dict | None = None,
         scratch: Path | None = None, heavy: bool = True) -> dict:
     """All predicates; returns {"gates": [...], "facts": {...}}."""
-    import build_od_c01_frame_v02 as build
+    import build_od_c01_frame_v03 as build
 
     G = Gates()
     facts: dict = {"wall_spacing_mm": WALL_SPACING}
@@ -333,7 +465,10 @@ def run(step_path: Path, asm_path: Path, stl_path: Path | None, params_override:
                                               for x, z in valve)],
                           "method": "bore_census axis start points (x, z); web = centre distance - r1 - r2"}
 
-    # REQ-01 .. REQ-04, REQ-10, D-05b; REQ-05, D-04a; REQ-06 ----------------------
+    # REQ-11 .. REQ-14 spacing (the new holes) -------------------------------------
+    _spacing_rows(G, plate, bores, facts)
+
+    # REQ-01 .. REQ-04, REQ-10 .. REQ-14, D-05b; REQ-05, D-04a; REQ-06 -------------
     mid_y = -0.5 * SPEC["thick"]
     for gid, pts in SPEC["inserts"].items():
         _hole_rows(G, census, gid, pts, SPEC["insert_d"], SPEC["insert_tol"], assumes=SPEC["req_assumes"][gid],
@@ -426,7 +561,7 @@ def run(step_path: Path, asm_path: Path, stl_path: Path | None, params_override:
     G.add("U-03a.od_h11.max_z", h11_env, "<=", SPEC["h11_max_z"], assumes=A02)
     G.add("REQ-08.max_z", h11_env, "<=", SPEC["h11_max_z"], assumes=A02)
     G.add("REQ-08.clearance", h11_gap, ">=", SPEC["h11_gap"], assumes=A02)
-    for k in ("plate", "c03", "h01", "c04", "h11", "box"):
+    for k in ["plate", "c03", "h01", "c04", "h11", "box"] + list(NEW_PARTS):
         other = plate if k == "plate" else P[k]
         name = PLATE if k == "plate" else LABELS[k]
         G.add(f"U-03a.od_g01|{name}.clearance", cl(P["g01"], other), ">=", SPEC["g01_gap"], assumes=A01)
@@ -456,19 +591,51 @@ def run(step_path: Path, asm_path: Path, stl_path: Path | None, params_override:
               note="a downward (-Y) planar face at the mouth height: the mouth faces down")
     else:
         G.add("U-03a.od_g01.pose", missing, "==", 1, assumes=A01)
+    # plate | the parts spec 1.3 adds to U-03 (OD-C07 by A-17, OD-C08 and OD-C11 by A-18,
+    # the six OD-C16 brackets by A-19, OD-C09 by A-20): designed contact, interference with
+    # the plate, and every plate-facing Dia 3.4 hole coaxial with its Dia 4.0 plate hole
+    for k, (gid, arow) in NEW_PARTS.items():
+        m = P[k]
+        lbl = LABELS[k]
+        asm_ = (arow,)
+        G.add(f"U-03a.plate|{lbl}.clearance", cl(plate, m), "==", SPEC["contact"], assumes=asm_,
+              note=f"designed contact on the plate top (spec 1.3 U-03, {gid})")
+        G.add(f"U-03a.plate|{lbl}.interference", iv(plate, m, k), "<=", SPEC["interference"], assumes=asm_)
+        mc = _safe(bore_census, "bore_census", "count", m) if m is not None else missing
+        mc34 = _census_dia(mc, PART_HOLE_D) if isinstance(mc, Result) else mc
+        for x, z in NEW_PART_HOLES[k]:
+            tag = f"x{x:+g}_z{z:+g}"
+            try:
+                ml = locate_bore(mc34, (x, PART_HOLE_Y, z), (0, 1, 0))
+                st = ml["diameter"].detail["start"]
+                facts[f"{k}_hole_{tag}"] = {"diameter": ml["diameter"].measured, "start": st,
+                                            "end": ml["diameter"].detail["end"],
+                                            "length": ml["length"].measured,
+                                            "offset_to_spec": ml["offset"].measured}
+                pl = locate_bore(census, (st[0], mid_y, st[2]), (0, 1, 0))
+                off = pl["offset"]
+                off = Result("coaxial_offset", off.measured, "mm", at=(st[0], mid_y, st[2]),
+                             detail={"part_axis_xz": (st[0], st[2]), "part_dia": ml["diameter"].measured,
+                                     "plate_dia": pl["diameter"].measured}) if off.status == MEASURED else off
+            except Exception as exc:  # noqa: BLE001
+                off = inconclusive("coaxial_offset", "mm", f"{type(exc).__name__}: {exc}")
+            G.add(f"U-03a.plate|{lbl}.coaxial.{tag}", off, "<=", SPEC["offset_max_pair"], assumes=asm_,
+                  note="the sum of the two parts' 0.10 position bands (spec 1.3 U-03)")
+
     # information (brief WP-04): the carrier foot box to OD-C04 and to the tray zone; zone clearances
     from build123d import Align as _Al, Box as _Box, Pos as _Pos
     zone_solids = {}
     for zn, ((x0, x1), (y0, y1), (z0, z1)) in ZONES.items():
         zone_solids[zn] = _Pos(x0, y0, z0) * _Box(x1 - x0, y1 - y0, z1 - z0, align=(_Al.MIN, _Al.MIN, _Al.MIN))
     zc = {}
-    for k in ("c03", "h01", "c04", "h11", "g01", "box"):
+    for k in ["c03", "h01", "c04", "h11", "g01", "box"] + list(NEW_PARTS):
         zc[LABELS[k]] = {}
         for zn, zs in zone_solids.items():
             r = cl(P[k], zs)
             zc[LABELS[k]][zn] = r.measured if r.status == MEASURED else r.reason
     facts["zone_clearance_mm"] = {"zones": {k: v for k, v in ZONES.items()}, "clearance": zc,
-                                  "note": "0 would mean the placed solid enters the zone prism; not gated"}
+                                  "note": "0 would mean the placed solid enters the zone prism; not gated. Spec 1.3 A-08: "
+                                          "OD-C08 now stands inside the electronics zone, so its reading is 0"}
     bc = cl(P["box"], P["c04"])
     facts["carrier_box_gaps_mm"] = {"to_od_c04_foot": (bc.measured, getattr(bc, "at", None)),
                                     "to_tray_zone": zc[LABELS["box"]].get("tray")}
@@ -476,14 +643,16 @@ def run(step_path: Path, asm_path: Path, stl_path: Path | None, params_override:
     G.add("U-03a.plate|od_c05_foot_reference_A01.interference", iv(plate, P["box"], "box"), "<=",
           SPEC["interference"], assumes=A01)
     # assembly path (L-10): each seated part lowered straight down -Y onto y 0
-    for k in ("c03", "c04", "box"):
+    PATH_ASSUMES = {"c03": ("A-03",), "c04": ("A-02",), "box": ("A-01",),
+                    **{k: (a,) for k, (_g, a) in NEW_PARTS.items()}}
+    for k in ["c03", "c04", "box"] + list(NEW_PARTS):
         for lift in PATH_LIFTS:
             m = P[k]
             if m is None:
                 r = missing
             else:
                 r = cl(plate, m.moved(Location((0.0, lift, 0.0))))
-            G.add(f"U-03a.path.{LABELS[k]}.lift{lift:g}", r, "==", lift, assumes=A01 if k == "box" else (A02 if k == "c04" else A03),
+            G.add(f"U-03a.path.{LABELS[k]}.lift{lift:g}", r, "==", lift, assumes=PATH_ASSUMES[k],
                   note="clearance to the plate equals the lift: nothing of the plate in the way down")
     G.fixed("U-03b", "N/A", "N/A", "U-03 (b): no motion variable (N/A by the row)")
 
@@ -491,7 +660,8 @@ def run(step_path: Path, asm_path: Path, stl_path: Path | None, params_override:
     try:
         built_asm = build.build_assembly(p)["assembly"]
         ra = compare_step(built_asm, asm_path)
-        for k, want, op in (("schema", 1, "=="), ("solids", 7, "=="), ("faces_delta", 0, "=="), ("labels", 1, "==")):
+        for k, want, op in (("schema", 1, "=="), ("solids", 17, "=="), ("faces_delta", 0, "=="),
+                            ("labels", 1, "==")):
             G.add(f"U-04.assembly.{k}", ra[k], op, want)
         whole = ra["volume_delta"]
         G.add("U-04.assembly.volume_delta_whole", inconclusive(

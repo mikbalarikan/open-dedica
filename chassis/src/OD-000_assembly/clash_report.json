@@ -1,12 +1,12 @@
 {
  "assembly": "/home/claude/open-dedica/chassis/OD-000_open_dedica_assembly.step",
- "sha256": "6a1dd594c38bfaabc4abf90a4597f31dd0cfcaa459147a034f6fa90d878983b5",
- "plate": "/home/claude/open-dedica/chassis/OD-C01_base_frame.step",
+ "sha256": "46e32f1bc93c7104065fd005781ef2bae75a9efd734d748954eb7ffcdb2180bf",
+ "plate": "/home/claude/oguz-jobs/20260930-od-c01-base-frame/02_STEP_STL/od_c01_frame_C1_v03.step",
  "parts": {
   "OD-C01": {
    "sub": "OD-C00",
    "kind": "PRINT",
-   "source": "chassis/OD-C01_base_frame.step"
+   "source": "/home/claude/oguz-jobs/20260930-od-c01-base-frame/02_STEP_STL/od_c01_frame_C1_v03.step"
   },
   "OD-C02": {
    "sub": "OD-C00",
@@ -179,7 +179,7 @@
    "status": "MEASURED"
   },
   "volume_delta": {
-   "measured": 1.1531572788953781,
+   "measured": 1.1584480660967529,
    "status": "MEASURED"
   },
   "faces_delta": {
@@ -1139,7 +1139,7 @@
   "solids": 33,
   "pairs_measured": 61,
   "soundness": {
-   "chassis/OD-C01_base_frame.step": "sound",
+   "/home/claude/oguz-jobs/20260930-od-c01-base-frame/02_STEP_STL/od_c01_frame_C1_v03.step": "sound",
    "chassis/OD-C02_bulkhead.step": "sound",
    "chassis/OD-C03_pump_cradle.step": "sound",
    "chassis/OD-C04_thermoblock_mount.step": "sound",
@@ -1178,7 +1178,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.14
+    "seconds": 0.26
    },
    {
     "a": "OD-C01",
@@ -1193,7 +1193,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.15
+    "seconds": 0.23
    },
    {
     "a": "OD-C01",
@@ -1208,7 +1208,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.14
+    "seconds": 0.16
    },
    {
     "a": "OD-C01",
@@ -1223,7 +1223,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.16
+    "seconds": 0.21
    },
    {
     "a": "OD-C01",
@@ -1238,52 +1238,52 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.21
+    "seconds": 0.34
    },
    {
     "a": "OD-C01",
     "b": "OD-C08",
     "clearance_mm": 0.0,
     "clearance_at": [
-     73.0,
+     90.0,
      0.0,
-     -230.0
+     -78.0
     ],
     "inside": false,
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.16
+    "seconds": 0.39
    },
    {
     "a": "OD-C01",
     "b": "OD-C09",
     "clearance_mm": 0.0,
     "clearance_at": [
-     -104.0,
+     97.0,
      0.0,
-     94.0
+     77.0
     ],
     "inside": false,
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.21
+    "seconds": 0.33
    },
    {
     "a": "OD-C01",
     "b": "OD-C11",
     "clearance_mm": 0.0,
     "clearance_at": [
-     116.0,
+     97.0,
      0.0,
-     -302.0
+     -282.0
     ],
     "inside": false,
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.22
+    "seconds": 0.3
    },
    {
     "a": "OD-C01",
@@ -1298,7 +1298,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.09
+    "seconds": 0.1
    },
    {
     "a": "OD-C01",
@@ -1313,7 +1313,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.06
+    "seconds": 0.08
    },
    {
     "a": "OD-C01",
@@ -1328,7 +1328,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.06
+    "seconds": 0.07
    },
    {
     "a": "OD-C01",
@@ -1343,7 +1343,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.06
+    "seconds": 0.07
    },
    {
     "a": "OD-C01",
@@ -1358,7 +1358,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.06
+    "seconds": 0.07
    },
    {
     "a": "OD-C01",
@@ -1373,97 +1373,97 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.06
+    "seconds": 0.07
    },
    {
     "a": "OD-C01",
     "b": "OD-C16-R1",
     "clearance_mm": 0.0,
     "clearance_at": [
-     98.0,
+     106.5,
      0.0,
-     -270.0
+     -262.0
     ],
     "inside": false,
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.04
+    "seconds": 0.05
    },
    {
     "a": "OD-C01",
     "b": "OD-C16-R2",
     "clearance_mm": 0.0,
     "clearance_at": [
-     98.0,
+     106.5,
      0.0,
-     -23.0
+     -15.0
     ],
     "inside": false,
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.04
+    "seconds": 0.06
    },
    {
     "a": "OD-C01",
     "b": "OD-C16-R3",
     "clearance_mm": 0.0,
     "clearance_at": [
-     98.0,
+     106.5,
      0.0,
-     54.0
+     62.0
     ],
     "inside": false,
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.03
+    "seconds": 0.06
    },
    {
     "a": "OD-C01",
     "b": "OD-C16-L1",
     "clearance_mm": 0.0,
     "clearance_at": [
-     -98.0,
+     -102.5,
      0.0,
-     -254.0
+     -262.0
     ],
     "inside": false,
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.03
+    "seconds": 0.06
    },
    {
     "a": "OD-C01",
     "b": "OD-C16-L2",
     "clearance_mm": 0.0,
     "clearance_at": [
-     -98.0,
+     -102.5,
      0.0,
-     -7.0
+     -15.0
     ],
     "inside": false,
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.03
+    "seconds": 0.06
    },
    {
     "a": "OD-C01",
     "b": "OD-C16-L3",
     "clearance_mm": 0.0,
     "clearance_at": [
-     -98.0,
+     -102.5,
      0.0,
-     70.0
+     62.0
     ],
     "inside": false,
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.03
+    "seconds": 0.06
    },
    {
     "a": "OD-C02",
@@ -1478,7 +1478,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.16
+    "seconds": 0.23
    },
    {
     "a": "OD-C03",
@@ -1493,7 +1493,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.54
+    "seconds": 0.63
    },
    {
     "a": "OD-C04",
@@ -1510,7 +1510,7 @@
     "reason": "OD-H11: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
     "indicative_raw_boolean_mm3": 0,
     "verdict": "CLEAR (volume INCONCLUSIVE; the distance is positive)",
-    "seconds": 1.02
+    "seconds": 1.09
    },
    {
     "a": "OD-C05",
@@ -1525,7 +1525,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.13
+    "seconds": 0.27
    },
    {
     "a": "OD-C05",
@@ -1540,7 +1540,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.17
+    "seconds": 0.3
    },
    {
     "a": "OD-C05",
@@ -1555,7 +1555,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.62
+    "seconds": 0.89
    },
    {
     "a": "OD-C05",
@@ -1570,7 +1570,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.78
+    "seconds": 0.97
    },
    {
     "a": "OD-C05",
@@ -1587,7 +1587,7 @@
     "reason": "OD-G10: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
     "indicative_raw_boolean_mm3": 0,
     "verdict": "CLEAR (volume INCONCLUSIVE; the distance is positive)",
-    "seconds": 2.89
+    "seconds": 3.12
    },
    {
     "a": "OD-C05",
@@ -1602,7 +1602,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 1.26
+    "seconds": 1.3
    },
    {
     "a": "OD-C07",
@@ -1632,7 +1632,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 1.0
+    "seconds": 0.97
    },
    {
     "a": "OD-C07",
@@ -1647,7 +1647,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 2.24
+    "seconds": 1.96
    },
    {
     "a": "OD-C08",
@@ -1662,7 +1662,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.06
+    "seconds": 0.07
    },
    {
     "a": "OD-C08",
@@ -1677,7 +1677,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 2.73
+    "seconds": 2.86
    },
    {
     "a": "OD-C09",
@@ -1692,7 +1692,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.67
+    "seconds": 0.54
    },
    {
     "a": "OD-C09",
@@ -1707,7 +1707,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.11
+    "seconds": 0.06
    },
    {
     "a": "OD-C09",
@@ -1722,7 +1722,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.06
+    "seconds": 0.04
    },
    {
     "a": "OD-C09",
@@ -1737,7 +1737,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.46
+    "seconds": 0.52
    },
    {
     "a": "OD-C09",
@@ -1754,7 +1754,7 @@
     "reason": "OD-G10: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
     "indicative_raw_boolean_mm3": 0,
     "verdict": "CLEAR (volume INCONCLUSIVE; the distance is positive)",
-    "seconds": 3.92
+    "seconds": 3.66
    },
    {
     "a": "OD-C09",
@@ -1771,7 +1771,7 @@
     "reason": "OD-E02: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
     "indicative_raw_boolean_mm3": 0,
     "verdict": "INCONCLUSIVE (raw boolean 0 mm3, unchecked)",
-    "seconds": 2.03
+    "seconds": 1.97
    },
    {
     "a": "OD-C10",
@@ -1786,7 +1786,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.67
+    "seconds": 0.66
    },
    {
     "a": "OD-C10",
@@ -1801,7 +1801,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.27
+    "seconds": 0.25
    },
    {
     "a": "OD-C10",
@@ -1816,7 +1816,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.1
+    "seconds": 0.07
    },
    {
     "a": "OD-C11",
@@ -1831,7 +1831,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.07
+    "seconds": 0.08
    },
    {
     "a": "OD-C11",
@@ -1921,7 +1921,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 0.02
+    "seconds": 0.03
    },
    {
     "a": "OD-C12",
@@ -1936,7 +1936,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.28
+    "seconds": 0.36
    },
    {
     "a": "OD-C12",
@@ -1951,7 +1951,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.26
+    "seconds": 0.35
    },
    {
     "a": "OD-C12",
@@ -1968,7 +1968,7 @@
     "reason": "OD-E02: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
     "indicative_raw_boolean_mm3": 0,
     "verdict": "CLEAR (volume INCONCLUSIVE; the distance is positive)",
-    "seconds": 0.49
+    "seconds": 0.62
    },
    {
     "a": "OD-C13",
@@ -2043,7 +2043,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CLEAR",
-    "seconds": 0.15
+    "seconds": 0.13
    },
    {
     "a": "OD-G01",
@@ -2058,7 +2058,7 @@
     "status": "MEASURED",
     "interference_mm3": 0,
     "verdict": "CONTACT",
-    "seconds": 3.02
+    "seconds": 2.9
    },
    {
     "a": "OD-G01",
@@ -2075,7 +2075,7 @@
     "reason": "OD-G10: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
     "indicative_raw_boolean_mm3": 0,
     "verdict": "INCONCLUSIVE (raw boolean 0 mm3, unchecked)",
-    "seconds": 4.03
+    "seconds": 3.91
    },
    {
     "a": "OD-G04",
@@ -2092,7 +2092,7 @@
     "reason": "OD-G10: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
     "indicative_raw_boolean_mm3": 0,
     "verdict": "CLEAR (volume INCONCLUSIVE; the distance is positive)",
-    "seconds": 8.0
+    "seconds": 8.62
    }
   ]
  }

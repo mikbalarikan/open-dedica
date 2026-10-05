@@ -1,0 +1,999 @@
+{
+ "REQ07_plusY_planar_faces": [
+  {
+   "area": 96499.78940530628,
+   "min_y": 0.0,
+   "max_y": 0.0
+  }
+ ],
+ "REQ07_count": 1,
+ "envelope_part": {
+  "size_x": 240.0,
+  "size_y": 6.0,
+  "size_z": 405.0,
+  "min_x": -120.0,
+  "min_y": -6.0,
+  "min_z": -305.0,
+  "max_x": 120.0,
+  "max_y": 0.0,
+  "max_z": 100.0
+ },
+ "coaxiality": {
+  "od_c03_cradle": {
+   "n_dia34_Y": 4,
+   "rows": [
+    {
+     "at": [
+      -4,
+      -239
+     ],
+     "part_axis": [
+      -4.0,
+      -239.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 3.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      -4,
+      -171
+     ],
+     "part_axis": [
+      -4.0,
+      -171.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 3.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      37,
+      -239
+     ],
+     "part_axis": [
+      37.0,
+      -239.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 3.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      37,
+      -171
+     ],
+     "part_axis": [
+      37.0,
+      -171.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 3.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c04_mount": {
+   "n_dia34_Y": 4,
+   "rows": [
+    {
+     "at": [
+      -40,
+      -148
+     ],
+     "part_axis": [
+      -40.0,
+      -148.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      40,
+      -148
+     ],
+     "part_axis": [
+      40.0,
+      -148.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      -40,
+      -114
+     ],
+     "part_axis": [
+      -40.0,
+      -114.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      40,
+      -114
+     ],
+     "part_axis": [
+      40.0,
+      -114.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c07_valve_mount": {
+   "n_dia34_Y": 6,
+   "rows": [
+    {
+     "at": [
+      -113,
+      -42
+     ],
+     "part_axis": [
+      -113.0,
+      -42.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      -71,
+      -42
+     ],
+     "part_axis": [
+      -71.0,
+      -42.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      -113,
+      -148.5
+     ],
+     "part_axis": [
+      -113.0,
+      -148.5
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      -71,
+      -148.5
+     ],
+     "part_axis": [
+      -71.0,
+      -148.5
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c08_tray": {
+   "n_dia34_Y": 4,
+   "rows": [
+    {
+     "at": [
+      88,
+      -222
+     ],
+     "part_axis": [
+      88.0,
+      -222.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      106,
+      -222
+     ],
+     "part_axis": [
+      106.0,
+      -222.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      88,
+      -78
+     ],
+     "part_axis": [
+      88.0,
+      -78.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      106,
+      -78
+     ],
+     "part_axis": [
+      106.0,
+      -78.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c11_back_panel": {
+   "n_dia34_Y": 4,
+   "rows": [
+    {
+     "at": [
+      -81,
+      -282
+     ],
+     "part_axis": [
+      -81.0,
+      -282.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      81,
+      -282
+     ],
+     "part_axis": [
+      81.0,
+      -282.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      -95,
+      -282
+     ],
+     "part_axis": [
+      -95.0,
+      -282.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      95,
+      -282
+     ],
+     "part_axis": [
+      95.0,
+      -282.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c09_front_panel": {
+   "n_dia34_Y": 4,
+   "rows": [
+    {
+     "at": [
+      -85,
+      77
+     ],
+     "part_axis": [
+      -85.0,
+      77.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      85,
+      77
+     ],
+     "part_axis": [
+      85.0,
+      77.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      -95,
+      77
+     ],
+     "part_axis": [
+      -95.0,
+      77.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    },
+    {
+     "at": [
+      95,
+      77
+     ],
+     "part_axis": [
+      95.0,
+      77.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 4.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c16_r_z-262_bracket": {
+   "n_dia34_Y": 1,
+   "rows": [
+    {
+     "at": [
+      104.5,
+      -262
+     ],
+     "part_axis": [
+      104.5,
+      -262.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 3.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c16_l_z-262_bracket": {
+   "n_dia34_Y": 1,
+   "rows": [
+    {
+     "at": [
+      -104.5,
+      -262
+     ],
+     "part_axis": [
+      -104.5,
+      -262.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 3.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c16_r_z-15_bracket": {
+   "n_dia34_Y": 1,
+   "rows": [
+    {
+     "at": [
+      104.5,
+      -15
+     ],
+     "part_axis": [
+      104.5,
+      -15.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 3.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c16_l_z-15_bracket": {
+   "n_dia34_Y": 1,
+   "rows": [
+    {
+     "at": [
+      -104.5,
+      -15
+     ],
+     "part_axis": [
+      -104.5,
+      -15.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 3.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c16_r_z62_bracket": {
+   "n_dia34_Y": 1,
+   "rows": [
+    {
+     "at": [
+      104.5,
+      62
+     ],
+     "part_axis": [
+      104.5,
+      62.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 3.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  },
+  "od_c16_l_z62_bracket": {
+   "n_dia34_Y": 1,
+   "rows": [
+    {
+     "at": [
+      -104.5,
+      62
+     ],
+     "part_axis": [
+      -104.5,
+      62.0
+     ],
+     "part_dia": 3.4,
+     "part_len": 3.0,
+     "plate_dia": 4.0,
+     "plate_off_from_nom": 0.0,
+     "coax_offset": 0.0
+    }
+   ],
+   "worst_coax": 0.0
+  }
+ },
+ "worst_coax_all": 0.0,
+ "assembly_path": {
+  "od_c03_cradle": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c04_mount": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c07_valve_mount": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c08_tray": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c11_back_panel": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c09_front_panel": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c16_r_z-262_bracket": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c16_l_z-262_bracket": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c16_r_z-15_bracket": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c16_l_z-15_bracket": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c16_r_z62_bracket": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c16_l_z62_bracket": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  },
+  "od_c05_foot_reference_A01": {
+   "10.0": {
+    "clr": 10.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "1.0": {
+    "clr": 1.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.1": {
+    "clr": 0.1,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   },
+   "0.0": {
+    "clr": 0.0,
+    "clr_st": "MEASURED",
+    "common": 0.0,
+    "common_st": "MEASURED"
+   }
+  }
+ },
+ "path_worst_dev": 0.0,
+ "path_max_common": 0.0,
+ "envelopes": {
+  "od_h11_thermoblock": {
+   "size_x": 86.109198,
+   "size_y": 106.888008,
+   "size_z": 50.79,
+   "min_x": -43.270176,
+   "min_y": 16.492494,
+   "min_z": -140.0,
+   "max_x": 42.839022,
+   "max_y": 123.380502,
+   "max_z": -89.21
+  },
+  "od_h01_pump": {
+   "size_x": 121.95,
+   "size_y": 55.15,
+   "size_z": 54.05,
+   "min_x": -66.45,
+   "min_y": 16.25,
+   "min_z": -232.2,
+   "max_x": 55.5,
+   "max_y": 71.4,
+   "max_z": -178.15
+  },
+  "od_g01_housing": {
+   "size_x": 100.0,
+   "size_y": 28.24,
+   "size_z": 100.0,
+   "min_x": -50.0,
+   "min_y": 176.76,
+   "min_z": -18.0,
+   "max_x": 50.0,
+   "max_y": 205.0,
+   "max_z": 82.0
+  },
+  "od_c07_valve_mount": {
+   "size_x": 50.0,
+   "size_y": 48.0,
+   "size_z": 119.0,
+   "min_x": -117.0,
+   "min_y": 0.0,
+   "min_z": -154.0,
+   "max_x": -67.0,
+   "max_y": 48.0,
+   "max_z": -35.0
+  },
+  "od_c08_tray": {
+   "size_x": 39.0,
+   "size_y": 92.0,
+   "size_z": 160.0,
+   "min_x": 73.0,
+   "min_y": 0.0,
+   "min_z": -230.0,
+   "max_x": 112.0,
+   "max_y": 92.0,
+   "max_z": -70.0
+  },
+  "od_c09_front_panel": {
+   "size_x": 232.0,
+   "size_y": 215.0,
+   "size_z": 25.0,
+   "min_x": -116.0,
+   "min_y": -0.0,
+   "min_z": 72.0,
+   "max_x": 116.0,
+   "max_y": 215.0,
+   "max_z": 97.0
+  },
+  "od_c11_back_panel": {
+   "size_x": 232.0,
+   "size_y": 215.0,
+   "size_z": 25.0,
+   "min_x": -116.0,
+   "min_y": 0.0,
+   "min_z": -302.0,
+   "max_x": 116.0,
+   "max_y": 215.0,
+   "max_z": -277.0
+  }
+ },
+ "compare_asm": {
+  "schema": {
+   "m": 1,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "solids": {
+   "m": 17,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "volume_delta": {
+   "m": 0.0,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "faces_delta": {
+   "m": 0,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "labels": {
+   "m": 1,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "valid_after": {
+   "m": 0,
+   "st": "MEASURED",
+   "why": ""
+  }
+ }
+}

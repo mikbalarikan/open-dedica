@@ -1,0 +1,74 @@
+{
+ "tray A-06": {
+  "od_c09_front_panel": {
+   "clearance": 0.0,
+   "shared_mm3": 0.0,
+   "st": "MEASURED",
+   "env": {
+    "size_x": 232.0,
+    "size_y": 215.0,
+    "size_z": 25.0,
+    "min_x": -116.0,
+    "min_y": -0.0,
+    "min_z": 72.0,
+    "max_x": 116.0,
+    "max_y": 215.0,
+    "max_z": 97.0
+   }
+  }
+ },
+ "tank A-07": {
+  "od_c11_back_panel": {
+   "clearance": 0.0,
+   "shared_mm3": 97020.0,
+   "st": "MEASURED",
+   "env": {
+    "size_x": 232.0,
+    "size_y": 215.0,
+    "size_z": 25.0,
+    "min_x": -116.0,
+    "min_y": 0.0,
+    "min_z": -302.0,
+    "max_x": 116.0,
+    "max_y": 215.0,
+    "max_z": -277.0
+   }
+  }
+ },
+ "valve A-05": {
+  "od_c07_valve_mount": {
+   "clearance": 0.0,
+   "shared_mm3": 40560.734632229476,
+   "st": "MEASURED",
+   "env": {
+    "size_x": 50.0,
+    "size_y": 48.0,
+    "size_z": 119.0,
+    "min_x": -117.0,
+    "min_y": 0.0,
+    "min_z": -154.0,
+    "max_x": -67.0,
+    "max_y": 48.0,
+    "max_z": -35.0
+   }
+  }
+ },
+ "electronics A-08": {
+  "od_c08_tray": {
+   "clearance": 0.0,
+   "shared_mm3": 70595.99875683196,
+   "st": "MEASURED",
+   "env": {
+    "size_x": 39.0,
+    "size_y": 92.0,
+    "size_z": 160.0,
+    "min_x": 73.0,
+    "min_y": 0.0,
+    "min_z": -230.0,
+    "max_x": 112.0,
+    "max_y": 92.0,
+    "max_z": -70.0
+   }
+  }
+ }
+}
