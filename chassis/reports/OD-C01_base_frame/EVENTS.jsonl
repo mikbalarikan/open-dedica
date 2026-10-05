@@ -79,3 +79,6 @@
 {"t": "2026-10-05T21:51:09Z", "ev": "state", "detail": {"from": "J2_PLAN", "to": "J3_BUILD", "reason": "plan amended for spec 1.3 in WP-06"}}
 {"t": "2026-10-05T21:51:10Z", "ev": "package_sent", "detail": {"role": "designer", "target": "od_c01_frame_v03", "brief": "briefs/WP-06_designer.md", "attempt": 1}}
 {"t": "2026-10-05T21:51:10Z", "ev": "attempt", "detail": {"counter": "build", "n": 1, "cap": 2}}
+{"t": "2026-10-05T22:52:22Z", "ev": "package_done", "detail": {"role": "designer", "target": "od_c01_frame_v03", "outcome": "SUBMITTED", "report": "01_CAD/REPORT_od_c01_frame_v03.md"}}
+{"t": "2026-10-05T22:52:23Z", "ev": "state", "detail": {"from": "J3_BUILD", "to": "J4_REVIEW", "reason": "designer SUBMITTED od_c01_frame_v03 (WP-06), 3MF written"}}
+{"t": "2026-10-05T22:52:53Z", "ev": "package_sent", "detail": {"role": "reviewer", "target": "od_c01_frame_v03", "brief": "briefs/WP-07_reviewer.md", "attempt": 1}}

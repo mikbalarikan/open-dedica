@@ -5,7 +5,7 @@ code: ODC01
 milestone: M1
 title: "Open Dedica OD-C01 printed base frame"
 lane: CAD
-state: J3_BUILD
+state: J4_REVIEW
 blocked_on: null
 next_action: "J5: the Usta confirms the layout (A-01 … A-03, A-17) and the A-## rows; prints the plate on the Kobra Max 3; REQ-09 flatness answers at the first print"
 data_class: PUBLIC

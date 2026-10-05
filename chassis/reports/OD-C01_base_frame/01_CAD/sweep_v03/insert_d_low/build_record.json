@@ -1,0 +1,368 @@
+{
+ "params": {
+  "y_top": 0.0,
+  "plate_t": 6.0,
+  "x_half": 120.0,
+  "z_min": -305.0,
+  "z_max": 100.0,
+  "corner_r": 10.0,
+  "insert_d": 3.95,
+  "carrier_xz": [
+   [
+    35.0,
+    -40.0
+   ],
+   [
+    -35.0,
+    -40.0
+   ],
+   [
+    35.0,
+    -60.0
+   ],
+   [
+    -35.0,
+    -60.0
+   ]
+  ],
+  "c04_xz": [
+   [
+    40.0,
+    -148.0
+   ],
+   [
+    -40.0,
+    -148.0
+   ],
+   [
+    40.0,
+    -114.0
+   ],
+   [
+    -40.0,
+    -114.0
+   ]
+  ],
+  "c03_xz": [
+   [
+    -4.0,
+    -239.0
+   ],
+   [
+    -4.0,
+    -171.0
+   ],
+   [
+    37.0,
+    -239.0
+   ],
+   [
+    37.0,
+    -171.0
+   ]
+  ],
+  "bulkhead_xz": [
+   [
+    65.0,
+    -45.0
+   ],
+   [
+    65.0,
+    -105.0
+   ],
+   [
+    65.0,
+    -165.0
+   ],
+   [
+    65.0,
+    -225.0
+   ]
+  ],
+  "valve_xz": [
+   [
+    -113.0,
+    -42.0
+   ],
+   [
+    -71.0,
+    -42.0
+   ],
+   [
+    -113.0,
+    -148.5
+   ],
+   [
+    -71.0,
+    -148.5
+   ]
+  ],
+  "tray_xz": [
+   [
+    88.0,
+    -222.0
+   ],
+   [
+    106.0,
+    -222.0
+   ],
+   [
+    88.0,
+    -78.0
+   ],
+   [
+    106.0,
+    -78.0
+   ]
+  ],
+  "back_xz": [
+   [
+    81.0,
+    -282.0
+   ],
+   [
+    -81.0,
+    -282.0
+   ],
+   [
+    95.0,
+    -282.0
+   ],
+   [
+    -95.0,
+    -282.0
+   ]
+  ],
+  "bracket_xz": [
+   [
+    104.5,
+    -262.0
+   ],
+   [
+    -104.5,
+    -262.0
+   ],
+   [
+    104.5,
+    -15.0
+   ],
+   [
+    -104.5,
+    -15.0
+   ],
+   [
+    104.5,
+    62.0
+   ],
+   [
+    -104.5,
+    62.0
+   ]
+  ],
+  "front_xz": [
+   [
+    85.0,
+    77.0
+   ],
+   [
+    -85.0,
+    77.0
+   ],
+   [
+    95.0,
+    77.0
+   ],
+   [
+    -95.0,
+    77.0
+   ]
+  ],
+  "foot_d": 3.4,
+  "foot_xz": [
+   [
+    110.0,
+    90.0
+   ],
+   [
+    -110.0,
+    90.0
+   ],
+   [
+    110.0,
+    -295.0
+   ],
+   [
+    -110.0,
+    -295.0
+   ]
+  ],
+  "drain_d": 8.0,
+  "drain_xz": [
+   [
+    -80.0,
+    -120.0
+   ],
+   [
+    -80.0,
+    -230.0
+   ]
+  ],
+  "shift_x": 0.0,
+  "shift_z": 0.0,
+  "hole_overshoot": 1.0,
+  "stl_tol": 0.01,
+  "stl_ang": 0.2,
+  "g01_origin": [
+   0.0,
+   180.06,
+   32.0
+  ],
+  "g01_x_dir": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "g01_z_dir": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "c04_origin": [
+   0.0,
+   70.0,
+   -140.0
+  ],
+  "c03_origin": [
+   0.0,
+   40.0,
+   -205.0
+  ],
+  "c03_x_dir": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "c03_z_dir": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "c07_origin": [
+   -92.0,
+   0.0,
+   -60.0
+  ],
+  "c07_x_dir": [
+   0.0,
+   0.0,
+   -1.0
+  ],
+  "c07_z_dir": [
+   0.0,
+   1.0,
+   0.0
+  ],
+  "identity_origin": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "c16_x": 117.0,
+  "c16_zc": [
+   -262.0,
+   -15.0,
+   62.0
+  ],
+  "c16_left_turn_deg": 180.0,
+  "c05_box_x_half": 55.0,
+  "c05_box_h": 4.0,
+  "c05_box_z": [
+   -70.0,
+   -26.0
+  ]
+ },
+ "holes": 44,
+ "step": {
+  "path": "01_CAD/sweep_v03/insert_d_low/od_c01_frame_C1_v03_insert_d_low.step",
+  "sha256": "240a60f447b38d9b652577dd4d2743965be5f0224396a7ed4d446560dd01dde7"
+ },
+ "stl": {
+  "path": "01_CAD/sweep_v03/insert_d_low/od_c01_frame_C1_v03_insert_d_low.stl",
+  "sha256": "29e251b5a9fb5fe686e97891c41e7077525b646e8f43b88e30dc3be8ec1a5b33",
+  "tolerance_mm": 0.01,
+  "angular_tolerance_rad": 0.2,
+  "triangles": 11676,
+  "max_sagitta_mm": 0.0049723151243391,
+  "max_sagitta": 0.0049723151243391
+ },
+ "assembly": {
+  "path": "01_CAD/sweep_v03/insert_d_low/od_c01_assembly_C1_v03_insert_d_low.step",
+  "sha256": "c0e0f98cf32c8ba1c53d7e2ea7be86a232f93376507c6c1cda3760703fc212bb"
+ },
+ "placements": {
+  "od_c03_cradle": {
+   "joint": "RigidJoint joint_c03 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 40, -205), orientation=(0, 90, 180))"
+  },
+  "od_h01_pump": {
+   "joint": "RigidJoint joint_h01 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 40, -205), orientation=(0, 90, 180))"
+  },
+  "od_c04_mount": {
+   "joint": "RigidJoint joint_c04 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 70, -140), orientation=(0, 0, 0))"
+  },
+  "od_h11_thermoblock": {
+   "joint": "RigidJoint joint_h11 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 70, -140), orientation=(0, 0, 0))"
+  },
+  "od_g01_housing": {
+   "joint": "RigidJoint joint_g01 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 180.06, 32), orientation=(90, 0, 0))"
+  },
+  "od_c07_valve_mount": {
+   "joint": "RigidJoint joint_c07 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(-92, 0, -60), orientation=(-90, 0, 90))"
+  },
+  "od_c08_tray": {
+   "joint": "RigidJoint joint_c08 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))"
+  },
+  "od_c09_front_panel": {
+   "joint": "RigidJoint joint_c09 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))"
+  },
+  "od_c11_back_panel": {
+   "joint": "RigidJoint joint_c11 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(0, 0, 0), orientation=(0, 0, 0))"
+  },
+  "od_c16_r_z-262_bracket": {
+   "joint": "RigidJoint joint_c16_r_z-262 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(117, 0, -262), orientation=(0, 0, 0))"
+  },
+  "od_c16_l_z-262_bracket": {
+   "joint": "RigidJoint joint_c16_l_z-262 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(-117, 0, -262), orientation=(-180, 0, -180))"
+  },
+  "od_c16_r_z-15_bracket": {
+   "joint": "RigidJoint joint_c16_r_z-15 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(117, 0, -15), orientation=(0, 0, 0))"
+  },
+  "od_c16_l_z-15_bracket": {
+   "joint": "RigidJoint joint_c16_l_z-15 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(-117, 0, -15), orientation=(-180, 0, -180))"
+  },
+  "od_c16_r_z62_bracket": {
+   "joint": "RigidJoint joint_c16_r_z62 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(117, 0, 62), orientation=(0, 0, 0))"
+  },
+  "od_c16_l_z62_bracket": {
+   "joint": "RigidJoint joint_c16_l_z62 on the plate -> own_frame (STEP origin)",
+   "location": "Location: (position=(-117, 0, 62), orientation=(-180, 0, -180))"
+  },
+  "od_c05_foot_reference_A01": {
+   "joint": "reference box from spec 4 values (A-01), not a deliverable solid",
+   "location": "x +-55, y 0 .. 4, z -70 .. -26"
+  }
+ }
+}

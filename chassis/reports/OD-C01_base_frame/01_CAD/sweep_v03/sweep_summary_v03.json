@@ -1,0 +1,3860 @@
+{
+ "variants": {
+  "nominal": {
+   "params": {},
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  },
+  "plate_t_low": {
+   "params": {
+    "plate_t": 5.9
+   },
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  },
+  "plate_t_high": {
+   "params": {
+    "plate_t": 6.1
+   },
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  },
+  "insert_d_low": {
+   "params": {
+    "insert_d": 3.95
+   },
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  },
+  "insert_d_high": {
+   "params": {
+    "insert_d": 4.05
+   },
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  },
+  "foot_d_low": {
+   "params": {
+    "foot_d": 3.3
+   },
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  },
+  "foot_d_high": {
+   "params": {
+    "foot_d": 3.5
+   },
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  },
+  "drain_d_low": {
+   "params": {
+    "drain_d": 7.9
+   },
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  },
+  "drain_d_high": {
+   "params": {
+    "drain_d": 8.1
+   },
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  },
+  "holes_xz_low": {
+   "params": {
+    "shift_x": -0.05,
+    "shift_z": -0.05
+   },
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  },
+  "holes_xz_high": {
+   "params": {
+    "shift_x": 0.05,
+    "shift_z": 0.05
+   },
+   "built": true,
+   "error": null,
+   "one_solid": true,
+   "not_passed": [
+    [
+     "U-03a.plate|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-03a.od_g01|od_h11_thermoblock.interference",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.volume_delta_whole",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-04.assembly.od_h11_thermoblock.volume_delta",
+     "INCONCLUSIVE",
+     null,
+     null
+    ],
+    [
+     "U-07.3mf",
+     "ORCHESTRATOR_STEP",
+     null,
+     null
+    ],
+    [
+     "REQ-09",
+     "INCONCLUSIVE",
+     null,
+     null
+    ]
+   ]
+  }
+ },
+ "worst": {
+  "exactly_one_solid": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-01.solid_count": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-01.brep_valid": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-01.naked_edges": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-02.size_x": {
+   "margin": 0.1,
+   "variant": "nominal",
+   "measured": 240.0,
+   "status": "PASS"
+  },
+  "envelope_within_spec.size.size_x": {
+   "margin": 0.1,
+   "variant": "nominal",
+   "measured": 240.0,
+   "status": "PASS"
+  },
+  "U-02.size_y": {
+   "margin": 0.0,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS"
+  },
+  "envelope_within_spec.size.size_y": {
+   "margin": 0.0,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS"
+  },
+  "U-02.size_z": {
+   "margin": 0.1,
+   "variant": "nominal",
+   "measured": 405.0,
+   "status": "PASS"
+  },
+  "envelope_within_spec.size.size_z": {
+   "margin": 0.1,
+   "variant": "nominal",
+   "measured": 405.0,
+   "status": "PASS"
+  },
+  "envelope_within_spec.position.min_x": {
+   "margin": 0.1,
+   "variant": "nominal",
+   "measured": -120.0,
+   "status": "PASS"
+  },
+  "envelope_within_spec.position.max_x": {
+   "margin": 0.1,
+   "variant": "nominal",
+   "measured": 120.0,
+   "status": "PASS"
+  },
+  "envelope_within_spec.position.min_y": {
+   "margin": 0.0,
+   "variant": "plate_t_low",
+   "measured": -5.9,
+   "status": "PASS"
+  },
+  "envelope_within_spec.position.max_y": {
+   "margin": 0.1,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS"
+  },
+  "envelope_within_spec.position.min_z": {
+   "margin": 0.1,
+   "variant": "nominal",
+   "measured": -305.0,
+   "status": "PASS"
+  },
+  "envelope_within_spec.position.max_z": {
+   "margin": 0.1,
+   "variant": "nominal",
+   "measured": 100.0,
+   "status": "PASS"
+  },
+  "D-02.size_x": {
+   "margin": 180.0,
+   "variant": "nominal",
+   "measured": 240.0,
+   "status": "PASS_ASSUMED"
+  },
+  "D-02.size_z": {
+   "margin": 15.0,
+   "variant": "nominal",
+   "measured": 405.0,
+   "status": "PASS_ASSUMED"
+  },
+  "D-02.size_y": {
+   "margin": 493.9,
+   "variant": "plate_t_high",
+   "measured": 6.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-04.part.schema": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.part.solids": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.part.volume_delta": {
+   "margin": -1.65e-07,
+   "variant": "plate_t_high",
+   "measured": 1.651933416724205e-07,
+   "status": "PASS"
+  },
+  "U-04.part.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.part.labels": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.part.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-05.plane_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 6,
+   "status": "PASS"
+  },
+  "feature_census.plane_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 6,
+   "status": "PASS"
+  },
+  "U-05.cylinder_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 48,
+   "status": "PASS"
+  },
+  "feature_census.cylinder_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 48,
+   "status": "PASS"
+  },
+  "U-05.cone_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "feature_census.cone_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-05.sphere_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "feature_census.sphere_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-05.torus_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "feature_census.torus_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-05.bspline_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "feature_census.bspline_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-05.other_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "feature_census.other_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-05.concave_cylinders": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 44,
+   "status": "PASS"
+  },
+  "feature_census.concave_cylinders": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 44,
+   "status": "PASS"
+  },
+  "U-05.convex_cylinders": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 4,
+   "status": "PASS"
+  },
+  "feature_census.convex_cylinders": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 4,
+   "status": "PASS"
+  },
+  "U-05.bores": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 44,
+   "status": "PASS"
+  },
+  "feature_census.bores": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 44,
+   "status": "PASS"
+  },
+  "U-05.bores_dia4.0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 38,
+   "status": "PASS"
+  },
+  "U-05.bores_dia3.4": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 4,
+   "status": "PASS"
+  },
+  "U-05.bores_dia8.0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 2,
+   "status": "PASS"
+  },
+  "REQ-11.x+88_z-222.centre_distance": {
+   "margin": 12.0,
+   "variant": "nominal",
+   "measured": 18.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+88_z-222.to_outline": {
+   "margin": 23.95,
+   "variant": "holes_xz_high",
+   "measured": 31.950000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+106_z-222.centre_distance": {
+   "margin": 12.0,
+   "variant": "nominal",
+   "measured": 18.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+106_z-222.to_outline": {
+   "margin": 5.95,
+   "variant": "holes_xz_high",
+   "measured": 13.950000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+88_z-78.centre_distance": {
+   "margin": 12.0,
+   "variant": "nominal",
+   "measured": 18.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+88_z-78.to_outline": {
+   "margin": 23.95,
+   "variant": "holes_xz_high",
+   "measured": 31.950000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+106_z-78.centre_distance": {
+   "margin": 12.0,
+   "variant": "nominal",
+   "measured": 18.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+106_z-78.to_outline": {
+   "margin": 5.95,
+   "variant": "holes_xz_high",
+   "measured": 13.950000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x+81_z-282.centre_distance": {
+   "margin": 8.0,
+   "variant": "nominal",
+   "measured": 14.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x+81_z-282.to_outline": {
+   "margin": 14.95,
+   "variant": "holes_xz_low",
+   "measured": 22.94999999999999,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x-81_z-282.centre_distance": {
+   "margin": 8.0,
+   "variant": "nominal",
+   "measured": 14.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x-81_z-282.to_outline": {
+   "margin": 14.95,
+   "variant": "holes_xz_low",
+   "measured": 22.94999999999999,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x+95_z-282.centre_distance": {
+   "margin": 8.0,
+   "variant": "nominal",
+   "measured": 14.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x+95_z-282.to_outline": {
+   "margin": 14.95,
+   "variant": "holes_xz_low",
+   "measured": 22.94999999999999,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x-95_z-282.centre_distance": {
+   "margin": 8.0,
+   "variant": "nominal",
+   "measured": 14.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x-95_z-282.to_outline": {
+   "margin": 14.95,
+   "variant": "holes_xz_low",
+   "measured": 22.94999999999999,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z-262.centre_distance": {
+   "margin": 16.141589825,
+   "variant": "nominal",
+   "measured": 22.14158982548453,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z-262.to_outline": {
+   "margin": 7.45,
+   "variant": "holes_xz_high",
+   "measured": 15.450000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z-262.centre_distance": {
+   "margin": 16.141589825,
+   "variant": "nominal",
+   "measured": 22.14158982548453,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z-262.to_outline": {
+   "margin": 7.45,
+   "variant": "holes_xz_low",
+   "measured": 15.449999999900001,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z-15.centre_distance": {
+   "margin": 43.60090725,
+   "variant": "nominal",
+   "measured": 49.60090724976712,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z-15.to_outline": {
+   "margin": 7.45,
+   "variant": "holes_xz_high",
+   "measured": 15.450000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z-15.centre_distance": {
+   "margin": 22.306359709,
+   "variant": "nominal",
+   "measured": 28.30635970943632,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z-15.to_outline": {
+   "margin": 7.45,
+   "variant": "holes_xz_low",
+   "measured": 15.449999999900001,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z+62.centre_distance": {
+   "margin": 11.755280905,
+   "variant": "nominal",
+   "measured": 17.755280904564703,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z+62.to_outline": {
+   "margin": 7.45,
+   "variant": "holes_xz_high",
+   "measured": 15.450000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z+62.centre_distance": {
+   "margin": 11.755280905,
+   "variant": "nominal",
+   "measured": 17.755280904564703,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z+62.to_outline": {
+   "margin": 7.45,
+   "variant": "holes_xz_low",
+   "measured": 15.449999999900001,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x+85_z+77.centre_distance": {
+   "margin": 4.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x+85_z+77.to_outline": {
+   "margin": 14.95,
+   "variant": "holes_xz_high",
+   "measured": 22.950000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x-85_z+77.centre_distance": {
+   "margin": 4.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x-85_z+77.to_outline": {
+   "margin": 14.95,
+   "variant": "holes_xz_high",
+   "measured": 22.950000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x+95_z+77.centre_distance": {
+   "margin": 4.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x+95_z+77.to_outline": {
+   "margin": 14.95,
+   "variant": "holes_xz_high",
+   "measured": 22.950000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x-95_z+77.centre_distance": {
+   "margin": 4.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x-95_z+77.to_outline": {
+   "margin": 14.95,
+   "variant": "holes_xz_high",
+   "measured": 22.950000000000003,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x+35_z-40.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x+35_z-40.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x+35_z-40.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+35_z-40.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+35_z-40.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+35_z-40.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x-35_z-40.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x-35_z-40.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x-35_z-40.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-35_z-40.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-35_z-40.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-35_z-40.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x+35_z-60.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x+35_z-60.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x+35_z-60.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+35_z-60.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+35_z-60.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+35_z-60.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x-35_z-60.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x-35_z-60.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-01.x-35_z-60.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-35_z-60.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-35_z-60.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-35_z-60.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x+40_z-148.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x+40_z-148.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x+40_z-148.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+40_z-148.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+40_z-148.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+40_z-148.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x-40_z-148.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x-40_z-148.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x-40_z-148.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-40_z-148.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-40_z-148.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-40_z-148.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x+40_z-114.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x+40_z-114.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x+40_z-114.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+40_z-114.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+40_z-114.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+40_z-114.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x-40_z-114.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x-40_z-114.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-02.x-40_z-114.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-40_z-114.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-40_z-114.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-40_z-114.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x-4_z-239.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x-4_z-239.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866266,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x-4_z-239.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-4_z-239.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-4_z-239.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-4_z-239.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x-4_z-171.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x-4_z-171.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866266,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x-4_z-171.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-4_z-171.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-4_z-171.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-4_z-171.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x+37_z-239.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x+37_z-239.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x+37_z-239.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+37_z-239.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+37_z-239.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+37_z-239.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x+37_z-171.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x+37_z-171.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-03.x+37_z-171.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+37_z-171.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+37_z-171.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+37_z-171.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-45.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-45.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-45.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-45.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-45.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-45.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-105.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-105.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-105.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-105.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-105.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-105.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-165.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-165.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-165.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-165.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-165.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-165.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-225.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-225.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-04.x+65_z-225.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-225.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-225.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+65_z-225.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-113_z-42.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-113_z-42.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-113_z-42.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-113_z-42.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-113_z-42.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-113_z-42.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-71_z-42.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-71_z-42.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-71_z-42.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-71_z-42.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-71_z-42.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-71_z-42.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-113_z-148.5.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-113_z-148.5.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-113_z-148.5.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-113_z-148.5.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-113_z-148.5.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-113_z-148.5.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-71_z-148.5.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-71_z-148.5.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-10.x-71_z-148.5.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-71_z-148.5.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-71_z-148.5.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-71_z-148.5.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+88_z-222.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+88_z-222.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+88_z-222.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+88_z-222.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+88_z-222.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+88_z-222.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+106_z-222.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+106_z-222.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+106_z-222.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+106_z-222.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+106_z-222.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+106_z-222.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+88_z-78.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+88_z-78.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+88_z-78.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+88_z-78.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+88_z-78.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+88_z-78.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+106_z-78.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+106_z-78.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-11.x+106_z-78.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+106_z-78.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+106_z-78.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+106_z-78.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x+81_z-282.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x+81_z-282.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x+81_z-282.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+81_z-282.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+81_z-282.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+81_z-282.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x-81_z-282.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x-81_z-282.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x-81_z-282.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-81_z-282.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-81_z-282.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-81_z-282.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x+95_z-282.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x+95_z-282.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x+95_z-282.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+95_z-282.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+95_z-282.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+95_z-282.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x-95_z-282.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x-95_z-282.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-12.x-95_z-282.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-95_z-282.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-95_z-282.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-95_z-282.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z-262.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z-262.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z-262.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+104.5_z-262.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+104.5_z-262.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+104.5_z-262.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z-262.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z-262.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z-262.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-104.5_z-262.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-104.5_z-262.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-104.5_z-262.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z-15.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z-15.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865324,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z-15.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+104.5_z-15.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+104.5_z-15.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+104.5_z-15.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z-15.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z-15.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865324,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z-15.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-104.5_z-15.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-104.5_z-15.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-104.5_z-15.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z+62.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z+62.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x+104.5_z+62.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+104.5_z+62.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+104.5_z+62.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+104.5_z+62.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z+62.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z+62.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-13.x-104.5_z+62.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-104.5_z+62.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-104.5_z+62.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-104.5_z+62.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x+85_z+77.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x+85_z+77.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x+85_z+77.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+85_z+77.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+85_z+77.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+85_z+77.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x-85_z+77.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x-85_z+77.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x-85_z+77.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-85_z+77.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-85_z+77.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-85_z+77.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x+95_z+77.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x+95_z+77.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x+95_z+77.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+95_z+77.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+95_z+77.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x+95_z+77.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x-95_z+77.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x-95_z+77.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-14.x-95_z+77.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-95_z+77.diameter": {
+   "margin": 0.0,
+   "variant": "insert_d_low",
+   "measured": 3.95,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-95_z+77.depth": {
+   "margin": 0.2,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS_ASSUMED"
+  },
+  "D-05b.x-95_z+77.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x+110_z+90.diameter": {
+   "margin": 0.0,
+   "variant": "foot_d_low",
+   "measured": 3.3,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x+110_z+90.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x+110_z+90.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-04a.x+110_z+90": {
+   "margin": 0.05,
+   "variant": "foot_d_low",
+   "measured": 3.3,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x-110_z+90.diameter": {
+   "margin": 0.0,
+   "variant": "foot_d_low",
+   "measured": 3.3,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x-110_z+90.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x-110_z+90.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-04a.x-110_z+90": {
+   "margin": 0.05,
+   "variant": "foot_d_low",
+   "measured": 3.3,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x+110_z-295.diameter": {
+   "margin": 0.0,
+   "variant": "foot_d_low",
+   "measured": 3.3,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x+110_z-295.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x+110_z-295.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-04a.x+110_z-295": {
+   "margin": 0.05,
+   "variant": "foot_d_low",
+   "measured": 3.3,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x-110_z-295.diameter": {
+   "margin": 0.0,
+   "variant": "foot_d_low",
+   "measured": 3.3,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x-110_z-295.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-05.x-110_z-295.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "D-04a.x-110_z-295": {
+   "margin": 0.05,
+   "variant": "foot_d_low",
+   "measured": 3.3,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-06.x-80_z-120.diameter": {
+   "margin": 0.0,
+   "variant": "drain_d_low",
+   "measured": 7.9,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-06.x-80_z-120.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-06.x-80_z-120.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-06.x-80_z-230.diameter": {
+   "margin": 0.0,
+   "variant": "drain_d_low",
+   "measured": 7.9,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-06.x-80_z-230.offset": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-06.x-80_z-230.through": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-07.top_y": {
+   "margin": 0.1,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-07.thickness": {
+   "margin": 0.0,
+   "variant": "plate_t_low",
+   "measured": 5.9,
+   "status": "PASS"
+  },
+  "REQ-07.top_faces": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "REQ-07.top_flatness": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS"
+  },
+  "U-03a.plate|od_c03_cradle.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c03_cradle.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c03_cradle.coaxial.x-4_z-239": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866266,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c03_cradle.coaxial.x-4_z-171": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866266,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c03_cradle.coaxial.x+37_z-239": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c03_cradle.coaxial.x+37_z-171": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c04_mount.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c04_mount.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c04_mount.coaxial.x+40_z-148": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c04_mount.coaxial.x-40_z-148": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c04_mount.coaxial.x+40_z-114": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c04_mount.coaxial.x-40_z-114": {
+   "margin": 0.029289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_h01_pump.clearance": {
+   "margin": 14.25,
+   "variant": "nominal",
+   "measured": 16.25,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_h01_pump.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_h11_thermoblock.clearance": {
+   "margin": 6.492494387,
+   "variant": "nominal",
+   "measured": 16.4924943874,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_c03|od_c04.clearance": {
+   "margin": 6.0,
+   "variant": "nominal",
+   "measured": 8.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_h11.max_z": {
+   "margin": 4.21,
+   "variant": "nominal",
+   "measured": -89.20999999999998,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-08.max_z": {
+   "margin": 4.21,
+   "variant": "nominal",
+   "measured": -89.20999999999998,
+   "status": "PASS_ASSUMED"
+  },
+  "REQ-08.clearance": {
+   "margin": 6.492494387,
+   "variant": "nominal",
+   "measured": 16.4924943874,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c01_frame.clearance": {
+   "margin": 174.76,
+   "variant": "nominal",
+   "measured": 176.76,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c01_frame.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c03_cradle.clearance": {
+   "margin": 209.056830703,
+   "variant": "nominal",
+   "measured": 211.05683070278837,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c03_cradle.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_h01_pump.clearance": {
+   "margin": 199.11084518,
+   "variant": "nominal",
+   "measured": 201.11084518014445,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_h01_pump.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c04_mount.clearance": {
+   "margin": 153.915706714,
+   "variant": "nominal",
+   "measured": 155.91570671359574,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c04_mount.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_h11_thermoblock.clearance": {
+   "margin": 108.780113114,
+   "variant": "nominal",
+   "measured": 110.78011311361298,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c05_foot_reference_A01.clearance": {
+   "margin": 171.401348322,
+   "variant": "nominal",
+   "measured": 173.40134832232417,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c05_foot_reference_A01.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c07_valve_mount.clearance": {
+   "margin": 160.240033667,
+   "variant": "nominal",
+   "measured": 162.24003366719177,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c07_valve_mount.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c08_tray.clearance": {
+   "margin": 116.163841028,
+   "variant": "nominal",
+   "measured": 118.16384102814511,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c08_tray.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c11_back_panel.clearance": {
+   "margin": 267.066906178,
+   "variant": "nominal",
+   "measured": 269.0669061776271,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c11_back_panel.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c09_front_panel.clearance": {
+   "margin": 6.775676612,
+   "variant": "nominal",
+   "measured": 8.775676612090953,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c09_front_panel.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_r_z-262_bracket.clearance": {
+   "margin": 302.222798185,
+   "variant": "nominal",
+   "measured": 304.2227981853534,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_r_z-262_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_l_z-262_bracket.clearance": {
+   "margin": 302.222798185,
+   "variant": "nominal",
+   "measured": 304.2227981853534,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_l_z-262_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_r_z-15_bracket.clearance": {
+   "margin": 170.436749679,
+   "variant": "nominal",
+   "measured": 172.43674967856128,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_r_z-15_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_l_z-15_bracket.clearance": {
+   "margin": 170.436749679,
+   "variant": "nominal",
+   "measured": 172.43674967856128,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_l_z-15_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_r_z62_bracket.clearance": {
+   "margin": 168.679649274,
+   "variant": "nominal",
+   "measured": 170.67964927449285,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_r_z62_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_l_z62_bracket.clearance": {
+   "margin": 168.679649274,
+   "variant": "nominal",
+   "measured": 170.67964927449285,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01|od_c16_l_z62_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01.pose.max_y": {
+   "margin": -1e-07,
+   "variant": "nominal",
+   "measured": 205.0000001,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01.pose.min_x": {
+   "margin": -1e-07,
+   "variant": "nominal",
+   "measured": -50.0000001,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01.pose.max_x": {
+   "margin": -1e-07,
+   "variant": "nominal",
+   "measured": 50.0000001,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01.pose.min_z": {
+   "margin": -1e-07,
+   "variant": "nominal",
+   "measured": -18.0000001,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01.pose.max_z": {
+   "margin": -9.6e-08,
+   "variant": "nominal",
+   "measured": 82.000000096103,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.od_g01.pose.mouth_face_y": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 176.76,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c07_valve_mount.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c07_valve_mount.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c07_valve_mount.coaxial.x-113_z-42": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c07_valve_mount.coaxial.x-71_z-42": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c07_valve_mount.coaxial.x-113_z-148.5": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c07_valve_mount.coaxial.x-71_z-148.5": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c08_tray.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c08_tray.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c08_tray.coaxial.x+88_z-222": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c08_tray.coaxial.x+106_z-222": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c08_tray.coaxial.x+88_z-78": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c08_tray.coaxial.x+106_z-78": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c11_back_panel.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c11_back_panel.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c11_back_panel.coaxial.x+81_z-282": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c11_back_panel.coaxial.x-81_z-282": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c11_back_panel.coaxial.x+95_z-282": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c11_back_panel.coaxial.x-95_z-282": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c09_front_panel.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c09_front_panel.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c09_front_panel.coaxial.x+85_z+77": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c09_front_panel.coaxial.x-85_z+77": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c09_front_panel.coaxial.x+95_z+77": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c09_front_panel.coaxial.x-95_z+77": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_r_z-262_bracket.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_r_z-262_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_r_z-262_bracket.coaxial.x+104.5_z-262": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_l_z-262_bracket.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_l_z-262_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_l_z-262_bracket.coaxial.x-104.5_z-262": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811866079,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_r_z-15_bracket.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_r_z-15_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_r_z-15_bracket.coaxial.x+104.5_z-15": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865324,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_l_z-15_bracket.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_l_z-15_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_l_z-15_bracket.coaxial.x-104.5_z-15": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865324,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_r_z62_bracket.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_r_z62_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_r_z62_bracket.coaxial.x+104.5_z+62": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_l_z62_bracket.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_l_z62_bracket.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c16_l_z62_bracket.coaxial.x-104.5_z+62": {
+   "margin": 0.129289322,
+   "variant": "holes_xz_low",
+   "measured": 0.07071067811865074,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c05_foot_reference_A01.clearance": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.plate|od_c05_foot_reference_A01.interference": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c03_cradle.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c03_cradle.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c03_cradle.lift0.1": {
+   "margin": -1.4155343563970746e-15,
+   "variant": "nominal",
+   "measured": 0.10000000000000142,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c03_cradle.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c04_mount.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c04_mount.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c04_mount.lift0.1": {
+   "margin": -5.689893001203927e-15,
+   "variant": "nominal",
+   "measured": 0.09999999999999432,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c04_mount.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c05_foot_reference_A01.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c05_foot_reference_A01.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c05_foot_reference_A01.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c05_foot_reference_A01.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c07_valve_mount.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c07_valve_mount.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c07_valve_mount.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c07_valve_mount.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c08_tray.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c08_tray.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c08_tray.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c08_tray.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c11_back_panel.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c11_back_panel.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c11_back_panel.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c11_back_panel.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c09_front_panel.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c09_front_panel.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c09_front_panel.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c09_front_panel.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z-262_bracket.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z-262_bracket.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z-262_bracket.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z-262_bracket.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z-262_bracket.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z-262_bracket.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z-262_bracket.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z-262_bracket.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z-15_bracket.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z-15_bracket.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z-15_bracket.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z-15_bracket.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z-15_bracket.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z-15_bracket.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z-15_bracket.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z-15_bracket.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z62_bracket.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z62_bracket.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z62_bracket.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_r_z62_bracket.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z62_bracket.lift10": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 10.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z62_bracket.lift1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z62_bracket.lift0.1": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.1,
+   "status": "PASS_ASSUMED"
+  },
+  "U-03a.path.od_c16_l_z62_bracket.lift0": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS_ASSUMED"
+  },
+  "U-04.assembly.schema": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.solids": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 17,
+   "status": "PASS"
+  },
+  "U-04.assembly.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.labels": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c01_frame.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c01_frame.volume_delta": {
+   "margin": -1.65e-07,
+   "variant": "plate_t_high",
+   "measured": 1.651933416724205e-07,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c01_frame.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c03_cradle.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c03_cradle.volume_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c03_cradle.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_h01_pump.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_h01_pump.volume_delta": {
+   "margin": -4e-09,
+   "variant": "nominal",
+   "measured": 4.307366907596588e-09,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_h01_pump.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c04_mount.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c04_mount.volume_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c04_mount.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_h11_thermoblock.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_h11_thermoblock.validity_unchanged": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_g01_housing.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_g01_housing.volume_delta": {
+   "margin": -1e-09,
+   "variant": "nominal",
+   "measured": 5.093170329928398e-10,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_g01_housing.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c05_foot_reference_A01.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c05_foot_reference_A01.volume_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c05_foot_reference_A01.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c07_valve_mount.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c07_valve_mount.volume_delta": {
+   "margin": -1e-09,
+   "variant": "nominal",
+   "measured": 1.1641532182693481e-09,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c07_valve_mount.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c08_tray.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c08_tray.volume_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c08_tray.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c09_front_panel.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c09_front_panel.volume_delta": {
+   "margin": -1e-09,
+   "variant": "nominal",
+   "measured": 5.529727786779404e-10,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c09_front_panel.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c11_back_panel.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c11_back_panel.volume_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c11_back_panel.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_r_z-262_bracket.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_r_z-262_bracket.volume_delta": {
+   "margin": -4.547473508864641e-12,
+   "variant": "nominal",
+   "measured": 4.547473508864641e-12,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_r_z-262_bracket.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_l_z-262_bracket.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_l_z-262_bracket.volume_delta": {
+   "margin": -5.4569682106375694e-12,
+   "variant": "nominal",
+   "measured": 5.4569682106375694e-12,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_l_z-262_bracket.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_r_z-15_bracket.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_r_z-15_bracket.volume_delta": {
+   "margin": -4.547473508864641e-12,
+   "variant": "nominal",
+   "measured": 4.547473508864641e-12,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_r_z-15_bracket.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_l_z-15_bracket.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_l_z-15_bracket.volume_delta": {
+   "margin": -4.547473508864641e-12,
+   "variant": "nominal",
+   "measured": 4.547473508864641e-12,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_l_z-15_bracket.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_r_z62_bracket.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_r_z62_bracket.volume_delta": {
+   "margin": -4.547473508864641e-12,
+   "variant": "nominal",
+   "measured": 4.547473508864641e-12,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_r_z62_bracket.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_l_z62_bracket.faces_delta": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_l_z62_bracket.volume_delta": {
+   "margin": -4.547473508864641e-12,
+   "variant": "nominal",
+   "measured": 4.547473508864641e-12,
+   "status": "PASS"
+  },
+  "U-04.assembly.od_c16_l_z62_bracket.valid_after": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "D-01a": {
+   "margin": 4.15,
+   "variant": "holes_xz_low",
+   "measured": 4.9499999998999975,
+   "status": "PASS"
+  },
+  "D-01b": {
+   "margin": 2.95,
+   "variant": "holes_xz_low",
+   "measured": 4.9499999998999975,
+   "status": "PASS"
+  },
+  "D-06a": {
+   "margin": 3.95,
+   "variant": "holes_xz_low",
+   "measured": 4.9499999998999975,
+   "status": "PASS"
+  },
+  "J-05.min_wall": {
+   "margin": 1.95,
+   "variant": "holes_xz_low",
+   "measured": 4.9499999998999975,
+   "status": "PASS"
+  },
+  "U-06": {
+   "margin": 2.95,
+   "variant": "holes_xz_low",
+   "measured": 4.9499999998999975,
+   "status": "PASS"
+  },
+  "D-03a": {
+   "margin": 45.0,
+   "variant": "nominal",
+   "measured": 90.0,
+   "status": "PASS_ASSUMED"
+  },
+  "D-03b": {
+   "margin": 5.0,
+   "variant": "nominal",
+   "measured": 0.0,
+   "status": "PASS"
+  },
+  "D-05a": {
+   "margin": 6.0,
+   "variant": "nominal",
+   "measured": 14.0,
+   "status": "PASS_ASSUMED"
+  },
+  "J-05.ring": {
+   "margin": 1.950625098,
+   "variant": "holes_xz_low",
+   "measured": 4.950625098,
+   "status": "PASS"
+  },
+  "U-07.stl_max_sagitta": {
+   "margin": 0.005027685,
+   "variant": "nominal",
+   "measured": 0.0049723151243391,
+   "status": "PASS"
+  },
+  "U-07.angular_tolerance": {
+   "margin": 0.030972195,
+   "variant": "nominal",
+   "measured": 0.2,
+   "status": "PASS"
+  },
+  "U-07.delivered_bodies": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  },
+  "U-07.delivered_naked_edges": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 0,
+   "status": "PASS"
+  },
+  "U-07.delivered_winding": {
+   "margin": 0.0,
+   "variant": "nominal",
+   "measured": 1,
+   "status": "PASS"
+  }
+ }
+}
