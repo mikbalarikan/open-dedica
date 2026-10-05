@@ -46,8 +46,9 @@ Read this before you print anything.
   `OD-C08`, `OD-C11`, `OD-C16` and `OD-C09`), 4 Ø3.4 feet holes and 2 Ø8 drain holes.
 - The steam system (`OD-S00`) is phase 2 and is not in this build. The water tank dock
   `OD-C06` is deferred, so the tank stands on the table behind the machine.
-- The top assembly `OD-000` (STEP) is being built. When it lands in `chassis/`, use it
-  to check the steps below.
+- The top assembly `chassis/OD-000_open_dedica_assembly.step` places every part below
+  (33 solids, no interference; `chassis/src/OD-000_assembly/clash_report.md`). Use it to
+  check the steps.
 
 ## 2. Safety
 
