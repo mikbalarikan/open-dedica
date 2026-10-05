@@ -1,0 +1,142 @@
+{
+ "mesh_census": {
+  "triangles": {
+   "m": 11676,
+   "st": "MEASURED",
+   "at": null,
+   "why": ""
+  },
+  "bodies": {
+   "m": 1,
+   "st": "MEASURED",
+   "at": null,
+   "why": ""
+  },
+  "naked_edges": {
+   "m": 0,
+   "st": "MEASURED",
+   "at": null,
+   "why": ""
+  },
+  "winding": {
+   "m": 1,
+   "st": "MEASURED",
+   "at": null,
+   "why": ""
+  },
+  "volume": {
+   "m": 579003.603860689,
+   "st": "MEASURED",
+   "at": null,
+   "why": ""
+  }
+ },
+ "stl_header_triangles": 11676,
+ "stl_bytes": 583884,
+ "stl_bbox": [
+  [
+   -120.0,
+   -6.0,
+   -305.0
+  ],
+  [
+   120.0,
+   0.0,
+   100.0
+  ]
+ ],
+ "angular_limit_rad": 0.2309721947249083,
+ "mesh_deviation": {
+  "m": 0.004974966756443494,
+  "st": "MEASURED",
+  "at": [
+   -77.664212,
+   -3.0,
+   -226.752833
+  ],
+  "why": ""
+ },
+ "remesh": {
+  "checks": {
+   "max_sagitta": {
+    "m": 0.0049723151243391,
+    "st": "MEASURED",
+    "at": [
+     -82.78947541885337,
+     -6.0,
+     -232.85990788147728
+    ],
+    "why": ""
+   }
+  }
+ },
+ "remesh_sagitta": {
+  "m": 0.0049723151243391,
+  "st": "MEASURED",
+  "at": [
+   -82.78947541885337,
+   -6.0,
+   -232.85990788147728
+  ],
+  "why": ""
+ },
+ "remesh_err": "AttributeError(\"'Written' object has no attribute 'measured'\")",
+ "remesh_header_triangles": 11676,
+ "remesh_bytes_equal_delivered": false,
+ "remesh_census": {
+  "triangles": {
+   "m": 11676,
+   "st": "MEASURED",
+   "at": null,
+   "why": ""
+  },
+  "bodies": {
+   "m": 1,
+   "st": "MEASURED",
+   "at": null,
+   "why": ""
+  },
+  "naked_edges": {
+   "m": 0,
+   "st": "MEASURED",
+   "at": null,
+   "why": ""
+  },
+  "winding": {
+   "m": 1,
+   "st": "MEASURED",
+   "at": null,
+   "why": ""
+  },
+  "volume": {
+   "m": 579003.603860689,
+   "st": "MEASURED",
+   "at": null,
+   "why": ""
+  }
+ },
+ "3mf_entries": [
+  "[Content_Types].xml",
+  "_rels/.rels",
+  "3D/3dmodel.model"
+ ],
+ "3mf_vertices": 5752,
+ "3mf_triangles": 11676,
+ "3mf_bbox": [
+  [
+   -120.0,
+   -6.0,
+   -305.0
+  ],
+  [
+   120.0,
+   0.0,
+   100.0
+  ]
+ ],
+ "3mf_volume": 579003.6038015138,
+ "3mf_unit": "millimeter",
+ "stl_unique_vertices": 5752,
+ "3mf_unique_vertices": 5752,
+ "vertex_sets_equal": false
+}

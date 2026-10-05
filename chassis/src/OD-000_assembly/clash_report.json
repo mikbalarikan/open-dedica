@@ -1,0 +1,2099 @@
+{
+ "assembly": "/home/claude/open-dedica/chassis/OD-000_open_dedica_assembly.step",
+ "sha256": "46e32f1bc93c7104065fd005781ef2bae75a9efd734d748954eb7ffcdb2180bf",
+ "plate": "/home/claude/oguz-jobs/20260930-od-c01-base-frame/02_STEP_STL/od_c01_frame_C1_v03.step",
+ "parts": {
+  "OD-C01": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "/home/claude/oguz-jobs/20260930-od-c01-base-frame/02_STEP_STL/od_c01_frame_C1_v03.step"
+  },
+  "OD-C02": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C02_bulkhead.step"
+  },
+  "OD-C03": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C03_pump_cradle.step"
+  },
+  "OD-C04": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C04_thermoblock_mount.step"
+  },
+  "OD-C05": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C05_group_head_carrier.step"
+  },
+  "OD-C07": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C07_valve_flowmeter_mount.step"
+  },
+  "OD-C08": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C08_electronics_bay_tray.step"
+  },
+  "OD-C09": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C09_front_panel.step"
+  },
+  "OD-C10": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C10_top_panel.step"
+  },
+  "OD-C11": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C11_back_panel.step"
+  },
+  "OD-C12": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C12_left_side_panel.step"
+  },
+  "OD-C13": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C13_right_side_panel.step"
+  },
+  "OD-C14-A": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C14_cord_grommet.step"
+  },
+  "OD-C14-B": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C14_cord_grommet.step"
+  },
+  "OD-C15-RF": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C15_foot.step"
+  },
+  "OD-C15-LF": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C15_foot.step"
+  },
+  "OD-C15-RR": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C15_foot.step"
+  },
+  "OD-C15-LR": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C15_foot.step"
+  },
+  "OD-C16-R1": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C16_corner_bracket.step"
+  },
+  "OD-C16-R2": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C16_corner_bracket.step"
+  },
+  "OD-C16-R3": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C16_corner_bracket.step"
+  },
+  "OD-C16-L1": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C16_corner_bracket.step"
+  },
+  "OD-C16-L2": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C16_corner_bracket.step"
+  },
+  "OD-C16-L3": {
+   "sub": "OD-C00",
+   "kind": "PRINT",
+   "source": "chassis/OD-C16_corner_bracket.step"
+  },
+  "OD-G01": {
+   "sub": "OD-G00",
+   "kind": "PRINT",
+   "source": "chassis/OD-G01_group_head_housing.step"
+  },
+  "OD-G04": {
+   "sub": "OD-G00",
+   "kind": "OEM",
+   "source": "step/OD-G04_brewing_gasket_support.step"
+  },
+  "OD-G10": {
+   "sub": "OD-G00",
+   "kind": "OEM",
+   "source": "step/OD-G10_portafilter.step"
+  },
+  "OD-H01": {
+   "sub": "OD-H00",
+   "kind": "OEM",
+   "source": "step/OD-H01_ulka_ep5_pump.step"
+  },
+  "OD-H11": {
+   "sub": "OD-H00",
+   "kind": "OEM",
+   "source": "step/OD-H11_thermoblock.step"
+  },
+  "OD-H22": {
+   "sub": "OD-H00",
+   "kind": "OEM",
+   "source": "step/OD-H22_3way_valve.step"
+  },
+  "OD-H24": {
+   "sub": "OD-H00",
+   "kind": "OEM",
+   "source": "step/OD-H24_flowmeter.step"
+  },
+  "OD-E01": {
+   "sub": "OD-E00",
+   "kind": "OEM",
+   "source": "step/OD-E01_power_pcb.step"
+  },
+  "OD-E02": {
+   "sub": "OD-E00",
+   "kind": "OEM",
+   "source": "step/OD-E02_control_board.step"
+  }
+ },
+ "roundtrip": {
+  "schema": {
+   "measured": 1,
+   "status": "MEASURED"
+  },
+  "solids": {
+   "measured": 33,
+   "status": "MEASURED"
+  },
+  "volume_delta": {
+   "measured": 1.1584480660967529,
+   "status": "MEASURED"
+  },
+  "faces_delta": {
+   "measured": 0,
+   "status": "MEASURED"
+  },
+  "labels": {
+   "measured": 1,
+   "status": "MEASURED"
+  },
+  "valid_after": {
+   "measured": 0,
+   "status": "MEASURED"
+  }
+ },
+ "cross_check": {
+  "OD-C01": {
+   "bbox": [
+    -120.0,
+    -6.0,
+    -305.0,
+    120.0,
+    0.0,
+    100.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "OD-C01",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -120.0,
+      -6.0,
+      -305.0,
+      120.0,
+      0.0,
+      100.0
+     ]
+    }
+   ]
+  },
+  "OD-C02": {
+   "bbox": [
+    59.0,
+    0.0,
+    -240.0,
+    71.0,
+    215.0,
+    -30.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C10_top_panel/02_STEP_STL/od_c10_assembly_C1_v01.step",
+     "child": "od_c02_bulkhead",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      59.0,
+      0.0,
+      -240.0,
+      71.0,
+      215.0,
+      -30.0
+     ]
+    },
+    {
+     "check_assembly": "OD-C08_electronics_bay_tray/02_STEP_STL/od_c08_assembly_C1_v01.step",
+     "child": "od_c02_bulkhead",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      59.0,
+      0.0,
+      -240.0,
+      71.0,
+      215.0,
+      -30.0
+     ]
+    }
+   ]
+  },
+  "OD-C03": {
+   "bbox": [
+    -10.0,
+    -0.0,
+    -245.0,
+    42.0,
+    40.0,
+    -165.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C11_back_panel/02_STEP_STL/od_c11_assembly_C1_v03.step",
+     "child": "od_c03_cradle",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -10.0,
+      -0.0,
+      -245.0,
+      42.0,
+      40.0,
+      -165.0
+     ]
+    }
+   ]
+  },
+  "OD-C04": {
+   "bbox": [
+    -50.0,
+    0.0,
+    -157.0,
+    50.0,
+    110.0,
+    -107.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C01_base_frame/02_STEP_STL/od_c01_assembly_C1_v02.step",
+     "child": "od_c04_mount",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -50.0,
+      0.0,
+      -157.0,
+      50.0,
+      110.0,
+      -107.0
+     ]
+    }
+   ]
+  },
+  "OD-C05": {
+   "bbox": [
+    -55.0,
+    0.0,
+    -70.0,
+    55.0,
+    210.0,
+    82.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "OD-C05",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -55.0,
+      0.0,
+      -70.0,
+      55.0,
+      210.0,
+      82.0
+     ]
+    },
+    {
+     "check_assembly": "OD-C05_group_head_carrier/02_STEP_STL/od_c05_assembly_C4_v04.step",
+     "child": "od_c05_carrier",
+     "frame": "housing",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -55.0,
+      0.0,
+      -70.0,
+      55.0,
+      210.0,
+      82.0
+     ]
+    }
+   ]
+  },
+  "OD-C07": {
+   "bbox": [
+    -117.0,
+    0.0,
+    -154.0,
+    -67.0,
+    48.0,
+    -35.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "OD-C07",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -117.0,
+      0.0,
+      -154.0,
+      -67.0,
+      48.0,
+      -35.0
+     ]
+    }
+   ]
+  },
+  "OD-C08": {
+   "bbox": [
+    73.0,
+    0.0,
+    -230.0,
+    112.0,
+    92.0,
+    -70.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "OD-C08",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      73.0,
+      0.0,
+      -230.0,
+      112.0,
+      92.0,
+      -70.0
+     ]
+    }
+   ]
+  },
+  "OD-C09": {
+   "bbox": [
+    -116.0,
+    -0.0,
+    72.0,
+    116.0,
+    215.0,
+    97.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C09_front_panel/02_STEP_STL/od_c09_assembly_C1_v01.step",
+     "child": "od_c09_front",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -116.0,
+      -0.0,
+      72.0,
+      116.0,
+      215.0,
+      97.0
+     ]
+    }
+   ]
+  },
+  "OD-C10": {
+   "bbox": [
+    -120.0,
+    210.5,
+    -305.0,
+    120.0,
+    250.0,
+    100.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "OD-C10",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -120.0,
+      210.5,
+      -305.0,
+      120.0,
+      250.0,
+      100.0
+     ]
+    }
+   ]
+  },
+  "OD-C11": {
+   "bbox": [
+    -116.0,
+    0.0,
+    -302.0,
+    116.0,
+    215.0,
+    -277.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "OD-C11",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -116.0,
+      0.0,
+      -302.0,
+      116.0,
+      215.0,
+      -277.0
+     ]
+    }
+   ]
+  },
+  "OD-C12": {
+   "bbox": [
+    -120.0,
+    0.0,
+    -295.0,
+    -110.0,
+    218.811,
+    90.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "od_c12_left",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -120.0,
+      0.0,
+      -295.0,
+      -110.0,
+      218.811,
+      90.0
+     ]
+    }
+   ]
+  },
+  "OD-C13": {
+   "bbox": [
+    110.0,
+    0.0,
+    -295.0,
+    120.0,
+    218.811,
+    90.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "od_c13_right",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      110.0,
+      0.0,
+      -295.0,
+      120.0,
+      218.811,
+      90.0
+     ]
+    }
+   ]
+  },
+  "OD-C14-A": {
+   "bbox": [
+    85.008,
+    30.4,
+    -304.0,
+    104.992,
+    40.0,
+    -291.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C14_cord_grommet/02_STEP_STL/od_c14_assembly_C1_v01.step",
+     "child": "half_upper",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      85.008,
+      30.4,
+      -304.0,
+      104.992,
+      40.0,
+      -291.0
+     ]
+    }
+   ]
+  },
+  "OD-C14-B": {
+   "bbox": [
+    85.008,
+    20.0,
+    -304.0,
+    104.992,
+    29.6,
+    -291.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C14_cord_grommet/02_STEP_STL/od_c14_assembly_C1_v01.step",
+     "child": "half_lower",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      85.008,
+      20.0,
+      -304.0,
+      104.992,
+      29.6,
+      -291.0
+     ]
+    }
+   ]
+  },
+  "OD-C15-RF": {
+   "bbox": [
+    101.0,
+    -16.0,
+    81.0,
+    119.0,
+    -6.0,
+    99.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "OD-C15-RF",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      101.0,
+      -16.0,
+      81.0,
+      119.0,
+      -6.0,
+      99.0
+     ]
+    }
+   ]
+  },
+  "OD-C15-LF": {
+   "bbox": [
+    -119.0,
+    -16.0,
+    81.0,
+    -101.0,
+    -6.0,
+    99.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "OD-C15-LF",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -119.0,
+      -16.0,
+      81.0,
+      -101.0,
+      -6.0,
+      99.0
+     ]
+    }
+   ]
+  },
+  "OD-C15-RR": {
+   "bbox": [
+    101.0,
+    -16.0,
+    -304.0,
+    119.0,
+    -6.0,
+    -286.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "OD-C15-RR",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      101.0,
+      -16.0,
+      -304.0,
+      119.0,
+      -6.0,
+      -286.0
+     ]
+    }
+   ]
+  },
+  "OD-C15-LR": {
+   "bbox": [
+    -119.0,
+    -16.0,
+    -304.0,
+    -101.0,
+    -6.0,
+    -286.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "OD-C15-LR",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -119.0,
+      -16.0,
+      -304.0,
+      -101.0,
+      -6.0,
+      -286.0
+     ]
+    }
+   ]
+  },
+  "OD-C16-R1": {
+   "bbox": [
+    98.0,
+    -0.0,
+    -270.0,
+    117.0,
+    16.0,
+    -254.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "od_c16_bracket_R1",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      98.0,
+      -0.0,
+      -270.0,
+      117.0,
+      16.0,
+      -254.0
+     ]
+    }
+   ]
+  },
+  "OD-C16-R2": {
+   "bbox": [
+    98.0,
+    -0.0,
+    -23.0,
+    117.0,
+    16.0,
+    -7.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "od_c16_bracket_R2",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      98.0,
+      -0.0,
+      -23.0,
+      117.0,
+      16.0,
+      -7.0
+     ]
+    }
+   ]
+  },
+  "OD-C16-R3": {
+   "bbox": [
+    98.0,
+    -0.0,
+    54.0,
+    117.0,
+    16.0,
+    70.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "od_c16_bracket_R3",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      98.0,
+      -0.0,
+      54.0,
+      117.0,
+      16.0,
+      70.0
+     ]
+    }
+   ]
+  },
+  "OD-C16-L1": {
+   "bbox": [
+    -117.0,
+    -0.0,
+    -270.0,
+    -98.0,
+    16.0,
+    -254.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "od_c16_bracket_L1",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -117.0,
+      -0.0,
+      -270.0,
+      -98.0,
+      16.0,
+      -254.0
+     ]
+    }
+   ]
+  },
+  "OD-C16-L2": {
+   "bbox": [
+    -117.0,
+    -0.0,
+    -23.0,
+    -98.0,
+    16.0,
+    -7.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "od_c16_bracket_L2",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -117.0,
+      -0.0,
+      -23.0,
+      -98.0,
+      16.0,
+      -7.0
+     ]
+    }
+   ]
+  },
+  "OD-C16-L3": {
+   "bbox": [
+    -117.0,
+    -0.0,
+    54.0,
+    -98.0,
+    16.0,
+    70.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C12_C13_C16_side_panels/02_STEP_STL/od_side_assembly_C1_v01.step",
+     "child": "od_c16_bracket_L3",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -117.0,
+      -0.0,
+      54.0,
+      -98.0,
+      16.0,
+      70.0
+     ]
+    }
+   ]
+  },
+  "OD-G01": {
+   "bbox": [
+    -50.0,
+    176.76,
+    -18.0,
+    50.0,
+    205.0,
+    82.0
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C09_front_panel/02_STEP_STL/od_c09_assembly_C1_v01.step",
+     "child": "OD-G01_housing",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -50.0,
+      176.76,
+      -18.0,
+      50.0,
+      205.0,
+      82.0
+     ]
+    },
+    {
+     "check_assembly": "OD-G01_group_head_housing/02_STEP_STL/od_g01_assembly_C1_v03.step",
+     "child": "od_g01_housing",
+     "frame": "housing",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -50.0,
+      176.76,
+      -18.0,
+      50.0,
+      205.0,
+      82.0
+     ]
+    }
+   ]
+  },
+  "OD-G04": {
+   "bbox": [
+    -31.176,
+    185.79,
+    -2.52,
+    34.52,
+    203.0,
+    66.494
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C09_front_panel/02_STEP_STL/od_c09_assembly_C1_v01.step",
+     "child": "OD-G04",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -31.176,
+      185.79,
+      -2.52,
+      34.52,
+      203.0,
+      66.494
+     ]
+    }
+   ]
+  },
+  "OD-G10": {
+   "bbox": [
+    -30.571,
+    132.296,
+    -3.025,
+    92.04,
+    191.311,
+    182.083
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C09_front_panel/02_STEP_STL/od_c09_assembly_C1_v01.step",
+     "child": "OD-G10_portafilter_locked",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -30.571,
+      132.296,
+      -3.025,
+      92.04,
+      191.311,
+      182.083
+     ]
+    }
+   ]
+  },
+  "OD-H01": {
+   "bbox": [
+    -66.45,
+    16.25,
+    -232.2,
+    55.5,
+    71.4,
+    -178.15
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C11_back_panel/02_STEP_STL/od_c11_assembly_C1_v03.step",
+     "child": "od_h01_pump",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -66.45,
+      16.25,
+      -232.2,
+      55.5,
+      71.4,
+      -178.15
+     ]
+    }
+   ]
+  },
+  "OD-H11": {
+   "bbox": [
+    -43.27,
+    16.492,
+    -140.0,
+    42.839,
+    123.381,
+    -89.21
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C01_base_frame/02_STEP_STL/od_c01_assembly_C1_v02.step",
+     "child": "od_h11_thermoblock",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -43.27,
+      16.492,
+      -140.0,
+      42.839,
+      123.381,
+      -89.21
+     ]
+    }
+   ]
+  },
+  "OD-H22": {
+   "bbox": [
+    -112.065,
+    17.127,
+    -142.931,
+    -72.19,
+    61.68,
+    -101.178
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C07_valve_flowmeter_mount/02_STEP_STL/od_c07_assembly_C1_v01.step",
+     "child": "OD-H22",
+     "frame": "c07",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -112.065,
+      17.127,
+      -142.931,
+      -72.19,
+      61.68,
+      -101.178
+     ]
+    }
+   ]
+  },
+  "OD-H24": {
+   "bbox": [
+    -112.36,
+    2.97,
+    -80.36,
+    -55.291,
+    46.5,
+    -39.64
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C07_valve_flowmeter_mount/02_STEP_STL/od_c07_assembly_C1_v01.step",
+     "child": "OD-H24",
+     "frame": "c07",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -112.36,
+      2.97,
+      -80.36,
+      -55.291,
+      46.5,
+      -39.64
+     ]
+    }
+   ]
+  },
+  "OD-E01": {
+   "bbox": [
+    82.438,
+    24.0,
+    -195.002,
+    109.262,
+    83.869,
+    -94.838
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C08_electronics_bay_tray/02_STEP_STL/od_c08_assembly_C1_v01.step",
+     "child": "od_e01_power_pcb",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      82.438,
+      24.0,
+      -195.002,
+      109.262,
+      83.869,
+      -94.838
+     ]
+    }
+   ]
+  },
+  "OD-E02": {
+   "bbox": [
+    -115.173,
+    101.84,
+    50.399,
+    -61.526,
+    178.629,
+    98.565
+   ],
+   "checks": [
+    {
+     "check_assembly": "OD-C09_front_panel/02_STEP_STL/od_c09_assembly_C1_v01.step",
+     "child": "OD-E02_control_board",
+     "frame": "machine",
+     "max_delta_mm": 0.0,
+     "ok": true,
+     "ref_bbox": [
+      -115.173,
+      101.84,
+      50.399,
+      -61.526,
+      178.629,
+      98.565
+     ]
+    }
+   ]
+  }
+ },
+ "clash": {
+  "near_mm": 1.0,
+  "interference_floor_mm3": 1.0,
+  "solids": 33,
+  "pairs_measured": 61,
+  "soundness": {
+   "/home/claude/oguz-jobs/20260930-od-c01-base-frame/02_STEP_STL/od_c01_frame_C1_v03.step": "sound",
+   "chassis/OD-C02_bulkhead.step": "sound",
+   "chassis/OD-C03_pump_cradle.step": "sound",
+   "chassis/OD-C04_thermoblock_mount.step": "sound",
+   "chassis/OD-C05_group_head_carrier.step": "sound",
+   "chassis/OD-C07_valve_flowmeter_mount.step": "sound",
+   "chassis/OD-C08_electronics_bay_tray.step": "sound",
+   "chassis/OD-C09_front_panel.step": "sound",
+   "chassis/OD-C10_top_panel.step": "sound",
+   "chassis/OD-C11_back_panel.step": "sound",
+   "chassis/OD-C12_left_side_panel.step": "sound",
+   "chassis/OD-C13_right_side_panel.step": "sound",
+   "chassis/OD-C14_cord_grommet.step": "sound",
+   "chassis/OD-C15_foot.step": "sound",
+   "chassis/OD-C16_corner_bracket.step": "sound",
+   "chassis/OD-G01_group_head_housing.step": "sound",
+   "step/OD-G04_brewing_gasket_support.step": "sound",
+   "step/OD-G10_portafilter.step": "brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+   "step/OD-H01_ulka_ep5_pump.step": "sound",
+   "step/OD-H11_thermoblock.step": "brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+   "step/OD-H22_3way_valve.step": "sound",
+   "step/OD-H24_flowmeter.step": "sound",
+   "step/OD-E01_power_pcb.step": "sound",
+   "step/OD-E02_control_board.step": "brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface"
+  },
+  "pairs": [
+   {
+    "a": "OD-C01",
+    "b": "OD-C02",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     67.0,
+     0.0,
+     -45.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.26
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C03",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -2.0,
+     0.0,
+     -171.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.23
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C04",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -38.0,
+     0.0,
+     -114.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.16
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C05",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -33.0,
+     0.0,
+     -40.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.21
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C07",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -111.0,
+     0.0,
+     -42.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.34
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C08",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     90.0,
+     0.0,
+     -78.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.39
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C09",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     97.0,
+     0.0,
+     77.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.33
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C11",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     97.0,
+     0.0,
+     -282.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.3
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C12",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -120.0,
+     0.0,
+     90.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.1
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C13",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     120.0,
+     0.0,
+     90.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.08
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C15-RF",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     111.7,
+     -6.0,
+     90.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.07
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C15-LF",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -108.3,
+     -6.0,
+     90.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.07
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C15-RR",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     111.7,
+     -6.0,
+     -295.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.07
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C15-LR",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -108.3,
+     -6.0,
+     -295.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.07
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C16-R1",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     106.5,
+     0.0,
+     -262.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.05
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C16-R2",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     106.5,
+     0.0,
+     -15.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.06
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C16-R3",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     106.5,
+     0.0,
+     62.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.06
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C16-L1",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -102.5,
+     0.0,
+     -262.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.06
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C16-L2",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -102.5,
+     0.0,
+     -15.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.06
+   },
+   {
+    "a": "OD-C01",
+    "b": "OD-C16-L3",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -102.5,
+     0.0,
+     62.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.06
+   },
+   {
+    "a": "OD-C02",
+    "b": "OD-C10",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     67.0,
+     215.0,
+     -60.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.23
+   },
+   {
+    "a": "OD-C03",
+    "b": "OD-H01",
+    "clearance_mm": 2.3,
+    "clearance_at": [
+     33.0,
+     40.0,
+     -234.5
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.63
+   },
+   {
+    "a": "OD-C04",
+    "b": "OD-H11",
+    "clearance_mm": 10.1,
+    "clearance_at": [
+     -13.62,
+     90.18,
+     -150.1
+    ],
+    "inside": false,
+    "status": "INCONCLUSIVE",
+    "interference_mm3": null,
+    "reason": "OD-H11: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+    "indicative_raw_boolean_mm3": 0,
+    "verdict": "CLEAR (volume INCONCLUSIVE; the distance is positive)",
+    "seconds": 1.09
+   },
+   {
+    "a": "OD-C05",
+    "b": "OD-C09",
+    "clearance_mm": 12.0,
+    "clearance_at": [
+     -55.0,
+     210.0,
+     82.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.27
+   },
+   {
+    "a": "OD-C05",
+    "b": "OD-C10",
+    "clearance_mm": 0.5,
+    "clearance_at": [
+     -43.0,
+     210.0,
+     30.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.3
+   },
+   {
+    "a": "OD-C05",
+    "b": "OD-G01",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -42.0,
+     205.0,
+     82.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.89
+   },
+   {
+    "a": "OD-C05",
+    "b": "OD-G04",
+    "clearance_mm": 5.0,
+    "clearance_at": [
+     30.0,
+     205.0,
+     32.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.97
+   },
+   {
+    "a": "OD-C05",
+    "b": "OD-G10",
+    "clearance_mm": 13.689,
+    "clearance_at": [
+     30.0,
+     205.0,
+     32.0
+    ],
+    "inside": false,
+    "status": "INCONCLUSIVE",
+    "interference_mm3": null,
+    "reason": "OD-G10: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+    "indicative_raw_boolean_mm3": 0,
+    "verdict": "CLEAR (volume INCONCLUSIVE; the distance is positive)",
+    "seconds": 3.12
+   },
+   {
+    "a": "OD-C05",
+    "b": "OD-H24",
+    "clearance_mm": 0.2907,
+    "clearance_at": [
+     -55.0,
+     30.036124,
+     -56.7208
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 1.3
+   },
+   {
+    "a": "OD-C07",
+    "b": "OD-C12",
+    "clearance_mm": 0.9,
+    "clearance_at": [
+     -117.0,
+     0.0,
+     -100.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.12
+   },
+   {
+    "a": "OD-C07",
+    "b": "OD-H22",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -93.2,
+     48.0,
+     -129.05
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.97
+   },
+   {
+    "a": "OD-C07",
+    "b": "OD-H24",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -110.449689,
+     29.9,
+     -63.960538
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 1.96
+   },
+   {
+    "a": "OD-C08",
+    "b": "OD-C13",
+    "clearance_mm": 5.0,
+    "clearance_at": [
+     112.0,
+     0.0,
+     -70.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.07
+   },
+   {
+    "a": "OD-C08",
+    "b": "OD-E01",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     82.438,
+     32.99,
+     -100.01
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 2.86
+   },
+   {
+    "a": "OD-C09",
+    "b": "OD-C10",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     110.0,
+     215.0,
+     97.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.54
+   },
+   {
+    "a": "OD-C09",
+    "b": "OD-C12",
+    "clearance_mm": 4.1231,
+    "clearance_at": [
+     -116.0,
+     0.0,
+     94.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.06
+   },
+   {
+    "a": "OD-C09",
+    "b": "OD-C13",
+    "clearance_mm": 4.1231,
+    "clearance_at": [
+     116.0,
+     215.0,
+     94.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.04
+   },
+   {
+    "a": "OD-C09",
+    "b": "OD-G01",
+    "clearance_mm": 8.7757,
+    "clearance_at": [
+     -44.0,
+     191.0,
+     84.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.52
+   },
+   {
+    "a": "OD-C09",
+    "b": "OD-G10",
+    "clearance_mm": 14.0206,
+    "clearance_at": [
+     37.048401,
+     188.0,
+     97.0
+    ],
+    "inside": false,
+    "status": "INCONCLUSIVE",
+    "interference_mm3": null,
+    "reason": "OD-G10: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+    "indicative_raw_boolean_mm3": 0,
+    "verdict": "CLEAR (volume INCONCLUSIVE; the distance is positive)",
+    "seconds": 3.66
+   },
+   {
+    "a": "OD-C09",
+    "b": "OD-E02",
+    "clearance_mm": 0.0001,
+    "clearance_at": [
+     -93.216999,
+     122.218693,
+     85.485
+    ],
+    "inside": false,
+    "status": "INCONCLUSIVE",
+    "interference_mm3": null,
+    "reason": "OD-E02: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+    "indicative_raw_boolean_mm3": 0,
+    "verdict": "INCONCLUSIVE (raw boolean 0 mm3, unchecked)",
+    "seconds": 1.97
+   },
+   {
+    "a": "OD-C10",
+    "b": "OD-C11",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -110.0,
+     215.0,
+     -302.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.66
+   },
+   {
+    "a": "OD-C10",
+    "b": "OD-C12",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -120.0,
+     215.0,
+     90.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.25
+   },
+   {
+    "a": "OD-C10",
+    "b": "OD-C13",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     120.0,
+     215.0,
+     90.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.07
+   },
+   {
+    "a": "OD-C11",
+    "b": "OD-C12",
+    "clearance_mm": 3.0,
+    "clearance_at": [
+     -114.0,
+     215.0,
+     -287.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.08
+   },
+   {
+    "a": "OD-C11",
+    "b": "OD-C13",
+    "clearance_mm": 3.0,
+    "clearance_at": [
+     114.0,
+     215.0,
+     -287.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.05
+   },
+   {
+    "a": "OD-C11",
+    "b": "OD-C14-A",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     104.991997,
+     30.4,
+     -302.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.08
+   },
+   {
+    "a": "OD-C11",
+    "b": "OD-C14-B",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     85.008003,
+     29.6,
+     -302.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.08
+   },
+   {
+    "a": "OD-C12",
+    "b": "OD-C16-L1",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -117.0,
+     0.0,
+     -254.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.02
+   },
+   {
+    "a": "OD-C12",
+    "b": "OD-C16-L2",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -117.0,
+     0.0,
+     -7.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.02
+   },
+   {
+    "a": "OD-C12",
+    "b": "OD-C16-L3",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     -117.0,
+     0.0,
+     70.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.03
+   },
+   {
+    "a": "OD-C12",
+    "b": "OD-H22",
+    "clearance_mm": 5.835,
+    "clearance_at": [
+     -117.9,
+     27.57281,
+     -122.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.36
+   },
+   {
+    "a": "OD-C12",
+    "b": "OD-H24",
+    "clearance_mm": 5.54,
+    "clearance_at": [
+     -117.9,
+     29.3,
+     -60.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.35
+   },
+   {
+    "a": "OD-C12",
+    "b": "OD-E02",
+    "clearance_mm": 1.8271,
+    "clearance_at": [
+     -117.0,
+     160.7166,
+     74.9162
+    ],
+    "inside": false,
+    "status": "INCONCLUSIVE",
+    "interference_mm3": null,
+    "reason": "OD-E02: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+    "indicative_raw_boolean_mm3": 0,
+    "verdict": "CLEAR (volume INCONCLUSIVE; the distance is positive)",
+    "seconds": 0.62
+   },
+   {
+    "a": "OD-C13",
+    "b": "OD-C16-R1",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     117.0,
+     0.0,
+     -270.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.02
+   },
+   {
+    "a": "OD-C13",
+    "b": "OD-C16-R2",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     117.0,
+     0.0,
+     -23.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.02
+   },
+   {
+    "a": "OD-C13",
+    "b": "OD-C16-R3",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     117.0,
+     0.0,
+     54.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 0.02
+   },
+   {
+    "a": "OD-C13",
+    "b": "OD-E01",
+    "clearance_mm": 7.738,
+    "clearance_at": [
+     117.0,
+     75.447696,
+     -146.803535
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.85
+   },
+   {
+    "a": "OD-C14-A",
+    "b": "OD-C14-B",
+    "clearance_mm": 0.8,
+    "clearance_at": [
+     98.768833,
+     30.4,
+     -304.0
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CLEAR",
+    "seconds": 0.13
+   },
+   {
+    "a": "OD-G01",
+    "b": "OD-G04",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     13.058599,
+     200.0,
+     38.452218
+    ],
+    "inside": false,
+    "status": "MEASURED",
+    "interference_mm3": 0,
+    "verdict": "CONTACT",
+    "seconds": 2.9
+   },
+   {
+    "a": "OD-G01",
+    "b": "OD-G10",
+    "clearance_mm": 0.0,
+    "clearance_at": [
+     30.875555,
+     186.510755,
+     24.906163
+    ],
+    "inside": false,
+    "status": "INCONCLUSIVE",
+    "interference_mm3": null,
+    "reason": "OD-G10: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+    "indicative_raw_boolean_mm3": 0,
+    "verdict": "INCONCLUSIVE (raw boolean 0 mm3, unchecked)",
+    "seconds": 3.91
+   },
+   {
+    "a": "OD-G04",
+    "b": "OD-G10",
+    "clearance_mm": 0.4782,
+    "clearance_at": [
+     5.867527,
+     187.444244,
+     9.812737
+    ],
+    "inside": false,
+    "status": "INCONCLUSIVE",
+    "interference_mm3": null,
+    "reason": "OD-G10: brep_valid is 0: BOPAlgo finds BOPAlgo_InvalidCurveOnSurface",
+    "indicative_raw_boolean_mm3": 0,
+    "verdict": "CLEAR (volume INCONCLUSIVE; the distance is positive)",
+    "seconds": 8.62
+   }
+  ]
+ }
+}

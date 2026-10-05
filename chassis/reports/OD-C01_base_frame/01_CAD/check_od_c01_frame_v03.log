@@ -1,0 +1,568 @@
+exactly_one_solid                                    PASS          1                      count  == 1                   margin 0.0
+U-01.solid_count                                     PASS          1                      count  == 1                   margin 0.0
+U-01.brep_valid                                      PASS          1                      bool   == 1                   margin 0.0
+U-01.naked_edges                                     PASS          0                      count  == 0                   margin 0.0
+U-02.size_x                                          PASS          240.0                  mm     in [239.9, 240.1]      margin 0.1
+envelope_within_spec.size.size_x                     PASS          240.0                  mm     in [239.9, 240.1]      margin 0.1
+U-02.size_y                                          PASS          6.0                    mm     in [5.9, 6.1]          margin 0.1
+envelope_within_spec.size.size_y                     PASS          6.0                    mm     in [5.9, 6.1]          margin 0.1
+U-02.size_z                                          PASS          405.0                  mm     in [404.9, 405.1]      margin 0.1
+envelope_within_spec.size.size_z                     PASS          405.0                  mm     in [404.9, 405.1]      margin 0.1
+envelope_within_spec.position.min_x                  PASS          -120.0                 mm     in [-120.1, -119.9]    margin 0.1
+envelope_within_spec.position.max_x                  PASS          120.0                  mm     in [119.9, 120.1]      margin 0.1
+envelope_within_spec.position.min_y                  PASS          -6.0                   mm     in [-6.1, -5.9]        margin 0.1
+envelope_within_spec.position.max_y                  PASS          0.0                    mm     in [-0.1, 0.1]         margin 0.1
+envelope_within_spec.position.min_z                  PASS          -305.0                 mm     in [-305.1, -304.9]    margin 0.1
+envelope_within_spec.position.max_z                  PASS          100.0                  mm     in [99.9, 100.1]       margin 0.1
+D-02.size_x                                          PASS_ASSUMED  240.0                  mm     <= 420.0               margin 180.0
+D-02.size_z                                          PASS_ASSUMED  405.0                  mm     <= 420.0               margin 15.0
+D-02.size_y                                          PASS_ASSUMED  6.0                    mm     <= 500.0               margin 494.0
+U-04.part.schema                                     PASS          1                      bool   == 1                   margin 0.0
+U-04.part.solids                                     PASS          1                      count  == 1                   margin 0.0
+U-04.part.volume_delta                               PASS          1.591397449374199e-07  mm3    <= 0                   margin -1.59e-07
+U-04.part.faces_delta                                PASS          0                      count  == 0                   margin 0.0
+U-04.part.labels                                     PASS          1                      bool   == 1                   margin 0.0
+U-04.part.valid_after                                PASS          1                      bool   == 1                   margin 0.0
+U-05.plane_faces                                     PASS          6                      count  == 6                   margin 0.0
+feature_census.plane_faces                           PASS          6                      count  == 6                   margin 0.0
+U-05.cylinder_faces                                  PASS          48                     count  == 48                  margin 0.0
+feature_census.cylinder_faces                        PASS          48                     count  == 48                  margin 0.0
+U-05.cone_faces                                      PASS          0                      count  == 0                   margin 0.0
+feature_census.cone_faces                            PASS          0                      count  == 0                   margin 0.0
+U-05.sphere_faces                                    PASS          0                      count  == 0                   margin 0.0
+feature_census.sphere_faces                          PASS          0                      count  == 0                   margin 0.0
+U-05.torus_faces                                     PASS          0                      count  == 0                   margin 0.0
+feature_census.torus_faces                           PASS          0                      count  == 0                   margin 0.0
+U-05.bspline_faces                                   PASS          0                      count  == 0                   margin 0.0
+feature_census.bspline_faces                         PASS          0                      count  == 0                   margin 0.0
+U-05.other_faces                                     PASS          0                      count  == 0                   margin 0.0
+feature_census.other_faces                           PASS          0                      count  == 0                   margin 0.0
+U-05.concave_cylinders                               PASS          44                     count  == 44                  margin 0.0
+feature_census.concave_cylinders                     PASS          44                     count  == 44                  margin 0.0
+U-05.convex_cylinders                                PASS          4                      count  == 4                   margin 0.0
+feature_census.convex_cylinders                      PASS          4                      count  == 4                   margin 0.0
+U-05.bores                                           PASS          44                     count  == 44                  margin 0.0
+feature_census.bores                                 PASS          44                     count  == 44                  margin 0.0
+U-05.bores_dia4.0                                    PASS          38                     count  == 38                  margin 0.0
+U-05.bores_dia3.4                                    PASS          4                      count  == 4                   margin 0.0
+U-05.bores_dia8.0                                    PASS          2                      count  == 2                   margin 0.0
+REQ-11.x+88_z-222.centre_distance                    PASS_ASSUMED  18.0                   mm     >= 6.0                 margin 12.0
+REQ-11.x+88_z-222.to_outline                         PASS_ASSUMED  32.0                   mm     >= 8.0                 margin 24.0
+REQ-11.x+106_z-222.centre_distance                   PASS_ASSUMED  18.0                   mm     >= 6.0                 margin 12.0
+REQ-11.x+106_z-222.to_outline                        PASS_ASSUMED  14.0                   mm     >= 8.0                 margin 6.0
+REQ-11.x+88_z-78.centre_distance                     PASS_ASSUMED  18.0                   mm     >= 6.0                 margin 12.0
+REQ-11.x+88_z-78.to_outline                          PASS_ASSUMED  32.0                   mm     >= 8.0                 margin 24.0
+REQ-11.x+106_z-78.centre_distance                    PASS_ASSUMED  18.0                   mm     >= 6.0                 margin 12.0
+REQ-11.x+106_z-78.to_outline                         PASS_ASSUMED  14.0                   mm     >= 8.0                 margin 6.0
+REQ-12.x+81_z-282.centre_distance                    PASS_ASSUMED  14.0                   mm     >= 6.0                 margin 8.0
+REQ-12.x+81_z-282.to_outline                         PASS_ASSUMED  23.0                   mm     >= 8.0                 margin 15.0
+REQ-12.x-81_z-282.centre_distance                    PASS_ASSUMED  14.0                   mm     >= 6.0                 margin 8.0
+REQ-12.x-81_z-282.to_outline                         PASS_ASSUMED  23.0                   mm     >= 8.0                 margin 15.0
+REQ-12.x+95_z-282.centre_distance                    PASS_ASSUMED  14.0                   mm     >= 6.0                 margin 8.0
+REQ-12.x+95_z-282.to_outline                         PASS_ASSUMED  23.0                   mm     >= 8.0                 margin 15.0
+REQ-12.x-95_z-282.centre_distance                    PASS_ASSUMED  14.0                   mm     >= 6.0                 margin 8.0
+REQ-12.x-95_z-282.to_outline                         PASS_ASSUMED  23.0                   mm     >= 8.0                 margin 15.0
+REQ-13.x+104.5_z-262.centre_distance                 PASS_ASSUMED  22.14158982548453      mm     >= 6.0                 margin 16.141589825
+REQ-13.x+104.5_z-262.to_outline                      PASS_ASSUMED  15.5                   mm     >= 8.0                 margin 7.5
+REQ-13.x-104.5_z-262.centre_distance                 PASS_ASSUMED  22.14158982548453      mm     >= 6.0                 margin 16.141589825
+REQ-13.x-104.5_z-262.to_outline                      PASS_ASSUMED  15.499999999899998     mm     >= 8.0                 margin 7.5
+REQ-13.x+104.5_z-15.centre_distance                  PASS_ASSUMED  49.60090724976712      mm     >= 6.0                 margin 43.60090725
+REQ-13.x+104.5_z-15.to_outline                       PASS_ASSUMED  15.5                   mm     >= 8.0                 margin 7.5
+REQ-13.x-104.5_z-15.centre_distance                  PASS_ASSUMED  28.30635970943632      mm     >= 6.0                 margin 22.306359709
+REQ-13.x-104.5_z-15.to_outline                       PASS_ASSUMED  15.499999999899998     mm     >= 8.0                 margin 7.5
+REQ-13.x+104.5_z+62.centre_distance                  PASS_ASSUMED  17.755280904564703     mm     >= 6.0                 margin 11.755280905
+REQ-13.x+104.5_z+62.to_outline                       PASS_ASSUMED  15.5                   mm     >= 8.0                 margin 7.5
+REQ-13.x-104.5_z+62.centre_distance                  PASS_ASSUMED  17.755280904564703     mm     >= 6.0                 margin 11.755280905
+REQ-13.x-104.5_z+62.to_outline                       PASS_ASSUMED  15.499999999899998     mm     >= 8.0                 margin 7.5
+REQ-14.x+85_z+77.centre_distance                     PASS_ASSUMED  10.0                   mm     >= 6.0                 margin 4.0
+REQ-14.x+85_z+77.to_outline                          PASS_ASSUMED  23.0                   mm     >= 8.0                 margin 15.0
+REQ-14.x-85_z+77.centre_distance                     PASS_ASSUMED  10.0                   mm     >= 6.0                 margin 4.0
+REQ-14.x-85_z+77.to_outline                          PASS_ASSUMED  23.0                   mm     >= 8.0                 margin 15.0
+REQ-14.x+95_z+77.centre_distance                     PASS_ASSUMED  10.0                   mm     >= 6.0                 margin 4.0
+REQ-14.x+95_z+77.to_outline                          PASS_ASSUMED  23.0                   mm     >= 8.0                 margin 15.0
+REQ-14.x-95_z+77.centre_distance                     PASS_ASSUMED  10.0                   mm     >= 6.0                 margin 4.0
+REQ-14.x-95_z+77.to_outline                          PASS_ASSUMED  23.0                   mm     >= 8.0                 margin 15.0
+REQ-01.x+35_z-40.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-01.x+35_z-40.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-01.x+35_z-40.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+35_z-40.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+35_z-40.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+35_z-40.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-01.x-35_z-40.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-01.x-35_z-40.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-01.x-35_z-40.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-35_z-40.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-35_z-40.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-35_z-40.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-01.x+35_z-60.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-01.x+35_z-60.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-01.x+35_z-60.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+35_z-60.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+35_z-60.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+35_z-60.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-01.x-35_z-60.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-01.x-35_z-60.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-01.x-35_z-60.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-35_z-60.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-35_z-60.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-35_z-60.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-02.x+40_z-148.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-02.x+40_z-148.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-02.x+40_z-148.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+40_z-148.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+40_z-148.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+40_z-148.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-02.x-40_z-148.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-02.x-40_z-148.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-02.x-40_z-148.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-40_z-148.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-40_z-148.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-40_z-148.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-02.x+40_z-114.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-02.x+40_z-114.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-02.x+40_z-114.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+40_z-114.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+40_z-114.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+40_z-114.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-02.x-40_z-114.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-02.x-40_z-114.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-02.x-40_z-114.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-40_z-114.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-40_z-114.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-40_z-114.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-03.x-4_z-239.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-03.x-4_z-239.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-03.x-4_z-239.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-4_z-239.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-4_z-239.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-4_z-239.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-03.x-4_z-171.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-03.x-4_z-171.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-03.x-4_z-171.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-4_z-171.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-4_z-171.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-4_z-171.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-03.x+37_z-239.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-03.x+37_z-239.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-03.x+37_z-239.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+37_z-239.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+37_z-239.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+37_z-239.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-03.x+37_z-171.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-03.x+37_z-171.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-03.x+37_z-171.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+37_z-171.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+37_z-171.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+37_z-171.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-04.x+65_z-45.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-04.x+65_z-45.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-04.x+65_z-45.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+65_z-45.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+65_z-45.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+65_z-45.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-04.x+65_z-105.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-04.x+65_z-105.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-04.x+65_z-105.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+65_z-105.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+65_z-105.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+65_z-105.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-04.x+65_z-165.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-04.x+65_z-165.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-04.x+65_z-165.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+65_z-165.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+65_z-165.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+65_z-165.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-04.x+65_z-225.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-04.x+65_z-225.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-04.x+65_z-225.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+65_z-225.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+65_z-225.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+65_z-225.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-10.x-113_z-42.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-10.x-113_z-42.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-10.x-113_z-42.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-113_z-42.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-113_z-42.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-113_z-42.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-10.x-71_z-42.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-10.x-71_z-42.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-10.x-71_z-42.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-71_z-42.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-71_z-42.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-71_z-42.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-10.x-113_z-148.5.diameter                        PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-10.x-113_z-148.5.offset                          PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-10.x-113_z-148.5.through                         PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-113_z-148.5.diameter                         PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-113_z-148.5.depth                            PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-113_z-148.5.through                          PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-10.x-71_z-148.5.diameter                         PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-10.x-71_z-148.5.offset                           PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-10.x-71_z-148.5.through                          PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-71_z-148.5.diameter                          PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-71_z-148.5.depth                             PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-71_z-148.5.through                           PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-11.x+88_z-222.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-11.x+88_z-222.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-11.x+88_z-222.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+88_z-222.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+88_z-222.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+88_z-222.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-11.x+106_z-222.diameter                          PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-11.x+106_z-222.offset                            PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-11.x+106_z-222.through                           PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+106_z-222.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+106_z-222.depth                              PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+106_z-222.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-11.x+88_z-78.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-11.x+88_z-78.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-11.x+88_z-78.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+88_z-78.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+88_z-78.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+88_z-78.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-11.x+106_z-78.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-11.x+106_z-78.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-11.x+106_z-78.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+106_z-78.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+106_z-78.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+106_z-78.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-12.x+81_z-282.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-12.x+81_z-282.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-12.x+81_z-282.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+81_z-282.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+81_z-282.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+81_z-282.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-12.x-81_z-282.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-12.x-81_z-282.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-12.x-81_z-282.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-81_z-282.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-81_z-282.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-81_z-282.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-12.x+95_z-282.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-12.x+95_z-282.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-12.x+95_z-282.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+95_z-282.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+95_z-282.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+95_z-282.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-12.x-95_z-282.diameter                           PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-12.x-95_z-282.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-12.x-95_z-282.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-95_z-282.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-95_z-282.depth                               PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-95_z-282.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-13.x+104.5_z-262.diameter                        PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-13.x+104.5_z-262.offset                          PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-13.x+104.5_z-262.through                         PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+104.5_z-262.diameter                         PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+104.5_z-262.depth                            PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+104.5_z-262.through                          PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-13.x-104.5_z-262.diameter                        PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-13.x-104.5_z-262.offset                          PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-13.x-104.5_z-262.through                         PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-104.5_z-262.diameter                         PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-104.5_z-262.depth                            PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-104.5_z-262.through                          PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-13.x+104.5_z-15.diameter                         PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-13.x+104.5_z-15.offset                           PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-13.x+104.5_z-15.through                          PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+104.5_z-15.diameter                          PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+104.5_z-15.depth                             PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+104.5_z-15.through                           PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-13.x-104.5_z-15.diameter                         PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-13.x-104.5_z-15.offset                           PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-13.x-104.5_z-15.through                          PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-104.5_z-15.diameter                          PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-104.5_z-15.depth                             PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-104.5_z-15.through                           PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-13.x+104.5_z+62.diameter                         PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-13.x+104.5_z+62.offset                           PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-13.x+104.5_z+62.through                          PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+104.5_z+62.diameter                          PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+104.5_z+62.depth                             PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+104.5_z+62.through                           PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-13.x-104.5_z+62.diameter                         PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-13.x-104.5_z+62.offset                           PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-13.x-104.5_z+62.through                          PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-104.5_z+62.diameter                          PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-104.5_z+62.depth                             PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-104.5_z+62.through                           PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-14.x+85_z+77.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-14.x+85_z+77.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-14.x+85_z+77.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+85_z+77.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+85_z+77.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+85_z+77.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-14.x-85_z+77.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-14.x-85_z+77.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-14.x-85_z+77.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-85_z+77.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-85_z+77.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-85_z+77.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-14.x+95_z+77.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-14.x+95_z+77.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-14.x+95_z+77.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x+95_z+77.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x+95_z+77.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x+95_z+77.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-14.x-95_z+77.diameter                            PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+REQ-14.x-95_z+77.offset                              PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-14.x-95_z+77.through                             PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-05b.x-95_z+77.diameter                             PASS_ASSUMED  4.0                    mm     in [3.95, 4.05]        margin 0.05
+D-05b.x-95_z+77.depth                                PASS_ASSUMED  6.0                    mm     >= 5.7                 margin 0.3
+D-05b.x-95_z+77.through                              PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-05.x+110_z+90.diameter                           PASS_ASSUMED  3.4                    mm     in [3.3, 3.5]          margin 0.1
+REQ-05.x+110_z+90.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-05.x+110_z+90.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-04a.x+110_z+90                                     PASS_ASSUMED  3.4                    mm     >= 3.25                margin 0.15
+REQ-05.x-110_z+90.diameter                           PASS_ASSUMED  3.4                    mm     in [3.3, 3.5]          margin 0.1
+REQ-05.x-110_z+90.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-05.x-110_z+90.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-04a.x-110_z+90                                     PASS_ASSUMED  3.4                    mm     >= 3.25                margin 0.15
+REQ-05.x+110_z-295.diameter                          PASS_ASSUMED  3.4                    mm     in [3.3, 3.5]          margin 0.1
+REQ-05.x+110_z-295.offset                            PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-05.x+110_z-295.through                           PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-04a.x+110_z-295                                    PASS_ASSUMED  3.4                    mm     >= 3.25                margin 0.15
+REQ-05.x-110_z-295.diameter                          PASS_ASSUMED  3.4                    mm     in [3.3, 3.5]          margin 0.1
+REQ-05.x-110_z-295.offset                            PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-05.x-110_z-295.through                           PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+D-04a.x-110_z-295                                    PASS_ASSUMED  3.4                    mm     >= 3.25                margin 0.15
+REQ-06.x-80_z-120.diameter                           PASS_ASSUMED  8.0                    mm     in [7.9, 8.1]          margin 0.1
+REQ-06.x-80_z-120.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-06.x-80_z-120.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-06.x-80_z-230.diameter                           PASS_ASSUMED  8.0                    mm     in [7.9, 8.1]          margin 0.1
+REQ-06.x-80_z-230.offset                             PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+REQ-06.x-80_z-230.through                            PASS_ASSUMED  1                      bool   == 1                   margin 0.0
+REQ-07.top_y                                         PASS_ASSUMED  0.0                    mm     in [-0.1, 0.1]         margin 0.1
+REQ-07.thickness                                     PASS          6.0                    mm     in [5.9, 6.1]          margin 0.1
+REQ-07.top_faces                                     PASS          1                      count  == 1                   margin 0.0
+REQ-07.top_flatness                                  PASS          0.0                    mm     <= 0.0                 margin 0.0
+U-03a.plate|od_c03_cradle.clearance                  PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c03_cradle.interference               PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c03_cradle.coaxial.x-4_z-239          PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+U-03a.plate|od_c03_cradle.coaxial.x-4_z-171          PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+U-03a.plate|od_c03_cradle.coaxial.x+37_z-239         PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+U-03a.plate|od_c03_cradle.coaxial.x+37_z-171         PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+U-03a.plate|od_c04_mount.clearance                   PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c04_mount.interference                PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c04_mount.coaxial.x+40_z-148          PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+U-03a.plate|od_c04_mount.coaxial.x-40_z-148          PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+U-03a.plate|od_c04_mount.coaxial.x+40_z-114          PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+U-03a.plate|od_c04_mount.coaxial.x-40_z-114          PASS_ASSUMED  0.0                    mm     <= 0.1                 margin 0.1
+U-03a.plate|od_h01_pump.clearance                    PASS_ASSUMED  16.25                  mm     >= 2.0                 margin 14.25
+U-03a.plate|od_h01_pump.interference                 PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_h11_thermoblock.clearance             PASS_ASSUMED  16.4924943874          mm     >= 10.0                margin 6.492494387
+U-03a.plate|od_h11_thermoblock.interference          INCONCLUSIVE  None                   mm3    <= 0.0                 margin None
+U-03a.od_c03|od_c04.clearance                        PASS_ASSUMED  8.0                    mm     >= 2.0                 margin 6.0
+U-03a.od_h11.max_z                                   PASS_ASSUMED  -89.20999999999998     mm     <= -85.0               margin 4.21
+REQ-08.max_z                                         PASS_ASSUMED  -89.20999999999998     mm     <= -85.0               margin 4.21
+REQ-08.clearance                                     PASS_ASSUMED  16.4924943874          mm     >= 10.0                margin 6.492494387
+U-03a.od_g01|od_c01_frame.clearance                  PASS_ASSUMED  176.76                 mm     >= 2.0                 margin 174.76
+U-03a.od_g01|od_c01_frame.interference               PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c03_cradle.clearance                 PASS_ASSUMED  211.05683070278837     mm     >= 2.0                 margin 209.056830703
+U-03a.od_g01|od_c03_cradle.interference              PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_h01_pump.clearance                   PASS_ASSUMED  201.11084518014445     mm     >= 2.0                 margin 199.11084518
+U-03a.od_g01|od_h01_pump.interference                PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c04_mount.clearance                  PASS_ASSUMED  155.91570671359574     mm     >= 2.0                 margin 153.915706714
+U-03a.od_g01|od_c04_mount.interference               PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_h11_thermoblock.clearance            PASS_ASSUMED  110.78011311361298     mm     >= 2.0                 margin 108.780113114
+U-03a.od_g01|od_h11_thermoblock.interference         INCONCLUSIVE  None                   mm3    <= 0.0                 margin None
+U-03a.od_g01|od_c05_foot_reference_A01.clearance     PASS_ASSUMED  173.40134832232417     mm     >= 2.0                 margin 171.401348322
+U-03a.od_g01|od_c05_foot_reference_A01.interference  PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c07_valve_mount.clearance            PASS_ASSUMED  162.24003366719177     mm     >= 2.0                 margin 160.240033667
+U-03a.od_g01|od_c07_valve_mount.interference         PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c08_tray.clearance                   PASS_ASSUMED  118.16384102814511     mm     >= 2.0                 margin 116.163841028
+U-03a.od_g01|od_c08_tray.interference                PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c11_back_panel.clearance             PASS_ASSUMED  269.0669061776271      mm     >= 2.0                 margin 267.066906178
+U-03a.od_g01|od_c11_back_panel.interference          PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c09_front_panel.clearance            PASS_ASSUMED  8.775676612090953      mm     >= 2.0                 margin 6.775676612
+U-03a.od_g01|od_c09_front_panel.interference         PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c16_r_z-262_bracket.clearance        PASS_ASSUMED  304.2227981853534      mm     >= 2.0                 margin 302.222798185
+U-03a.od_g01|od_c16_r_z-262_bracket.interference     PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c16_l_z-262_bracket.clearance        PASS_ASSUMED  304.2227981853534      mm     >= 2.0                 margin 302.222798185
+U-03a.od_g01|od_c16_l_z-262_bracket.interference     PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c16_r_z-15_bracket.clearance         PASS_ASSUMED  172.43674967856128     mm     >= 2.0                 margin 170.436749679
+U-03a.od_g01|od_c16_r_z-15_bracket.interference      PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c16_l_z-15_bracket.clearance         PASS_ASSUMED  172.43674967856128     mm     >= 2.0                 margin 170.436749679
+U-03a.od_g01|od_c16_l_z-15_bracket.interference      PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c16_r_z62_bracket.clearance          PASS_ASSUMED  170.67964927449285     mm     >= 2.0                 margin 168.679649274
+U-03a.od_g01|od_c16_r_z62_bracket.interference       PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01|od_c16_l_z62_bracket.clearance          PASS_ASSUMED  170.67964927449285     mm     >= 2.0                 margin 168.679649274
+U-03a.od_g01|od_c16_l_z62_bracket.interference       PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.od_g01.pose.max_y                              PASS_ASSUMED  205.0000001            mm     == 205.0               margin -1e-07
+U-03a.od_g01.pose.min_x                              PASS_ASSUMED  -50.0000001            mm     == -50.0               margin -1e-07
+U-03a.od_g01.pose.max_x                              PASS_ASSUMED  50.0000001             mm     == 50.0                margin -1e-07
+U-03a.od_g01.pose.min_z                              PASS_ASSUMED  -18.0000001            mm     == -18.0               margin -1e-07
+U-03a.od_g01.pose.max_z                              PASS_ASSUMED  82.000000096103        mm     == 82.0                margin -9.6e-08
+U-03a.od_g01.pose.mouth_face_y                       PASS_ASSUMED  176.76                 mm     == 176.76              margin 0.0
+U-03a.plate|od_c07_valve_mount.clearance             PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c07_valve_mount.interference          PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c07_valve_mount.coaxial.x-113_z-42    PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c07_valve_mount.coaxial.x-71_z-42     PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c07_valve_mount.coaxial.x-113_z-148.5 PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c07_valve_mount.coaxial.x-71_z-148.5  PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c08_tray.clearance                    PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c08_tray.interference                 PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c08_tray.coaxial.x+88_z-222           PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c08_tray.coaxial.x+106_z-222          PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c08_tray.coaxial.x+88_z-78            PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c08_tray.coaxial.x+106_z-78           PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c11_back_panel.clearance              PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c11_back_panel.interference           PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c11_back_panel.coaxial.x+81_z-282     PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c11_back_panel.coaxial.x-81_z-282     PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c11_back_panel.coaxial.x+95_z-282     PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c11_back_panel.coaxial.x-95_z-282     PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c09_front_panel.clearance             PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c09_front_panel.interference          PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c09_front_panel.coaxial.x+85_z+77     PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c09_front_panel.coaxial.x-85_z+77     PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c09_front_panel.coaxial.x+95_z+77     PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c09_front_panel.coaxial.x-95_z+77     PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c16_r_z-262_bracket.clearance         PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c16_r_z-262_bracket.interference      PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c16_r_z-262_bracket.coaxial.x+104.5_z-262 PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c16_l_z-262_bracket.clearance         PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c16_l_z-262_bracket.interference      PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c16_l_z-262_bracket.coaxial.x-104.5_z-262 PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c16_r_z-15_bracket.clearance          PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c16_r_z-15_bracket.interference       PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c16_r_z-15_bracket.coaxial.x+104.5_z-15 PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c16_l_z-15_bracket.clearance          PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c16_l_z-15_bracket.interference       PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c16_l_z-15_bracket.coaxial.x-104.5_z-15 PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c16_r_z62_bracket.clearance           PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c16_r_z62_bracket.interference        PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c16_r_z62_bracket.coaxial.x+104.5_z+62 PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c16_l_z62_bracket.clearance           PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c16_l_z62_bracket.interference        PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.plate|od_c16_l_z62_bracket.coaxial.x-104.5_z+62 PASS_ASSUMED  0.0                    mm     <= 0.2                 margin 0.2
+U-03a.plate|od_c05_foot_reference_A01.clearance      PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.plate|od_c05_foot_reference_A01.interference   PASS_ASSUMED  0.0                    mm3    <= 0.0                 margin 0.0
+U-03a.path.od_c03_cradle.lift10                      PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c03_cradle.lift1                       PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c03_cradle.lift0.1                     PASS_ASSUMED  0.10000000000000142    mm     == 0.1                 margin -1.4155343563970746e-15
+U-03a.path.od_c03_cradle.lift0                       PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c04_mount.lift10                       PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c04_mount.lift1                        PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c04_mount.lift0.1                      PASS_ASSUMED  0.09999999999999432    mm     == 0.1                 margin -5.689893001203927e-15
+U-03a.path.od_c04_mount.lift0                        PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c05_foot_reference_A01.lift10          PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c05_foot_reference_A01.lift1           PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c05_foot_reference_A01.lift0.1         PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c05_foot_reference_A01.lift0           PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c07_valve_mount.lift10                 PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c07_valve_mount.lift1                  PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c07_valve_mount.lift0.1                PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c07_valve_mount.lift0                  PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c08_tray.lift10                        PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c08_tray.lift1                         PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c08_tray.lift0.1                       PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c08_tray.lift0                         PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c11_back_panel.lift10                  PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c11_back_panel.lift1                   PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c11_back_panel.lift0.1                 PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c11_back_panel.lift0                   PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c09_front_panel.lift10                 PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c09_front_panel.lift1                  PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c09_front_panel.lift0.1                PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c09_front_panel.lift0                  PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c16_r_z-262_bracket.lift10             PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c16_r_z-262_bracket.lift1              PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c16_r_z-262_bracket.lift0.1            PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c16_r_z-262_bracket.lift0              PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c16_l_z-262_bracket.lift10             PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c16_l_z-262_bracket.lift1              PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c16_l_z-262_bracket.lift0.1            PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c16_l_z-262_bracket.lift0              PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c16_r_z-15_bracket.lift10              PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c16_r_z-15_bracket.lift1               PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c16_r_z-15_bracket.lift0.1             PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c16_r_z-15_bracket.lift0               PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c16_l_z-15_bracket.lift10              PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c16_l_z-15_bracket.lift1               PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c16_l_z-15_bracket.lift0.1             PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c16_l_z-15_bracket.lift0               PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c16_r_z62_bracket.lift10               PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c16_r_z62_bracket.lift1                PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c16_r_z62_bracket.lift0.1              PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c16_r_z62_bracket.lift0                PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03a.path.od_c16_l_z62_bracket.lift10               PASS_ASSUMED  10.0                   mm     == 10.0                margin 0.0
+U-03a.path.od_c16_l_z62_bracket.lift1                PASS_ASSUMED  1.0                    mm     == 1.0                 margin 0.0
+U-03a.path.od_c16_l_z62_bracket.lift0.1              PASS_ASSUMED  0.1                    mm     == 0.1                 margin 0.0
+U-03a.path.od_c16_l_z62_bracket.lift0                PASS_ASSUMED  0.0                    mm     == 0.0                 margin 0.0
+U-03b                                                N/A           None                          N/A                    margin None
+U-04.assembly.schema                                 PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.solids                                 PASS          17                     count  == 17                  margin 0.0
+U-04.assembly.faces_delta                            PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.labels                                 PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.volume_delta_whole                     INCONCLUSIVE  None                   mm3    <= 0                   margin None
+U-04.assembly.od_c01_frame.faces_delta               PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c01_frame.volume_delta              PASS          1.591397449374199e-07  mm3    <= 0                   margin -1.59e-07
+U-04.assembly.od_c01_frame.valid_after               PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c03_cradle.faces_delta              PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c03_cradle.volume_delta             PASS          0.0                    mm3    <= 0                   margin 0.0
+U-04.assembly.od_c03_cradle.valid_after              PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_h01_pump.faces_delta                PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_h01_pump.volume_delta               PASS          4.307366907596588e-09  mm3    <= 0                   margin -4e-09
+U-04.assembly.od_h01_pump.valid_after                PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c04_mount.faces_delta               PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c04_mount.volume_delta              PASS          0.0                    mm3    <= 0                   margin 0.0
+U-04.assembly.od_c04_mount.valid_after               PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_h11_thermoblock.faces_delta         PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_h11_thermoblock.volume_delta        INCONCLUSIVE  None                   mm3    <= 0                   margin None
+U-04.assembly.od_h11_thermoblock.validity_unchanged  PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_g01_housing.faces_delta             PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_g01_housing.volume_delta            PASS          5.093170329928398e-10  mm3    <= 0                   margin -1e-09
+U-04.assembly.od_g01_housing.valid_after             PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c05_foot_reference_A01.faces_delta  PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c05_foot_reference_A01.volume_delta PASS          0.0                    mm3    <= 0                   margin 0.0
+U-04.assembly.od_c05_foot_reference_A01.valid_after  PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c07_valve_mount.faces_delta         PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c07_valve_mount.volume_delta        PASS          1.1641532182693481e-09 mm3    <= 0                   margin -1e-09
+U-04.assembly.od_c07_valve_mount.valid_after         PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c08_tray.faces_delta                PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c08_tray.volume_delta               PASS          0.0                    mm3    <= 0                   margin 0.0
+U-04.assembly.od_c08_tray.valid_after                PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c09_front_panel.faces_delta         PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c09_front_panel.volume_delta        PASS          5.529727786779404e-10  mm3    <= 0                   margin -1e-09
+U-04.assembly.od_c09_front_panel.valid_after         PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c11_back_panel.faces_delta          PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c11_back_panel.volume_delta         PASS          0.0                    mm3    <= 0                   margin 0.0
+U-04.assembly.od_c11_back_panel.valid_after          PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c16_r_z-262_bracket.faces_delta     PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c16_r_z-262_bracket.volume_delta    PASS          4.547473508864641e-12  mm3    <= 0                   margin -4.547473508864641e-12
+U-04.assembly.od_c16_r_z-262_bracket.valid_after     PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c16_l_z-262_bracket.faces_delta     PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c16_l_z-262_bracket.volume_delta    PASS          5.4569682106375694e-12 mm3    <= 0                   margin -5.4569682106375694e-12
+U-04.assembly.od_c16_l_z-262_bracket.valid_after     PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c16_r_z-15_bracket.faces_delta      PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c16_r_z-15_bracket.volume_delta     PASS          4.547473508864641e-12  mm3    <= 0                   margin -4.547473508864641e-12
+U-04.assembly.od_c16_r_z-15_bracket.valid_after      PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c16_l_z-15_bracket.faces_delta      PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c16_l_z-15_bracket.volume_delta     PASS          4.547473508864641e-12  mm3    <= 0                   margin -4.547473508864641e-12
+U-04.assembly.od_c16_l_z-15_bracket.valid_after      PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c16_r_z62_bracket.faces_delta       PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c16_r_z62_bracket.volume_delta      PASS          4.547473508864641e-12  mm3    <= 0                   margin -4.547473508864641e-12
+U-04.assembly.od_c16_r_z62_bracket.valid_after       PASS          1                      bool   == 1                   margin 0.0
+U-04.assembly.od_c16_l_z62_bracket.faces_delta       PASS          0                      count  == 0                   margin 0.0
+U-04.assembly.od_c16_l_z62_bracket.volume_delta      PASS          4.547473508864641e-12  mm3    <= 0                   margin -4.547473508864641e-12
+U-04.assembly.od_c16_l_z62_bracket.valid_after       PASS          1                      bool   == 1                   margin 0.0
+D-01a                                                PASS          4.999999999899995      mm     >= 0.8                 margin 4.2
+D-01b                                                PASS          4.999999999899995      mm     >= 2.0                 margin 3.0
+D-06a                                                PASS          4.999999999899995      mm     >= 1.0                 margin 4.0
+J-05.min_wall                                        PASS          4.999999999899995      mm     >= 3.0                 margin 2.0
+U-06                                                 PASS          4.999999999899995      mm     >= 2.0                 margin 3.0
+D-03a                                                PASS_ASSUMED  90.0                   deg    >= 45.0                margin 45.0
+D-03b                                                PASS          0.0                    mm     <= 5.0                 margin 5.0
+D-05a                                                PASS_ASSUMED  14.0                   mm     >= 8.0                 margin 6.0
+J-05.ring                                            PASS          5.0                    mm     >= 3.0                 margin 2.0
+U-07.stl_max_sagitta                                 PASS          0.0049723151243391     mm     <= 0.01                margin 0.005027685
+U-07.angular_tolerance                               PASS          0.2                    rad    <= 0.2309721947249083  margin 0.030972195
+U-07.delivered_bodies                                PASS          1                      count  == 1                   margin 0.0
+U-07.delivered_naked_edges                           PASS          0                      count  == 0                   margin 0.0
+U-07.delivered_winding                               PASS          1                      bool   == 1                   margin 0.0
+U-07.3mf                                             ORCHESTRATOR_STEP None                          the 3MF carries the same mesh margin None
+U-08                                                 N/A           None                          threads cosmetic       margin None
+D-07                                                 N/A           None                          fit-critical bores     margin None
+E-06                                                 N/A           None                          boss support           margin None
+REQ-09                                               INCONCLUSIVE  None                          flat in service (Soft, bench) margin None

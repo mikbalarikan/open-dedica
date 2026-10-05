@@ -1,0 +1,1084 @@
+{
+ "labels": [
+  "od_c01_frame",
+  "od_c03_cradle",
+  "od_h01_pump",
+  "od_c04_mount",
+  "od_h11_thermoblock",
+  "od_g01_housing",
+  "od_c07_valve_mount",
+  "od_c08_tray",
+  "od_c09_front_panel",
+  "od_c11_back_panel",
+  "od_c16_r_z-262_bracket",
+  "od_c16_l_z-262_bracket",
+  "od_c16_r_z-15_bracket",
+  "od_c16_l_z-15_bracket",
+  "od_c16_r_z62_bracket",
+  "od_c16_l_z62_bracket",
+  "od_c05_foot_reference_A01"
+ ],
+ "validity": {
+  "od_c01_frame": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c03_cradle": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_h01_pump": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c04_mount": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_h11_thermoblock": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_g01_housing": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c07_valve_mount": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c08_tray": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c09_front_panel": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c11_back_panel": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c16_r_z-262_bracket": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c16_l_z-262_bracket": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c16_r_z-15_bracket": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c16_l_z-15_bracket": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c16_r_z62_bracket": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c16_l_z62_bracket": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  },
+  "od_c05_foot_reference_A01": {
+   "solid_count": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "brep_valid": {
+    "m": 1,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   },
+   "naked_edges": {
+    "m": 0,
+    "at": null,
+    "st": "MEASURED",
+    "why": ""
+   }
+  }
+ },
+ "envelopes": {
+  "od_c01_frame": {
+   "size_x": 240.0,
+   "size_y": 6.0,
+   "size_z": 405.0,
+   "min_x": -120.0,
+   "min_y": -6.0,
+   "min_z": -305.0,
+   "max_x": 120.0,
+   "max_y": 0.0,
+   "max_z": 100.0
+  },
+  "od_c03_cradle": {
+   "size_x": 52.0,
+   "size_y": 40.0,
+   "size_z": 80.0,
+   "min_x": -10.0,
+   "min_y": -3.774758283725e-16,
+   "min_z": -245.0,
+   "max_x": 42.0,
+   "max_y": 40.0,
+   "max_z": -165.0
+  },
+  "od_h01_pump": {
+   "size_x": 121.95000000000009,
+   "size_y": 55.1500002,
+   "size_z": 54.05000000000004,
+   "min_x": -66.45,
+   "min_y": 16.2499999,
+   "min_z": -232.20000000000002,
+   "max_x": 55.500000000000085,
+   "max_y": 71.4000001,
+   "max_z": -178.14999999999998
+  },
+  "od_c04_mount": {
+   "size_x": 100.00000000000003,
+   "size_y": 110.0,
+   "size_z": 50.0,
+   "min_x": -50.0,
+   "min_y": 0.0,
+   "min_z": -157.0,
+   "max_x": 50.00000000000003,
+   "max_y": 110.0,
+   "max_z": -107.0
+  },
+  "od_h11_thermoblock": {
+   "size_x": 86.10919803859278,
+   "size_y": 106.88800793169165,
+   "size_z": 50.790000100000185,
+   "min_x": -43.270176422418,
+   "min_y": 16.49249428739266,
+   "min_z": -140.00000010000016,
+   "max_x": 42.83902161617478,
+   "max_y": 123.3805022190843,
+   "max_z": -89.20999999999998
+  },
+  "od_g01_housing": {
+   "size_x": 100.0000002,
+   "size_y": 28.240000199999997,
+   "size_z": 100.000000196103,
+   "min_x": -50.0000001,
+   "min_y": 176.7599999,
+   "min_z": -18.0000001,
+   "max_x": 50.0000001,
+   "max_y": 205.0000001,
+   "max_z": 82.000000096103
+  },
+  "od_c07_valve_mount": {
+   "size_x": 50.0,
+   "size_y": 48.0,
+   "size_z": 119.0,
+   "min_x": -117.0,
+   "min_y": 0.0,
+   "min_z": -154.0,
+   "max_x": -67.0,
+   "max_y": 48.0,
+   "max_z": -35.0
+  },
+  "od_c08_tray": {
+   "size_x": 39.0,
+   "size_y": 92.0,
+   "size_z": 160.0,
+   "min_x": 73.0,
+   "min_y": 0.0,
+   "min_z": -230.0,
+   "max_x": 112.0,
+   "max_y": 92.0,
+   "max_z": -70.0
+  },
+  "od_c09_front_panel": {
+   "size_x": 232.0,
+   "size_y": 215.0,
+   "size_z": 25.0,
+   "min_x": -116.0,
+   "min_y": -3.774758283725e-16,
+   "min_z": 72.0,
+   "max_x": 116.0,
+   "max_y": 215.0,
+   "max_z": 97.0
+  },
+  "od_c11_back_panel": {
+   "size_x": 232.0,
+   "size_y": 215.0,
+   "size_z": 25.0,
+   "min_x": -116.0,
+   "min_y": 0.0,
+   "min_z": -302.0,
+   "max_x": 116.0,
+   "max_y": 215.0,
+   "max_z": -277.0
+  },
+  "od_c16_r_z-262_bracket": {
+   "size_x": 19.0,
+   "size_y": 16.0,
+   "size_z": 16.0,
+   "min_x": 98.0,
+   "min_y": -3.774758283725e-16,
+   "min_z": -270.0,
+   "max_x": 117.0,
+   "max_y": 16.0,
+   "max_z": -254.0
+  },
+  "od_c16_l_z-262_bracket": {
+   "size_x": 19.0,
+   "size_y": 16.0,
+   "size_z": 16.0,
+   "min_x": -117.0,
+   "min_y": -3.774758283725e-16,
+   "min_z": -270.0,
+   "max_x": -98.0,
+   "max_y": 16.0,
+   "max_z": -254.0
+  },
+  "od_c16_r_z-15_bracket": {
+   "size_x": 19.0,
+   "size_y": 16.0,
+   "size_z": 16.0,
+   "min_x": 98.0,
+   "min_y": -3.774758283725e-16,
+   "min_z": -23.0,
+   "max_x": 117.0,
+   "max_y": 16.0,
+   "max_z": -7.0
+  },
+  "od_c16_l_z-15_bracket": {
+   "size_x": 19.0,
+   "size_y": 16.0,
+   "size_z": 16.0,
+   "min_x": -117.0,
+   "min_y": -3.774758283725e-16,
+   "min_z": -23.0,
+   "max_x": -98.0,
+   "max_y": 16.0,
+   "max_z": -6.999999999999998
+  },
+  "od_c16_r_z62_bracket": {
+   "size_x": 19.0,
+   "size_y": 16.0,
+   "size_z": 16.0,
+   "min_x": 98.0,
+   "min_y": -3.774758283725e-16,
+   "min_z": 54.0,
+   "max_x": 117.0,
+   "max_y": 16.0,
+   "max_z": 70.0
+  },
+  "od_c16_l_z62_bracket": {
+   "size_x": 19.0,
+   "size_y": 16.0,
+   "size_z": 16.0,
+   "min_x": -117.0,
+   "min_y": -3.774758283725e-16,
+   "min_z": 54.0,
+   "max_x": -98.0,
+   "max_y": 16.0,
+   "max_z": 70.0
+  },
+  "od_c05_foot_reference_A01": {
+   "size_x": 110.0,
+   "size_y": 4.0,
+   "size_z": 44.0,
+   "min_x": -55.0,
+   "min_y": 0.0,
+   "min_z": -70.0,
+   "max_x": 55.0,
+   "max_y": 4.0,
+   "max_z": -26.0
+  }
+ },
+ "clearance": {
+  "od_c01_frame|od_c03_cradle": {
+   "m": 0.0,
+   "at": [
+    -2.0,
+    0.0,
+    -171.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_h01_pump": {
+   "m": 16.25,
+   "at": [
+    33.5,
+    0.0,
+    -205.2
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c04_mount": {
+   "m": 0.0,
+   "at": [
+    -38.0,
+    0.0,
+    -114.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_h11_thermoblock": {
+   "m": 16.4924943874,
+   "at": [
+    -9.661184,
+    0.0,
+    -140.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_g01_housing": {
+   "m": 176.76,
+   "at": [
+    37.1,
+    0.0,
+    32.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c07_valve_mount": {
+   "m": 0.0,
+   "at": [
+    -111.0,
+    0.0,
+    -42.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c08_tray": {
+   "m": 0.0,
+   "at": [
+    90.0,
+    0.0,
+    -78.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c09_front_panel": {
+   "m": 0.0,
+   "at": [
+    97.0,
+    0.0,
+    77.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c11_back_panel": {
+   "m": 0.0,
+   "at": [
+    97.0,
+    0.0,
+    -282.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_r_z-262_bracket": {
+   "m": 0.0,
+   "at": [
+    106.5,
+    0.0,
+    -262.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_l_z-262_bracket": {
+   "m": 0.0,
+   "at": [
+    -102.5,
+    0.0,
+    -262.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_r_z-15_bracket": {
+   "m": 0.0,
+   "at": [
+    106.5,
+    0.0,
+    -15.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_l_z-15_bracket": {
+   "m": 0.0,
+   "at": [
+    -102.5,
+    0.0,
+    -15.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_r_z62_bracket": {
+   "m": 0.0,
+   "at": [
+    106.5,
+    0.0,
+    62.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_l_z62_bracket": {
+   "m": 0.0,
+   "at": [
+    -102.5,
+    0.0,
+    62.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c05_foot_reference_A01": {
+   "m": 0.0,
+   "at": [
+    -33.0,
+    0.0,
+    -40.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c03_cradle|od_c04_mount": {
+   "m": 8.0,
+   "at": [
+    42.0,
+    0.0,
+    -165.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c01_frame": {
+   "m": 176.76,
+   "at": [
+    37.1,
+    176.76,
+    32.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c03_cradle": {
+   "m": 211.05683070278837,
+   "at": [
+    2.537116,
+    176.76,
+    -11.025261
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_h01_pump": {
+   "m": 201.11084518014445,
+   "at": [
+    -0.958206,
+    176.76,
+    -11.089347
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c04_mount": {
+   "m": 155.91570671359574,
+   "at": [
+    -0.0,
+    176.76,
+    -11.1
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_h11_thermoblock": {
+   "m": 110.78011311361298,
+   "at": [
+    7.055332,
+    176.76,
+    -10.518611
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c07_valve_mount": {
+   "m": 162.24003366719177,
+   "at": [
+    -34.986837,
+    176.76,
+    6.829953
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c08_tray": {
+   "m": 118.16384102814511,
+   "at": [
+    25.083859,
+    176.76,
+    -3.04868
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c09_front_panel": {
+   "m": 8.775676612090953,
+   "at": [
+    -44.0,
+    199.3,
+    81.15
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c11_back_panel": {
+   "m": 269.0669061776271,
+   "at": [
+    -42.0,
+    205.0,
+    -18.0
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_r_z-262_bracket": {
+   "m": 304.2227981853534,
+   "at": [
+    45.12159,
+    199.3,
+    -17.026384
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_l_z-262_bracket": {
+   "m": 304.2227981853534,
+   "at": [
+    -45.12159,
+    199.3,
+    -17.026384
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_r_z-15_bracket": {
+   "m": 172.43674967856128,
+   "at": [
+    40.045465,
+    176.76,
+    16.06354
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_l_z-15_bracket": {
+   "m": 172.43674967856128,
+   "at": [
+    -40.045465,
+    176.76,
+    16.06354
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_r_z62_bracket": {
+   "m": 170.67964927449285,
+   "at": [
+    42.05337,
+    176.76,
+    41.440553
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_l_z62_bracket": {
+   "m": 170.67964927449285,
+   "at": [
+    -42.05337,
+    176.76,
+    41.440553
+   ],
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c05_foot_reference_A01": {
+   "m": 173.40134832232417,
+   "at": [
+    -0.0,
+    176.76,
+    -11.1
+   ],
+   "st": "MEASURED",
+   "why": ""
+  }
+ },
+ "interference": {
+  "od_c01_frame|od_c03_cradle": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_h01_pump": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c04_mount": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_h11_thermoblock": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_g01_housing": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c07_valve_mount": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c08_tray": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c09_front_panel": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c11_back_panel": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_r_z-262_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_l_z-262_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_r_z-15_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_l_z-15_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_r_z62_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c16_l_z62_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c01_frame|od_c05_foot_reference_A01": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_c03_cradle|od_c04_mount": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c01_frame": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c03_cradle": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_h01_pump": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c04_mount": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_h11_thermoblock": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c07_valve_mount": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c08_tray": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c09_front_panel": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c11_back_panel": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_r_z-262_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_l_z-262_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_r_z-15_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_l_z-15_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_r_z62_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c16_l_z62_bracket": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  },
+  "od_g01_housing|od_c05_foot_reference_A01": {
+   "m": 0.0,
+   "at": null,
+   "st": "MEASURED",
+   "why": ""
+  }
+ }
+}

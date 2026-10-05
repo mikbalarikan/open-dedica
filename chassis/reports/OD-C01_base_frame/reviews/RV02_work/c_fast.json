@@ -1,0 +1,130 @@
+{
+ "envelope (U-02, D-02, REQ-07, REQ-08)": [
+  {
+   "mutant": "resize: a 0.5 mm strip added on the front edge",
+   "got": "size_z 405.500 mm",
+   "required": "405.0 +-0.1 mm",
+   "got_word": "FAIL"
+  }
+ ],
+ "locate_bore offset (REQ-01..06, REQ-10..14, U-03, U-05)": [
+  {
+   "mutant": "relocate: the whole plate moved +0.5 mm in x, so every hole sits 0.5 mm off its spec position",
+   "got": "offset 0.5000 mm at the REQ-13 hole (104.5, -15)",
+   "required": "<= 0.10 mm",
+   "got_word": "FAIL"
+  }
+ ],
+ "bore_census / feature_census (U-05)": [
+  {
+   "mutant": "degrade: the REQ-11 hole (88,-78) opened out to Dia 6.0",
+   "got": "44 bores, 48 cylindrical faces, that bore Dia 6.000",
+   "required": "44 bores, 48 cylindrical faces, Dia 4.0 +- 0.05",
+   "got_word": "FAIL"
+  }
+ ],
+ "locate_bore diameter / depth (D-04a, D-05b)": [
+  {
+   "mutant": "degrade: the REQ-11 hole (88,-78) opened out to Dia 6.0",
+   "got": "Dia 6.000 mm",
+   "required": "4.0 +- 0.05 mm",
+   "got_word": "FAIL"
+  }
+ ],
+ "compare_step (U-04)": [
+  {
+   "mutant": "remove: the delivered solid read back against the opened-hole STEP",
+   "got": "faces_delta 0, volume_delta 94.248 mm3",
+   "required": "faces_delta 0, volume_delta <= 0 (band 0.001 mm3)",
+   "got_word": "FAIL"
+  }
+ ],
+ "compare_step labels (U-04)": [
+  {
+   "mutant": "remove: the body relabelled `not_od_c01_frame`",
+   "got": "labels 0",
+   "required": "labels == 1 (kept)",
+   "got_word": "FAIL"
+  }
+ ],
+ "validity (U-01)": [
+  {
+   "mutant": "add: a detached 10 mm cube 50 mm above the plate",
+   "got": "solid_count 2, brep_valid 1, naked_edges 0",
+   "required": "1 / 1 / 0",
+   "got_word": "FAIL"
+  }
+ ],
+ "interference / common_volume (U-03)": [
+  {
+   "mutant": "relocate: OD-C04 sunk 1 mm into the plate",
+   "got": "4948.2 mm3 (MEASURED)",
+   "required": "<= 0 mm3",
+   "got_word": "FAIL"
+  }
+ ],
+ "clearance (U-03, REQ-08)": [
+  {
+   "mutant": "relocate: OD-C04 lifted 1 mm off the plate",
+   "got": "contact clearance 1.0000 mm",
+   "required": "= 0 (designed contact)",
+   "got_word": "FAIL"
+  }
+ ],
+ "coaxiality: bore_census + locate_bore on both solids (U-03)": [
+  {
+   "mutant": "relocate: OD-C08 shifted 0.5 mm in x over its plate holes",
+   "got": "coaxial offset 0.5000 mm",
+   "required": "<= 0.20 mm",
+   "got_word": "FAIL"
+  }
+ ],
+ "write_stl / mesh sagitta (U-07)": [
+  {
+   "mutant": "degrade: the part remeshed at tolerance 0.05 mm",
+   "got": "sagitta 0.023448 mm",
+   "required": "<= 0.01 mm",
+   "got_word": "FAIL"
+  }
+ ],
+ "mesh_deviation (U-07, V-05)": [
+  {
+   "mutant": "degrade: the coarse STL against the B-rep",
+   "got": "0.023447 mm",
+   "required": "<= 0.01 mm",
+   "got_word": "FAIL"
+  }
+ ],
+ "mesh_census (U-07, V-05)": [
+  {
+   "mutant": "remove: 20 triangles dropped from the delivered STL",
+   "got": "bodies 1, naked_edges 22, winding 1",
+   "required": "1 body, 0 naked edges, winding 1",
+   "got_word": "FAIL"
+  }
+ ],
+ "3MF parse against the STL (U-07)": [
+  {
+   "mutant": "degrade: the 3MF compared with the coarse (tol 0.05) mesh",
+   "got": "3MF 11676 triangles vs mesh 4980",
+   "required": "the same triangle set",
+   "got_word": "FAIL"
+  }
+ ],
+ "hole spacing from bore axes (REQ-11..14)": [
+  {
+   "mutant": "add: an extra Dia 4.0 hole at (92, 77), 3.0 mm from the REQ-14 hole at (95, 77)",
+   "got": "nearest centre to centre 3.0000 mm",
+   "required": ">= 6.0 mm",
+   "got_word": "FAIL"
+  }
+ ],
+ "nothing_clipped (D6 sections)": [
+  {
+   "mutant": "degrade: the plan section redrawn with a negative margin",
+   "got": "0 px (MEASURED)",
+   "required": "== 0 px",
+   "got_word": "PASS"
+  }
+ ]
+}

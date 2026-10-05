@@ -1,0 +1,3820 @@
+{
+ "schema": "AP242",
+ "unit": "MM",
+ "validity": {
+  "solid_count": {
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "volume_mm3": 578998.7364057965,
+    "solid_volumes_mm3": [
+     578998.7364057965
+    ]
+   },
+   "params": {}
+  },
+  "brep_valid": {
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.082,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.00047080887869750297,
+    "loose_shells": 0,
+    "loose_faces": 0
+   },
+   "params": {
+    "analyzer": true,
+    "budget_s": 120.0
+   }
+  },
+  "naked_edges": {
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "edges": 156,
+    "free_edges": 0,
+    "edges_on_3plus_faces": 0,
+    "degenerate_edges": 0
+   },
+   "params": {}
+  }
+ },
+ "envelope": {
+  "size_x": {
+   "measured": 240.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "size_y": {
+   "measured": 6.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "size_z": {
+   "measured": 405.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "min_x": {
+   "measured": -120.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "min_y": {
+   "measured": -6.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "min_z": {
+   "measured": -305.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "max_x": {
+   "measured": 120.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "max_y": {
+   "measured": 0.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "max_z": {
+   "measured": 100.0,
+   "unit": "mm",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  }
+ },
+ "compare_step": {
+  "schema": {
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "found": "AP242",
+    "sha256": "87877a649306995965d4640f54cbf83c20715888b29eb057b18e2f2d2933d29b",
+    "path": "od_c01_frame_C1_v03.step"
+   },
+   "params": {
+    "schema": "AP242"
+   }
+  },
+  "solids": {
+   "measured": 1,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 1,
+    "sha256": "87877a649306995965d4640f54cbf83c20715888b29eb057b18e2f2d2933d29b",
+    "path": "od_c01_frame_C1_v03.step"
+   },
+   "params": {}
+  },
+  "volume_delta": {
+   "measured": 0.0,
+   "unit": "mm3",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built_mm3": 578998.7364057965,
+    "reimported_mm3": 578998.7364057965,
+    "sha256": "87877a649306995965d4640f54cbf83c20715888b29eb057b18e2f2d2933d29b",
+    "path": "od_c01_frame_C1_v03.step"
+   },
+   "params": {}
+  },
+  "faces_delta": {
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": 54,
+    "reimported": 54
+   },
+   "params": {}
+  },
+  "labels": {
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "built": [
+     "od_c01_frame"
+    ],
+    "reimported": [
+     "od_c01_frame"
+    ]
+   },
+   "params": {}
+  },
+  "valid_after": {
+   "measured": 1,
+   "unit": "bool",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "brepcheck": true,
+    "solids_without_volume": 0,
+    "bop_faults": [],
+    "bop_seconds": 0.078,
+    "curve_on_surface_mm": 0.0,
+    "curve_on_surface_limit_mm": 0.00047080887869750297,
+    "loose_shells": 0,
+    "loose_faces": 0
+   },
+   "params": {}
+  }
+ },
+ "feature_census": {
+  "plane_faces": {
+   "measured": 6,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "cylinder_faces": {
+   "measured": 48,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "cone_faces": {
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "sphere_faces": {
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "torus_faces": {
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "bspline_faces": {
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "other_faces": {
+   "measured": 0,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "concave_cylinders": {
+   "measured": 44,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "convex_cylinders": {
+   "measured": 4,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {},
+   "params": {}
+  },
+  "bores": {
+   "measured": 44,
+   "unit": "count",
+   "at": null,
+   "status": "MEASURED",
+   "reason": "",
+   "detail": {
+    "bores": [
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -113.0,
+       -6.0,
+       -148.5
+      ],
+      "end": [
+       -113.0,
+       0.0,
+       -148.5
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -113.0,
+       -6.0,
+       -42.0
+      ],
+      "end": [
+       -113.0,
+       0.0,
+       -42.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 3.4,
+      "radius": 1.7,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -110.0,
+       -6.0,
+       -295.0
+      ],
+      "end": [
+       -110.0,
+       0.0,
+       -295.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 3.4,
+      "radius": 1.7,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -110.0,
+       -6.0,
+       90.0
+      ],
+      "end": [
+       -110.0,
+       0.0,
+       90.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -104.5,
+       -6.0,
+       -262.0
+      ],
+      "end": [
+       -104.5,
+       0.0,
+       -262.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -104.5,
+       -6.0,
+       -15.0
+      ],
+      "end": [
+       -104.5,
+       0.0,
+       -15.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -104.5,
+       -6.0,
+       62.0
+      ],
+      "end": [
+       -104.5,
+       0.0,
+       62.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -95.0,
+       -6.0,
+       -282.0
+      ],
+      "end": [
+       -95.0,
+       0.0,
+       -282.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -95.0,
+       -6.0,
+       77.0
+      ],
+      "end": [
+       -95.0,
+       0.0,
+       77.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -85.0,
+       -6.0,
+       77.0
+      ],
+      "end": [
+       -85.0,
+       0.0,
+       77.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -81.0,
+       -6.0,
+       -282.0
+      ],
+      "end": [
+       -81.0,
+       0.0,
+       -282.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 8.0,
+      "radius": 4.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -80.0,
+       -6.0,
+       -230.0
+      ],
+      "end": [
+       -80.0,
+       0.0,
+       -230.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 8.0,
+      "radius": 4.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -80.0,
+       -6.0,
+       -120.0
+      ],
+      "end": [
+       -80.0,
+       0.0,
+       -120.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -71.0,
+       -6.0,
+       -148.5
+      ],
+      "end": [
+       -71.0,
+       0.0,
+       -148.5
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -71.0,
+       -6.0,
+       -42.0
+      ],
+      "end": [
+       -71.0,
+       0.0,
+       -42.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -40.0,
+       -6.0,
+       -148.0
+      ],
+      "end": [
+       -40.0,
+       0.0,
+       -148.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -40.0,
+       -6.0,
+       -114.0
+      ],
+      "end": [
+       -40.0,
+       0.0,
+       -114.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -35.0,
+       -6.0,
+       -60.0
+      ],
+      "end": [
+       -35.0,
+       0.0,
+       -60.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -35.0,
+       -6.0,
+       -40.0
+      ],
+      "end": [
+       -35.0,
+       0.0,
+       -40.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -4.0,
+       -6.0,
+       -239.0
+      ],
+      "end": [
+       -4.0,
+       0.0,
+       -239.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       -4.0,
+       -6.0,
+       -171.0
+      ],
+      "end": [
+       -4.0,
+       0.0,
+       -171.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       35.0,
+       -6.0,
+       -60.0
+      ],
+      "end": [
+       35.0,
+       0.0,
+       -60.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       35.0,
+       -6.0,
+       -40.0
+      ],
+      "end": [
+       35.0,
+       0.0,
+       -40.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       37.0,
+       -6.0,
+       -239.0
+      ],
+      "end": [
+       37.0,
+       0.0,
+       -239.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       37.0,
+       -6.0,
+       -171.0
+      ],
+      "end": [
+       37.0,
+       0.0,
+       -171.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       40.0,
+       -6.0,
+       -148.0
+      ],
+      "end": [
+       40.0,
+       0.0,
+       -148.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       40.0,
+       -6.0,
+       -114.0
+      ],
+      "end": [
+       40.0,
+       0.0,
+       -114.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       65.0,
+       -6.0,
+       -225.0
+      ],
+      "end": [
+       65.0,
+       0.0,
+       -225.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       65.0,
+       -6.0,
+       -165.0
+      ],
+      "end": [
+       65.0,
+       0.0,
+       -165.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       65.0,
+       -6.0,
+       -105.0
+      ],
+      "end": [
+       65.0,
+       0.0,
+       -105.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       65.0,
+       -6.0,
+       -45.0
+      ],
+      "end": [
+       65.0,
+       0.0,
+       -45.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       81.0,
+       -6.0,
+       -282.0
+      ],
+      "end": [
+       81.0,
+       0.0,
+       -282.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       85.0,
+       -6.0,
+       77.0
+      ],
+      "end": [
+       85.0,
+       0.0,
+       77.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       88.0,
+       -6.0,
+       -222.0
+      ],
+      "end": [
+       88.0,
+       0.0,
+       -222.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       88.0,
+       -6.0,
+       -78.0
+      ],
+      "end": [
+       88.0,
+       0.0,
+       -78.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       95.0,
+       -6.0,
+       -282.0
+      ],
+      "end": [
+       95.0,
+       0.0,
+       -282.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       95.0,
+       -6.0,
+       77.0
+      ],
+      "end": [
+       95.0,
+       0.0,
+       77.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       104.5,
+       -6.0,
+       -262.0
+      ],
+      "end": [
+       104.5,
+       0.0,
+       -262.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       104.5,
+       -6.0,
+       -15.0
+      ],
+      "end": [
+       104.5,
+       0.0,
+       -15.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       104.5,
+       -6.0,
+       62.0
+      ],
+      "end": [
+       104.5,
+       0.0,
+       62.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       106.0,
+       -6.0,
+       -222.0
+      ],
+      "end": [
+       106.0,
+       0.0,
+       -222.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 4.0,
+      "radius": 2.0,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       106.0,
+       -6.0,
+       -78.0
+      ],
+      "end": [
+       106.0,
+       0.0,
+       -78.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 3.4,
+      "radius": 1.7,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       110.0,
+       -6.0,
+       -295.0
+      ],
+      "end": [
+       110.0,
+       0.0,
+       -295.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     },
+     {
+      "solid": 0,
+      "diameter": 3.4,
+      "radius": 1.7,
+      "axis_dir": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "start": [
+       110.0,
+       -6.0,
+       90.0
+      ],
+      "end": [
+       110.0,
+       0.0,
+       90.0
+      ],
+      "length": 6.0,
+      "span_deg": 360.0,
+      "faces": 1,
+      "fitted": false,
+      "open_ends": [
+       true,
+       true
+      ],
+      "through": true
+     }
+    ]
+   },
+   "params": {}
+  }
+ },
+ "bore_census_raw": {
+  "measured": 44,
+  "unit": "count",
+  "at": null,
+  "status": "MEASURED",
+  "reason": "",
+  "detail": {
+   "bores": [
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -113.0,
+      -6.0,
+      -148.5
+     ],
+     "end": [
+      -113.0,
+      0.0,
+      -148.5
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -113.0,
+      -6.0,
+      -42.0
+     ],
+     "end": [
+      -113.0,
+      0.0,
+      -42.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 3.4,
+     "radius": 1.7,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -110.0,
+      -6.0,
+      -295.0
+     ],
+     "end": [
+      -110.0,
+      0.0,
+      -295.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 3.4,
+     "radius": 1.7,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -110.0,
+      -6.0,
+      90.0
+     ],
+     "end": [
+      -110.0,
+      0.0,
+      90.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -104.5,
+      -6.0,
+      -262.0
+     ],
+     "end": [
+      -104.5,
+      0.0,
+      -262.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -104.5,
+      -6.0,
+      -15.0
+     ],
+     "end": [
+      -104.5,
+      0.0,
+      -15.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -104.5,
+      -6.0,
+      62.0
+     ],
+     "end": [
+      -104.5,
+      0.0,
+      62.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -95.0,
+      -6.0,
+      -282.0
+     ],
+     "end": [
+      -95.0,
+      0.0,
+      -282.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -95.0,
+      -6.0,
+      77.0
+     ],
+     "end": [
+      -95.0,
+      0.0,
+      77.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -85.0,
+      -6.0,
+      77.0
+     ],
+     "end": [
+      -85.0,
+      0.0,
+      77.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -81.0,
+      -6.0,
+      -282.0
+     ],
+     "end": [
+      -81.0,
+      0.0,
+      -282.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 8.0,
+     "radius": 4.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -80.0,
+      -6.0,
+      -230.0
+     ],
+     "end": [
+      -80.0,
+      0.0,
+      -230.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 8.0,
+     "radius": 4.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -80.0,
+      -6.0,
+      -120.0
+     ],
+     "end": [
+      -80.0,
+      0.0,
+      -120.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -71.0,
+      -6.0,
+      -148.5
+     ],
+     "end": [
+      -71.0,
+      0.0,
+      -148.5
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -71.0,
+      -6.0,
+      -42.0
+     ],
+     "end": [
+      -71.0,
+      0.0,
+      -42.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -40.0,
+      -6.0,
+      -148.0
+     ],
+     "end": [
+      -40.0,
+      0.0,
+      -148.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -40.0,
+      -6.0,
+      -114.0
+     ],
+     "end": [
+      -40.0,
+      0.0,
+      -114.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -35.0,
+      -6.0,
+      -60.0
+     ],
+     "end": [
+      -35.0,
+      0.0,
+      -60.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -35.0,
+      -6.0,
+      -40.0
+     ],
+     "end": [
+      -35.0,
+      0.0,
+      -40.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -4.0,
+      -6.0,
+      -239.0
+     ],
+     "end": [
+      -4.0,
+      0.0,
+      -239.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      -4.0,
+      -6.0,
+      -171.0
+     ],
+     "end": [
+      -4.0,
+      0.0,
+      -171.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      35.0,
+      -6.0,
+      -60.0
+     ],
+     "end": [
+      35.0,
+      0.0,
+      -60.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      35.0,
+      -6.0,
+      -40.0
+     ],
+     "end": [
+      35.0,
+      0.0,
+      -40.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      37.0,
+      -6.0,
+      -239.0
+     ],
+     "end": [
+      37.0,
+      0.0,
+      -239.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      37.0,
+      -6.0,
+      -171.0
+     ],
+     "end": [
+      37.0,
+      0.0,
+      -171.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      40.0,
+      -6.0,
+      -148.0
+     ],
+     "end": [
+      40.0,
+      0.0,
+      -148.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      40.0,
+      -6.0,
+      -114.0
+     ],
+     "end": [
+      40.0,
+      0.0,
+      -114.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      -6.0,
+      -225.0
+     ],
+     "end": [
+      65.0,
+      0.0,
+      -225.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      -6.0,
+      -165.0
+     ],
+     "end": [
+      65.0,
+      0.0,
+      -165.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      -6.0,
+      -105.0
+     ],
+     "end": [
+      65.0,
+      0.0,
+      -105.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      65.0,
+      -6.0,
+      -45.0
+     ],
+     "end": [
+      65.0,
+      0.0,
+      -45.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      81.0,
+      -6.0,
+      -282.0
+     ],
+     "end": [
+      81.0,
+      0.0,
+      -282.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      85.0,
+      -6.0,
+      77.0
+     ],
+     "end": [
+      85.0,
+      0.0,
+      77.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      88.0,
+      -6.0,
+      -222.0
+     ],
+     "end": [
+      88.0,
+      0.0,
+      -222.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      88.0,
+      -6.0,
+      -78.0
+     ],
+     "end": [
+      88.0,
+      0.0,
+      -78.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      95.0,
+      -6.0,
+      -282.0
+     ],
+     "end": [
+      95.0,
+      0.0,
+      -282.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      95.0,
+      -6.0,
+      77.0
+     ],
+     "end": [
+      95.0,
+      0.0,
+      77.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      104.5,
+      -6.0,
+      -262.0
+     ],
+     "end": [
+      104.5,
+      0.0,
+      -262.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      104.5,
+      -6.0,
+      -15.0
+     ],
+     "end": [
+      104.5,
+      0.0,
+      -15.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      104.5,
+      -6.0,
+      62.0
+     ],
+     "end": [
+      104.5,
+      0.0,
+      62.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      106.0,
+      -6.0,
+      -222.0
+     ],
+     "end": [
+      106.0,
+      0.0,
+      -222.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 4.0,
+     "radius": 2.0,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      106.0,
+      -6.0,
+      -78.0
+     ],
+     "end": [
+      106.0,
+      0.0,
+      -78.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 3.4,
+     "radius": 1.7,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      110.0,
+      -6.0,
+      -295.0
+     ],
+     "end": [
+      110.0,
+      0.0,
+      -295.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    },
+    {
+     "solid": 0,
+     "diameter": 3.4,
+     "radius": 1.7,
+     "axis_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "start": [
+      110.0,
+      -6.0,
+      90.0
+     ],
+     "end": [
+      110.0,
+      0.0,
+      90.0
+     ],
+     "length": 6.0,
+     "span_deg": 360.0,
+     "faces": 1,
+     "fitted": false,
+     "open_ends": [
+      true,
+      true
+     ],
+     "through": true
+    }
+   ],
+   "concave_arcs": 0
+  },
+  "params": {}
+ },
+ "bore_count": 44,
+ "dia_hist": {
+  "4.0": 38,
+  "3.4": 4,
+  "8.0": 2
+ },
+ "bores": [
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -113.0,
+    -6.0,
+    -148.5
+   ],
+   "end": [
+    -113.0,
+    0.0,
+    -148.5
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -113.0,
+    -6.0,
+    -42.0
+   ],
+   "end": [
+    -113.0,
+    0.0,
+    -42.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 3.4,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -110.0,
+    -6.0,
+    -295.0
+   ],
+   "end": [
+    -110.0,
+    0.0,
+    -295.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 3.4,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -110.0,
+    -6.0,
+    90.0
+   ],
+   "end": [
+    -110.0,
+    0.0,
+    90.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -104.5,
+    -6.0,
+    -262.0
+   ],
+   "end": [
+    -104.5,
+    0.0,
+    -262.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -104.5,
+    -6.0,
+    -15.0
+   ],
+   "end": [
+    -104.5,
+    0.0,
+    -15.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -104.5,
+    -6.0,
+    62.0
+   ],
+   "end": [
+    -104.5,
+    0.0,
+    62.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -95.0,
+    -6.0,
+    -282.0
+   ],
+   "end": [
+    -95.0,
+    0.0,
+    -282.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -95.0,
+    -6.0,
+    77.0
+   ],
+   "end": [
+    -95.0,
+    0.0,
+    77.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -85.0,
+    -6.0,
+    77.0
+   ],
+   "end": [
+    -85.0,
+    0.0,
+    77.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -81.0,
+    -6.0,
+    -282.0
+   ],
+   "end": [
+    -81.0,
+    0.0,
+    -282.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 8.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -80.0,
+    -6.0,
+    -230.0
+   ],
+   "end": [
+    -80.0,
+    0.0,
+    -230.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 8.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -80.0,
+    -6.0,
+    -120.0
+   ],
+   "end": [
+    -80.0,
+    0.0,
+    -120.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -71.0,
+    -6.0,
+    -148.5
+   ],
+   "end": [
+    -71.0,
+    0.0,
+    -148.5
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -71.0,
+    -6.0,
+    -42.0
+   ],
+   "end": [
+    -71.0,
+    0.0,
+    -42.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -40.0,
+    -6.0,
+    -148.0
+   ],
+   "end": [
+    -40.0,
+    0.0,
+    -148.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -40.0,
+    -6.0,
+    -114.0
+   ],
+   "end": [
+    -40.0,
+    0.0,
+    -114.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -35.0,
+    -6.0,
+    -60.0
+   ],
+   "end": [
+    -35.0,
+    0.0,
+    -60.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -35.0,
+    -6.0,
+    -40.0
+   ],
+   "end": [
+    -35.0,
+    0.0,
+    -40.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -4.0,
+    -6.0,
+    -239.0
+   ],
+   "end": [
+    -4.0,
+    0.0,
+    -239.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    -4.0,
+    -6.0,
+    -171.0
+   ],
+   "end": [
+    -4.0,
+    0.0,
+    -171.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    35.0,
+    -6.0,
+    -60.0
+   ],
+   "end": [
+    35.0,
+    0.0,
+    -60.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    35.0,
+    -6.0,
+    -40.0
+   ],
+   "end": [
+    35.0,
+    0.0,
+    -40.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    37.0,
+    -6.0,
+    -239.0
+   ],
+   "end": [
+    37.0,
+    0.0,
+    -239.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    37.0,
+    -6.0,
+    -171.0
+   ],
+   "end": [
+    37.0,
+    0.0,
+    -171.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    40.0,
+    -6.0,
+    -148.0
+   ],
+   "end": [
+    40.0,
+    0.0,
+    -148.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    40.0,
+    -6.0,
+    -114.0
+   ],
+   "end": [
+    40.0,
+    0.0,
+    -114.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    65.0,
+    -6.0,
+    -225.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -225.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    65.0,
+    -6.0,
+    -165.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -165.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    65.0,
+    -6.0,
+    -105.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -105.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    65.0,
+    -6.0,
+    -45.0
+   ],
+   "end": [
+    65.0,
+    0.0,
+    -45.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    81.0,
+    -6.0,
+    -282.0
+   ],
+   "end": [
+    81.0,
+    0.0,
+    -282.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    85.0,
+    -6.0,
+    77.0
+   ],
+   "end": [
+    85.0,
+    0.0,
+    77.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    88.0,
+    -6.0,
+    -222.0
+   ],
+   "end": [
+    88.0,
+    0.0,
+    -222.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    88.0,
+    -6.0,
+    -78.0
+   ],
+   "end": [
+    88.0,
+    0.0,
+    -78.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    95.0,
+    -6.0,
+    -282.0
+   ],
+   "end": [
+    95.0,
+    0.0,
+    -282.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    95.0,
+    -6.0,
+    77.0
+   ],
+   "end": [
+    95.0,
+    0.0,
+    77.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    104.5,
+    -6.0,
+    -262.0
+   ],
+   "end": [
+    104.5,
+    0.0,
+    -262.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    104.5,
+    -6.0,
+    -15.0
+   ],
+   "end": [
+    104.5,
+    0.0,
+    -15.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    104.5,
+    -6.0,
+    62.0
+   ],
+   "end": [
+    104.5,
+    0.0,
+    62.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    106.0,
+    -6.0,
+    -222.0
+   ],
+   "end": [
+    106.0,
+    0.0,
+    -222.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 4.0,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    106.0,
+    -6.0,
+    -78.0
+   ],
+   "end": [
+    106.0,
+    0.0,
+    -78.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 3.4,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    110.0,
+    -6.0,
+    -295.0
+   ],
+   "end": [
+    110.0,
+    0.0,
+    -295.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  },
+  {
+   "d": 3.4,
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "start": [
+    110.0,
+    -6.0,
+    90.0
+   ],
+   "end": [
+    110.0,
+    0.0,
+    90.0
+   ],
+   "len": 6.0,
+   "through": true,
+   "span_deg": 360.0
+  }
+ ]
+}
