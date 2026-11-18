@@ -5,9 +5,9 @@ code: ODT01
 milestone: M1
 title: "Open Dedica OD-T01 group head bench pressure-test rig"
 lane: CAD
-state: J5_DELIVER
+state: J6_CLOSE
 blocked_on: null
-next_action: "J5: the Usta merges the open-dedica PR; then J6 close with PHYSICAL_OUTCOME pending the bench test (REQ-08, OD-G01 REQ-12)"
+next_action: "J6: PHYSICAL_OUTCOME pending the bench test (REQ-08, head bearing RV02 F1, OD-G01 REQ-12)"
 data_class: PUBLIC
 size: S
 process: [FDM]
@@ -33,6 +33,7 @@ usta_gates:
   - {gate: spec_ratified, outcome: "1.2", date: "2026-10-03"}
   - {gate: question_answered, outcome: v02_25mm_plate, date: "2026-10-03"}
   - {gate: spec_ratified, outcome: "1.3", date: "2026-10-03"}
+  - {gate: question_answered, outcome: merge_approved, date: "2026-10-05"}
 deliverables: [STEP, STL, "3MF", scripts, REPORT]
 physical_outcome: n/a
 client_source_delete_after: null

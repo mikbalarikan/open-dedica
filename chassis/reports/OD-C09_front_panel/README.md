@@ -31,7 +31,7 @@ Repository inputs are not copied here; the job reads them under these names in
 
 ## Status (2026-10-03)
 
-J5_DELIVER. Build v01 (spec 1.1) RV01 `APPROVED_ASSUMPTION_CONDITIONAL`, no blocking finding (F1 stiffness on the bench, F2 the handle's lock angle past +11°, F3–F5 low). v01 is delivered; J6 waits on the merge and the first print.
+J6_CLOSE (PR #52 merged 2026-10-05). Build v01 (spec 1.1) RV01 `APPROVED_ASSUMPTION_CONDITIONAL`, no blocking finding (F1 stiffness on the bench, F2 the handle's lock angle past +11°, F3–F5 low). J6 waits on the first print.
 
 ## Resume
 
